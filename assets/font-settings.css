@@ -1,0 +1,77 @@
+@font-face {
+  font-family: Futura;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//tiege-hanley-store.myshopify.com/cdn/fonts/futura/futura_n4.df36ce3d9db534a4d7947f4aa825495ed740e410.woff2?h1=dGllZ2UtaGFubGV5LXN0b3JlLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=e27e754d3a1ae36f4b575ec3319137016e013b71e35983bf3b54636b25b5e2ae") format("woff2"),
+       url("//tiege-hanley-store.myshopify.com/cdn/fonts/futura/futura_n4.6bce24beb4ba1ff4ddeb20f7cd6e2fa513a3d6ec.woff?h1=dGllZ2UtaGFubGV5LXN0b3JlLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=f48cc7ce53baa0db2313a800ce2004ddae9f00c71a0194b54ff3c99461f6baa4") format("woff");
+}
+
+@font-face {
+  font-family: Futura;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//tiege-hanley-store.myshopify.com/cdn/fonts/futura/futura_n4.df36ce3d9db534a4d7947f4aa825495ed740e410.woff2?h1=dGllZ2UtaGFubGV5LXN0b3JlLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=e27e754d3a1ae36f4b575ec3319137016e013b71e35983bf3b54636b25b5e2ae") format("woff2"),
+       url("//tiege-hanley-store.myshopify.com/cdn/fonts/futura/futura_n4.6bce24beb4ba1ff4ddeb20f7cd6e2fa513a3d6ec.woff?h1=dGllZ2UtaGFubGV5LXN0b3JlLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=f48cc7ce53baa0db2313a800ce2004ddae9f00c71a0194b54ff3c99461f6baa4") format("woff");
+}
+
+@font-face {
+  font-family: Futura;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//tiege-hanley-store.myshopify.com/cdn/fonts/futura/futura_n4.df36ce3d9db534a4d7947f4aa825495ed740e410.woff2?h1=dGllZ2UtaGFubGV5LXN0b3JlLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=e27e754d3a1ae36f4b575ec3319137016e013b71e35983bf3b54636b25b5e2ae") format("woff2"),
+       url("//tiege-hanley-store.myshopify.com/cdn/fonts/futura/futura_n4.6bce24beb4ba1ff4ddeb20f7cd6e2fa513a3d6ec.woff?h1=dGllZ2UtaGFubGV5LXN0b3JlLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=f48cc7ce53baa0db2313a800ce2004ddae9f00c71a0194b54ff3c99461f6baa4") format("woff");
+}
+
+
+
+  @font-face {
+  font-family: Futura;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("//tiege-hanley-store.myshopify.com/cdn/fonts/futura/futura_n5.5632c6d8a6da9141ef40e51d14264a007bcae7e5.woff2?h1=dGllZ2UtaGFubGV5LXN0b3JlLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=95ce0f7740e79a768d1bf638f0b9107383b7d28021ead2de9b2b7e8c3d970de1") format("woff2"),
+       url("//tiege-hanley-store.myshopify.com/cdn/fonts/futura/futura_n5.ea788239cf399e57dbdfe80e24bba751e5c2a36c.woff?h1=dGllZ2UtaGFubGV5LXN0b3JlLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=0613d5124709d828106aedafa890aab9918ab30d5672b5dd24418fead6158335") format("woff");
+}
+
+
+
+
+  @font-face {
+  font-family: Futura;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("//tiege-hanley-store.myshopify.com/cdn/fonts/futura/futura_n5.5632c6d8a6da9141ef40e51d14264a007bcae7e5.woff2?h1=dGllZ2UtaGFubGV5LXN0b3JlLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=95ce0f7740e79a768d1bf638f0b9107383b7d28021ead2de9b2b7e8c3d970de1") format("woff2"),
+       url("//tiege-hanley-store.myshopify.com/cdn/fonts/futura/futura_n5.ea788239cf399e57dbdfe80e24bba751e5c2a36c.woff?h1=dGllZ2UtaGFubGV5LXN0b3JlLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=0613d5124709d828106aedafa890aab9918ab30d5672b5dd24418fead6158335") format("woff");
+}
+
+
+
+
+
+
+
+  @font-face {
+  font-family: Futura;
+  font-weight: 400;
+  font-style: oblique;
+  font-display: swap;
+  src: url("//tiege-hanley-store.myshopify.com/cdn/fonts/futura/futura_o4.9747e2e6ed2f11b894984527c927b42234e48815.woff2?h1=dGllZ2UtaGFubGV5LXN0b3JlLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=ca24d042660ee3fcd9cd283f2da1456d6144000b1a4dd23dad07d133bd39901c") format("woff2"),
+       url("//tiege-hanley-store.myshopify.com/cdn/fonts/futura/futura_o4.d5edc6b1d9a050bbe0beb9093d73b883bf18c6c1.woff?h1=dGllZ2UtaGFubGV5LXN0b3JlLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=34a10925297b6242dcfcdfacd85b1bf98ecb7667e5ce746b41c36a57515736d9") format("woff");
+}
+
+
+
+
+  @font-face {
+  font-family: Futura;
+  font-weight: 500;
+  font-style: oblique;
+  font-display: swap;
+  src: url("//tiege-hanley-store.myshopify.com/cdn/fonts/futura/futura_o5.2374ce1c635b408a1f07994a3de4a936fc50f767.woff2?h1=dGllZ2UtaGFubGV5LXN0b3JlLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=889c54653d662e594f2237f87a317b3c76a6461ba0feea9812bc8244bb26de6a") format("woff2"),
+       url("//tiege-hanley-store.myshopify.com/cdn/fonts/futura/futura_o5.1bf4df2c089a877c3ba2d33a9d4c7908742bfc89.woff?h1=dGllZ2UtaGFubGV5LXN0b3JlLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=1213442b592e8ed43937fc45f1576eccdfeff92c3460f144f07ae6002eddc66e") format("woff");
+}
+
