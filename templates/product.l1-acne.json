@@ -513,6 +513,23 @@
         "layout_mobile": "slider"
       }
     },
+    "1711041430997bf45c": {
+      "type": "apps",
+      "blocks": {
+        "trustreviews_reviews_widget_JQYADb": {
+          "type": "shopify:\/\/apps\/trustreviews\/blocks\/reviews_widget\/56d0fe1b-e701-4cff-8f84-466a26e09adb",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "trustreviews_reviews_widget_JQYADb"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
     "faq": {
       "type": "section-accordion",
       "blocks": {
@@ -819,6 +836,7 @@
     "section_double_slider_b33Ygi",
     "section_collection_YVbRj7",
     "section_columns_WqpJx7",
+    "1711041430997bf45c",
     "faq",
     "shipping",
     "section_accordion_NdXrTE",
