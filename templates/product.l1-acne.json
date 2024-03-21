@@ -171,7 +171,9 @@
         ".rc-subscription-details {display: none;}",
         ".rc-radio {border: 1px solid black;}",
         ".rc-template__radio {display: flex; flex-direction: column; gap: 8px;}",
-        ".rc-selling-plans {display: none;}"
+        ".rc-selling-plans {display: none;}",
+        ".bi-star::before {height: 30px; width: 20px;}",
+        ".rc-widget label {border-radius: 300px;}"
       ],
       "settings": {
         "product_sticky_enable": true,
