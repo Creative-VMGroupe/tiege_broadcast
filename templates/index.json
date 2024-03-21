@@ -163,7 +163,7 @@
         "show_arrow": false,
         "featured_collection": "skin-care-system",
         "layout_desktop": "grid",
-        "grid": 4,
+        "grid": 3,
         "rows": 3,
         "width": "wrapper--full-padded",
         "layout_mobile": "1",
