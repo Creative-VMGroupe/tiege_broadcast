@@ -48,6 +48,7 @@
     },
     "section_video_x47Nqi": {
       "type": "section-video",
+      "disabled": true,
       "settings": {
         "video": "shopify:\/\/files\/videos\/grownalchemist_1664896956_2941690253108050705_711509597.mp4",
         "show_video_popup": false,
@@ -138,7 +139,7 @@
         "height": "screen-height-three-quarters",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/HARRYS_FW_PORT_0529.jpg",
+        "image_1": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png",
         "image_width": "one-half",
         "text_alignment": "text-center",
         "reverse_blocks": false,
