@@ -284,6 +284,153 @@
         "padding_bottom": 0
       }
     },
+    "section_double_slider_wk8dA9": {
+      "type": "section-double-slider",
+      "blocks": {
+        "text_slide_UztTWq": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "",
+            "subheading_size": 4,
+            "title": "Willow Bark Extract",
+            "heading_size": 9,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "text_slide_UztTWq"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO3.png",
+        "image_2": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png",
+        "image_width": "one-half",
+        "text_alignment": "text-center",
+        "bg_color": "#f0f0f0",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_double_eTn7cn": {
+      "type": "section-double",
+      "blocks": {
+        "heading_kqcMBC": {
+          "type": "heading",
+          "settings": {
+            "title": "Proof",
+            "text_size": 9,
+            "padding_bottom": 16
+          }
+        },
+        "subheading_R7RyHU": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "★★★★★★",
+            "text_size": 4,
+            "padding_bottom": 16
+          }
+        },
+        "text_nJiYWB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_HCJ6TJ": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_kqcMBC",
+        "subheading_R7RyHU",
+        "text_nJiYWB",
+        "buttons_HCJ6TJ"
+      ],
+      "custom_css": [
+        ".hero__subheading {color: #00ad2d}"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO3.png",
+        "image_2": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png",
+        "image_width": "three-quarters",
+        "text_alignment": "text-center",
+        "reverse_blocks": false,
+        "bg_color": "#000000",
+        "color": "#ffffff",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_double_slider_b33Ygi": {
+      "type": "section-double-slider",
+      "blocks": {
+        "text_slide_Nb3dBi": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "",
+            "subheading_size": 4,
+            "title": "Willow Bark Extract",
+            "heading_size": 9,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "text_slide_Nb3dBi"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/uZr3qZvfRNuNZb2xaQjw.png",
+        "image_2": "shopify:\/\/shop_images\/rosemary-v1608581888105.png",
+        "image_width": "one-half",
+        "text_alignment": "text-center",
+        "bg_color": "#f0f0f0",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_columns_WqpJx7": {
       "type": "section-columns",
       "blocks": {
@@ -684,49 +831,14 @@
       "settings": {
         "include_margins": false
       }
-    },
-    "section_double_slider_wk8dA9": {
-      "type": "section-double-slider",
-      "blocks": {
-        "text_slide_UztTWq": {
-          "type": "text-slide",
-          "settings": {
-            "subheading": "",
-            "subheading_size": 4,
-            "title": "Willow Bark Extract",
-            "heading_size": 9,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
-            "text_style": "font-body",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--outline",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "text_slide_UztTWq"
-      ],
-      "settings": {
-        "layout": "is-reversed",
-        "height": "screen-height-three-quarters",
-        "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full",
-        "image_width": "one-half",
-        "text_alignment": "text-center",
-        "bg_color": "#f0f0f0",
-        "color": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
     }
   },
   "order": [
     "main",
     "section_custom_content_hDHUFF",
+    "section_double_slider_wk8dA9",
+    "section_double_eTn7cn",
+    "section_double_slider_b33Ygi",
     "section_columns_WqpJx7",
     "faq",
     "shipping",
@@ -734,7 +846,6 @@
     "related",
     "section_reviews_8Finzg",
     "1710609724cc7acd21",
-    "171061224373a1e0d4",
-    "section_double_slider_wk8dA9"
+    "171061224373a1e0d4"
   ]
 }
