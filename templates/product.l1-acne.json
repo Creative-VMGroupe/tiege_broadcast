@@ -364,7 +364,7 @@
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--outline",
-            "show_arrow": false
+            "show_arrow": true
           }
         }
       },
@@ -392,7 +392,7 @@
       "settings": {
         "heading": "Included in this System",
         "description": "",
-        "layout": "inline",
+        "layout": "center",
         "link_text": "Shop Now",
         "link_url": "",
         "button_type": "btn--primary",
