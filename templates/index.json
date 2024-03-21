@@ -8,7 +8,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/HARRYS_FW_PORT_0529.jpg",
             "overlay_opacity": 0,
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "show_overlay_text": false,
             "title": "Uncomplicated",
             "heading_size": 9,
@@ -18,7 +18,7 @@
             "flex_align_mobile": "align--middle-center-mobile",
             "bg_color": "",
             "color": "#212121",
-            "first_button_text": "View products",
+            "first_button_text": "Learn More",
             "first_button_link": "",
             "first_button_type": "btn--primary",
             "first_button_size": "",
