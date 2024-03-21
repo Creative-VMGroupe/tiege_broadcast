@@ -221,69 +221,6 @@
         "padding_bottom": 30
       }
     },
-    "section_custom_content_hDHUFF": {
-      "type": "section-custom-content",
-      "blocks": {
-        "text_mKjfF4": {
-          "type": "text",
-          "settings": {
-            "subheading": "Proof",
-            "subheading_size": 9,
-            "title": "★★★★★★",
-            "heading_size": 4,
-            "text": "<p>This is my first time I have used such products. Found the info on Brett Maverick youtube channel. No regrets att all - perfect experience. Skin feels much better and smoother. <\/p><p>- Jurijs R<\/p>",
-            "text_size": 4,
-            "button_text": "Read All Reviews",
-            "button_url": "",
-            "button_type": "btn--white",
-            "button_size": "btn--small",
-            "button_style": "btn--text",
-            "show_arrow": false,
-            "show_social_links": false,
-            "text_columns": 1,
-            "align_text": "text-center",
-            "bg_color": "#000000",
-            "color": "#ffffff"
-          }
-        },
-        "image_im8pEY": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png",
-            "overlay_opacity": 0,
-            "overlay_color": "#000000",
-            "show_overlay_text": false,
-            "title": "",
-            "heading_size": 7,
-            "description": "",
-            "text_size": 3,
-            "flex_align": "align--middle-center",
-            "bg_color": "",
-            "color": "#ffffff",
-            "link_text": "",
-            "link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "text_mKjfF4",
-        "image_im8pEY"
-      ],
-      "settings": {
-        "height": "screen-height-one-half",
-        "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full",
-        "borders": false,
-        "gutters": false,
-        "reverse_blocks": false,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "section_double_slider_wk8dA9": {
       "type": "section-double-slider",
       "blocks": {
@@ -373,7 +310,7 @@
         "buttons_HCJ6TJ"
       ],
       "custom_css": [
-        ".hero__subheading {color: #00ad2d}"
+        ".hero__subheading {color: #00ad2d;}"
       ],
       "settings": {
         "layout": "is-reversed",
@@ -411,10 +348,29 @@
             "button_style": "btn--outline",
             "show_arrow": false
           }
+        },
+        "text_slide_68g7FR": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "",
+            "subheading_size": 4,
+            "title": "Willow Bark Extract",
+            "heading_size": 9,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
         }
       },
       "block_order": [
-        "text_slide_Nb3dBi"
+        "text_slide_Nb3dBi",
+        "text_slide_68g7FR"
       ],
       "settings": {
         "layout": "is-reversed",
@@ -429,6 +385,30 @@
         "color": "",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "section_collection_YVbRj7": {
+      "type": "section-collection",
+      "settings": {
+        "heading": "Included in this System",
+        "description": "",
+        "layout": "inline",
+        "link_text": "Shop Now",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "featured_collection": "best-sellers",
+        "layout_desktop": "grid",
+        "grid": 4,
+        "rows": 1,
+        "width": "wrapper--full-padded",
+        "layout_mobile": "slider",
+        "bg_color": "#f7f9fa",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
       }
     },
     "section_columns_WqpJx7": {
@@ -835,10 +815,10 @@
   },
   "order": [
     "main",
-    "section_custom_content_hDHUFF",
     "section_double_slider_wk8dA9",
     "section_double_eTn7cn",
     "section_double_slider_b33Ygi",
+    "section_collection_YVbRj7",
     "section_columns_WqpJx7",
     "faq",
     "shipping",
