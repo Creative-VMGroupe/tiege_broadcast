@@ -14,6 +14,7 @@
         },
         "trustreviews_star_rating_CXtD3L": {
           "type": "shopify:\/\/apps\/trustreviews\/blocks\/star_rating\/56d0fe1b-e701-4cff-8f84-466a26e09adb",
+          "disabled": true,
           "settings": {
             "product": "{{product}}",
             "hide_on_no_reviews": false,
@@ -47,7 +48,7 @@
         "buttons": {
           "type": "buttons",
           "settings": {
-            "show_quantity": true,
+            "show_quantity": false,
             "show_payment_button": true,
             "show_gift_card_recipient": false,
             "padding_bottom": 32
@@ -143,10 +144,20 @@
         },
         "siblings_RMmJdA": {
           "type": "siblings",
+          "disabled": true,
           "settings": {
             "siblings_collection": "",
             "sibling_color": "",
             "padding_bottom": 16
+          }
+        },
+        "badges_NKBpVe": {
+          "type": "badges",
+          "disabled": true,
+          "settings": {
+            "sale_badge": true,
+            "product_badges": true,
+            "padding_bottom": 8
           }
         }
       },
@@ -165,7 +176,8 @@
         "icon_2",
         "popup_iLQPxV",
         "complementary_products_C7V6rg",
-        "siblings_RMmJdA"
+        "siblings_RMmJdA",
+        "badges_NKBpVe"
       ],
       "custom_css": [
         ".rc-subscription-details {display: none;}",
