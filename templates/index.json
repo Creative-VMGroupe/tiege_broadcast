@@ -345,7 +345,7 @@
       ],
       "settings": {
         "height": "screen-height-three-quarters",
-        "width": "wrapper--full",
+        "width": "wrapper--full-padded",
         "image_1": "shopify:\/\/shop_images\/Peptides_AdobeStock_403007779_transparent.png",
         "image_2": "shopify:\/\/shop_images\/HARRYS_FW_PROD_0279_1.jpg",
         "link": "",
