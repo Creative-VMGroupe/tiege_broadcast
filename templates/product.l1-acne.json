@@ -74,6 +74,15 @@
             "padding_bottom": 32
           }
         },
+        "text_bLzaqx": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "text": "<p>100% money back guarantee. Handsome guarantee. Free Shipping in USA and Canada.<\/p>",
+            "layout": "left",
+            "padding_bottom": 16
+          }
+        },
         "tabs": {
           "type": "tab_richtext",
           "settings": {
@@ -183,6 +192,7 @@
         "inventory_countdown_MLNCDH",
         "buttons",
         "pickup",
+        "text_bLzaqx",
         "tabs",
         "divider_1",
         "upsell",
