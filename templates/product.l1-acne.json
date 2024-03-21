@@ -30,6 +30,7 @@
         },
         "variants": {
           "type": "variants",
+          "disabled": true,
           "settings": {
             "info_page": "",
             "size_chart_style": "question",
@@ -116,8 +117,8 @@
           "settings": {
             "show_read_more": true,
             "style": "accordions",
-            "title_1": "",
-            "raw_content_1": "",
+            "title_1": "Ingredients",
+            "raw_content_1": "<p>This is a single product description.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <\/p>",
             "title_2": "",
             "raw_content_2": "",
             "title_3": "",
@@ -158,6 +159,7 @@
         },
         "popup_iLQPxV": {
           "type": "popup",
+          "disabled": true,
           "settings": {
             "title": "Popup text",
             "text": "<p>Additonal information about the product.<\/p>",
@@ -165,15 +167,6 @@
             "icon_name": "icon-award",
             "icon_size": 20,
             "icon_color": "#545454",
-            "padding_bottom": 16
-          }
-        },
-        "siblings_RMmJdA": {
-          "type": "siblings",
-          "disabled": true,
-          "settings": {
-            "siblings_collection": "",
-            "sibling_color": "",
             "padding_bottom": 16
           }
         },
@@ -204,7 +197,6 @@
         "upsell",
         "complementary_products_C7V6rg",
         "popup_iLQPxV",
-        "siblings_RMmJdA",
         "badges_NKBpVe"
       ],
       "custom_css": [
