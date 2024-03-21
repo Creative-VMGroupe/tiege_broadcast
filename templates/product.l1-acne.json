@@ -227,12 +227,12 @@
         "text_mKjfF4": {
           "type": "text",
           "settings": {
-            "subheading": "★★★★★★",
-            "subheading_size": 3,
-            "title": "Proof",
-            "heading_size": 8,
+            "subheading": "Proof",
+            "subheading_size": 9,
+            "title": "★★★★★★",
+            "heading_size": 4,
             "text": "<p>This is my first time I have used such products. Found the info on Brett Maverick youtube channel. No regrets att all - perfect experience. Skin feels much better and smoother. <\/p><p>- Jurijs R<\/p>",
-            "text_size": 3,
+            "text_size": 4,
             "button_text": "Read All Reviews",
             "button_url": "",
             "button_type": "btn--white",
@@ -241,7 +241,7 @@
             "show_arrow": false,
             "show_social_links": false,
             "text_columns": 1,
-            "align_text": "text-left",
+            "align_text": "text-center",
             "bg_color": "#000000",
             "color": "#ffffff"
           }
@@ -370,6 +370,7 @@
         "image_GC8arG",
         "image_xbLnic"
       ],
+      "disabled": true,
       "settings": {
         "title": "Includes These 4 Products",
         "heading_size": 5,
@@ -424,6 +425,7 @@
         "faq-3",
         "faq-4"
       ],
+      "disabled": true,
       "settings": {
         "default_open": false,
         "title": "How To Use",
@@ -478,6 +480,7 @@
         "shipping-1",
         "shipping-2"
       ],
+      "disabled": true,
       "settings": {
         "default_open": false,
         "title": "Shipping",
@@ -539,6 +542,7 @@
         "text_FRLfeV",
         "text_qyEjpp"
       ],
+      "disabled": true,
       "settings": {
         "default_open": false,
         "title": "FAQ",
@@ -576,6 +580,7 @@
         "related",
         "recent"
       ],
+      "disabled": true,
       "settings": {
         "enable_tabs": true,
         "heading_alignment": "text-center",
@@ -657,6 +662,7 @@
       "block_order": [
         "ali_reviews_product_reviews_widget_box_TmEEiJ"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": false
       }
@@ -674,8 +680,47 @@
       "block_order": [
         "videowise_video_platform_ugc_videowise_page_widgets_F9irDP"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": false
+      }
+    },
+    "section_double_slider_wk8dA9": {
+      "type": "section-double-slider",
+      "blocks": {
+        "text_slide_UztTWq": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "",
+            "subheading_size": 4,
+            "title": "Willow Bark Extract",
+            "heading_size": 9,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "text_slide_UztTWq"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_width": "one-half",
+        "text_alignment": "text-center",
+        "bg_color": "#f0f0f0",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
@@ -689,6 +734,7 @@
     "related",
     "section_reviews_8Finzg",
     "1710609724cc7acd21",
-    "171061224373a1e0d4"
+    "171061224373a1e0d4",
+    "section_double_slider_wk8dA9"
   ]
 }
