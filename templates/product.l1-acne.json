@@ -50,11 +50,11 @@
           "settings": {
             "show_notice": "always",
             "max_inventory": 10,
-            "hide_inventory_counter": false,
+            "hide_inventory_counter": true,
             "icon_size": 20,
-            "in_stock_color": "#56AD6A",
+            "in_stock_color": "#56ad6a",
             "low_stock_color": "#f79554",
-            "out_of_stock_color": "#721C24",
+            "out_of_stock_color": "#721c24",
             "padding_bottom": 16
           }
         },
