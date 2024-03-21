@@ -18,7 +18,7 @@
             "product": "{{product}}",
             "hide_on_no_reviews": false,
             "enable_jsonld": false,
-            "starsize": 50
+            "starsize": 16
           }
         },
         "recharge_subscriptions_subscription_widget_xPdPVc": {
