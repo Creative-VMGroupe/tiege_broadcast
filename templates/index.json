@@ -46,35 +46,6 @@
         "autoplay_speed": 8
       }
     },
-    "section_video_x47Nqi": {
-      "type": "section-video",
-      "disabled": true,
-      "settings": {
-        "video": "shopify:\/\/files\/videos\/grownalchemist_1664896956_2941690253108050705_711509597.mp4",
-        "show_video_popup": false,
-        "video_popup": "shopify:\/\/files\/videos\/grownalchemist_1664896956_2941690253108050705_711509597.mp4",
-        "video_popup_social": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "desktop_height": "seven-fifty-height-hero",
-        "mobile_height": "screen-height-three-quarters--mobile",
-        "width": "wrapper--full",
-        "overlay_opacity": 25,
-        "overlay_color": "#000000",
-        "show_overlay_text": true,
-        "title": "Uncomplicated",
-        "heading_size": 10,
-        "description": "The solution for handsome skin guaranteed.",
-        "text_size": 5,
-        "flex_align": "align--bottom-left",
-        "bg_color": "",
-        "color": "#ffffff",
-        "link_text": "Get Started",
-        "link": "",
-        "button_type": "btn--primary",
-        "button_size": "btn--large",
-        "button_style": "btn--solid",
-        "show_arrow": false
-      }
-    },
     "section_double_pyR9aL": {
       "type": "section-double",
       "blocks": {
@@ -173,141 +144,6 @@
         "padding_bottom": 60
       }
     },
-    "section_collection_RD84YL": {
-      "type": "section-collection",
-      "settings": {
-        "heading": "Acne Routines",
-        "description": "",
-        "layout": "inline",
-        "link_text": "Shop Acne Routines",
-        "link_url": "shopify:\/\/collections\/level-1-acne-care",
-        "button_type": "btn--primary",
-        "button_size": "btn--small",
-        "button_style": "btn--text",
-        "show_arrow": false,
-        "featured_collection": "skin-care-system",
-        "layout_desktop": "grid",
-        "grid": 3,
-        "rows": 3,
-        "width": "wrapper--full-padded",
-        "layout_mobile": "1",
-        "bg_color": "#f2eeea",
-        "color": "#000000",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
-    "tabs": {
-      "type": "section-tab-collections",
-      "blocks": {
-        "tabs-0": {
-          "type": "collection",
-          "settings": {
-            "title": "Skincare",
-            "featured_collection": "skin-care-system",
-            "show_image": false,
-            "align_with_product_images": false,
-            "overlay_opacity": 0,
-            "overlay_color": "#000000",
-            "description": "",
-            "color": "#ffffff",
-            "link_text": "View products",
-            "link": "",
-            "button_type": "btn--white",
-            "button_size": "",
-            "button_style": "btn--outline",
-            "show_arrow": false
-          }
-        },
-        "tabs-1": {
-          "type": "collection",
-          "settings": {
-            "title": "Acne Care",
-            "featured_collection": "level-1-acne-care",
-            "show_image": false,
-            "align_with_product_images": false,
-            "overlay_opacity": 0,
-            "overlay_color": "#000000",
-            "description": "",
-            "color": "#ffffff",
-            "link_text": "View products",
-            "link": "",
-            "button_type": "btn--white",
-            "button_size": "",
-            "button_style": "btn--outline",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "tabs-0",
-        "tabs-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "Healthy Skin? We Got This.",
-        "text": "<p>Our systems are built to keep you handsome with an easy and simple routine.<\/p>",
-        "layout": "inline",
-        "show_product_count": false,
-        "layout_desktop": "slider",
-        "layout_mobile": "2",
-        "product_limit": 6,
-        "grid": 3,
-        "rows": 2,
-        "bg_color": "#f2eeea",
-        "color": "",
-        "padding_top": 60,
-        "padding_bottom": 80
-      }
-    },
-    "logos": {
-      "type": "section-press-logos",
-      "blocks": {
-        "logos-0": {
-          "type": "logo-item",
-          "settings": {
-            "logo_width": 100,
-            "link": "",
-            "description": "<p>Include a brief quote from a brand that loves your products<\/p>",
-            "heading_size": 6
-          }
-        },
-        "logos-1": {
-          "type": "logo-item",
-          "settings": {
-            "logo_width": 100,
-            "link": "",
-            "description": "<p>Include a brief quote from a brand that loves your products<\/p>",
-            "heading_size": 6
-          }
-        },
-        "logos-2": {
-          "type": "logo-item",
-          "settings": {
-            "logo_width": 100,
-            "link": "",
-            "description": "<p>Include a brief quote from a brand that loves your products<\/p>",
-            "heading_size": 6
-          }
-        }
-      },
-      "block_order": [
-        "logos-0",
-        "logos-1",
-        "logos-2"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "Press",
-        "enable_heading_slider": true,
-        "text_style": "font-body",
-        "logo_opacity": 60,
-        "bg_color": "#ffffff",
-        "color": "",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
     "section_hero_iEX3nG": {
       "type": "section-hero",
       "blocks": {
@@ -329,8 +165,8 @@
         "button_imf4CU": {
           "type": "button",
           "settings": {
-            "link_text": "The Science",
-            "link": "",
+            "link_text": "Learn More",
+            "link": "shopify:\/\/pages\/proof-lp",
             "button_type": "btn--primary",
             "button_size": "btn--large",
             "button_style": "btn--outline",
@@ -359,28 +195,28 @@
         "color": "#212121"
       }
     },
-    "section_collection_pBCxNQ": {
+    "section_collection_RD84YL": {
       "type": "section-collection",
       "settings": {
-        "heading": "Acne Care Routines",
-        "description": "<p>Our routines are built to reduce and battle severe acne. <\/p>",
+        "heading": "Acne Routines",
+        "description": "",
         "layout": "inline",
-        "link_text": "Shop All Routines",
-        "link_url": "shopify:\/\/collections\/all-routines-1",
+        "link_text": "Shop Acne Routines",
+        "link_url": "shopify:\/\/collections\/level-1-acne-care",
         "button_type": "btn--primary",
         "button_size": "btn--small",
         "button_style": "btn--text",
         "show_arrow": false,
         "featured_collection": "level-1-acne-care",
-        "layout_desktop": "slider",
-        "grid": 4,
-        "rows": 3,
-        "width": "wrapper",
+        "layout_desktop": "grid",
+        "grid": 2,
+        "rows": 1,
+        "width": "wrapper--full-padded",
         "layout_mobile": "1",
         "bg_color": "#f2eeea",
-        "color": "",
+        "color": "#000000",
         "padding_top": 60,
-        "padding_bottom": 50
+        "padding_bottom": 60
       }
     },
     "section_before_after_hzKE7H": {
@@ -398,11 +234,11 @@
         "image_1": "shopify:\/\/shop_images\/96B_Harun-Asceric_before.png",
         "image_2": "shopify:\/\/shop_images\/96B_Harun-Asceric_after.png",
         "aspect_ratio": 1,
-        "width": "wrapper",
+        "width": "wrapper--full-padded",
         "bg_color": "#ffffff",
         "color": "#000000",
-        "padding_top": 60,
-        "padding_bottom": 60
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "section_text_row_YFhUxM": {
@@ -497,7 +333,7 @@
       ],
       "settings": {
         "title": "Our Difference",
-        "heading_size": 5,
+        "heading_size": 9,
         "layout": "slider",
         "grid": 3,
         "align_heading": "text-center",
@@ -527,10 +363,10 @@
         "title": "Aaron Marino",
         "heading_size": 8,
         "description": "Talks facts about taking care of your skin.",
-        "text_size": 3,
+        "text_size": 4,
         "flex_align": "align--bottom-left",
         "bg_color": "",
-        "color": "#ffffff",
+        "color": "#212121",
         "link_text": "Watch How-To's",
         "link": "",
         "button_type": "btn--primary",
@@ -618,7 +454,7 @@
         "mobile_heading_size": 5,
         "text_align_desktop": "text-left",
         "text_align_mobile": "text-left--mobile",
-        "width": "wrapper",
+        "width": "wrapper--full-padded",
         "bg_color": "#fafafa",
         "color": "",
         "padding_top": 32,
@@ -628,7 +464,7 @@
     "section_collection_knnzf8": {
       "type": "section-collection",
       "settings": {
-        "heading": "Best Sellers",
+        "heading": "Our Bestsellers",
         "description": "",
         "layout": "inline",
         "link_text": "Shop Now",
@@ -649,8 +485,143 @@
         "padding_bottom": 60
       }
     },
+    "section_double_jKb3k6": {
+      "type": "section-double",
+      "blocks": {
+        "video_4F8xWm": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/cropped_Comp1-ezgif.com-crop-video.mp4",
+            "video_width": 100,
+            "custom_aspect_ratio": true,
+            "aspect_ratio": 0.5,
+            "padding_bottom": 16
+          }
+        },
+        "subheading_X3RnP8": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Benefits",
+            "text_size": 2,
+            "padding_bottom": 20
+          }
+        },
+        "heading_7d9jEX": {
+          "type": "heading",
+          "settings": {
+            "title": "Routine Quiz",
+            "text_size": 9,
+            "padding_bottom": 16
+          }
+        },
+        "text_aFT9TL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our high-quality skin care systems work to maximize results and eliminate guesswork for men of all skin types.<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_FF8pXr": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Get Started",
+            "button_url": "shopify:\/\/pages\/find-my-routine",
+            "button_type": "btn--primary",
+            "button_size": "btn--large",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "video_4F8xWm",
+        "subheading_X3RnP8",
+        "heading_7d9jEX",
+        "text_aFT9TL",
+        "buttons_FF8pXr"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full-padded",
+        "image_1": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png",
+        "image_width": "one-half",
+        "text_alignment": "text-center",
+        "reverse_blocks": false,
+        "bg_color": "#ffffff",
+        "color": "#212121",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_reviews_JUyCGF": {
+      "type": "section-reviews",
+      "blocks": {
+        "review_Hd8ftr": {
+          "type": "review",
+          "settings": {
+            "title": "Jeremy Usborne",
+            "subheading": "Industry Expert",
+            "review_text": "Use this text to showcase a review from one of your customers. A great review is honest and speaks to the concerns of your customers.",
+            "review_url": ""
+          }
+        },
+        "review_hW9zPx": {
+          "type": "review",
+          "settings": {
+            "title": "Willy Bridge",
+            "subheading": "Industry Expert",
+            "review_text": "Use this text to showcase a review from one of your customers. A great review is honest and speaks to the concerns of your customers.",
+            "review_url": ""
+          }
+        },
+        "review_3Gyzn7": {
+          "type": "review",
+          "settings": {
+            "title": "Kenneth Powell",
+            "subheading": "Industry Expert",
+            "review_text": "Use this text to showcase a review from one of your customers. A great review is honest and speaks to the concerns of your customers.",
+            "review_url": ""
+          }
+        },
+        "review_YkB6pw": {
+          "type": "review",
+          "settings": {
+            "title": "Example Customer",
+            "subheading": "Industry Expert",
+            "review_text": "Use this text to showcase a review from one of your customers. A great review is honest and speaks to the concerns of your customers.",
+            "review_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "review_Hd8ftr",
+        "review_hW9zPx",
+        "review_3Gyzn7",
+        "review_YkB6pw"
+      ],
+      "settings": {
+        "show_featured_image": false,
+        "image_aspect_ratio": 1.3,
+        "show_quotation_marks": false,
+        "text_align": "text-center",
+        "text_size": 4,
+        "bg_color": "#f0f0f0",
+        "color": "",
+        "card_bg_color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
     "17106130050f3cd085": {
       "type": "apps",
+      "disabled": true,
       "settings": {
         "include_margins": false
       }
@@ -663,13 +634,13 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png",
             "subheading": "Level 1",
-            "subheading_size": 2,
+            "subheading_size": 3,
             "title": "Essential",
-            "heading_size": 6,
+            "heading_size": 9,
             "text": "<p>Smooth, hydrate and energize<\/p>",
-            "text_size": 3,
+            "text_size": 4,
             "text_style": "font-body",
-            "button_text": "Shop Level 1",
+            "button_text": "Shop Level 1 Skincare",
             "button_url": "shopify:\/\/products\/level-1-essential-routine",
             "button_type": "btn--secondary",
             "button_size": "btn--small",
@@ -682,13 +653,13 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO3.png",
             "subheading": "Level 2",
-            "subheading_size": 2,
+            "subheading_size": 3,
             "title": "Advanced",
-            "heading_size": 6,
+            "heading_size": 9,
             "text": "<p>Fight off crow’s feet and dark circles<\/p>",
-            "text_size": 3,
+            "text_size": 4,
             "text_style": "font-body",
-            "button_text": "Shop Level 2",
+            "button_text": "Shop Level 2 Skincare",
             "button_url": "shopify:\/\/products\/level-2-advanced-routine",
             "button_type": "btn--secondary",
             "button_size": "btn--small",
@@ -701,13 +672,13 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/IMG_5261_VSCO.png",
             "subheading": "Level 3",
-            "subheading_size": 2,
+            "subheading_size": 3,
             "title": "Anti-Aging",
-            "heading_size": 6,
+            "heading_size": 9,
             "text": "<p>Fight crow's feet, dark circles and reduce fine lines<\/p>",
-            "text_size": 3,
+            "text_size": 4,
             "text_style": "font-body",
-            "button_text": "Shop Level 3",
+            "button_text": "Shop Level 3 Skincare",
             "button_url": "shopify:\/\/products\/the-collection-snowboard-liquid",
             "button_type": "btn--secondary",
             "button_size": "btn--small",
@@ -745,14 +716,14 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/L1_Acne.png",
             "subheading": "Level 1",
-            "subheading_size": 1,
+            "subheading_size": 3,
             "title": "Acne Routine",
-            "heading_size": 6,
+            "heading_size": 9,
             "text": "<p>Reduce redness and swelling<\/p>",
-            "text_size": 3,
+            "text_size": 4,
             "text_style": "font-body",
             "button_text": "Shop Level 1 Acne",
-            "button_url": "",
+            "button_url": "shopify:\/\/products\/level-1-acne-routine-1",
             "button_type": "btn--primary",
             "button_size": "btn--small",
             "button_style": "btn--text",
@@ -764,14 +735,14 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/342037289_571107381668427_1108690022829729651_n.jpg",
             "subheading": "Level 2",
-            "subheading_size": 1,
+            "subheading_size": 3,
             "title": "Advanced Acne Routine",
-            "heading_size": 6,
+            "heading_size": 9,
             "text": "<p>Extra daily moisturizing to battle severe acne<\/p>",
-            "text_size": 3,
+            "text_size": 4,
             "text_style": "font-body",
             "button_text": "Shop Level 2 ACNE",
-            "button_url": "",
+            "button_url": "shopify:\/\/products\/level-2-advanced-acne-routine-1",
             "button_type": "btn--primary",
             "button_size": "btn--large",
             "button_style": "btn--text",
@@ -846,6 +817,81 @@
         "padding_bottom": 78
       }
     },
+    "section_double_yp4ajU": {
+      "type": "section-double",
+      "blocks": {
+        "video_TLPcnG": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/cropped_Comp1-ezgif.com-crop-video.mp4",
+            "video_width": 100,
+            "custom_aspect_ratio": true,
+            "aspect_ratio": 0.5,
+            "padding_bottom": 16
+          }
+        },
+        "subheading_nkHQnL": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Benefits",
+            "text_size": 2,
+            "padding_bottom": 20
+          }
+        },
+        "heading_7GyTji": {
+          "type": "heading",
+          "settings": {
+            "title": "Every Guy Deserves Amazing Skin",
+            "text_size": 9,
+            "padding_bottom": 16
+          }
+        },
+        "text_CKiGjj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our high-quality skin care systems work to maximize results and eliminate guesswork for men of all skin types.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_Qik6Rk": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Get The App",
+            "button_url": "shopify:\/\/pages\/find-my-routine",
+            "button_type": "btn--secondary",
+            "button_size": "btn--large",
+            "button_style": "btn--outline",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "video_TLPcnG",
+        "subheading_nkHQnL",
+        "heading_7GyTji",
+        "text_CKiGjj",
+        "buttons_Qik6Rk"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full-padded",
+        "image_1": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png",
+        "image_width": "one-half",
+        "text_alignment": "text-center",
+        "reverse_blocks": false,
+        "bg_color": "#ffffff",
+        "color": "#212121",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_hero_TK8fbB": {
       "type": "section-hero",
       "blocks": {
@@ -881,6 +927,7 @@
         "text_Dji9xJ",
         "button_YEUj3N"
       ],
+      "disabled": true,
       "settings": {
         "height": "screen-height-two-thirds",
         "width": "wrapper--full",
@@ -899,23 +946,22 @@
   },
   "order": [
     "section_slideshow_tYUFtn",
-    "section_video_x47Nqi",
     "section_double_pyR9aL",
     "section_collection_JXEkNP",
-    "section_collection_RD84YL",
-    "tabs",
-    "logos",
     "section_hero_iEX3nG",
-    "section_collection_pBCxNQ",
+    "section_collection_RD84YL",
     "section_before_after_hzKE7H",
     "section_text_row_YFhUxM",
     "section_video_NGgczi",
     "section_text_with_products_h3WNiQ",
     "section_collection_knnzf8",
+    "section_double_jKb3k6",
+    "section_reviews_JUyCGF",
     "17106130050f3cd085",
     "section_timeline_cDJGGc",
     "section_timeline_YTB9mM",
     "section_rich_text_mYKMrn",
+    "section_double_yp4ajU",
     "section_hero_TK8fbB"
   ]
 }
