@@ -392,7 +392,7 @@
       "settings": {
         "heading": "Included in this System",
         "description": "",
-        "layout": "center",
+        "layout": "inline",
         "link_text": "Shop Now",
         "link_url": "",
         "button_type": "btn--primary",
