@@ -45,6 +45,19 @@
             "padding_bottom": 16
           }
         },
+        "inventory_countdown_MLNCDH": {
+          "type": "inventory_countdown",
+          "settings": {
+            "show_notice": "always",
+            "max_inventory": 10,
+            "hide_inventory_counter": false,
+            "icon_size": 20,
+            "in_stock_color": "#56AD6A",
+            "low_stock_color": "#f79554",
+            "out_of_stock_color": "#721C24",
+            "padding_bottom": 16
+          }
+        },
         "buttons": {
           "type": "buttons",
           "settings": {
@@ -65,11 +78,11 @@
           "type": "tab_richtext",
           "settings": {
             "show_read_more": true,
-            "style": "tabs",
-            "title_1": "Tab",
-            "raw_content_1": "<p>This content type will accept <strong>rich text<\/strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.<\/p>",
-            "title_2": "Info",
-            "raw_content_2": "<p>You can use product metafields to assign content to this tab that is unique to an individual product.  Use tabs to highlight unique features, sizing information, or other sales information.<\/p>",
+            "style": "accordions",
+            "title_1": "",
+            "raw_content_1": "",
+            "title_2": "",
+            "raw_content_2": "",
             "title_3": "",
             "raw_content_3": "",
             "title_4": "",
@@ -82,7 +95,7 @@
         "divider_1": {
           "type": "divider",
           "settings": {
-            "show_line": true,
+            "show_line": false,
             "padding_bottom": 16
           }
         },
@@ -167,6 +180,7 @@
         "recharge_subscriptions_subscription_widget_xPdPVc",
         "price",
         "variants",
+        "inventory_countdown_MLNCDH",
         "buttons",
         "pickup",
         "tabs",
@@ -185,7 +199,9 @@
         ".rc-template__radio {display: flex; flex-direction: column; gap: 8px;}",
         ".rc-selling-plans {display: none;}",
         ".bi-star::before {height: 30px; width: 20px;}",
-        ".rc-widget label {border-radius: 300px;}"
+        ".rc-widget label {border-radius: 300px;}",
+        ".accordion__title {font-weight: bold;}",
+        ".accordion {border: none;}"
       ],
       "settings": {
         "product_sticky_enable": true,
