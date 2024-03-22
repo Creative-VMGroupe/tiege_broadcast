@@ -454,11 +454,11 @@
         "image_499cHD": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Wash_0fce57fe-0aa5-41e4-8ba0-ac09af75851a.png",
+            "image": "shopify:\/\/shop_images\/AM-1.png",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
-            "title": "AM Moisturize",
+            "title": "AM",
             "heading_size": 6,
             "text": "<p>Morning-time moisturizer.<\/p>",
             "text_size": 4,
@@ -473,7 +473,7 @@
         "image_HVJjGk": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO3.png",
+            "image": "shopify:\/\/shop_images\/PM-1.png",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
@@ -497,7 +497,7 @@
         "image_HVJjGk"
       ],
       "settings": {
-        "title": "How To",
+        "title": "Included in this System",
         "heading_size": 9,
         "layout": "grid",
         "grid": 2,
