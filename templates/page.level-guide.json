@@ -3,10 +3,115 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "subheading": "",
+        "subheading_size": 3,
+        "show_title": false,
+        "heading_size": 8,
+        "show_content": true,
+        "text_size": 4,
+        "align_text": "text-left",
+        "width": "wrapper",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "section_hero_kdbpRc": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_EJMnMQ": {
+          "type": "heading",
+          "settings": {
+            "title": "Level Guide",
+            "heading_size": 9
+          }
+        },
+        "text_Dihbfe": {
+          "type": "text",
+          "settings": {
+            "description": "Tell your brand's story through images.",
+            "text_size": 5,
+            "text_style": "font-body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EJMnMQ",
+        "text_Dihbfe"
+      ],
+      "settings": {
+        "height": "screen-height-three-quarters",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-5_f346bb2b-2847-4db7-8541-f13e44173c66.webp",
+        "link": "",
+        "mobile_height": "screen-height-one-half--mobile",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "overlay_opacity": 0,
+        "overlay_color": "#000",
+        "show_overlay_text": false,
+        "bg_color": "",
+        "color": "#FFFFFF"
+      }
+    },
+    "section_double_cjpW8U": {
+      "type": "section-double",
+      "blocks": {
+        "heading_wijXKk": {
+          "type": "heading",
+          "settings": {
+            "title": "Level 1: Essential Routine",
+            "text_size": 9,
+            "padding_bottom": 16
+          }
+        },
+        "text_zbeqbn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_UFHAD6": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_wijXKk",
+        "text_zbeqbn",
+        "buttons_UFHAD6"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/Skin_Level1-1x1.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "reverse_blocks": false,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "section_hero_kdbpRc",
+    "section_double_cjpW8U"
   ]
 }
