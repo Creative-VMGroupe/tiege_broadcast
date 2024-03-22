@@ -100,7 +100,7 @@
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/Skin_Level1-1x1.jpg",
         "image_width": "one-half",
-        "text_alignment": "text-left",
+        "text_alignment": "text-center",
         "reverse_blocks": false,
         "bg_color": "",
         "color": "",
