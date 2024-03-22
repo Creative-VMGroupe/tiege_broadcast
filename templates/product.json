@@ -44,7 +44,7 @@
             "title": "Membership Benefits",
             "text": "<p>Additonal information about the product.<\/p>",
             "page": "",
-            "icon_name": "icon-award",
+            "icon_name": "icon-trophy",
             "icon_size": 20,
             "icon_color": "#545454",
             "padding_bottom": 16
@@ -53,7 +53,7 @@
         "inventory_countdown_UfpQXK": {
           "type": "inventory_countdown",
           "settings": {
-            "show_notice": "low-inventory",
+            "show_notice": "always",
             "max_inventory": 10,
             "hide_inventory_counter": true,
             "icon_size": 20,
@@ -66,7 +66,7 @@
         "buttons": {
           "type": "buttons",
           "settings": {
-            "show_quantity": true,
+            "show_quantity": false,
             "show_payment_button": true,
             "show_gift_card_recipient": false,
             "padding_bottom": 32
@@ -109,11 +109,11 @@
           "type": "tab_richtext",
           "settings": {
             "show_read_more": true,
-            "style": "tabs",
-            "title_1": "Tab",
-            "raw_content_1": "<p>This content type will accept <strong>rich text<\/strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.<\/p>",
-            "title_2": "Info",
-            "raw_content_2": "<p>You can use product metafields to assign content to this tab that is unique to an individual product.  Use tabs to highlight unique features, sizing information, or other sales information.<\/p>",
+            "style": "accordions",
+            "title_1": "Ingredients",
+            "raw_content_1": "<p>This is a single product description.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <\/p>",
+            "title_2": "",
+            "raw_content_2": "",
             "title_3": "",
             "raw_content_3": "",
             "title_4": "",
@@ -130,6 +130,14 @@
             "padding_bottom": 16
           }
         },
+        "complementary_products_C7V6rg": {
+          "type": "complementary-products",
+          "settings": {
+            "complementary_limit": 3,
+            "bg_color": "",
+            "padding_bottom": 16
+          }
+        },
         "upsell": {
           "type": "upsell",
           "disabled": true,
@@ -138,14 +146,6 @@
             "upsell_product_list": [
 
             ],
-            "bg_color": "",
-            "padding_bottom": 16
-          }
-        },
-        "complementary_products_C7V6rg": {
-          "type": "complementary-products",
-          "settings": {
-            "complementary_limit": 3,
             "bg_color": "",
             "padding_bottom": 16
           }
@@ -164,8 +164,8 @@
         "icon_2",
         "tab_richtext_nDcaW6",
         "divider_1",
-        "upsell",
-        "complementary_products_C7V6rg"
+        "complementary_products_C7V6rg",
+        "upsell"
       ],
       "custom_css": [
         ".rc-subscription-details {display: none;}",
@@ -179,7 +179,7 @@
       ],
       "settings": {
         "product_sticky_enable": true,
-        "image_layout": "stacked",
+        "image_layout": "grid-1",
         "image_size": "stretch",
         "show_cart_bar": true,
         "enable_zoom": true,
