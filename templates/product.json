@@ -473,6 +473,108 @@
         "padding_bottom": 50,
         "layout_mobile": "slider"
       }
+    },
+    "section_columns_gjgyTb": {
+      "type": "section-columns",
+      "blocks": {
+        "image_HbzXU6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HARRYS_FW_PROD_0279_1.jpg",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 1: Wash",
+            "heading_size": 6,
+            "text": "<p>Use Tiege Hanley's WASH facial cleanser. Wet your face, squeeze out the size of a nickel (yes, the coin) into your palm, rub it all over your wet face for about 10 seconds.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_w7wXjX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HARRYS_FW_PORT_0529.jpg",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 2: Scrub",
+            "heading_size": 6,
+            "text": "<p>Why? Because your face is dirty.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_nBXbVf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 3:  AM Moisturize",
+            "heading_size": 6,
+            "text": "<p>Use Tiege Hanley's WASH facial cleanser. Wet your face, squeeze out the size of a nickel (yes, the coin) into your palm, rub it all over your wet face for about 10 seconds.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_BKCxza": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PM-1.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "PM",
+            "heading_size": 6,
+            "text": "<p>Night-time moisturizer.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "image_HbzXU6",
+        "image_w7wXjX",
+        "image_nBXbVf",
+        "image_BKCxza"
+      ],
+      "settings": {
+        "title": "How To",
+        "heading_size": 9,
+        "layout": "grid",
+        "grid": 2,
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "bg_color": "#ffffff",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "layout_mobile": "slider"
+      }
     }
   },
   "order": [
@@ -481,6 +583,7 @@
     "section_double_Pf9XFr",
     "section_double_slider_xjfT8n",
     "section_collection_m9yHwy",
-    "section_columns_kqNxAq"
+    "section_columns_kqNxAq",
+    "section_columns_gjgyTb"
   ]
 }
