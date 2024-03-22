@@ -222,7 +222,7 @@
         "title": "",
         "heading_size": 9,
         "layout": "grid",
-        "grid": 2,
+        "grid": 4,
         "align_heading": "text-left",
         "align_text": "text-left",
         "align_columns": "flex-align-top",
