@@ -136,6 +136,14 @@
             "padding_bottom": 16
           }
         },
+        "complementary_products_C7V6rg": {
+          "type": "complementary-products",
+          "settings": {
+            "complementary_limit": 3,
+            "bg_color": "",
+            "padding_bottom": 16
+          }
+        },
         "upsell": {
           "type": "upsell",
           "disabled": true,
@@ -144,14 +152,6 @@
             "upsell_product_list": [
 
             ],
-            "bg_color": "",
-            "padding_bottom": 16
-          }
-        },
-        "complementary_products_C7V6rg": {
-          "type": "complementary-products",
-          "settings": {
-            "complementary_limit": 3,
             "bg_color": "",
             "padding_bottom": 16
           }
@@ -193,8 +193,8 @@
         "icon_2",
         "tabs",
         "divider_1",
-        "upsell",
         "complementary_products_C7V6rg",
+        "upsell",
         "popup_iLQPxV",
         "badges_NKBpVe"
       ],
