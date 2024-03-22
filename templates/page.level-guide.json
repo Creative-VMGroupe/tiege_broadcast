@@ -131,12 +131,115 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "section_columns_8mpFhV": {
+      "type": "section-columns",
+      "blocks": {
+        "image_6CqHfH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 1: Single Product",
+            "heading_size": 6,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_wzA6hz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 2: Single Product",
+            "heading_size": 6,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_Aejbfx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 3: Single Product",
+            "heading_size": 6,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_VHKMEc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 4: Single Product",
+            "heading_size": 6,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "image_6CqHfH",
+        "image_wzA6hz",
+        "image_Aejbfx",
+        "image_VHKMEc"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": 9,
+        "layout": "grid",
+        "grid": 2,
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "bg_color": "#fafafa",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "layout_mobile": "slider"
+      }
     }
   },
   "order": [
     "main",
     "section_hero_kdbpRc",
     "section_rich_text_MfyXMb",
-    "section_double_cjpW8U"
+    "section_double_cjpW8U",
+    "section_columns_8mpFhV"
   ]
 }
