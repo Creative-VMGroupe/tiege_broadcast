@@ -288,11 +288,71 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "section_double_slider_xjfT8n": {
+      "type": "section-double-slider",
+      "blocks": {
+        "text_slide_erwHb6": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "Introducing",
+            "subheading_size": 4,
+            "title": "Willow Bark Extract",
+            "heading_size": 9,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        },
+        "text_slide_hiLUWD": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "Introducing",
+            "subheading_size": 4,
+            "title": "Willow Bark Extract",
+            "heading_size": 9,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "text_slide_erwHb6",
+        "text_slide_hiLUWD"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/uZr3qZvfRNuNZb2xaQjw.png",
+        "image_2": "shopify:\/\/shop_images\/rosemary-v1608581888105.png",
+        "image_width": "one-half",
+        "text_alignment": "text-center",
+        "bg_color": "#f0f0f0",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "main",
     "related",
-    "section_double_Pf9XFr"
+    "section_double_Pf9XFr",
+    "section_double_slider_xjfT8n"
   ]
 }
