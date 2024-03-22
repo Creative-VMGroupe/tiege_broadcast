@@ -1,1 +1,152 @@
-{"sections":{"main":{"type":"article","blocks":{"related-products":{"type":"related","settings":{}},"recent-articles":{"type":"recent","settings":{}}},"block_order":["related-products","recent-articles"],"settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "article",
+      "blocks": {
+        "related-products": {
+          "type": "related",
+          "disabled": true,
+          "settings": {
+            "title": "Related products"
+          }
+        },
+        "recent-articles": {
+          "type": "recent",
+          "disabled": true,
+          "settings": {
+            "title": "Recent articles"
+          }
+        }
+      },
+      "block_order": [
+        "related-products",
+        "recent-articles"
+      ],
+      "settings": {
+        "show_image": true,
+        "height": "screen-height-one-third",
+        "mobile_height": "screen-height-one-third--mobile",
+        "bg_color": "#f7f9fa",
+        "show_date": true,
+        "show_author": true,
+        "tags": false,
+        "show_sharing": false,
+        "arrows": false,
+        "padding_top": 0,
+        "padding_bottom": 50
+      }
+    },
+    "section_double_BCKiMQ": {
+      "type": "section-double",
+      "blocks": {
+        "subheading_WkAyha": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Introducing",
+            "text_size": 3,
+            "padding_bottom": 16
+          }
+        },
+        "heading_cqJE9M": {
+          "type": "heading",
+          "settings": {
+            "title": "Image with text",
+            "text_size": 8,
+            "padding_bottom": 16
+          }
+        },
+        "text_dPC6tc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_mt4zNx": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_WkAyha",
+        "heading_cqJE9M",
+        "text_dPC6tc",
+        "buttons_mt4zNx"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-third--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/uZr3qZvfRNuNZb2xaQjw.png",
+        "image_2": "shopify:\/\/shop_images\/eucalyptus-v1608581874819.png",
+        "image_width": "three-quarters",
+        "text_alignment": "text-center",
+        "reverse_blocks": false,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_rich_text_GDUWCk": {
+      "type": "section-rich-text",
+      "blocks": {
+        "text_6E9q6Q": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "heading_Um4CpX": {
+          "type": "heading",
+          "settings": {
+            "title": "Lorem Ipsum",
+            "text_size": 9,
+            "padding_bottom": 16
+          }
+        },
+        "text_GtbyyM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "text_6E9q6Q",
+        "heading_Um4CpX",
+        "text_GtbyyM"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-left",
+        "bg_color": "#f7f9fa",
+        "color": "",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_double_BCKiMQ",
+    "section_rich_text_GDUWCk"
+  ]
+}
