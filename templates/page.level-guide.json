@@ -220,7 +220,7 @@
       ],
       "settings": {
         "title": "Included in this System",
-        "heading_size": 9,
+        "heading_size": 6,
         "layout": "grid",
         "grid": 4,
         "align_heading": "text-left",
