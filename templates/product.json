@@ -347,12 +347,37 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "section_collection_m9yHwy": {
+      "type": "section-collection",
+      "settings": {
+        "heading": "Included in this System",
+        "description": "",
+        "layout": "inline",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "featured_collection": "best-sellers",
+        "layout_desktop": "grid",
+        "grid": 4,
+        "rows": 1,
+        "width": "wrapper--full-padded",
+        "layout_mobile": "slider",
+        "bg_color": "#f7f9fa",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
     }
   },
   "order": [
     "main",
     "related",
     "section_double_Pf9XFr",
-    "section_double_slider_xjfT8n"
+    "section_double_slider_xjfT8n",
+    "section_collection_m9yHwy"
   ]
 }
