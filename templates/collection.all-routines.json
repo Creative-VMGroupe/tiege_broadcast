@@ -1,0 +1,205 @@
+{
+  "sections": {
+    "hero": {
+      "type": "collection-image-with-title",
+      "settings": {
+        "show_title": true,
+        "show_description": true,
+        "flex_align": "align--middle-center",
+        "bg_color": "",
+        "color": "#ffffff",
+        "show_image": true,
+        "banner_layout": "overlay",
+        "height": "screen-height-one-third",
+        "mobile_height": "screen-height-one-half--mobile",
+        "overlay_opacity": 20,
+        "overlay_color": "#000000",
+        "show_overlay_text": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "subcollections": {
+      "type": "subcollections",
+      "settings": {
+        "subcollection_layout": "grid",
+        "subcollection_description": false,
+        "select_image": "collection",
+        "color": "#ffffff",
+        "bg_color": "",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "main": {
+      "type": "collection",
+      "blocks": {
+        "featured_image_kH7rEt": {
+          "type": "featured_image",
+          "settings": {
+            "featured_image": "shopify:\/\/shop_images\/Messy_Hands.jpg",
+            "position": 3,
+            "featured_heading": "Level Guide",
+            "heading_size": 9,
+            "featured_text": "",
+            "featured_button_text": "Learn more",
+            "featured_button_link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false,
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#222222",
+            "featured_overlay_opacity": 10
+          }
+        },
+        "featured_image_iwGEEb": {
+          "type": "featured_image",
+          "settings": {
+            "featured_image": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO2.jpg",
+            "position": 9,
+            "featured_heading": "Become a Member",
+            "heading_size": 9,
+            "featured_text": "",
+            "featured_button_text": "Learn more",
+            "featured_button_link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false,
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#222222",
+            "featured_overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "featured_image_kH7rEt",
+        "featured_image_iwGEEb"
+      ],
+      "settings": {
+        "enable_sort": true,
+        "enable_filters": true,
+        "filter_layout": "slide-out",
+        "collection_linklist": "",
+        "grid": 4,
+        "grid_mobile": "2",
+        "products_per_page": 24,
+        "border_color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_hero_xP4xGE": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_9rarWg": {
+          "type": "heading",
+          "settings": {
+            "title": "Find My Routine",
+            "heading_size": 6
+          }
+        },
+        "text_Mrehmh": {
+          "type": "text",
+          "settings": {
+            "description": "A quick guide you to your routine.",
+            "text_size": 3,
+            "text_style": "font-body"
+          }
+        },
+        "button_ePjEAK": {
+          "type": "button",
+          "settings": {
+            "link_text": "Guide Me",
+            "link": "shopify:\/\/pages\/find-my-routine",
+            "button_type": "btn--primary",
+            "button_size": "btn--large",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_9rarWg",
+        "text_Mrehmh",
+        "button_ePjEAK"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "screen-height-one-half",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/Mask_Group_3.png",
+        "link": "",
+        "mobile_height": "screen-height-one-half--mobile",
+        "flex_align_desktop": "align--bottom-left-desktop",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "overlay_opacity": 35,
+        "overlay_color": "#000000",
+        "show_overlay_text": false,
+        "bg_color": "",
+        "color": "#ffffff"
+      }
+    },
+    "section_double_Wz33Wb": {
+      "type": "section-double",
+      "blocks": {
+        "heading_eGeDat": {
+          "type": "heading",
+          "settings": {
+            "title": "Routine Quiz",
+            "text_size": 9,
+            "padding_bottom": 16
+          }
+        },
+        "text_pncrA8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_eEDTNk": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Get Started",
+            "button_url": "",
+            "button_type": "btn--secondary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_eGeDat",
+        "text_pncrA8",
+        "buttons_eEDTNk"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-one-third",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/Mask_Group_3.png",
+        "image_width": "one-half",
+        "text_alignment": "text-center",
+        "reverse_blocks": false,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "subcollections",
+    "main",
+    "section_hero_xP4xGE",
+    "section_double_Wz33Wb"
+  ]
+}
