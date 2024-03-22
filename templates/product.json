@@ -226,19 +226,19 @@
     "section_double_Pf9XFr": {
       "type": "section-double",
       "blocks": {
-        "subheading_G7RaGg": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Introducing",
-            "text_size": 3,
-            "padding_bottom": 16
-          }
-        },
         "heading_DzedxK": {
           "type": "heading",
           "settings": {
-            "title": "Image with text",
-            "text_size": 8,
+            "title": "Proof",
+            "text_size": 9,
+            "padding_bottom": 16
+          }
+        },
+        "subheading_G7RaGg": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "★★★★★★",
+            "text_size": 4,
             "padding_bottom": 16
           }
         },
@@ -256,19 +256,22 @@
           "settings": {
             "button_text": "Learn more",
             "button_url": "",
-            "button_type": "btn--primary",
+            "button_type": "btn--white",
             "button_size": "",
-            "button_style": "btn--solid",
+            "button_style": "btn--text",
             "show_arrow": false,
             "padding_bottom": 16
           }
         }
       },
       "block_order": [
-        "subheading_G7RaGg",
         "heading_DzedxK",
+        "subheading_G7RaGg",
         "text_Yh8JmM",
         "buttons_tJDcGw"
+      ],
+      "custom_css": [
+        ".hero__subheading {color: #00ad2d;}"
       ],
       "settings": {
         "layout": "",
