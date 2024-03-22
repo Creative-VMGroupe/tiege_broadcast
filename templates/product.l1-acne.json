@@ -688,6 +688,7 @@
       "block_order": [
         "trustreviews_reviews_widget_8YLWPV"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": false
       }
@@ -904,6 +905,53 @@
       "settings": {
         "include_margins": false
       }
+    },
+    "section_products_image_DX3WDd": {
+      "type": "section-products-image",
+      "blocks": {
+        "products_hHEFF8": {
+          "type": "products",
+          "settings": {
+            "product_list": [
+
+            ],
+            "layout_mobile": "slider"
+          }
+        },
+        "image_EJajMy": {
+          "type": "image",
+          "settings": {
+            "mobile_height": "screen-height-one-half--mobile",
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "show_overlay_text": false,
+            "title": "",
+            "heading_size": 7,
+            "description": "",
+            "text_size": 3,
+            "flex_align": "align--middle-center",
+            "bg_color": "",
+            "color": "#FFFFFF",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "products_hHEFF8",
+        "image_EJajMy"
+      ],
+      "settings": {
+        "width": "wrapper--full-padded",
+        "reverse_blocks": false,
+        "bg_color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
     }
   },
   "order": [
@@ -920,6 +968,7 @@
     "shipping",
     "related",
     "section_reviews_8Finzg",
-    "171061224373a1e0d4"
+    "171061224373a1e0d4",
+    "section_products_image_DX3WDd"
   ]
 }
