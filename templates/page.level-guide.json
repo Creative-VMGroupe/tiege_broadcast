@@ -55,6 +55,30 @@
         "color": "#FFFFFF"
       }
     },
+    "section_rich_text_MfyXMb": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_wVwX8p": {
+          "type": "heading",
+          "settings": {
+            "title": "Skincare Routine",
+            "text_size": 9,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_wVwX8p"
+      ],
+      "settings": {
+        "width": "wrapper--full-padded",
+        "align_text": "text-left",
+        "bg_color": "#f7f9fa",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
     "section_double_cjpW8U": {
       "type": "section-double",
       "blocks": {
@@ -80,7 +104,7 @@
           "settings": {
             "button_text": "Learn more",
             "button_url": "",
-            "button_type": "btn--primary",
+            "button_type": "btn--secondary",
             "button_size": "",
             "button_style": "btn--solid",
             "show_arrow": false,
@@ -102,7 +126,7 @@
         "image_width": "one-half",
         "text_alignment": "text-center",
         "reverse_blocks": false,
-        "bg_color": "",
+        "bg_color": "#f0f0f0",
         "color": "",
         "padding_top": 0,
         "padding_bottom": 0
@@ -112,6 +136,7 @@
   "order": [
     "main",
     "section_hero_kdbpRc",
+    "section_rich_text_MfyXMb",
     "section_double_cjpW8U"
   ]
 }
