@@ -634,7 +634,7 @@
       "settings": {
         "product_recently_heading": "Recently viewed",
         "product_recently_limit": 6,
-        "product_recently_minimum": 4,
+        "product_recently_minimum": 1,
         "bg_color": "",
         "color": "",
         "padding_top": 30,
