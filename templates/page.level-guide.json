@@ -881,19 +881,11 @@
     "section_double_GQW4FL": {
       "type": "section-double",
       "blocks": {
-        "subheading_cCyyiV": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Introducing",
-            "text_size": 3,
-            "padding_bottom": 16
-          }
-        },
         "heading_djBwzT": {
           "type": "heading",
           "settings": {
-            "title": "Image with text",
-            "text_size": 8,
+            "title": "Routine Quiz",
+            "text_size": 9,
             "padding_bottom": 16
           }
         },
@@ -909,9 +901,9 @@
         "buttons_bKjqwy": {
           "type": "buttons",
           "settings": {
-            "button_text": "Learn more",
+            "button_text": "Get Started",
             "button_url": "",
-            "button_type": "btn--primary",
+            "button_type": "btn--secondary",
             "button_size": "",
             "button_style": "btn--solid",
             "show_arrow": false,
@@ -920,7 +912,6 @@
         }
       },
       "block_order": [
-        "subheading_cCyyiV",
         "heading_djBwzT",
         "text_YAHLzt",
         "buttons_bKjqwy"
