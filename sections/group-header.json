@@ -1,1 +1,164 @@
-{"type":"header","name":"Header","sections":{"announcement":{"type":"announcement","blocks":{"text_eMqhLd":{"type":"text","settings":{"text":"<p>New customers save 10% with code <strong>GET10<\/strong><\/p>","target_url_enabled":false,"target_url":"","target_referrer_enabled":true,"target_referrer":"","target_device_enabled":false,"target_device":"mobile"}}},"block_order":["text_eMqhLd"],"settings":{"show_border":false,"layout":"marquee","slider_speed":7,"text_alignment":"center","show_arrows":false,"marquee_speed":100,"message_spacing":10,"text_size":2,"bg_color":"#000000","color":"#f7f9fa"}},"header":{"type":"header","blocks":{"toolbar":{"type":"toolbar","disabled":true,"settings":{"text":"<p>Uncomplicated Skincare for Men<\/p>","menu":"","show_border":false,"border_opacity":50,"show_social_links":true,"show_gift_card":true,"show_locale_selector":true,"show_country_selector":true,"show_country_name":false,"show_country_flag":true,"bg_color":"#212121","color":""}},"image_gVrRcK":{"type":"image","settings":{"position":"1","image":"shopify:\/\/shop_images\/Skin_Level1-1x1_b459dbfa-e83b-4805-a2a3-c9480df2a8d8.jpg","aspect_ratio":0.8,"wide_image":true,"overlay_opacity":0,"overlay_color":"#000000","title":"Skincare","link_text":"3 sets to choose from","link":"shopify:\/\/collections\/skin-care-system","text_color":""}},"image_E8Dwp3":{"type":"image","settings":{"position":"1","image":"shopify:\/\/shop_images\/Acne_Level1_1x1_84ae05ad-64c8-43f1-b795-5b37c09ffa13.jpg","aspect_ratio":0.8,"wide_image":true,"overlay_opacity":0,"overlay_color":"#000000","title":"Acne Care","link_text":"2 sets to choose from","link":"shopify:\/\/collections\/level-1-acne-care","text_color":""}},"image_Kg8ziG":{"type":"image","settings":{"position":"2","image":"shopify:\/\/shop_images\/Tiege_Hanley_BarSoap.jpg","aspect_ratio":0.8,"wide_image":true,"overlay_opacity":0,"overlay_color":"#000000","title":"","link_text":"","link":"","text_color":""}},"image_WYFAXy":{"type":"image","settings":{"position":"2","image":"shopify:\/\/shop_images\/Snapinsta.app_337156675_1554687731680146_2432232004487884860_n_1080.jpg","aspect_ratio":0.8,"wide_image":true,"overlay_opacity":0,"overlay_color":"#000","title":"Become a Member","link_text":"Autoship & Save 24%","link":"","text_color":""}}},"block_order":["toolbar","image_gVrRcK","image_E8Dwp3","image_Kg8ziG","image_WYFAXy"],"settings":{"header_sticky":true,"header_style":"logo_center_menu_left","show_separator_line":false,"separator_opacity":50,"show_icons":true,"icon_as_circle":true,"cart_icon_family":"bag","logo":"shopify:\/\/shop_images\/Tiege_Logo_5d4d69c5-75b2-4158-a3a3-1a8604461820.png","logo_max_limit":100,"logo_max_limit_mobile":80,"main_menu_linklist":"main-menu","mobile_menu_linklist":"main-menu","enable_search":true,"show_social_icons":false,"show_locale_selector":true,"show_country_selector":true,"show_country_name":false,"show_country_flag":false,"highlight_item":"Sale","highlight_item_color":"#00ad2d","transparent_home":true,"transparent_product_page":true,"transparent_collection":true,"transparent_article":true,"transparent_page":true,"transparent_logo":"shopify:\/\/shop_images\/Tiege_Logo_White_c5ce641d-cb23-479c-a8df-5f70ae0695a5.png","secondary_menu_linklist":"","tertiary_menu_linklist":"","padding_top":15,"padding_bottom":15}}},"order":["announcement","header"]}
+{
+  "type": "header",
+  "name": "Header",
+  "sections": {
+    "announcement": {
+      "type": "announcement",
+      "blocks": {
+        "text_eMqhLd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>New customers save 10% with code <strong>GET10<\/strong><\/p>",
+            "target_url_enabled": false,
+            "target_url": "",
+            "target_referrer_enabled": true,
+            "target_referrer": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "text_eMqhLd"
+      ],
+      "settings": {
+        "show_border": false,
+        "layout": "marquee",
+        "slider_speed": 7,
+        "text_alignment": "center",
+        "show_arrows": false,
+        "marquee_speed": 100,
+        "message_spacing": 10,
+        "text_size": 2,
+        "bg_color": "#000000",
+        "color": "#f7f9fa"
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "toolbar": {
+          "type": "toolbar",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Uncomplicated Skincare for Men<\/p>",
+            "menu": "",
+            "show_border": false,
+            "border_opacity": 50,
+            "show_social_links": true,
+            "show_gift_card": true,
+            "show_locale_selector": true,
+            "show_country_selector": true,
+            "show_country_name": false,
+            "show_country_flag": true,
+            "bg_color": "#212121",
+            "color": ""
+          }
+        },
+        "image_gVrRcK": {
+          "type": "image",
+          "settings": {
+            "position": "1",
+            "image": "shopify:\/\/shop_images\/Skin_Level1-1x1_b459dbfa-e83b-4805-a2a3-c9480df2a8d8.jpg",
+            "aspect_ratio": 0.8,
+            "wide_image": true,
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "title": "Skincare",
+            "link_text": "3 sets to choose from",
+            "link": "shopify:\/\/collections\/skin-care-system",
+            "text_color": ""
+          }
+        },
+        "image_E8Dwp3": {
+          "type": "image",
+          "settings": {
+            "position": "1",
+            "image": "shopify:\/\/shop_images\/Acne_Level1_1x1_84ae05ad-64c8-43f1-b795-5b37c09ffa13.jpg",
+            "aspect_ratio": 0.8,
+            "wide_image": true,
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "title": "Acne Care",
+            "link_text": "2 sets to choose from",
+            "link": "shopify:\/\/collections\/level-1-acne-care",
+            "text_color": ""
+          }
+        },
+        "image_Kg8ziG": {
+          "type": "image",
+          "settings": {
+            "position": "2",
+            "image": "shopify:\/\/shop_images\/Tiege_Hanley_BarSoap.jpg",
+            "aspect_ratio": 0.8,
+            "wide_image": true,
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "title": "",
+            "link_text": "",
+            "link": "",
+            "text_color": ""
+          }
+        },
+        "image_WYFAXy": {
+          "type": "image",
+          "settings": {
+            "position": "2",
+            "image": "shopify:\/\/shop_images\/Snapinsta.app_337156675_1554687731680146_2432232004487884860_n_1080.jpg",
+            "aspect_ratio": 0.8,
+            "wide_image": true,
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "title": "Become a Member",
+            "link_text": "Autoship & Save 24%",
+            "link": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "toolbar",
+        "image_gVrRcK",
+        "image_E8Dwp3",
+        "image_Kg8ziG",
+        "image_WYFAXy"
+      ],
+      "settings": {
+        "header_sticky": true,
+        "header_style": "logo_center_menu_left",
+        "show_separator_line": false,
+        "separator_opacity": 50,
+        "show_icons": true,
+        "icon_as_circle": true,
+        "cart_icon_family": "bag",
+        "logo": "shopify:\/\/shop_images\/Tiege_Logo_5d4d69c5-75b2-4158-a3a3-1a8604461820.png",
+        "logo_max_limit": 100,
+        "logo_max_limit_mobile": 80,
+        "main_menu_linklist": "main-menu",
+        "mobile_menu_linklist": "main-menu",
+        "enable_search": true,
+        "show_social_icons": false,
+        "show_locale_selector": true,
+        "show_country_selector": true,
+        "show_country_name": false,
+        "show_country_flag": false,
+        "highlight_item": "Sale",
+        "highlight_item_color": "#00ad2d",
+        "transparent_home": true,
+        "transparent_product_page": true,
+        "transparent_collection": true,
+        "transparent_article": true,
+        "transparent_page": true,
+        "transparent_logo": "shopify:\/\/shop_images\/Tiege_Logo_White_c5ce641d-cb23-479c-a8df-5f70ae0695a5.png",
+        "secondary_menu_linklist": "",
+        "tertiary_menu_linklist": "",
+        "padding_top": 15,
+        "padding_bottom": 15
+      }
+    }
+  },
+  "order": [
+    "announcement",
+    "header"
+  ]
+}
