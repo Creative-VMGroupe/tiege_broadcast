@@ -33,6 +33,50 @@
     },
     "main": {
       "type": "collection",
+      "blocks": {
+        "featured_image_kH7rEt": {
+          "type": "featured_image",
+          "settings": {
+            "featured_image": "shopify:\/\/shop_images\/Messy_Hands.jpg",
+            "position": 3,
+            "featured_heading": "Level Guide",
+            "heading_size": 9,
+            "featured_text": "",
+            "featured_button_text": "Learn more",
+            "featured_button_link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false,
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#222222",
+            "featured_overlay_opacity": 10
+          }
+        },
+        "featured_image_iwGEEb": {
+          "type": "featured_image",
+          "settings": {
+            "featured_image": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO2.jpg",
+            "position": 9,
+            "featured_heading": "Featured link",
+            "heading_size": 9,
+            "featured_text": "",
+            "featured_button_text": "Learn more",
+            "featured_button_link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false,
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#222222",
+            "featured_overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "featured_image_kH7rEt",
+        "featured_image_iwGEEb"
+      ],
       "settings": {
         "enable_sort": true,
         "enable_filters": true,
@@ -81,6 +125,7 @@
         "text_Mrehmh",
         "button_ePjEAK"
       ],
+      "disabled": true,
       "settings": {
         "height": "screen-height-one-half",
         "width": "wrapper--full",
@@ -99,19 +144,11 @@
     "section_double_Wz33Wb": {
       "type": "section-double",
       "blocks": {
-        "subheading_tgzhDh": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "",
-            "text_size": 3,
-            "padding_bottom": 16
-          }
-        },
         "heading_eGeDat": {
           "type": "heading",
           "settings": {
-            "title": "Find My Routine",
-            "text_size": 8,
+            "title": "Routine Quiz",
+            "text_size": 9,
             "padding_bottom": 16
           }
         },
@@ -127,9 +164,9 @@
         "buttons_eEDTNk": {
           "type": "buttons",
           "settings": {
-            "button_text": "Learn more",
+            "button_text": "Get Started",
             "button_url": "",
-            "button_type": "btn--primary",
+            "button_type": "btn--secondary",
             "button_size": "",
             "button_style": "btn--solid",
             "show_arrow": false,
@@ -138,19 +175,18 @@
         }
       },
       "block_order": [
-        "subheading_tgzhDh",
         "heading_eGeDat",
         "text_pncrA8",
         "buttons_eEDTNk"
       ],
       "settings": {
-        "layout": "",
-        "height": "screen-height-three-quarters",
+        "layout": "is-reversed",
+        "height": "screen-height-one-third",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/Mask_Group_3.png",
         "image_width": "one-half",
-        "text_alignment": "text-left",
+        "text_alignment": "text-center",
         "reverse_blocks": false,
         "bg_color": "",
         "color": "",
