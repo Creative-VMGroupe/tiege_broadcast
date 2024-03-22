@@ -371,6 +371,86 @@
         "padding_top": 50,
         "padding_bottom": 50
       }
+    },
+    "section_columns_kqNxAq": {
+      "type": "section-columns",
+      "blocks": {
+        "image_brJKGB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash_0fce57fe-0aa5-41e4-8ba0-ac09af75851a.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Wash",
+            "heading_size": 6,
+            "text": "<p>Why? Because your face is dirty.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_HRMXGM": {
+          "type": "image",
+          "settings": {
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Add a title or tagline",
+            "heading_size": 4,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 3,
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_pd67jV": {
+          "type": "image",
+          "settings": {
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Add a title or tagline",
+            "heading_size": 4,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 3,
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "image_brJKGB",
+        "image_HRMXGM",
+        "image_pd67jV"
+      ],
+      "settings": {
+        "title": "Included in this System",
+        "heading_size": 9,
+        "layout": "slider",
+        "grid": 2,
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "bg_color": "#ffffff",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "layout_mobile": "slider"
+      }
     }
   },
   "order": [
@@ -378,6 +458,7 @@
     "related",
     "section_double_Pf9XFr",
     "section_double_slider_xjfT8n",
-    "section_collection_m9yHwy"
+    "section_collection_m9yHwy",
+    "section_columns_kqNxAq"
   ]
 }
