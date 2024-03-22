@@ -57,9 +57,9 @@
             "max_inventory": 10,
             "hide_inventory_counter": true,
             "icon_size": 20,
-            "in_stock_color": "#56AD6A",
+            "in_stock_color": "#56ad6a",
             "low_stock_color": "#f79554",
-            "out_of_stock_color": "#721C24",
+            "out_of_stock_color": "#721c24",
             "padding_bottom": 16
           }
         },
@@ -189,312 +189,6 @@
         "padding_bottom": 30
       }
     },
-    "alireviews-section-42311eff-f274-46bd-b74c-3b7e6d4a12a0": {
-      "type": "apps",
-      "blocks": {
-        "ae4de410-ef49-4e0a-b96a-9f457848c659": {
-          "type": "shopify:\/\/apps\/ali-reviews-product-reviews\/blocks\/widget-box\/bf2eea72-0400-4db1-8908-44b7418f9a88",
-          "settings": {
-            "product": "",
-            "name": "Review Box",
-            "vertical_alignment": "2",
-            "rating_color": "#1f1f1f",
-            "section_color": "#ffffff",
-            "primary_text_color": "#1f1f1f"
-          }
-        }
-      },
-      "block_order": [
-        "ae4de410-ef49-4e0a-b96a-9f457848c659"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
-    "faq": {
-      "type": "section-accordion",
-      "blocks": {
-        "faq-1": {
-          "type": "text",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
-          }
-        },
-        "faq-2": {
-          "type": "text",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
-          }
-        },
-        "faq-3": {
-          "type": "text",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
-          }
-        },
-        "faq-4": {
-          "type": "text",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "faq-1",
-        "faq-2",
-        "faq-3",
-        "faq-4"
-      ],
-      "disabled": true,
-      "settings": {
-        "default_open": false,
-        "title": "FAQ",
-        "show_icon": false,
-        "icon_name": "icon-award",
-        "icon_size": 20,
-        "icon_color": "#545454",
-        "bg_color": "",
-        "color": "",
-        "border_color": "",
-        "width": "wrapper",
-        "padding_top": 30,
-        "padding_bottom": 0
-      }
-    },
-    "shipping": {
-      "type": "section-accordion",
-      "blocks": {
-        "shipping-0": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-fast-shipment",
-            "icon_size": 20,
-            "icon_color": "#545454",
-            "title": "Fast shipping",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
-          }
-        },
-        "shipping-1": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-box",
-            "icon_size": 20,
-            "icon_color": "#545454",
-            "title": "Order tracking",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
-          }
-        },
-        "shipping-2": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-chat",
-            "icon_size": 20,
-            "icon_color": "#545454",
-            "title": "Get in touch",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "shipping-0",
-        "shipping-1",
-        "shipping-2"
-      ],
-      "disabled": true,
-      "settings": {
-        "default_open": false,
-        "title": "Shipping",
-        "show_icon": false,
-        "icon_name": "icon-award",
-        "icon_size": 20,
-        "icon_color": "#545454",
-        "bg_color": "",
-        "color": "",
-        "border_color": "",
-        "width": "wrapper",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "about": {
-      "type": "section-accordion",
-      "blocks": {
-        "about-0": {
-          "type": "image",
-          "settings": {
-            "title": "Image heading",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>",
-            "aspect_ratio": 0.6
-          }
-        },
-        "about-1": {
-          "type": "image",
-          "settings": {
-            "title": "Image heading",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>",
-            "aspect_ratio": 0.6
-          }
-        },
-        "about-2": {
-          "type": "image",
-          "settings": {
-            "title": "Image heading",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>",
-            "aspect_ratio": 0.6
-          }
-        }
-      },
-      "block_order": [
-        "about-0",
-        "about-1",
-        "about-2"
-      ],
-      "disabled": true,
-      "settings": {
-        "default_open": false,
-        "title": "About us",
-        "show_icon": false,
-        "icon_name": "icon-award",
-        "icon_size": 20,
-        "icon_color": "#545454",
-        "bg_color": "",
-        "color": "",
-        "border_color": "",
-        "width": "wrapper",
-        "padding_top": 0,
-        "padding_bottom": 30
-      }
-    },
-    "custom": {
-      "type": "section-custom-content",
-      "blocks": {
-        "custom-0": {
-          "type": "image",
-          "settings": {
-            "overlay_opacity": 0,
-            "overlay_color": "#000000",
-            "show_overlay_text": false,
-            "title": "",
-            "heading_size": 7,
-            "description": "",
-            "text_size": 3,
-            "flex_align": "align--middle-center",
-            "bg_color": "",
-            "color": "#ffffff",
-            "link_text": "",
-            "link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        },
-        "custom-1": {
-          "type": "text",
-          "settings": {
-            "subheading": "Introducing",
-            "subheading_size": 3,
-            "title": "Product feature",
-            "heading_size": 8,
-            "text": "<p>Use this section to create unique side-by-side layouts with various content blocks. Pair text with images, newsletter blocks, products, videos, testimonials and more.<\/p>",
-            "text_size": 4,
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "show_social_links": false,
-            "text_columns": 1,
-            "align_text": "text-left",
-            "bg_color": "#f7f7f7",
-            "color": ""
-          }
-        }
-      },
-      "block_order": [
-        "custom-0",
-        "custom-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "height": "screen-height-one-half",
-        "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full-padded",
-        "borders": false,
-        "gutters": false,
-        "reverse_blocks": false,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "imgtxt": {
-      "type": "section-custom-content",
-      "blocks": {
-        "imgtxt-0": {
-          "type": "text",
-          "settings": {
-            "subheading": "Introducing",
-            "subheading_size": 3,
-            "title": "Another feature",
-            "heading_size": 8,
-            "text": "<p>Use this section to create unique side-by-side layouts with various content blocks. Pair text with images, newsletter blocks, products, videos, testimonials and more.<\/p>",
-            "text_size": 4,
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "show_social_links": false,
-            "text_columns": 1,
-            "align_text": "text-left",
-            "bg_color": "#f7f7f7",
-            "color": ""
-          }
-        },
-        "imgtxt-1": {
-          "type": "image",
-          "settings": {
-            "overlay_opacity": 0,
-            "overlay_color": "#000000",
-            "show_overlay_text": false,
-            "title": "",
-            "heading_size": 7,
-            "description": "",
-            "text_size": 3,
-            "flex_align": "align--middle-center",
-            "bg_color": "",
-            "color": "#ffffff",
-            "link_text": "",
-            "link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "imgtxt-0",
-        "imgtxt-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "height": "screen-height-one-half",
-        "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full-padded",
-        "borders": false,
-        "gutters": false,
-        "reverse_blocks": false,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "related": {
       "type": "related",
       "blocks": {
@@ -529,69 +223,73 @@
         "padding_bottom": 0
       }
     },
-    "section_recent_products_aCrN6t": {
-      "type": "section-recent-products",
+    "section_double_Pf9XFr": {
+      "type": "section-double",
+      "blocks": {
+        "subheading_G7RaGg": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Introducing",
+            "text_size": 3,
+            "padding_bottom": 16
+          }
+        },
+        "heading_DzedxK": {
+          "type": "heading",
+          "settings": {
+            "title": "Image with text",
+            "text_size": 8,
+            "padding_bottom": 16
+          }
+        },
+        "text_Yh8JmM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_tJDcGw": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_G7RaGg",
+        "heading_DzedxK",
+        "text_Yh8JmM",
+        "buttons_tJDcGw"
+      ],
       "settings": {
-        "product_recently_heading": "Recently viewed",
-        "product_recently_limit": 6,
-        "product_recently_minimum": 4,
-        "bg_color": "",
-        "color": "",
-        "padding_top": 30,
+        "layout": "",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-third--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO3.png",
+        "image_2": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png",
+        "image_width": "three-quarters",
+        "text_alignment": "text-center",
+        "reverse_blocks": false,
+        "bg_color": "#000000",
+        "color": "#ffffff",
+        "padding_top": 0,
         "padding_bottom": 0
-      }
-    },
-    "1710609724cc7acd21": {
-      "type": "apps",
-      "blocks": {
-        "ali_reviews_product_reviews_widget_box_TmEEiJ": {
-          "type": "shopify:\/\/apps\/ali-reviews-product-reviews\/blocks\/widget-box\/bf2eea72-0400-4db1-8908-44b7418f9a88",
-          "settings": {
-            "product": "",
-            "name": "Review Box",
-            "vertical_alignment": "2",
-            "rating_color": "#1f1f1f",
-            "section_color": "#ffffff",
-            "primary_text_color": "#1f1f1f"
-          }
-        }
-      },
-      "block_order": [
-        "ali_reviews_product_reviews_widget_box_TmEEiJ"
-      ],
-      "settings": {
-        "include_margins": false
-      }
-    },
-    "171061224373a1e0d4": {
-      "type": "apps",
-      "blocks": {
-        "videowise_video_platform_ugc_videowise_page_widgets_F9irDP": {
-          "type": "shopify:\/\/apps\/videowise-video-platform-ugc\/blocks\/videowise-page-widgets\/b48d6c0c-3e3f-4791-a9ab-a5ab7ec82f4d",
-          "settings": {
-            "videowise_embed": "<div class=\"reeview-app-widget\" id=\"reeview-app-widget_65f5deec895c9e0028f2bd85\"><\/div>"
-          }
-        }
-      },
-      "block_order": [
-        "videowise_video_platform_ugc_videowise_page_widgets_F9irDP"
-      ],
-      "settings": {
-        "include_margins": false
       }
     }
   },
   "order": [
     "main",
-    "alireviews-section-42311eff-f274-46bd-b74c-3b7e6d4a12a0",
-    "faq",
-    "shipping",
-    "about",
-    "custom",
-    "imgtxt",
     "related",
-    "section_recent_products_aCrN6t",
-    "1710609724cc7acd21",
-    "171061224373a1e0d4"
+    "section_double_Pf9XFr"
   ]
 }
