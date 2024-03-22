@@ -1,1 +1,169 @@
-{"sections":{"hero":{"type":"collection-image-with-title","settings":{"show_title":true,"show_description":true,"flex_align":"align--middle-left","bg_color":"","color":"","show_image":true,"banner_layout":"overlay","height":"screen-height-one-third","mobile_height":"screen-height-one-half--mobile","overlay_opacity":0,"overlay_color":"#000000","show_overlay_text":false,"padding_top":0,"padding_bottom":0}},"subcollections":{"type":"subcollections","settings":{"subcollection_layout":"grid","subcollection_description":false,"select_image":"collection","color":"#ffffff","bg_color":"","padding_top":20,"padding_bottom":20}},"main":{"type":"collection","settings":{"enable_sort":true,"enable_filters":true,"filter_layout":"slide-out","collection_linklist":"","grid":4,"grid_mobile":"2","products_per_page":24,"border_color":"","padding_top":0,"padding_bottom":0}},"section_hero_xP4xGE":{"type":"section-hero","blocks":{"heading_9rarWg":{"type":"heading","settings":{"title":"Find My Routine","heading_size":6}},"text_Mrehmh":{"type":"text","settings":{"description":"A quick guide you to your routine.","text_size":3,"text_style":"font-body"}},"button_ePjEAK":{"type":"button","settings":{"link_text":"Guide Me","link":"shopify:\/\/pages\/find-my-routine","button_type":"btn--primary","button_size":"btn--large","button_style":"btn--solid","show_arrow":false}}},"block_order":["heading_9rarWg","text_Mrehmh","button_ePjEAK"],"settings":{"height":"screen-height-one-half","width":"wrapper--full","image_1":"shopify:\/\/shop_images\/Mask_Group_3.png","link":"","mobile_height":"screen-height-one-half--mobile","flex_align_desktop":"align--bottom-left-desktop","flex_align_mobile":"align--middle-center-mobile","overlay_opacity":35,"overlay_color":"#000000","show_overlay_text":false,"bg_color":"","color":"#ffffff"}},"section_double_Wz33Wb":{"type":"section-double","blocks":{"subheading_tgzhDh":{"type":"subheading","settings":{"subheading":"","text_size":3,"padding_bottom":16}},"heading_eGeDat":{"type":"heading","settings":{"title":"Find My Routine","text_size":8,"padding_bottom":16}},"text_pncrA8":{"type":"text","settings":{"text":"<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>","text_size":4,"text_style":"font-body","padding_bottom":16}},"buttons_eEDTNk":{"type":"buttons","settings":{"button_text":"Learn more","button_url":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"padding_bottom":16}}},"block_order":["subheading_tgzhDh","heading_eGeDat","text_pncrA8","buttons_eEDTNk"],"settings":{"layout":"","height":"screen-height-three-quarters","mobile_height":"screen-height-one-half--mobile","width":"wrapper--full","image_1":"shopify:\/\/shop_images\/Mask_Group_3.png","image_width":"one-half","text_alignment":"text-left","reverse_blocks":false,"bg_color":"","color":"","padding_top":0,"padding_bottom":0}}},"order":["hero","subcollections","main","section_hero_xP4xGE","section_double_Wz33Wb"]}
+{
+  "sections": {
+    "hero": {
+      "type": "collection-image-with-title",
+      "settings": {
+        "show_title": true,
+        "show_description": true,
+        "flex_align": "align--middle-center",
+        "bg_color": "",
+        "color": "",
+        "show_image": true,
+        "banner_layout": "overlay",
+        "height": "screen-height-one-third",
+        "mobile_height": "screen-height-one-half--mobile",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "show_overlay_text": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "subcollections": {
+      "type": "subcollections",
+      "settings": {
+        "subcollection_layout": "grid",
+        "subcollection_description": false,
+        "select_image": "collection",
+        "color": "#ffffff",
+        "bg_color": "",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "main": {
+      "type": "collection",
+      "settings": {
+        "enable_sort": true,
+        "enable_filters": true,
+        "filter_layout": "slide-out",
+        "collection_linklist": "",
+        "grid": 4,
+        "grid_mobile": "2",
+        "products_per_page": 24,
+        "border_color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_hero_xP4xGE": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_9rarWg": {
+          "type": "heading",
+          "settings": {
+            "title": "Find My Routine",
+            "heading_size": 6
+          }
+        },
+        "text_Mrehmh": {
+          "type": "text",
+          "settings": {
+            "description": "A quick guide you to your routine.",
+            "text_size": 3,
+            "text_style": "font-body"
+          }
+        },
+        "button_ePjEAK": {
+          "type": "button",
+          "settings": {
+            "link_text": "Guide Me",
+            "link": "shopify:\/\/pages\/find-my-routine",
+            "button_type": "btn--primary",
+            "button_size": "btn--large",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_9rarWg",
+        "text_Mrehmh",
+        "button_ePjEAK"
+      ],
+      "settings": {
+        "height": "screen-height-one-half",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/Mask_Group_3.png",
+        "link": "",
+        "mobile_height": "screen-height-one-half--mobile",
+        "flex_align_desktop": "align--bottom-left-desktop",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "overlay_opacity": 35,
+        "overlay_color": "#000000",
+        "show_overlay_text": false,
+        "bg_color": "",
+        "color": "#ffffff"
+      }
+    },
+    "section_double_Wz33Wb": {
+      "type": "section-double",
+      "blocks": {
+        "subheading_tgzhDh": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "",
+            "text_size": 3,
+            "padding_bottom": 16
+          }
+        },
+        "heading_eGeDat": {
+          "type": "heading",
+          "settings": {
+            "title": "Find My Routine",
+            "text_size": 8,
+            "padding_bottom": 16
+          }
+        },
+        "text_pncrA8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_eEDTNk": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_tgzhDh",
+        "heading_eGeDat",
+        "text_pncrA8",
+        "buttons_eEDTNk"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/Mask_Group_3.png",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "reverse_blocks": false,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "subcollections",
+    "main",
+    "section_hero_xP4xGE",
+    "section_double_Wz33Wb"
+  ]
+}
