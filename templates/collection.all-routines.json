@@ -188,7 +188,7 @@
         "image_width": "one-half",
         "text_alignment": "text-center",
         "reverse_blocks": false,
-        "bg_color": "",
+        "bg_color": "#f9f9f9",
         "color": "",
         "padding_top": 0,
         "padding_bottom": 0
