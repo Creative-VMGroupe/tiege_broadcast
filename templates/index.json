@@ -313,7 +313,7 @@
           "settings": {
             "button_text": "Read More Reviews",
             "button_url": "",
-            "button_type": "btn--secondary",
+            "button_type": "btn--white",
             "button_size": "btn--large",
             "button_style": "btn--outline",
             "show_arrow": true,
