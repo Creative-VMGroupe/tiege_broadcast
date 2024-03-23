@@ -288,68 +288,43 @@
         "padding_bottom": 60
       }
     },
-    "section_double_slider_3LXbzB": {
-      "type": "section-double-slider",
+    "section_double_RDk4Uz": {
+      "type": "section-double",
       "blocks": {
-        "text_slide_CPQQhP": {
-          "type": "text-slide",
+        "subheading_qxHhAz": {
+          "type": "subheading",
           "settings": {
             "subheading": "★★★★★★",
-            "subheading_size": 3,
-            "title": "",
-            "heading_size": 8,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
-            "text_style": "font-body",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
+            "text_size": 3,
+            "padding_bottom": 16
           }
         },
-        "text_slide_rJcM7F": {
-          "type": "text-slide",
+        "text_LdEaqM": {
+          "type": "text",
           "settings": {
-            "subheading": "Introducing",
-            "subheading_size": 3,
-            "title": "Image with text slider",
-            "heading_size": 8,
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
             "text_size": 4,
             "text_style": "font-body",
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
+            "padding_bottom": 16
           }
         },
-        "text_slide_EeJxkU": {
-          "type": "text-slide",
+        "buttons_fNNCyz": {
+          "type": "buttons",
           "settings": {
-            "subheading": "Introducing",
-            "subheading_size": 3,
-            "title": "Image with text slider",
-            "heading_size": 8,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
-            "text_style": "font-body",
-            "button_text": "Learn more",
+            "button_text": "Read More Reviews",
             "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
+            "button_type": "btn--secondary",
+            "button_size": "btn--large",
             "button_style": "btn--solid",
-            "show_arrow": false
+            "show_arrow": true,
+            "padding_bottom": 16
           }
         }
       },
       "block_order": [
-        "text_slide_CPQQhP",
-        "text_slide_rJcM7F",
-        "text_slide_EeJxkU"
+        "subheading_qxHhAz",
+        "text_LdEaqM",
+        "buttons_fNNCyz"
       ],
       "settings": {
         "layout": "is-reversed",
@@ -357,9 +332,10 @@
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
         "image_width": "one-half",
-        "text_alignment": "text-left",
-        "bg_color": "",
-        "color": "",
+        "text_alignment": "text-center",
+        "reverse_blocks": false,
+        "bg_color": "#0e2815",
+        "color": "#00ad2d",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -1085,7 +1061,7 @@
     "section_double_pyR9aL",
     "section_text_with_products_h3WNiQ",
     "section_collection_JXEkNP",
-    "section_double_slider_3LXbzB",
+    "section_double_RDk4Uz",
     "section_collection_RD84YL",
     "section_text_row_YFhUxM",
     "section_hero_iEX3nG",
