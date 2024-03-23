@@ -404,7 +404,7 @@
       ],
       "settings": {
         "title": "Our Difference",
-        "heading_size": 9,
+        "heading_size": 8,
         "layout": "slider",
         "grid": 3,
         "align_heading": "text-center",
@@ -426,7 +426,7 @@
           "type": "heading",
           "settings": {
             "title": "The Science",
-            "heading_size": 10
+            "heading_size": 8
           }
         },
         "text_RJVT4V": {
