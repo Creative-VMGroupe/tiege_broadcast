@@ -67,8 +67,8 @@
         "image_aKrETt"
       ],
       "settings": {
-        "height": "screen-height-two-thirds",
-        "mobile_height": "screen-height-three-quarters--mobile",
+        "height": "seven-fifty-height-hero",
+        "mobile_height": "sixty-fifty-height-hero--mobile",
         "width": "wrapper--full",
         "transition": "slide",
         "show_arrows": true,
