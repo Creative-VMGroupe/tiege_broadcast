@@ -956,7 +956,7 @@
           "type": "heading",
           "settings": {
             "title": "Every Guy Deserves Amazing Skin",
-            "text_size": 9,
+            "text_size": 8,
             "padding_bottom": 16
           }
         },
@@ -991,7 +991,7 @@
       ],
       "settings": {
         "layout": "is-reversed",
-        "height": "screen-height-one-half",
+        "height": "screen-height-two-thirds",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png",
