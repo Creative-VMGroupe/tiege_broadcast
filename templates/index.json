@@ -1,5 +1,32 @@
 {
   "sections": {
+    "section_video_V7NQ8N": {
+      "type": "section-video",
+      "settings": {
+        "video": "shopify:\/\/files\/videos\/No-Audio_L1_Essential_Rouotine_SM_GreenLiquidi.mp4",
+        "show_video_popup": false,
+        "video_popup_social": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "desktop_height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "width": "wrapper--full",
+        "overlay_opacity": 0,
+        "overlay_color": "#000",
+        "show_overlay_text": false,
+        "title": "Video",
+        "heading_size": 8,
+        "description": "Tell your brand's story through images.",
+        "text_size": 3,
+        "flex_align": "align--middle-center",
+        "bg_color": "",
+        "color": "#FFFFFF",
+        "link_text": "View products",
+        "link": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false
+      }
+    },
     "section_slideshow_tYUFtn": {
       "type": "section-slideshow",
       "blocks": {
@@ -66,6 +93,7 @@
         "image_mqBJ4r",
         "image_aKrETt"
       ],
+      "disabled": true,
       "settings": {
         "height": "seven-fifty-height-hero",
         "mobile_height": "sixty-fifty-height-hero--mobile",
@@ -976,6 +1004,7 @@
     }
   },
   "order": [
+    "section_video_V7NQ8N",
     "section_slideshow_tYUFtn",
     "section_double_pyR9aL",
     "section_text_with_products_h3WNiQ",
