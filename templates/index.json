@@ -150,6 +150,92 @@
         "padding_bottom": 0
       }
     },
+    "section_text_with_products_h3WNiQ": {
+      "type": "section-text-with-products",
+      "blocks": {
+        "image_bEkTc6": {
+          "type": "image",
+          "settings": {
+            "image_position": 2,
+            "image": "shopify:\/\/shop_images\/Hero_AM_PM_Tubes.jpg",
+            "aspect_ratio": 1,
+            "mobile_aspect_ratio": 1,
+            "width": 100,
+            "mobile_width": 60,
+            "link": ""
+          }
+        },
+        "image_FMpDrj": {
+          "type": "image",
+          "settings": {
+            "image_position": 9,
+            "image": "shopify:\/\/shop_images\/Peptides_AdobeStock_403007779_transparent.png",
+            "aspect_ratio": 1,
+            "mobile_aspect_ratio": 1,
+            "width": 80,
+            "mobile_width": 60,
+            "link": ""
+          }
+        },
+        "image_a6EH8H": {
+          "type": "image",
+          "settings": {
+            "image_position": 13,
+            "image": "shopify:\/\/shop_images\/Multi-Functional_noun-team-chart-6658887_43b02a.png",
+            "aspect_ratio": 1,
+            "mobile_aspect_ratio": 1,
+            "width": 80,
+            "mobile_width": 60,
+            "link": ""
+          }
+        },
+        "image_MUG6ft": {
+          "type": "image",
+          "settings": {
+            "image_position": 25,
+            "image": "shopify:\/\/shop_images\/noun-strong-4023355.png",
+            "aspect_ratio": 1,
+            "mobile_aspect_ratio": 1,
+            "width": 80,
+            "mobile_width": 60,
+            "link": ""
+          }
+        },
+        "image_hW4qqK": {
+          "type": "image",
+          "settings": {
+            "image_position": 30,
+            "image": "shopify:\/\/shop_images\/Function_noun-settings-5079167_43b02a.png",
+            "aspect_ratio": 1,
+            "mobile_aspect_ratio": 1,
+            "width": 80,
+            "mobile_width": 60,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_bEkTc6",
+        "image_FMpDrj",
+        "image_a6EH8H",
+        "image_MUG6ft",
+        "image_hW4qqK"
+      ],
+      "settings": {
+        "subheading": "",
+        "subheading_size": 5,
+        "heading": "Tiege Hanley is made with revolutionary, all-natural peptide technology. Peptides are highly effective, multi-functional, and very stable and safe. It is proven to be the best way to improve the function and appearance of your skin--inside and out.",
+        "heading_size": 7,
+        "mobile_heading_size": 5,
+        "text_align_desktop": "text-left",
+        "text_align_mobile": "text-left--mobile",
+        "width": "wrapper--full-padded",
+        "bg_color": "#fafafa",
+        "color": "",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
     "section_collection_JXEkNP": {
       "type": "section-collection",
       "settings": {
@@ -395,100 +481,14 @@
         "description": "Talks facts about taking care of your skin.",
         "text_size": 4,
         "flex_align": "align--bottom-left",
-        "bg_color": "",
-        "color": "#212121",
+        "bg_color": "rgba(0,0,0,0)",
+        "color": "#ffffff",
         "link_text": "Watch How-To's",
         "link": "",
-        "button_type": "btn--primary",
+        "button_type": "btn--white",
         "button_size": "btn--large",
-        "button_style": "btn--solid",
+        "button_style": "btn--outline",
         "show_arrow": false
-      }
-    },
-    "section_text_with_products_h3WNiQ": {
-      "type": "section-text-with-products",
-      "blocks": {
-        "image_bEkTc6": {
-          "type": "image",
-          "settings": {
-            "image_position": 2,
-            "image": "shopify:\/\/shop_images\/Hero_AM_PM_Tubes.jpg",
-            "aspect_ratio": 1,
-            "mobile_aspect_ratio": 1,
-            "width": 100,
-            "mobile_width": 60,
-            "link": ""
-          }
-        },
-        "image_FMpDrj": {
-          "type": "image",
-          "settings": {
-            "image_position": 9,
-            "image": "shopify:\/\/shop_images\/Peptides_AdobeStock_403007779_transparent.png",
-            "aspect_ratio": 1,
-            "mobile_aspect_ratio": 1,
-            "width": 80,
-            "mobile_width": 60,
-            "link": ""
-          }
-        },
-        "image_a6EH8H": {
-          "type": "image",
-          "settings": {
-            "image_position": 13,
-            "image": "shopify:\/\/shop_images\/Multi-Functional_noun-team-chart-6658887_43b02a.png",
-            "aspect_ratio": 1,
-            "mobile_aspect_ratio": 1,
-            "width": 80,
-            "mobile_width": 60,
-            "link": ""
-          }
-        },
-        "image_MUG6ft": {
-          "type": "image",
-          "settings": {
-            "image_position": 25,
-            "image": "shopify:\/\/shop_images\/noun-strong-4023355.png",
-            "aspect_ratio": 1,
-            "mobile_aspect_ratio": 1,
-            "width": 80,
-            "mobile_width": 60,
-            "link": ""
-          }
-        },
-        "image_hW4qqK": {
-          "type": "image",
-          "settings": {
-            "image_position": 30,
-            "image": "shopify:\/\/shop_images\/Function_noun-settings-5079167_43b02a.png",
-            "aspect_ratio": 1,
-            "mobile_aspect_ratio": 1,
-            "width": 80,
-            "mobile_width": 60,
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_bEkTc6",
-        "image_FMpDrj",
-        "image_a6EH8H",
-        "image_MUG6ft",
-        "image_hW4qqK"
-      ],
-      "settings": {
-        "subheading": "",
-        "subheading_size": 5,
-        "heading": "Tiege Hanley is made with revolutionary, all-natural peptide technology. Peptides are highly effective, multi-functional, and very stable and safe. It is proven to be the best way to improve the function and appearance of your skin--inside and out.",
-        "heading_size": 7,
-        "mobile_heading_size": 5,
-        "text_align_desktop": "text-left",
-        "text_align_mobile": "text-left--mobile",
-        "width": "wrapper--full-padded",
-        "bg_color": "#fafafa",
-        "color": "",
-        "padding_top": 32,
-        "padding_bottom": 32
       }
     },
     "section_collection_knnzf8": {
@@ -636,6 +636,7 @@
         "review_3Gyzn7",
         "review_YkB6pw"
       ],
+      "disabled": true,
       "settings": {
         "show_featured_image": false,
         "image_aspect_ratio": 1.3,
@@ -977,13 +978,13 @@
   "order": [
     "section_slideshow_tYUFtn",
     "section_double_pyR9aL",
+    "section_text_with_products_h3WNiQ",
     "section_collection_JXEkNP",
     "section_hero_iEX3nG",
     "section_collection_RD84YL",
     "section_before_after_hzKE7H",
     "section_text_row_YFhUxM",
     "section_video_NGgczi",
-    "section_text_with_products_h3WNiQ",
     "section_collection_knnzf8",
     "section_double_jKb3k6",
     "section_reviews_JUyCGF",
