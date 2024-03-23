@@ -288,6 +288,82 @@
         "padding_bottom": 60
       }
     },
+    "section_double_slider_3LXbzB": {
+      "type": "section-double-slider",
+      "blocks": {
+        "text_slide_CPQQhP": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "★★★★★★",
+            "subheading_size": 3,
+            "title": "",
+            "heading_size": 8,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "text_slide_rJcM7F": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "Introducing",
+            "subheading_size": 3,
+            "title": "Image with text slider",
+            "heading_size": 8,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "text_slide_EeJxkU": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "Introducing",
+            "subheading_size": 3,
+            "title": "Image with text slider",
+            "heading_size": 8,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "text_slide_CPQQhP",
+        "text_slide_rJcM7F",
+        "text_slide_EeJxkU"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_collection_RD84YL": {
       "type": "section-collection",
       "settings": {
@@ -1009,6 +1085,7 @@
     "section_double_pyR9aL",
     "section_text_with_products_h3WNiQ",
     "section_collection_JXEkNP",
+    "section_double_slider_3LXbzB",
     "section_collection_RD84YL",
     "section_text_row_YFhUxM",
     "section_hero_iEX3nG",
