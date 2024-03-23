@@ -315,7 +315,7 @@
             "button_url": "",
             "button_type": "btn--secondary",
             "button_size": "btn--large",
-            "button_style": "btn--solid",
+            "button_style": "btn--outline",
             "show_arrow": true,
             "padding_bottom": 16
           }
@@ -331,6 +331,7 @@
         "height": "screen-height-three-quarters",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/Screenshot_2024-03-22_at_10.54.07_PM.png",
         "image_width": "one-half",
         "text_alignment": "text-center",
         "reverse_blocks": false,
