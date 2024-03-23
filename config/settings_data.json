@@ -46,7 +46,7 @@
     "show_scroll_top_button": true,
     "instagram_link": "https:\/\/instagram.com\/shopify",
     "facebook_link": "https:\/\/facebook.com\/shopify",
-    "product_grid_center": true,
+    "product_grid_center": false,
     "overlay_text": false,
     "product_grid_aspect_ratio": 1,
     "sale_tags_enable": true,
