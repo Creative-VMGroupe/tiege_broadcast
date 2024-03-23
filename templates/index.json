@@ -19,10 +19,10 @@
         "flex_align": "align--bottom-left",
         "bg_color": "",
         "color": "#ffffff",
-        "link_text": "View products",
-        "link": "",
+        "link_text": "Get Started",
+        "link": "shopify:\/\/collections\/all-routines-1",
         "button_type": "btn--primary",
-        "button_size": "",
+        "button_size": "btn--large",
         "button_style": "btn--solid",
         "show_arrow": false
       }
