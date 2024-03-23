@@ -335,7 +335,7 @@
         "image_width": "one-half",
         "text_alignment": "text-center",
         "reverse_blocks": false,
-        "bg_color": "#08180c",
+        "bg_color": "#000000",
         "color": "#ffffff",
         "padding_top": 0,
         "padding_bottom": 0
