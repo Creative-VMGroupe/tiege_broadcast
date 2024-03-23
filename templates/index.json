@@ -282,7 +282,7 @@
         "rows": 3,
         "width": "wrapper--full-padded",
         "layout_mobile": "1",
-        "bg_color": "#f2eeea",
+        "bg_color": "#e8e8e8",
         "color": "#000000",
         "padding_top": 60,
         "padding_bottom": 60
@@ -359,7 +359,7 @@
         "rows": 1,
         "width": "wrapper--full-padded",
         "layout_mobile": "1",
-        "bg_color": "#f2eeea",
+        "bg_color": "#e8e8e8",
         "color": "#000000",
         "padding_top": 60,
         "padding_bottom": 60
