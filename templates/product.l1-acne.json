@@ -404,7 +404,7 @@
         "rows": 1,
         "width": "wrapper--full-padded",
         "layout_mobile": "slider",
-        "bg_color": "#f7f9fa",
+        "bg_color": "#e8e8e8",
         "color": "",
         "padding_top": 50,
         "padding_bottom": 50
