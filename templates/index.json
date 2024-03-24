@@ -900,7 +900,7 @@
         "text_size": 4,
         "text_alignment": "text-center",
         "show_images": true,
-        "bg_color": "#dde7e0",
+        "bg_color": "#d4d6d1",
         "color": "",
         "dot_background": "#00ad2d",
         "width": "wrapper--full",
