@@ -24,10 +24,10 @@
         "shop_quiz_product_recommender_inline_quiz_Yd3nqq": {
           "type": "shopify:\/\/apps\/shop-quiz-product-recommender\/blocks\/inline-quiz\/672f3d48-fd3b-4227-8778-c6e58c4f8a98",
           "settings": {
-            "quiz_id": "gWH2pX ",
-            "quiz_height": 600,
+            "quiz_id": "gWH2pX",
+            "quiz_height": 1000,
             "quiz_autoscroll": true,
-            "quiz_fixed_height": false
+            "quiz_fixed_height": true
           }
         }
       },

@@ -1,1 +1,33 @@
-{"type":"custom.pre_footer","name":"Pre-footer","sections":{"1710599570fefb536e":{"type":"apps","blocks":{"instafeed_app_block_JKWC9J":{"type":"shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5","settings":{"title":"@tiegehanley","title_color":"#000000","title_size":-8,"alignment":"center","margin_top":60,"margin_bottom":0,"html_area":""}}},"block_order":["instafeed_app_block_JKWC9J"],"settings":{"include_margins":false}}},"order":["1710599570fefb536e"]}
+{
+  "type": "custom.pre_footer",
+  "name": "Pre-footer",
+  "sections": {
+    "1710599570fefb536e": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_JKWC9J": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "@tiegehanley",
+            "title_color": "#000000",
+            "title_size": -8,
+            "alignment": "center",
+            "margin_top": 60,
+            "margin_bottom": 0,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_JKWC9J"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": false
+      }
+    }
+  },
+  "order": [
+    "1710599570fefb536e"
+  ]
+}
