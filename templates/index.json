@@ -9,7 +9,7 @@
         "desktop_height": "seven-fifty-height-hero",
         "mobile_height": "sixty-fifty-height-hero--mobile",
         "width": "wrapper--full",
-        "overlay_opacity": 0,
+        "overlay_opacity": 40,
         "overlay_color": "#000000",
         "show_overlay_text": true,
         "title": "Uncomplicated",
