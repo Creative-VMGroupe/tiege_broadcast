@@ -46,7 +46,9 @@
   <div class="{{ section.settings.width }}">
     <div class="compare__body">
       {%- if section.settings.heading != blank or section.settings.description != blank or button_html != blank -%}
-        <div class="compare__content">
+        <div class="compare__content {% if section.settings.text_align_center == true %}
+          text-center
+        {% endif %}" >
           {%- if section.settings.heading != blank -%}
             {%- assign animation_order = animation_order | plus: 1 -%}
                     {%- liquid
@@ -93,7 +95,9 @@
     </div>
 
     {%- if button_html != blank -%}
-      <div class="compare__buttons mobile">
+      <div class="compare__buttons mobile {% if section.settings.text_align_center == true %}
+        text-center
+      {% endif %}">
         {{ button_html }}
       </div>
     {%- endif -%}
@@ -107,6 +111,12 @@
       {
         "type": "header",
         "content": "Content"
+      },
+      {
+        "type": "checkbox",
+        "id": "text_align_center",
+        "label": "Align Text Center?",
+        "default": "true"
       },
       {
         "type": "text",
