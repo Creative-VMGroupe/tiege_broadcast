@@ -7,7 +7,7 @@
           "type": "title",
           "settings": {
             "subheading_option": "collection",
-            "collection": "level-1-acne-care",
+            "collection": "skin-care-system",
             "text_size": 6,
             "padding_bottom": 8
           }
@@ -589,7 +589,7 @@
       "type": "apps",
       "blocks": {
         "ali_reviews_product_reviews_widget_box_TmEEiJ": {
-          "type": "shopify:\/\/apps\/ali-reviews-product-reviews\/blocks\/widget-box\/bf2eea72-0400-4db1-8908-44b7418f9a88",
+          "type": "shopify:\/\/apps\/ali-reviews\/blocks\/widget-box\/bf2eea72-0400-4db1-8908-44b7418f9a88",
           "settings": {
             "product": "level-1-essential-routine",
             "name": "Reviews",
