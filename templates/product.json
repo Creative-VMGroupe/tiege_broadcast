@@ -12,11 +12,6 @@
             "padding_bottom": 8
           }
         },
-        "5e3aaef2-a62a-4b52-8509-3bb6945ba380": {
-          "type": "shopify:\/\/apps\/ali-reviews-product-reviews\/blocks\/widget-star-rating\/bf2eea72-0400-4db1-8908-44b7418f9a88",
-          "settings": {
-          }
-        },
         "trustreviews_star_rating_W788rE": {
           "type": "shopify:\/\/apps\/trustreviews\/blocks\/star_rating\/56d0fe1b-e701-4cff-8f84-466a26e09adb",
           "disabled": true,
@@ -158,7 +153,6 @@
       },
       "block_order": [
         "title",
-        "5e3aaef2-a62a-4b52-8509-3bb6945ba380",
         "trustreviews_star_rating_W788rE",
         "recharge_subscriptions_subscription_widget_8WKxnT",
         "variants",
@@ -620,6 +614,7 @@
         "text_E6RGPa",
         "text_Pxr3LM"
       ],
+      "disabled": true,
       "settings": {
         "default_open": false,
         "title": "FAQ",
@@ -651,7 +646,7 @@
       "type": "apps",
       "blocks": {
         "25e98304-5dea-4e93-b4e6-0d566e44cdb2": {
-          "type": "shopify:\/\/apps\/ali-reviews-product-reviews\/blocks\/widget-box\/bf2eea72-0400-4db1-8908-44b7418f9a88",
+          "type": "shopify:\/\/apps\/ali-reviews\/blocks\/widget-box\/bf2eea72-0400-4db1-8908-44b7418f9a88",
           "settings": {
             "product": "",
             "name": "Review Box",
@@ -669,6 +664,60 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "section_accordion_new_hde9c4": {
+      "type": "section-accordion-new",
+      "blocks": {
+        "text_aa89Cc": {
+          "type": "text",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+          }
+        },
+        "text_wHK64i": {
+          "type": "text",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+          }
+        },
+        "text_yjC7hM": {
+          "type": "text",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+          }
+        },
+        "text_czGQHW": {
+          "type": "text",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_aa89Cc",
+        "text_wHK64i",
+        "text_yjC7hM",
+        "text_czGQHW"
+      ],
+      "settings": {
+        "default_open": false,
+        "title": "FAQ",
+        "heading_size": 8,
+        "show_icon": false,
+        "icon_name": "icon-award",
+        "icon_size": 20,
+        "icon_color": "#545454",
+        "bg_color": "",
+        "color": "",
+        "border_color": "",
+        "width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -681,6 +730,7 @@
     "section_columns_gjgyTb",
     "section_accordion_WH4xRJ",
     "section_recent_products_QG7xzL",
-    "alireviews-section-07d4a73d-744c-4193-b979-9ec1b2c01807"
+    "alireviews-section-07d4a73d-744c-4193-b979-9ec1b2c01807",
+    "section_accordion_new_hde9c4"
   ]
 }
