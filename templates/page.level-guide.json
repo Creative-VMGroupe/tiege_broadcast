@@ -1,0 +1,952 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "subheading": "",
+        "subheading_size": 3,
+        "show_title": false,
+        "heading_size": 8,
+        "show_content": true,
+        "text_size": 4,
+        "align_text": "text-left",
+        "width": "wrapper",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "section_hero_kdbpRc": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_EJMnMQ": {
+          "type": "heading",
+          "settings": {
+            "title": "Level Guide",
+            "heading_size": 9
+          }
+        },
+        "text_Dihbfe": {
+          "type": "text",
+          "settings": {
+            "description": "Tell your brand's story through images.",
+            "text_size": 5,
+            "text_style": "font-body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EJMnMQ",
+        "text_Dihbfe"
+      ],
+      "settings": {
+        "height": "screen-height-three-quarters",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-5_f346bb2b-2847-4db7-8541-f13e44173c66.webp",
+        "link": "",
+        "mobile_height": "screen-height-one-half--mobile",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "overlay_opacity": 0,
+        "overlay_color": "#000",
+        "show_overlay_text": false,
+        "bg_color": "",
+        "color": "#FFFFFF"
+      }
+    },
+    "section_rich_text_MfyXMb": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_wVwX8p": {
+          "type": "heading",
+          "settings": {
+            "title": "Skincare Routine",
+            "text_size": 9,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_wVwX8p"
+      ],
+      "settings": {
+        "width": "wrapper--full-padded",
+        "align_text": "text-left",
+        "bg_color": "#f7f9fa",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "section_double_cjpW8U": {
+      "type": "section-double",
+      "blocks": {
+        "heading_wijXKk": {
+          "type": "heading",
+          "settings": {
+            "title": "Level 1: Essential Routine",
+            "text_size": 9,
+            "padding_bottom": 16
+          }
+        },
+        "text_zbeqbn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_UFHAD6": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--secondary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_wijXKk",
+        "text_zbeqbn",
+        "buttons_UFHAD6"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/Skin_Level1-1x1.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-center",
+        "reverse_blocks": false,
+        "bg_color": "#f0f0f0",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_columns_8mpFhV": {
+      "type": "section-columns",
+      "blocks": {
+        "image_6CqHfH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 1: Single Product",
+            "heading_size": 6,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_wzA6hz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 2: Single Product",
+            "heading_size": 6,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_Aejbfx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 3: Single Product",
+            "heading_size": 6,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_VHKMEc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 4: Single Product",
+            "heading_size": 6,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "image_6CqHfH",
+        "image_wzA6hz",
+        "image_Aejbfx",
+        "image_VHKMEc"
+      ],
+      "settings": {
+        "title": "Included in this System",
+        "heading_size": 6,
+        "layout": "grid",
+        "grid": 4,
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "bg_color": "#fafafa",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "layout_mobile": "slider"
+      }
+    },
+    "section_double_k3aGgY": {
+      "type": "section-double",
+      "blocks": {
+        "heading_9cY3GQ": {
+          "type": "heading",
+          "settings": {
+            "title": "Level 2: Advanced Routine",
+            "text_size": 9,
+            "padding_bottom": 16
+          }
+        },
+        "text_d3VXVD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_Y7EyTf": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--secondary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_9cY3GQ",
+        "text_d3VXVD",
+        "buttons_Y7EyTf"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/Skin_Level1-1x1.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-center",
+        "reverse_blocks": false,
+        "bg_color": "#f0f0f0",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_columns_4xBK9p": {
+      "type": "section-columns",
+      "blocks": {
+        "image_N3cxNd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 1: Single Product",
+            "heading_size": 6,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_ncM7yq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 2: Single Product",
+            "heading_size": 6,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_zXWGq6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 3: Single Product",
+            "heading_size": 6,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_DMBT3P": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 4: Single Product",
+            "heading_size": 6,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "image_N3cxNd",
+        "image_ncM7yq",
+        "image_zXWGq6",
+        "image_DMBT3P"
+      ],
+      "settings": {
+        "title": "Included in this System",
+        "heading_size": 6,
+        "layout": "grid",
+        "grid": 4,
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "bg_color": "#fafafa",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "layout_mobile": "slider"
+      }
+    },
+    "section_double_EFMiLM": {
+      "type": "section-double",
+      "blocks": {
+        "heading_LHUe4m": {
+          "type": "heading",
+          "settings": {
+            "title": "Level 3: Anti-aging Routine",
+            "text_size": 9,
+            "padding_bottom": 16
+          }
+        },
+        "text_eCptVC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_PpGqfW": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--secondary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_LHUe4m",
+        "text_eCptVC",
+        "buttons_PpGqfW"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/Skin_Level1-1x1.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-center",
+        "reverse_blocks": false,
+        "bg_color": "#f0f0f0",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_columns_rKmJAH": {
+      "type": "section-columns",
+      "blocks": {
+        "image_9WcjhA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 1: Single Product",
+            "heading_size": 6,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_NFq69i": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 2: Single Product",
+            "heading_size": 6,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_aBqedf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 3: Single Product",
+            "heading_size": 6,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_rwcFXd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 4: Single Product",
+            "heading_size": 6,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "image_9WcjhA",
+        "image_NFq69i",
+        "image_aBqedf",
+        "image_rwcFXd"
+      ],
+      "settings": {
+        "title": "Included in this System",
+        "heading_size": 6,
+        "layout": "grid",
+        "grid": 4,
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "bg_color": "#fafafa",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "layout_mobile": "slider"
+      }
+    },
+    "section_rich_text_7JJpjm": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_YqkTc8": {
+          "type": "heading",
+          "settings": {
+            "title": "Acne Routine",
+            "text_size": 9,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_YqkTc8"
+      ],
+      "settings": {
+        "width": "wrapper--full-padded",
+        "align_text": "text-left",
+        "bg_color": "#f7f9fa",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "section_double_EYmFV8": {
+      "type": "section-double",
+      "blocks": {
+        "heading_q8tayn": {
+          "type": "heading",
+          "settings": {
+            "title": "Level 1: Acne Routine",
+            "text_size": 9,
+            "padding_bottom": 16
+          }
+        },
+        "text_L4WVrQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_4gte7z": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--secondary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_q8tayn",
+        "text_L4WVrQ",
+        "buttons_4gte7z"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/Skin_Level1-1x1.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-center",
+        "reverse_blocks": false,
+        "bg_color": "#f0f0f0",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_columns_6QqeUg": {
+      "type": "section-columns",
+      "blocks": {
+        "image_bL8Tti": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 1: Single Product",
+            "heading_size": 6,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_YqJxY9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 2: Single Product",
+            "heading_size": 6,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_Hcxec3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 3: Single Product",
+            "heading_size": 6,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_hHiM3V": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 4: Single Product",
+            "heading_size": 6,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "image_bL8Tti",
+        "image_YqJxY9",
+        "image_Hcxec3",
+        "image_hHiM3V"
+      ],
+      "settings": {
+        "title": "Included in this System",
+        "heading_size": 6,
+        "layout": "grid",
+        "grid": 4,
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "bg_color": "#fafafa",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "layout_mobile": "slider"
+      }
+    },
+    "section_double_JTYC7p": {
+      "type": "section-double",
+      "blocks": {
+        "heading_4AEpxg": {
+          "type": "heading",
+          "settings": {
+            "title": "Level 2: Advanced Acne Routine",
+            "text_size": 9,
+            "padding_bottom": 16
+          }
+        },
+        "text_WpLz77": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_4wy7i8": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--secondary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_4AEpxg",
+        "text_WpLz77",
+        "buttons_4wy7i8"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/Skin_Level1-1x1.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-center",
+        "reverse_blocks": false,
+        "bg_color": "#f0f0f0",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_columns_hP7qVH": {
+      "type": "section-columns",
+      "blocks": {
+        "image_wm6aCH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 1: Single Product",
+            "heading_size": 6,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_3NkpNr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 2: Single Product",
+            "heading_size": 6,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_GNEMMz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 3: Single Product",
+            "heading_size": 6,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_e7rDKK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 4: Single Product",
+            "heading_size": 6,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "image_wm6aCH",
+        "image_3NkpNr",
+        "image_GNEMMz",
+        "image_e7rDKK"
+      ],
+      "settings": {
+        "title": "Included in this System",
+        "heading_size": 6,
+        "layout": "grid",
+        "grid": 4,
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "bg_color": "#fafafa",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "layout_mobile": "slider"
+      }
+    },
+    "section_double_GQW4FL": {
+      "type": "section-double",
+      "blocks": {
+        "heading_djBwzT": {
+          "type": "heading",
+          "settings": {
+            "title": "Routine Quiz",
+            "text_size": 9,
+            "padding_bottom": 16
+          }
+        },
+        "text_YAHLzt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_bKjqwy": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Get Started",
+            "button_url": "",
+            "button_type": "btn--secondary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_djBwzT",
+        "text_YAHLzt",
+        "buttons_bKjqwy"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-one-third",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/Mask_Group_3.png",
+        "image_width": "one-half",
+        "text_alignment": "text-center",
+        "reverse_blocks": false,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_hero_kdbpRc",
+    "section_rich_text_MfyXMb",
+    "section_double_cjpW8U",
+    "section_columns_8mpFhV",
+    "section_double_k3aGgY",
+    "section_columns_4xBK9p",
+    "section_double_EFMiLM",
+    "section_columns_rKmJAH",
+    "section_rich_text_7JJpjm",
+    "section_double_EYmFV8",
+    "section_columns_6QqeUg",
+    "section_double_JTYC7p",
+    "section_columns_hP7qVH",
+    "section_double_GQW4FL"
+  ]
+}

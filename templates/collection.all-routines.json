@@ -7,14 +7,14 @@
         "show_description": true,
         "flex_align": "align--middle-center",
         "bg_color": "",
-        "color": "",
+        "color": "#ffffff",
         "show_image": true,
         "banner_layout": "overlay",
         "height": "screen-height-one-third",
         "mobile_height": "screen-height-one-half--mobile",
-        "overlay_opacity": 0,
+        "overlay_opacity": 20,
         "overlay_color": "#000000",
-        "show_overlay_text": false,
+        "show_overlay_text": true,
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -58,7 +58,7 @@
           "settings": {
             "featured_image": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO2.jpg",
             "position": 9,
-            "featured_heading": "Featured link",
+            "featured_heading": "Become a Member",
             "heading_size": 9,
             "featured_text": "",
             "featured_button_text": "Learn more",
