@@ -714,7 +714,7 @@
         "bg_color": "",
         "color": "",
         "border_color": "",
-        "width": "wrapper--full",
+        "width": "wrapper--full--custom",
         "padding_top": 0,
         "padding_bottom": 0
       }
