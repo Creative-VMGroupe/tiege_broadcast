@@ -29,11 +29,7 @@
       {%- endunless -%}
     }
   {%- endstyle -%}
-          {%- assign font_size_class = section.settings.heading_size | prepend: 'heading-size-' -%}
-          {% assign largeIcon = true %}
-          {% if section.settings.heading_size < 6 %}
-            {% assign largeIcon = false %}
-          {% endif %}
+
   <section id="Faq--{{ section.id }}"
     class="accordion-section section-padding"
     data-section-id="{{ section.id }}"
@@ -50,7 +46,7 @@
           {% endif %}
           data-collapsible>
             {%- if section.settings.title != blank -%}
-              <summary class="accordion__title {{font_size_class}}" data-collapsible-trigger>
+              <summary class="accordion__title h6" data-collapsible-trigger>
                 {%- if section.settings.show_icon -%}
                   {%- liquid
                     assign icon_size = section.settings.icon_size
@@ -84,8 +80,8 @@
 
                 {{ section.settings.title }}
 
-                {%- render 'icon-plus', largeIcon: largeIcon -%}
-                {%- render 'icon-minus', largeIcon: largeIcon -%}
+                {%- render 'icon-plus' -%}
+                {%- render 'icon-minus' -%}
               </summary>
             {%- endif -%}
 
@@ -226,15 +222,6 @@
       "info": "Section will not be visible if left empty.",
       "default": "FAQ"
     },
-    {
-        "type": "range",
-        "id": "heading_size",
-        "label": "Heading size",
-        "min": 1,
-        "max": 15,
-        "step": 1,
-        "default": 8
-      },
     {
       "type": "header",
       "content": "Icon"
