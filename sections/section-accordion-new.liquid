@@ -193,7 +193,8 @@
                             {%- endif -%}
                           {%- endform -%}
                         </div>
-                      {%- else -%}
+                        {%- when 'FeaturedCollection' -%} {% section featured_collection %}
+                        {%- else -%}
                     {%- endcase -%}
                   {%- endfor -%}
                 </div>
@@ -370,9 +371,19 @@
       "type": "@app"
     },
     {
+      "name": "FeaturedCollection", "type": "Shopify Section",
+      "settings": [{
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.</p>"
+        }]
+    },
+    {
       "name": "Text column",
       "type": "text",
       "settings": [
+       
         {
           "type": "text",
           "id": "title",
