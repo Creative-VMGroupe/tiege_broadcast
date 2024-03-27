@@ -33,8 +33,7 @@ Required params:
   assign text = block.settings.link_text
   assign link = block.settings.link
   assign image = block.settings.image
-  assign video = block.settings.video
-  
+
   assign full_width = '100vw'
   if grid_style == 'classic'
     assign full_width = '(100vw - 100px)'
@@ -60,6 +59,9 @@ Required params:
     data-animation-delay="{{ animation_delay }}"
     data-animation-duration="{{ animation_duration }}"
   {% endif %}>
+
+  {%- case block.type -%}
+    {% when 'image' %}
   <div class="header__dropdown__image palette--contrast--dark"
     {% unless text_color == 'rgba(0,0,0,0)' or text_color == blank %}style="--text: {{ text_color }};"{% endunless %}
     data-stagger-first>
@@ -93,6 +95,11 @@ Required params:
 
     <div class="image-overlay" style="--overlay-bg: {{ block.settings.overlay_color }}; --overlay-opacity: {{ block.settings.overlay_opacity | times: 0.01 }};"></div>
 
+   
+  
     {%- render 'image', image: image, aspect_ratio: aspect_ratio, sizes: sizes, loading: 'lazy', fetchpriority: 'high' -%}
   </div>
+      {% when 'video' %}
+      <div>{{ block.type }}</div>
+     {% endcase %}
 </div>
