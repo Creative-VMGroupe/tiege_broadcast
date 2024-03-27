@@ -138,8 +138,21 @@ Required params:
         {%- endif -%}
     
         <div class="image-overlay" style="--overlay-bg: {{ block.settings.overlay_color }}; --overlay-opacity: {{ block.settings.overlay_opacity | times: 0.01 }};"></div>
-    
-        {{ video | video_tag: autoplay: true, image_size: '1085x', loop: true, muted: true, controls: false }}
+{% liquid 
+capture img_class
+if fill
+  echo ' fit-cover'
+endif
+
+if video
+  echo ' is-loading '
+endif
+endcapture %}
+        <div class="{{img_class}}">
+          {{ video | video_tag: autoplay: true, image_size: '1085x', loop: true, muted: true, controls: false }}
+
+        </div>
+ 
       </div>
     
 
