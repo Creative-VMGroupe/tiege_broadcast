@@ -72,9 +72,25 @@
         },
         "image_E8Dwp3": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "position": "1",
             "image": "shopify:\/\/shop_images\/Acne_Level1_1x1_84ae05ad-64c8-43f1-b795-5b37c09ffa13.jpg",
+            "aspect_ratio": 0.8,
+            "wide_image": true,
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "title": "Acne Care",
+            "link_text": "2 sets to choose from",
+            "link": "shopify:\/\/collections\/level-1-acne-care",
+            "text_color": ""
+          }
+        },
+        "video_Xm9qWt": {
+          "type": "video",
+          "settings": {
+            "position": "1",
+            "video": "shopify:\/\/files\/videos\/f7db5c375de94bceb432a68695da9d5d.mov",
             "aspect_ratio": 0.8,
             "wide_image": true,
             "overlay_opacity": 0,
@@ -114,30 +130,15 @@
             "link": "",
             "text_color": ""
           }
-        },
-        "video_Xm9qWt": {
-          "type": "video",
-          "settings": {
-            "position": "1",
-            "video": "shopify:\/\/files\/videos\/f7db5c375de94bceb432a68695da9d5d.mov",
-            "aspect_ratio": 0.5,
-            "wide_image": true,
-            "overlay_opacity": 0,
-            "overlay_color": "#000000",
-            "title": "Test",
-            "link_text": "Testing",
-            "link": "",
-            "text_color": ""
-          }
         }
       },
       "block_order": [
         "toolbar",
         "image_gVrRcK",
         "image_E8Dwp3",
+        "video_Xm9qWt",
         "image_Kg8ziG",
-        "image_WYFAXy",
-        "video_Xm9qWt"
+        "image_WYFAXy"
       ],
       "settings": {
         "header_sticky": true,
