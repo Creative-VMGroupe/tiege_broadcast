@@ -147,8 +147,20 @@ endif
 if video
   echo ' is-loading '
 endif
-endcapture %}
-        <div class="{{img_class}} video-container">
+endcapture 
+
+capture wrapper_attributes
+echo 'style="'
+echo '--aspect-ratio: ' | append: aspect_ratio | append: ';'
+echo '"'
+
+if attributes != blank
+  echo ' ' | append: attributes
+endif
+endcapture
+%}
+
+        <div class="{{img_class}} video-container wrapper_attributes">
           {{ video | video_tag: autoplay: true, image_size: '1085x', loop: true, muted: true, controls: false }}
 
         </div>
