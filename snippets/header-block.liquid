@@ -102,6 +102,8 @@ Required params:
       {% when 'video' %}
         {%- liquid 
         assign video = block.settings.video 
+        assign video_aspect_ratio = video.aspect_ratio
+  assign aspect_ratio = aspect_ratio | default: video_aspect_ratio | default: 1
         -%}
         {%- if video != nil -%}  {%- endif -%}
           <div class="header__dropdown__image palette--contrast--dark"
@@ -137,8 +139,6 @@ Required params:
     
         <div class="image-overlay" style="--overlay-bg: {{ block.settings.overlay_color }}; --overlay-opacity: {{ block.settings.overlay_opacity | times: 0.01 }};"></div>
     
-       
-      
         {{ video | video_tag: autoplay: true, image_size: '1085x', loop: true, muted: true, controls: false }}
       </div>
     
