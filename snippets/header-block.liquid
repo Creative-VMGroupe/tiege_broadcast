@@ -160,7 +160,7 @@ endif
 endcapture
 %}
 
-        <div class="{{img_class}} video-container wrapper_attributes">
+        <div class="{{img_class}} video-container {{wrapper_attributes}}">
           {{ video | video_tag: autoplay: true, image_size: '1085x', loop: true, muted: true, controls: false }}
 
         </div>
