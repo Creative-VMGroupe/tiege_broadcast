@@ -25186,7 +25186,16 @@ body.has-header-sticky .timeline {
   padding-left: var(--outer);
   padding-right: var(--outer);
 }
-.video-container > video {
+
+.video-container {
   width: 100%;
-  height: auto;
+  height: 0;
+  padding-top: calc(1 / var(--aspect-ratio) * 100%);
+}
+.video-container > video {
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
