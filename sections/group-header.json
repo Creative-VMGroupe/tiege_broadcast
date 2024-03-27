@@ -114,6 +114,21 @@
             "link": "",
             "text_color": ""
           }
+        },
+        "video_Xm9qWt": {
+          "type": "video",
+          "settings": {
+            "position": "1",
+            "video": "shopify:\/\/files\/videos\/Tiege_Hanley_Routine_Hero_IG_noaudio_shorter.mp4",
+            "aspect_ratio": 0.5,
+            "wide_image": true,
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "title": "",
+            "link_text": "",
+            "link": "",
+            "text_color": ""
+          }
         }
       },
       "block_order": [
@@ -121,7 +136,8 @@
         "image_gVrRcK",
         "image_E8Dwp3",
         "image_Kg8ziG",
-        "image_WYFAXy"
+        "image_WYFAXy",
+        "video_Xm9qWt"
       ],
       "settings": {
         "header_sticky": true,
