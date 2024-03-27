@@ -25186,3 +25186,7 @@ body.has-header-sticky .timeline {
   padding-left: var(--outer);
   padding-right: var(--outer);
 }
+.video-container > video {
+  width: 100%;
+  height: auto;
+}
