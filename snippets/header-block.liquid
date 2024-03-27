@@ -102,6 +102,6 @@ Required params:
       {% when 'video' %}
         {%- liquid assign video = block.settings.video -%}
         {%- if video != nil -%}  {%- endif -%}
-     <template data-video-template>{{ video | video_tag: autoplay: true, image_size: '1085x', loop: true, muted: true, controls: false }}</template>
+     {{ video | video_tag: autoplay: true, image_size: '1085x', loop: true, muted: true, controls: false }}
      {% endcase %}
 </div>
