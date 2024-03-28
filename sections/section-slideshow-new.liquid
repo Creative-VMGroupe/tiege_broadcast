@@ -94,7 +94,7 @@ assign color_mobile = section.settings.mobile_color | default: '#FFFFFF'
   {% if section.settings.mobile_height == 'screen-height-full' %} 
   min-height: var(--full-screen);
   {% else %}
-  height: {{--mobile-height-flickity}};
+  height: --mobile-height-flickity;
    {% endif %}
    
   
