@@ -156,10 +156,9 @@
         "image_LK9Wwm",
         "image_kpxe4T"
       ],
-      "disabled": true,
       "settings": {
-        "height": "screen-height-three-quarters",
-        "mobile_height": "screen-height-two-thirds--mobile",
+        "height": "screen-height-full",
+        "mobile_height": "screen-height-full--mobile",
         "text_box_below": true,
         "mobile_bg_color": "rgba(0,0,0,0)",
         "mobile_color": "#212121",
