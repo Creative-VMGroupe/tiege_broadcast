@@ -66,7 +66,7 @@
           "settings": {
             "video": "shopify:\/\/files\/videos\/f7db5c375de94bceb432a68695da9d5d.mov",
             "overlay_opacity": 0,
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "show_overlay_text": false,
             "title": "Video slide",
             "heading_size": 8,
@@ -75,7 +75,7 @@
             "flex_align_desktop": "align--middle-center-desktop",
             "flex_align_mobile": "align--middle-center-mobile",
             "bg_color": "",
-            "color": "#FFFFFF",
+            "color": "#ffffff",
             "first_button_text": "View products",
             "first_button_link": "",
             "first_button_type": "btn--primary",
@@ -156,9 +156,10 @@
         "image_LK9Wwm",
         "image_kpxe4T"
       ],
+      "disabled": true,
       "settings": {
-        "height": "screen-height-two-thirds",
-        "mobile_height": "sixty-fifty-height-hero--mobile",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-two-thirds--mobile",
         "text_box_below": true,
         "mobile_bg_color": "rgba(0,0,0,0)",
         "mobile_color": "#212121",
