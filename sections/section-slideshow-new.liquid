@@ -36,7 +36,7 @@ assign mobile_height_flickity = '650px'
   endif
 -%}
 {% if text_box_below %}
-  {% case mobile_height_flickity %}
+  {% case section.settings.mobile_height %}
   {% when "image-height--mobile" %}
     {% assign mobile_height_flickity = "calc(var(--image-height) + 250px)" %}
   {% when "screen-height-full--mobile" %}
