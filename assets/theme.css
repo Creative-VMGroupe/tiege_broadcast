@@ -25200,8 +25200,6 @@ body.has-header-sticky .timeline {
   width: 100%;
 }
 @media (max-width: 749px) {
-
-
   .full-screen-minus-header {
     height: var(--full-screen);
   }
