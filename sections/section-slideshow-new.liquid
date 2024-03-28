@@ -2,7 +2,7 @@
 
 {%- liquid
 
-assign mobile_height_flickity = section.settings.mobile_height
+assign mobile_height_flickity = '650px'
   assign text_box_below = section.settings.text_box_below
   assign desktop_height = section.settings.height
   assign mobile_height = section.settings.mobile_height
@@ -36,6 +36,31 @@ assign mobile_height_flickity = section.settings.mobile_height
   endif
 -%}
 {% if text_box_below %}
+  {% case mobile_height_flickity %}
+  {% when "image-height--mobile" %}
+    {% assign mobile_height_flickity = "calc(var(--image-height) + 250px)" %}
+  {% when "screen-height-full--mobile" %}
+    {% assign mobile_height_flickity = "100vh" %}
+  {% when "screen-height-three-quarters--mobile" %}
+    {% assign mobile_height_flickity = "75vh" %}
+  {% when "screen-height-two-thirds--mobile" %}
+    {% assign mobile_height_flickity = "66.666vh" %}
+  {% when "screen-height-one-half--mobile" %}
+    {% assign mobile_height_flickity = "50vh" %}
+  {% when "screen-height-one-third--mobile" %}
+    {% assign mobile_height_flickity = "33.333vh" %}
+  {% when "seven-fifty-height-hero--mobile" %}
+    {% assign mobile_height_flickity = "calc(750px + 250px)" %}
+  {% when "sixty-fifty-height-hero--mobile" %}
+    {% assign mobile_height_flickity = "650px" %}
+  {% when "five-fifty-height-hero--mobile" %}
+    {% assign mobile_height_flickity = "550px" %}
+  {% when "four-fifty-height-hero--mobile" %}
+    {% assign mobile_height_flickity = "450px" %}
+  {% else %}
+    {% assign mobile_height_flickity = "650px" %} 
+{% endcase %}
+
   <style>
   :root {
     --mobile-height-flickity: {{mobile_height_flickity}}
