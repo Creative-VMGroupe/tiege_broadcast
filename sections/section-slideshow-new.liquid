@@ -38,7 +38,7 @@ assign mobile_height_flickity = '650px'
 {% if text_box_below %}
   {% case section.settings.mobile_height %}
   {% when "image-height--mobile" %}
-    {% assign mobile_height_flickity = "calc(var(--image-height) + 250px)" %}
+    {% assign mobile_height_flickity = "100vh" %}
   {% when "screen-height-full--mobile" %}
     {% assign mobile_height_flickity = "100vh" %}
   {% when "screen-height-three-quarters--mobile" %}
@@ -65,6 +65,9 @@ assign mobile_height_flickity = '650px'
   :root {
     --mobile-height-flickity: {{mobile_height_flickity}}
   }
+  .flickity-viewport {
+  height: calc(var(--mobile-height-flickity) + 250px) !important;
+}
 </style>
 {% endif %}
 
