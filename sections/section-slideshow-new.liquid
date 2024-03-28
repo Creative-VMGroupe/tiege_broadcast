@@ -62,14 +62,17 @@ assign mobile_height_flickity = '650px'
 {% endcase %}
 
   <style>
+      {%- liquid
+    assign bg_color_mobile = section.blocks.settings.bg_color | default: "#FFFFFF"
+  -%}
   :root {
     --mobile-height-flickity: {{mobile_height_flickity}}
   }
 
 @media (max-width: 749px){
   .slideshow--textbox--custom {
-    background-color: {{section.blocks.settings.bg_color}};
-    height: 250px;
+    background-color: {{bg_color_mobile}};
+    height: 250px !important;
   padding-top: 0 !important;
   padding-bottom: 0;
   display: flex;
