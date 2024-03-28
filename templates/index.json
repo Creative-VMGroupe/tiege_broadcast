@@ -127,8 +127,8 @@
       ],
       "settings": {
         "height": "screen-height-two-thirds",
-        "mobile_height": "four-fifty-height-hero--mobile",
-        "text_box_below": true,
+        "mobile_height": "sixty-fifty-height-hero--mobile",
+        "text_box_below": false,
         "width": "wrapper--full",
         "transition": "slide",
         "show_arrows": true,
