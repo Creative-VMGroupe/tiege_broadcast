@@ -65,7 +65,13 @@ assign mobile_height_flickity = '650px'
   :root {
     --mobile-height-flickity: {{mobile_height_flickity}}
   }
-
+  .slideshow--textbox--custom {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  height: auto;
+}
 @media (max-width: 749px){
   .flickity-viewport {
   height: calc(var(--mobile-height-flickity) + 250px) !important;
