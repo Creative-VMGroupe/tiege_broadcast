@@ -65,11 +65,13 @@ assign mobile_height_flickity = '650px'
   :root {
     --mobile-height-flickity: {{mobile_height_flickity}}
   }
+
+@media (max-width: 749px){
   .flickity-viewport {
   height: calc(var(--mobile-height-flickity) + 250px) !important;
 }
 .flex-custom { display: flex} 
-.flex-col-custom {flex-direction: column}
+.flex-col-custom {flex-direction: column}}
 </style>
 {% endif %}
 
