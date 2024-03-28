@@ -84,6 +84,12 @@ assign color_mobile = section.settings.blocks.mobile_color | default: '#FFFFFF'
 }
 .flex-custom { display: flex} 
 .flex-col-custom {flex-direction: column}}
+
+  @media (max-width: 749px){
+  .slideshow--textbox--color--custom {
+    background-color: {{bg_color_mobile}};
+    color: {{color_mobile}};}}
+
 </style>
 {% endif %}
 
@@ -157,12 +163,7 @@ assign color_mobile = section.settings.blocks.mobile_color | default: '#FFFFFF'
 
             assign animation_order = 2
           -%}
-<style>
-  @media (max-width: 749px){
-  .slideshow--textbox--color--custom {
-    background-color: {{bg_color_mobile}};
-    color: {{color_mobile}};}}
-</style>
+
           <div class="slideshow__slide slideshow__slide--{{ block.id }} frame wide-image {{ section.settings.height }} {{ section.settings.mobile_height }}{% if forloop.first %} is-selected{% endif %} {% if text_box_below %}
             flex-custom flex-col-custom
           {% endif %}"
