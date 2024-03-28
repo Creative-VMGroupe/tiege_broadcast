@@ -25199,3 +25199,13 @@ body.has-header-sticky .timeline {
   height: 100%;
   width: 100%;
 }
+.slideshow--textbox--custom {
+  padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+.flickity-viewport {
+  height: calc(var(--mobile-height-flickity) + 250px) !important;
+}

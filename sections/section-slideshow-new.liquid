@@ -1,6 +1,9 @@
 <!-- /sections/section-slideshow.liquid -->
 
 {%- liquid
+
+assign mobile_height_flickity = section.settings.mobile_height
+  assign text_box_below = section.settings.text_box_below
   assign desktop_height = section.settings.height
   assign mobile_height = section.settings.mobile_height
   assign animation_anchor = '#slideshow-' | append: section.id
@@ -32,6 +35,13 @@
     assign page_dots = true
   endif
 -%}
+{% if text_box_below %}
+  <style>
+  :root {
+    --mobile-height-flickity: {{mobile_height_flickity}}
+  }
+</style>
+{% endif %}
 
 {%- if request.visual_preview_mode -%}
   {%- style -%}
@@ -140,7 +150,7 @@
             {%- endif -%}
 
             {%- if block.settings.title != blank or block.settings.description != blank or first_button_text != blank -%}
-              <div class="hero__content__wrapper frame__item {{ block.settings.flex_align_desktop }} {{ block.settings.flex_align_mobile }}{% if show_header_backdrop %} backdrop--linear{% endif %}"
+              <div class="hero__content__wrapper frame__item {{ block.settings.flex_align_desktop }} {{ block.settings.flex_align_mobile }}{% if show_header_backdrop %} backdrop--linear{% endif %} {% if text_box_below %} slideshow--textbox--custom {% endif %}"
                 {% if show_header_backdrop %}
                   style="--header-overlay-color: {{ overlay_color }}; --header-overlay-opacity: {{ overlay_opacity }};"
                 {% endif %}
@@ -265,6 +275,16 @@
         { "value": "five-fifty-height-hero--mobile", "label": "550px" },
         { "value": "four-fifty-height-hero--mobile", "label": "450px" }
       ]
+    },
+    {
+      "type": "header",
+      "content": "Text Box below Image on Mobile"
+    },
+    {
+      "type": "checkbox",
+      "id": "text_box_below",
+       "label": "Enable Text Box below Image on Mobile",
+       "default": false 
     },
     {
       "type": "select",
