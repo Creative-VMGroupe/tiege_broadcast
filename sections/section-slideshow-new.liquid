@@ -81,14 +81,16 @@ assign color_mobile = section.settings.mobile_color | default: '#FFFFFF'
 }
 .slideshow--textbox--color--custom{
   background-color: {{bg_color_mobile}};
-  color: {{color_mobile}}
+
 }
   .flickity-viewport {
   height: calc(var(--mobile-height-flickity) + 250px) !important;
 }
 .flex-custom { display: flex} 
 .flex-col-custom {flex-direction: column}}
-
+.hero__content {
+  color: {{color_mobile}} !important;
+}
 
 
 </style>
