@@ -60,19 +60,19 @@ assign mobile_height_flickity = '650px'
   {% else %}
     {% assign mobile_height_flickity = "650px" %} 
 {% endcase %}
-
+{%- liquid
+assign bg_color_mobile = section.settings.blocks.mobile_bg_color | default: "#FFFFFF"
+assign color_mobile = section.settings.blocks.mobile_color | default: '#FFFFFF'
+-%}
   <style>
-      {%- liquid
-    assign bg_color_mobile = section.blocks.settings.bg_color | default: "#FFFFFF"
-  -%}
+ 
   :root {
     --mobile-height-flickity: {{mobile_height_flickity}}
   }
 
 @media (max-width: 749px){
   .slideshow--textbox--custom {
-    background-color: {{bg_color_mobile}};
-    height: 250px !important;
+  height: 250px !important;
   padding-top: 0 !important;
   padding-bottom: 0;
   display: flex;
@@ -103,6 +103,8 @@ assign mobile_height_flickity = '650px'
         data-dots="{{ settings.dots_style }}">
         {%- for block in section.blocks -%}
           {%- liquid
+            assign bg_color_mobile = block.mobile_bg_color | default: "#FFFFFF"
+            assign color_mobile = block.mobile_color | default: '#FFFFFF'
             assign image_desktop = block.settings.image
             assign image_mobile = block.settings.mobile_image
             assign alt = image_mobile.alt | default: image_desktop.alt | default: block.settings.title | default: default_slide_label
@@ -155,7 +157,12 @@ assign mobile_height_flickity = '650px'
 
             assign animation_order = 2
           -%}
-
+<style>
+  @media (max-width: 749px){
+  .slideshow--textbox--custom {
+    background-color: {{bg_color_mobile}};
+    color: {{color_mobile}};}}
+</style>
           <div class="slideshow__slide slideshow__slide--{{ block.id }} frame wide-image {{ section.settings.height }} {{ section.settings.mobile_height }}{% if forloop.first %} is-selected{% endif %} {% if text_box_below %}
             flex-custom flex-col-custom
           {% endif %}"
@@ -751,6 +758,21 @@ assign mobile_height_flickity = '650px'
         {
           "type": "color",
           "id": "color",
+          "label": "Text",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "header",
+          "content": "Mobile Colors"
+        },
+        {
+          "type": "color",
+          "id": "mobile_bg_color",
+          "label": "Background"
+        },
+        {
+          "type": "color",
+          "id": "mobile_color",
           "label": "Text",
           "default": "#FFFFFF"
         },
