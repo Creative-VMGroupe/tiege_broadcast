@@ -111,6 +111,7 @@ assign color_mobile = section.settings.mobile_color | default: '#FFFFFF'
         data-options='{"fade": {{ fade_option }}, "autoPlay": {{ autoplay_speed }}, "pageDots": {{ page_dots }}, "prevNextButtons": {{ show_arrows }} }'
         data-dots="{{ settings.dots_style }}">
         {%- for block in section.blocks -%}
+          
           {%- liquid
             assign image_desktop = block.settings.image
             assign image_mobile = block.settings.mobile_image
@@ -184,6 +185,8 @@ assign color_mobile = section.settings.mobile_color | default: '#FFFFFF'
                 <div class="image-overlay" style="--overlay-bg: {{ overlay_color }}; --overlay-opacity: {{ overlay_opacity }};"></div>
               {%- endunless -%}
 
+              {% case block.type  %}
+                {% when 'image' %}
               {%- liquid
                 if forloop.first and section.index < 3
                   assign loading = 'eager'
@@ -197,7 +200,15 @@ assign color_mobile = section.settings.mobile_color | default: '#FFFFFF'
 
                 render 'image-hero', image_desktop: image_desktop, image_mobile: image_mobile, desktop_height: desktop_height, mobile_height: mobile_height, alt: alt, loading: loading, fetchpriority: fetchpriority, preload: preload
               -%}
-
+              {% when 'video' %}
+                {%-
+                  assign video = block.settings.video
+                -%}
+                <div class=" video-container" >
+                  {{ video | video_tag: autoplay: true, image_size: '1085x', loop: true, muted: true, controls: false }}
+        
+                </div>
+            {% endcase %}
             {%- if first_button_text == blank and first_button_link != blank -%}
               </a>
             {%- else -%}
@@ -462,7 +473,7 @@ assign color_mobile = section.settings.mobile_color | default: '#FFFFFF'
           "type": "text",
           "id": "title",
           "label": "Heading",
-          "default": "Video slide"
+          "default": "Image slide"
         },
         {
           "type":  "range",
@@ -705,7 +716,7 @@ assign color_mobile = section.settings.mobile_color | default: '#FFFFFF'
           "type": "text",
           "id": "title",
           "label": "Heading",
-          "default": "Image slide"
+          "default": "Video slide"
         },
         {
           "type":  "range",
