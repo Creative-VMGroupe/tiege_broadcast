@@ -2,7 +2,6 @@
   "sections": {
     "section_video_V7NQ8N": {
       "type": "section-video",
-      "disabled": true,
       "settings": {
         "video": "shopify:\/\/files\/videos\/Tiege_Hanley_Routine_Hero_IG_noaudio_shorter.mp4",
         "show_video_popup": true,
@@ -156,9 +155,10 @@
         "image_LK9Wwm",
         "image_kpxe4T"
       ],
+      "disabled": true,
       "settings": {
         "height": "screen-height-full",
-        "mobile_height": "screen-height-full--mobile",
+        "mobile_height": "screen-height-two-thirds--mobile",
         "text_box_below": true,
         "mobile_bg_color": "rgba(0,0,0,0)",
         "mobile_color": "#212121",
