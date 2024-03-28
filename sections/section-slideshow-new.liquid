@@ -159,7 +159,7 @@ assign color_mobile = section.settings.blocks.mobile_color | default: '#FFFFFF'
           -%}
 <style>
   @media (max-width: 749px){
-  .slideshow--textbox--custom {
+  .slideshow--textbox--color--custom {
     background-color: {{bg_color_mobile}};
     color: {{color_mobile}};}}
 </style>
@@ -203,7 +203,7 @@ assign color_mobile = section.settings.blocks.mobile_color | default: '#FFFFFF'
             {%- endif -%}
 
             {%- if block.settings.title != blank or block.settings.description != blank or first_button_text != blank -%}
-              <div class="hero__content__wrapper frame__item {{ block.settings.flex_align_desktop }} {{ block.settings.flex_align_mobile }}{% if show_header_backdrop %} backdrop--linear{% endif %} {% if text_box_below %} slideshow--textbox--custom {% endif %}"
+              <div class="hero__content__wrapper frame__item {{ block.settings.flex_align_desktop }} {{ block.settings.flex_align_mobile }}{% if show_header_backdrop %} backdrop--linear{% endif %} {% if text_box_below %} slideshow--textbox--custom slideshow--textbox--color--custom{% endif %}"
                 {% if show_header_backdrop %}
                   style="--header-overlay-color: {{ overlay_color }}; --header-overlay-opacity: {{ overlay_opacity }};"
                 {% endif %}
