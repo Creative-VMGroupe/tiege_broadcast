@@ -41,6 +41,7 @@ assign mobile_height_flickity = '650px'
     {% assign mobile_height_flickity = "100vh" %}
   {% when "screen-height-full--mobile" %}
     {% assign mobile_height_flickity = "100vh" %}
+    {% assign fullscreen = true %}
   {% when "screen-height-three-quarters--mobile" %}
     {% assign mobile_height_flickity = "75vh" %}
   {% when "screen-height-two-thirds--mobile" %}
@@ -61,6 +62,7 @@ assign mobile_height_flickity = '650px'
     {% assign mobile_height_flickity = "650px" %} 
 {% endcase %}
 {%- liquid
+
 assign bg_color_mobile = section.settings.mobile_bg_color | default: "#FFFFFF"
 assign color_mobile = section.settings.mobile_color | default: '#FFFFFF'
 -%}
@@ -91,19 +93,17 @@ assign color_mobile = section.settings.mobile_color | default: '#FFFFFF'
 .flex-custom { display: flex} 
 .flex-col-custom {flex-direction: column}
 .video-slideshow-container {
-  {% if section.settings.mobile_height == 'screen-height-full' %} 
-  min-height: var(--full-screen);
-  {% else %}
-  height: {{--mobile-height-flickity}};
-   {% endif %}
-   
-  
+  height: {{ mobile_height_flickity}};
   position: relative
 }}
-
-
-
 </style>
+{% if fullscreen %}
+  <style>
+    .video-slideshow-container{
+      height: var(--fullscreen)
+    }
+  </style>
+{% endif %}
 {% endif %}
 
 {%- if request.visual_preview_mode -%}
@@ -214,7 +214,8 @@ assign color_mobile = section.settings.mobile_color | default: '#FFFFFF'
                 {%-
                   assign video = block.settings.video
                 -%}
-                <div class="video-container video-slideshow-container" >
+                <div class="video-container video-slideshow-container
+                " >
                   {{ video | video_tag: autoplay: true, image_size: '1085x', loop: true, muted: true, controls: false }}
         
                 </div>
