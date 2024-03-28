@@ -910,6 +910,7 @@
       "type": "section-recent-products",
       "settings": {
         "product_recently_heading": "Recently viewed",
+        "heading_size": 8,
         "product_recently_limit": 6,
         "product_recently_minimum": 4,
         "bg_color": "",

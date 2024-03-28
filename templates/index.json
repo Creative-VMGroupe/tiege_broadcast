@@ -93,7 +93,6 @@
         "image_mqBJ4r",
         "image_aKrETt"
       ],
-      "disabled": true,
       "settings": {
         "height": "seven-fifty-height-hero",
         "mobile_height": "sixty-fifty-height-hero--mobile",
@@ -1090,7 +1089,7 @@
           "type": "image",
           "settings": {
             "overlay_opacity": 0,
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "show_overlay_text": false,
             "title": "Image slide",
             "heading_size": 11,
@@ -1099,7 +1098,7 @@
             "flex_align_desktop": "align--middle-center-desktop",
             "flex_align_mobile": "align--middle-center-mobile",
             "bg_color": "",
-            "color": "#FFFFFF",
+            "color": "#ffffff",
             "first_button_text": "View products",
             "first_button_link": "",
             "first_button_type": "btn--primary",
@@ -1118,7 +1117,7 @@
           "type": "image",
           "settings": {
             "overlay_opacity": 0,
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "show_overlay_text": false,
             "title": "Image slide",
             "heading_size": 11,
@@ -1127,7 +1126,7 @@
             "flex_align_desktop": "align--middle-center-desktop",
             "flex_align_mobile": "align--middle-center-mobile",
             "bg_color": "",
-            "color": "#FFFFFF",
+            "color": "#ffffff",
             "first_button_text": "View products",
             "first_button_link": "",
             "first_button_type": "btn--primary",
@@ -1147,7 +1146,7 @@
           "settings": {
             "video": "shopify:\/\/files\/videos\/f7db5c375de94bceb432a68695da9d5d.mov",
             "overlay_opacity": 0,
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "show_overlay_text": false,
             "title": "Image slide",
             "heading_size": 8,
@@ -1156,7 +1155,7 @@
             "flex_align_desktop": "align--middle-center-desktop",
             "flex_align_mobile": "align--middle-center-mobile",
             "bg_color": "",
-            "color": "#FFFFFF",
+            "color": "#ffffff",
             "first_button_text": "View products",
             "first_button_link": "",
             "first_button_type": "btn--primary",
