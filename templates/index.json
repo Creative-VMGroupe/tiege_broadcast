@@ -2,6 +2,7 @@
   "sections": {
     "section_video_V7NQ8N": {
       "type": "section-video",
+      "disabled": true,
       "settings": {
         "video": "shopify:\/\/files\/videos\/Tiege_Hanley_Routine_Hero_IG_noaudio_shorter.mp4",
         "show_video_popup": true,
