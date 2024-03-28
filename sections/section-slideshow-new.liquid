@@ -97,13 +97,7 @@ assign color_mobile = section.settings.mobile_color | default: '#FFFFFF'
   position: relative
 }}
 </style>
-{% if fullscreen %}
-  <style>
-    .video-slideshow-container{
-      height: var(--fullscreen)
-    }
-  </style>
-{% endif %}
+
 {% endif %}
 
 {%- if request.visual_preview_mode -%}
@@ -214,7 +208,9 @@ assign color_mobile = section.settings.mobile_color | default: '#FFFFFF'
                 {%-
                   assign video = block.settings.video
                 -%}
-                <div class="video-container video-slideshow-container
+                <div class="video-container video-slideshow-container{% if fullscreen and text_box_below%}
+full-screen-minus-header
+                {% endif %}
                 " >
                   {{ video | video_tag: autoplay: true, image_size: '1085x', loop: true, muted: true, controls: false }}
         
