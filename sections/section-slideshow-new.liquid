@@ -89,7 +89,11 @@ assign color_mobile = section.settings.mobile_color | default: '#FFFFFF'
   height: calc(var(--mobile-height-flickity) + 250px) !important;
 }
 .flex-custom { display: flex} 
-.flex-col-custom {flex-direction: column}}
+.flex-col-custom {flex-direction: column}
+.video-slideshow-container {
+  height: --mobile-height-flickity;
+  position: relative
+}}
 
 
 
@@ -204,7 +208,7 @@ assign color_mobile = section.settings.mobile_color | default: '#FFFFFF'
                 {%-
                   assign video = block.settings.video
                 -%}
-                <div class=" video-container" >
+                <div class="video-container video-slideshow-container" >
                   {{ video | video_tag: autoplay: true, image_size: '1085x', loop: true, muted: true, controls: false }}
         
                 </div>
