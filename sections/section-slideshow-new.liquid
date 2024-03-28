@@ -68,6 +68,8 @@ assign mobile_height_flickity = '650px'
   .flickity-viewport {
   height: calc(var(--mobile-height-flickity) + 250px) !important;
 }
+.flex-custom { display: flex} 
+.flex-col-custom {flex-direction: column}
 </style>
 {% endif %}
 
@@ -140,7 +142,9 @@ assign mobile_height_flickity = '650px'
             assign animation_order = 2
           -%}
 
-          <div class="slideshow__slide slideshow__slide--{{ block.id }} frame wide-image {{ section.settings.height }} {{ section.settings.mobile_height }}{% if forloop.first %} is-selected{% endif %}"
+          <div class="slideshow__slide slideshow__slide--{{ block.id }} frame wide-image {{ section.settings.height }} {{ section.settings.mobile_height }}{% if forloop.first %} is-selected{% endif %} {% if text_box_below %}
+            flex-custom flex-col-custom
+          {% endif %}"
             {{ color_settings }}
             data-slide="{{ block.id }}"
             data-slide-index="{{ forloop.index0 }}"
