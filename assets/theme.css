@@ -25201,6 +25201,6 @@ body.has-header-sticky .timeline {
 }
 @media (max-width: 749px) {
   .full-screen-minus-header {
-    height: var(--full-screen);
+    height: var(--full-screen) !important;
   }
 }
