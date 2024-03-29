@@ -115,8 +115,8 @@
   endif
 
   capture alignment
-    if section.settings.text_alignment == 'text-left'
-      echo ' align--middle-left'
+    if section.settings.text_alignment == ' text-left'
+      echo ' align--middle-left px-0 '
     else
       echo ' align--middle-center'
     endif
@@ -542,9 +542,9 @@
     {{ over_image_content }}
   </div>
 
-  <div class="product-information" data-product-information>
+  <div class="product-information {{alignment}}" data-product-information>
     <div class="product-item__info">
-      <a class="product-link {{alignment}}" href="{{ product_url }}" data-product-link="{{ product_url }}">
+      <a class="product-link" href="{{ product_url }}" data-product-link="{{ product_url }}">
         <p class="product-item__title">{{ product.title | strip_html | escape }}</p>
 
         <div class="product-item__price__holder{% if has_siblings %} has-siblings{% endif %}">
