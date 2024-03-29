@@ -978,7 +978,7 @@
         "enable_tabs": true,
         "heading_alignment": "text-center",
         "heading_size": 8,
-        "bg_color": "",
+        "bg_color": "#f0f0f0",
         "color": "",
         "border_color": "",
         "padding_top": 30,
