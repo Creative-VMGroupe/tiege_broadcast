@@ -349,35 +349,17 @@
             "show_arrow": false
           }
         },
-        "text_slide_nRQhTh": {
+        "text_slide_i3an9N": {
           "type": "text-slide",
           "settings": {
-            "subheading": "Introducing",
+            "subheading": "",
             "subheading_size": 3,
-            "title": "Image with text slider",
+            "title": "Willow Bark Extract",
             "heading_size": 8,
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
             "text_size": 4,
             "text_style": "font-body",
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        },
-        "text_slide_YpQEkA": {
-          "type": "text-slide",
-          "settings": {
-            "subheading": "Introducing",
-            "subheading_size": 3,
-            "title": "Image with text slider",
-            "heading_size": 8,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
-            "text_style": "font-body",
-            "button_text": "Learn more",
+            "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
             "button_size": "",
@@ -388,8 +370,7 @@
       },
       "block_order": [
         "text_slide_fLBXEE",
-        "text_slide_nRQhTh",
-        "text_slide_YpQEkA"
+        "text_slide_i3an9N"
       ],
       "settings": {
         "layout": "",
@@ -450,6 +431,7 @@
         "text_slide_Nb3dBi",
         "text_slide_68g7FR"
       ],
+      "disabled": true,
       "settings": {
         "layout": "is-reversed",
         "height": "screen-height-three-quarters",
