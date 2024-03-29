@@ -1101,7 +1101,7 @@
       "settings": {
         "layout": "is-reversed",
         "height": "screen-height-three-quarters",
-        "mobile_height": "screen-height-one-half--mobile",
+        "mobile_height": "screen-height-one-third--mobile",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/Snapinsta.app_337156675_1554687731680146_2432232004487884860_n_1080.jpg",
         "image_width": "one-half",
@@ -1367,7 +1367,7 @@
       "settings": {
         "layout": "is-reversed",
         "height": "screen-height-one-half",
-        "mobile_height": "screen-height-one-half--mobile",
+        "mobile_height": "screen-height-one-third--mobile",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png",
         "image_width": "one-half",
