@@ -451,47 +451,47 @@
             "show_arrow": false
           }
         },
-        "text_slide_Q6hmfm": {
+        "text_slide_nwm3p7": {
           "type": "text-slide",
           "settings": {
-            "subheading": "Introducing",
-            "subheading_size": 3,
-            "title": "Image with text slider",
-            "heading_size": 8,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
+            "subheading": "★★★★★",
+            "subheading_size": 4,
+            "title": "Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.",
+            "heading_size": 4,
+            "text": "<p>- Name of Reviewer<\/p>",
+            "text_size": 3,
             "text_style": "font-body",
-            "button_text": "Learn more",
+            "button_text": "See All Reviews",
             "button_url": "",
-            "button_type": "btn--primary",
+            "button_type": "btn--white",
             "button_size": "",
-            "button_style": "btn--solid",
+            "button_style": "btn--outline",
             "show_arrow": false
           }
         },
-        "text_slide_LGA6bg": {
+        "text_slide_9djVpV": {
           "type": "text-slide",
           "settings": {
-            "subheading": "Introducing",
-            "subheading_size": 3,
-            "title": "Image with text slider",
-            "heading_size": 8,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
+            "subheading": "★★★★★",
+            "subheading_size": 4,
+            "title": "Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.",
+            "heading_size": 4,
+            "text": "<p>- Name of Reviewer<\/p>",
+            "text_size": 3,
             "text_style": "font-body",
-            "button_text": "Learn more",
+            "button_text": "See All Reviews",
             "button_url": "",
-            "button_type": "btn--primary",
+            "button_type": "btn--white",
             "button_size": "",
-            "button_style": "btn--solid",
+            "button_style": "btn--outline",
             "show_arrow": false
           }
         }
       },
       "block_order": [
         "text_slide_9qMFGz",
-        "text_slide_Q6hmfm",
-        "text_slide_LGA6bg"
+        "text_slide_nwm3p7",
+        "text_slide_9djVpV"
       ],
       "settings": {
         "layout": "is-reversed",
