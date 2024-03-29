@@ -24,7 +24,7 @@
           "type": "heading",
           "settings": {
             "title": "Level Guide",
-            "heading_size": 9
+            "heading_size": 8
           }
         },
         "text_Dihbfe": {
@@ -62,7 +62,7 @@
           "type": "heading",
           "settings": {
             "title": "Skincare Routine",
-            "text_size": 9,
+            "text_size": 8,
             "padding_bottom": 16
           }
         }
@@ -86,7 +86,7 @@
           "type": "heading",
           "settings": {
             "title": "Level 1: Essential Routine",
-            "text_size": 9,
+            "text_size": 8,
             "padding_bottom": 16
           }
         },
@@ -241,7 +241,7 @@
           "type": "heading",
           "settings": {
             "title": "Level 2: Advanced Routine",
-            "text_size": 9,
+            "text_size": 8,
             "padding_bottom": 16
           }
         },
@@ -396,7 +396,7 @@
           "type": "heading",
           "settings": {
             "title": "Level 3: Anti-aging Routine",
-            "text_size": 9,
+            "text_size": 8,
             "padding_bottom": 16
           }
         },
@@ -551,7 +551,7 @@
           "type": "heading",
           "settings": {
             "title": "Acne Routine",
-            "text_size": 9,
+            "text_size": 8,
             "padding_bottom": 16
           }
         }
@@ -575,7 +575,7 @@
           "type": "heading",
           "settings": {
             "title": "Level 1: Acne Routine",
-            "text_size": 9,
+            "text_size": 8,
             "padding_bottom": 16
           }
         },
@@ -730,7 +730,7 @@
           "type": "heading",
           "settings": {
             "title": "Level 2: Advanced Acne Routine",
-            "text_size": 9,
+            "text_size": 8,
             "padding_bottom": 16
           }
         },
@@ -885,7 +885,7 @@
           "type": "heading",
           "settings": {
             "title": "Routine Quiz",
-            "text_size": 9,
+            "text_size": 8,
             "padding_bottom": 16
           }
         },
