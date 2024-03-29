@@ -20,7 +20,7 @@
         "width": "wrapper",
         "prod_bg_color": "",
         "prod_text_color": "",
-        "text_alignment": "text-center",
+        "text_alignment": "text-left",
         "layout_mobile": "slider",
         "bg_color": "#212121",
         "color": "#ffffff",
