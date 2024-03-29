@@ -227,7 +227,7 @@
         "align_text": "text-left",
         "align_columns": "flex-align-top",
         "width": "wrapper--full-padded",
-        "bg_color": "#e8e8e8",
+        "bg_color": "#f0f0f0",
         "color": "",
         "padding_top": 50,
         "padding_bottom": 50,
@@ -281,7 +281,7 @@
         "image_width": "one-half",
         "text_alignment": "text-center",
         "reverse_blocks": false,
-        "bg_color": "#f0f0f0",
+        "bg_color": "#e8e8e8",
         "color": "",
         "padding_top": 0,
         "padding_bottom": 0
@@ -382,7 +382,7 @@
         "align_text": "text-left",
         "align_columns": "flex-align-top",
         "width": "wrapper--full-padded",
-        "bg_color": "#e8e8e8",
+        "bg_color": "#f0f0f0",
         "color": "",
         "padding_top": 50,
         "padding_bottom": 50,
@@ -436,7 +436,7 @@
         "image_width": "one-half",
         "text_alignment": "text-center",
         "reverse_blocks": false,
-        "bg_color": "#f0f0f0",
+        "bg_color": "#e8e8e8",
         "color": "",
         "padding_top": 0,
         "padding_bottom": 0
@@ -537,7 +537,7 @@
         "align_text": "text-left",
         "align_columns": "flex-align-top",
         "width": "wrapper--full-padded",
-        "bg_color": "#e8e8e8",
+        "bg_color": "#f0f0f0",
         "color": "",
         "padding_top": 50,
         "padding_bottom": 50,
@@ -562,7 +562,7 @@
       "settings": {
         "width": "wrapper--full-padded",
         "align_text": "text-left",
-        "bg_color": "#f7f9fa",
+        "bg_color": "#f0f0f0",
         "color": "",
         "padding_top": 50,
         "padding_bottom": 50
