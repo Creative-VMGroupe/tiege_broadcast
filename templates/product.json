@@ -14,7 +14,6 @@
         },
         "trustreviews_star_rating_W788rE": {
           "type": "shopify:\/\/apps\/trustreviews\/blocks\/star_rating\/56d0fe1b-e701-4cff-8f84-466a26e09adb",
-          "disabled": true,
           "settings": {
             "product": "{{product}}",
             "hide_on_no_reviews": true,
