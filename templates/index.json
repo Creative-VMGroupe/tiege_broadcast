@@ -13,7 +13,7 @@
         "button_size": "",
         "button_style": "btn--text",
         "show_arrow": false,
-        "featured_collection": "",
+        "featured_collection": "best-sellers",
         "layout_desktop": "slider",
         "grid": 4,
         "rows": 3,
