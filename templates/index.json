@@ -430,6 +430,83 @@
         "padding_bottom": 60
       }
     },
+    "section_double_slider_VgJMLT": {
+      "type": "section-double-slider",
+      "blocks": {
+        "text_slide_P6MRhD": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "★★★★★",
+            "subheading_size": 4,
+            "title": "Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.",
+            "heading_size": 4,
+            "text": "<p>- Name of Reviewer<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "button_text": "See All Reviews",
+            "button_url": "",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        },
+        "text_slide_97WtqN": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "★★★★★",
+            "subheading_size": 4,
+            "title": "Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.",
+            "heading_size": 4,
+            "text": "<p>- Name of Reviewer<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "button_text": "See All Reviews",
+            "button_url": "",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        },
+        "text_slide_yAmmLV": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "★★★★★",
+            "subheading_size": 4,
+            "title": "Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.",
+            "heading_size": 4,
+            "text": "<p>- Name of Reviewer<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "button_text": "See All Reviews",
+            "button_url": "",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "text_slide_P6MRhD",
+        "text_slide_97WtqN",
+        "text_slide_yAmmLV"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/Screenshot_2024-03-22_at_10.54.07_PM.png",
+        "image_width": "one-half",
+        "text_alignment": "text-center",
+        "bg_color": "#000000",
+        "color": "#ffffff",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_double_RDk4Uz": {
       "type": "section-double",
       "blocks": {
@@ -1262,6 +1339,7 @@
     "section_double_pyR9aL",
     "section_text_with_products_h3WNiQ",
     "section_collection_JXEkNP",
+    "section_double_slider_VgJMLT",
     "section_double_RDk4Uz",
     "section_collection_RD84YL",
     "section_video_W9NxLi",
