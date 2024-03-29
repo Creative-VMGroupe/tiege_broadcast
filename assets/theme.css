@@ -25186,7 +25186,9 @@ body.has-header-sticky .timeline {
   padding-left: var(--outer);
   padding-right: var(--outer);
 }
-.px-0 {
+
+.align--middle-left--px-0 {
+  text-align: left;
   padding-left: 0;
   padding-right: 0;
 }
