@@ -16,7 +16,7 @@
         "heading_size": 8,
         "description": "The solution for handsome skin guaranteed.",
         "text_size": 3,
-        "flex_align": "align--bottom-left",
+        "flex_align": "align--middle-left",
         "bg_color": "",
         "color": "#ffffff",
         "link_text": "Get Started",
@@ -402,8 +402,36 @@
         "width": "wrapper--full-padded",
         "bg_color": "#ffffff",
         "color": "",
-        "padding_top": 32,
-        "padding_bottom": 32
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "section_collection_new_JPPdmt": {
+      "type": "section-collection-new",
+      "settings": {
+        "heading": "Skin Care Routines",
+        "heading_size": 8,
+        "description": "",
+        "layout": "inline",
+        "link_text": "Shop All Routines",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--text",
+        "show_arrow": false,
+        "featured_collection": "skin-care-system",
+        "layout_desktop": "grid",
+        "grid": 3,
+        "rows": 1,
+        "width": "wrapper--full-padded",
+        "prod_bg_color": "#e8e8e8",
+        "prod_text_color": "#000000",
+        "text_alignment": "text-left",
+        "layout_mobile": "slider",
+        "bg_color": "#e8e8e8",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
       }
     },
     "section_collection_JXEkNP": {
@@ -426,8 +454,8 @@
         "layout_mobile": "1",
         "bg_color": "#e8e8e8",
         "color": "#000000",
-        "padding_top": 60,
-        "padding_bottom": 60
+        "padding_top": 50,
+        "padding_bottom": 50
       }
     },
     "section_double_slider_new_DpH7GU": {
@@ -1026,73 +1054,6 @@
         "padding_bottom": 0
       }
     },
-    "section_reviews_JUyCGF": {
-      "type": "section-reviews",
-      "blocks": {
-        "review_Hd8ftr": {
-          "type": "review",
-          "settings": {
-            "title": "Jeremy Usborne",
-            "subheading": "Industry Expert",
-            "review_text": "Use this text to showcase a review from one of your customers. A great review is honest and speaks to the concerns of your customers.",
-            "review_url": ""
-          }
-        },
-        "review_hW9zPx": {
-          "type": "review",
-          "settings": {
-            "title": "Willy Bridge",
-            "subheading": "Industry Expert",
-            "review_text": "Use this text to showcase a review from one of your customers. A great review is honest and speaks to the concerns of your customers.",
-            "review_url": ""
-          }
-        },
-        "review_3Gyzn7": {
-          "type": "review",
-          "settings": {
-            "title": "Kenneth Powell",
-            "subheading": "Industry Expert",
-            "review_text": "Use this text to showcase a review from one of your customers. A great review is honest and speaks to the concerns of your customers.",
-            "review_url": ""
-          }
-        },
-        "review_YkB6pw": {
-          "type": "review",
-          "settings": {
-            "title": "Example Customer",
-            "subheading": "Industry Expert",
-            "review_text": "Use this text to showcase a review from one of your customers. A great review is honest and speaks to the concerns of your customers.",
-            "review_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "review_Hd8ftr",
-        "review_hW9zPx",
-        "review_3Gyzn7",
-        "review_YkB6pw"
-      ],
-      "disabled": true,
-      "settings": {
-        "show_featured_image": false,
-        "image_aspect_ratio": 1.3,
-        "show_quotation_marks": false,
-        "text_align": "text-center",
-        "text_size": 4,
-        "bg_color": "#f0f0f0",
-        "color": "",
-        "card_bg_color": "",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
-    "17106130050f3cd085": {
-      "type": "apps",
-      "disabled": true,
-      "settings": {
-        "include_margins": false
-      }
-    },
     "section_timeline_cDJGGc": {
       "type": "section-timeline",
       "blocks": {
@@ -1358,57 +1319,6 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
-    },
-    "section_hero_TK8fbB": {
-      "type": "section-hero",
-      "blocks": {
-        "heading_6n7L34": {
-          "type": "heading",
-          "settings": {
-            "title": "Every guy deserves amazing skin",
-            "heading_size": 6
-          }
-        },
-        "text_Dji9xJ": {
-          "type": "text",
-          "settings": {
-            "description": "We don’t buy into the narrative that skin care is only for ladies and male models. Every guy deserves their face to be handsome. We are obsessed with providing all men simple, effective, and accessible skin care to help maximize confidence.",
-            "text_size": 2,
-            "text_style": "font-body"
-          }
-        },
-        "button_YEUj3N": {
-          "type": "button",
-          "settings": {
-            "link_text": "Get the App",
-            "link": "",
-            "button_type": "btn--secondary",
-            "button_size": "btn--large",
-            "button_style": "btn--outline",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_6n7L34",
-        "text_Dji9xJ",
-        "button_YEUj3N"
-      ],
-      "disabled": true,
-      "settings": {
-        "height": "screen-height-two-thirds",
-        "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/19-02-01-Home-Image-Callout-Desktop_2160x_42b70f30-5e89-4e23-afc6-7ecd3b50b503.webp",
-        "link": "",
-        "mobile_height": "screen-height-one-half--mobile",
-        "flex_align_desktop": "align--bottom-left-desktop",
-        "flex_align_mobile": "align--bottom-left-mobile",
-        "overlay_opacity": 20,
-        "overlay_color": "#000000",
-        "show_overlay_text": true,
-        "bg_color": "",
-        "color": "#ffffff"
-      }
     }
   },
   "order": [
@@ -1417,6 +1327,7 @@
     "section_slideshow_tYUFtn",
     "section_double_pyR9aL",
     "section_text_with_products_h3WNiQ",
+    "section_collection_new_JPPdmt",
     "section_collection_JXEkNP",
     "section_double_slider_new_DpH7GU",
     "section_double_slider_VgJMLT",
@@ -1430,12 +1341,9 @@
     "section_before_after_hzKE7H",
     "section_video_NGgczi",
     "section_double_jKb3k6",
-    "section_reviews_JUyCGF",
-    "17106130050f3cd085",
     "section_timeline_cDJGGc",
     "section_timeline_YTB9mM",
     "section_rich_text_mYKMrn",
-    "section_double_yp4ajU",
-    "section_hero_TK8fbB"
+    "section_double_yp4ajU"
   ]
 }
