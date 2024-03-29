@@ -122,18 +122,22 @@
     endif
   endcapture
 -%}
+{% capture prod_bg_color %}
+    {% unless section.settings.bg_color == 'rgba(0,0,0,0)' or section.settings.bg_color == blank %}
+      {{ section.settings.bg_color }}
+    {% endunless %}
+  {% endcapture %}
+  {% capture prod_text_color %}
+    {% unless section.settings.prod_text_color == 'rgba(0,0,0,0)' or section.settings.prod_text_color == blank %}
+      {{ section.settings.prod_text_color }}
+    {% endunless %}
+  {% endcapture %}
 <style>
     .prod-bg-color{
-    {%- unless prod_bg_ == 'rgba(0,0,0,0)' or prod_bg_ == blank -%}
-      background-color: {{ prod_bg_ }};
-    {%- endunless -%}
+background-color: {{prod_bg_color}};
 }
 .prod-text-color {
-    {%- unless prod_text_color == 'rgba(0,0,0,0)' or prod_text_color == blank -%}
-      color: {{ prod_text_color }};
-      --text-light: {{ prod_text_color | color_mix: settings.bg_color, 70 }};
-      --text-dark: {{ prod_text_color | color_saturate: 10 | color_darken: 15 }};
-    {%- endunless -%}
+   color: {{prod_text_color}};
 }
 </style>
 {%- if settings.color_swatches -%}
