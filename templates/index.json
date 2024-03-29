@@ -1211,7 +1211,7 @@
             "text_style": "font-body",
             "button_text": "Shop Level 1 Acne",
             "button_url": "shopify:\/\/products\/level-1-acne-routine-1",
-            "button_type": "btn--primary",
+            "button_type": "btn--secondary",
             "button_size": "btn--small",
             "button_style": "btn--text",
             "show_arrow": false
@@ -1230,7 +1230,7 @@
             "text_style": "font-body",
             "button_text": "Shop Level 2 ACNE",
             "button_url": "shopify:\/\/products\/level-2-advanced-acne-routine-1",
-            "button_type": "btn--primary",
+            "button_type": "btn--secondary",
             "button_size": "btn--large",
             "button_style": "btn--text",
             "show_arrow": false
