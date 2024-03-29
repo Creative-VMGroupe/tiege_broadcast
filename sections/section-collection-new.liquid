@@ -136,7 +136,8 @@
     {%- endif -%}
 
     <div class="grid__items-holder">
-      <div class="grid-outer">
+      <div class="grid-outer {% if {{ section.settings.width == 'compact-grid'}} %}compact-grid
+      {% endif %}">
         {%- capture product_items -%}
           {%- if featured_collection != blank -%}
             {%- if featured_collection.products_count > 0 -%}
@@ -335,7 +336,8 @@
         "default": "wrapper",
         "options": [
           {"value": "wrapper--full-padded", "label": "Full width padded"},
-          {"value": "wrapper", "label": "Normal"}
+          {"value": "wrapper", "label": "Normal"},
+          {"value": "compact-grid", "label": "Compact"}
         ]
       },
       {
