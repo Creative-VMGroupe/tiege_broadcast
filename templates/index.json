@@ -1083,7 +1083,7 @@
           "settings": {
             "button_text": "Get Started",
             "button_url": "shopify:\/\/pages\/find-my-routine",
-            "button_type": "btn--primary",
+            "button_type": "btn--secondary",
             "button_size": "btn--large",
             "button_style": "btn--solid",
             "show_arrow": false,
