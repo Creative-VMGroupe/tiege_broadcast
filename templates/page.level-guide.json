@@ -73,7 +73,7 @@
       "settings": {
         "width": "wrapper--full-padded",
         "align_text": "text-left",
-        "bg_color": "#f7f9fa",
+        "bg_color": "#f0f0f0",
         "color": "",
         "padding_top": 50,
         "padding_bottom": 50
@@ -126,7 +126,7 @@
         "image_width": "one-half",
         "text_alignment": "text-center",
         "reverse_blocks": false,
-        "bg_color": "#f0f0f0",
+        "bg_color": "#e8e8e8",
         "color": "",
         "padding_top": 0,
         "padding_bottom": 0
@@ -611,10 +611,11 @@
         "height": "screen-height-three-quarters",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/Acne_RoutineL1_Tiege_Hanley_Acne_Hero.jpg",
         "image_width": "one-half",
         "text_alignment": "text-center",
         "reverse_blocks": false,
-        "bg_color": "#f0f0f0",
+        "bg_color": "#e8e8e8",
         "color": "",
         "padding_top": 0,
         "padding_bottom": 0
@@ -715,7 +716,7 @@
         "align_text": "text-left",
         "align_columns": "flex-align-top",
         "width": "wrapper--full-padded",
-        "bg_color": "#fafafa",
+        "bg_color": "#f0f0f0",
         "color": "",
         "padding_top": 50,
         "padding_bottom": 50,
@@ -761,14 +762,15 @@
         "buttons_4wy7i8"
       ],
       "settings": {
-        "layout": "is-reversed",
+        "layout": "",
         "height": "screen-height-three-quarters",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/Acne_Routine_L2_Tiege_Hanley_Hero.jpg",
         "image_width": "one-half",
         "text_alignment": "text-center",
         "reverse_blocks": false,
-        "bg_color": "#f0f0f0",
+        "bg_color": "#e8e8e8",
         "color": "",
         "padding_top": 0,
         "padding_bottom": 0
@@ -869,7 +871,7 @@
         "align_text": "text-left",
         "align_columns": "flex-align-top",
         "width": "wrapper--full-padded",
-        "bg_color": "#fafafa",
+        "bg_color": "#f0f0f0",
         "color": "",
         "padding_top": 50,
         "padding_bottom": 50,
