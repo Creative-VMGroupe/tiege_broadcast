@@ -123,8 +123,8 @@
   endcapture
 -%}
 {% capture prod_bg_color %}
-    {% unless section.settings.bg_color == 'rgba(0,0,0,0)' or section.settings.bg_color == blank %}
-      {{ section.settings.bg_color }}
+    {% unless section.settings.prod_bg_color == 'rgba(0,0,0,0)' or section.settings.prod_bg_color == blank %}
+      {{ section.settings.prod_bg_color }}
     {% endunless %}
   {% endcapture %}
   {% capture prod_text_color %}
@@ -564,7 +564,7 @@ background-color: {{prod_bg_color}};
       <a class="product-link" href="{{ product_url }}" data-product-link="{{ product_url }}">
         <p class="product-item__title prod-text-color">{{ product.title | strip_html | escape }}</p>
 
-        <div class="prod-text-color product-item__price__holder{% if has_siblings %} has-siblings{% endif %}">
+        <div class="product-item__price__holder{% if has_siblings %} has-siblings{% endif %}">
           {%- if has_siblings or product_item_cutline != blank -%}
             {%- assign cutline_color = settings.cutline_color -%}
 
@@ -595,7 +595,7 @@ background-color: {{prod_bg_color}};
 
 <span class="price{% if product.compare_at_price > product.price %} sale{% endif %}">
   {% if product.available %}
-    <span class="new-price">
+    <span class="new-price prod-text-color">
       {% if product.price_varies %}
         <small>{{ 'products.general.from' | t }}</small>
       {% endif %}
