@@ -1031,7 +1031,7 @@
         "prod_bg_color": "#000000",
         "prod_text_color": "#ffffff",
         "text_alignment": "text-left",
-        "layout_mobile": "1",
+        "layout_mobile": "slider",
         "bg_color": "#000000",
         "color": "#ffffff",
         "padding_top": 50,
