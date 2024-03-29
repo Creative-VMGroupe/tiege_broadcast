@@ -149,7 +149,7 @@
                     assign animation_delay = forloop.index0 | modulo: grid_int | times: 1
                   endif
 
-                  render 'product-grid-item', product: product, animation_delay: animation_delay, index: forloop.index
+                  render 'product-grid-item-new', product: product, animation_delay: animation_delay, index: forloop.index
                 endfor
               -%}
 
@@ -338,6 +338,29 @@
           {"value": "wrapper", "label": "Normal"}
         ]
       },
+      {
+        "type": "header",
+        "content": "Product Informarion",
+        "info": "Set Color, BG Color and alignment of product info"
+      },
+      {"type": "color", 
+      "id": "prod_bg_color", 
+      "label": "Prod BG Color"
+      },
+      {"type": "color", 
+      "id": "prod_text_color", 
+      "label": "Text Color"
+      },
+      {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Alignment",
+      "default": "text-left",
+      "options": [
+        {"value": "text-left","label": "Left"},
+        {"value": "text-center","label": "Centered"}
+      ]
+    },
       {
         "type": "header",
         "content": "Mobile"
