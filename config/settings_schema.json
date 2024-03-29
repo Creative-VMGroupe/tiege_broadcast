@@ -411,7 +411,7 @@
         "options": [
           { "value": "hidden", "label": "Hidden" },
           { "value": "circle", "label": "Circle" },
-          { "value": "line", "label": "Line"}
+          { "value": "line", "label": "Line" }
         ],
         "default": "hidden"
       },
@@ -909,7 +909,7 @@
         "type": "richtext",
         "id": "accept_terms_text",
         "label": "Checkbox label",
-        "default": "<p>I agree to the terms and conditions<\/p>"
+        "default": "<p>I agree to the terms and conditions</p>"
       },
       {
         "type": "header",
