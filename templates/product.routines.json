@@ -675,6 +675,94 @@
         "layout_mobile": "slider"
       }
     },
+    "faq": {
+      "type": "section-accordion",
+      "blocks": {
+        "faq-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "Step 1: Wash",
+            "text": "<p>Use Tiege Hanley’s WASH facial cleanser. Wet your face, squeeze out the size of a nickel (yes, the coin) into your palm, rub it all over your wet face for about 10 seconds, then wash it off.<\/p><p><strong>Why:<\/strong> It’s like sanding a piece of wood before applying a rich, mahogany stain. Getting rid of any dead skin cells and pore-clogging debris and build-up is essential for achieving healthy-looking skin.<\/p>"
+          }
+        },
+        "image_MXQg98": {
+          "type": "image",
+          "settings": {
+            "title": "Step 1: Wash",
+            "text": "<p>Use Tiege Hanley's WASH facial cleanser. Wet your face, squeeze out the size of a nickel (yes, the coin) into your palm, rub it all over your wet face for about 10 seconds.<\/p>",
+            "image": "shopify:\/\/shop_images\/HARRYS_FW_PROD_0279_1.jpg",
+            "aspect_ratio": 0.8
+          }
+        },
+        "image_4icANB": {
+          "type": "image",
+          "settings": {
+            "title": "Step 2: Scrub",
+            "text": "<p>Use Tiege Hanley’s AM moisturizer. Squeeze out the size of a pea into your palm and spend about 10 seconds massaging it all over your face.<\/p>",
+            "image": "shopify:\/\/shop_images\/HARRYS_FW_PORT_0529.jpg",
+            "aspect_ratio": 0.8
+          }
+        },
+        "image_Jbczgz": {
+          "type": "image",
+          "settings": {
+            "title": "Step 3: AM Moisturizer",
+            "text": "<p>Use Tiege Hanley’s AM moisturizer. Squeeze out the size of a pea into your palm and spend about 10 seconds massaging it all over your face.<\/p>",
+            "image": "shopify:\/\/shop_images\/HARRYS_FW_PORT_0529.jpg",
+            "aspect_ratio": 0.8
+          }
+        },
+        "image_8BQ9AN": {
+          "type": "image",
+          "settings": {
+            "title": "Step 4: PM",
+            "text": "<p>After washing and drying your face, dispense a bit of PM into your hand. Work the moisturizer all over your face for about 10 seconds. When it’s all rubbed in, go to bed<\/p>",
+            "image": "shopify:\/\/shop_images\/HARRYS_FW_PORT_0529.jpg",
+            "aspect_ratio": 0.8
+          }
+        },
+        "faq-3": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "Step 3: AM Moisturize",
+            "text": "<p>Use Tiege Hanley’s AM moisturizer. Squeeze out the size of a pea into your palm and spend about 10 seconds massaging it all over your face.<\/p><p><strong>Why:<\/strong> Dry skin isn’t great to look at, feels even worse and can actually lead to other problems down the road. Without locking in moisture, your face is vulnerable to all sorts of pollutants, dirt and dust in the environment. Plus, our AM moisturizer contains SPF 20 to block UV rays because cancer is real and we’d like you and your handsome face to stick around a while.<\/p>"
+          }
+        },
+        "faq-4": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "Step 4: PM",
+            "text": "<p>After washing and drying your face, dispense a bit of PM into your hand. Work the moisturizer all over your face for about 10 seconds. When it’s all rubbed in, go to bed<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq-1",
+        "image_MXQg98",
+        "image_4icANB",
+        "image_Jbczgz",
+        "image_8BQ9AN",
+        "faq-3",
+        "faq-4"
+      ],
+      "settings": {
+        "default_open": true,
+        "title": "How To Use",
+        "show_icon": false,
+        "icon_name": "icon-award",
+        "icon_size": 20,
+        "icon_color": "#545454",
+        "bg_color": "",
+        "color": "",
+        "border_color": "",
+        "width": "wrapper",
+        "padding_top": 30,
+        "padding_bottom": 0
+      }
+    },
     "section_accordion_NdXrTE": {
       "type": "section-accordion",
       "blocks": {
@@ -749,63 +837,8 @@
       "block_order": [
         "trustreviews_reviews_widget_8YLWPV"
       ],
-      "disabled": true,
       "settings": {
         "include_margins": false
-      }
-    },
-    "faq": {
-      "type": "section-accordion",
-      "blocks": {
-        "faq-1": {
-          "type": "text",
-          "settings": {
-            "title": "Step 1: Wash",
-            "text": "<p>Use Tiege Hanley’s WASH facial cleanser. Wet your face, squeeze out the size of a nickel (yes, the coin) into your palm, rub it all over your wet face for about 10 seconds, then wash it off.<\/p><p><strong>Why:<\/strong> It’s like sanding a piece of wood before applying a rich, mahogany stain. Getting rid of any dead skin cells and pore-clogging debris and build-up is essential for achieving healthy-looking skin.<\/p>"
-          }
-        },
-        "faq-2": {
-          "type": "text",
-          "settings": {
-            "title": "Step 2: Scrub",
-            "text": "<p>Use Tiege Hanley’s AM moisturizer. Squeeze out the size of a pea into your palm and spend about 10 seconds massaging it all over your face.<\/p><p><strong>Why:<\/strong> Dry skin isn’t great to look at, feels even worse and can actually lead to other problems down the road. Without locking in moisture, your face is vulnerable to all sorts of pollutants, dirt and dust in the environment. Plus, our AM moisturizer contains SPF 20 to block UV rays because cancer is real and we’d like you and your handsome face to stick around a while.<\/p>"
-          }
-        },
-        "faq-3": {
-          "type": "text",
-          "settings": {
-            "title": "Step 3: AM Moisturize",
-            "text": "<p>Use Tiege Hanley’s AM moisturizer. Squeeze out the size of a pea into your palm and spend about 10 seconds massaging it all over your face.<\/p><p><strong>Why:<\/strong> Dry skin isn’t great to look at, feels even worse and can actually lead to other problems down the road. Without locking in moisture, your face is vulnerable to all sorts of pollutants, dirt and dust in the environment. Plus, our AM moisturizer contains SPF 20 to block UV rays because cancer is real and we’d like you and your handsome face to stick around a while.<\/p>"
-          }
-        },
-        "faq-4": {
-          "type": "text",
-          "settings": {
-            "title": "Step 4: PM",
-            "text": "<ol><li>After washing and drying your face, dispense a bit of PM into your hand<\/li><li>Work the moisturizer all over your face for about 10 seconds<\/li><li>When it’s all rubbed in, go to bed<\/li><\/ol>"
-          }
-        }
-      },
-      "block_order": [
-        "faq-1",
-        "faq-2",
-        "faq-3",
-        "faq-4"
-      ],
-      "disabled": true,
-      "settings": {
-        "default_open": false,
-        "title": "How To Use",
-        "show_icon": false,
-        "icon_name": "icon-award",
-        "icon_size": 20,
-        "icon_color": "#545454",
-        "bg_color": "",
-        "color": "",
-        "border_color": "",
-        "width": "wrapper",
-        "padding_top": 30,
-        "padding_bottom": 0
       }
     },
     "shipping": {
@@ -885,14 +918,27 @@
         "related",
         "recent"
       ],
-      "disabled": true,
       "settings": {
         "enable_tabs": true,
         "heading_alignment": "text-center",
-        "heading_size": 4,
+        "heading_size": 8,
         "bg_color": "",
         "color": "",
         "border_color": "",
+        "padding_top": 30,
+        "padding_bottom": 0
+      }
+    },
+    "section_recent_products_KDiXJb": {
+      "type": "section-recent-products",
+      "disabled": true,
+      "settings": {
+        "product_recently_heading": "Recently viewed",
+        "heading_size": 8,
+        "product_recently_limit": 6,
+        "product_recently_minimum": 4,
+        "bg_color": "",
+        "color": "",
         "padding_top": 30,
         "padding_bottom": 0
       }
@@ -966,19 +1012,6 @@
       "settings": {
         "include_margins": false
       }
-    },
-    "section_recent_products_KDiXJb": {
-      "type": "section-recent-products",
-      "settings": {
-        "product_recently_heading": "Recently viewed",
-        "heading_size": 8,
-        "product_recently_limit": 6,
-        "product_recently_minimum": 4,
-        "bg_color": "",
-        "color": "",
-        "padding_top": 30,
-        "padding_bottom": 0
-      }
     }
   },
   "order": [
@@ -990,13 +1023,13 @@
     "section_collection_YVbRj7",
     "section_columns_ycKyp7",
     "section_columns_WqpJx7",
+    "faq",
     "section_accordion_NdXrTE",
     "1711051410c76bca1d",
-    "faq",
     "shipping",
     "related",
+    "section_recent_products_KDiXJb",
     "section_reviews_8Finzg",
-    "171061224373a1e0d4",
-    "section_recent_products_KDiXJb"
+    "171061224373a1e0d4"
   ]
 }
