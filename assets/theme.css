@@ -25204,6 +25204,9 @@ body.has-header-sticky .timeline {
   height: 100%;
   width: 100%;
 }
+.mb-10 {
+  margin-bottom: 10px;
+}
 @media (max-width: 749px) {
   .full-screen-minus-header {
     height: var(--full-screen) !important;

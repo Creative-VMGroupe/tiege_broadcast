@@ -563,7 +563,7 @@ background-color: {{prod_bg_color}};
   <div class="product-information prod-bg-color" data-product-information>
     <div class="product-item__info {{alignment}}">
       <a class="product-link" href="{{ product_url }}" data-product-link="{{ product_url }}">
-        <p class="product-item__title prod-text-color">{{ product.title | strip_html | escape }}</p>
+        <p class="product-item__title prod-text-color mb-10">{{ product.title | strip_html | escape }}</p>
 
         <div class="product-item__price__holder{% if has_siblings %} has-siblings{% endif %}">
           {%- if has_siblings or product_item_cutline != blank -%}
