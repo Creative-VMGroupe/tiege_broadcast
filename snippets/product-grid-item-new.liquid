@@ -132,7 +132,8 @@
       {{ section.settings.prod_text_color }}
     {% endunless %}
   {% endcapture %}
-<style>
+
+{% comment %} <style>
     .prod-bg-color{
 background-color: {{prod_bg_color}};
 
@@ -140,7 +141,7 @@ background-color: {{prod_bg_color}};
 .prod-text-color {
    color: {{prod_text_color}};
 }
-</style>
+</style> {% endcomment %}
 {%- if settings.color_swatches -%}
   {%- assign has_colors = false -%}
 
@@ -560,10 +561,10 @@ background-color: {{prod_bg_color}};
     {{ over_image_content }}
   </div>
 
-  <div class="product-information prod-bg-color" data-product-information>
+  <div style="background-color: {{prod_bg_color}};" class="product-information" data-product-information>
     <div class="product-item__info {{alignment}}">
       <a class="product-link" href="{{ product_url }}" data-product-link="{{ product_url }}">
-        <p class="product-item__title prod-text-color mb-10">{{ product.title | strip_html | escape }}</p>
+        <p style="color: {{prod_text_color}}" class="product-item__title mb-10">{{ product.title | strip_html | escape }}</p>
 
         <div class="product-item__price__holder{% if has_siblings %} has-siblings{% endif %}">
           {%- if has_siblings or product_item_cutline != blank -%}
@@ -596,7 +597,7 @@ background-color: {{prod_bg_color}};
 
 <span class="price{% if product.compare_at_price > product.price %} sale{% endif %}">
   {% if product.available %}
-    <span class="new-price prod-text-color">
+    <span style="color: {{prod_text_color}}"  class="new-price">
       {% if product.price_varies %}
         <small>{{ 'products.general.from' | t }}</small>
       {% endif %}
