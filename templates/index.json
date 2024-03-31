@@ -748,31 +748,6 @@
         "show_arrow": false
       }
     },
-    "section_collection_knnzf8": {
-      "type": "section-collection",
-      "disabled": true,
-      "settings": {
-        "heading": "Our Bestsellers",
-        "description": "",
-        "layout": "inline",
-        "link_text": "Shop Now",
-        "link_url": "",
-        "button_type": "btn--secondary",
-        "button_size": "btn--small",
-        "button_style": "btn--text",
-        "show_arrow": false,
-        "featured_collection": "best-sellers",
-        "layout_desktop": "slider",
-        "grid": 4,
-        "rows": 3,
-        "width": "wrapper",
-        "layout_mobile": "slider",
-        "bg_color": "#212121",
-        "color": "#f2eeea",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
     "section_collection_new_KfWkY6": {
       "type": "section-collection-new",
       "disabled": true,
@@ -1378,6 +1353,22 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "1711929560e678d8ba": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_story_app_block_feeds_7PgdpH": {
+          "type": "shopify:\/\/apps\/instafeed-story\/blocks\/app-block-feeds\/4169bff3-1d6b-44ad-9377-2ebc3d31f01c",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_story_app_block_feeds_7PgdpH"
+      ],
+      "settings": {
+        "include_margins": false
+      }
     }
   },
   "order": [
@@ -1394,7 +1385,6 @@
     "section_collection_new_MWikbY",
     "section_collection_RD84YL",
     "section_video_W9NxLi",
-    "section_collection_knnzf8",
     "section_collection_new_KfWkY6",
     "section_text_row_YFhUxM",
     "section_hero_iEX3nG",
@@ -1405,6 +1395,7 @@
     "section_timeline_cDJGGc",
     "section_timeline_YTB9mM",
     "section_rich_text_mYKMrn",
-    "section_double_yp4ajU"
+    "section_double_yp4ajU",
+    "1711929560e678d8ba"
   ]
 }
