@@ -93,6 +93,7 @@
       "block_order": [
         "feat"
       ],
+      "disabled": true,
       "settings": {
         "height": "five-fifty-height-hero",
         "mobile_height": "screen-height-one-half--mobile",
@@ -117,9 +118,9 @@
         "aspect_ratio": 1,
         "title_size": 4,
         "show_tags": false,
-        "show_author": false,
-        "show_date": false,
-        "show_button": false,
+        "show_author": true,
+        "show_date": true,
+        "show_button": true,
         "show_comments": false,
         "padding_top": 32,
         "padding_bottom": 0
