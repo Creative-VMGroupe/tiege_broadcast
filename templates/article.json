@@ -5,12 +5,14 @@
       "blocks": {
         "related-products": {
           "type": "related",
+          "disabled": true,
           "settings": {
             "title": "Related products"
           }
         },
         "recent-articles": {
           "type": "recent",
+          "disabled": true,
           "settings": {
             "title": "Recent articles"
           }
@@ -132,6 +134,7 @@
         "heading_Um4CpX",
         "text_GtbyyM"
       ],
+      "disabled": true,
       "settings": {
         "width": "wrapper--narrow",
         "align_text": "text-left",
@@ -169,12 +172,93 @@
         "padding_top": 50,
         "padding_bottom": 50
       }
+    },
+    "section_columns_zYbRC3": {
+      "type": "section-columns",
+      "blocks": {
+        "image_twD9TQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash---Lifestyle-Image_df4e86dd-4683-4163-9c4a-2b0b554d2e07.png",
+            "image_aspect_ratio": 0.8,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Lorem Ipsum",
+            "heading_size": 8,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 3,
+            "button_text": "Read Now",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_cWWe7f": {
+          "type": "image",
+          "settings": {
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Add a title or tagline",
+            "heading_size": 4,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 3,
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_9mwGKR": {
+          "type": "image",
+          "settings": {
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Add a title or tagline",
+            "heading_size": 4,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 3,
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "image_twD9TQ",
+        "image_cWWe7f",
+        "image_9mwGKR"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": 5,
+        "layout": "grid",
+        "grid": 3,
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "layout_mobile": "slider"
+      }
     }
   },
   "order": [
     "main",
     "section_double_BCKiMQ",
     "section_rich_text_GDUWCk",
-    "section_reviews_6RY6Fc"
+    "section_reviews_6RY6Fc",
+    "section_columns_zYbRC3"
   ]
 }
