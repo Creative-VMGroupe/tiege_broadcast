@@ -195,17 +195,18 @@
             "show_arrow": false
           }
         },
-        "image_cWWe7f": {
+        "image_nPmFRR": {
           "type": "image",
           "settings": {
-            "image_aspect_ratio": 1,
+            "image": "shopify:\/\/shop_images\/Wash---Lifestyle-Image_df4e86dd-4683-4163-9c4a-2b0b554d2e07.png",
+            "image_aspect_ratio": 0.8,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
-            "title": "Add a title or tagline",
-            "heading_size": 4,
+            "title": "Lorem Ipsum",
+            "heading_size": 8,
             "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
             "text_size": 3,
-            "button_text": "Learn more",
+            "button_text": "Read Now",
             "button_url": "",
             "button_type": "btn--primary",
             "button_size": "",
@@ -213,17 +214,18 @@
             "show_arrow": false
           }
         },
-        "image_9mwGKR": {
+        "image_HQhBri": {
           "type": "image",
           "settings": {
-            "image_aspect_ratio": 1,
+            "image": "shopify:\/\/shop_images\/Wash---Lifestyle-Image_df4e86dd-4683-4163-9c4a-2b0b554d2e07.png",
+            "image_aspect_ratio": 0.8,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
-            "title": "Add a title or tagline",
-            "heading_size": 4,
+            "title": "Lorem Ipsum",
+            "heading_size": 8,
             "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
             "text_size": 3,
-            "button_text": "Learn more",
+            "button_text": "Read Now",
             "button_url": "",
             "button_type": "btn--primary",
             "button_size": "",
@@ -234,8 +236,8 @@
       },
       "block_order": [
         "image_twD9TQ",
-        "image_cWWe7f",
-        "image_9mwGKR"
+        "image_nPmFRR",
+        "image_HQhBri"
       ],
       "settings": {
         "title": "",
