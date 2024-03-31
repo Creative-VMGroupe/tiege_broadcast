@@ -378,6 +378,13 @@
   --LAYOUT-GUTTER-MEDIUM: 22px;
   --LAYOUT-OUTER-SMALL: 16px;
   --LAYOUT-GUTTER-SMALL: 16px;
+  {%- elsif settings.grid_style == 'tight' -%}
+    --LAYOUT-OUTER: 32px;
+  --LAYOUT-GUTTER: 16px;
+  --LAYOUT-OUTER-MEDIUM: 30px;
+  --LAYOUT-GUTTER-MEDIUM: 22px;
+  --LAYOUT-OUTER-SMALL: 32px;
+  --LAYOUT-GUTTER-SMALL: 16px;
 {%- else -%}
   --LAYOUT-OUTER: 50px;
   --LAYOUT-GUTTER: 32px;
