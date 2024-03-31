@@ -3,22 +3,23 @@
     "section_slideshow_new_btGBtt": {
       "type": "section-slideshow-new",
       "blocks": {
-        "image_6LzwVY": {
+        "image_UdJ6yX": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Skin_Level1-1x1_b459dbfa-e83b-4805-a2a3-c9480df2a8d8.jpg",
             "overlay_opacity": 0,
             "overlay_color": "#000",
             "show_overlay_text": false,
-            "title": "Image slide",
-            "heading_size": 11,
+            "title": "Uncomplicated",
+            "heading_size": 8,
             "description": "Tell your brand's story through images.",
-            "text_size": 5,
-            "flex_align_desktop": "align--middle-center-desktop",
+            "text_size": 4,
+            "flex_align_desktop": "align--middle-left-desktop",
             "flex_align_mobile": "align--middle-center-mobile",
             "bg_color": "",
             "color": "#FFFFFF",
-            "first_button_text": "View products",
-            "first_button_link": "",
+            "first_button_text": "Read Now",
+            "first_button_link": "shopify:\/\/blogs\/news\/lorem-ipsum-dolor-sit-amet",
             "first_button_type": "btn--primary",
             "first_button_size": "",
             "first_button_style": "btn--solid",
@@ -31,9 +32,10 @@
             "second_button_show_arrow": false
           }
         },
-        "image_UdJ6yX": {
+        "image_6LzwVY": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/L2_TiegeHanley_Advanced_Routine_Hero.jpg",
             "overlay_opacity": 0,
             "overlay_color": "#000",
             "show_overlay_text": false,
@@ -41,12 +43,12 @@
             "heading_size": 11,
             "description": "Tell your brand's story through images.",
             "text_size": 5,
-            "flex_align_desktop": "align--middle-center-desktop",
+            "flex_align_desktop": "align--middle-left-desktop",
             "flex_align_mobile": "align--middle-center-mobile",
             "bg_color": "",
             "color": "#FFFFFF",
-            "first_button_text": "View products",
-            "first_button_link": "",
+            "first_button_text": "Read Now",
+            "first_button_link": "shopify:\/\/blogs\/news\/blog-post-2",
             "first_button_type": "btn--primary",
             "first_button_size": "",
             "first_button_style": "btn--solid",
@@ -61,8 +63,8 @@
         }
       },
       "block_order": [
-        "image_6LzwVY",
-        "image_UdJ6yX"
+        "image_UdJ6yX",
+        "image_6LzwVY"
       ],
       "settings": {
         "height": "screen-height-three-quarters",
