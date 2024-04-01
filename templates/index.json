@@ -867,8 +867,8 @@
       "settings": {
         "title": "Our Difference",
         "heading_size": 8,
-        "layout": "slider",
-        "grid": 3,
+        "layout": "grid",
+        "grid": 6,
         "align_heading": "text-center",
         "align_text": "text-center",
         "icon_alignment": "icon--top",
