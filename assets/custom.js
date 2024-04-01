@@ -14,7 +14,7 @@
     var didScroll;
     var lastScrollTop = 0;
     var delta = 5;
-    var navbarHeight = $('.theme__header').outerHeight();
+    var navbarHeight = $('.header__wrapper').outerHeight();
     
     $(window).scroll(function(event){
         didScroll = true;
@@ -38,11 +38,11 @@
         // This is necessary so you never see what is "behind" the navbar.
         if (st > lastScrollTop && st > navbarHeight){
             // Scroll Down
-            $('.theme__header').removeClass('nav-down').addClass('nav-up');
+            $('.header__wrapper').removeClass('js__header__stuck').addClass('nav-up');
         } else {
             // Scroll Up
             if(st + $(window).height() < $(document).height()) {
-                $('.theme__header').removeClass('nav-up').addClass('nav-down');
+                $('.header__wrapper').removeClass('nav-up').addClass('js__header__stuck');
             }
         }
         
