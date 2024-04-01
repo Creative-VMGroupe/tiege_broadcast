@@ -122,26 +122,14 @@
     endif
   endcapture
 -%}
-{% capture prod_bg_color %}
-    {% unless section.settings.prod_bg_color == 'rgba(0,0,0,0)' or section.settings.prod_bg_color == blank %}
-      {{ section.settings.prod_bg_color }}
-    {% endunless %}
-  {% endcapture %}
+
   {% capture prod_text_color %}
     {% unless section.settings.prod_text_color == 'rgba(0,0,0,0)' or section.settings.prod_text_color == blank %}
       {{ section.settings.prod_text_color }}
     {% endunless %}
   {% endcapture %}
 
-{% comment %} <style>
-    .prod-bg-color{
-background-color: {{prod_bg_color}};
 
-}
-.prod-text-color {
-   color: {{prod_text_color}};
-}
-</style> {% endcomment %}
 {%- if settings.color_swatches -%}
   {%- assign has_colors = false -%}
 
@@ -561,7 +549,7 @@ background-color: {{prod_bg_color}};
     {{ over_image_content }}
   </div>
 
-  <div style="background-color: {{prod_bg_color}};" class="product-information" data-product-information>
+  <div  class="product-information" data-product-information>
     <div class="product-item__info {{alignment}}">
       <a class="product-link" href="{{ product_url }}" data-product-link="{{ product_url }}">
         <p style="color: {{prod_text_color}}" class="product-item__title mb-10">{{ product.title | strip_html | escape }}</p>
