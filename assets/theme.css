@@ -23898,6 +23898,7 @@ dialog.is-loading .loader {
 
 .quick-add__button {
   color: var(--COLOR-TEXT);
+
 }
 .quick-add__button.is-visible,
 .quick-add__button.is-loading,
