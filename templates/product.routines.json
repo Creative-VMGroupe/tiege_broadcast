@@ -1059,10 +1059,20 @@
           "settings": {
             "videowise_embed": "<div class=\"reeview-app-widget\" id=\"reeview-app-widget_65f5deec895c9e0028f2bd85\"><\/div>"
           }
+        },
+        "instafeed_app_block_Gap9kU": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "@tiegehanley",
+            "title_color": "",
+            "alignment": "center",
+            "html_area": ""
+          }
         }
       },
       "block_order": [
-        "videowise_video_platform_ugc_videowise_page_widgets_F9irDP"
+        "videowise_video_platform_ugc_videowise_page_widgets_F9irDP",
+        "instafeed_app_block_Gap9kU"
       ],
       "disabled": true,
       "settings": {
