@@ -23887,7 +23887,7 @@ dialog.is-loading .loader {
     visibility: visible;
     display: block;
     max-height: none;
-    padding: 15px;
+    padding: 20px;
     opacity: 1;
   }
 }
@@ -23898,7 +23898,7 @@ dialog.is-loading .loader {
 
 .quick-add__button {
   color: var(--COLOR-TEXT);
-
+  background-color: white;
 }
 .quick-add__button.is-visible,
 .quick-add__button.is-loading,
@@ -25234,4 +25234,7 @@ body.has-header-sticky .timeline {
   .accordion-new__body {
     max-width: none;
   }
+}
+.quick-add__text {
+  font-size: calc(1rem * var(--FONT-ADJUST-BODY));
 }
