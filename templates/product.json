@@ -16,7 +16,7 @@
           "type": "shopify:\/\/apps\/trustreviews\/blocks\/star_rating\/56d0fe1b-e701-4cff-8f84-466a26e09adb",
           "settings": {
             "product": "{{product}}",
-            "hide_on_no_reviews": true,
+            "hide_on_no_reviews": false,
             "enable_jsonld": false,
             "starsize": 16
           }
