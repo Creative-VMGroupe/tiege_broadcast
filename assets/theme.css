@@ -20277,12 +20277,13 @@ body.is-focused .subcollection__item:focus-within .image-overlay-bottom {
   display: block;
   padding: 4px 8px;
   transition: color 0.3s ease;
-  border-radius: var(--RADIUS);
+  /* border-radius: var(--RADIUS); */
 }
 
 .pagination-custom__page--active {
   position: relative;
-  box-shadow: 0 0 0 1px currentColor;
+  padding: 2px;
+  /* box-shadow: 0 0 0 1px currentColor; */
 }
 
 .pagination-custom__inner {
