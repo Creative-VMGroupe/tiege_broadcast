@@ -188,7 +188,7 @@
 
                             {%- if block.settings.terms -%}
                               <div class="form__legal">
-                                {{ 'shopify.online_store.spam_detection.disclaimer_html' | t }}
+                                {% comment %} {{ 'shopify.online_store.spam_detection.disclaimer_html' | t }} {% endcomment %}
                               </div>
                             {%- endif -%}
                           {%- endform -%}
