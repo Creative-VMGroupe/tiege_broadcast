@@ -713,7 +713,7 @@
           "type": "image",
           "settings": {
             "title": "Step 4: PM",
-            "heading_size": 7,
+            "heading_size": 6,
             "text": "<p>After washing and drying your face, dispense a bit of PM into your hand. Work the moisturizer all over your face for about 10 seconds. When it’s all rubbed in, go to bed<\/p>",
             "image": "shopify:\/\/shop_images\/AdobeStock_481479860.jpg",
             "aspect_ratio": 0.6
@@ -728,7 +728,7 @@
       ],
       "settings": {
         "default_open": true,
-        "title": "FAQ",
+        "title": "How To",
         "heading_size": 8,
         "show_icon": false,
         "icon_name": "icon-award",
