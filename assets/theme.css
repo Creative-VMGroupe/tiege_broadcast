@@ -23797,7 +23797,7 @@ dialog.is-loading .loader {
 
 .faq-list__item-title {
   margin-bottom: calc(var(--gutter) / 3);
-  font-size: calc(var(--font-3) * var(--FONT-ADJUST-HEADING));
+  /* font-size: calc(var(--font-3) * var(--FONT-ADJUST-HEADING)); */
   font-weight: var(--FONT-WEIGHT-HEADING);
 }
 
