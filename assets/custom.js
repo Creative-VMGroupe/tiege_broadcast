@@ -9,7 +9,6 @@
 
 
 (function() {
-  // Add custom code below this line
   // Hide Header on on scroll down
     var didScroll;
     var lastScrollTop = 0;
@@ -29,26 +28,15 @@
     
     function hasScrolled() {
         var st = $(this).scrollTop();
-        
-        // Make sure they scroll more than delta
         if(Math.abs(lastScrollTop - st) <= delta)
             return;
-        
-        // If they scrolled down and are past the navbar, add class .nav-up.
-        // This is necessary so you never see what is "behind" the navbar.
         if (st > lastScrollTop && st > navbarHeight){
-            // Scroll Down
-            $('.header__wrapper').removeClass('js__header__stuck').addClass('nav-up');
+            $('.header__wrapper').removeClass('js__header__stuck');
         } else {
-            // Scroll Up
             if(st + $(window).height() < $(document).height()) {
-                $('.header__wrapper').removeClass('nav-up').addClass('js__header__stuck');
+                $('.header__wrapper').addClass('js__header__stuck');
             }
         }
-        
         lastScrollTop = st;
     }
-
-  // ^^ Keep your scripts inside this IIFE function call to 
-  // avoid leaking your variables into the global scope.
 })();
