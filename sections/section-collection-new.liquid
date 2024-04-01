@@ -136,7 +136,7 @@
     {%- endif -%}
 
     <div class="grid__items-holder">
-      <div class="grid-outer {% if {{ section.settings.width == 'compact-grid'}} %}compact-grid
+      <div class="grid-outer {% if  section.settings.width == 'compact-grid' %}compact-grid
       {% endif %}">
         {%- capture product_items -%}
           {%- if featured_collection != blank -%}
