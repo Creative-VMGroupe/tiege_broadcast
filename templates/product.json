@@ -719,6 +719,26 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "1711936135ad982cf2": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_Vncyxe": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "@tiegehanley",
+            "title_color": "",
+            "alignment": "center",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_Vncyxe"
+      ],
+      "settings": {
+        "include_margins": false
+      }
     }
   },
   "order": [
@@ -732,6 +752,7 @@
     "section_accordion_WH4xRJ",
     "section_recent_products_QG7xzL",
     "alireviews-section-07d4a73d-744c-4193-b979-9ec1b2c01807",
-    "section_accordion_new_hde9c4"
+    "section_accordion_new_hde9c4",
+    "1711936135ad982cf2"
   ]
 }
