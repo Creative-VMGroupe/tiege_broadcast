@@ -5169,6 +5169,8 @@ button {
   transition-property: color, background, border;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  min-height: var(--BUTTON-MIN-HEIGHT);
+  min-width: var(--BUTTON-MIN-WIDTH);
 }
 .btn span,
 .shopify-payment-button .shopify-payment-button__button--unbranded span,
