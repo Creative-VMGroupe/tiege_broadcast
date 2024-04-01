@@ -20283,6 +20283,7 @@ body.is-focused .subcollection__item:focus-within .image-overlay-bottom {
 .pagination-custom__page--active {
   position: relative;
   padding: 2px;
+  border-bottom: 1px solid #00ad2d;
   /* box-shadow: 0 0 0 1px currentColor; */
 }
 
