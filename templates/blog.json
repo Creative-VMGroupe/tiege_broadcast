@@ -69,9 +69,9 @@
       "settings": {
         "height": "screen-height-three-quarters",
         "mobile_height": "screen-height-three-quarters--mobile",
-        "text_box_below": false,
+        "text_box_below": true,
         "mobile_bg_color": "",
-        "mobile_color": "#ffffff",
+        "mobile_color": "#000000",
         "width": "wrapper--full",
         "transition": "slide",
         "show_arrows": true,
@@ -110,7 +110,7 @@
     "main": {
       "type": "blog",
       "custom_css": [
-        ".blog-section {background-color: #E8E8E8;}"
+        ".blog-section {background-color: #e8e8e8;}"
       ],
       "settings": {
         "show_title": true,
