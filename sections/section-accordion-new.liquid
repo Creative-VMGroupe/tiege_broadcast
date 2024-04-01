@@ -96,7 +96,7 @@
                     {%- capture text_content -%}
                       <div class="faq-list__item-description">
                         {%- if block.settings.title != blank -%}
-                          <h3 class="faq-list__item-title">
+                          <h3 class="faq-list__item-title heading-size-{{ block.settings.heading_size }}">
                             {{ block.settings.title }}
                           </h3>
                         {%- endif -%}
@@ -409,6 +409,15 @@
           "label": "Heading",
           "default": "Image heading"
         },
+        {
+            "type": "range",
+            "id": "heading_size",
+            "label": "Heading size",
+            "min": 1,
+            "max": 15,
+            "step": 1,
+            "default": 7
+          },
         {
           "type": "richtext",
           "id": "text",

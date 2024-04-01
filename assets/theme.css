@@ -23747,7 +23747,7 @@ dialog.is-loading .loader {
 
 .faq-list__item {
   padding: calc(var(--gutter) / 2) 0;
-  flex-basis: 49%;
+  flex-basis: 49.37%;
   font-size: calc(var(--font-2) * var(--FONT-ADJUST-BODY));
   line-height: 1.3;
 }
