@@ -45,7 +45,7 @@
     "parallax_enable": true,
     "parallax_strength": 50,
     "product_grid_outline": false,
-    "show_scroll_top_button": true,
+    "show_scroll_top_button": false,
     "instagram_link": "https:\/\/instagram.com\/shopify",
     "facebook_link": "https:\/\/facebook.com\/shopify",
     "product_grid_center": false,
