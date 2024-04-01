@@ -66,7 +66,7 @@
           "type": "buttons",
           "settings": {
             "show_quantity": false,
-            "show_payment_button": true,
+            "show_payment_button": false,
             "show_gift_card_recipient": false,
             "padding_bottom": 32
           }
@@ -708,6 +708,7 @@
         "default_open": false,
         "title": "FAQ",
         "heading_size": 8,
+        "subheading_size": 6,
         "show_icon": false,
         "icon_name": "icon-award",
         "icon_size": 20,
