@@ -959,6 +959,9 @@
       "block_order": [
         "trustreviews_reviews_widget_8YLWPV"
       ],
+      "custom_css": [
+        "a.mr-2{display:none}"
+      ],
       "settings": {
         "include_margins": false
       }
