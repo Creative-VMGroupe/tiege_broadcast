@@ -679,42 +679,49 @@
     "section_accordion_new_DpxfiN": {
       "type": "section-accordion-new",
       "blocks": {
-        "text_BwVbcY": {
-          "type": "text",
+        "image_gHryiA": {
+          "type": "image",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "title": "Step 1: Wash",
+            "text": "<p>Use Tiege Hanley's WASH facial cleanser. Wet your face, squeeze out the size of a nickel (yes, the coin) into your palm, rub it all over your wet face for about 10 seconds.<\/p>",
+            "image": "shopify:\/\/shop_images\/HARRYS_FW_PROD_0279_1.jpg",
+            "aspect_ratio": 0.6
           }
         },
-        "text_bhrgj3": {
-          "type": "text",
+        "image_BE4xiM": {
+          "type": "image",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "title": "Step 2: Scrub",
+            "text": "<p>Use Tiege Hanley’s AM moisturizer. Squeeze out the size of a pea into your palm and spend about 10 seconds massaging it all over your face.<\/p>",
+            "image": "shopify:\/\/shop_images\/AdobeStock_481479872.jpg",
+            "aspect_ratio": 0.6
           }
         },
-        "text_VGdUdm": {
-          "type": "text",
+        "image_meFLzL": {
+          "type": "image",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "title": "Step 3: AM Moisturizer",
+            "text": "<p>Use Tiege Hanley’s AM moisturizer. Squeeze out the size of a pea into your palm and spend about 10 seconds massaging it all over your face.<\/p>",
+            "image": "shopify:\/\/shop_images\/AdobeStock_481479870.jpg",
+            "aspect_ratio": 0.6
           }
         },
-        "text_Hy3dD9": {
-          "type": "text",
+        "image_6KDKny": {
+          "type": "image",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "title": "Step 4: PM",
+            "text": "<p>After washing and drying your face, dispense a bit of PM into your hand. Work the moisturizer all over your face for about 10 seconds. When it’s all rubbed in, go to bed<\/p>",
+            "image": "shopify:\/\/shop_images\/AdobeStock_481479860.jpg",
+            "aspect_ratio": 0.6
           }
         }
       },
       "block_order": [
-        "text_BwVbcY",
-        "text_bhrgj3",
-        "text_VGdUdm",
-        "text_Hy3dD9"
+        "image_gHryiA",
+        "image_BE4xiM",
+        "image_meFLzL",
+        "image_6KDKny"
       ],
-      "disabled": true,
       "settings": {
         "default_open": false,
         "title": "FAQ",
