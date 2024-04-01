@@ -61,7 +61,7 @@
     "show_cutline": true,
     "form_style": "classic",
     "show_lines": true,
-    "variant_lines": true,
+    "variant_lines": false,
     "show_gift_card_recipient": true,
     "color_swatches": true,
     "checkout_logo_position": "left",

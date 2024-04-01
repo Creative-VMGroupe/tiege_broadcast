@@ -29,7 +29,6 @@
         },
         "variants": {
           "type": "variants",
-          "disabled": true,
           "settings": {
             "info_page": "",
             "size_chart_style": "question",
