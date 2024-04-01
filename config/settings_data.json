@@ -60,7 +60,7 @@
     "show_siblings": true,
     "show_cutline": true,
     "form_style": "classic",
-    "show_lines": true,
+    "show_lines": false,
     "variant_lines": false,
     "show_gift_card_recipient": true,
     "color_swatches": true,
