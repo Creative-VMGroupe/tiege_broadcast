@@ -1359,12 +1359,23 @@
       "blocks": {
         "instafeed_story_app_block_feeds_7PgdpH": {
           "type": "shopify:\/\/apps\/instafeed-story\/blocks\/app-block-feeds\/4169bff3-1d6b-44ad-9377-2ebc3d31f01c",
+          "disabled": true,
           "settings": {
+          }
+        },
+        "instafeed_app_block_KpifXW": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "alignment": "center",
+            "html_area": ""
           }
         }
       },
       "block_order": [
-        "instafeed_story_app_block_feeds_7PgdpH"
+        "instafeed_story_app_block_feeds_7PgdpH",
+        "instafeed_app_block_KpifXW"
       ],
       "settings": {
         "include_margins": false
