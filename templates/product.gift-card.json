@@ -1,0 +1,759 @@
+{
+  "sections": {
+    "main": {
+      "type": "product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "subheading_option": "collection",
+            "collection": "",
+            "text_size": 6,
+            "padding_bottom": 8
+          }
+        },
+        "trustreviews_star_rating_W788rE": {
+          "type": "shopify:\/\/apps\/trustreviews\/blocks\/star_rating\/56d0fe1b-e701-4cff-8f84-466a26e09adb",
+          "settings": {
+            "product": "{{product}}",
+            "hide_on_no_reviews": true,
+            "enable_jsonld": false,
+            "starsize": 16
+          }
+        },
+        "recharge_subscriptions_subscription_widget_8WKxnT": {
+          "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "variants": {
+          "type": "variants",
+          "disabled": true,
+          "settings": {
+            "info_page": "",
+            "size_chart_style": "question",
+            "subscriptions_enable_selectors": false,
+            "padding_bottom": 16
+          }
+        },
+        "popup_iLQPxV": {
+          "type": "popup",
+          "settings": {
+            "title": "Membership Benefits",
+            "text": "<p>Additonal information about the product.<\/p>",
+            "page": "",
+            "icon_name": "icon-trophy",
+            "icon_size": 20,
+            "icon_color": "#545454",
+            "padding_bottom": 16
+          }
+        },
+        "inventory_countdown_UfpQXK": {
+          "type": "inventory_countdown",
+          "settings": {
+            "show_notice": "always",
+            "max_inventory": 10,
+            "hide_inventory_counter": true,
+            "icon_size": 20,
+            "in_stock_color": "#56ad6a",
+            "low_stock_color": "#f79554",
+            "out_of_stock_color": "#721c24",
+            "padding_bottom": 16
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "show_quantity": false,
+            "show_payment_button": false,
+            "show_gift_card_recipient": false,
+            "padding_bottom": 32
+          }
+        },
+        "text_e6RAMT": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "text": "<p>100% money back guarantee. Handsome guarantee. Free Shipping in USA and Canada.<\/p>",
+            "layout": "left",
+            "padding_bottom": 16
+          }
+        },
+        "icon_1": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-email",
+            "icon_size": 20,
+            "icon_color": "#545454",
+            "title": "Free 30 Days Returns",
+            "text_size": 3,
+            "width": "full",
+            "padding_bottom": 16
+          }
+        },
+        "icon_2": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-truck",
+            "icon_size": 20,
+            "icon_color": "#545454",
+            "title": "Free shipping on orders over $100",
+            "text_size": 3,
+            "width": "full",
+            "padding_bottom": 16
+          }
+        },
+        "tab_richtext_nDcaW6": {
+          "type": "tab_richtext",
+          "settings": {
+            "show_read_more": true,
+            "style": "accordions",
+            "title_1": "Ingredients",
+            "raw_content_1": "<p>This is a single product description.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <\/p>",
+            "title_2": "",
+            "raw_content_2": "",
+            "title_3": "",
+            "raw_content_3": "",
+            "title_4": "",
+            "raw_content_4": "",
+            "title_5": "",
+            "raw_content_5": "",
+            "padding_bottom": 0
+          }
+        },
+        "divider_1": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "padding_bottom": 16
+          }
+        },
+        "complementary_products_C7V6rg": {
+          "type": "complementary-products",
+          "settings": {
+            "complementary_limit": 3,
+            "bg_color": "",
+            "padding_bottom": 16
+          }
+        },
+        "upsell": {
+          "type": "upsell",
+          "disabled": true,
+          "settings": {
+            "upsell_product": "",
+            "upsell_product_list": [
+
+            ],
+            "bg_color": "",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "trustreviews_star_rating_W788rE",
+        "recharge_subscriptions_subscription_widget_8WKxnT",
+        "variants",
+        "popup_iLQPxV",
+        "inventory_countdown_UfpQXK",
+        "buttons",
+        "text_e6RAMT",
+        "icon_1",
+        "icon_2",
+        "tab_richtext_nDcaW6",
+        "divider_1",
+        "complementary_products_C7V6rg",
+        "upsell"
+      ],
+      "custom_css": [
+        ".mock-notification {display: none;}",
+        ".rc-subscription-details {display: none;}",
+        ".rc-radio {border: 1px solid black;}",
+        ".rc-template__radio {display: flex; flex-direction: column; gap: 8px;}",
+        ".rc-selling-plans {display: none;}",
+        ".bi-star::before {height: 30px; width: 20px;}",
+        ".rc-widget label {border-radius: 300px;}",
+        ".accordion__title {font-weight: bold;}",
+        ".accordion {border: none;}"
+      ],
+      "settings": {
+        "product_sticky_enable": true,
+        "image_layout": "grid-1",
+        "image_size": "stretch",
+        "show_cart_bar": true,
+        "enable_zoom": true,
+        "enable_video_looping": true,
+        "mobile_image_style": "slider",
+        "padding_top": 90,
+        "padding_bottom": 30
+      }
+    },
+    "related": {
+      "type": "related",
+      "blocks": {
+        "related": {
+          "type": "related",
+          "settings": {
+            "product_recommendations_heading": "Related products",
+            "limit": 4
+          }
+        },
+        "recent": {
+          "type": "recent",
+          "settings": {
+            "product_recently_heading": "Recently viewed",
+            "product_recently_limit": 4
+          }
+        }
+      },
+      "block_order": [
+        "related",
+        "recent"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_tabs": true,
+        "heading_alignment": "text-center",
+        "heading_size": 4,
+        "bg_color": "",
+        "color": "",
+        "border_color": "",
+        "padding_top": 30,
+        "padding_bottom": 0
+      }
+    },
+    "section_double_Pf9XFr": {
+      "type": "section-double",
+      "blocks": {
+        "heading_DzedxK": {
+          "type": "heading",
+          "settings": {
+            "title": "Proof",
+            "text_size": 9,
+            "padding_bottom": 16
+          }
+        },
+        "subheading_G7RaGg": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "★★★★★★",
+            "text_size": 4,
+            "padding_bottom": 16
+          }
+        },
+        "text_Yh8JmM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_tJDcGw": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_DzedxK",
+        "subheading_G7RaGg",
+        "text_Yh8JmM",
+        "buttons_tJDcGw"
+      ],
+      "custom_css": [
+        ".hero__subheading {color: #00ad2d;}"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-third--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO3.png",
+        "image_2": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png",
+        "image_width": "three-quarters",
+        "text_alignment": "text-center",
+        "reverse_blocks": false,
+        "bg_color": "#000000",
+        "color": "#ffffff",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_double_slider_xjfT8n": {
+      "type": "section-double-slider",
+      "blocks": {
+        "text_slide_erwHb6": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "Introducing",
+            "subheading_size": 4,
+            "title": "Willow Bark Extract",
+            "heading_size": 9,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        },
+        "text_slide_hiLUWD": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "Introducing",
+            "subheading_size": 4,
+            "title": "Willow Bark Extract",
+            "heading_size": 9,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "text_slide_erwHb6",
+        "text_slide_hiLUWD"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/uZr3qZvfRNuNZb2xaQjw.png",
+        "image_2": "shopify:\/\/shop_images\/rosemary-v1608581888105.png",
+        "image_width": "one-half",
+        "text_alignment": "text-center",
+        "bg_color": "#f0f0f0",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_collection_m9yHwy": {
+      "type": "section-collection",
+      "settings": {
+        "heading": "Included in this System",
+        "description": "",
+        "layout": "inline",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "featured_collection": "best-sellers",
+        "layout_desktop": "grid",
+        "grid": 4,
+        "rows": 1,
+        "width": "wrapper--full-padded",
+        "layout_mobile": "slider",
+        "bg_color": "#f7f9fa",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "section_columns_kqNxAq": {
+      "type": "section-columns",
+      "blocks": {
+        "image_brJKGB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash_0fce57fe-0aa5-41e4-8ba0-ac09af75851a.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Wash",
+            "heading_size": 6,
+            "text": "<p>Why? Because your face is dirty.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_qNeYUL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash_0fce57fe-0aa5-41e4-8ba0-ac09af75851a.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Scrub",
+            "heading_size": 6,
+            "text": "<p>Remove excess skin.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_k7FAiH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AM-1.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "AM",
+            "heading_size": 6,
+            "text": "<p>Morning-time moisturizer.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_HqJKDh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PM-1.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "PM",
+            "heading_size": 6,
+            "text": "<p>Night-time moisturizer.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "image_brJKGB",
+        "image_qNeYUL",
+        "image_k7FAiH",
+        "image_HqJKDh"
+      ],
+      "settings": {
+        "title": "Included in this System",
+        "heading_size": 9,
+        "layout": "slider",
+        "grid": 2,
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "bg_color": "#ffffff",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "layout_mobile": "slider"
+      }
+    },
+    "section_columns_gjgyTb": {
+      "type": "section-columns",
+      "blocks": {
+        "image_HbzXU6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HARRYS_FW_PROD_0279_1.jpg",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 1: Wash",
+            "heading_size": 6,
+            "text": "<p>Use Tiege Hanley's WASH facial cleanser. Wet your face, squeeze out the size of a nickel (yes, the coin) into your palm, rub it all over your wet face for about 10 seconds.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_w7wXjX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HARRYS_FW_PORT_0529.jpg",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 2: Scrub",
+            "heading_size": 6,
+            "text": "<p>Why? Because your face is dirty.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_nBXbVf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 3:  AM Moisturize",
+            "heading_size": 6,
+            "text": "<p>Use Tiege Hanley's WASH facial cleanser. Wet your face, squeeze out the size of a nickel (yes, the coin) into your palm, rub it all over your wet face for about 10 seconds.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_BKCxza": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO3.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Step 4: PM",
+            "heading_size": 6,
+            "text": "<p>Use Tiege Hanley's WASH facial cleanser. Wet your face, squeeze out the size of a nickel (yes, the coin) into your palm, rub it all over your wet face for about 10 seconds.<\/p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "image_HbzXU6",
+        "image_w7wXjX",
+        "image_nBXbVf",
+        "image_BKCxza"
+      ],
+      "settings": {
+        "title": "How To",
+        "heading_size": 9,
+        "layout": "grid",
+        "grid": 2,
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "bg_color": "#ffffff",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "layout_mobile": "slider"
+      }
+    },
+    "section_accordion_WH4xRJ": {
+      "type": "section-accordion",
+      "blocks": {
+        "text_nH8XXt": {
+          "type": "text",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+          }
+        },
+        "text_6Ncrdq": {
+          "type": "text",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+          }
+        },
+        "text_E6RGPa": {
+          "type": "text",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+          }
+        },
+        "text_Pxr3LM": {
+          "type": "text",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_nH8XXt",
+        "text_6Ncrdq",
+        "text_E6RGPa",
+        "text_Pxr3LM"
+      ],
+      "disabled": true,
+      "settings": {
+        "default_open": false,
+        "title": "FAQ",
+        "show_icon": false,
+        "icon_name": "icon-award",
+        "icon_size": 20,
+        "icon_color": "#545454",
+        "bg_color": "",
+        "color": "",
+        "border_color": "",
+        "width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_recent_products_QG7xzL": {
+      "type": "section-recent-products",
+      "settings": {
+        "product_recently_heading": "Recently viewed",
+        "heading_size": 8,
+        "product_recently_limit": 6,
+        "product_recently_minimum": 1,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 30,
+        "padding_bottom": 0
+      }
+    },
+    "alireviews-section-07d4a73d-744c-4193-b979-9ec1b2c01807": {
+      "type": "apps",
+      "blocks": {
+        "25e98304-5dea-4e93-b4e6-0d566e44cdb2": {
+          "type": "shopify:\/\/apps\/ali-reviews\/blocks\/widget-box\/bf2eea72-0400-4db1-8908-44b7418f9a88",
+          "settings": {
+            "product": "",
+            "name": "Review Box",
+            "vertical_alignment": "2",
+            "rating_color": "#1f1f1f",
+            "section_color": "#ffffff",
+            "primary_text_color": "#1f1f1f"
+          }
+        }
+      },
+      "block_order": [
+        "25e98304-5dea-4e93-b4e6-0d566e44cdb2"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "section_accordion_new_hde9c4": {
+      "type": "section-accordion-new",
+      "blocks": {
+        "text_aa89Cc": {
+          "type": "text",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+          }
+        },
+        "text_wHK64i": {
+          "type": "text",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+          }
+        },
+        "text_yjC7hM": {
+          "type": "text",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+          }
+        },
+        "text_czGQHW": {
+          "type": "text",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_aa89Cc",
+        "text_wHK64i",
+        "text_yjC7hM",
+        "text_czGQHW"
+      ],
+      "settings": {
+        "default_open": false,
+        "title": "FAQ",
+        "heading_size": 8,
+        "subheading_size": 6,
+        "show_icon": false,
+        "icon_name": "icon-award",
+        "icon_size": 20,
+        "icon_color": "#545454",
+        "bg_color": "",
+        "color": "",
+        "border_color": "",
+        "width": "wrapper--full--custom",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "1711936135ad982cf2": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_Vncyxe": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "@tiegehanley",
+            "title_color": "",
+            "alignment": "center",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_Vncyxe"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related",
+    "section_double_Pf9XFr",
+    "section_double_slider_xjfT8n",
+    "section_collection_m9yHwy",
+    "section_columns_kqNxAq",
+    "section_columns_gjgyTb",
+    "section_accordion_WH4xRJ",
+    "section_recent_products_QG7xzL",
+    "alireviews-section-07d4a73d-744c-4193-b979-9ec1b2c01807",
+    "section_accordion_new_hde9c4",
+    "1711936135ad982cf2"
+  ]
+}
