@@ -748,7 +748,7 @@
           "type": "buttons",
           "settings": {
             "button_text": "Learn more",
-            "button_url": "",
+            "button_url": "shopify:\/\/products\/level-2-advanced-acne-routine-1",
             "button_type": "btn--secondary",
             "button_size": "",
             "button_style": "btn--solid",
