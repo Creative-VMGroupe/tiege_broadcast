@@ -347,6 +347,7 @@
     },
     "section_collection_m9yHwy": {
       "type": "section-collection",
+      "disabled": true,
       "settings": {
         "heading": "Included in this System",
         "description": "",
@@ -455,6 +456,7 @@
         "image_k7FAiH",
         "image_HqJKDh"
       ],
+      "disabled": true,
       "settings": {
         "title": "Included in this System",
         "heading_size": 9,
