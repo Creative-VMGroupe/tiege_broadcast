@@ -684,7 +684,6 @@
           "type": "image",
           "settings": {
             "title": "Step 1: Wash",
-            "heading_size": 6,
             "text": "<p>Use Tiege Hanley's WASH facial cleanser. Wet your face, squeeze out the size of a nickel (yes, the coin) into your palm, rub it all over your wet face for about 10 seconds.<\/p>",
             "image": "shopify:\/\/shop_images\/HARRYS_FW_PROD_0279_1.jpg",
             "aspect_ratio": 0.6
@@ -694,7 +693,6 @@
           "type": "image",
           "settings": {
             "title": "Step 2: Scrub",
-            "heading_size": 6,
             "text": "<p>Use Tiege Hanley’s AM moisturizer. Squeeze out the size of a pea into your palm and spend about 10 seconds massaging it all over your face.<\/p>",
             "image": "shopify:\/\/shop_images\/AdobeStock_481479872.jpg",
             "aspect_ratio": 0.6
@@ -704,7 +702,6 @@
           "type": "image",
           "settings": {
             "title": "Step 3: AM Moisturizer",
-            "heading_size": 6,
             "text": "<p>Use Tiege Hanley’s AM moisturizer. Squeeze out the size of a pea into your palm and spend about 10 seconds massaging it all over your face.<\/p>",
             "image": "shopify:\/\/shop_images\/AdobeStock_481479870.jpg",
             "aspect_ratio": 0.6
@@ -714,7 +711,6 @@
           "type": "image",
           "settings": {
             "title": "Step 4: PM",
-            "heading_size": 6,
             "text": "<p>After washing and drying your face, dispense a bit of PM into your hand. Work the moisturizer all over your face for about 10 seconds. When it’s all rubbed in, go to bed<\/p>",
             "image": "shopify:\/\/shop_images\/AdobeStock_481479860.jpg",
             "aspect_ratio": 0.6
@@ -816,6 +812,7 @@
         "faq-3",
         "faq-4"
       ],
+      "disabled": true,
       "settings": {
         "default_open": true,
         "title": "How To Use",
