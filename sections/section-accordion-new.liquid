@@ -89,7 +89,7 @@
               </summary>
             {%- endif -%}
 
-            <div class="accordion__body rte"{% if default_open != blank %} style="max-width: 80vw; height: auto;"{% endif %} data-collapsible-body>
+            <div class="accordion__body rte accordion-new__body"{% if default_open != blank %} style="height: auto; max-width: 80vw;"{% endif %} data-collapsible-body>
               <div class="accordion__content" data-collapsible-content>
                 <div class="faq-list faq-list--{{ section.blocks.size }}">
                   {%- for block in section.blocks -%}

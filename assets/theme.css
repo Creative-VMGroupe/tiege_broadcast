@@ -25215,3 +25215,6 @@ body.has-header-sticky .timeline {
     height: var(--full-screen) !important;
   }
 }
+.accordion-new__body {
+  max-width: 80vw;
+}
