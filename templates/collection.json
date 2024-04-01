@@ -193,6 +193,26 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "17119362154e0b2be0": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_BzhQ6A": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "@tiegehanley",
+            "title_color": "",
+            "alignment": "center",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_BzhQ6A"
+      ],
+      "settings": {
+        "include_margins": false
+      }
     }
   },
   "order": [
@@ -200,6 +220,7 @@
     "subcollections",
     "main",
     "section_hero_xP4xGE",
-    "section_double_Wz33Wb"
+    "section_double_Wz33Wb",
+    "17119362154e0b2be0"
   ]
 }
