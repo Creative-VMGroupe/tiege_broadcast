@@ -186,40 +186,6 @@
         "padding_bottom": 30
       }
     },
-    "related": {
-      "type": "related",
-      "blocks": {
-        "related": {
-          "type": "related",
-          "settings": {
-            "product_recommendations_heading": "Related products",
-            "limit": 4
-          }
-        },
-        "recent": {
-          "type": "recent",
-          "settings": {
-            "product_recently_heading": "Recently viewed",
-            "product_recently_limit": 4
-          }
-        }
-      },
-      "block_order": [
-        "related",
-        "recent"
-      ],
-      "disabled": true,
-      "settings": {
-        "enable_tabs": true,
-        "heading_alignment": "text-center",
-        "heading_size": 4,
-        "bg_color": "",
-        "color": "",
-        "border_color": "",
-        "padding_top": 30,
-        "padding_bottom": 0
-      }
-    },
     "section_double_Pf9XFr": {
       "type": "section-double",
       "blocks": {
@@ -725,6 +691,39 @@
         "include_margins": false
       }
     },
+    "related": {
+      "type": "related",
+      "blocks": {
+        "related": {
+          "type": "related",
+          "settings": {
+            "product_recommendations_heading": "Related products",
+            "limit": 4
+          }
+        },
+        "recent": {
+          "type": "recent",
+          "settings": {
+            "product_recently_heading": "Recently viewed",
+            "product_recently_limit": 4
+          }
+        }
+      },
+      "block_order": [
+        "related",
+        "recent"
+      ],
+      "settings": {
+        "enable_tabs": true,
+        "heading_alignment": "text-center",
+        "heading_size": 8,
+        "bg_color": "#f0f0f0",
+        "color": "",
+        "border_color": "",
+        "padding_top": 50,
+        "padding_bottom": 0
+      }
+    },
     "1711936135ad982cf2": {
       "type": "apps",
       "blocks": {
@@ -748,7 +747,6 @@
   },
   "order": [
     "main",
-    "related",
     "section_double_Pf9XFr",
     "section_double_slider_xjfT8n",
     "section_collection_m9yHwy",
@@ -758,6 +756,7 @@
     "section_accordion_new_hde9c4",
     "section_accordion_new_RAhUrC",
     "171198624333c1780b",
+    "related",
     "1711936135ad982cf2"
   ]
 }
