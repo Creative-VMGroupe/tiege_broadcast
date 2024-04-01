@@ -559,6 +559,7 @@
         "image_nBXbVf",
         "image_BKCxza"
       ],
+      "disabled": true,
       "settings": {
         "title": "How To",
         "heading_size": 9,
@@ -575,62 +576,9 @@
         "layout_mobile": "slider"
       }
     },
-    "section_accordion_WH4xRJ": {
-      "type": "section-accordion",
-      "blocks": {
-        "text_nH8XXt": {
-          "type": "text",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
-          }
-        },
-        "text_6Ncrdq": {
-          "type": "text",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
-          }
-        },
-        "text_E6RGPa": {
-          "type": "text",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
-          }
-        },
-        "text_Pxr3LM": {
-          "type": "text",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_nH8XXt",
-        "text_6Ncrdq",
-        "text_E6RGPa",
-        "text_Pxr3LM"
-      ],
-      "disabled": true,
-      "settings": {
-        "default_open": false,
-        "title": "FAQ",
-        "show_icon": false,
-        "icon_name": "icon-award",
-        "icon_size": 20,
-        "icon_color": "#545454",
-        "bg_color": "",
-        "color": "",
-        "border_color": "",
-        "width": "wrapper",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "section_recent_products_QG7xzL": {
       "type": "section-recent-products",
+      "disabled": true,
       "settings": {
         "product_recently_heading": "Recently viewed",
         "heading_size": 8,
@@ -642,54 +590,94 @@
         "padding_bottom": 0
       }
     },
-    "alireviews-section-07d4a73d-744c-4193-b979-9ec1b2c01807": {
-      "type": "apps",
-      "blocks": {
-        "25e98304-5dea-4e93-b4e6-0d566e44cdb2": {
-          "type": "shopify:\/\/apps\/ali-reviews\/blocks\/widget-box\/bf2eea72-0400-4db1-8908-44b7418f9a88",
-          "settings": {
-            "product": "",
-            "name": "Review Box",
-            "vertical_alignment": "2",
-            "rating_color": "#1f1f1f",
-            "section_color": "#ffffff",
-            "primary_text_color": "#1f1f1f"
-          }
-        }
-      },
-      "block_order": [
-        "25e98304-5dea-4e93-b4e6-0d566e44cdb2"
-      ],
-      "disabled": true,
-      "settings": {
-        "include_margins": true
-      }
-    },
     "section_accordion_new_hde9c4": {
       "type": "section-accordion-new",
       "blocks": {
-        "text_aa89Cc": {
+        "image_8xWiTB": {
+          "type": "image",
+          "settings": {
+            "title": "Step 1: Wash",
+            "text": "<p>Use Tiege Hanley's WASH facial cleanser. Wet your face, squeeze out the size of a nickel (yes, the coin) into your palm, rub it all over your wet face for about 10 seconds.<\/p>",
+            "image": "shopify:\/\/shop_images\/HARRYS_FW_PROD_0279_1.jpg",
+            "aspect_ratio": 0.6
+          }
+        },
+        "image_qUnXmP": {
+          "type": "image",
+          "settings": {
+            "title": "Step 2: Scrub",
+            "text": "<p>Use Tiege Hanley’s AM moisturizer. Squeeze out the size of a pea into your palm and spend about 10 seconds massaging it all over your face.<\/p>",
+            "image": "shopify:\/\/shop_images\/HARRYS_FW_PROD_0279_1.jpg",
+            "aspect_ratio": 0.6
+          }
+        },
+        "image_aCpwKJ": {
+          "type": "image",
+          "settings": {
+            "title": "Step 3: AM Moisturizer",
+            "text": "<p>Use Tiege Hanley’s AM moisturizer. Squeeze out the size of a pea into your palm and spend about 10 seconds massaging it all over your face.<\/p>",
+            "image": "shopify:\/\/shop_images\/HARRYS_FW_PROD_0279_1.jpg",
+            "aspect_ratio": 0.6
+          }
+        },
+        "image_trDa4R": {
+          "type": "image",
+          "settings": {
+            "title": "Step 1: Wash",
+            "text": "<p>Use Tiege Hanley's WASH facial cleanser. Wet your face, squeeze out the size of a nickel (yes, the coin) into your palm, rub it all over your wet face for about 10 seconds.<\/p>",
+            "image": "shopify:\/\/shop_images\/HARRYS_FW_PROD_0279_1.jpg",
+            "aspect_ratio": 0.6
+          }
+        }
+      },
+      "block_order": [
+        "image_8xWiTB",
+        "image_qUnXmP",
+        "image_aCpwKJ",
+        "image_trDa4R"
+      ],
+      "settings": {
+        "default_open": true,
+        "title": "How To",
+        "heading_size": 8,
+        "subheading_size": 6,
+        "show_icon": false,
+        "icon_name": "icon-award",
+        "icon_size": 20,
+        "icon_color": "#545454",
+        "bg_color": "",
+        "color": "",
+        "border_color": "",
+        "width": "wrapper--full--custom",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_accordion_new_RAhUrC": {
+      "type": "section-accordion-new",
+      "blocks": {
+        "text_6VGJHK": {
           "type": "text",
           "settings": {
             "title": "Frequently asked question",
             "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
           }
         },
-        "text_wHK64i": {
+        "text_jeNmkh": {
           "type": "text",
           "settings": {
             "title": "Frequently asked question",
             "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
           }
         },
-        "text_yjC7hM": {
+        "text_9zdYVc": {
           "type": "text",
           "settings": {
             "title": "Frequently asked question",
             "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
           }
         },
-        "text_czGQHW": {
+        "text_ihckiU": {
           "type": "text",
           "settings": {
             "title": "Frequently asked question",
@@ -698,10 +686,10 @@
         }
       },
       "block_order": [
-        "text_aa89Cc",
-        "text_wHK64i",
-        "text_yjC7hM",
-        "text_czGQHW"
+        "text_6VGJHK",
+        "text_jeNmkh",
+        "text_9zdYVc",
+        "text_ihckiU"
       ],
       "settings": {
         "default_open": false,
@@ -749,10 +737,9 @@
     "section_collection_m9yHwy",
     "section_columns_kqNxAq",
     "section_columns_gjgyTb",
-    "section_accordion_WH4xRJ",
     "section_recent_products_QG7xzL",
-    "alireviews-section-07d4a73d-744c-4193-b979-9ec1b2c01807",
     "section_accordion_new_hde9c4",
+    "section_accordion_new_RAhUrC",
     "1711936135ad982cf2"
   ]
 }
