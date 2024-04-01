@@ -1368,6 +1368,7 @@
           "settings": {
             "title": "@tiegehanley",
             "title_color": "",
+            "title_size": 0,
             "alignment": "center",
             "html_area": ""
           }
