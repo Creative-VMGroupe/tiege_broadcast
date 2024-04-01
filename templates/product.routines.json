@@ -834,14 +834,14 @@
         "text_xqdyrA": {
           "type": "text",
           "settings": {
-            "title": "Frequently asked question",
+            "title": "Question",
             "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
           }
         },
         "text_hGYUAT": {
           "type": "text",
           "settings": {
-            "title": "Frequently asked question",
+            "title": "Question",
             "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
           }
         },
