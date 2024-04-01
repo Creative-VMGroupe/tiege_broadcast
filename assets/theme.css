@@ -13041,7 +13041,7 @@ main-search .input-holder {
 .product-item .badge-box {
   position: absolute;
   left: var(--left-spacing);
-  top: 5px;
+  top: 15px;
   z-index: 3;
 }
 
@@ -13056,7 +13056,7 @@ main-search .input-holder {
 .sale-box,
 .preorder-box,
 .badge-box {
-  --left-spacing: 5px;
+  --left-spacing: 15px;
   --padding-vertical: 7px;
   text-align: center;
   padding: calc(var(--padding-vertical) * var(--FONT-ADJUST-BODY)) 15px;
