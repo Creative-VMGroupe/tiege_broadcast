@@ -186,11 +186,11 @@
                               <input type="submit" class="btn btn--black btn--solid btn--full" value="{{ 'contact.form.send' | t }}">
                             </div>
 
-                            {%- if block.settings.terms -%}
+                            {% comment %} {%- if block.settings.terms -%}
                               <div class="form__legal">
-                                {% comment %} {{ 'shopify.online_store.spam_detection.disclaimer_html' | t }} {% endcomment %}
+                                {{ 'shopify.online_store.spam_detection.disclaimer_html' | t }}
                               </div>
-                            {%- endif -%}
+                            {%- endif -%} {% endcomment %}
                           {%- endform -%}
                         </div>
                         {%- when 'FeaturedCollection' -%} {% section featured_collection %}
