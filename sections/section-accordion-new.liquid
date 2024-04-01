@@ -96,7 +96,7 @@
                     {%- capture text_content -%}
                       <div class="faq-list__item-description">
                         {%- if block.settings.title != blank -%}
-                          <h3 class="faq-list__item-title heading-size-{{ block.settings.heading_size }}">
+                          <h3 class="faq-list__item-title heading-size-{{ section.settings.subheading_size }}">
                             {{ block.settings.title }}
                           </h3>
                         {%- endif -%}
@@ -237,6 +237,15 @@
         "step": 1,
         "default": 8
       },
+      {
+            "type": "range",
+            "id": "subheading_size",
+            "label": "Sub heading size",
+            "min": 1,
+            "max": 15,
+            "step": 1,
+            "default": 6
+          },
     {
       "type": "header",
       "content": "Icon"
@@ -391,6 +400,7 @@
           "label": "Heading",
           "default": "Frequently asked question"
         },
+
         {
           "type": "richtext",
           "id": "text",
@@ -409,15 +419,7 @@
           "label": "Heading",
           "default": "Image heading"
         },
-        {
-            "type": "range",
-            "id": "heading_size",
-            "label": "Heading size",
-            "min": 1,
-            "max": 15,
-            "step": 1,
-            "default": 6
-          },
+        
         {
           "type": "richtext",
           "id": "text",
