@@ -960,7 +960,7 @@
         "trustreviews_reviews_widget_8YLWPV"
       ],
       "custom_css": [
-        "mr-2 {display: none;}"
+        "div.flex.gap {width: 100%}"
       ],
       "settings": {
         "include_margins": false
@@ -1125,6 +1125,7 @@
       "blocks": {
         "videowise_video_platform_ugc_videowise_page_widgets_F9irDP": {
           "type": "shopify:\/\/apps\/videowise-video-platform-ugc\/blocks\/videowise-page-widgets\/b48d6c0c-3e3f-4791-a9ab-a5ab7ec82f4d",
+          "disabled": true,
           "settings": {
             "videowise_embed": "<div class=\"reeview-app-widget\" id=\"reeview-app-widget_65f5deec895c9e0028f2bd85\"><\/div>"
           }
@@ -1143,7 +1144,6 @@
         "videowise_video_platform_ugc_videowise_page_widgets_F9irDP",
         "instafeed_app_block_Gap9kU"
       ],
-      "disabled": true,
       "settings": {
         "include_margins": false
       }
