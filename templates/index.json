@@ -327,7 +327,7 @@
           "type": "image",
           "settings": {
             "image_position": 2,
-            "image": "shopify:\/\/shop_images\/Hero_AM_PM_Tubes.jpg",
+            "image": "shopify:\/\/shop_images\/Products.png",
             "aspect_ratio": 1,
             "mobile_aspect_ratio": 1,
             "width": 100,
@@ -339,7 +339,7 @@
           "type": "image",
           "settings": {
             "image_position": 9,
-            "image": "shopify:\/\/shop_images\/Peptides_AdobeStock_403007779_transparent.png",
+            "image": "shopify:\/\/shop_images\/Drop.png",
             "aspect_ratio": 1,
             "mobile_aspect_ratio": 1,
             "width": 80,
@@ -351,7 +351,7 @@
           "type": "image",
           "settings": {
             "image_position": 13,
-            "image": "shopify:\/\/shop_images\/Multi-Functional_noun-team-chart-6658887_43b02a.png",
+            "image": "shopify:\/\/shop_images\/Valve.png",
             "aspect_ratio": 1,
             "mobile_aspect_ratio": 1,
             "width": 80,
@@ -363,7 +363,7 @@
           "type": "image",
           "settings": {
             "image_position": 25,
-            "image": "shopify:\/\/shop_images\/noun-strong-4023355.png",
+            "image": "shopify:\/\/shop_images\/Gear.png",
             "aspect_ratio": 1,
             "mobile_aspect_ratio": 1,
             "width": 80,
@@ -375,7 +375,7 @@
           "type": "image",
           "settings": {
             "image_position": 30,
-            "image": "shopify:\/\/shop_images\/Function_noun-settings-5079167_43b02a.png",
+            "image": "shopify:\/\/shop_images\/Muscle.png",
             "aspect_ratio": 1,
             "mobile_aspect_ratio": 1,
             "width": 80,
