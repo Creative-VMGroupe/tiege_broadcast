@@ -723,7 +723,7 @@
         "image_6KDKny"
       ],
       "settings": {
-        "default_open": true,
+        "default_open": false,
         "title": "FAQ",
         "heading_size": 8,
         "show_icon": false,
