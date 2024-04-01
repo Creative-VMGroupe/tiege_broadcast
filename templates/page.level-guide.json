@@ -414,7 +414,7 @@
           "type": "buttons",
           "settings": {
             "button_text": "Learn more",
-            "button_url": "",
+            "button_url": "shopify:\/\/products\/the-collection-snowboard-liquid",
             "button_type": "btn--secondary",
             "button_size": "",
             "button_style": "btn--solid",
