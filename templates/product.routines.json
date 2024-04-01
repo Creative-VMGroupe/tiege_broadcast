@@ -960,7 +960,7 @@
         "trustreviews_reviews_widget_8YLWPV"
       ],
       "custom_css": [
-        "div.flex.gap {width: 100%}"
+        "div.flex.gap-5.items-center {width: 100%;}"
       ],
       "settings": {
         "include_margins": false
