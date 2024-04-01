@@ -172,7 +172,7 @@
         ".accordion__title {font-weight: bold;}",
         ".accordion {border: none;}",
         ".btn--primary {background-color: #00ad2d; border-color: #00ad2d;}",
-        ".select__fieldset > .radio__legend {display: none}"
+        ".select__fieldset > .radio__legend {display: none;}"
       ],
       "settings": {
         "product_sticky_enable": true,
@@ -252,7 +252,7 @@
           "type": "buttons",
           "settings": {
             "button_text": "Learn more",
-            "button_url": "",
+            "button_url": "shopify:\/\/pages\/level-guide-lp",
             "button_type": "btn--white",
             "button_size": "",
             "button_style": "btn--text",
