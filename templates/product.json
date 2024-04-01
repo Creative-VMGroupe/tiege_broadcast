@@ -89,23 +89,12 @@
         },
         "icon_1": {
           "type": "icon",
+          "disabled": true,
           "settings": {
             "icon_name": "icon-email",
             "icon_size": 20,
             "icon_color": "#545454",
             "title": "Free 30 Days Returns",
-            "text_size": 3,
-            "width": "full",
-            "padding_bottom": 16
-          }
-        },
-        "icon_2": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-truck",
-            "icon_size": 20,
-            "icon_color": "#545454",
-            "title": "Free shipping on orders over $100",
             "text_size": 3,
             "width": "full",
             "padding_bottom": 16
@@ -168,7 +157,6 @@
         "text_e6RAMT",
         "essential_trust_badges_app_block_XTEtGz",
         "icon_1",
-        "icon_2",
         "tab_richtext_nDcaW6",
         "divider_1",
         "complementary_products_C7V6rg",
