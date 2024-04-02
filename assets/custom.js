@@ -31,10 +31,10 @@
         if(Math.abs(lastScrollTop - st) <= delta)
             return;
         if (st > lastScrollTop && st > navbarHeight){
-            $('.header__wrapper').removeClass('js__header__stuck');
+            $('.header__wrapper').removeClass('js__header__stuck').addClass('aos-animate');
         } else {
             if(st + $(window).height() < $(document).height()) {
-                $('.header__wrapper').addClass('js__header__stuck');
+                $('.header__wrapper').addClass('js__header__stuck').removeClass('aos-animate');
             }
         }
         lastScrollTop = st;
