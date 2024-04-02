@@ -1394,35 +1394,16 @@
             "show_arrow": false,
             "video": "shopify:\/\/files\/videos\/7f6cc39eb6db4772b8379a2af9108d16_9767fc41-2523-4cfc-9394-d16ef662a62d.mp4"
           }
-        },
-        "text_slide_TbtUpN": {
-          "type": "text-slide",
-          "settings": {
-            "subheading": "Introducing",
-            "subheading_size": 3,
-            "title": "Image with text slider",
-            "heading_size": 8,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
-            "text_style": "font-body",
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
         }
       },
       "block_order": [
         "text_slide_tRXdit",
-        "text_slide_TDF3yw",
-        "text_slide_TbtUpN"
+        "text_slide_TDF3yw"
       ],
       "settings": {
         "layout": "",
-        "height": "screen-height-three-quarters",
-        "mobile_height": "screen-height-one-half--mobile",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
         "width": "wrapper--full",
         "padding": 16,
         "padding_mobile": 16,
