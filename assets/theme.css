@@ -14635,7 +14635,7 @@ dialog[closing] .product-modal__outer {
     overflow-y: hidden;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-    scroll-padding: 0;
+    scroll-padding: var(--gap);
     scrollbar-width: none;
     -ms-overflow-style: none;
     /* for Internet Explorer, Edge */
@@ -14654,7 +14654,7 @@ dialog[closing] .product-modal__outer {
   .product__images--mobile-slider .product__slide {
     flex: 0 0 auto;
     width: calc(100% - 50px);
-    margin: 0;
+    margin: 0 var(--gap) 0 0;
     scroll-snap-align: start;
   }
   .product__images--mobile-slider .product__slide:only-child {
