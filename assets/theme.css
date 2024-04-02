@@ -7860,7 +7860,7 @@ body.has-first-section-overlay-header
   opacity: 0;
   background-color: var(--bg);
   border-bottom: 1px solid transparent;
-  border-top: 1px solid transparent;
+  border-top: 0;
   visibility: hidden;
   pointer-events: none;
   transition: opacity 0.2s cubic-bezier(0.215, 0.61, 0.355, 1),
