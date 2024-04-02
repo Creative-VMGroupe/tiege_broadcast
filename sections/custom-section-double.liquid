@@ -4,6 +4,12 @@
   .brick__block--videos .hero__media {
     margin-bottom: 0;
   }
+  [id*='custom_section_double'] [data-slide-index="1"]:hover [data-slide-index="2"] {
+      display: flex;
+  }
+  [id*='custom_section_double'] [data-slide-index="2"] {
+      display: none;
+  }
 </style>
 
 {%- render 'custom-section-double' -%}
