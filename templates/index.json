@@ -1372,7 +1372,8 @@
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
-            "show_arrow": false
+            "show_arrow": false,
+            "video": "shopify:\/\/files\/videos\/f7db5c375de94bceb432a68695da9d5d.mov"
           }
         },
         "text_slide_TDF3yw": {
@@ -1390,7 +1391,8 @@
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
-            "show_arrow": false
+            "show_arrow": false,
+            "video": "shopify:\/\/files\/videos\/7f6cc39eb6db4772b8379a2af9108d16_9767fc41-2523-4cfc-9394-d16ef662a62d.mp4"
           }
         },
         "text_slide_TbtUpN": {
@@ -1422,6 +1424,8 @@
         "height": "screen-height-three-quarters",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
+        "padding": 16,
+        "padding_mobile": 16,
         "image_width": "one-half",
         "text_alignment": "text-left",
         "bg_color": "",
