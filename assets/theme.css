@@ -5172,6 +5172,10 @@ button {
   min-height: var(--BUTTON-MIN-HEIGHT);
   min-width: var(--BUTTON-MIN-WIDTH);
 }
+.btn.btn--text {
+  min-height: unset;
+  min-width: unset;
+}
 .btn span,
 .shopify-payment-button .shopify-payment-button__button--unbranded span,
 #challenge .shopify-challenge__button span {
