@@ -13757,7 +13757,10 @@ main-search .input-holder {
   }
 
   .product__wrapper--stretch .product__page {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .product__images {
+    grid-column: span 2;
   }
 }
 .product__page .form__wrapper.is-sticky {
