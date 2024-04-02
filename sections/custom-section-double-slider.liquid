@@ -1,5 +1,14 @@
 <!-- /sections/section-double-slider.liquid -->
-
+{% if section.settings.text_alignment == 'left' %}
+  {% assign items_alignment = 'flex-start' %}
+{% else %}
+  {% assign items_alignment = 'center' %}
+{% endif %}
+{% if section.settings.text_alignment_mobile == 'left' %}
+  {% assign items_alignment_mobile = 'flex-start' %}
+{% else %}
+  {% assign items_alignment_mobile = 'center' %}
+{% endif %}
 {% style %}
   .brick__block--videos .hero__media {
     margin-bottom: 0;
@@ -7,6 +16,9 @@
   [id*='custom_section_double_slider'] {
     --outer: {{ section.settings.padding_mobile }}px;
     text-align: {{ section.settings.text_alignment_mobile }};
+  }
+  [id*='custom_section_double_slider'] .hero__content {
+    align-items : {{ items_alignment_mobile }};
   }
   [id*='custom_section_double_slider'] .flickity-page-dot {
     margin: 0;
@@ -19,7 +31,7 @@
       text-align: {{ section.settings.text_alignment }};
       --outer: {{ section.settings.padding }}px;
     }
-    .hero__content {
+    [id*='custom_section_double_slider'] .hero__content {
       align-items : {{ section.settings.text_alignment }};
     }
   }
