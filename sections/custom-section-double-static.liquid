@@ -17,7 +17,7 @@
     text-align: {{ section.settings.text_alignment_mobile }};
     --outer: {{ section.settings.padding_mobile }}px;
   }
-  .hero__content {
+  [id*='custom_section_double_static'] .hero__content {
     align-items : {{ items_alignment_mobile }};
   }
   [id*='custom_section_double_static'] .flickity-page-dot {
@@ -31,7 +31,7 @@
       text-align: {{ section.settings.text_alignment }};
       --outer: {{ section.settings.padding }}px;
     }
-    .hero__content {
+    [id*='custom_section_double_static'] .hero__content {
       align-items : {{ items_alignment }};
     }
     [id*='custom_section_double_static'] .brick__block--images {
