@@ -175,7 +175,7 @@
       ],
       "settings": {
         "product_sticky_enable": true,
-        "image_layout": "stacked",
+        "image_layout": "grid-2",
         "image_size": "stretch",
         "show_cart_bar": true,
         "enable_zoom": true,
@@ -404,7 +404,6 @@
         "image_brJKGB": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Wash_0fce57fe-0aa5-41e4-8ba0-ac09af75851a.png",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
@@ -423,7 +422,6 @@
         "image_qNeYUL": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Wash_0fce57fe-0aa5-41e4-8ba0-ac09af75851a.png",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
@@ -744,40 +742,10 @@
           "settings": {
             "product": "{{product}}"
           }
-        },
-        "loox_reviews_loox_rating_MJhHi9": {
-          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-          "disabled": true,
-          "settings": {
-            "contentSize": 16,
-            "pattern": "",
-            "hideText": false,
-            "alignment": "center",
-            "layout": "",
-            "textColor": "",
-            "starColor": "",
-            "showAllReviews": false,
-            "looxOpenFloatingWidget": false,
-            "emptyRatingWidget": false
-          }
-        },
-        "loox_reviews_loox_dynamic_section_BRXMnK": {
-          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-          "disabled": true,
-          "settings": {
-            "only_photos": false,
-            "aggregated": false,
-            "limit": 20,
-            "hide_thumbnails": false,
-            "maxwidth": 1080,
-            "is_sample": true
-          }
         }
       },
       "block_order": [
-        "trustreviews_reviews_widget_EDCD9p",
-        "loox_reviews_loox_rating_MJhHi9",
-        "loox_reviews_loox_dynamic_section_BRXMnK"
+        "trustreviews_reviews_widget_EDCD9p"
       ],
       "settings": {
         "include_margins": false
