@@ -7125,7 +7125,7 @@ toggle-ellipsis {
 }
 
 .header__wrapper {
-  --bg: var(--COLOR-MENU-BG);
+  --bg: transparent;
   --text: var(--COLOR-MENU-LINK);
   --link: var(--COLOR-MENU-LINK);
   --link-hover: var(--COLOR-MENU-LINK-HOVER);
@@ -7136,6 +7136,9 @@ toggle-ellipsis {
   --highlight: var(--text);
   position: relative;
   transition: top 0.2s linear;
+}
+.page-header:hover .header__wrapper {
+  --bg: var(--COLOR-MENU-BG);
 }
 body.template-product .header__wrapper {
   --text-transparent: var(--COLOR-MENU-LINK);
