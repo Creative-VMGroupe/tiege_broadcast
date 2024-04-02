@@ -296,6 +296,9 @@
         "text_slide_QWrw4g",
         "text_slide_brLbph"
       ],
+      "custom_css": [
+        "button {margin: 0; border-color: #00ad2d; height: 7px; background-color: #00ad2d;}"
+      ],
       "settings": {
         "layout": "",
         "height": "screen-height-three-quarters",
