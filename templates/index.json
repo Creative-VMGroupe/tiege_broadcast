@@ -327,7 +327,7 @@
       ],
       "settings": {
         "layout": "",
-        "height": "screen-height-three-quarters",
+        "height": "screen-height-one-half",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
         "padding": 60,
