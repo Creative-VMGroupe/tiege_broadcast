@@ -1354,64 +1354,76 @@
         "padding_bottom": 0
       }
     },
-    "custom_section_double_3Taq9j": {
-      "type": "custom-section-double",
+    "section_double_slider_new_Lpy4Cn": {
+      "type": "section-double-slider-new",
       "blocks": {
-        "subheading_DqnCY8": {
-          "type": "subheading",
+        "text_slide_BjAc8c": {
+          "type": "text-slide",
           "settings": {
             "subheading": "Introducing",
-            "text_size": 3,
-            "padding_bottom": 16
-          }
-        },
-        "heading_LCxKw9": {
-          "type": "heading",
-          "settings": {
-            "title": "Image with text",
-            "text_size": 8,
-            "padding_bottom": 16
-          }
-        },
-        "text_3FDmpJ": {
-          "type": "text",
-          "settings": {
+            "subheading_size": 3,
+            "title": "Image with text slider",
+            "heading_size": 8,
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
             "text_size": 4,
             "text_style": "font-body",
-            "padding_bottom": 16
-          }
-        },
-        "buttons_dhB4Dw": {
-          "type": "buttons",
-          "settings": {
             "button_text": "Learn more",
             "button_url": "",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
-            "show_arrow": false,
-            "padding_bottom": 16
+            "show_arrow": false
+          }
+        },
+        "text_slide_QnbaUK": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "Introducing",
+            "subheading_size": 3,
+            "title": "Image with text slider",
+            "heading_size": 8,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "text_slide_4AEJzP": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "Introducing",
+            "subheading_size": 3,
+            "title": "Image with text slider",
+            "heading_size": 8,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
           }
         }
       },
       "block_order": [
-        "subheading_DqnCY8",
-        "heading_LCxKw9",
-        "text_3FDmpJ",
-        "buttons_dhB4Dw"
+        "text_slide_BjAc8c",
+        "text_slide_QnbaUK",
+        "text_slide_4AEJzP"
       ],
       "settings": {
         "layout": "",
-        "height": "image-height",
+        "height": "screen-height-three-quarters",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/AdobeStock_481479860.jpg",
-        "image_2": "shopify:\/\/shop_images\/AdobeStock_481479872.jpg",
-        "image_width": "three-quarters",
-        "hover_effect": true,
+        "image_width": "one-half",
         "text_alignment": "text-left",
-        "reverse_blocks": false,
         "bg_color": "",
         "color": "",
         "padding_top": 0,
@@ -1444,6 +1456,6 @@
     "section_timeline_YTB9mM",
     "section_rich_text_mYKMrn",
     "section_double_yp4ajU",
-    "custom_section_double_3Taq9j"
+    "section_double_slider_new_Lpy4Cn"
   ]
 }
