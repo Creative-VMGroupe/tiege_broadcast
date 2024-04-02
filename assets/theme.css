@@ -23810,7 +23810,7 @@ dialog.is-loading .loader {
 }
 
 .faq-list__item-title {
-  margin-bottom: calc(var(--gutter) / 3);
+  margin-bottom: calc(var(--gutter) / 2);
   /* font-size: calc(var(--font-3) * var(--FONT-ADJUST-HEADING)); */
 
   font-weight: var(--FONT-WEIGHT-HEADING);
@@ -23819,10 +23819,10 @@ dialog.is-loading .loader {
 .faq-list__item-description {
   /* margin-top: var(--gutter); */
   margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
 }
 
 .image-wrapper + .faq-list__item-title {
