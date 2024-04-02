@@ -103,7 +103,7 @@
     echo '--COLUMNS-MOBILE: ' | append: item_placeholder | append: ';'
   endcapture
 
-  capture alignment
+  capture alignment_class
     if section.settings.text_alignment == 'text-left'
       echo ' align--middle-left'
     else
