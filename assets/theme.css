@@ -14630,12 +14630,12 @@ dialog[closing] .product-modal__outer {
     gap: 0;
     margin-left: var(--gutter-offset);
     margin-right: var(--gutter-offset);
-    padding-left: var(--gap);
+    padding-left: 0;
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-    scroll-padding: var(--gap);
+    scroll-padding: 0;
     scrollbar-width: none;
     -ms-overflow-style: none;
     /* for Internet Explorer, Edge */
@@ -14653,8 +14653,8 @@ dialog[closing] .product-modal__outer {
   }
   .product__images--mobile-slider .product__slide {
     flex: 0 0 auto;
-    width: calc(100% - 50px);
-    margin: 0 var(--gap) 0 0;
+    width: 100%;
+    margin: 0;
     scroll-snap-align: start;
   }
   .product__images--mobile-slider .product__slide:only-child {
