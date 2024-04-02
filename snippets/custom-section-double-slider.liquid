@@ -142,33 +142,6 @@
   {%- endif -%}
 {%- endcapture -%}
 
-{% capture section_video %}
-  {%- liquid
-    assign video = section.settings.video
-    assign animation_order = animation_order | plus: 1
-    assign video_aspect_ratio = video.aspect_ratio | default: 1
-  -%}
-  {% if section.settings.video != blank %}
-    <div class="hero__media block-padding"
-      data-aos="hero"
-      data-aos-anchor="{{ animation_anchor }}"
-      data-aos-order="{{ animation_order }}"
-    >
-      <div class="video-background" {{ attributes }} style="--aspect-ratio: {{ video_aspect_ratio }};">
-        {%- if video != nil -%}
-          <video-background class="video__player" data-video-player data-video-id="{{ section.id }}-video-background">
-            <template data-video-template>
-              {{ video | video_tag: image_size: '500x', autoplay: true, loop: true, muted: true, controls: false }}
-            </template>
-          </video-background>
-        {%- else -%}
-          {%- render 'image' placeholder: 'lifestyle-1', aspect_ratio: video_aspect_ratio, attributes: attributes -%}
-        {%- endif -%}
-      </div>
-    </div>
-  {% endif %}
-{% endcapture %}
-
 <section id="BrickSection--{{ section.id }}"
   data-section-id="{{ section.id }}"
   data-section-type="double"
@@ -196,9 +169,32 @@
             data-slide
             {{ block.shopify_attributes }}
           >
-            {% if section.settings.video != blank %}
+            {% if block.settings.video != blank %}
               <div class="brick__block brick__block--videos {{ figure_width_class }}">
-                {{ section_video }}
+                {%- liquid
+                  assign video = block.settings.video
+                  assign animation_order = animation_order | plus: 1
+                  assign video_aspect_ratio = video.aspect_ratio | default: 1
+                -%}
+                {% if block.settings.video != blank %}
+                  <div class="hero__media block-padding"
+                    data-aos="hero"
+                    data-aos-anchor="{{ animation_anchor }}"
+                    data-aos-order="{{ animation_order }}"
+                  >
+                    <div class="video-background" {{ attributes }} style="--aspect-ratio: {{ video_aspect_ratio }};">
+                      {%- if video != nil -%}
+                        <video-background class="video__player" data-video-player data-video-id="{{ block.id }}-video-background">
+                          <template data-video-template>
+                            {{ video | video_tag: image_size: '500x', autoplay: true, loop: true, muted: true, controls: false }}
+                          </template>
+                        </video-background>
+                      {%- else -%}
+                        {%- render 'image' placeholder: 'lifestyle-1', aspect_ratio: video_aspect_ratio, attributes: attributes -%}
+                      {%- endif -%}
+                    </div>
+                  </div>
+                {% endif %}
               </div>
             {% else %}
               <div class="brick__block brick__block--images{{ figure_width_class }}">
