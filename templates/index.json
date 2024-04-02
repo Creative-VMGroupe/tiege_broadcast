@@ -1353,71 +1353,6 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
-    },
-    "custom_section_double_static_qMG3YG": {
-      "type": "custom-section-double-static",
-      "blocks": {
-        "subheading_bd6F4U": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Introducing",
-            "text_size": 3,
-            "padding_bottom": 16
-          }
-        },
-        "heading_bzcU97": {
-          "type": "heading",
-          "settings": {
-            "title": "Image with text",
-            "text_size": 8,
-            "padding_bottom": 16
-          }
-        },
-        "text_if4KP7": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
-            "text_style": "font-body",
-            "padding_bottom": 16
-          }
-        },
-        "buttons_KiW4U7": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "subheading_bd6F4U",
-        "heading_bzcU97",
-        "text_if4KP7",
-        "buttons_KiW4U7"
-      ],
-      "settings": {
-        "layout": "",
-        "height": "screen-height-three-quarters",
-        "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full",
-        "padding": 16,
-        "padding_mobile": 16,
-        "image_width": "one-half",
-        "hover_effect": false,
-        "text_alignment": "left",
-        "text_alignment_mobile": "center",
-        "reverse_blocks": false,
-        "bg_color": "",
-        "color": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
     }
   },
   "order": [
@@ -1444,7 +1379,6 @@
     "section_timeline_cDJGGc",
     "section_timeline_YTB9mM",
     "section_rich_text_mYKMrn",
-    "section_double_yp4ajU",
-    "custom_section_double_static_qMG3YG"
+    "section_double_yp4ajU"
   ]
 }
