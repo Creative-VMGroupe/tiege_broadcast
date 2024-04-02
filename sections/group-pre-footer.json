@@ -25,72 +25,9 @@
       "settings": {
         "include_margins": false
       }
-    },
-    "custom_section_double_ghMFKq": {
-      "type": "custom-section-double",
-      "blocks": {
-        "subheading_hXtTBK": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Introducing",
-            "text_size": 3,
-            "padding_bottom": 16
-          }
-        },
-        "heading_UcBDid": {
-          "type": "heading",
-          "settings": {
-            "title": "Image with text",
-            "text_size": 8,
-            "padding_bottom": 16
-          }
-        },
-        "text_89jDKU": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
-            "text_style": "font-body",
-            "padding_bottom": 16
-          }
-        },
-        "buttons_G7FWhK": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "subheading_hXtTBK",
-        "heading_UcBDid",
-        "text_89jDKU",
-        "buttons_G7FWhK"
-      ],
-      "settings": {
-        "layout": "",
-        "height": "screen-height-three-quarters",
-        "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full",
-        "video": "shopify:\/\/files\/videos\/tolstoy_43f7743e-5867-4922-aa81-d03899ca32a6.webm",
-        "image_width": "one-half",
-        "text_alignment": "text-left",
-        "reverse_blocks": false,
-        "bg_color": "",
-        "color": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
     }
   },
   "order": [
-    "1710599570fefb536e",
-    "custom_section_double_ghMFKq"
+    "1710599570fefb536e"
   ]
 }
