@@ -11,6 +11,12 @@
   .hero__content {
     align-items : {{ section.settings.text_alignment_mobile }};
   }
+  [id*='custom_section_double_static'] .flickity-page-dot {
+    margin: 0;
+    height: 7px;
+    background: #00ad2d;
+    border-color: #00ad2d;
+  }
   @media only screen and (min-width: 750px) {
     [id*='custom_section_double_static'] {
       text-align: {{ section.settings.text_alignment }};
@@ -43,12 +49,6 @@
         width: 100%;
         position: unset;
     }
-  }
-  [id*='custom_section_double_static'] .flickity-page-dot {
-    margin: 0;
-    height: 7px;
-    background: #00ad2d;
-    border-color: #00ad2d;
   }
 {% endstyle %}
 
