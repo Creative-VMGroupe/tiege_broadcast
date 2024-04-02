@@ -522,7 +522,8 @@
         "text_slide_9djVpV"
       ],
       "custom_css": [
-        "button {margin: 0; border-color: #00ad2d; height: 7px; background-color: #00ad2d;}"
+        "button {margin: 0; border-color: #00ad2d; height: 7px; background-color: #00ad2d;}",
+        ".hero__subheading {color: #00ad2d;}"
       ],
       "settings": {
         "layout": "is-reversed",
