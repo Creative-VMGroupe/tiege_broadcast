@@ -16,10 +16,36 @@
             "target_device_enabled": false,
             "target_device": "mobile"
           }
+        },
+        "text_ETLYhi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>March Madness 20%<\/p>",
+            "target_url_enabled": false,
+            "target_url": "",
+            "target_referrer_enabled": false,
+            "target_referrer": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_pLPCiy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Free Shipping on all order over $25.<\/p><p><\/p>",
+            "target_url_enabled": false,
+            "target_url": "",
+            "target_referrer_enabled": false,
+            "target_referrer": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
         }
       },
       "block_order": [
-        "text_eMqhLd"
+        "text_eMqhLd",
+        "text_ETLYhi",
+        "text_pLPCiy"
       ],
       "settings": {
         "show_border": false,
