@@ -370,7 +370,7 @@
         "text_slide_i3an9N"
       ],
       "custom_css": [
-        "button {margin: 0; border-color: #00ad2d;}"
+        "button {margin: 0; border-color: #00ad2d; height: 7px; background-color: #00ad2d;}"
       ],
       "settings": {
         "layout": "is-reversed",
