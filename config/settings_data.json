@@ -85,12 +85,6 @@
 
     ],
     "blocks": {
-      "57617106109469906854": {
-        "type": "shopify:\/\/apps\/ali-reviews-product-reviews\/blocks\/widget-popup\/bf2eea72-0400-4db1-8908-44b7418f9a88",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "7885500093077574326": {
         "type": "shopify:\/\/apps\/videowise-video-platform-ugc\/blocks\/script_embed\/b48d6c0c-3e3f-4791-a9ab-a5ab7ec82f4d",
         "disabled": false,
@@ -111,7 +105,13 @@
       },
       "11532412952436166569": {
         "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-inject\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-        "disabled": false,
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "57617106109469906854": {
+        "type": "shopify:\/\/apps\/ali-reviews\/blocks\/widget-popup\/bf2eea72-0400-4db1-8908-44b7418f9a88",
+        "disabled": true,
         "settings": {
         }
       }
