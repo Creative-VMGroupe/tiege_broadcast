@@ -7860,7 +7860,7 @@ body.has-first-section-overlay-header
   opacity: 0;
   background-color: var(--bg);
   border-bottom: 1px solid transparent;
-  border-top: 0;
+  border-top: 1px solid transparent;
   visibility: hidden;
   pointer-events: none;
   transition: opacity 0.2s cubic-bezier(0.215, 0.61, 0.355, 1),
@@ -13815,14 +13815,7 @@ body:has([data-header-transparent]):has(
   .product__content {
   padding-top: var(--header-height, 0);
 }
-@media only screen and (max-width: 749px) {
-  body:has([data-header-transparent]):has(
-      .main-content > .shopify-section.section-overlay-header:first-of-type
-    )
-    .product__content {
-    padding-top: 0;
-  }
-}
+
 body.has-header-transparent.has-first-section-overlay-header .product__content {
   padding-top: var(--header-height, 0);
 }
@@ -14637,12 +14630,12 @@ dialog[closing] .product-modal__outer {
     gap: 0;
     margin-left: var(--gutter-offset);
     margin-right: var(--gutter-offset);
-    padding-left: 0;
+    padding-left: var(--gap);
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-    scroll-padding: var(--gap);
+    scroll-padding: 0;
     scrollbar-width: none;
     -ms-overflow-style: none;
     /* for Internet Explorer, Edge */
@@ -14660,8 +14653,8 @@ dialog[closing] .product-modal__outer {
   }
   .product__images--mobile-slider .product__slide {
     flex: 0 0 auto;
-    width: 100%;
-    margin: 0 var(--gap) 0 0;
+    width: calc(100% - 50px);
+    margin: 0;
     scroll-snap-align: start;
   }
   .product__images--mobile-slider .product__slide:only-child {
@@ -22871,7 +22864,6 @@ body.is-focused .pswp-zoom-gallery .pswp__caption .pswp__caption-close:focus {
   white-space: nowrap;
   text-overflow: ellipsis;
   transition: border-radius 0.15s ease;
-  height: 50px;
 }
 
 .sold-out .select-popout__toggle::after {
@@ -23768,7 +23760,6 @@ dialog.is-loading .loader {
 
 .faq-list__item {
   padding: calc(var(--gutter) / 2) 0;
-  padding-bottom: 30px;
   flex-basis: 49.37%;
   font-size: calc(var(--font-2) * var(--FONT-ADJUST-BODY));
   line-height: 1.3;
@@ -23818,19 +23809,14 @@ dialog.is-loading .loader {
 }
 
 .faq-list__item-title {
-  margin-bottom: calc(var(--gutter) / 2);
+  margin-bottom: calc(var(--gutter) / 3);
   /* font-size: calc(var(--font-3) * var(--FONT-ADJUST-HEADING)); */
 
   font-weight: var(--FONT-WEIGHT-HEADING);
 }
 
 .faq-list__item-description {
-  /* margin-top: var(--gutter); */
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100px;
+  margin-top: var(--gutter);
 }
 
 .image-wrapper + .faq-list__item-title {
