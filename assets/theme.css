@@ -14870,7 +14870,7 @@ model-viewer,
   height: 100%;
 }
 .deferred-media img {
-  object-fit: contain;
+  object-fit: cover;
 }
 .deferred-media video {
   object-fit: cover;
