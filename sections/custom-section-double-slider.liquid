@@ -6,9 +6,11 @@
   }
   [id*='custom_section_double_slider'] {
     --outer: {{ section.settings.padding_mobile }}px;
+    text-align: {{ section.settings.text_alignment_mobile }};
   }
   @media only screen and (min-width: 750px) {
     [id*='custom_section_double_slider'] {
+      text-align: {{ section.settings.text_alignment }};
       --outer: {{ section.settings.padding }}px;
     }
   }
