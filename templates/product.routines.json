@@ -369,6 +369,9 @@
         "text_slide_fLBXEE",
         "text_slide_i3an9N"
       ],
+      "custom_css": [
+        "button {margin: 0; border-color: #00ad2d;}"
+      ],
       "settings": {
         "layout": "is-reversed",
         "height": "screen-height-three-quarters",
