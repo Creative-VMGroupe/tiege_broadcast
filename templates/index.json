@@ -1354,84 +1354,66 @@
         "padding_bottom": 0
       }
     },
-    "custom_section_double_slider_bqUQkQ": {
-      "type": "custom-section-double-slider",
+    "section_text_row_abpFw8": {
+      "type": "section-text-row",
       "blocks": {
-        "text_slide_hBVfgr": {
-          "type": "text-slide",
+        "icon_4BTMRk": {
+          "type": "icon",
           "settings": {
-            "subheading": "Introducing",
-            "subheading_size": 3,
-            "title": "Image with text slider",
-            "heading_size": 8,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
-            "text_style": "font-body",
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
+            "icon_name": "icon-shield",
+            "icon_size": 20,
+            "icon_color": "#545454",
+            "title": "Secure transactions",
+            "heading_size": 4,
+            "text": "<p>Transactions are handled with bank-grade security.<\/p>",
+            "text_size": 3
           }
         },
-        "text_slide_tRXdit": {
-          "type": "text-slide",
+        "icon_UJdLg3": {
+          "type": "icon",
           "settings": {
-            "subheading": "Introducing",
-            "subheading_size": 3,
-            "title": "Image with text slider",
-            "heading_size": 8,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
-            "text_style": "font-body",
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
+            "icon_name": "icon-trophy",
+            "icon_size": 20,
+            "icon_color": "#545454",
+            "title": "Simple checkout",
+            "heading_size": 4,
+            "text": "<p>Our secure checkout is quick and easy to use.<\/p>",
+            "text_size": 3
           }
         },
-        "text_slide_TDF3yw": {
-          "type": "text-slide",
+        "icon_RdJRBq": {
+          "type": "icon",
           "settings": {
-            "subheading": "Introducing",
-            "subheading_size": 3,
-            "title": "Image with text slider",
-            "heading_size": 8,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
-            "text_style": "font-body",
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
+            "icon_name": "icon-chat",
+            "icon_size": 20,
+            "icon_color": "#545454",
+            "title": "Get in touch",
+            "heading_size": 4,
+            "text": "<p>Have questions? Get in touch with us at any time.<\/p>",
+            "text_size": 3
           }
         }
       },
       "block_order": [
-        "text_slide_hBVfgr",
-        "text_slide_tRXdit",
-        "text_slide_TDF3yw"
+        "icon_4BTMRk",
+        "icon_UJdLg3",
+        "icon_RdJRBq"
       ],
       "settings": {
-        "layout": "",
-        "height": "image-height",
-        "mobile_height": "image-height--mobile",
-        "width": "wrapper--full",
-        "padding": 16,
-        "padding_mobile": 16,
-        "image_1": "shopify:\/\/shop_images\/AdobeStock_481479870.jpg",
-        "image_2": "shopify:\/\/shop_images\/AdobeStock_481479870.jpg",
-        "image_width": "one-half",
-        "text_alignment": "text-left",
+        "title": "",
+        "heading_size": 5,
+        "layout": "grid",
+        "grid": 3,
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "icon_alignment": "icon--top",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
         "bg_color": "",
         "color": "",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "layout_mobile": "slider"
       }
     }
   },
@@ -1460,6 +1442,6 @@
     "section_timeline_YTB9mM",
     "section_rich_text_mYKMrn",
     "section_double_yp4ajU",
-    "custom_section_double_slider_bqUQkQ"
+    "section_text_row_abpFw8"
   ]
 }
