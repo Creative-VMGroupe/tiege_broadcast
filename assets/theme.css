@@ -22868,6 +22868,7 @@ body.is-focused .pswp-zoom-gallery .pswp__caption .pswp__caption-close:focus {
   white-space: nowrap;
   text-overflow: ellipsis;
   transition: border-radius 0.15s ease;
+  height: 50px;
 }
 
 .sold-out .select-popout__toggle::after {
