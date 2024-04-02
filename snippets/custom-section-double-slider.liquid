@@ -24,7 +24,7 @@
     assign enable_text_slider = true
 
     for block in section.blocks
-      if block.settings.image
+      if block.settings.image or block.settings.video
         assign enable_slider = true
         assign enable_text_slider = false
 
