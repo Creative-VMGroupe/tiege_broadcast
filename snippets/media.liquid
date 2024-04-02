@@ -14,10 +14,10 @@
 {% endcomment %}
 {%- liquid
   assign image_size = '1024x1024'
-  assign media_aspect_ratio = media.aspect_ratio
   unless media_aspect_ratio
     assign media_aspect_ratio = 1
   endunless
+  assign media_aspect_ratio = media.aspect_ratio
   assign media_padding_top = 1 | divided_by: media_aspect_ratio | times: 100 | round: 2
 
   capture image
