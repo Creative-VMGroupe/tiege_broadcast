@@ -14637,7 +14637,7 @@ dialog[closing] .product-modal__outer {
     gap: 0;
     margin-left: var(--gutter-offset);
     margin-right: var(--gutter-offset);
-    padding-left: var(--gap);
+    padding-left: 0;
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-behavior: smooth;
