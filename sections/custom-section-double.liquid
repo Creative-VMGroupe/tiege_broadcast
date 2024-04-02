@@ -5,6 +5,7 @@
     margin-bottom: 0;
   }
   [id*='custom_section_double_static'] {
+    text-align: {{ section.settings.text_alignment_mobile }};
     --outer: {{ section.settings.padding_mobile }}px;
   }
   @media only screen and (min-width: 750px) {
@@ -195,10 +196,10 @@
       "type": "select",
       "id": "text_alignment_mobile",
       "label": "Alignment - Mobile",
-      "default": "text-left",
+      "default": "left",
       "options": [
-        {"value": "text-left","label": "Left"},
-        {"value": "text-center","label": "Centered"}
+        {"value": "left","label": "Left"},
+        {"value": "center","label": "Centered"}
       ]
     },
     {
