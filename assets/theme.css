@@ -13816,9 +13816,16 @@ body:has([data-header-transparent]):has(
     .main-content > .shopify-section.section-overlay-header:first-of-type
   )
   .product__content {
-  padding-top: var(--header-height, 0);
+  padding-top: var(--header-height, 0);  
 }
-
+@media only screen and (max-width: 749px) {
+  body:has([data-header-transparent]):has(
+      .main-content > .shopify-section.section-overlay-header:first-of-type
+    )
+    .product__content {
+    padding-top: 0;
+  }
+}
 body.has-header-transparent.has-first-section-overlay-header .product__content {
   padding-top: var(--header-height, 0);
 }
@@ -23765,6 +23772,7 @@ dialog.is-loading .loader {
 
 .faq-list__item {
   padding: calc(var(--gutter) / 2) 0;
+  padding-bottom: 30px;
   flex-basis: 49.37%;
   font-size: calc(var(--font-2) * var(--FONT-ADJUST-BODY));
   line-height: 1.3;
