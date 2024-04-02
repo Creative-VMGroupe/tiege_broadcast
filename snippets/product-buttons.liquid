@@ -38,6 +38,7 @@
   {%- if show_quantity -%}
     <popout-select class="select-popout">
       <button type="button"
+        style="height: 50px;"
         class="select-popout__toggle"
         aria-expanded="false"
         aria-controls="{{ unique }}-select-quantity"
@@ -122,10 +123,14 @@
             <button
               type="submit"
               name="add"
+              style="padding-top: 8px; padding-bottom: 8px;"
               class="btn btn--secondary {{ btn_atc_class }}"
               data-add-to-cart
               {% unless current_variant.available %}disabled="disabled"{% endunless %}>
-              <span class="btn__text" data-add-to-cart-text>{{ button_text }}</span>
+              <span style='height: 32px;
+              display: flex;
+              align-items: center;
+              justify-content: center;' class="btn__text" data-add-to-cart-text>{{ button_text }}</span>
               <span class="btn__added">&nbsp;</span>
 
               <span class="btn__loader">
