@@ -289,18 +289,10 @@
             "padding_bottom": 16
           }
         },
-        "subheading_K9UPWM": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "",
-            "text_size": 3,
-            "padding_bottom": 16
-          }
-        },
         "heading_cQcLpe": {
           "type": "heading",
           "settings": {
-            "title": "Image with text",
+            "title": "Handsome Guaranteed",
             "text_size": 8,
             "padding_bottom": 16
           }
@@ -308,7 +300,7 @@
         "text_wQ9ea3": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text": "<p>Our high-quality skin care systems work to maximize results and eliminate guesswork for men of all skin types.<\/p>",
             "text_size": 4,
             "text_style": "font-body",
             "padding_bottom": 16
@@ -317,11 +309,11 @@
         "buttons_VwBzQ9": {
           "type": "buttons",
           "settings": {
-            "button_text": "Learn more",
+            "button_text": "Shop Now",
             "button_url": "",
-            "button_type": "btn--primary",
+            "button_type": "btn--secondary",
             "button_size": "",
-            "button_style": "btn--solid",
+            "button_style": "btn--outline",
             "show_arrow": false,
             "padding_bottom": 16
           }
@@ -329,7 +321,6 @@
       },
       "block_order": [
         "video_49BT9k",
-        "subheading_K9UPWM",
         "heading_cQcLpe",
         "text_wQ9ea3",
         "buttons_VwBzQ9"
@@ -345,7 +336,7 @@
         "image_1": "shopify:\/\/shop_images\/Gear.png",
         "image_width": "one-half",
         "hover_effect": false,
-        "text_alignment": "left",
+        "text_alignment": "center",
         "text_alignment_mobile": "left",
         "reverse_blocks": false,
         "bg_color": "#000000",
