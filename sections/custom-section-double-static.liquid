@@ -1,5 +1,14 @@
 <!-- /sections/section-double.liquid -->
-
+{% if section.settings.text_alignment == 'left' %}
+  {% assign items_alignment = 'flex-start' %}
+{% else %}
+  {% assign items_alignment = 'center' %}
+{% endif %}
+{% if section.settings.text_alignment_mobile == 'left' %}
+  {% assign items_alignment_mobile = 'flex-start' %}
+{% else %}
+  {% assign items_alignment_mobile = 'center' %}
+{% endif %}
 {% style %}
   .brick__block--videos .hero__media {
     margin-bottom: 0;
@@ -9,7 +18,7 @@
     --outer: {{ section.settings.padding_mobile }}px;
   }
   .hero__content {
-    align-items : {{ section.settings.text_alignment_mobile }};
+    align-items : {{ items_alignment_mobile }};
   }
   [id*='custom_section_double_static'] .flickity-page-dot {
     margin: 0;
@@ -23,7 +32,7 @@
       --outer: {{ section.settings.padding }}px;
     }
     .hero__content {
-      align-items : {{ section.settings.text_alignment }};
+      align-items : {{ items_alignment }};
     }
     [id*='custom_section_double_static'] .brick__block--images {
       display: block;
