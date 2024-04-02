@@ -13813,16 +13813,9 @@ body:has([data-header-transparent]):has(
     .main-content > .shopify-section.section-overlay-header:first-of-type
   )
   .product__content {
-  padding-top: var(--header-height, 0);
+  padding-top: 0;
 }
-@media only screen and (max-width: 749px) {
-  body:has([data-header-transparent]):has(
-      .main-content > .shopify-section.section-overlay-header:first-of-type
-    )
-    .product__content {
-    padding-top: 0;
-  }
-}
+
 body.has-header-transparent.has-first-section-overlay-header .product__content {
   padding-top: var(--header-height, 0);
 }
