@@ -1354,10 +1354,10 @@
         "padding_bottom": 0
       }
     },
-    "custom_section_double_J4NLA9": {
-      "type": "custom-section-double",
+    "custom_section_double_static_qMG3YG": {
+      "type": "custom-section-double-static",
       "blocks": {
-        "subheading_zyddb6": {
+        "subheading_bd6F4U": {
           "type": "subheading",
           "settings": {
             "subheading": "Introducing",
@@ -1365,7 +1365,7 @@
             "padding_bottom": 16
           }
         },
-        "heading_DkjG9k": {
+        "heading_bzcU97": {
           "type": "heading",
           "settings": {
             "title": "Image with text",
@@ -1373,7 +1373,7 @@
             "padding_bottom": 16
           }
         },
-        "text_Qw7Lbe": {
+        "text_if4KP7": {
           "type": "text",
           "settings": {
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
@@ -1382,7 +1382,7 @@
             "padding_bottom": 16
           }
         },
-        "buttons_hhTa4D": {
+        "buttons_KiW4U7": {
           "type": "buttons",
           "settings": {
             "button_text": "Learn more",
@@ -1396,10 +1396,10 @@
         }
       },
       "block_order": [
-        "subheading_zyddb6",
-        "heading_DkjG9k",
-        "text_Qw7Lbe",
-        "buttons_hhTa4D"
+        "subheading_bd6F4U",
+        "heading_bzcU97",
+        "text_if4KP7",
+        "buttons_KiW4U7"
       ],
       "settings": {
         "layout": "",
@@ -1410,8 +1410,8 @@
         "padding_mobile": 16,
         "image_width": "one-half",
         "hover_effect": false,
-        "text_alignment": "text-left",
-        "text_alignment_mobile": "text-center",
+        "text_alignment": "left",
+        "text_alignment_mobile": "center",
         "reverse_blocks": false,
         "bg_color": "",
         "color": "",
@@ -1445,6 +1445,6 @@
     "section_timeline_YTB9mM",
     "section_rich_text_mYKMrn",
     "section_double_yp4ajU",
-    "custom_section_double_J4NLA9"
+    "custom_section_double_static_qMG3YG"
   ]
 }
