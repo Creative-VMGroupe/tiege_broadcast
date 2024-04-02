@@ -14660,7 +14660,7 @@ dialog[closing] .product-modal__outer {
   }
   .product__images--mobile-slider .product__slide {
     flex: 0 0 auto;
-    width: calc(100% - 50px);
+    width: 100%;
     margin: 0 var(--gap) 0 0;
     scroll-snap-align: start;
   }
