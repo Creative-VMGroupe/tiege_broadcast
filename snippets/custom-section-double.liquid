@@ -262,16 +262,22 @@
       </div>
     {%- else -%}
       <div class="brick__section{% if section.settings.layout == 'is-reversed' %} brick__section--reversed{% endif %}{% if section.settings.reverse_blocks %} brick__section--reversed-mobile{% endif %}{% if accordion_blocks.size > 0 %} brick__section--accordion{% endif %} {{ width }} {{ desktop_height }} {{ mobile_height }}">
-        <div class="brick__block {{ figure_width_class }} brick__block--images"
-          {% if image_1 != blank and image_2 != blank %}
-            data-slider
-            data-slider-fullwidth
-            data-dots="{{ settings.dots_style }}"
-            data-options='{"watchCSS": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 4000, "pauseAutoPlayOnHover": false}'
-          {% endif %}>
-
-          {{ section_images }}
-        </div>
+        {% if section.settings.video != blank %}
+          <div class="brick__block brick__block--videos">
+            {{ section_video }}
+          </div>
+        {% else %}
+          <div class="brick__block {{ figure_width_class }} brick__block--images"
+            {% if image_1 != blank and image_2 != blank %}
+              data-slider
+              data-slider-fullwidth
+              data-dots="{{ settings.dots_style }}"
+              data-options='{"watchCSS": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 4000, "pauseAutoPlayOnHover": false}'
+            {% endif %}>
+  
+            {{ section_images }}
+          </div>
+        {% endif %}
 
         <div class="brick__block brick__block--text{% if enable_slider %} brick__block--slider{% endif %}"
           {% if style != blank %}
