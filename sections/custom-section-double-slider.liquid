@@ -64,6 +64,26 @@
       ]
     },
     {
+      "type": "range",
+      "id": "padding",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Text Area Padding",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "padding_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Text Area Padding - Mobile",
+      "default": 16
+    },
+    {
       "type": "header",
       "content": "Image 1"
     },
@@ -272,6 +292,16 @@
           "id": "image",
           "label": "Image",
           "info": "Overrides section image if uploaded"
+        },
+        {
+          "type": "header",
+          "content": "Video"
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Video",
+          "info": "Overrides section and block image if uploaded"
         }
       ]
     }
