@@ -332,8 +332,8 @@
         "width": "wrapper--full",
         "padding": 50,
         "padding_mobile": 50,
-        "video": "shopify:\/\/files\/videos\/Snapinsta.app_video_7845D8AEE61F1258178576DBAD3FF3AB_video_dashinit.mp4",
         "image_1": "shopify:\/\/shop_images\/Gear.png",
+        "image_2": "shopify:\/\/shop_images\/Muscle.png",
         "image_width": "one-half",
         "hover_effect": false,
         "text_alignment": "center",
@@ -631,84 +631,6 @@
         "mobile_height": "screen-height-one-third--mobile",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/Snapinsta.app_337156675_1554687731680146_2432232004487884860_n_1080.jpg",
-        "image_width": "one-half",
-        "text_alignment": "text-center",
-        "bg_color": "#000000",
-        "color": "#ffffff",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_double_slider_VgJMLT": {
-      "type": "section-double-slider",
-      "blocks": {
-        "text_slide_P6MRhD": {
-          "type": "text-slide",
-          "settings": {
-            "subheading": "★★★★★",
-            "subheading_size": 4,
-            "title": "Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.",
-            "heading_size": 4,
-            "text": "<p>- Name of Reviewer<\/p>",
-            "text_size": 3,
-            "text_style": "font-body",
-            "button_text": "See All Reviews",
-            "button_url": "",
-            "button_type": "btn--white",
-            "button_size": "",
-            "button_style": "btn--outline",
-            "show_arrow": false
-          }
-        },
-        "text_slide_97WtqN": {
-          "type": "text-slide",
-          "settings": {
-            "subheading": "★★★★★",
-            "subheading_size": 4,
-            "title": "Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.",
-            "heading_size": 4,
-            "text": "<p>- Name of Reviewer<\/p>",
-            "text_size": 3,
-            "text_style": "font-body",
-            "button_text": "See All Reviews",
-            "button_url": "",
-            "button_type": "btn--white",
-            "button_size": "",
-            "button_style": "btn--outline",
-            "show_arrow": false
-          }
-        },
-        "text_slide_yAmmLV": {
-          "type": "text-slide",
-          "settings": {
-            "subheading": "★★★★★",
-            "subheading_size": 4,
-            "title": "Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.",
-            "heading_size": 4,
-            "text": "<p>- Name of Reviewer<\/p>",
-            "text_size": 3,
-            "text_style": "font-body",
-            "button_text": "See All Reviews",
-            "button_url": "",
-            "button_type": "btn--white",
-            "button_size": "",
-            "button_style": "btn--outline",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "text_slide_P6MRhD",
-        "text_slide_97WtqN",
-        "text_slide_yAmmLV"
-      ],
-      "disabled": true,
-      "settings": {
-        "layout": "is-reversed",
-        "height": "screen-height-three-quarters",
-        "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/Screenshot_2024-03-22_at_10.54.07_PM.png",
         "image_width": "one-half",
         "text_alignment": "text-center",
         "bg_color": "#000000",
@@ -1409,6 +1331,85 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "custom_section_double_slider_9rYHfe": {
+      "type": "custom-section-double-slider",
+      "blocks": {
+        "text_slide_pYz8Rw": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "Introducing",
+            "subheading_size": 3,
+            "title": "Image with text slider",
+            "heading_size": 8,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "text_slide_UbkAxt": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "Introducing",
+            "subheading_size": 3,
+            "title": "Image with text slider",
+            "heading_size": 8,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "text_slide_xhT98a": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "Introducing",
+            "subheading_size": 3,
+            "title": "Image with text slider",
+            "heading_size": 8,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "text_slide_pYz8Rw",
+        "text_slide_UbkAxt",
+        "text_slide_xhT98a"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "padding": 16,
+        "padding_mobile": 16,
+        "image_width": "one-half",
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -1421,7 +1422,6 @@
     "section_collection_new_JPPdmt",
     "section_collection_JXEkNP",
     "section_double_slider_new_DpH7GU",
-    "section_double_slider_VgJMLT",
     "section_double_RDk4Uz",
     "section_collection_new_MWikbY",
     "section_collection_RD84YL",
@@ -1436,6 +1436,7 @@
     "section_timeline_cDJGGc",
     "section_timeline_YTB9mM",
     "section_rich_text_mYKMrn",
-    "section_double_yp4ajU"
+    "section_double_yp4ajU",
+    "custom_section_double_slider_9rYHfe"
   ]
 }
