@@ -1403,8 +1403,8 @@
       ],
       "settings": {
         "layout": "",
-        "height": "image-height",
-        "mobile_height": "image-height--mobile",
+        "height": "video-height",
+        "mobile_height": "video-height--mobile",
         "width": "wrapper--full",
         "video": "shopify:\/\/files\/videos\/tolstoy_43f7743e-5867-4922-aa81-d03899ca32a6.webm",
         "image_1": "shopify:\/\/shop_images\/AdobeStock_481479860.jpg",
