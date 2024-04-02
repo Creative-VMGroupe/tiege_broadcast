@@ -197,7 +197,7 @@
             {{ block.shopify_attributes }}
           >
             {% if section.settings.video != blank %}
-              <div class="brick__block brick__block--videos">
+              <div class="brick__block brick__block--videos {{ figure_width_class }}">
                 {{ section_video }}
               </div>
             {% else %}
@@ -263,7 +263,7 @@
     {%- else -%}
       <div class="brick__section{% if section.settings.layout == 'is-reversed' %} brick__section--reversed{% endif %}{% if section.settings.reverse_blocks %} brick__section--reversed-mobile{% endif %}{% if accordion_blocks.size > 0 %} brick__section--accordion{% endif %} {{ width }} {{ desktop_height }} {{ mobile_height }}">
         {% if section.settings.video != blank %}
-          <div class="brick__block brick__block--videos">
+          <div class="brick__block brick__block--videos {{ figure_width_class }}">
             {{ section_video }}
           </div>
         {% else %}
