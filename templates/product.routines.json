@@ -203,8 +203,7 @@
         ".bi-star::before {height: 30px; width: 20px;}",
         ".rc-widget label {border-radius: 300px;}",
         ".accordion__title {font-weight: bold;}",
-        ".accordion {border: none;}",
-        ".btn--primary {background-color: #00ad2d; border-color: #00ad2d;}"
+        ".accordion {border: none;}"
       ],
       "settings": {
         "product_sticky_enable": true,
