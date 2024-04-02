@@ -197,7 +197,9 @@
             {{ block.shopify_attributes }}
           >
             {% if section.settings.video != blank %}
-              {{ section_video }}
+              <div class="brick__block brick__block--videos">
+                {{ section_video }}
+              </div>
             {% else %}
               <div class="brick__block brick__block--images{{ figure_width_class }}">
                 {%- if image -%}
