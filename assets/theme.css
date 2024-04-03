@@ -25294,6 +25294,13 @@ body.has-header-sticky .timeline {
   }
   .member-single-tier_container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 75px;
   }
+}
+.member-tier_text {
+  flex: 1;
 }
