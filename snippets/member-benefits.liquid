@@ -16,7 +16,7 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
 {% endcomment %}
 <div class="grid grid-membership-icons__container">
 
-    <div class="icon__animated{% if image != blank %} icon__animated--image{% endif %}">
+    <div style="flex-direction: column" class="icon__animated{% if image != blank %} icon__animated--image{% endif %}">
 
     {% liquid
     if image_1 != blank
@@ -24,7 +24,7 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
     render 'image' image: image_1, width: icon_width_retina, sizes: icon_sizes, widths: icon_widths, loading: loading
     endif
     %}
-    <p style="color: #00ad2d">{{ img-1_sub }}</p>
+    <p class="icon_sub-custom heading-size-{{ block.icon-sub_size }}">{{ img-1_sub }}</p>
     </div>
 
 <div class="icon__animated{% if image != blank %} icon__animated--image{% endif %}">
