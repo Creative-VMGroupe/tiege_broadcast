@@ -1,5 +1,6 @@
 {% liquid
 assign image_1 = block.image_1
+assign img-1_sub = block.icon-1_sub
 assign image_2 = block.image_2
 assign image_3 = block.image_3
 
@@ -23,6 +24,7 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
     render 'image' image: image_1, width: icon_width_retina, sizes: icon_sizes, widths: icon_widths, loading: loading
     endif
     %}
+    <p style="color: #00ad2d">{{ img-1_sub }}</p>
     </div>
 
 <div class="icon__animated{% if image != blank %} icon__animated--image{% endif %}">
