@@ -2240,22 +2240,38 @@
         "label": "Tier 3 Gifts",
         "default": "10% off every order, 2 Premium Gifts per year"
       },
+
+
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Footer Text",
+            "default": "<p>Additonal information about the product.</p>"
+          },
+          {
+        "type": "text",
+        "id": "member-link_text",
+        "label": "Link Text",
+        "default": "More Details"
+      },
       {   
             "type": "url",
             "id": "member_link",
             "label": "Button link"
           },
+
           {
-          "type": "textarea",
-          "id": "member_description",
-          "label": "Text"
-        },
-          {
-            "type": "richtext",
-            "id": "text",
-            "label": "Text",
-            "default": "<p>Additonal information about the product.</p>"
-          },
+        "type": "select",
+        "id": "button_type",
+        "label": "Color",
+        "default": "btn--primary",
+        "options": [
+          {"value": "btn--primary", "label": "Primary"},
+          {"value": "btn--secondary", "label": "Secondary"},
+          {"value": "btn--white", "label": "White"},
+          {"value": "btn--black", "label": "Black"}
+        ]
+      },
           {
             "type": "page",
             "id": "page",
