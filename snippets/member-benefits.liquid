@@ -25,6 +25,11 @@ assign box-3_gifts = block.box-3_gifts
 assign member_link = block.member_link
 assign link_text = block.member-link_text
 
+assign button_style = block.button_style
+if button_style == 'btn--text'
+  assign button_style = button_style | append: ' btn--text-no-underline'
+endif
+
 assign icon_width = 80
 assign icon_width_retina = icon_width | times: 2
 assign icon_sizes = icon_width | append: 'px'
@@ -147,6 +152,6 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
 <div class="member-footer_wrapper">
     <div class="member-footer_text">How do I get this?<span style="color: #00ad2d"> TIEGE STREAKS!</span> Maintain your benefits by ordering a minimum of $20 every 90 days. Feel free to skip or reschedule--just don't cancel, or your streak restarts</div>
     <div class="member-footer_text">
-        <a class="btn {{ block.button_type }}" href="{{ member_link | default: '#!' }}">{{ link_text }}</a>
+        <a class="btn {{ button_style }} {{ block.button_type }}" href="{{ member_link | default: '#!' }}">{{ link_text }}</a>
     </div>
 </div>
