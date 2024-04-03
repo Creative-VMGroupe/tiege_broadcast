@@ -25267,14 +25267,7 @@ body.has-header-sticky .timeline {
   border-radius: 20px;
   text-align: center;
 }
-@media screen and (max-width: 749px) {
-  .member-benefits__text {
-    padding: 0 20px;
-  }
-  .icon_sub-custom {
-    font-size: 18px;
-  }
-}
+
 .grid-membership-icons__container {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -25284,4 +25277,23 @@ body.has-header-sticky .timeline {
 .member-icon_container {
   flex-direction: column;
   justify-content: space-between;
+}
+.member-tiers_container {
+  display: flex;
+}
+@media screen and (max-width: 749px) {
+  .member-benefits__text {
+    padding: 0 20px;
+  }
+  .icon_sub-custom {
+    font-size: 18px;
+  }
+  .member-tiers_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .member-single-tier_container {
+    display: flex;
+    flex-direction: column;
+  }
 }
