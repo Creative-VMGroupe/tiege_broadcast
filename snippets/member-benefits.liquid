@@ -1,12 +1,15 @@
 {% liquid
 assign image_1 = block.image_1
 assign img-1_sub = block.icon-1_sub
+assign img-1_text = block.icon-1_text
 
 assign image_2 = block.image_2
 assign img-2_sub = block.icon-2_sub
+assign img-2_text = block.icon-2_text
 
 assign image_3 = block.image_3
 assign img-3_sub = block.icon-3_sub
+assign img-3_text = block.icon-3_text
 
 assign icon_width = 80
 assign icon_width_retina = icon_width | times: 2
@@ -38,8 +41,9 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
     {% comment %}
         Text
     {% endcomment %}
-    <p>Test</p>
+    <p>{{ img-1_text }}</p>
     </div>
+
 {% comment %}
     Icon 2
 {% endcomment %}
@@ -59,7 +63,7 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
     {% comment %}
         Text
     {% endcomment %}
-    <p>Test</p>
+    <p>{{ img-2_text }}</p>
 </div>
 {% comment %}
     Icon 3
@@ -79,6 +83,6 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
     {% comment %}
         Text
     {% endcomment %}
-    <p>Test</p>
+    <p>{{ img-3_text }}</p>
 </div>
 </div>
