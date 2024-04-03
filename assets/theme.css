@@ -13816,7 +13816,7 @@ body:has([data-header-transparent]):has(
     .main-content > .shopify-section.section-overlay-header:first-of-type
   )
   .product__content {
-  padding-top: var(--header-height, 0);  
+  padding-top: var(--header-height, 0);
 }
 @media only screen and (max-width: 749px) {
   body:has([data-header-transparent]):has(
@@ -23830,7 +23830,7 @@ dialog.is-loading .loader {
 
 .faq-list__item-description {
   margin-top: 20px;
-    display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100px;
@@ -25261,4 +25261,14 @@ body.has-header-sticky .timeline {
 }
 .quick-add__text {
   font-size: calc(1rem * var(--FONT-ADJUST-BODY));
+}
+.product-modal__container-custom {
+  width: 100%;
+  border-radius: 20px;
+  text-align: center;
+}
+@media screen and (max-width: 749px) {
+  .member-benefits__text {
+    padding: 0 20px
+  }
 }
