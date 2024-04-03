@@ -1,7 +1,7 @@
 <p class="heading-size-{{ block.pop-heading_size }} member-benefits__text">{{ block.pop-heading }}</p>
 <div>
     {% liquid
-    if block.image_1 =! blank
+    if block.image_1 != blank
     render 'image' image: image  
     endif
 
