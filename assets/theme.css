@@ -25303,6 +25303,11 @@ body.has-header-sticky .timeline {
     padding-right: 15px;
   }
 }
+@media screen and (min-width: 750px) {
+  .member-container-custom-desktop {
+    flex-direction: row;
+  }
+}
 .member-tier_text {
   flex: 1;
 }
