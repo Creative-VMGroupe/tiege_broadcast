@@ -1,36 +1,46 @@
+{% liquid
+assign image_1 = block.image_1
+assign image_2 = block.image_2
+assign image_3 = block.image_3
+
+assign icon_width = 80
+assign icon_width_retina = icon_width | times: 2
+assign icon_sizes = icon_width | append: 'px'
+assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
+%}
+
 <p class="heading-size-{{ block.pop-heading_size }} member-benefits__text">{{ block.pop-heading }}</p>
+{% comment %}
+    Renders Icons: Each Div checks if img is present and renders
+{% endcomment %}
 <div class="grid grid-membership-icons__container">
+
     <div class="icon__animated{% if image != blank %} icon__animated--image{% endif %}">
 
-
-    
     {% liquid
-    assign image_1 = block.image_1
-    assign image_2 = block.image_2
-    assign image_3 = block.image_3
-
-    assign icon_width = 80
-    assign icon_width_retina = icon_width | times: 2
-    assign icon_sizes = icon_width | append: 'px'
-    assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
-
     if image_1 != blank
 
     render 'image' image: image_1, width: icon_width_retina, sizes: icon_sizes, widths: icon_widths, loading: loading
     endif
+    %}
+    </div>
 
+<div class="icon__animated{% if image != blank %} icon__animated--image{% endif %}">
+
+    {% liquid
     if image_2 != blank
 
     render 'image' image: image_2, width: icon_width_retina, sizes: icon_sizes, widths: icon_widths, loading: loading
     endif
+    %}
 
+</div>
+<div class="icon__animated{% if image != blank %} icon__animated--image{% endif %}">
+    {% liquid
     if image_3 != blank
 
     render 'image' image: image_3, width: icon_width_retina, sizes: icon_sizes, widths: icon_widths, loading: loading
     endif
-
     %}
-    </div>
-
-    
+</div>
 </div>
