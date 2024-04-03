@@ -31,6 +31,12 @@
           "type": "popup",
           "settings": {
             "title": "Membership Benefits",
+            "supply": "30 day supply",
+            "pop-heading": "Your Member Benefits Explained",
+            "pop-heading_size": 8,
+            "image_1": "shopify:\/\/shop_images\/noun-strong-4023355.png",
+            "image_2": "shopify:\/\/shop_images\/noun-chemist-erlenmeyer-2843246.png",
+            "image_3": "shopify:\/\/shop_images\/noun-plane-2869631.png",
             "text": "<p>Additonal information about the product.<\/p>",
             "page": "",
             "icon_name": "icon-trophy",
