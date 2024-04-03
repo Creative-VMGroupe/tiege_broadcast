@@ -100,8 +100,9 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
 {% comment %}
     Membership Boxes
 {% endcomment %}
-<div>
-    <p class="heading-size-{{ block.pop-heading_size }} member-benefits__text">{{ pop-heading-2 }}</p>
+<div class="member-tiers-wrapper-custom">
+    <p style="margin-bottom: 0" class="heading-size-{{ block.pop-heading_size }} member-benefits__text">{{ pop-heading-2 }}</p>
+    
     <div class="member-tiers_container">
         <div style="background-color: #f0f0f0" class="member-single-tier_container">
             <div class="member-tier_text">
@@ -135,4 +136,5 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
             </div>
         </div>
     </div>
+    
 </div>
