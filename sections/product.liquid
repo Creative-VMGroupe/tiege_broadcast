@@ -804,7 +804,7 @@
 -%}
 
 <product-modal class="product__block block-padding" {{ block_style }}>
-  <div class="product__icon__container product__icon__container--full">
+  <div style="justify-content: space-between" class="product__icon__container product__icon__container--full">
     {% comment %} <div class="product__icon" data-aos="img-in" {{ icon_style }}>
       {%- liquid
         if image
@@ -823,7 +823,7 @@
     <a class="radio__legend__link text-link" href="{{ block.settings.page.url }}" data-popup-open {{ block.shopify_attributes }}>
       {{ link_text | escape }}
     </a>
-    <span>{{supply}}</span>
+    <span style="padding: 0 0 5px">{{supply}}</span>
   </div>
 
   <dialog class="product-modal" aria-hidden="true" inert data-scroll-lock-required>
