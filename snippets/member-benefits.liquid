@@ -1,5 +1,9 @@
 <p class="heading-size-{{ block.pop-heading_size }} member-benefits__text">{{ block.pop-heading }}</p>
 <div>
+    <div class="icon__animated{% if image != blank %} icon__animated--image{% endif %}">
+
+
+    
     {% liquid
     assign image_1 = block.image_1
     
@@ -8,11 +12,12 @@
     assign icon_sizes = icon_width | append: 'px'
     assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
     if image_1 != blank
+    
     render 'image' image: image_1, width: icon_width_retina, sizes: icon_sizes, widths: icon_widths, loading: loading
     endif
 
     %}
-   
+    </div>
 
     
 </div>
