@@ -25308,6 +25308,10 @@ body.has-header-sticky .timeline {
     flex-direction: row;
   }
 }
+.member-container-custom-desktop {
+  display: flex;
+  gap: 16px;
+}
 .member-tier_text {
   flex: 1;
 }
