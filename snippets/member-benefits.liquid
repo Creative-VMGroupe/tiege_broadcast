@@ -1,4 +1,6 @@
 {% liquid
+assign pop-heading-2 = block.settings.pop-heading-2
+
 assign image_1 = block.image_1
 assign img-1_sub = block.icon-1_sub
 assign img-1_text = block.icon-1_text
@@ -85,4 +87,7 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
     {% endcomment %}
     <p style="font-size: 15px;">{{ img-3_text }}</p>
 </div>
+</div>
+<div>
+    <p class="heading-size-{{ block.pop-heading_size }} member-benefits__text">{{ pop-heading-2 }}</p>
 </div>
