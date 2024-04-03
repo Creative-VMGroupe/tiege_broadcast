@@ -781,6 +781,7 @@
                   {%- when 'popup' -%}
                     {%- liquid
   assign link_text = block.settings.title
+  assign supply = block.settings.supply
   assign popup_content = block.settings.page.content | default: block.settings.text
   assign image = block.settings.image
   assign icon_size = block.settings.icon_size
@@ -804,7 +805,7 @@
 
 <product-modal class="product__block block-padding" {{ block_style }}>
   <div class="product__icon__container product__icon__container--full">
-    <div class="product__icon" data-aos="img-in" {{ icon_style }}>
+    {% comment %} <div class="product__icon" data-aos="img-in" {{ icon_style }}>
       {%- liquid
         if image
           assign icon_width = icon_size
@@ -817,11 +818,12 @@
           render 'animated-icon', filename: block.settings.icon_name
         endif
       -%}
-    </div>
+    </div> {% endcomment %}
 
     <a class="radio__legend__link text-link" href="{{ block.settings.page.url }}" data-popup-open {{ block.shopify_attributes }}>
       {{ link_text | escape }}
     </a>
+    <span>{{supply}}</span>
   </div>
 
   <dialog class="product-modal" aria-hidden="true" inert data-scroll-lock-required>
@@ -2114,6 +2116,12 @@
             "id": "title",
             "label": "Link text",
             "default": "Popup text"
+          },
+          {
+            "type": "text",
+            "id": "supply",
+            "label": "Supply",
+            "default": "30 day supply"
           },
           {
             "type": "richtext",
