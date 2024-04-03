@@ -25272,3 +25272,6 @@ body.has-header-sticky .timeline {
     padding: 0 20px
   }
 }
+.grid-membership-icons__container {
+  grid-template-columns: repeat(3,minmax(0,1fr));
+}
