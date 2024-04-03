@@ -25281,3 +25281,7 @@ body.has-header-sticky .timeline {
 .icon_sub-custom {
   color: #00ad2d;
 }
+.member-icon_container {
+  flex-direction: column;
+  justify-content: space-between;
+}
