@@ -25305,3 +25305,6 @@ body.has-header-sticky .timeline {
 .member-tier_text {
   flex: 1;
 }
+.default-font-custom {
+  font-size: 15px;
+}

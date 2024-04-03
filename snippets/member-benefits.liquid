@@ -13,6 +13,9 @@ assign image_3 = block.image_3
 assign img-3_sub = block.icon-3_sub
 assign img-3_text = block.icon-3_text
 
+assign box-1_text = block.box-1_text
+assign box-1_gifts = block.box-1_gifts
+
 assign icon_width = 80
 assign icon_width_retina = icon_width | times: 2
 assign icon_sizes = icon_width | append: 'px'
@@ -43,7 +46,7 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
     {% comment %}
         Text
     {% endcomment %}
-    <p style="font-size: 15px;">{{ img-1_text }}</p>
+    <p class="default-font-custom">{{ img-1_text }}</p>
     </div>
 
 {% comment %}
@@ -65,7 +68,7 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
     {% comment %}
         Text
     {% endcomment %}
-    <p style="font-size: 15px;">{{ img-2_text }}</p>
+    <p class="default-font-custom">{{ img-2_text }}</p>
 </div>
 {% comment %}
     Icon 3
@@ -85,19 +88,22 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
     {% comment %}
         Text
     {% endcomment %}
-    <p style="font-size: 15px;">{{ img-3_text }}</p>
+    <p class="default-font-custom">{{ img-3_text }}</p>
 </div>
 </div>
+{% comment %}
+    Membership Boxes
+{% endcomment %}
 <div>
     <p class="heading-size-{{ block.pop-heading_size }} member-benefits__text">{{ pop-heading-2 }}</p>
     <div class="member-tiers_container">
         <div style="background-color: #f0f0f0" class="member-single-tier_container">
             <div class="member-tier_text">
-                <p style="margin: 0;" class="heading-size-{{ block.pop-heading_size }}">Member</p>
+                <p style="margin: 0;" class="heading-size-{{ block.pop-heading_size }}">{{ box-1_text }}</p>
                 <p>Month 1-6</p>
             </div>
             <div class="member-tier_text">
-                <p style="margin: 0;">3 Routine-building Gifts</p>
+                <p style="margin: 0;">{{ box-1_gifts }}</p>
             </div>
         </div>
     </div>
