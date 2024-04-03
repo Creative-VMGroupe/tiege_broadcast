@@ -43,7 +43,7 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
     {% comment %}
         Text
     {% endcomment %}
-    <p>{{ img-1_text }}</p>
+    <p style="font-size: 15px;">{{ img-1_text }}</p>
     </div>
 
 {% comment %}
@@ -65,7 +65,7 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
     {% comment %}
         Text
     {% endcomment %}
-    <p>{{ img-2_text }}</p>
+    <p style="font-size: 15px;">{{ img-2_text }}</p>
 </div>
 {% comment %}
     Icon 3
@@ -93,11 +93,11 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
     <div class="member-tiers_container">
         <div style="background-color: #f0f0f0" class="member-single-tier_container">
             <div class="member-tier_text">
-                <p class="heading-size-{{ block.pop-heading_size }}">Member</p>
+                <p style="margin: 0;" class="heading-size-{{ block.pop-heading_size }}">Member</p>
                 <p>Month 1-6</p>
             </div>
-            <div>
-                <p>3 Routine-building Gifts</p>
+            <div class="member-tier_text">
+                <p style="margin: 0;">3 Routine-building Gifts</p>
             </div>
         </div>
     </div>
