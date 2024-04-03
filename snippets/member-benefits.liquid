@@ -15,7 +15,9 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
     Renders Icons: Each Div checks if img is present and renders
 {% endcomment %}
 <div class="grid grid-membership-icons__container">
-
+{% comment %}
+    Icon 1
+{% endcomment %}
     <div style="flex-direction: column" class="icon__animated{% if image != blank %} icon__animated--image{% endif %}">
 
     {% liquid
@@ -24,10 +26,16 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
     render 'image' image: image_1, width: icon_width_retina, sizes: icon_sizes, widths: icon_widths, loading: loading
     endif
     %}
+    {% comment %}
+        Subheading
+    {% endcomment %}
     <p class="icon_sub-custom heading-size-{{ block.icon-sub_size }}">{{ img-1_sub }}</p>
-    </div>
 
-<div class="icon__animated{% if image != blank %} icon__animated--image{% endif %}">
+    </div>
+{% comment %}
+    Icon 2
+{% endcomment %}
+<div style="flex-direction: column" class="icon__animated{% if image != blank %} icon__animated--image{% endif %}">
 
     {% liquid
     if image_2 != blank
@@ -35,14 +43,25 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
     render 'image' image: image_2, width: icon_width_retina, sizes: icon_sizes, widths: icon_widths, loading: loading
     endif
     %}
+{% comment %}
+    Subheading
+{% endcomment %}
+<p class="icon_sub-custom heading-size-{{ block.icon-sub_size }}">{{ img-2_sub }}</p>
 
 </div>
-<div class="icon__animated{% if image != blank %} icon__animated--image{% endif %}">
+{% comment %}
+    Icon 3
+{% endcomment %}
+<div style="flex-direction: column" class="icon__animated{% if image != blank %} icon__animated--image{% endif %}">
     {% liquid
     if image_3 != blank
 
     render 'image' image: image_3, width: icon_width_retina, sizes: icon_sizes, widths: icon_widths, loading: loading
     endif
     %}
+    {% comment %}
+    Subheading
+{% endcomment %}
+<p class="icon_sub-custom heading-size-{{ block.icon-sub_size }}">{{ img-3_sub }}</p>
 </div>
 </div>
