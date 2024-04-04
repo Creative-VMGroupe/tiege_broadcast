@@ -25290,6 +25290,7 @@ body.has-header-sticky .timeline {
 }
 .member-icon_container {
   width: 80px;
+  margin: 0 auto;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -25320,9 +25321,7 @@ body.has-header-sticky .timeline {
   .product-modal__container-custom {
     padding: 50px 100px;
   }
-  .member-icon_container {
-    margin: 0 auto;
-  }
+
   .member-tiers_container {
     flex: 1;
     width: 100%;
