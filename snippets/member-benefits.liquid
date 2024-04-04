@@ -42,7 +42,7 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
 {% comment %}
     Icon 1
 {% endcomment %}
-<div>
+<div class="grid-membership_box">
 
     <div class="member-icon_container icon__animated{% if image != blank %} icon__animated--image{% endif %}">
 
@@ -68,7 +68,7 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
 {% comment %}
     Icon 2
 {% endcomment %}
-<div>
+<div class="grid-membership_box">
 <div class="member-icon_container icon__animated{% if image != blank %} icon__animated--image{% endif %}">
 
     {% liquid
@@ -91,7 +91,7 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
 {% comment %}
     Icon 3
 {% endcomment %}
-<div>
+<div class="grid-membership_box">
 <div class="member-icon_container icon__animated{% if image != blank %} icon__animated--image{% endif %}">
     {% liquid
     if image_3 != blank
