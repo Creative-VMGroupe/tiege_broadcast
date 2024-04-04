@@ -25347,6 +25347,7 @@ body.has-header-sticky .timeline {
 
 .default-font-custom {
   font-size: 15px;
+  margin: 0;
 }
 .member-tiers-wrapper-custom {
   display: flex;
