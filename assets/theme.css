@@ -25325,6 +25325,7 @@ body.has-header-sticky .timeline {
   }
   .member-single-tier_container {
     width: 100%;
+    height: 100%;
   }
   .member-tier_secondary_text {
     padding-left: 20px;
