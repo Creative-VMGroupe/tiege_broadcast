@@ -25254,6 +25254,20 @@ body.has-header-sticky .timeline {
   margin: 0 auto;
 }
 
+.member-container-custom-desktop {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.member-tier_text {
+  flex: 1;
+}
+.member-tier_secondary_text {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 50%;
+}
+
 @media only screen and (max-width: 749px) {
   .accordion-new__body {
     max-width: none;
@@ -25321,19 +25335,7 @@ body.has-header-sticky .timeline {
     padding: 0 30px;
   }
 }
-.member-container-custom-desktop {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.member-tier_text {
-  flex: 1;
-}
-.member-tier_secondary_text {
-  padding-left: 20px;
-  padding-right: 20px;
-  max-width: 50%;
-}
+
 .default-font-custom {
   font-size: 15px;
 }
