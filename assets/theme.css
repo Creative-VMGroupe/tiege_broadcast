@@ -25287,6 +25287,7 @@ body.has-header-sticky .timeline {
 }
 .icon_sub-custom {
   color: #00ad2d;
+  margin: 0;
 }
 .member-icon_container {
   width: 80px;
