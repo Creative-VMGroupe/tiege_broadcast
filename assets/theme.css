@@ -25316,6 +25316,9 @@ body.has-header-sticky .timeline {
   }
 }
 @media screen and (min-width: 750px) {
+  .product-modal__container-custom{
+    padding: 50px 100px;
+  }
   .member-icon_container{
     width: 80px;
     margin: 0 auto;
