@@ -25361,3 +25361,6 @@ body.has-header-sticky .timeline {
   display: flex;
   flex-direction: column;
 }
+.heading-size-8_custom {
+  font-size: calc(var(--font-8) * var(--FONT-ADJUST-HEADING)) !important;
+}

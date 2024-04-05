@@ -37,7 +37,7 @@
 -%}
 
 {%- capture cart_title -%}
-  <h3 class="cart__title caps heading-size-8">
+  <h3 class="cart__title caps heading-size-8_custom">
     {{ title_block[0].settings.title | default: cart_title_default }}
 
     <cart-count class="cart__items-count" data-cart-count="{{ cart_item_count }}">{{ cart_item_count }}</cart-count>
