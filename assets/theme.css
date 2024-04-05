@@ -25364,3 +25364,6 @@ body.has-header-sticky .timeline {
 .heading-size-8_custom {
   font-size: calc(var(--font-8) * var(--FONT-ADJUST-HEADING)) !important;
 }
+.header-full_height-custom {
+  height: 100%;
+}

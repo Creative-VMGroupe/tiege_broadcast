@@ -105,9 +105,12 @@
   capture srcset
     render 'image-srcset', image: image, widths: widths
   endcapture
+
  -%}
 
-<figure class="{{ wrapper_classes }}" {{ wrapper_attributes }}>
+<figure class="{{ wrapper_classes }} {% if headerFullHeight %}
+  header-full_height-custom
+{% endif %} "  {{ wrapper_attributes }}>
   {%- if image -%}
     {{ image | image_url: width: width, height: height | image_tag:
       loading: loading,

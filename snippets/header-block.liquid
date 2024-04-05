@@ -62,7 +62,7 @@ Required params:
 
   {%- case block.type -%}
     {% when 'image' %}
-  <div class="header__dropdown__image palette--contrast--dark"
+  <div style="height: 100%;" class="header__dropdown__image palette--contrast--dark"
     {% unless text_color == 'rgba(0,0,0,0)' or text_color == blank %}style="--text: {{ text_color }};"{% endunless %}
     data-stagger-first>
     {%- if link != blank -%}
@@ -97,7 +97,7 @@ Required params:
 
    
   
-    {%- render 'image', image: image, aspect_ratio: aspect_ratio, sizes: sizes, loading: 'lazy', fetchpriority: 'high' -%}
+    {%- render 'image', image: image, aspect_ratio: aspect_ratio, sizes: sizes, loading: 'lazy', fetchpriority: 'high' headerFullHeight: true-%}
   </div>
       {% when 'video' %}
         {%- liquid 
