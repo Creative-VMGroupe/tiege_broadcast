@@ -24110,10 +24110,6 @@ dialog.is-loading .loader {
   background-color: var(--bg);
 }
 
-.compare__body {
-  display: flex;
-  flex-direction: column-reverse;
-}
 @media only screen and (min-width: 750px) {
   .compare__body {
     display: flex;
@@ -25371,4 +25367,10 @@ body.has-header-sticky .timeline {
 }
 .header-full_height-custom {
   height: 100%;
+}
+@media only screen and (max-width: 749px) {
+  .compare__body {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
