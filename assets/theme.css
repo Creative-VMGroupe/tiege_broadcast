@@ -24110,6 +24110,10 @@ dialog.is-loading .loader {
   background-color: var(--bg);
 }
 
+.compare__body {
+  display: flex;
+  flex-direction: column-reverse;
+}
 @media only screen and (min-width: 750px) {
   .compare__body {
     display: flex;
