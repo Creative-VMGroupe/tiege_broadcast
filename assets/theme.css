@@ -25376,8 +25376,8 @@ body.has-header-sticky .timeline {
   .product__title__wrapper {
     text-align: center;
   }
-  .product__breadcrumbs {
-    text-align: center;
+  .breadcrumbs_text {
+    margin: 0 auto;
   }
 }
 //End Media Query
