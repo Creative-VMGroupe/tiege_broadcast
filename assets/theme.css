@@ -25396,3 +25396,6 @@ body.has-header-sticky .timeline {
 .metafield-icons_text {
   max-width: 80px;
 }
+.new-class {
+  display: flex
+}
