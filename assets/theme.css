@@ -23834,7 +23834,6 @@ dialog.is-loading .loader {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100px;
 }
 
 .image-wrapper + .faq-list__item-title {
@@ -25344,6 +25343,9 @@ body.has-header-sticky .timeline {
   }
   .member-tier_secondary_text {
     padding: 0 30px;
+  }
+  .faq-list__item-description {
+    height: 100px;
   }
 }
 
