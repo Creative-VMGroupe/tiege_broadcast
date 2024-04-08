@@ -209,6 +209,49 @@
         "padding_bottom": 30
       }
     },
+    "section_double_slider_new_Gd6kgG": {
+      "type": "section-double-slider-new",
+      "blocks": {
+        "text_slide_F6A3Rj": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "Proof",
+            "subheading_size": 8,
+            "title": "★★★★★★",
+            "heading_size": 4,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "button_text": "- Name of Reviewer",
+            "button_url": "",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "text_slide_F6A3Rj"
+      ],
+      "custom_css": [
+        "h2 {color: #00ad2d;}"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-third--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png",
+        "image_2": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO3.png",
+        "image_width": "one-half",
+        "text_alignment": "text-center",
+        "bg_color": "#000000",
+        "color": "#ffffff",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_double_Pf9XFr": {
       "type": "section-double",
       "blocks": {
@@ -256,6 +299,7 @@
         "text_Yh8JmM",
         "buttons_tJDcGw"
       ],
+      "disabled": true,
       "custom_css": [
         ".hero__subheading {color: #00ad2d;}"
       ],
@@ -320,7 +364,7 @@
         "text_slide_brLbph"
       ],
       "custom_css": [
-        "button {margin: 0; border-color: #00ad2d; height: 7px; background-color: #00ad2d;}"
+
       ],
       "settings": {
         "layout": "",
@@ -328,7 +372,6 @@
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/uZr3qZvfRNuNZb2xaQjw.png",
-        "image_2": "shopify:\/\/shop_images\/rosemary-v1608581888105.png",
         "image_width": "one-half",
         "text_alignment": "text-center",
         "bg_color": "",
@@ -831,6 +874,7 @@
   },
   "order": [
     "main",
+    "section_double_slider_new_Gd6kgG",
     "section_double_Pf9XFr",
     "section_double_slider_new_3LK9XP",
     "section_double_slider_xjfT8n",
