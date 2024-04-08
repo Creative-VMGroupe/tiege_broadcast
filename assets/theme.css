@@ -395,11 +395,14 @@ body:not(.is-focused) .flickity-button:focus {
   height: 7px;
   border-radius: initial;
   opacity: 0.25;
-  background: #00ad2d;
+  background: white;
+  border-color: white;
 }
 
 [data-dots="line"] .flickity-page-dot.is-selected {
   opacity: 1;
+  background: #00ad2d;
+  border-color: #00ad2d;
 }
 
 [data-dots="hidden"] .flickity-page-dot {
