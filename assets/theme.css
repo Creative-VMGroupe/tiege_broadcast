@@ -25384,6 +25384,7 @@ body.has-header-sticky .timeline {
 .metafield-icons_container {
   display: flex;
   padding: 16px;
+  gap: 5px;
 }
 .metafield-icon_container {
   display: flex;
