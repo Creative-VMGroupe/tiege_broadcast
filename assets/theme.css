@@ -11654,7 +11654,7 @@ main-search .input-holder {
   display: flex;
   margin: 0;
   border: 0;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 2px solid var(--border);
   border-radius: 0;
 }
 
