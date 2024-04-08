@@ -1,7 +1,7 @@
 <div class="metafield-icons_container">
-{% if product.metafields.custom.icon_benefits_1 | file_url and
-    product.metafields.custom.icon_benefit_2 | file_url and
-    product.metafields.custom.icon_benefit_3 | file_url %}
+{% if product.metafields.custom.icon_benefits_1 | file_url == true and
+    product.metafields.custom.icon_benefit_2 | file_url == true and
+    product.metafields.custom.icon_benefit_3 | file_url == true %}
     
 
 <div class="metafield-icon_container">
