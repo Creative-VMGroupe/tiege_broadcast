@@ -20419,7 +20419,7 @@ body.is-focused .subcollection__item:focus-within .image-overlay-bottom {
 }
 @media only screen and (min-width: 750px) {
   .footer__blocks {
-    flex-flow: row wrap;
+    flex-flow: row-reverse wrap;
   }
 }
 
