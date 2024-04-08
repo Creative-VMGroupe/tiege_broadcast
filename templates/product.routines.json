@@ -661,7 +661,7 @@
       ],
       "settings": {
         "title": "Included in this System",
-        "heading_size": 9,
+        "heading_size": 8,
         "layout": "slider",
         "grid": 2,
         "align_heading": "text-left",
