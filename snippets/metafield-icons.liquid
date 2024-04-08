@@ -1,9 +1,18 @@
-<div style="display: flex; flex-direction: column;">
+<div style="display: flex;">
 
+<div>
+    <img src="{{ product.metafields.custom.icon_benefit_1 | file_url }}" alt="Just text" height="25px" width="25px">
 
+    <p>Icon Description Metafields</p>
+</div>
+<div>
+    <img src="{{ product.metafields.custom.icon_benefit_2 | file_url }}" alt="Just text" height="25px" width="25px">
 
-<span>{{ product.metafields.custom.icon_benefit_3 | img_tag: 'Alt Text', width: 25, height: 25 }}
-    </span>
-   <img src="{{ product.metafields.custom.icon_benefit_3 | file_url }}" alt="Just text" height="25px" width="25px">
+    <p>Icon Description Metafields</p>
+</div>
+   <div>
+       <img src="{{ product.metafields.custom.icon_benefit_3 | file_url }}" alt="Just text" height="25px" width="25px">
 
+       <p>Icon Description Metafields</p>
+</div>
 </div>
