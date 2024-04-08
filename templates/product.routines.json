@@ -7,9 +7,9 @@
           "type": "title",
           "settings": {
             "subheading_option": "collection",
-            "collection": "",
+            "collection": "skin-care-system",
             "text_size": 6,
-            "padding_bottom": 8
+            "padding_bottom": 10
           }
         },
         "trustreviews_star_rating_CXtD3L": {
@@ -110,6 +110,7 @@
         },
         "metafield_icons_BDHtFK": {
           "type": "metafield-icons",
+          "disabled": true,
           "settings": {
           }
         },
