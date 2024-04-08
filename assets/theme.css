@@ -25375,3 +25375,7 @@ body.has-header-sticky .timeline {
     flex-direction: column-reverse;
   }
 }
+.plr-custom {
+  padding-left: var(--PLR);
+  padding-right: var(--PLR);
+}
