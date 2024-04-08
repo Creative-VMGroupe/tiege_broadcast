@@ -299,6 +299,65 @@
         "padding_bottom": 0
       }
     },
+    "section_double_slider_new_ERgtDU": {
+      "type": "section-double-slider-new",
+      "blocks": {
+        "text_slide_7rbw3L": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "",
+            "subheading_size": 3,
+            "title": "Willow Bark Extract",
+            "heading_size": 8,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "text_slide_mtHNtP": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "",
+            "subheading_size": 3,
+            "title": "Ingredient #2",
+            "heading_size": 8,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "text_slide_7rbw3L",
+        "text_slide_mtHNtP"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-third--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO3.png",
+        "image_2": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png",
+        "image_width": "three-quarters",
+        "text_alignment": "text-center",
+        "bg_color": "#000000",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_double_eTn7cn": {
       "type": "section-double",
       "blocks": {
@@ -346,6 +405,7 @@
         "text_nJiYWB",
         "buttons_HCJ6TJ"
       ],
+      "disabled": true,
       "custom_css": [
         ".hero__subheading {color: #00ad2d;}"
       ],
@@ -415,14 +475,14 @@
       ],
       "settings": {
         "layout": "is-reversed",
-        "height": "screen-height-three-quarters",
+        "height": "screen-height-one-half",
         "mobile_height": "screen-height-one-third--mobile",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/uZr3qZvfRNuNZb2xaQjw.png",
         "image_2": "shopify:\/\/shop_images\/rosemary-v1608581888105.png",
         "image_width": "one-half",
         "text_alignment": "text-center",
-        "bg_color": "#e8e8e8",
+        "bg_color": "#f7f7f7",
         "color": "",
         "padding_top": 0,
         "padding_bottom": 0
@@ -1193,6 +1253,7 @@
   "order": [
     "main",
     "section_double_slider_wk8dA9",
+    "section_double_slider_new_ERgtDU",
     "section_double_eTn7cn",
     "section_double_slider_new_M974Kz",
     "section_double_slider_b33Ygi",
