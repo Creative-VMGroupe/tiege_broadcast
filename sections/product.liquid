@@ -850,7 +850,14 @@
                         {%- if recommendations.performed and recommendations.products_count > 0 -%}
                           {%- assign complementary_products_title = 'products.general.complementary_products_title' | t -%}
                           {%- if complementary_products_title != blank -%}
-                            <p style="font-weight: bold;"  class="complementary-products__title">{{ complementary_products_title }}</p>
+                            <div>
+                              <span style="font-weight: bold;"  class="complementary-products__title">Want to level up?</span>
+                              <a href="{{ block.settings.level-guide_link }}">
+                                Level Guide
+                              </a>
+                    
+                            </div>
+                           
                           {%- endif -%}
 
                           {%- for product in recommendations.products limit: block.settings.complementary_limit-%}
@@ -2069,6 +2076,11 @@
         "name": "Complementary products",
         "limit": 1,
         "settings": [
+          {   
+            "type": "url",
+            "id": "level-guide_link",
+            "label": "Level Guide link"
+          },
           {
             "type": "paragraph",
             "content": "To select complementary products, add the Search & Discovery app. [Learn more](https://help.shopify.com/manual/online-store/search-and-discovery/product-recommendations)"
