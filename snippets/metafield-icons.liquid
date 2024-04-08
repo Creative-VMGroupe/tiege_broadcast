@@ -1,11 +1,13 @@
 <div style="display: flex;">
 <p>
-    {{ product.metafields.custom.icon_benefit_3 | json }}
+    {{ product.metafields.custom.icon_benefit_3 | file_url }}
   
 
 </p>
-<span>  {{ custom.icon_benefit_3 | json }} </span>
-   <img src="{{ product.metafields.custom.icon_benefit_3 | file_img_url }}" alt="Just text" height="50px" width="50px">
+<span>  {{ product.metafields.custom.icon_benefit_3 | file_img_url }} </span>
+<span>{{ product.metafields.custom.icon_benefit_3 | img_tag: 'Alt Text', width: 100, height: 100 }}
+    </span>
+   <img src="{{ product.metafields.custom.icon_benefit_3 | file_url }}" alt="Just text" height="50px" width="50px">
 
 
 
