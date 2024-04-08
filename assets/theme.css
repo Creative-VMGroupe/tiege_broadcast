@@ -25381,3 +25381,12 @@ body.has-header-sticky .timeline {
   padding-left: var(--PLR);
   padding-right: var(--PLR);
 }
+.metafield-icons_container {
+  display: flex;
+  padding: 16px;
+}
+.metafield-icon_container {
+  display: flex;
+  flex-direction: column;
+
+}
