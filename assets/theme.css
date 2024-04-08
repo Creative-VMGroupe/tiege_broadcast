@@ -391,10 +391,10 @@ body:not(.is-focused) .flickity-button:focus {
 }
 
 [data-dots="line"] .flickity-page-dot {
-  width: 40px;
-  height: 7px;
+  width: 60px;
+  height: 3px;
   border-radius: initial;
-  opacity: 0.25;
+  opacity: 0.9;
   background: white;
   border-color: white;
 }
