@@ -5707,8 +5707,8 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  width: var(--icon-size);
-  height: var(--icon-size);
+  width: 16px;
+  height: 21px;
   margin: auto;
   background: currentColor;
   -webkit-mask-image: var(--icon-add-cart);
