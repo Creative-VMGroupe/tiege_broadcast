@@ -264,7 +264,7 @@
         "enable_video_looping": true,
         "mobile_image_style": "slider",
         "padding_top": 90,
-        "padding_bottom": 30
+        "padding_bottom": 0
       }
     },
     "section_double_slider_wk8dA9": {
