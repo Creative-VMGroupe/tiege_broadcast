@@ -886,7 +886,10 @@
                       {%- endif -%}
                     </div>
 
-                {%- endcase -%}
+               
+               {% when 'metafield-icons' %}
+{% render 'metafield-icons' with block.settings as block%}
+                  {%- endcase -%}
               {%- endfor -%}
             </div>
           </div>
@@ -1728,6 +1731,11 @@
           }
         ]
       },
+      {
+        "type": "metafield-icons",
+        "name": "Metafield Icons",
+        "settings": []
+      }
       {
         "type": "icon",
         "name": "Icon",
