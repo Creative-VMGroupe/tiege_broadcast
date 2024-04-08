@@ -1,1 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" stroke-width="1.01" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M3 6h19l-3 10H6L3 6zm0 0l-.75-2.5M9.992 11h2m2 0h-2m0 0V9m0 2v2M11 19.5a1.5 1.5 0 01-3 0M17 19.5a1.5 1.5 0 01-3 0" stroke="#000000" stroke-width="1.01" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="15.758" height="21.126" viewBox="0 0 15.758 21.126">
+  <g id="Group_1294" data-name="Group 1294" transform="translate(5694.559 21388.501)">
+    <g id="Group_1227" data-name="Group 1227" transform="translate(-5694 -21388)">
+      <g id="Group_10" data-name="Group 10" transform="translate(0 0)">
+        <path id="Path_5" data-name="Path 5" d="M13.727,7.466,15.2,20.626H.559L2.032,7.466ZM5,11.463l0-8.21A2.81,2.81,0,0,1,7.862.5a2.809,2.809,0,0,1,2.861,2.752v8.21" transform="translate(-0.559 -0.5)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1"/>
+      </g>
+    </g>
+    <g id="Group_1228" data-name="Group 1228" transform="translate(-33 4.5)">
+      <line id="Line_39" data-name="Line 39" x2="6" transform="translate(-5657 -21377.5)" fill="none" stroke="#000" stroke-width="1"/>
+      <line id="Line_40" data-name="Line 40" x2="6" transform="translate(-5654 -21380.5) rotate(90)" fill="none" stroke="#000" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
