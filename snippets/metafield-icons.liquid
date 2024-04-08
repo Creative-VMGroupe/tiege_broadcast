@@ -1,6 +1,9 @@
 <div style="display: flex;">
+<p>
+    {{ product.metafields.custom.icon_benefit_3 | json }}
+    {{ custom.icon_benefit_3 | json }} 
 
-{{ custom.icon_benefit_3 | json }} {{ product.metafields.custom.icon_benefit_3 | json }}
+</p>
    <img src="{{ product.metafields.custom.icon_benefit_3 | file_img_url }}" alt="Just text" height="50px" width="50px">
 
 
