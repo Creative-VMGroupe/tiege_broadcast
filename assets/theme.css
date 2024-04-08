@@ -24791,7 +24791,7 @@ body.has-header-sticky .timeline {
   padding-top: var(--padding);
 }
 .timeline__row:not(:last-child) {
-  margin-right: var(--gap);
+  margin-right: 2px;
 }
 .timeline__row:not(:only-child) {
   width: calc(100% - var(--part-width));
