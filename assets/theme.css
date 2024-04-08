@@ -25376,7 +25376,11 @@ body.has-header-sticky .timeline {
   .product__title__wrapper {
     text-align: center;
   }
+  .product__breadcrumbs {
+    text-align: center;
+  }
 }
+//End Media Query
 .plr-custom {
   padding-left: var(--PLR);
   padding-right: var(--PLR);
@@ -25397,5 +25401,5 @@ body.has-header-sticky .timeline {
   max-width: 80px;
 }
 .new-class {
-  display: flex
+  display: flex;
 }
