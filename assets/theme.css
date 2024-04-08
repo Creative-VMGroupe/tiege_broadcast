@@ -25345,9 +25345,6 @@ body.has-header-sticky .timeline {
   .member-tier_secondary_text {
     padding: 0 30px;
   }
-  .product__title__wrapper {
-    text-align: center;
-  }
 }
 
 .default-font-custom {
@@ -25376,6 +25373,9 @@ body.has-header-sticky .timeline {
   .compare__body {
     display: flex;
     flex-direction: column-reverse;
+  }
+  .product__title__wrapper {
+    text-align: center;
   }
 }
 .plr-custom {
