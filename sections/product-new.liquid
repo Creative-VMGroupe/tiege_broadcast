@@ -847,7 +847,7 @@
                         {%- if recommendations.performed and recommendations.products_count > 0 -%}
                           {%- assign complementary_products_title = 'products.general.complementary_products_title' | t -%}
                           {%- if complementary_products_title != blank -%}
-                            <p class="complementary-products__title">{{ complementary_products_title }}</p>
+                            <p style="font-weight: bold;" class="complementary-products__title">{{ complementary_products_title }}</p>
                           {%- endif -%}
 
                           {%- for product in recommendations.products limit: block.settings.complementary_limit-%}
