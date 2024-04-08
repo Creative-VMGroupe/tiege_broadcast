@@ -850,7 +850,8 @@
                         {%- if recommendations.performed and recommendations.products_count > 0 -%}
                           {%- assign complementary_products_title = 'products.general.complementary_products_title' | t -%}
                           {%- if complementary_products_title != blank -%}
-                            <div>
+                            <div style="    display: flex;
+                            justify-content: space-between; margin-bottom: 10px;">
                               <span style="font-weight: bold;"  class="complementary-products__title">Want to level up?</span>
                               <a href="{{ block.settings.level-guide_link }}">
                                 Level Guide
