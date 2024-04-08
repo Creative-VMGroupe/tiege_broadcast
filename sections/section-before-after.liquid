@@ -15,7 +15,7 @@
   #SectionBeforeAfter--{{ section.id }} {
     --PT: {{ section.settings.padding_top }}px;
     --PB: {{ section.settings.padding_bottom }}px;
-
+    --PLR: {{ section.settings.padding_lr }}px;
     {%- unless bg_color == 'rgba(0,0,0,0)' or bg_color == blank -%}
       --bg: {{ bg_color }};
     {%- endunless -%}
@@ -133,6 +133,7 @@
       "step": 1,
       "default":8
     },
+
       {
         "type": "richtext",
         "id": "description",
@@ -251,6 +252,16 @@
       {
         "type": "header",
         "content": "Section padding"
+      },
+      {
+        "type": "range",
+        "id": "padding_lr",
+        "min": 0,
+        "max": 125,
+        "step": 5,
+        "unit": "px",
+        "label": "Padding Left/Right",
+        "default": 50
       },
       {
         "type": "range",

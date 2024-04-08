@@ -24126,7 +24126,8 @@ dialog.is-loading .loader {
 }
 
 .wrapper--full .compare__content {
-  padding-left: var(--outer);
+  padding-left: var(--PLR);
+  padding-right: var(--PLR)
 }
 @media only screen and (max-width: 749px) {
   .wrapper--full .compare__content {
