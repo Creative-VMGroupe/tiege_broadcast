@@ -13615,6 +13615,7 @@ main-search .input-holder {
   color: var(--COLOR-TEXT);
   text-decoration: line-through;
   color: var(--text-light);
+  color: black;
 }
 
 .no-results {

@@ -584,7 +584,7 @@
   endif
 -%}
 
-<span class="price{% if product.compare_at_price > product.price %} sale{% endif %}">
+<span style="font-size: 16px;" class="price{% if product.compare_at_price > product.price %} sale{% endif %}">
   {% if product.available %}
     <span style="color: {{prod_text_color}}"  class="new-price">
       {% if product.price_varies %}
