@@ -103,8 +103,14 @@
             "padding_bottom": 16
           }
         },
+        "metafield_icons_aLrgM3": {
+          "type": "metafield-icons",
+          "settings": {
+          }
+        },
         "essential_trust_badges_app_block_XTEtGz": {
           "type": "shopify:\/\/apps\/essential-trust-badges\/blocks\/app-block\/0ff65b25-07e1-408e-950f-f54dd3d1751b",
+          "disabled": true,
           "settings": {
             "banner_display": "all",
             "banner_id": "07becc1f-88fb-449c-86fa-a5a083cbd5f8"
@@ -151,6 +157,7 @@
         "complementary_products_C7V6rg": {
           "type": "complementary-products",
           "settings": {
+            "level-guide_link": "",
             "complementary_limit": 3,
             "bg_color": "",
             "padding_bottom": 16
@@ -178,6 +185,7 @@
         "variants",
         "buttons",
         "text_e6RAMT",
+        "metafield_icons_aLrgM3",
         "essential_trust_badges_app_block_XTEtGz",
         "icon_1",
         "tab_richtext_nDcaW6",
@@ -312,6 +320,7 @@
         "image_2": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png",
         "image_width": "three-quarters",
         "text_alignment": "text-center",
+        "padding_lr": 50,
         "reverse_blocks": false,
         "bg_color": "#000000",
         "color": "#ffffff",
