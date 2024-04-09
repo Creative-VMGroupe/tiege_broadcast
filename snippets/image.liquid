@@ -90,7 +90,7 @@
   capture wrapper_attributes
     echo 'style="'
 
-    if aspect_ratio_style =! blank
+    if aspect_ratio_style != blank
     echo '--aspect-ratio: ' | append: aspect_ratio_style | append: ';'
     echo '"'
 
