@@ -39,7 +39,7 @@
   assign fill = false
 
  
-
+  
 
   if aspect_ratio != image.aspect_ratio
     assign fill = true
@@ -117,7 +117,11 @@
 
 <figure class="{{ wrapper_classes }} {% if headerFullHeight %}
   header-full_height-custom
-{% endif %} "  {{ wrapper_attributes }}>
+{% endif %} 
+{% if icons == true %} 
+icons_height
+{% endif %}"  
+{{ wrapper_attributes }}>
     {%- if image -%}
     {{ image | image_url: width: width, height: height | image_tag:
       loading: loading,
