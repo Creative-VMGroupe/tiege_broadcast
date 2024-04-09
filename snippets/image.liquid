@@ -38,8 +38,8 @@
   assign cover = cover | default: false
   assign fill = false
 
-  if image.a_r != blank
-  assign aspect_ratio_style = image.a_r
+  if a_r != blank
+  assign aspect_ratio_style = a_r
   endif
 
 
@@ -114,11 +114,7 @@
   endcapture
 
  -%}
- {% if aspect_ratio_style != blank %}
-  <script>
-    console.log("Aspect Ratio:", {{ aspect_ratio_style }});
-  </script>
- {% endif %}
+<script>console.log({{ aspect_ratio_style }})</script>
 
 <figure class="{{ wrapper_classes }} {% if headerFullHeight %}
   header-full_height-custom
