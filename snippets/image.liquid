@@ -90,7 +90,7 @@
   capture wrapper_attributes
     echo 'style="'
 
-    if aspect_ratio_style
+    if aspect_ratio_style =! blank
     echo '--aspect-ratio: ' | append: aspect_ratio_style | append: ';'
     echo '"'
 
@@ -132,7 +132,6 @@
       fetchpriority: fetchpriority,
       preload: preload,
       class: img_class,
-      
     }}
   {%- elsif placeholder != blank -%}
     {{ placeholder | placeholder_svg_tag: 'svg-placeholder' }}
