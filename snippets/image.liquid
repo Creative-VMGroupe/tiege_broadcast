@@ -88,12 +88,11 @@
   endcapture
 
   capture wrapper_attributes
+
     echo 'style="'
-
-   
-    echo '--aspect-ratio: ' | append: aspect_ratio | append: ';'
+    echo '--aspect-ratio: ' | append: if aspect_ratio_style != blank aspect_ratio_style else aspect_ratio endif | append: ';'
     echo '"'
-
+   
 
     if attributes != blank
       echo ' ' | append: attributes
