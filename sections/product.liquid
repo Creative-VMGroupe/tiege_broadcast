@@ -151,7 +151,7 @@
             {%- endif -%}
 
               {%- for media in product.media -%}
-                {%- render 'media', media: media, featured_media: featured_media, enable_video_looping: enable_video_looping, sectionkey: unique, image_width: image_width, cover: true, media_aspect_ratio: 1 -%}
+                {%- render 'media', media: media, featured_media: featured_media, enable_video_looping: enable_video_looping, sectionkey: unique, image_width: image_width, cover: true -%}
               {%- endfor -%}
 
             {%- if section.settings.enable_zoom -%}
@@ -659,7 +659,6 @@
 
         <popout-select class="select-popout">
           <button type="button"
-          
             class="select-popout__toggle"
             aria-expanded="false"
             aria-controls="{{ unique }}-select-{{ option.name | handle }}"
@@ -781,7 +780,6 @@
                   {%- when 'popup' -%}
                     {%- liquid
   assign link_text = block.settings.title
-  assign supply = block.settings.supply
   assign popup_content = block.settings.page.content | default: block.settings.text
   assign image = block.settings.image
   assign icon_size = block.settings.icon_size
@@ -804,8 +802,8 @@
 -%}
 
 <product-modal class="product__block block-padding" {{ block_style }}>
-  <div style="justify-content: space-between" class="product__icon__container product__icon__container--full">
-    {% comment %} <div class="product__icon" data-aos="img-in" {{ icon_style }}>
+  <div class="product__icon__container product__icon__container--full">
+    <div class="product__icon" data-aos="img-in" {{ icon_style }}>
       {%- liquid
         if image
           assign icon_width = icon_size
@@ -818,12 +816,11 @@
           render 'animated-icon', filename: block.settings.icon_name
         endif
       -%}
-    </div> {% endcomment %}
+    </div>
 
     <a class="radio__legend__link text-link" href="{{ block.settings.page.url }}" data-popup-open {{ block.shopify_attributes }}>
       {{ link_text | escape }}
     </a>
-    <span style="padding: 0 0 5px">{{supply}}</span>
   </div>
 
   <dialog class="product-modal" aria-hidden="true" inert data-scroll-lock-required>
@@ -831,13 +828,13 @@
       <button class="visually-hidden no-js" aria-label="{{ 'general.accessibility.close' | t }}"></button>
     </form>
 
-    <div style='max-width: 1000px' class="product-modal__outer">
-      <div class="product-modal__content small product-modal__container-custom" data-scroll-lock-scrollable>
+    <div class="product-modal__outer">
+      <div class="product-modal__content small" data-scroll-lock-scrollable>
         <button type="button" class="product-modal__close" data-popup-close autofocus aria-label="{{ 'general.accessibility.close' | t }}">
           {%- render 'icon-cancel' -%}
         </button>
-{% render 'member-benefits' with block.settings as block %}
-        {% comment %} {{ popup_content }} {% endcomment %}
+
+        {{ popup_content }}
       </div>
     </div>
   </dialog>
@@ -850,15 +847,7 @@
                         {%- if recommendations.performed and recommendations.products_count > 0 -%}
                           {%- assign complementary_products_title = 'products.general.complementary_products_title' | t -%}
                           {%- if complementary_products_title != blank -%}
-                            <div style="    display: flex;
-                            justify-content: space-between; margin-bottom: 10px;">
-                              <span style="font-weight: bold;"  class="complementary-products__title">Want to level up?</span>
-                              <a href="{{ block.settings.level-guide_link }}">
-                                Level Guide
-                              </a>
-                    
-                            </div>
-                           
+                            <p style="font-weight: bold;" class="complementary-products__title">{{ complementary_products_title }}</p>
                           {%- endif -%}
 
                           {%- for product in recommendations.products limit: block.settings.complementary_limit-%}
@@ -886,10 +875,7 @@
                       {%- endif -%}
                     </div>
 
-               
-               {% when 'metafield-icons' %}
-{% render 'metafield-icons' with block.settings as block%}
-                  {%- endcase -%}
+                {%- endcase -%}
               {%- endfor -%}
             </div>
           </div>
@@ -1068,7 +1054,7 @@
 
 {% schema %}
   {
-    "name": "Product pages",
+    "name": "Product pages new",
     "class": "section-overlay-header",
     "settings": [
       {
@@ -1732,11 +1718,6 @@
         ]
       },
       {
-        "type": "metafield-icons",
-        "name": "Metafield Icons",
-        "settings": []
-      },
-      {
         "type": "icon",
         "name": "Icon",
         "settings": [
@@ -2085,11 +2066,6 @@
         "name": "Complementary products",
         "limit": 1,
         "settings": [
-          {   
-            "type": "url",
-            "id": "level-guide_link",
-            "label": "Level Guide link"
-          },
           {
             "type": "paragraph",
             "content": "To select complementary products, add the Search & Discovery app. [Learn more](https://help.shopify.com/manual/online-store/search-and-discovery/product-recommendations)"
@@ -2139,170 +2115,9 @@
             "default": "Popup text"
           },
           {
-            "type": "text",
-            "id": "supply",
-            "label": "Supply",
-            "default": "30 day supply"
-          },
-          {
-        "type": "text",
-        "id": "pop-heading",
-        "label": "Main Heading",
-        "default": "Your Member Benefits Explained"
-      },
-      {
-            "type": "range",
-            "id": "pop-heading_size",
-            "label": "Heading size",
-            "min": 1,
-            "max": 6,
-            "step": 1,
-            "default": 6
-          },
-          {
-            "type": "range",
-            "id": "icon-sub_size",
-            "label": "Icon Subheading size (Desktop only)",
-            "min": 1,
-            "max": 15,
-            "step": 1,
-            "default": 6
-          },
-          {
-            "type": "image_picker",
-            "id": "image_1",
-            "label": "Icon 1"
-          },
-          {
-        "type": "text",
-        "id": "icon-1_sub",
-        "label": "Icon 1 Subheading",
-        "default": "Save 20%"
-      },
-      {
-        "type": "text",
-        "id": "icon-1_text",
-        "label": "Icon 1 Text",
-        "default": "Get 20% with Autoship"
-      },
-          {
-            "type": "image_picker",
-            "id": "image_2",
-            "label": "Icon 2"
-          },
-          {
-        "type": "text",
-        "id": "icon-2_sub",
-        "label": "Icon 2 Subheading",
-        "default": "Great Gifts"
-      },
-          {
-        "type": "text",
-        "id": "icon-2_text",
-        "label": "Icon 2 Text",
-        "default": "7 Gifts in your first year"
-      },
-          {
-            "type": "image_picker",
-            "id": "image_3",
-            "label": "Icon 3"
-          },
-          {
-        "type": "text",
-        "id": "icon-3_sub",
-        "label": "Icon 3 Subheading",
-        "default": "Exclusive Offers"
-      },
-          {
-        "type": "text",
-        "id": "icon-3_text",
-        "label": "Icon 3 Text",
-        "default": "Products, gear, SWAG, and bundles"
-      },
-      {
-        "type": "text",
-        "id": "pop-heading-2",
-        "label": "Secondary Heading",
-        "default": "Membership Tiers "
-      },
-      {
-        "type": "text",
-        "id": "box-1_text",
-        "label": "Tier 1 Heading",
-        "default": "Member"
-      },
-      {
-        "type": "text",
-        "id": "box-1_gifts",
-        "label": "Tier 1 Gifts",
-        "default": "3 Routine-building Gifts"
-      },
-      {
-        "type": "text",
-        "id": "box-2_text",
-        "label": "Tier 2 Heading",
-        "default": "VIP Member"
-      },
-      {
-        "type": "text",
-        "id": "box-2_gifts",
-        "label": "Tier 2 Gifts",
-        "default": "3 VIP Gifts, 1 Premium Gift"
-      },
-      {
-        "type": "text",
-        "id": "box-3_text",
-        "label": "Tier 3 Heading",
-        "default": "Emerald VIP"
-      },
-      {
-        "type": "text",
-        "id": "box-3_gifts",
-        "label": "Tier 3 Gifts",
-        "default": "10% off every order, 2 Premium Gifts per year"
-      },
-
-
-
-          {
-        "type": "text",
-        "id": "member-link_text",
-        "label": "Link Text",
-        "default": "More Details"
-      },
-      {   
-            "type": "url",
-            "id": "member_link",
-            "label": "Button link"
-          },
-
-          {
-        "type": "select",
-        "id": "button_type",
-        "label": "Color",
-        "default": "btn--primary",
-        "options": [
-          {"value": "btn--primary", "label": "Primary"},
-          {"value": "btn--secondary", "label": "Secondary"},
-          {"value": "btn--white", "label": "White"},
-          {"value": "btn--black", "label": "Black"}
-        ]
-      },
-      {
-      "type": "select",
-      "id": "button_style",
-      "label": "Style",
-      "default": "btn--text",
-      "options": [
-        { "label": "Solid", "value": "btn--solid" },
-        { "label": "Outline", "value": "btn--outline" },
-        { "label": "Text", "value": "btn--text" }
-      ]
-    },
-    {
             "type": "richtext",
             "id": "text",
-            "label": "Footer Text",
+            "label": "Text",
             "default": "<p>Additonal information about the product.</p>"
           },
           {
