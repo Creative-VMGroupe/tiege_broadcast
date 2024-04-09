@@ -76,7 +76,7 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
     {% liquid
     if image_2 != blank
 
-    render 'image' image: image_2, width: icon_width_retina, sizes: icon_sizes, widths: icon_widths, loading: loading
+    render 'image' image: image_2, width: icon_width_retina, sizes: icon_sizes, widths: icon_widths, loading: loading, icons: true
     endif
     %}
     </div>
@@ -98,7 +98,7 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
     {% liquid
     if image_3 != blank
 
-    render 'image' image: image_3, width: icon_width_retina, sizes: icon_sizes, widths: icon_widths, loading: loading
+    render 'image' image: image_3, width: icon_width_retina, sizes: icon_sizes, widths: icon_widths, loading: loading, icons: true
     endif
     %}
     </div>
