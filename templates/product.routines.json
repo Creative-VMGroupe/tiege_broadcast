@@ -1052,13 +1052,13 @@
       "blocks": {
         "trustreviews_reviews_widget_8YLWPV": {
           "type": "shopify:\/\/apps\/trustreviews\/blocks\/reviews_widget\/56d0fe1b-e701-4cff-8f84-466a26e09adb",
-          "disabled": true,
           "settings": {
             "product": "{{product}}"
           }
         },
         "loox_reviews_loox_dynamic_section_wYqr7i": {
           "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "disabled": true,
           "settings": {
             "only_photos": false,
             "aggregated": false,
