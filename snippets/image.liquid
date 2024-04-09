@@ -38,9 +38,7 @@
   assign cover = cover | default: false
   assign fill = false
 
-  if a_r != blank
-  assign aspect_ratio_style = a_r
-  endif
+ 
 
 
   if aspect_ratio != image.aspect_ratio
@@ -89,16 +87,12 @@
 
   capture wrapper_attributes
 
-  if aspect_ratio_style != blank
-  echo 'style="'
-  echo '--aspect-ratio: ' | append: aspect_ratio_style | append: ';'
-  echo '"'
-else
+
     echo 'style="'
     echo '--aspect-ratio: ' | append: aspect_ratio | append: ';'
     echo '"'
    
-    endif
+ 
     if attributes != blank
       echo ' ' | append: attributes
     endif

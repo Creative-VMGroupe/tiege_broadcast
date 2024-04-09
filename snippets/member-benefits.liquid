@@ -33,7 +33,7 @@ assign icon_width_retina = icon_width | times: 2
 assign icon_sizes = icon_width | append: 'px'
 assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
 
-assign aspect_ratio = 0.9423076923076923
+
 %}
 
 <p class="heading-size-{{ block.pop-heading_size }} member-benefits__text">{{ block.pop-heading }}</p>
@@ -51,7 +51,7 @@ assign aspect_ratio = 0.9423076923076923
     {% liquid
     if image_1 != blank
 
-    render 'image' image: image_1, width: icon_width_retina, sizes: icon_sizes, widths: icon_widths, loading: loading, a_r: aspect_ratio
+    render 'image' image: image_1, width: icon_width_retina, sizes: icon_sizes, widths: icon_widths, loading: loading
     endif
     %}
 
