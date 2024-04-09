@@ -89,11 +89,16 @@
 
   capture wrapper_attributes
 
+  if aspect_ratio_style != blank
+  echo 'style="'
+  echo '--aspect-ratio: ' | append: aspect_ratio_style | append: ';'
+  echo '"'
+else
     echo 'style="'
     echo '--aspect-ratio: ' | append: aspect_ratio | append: ';'
     echo '"'
    
-
+    endif
     if attributes != blank
       echo ' ' | append: attributes
     endif
@@ -114,7 +119,7 @@
   endcapture
 
  -%}
-<script>console.log({{ aspect_ratio_style }})</script>
+
 
 <figure class="{{ wrapper_classes }} {% if headerFullHeight %}
   header-full_height-custom
