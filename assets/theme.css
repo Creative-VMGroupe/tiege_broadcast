@@ -14299,6 +14299,7 @@ body.has-header-transparent.has-first-section-overlay-header .product__content {
 
 .product__subheading p:only-child {
   margin: 0;
+  font-size: var(--Font-12-CUSTOM)
 }
 
 .product__price__wrap {
@@ -14579,7 +14580,7 @@ dialog[closing] .product-modal__outer {
 .product__icon__container {
   display: flex;
   align-items: center;
-  font-size: var(--Font-12);
+  font-size: var(--Font-12-CUSTOM);
 }
 
 .product__icon__container--full {
@@ -25415,5 +25416,5 @@ body.has-header-sticky .timeline {
   padding-top: 80%;
 }
 :root {
-  --Font-12: 12px;
+  --Font-12-CUSTOM: 12px;
 }
