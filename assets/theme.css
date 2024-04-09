@@ -20497,6 +20497,7 @@ body.is-focused .subcollection__item:focus-within .image-overlay-bottom {
 
 .footer__newsletter__wrapper {
   max-width: 440px;
+  margin-bottom: 1.5em;
 }
 
 .footer__newsletter__wrapper .newsletter-form {
