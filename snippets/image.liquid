@@ -90,15 +90,11 @@
   capture wrapper_attributes
     echo 'style="'
 
-    if aspect_ratio_style != blank
-    echo '--aspect-ratio: ' | append: aspect_ratio_style | append: ';'
-    echo '"'
-
-    else
+   
     echo '--aspect-ratio: ' | append: aspect_ratio | append: ';'
     echo '"'
 
-    endif
+
     if attributes != blank
       echo ' ' | append: attributes
     endif
@@ -123,7 +119,7 @@
 <figure class="{{ wrapper_classes }} {% if headerFullHeight %}
   header-full_height-custom
 {% endif %} "  {{ wrapper_attributes }}>
-  {%- if image -%}
+    {%- if image -%}
     {{ image | image_url: width: width, height: height | image_tag:
       loading: loading,
       srcset: srcset,
@@ -131,7 +127,7 @@
       alt: alt,
       fetchpriority: fetchpriority,
       preload: preload,
-      class: img_class,
+      class: img_class
     }}
   {%- elsif placeholder != blank -%}
     {{ placeholder | placeholder_svg_tag: 'svg-placeholder' }}
