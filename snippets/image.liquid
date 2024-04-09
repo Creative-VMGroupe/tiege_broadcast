@@ -114,9 +114,12 @@
   endcapture
 
  -%}
- <script>
-  console.log("Aspect Ratio:", {{ aspect_ratio }} {{ aspect_ratio_style }});
-</script>
+ {% if aspect_ratio_style != blank %}
+  <script>
+    console.log("Aspect Ratio:", {{ aspect_ratio_style }});
+  </script>
+ {% endif %}
+
 <figure class="{{ wrapper_classes }} {% if headerFullHeight %}
   header-full_height-custom
 {% endif %} "  {{ wrapper_attributes }}>
