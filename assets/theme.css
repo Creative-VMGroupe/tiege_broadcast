@@ -25418,6 +25418,7 @@ body.has-header-sticky .timeline {
 :root {
   --Font-12-CUSTOM: 12px;
 }
-.normal-case {
-  text-transform: none
+.prod-rec_text-custom {
+  text-transform: none;
+  letter-spacing: normal;
 }
