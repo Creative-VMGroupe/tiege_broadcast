@@ -14579,6 +14579,7 @@ dialog[closing] .product-modal__outer {
 .product__icon__container {
   display: flex;
   align-items: center;
+  font-size: var(--Font-12);
 }
 
 .product__icon__container--full {
@@ -25412,4 +25413,7 @@ body.has-header-sticky .timeline {
 }
 .icons_height {
   padding-top: 80%;
+}
+:root {
+  --Font-12: 12px;
 }
