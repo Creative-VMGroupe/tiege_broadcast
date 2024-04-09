@@ -38,6 +38,11 @@
   assign cover = cover | default: false
   assign fill = false
 
+  if image.a_r != blank
+  assign aspect_ratio_style = image.a_r
+  endif
+
+
   if aspect_ratio != image.aspect_ratio
     assign fill = true
   endif
@@ -84,9 +89,16 @@
 
   capture wrapper_attributes
     echo 'style="'
+
+    if aspect_ratio_style
+    echo '--aspect-ratio: ' | append: aspect_ratio_style | append: ';'
+    echo '"'
+
+    else
     echo '--aspect-ratio: ' | append: aspect_ratio | append: ';'
     echo '"'
 
+    endif
     if attributes != blank
       echo ' ' | append: attributes
     endif
@@ -119,7 +131,8 @@
       alt: alt,
       fetchpriority: fetchpriority,
       preload: preload,
-      class: img_class
+      class: img_class,
+      
     }}
   {%- elsif placeholder != blank -%}
     {{ placeholder | placeholder_svg_tag: 'svg-placeholder' }}
