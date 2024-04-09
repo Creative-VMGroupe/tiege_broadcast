@@ -1074,7 +1074,7 @@
         "loox_reviews_loox_dynamic_section_wYqr7i"
       ],
       "custom_css": [
-        "div.flex.gap-5.items-center {width: 100%;}"
+        "#trustreviews {max-width: 90%;}"
       ],
       "settings": {
         "include_margins": false
