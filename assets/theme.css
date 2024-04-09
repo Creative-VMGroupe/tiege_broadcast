@@ -25346,6 +25346,7 @@ body.has-header-sticky .timeline {
     max-width: none;
   }
   .member-tier_secondary_text {
+    margin-top: 16px;
     padding: 0 30px;
   }
 }
