@@ -194,7 +194,8 @@
         {%- endfor -%}
       </div>
     </div>
-    {% when 'memberboxes' %}
+    {%- for block in section.blocks -%}
+    {% case block.type == 'memberboxes'%}
       <div class="member-tiers-wrapper-custom">
         <p style="margin-bottom: 0" class="heading-size-{{ block.settings.pop-heading_size }} member-benefits__text">{{ block.settings.pop-heading-2 }}</p>
         <div class='member-container-custom-desktop'>
@@ -235,6 +236,8 @@
     
         
     </div>
+  {% endcase %}
+{%- endfor -%}
   {%- else -%}
     {%- render 'no-blocks' -%}
   {%- endif -%}
