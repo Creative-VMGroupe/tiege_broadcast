@@ -25425,7 +25425,7 @@ body.has-header-sticky .timeline {
 }
 .btn-cart_container {
   padding: 8px 15%;
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
   height: 50px;
 }
