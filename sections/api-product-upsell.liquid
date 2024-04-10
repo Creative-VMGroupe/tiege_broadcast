@@ -11,7 +11,6 @@
 
 
 <div data-api-content>
-  <script type="text/javascript" src="https://static.rechargecdn.com/assets/js/widget.min.js?shop=tiege-hanley-store.myshopify.com"></script>
   <product-images
     class="product-quick-add__images product__images product__images--thumbs product__images--mobile-thumbs"
     data-active-media="{{ section.id }}-{{ featured_media.id }}"
@@ -96,15 +95,3 @@
     </script>
   {% endunless %}
 </div>
-<script>
-  console.log('Modal Open');
-  const config = {
-    productId: {{ product.id }}, // Required
-    injectionParent: 'form[action*="cart/add"]', // The node that will have the widget injected in
-    injectionMethod: 'prepend', // How will the widget be injected
-  };
-  setTimeout(function(){
-    window.ReChargeWidget.createWidget({ productId: 7844290560194 });
-    console.log('Its done');
-  }, 3000);
-</script>
