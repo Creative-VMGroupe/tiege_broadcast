@@ -350,6 +350,7 @@
 
     <quick-add-product>
       <div class="quick-add__holder" data-quick-add-holder="{{ product.id }}">
+        {% comment %}
         {%- if product.variants.size == 1 -%}
           {%- assign product_form_id = 'ProductForm--' | append: unique -%}
           {%- form 'product', product, id: product_form_id -%}
@@ -388,6 +389,7 @@
             </button>
           {%- endform -%}
         {%- else -%}
+        {% endcomment %}
           <button class="quick-add__button caps"
             type="button"
             aria-label="{{ 'products.general.quick_add' | t }}"
@@ -404,11 +406,14 @@
               </svg>
             </span>
           </button>
-        {%- endif -%}
 
+          {%- render 'product-quick-add-modal-template', product_id: product.id, unique: unique -%}
+        {% comment %}
+        {%- endif -%}
         {%- unless product.has_only_default_variant -%}
           {%- render 'product-quick-add-modal-template', product_id: product.id, unique: unique -%}
         {%- endunless -%}
+        {% endcomment %}
       </div>
     </quick-add-product>
   {%- endif -%}
