@@ -14,11 +14,27 @@
         },
         "trustreviews_star_rating_W788rE": {
           "type": "shopify:\/\/apps\/trustreviews\/blocks\/star_rating\/56d0fe1b-e701-4cff-8f84-466a26e09adb",
+          "disabled": true,
           "settings": {
             "product": "{{product}}",
             "hide_on_no_reviews": false,
             "enable_jsonld": false,
             "starsize": 16
+          }
+        },
+        "loox_reviews_loox_rating_4AJt7T": {
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "contentSize": 16,
+            "pattern": "",
+            "hideText": false,
+            "alignment": "",
+            "layout": "",
+            "textColor": "",
+            "starColor": "",
+            "showAllReviews": false,
+            "looxOpenFloatingWidget": false,
+            "emptyRatingWidget": false
           }
         },
         "recharge_subscriptions_subscription_widget_8WKxnT": {
@@ -179,6 +195,7 @@
       "block_order": [
         "title",
         "trustreviews_star_rating_W788rE",
+        "loox_reviews_loox_rating_4AJt7T",
         "recharge_subscriptions_subscription_widget_8WKxnT",
         "popup_iLQPxV",
         "inventory_countdown_UfpQXK",
@@ -203,7 +220,9 @@
         ".rc-widget label {border-radius: 300px;}",
         ".accordion__title {font-weight: bold;}",
         ".accordion {border: none;}",
-        ".select__fieldset > .radio__legend {display: none;}"
+        ".select__fieldset > .radio__legend {display: none;}",
+        ".recharge-subscription-widget {padding-top: 10px;}",
+        ".rc-template__radio {gap: 12px;}"
       ],
       "settings": {
         "product_sticky_enable": true,
