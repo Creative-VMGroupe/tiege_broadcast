@@ -61,6 +61,71 @@
   }
 {% endstyle %}
 
+<script src="https://cdn.shopify.com/extensions/96c78c14-b1b9-43c3-a2e1-964dd07a3c12/recharge-subscriptions-30/assets/rc-widget.224a965d.js" type="module" crossorigin="anonymous"></script>
+  <link href="//cdn.shopify.com/extensions/96c78c14-b1b9-43c3-a2e1-964dd07a3c12/recharge-subscriptions-30/assets/rc-widget.fecb1bd3.css" rel="stylesheet" type="text/css" media="all" />
+  <link rel="modulepreload" href="https://cdn.shopify.com/extensions/96c78c14-b1b9-43c3-a2e1-964dd07a3c12/recharge-subscriptions-30/assets/vendor.2f193058.js" crossorigin="anonymous">
+
+<!-- END app snippet -->
+<div id="RechargeWidget_7859552977090"></div>
+
+<script>
+  function initRecharge() {
+    const appIdWhiteList = ['294517', '6740180993', null];
+    const shopifySellingPlanGroups = [{"id":"e9c959e8ea744d4ba8625ae0546a33f9a5ff06b3","name":"Delivery every 30 days","options":[{"name":"Recharge Plan ID","position":1,"values":["15673357"]}],"selling_plans":[{"id":2005041346,"name":"Delivery every 30 days","description":null,"options":[{"name":"Recharge Plan ID","position":1,"value":"15673357"}],"recurring_deliveries":true,"price_adjustments":[{"order_count":null,"position":1,"value_type":"percentage","value":20}],"checkout_charge":{"value_type":"percentage","value":100}}],"app_id":"294517"}];
+    const sellingPlanGroups = shopifySellingPlanGroups.filter(sp => appIdWhiteList.includes(sp.app_id));
+    const sellingPlanGroupDiscounts = sellingPlanGroups.flatMap(plan => plan.selling_plans).reduce((obj, sellingPlan) => {
+      obj[sellingPlan.id] = { 
+        discountType: sellingPlan.price_adjustments[0]?.value_type,
+        discountValue: sellingPlan.price_adjustments[0]?.value,
+      }
+      return obj
+    }, {});
+    
+    window.Recharge.init({
+      shop: {
+        selectedCurrency: "USD",
+        defaultCurrency: "USD",
+        identifier: "tiege-hanley-store.myshopify.com",
+      },
+      element: document.getElementById('RechargeWidget_7859552977090'),
+      product: {
+        id: 7859552977090,
+        initialVariantId: 44287812272322,
+        initialSellingPlanId: 2005041346,
+        sellingPlanGroups,
+        available: true,
+        formattedVariantPrices: {
+          
+            
+            [44287812272322]: {
+              unitWithCurrency: "$39.60 USD",
+              discountedWithCurrency: "$31.68 USD",
+              unit: "$39.60",
+              discounted: "$31.68",
+              formattedSellingPlanPrices: {
+                
+                  [2005041346]: {
+                    unitWithCurrency: "$31.68 USD",
+                    discountedWithCurrency: "$31.68 USD",
+                    unit: "$31.68",
+                    discounted: "$31.68",
+                    ...sellingPlanGroupDiscounts[2005041346],
+                  },
+                
+              }
+            },
+          
+        }
+      }
+    });
+  }
+  if(window.Recharge){
+    initRecharge();
+  } else {
+    onRechargeLoad = initRecharge;
+  }
+</script>
+
 {%- render 'custom-section-double-static' -%}
 
 {% schema %}
