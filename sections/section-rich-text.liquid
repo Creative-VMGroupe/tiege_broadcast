@@ -189,7 +189,48 @@
 
               {%- render 'divider' block: block, attributes: attributes -%}
 
-          {%- endcase -%}
+          {% when 'MemberBoxes' %}
+            <div class="member-tiers-wrapper-custom">
+              <p style="margin-bottom: 0" class="heading-size-{{ block.pop-heading_size }} member-benefits__text">{{ pop-heading-2 }}</p>
+              <div class='member-container-custom-desktop'>
+                  <div class="member-tiers_container">
+                      <div style="background-color: #f0f0f0" class="member-single-tier_container">
+                          <div class="member-tier_text">
+                              <p class="m-0 member-tier-header_text heading-size-{{ block.pop-heading_size }}">{{ box-1_text }}</p>
+                              <p class="m-0 member-tier-header_text">Month 1-6</p>
+                          </div>
+                          <div class="member-tier_text member-tier_secondary_text">
+                              <p class='m-0'>{{ box-1_gifts }}</p>
+                          </div>
+                      </div>
+                  </div >
+                  <div class="member-tiers_container">
+                      <div style="background-color: #B3B3B3" class="member-single-tier_container">
+                          <div class="member-tier_text">
+                              <p  class="m-0 heading-size-{{ block.pop-heading_size }}">{{ box-2_text }}</p>
+                              <p class="m-0">Month 7-12</p>
+                          </div>
+                          <div class="member-tier_text member-tier_secondary_text">
+                              <p class="m-0">{{ box-2_gifts }}</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="member-tiers_container">
+                      <div style="background-color: #000" class="member-single-tier_container">
+                          <div style="color: white !important;" class="member-tier_text">
+                              <p class="m-0 heading-size-{{ block.pop-heading_size }}">{{ box-3_text }}</p>
+                              <p class="m-0">After 12 Months</p>
+                          </div>
+                          <div style="color: white !important;" class="member-tier_text member-tier_secondary_text">
+                              <p class="m-0">{{ box-3_gifts }}</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          
+              
+          </div>
+            {%- endcase -%}
         {%- endfor -%}
       </div>
     </div>
@@ -568,7 +609,62 @@
           "default": 20
         }
       ]
-    }
+    },
+    {"type": "memberboxes",
+  "name": "Member Boxes",
+"settings": [
+      {
+            "type": "range",
+            "id": "pop-heading_size",
+            "label": "Heading size",
+            "min": 1,
+            "max": 6,
+            "step": 1,
+            "default": 6
+          },
+          {
+        "type": "text",
+        "id": "pop-heading-2",
+        "label": "Secondary Heading",
+        "default": "Membership Tiers "
+      },
+      {
+        "type": "text",
+        "id": "box-1_text",
+        "label": "Tier 1 Heading",
+        "default": "Member"
+      },
+      {
+        "type": "text",
+        "id": "box-1_gifts",
+        "label": "Tier 1 Gifts",
+        "default": "3 Routine-building Gifts"
+      },
+      {
+        "type": "text",
+        "id": "box-2_text",
+        "label": "Tier 2 Heading",
+        "default": "VIP Member"
+      },
+      {
+        "type": "text",
+        "id": "box-2_gifts",
+        "label": "Tier 2 Gifts",
+        "default": "3 VIP Gifts, 1 Premium Gift"
+      },
+      {
+        "type": "text",
+        "id": "box-3_text",
+        "label": "Tier 3 Heading",
+        "default": "Emerald VIP"
+      },
+      {
+        "type": "text",
+        "id": "box-3_gifts",
+        "label": "Tier 3 Gifts",
+        "default": "10% off every order, 2 Premium Gifts per year"
+      }
+]}
   ],
   "presets": [
     {
