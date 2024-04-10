@@ -9,7 +9,7 @@
   assign featured_media = current_variant.featured_media | default: product.featured_media
 -%}
 
-{{ 'https://static.rechargecdn.com/assets/js/widget.min.js?shop=tiege-hanley-store.myshopify.com' | script_tag }}
+<script type="text/javascript" src="https://static.rechargecdn.com/assets/js/widget.min.js?shop=tiege-hanley-store.myshopify.com"></script>
 
 <div data-api-content>
   <product-images
