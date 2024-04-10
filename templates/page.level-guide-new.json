@@ -50,10 +50,10 @@
         "flex_align_desktop": "align--middle-center-desktop",
         "flex_align_mobile": "align--middle-center-mobile",
         "overlay_opacity": 0,
-        "overlay_color": "#000",
+        "overlay_color": "#000000",
         "show_overlay_text": false,
         "bg_color": "",
-        "color": "#FFFFFF"
+        "color": "#ffffff"
       }
     },
     "section_rich_text_LYxXpE": {
@@ -157,7 +157,7 @@
         "color": "#000000",
         "padding_top": 60,
         "padding_bottom": 60,
-        "layout_mobile": "2"
+        "layout_mobile": "3"
       }
     },
     "section_rich_text_UYAyeY": {
