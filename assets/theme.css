@@ -4336,7 +4336,7 @@ p small {
   font-style: var(--FONT-STYLE-BODY);
   font-weight: var(--FONT-WEIGHT-BODY);
   letter-spacing: var(--LETTER-SPACING-BODY);
-  line-height: 1.5em
+  line-height: 1.5em !important;
 }
 
 .font-heading {
