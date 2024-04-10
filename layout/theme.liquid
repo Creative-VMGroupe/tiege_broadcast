@@ -87,6 +87,9 @@
       {{ 'design-mode.css' | asset_url | stylesheet_tag }}
     {%- endif -%}
 
+    {{ 'custom.css' | asset_url | stylesheet_tag: preload: true }}
+
+
     <script>
     if (window.navigator.userAgent.indexOf('MSIE ') > 0 || window.navigator.userAgent.indexOf('Trident/') > 0) {
       document.documentElement.className = document.documentElement.className + ' ie';
