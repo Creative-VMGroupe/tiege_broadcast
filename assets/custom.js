@@ -45,7 +45,7 @@ document.addEventListener("theme:quick-add:open", function(event) {
   let openedWindow = document.querySelector('.product-quick-add');
   const config = {
     productId: openedWindow.dataset.productId, 
-    injectionParent: 'form[action*="cart/add"]',
+    injectionParent: 'form.product-form[action*="cart/add"]',
     injectionMethod: 'prepend'
   };
   window.ReChargeWidget.createWidget(config);
