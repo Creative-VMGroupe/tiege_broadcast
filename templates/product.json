@@ -105,7 +105,7 @@
             "show_quantity": false,
             "show_payment_button": false,
             "show_gift_card_recipient": false,
-            "padding_bottom": 32
+            "padding_bottom": 12
           }
         },
         "text_e6RAMT": {
