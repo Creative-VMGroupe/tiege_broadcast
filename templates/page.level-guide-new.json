@@ -177,20 +177,22 @@
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
             "text_size": 3,
             "text_style": "font-body",
-            "padding_bottom": 16
+            "padding_bottom": 32
           }
         },
         "memberboxes_JW3UUT": {
           "type": "memberboxes",
           "settings": {
             "pop-heading_size": 6,
-            "pop-heading-2": "",
             "box-1_text": "Member",
             "box-1_gifts": "3 Routine-building Gifts",
+            "box-1_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "box-2_text": "VIP Member",
             "box-2_gifts": "3 VIP Gifts, 1 Premium Gift",
+            "box-2_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "box-3_text": "Emerald VIP",
-            "box-3_gifts": "10% off every order, 2 Premium Gifts per year"
+            "box-3_gifts": "10% off every order, 2 Premium Gifts per year",
+            "box-3_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
           }
         }
       },
