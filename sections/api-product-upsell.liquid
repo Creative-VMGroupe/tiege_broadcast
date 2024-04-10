@@ -87,9 +87,6 @@
       <input type="hidden" name="id" value="{{ current_variant.id }}" form="{{ product_form_id }}">
     </div>
   </div>
-  {% for block in section.blocks %}
-    {% render block %}
-  {% endfor %}
 
   {% unless product == empty %}
     <script type="application/json" data-product-json>
@@ -97,19 +94,3 @@
     </script>
   {% endunless %}
 </div>
-{% schema %}
-  {
-    "name": "API App wrapper",
-    "settings": [],
-    "blocks": [
-      {
-        "type": "@app"
-      }
-    ],
-    "presets": [
-      {
-        "name": "API App wrapper"
-      }
-    ]
-  }
-{% endschema %}
