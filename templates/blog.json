@@ -110,7 +110,7 @@
     "main": {
       "type": "blog",
       "custom_css": [
-        ".blog-section {background-color: #e8e8e8;}"
+
       ],
       "settings": {
         "show_title": true,
@@ -125,7 +125,7 @@
         "show_date": true,
         "show_button": true,
         "show_comments": false,
-        "padding_top": 32,
+        "padding_top": 60,
         "padding_bottom": 0
       }
     },

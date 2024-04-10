@@ -33,7 +33,7 @@
         "show_sharing": false,
         "arrows": false,
         "padding_top": 0,
-        "padding_bottom": 50
+        "padding_bottom": 0
       }
     },
     "section_double_BCKiMQ": {
@@ -42,7 +42,7 @@
         "subheading_WkAyha": {
           "type": "subheading",
           "settings": {
-            "subheading": "Introducing",
+            "subheading": "",
             "text_size": 3,
             "padding_bottom": 16
           }
@@ -50,7 +50,7 @@
         "heading_cqJE9M": {
           "type": "heading",
           "settings": {
-            "title": "Image with text",
+            "title": "3rd Image",
             "text_size": 8,
             "padding_bottom": 16
           }
@@ -58,21 +58,9 @@
         "text_dPC6tc": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text": "",
             "text_size": 4,
             "text_style": "font-body",
-            "padding_bottom": 16
-          }
-        },
-        "buttons_mt4zNx": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
             "padding_bottom": 16
           }
         }
@@ -80,8 +68,7 @@
       "block_order": [
         "subheading_WkAyha",
         "heading_cqJE9M",
-        "text_dPC6tc",
-        "buttons_mt4zNx"
+        "text_dPC6tc"
       ],
       "settings": {
         "layout": "",
@@ -92,6 +79,7 @@
         "image_2": "shopify:\/\/shop_images\/eucalyptus-v1608581874819.png",
         "image_width": "three-quarters",
         "text_alignment": "text-center",
+        "padding_lr": 50,
         "reverse_blocks": false,
         "bg_color": "",
         "color": "",
@@ -160,6 +148,9 @@
       "block_order": [
         "review_4CbDBf"
       ],
+      "custom_css": [
+        ".reviews__grid {justify-content: center;}"
+      ],
       "settings": {
         "show_featured_image": false,
         "image_aspect_ratio": 1.3,
@@ -184,14 +175,14 @@
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "Lorem Ipsum",
-            "heading_size": 8,
+            "heading_size": 6,
             "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
             "text_size": 3,
             "button_text": "Read Now",
             "button_url": "",
             "button_type": "btn--primary",
             "button_size": "",
-            "button_style": "btn--solid",
+            "button_style": "btn--text",
             "show_arrow": false
           }
         },
@@ -203,14 +194,14 @@
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "Lorem Ipsum",
-            "heading_size": 8,
+            "heading_size": 6,
             "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
             "text_size": 3,
             "button_text": "Read Now",
             "button_url": "",
             "button_type": "btn--primary",
             "button_size": "",
-            "button_style": "btn--solid",
+            "button_style": "btn--text",
             "show_arrow": false
           }
         },
@@ -222,14 +213,14 @@
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "Lorem Ipsum",
-            "heading_size": 8,
+            "heading_size": 6,
             "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
             "text_size": 3,
             "button_text": "Read Now",
             "button_url": "",
             "button_type": "btn--primary",
             "button_size": "",
-            "button_style": "btn--solid",
+            "button_style": "btn--text",
             "show_arrow": false
           }
         }
@@ -238,6 +229,9 @@
         "image_twD9TQ",
         "image_nPmFRR",
         "image_HQhBri"
+      ],
+      "custom_css": [
+
       ],
       "settings": {
         "title": "",
@@ -248,11 +242,31 @@
         "align_text": "text-left",
         "align_columns": "flex-align-top",
         "width": "wrapper--full-padded",
-        "bg_color": "",
+        "bg_color": "#f0f0f0",
         "color": "",
         "padding_top": 50,
         "padding_bottom": 50,
         "layout_mobile": "slider"
+      }
+    },
+    "1712723703b76a9181": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_NafBa3": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "@tiegehanley",
+            "title_color": "",
+            "alignment": "center",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_NafBa3"
+      ],
+      "settings": {
+        "include_margins": false
       }
     }
   },
@@ -261,6 +275,7 @@
     "section_double_BCKiMQ",
     "section_rich_text_GDUWCk",
     "section_reviews_6RY6Fc",
-    "section_columns_zYbRC3"
+    "section_columns_zYbRC3",
+    "1712723703b76a9181"
   ]
 }
