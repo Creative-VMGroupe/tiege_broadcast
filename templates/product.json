@@ -12,16 +12,6 @@
             "padding_bottom": 8
           }
         },
-        "trustreviews_star_rating_W788rE": {
-          "type": "shopify:\/\/apps\/trustreviews\/blocks\/star_rating\/56d0fe1b-e701-4cff-8f84-466a26e09adb",
-          "disabled": true,
-          "settings": {
-            "product": "{{product}}",
-            "hide_on_no_reviews": false,
-            "enable_jsonld": false,
-            "starsize": 16
-          }
-        },
         "loox_reviews_loox_rating_4AJt7T": {
           "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "disabled": true,
@@ -202,7 +192,6 @@
       },
       "block_order": [
         "title",
-        "trustreviews_star_rating_W788rE",
         "loox_reviews_loox_rating_4AJt7T",
         "okendo_star_rating_DPzCnp",
         "recharge_subscriptions_subscription_widget_8WKxnT",
