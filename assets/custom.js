@@ -43,5 +43,10 @@
 
 document.addEventListener("theme:quick-add:open", function(event) {
   let openedWindow = document.querySelector('.product-quick-add');
-  window.ReChargeWidget.createWidget({ productId: openedWindow.dataset.productId });
+  const config = {
+    productId: openedWindow.dataset.productId, 
+    injectionParent: 'form[action*="cart/add"]',
+    injectionMethod: 'prepend'
+  };
+  window.ReChargeWidget.createWidget(config);
 });
