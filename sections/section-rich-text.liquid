@@ -189,67 +189,69 @@
 
               {%- render 'divider' block: block, attributes: attributes -%}
 
-          {% when 'memberboxes' %}
-            <div class="member-tiers-wrapper-custom">
-              <div class='member-container-custom-desktop'>
-                  <div class="member-tiers_container">
-                      <div style="background-color: #f0f0f0" class="member-single-tier_container">
-                          <div class="member-tier_text">
-                              <p class="m-0 member-tier-header_text heading-size-{{ block.settings.pop-heading_size }}">{{ block.settings.box-1_text }}</p>
-                              <p class="m-0 member-tier-header_text">Month 1-6</p>
-                          </div>
-                          <div class="member-tier_text member-tier_secondary_text">
-                              <p class='m-0'>{{ block.settings.box-1_gifts }}</p>
-                          </div>
-                      </div>
-                      <div>
-                        <p>
-                          {{ block.settings.box-1_description }}
-                        </p>
-                  
-                      </div>
-                  </div >
-                  <div class="member-tiers_container">
-                      <div style="background-color: #B3B3B3" class="member-single-tier_container">
-                          <div class="member-tier_text">
-                              <p  class="m-0 heading-size-{{ block.settings.pop-heading_size }}">{{ block.settings.box-2_text }}</p>
-                              <p class="m-0">Month 7-12</p>
-                          </div>
-                          <div class="member-tier_text member-tier_secondary_text">
-                              <p class="m-0">{{ block.settings.box-2_gifts }}</p>
-                          </div>
-                      </div>
-                      <div>
-                        <p>
-                          {{ block.settings.box-2_description }}
-                        </p>
-                  
-                      </div>
-                  </div>
-                  <div class="member-tiers_container">
-                      <div style="background-color: #000" class="member-single-tier_container">
-                          <div style="color: white !important;" class="member-tier_text">
-                              <p class="m-0 heading-size-{{ block.settings.pop-heading_size }}">{{ block.settings.box-3_text }}</p>
-                              <p class="m-0">After 12 Months</p>
-                          </div>
-                          <div style="color: white !important;" class="member-tier_text member-tier_secondary_text">
-                              <p class="m-0">{{ block.settings.box-3_gifts }}</p>
-                          </div>
-                      </div>
-                      <div>
-                        <p>
-                          {{ block.settings.box-3_description }}
-                        </p>
-                  
-                      </div>
-                  </div>
-              </div>
           
-              
-          </div>
             {%- endcase -%}
         {%- endfor -%}
       </div>
+
+    </div>
+    {% when 'memberboxes' %}
+      <div class="member-tiers-wrapper-custom">
+        <div class='member-container-custom-desktop'>
+            <div class="member-tiers_container">
+                <div style="background-color: #f0f0f0" class="member-single-tier_container">
+                    <div class="member-tier_text">
+                        <p class="m-0 member-tier-header_text heading-size-{{ block.settings.pop-heading_size }}">{{ block.settings.box-1_text }}</p>
+                        <p class="m-0 member-tier-header_text">Month 1-6</p>
+                    </div>
+                    <div class="member-tier_text member-tier_secondary_text">
+                        <p class='m-0'>{{ block.settings.box-1_gifts }}</p>
+                    </div>
+                </div>
+                <div>
+                  <p>
+                    {{ block.settings.box-1_description }}
+                  </p>
+            
+                </div>
+            </div >
+            <div class="member-tiers_container">
+                <div style="background-color: #B3B3B3" class="member-single-tier_container">
+                    <div class="member-tier_text">
+                        <p  class="m-0 heading-size-{{ block.settings.pop-heading_size }}">{{ block.settings.box-2_text }}</p>
+                        <p class="m-0">Month 7-12</p>
+                    </div>
+                    <div class="member-tier_text member-tier_secondary_text">
+                        <p class="m-0">{{ block.settings.box-2_gifts }}</p>
+                    </div>
+                </div>
+                <div>
+                  <p>
+                    {{ block.settings.box-2_description }}
+                  </p>
+            
+                </div>
+            </div>
+            <div class="member-tiers_container">
+                <div style="background-color: #000" class="member-single-tier_container">
+                    <div style="color: white !important;" class="member-tier_text">
+                        <p class="m-0 heading-size-{{ block.settings.pop-heading_size }}">{{ block.settings.box-3_text }}</p>
+                        <p class="m-0">After 12 Months</p>
+                    </div>
+                    <div style="color: white !important;" class="member-tier_text member-tier_secondary_text">
+                        <p class="m-0">{{ block.settings.box-3_gifts }}</p>
+                    </div>
+                </div>
+                <div>
+                  <p>
+                    {{ block.settings.box-3_description }}
+                  </p>
+            
+                </div>
+            </div>
+        </div>
+    
+        
     </div>
   {%- else -%}
     {%- render 'no-blocks' -%}
