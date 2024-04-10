@@ -22,22 +22,6 @@
             "starsize": 16
           }
         },
-        "loox_reviews_loox_rating_t8d66J": {
-          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-          "disabled": true,
-          "settings": {
-            "contentSize": 16,
-            "pattern": "",
-            "hideText": false,
-            "alignment": "",
-            "layout": "",
-            "textColor": "",
-            "starColor": "",
-            "showAllReviews": false,
-            "looxOpenFloatingWidget": false,
-            "emptyRatingWidget": false
-          }
-        },
         "okendo_star_rating_ePti3c": {
           "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
@@ -159,7 +143,6 @@
       "block_order": [
         "title",
         "trustreviews_star_rating_CXtD3L",
-        "loox_reviews_loox_rating_t8d66J",
         "okendo_star_rating_ePti3c",
         "recharge_subscriptions_subscription_widget_xPdPVc",
         "popup_8GXMmM",
@@ -263,7 +246,7 @@
           "settings": {
             "subheading": "",
             "subheading_size": 3,
-            "title": "Willow Bark Extract",
+            "title": "Willow Bark Test",
             "heading_size": 8,
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
             "text_size": 3,
@@ -927,18 +910,6 @@
             "product": "{{product}}"
           }
         },
-        "loox_reviews_loox_dynamic_section_wYqr7i": {
-          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-          "disabled": true,
-          "settings": {
-            "only_photos": false,
-            "aggregated": false,
-            "limit": 20,
-            "hide_thumbnails": false,
-            "maxwidth": 1080,
-            "is_sample": true
-          }
-        },
         "okendo_reviews_widget_WJeEBc": {
           "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
@@ -949,7 +920,6 @@
       },
       "block_order": [
         "trustreviews_reviews_widget_8YLWPV",
-        "loox_reviews_loox_dynamic_section_wYqr7i",
         "okendo_reviews_widget_WJeEBc"
       ],
       "custom_css": [
