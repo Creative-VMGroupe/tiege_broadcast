@@ -184,7 +184,7 @@
           "type": "memberboxes",
           "settings": {
             "pop-heading_size": 6,
-            "pop-heading-2": "Membership Tiers",
+            "pop-heading-2": "",
             "box-1_text": "Member",
             "box-1_gifts": "3 Routine-building Gifts",
             "box-2_text": "VIP Member",

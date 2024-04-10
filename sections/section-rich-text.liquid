@@ -191,6 +191,7 @@
 
           {% when 'memberboxes' %}
             <div class="member-tiers-wrapper-custom">
+              <p style="margin-bottom: 0" class="heading-size-{{ block.settings.pop-heading_size }} member-benefits__text">{{ block.settings.pop-heading-2 }}</p>
               <div class='member-container-custom-desktop'>
                   <div class="member-tiers_container">
                       <div style="background-color: #f0f0f0" class="member-single-tier_container">
@@ -201,12 +202,6 @@
                           <div class="member-tier_text member-tier_secondary_text">
                               <p class='m-0'>{{ block.settings.box-1_gifts }}</p>
                           </div>
-                      </div>
-                      <div>
-                        <p>
-                          {{ block.settings.box-1_description }}
-                        </p>
-                  
                       </div>
                   </div >
                   <div class="member-tiers_container">
@@ -219,12 +214,6 @@
                               <p class="m-0">{{ block.settings.box-2_gifts }}</p>
                           </div>
                       </div>
-                      <div>
-                        <p>
-                          {{ block.settings.box-2_description }}
-                        </p>
-                  
-                      </div>
                   </div>
                   <div class="member-tiers_container">
                       <div style="background-color: #000" class="member-single-tier_container">
@@ -235,12 +224,6 @@
                           <div style="color: white !important;" class="member-tier_text member-tier_secondary_text">
                               <p class="m-0">{{ block.settings.box-3_gifts }}</p>
                           </div>
-                      </div>
-                      <div>
-                        <p>
-                          {{ block.settings.box-3_description }}
-                        </p>
-                  
                       </div>
                   </div>
               </div>
@@ -639,7 +622,12 @@
             "step": 1,
             "default": 6
           },
-
+          {
+        "type": "text",
+        "id": "pop-heading-2",
+        "label": "Secondary Heading",
+        "default": "Membership Tiers "
+      },
       {
         "type": "text",
         "id": "box-1_text",
@@ -651,12 +639,6 @@
         "id": "box-1_gifts",
         "label": "Tier 1 Gifts",
         "default": "3 Routine-building Gifts"
-      },
-      {
-        "type": "textarea",
-        "id": "box-1_description",
-        "label": "Tier 1 Description",
-        "default": "Lorem urna id volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean et tortor at"
       },
       {
         "type": "text",
@@ -671,12 +653,6 @@
         "default": "3 VIP Gifts, 1 Premium Gift"
       },
       {
-        "type": "textarea",
-        "id": "box-2_description",
-        "label": "Tier 2 Description",
-        "default": "Lorem urna id volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean et tortor at"
-      },
-      {
         "type": "text",
         "id": "box-3_text",
         "label": "Tier 3 Heading",
@@ -687,12 +663,6 @@
         "id": "box-3_gifts",
         "label": "Tier 3 Gifts",
         "default": "10% off every order, 2 Premium Gifts per year"
-      },
-      {
-        "type": "textarea",
-        "id": "box-3_description",
-        "label": "Tier 3 Description",
-        "default": "Lorem urna id volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean et tortor at"
       }
 ]}
   ],
