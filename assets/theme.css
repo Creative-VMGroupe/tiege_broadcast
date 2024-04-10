@@ -25423,3 +25423,13 @@ body.has-header-sticky .timeline {
   text-transform: none;
   letter-spacing: normal;
 }
+.btn-cart_container {
+  padding: 8px 15%;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+.btn-cart_text-custom {
+  display: flex;
+  align-items: center;
+}

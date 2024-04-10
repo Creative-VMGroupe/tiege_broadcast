@@ -123,13 +123,12 @@
               type="submit"
               name="add"
               style="padding-top: 8px; padding-bottom: 8px;"
-              class="btn btn--secondary {{ btn_atc_class }}"
+              class="btn btn--secondary {{ btn_atc_class }} btn-cart_container"
               data-add-to-cart
               {% unless current_variant.available %}disabled="disabled"{% endunless %}>
-              <span style='height: 32px;
-              display: flex;
-              align-items: center;
-              justify-content: center;' class="btn__text" data-add-to-cart-text>{{ button_text }}</span>
+              <span 
+              class="btn__text btn-cart_text-custom" data-add-to-cart-text>{{ button_text }}</span>
+              <span class="btn-cart_text-custom">{{ product.price }}</span>
               <span class="btn__added">&nbsp;</span>
 
               <span class="btn__loader">
