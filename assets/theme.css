@@ -18435,7 +18435,7 @@ body.has-header-transparent
   margin-top: var(--double-inner);
 }
 .article__hero .article__image .image__fill img {
-  object-fit: contain;
+  object-fit: cover;
 }
 @media only screen and (max-width: 749px) {
   .article__hero .article__title {
