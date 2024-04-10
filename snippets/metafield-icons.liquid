@@ -1,10 +1,10 @@
 
-    {% comment %}
-        {% if product.metafields.custom.icon_benefits_1 == true and
-    product.metafields.custom.icon_benefit_2 == true and
-    product.metafields.custom.icon_benefit_3 == true %}
-    {% endif %}
-    {% endcomment %}
+ 
+        {% if product.metafields.custom.icon_benefits_1 != blank and
+    product.metafields.custom.icon_benefit_2 != blank and
+    product.metafields.custom.icon_benefit_3 != blank %}
+   
+    
     
     <div class="metafield-icons_container">
 
@@ -28,3 +28,4 @@
 </div>
 
 </div>    
+ {% endif %}
