@@ -42,7 +42,9 @@
 })();
 
 document.addEventListener("theme:quick-add:open", function(event) {
-  let openedWindow = document.querySelector('.product-quick-add');
+  let openedModal = document.querySelector('.product-quick-add');
+  let openedProduct = document.querySelector(`.product-quick-add[data-product-id=${openedWindow.dataset.productId}]`);
+  console.log(openedProduct);
   const config = {
     productId: openedWindow.dataset.productId, 
     injectionParent: 'form.product-form[action*="cart/add"]',
