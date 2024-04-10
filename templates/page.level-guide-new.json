@@ -2,11 +2,142 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+        "subheading": "",
+        "subheading_size": 3,
+        "show_title": true,
+        "heading_size": 8,
+        "show_content": true,
+        "text_size": 4,
+        "align_text": "text-left",
+        "width": "wrapper",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "section_hero_BgWUpK": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_QryjzA": {
+          "type": "heading",
+          "settings": {
+            "title": "Become A Tiege Hanley Emerald Vip",
+            "heading_size": 8
+          }
+        },
+        "text_zddB3y": {
+          "type": "text",
+          "settings": {
+            "description": "Tell your brand's story through images.",
+            "text_size": 4,
+            "text_style": "font-body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QryjzA",
+        "text_zddB3y"
+      ],
+      "settings": {
+        "height": "screen-height-one-half",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/AdobeStock_481479872.jpg",
+        "link": "",
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "overlay_opacity": 0,
+        "overlay_color": "#000",
+        "show_overlay_text": false,
+        "bg_color": "",
+        "color": "#FFFFFF"
+      }
+    },
+    "section_rich_text_LYxXpE": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_MPWr8G": {
+          "type": "heading",
+          "settings": {
+            "title": "At Tiege Hanley",
+            "text_size": 8,
+            "padding_bottom": 16
+          }
+        },
+        "text_LLtMee": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_MPWr8G",
+        "text_LLtMee"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-center",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "section_rich_text_UYAyeY": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_L6z6WH": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Become A MEMBER TODAY",
+            "text_size": 3,
+            "padding_bottom": 16
+          }
+        },
+        "heading_xBpMzw": {
+          "type": "heading",
+          "settings": {
+            "title": "How Do I Get All Of This?",
+            "text_size": 8,
+            "padding_bottom": 16
+          }
+        },
+        "text_HtTH4b": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_L6z6WH",
+        "heading_xBpMzw",
+        "text_HtTH4b"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-center",
+        "bg_color": "#000000",
+        "color": "#ffffff",
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "section_hero_BgWUpK",
+    "section_rich_text_LYxXpE",
+    "section_rich_text_UYAyeY"
   ]
 }
