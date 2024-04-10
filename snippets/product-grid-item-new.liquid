@@ -364,6 +364,7 @@
     -%}
 
     <quick-add-product>
+      THISONE
       <div class="quick-add__holder" data-quick-add-holder="{{ product.id }}">
         {%- if product.variants.size == 1 -%}
           {%- assign product_form_id = 'ProductForm--' | append: unique -%}
