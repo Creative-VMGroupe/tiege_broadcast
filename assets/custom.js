@@ -40,3 +40,7 @@
         lastScrollTop = st;
     }
 })();
+
+document.addEventListener("theme:quick-add:open", function(event) {
+  console.log(event);
+});
