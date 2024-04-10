@@ -47,7 +47,7 @@ document.addEventListener("theme:quick-add:open", function(event) {
   console.log(currentModal, currentModal.querySelectorAll('.rc-widget'));
   const config = {
     productId: currentModal.dataset.productId, 
-    injectionParent: 'form.product-form[action*="cart/add"]',
+    injectionParent: `form#product-form-upsell-api-product-upsell-${currentModal.dataset.productId}`,
     injectionMethod: 'prepend'
   };
   if (currentModal.querySelectorAll('.rc-widget').length === 0) {
