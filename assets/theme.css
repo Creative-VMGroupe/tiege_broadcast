@@ -25430,6 +25430,7 @@ body.has-header-sticky .timeline {
   height: 50px;
 }
 .btn-cart_text-custom {
-  display: flex;
+  display: flex !important;
   align-items: center;
+font-size: 16px
 }
