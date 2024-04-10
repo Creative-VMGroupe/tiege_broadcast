@@ -43,14 +43,13 @@
 
 document.addEventListener("theme:quick-add:open", function(event) {
   let openedModals = document.querySelectorAll('.product-quick-add');
-  console.log(openedModals.length);
-  // let openedProduct = document.querySelector(`.product-quick-add[data-product-id="${openedModal.dataset.productId}"]`);
+  const currentModal = openedModals[openedModals.length - 1];
   const config = {
-    productId: openedProduct.dataset.productId, 
+    productId: currentModal.dataset.productId, 
     injectionParent: 'form.product-form[action*="cart/add"]',
     injectionMethod: 'prepend'
   };
-  if (openedProduct.querySelectorAll('.rc-widget').length === 0) {
+  if (currentModal.querySelectorAll('.rc-widget').length === 0) {
     window.ReChargeWidget.createWidget(config);
   }
 });
