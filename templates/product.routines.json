@@ -50,16 +50,6 @@
             "product": "{{product}}"
           }
         },
-        "variants": {
-          "type": "variants",
-          "disabled": true,
-          "settings": {
-            "info_page": "",
-            "size_chart_style": "question",
-            "subscriptions_enable_selectors": true,
-            "padding_bottom": 16
-          }
-        },
         "popup_8GXMmM": {
           "type": "popup",
           "settings": {
@@ -96,33 +86,12 @@
             "padding_bottom": 16
           }
         },
-        "inventory_countdown_MLNCDH": {
-          "type": "inventory_countdown",
-          "disabled": true,
-          "settings": {
-            "show_notice": "always",
-            "max_inventory": 10,
-            "hide_inventory_counter": true,
-            "icon_size": 20,
-            "in_stock_color": "#56ad6a",
-            "low_stock_color": "#f79554",
-            "out_of_stock_color": "#721c24",
-            "padding_bottom": 16
-          }
-        },
         "buttons": {
           "type": "buttons",
           "settings": {
             "show_quantity": false,
             "show_payment_button": false,
             "show_gift_card_recipient": false,
-            "padding_bottom": 32
-          }
-        },
-        "pickup": {
-          "type": "pickup",
-          "disabled": true,
-          "settings": {
             "padding_bottom": 32
           }
         },
@@ -138,19 +107,6 @@
         "metafield_icons_BDHtFK": {
           "type": "metafield-icons",
           "settings": {
-          }
-        },
-        "icon_1": {
-          "type": "icon",
-          "disabled": true,
-          "settings": {
-            "icon_name": "icon-email",
-            "icon_size": 20,
-            "icon_color": "#545454",
-            "title": "Free 30 Days Returns",
-            "text_size": 3,
-            "width": "full",
-            "padding_bottom": 16
           }
         },
         "tabs": {
@@ -198,49 +154,6 @@
             "bg_color": "",
             "padding_bottom": 16
           }
-        },
-        "popup_iLQPxV": {
-          "type": "popup",
-          "disabled": true,
-          "settings": {
-            "title": "Popup text",
-            "supply": "30 day supply",
-            "pop-heading": "Your Member Benefits Explained",
-            "pop-heading_size": 6,
-            "icon-sub_size": 6,
-            "icon-1_sub": "Save 20%",
-            "icon-1_text": "Get 20% with Autoship",
-            "icon-2_sub": "Great Gifts",
-            "icon-2_text": "7 Gifts in your first year",
-            "icon-3_sub": "Exclusive Offers",
-            "icon-3_text": "Products, gear, SWAG, and bundles",
-            "pop-heading-2": "Membership Tiers",
-            "box-1_text": "Member",
-            "box-1_gifts": "3 Routine-building Gifts",
-            "box-2_text": "VIP Member",
-            "box-2_gifts": "3 VIP Gifts, 1 Premium Gift",
-            "box-3_text": "Emerald VIP",
-            "box-3_gifts": "10% off every order, 2 Premium Gifts per year",
-            "member-link_text": "More Details",
-            "member_link": "",
-            "button_type": "btn--primary",
-            "button_style": "btn--text",
-            "text": "<p>Additonal information about the product.<\/p>",
-            "page": "",
-            "icon_name": "icon-award",
-            "icon_size": 20,
-            "icon_color": "#545454",
-            "padding_bottom": 16
-          }
-        },
-        "badges_NKBpVe": {
-          "type": "badges",
-          "disabled": true,
-          "settings": {
-            "sale_badge": true,
-            "product_badges": true,
-            "padding_bottom": 8
-          }
         }
       },
       "block_order": [
@@ -249,20 +162,14 @@
         "loox_reviews_loox_rating_t8d66J",
         "okendo_star_rating_ePti3c",
         "recharge_subscriptions_subscription_widget_xPdPVc",
-        "variants",
         "popup_8GXMmM",
-        "inventory_countdown_MLNCDH",
         "buttons",
-        "pickup",
         "text_bLzaqx",
         "metafield_icons_BDHtFK",
-        "icon_1",
         "tabs",
         "divider_1",
         "complementary_products_C7V6rg",
-        "upsell",
-        "popup_iLQPxV",
-        "badges_NKBpVe"
+        "upsell"
       ],
       "custom_css": [
         ".mock-notification {display: none;}",
@@ -274,8 +181,8 @@
         ".rc-widget label {border-radius: 300px;}",
         ".accordion__title {font-weight: bold;}",
         ".accordion {border: none;}",
-        ".recharge-subscription-widget {padding-top: 10px;}",
-        ".rc-widget {gap: 30px;}"
+        ".rc-widget {padding-top: 30px;}",
+        ".rc-template__radio {gap: 12px;}"
       ],
       "settings": {
         "product_sticky_enable": true,
