@@ -4336,6 +4336,7 @@ p small {
   font-style: var(--FONT-STYLE-BODY);
   font-weight: var(--FONT-WEIGHT-BODY);
   letter-spacing: var(--LETTER-SPACING-BODY);
+  line-height: 1.5em
 }
 
 .font-heading {
@@ -21064,6 +21065,8 @@ body.has-line-design .brick__block .hero__slide {
   display: flex;
   align-items: center;
   padding: var(--outer);
+  pading-left: 10%;
+  padding-right: 10%;
   background-color: var(--bg);
   margin: 0 auto;
 }
@@ -25424,7 +25427,7 @@ body.has-header-sticky .timeline {
   letter-spacing: normal;
 }
 .btn-cart_container {
-  padding: 8px 15%;
+  padding: 8px 10%;
   display: flex !important;
   justify-content: space-between;
   height: 50px;
