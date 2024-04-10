@@ -118,8 +118,11 @@
 {%- assign bg_color = settings.bg_color | strip -%}
 {%- if bg_color == 'rgba(0,0,0,0)' or bg_color == blank -%}
   --COLOR-BG: #ffffff;
+  --LIGHT-BG: #ffffff
 {%- else -%}
   --COLOR-BG: {{ bg_color }};
+  //Dark Mode/Light Mode
+  --LIGHT-BG: #ffffff
 {%- endif -%}
 --COLOR-BG-ALPHA-25: {{ settings.bg_color | color_modify: 'alpha', 0.25 }};
 --COLOR-BG-TRANSPARENT: {{ settings.bg_color | color_modify: 'alpha', 0 }};

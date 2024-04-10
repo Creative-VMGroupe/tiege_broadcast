@@ -50,6 +50,7 @@
 ============================================================================== */
 :root {
   --bg: var(--COLOR-BG);
+  --bg-light: var(--LIGHT-BG)
   --bg-accent: var(--COLOR-BG-SECONDARY);
   --bg-accent-lighten: var(--COLOR-BG-SECONDARY-LIGHTEN);
   --text-dark: var(--COLOR-TEXT-DARK);
