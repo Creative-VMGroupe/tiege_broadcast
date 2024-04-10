@@ -128,7 +128,7 @@
               {% unless current_variant.available %}disabled="disabled"{% endunless %}>
               <span 
               class="btn__text btn-cart_text-custom" data-add-to-cart-text>{{ button_text }}</span>
-              <span class="btn-cart_text-custom">{{ product.price }}</span>
+              <span class="btn-cart_text-custom">{{ product.price | money }}</span>
               <span class="btn__added">&nbsp;</span>
 
               <span class="btn__loader">
