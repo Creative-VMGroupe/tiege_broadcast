@@ -43,6 +43,5 @@
 
 document.addEventListener("theme:quick-add:open", function(event) {
   let openedWindow = document.querySelector('.product-quick-add');
-  console.log(openedWindow);
-  window.ReChargeWidget.createWidget({ productId: 123 });
+  window.ReChargeWidget.createWidget({ productId: openedWindow.dataset.productId });
 });
