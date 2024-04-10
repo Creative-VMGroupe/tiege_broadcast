@@ -1,3 +1,4 @@
+
 {%- liquid
   assign animation_name = 'drawer-items-fade'
   assign animation_name_images = 'drawer-images-fade'
@@ -94,3 +95,7 @@
     </script>
   {% endunless %}
 </div>
+<script>
+  
+  window.ReChargeWidget.createWidget({ productId: {{ product.id }} });
+</script>
