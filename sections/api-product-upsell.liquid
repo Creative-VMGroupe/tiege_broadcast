@@ -97,6 +97,10 @@
   {% endunless %}
 </div>
 <script>
-  
-  window.ReChargeWidget.createWidget({ productId: {{ product.id }} });
+  const config = {
+    productId: {{ product.id }}, // Required
+    injectionParent: 'form[action*="cart/add"]', // The node that will have the widget injected in
+    injectionMethod: 'prepend', // How will the widget be injected
+  };
+  window.ReChargeWidget.createWidget(config);
 </script>
