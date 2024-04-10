@@ -24,13 +24,13 @@
         },
         "okendo_star_rating_ePti3c": {
           "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
-          "disabled": true,
           "settings": {
             "product": "{{product}}"
           }
         },
         "reviews_io_reviewsio_rating_bar_QKFCJa": {
           "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-bar\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "disabled": true,
           "settings": {
             "widget_id": "6LafXxIVcHP8Yopz"
           }
@@ -920,7 +920,6 @@
         },
         "okendo_reviews_widget_WJeEBc": {
           "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
-          "disabled": true,
           "settings": {
             "product": "{{product}}",
             "widget_type": "reviews_widget"
@@ -928,6 +927,7 @@
         },
         "reviews_io_reviewsio_polaris_WQyU3t": {
           "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-polaris\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "disabled": true,
           "settings": {
             "star": "#000",
             "review_type": "product_review,questions",
