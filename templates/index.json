@@ -923,7 +923,7 @@
           "type": "text",
           "settings": {
             "description": "Want great skin? We got you, and we got cutting-edge formulas.",
-            "text_size": 5,
+            "text_size": 3,
             "text_style": "font-body"
           }
         },
