@@ -139,7 +139,6 @@
         "icon_MtcjBE"
       ],
       "custom_css": [
-        ".wrapper--full-padded {padding-left: 20%; padding-right: 20%;}",
         ".image-wrapper {padding-top: 100%;}",
         ".grid__heading-holder {margin-bottom: 30px;}",
         ".column__heading {color: #00ad2d;}"
