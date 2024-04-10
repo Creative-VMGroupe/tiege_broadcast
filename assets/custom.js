@@ -43,10 +43,10 @@
 
 document.addEventListener("theme:quick-add:open", function(event) {
   let openedModals = document.querySelectorAll('.product-quick-add');
-  console.log(openedModals.length);
+  console.log(openedModals.slice(-1));
   // let openedProduct = document.querySelector(`.product-quick-add[data-product-id="${openedModal.dataset.productId}"]`);
   const config = {
-    productId: openedModal.dataset.productId, 
+    productId: openedProduct.dataset.productId, 
     injectionParent: 'form.product-form[action*="cart/add"]',
     injectionMethod: 'prepend'
   };
