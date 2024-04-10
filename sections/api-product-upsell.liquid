@@ -102,5 +102,7 @@
     injectionParent: 'form[action*="cart/add"]', // The node that will have the widget injected in
     injectionMethod: 'prepend', // How will the widget be injected
   };
-  window.ReChargeWidget.createWidget(config);
+  setTimeout(function(){
+    window.ReChargeWidget.createWidget(config);
+  }, 3000);
 </script>
