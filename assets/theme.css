@@ -3947,6 +3947,8 @@ body * {
   margin: 0 auto;
   padding-left: var(--outer);
   padding-right: var(--outer);
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .wrapper--full {
