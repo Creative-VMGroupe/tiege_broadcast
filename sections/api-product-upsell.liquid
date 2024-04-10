@@ -9,9 +9,9 @@
   assign featured_media = current_variant.featured_media | default: product.featured_media
 -%}
 
-<script type="text/javascript" src="https://static.rechargecdn.com/assets/js/widget.min.js?shop=tiege-hanley-store.myshopify.com"></script>
 
 <div data-api-content>
+  <script type="text/javascript" src="https://static.rechargecdn.com/assets/js/widget.min.js?shop=tiege-hanley-store.myshopify.com"></script>
   <product-images
     class="product-quick-add__images product__images product__images--thumbs product__images--mobile-thumbs"
     data-active-media="{{ section.id }}-{{ featured_media.id }}"
