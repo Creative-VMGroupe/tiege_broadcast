@@ -139,14 +139,14 @@
                       endcapture
                     -%}
 
-                    <blockquote class="heading-size-6">
+                    <blockquote>
                       {%- if show_quotation_marks -%}
                         <span class="review__quote review__quote--open{% if section.settings.padding_top > 9 %} review__quote--open-negative{% endif %}">
                           <span class="review__quote-inner" style="{{ quotes_styles }}">&ldquo;</span>
                         </span>
                       {%- endif -%}
 
-                      <p>{{ review | truncatewords: 200 }}</p>
+                      <p class="heading-size-6">{{ review | truncatewords: 200 }}</p>
 
                       {%- if show_quotation_marks -%}
                         <span class="review__quote review__quote--close{% if section.settings.padding_bottom > 9 %} review__quote--close-negative{% endif %}">
