@@ -118,6 +118,7 @@
 {%- assign bg_color = settings.bg_color | strip -%}
 {%- if bg_color == 'rgba(0,0,0,0)' or bg_color == blank -%}
   --COLOR-BG: #ffffff;
+   //Dark Mode/Light Mode
   --LIGHT-BG: #ffffff
 {%- else -%}
   --COLOR-BG: {{ bg_color }};
