@@ -21065,8 +21065,8 @@ body.has-line-design .brick__block .hero__slide {
   display: flex;
   align-items: center;
   padding: var(--outer);
-  pading-left: 10%;
-  padding-right: 10%;
+  padding-left: 10% !important;
+  padding-right: 10% !important;
   background-color: var(--bg);
   margin: 0 auto;
 }
