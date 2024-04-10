@@ -42,7 +42,7 @@
         "subheading_WkAyha": {
           "type": "subheading",
           "settings": {
-            "subheading": "Introducing",
+            "subheading": "",
             "text_size": 3,
             "padding_bottom": 16
           }
@@ -50,7 +50,7 @@
         "heading_cqJE9M": {
           "type": "heading",
           "settings": {
-            "title": "Image with text",
+            "title": "3rd Image",
             "text_size": 8,
             "padding_bottom": 16
           }
@@ -58,21 +58,9 @@
         "text_dPC6tc": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text": "",
             "text_size": 4,
             "text_style": "font-body",
-            "padding_bottom": 16
-          }
-        },
-        "buttons_mt4zNx": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
             "padding_bottom": 16
           }
         }
@@ -80,10 +68,8 @@
       "block_order": [
         "subheading_WkAyha",
         "heading_cqJE9M",
-        "text_dPC6tc",
-        "buttons_mt4zNx"
+        "text_dPC6tc"
       ],
-      "disabled": true,
       "settings": {
         "layout": "",
         "height": "screen-height-three-quarters",
