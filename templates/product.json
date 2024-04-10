@@ -7,7 +7,7 @@
           "type": "title",
           "settings": {
             "subheading_option": "collection",
-            "collection": "",
+            "collection": "face",
             "text_size": 6,
             "padding_bottom": 8
           }
