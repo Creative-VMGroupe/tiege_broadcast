@@ -43,11 +43,12 @@
 
 document.addEventListener("theme:quick-add:open", function(event) {
   let openedWindow = document.querySelector('.product-quick-add');
-  console.log(openedWindow.querySelectorAll('.rc-widget'));
   const config = {
     productId: openedWindow.dataset.productId, 
     injectionParent: 'form.product-form[action*="cart/add"]',
     injectionMethod: 'prepend'
   };
-  window.ReChargeWidget.createWidget(config);
+  if (openedWindow.querySelectorAll('.rc-widget').length === 0) {
+    window.ReChargeWidget.createWidget(config);
+  }
 });
