@@ -271,6 +271,9 @@
       "block_order": [
         "instafeed_app_block_NafBa3"
       ],
+      "custom_css": [
+        "h2 {padding-top: 30px; margin: 0; padding-bottom: 30px;}"
+      ],
       "settings": {
         "include_margins": false
       }
