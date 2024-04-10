@@ -275,7 +275,7 @@
         ".accordion__title {font-weight: bold;}",
         ".accordion {border: none;}",
         ".recharge-subscription-widget {padding-top: 10px;}",
-        ".rc-template__radio {gap: 12px;}"
+        ".rc-widget {gap: 30px;}"
       ],
       "settings": {
         "product_sticky_enable": true,

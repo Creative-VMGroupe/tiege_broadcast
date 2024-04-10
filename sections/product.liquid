@@ -114,7 +114,9 @@
 
     --swatch-size: var(--swatch-size-product);
   }
-
+  .index-product {
+   background-color: white;
+}
 {%- endstyle -%}
 
 <div id="Product--{{ unique }}"
@@ -1077,15 +1079,6 @@
         "type": "header",
         "content": "Layout"
       },
-      {
-            "type": "header",
-            "content": "Colors"
-          },
-          {
-            "type": "color",
-            "id": "  background-pdp",
-            "label": "Background Color"
-          },
       {
         "type": "checkbox",
         "id": "product_sticky_enable",
