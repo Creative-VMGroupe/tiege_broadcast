@@ -71,7 +71,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
+            "text_size": 3,
             "text_style": "font-body",
             "padding_bottom": 16
           }
@@ -86,8 +86,79 @@
         "align_text": "text-center",
         "bg_color": "",
         "color": "",
-        "padding_top": 100,
-        "padding_bottom": 100
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_text_row_xtwzaC": {
+      "type": "section-text-row",
+      "blocks": {
+        "icon_UfHrL7": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-shield",
+            "icon_size": 50,
+            "icon_color": "#545454",
+            "image": "shopify:\/\/shop_images\/Group_1825.svg",
+            "title": "SAVE 20%",
+            "heading_size": 4,
+            "text": "<p>Members always save 20% on every purchase with Autoship<\/p>",
+            "text_size": 3
+          }
+        },
+        "icon_YDKq7G": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-trophy",
+            "icon_size": 50,
+            "icon_color": "#545454",
+            "image": "shopify:\/\/shop_images\/Group_1823.svg",
+            "title": "GREAT GIFTS",
+            "heading_size": 4,
+            "text": "<p>You are guaranteed 7 gifts in your first year<\/p>",
+            "text_size": 3
+          }
+        },
+        "icon_MtcjBE": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-chat",
+            "icon_size": 50,
+            "icon_color": "#545454",
+            "image": "shopify:\/\/shop_images\/Group_1824.svg",
+            "title": "EXCLUSIVE OFFERS",
+            "heading_size": 4,
+            "text": "<p>Early access to products, gear, SWAG, and bundles<\/p>",
+            "text_size": 3
+          }
+        }
+      },
+      "block_order": [
+        "icon_UfHrL7",
+        "icon_YDKq7G",
+        "icon_MtcjBE"
+      ],
+      "custom_css": [
+        ".wrapper--full-padded {padding-left: 20%; padding-right: 20%;}",
+        ".image-wrapper {padding-top: 100%;}",
+        ".grid__heading-holder {margin-bottom: 30px;}",
+        ".column__heading {color: #00ad2d;}"
+      ],
+      "settings": {
+        "title": "Your Member Benefits Explained",
+        "heading_size": 6,
+        "layout": "grid",
+        "grid": 3,
+        "align_heading": "text-center",
+        "align_text": "text-center",
+        "icon_alignment": "icon--top",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "bg_color": "#f7f7f7",
+        "color": "#000000",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "layout_mobile": "slider"
       }
     },
     "section_rich_text_UYAyeY": {
@@ -113,8 +184,20 @@
           "type": "text",
           "settings": {
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
+            "text_size": 3,
             "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_MxCLyT": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "SHOP SKIN CARE SYSTEMS",
+            "button_url": "shopify:\/\/collections\/all-routines-1",
+            "button_type": "btn--secondary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
             "padding_bottom": 16
           }
         }
@@ -122,15 +205,36 @@
       "block_order": [
         "subheading_L6z6WH",
         "heading_xBpMzw",
-        "text_HtTH4b"
+        "text_HtTH4b",
+        "buttons_MxCLyT"
       ],
       "settings": {
         "width": "wrapper--narrow",
         "align_text": "text-center",
         "bg_color": "#000000",
         "color": "#ffffff",
-        "padding_top": 100,
-        "padding_bottom": 100
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "17127584173cce1520": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_EiLNak": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "@tiegehanley",
+            "title_color": "",
+            "alignment": "center",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_EiLNak"
+      ],
+      "settings": {
+        "include_margins": false
       }
     }
   },
@@ -138,6 +242,8 @@
     "main",
     "section_hero_BgWUpK",
     "section_rich_text_LYxXpE",
-    "section_rich_text_UYAyeY"
+    "section_text_row_xtwzaC",
+    "section_rich_text_UYAyeY",
+    "17127584173cce1520"
   ]
 }
