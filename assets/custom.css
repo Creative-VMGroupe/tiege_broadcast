@@ -1,13 +1,13 @@
 .rc-radio-group__options {
-  border: unset;
+  border: unset !important;
 }
 .rc-template__radio-group .rc-radio {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.75rem !important;
 }
 .rc-template__radio-group .rc-radio .rc-radio__label {
-    flex-direction: row-reverse;
-    flex: 1;
+    flex-direction: row-reverse !important;
+    flex: 1 !important;
 }
 .rc-template__radio-group .rc-radio .rc-radio__label .discount-label {
-    flex: 1;
+    flex: 1 !important;
 }
