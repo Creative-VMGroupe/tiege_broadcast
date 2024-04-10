@@ -25438,3 +25438,10 @@ body.has-header-sticky .timeline {
   align-items: center;
 font-size: 16px
 }
+.level-guide-member-single-tier_container {
+  text-align:center
+}
+.level-guide-member-tiers-wrapper-custom {
+  max-width: 800px;
+  margin: 0 auto;
+}
