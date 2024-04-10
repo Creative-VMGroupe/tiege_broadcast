@@ -103,10 +103,7 @@
 -%}
 
 {%- style -%}
-.index-product {
-   //Dark Mode/Light Mode
-   background-color: var(--bg-light);
-}
+
   {%- if show_cart_bar -%}
     :root { --cart-bar-height: 80px; }
   {%- endif -%}
@@ -117,6 +114,10 @@
 
     --swatch-size: var(--swatch-size-product);
   }
+  .index-product {
+  
+   background-color: white;
+}
 {%- endstyle -%}
 
 <div id="Product--{{ unique }}"
