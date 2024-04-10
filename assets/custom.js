@@ -42,5 +42,7 @@
 })();
 
 document.addEventListener("theme:quick-add:open", function(event) {
-  console.log(event);
+  let openedWindow = document.querySelector('.product-quick-add');
+  console.log(openedWindow);
+  window.ReChargeWidget.createWidget({ productId: 123 });
 });
