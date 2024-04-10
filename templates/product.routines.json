@@ -29,6 +29,12 @@
             "product": "{{product}}"
           }
         },
+        "reviews_io_reviewsio_rating_bar_QKFCJa": {
+          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-bar\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {
+            "widget_id": "TwFdz2KlWIEQ8oHS"
+          }
+        },
         "recharge_subscriptions_subscription_widget_xPdPVc": {
           "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
           "settings": {
@@ -139,23 +145,13 @@
             "bg_color": "",
             "padding_bottom": 16
           }
-        },
-        "reviews_io_reviewsio_rating_bar_QKFCJa": {
-          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-bar\/92a082e5-b297-4e88-b428-ac96cbc505f9",
-          "settings": {
-            "widget_id": "TwFdz2KlWIEQ8oHS"
-          }
-        },
-        "reviews_io_reviewsio_rating_output_hU8GeW": {
-          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-output\/92a082e5-b297-4e88-b428-ac96cbc505f9",
-          "settings": {
-          }
         }
       },
       "block_order": [
         "title",
         "trustreviews_star_rating_CXtD3L",
         "okendo_star_rating_ePti3c",
+        "reviews_io_reviewsio_rating_bar_QKFCJa",
         "recharge_subscriptions_subscription_widget_xPdPVc",
         "popup_8GXMmM",
         "buttons",
@@ -164,9 +160,7 @@
         "tabs",
         "divider_1",
         "complementary_products_C7V6rg",
-        "upsell",
-        "reviews_io_reviewsio_rating_bar_QKFCJa",
-        "reviews_io_reviewsio_rating_output_hU8GeW"
+        "upsell"
       ],
       "custom_css": [
         ".mock-notification {display: none;}",
