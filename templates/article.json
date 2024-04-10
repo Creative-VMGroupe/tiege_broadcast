@@ -22,11 +22,17 @@
         "related-products",
         "recent-articles"
       ],
+      "custom_css": [
+        ".article__hero .article__meta {display: flex; margin-top: 30px;}",
+        ".article__hero .article__title {text-align: start;}",
+        ".article__hero {padding-bottom: 0;}",
+        ".article__wrapper {padding-top: 0;}"
+      ],
       "settings": {
         "show_image": true,
         "height": "screen-height-one-third",
         "mobile_height": "screen-height-one-third--mobile",
-        "bg_color": "#f7f9fa",
+        "bg_color": "#ffffff",
         "show_date": true,
         "show_author": true,
         "tags": false,
