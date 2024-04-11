@@ -10353,8 +10353,8 @@ p a {
 }
 .wrapper .grid__items-holder,
 .wrapper--full-padded .grid__items-holder {
-  margin-left: var(--outer-offset);
-  margin-right: var(--outer-offset);
+  margin-left: -32px;
+  margin-right: -32px;
 }
 @media only screen and (min-width: 750px) {
   .wrapper.grid-container--inline .grid__items-holder,
