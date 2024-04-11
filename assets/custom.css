@@ -13,5 +13,5 @@
     font-weight: 400 !important;
 }
 .rc-radio:first-child {
-  margin-bottom: 12px;
+  margin-bottom: 12px !important;
 }
