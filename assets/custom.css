@@ -1,9 +1,9 @@
 .rc-radio-group__options {
   border: unset !important;
 }
-.rc-template__radio-group .rc-radio {
+/* .rc-template__radio-group .rc-radio {
   margin-bottom: 0.75rem !important;
-}
+} */
 .rc-template__radio-group .rc-radio .rc-radio__label {
     flex-direction: row-reverse !important;
     flex: 1 !important;
