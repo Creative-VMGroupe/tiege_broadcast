@@ -192,8 +192,9 @@
         "image_1": "shopify:\/\/shop_images\/Mask_Group_3.png",
         "image_width": "one-half",
         "text_alignment": "text-center",
+        "padding_lr": 50,
         "reverse_blocks": false,
-        "bg_color": "#e8e8e8",
+        "bg_color": "#f7f7f7",
         "color": "",
         "padding_top": 0,
         "padding_bottom": 0
