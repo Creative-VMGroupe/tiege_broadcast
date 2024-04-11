@@ -15,8 +15,8 @@
 .rc-radio:first-child {
   margin-bottom: 12px !important;
 }
-@media (max-width: 1138px){
+/* @media (max-width: 1138px){
 .rc-radio__label {
   font-size: 12px
 }  
-}
+} */
