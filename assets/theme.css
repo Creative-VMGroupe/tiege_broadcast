@@ -5705,7 +5705,7 @@ button {
 }
 
 .btn__plus {
-  --icon-size: 24px;
+  --icon-size: 16px;
   position: absolute;
   top: 0;
   left: 0;
