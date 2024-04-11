@@ -19013,7 +19013,7 @@ body.has-header-transparent
 }
 
 .collection__products .grid-outer {
-  padding: var(--gutter) var(--outer);
+  padding: var(--gutter);
 }
 
 .collection__nav {
