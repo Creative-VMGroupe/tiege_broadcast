@@ -27,7 +27,7 @@
         ".article__hero .article__title {text-align: start;}",
         ".article__hero {padding-bottom: 0;}",
         ".article__wrapper {padding-top: 0;}",
-        ".article--single{padding-top: 0;}"
+        ".article--single {padding-top: 0;}"
       ],
       "settings": {
         "show_image": true,
@@ -241,8 +241,8 @@
 
       ],
       "settings": {
-        "title": "",
-        "heading_size": 5,
+        "title": "Related Articles",
+        "heading_size": 7,
         "layout": "grid",
         "grid": 3,
         "align_heading": "text-left",
