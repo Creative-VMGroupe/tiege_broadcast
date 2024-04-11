@@ -117,7 +117,7 @@
         "show_rss": false,
         "show_tag_nav": false,
         "grid": 4,
-        "rows": 4,
+        "rows": 1,
         "aspect_ratio": 1,
         "title_size": 4,
         "show_tags": false,
