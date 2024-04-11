@@ -12,6 +12,6 @@
     flex: 1 !important;
     font-weight: 400 !important;
 }
-.rc-radio-group__options {
-  gap: 12px;
+.rc-radio:first-child {
+  margin-bottom: 12px;
 }
