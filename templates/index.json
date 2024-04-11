@@ -704,6 +704,7 @@
         "text_slide_nwm3p7",
         "text_slide_9djVpV"
       ],
+      "disabled": true,
       "custom_css": [
         ".hero__subheading {color: #00ad2d;}"
       ],
@@ -1029,7 +1030,7 @@
         "description": "Talks facts about taking care of your skin.",
         "text_size": 4,
         "flex_align": "align--bottom-left",
-        "flex_align_mobile": "align--middle-center-mobile",
+        "flex_align_mobile": "align--bottom-left-mobile",
         "bg_color": "rgba(0,0,0,0)",
         "color": "#ffffff",
         "link_text": "Watch How-To's",
