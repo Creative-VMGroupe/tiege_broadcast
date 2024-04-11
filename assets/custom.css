@@ -23,6 +23,11 @@
 .level-guide-member-single-tier_text {
   text-align: center;
 }
+.level-guide-member-tiers_container{
+  gap: 4px;
+}
+@media screen and (min-width: 750px){
 .level-guide-member-tiers_container {
   gap: 22px
+}
 }
