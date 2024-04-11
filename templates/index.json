@@ -906,8 +906,8 @@
         "width": "wrapper--full-padded",
         "bg_color": "#f7f9fa",
         "color": "",
-        "padding_top": 100,
-        "padding_bottom": 100,
+        "padding_top": 60,
+        "padding_bottom": 60,
         "layout_mobile": "slider"
       }
     },
