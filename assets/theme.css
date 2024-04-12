@@ -25521,6 +25521,17 @@ letter-spacing: 1px;
 .price-label {
   font-weight: 400 !important;
 }
+.rc-template__radio-group .rc-radio {
+  border: 1px solid black;
+  border-radius: 300px;
+}
+.rc-template__radio-group .rc-radio .rc-radio__input {
+  margin: 0;
+}
+.rc-template__radio-group .rc-radio .rc-radio__label {
+  gap: 5px;
+  justify-content: center;
+}
 /*Blog Page*/
 @media (min-width: 750px){
   .blog__title-custom {
