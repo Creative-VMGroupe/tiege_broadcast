@@ -70,7 +70,7 @@
         {% comment %} 
                     Featured Video 
                 {% endcomment %}
-        {%- capture current_featured_media -%}
+        {%- capture current_featured_image -%}
         {%- liquid
           assign featured_media = block.settings.video
           assign featured_image_position = block.settings.position
@@ -296,7 +296,7 @@ endcapture
       {% endif %}
 
 
-      {%- assign featured_images_array = featured_images_array | append: featured_image_order | append: '#featured_image_position#' | append: featured_image_position | append: '#featured_image_html#' | append: current_featured_media | append: '#featured_image#' | append: featured_image | append: '@@' -%}
+      {%- assign featured_images_array = featured_images_array | append: featured_image_order | append: '#featured_image_position#' | append: featured_image_position | append: '#featured_image_html#' | append: current_featured_image | append: '#featured_image#' | append: featured_image | append: '@@' -%}
     {%- endfor -%}
 
     {%- assign featured_images_array = featured_images_array | split: '@@' | sort -%}
