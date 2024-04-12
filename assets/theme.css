@@ -13469,6 +13469,7 @@ main-search .input-holder {
 .product-item__price__holder {
   color: var(--text-light);
   overflow: hidden;
+  margin-top: 12px;
 }
 
 .product-item__title {
