@@ -251,9 +251,14 @@
       </div>
     {%- else -%}
       <div class="brick__section{% if section.settings.layout == 'is-reversed' %} brick__section--reversed{% endif %}{% if section.settings.reverse_blocks %} brick__section--reversed-mobile{% endif %}{% if accordion_blocks.size > 0 %} brick__section--accordion{% endif %} {{ width }} {{ desktop_height }} {{ mobile_height }}">
-        <div class="brick__block {{ figure_width_class }} brick__block--images"
+
+  
+          
 
 
+        <div class="brick__block {{ figure_width_class }} {% unless video_main != blank %}
+          brick__block--images
+        {% endunless %} "
           {% if image_1 != blank and image_2 != blank %}
             data-slider
             data-slider-fullwidth
@@ -262,10 +267,11 @@
           {% endif %}>
           {% if video_main != blank %}
             {{ video_hero }}
-  {% else %}
+          
+ {% else %}
+  
   {{ section_images }}
-          {% endif %}
-
+{% endif %}
         </div>
 
         <div class="brick__block brick__block--text{% if enable_slider %} brick__block--slider{% endif %}"
