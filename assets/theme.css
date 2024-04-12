@@ -25561,7 +25561,11 @@ div.rc_popup {
 }
 .filter-heading__container-custom {
   padding-top: 50px !important;
+  padding-bottom: 20px !important;
   border-bottom: none !important;
+}
+.filter__item-quantity__container {
+  padding-bottom: 50px !important;
 }
 .filter__item-quantity {
   font-size: calc(var(--font-3) * var(--FONT-ADJUST-HEADING)) !important;
