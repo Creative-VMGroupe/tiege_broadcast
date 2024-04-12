@@ -25463,3 +25463,7 @@ font-size: 16px
     padding-right: 16px !important;
   }
 }
+//PDP
+.product__title-custom {
+  margin-bottom: 0;
+}

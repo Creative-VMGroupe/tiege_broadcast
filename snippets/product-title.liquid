@@ -3,7 +3,7 @@
   assign text_size = text_size | prepend: 'heading-size-'
 -%}
 
-<div class="product__block product__head block-padding"
+<div class="product__block product__head block-padding product__title-custom"
   {{ block_style }}
   {% if animation_name %}
     data-animation="{{ animation_name }}"
