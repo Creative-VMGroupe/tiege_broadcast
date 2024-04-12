@@ -25467,3 +25467,13 @@ font-size: 16px
 .product__title-custom {
   margin-bottom: 0;
 }
+@media only screen and (max-width: 749px) {
+  #shopify-block-okendo_star_rating_DPzCnp {
+    display: flex;
+    justify-content: center;
+  }
+  #shopify-block-okendo_star_rating_ePti3c {
+    display: flex;
+    justify-content: center;
+  }
+}
