@@ -1388,6 +1388,68 @@
       "settings": {
         "include_margins": false
       }
+    },
+    "section_double_static_vm_YWUYXa": {
+      "type": "section-double-static-vm",
+      "blocks": {
+        "subheading_7XtJGU": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Introducing",
+            "text_size": 3,
+            "padding_bottom": 16
+          }
+        },
+        "heading_kLipn6": {
+          "type": "heading",
+          "settings": {
+            "title": "Image with text",
+            "text_size": 8,
+            "padding_bottom": 16
+          }
+        },
+        "text_H3fJmV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_YGTL3b": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_7XtJGU",
+        "heading_kLipn6",
+        "text_H3fJmV",
+        "buttons_YGTL3b"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-two-thirds--mobile",
+        "width": "wrapper--full",
+        "video_main": "shopify:\/\/files\/videos\/grownalchemist_1684270065_3104203787330120109_711509597.mp4",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "reverse_blocks": false,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -1414,6 +1476,7 @@
     "section_timeline_YTB9mM",
     "section_rich_text_mYKMrn",
     "section_double_yp4ajU",
-    "17128713724606d78b"
+    "17128713724606d78b",
+    "section_double_static_vm_YWUYXa"
   ]
 }
