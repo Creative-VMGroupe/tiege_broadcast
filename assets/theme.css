@@ -25496,10 +25496,14 @@ letter-spacing: 1px;
     margin: 0 !important;
     font-size: 16px !important;
   }
+  
 }
-.product-recomend_tab{
-  font-size: calc(var(--font-7) * var(--FONT-ADJUST-HEADING))
+@media (min-width: 750px){
+  .product-recomend_tab{
+    font-size: calc(var(--font-7) * var(--FONT-ADJUST-HEADING)) !important;
+  }
 }
+
 .product-recomend_wrapper {
   padding-left: 32px !important;
   padding-right: 32px !important;
