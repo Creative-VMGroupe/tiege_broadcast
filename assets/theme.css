@@ -25557,10 +25557,14 @@ div.rc_popup {
 .filter__heading-custom {
   font-size: calc(var(--font-7) * var(--FONT-ADJUST-HEADING)) !important;
   letter-spacing: 1px !important;
+  text-transform: capitalize;
 }
 .filter-heading__container-custom {
   padding-top: 50px !important;
   border-bottom: none !important;
+}
+.filter__item-quantity {
+  font-size: calc(var(--font-3) * var(--FONT-ADJUST-HEADING)) !important;
 }
 .range-height__dot {
   width: 30px !important;
