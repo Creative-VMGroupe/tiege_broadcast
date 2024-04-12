@@ -48,7 +48,7 @@
       {%- if section.settings.heading != blank or section.settings.description != blank or button_html != blank -%}
         <div class="compare__content {% if section.settings.text_align_center == true %}
           text-center
-        {% endif %}" >
+        {% endif %} plr-10-custom" >
           {%- if section.settings.heading != blank -%}
             {%- assign animation_order = animation_order | plus: 1 -%}
                     {%- liquid
