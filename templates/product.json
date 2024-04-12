@@ -202,8 +202,7 @@
         ".accordion__title {font-weight: bold;}",
         ".accordion {border: none;}",
         ".select__fieldset > .radio__legend {display: none;}",
-        ".rc-widget {padding-top: 30px;}",
-        "#shopify-block-okendo_star_rating_DPzCnp {display: flex; justify-content: center;}"
+        ".rc-widget {padding-top: 30px;}"
       ],
       "settings": {
         "product_sticky_enable": true,
