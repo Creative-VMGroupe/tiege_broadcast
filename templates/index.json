@@ -1181,8 +1181,8 @@
         "reverse_blocks": false,
         "bg_color": "#f7f7f7",
         "color": "#212121",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 30,
+        "padding_bottom": 30
       }
     },
     "17128713724606d78b": {
