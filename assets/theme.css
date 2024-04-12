@@ -25556,6 +25556,7 @@ div.rc_popup {
 }
 .prod-link-custom {
   color: black;
+  letter-spacing: 1px;
 }
 .prod-item__info-custom {
   padding-left: 0 !important;
