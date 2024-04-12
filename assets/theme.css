@@ -25515,5 +25515,11 @@ letter-spacing: 1px;
 }
 /*Recharge*/
 .price-label {
-  font-weight: 400;
+  font-weight: 400 !important;
+}
+/*Blog Page*/
+@media (min-width: 750px){
+  .blog__title-custom {
+    min-height: 52px
+  }
 }
