@@ -280,8 +280,8 @@
         "show_comments": false,
         "bg_color": "#f7f7f7",
         "color": "",
-        "padding_top": 32,
-        "padding_bottom": 0
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "1712723703b76a9181": {
