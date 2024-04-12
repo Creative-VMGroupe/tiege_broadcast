@@ -693,7 +693,7 @@
         "icon_size": 20,
         "icon_color": "#545454",
         "bg_color": "",
-        "color": "",
+        "color": "#000000",
         "border_color": "",
         "width": "wrapper--full--custom",
         "padding_top": 0,
