@@ -277,6 +277,70 @@
         "autoplay_speed": 8
       }
     },
+    "section_double_static_vm_YWUYXa": {
+      "type": "section-double-static-vm",
+      "blocks": {
+        "video_kkrdWF": {
+          "type": "video",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/cropped_Comp1-ezgif.com-crop-video.mp4",
+            "video_width": 100,
+            "custom_aspect_ratio": false,
+            "aspect_ratio": 1,
+            "padding_bottom": 16
+          }
+        },
+        "heading_wGtQrC": {
+          "type": "heading",
+          "settings": {
+            "title": "Handsome Guaranteed",
+            "text_size": 7,
+            "padding_bottom": 16
+          }
+        },
+        "text_H3fJmV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our high-quality skin care systems work to maximize results and eliminate guesswork for men of all skin types.<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_YGTL3b": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Shop Now",
+            "button_url": "shopify:\/\/collections\/all-routines-1",
+            "button_type": "btn--secondary",
+            "button_size": "btn--large",
+            "button_style": "btn--outline",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "video_kkrdWF",
+        "heading_wGtQrC",
+        "text_H3fJmV",
+        "buttons_YGTL3b"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-third--mobile",
+        "width": "wrapper--full",
+        "video_main": "shopify:\/\/files\/videos\/grownalchemist_1684270065_3104203787330120109_711509597.mp4",
+        "image_width": "one-half",
+        "text_alignment": "text-center",
+        "reverse_blocks": false,
+        "bg_color": "#000000",
+        "color": "#00ad2d",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "custom_section_double_static_WWtdfe": {
       "type": "custom-section-double-static",
       "blocks": {
@@ -326,6 +390,7 @@
         "text_wQ9ea3",
         "buttons_VwBzQ9"
       ],
+      "disabled": true,
       "settings": {
         "layout": "",
         "height": "screen-height-one-half",
@@ -1388,74 +1453,13 @@
       "settings": {
         "include_margins": false
       }
-    },
-    "section_double_static_vm_YWUYXa": {
-      "type": "section-double-static-vm",
-      "blocks": {
-        "subheading_7XtJGU": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Introducing",
-            "text_size": 3,
-            "padding_bottom": 16
-          }
-        },
-        "heading_kLipn6": {
-          "type": "heading",
-          "settings": {
-            "title": "Image with text",
-            "text_size": 8,
-            "padding_bottom": 16
-          }
-        },
-        "text_H3fJmV": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
-            "text_style": "font-body",
-            "padding_bottom": 16
-          }
-        },
-        "buttons_YGTL3b": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "subheading_7XtJGU",
-        "heading_kLipn6",
-        "text_H3fJmV",
-        "buttons_YGTL3b"
-      ],
-      "settings": {
-        "layout": "",
-        "height": "screen-height-two-thirds",
-        "mobile_height": "screen-height-one-third--mobile",
-        "width": "wrapper--full",
-        "video_main": "shopify:\/\/files\/videos\/grownalchemist_1684270065_3104203787330120109_711509597.mp4",
-        "image_width": "one-half",
-        "text_alignment": "text-left",
-        "reverse_blocks": false,
-        "bg_color": "",
-        "color": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
     }
   },
   "order": [
     "section_video_V7NQ8N",
     "section_slideshow_new_z6g7dh",
     "section_slideshow_tYUFtn",
+    "section_double_static_vm_YWUYXa",
     "custom_section_double_static_WWtdfe",
     "section_double_pyR9aL",
     "section_text_with_products_h3WNiQ",
@@ -1476,7 +1480,6 @@
     "section_timeline_YTB9mM",
     "section_rich_text_mYKMrn",
     "section_double_yp4ajU",
-    "17128713724606d78b",
-    "section_double_static_vm_YWUYXa"
+    "17128713724606d78b"
   ]
 }
