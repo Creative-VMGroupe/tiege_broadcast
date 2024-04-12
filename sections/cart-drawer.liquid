@@ -37,7 +37,7 @@
 -%}
 
 {%- capture cart_title -%}
-  <h3 class="cart__title caps heading-size-8_custom">
+  <h3 class="cart__title caps heading-size-7_custom">
     {{ title_block[0].settings.title | default: cart_title_default }}
 
     <cart-count class="cart__items-count" data-cart-count="{{ cart_item_count }}">{{ cart_item_count }}</cart-count>
@@ -104,7 +104,7 @@
 
 {%- unless cart_total_hidden -%}
   <div class="cart__total">
-    <span class="cart__total__label">{{ 'cart.general.subtotal_items' | t }}</span>
+    <span class="cart__total__label cart__sub-custom">{{ 'cart.general.subtotal_items' | t }}</span>
 
     <span class="cart__total__price">
       {%- if original_subtotal == 0 -%}
@@ -174,7 +174,7 @@
 
           <div class="cart__buttons{% if settings.enable_accept_terms %} cart__buttons--disabled{% endif %}" data-cart-checkout-buttons>
             <fieldset class="cart__buttons__fieldset" data-cart-checkout-button>
-              <button type="submit" name="checkout" class="btn btn--primary btn--solid btn--full cart__checkout">
+              <button type="submit" name="checkout" class="cart__btn-custom btn btn--primary btn--solid btn--full cart__checkout">
                 {%- if settings.show_lock_icon -%}
                   {%- render 'animated-icon', filename: 'icon-lock' -%}
                 {%- endif -%}

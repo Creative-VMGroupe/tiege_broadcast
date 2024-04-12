@@ -25376,8 +25376,8 @@ body.has-header-sticky .timeline {
   display: flex;
   flex-direction: column;
 }
-.heading-size-8_custom {
-  font-size: calc(var(--font-8) * var(--FONT-ADJUST-HEADING)) !important;
+.heading-size-7_custom {
+  font-size: calc(var(--font-7) * var(--FONT-ADJUST-HEADING)) !important;
 }
 .header-full_height-custom {
   height: 100%;
@@ -25574,4 +25574,12 @@ div.rc_popup {
   width: 30px !important;
   height: 30px !important;
   top: 2px !important;
+}
+/*Cart Drawer*/
+.cart__sub-custom {
+  font-size: calc(1.5rem * var(--FONT-ADJUST-BODY)) !important;
+  letter-spacing: 1px !important;
+}
+.cart__btn-custom{
+  font-size: calc(var(--font-2) * var(--FONT-ADJUST-HEADING)) !important;
 }
