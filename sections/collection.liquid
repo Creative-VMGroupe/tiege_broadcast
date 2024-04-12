@@ -79,6 +79,7 @@
   assign featured_text = block.settings.featured_text
   assign featured_button_text = block.settings.featured_button_text
   assign featured_button_link = block.settings.featured_button_link
+  assign text_under = block.settings.text_under_img 
   assign featured_color_text = block.settings.featured_color_text
   assign featured_color_overlay = block.settings.featured_color_overlay
   assign featured_overlay_opacity = block.settings.featured_overlay_opacity | times: 0.01
@@ -97,7 +98,7 @@
   --overlay-bg: {{ featured_color_overlay }};
 {%- endcapture -%}
 
-<div class="grid-item product-item product-item--featured-image"
+<div class="grid-item product-item product-item--featured-image prod-featured__image__container"
   id="Product-item--{{ block.id }}"
   style="{{ style }}"
   {{ block.shopify_attributes }}
@@ -131,7 +132,7 @@
   {%- endcapture -%}
 
   {%- unless featured_image == blank -%}
-    <div class="product-item__image">
+    <div class="product-item__image prod-featured__image__inner">
       <div class="product-item__bg"
         data-aos="img-in"
         data-aos-anchor="{{ animation_anchor }}"
@@ -144,7 +145,11 @@
 
       {{ featured_image_content }}
     </div>
-    <p>Test Text</p>
+   <div class="product-information">
+    <div class="product-item__info">
+      <span class="product-link">{{ text_under }}</span>
+    </div>
+   </div>
   {%- else -%}
     <div class="product-item__image">
       <div class="svg-placeholder">
@@ -486,6 +491,12 @@
             "type": "url",
             "id": "featured_button_link",
             "label": "Button link"
+          },
+          {
+            "type": "text",
+            "id": "text_under_img",
+            "label": "Text Below Image",
+            "default": "Insert Text Here"
           },
           {
             "type": "select",
