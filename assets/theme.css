@@ -25423,10 +25423,7 @@ body.has-header-sticky .timeline {
 :root {
   --Font-12-CUSTOM: 12px;
 }
-.prod-rec_text-custom {
-  text-transform: none;
-  letter-spacing: normal;
-}
+
 .btn-cart_container {
   padding: 8px 10%;
   display: flex !important;
@@ -25486,6 +25483,11 @@ letter-spacing: 1px;
     display: flex;
     justify-content: center;
   }
+  .product-recomend_tabs-custom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .product-recomend_wrapper {
   padding-left: 32px !important;
@@ -25494,11 +25496,11 @@ letter-spacing: 1px;
 .product-recomend_heading-custom {
   padding: 0 !important;
 }
-.product-recomend_tabs-custom {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
+
 .product-recomend_tab {
   margin: 0 !important;
+}
+.prod-rec_text-custom {
+  text-transform: none;
+  letter-spacing: normal;
 }
