@@ -25513,3 +25513,7 @@ letter-spacing: 1px;
   text-transform: none;
   letter-spacing: normal;
 }
+/*Recharge*/
+.price-label {
+  font-weight: 400;
+}
