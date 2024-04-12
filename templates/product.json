@@ -375,7 +375,7 @@
 
       ],
       "settings": {
-        "layout": "",
+        "layout": "is-reversed",
         "height": "screen-height-three-quarters",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
