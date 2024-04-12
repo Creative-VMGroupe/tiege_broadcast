@@ -25453,7 +25453,7 @@ letter-spacing: 1px;
 .slider__text-custom {
   margin: 0 auto !important; 
   gap: 15px !important;
-  padding: 0;
+  padding: 0 !important;
 }
 .slider__slide-custom {
   padding: 0 !important;
