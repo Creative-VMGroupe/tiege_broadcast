@@ -65,7 +65,7 @@
 
 {%- if paginate.current_page == 1 -%}
   {%- for block in section.blocks -%}
-    {% if block.id == 'video' %}
+    {% if block.settings.id == 'video' %}
         {% comment %}
             Featured Video
         {% endcomment %}
@@ -179,11 +179,11 @@ endcapture
       </div>
      </div>
 {%- else -%}
-      <div class="product-item__image">
+      <div class="test product-item__image">
         <div class="svg-placeholder">
           {{ 'collection-1' | placeholder_svg_tag }}
         </div>
-  <p>Test: {{ block.id }}</p>
+  
         {{ featured_image_content }}
       </div>
     {%- endunless -%}
