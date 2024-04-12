@@ -1438,8 +1438,8 @@
       ],
       "settings": {
         "layout": "",
-        "height": "screen-height-three-quarters",
-        "mobile_height": "screen-height-two-thirds--mobile",
+        "height": "screen-height-two-thirds",
+        "mobile_height": "screen-height-one-third--mobile",
         "width": "wrapper--full",
         "video_main": "shopify:\/\/files\/videos\/grownalchemist_1684270065_3104203787330120109_711509597.mp4",
         "image_width": "one-half",
