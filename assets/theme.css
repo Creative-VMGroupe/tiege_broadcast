@@ -25494,7 +25494,11 @@ letter-spacing: 1px;
   
   .product-recomend_tab {
     margin: 0 !important;
+    font-size: 16px !important;
   }
+}
+.product-recomend_tab{
+  font-size: calc(var(--font-7) * var(--FONT-ADJUST-HEADING))
 }
 .product-recomend_wrapper {
   padding-left: 32px !important;
