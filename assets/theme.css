@@ -25488,18 +25488,19 @@ letter-spacing: 1px;
     display: flex;
     justify-content: space-between;
   }
+  .product-recomend_heading-custom {
+    padding: 0 !important;
+  }
+  
+  .product-recomend_tab {
+    margin: 0 !important;
+  }
 }
 .product-recomend_wrapper {
   padding-left: 32px !important;
   padding-right: 32px !important;
 }
-.product-recomend_heading-custom {
-  padding: 0 !important;
-}
 
-.product-recomend_tab {
-  margin: 0 !important;
-}
 .prod-rec_text-custom {
   text-transform: none;
   letter-spacing: normal;
