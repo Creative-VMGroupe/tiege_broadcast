@@ -25452,11 +25452,12 @@ letter-spacing: 1px;
 }
 .slider__text-custom {
   margin: 0 auto !important; 
-  gap: 10px !important;
+  gap: 15px !important;
   padding: 0;
 }
 .slider__slide-custom {
   padding: 0 !important;
+  width: 100% !important;
 }
 .product__wrapper-custom {
  margin: 0 16px; 
