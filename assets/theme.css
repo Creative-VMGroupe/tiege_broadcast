@@ -25588,3 +25588,6 @@ div.rc_popup {
   padding: 0 0 15px 0 !important;
   border-bottom: 2px solid lightgray !important;
 }
+.cart__quantity-custom  {
+  border-color: black !important;
+}
