@@ -817,10 +817,18 @@
           "settings": {
             "product": "{{product}}"
           }
+        },
+        "okendo_reviews_widget_MJ7BBH": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}",
+            "widget_type": "reviews_widget"
+          }
         }
       },
       "block_order": [
-        "trustreviews_reviews_widget_EDCD9p"
+        "trustreviews_reviews_widget_EDCD9p",
+        "okendo_reviews_widget_MJ7BBH"
       ],
       "settings": {
         "include_margins": false
