@@ -1194,6 +1194,7 @@
             "title": "@tiegehanley",
             "title_color": "",
             "alignment": "center",
+            "margin_top": 60,
             "html_area": ""
           }
         }
