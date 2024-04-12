@@ -34,9 +34,32 @@
     "main": {
       "type": "collection",
       "blocks": {
+        "featured_image_mwiTPz": {
+          "type": "featured_image",
+          "disabled": true,
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/cropped_Comp1-ezgif.com-crop-video.mp4",
+            "aspect_ratio": 0.5,
+            "position": 1,
+            "featured_heading": "Featured link",
+            "heading_size": 7,
+            "featured_text": "<p>Promote products or collections<\/p>",
+            "featured_button_text": "Learn more",
+            "featured_button_link": "",
+            "text_under_img": "Insert Text Here",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false,
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#222222",
+            "featured_overlay_opacity": 10
+          }
+        },
         "featured_image_kH7rEt": {
           "type": "featured_image",
           "settings": {
+            "aspect_ratio": 0.5,
             "featured_image": "shopify:\/\/shop_images\/Messy_Hands.jpg",
             "position": 3,
             "featured_heading": "Level Guide",
@@ -44,6 +67,7 @@
             "featured_text": "",
             "featured_button_text": "Learn more",
             "featured_button_link": "",
+            "text_under_img": "Insert Text Here",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--outline",
@@ -56,13 +80,15 @@
         "featured_image_iwGEEb": {
           "type": "featured_image",
           "settings": {
+            "aspect_ratio": 0.5,
             "featured_image": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO2.jpg",
-            "position": 9,
+            "position": 4,
             "featured_heading": "Become a Member",
             "heading_size": 9,
             "featured_text": "",
             "featured_button_text": "Learn more",
             "featured_button_link": "",
+            "text_under_img": "Insert Text Here",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--outline",
@@ -74,6 +100,7 @@
         }
       },
       "block_order": [
+        "featured_image_mwiTPz",
         "featured_image_kH7rEt",
         "featured_image_iwGEEb"
       ],
@@ -192,6 +219,7 @@
         "image_1": "shopify:\/\/shop_images\/Mask_Group_3.png",
         "image_width": "one-half",
         "text_alignment": "text-center",
+        "padding_lr": 50,
         "reverse_blocks": false,
         "bg_color": "#e8e8e8",
         "color": "",
