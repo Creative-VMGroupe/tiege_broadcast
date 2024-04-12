@@ -25532,6 +25532,21 @@ letter-spacing: 1px;
   gap: 5px;
   justify-content: center;
 }
+.rc-template__radio-group .rc-radio:not(:first-child) {
+  border-color: black;
+}
+.rc-template__radio-group .rc-radio.rc-option__subsave .rc-radio__label {
+  font-weight: 400;
+}
+.rc-template__radio-group .rc-radio .rc-radio__label .rc-option__price {
+  font-weight: 400;
+}
+.rc-template__radio-group .rc-radio-group__options+.rc-selling-plans {
+  dispay: none;
+}
+div.rc_popup {
+  dispay: none;
+}
 /*Blog Page*/
 @media (min-width: 750px){
   .blog__title-custom {
