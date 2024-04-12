@@ -25500,5 +25500,5 @@ letter-spacing: 1px;
   justify-content: space-between;
 }
 .product-recomend_tab {
-  margin: 0;
+  margin: 0 !important;
 }
