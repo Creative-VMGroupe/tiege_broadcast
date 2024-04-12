@@ -66,9 +66,9 @@
 {%- if paginate.current_page == 1 -%}
   {%- for block in section.blocks -%}
     {% if block.id == 'video' %}
-  {% comment %}
-    Featured Video
-  {% endcomment %}
+        {% comment %}
+            Featured Video
+        {% endcomment %}
       {%- capture current_featured_media -%}
         {%- liquid
           assign featured_media = block.settings.video
@@ -171,7 +171,6 @@ endcapture
 
         </div>
         </div>
-  
         {{ featured_image_content }}
       </div>
      <div class="product-information">
@@ -179,12 +178,12 @@ endcapture
         <span class="product-link prod-link-custom">{{ text_under }}</span>
       </div>
      </div>
-    {%- else -%}
+{%- else -%}
       <div class="product-item__image">
         <div class="svg-placeholder">
           {{ 'collection-1' | placeholder_svg_tag }}
         </div>
-  
+  <p>Test: {{ block.id }}</p>
         {{ featured_image_content }}
       </div>
     {%- endunless -%}
