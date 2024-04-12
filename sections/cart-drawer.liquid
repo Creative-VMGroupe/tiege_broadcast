@@ -149,7 +149,7 @@
 <div class="cart__total">
   <span class="cart__total__label">{{- 'cart.general.subtotal' | t -}}</span>
 
-  <span class="cart__total__price cart__total__price--animated" data-cart-total="{{ subtotal }}">
+  <span class="cart__btn-custom cart__total__price cart__total__price--animated" data-cart-total="{{ subtotal }}">
     {%- if subtotal == 0 -%}
       {{ 'general.money.free' | t }}
     {%- else -%}
