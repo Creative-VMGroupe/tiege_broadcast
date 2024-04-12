@@ -65,7 +65,139 @@
 
 {%- if paginate.current_page == 1 -%}
   {%- for block in section.blocks -%}
-    {%- capture current_featured_image -%}
+    {% if block.id == 'video' %}
+  {% comment %}
+    Featured Video
+  {% endcomment %}
+      {%- capture current_featured_media -%}
+        {%- liquid
+          assign featured_media = block.settings.video
+          assign featured_image_position = block.settings.position
+          assign featured_image_order = featured_image_position | append: '-' | append: forloop.index
+  
+          if featured_image_position < 10
+            assign featured_image_order = featured_image_order | prepend: '0'
+          endif
+        -%}{%- liquid
+    assign featured_header = block.settings.featured_heading
+    assign featured_text = block.settings.featured_text
+    assign featured_button_text = block.settings.featured_button_text
+    assign featured_button_link = block.settings.featured_button_link
+    assign text_under = block.settings.text_under_img 
+    assign featured_color_text = block.settings.featured_color_text
+    assign featured_color_overlay = block.settings.featured_color_overlay
+    assign featured_overlay_opacity = block.settings.featured_overlay_opacity | times: 0.01
+    assign video_aspect_ratio = block.settings.video.aspect_ratio
+    assign aspect_ratio = aspect_ratio | default: video_aspect_ratio | default: 1
+    assign button_style = block.settings.button_style
+    if button_style == 'btn--text' and block.settings.show_arrow
+      assign button_style = button_style | append: ' btn--text-no-underline'
+    endif
+  -%}
+  
+  {%- capture style -%}
+    {%- unless featured_color_text == 'rgba(0,0,0,0)' or featured_color_text == blank -%}
+      --text: {{ featured_color_text }};
+    {%- endunless -%}
+    --overlay-opacity: {{ featured_overlay_opacity }};
+    --overlay-bg: {{ featured_color_overlay }};
+  {%- endcapture -%}
+  
+  <div class="grid-item product-item product-item--featured-image prod-featured__image__container"
+    id="Product-item--{{ block.id }}"
+    style="{{ style }}"
+    {{ block.shopify_attributes }}
+  >
+    {%- capture featured_image_content -%}
+      <div class="product-item__image-overlay">
+        <div class="product-item__image-content">
+          {%- if featured_header != blank -%}
+            <h3 style="margin: 0;" class="heading-size-{{ block.settings.heading_size }}">{{ featured_header }}</h3>
+          {%- endif -%}
+  
+          {%- if featured_text != blank -%}
+            {{ featured_text }}
+          {%- endif -%}
+  
+          {%- if featured_button_text != blank -%}
+            <a href="{{ featured_button_link }}" class="btn {{ button_style }} {{ block.settings.button_type }} {{ block.settings.button_size }}" data-aos="fade-up" data-aos-anchor="{{ animation_anchor }}" data-aos-duration="{{ animation_duration }}" data-aos-delay="200">
+              <span>{{ featured_button_text }}</span>
+  
+              {%- if block.settings.show_arrow -%}
+                {%- render 'icon-arrow-right' -%}
+              {%- endif -%}
+            </a>
+          {%- endif -%}
+        </div>
+  
+        {%- if featured_button_text == blank and featured_button_link != blank -%}
+          <a href="{{ featured_button_link }}" class="product-item__image-link" aria-label="{{ featured_image.alt | default: featured_header | default: featured_text | strip_html | escape }}"></a>
+        {%- endif -%}
+      </div>
+    {%- endcapture -%}
+  
+    {%- unless featured_media == blank -%}
+      <div class="product-item__image prod-featured__image__inner">
+        <div class="product-item__bg"
+          data-aos="img-in"
+          data-aos-anchor="{{ animation_anchor }}"
+          data-aos-delay="{{ animation_delay | times: 150 }}"
+          data-aos-duration="{{ animation_duration }}"
+          data-aos-easing="ease-out-quart"
+        >
+        {% liquid 
+capture img_class
+if fill
+  echo ' fit-cover'
+endif
+
+if video
+  echo ' is-loading '
+endif
+endcapture 
+
+capture wrapper_attributes
+echo 'style="'
+echo '--aspect-ratio: ' | append: aspect_ratio | append: ';'
+echo '"'
+
+if attributes != blank
+  echo ' ' | append: attributes
+endif
+endcapture
+%}
+        <div class="{{img_class}} video-container" {{wrapper_attributes}}>
+          {{ block.settings.video | video_tag: autoplay: true, image_size: '1085x', loop: true, muted: true, controls: false }}
+
+        </div>
+        </div>
+  
+        {{ featured_image_content }}
+      </div>
+     <div class="product-information">
+      <div class="product-item__info prod-item__info-custom">
+        <span class="product-link prod-link-custom">{{ text_under }}</span>
+      </div>
+     </div>
+    {%- else -%}
+      <div class="product-item__image">
+        <div class="svg-placeholder">
+          {{ 'collection-1' | placeholder_svg_tag }}
+        </div>
+  
+        {{ featured_image_content }}
+      </div>
+    {%- endunless -%}
+  </div>
+  {%- endcapture -%}
+
+
+  {% comment %}
+    Featured Image
+  {% endcomment %}
+      {% else %}
+  
+{%- capture current_featured_image -%}
       {%- liquid
         assign featured_image = block.settings.featured_image
         assign featured_image_position = block.settings.position
@@ -159,9 +291,12 @@
       {{ featured_image_content }}
     </div>
   {%- endunless -%}
-</div>{%- endcapture -%}
+</div>
+{%- endcapture -%}
+{% endif %}
 
-    {%- assign featured_images_array = featured_images_array | append: featured_image_order | append: '#featured_image_position#' | append: featured_image_position | append: '#featured_image_html#' | append: current_featured_image | append: '#featured_image#' | append: featured_image | append: '@@' -%}
+
+    {%- assign featured_images_array = featured_images_array | append: featured_image_order | append: '#featured_image_position#' | append: featured_image_position | append: '#featured_image_html#' | append: current_featured_image | append: current_featured_media | append: '#featured_image#' | append: featured_image | append: '@@' -%}
   {%- endfor -%}
 
   {%- assign featured_images_array = featured_images_array | split: '@@' | sort -%}
@@ -446,6 +581,22 @@
         "limit": 3,
         "name": "Featured image",
         "settings": [
+          {
+          "type": "video",
+          "id": "video",
+          "label": "Video"
+        },
+        {
+          "type": "range",
+          "id": "aspect_ratio",
+          "min": 0.5,
+          "max": 1.5,
+          "step": 0.1,
+          "unit": ":1",
+          "label": "Video scaling ratio",
+          "info": "Wide to tall",
+          "default": 0.5
+        },
           {
             "type": "image_picker",
             "id": "featured_image",
