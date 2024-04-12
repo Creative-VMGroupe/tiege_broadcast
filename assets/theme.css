@@ -25513,6 +25513,10 @@ letter-spacing: 1px;
   text-transform: none;
   letter-spacing: normal;
 }
+.prod-modal__container-custom {
+  max-width: 1000px;
+  padding: 16px;
+}
 /*Recharge*/
 .price-label {
   font-weight: 400 !important;
