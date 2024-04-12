@@ -1028,14 +1028,14 @@
         "related": {
           "type": "related",
           "settings": {
-            "product_recommendations_heading": "Related products",
+            "product_recommendations_heading": "Related Products",
             "limit": 4
           }
         },
         "recent": {
           "type": "recent",
           "settings": {
-            "product_recently_heading": "Recently viewed",
+            "product_recently_heading": "Recently Viewed",
             "product_recently_limit": 4
           }
         }
