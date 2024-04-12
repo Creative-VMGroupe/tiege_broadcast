@@ -23,7 +23,7 @@
 
   {%- capture cart_line_item -%}
 
-    <div class="cart__item{% if forloop.last %} cart__item--no-border{% endif %}"
+    <div class="cart__item-custom cart__item{% if forloop.last %} cart__item--no-border{% endif %}"
       data-item="{{ line_item.key }}"
       data-item-index="{{ forloop.index }}"
       data-item-title="{{ line_item.title | strip_html }}"

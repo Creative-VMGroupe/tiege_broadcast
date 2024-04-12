@@ -25583,3 +25583,8 @@ div.rc_popup {
 .cart__btn-custom{
   font-size: calc(var(--font-2) * var(--FONT-ADJUST-HEADING)) !important;
 }
+.cart__item-custom {
+  margin: 15px !important;
+  padding: 0 0 15px 0 !important;
+  border-bottom: 2px solid lightgray !important;
+}
