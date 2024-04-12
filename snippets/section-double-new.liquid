@@ -246,7 +246,7 @@
           {% endif %}
           {{ block.shopify_attributes }}>
           <div class="brick__block__text">
-            <div style="margin: 0 auto; gap: 10px;" class="hero__content hero__content--compact{% if enable_text_slider %} grid--mobile-slider{% else %} hero__content--no-padding{% endif %}"
+            <div class="hero__content hero__content--compact{% if enable_text_slider %} grid--mobile-slider{% else %} hero__content--no-padding{% endif %} slider__text-custom"
               {% if enable_text_slider %}
                 data-slider="BrickSlider--{{ section.id }}"
                 data-slider-desktop
@@ -267,7 +267,7 @@
 
                 {%- if enable_text_slider -%}
                   <div
-                    class="hero__slide grid-item" style="width: 100%;"
+                    class="hero__slide grid-item slider__slide-custom" 
                     data-slide="{{ block.id }}"
                     data-slide-index="{{ forloop.index0 }}"
                     {{ block.shopify_attributes }}

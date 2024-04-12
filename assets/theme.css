@@ -25436,7 +25436,8 @@ body.has-header-sticky .timeline {
 .btn-cart_text-custom {
   display: flex !important;
   align-items: center;
-font-size: 16px
+font-size: 16px;
+letter-spacing: 1px;
 }
 .level-guide-member-single-tier_container {
   text-align:center
@@ -25448,6 +25449,14 @@ font-size: 16px
 .plr-10-custom {
   padding-left: 10% !important;
   padding-right: 10% !important;
+}
+.slider__text-custom {
+  margin: 0 auto !important; 
+  gap: 10px !important;
+  padding: 0;
+}
+.slider__slide-custom {
+  padding: 0 !important;
 }
 .product__wrapper-custom {
  margin: 0 16px; 
