@@ -92,7 +92,7 @@
 
 {%- if title != blank or description != blank or link_text != blank or show_video_popup -%}
   <div class="hero__content__wrapper frame__item {{ section.settings.flex_align }} {{ section.settings.flex_align_mobile }}{% if show_header_backdrop %} backdrop--linear{% endif %}" id="Video--{{ section.id }}" style="{{ style }}{% if show_header_backdrop %} --header-overlay-color: {{ overlay_color }}; --header-overlay-opacity: {{ overlay_opacity }};{% endif %}">
-    <div class="hero__content{% if hero_transparent %} hero__content--transparent{% if show_overlay_text %} backdrop--radial{% endif %}{% endif %}"{% if show_header_backdrop %} style="--overlay-bg: {{ overlay_color }}; --overlay-opacity: {{ overlay_opacity }};"{% endif %}>
+    <div class="hero__content{% if hero_transparent %} hero__content--transparent{% if show_overlay_text %} backdrop--radial{% endif %}{% endif %} p-32px-16px-mobile-custom"{% if show_header_backdrop %} style="--overlay-bg: {{ overlay_color }}; --overlay-opacity: {{ overlay_opacity }};"{% endif %}>
       {%- if title != blank -%}
         {%- liquid
           assign animation_order = animation_order | plus: 1

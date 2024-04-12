@@ -25447,5 +25447,11 @@ font-size: 16px
 }
 .plr-10-custom {
   padding-left: 10% !important;
-  padding- right: 10% !important;
+  padding-right: 10% !important;
+}
+@media only screen and (max-width: 749px) {
+  .p-32px-16px-mobile-custom {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
 }
