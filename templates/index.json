@@ -398,7 +398,6 @@
         "width": "wrapper--full",
         "padding": 50,
         "padding_mobile": 50,
-        "video": "shopify:\/\/files\/videos\/grownalchemist_1684270065_3104203787330120109_711509597.mp4",
         "image_1": "shopify:\/\/shop_images\/Gear.png",
         "image_2": "shopify:\/\/shop_images\/Muscle.png",
         "image_width": "one-half",
@@ -408,82 +407,6 @@
         "reverse_blocks": false,
         "bg_color": "#000000",
         "color": "#ffffff",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_double_pyR9aL": {
-      "type": "section-double",
-      "blocks": {
-        "video_gEg6b9": {
-          "type": "video",
-          "settings": {
-            "video": "shopify:\/\/files\/videos\/cropped_Comp1-ezgif.com-crop-video.mp4",
-            "video_width": 100,
-            "custom_aspect_ratio": true,
-            "aspect_ratio": 0.5,
-            "padding_bottom": 16
-          }
-        },
-        "subheading_6DycxH": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "subheading": "Benefits",
-            "text_size": 2,
-            "padding_bottom": 20
-          }
-        },
-        "heading_TaAVCz": {
-          "type": "heading",
-          "settings": {
-            "title": "Handsome Guaranteed",
-            "text_size": 8,
-            "padding_bottom": 16
-          }
-        },
-        "text_RhL7Ha": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our high-quality skin care systems work to maximize results and eliminate guesswork for men of all skin types.<\/p>",
-            "text_size": 3,
-            "text_style": "font-body",
-            "padding_bottom": 16
-          }
-        },
-        "buttons_VWnVhN": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "Shop Now",
-            "button_url": "",
-            "button_type": "btn--secondary",
-            "button_size": "btn--large",
-            "button_style": "btn--outline",
-            "show_arrow": false,
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "video_gEg6b9",
-        "subheading_6DycxH",
-        "heading_TaAVCz",
-        "text_RhL7Ha",
-        "buttons_VWnVhN"
-      ],
-      "disabled": true,
-      "settings": {
-        "layout": "",
-        "height": "screen-height-three-quarters",
-        "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/TH_GRWM_Screenshot_2024-03-22_at_11.03.12_PM.png",
-        "image_width": "one-half",
-        "text_alignment": "text-center",
-        "padding_lr": 50,
-        "reverse_blocks": false,
-        "bg_color": "#000000",
-        "color": "#f7f9fa",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -1461,7 +1384,6 @@
     "section_slideshow_tYUFtn",
     "section_double_static_vm_YWUYXa",
     "custom_section_double_static_WWtdfe",
-    "section_double_pyR9aL",
     "section_text_with_products_h3WNiQ",
     "section_collection_new_JPPdmt",
     "section_collection_JXEkNP",
