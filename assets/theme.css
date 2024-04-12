@@ -19485,7 +19485,7 @@ body.has-header-transparent
 .filter-group__heading {
   position: relative;
   border-bottom: 1px solid var(--hairline);
-  padding: 0 15px 5px 0;
+  padding: 0 15px 20px 0;
   margin-bottom: 0;
   font-weight: var(--FONT-WEIGHT-BODY-BOLD);
   cursor: pointer;
@@ -25552,4 +25552,18 @@ div.rc_popup {
   .blog__title-custom {
     min-height: 52px
   }
+}
+/*Filter*/
+.filter__heading-custom {
+  font-size: calc(var(--font-7) * var(--FONT-ADJUST-HEADING)) !important;
+  letter-spacing: 1px !important;
+}
+.filter-heading__container-custom {
+  padding-top: 50px !important;
+  border-bottom: none !important;
+}
+.range-height__dot {
+  width: 30px !important;
+  height: 30px !important;
+  top: 2px !important;
 }

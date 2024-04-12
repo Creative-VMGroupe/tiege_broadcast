@@ -232,8 +232,8 @@
     <div class="collection__products">
       {%- if enable_filters -%}
         <div class="{{ collection_sidebar_class }}" id="filter-groups" data-collection-sidebar>
-          <div class="collection__sidebar__head{% unless filter_layout == 'slide-out' %} mobile{% endunless %}">
-            <h3>
+          <div class="collection__sidebar__head{% unless filter_layout == 'slide-out' %} mobile{% endunless %} filter-heading__container-custom">
+            <h3 class="filter__heading-custom">
               {{- 'collections.general.filters' | t -}}
 
               <span
