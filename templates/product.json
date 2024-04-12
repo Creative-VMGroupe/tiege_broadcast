@@ -203,7 +203,7 @@
         ".accordion {border: none;}",
         ".select__fieldset > .radio__legend {display: none;}",
         ".rc-widget {padding-top: 30px;}",
-        ".rc-template__radio {gap: 12px;}"
+        "#shopify-block-okendo_star_rating_DPzCnp {display: flex; justify-content: center;}"
       ],
       "settings": {
         "product_sticky_enable": true,

@@ -172,7 +172,8 @@
         ".rc-widget label {border-radius: 300px;}",
         ".accordion__title {font-weight: bold;}",
         ".accordion {border: none;}",
-        ".rc-widget {padding-top: 30px;}"
+        ".rc-widget {padding-top: 30px;}",
+        "#shopify-block-okendo_star_rating_ePti3c {display: flex; justify-content: center;}"
       ],
       "settings": {
         "product_sticky_enable": true,
