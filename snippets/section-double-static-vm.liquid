@@ -114,16 +114,25 @@
 -%}
 
 {% capture video_hero %}
-  <div class="video-background {{ desktop_height }} {{ mobile_height }}">
-    {% comment %} <div class="video__poster">
-      {{ video_poster }}
-    </div> {% endcomment %}
-    <video-background class="video__player is-loading" data-video-player data-video-id="{{ section.id }}-video-background">
-      <template data-video-template>
-        {{ video_main | video_tag: autoplay: true, image_size: '1085x', loop: true, muted: true, controls: false }}
-      </template>
-    </video-background>
+
+  <div style="positoin: relative" class="wide-image">    
+  <div class="frame">
+    <div class="hero__video frame__item">
+      <div class="video-background {{ desktop_height }} {{ mobile_height }}">
+        {% comment %} <div class="video__poster">
+          {{ video_poster }}
+        </div> {% endcomment %}
+        <video-background class="video__player is-loading" data-video-player data-video-id="{{ section.id }}-video-background">
+          <template data-video-template>
+            {{ video_main | video_tag: autoplay: true, image_size: '1085x', loop: true, muted: true, controls: false }}
+          </template>
+        </video-background>
+      </div>
+    </div>
   </div>
+  </div>
+
+
 {% endcapture %}
 {%- capture section_images -%}
   {%- if image_1 != blank -%}
