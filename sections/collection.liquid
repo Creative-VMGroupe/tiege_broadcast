@@ -68,8 +68,8 @@
     {%- for block in section.blocks -%}
       {% if block.settings.video != nil %}
         {% comment %} 
-                    Featured Video 
-                {% endcomment %}
+                              Featured Video 
+                        {% endcomment %}
         {%- capture current_featured_image -%}
         {%- liquid
           assign featured_media = block.settings.video
@@ -193,8 +193,8 @@ endcapture
 
 
       {% comment %} 
-                Featured Image 
-            {% endcomment %}
+                        Featured Image 
+                  {% endcomment %}
       {% else %}
 
         {%- capture current_featured_image -%}
@@ -602,7 +602,7 @@ endcapture
       {
         "type": "featured_image",
         "limit": 3,
-        "name": "Featured image",
+        "name": "Featured Media",
         "settings": [
           {
             "type": "video",
