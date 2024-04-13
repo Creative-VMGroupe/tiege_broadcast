@@ -1777,11 +1777,11 @@ var themeVendor = (function (t) {
             this.focusableElems.push(...this.pageDots.dots);
         }),
         (n.deactivatePageDots = function () {
-          this.pageDots.holder.remove(),
-            this.pageDots.holder.removeEventListener(
-              "click",
-              this.handlePageDotsClick
-            );
+          //  this.pageDots.holder.remove(),
+          this.pageDots.holder.removeEventListener(
+            "click",
+            this.handlePageDotsClick
+          );
         }),
         (t.PageDots = i),
         t
