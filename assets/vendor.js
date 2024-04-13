@@ -1217,6 +1217,7 @@ var themeVendor = (function (t) {
                 this.element.classList.remove("flickity-rtl"),
                 this.unselectSelectedSlide(),
                 this.cells.forEach((t) => t.destroy()),
+                this.viewport.remove(),
                 this.element.append(...this.slider.children),
                 this.options.accessibility &&
                   (this.element.removeAttribute("tabIndex"),
@@ -1777,11 +1778,11 @@ var themeVendor = (function (t) {
             this.focusableElems.push(...this.pageDots.dots);
         }),
         (n.deactivatePageDots = function () {
-          //  this.pageDots.holder.remove(),
-          this.pageDots.holder.removeEventListener(
-            "click",
-            this.handlePageDotsClick
-          );
+          this.pageDots.holder.remove(),
+            this.pageDots.holder.removeEventListener(
+              "click",
+              this.handlePageDotsClick
+            );
         }),
         (t.PageDots = i),
         t
