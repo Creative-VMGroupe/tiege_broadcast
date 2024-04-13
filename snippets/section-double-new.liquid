@@ -1,8 +1,6 @@
-{%- comment -%}
-  "enable_slider" is used for "text-slide" blocks with "Optional image" added and make the entire Image & text block a single slide.
-  "enable_text_slider" is used for "text-slide" blocks without "Optional image" added. Then we only create a slider for the text blocks and the images are static.
-
-
+{%- comment -%} 
+    "enable_slider" is used for "text-slide" blocks with "Optional image" added and make the entire Image & text block a single slide.
+    "enable_text_slider" is used for "text-slide" blocks without "Optional image" added. Then we only create a slider for the text blocks and the images are static. 
 {%- endcomment -%}
 
 {%- liquid
@@ -142,7 +140,8 @@
   {%- endif -%}
 {%- endcapture -%}
 
-<section id="BrickSection--{{ section.id }}"
+<section
+  id="BrickSection--{{ section.id }}"
   data-section-id="{{ section.id }}"
   data-section-type="double"
   class="index-image-text section-padding {{ section.settings.text_alignment }}"
@@ -153,8 +152,7 @@
         class="brick__slider"
         data-slider
         data-dots="{{ settings.dots_style }}"
-        data-options='{"pageDots": true, "prevNextButtons": true, "autoPlay": 4000, "pauseAutoPlayOnHover": false}'
-      >
+        data-options='{"pageDots": true, "prevNextButtons": true, "autoPlay": 4000, "pauseAutoPlayOnHover": false}'>
         {%- for block in section.blocks -%}
           {%- liquid
             assign image = block.settings.image
@@ -167,21 +165,27 @@
           <div
             class="brick__section{% if section.settings.layout == 'is-reversed' %} brick__section--reversed{% endif %}{% if section.settings.reverse_blocks %} brick__section--reversed-mobile{% endif %} {{ width }} {{ desktop_height }} {{ mobile_height }}"
             data-slide
-            {{ block.shopify_attributes }}
-          >
+            {{ block.shopify_attributes }}>
             <div class="brick__block brick__block--images{{ figure_width_class }}">
               {%- if image -%}
                 <div class="brick__block__image wide-image">
-                  {%- render 'image-hero' image: image, sizes: sizes, desktop_height: desktop_height, mobile_height: mobile_height -%}
+                  {%- render 'image-hero' image: image
+                    , sizes: sizes
+                    , desktop_height: desktop_height
+                    , mobile_height: mobile_height -%}
                 </div>
               {%- else -%}
                 {{ section_images }}
               {%- endif -%}
             </div>
 
-            <div class="brick__block brick__block--text"{% if style != blank %} style="{{ style }}"{% endif %}>
+            <div
+              class="brick__block brick__block--text"
+              {% if style != blank %}
+              style="{{ style }}"
+              {% endif %}>
               <div class="brick__block__text">
-                <div class="hero__content hero__content--compact" >
+                <div class="hero__content hero__content--compact">
                   {%- if subheading != blank -%}
                     {%- assign font_size_class = block.settings.subheading_size | prepend: 'subheading-size-' -%}
                     <p class="hero__subheading {{ font_size_class }}">
@@ -229,29 +233,32 @@
       </div>
     {%- else -%}
       <div class="brick__section{% if section.settings.layout == 'is-reversed' %} brick__section--reversed{% endif %}{% if section.settings.reverse_blocks %} brick__section--reversed-mobile{% endif %}{% if accordion_blocks.size > 0 %} brick__section--accordion{% endif %} {{ width }} {{ desktop_height }} {{ mobile_height }}">
-        <div class="brick__block {{ figure_width_class }} brick__block--images"
+        <div
+          class="brick__block {{ figure_width_class }} brick__block--images"
           {% if image_1 != blank and image_2 != blank %}
-            data-slider
-            data-slider-fullwidth
-            data-dots="{{ settings.dots_style }}"
-            data-options='{"watchCSS": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 4000, "pauseAutoPlayOnHover": false}'
+          data-slider
+          data-slider-fullwidth
+          data-dots="{{ settings.dots_style }}"
+          data-options='{"watchCSS": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 4000, "pauseAutoPlayOnHover": false}'
           {% endif %}>
 
           {{ section_images }}
         </div>
 
-        <div class="brick__block brick__block--text{% if enable_slider %} brick__block--slider{% endif %}"
+        <div
+          class="brick__block brick__block--text{% if enable_slider %} brick__block--slider{% endif %}"
           {% if style != blank %}
-            style="{{ style }}"
+          style="{{ style }}"
           {% endif %}
           {{ block.shopify_attributes }}>
           <div class="brick__block__text">
-            <div class="hero__content hero__content--compact{% if enable_text_slider %} grid--mobile-slider{% else %} hero__content--no-padding{% endif %} slider__text-custom"
+            <div
+              class="hero__content hero__content--compact{% if enable_text_slider %} grid--mobile-slider{% else %} hero__content--no-padding{% endif %} slider__text-custom"
               {% if enable_text_slider %}
-                data-slider="BrickSlider--{{ section.id }}"
-                data-slider-desktop
-                data-dots="{{ settings.dots_style }}"
-                data-options='{"watchCSS": true, "wrapAround": true, "pageDots": true, "prevNextButtons": false, "autoPlay": 4000, "pauseAutoPlayOnHover": false }'
+              data-slider="BrickSlider--{{ section.id }}"
+              data-slider-desktop
+              data-dots="{{ settings.dots_style }}"
+              data-options='{"watchCSS": true, "wrapAround": true, "pageDots": true, "prevNextButtons": false, "autoPlay": 4000, "pauseAutoPlayOnHover": false }'
               {% endif %}>
 
               {%- if accordion_blocks.size > 0 -%}
@@ -267,11 +274,10 @@
 
                 {%- if enable_text_slider -%}
                   <div
-                    class="hero__slide grid-item slider__slide-custom" 
+                    class="hero__slide grid-item slider__slide-custom"
                     data-slide="{{ block.id }}"
                     data-slide-index="{{ forloop.index0 }}"
-                    {{ block.shopify_attributes }}
-                  >
+                    {{ block.shopify_attributes }}>
                 {%- endif -%}
 
                 {%- case block.type -%}
@@ -324,13 +330,13 @@
                     {%- if block.settings.title != blank -%}
                       {%- assign animation_order = animation_order | plus: 1 -%}
                       {%- assign font_size_class = block.settings.text_size | prepend: 'heading-size-' -%}
-                      <h2 class="hero__title {{ font_size_class }} block-padding"
+                      <h2
+                        class="hero__title {{ font_size_class }} block-padding"
                         data-aos="hero"
                         data-aos-anchor="{{ animation_anchor }}"
                         data-aos-order="{{ animation_order }}"
                         {{ block.shopify_attributes }}
-                        style="{{ block_style }}"
-                      >
+                        style="{{ block_style }}">
                         {{ block.settings.title }}
                       </h2>
                     {%- endif -%}
@@ -339,13 +345,13 @@
                     {%- if block.settings.subheading != blank -%}
                       {%- assign animation_order = animation_order | plus: 1 -%}
                       {%- assign font_size_class = block.settings.text_size | prepend: 'subheading-size-' -%}
-                      <p class="hero__subheading {{ font_size_class }} block-padding"
+                      <p
+                        class="hero__subheading {{ font_size_class }} block-padding"
                         data-aos="hero"
                         data-aos-anchor="{{ animation_anchor }}"
                         data-aos-order="{{ animation_order }}"
                         {{ block.shopify_attributes }}
-                        style="{{ block_style }}"
-                      >
+                        style="{{ block_style }}">
                         {{ block.settings.subheading }}
                       </p>
                     {%- endif -%}
@@ -354,13 +360,13 @@
                     {%- if block.settings.text != blank -%}
                       {%- assign animation_order = animation_order | plus: 1 -%}
                       {%- assign font_size_class = block.settings.text_size | prepend: 'body-size-' -%}
-                      <div class="hero__rte {{ font_size_class }} {{ block.settings.text_style }} block-padding"
+                      <div
+                        class="hero__rte {{ font_size_class }} {{ block.settings.text_style }} block-padding"
                         data-aos="hero"
                         data-aos-anchor="{{ animation_anchor }}"
                         data-aos-order="{{ animation_order }}"
                         {{ block.shopify_attributes }}
-                        style="{{ block_style }}"
-                      >
+                        style="{{ block_style }}">
                         {{ block.settings.text }}
                       </div>
                     {%- endif -%}
@@ -393,13 +399,13 @@
                         <div class="hero__button-group">
                       {%- endif -%}
 
-                      <div class="hero__button block-padding"
+                      <div
+                        class="hero__button block-padding"
                         data-aos="hero"
                         data-aos-anchor="{{ animation_anchor }}"
                         data-aos-order="{{ animation_order }}"
                         {{ block.shopify_attributes }}
-                        style="{{ block_style }}"
-                      >
+                        style="{{ block_style }}">
                         <a href="{{ block.settings.button_url | default: '#!' }}" class="btn {{ button_style }} {{ block.settings.button_size }} {{ block.settings.button_type }}">
                           <span>{{ block.settings.button_text }}</span>
 
@@ -409,10 +415,10 @@
                         </a>
                       </div>
 
-                    {%- if last_button_of_group -%}
-                      </div>
+                      {%- if last_button_of_group -%}
+                        </div>
+                      {%- endif -%}
                     {%- endif -%}
-                  {%- endif -%}
 
                   {%- when 'divider' -%}
                     {%- assign animation_order = animation_order | plus: 1 -%}
@@ -422,7 +428,8 @@
                       data-aos-order="{{ animation_order }}"
                     {%- endcapture -%}
 
-                    {%- render 'divider' block: block, attributes: attributes -%}
+                    {%- render 'divider' block: block
+                      , attributes: attributes -%}
 
                   {%- when 'accordion' -%}
                     {%- assign title = block.settings.title -%}
@@ -436,8 +443,7 @@
                         data-aos-anchor="{{ animation_anchor }}"
                         data-aos-order="{{ animation_order }}"
                         {{ block.shopify_attributes }}
-                        style="{{ block_style }}"
-                      >
+                        style="{{ block_style }}">
                         <summary class="accordion__title" data-collapsible-trigger>
                           {%- if block.settings.show_icon -%}
                             {%- liquid
@@ -508,14 +514,15 @@
                       endcapture
                     -%}
 
-                    <div class="hero__media block-padding"
+                    <div
+                      class="hero__media block-padding"
                       data-aos="hero"
                       data-aos-anchor="{{ animation_anchor }}"
                       data-aos-order="{{ animation_order }}"
                       style="{{ block_style }}"
-                      {{ block.shopify_attributes }}
-                    >
-                      {%- render 'image' image: block.settings.image, sizes: sizes -%}
+                      {{ block.shopify_attributes }}>
+                      {%- render 'image' image: block.settings.image
+                        , sizes: sizes -%}
                     </div>
 
                   {%- when 'video' -%}
@@ -534,22 +541,30 @@
                       endcapture
                     -%}
 
-                    <div class="hero__media block-padding"
+                    <div
+                      class="hero__media block-padding"
                       data-aos="hero"
                       data-aos-anchor="{{ animation_anchor }}"
                       data-aos-order="{{ animation_order }}"
                       style="{{ block_style }}"
-                      {{ block.shopify_attributes }}
-                    >
-                      <div class="video-background" {{ attributes }} style="--aspect-ratio: {{ video_aspect_ratio }};">
+                      {{ block.shopify_attributes }}>
+                      <div
+                        class="video-background"
+                        {{ attributes }}
+                        style="--aspect-ratio: {{ video_aspect_ratio }};">
                         {%- if video != nil -%}
-                          <video-background class="video__player" data-video-player data-video-id="{{ section.id }}-video-background">
+                          <video-background
+                            class="video__player"
+                            data-video-player
+                            data-video-id="{{ section.id }}-video-background">
                             <template data-video-template>
                               {{ video | video_tag: image_size: '500x', autoplay: true, loop: true, muted: true, controls: false }}
                             </template>
                           </video-background>
                         {%- else -%}
-                          {%- render 'image' placeholder: 'lifestyle-1', aspect_ratio: video_aspect_ratio, attributes: attributes -%}
+                          {%- render 'image' placeholder: 'lifestyle-1'
+                            , aspect_ratio: video_aspect_ratio
+                            , attributes: attributes -%}
                         {%- endif -%}
                       </div>
                     </div>
@@ -566,7 +581,8 @@
                       assign block_style = block_style | append: style_products
                     -%}
 
-                    <div class="hero__products grid block-padding"
+                    <div
+                      class="hero__products grid block-padding"
                       data-aos="hero"
                       data-aos-anchor="{{ animation_anchor }}"
                       data-aos-order="{{ animation_order }}"
@@ -709,7 +725,8 @@
                       assign block_style = block_style | append: style_collection
                     -%}
 
-                    <div class="hero__collections block-padding grid{% if collection_grid_items_counter == button_empty_counter %} hide-image-border{% endif %}"
+                    <div
+                      class="hero__collections block-padding grid{% if collection_grid_items_counter == button_empty_counter %} hide-image-border{% endif %}"
                       data-aos="hero"
                       data-aos-anchor="{{ animation_anchor }}"
                       data-aos-order="{{ animation_order }}"
