@@ -19648,7 +19648,7 @@ body.has-header-transparent
   border-bottom: none;
   border-right: none;
   margin: 0;
-  font-size: calc(0.625rem * var(--FONT-ADJUST-BODY));
+  font-size: var(--font-16-tiege);
 }
 @media only screen and (min-width: 990px) {
   .popout--group .popout__toggle,
