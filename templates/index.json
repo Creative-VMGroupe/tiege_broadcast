@@ -1190,6 +1190,7 @@
       "blocks": {
         "instafeed_app_block_VRCANX": {
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "disabled": true,
           "settings": {
             "title": "@tiegehanley",
             "title_color": "",
@@ -1198,10 +1199,40 @@
             "margin_bottom": 0,
             "html_area": ""
           }
+        },
+        "vibe_instagram_feed_grid_LqpgpK": {
+          "type": "shopify:\/\/apps\/vibe-instagram-feed\/blocks\/grid\/a89f8a1d-e2e4-49c3-8d2c-363211f74779",
+          "settings": {
+            "instagram_feed_id": "661b4d2f0c3d90f6a2c43c42",
+            "post_click_action": "popup",
+            "items_per_row_lg": "3",
+            "items_per_row_xs": "1",
+            "item_spacing_lg": 0,
+            "item_spacing_xs": 0,
+            "loading_mode": false,
+            "item_cta": "SEE MORE",
+            "item_product_cta": "SHOP THIS LOOK",
+            "item_ratio": "1\/1",
+            "blocktitle": "@tiegehanley",
+            "heading_lg": 36,
+            "heading_xs": 36,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod.",
+            "description_lg": 16,
+            "description_xs": 16,
+            "text_alignment": "center",
+            "spacing_text_vs_posts_lg": 24,
+            "spacing_text_vs_posts_xs": 24,
+            "top_padding_lg": 0,
+            "bottom_padding_lg": 0,
+            "top_padding_xs": 0,
+            "bottom_padding_xs": 0,
+            "custom_css": ""
+          }
         }
       },
       "block_order": [
-        "instafeed_app_block_VRCANX"
+        "instafeed_app_block_VRCANX",
+        "vibe_instagram_feed_grid_LqpgpK"
       ],
       "custom_css": [
 
