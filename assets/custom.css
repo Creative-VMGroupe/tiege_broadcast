@@ -39,3 +39,10 @@
   gap: 22px
 }
 }
+.sliderule__panel {
+  position: relative;
+  height: 0;
+}
+.sliderule__panel.is-active {
+  height: auto;
+}
