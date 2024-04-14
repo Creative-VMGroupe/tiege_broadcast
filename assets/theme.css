@@ -24709,6 +24709,7 @@ product-siblings {
   --dot-margin: 6px;
   --dot-margin-offset: calc(var(--dot-margin) * -1);
   --dot-width: 23px;
+  --dot-width-tiege: 16px;
   --width-indicator: calc(var(--dot-width) + (var(--dot-margin) * 2));
   --padding: calc(var(--width-indicator) + var(--inner));
   --width-line: 1px;
@@ -25162,8 +25163,8 @@ body.has-header-sticky .timeline {
   position: absolute;
   top: 50%;
   left: var(--dot-margin);
-  width: var(--dot-width);
-  height: var(--dot-width);
+  width: var(--dot-width-tiege);
+  height: var(--dot-width-tiege);
   padding: 0;
   margin-top: calc((var(--dot-width) / 2) * -1);
   cursor: pointer;
