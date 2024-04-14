@@ -3195,7 +3195,8 @@ dialog[closing] {
  */
 .grid {
   display: grid;
-  gap: var(--gap);
+  /* gap: var(--gap); */
+  gap: 30px 10px;
   grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
 }
 body.has-line-design.grid-compact .grid {
