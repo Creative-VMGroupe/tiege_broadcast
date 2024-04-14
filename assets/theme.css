@@ -23977,7 +23977,7 @@ dialog.is-loading .loader {
 @media only screen and (max-width: 749px) {
   .quick-add__button {
     --btn-size: 36px;
-    --btn-offset: 5px;
+    --btn-offset: 15px;
     position: absolute;
     bottom: var(--btn-offset);
     left: var(--btn-offset);
