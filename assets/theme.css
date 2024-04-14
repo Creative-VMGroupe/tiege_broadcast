@@ -17598,7 +17598,7 @@ popout-select {
 }
 
 .popout__toggle .icon-filter {
-  --icon-size: 14px;
+  --icon-size: 18px;
   margin: -5px 7px -5px 0;
   transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
