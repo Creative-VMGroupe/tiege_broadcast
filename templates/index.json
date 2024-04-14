@@ -1207,7 +1207,7 @@
             "post_click_action": "popup",
             "items_per_loading": 4,
             "items_per_row_lg": "4",
-            "items_per_row_xs": "3",
+            "items_per_row_xs": "1",
             "item_spacing_lg": 0,
             "item_spacing_xs": 0,
             "loading_mode": false,
