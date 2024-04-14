@@ -79,6 +79,8 @@
   --error: var(--COLOR-ERROR);
   --error-bg: var(--COLOR-ERROR-BG);
   --header-overlay-color: transparent;
+--font-16-tiege: 16px;
+--font-14-tiege: 14px;
 }
 
 .palette--contrast {
@@ -13475,7 +13477,7 @@ main-search .input-holder {
 .product-item__title {
   position: relative;
   font-weight: var(--FONT-WEIGHT-BODY);
-  font-size: calc(1rem * var(--FONT-ADJUST-BODY));
+  font-size: var(--font-16-tiege);
   color: inherit;
   margin: 0;
   transition: color 0.3s;
@@ -13483,17 +13485,18 @@ main-search .input-holder {
 @media only screen and (max-width: 749px) {
   .product-item__title {
     margin: 0;
+    font-size: var(--font-14-tiege);
   }
 }
 
 .product-item__cutline,
 .product-item__price {
-  font-size: calc(var(--font-2) * var(--FONT-ADJUST-BODY));
+  font-size: var(--font-16-tiege)
 }
 @media only screen and (max-width: 749px) {
   .product-item__cutline,
   .product-item__price {
-    font-size: calc(0.9rem * var(--FONT-ADJUST-BODY));
+    font-size: var(--font-14-tiege)
   }
 }
 
