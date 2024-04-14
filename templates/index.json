@@ -1190,7 +1190,6 @@
       "blocks": {
         "instafeed_app_block_VRCANX": {
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
-          "disabled": true,
           "settings": {
             "title": "@tiegehanley",
             "title_color": "",
@@ -1202,6 +1201,7 @@
         },
         "vibe_instagram_feed_grid_LqpgpK": {
           "type": "shopify:\/\/apps\/vibe-instagram-feed\/blocks\/grid\/a89f8a1d-e2e4-49c3-8d2c-363211f74779",
+          "disabled": true,
           "settings": {
             "instagram_feed_id": "661b4d2f0c3d90f6a2c43c42",
             "post_click_action": "popup",
