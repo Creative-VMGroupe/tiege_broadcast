@@ -10074,7 +10074,7 @@ body.has-header-transparent
     opacity: 1;
   }
   .hero__content.flickity-enabled .flickity-page-dots {
-    bottom: 0;
+    bottom: -15px;
     padding: 0 var(--outer);
   }
   .text-left .hero__content.flickity-enabled .flickity-page-dots {
