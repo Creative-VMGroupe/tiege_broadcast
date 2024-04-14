@@ -101,7 +101,7 @@
                           </h3>
                         {%- endif -%}
 
-                        <div class="faq-list__item-content">
+                        <div class="faq-list__item-content body-size-{{ section.settings.text_size }}">
                           {{ block.settings.text }}
                         </div>
                       </div>
@@ -246,6 +246,15 @@
             "step": 1,
             "default": 6
           },
+    {
+        "type": "range",
+        "id": "text_size",
+        "label": "Text size",
+        "min": 1,
+        "max": 8,
+        "step": 1,
+        "default": 3
+    },          
     {
       "type": "header",
       "content": "Icon"
