@@ -13475,7 +13475,7 @@ main-search .input-holder {
 .product-item__title {
   position: relative;
   font-weight: var(--FONT-WEIGHT-BODY);
-  font-size: var(--FONT-PRODUCT-TITLE-TIEGE);
+  font-size: calc(1rem * var(--FONT-ADJUST-BODY));
   color: inherit;
   margin: 0;
   transition: color 0.3s;
@@ -13566,7 +13566,7 @@ main-search .input-holder {
 }
 
 .product-information .price {
-  font-size: var(--FONT-PRODUCT-TITLE-TIEGE);
+  font-size: inherit;
   color: var(--text-light);
 }
 @media only screen and (max-width: 749px) {
@@ -23977,7 +23977,7 @@ dialog.is-loading .loader {
 @media only screen and (max-width: 749px) {
   .quick-add__button {
     --btn-size: 36px;
-    --btn-offset: 15px;
+    --btn-offset: 5px;
     position: absolute;
     bottom: var(--btn-offset);
     left: var(--btn-offset);
@@ -25161,7 +25161,7 @@ body.has-header-sticky .timeline {
 
 .timeline__dot__button {
   position: absolute;
-  top: 55%;
+  top: 50%;
   left: var(--dot-margin);
   width: var(--dot-width-tiege);
   height: var(--dot-width-tiege);
@@ -25171,7 +25171,7 @@ body.has-header-sticky .timeline {
 }
 @media only screen and (min-width: 750px) {
   .timeline__dot__button {
-    left: 60%;
+    left: 50%;
     top: var(--dot-margin);
     margin: 0 0 0 calc((var(--dot-width) / 2) * -1);
   }
@@ -25435,8 +25435,7 @@ body.has-header-sticky .timeline {
 .btn-cart_text-custom {
   display: flex !important;
   align-items: center;
-font-size: 16px;
-letter-spacing: 1px;
+  letter-spacing: 1px;
 }
 .level-guide-member-single-tier_container {
   text-align:center
@@ -25529,6 +25528,7 @@ letter-spacing: 1px;
 }
 .rc-template__radio-group .rc-radio .rc-radio__input {
   margin: 0;
+  font-size: 
 }
 .rc-template__radio-group .rc-radio .rc-radio__label {
   gap: 5px;
