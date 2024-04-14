@@ -46,3 +46,10 @@
 .sliderule__panel.is-visible {
   height: auto;
 }
+.sliderow.is-hiding {
+  opacity: 1;
+  visibility: visible;
+}
+.sliderow.is-hidden {
+  display: none;
+}
