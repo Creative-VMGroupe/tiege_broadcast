@@ -25643,3 +25643,8 @@ div.rc_popup {
 #insta-feed h2 {
   margin: 60px 0 !important;
 }
+/*Global*/
+@media only screen and (max-width: 749px) {
+  .grid--mobile-slider {
+    scroll-padding: 0;
+  }}
