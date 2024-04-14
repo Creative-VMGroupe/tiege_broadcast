@@ -1205,8 +1205,9 @@
           "settings": {
             "instagram_feed_id": "661b4d2f0c3d90f6a2c43c42",
             "post_click_action": "popup",
-            "items_per_row_lg": "3",
-            "items_per_row_xs": "1",
+            "items_per_loading": 4,
+            "items_per_row_lg": "4",
+            "items_per_row_xs": "3",
             "item_spacing_lg": 0,
             "item_spacing_xs": 0,
             "loading_mode": false,
