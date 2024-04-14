@@ -687,7 +687,7 @@
         "default_open": true,
         "title": "How To",
         "heading_size": 7,
-        "subheading_size": 6,
+        "subheading_size": 5,
         "show_icon": false,
         "icon_name": "icon-award",
         "icon_size": 20,
