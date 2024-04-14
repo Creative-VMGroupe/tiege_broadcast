@@ -529,8 +529,8 @@
         "width": "wrapper--full-padded",
         "bg_color": "#ffffff",
         "color": "",
-        "padding_top": 50,
-        "padding_bottom": 50,
+        "padding_top": 60,
+        "padding_bottom": 60,
         "layout_mobile": "slider"
       }
     },
@@ -688,6 +688,7 @@
         "title": "How To",
         "heading_size": 7,
         "subheading_size": 5,
+        "text_size": 3,
         "show_icon": false,
         "icon_name": "icon-award",
         "icon_size": 20,
@@ -832,6 +833,7 @@
         "title": "FAQ",
         "heading_size": 7,
         "subheading_size": 6,
+        "text_size": 3,
         "show_icon": false,
         "icon_name": "icon-award",
         "icon_size": 20,
