@@ -25625,6 +25625,14 @@ div.rc_popup {
     height: 28px!important;
     top: 4px!important;
 }
+@media only screen and (max-width: 749px) {
+  .popout--group {
+   width: 30%;
+  }
+  .popout--sort {
+    width: 30%;
+  }
+}
 /*Cart Drawer*/
 .cart__sub-custom {
   font-size: calc(1.5rem * var(--FONT-ADJUST-BODY)) !important;
