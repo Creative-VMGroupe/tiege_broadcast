@@ -25654,6 +25654,11 @@ div.rc_popup {
 .cart__quantity-custom  {
   border-color: black !important;
 }
+/*QUICK VIEW*/
+.product-quick-add__form .product__title {
+  display: flex;
+}
+/*instafeed*/
 #insta-feed h2 {
   margin: 60px 0 !important;
 }
