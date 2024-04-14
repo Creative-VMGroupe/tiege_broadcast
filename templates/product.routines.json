@@ -1071,58 +1071,6 @@
         "padding_bottom": 0
       }
     },
-    "section_reviews_8Finzg": {
-      "type": "section-reviews",
-      "blocks": {
-        "review_Frc3Dc": {
-          "type": "review",
-          "disabled": true,
-          "settings": {
-            "title": "Jeremy Usborne",
-            "subheading": "Industry Expert",
-            "review_text": "Use this text to showcase a review from one of your customers. A great review is honest and speaks to the concerns of your customers.",
-            "review_url": ""
-          }
-        },
-        "review_dMmTBr": {
-          "type": "review",
-          "disabled": true,
-          "settings": {
-            "title": "Willy Bridge",
-            "subheading": "Industry Expert",
-            "review_text": "Use this text to showcase a review from one of your customers. A great review is honest and speaks to the concerns of your customers.",
-            "review_url": ""
-          }
-        },
-        "review_JdiXBT": {
-          "type": "review",
-          "settings": {
-            "title": "Kenneth Powell",
-            "subheading": "Industry Expert",
-            "review_text": "Use this text to showcase a review from one of your customers. A great review is honest and speaks to the concerns of your customers.",
-            "review_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "review_Frc3Dc",
-        "review_dMmTBr",
-        "review_JdiXBT"
-      ],
-      "disabled": true,
-      "settings": {
-        "show_featured_image": true,
-        "image_aspect_ratio": 1.3,
-        "show_quotation_marks": true,
-        "text_align": "text-left",
-        "text_size": 4,
-        "bg_color": "",
-        "color": "",
-        "card_bg_color": "",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
     "171061224373a1e0d4": {
       "type": "apps",
       "blocks": {
@@ -1169,7 +1117,6 @@
     "shipping",
     "related",
     "section_recent_products_KDiXJb",
-    "section_reviews_8Finzg",
     "171061224373a1e0d4"
   ]
 }
