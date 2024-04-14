@@ -25537,8 +25537,8 @@ body.has-header-sticky .timeline {
     background: black;
    -webkit-appearance: none;
     padding: 0;
-    width: 16px;
-    height: 16px;
+    width: 16px !important;
+    height: 16px !important;
 }
 .rc-template__radio-group .rc-radio .rc-radio__label {
   gap: 5px;
