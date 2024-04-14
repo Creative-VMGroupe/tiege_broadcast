@@ -25532,6 +25532,9 @@ body.has-header-sticky .timeline {
 .rc-template__radio-group .rc-radio .rc-radio__label {
   gap: 5px;
   justify-content: center;
+  letter-spacing: .2em;
+  flex-direction: row-reverse!important;
+  flex: 1!important;
 }
 .rc-template__radio-group .rc-radio:not(:first-child) {
   border-color: black !important;
