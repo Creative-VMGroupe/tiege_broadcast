@@ -43,6 +43,6 @@
   position: relative;
   height: 0;
 }
-.sliderule__panel.is-active {
+.sliderule__panel.is-visible {
   height: auto;
 }
