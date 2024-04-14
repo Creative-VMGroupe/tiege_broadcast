@@ -25452,7 +25452,7 @@ body.has-header-sticky .timeline {
 }
 .slider__text-custom {
   margin: 0 auto !important; 
-  gap: 15px !important;
+  /* gap: 15px !important; */
   padding: 0 !important;
 }
 .slider__slide-custom {
