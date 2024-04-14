@@ -25161,7 +25161,7 @@ body.has-header-sticky .timeline {
 
 .timeline__dot__button {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: var(--dot-margin);
   width: var(--dot-width-tiege);
   height: var(--dot-width-tiege);
@@ -25171,7 +25171,7 @@ body.has-header-sticky .timeline {
 }
 @media only screen and (min-width: 750px) {
   .timeline__dot__button {
-    left: 50%;
+    left: 60%;
     top: var(--dot-margin);
     margin: 0 0 0 calc((var(--dot-width) / 2) * -1);
   }
