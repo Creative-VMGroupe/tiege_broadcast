@@ -4878,7 +4878,7 @@ hr.hr--color,
 .preorder-box,
 .badge-box,
 .search-submit {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-family: var(--FONT-STACK-BODY);
   font-weight: var(--FONT-WEIGHT-BODY);
   font-size: calc(11px * var(--FONT-ADJUST-BODY));
