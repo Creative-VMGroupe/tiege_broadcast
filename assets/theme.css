@@ -25531,7 +25531,8 @@ body.has-header-sticky .timeline {
 .rc-template__radio-group .rc-radio .rc-radio__input {
   margin: 0;
   accent-color: black;
-  
+  height: 14px !important;
+  width: 14px !important;
 }
 
 .rc-template__radio-group .rc-radio .rc-radio__label {
