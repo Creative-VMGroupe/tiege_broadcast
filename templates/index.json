@@ -1195,6 +1195,7 @@
             "title_color": "",
             "alignment": "center",
             "margin_top": 60,
+            "margin_bottom": 0,
             "html_area": ""
           }
         }
