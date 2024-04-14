@@ -46,6 +46,3 @@
 .sliderule__panel.is-visible {
   height: auto;
 }
-.sliderule__panel.is-visible > .sliderow--back {
-  display: none;
-}
