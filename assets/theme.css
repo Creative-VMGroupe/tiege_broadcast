@@ -13475,7 +13475,7 @@ main-search .input-holder {
 .product-item__title {
   position: relative;
   font-weight: var(--FONT-WEIGHT-BODY);
-  font-size: calc(1rem * var(--FONT-ADJUST-BODY));
+  font-size: var(--FONT-PRODUCT-TITLE-TIEGE);
   color: inherit;
   margin: 0;
   transition: color 0.3s;
@@ -13566,7 +13566,7 @@ main-search .input-holder {
 }
 
 .product-information .price {
-  font-size: inherit;
+  font-size: var(--FONT-PRODUCT-TITLE-TIEGE);
   color: var(--text-light);
 }
 @media only screen and (max-width: 749px) {
