@@ -25536,6 +25536,11 @@ body.has-header-sticky .timeline {
   flex-direction: row-reverse!important;
   flex: 1!important;
 }
+@media (min-width: 750px) and (max-width: 1415px) {
+  .rc-template__radio-group .rc-radio .rc-radio__label {
+    letter-spacing: 0;
+  }
+}
 .rc-template__radio-group .rc-radio:not(:first-child) {
   border-color: black !important;
 }
