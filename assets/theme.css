@@ -25631,7 +25631,10 @@ div.rc_popup {
   }
   .popout--sort {
     width: 30%;
+    display: flex;
+    justify-content: center;
   }
+
 }
 /*Cart Drawer*/
 .cart__sub-custom {
