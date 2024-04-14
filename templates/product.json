@@ -223,9 +223,9 @@
           "type": "text-slide",
           "settings": {
             "subheading": "Proof",
-            "subheading_size": 8,
+            "subheading_size": 7,
             "title": "★★★★★★",
-            "heading_size": 4,
+            "heading_size": 3,
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p><p>- Name of Reviewer<\/p>",
             "text_size": 3,
             "text_style": "font-body",
@@ -237,10 +237,30 @@
             "show_arrow": false,
             "image": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO3.png"
           }
+        },
+        "text_slide_BN6rwT": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "Proof",
+            "subheading_size": 7,
+            "title": "★★★★★★",
+            "heading_size": 3,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p><p>- Name of Reviewer<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "button_text": "View 1000+ Reviews",
+            "button_url": "",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "image": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png"
+          }
         }
       },
       "block_order": [
-        "text_slide_F6A3Rj"
+        "text_slide_F6A3Rj",
+        "text_slide_BN6rwT"
       ],
       "custom_css": [
         "h2 {color: #00ad2d;}"
