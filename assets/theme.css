@@ -25528,7 +25528,7 @@ body.has-header-sticky .timeline {
   border: 1px solid black;
   border-radius: 300px;
 }
-.rc-template__radio-group .rc-radio .rc-radio__input {
+/* .rc-template__radio-group .rc-radio .rc-radio__input {
     margin: 0;
     appearance: none;
     box-sizing: content-box;
@@ -25539,7 +25539,7 @@ body.has-header-sticky .timeline {
     padding: 0;
     width: 16px !important;
     height: 16px !important;
-}
+} */
 .rc-template__radio-group .rc-radio .rc-radio__label {
   gap: 5px;
   justify-content: center;
