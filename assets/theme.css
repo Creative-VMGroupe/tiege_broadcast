@@ -13608,7 +13608,7 @@ main-search .input-holder {
 }
 
 .sale .new-price {
-  color: var(--COLOR-SALE);
+  color: var(--COLOR-TEXT-DARK);
 }
 
 .new-price {
