@@ -414,6 +414,7 @@
       "block_order": [
         "comparable_products_static_comparison_table_RRbgri"
       ],
+      "disabled": true,
       "custom_css": [
         ".comparable-selected-products .comparable-container {overflow: hidden;}",
         ".comparable-selected-products .product-price-wrap {display: none;}",
