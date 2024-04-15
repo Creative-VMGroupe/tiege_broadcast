@@ -25663,9 +25663,12 @@ div.rc_popup {
     width: calc(100vw - 40px);
   }
 }
-  .product-quick-add__form .select-popout {
+@media (min-width: 750px) {
+   .product-quick-add__form .select-popout {
     width: 360px;
-  }
+  } 
+}
+
 .product-quick-add__form .product__title {
   display: flex;
 }
