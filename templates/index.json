@@ -13,7 +13,7 @@
         "overlay_color": "#000000",
         "show_overlay_text": true,
         "title": "Uncomplicated",
-        "heading_size": 8,
+        "heading_size": 7,
         "description": "The solution for handsome skin guaranteed.",
         "text_size": 3,
         "flex_align": "align--middle-left",
@@ -348,7 +348,7 @@
         "layout_mobile": "1",
         "bg_color": "#f7f7f7",
         "color": "",
-        "padding_top": 50,
+        "padding_top": 60,
         "padding_bottom": 50
       }
     },
@@ -386,9 +386,9 @@
             "subheading": "★★★★★",
             "subheading_size": 4,
             "title": "\"Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.\"",
-            "heading_size": 4,
+            "heading_size": 3,
             "text": "<p>- Name of Reviewer<\/p>",
-            "text_size": 4,
+            "text_size": 3,
             "text_style": "font-body",
             "button_text": "Learn more",
             "button_url": "",
@@ -616,8 +616,8 @@
         "layout_mobile": "1",
         "bg_color": "#f7f7f7",
         "color": "",
-        "padding_top": 50,
-        "padding_bottom": 50
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "section_video_W9NxLi": {
@@ -633,7 +633,7 @@
         "overlay_color": "#000000",
         "show_overlay_text": false,
         "title": "",
-        "heading_size": 8,
+        "heading_size": 7,
         "description": "",
         "text_size": 3,
         "flex_align": "align--middle-center",
@@ -740,7 +740,7 @@
       ],
       "settings": {
         "title": "Our Difference",
-        "heading_size": 8,
+        "heading_size": 7,
         "layout": "grid",
         "grid": 6,
         "align_heading": "text-center",
@@ -762,7 +762,7 @@
           "type": "heading",
           "settings": {
             "title": "The Science",
-            "heading_size": 8
+            "heading_size": 7
           }
         },
         "text_RJVT4V": {
@@ -810,7 +810,7 @@
       "settings": {
         "text_align_center": true,
         "heading": "Real People, Real Results",
-        "heading_size": 8,
+        "heading_size": 7,
         "description": "<p>We are obsessed with providing all men simple, effective, and accessible skin care to help them maximize their confidence.<\/p>",
         "link_text": "See Proof",
         "link_url": "",
