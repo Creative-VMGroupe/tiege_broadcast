@@ -25688,9 +25688,9 @@ div.rc_popup {
   .product-quick-add__form .rc-template__radio-group .rc-radio .rc-radio__label {
     flex-direction: row !important;
     position: absolute;
-    font-size: 12px;
+    font-size: 14px;
     right: 2px;
-   
+   letter-spacing: .1em;
   }
 .product-quick-add__form .rc-template__radio-group .rc-radio .rc-radio__label[data-label-onetime] {
    width: 343px;
