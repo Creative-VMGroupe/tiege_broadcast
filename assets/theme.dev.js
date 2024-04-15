@@ -7230,7 +7230,7 @@
       constructor(el) {
         this.sliderule = el;
         this.key = this.sliderule.id;
-        const btnSelector = `[${selectors$y.slideruleOpen}='${this.key}']`;
+        const btnSelector = `.sliderow[${selectors$y.slideruleOpen}='${this.key}']`;
         this.exitSelector = `.sliderow.is-hidden[${selectors$y.slideruleOpen}='${this.key}']`;
         this.trigger = document.querySelector(btnSelector);
         this.exit = document.querySelectorAll(this.exitSelector);
