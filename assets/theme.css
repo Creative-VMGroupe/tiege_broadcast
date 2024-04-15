@@ -25671,6 +25671,11 @@ div.rc_popup {
   .product-quick-add__form .select-popout {
     width: 350px;
   }
+  .product-quick-add__form .select-popout__toggle {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
 }
 /*instafeed*/
 #insta-feed h2 {
