@@ -20,31 +20,10 @@
     },
     "section_hero_KpG8aH": {
       "type": "section-hero",
-      "blocks": {
-        "heading_9yzrUQ": {
-          "type": "heading",
-          "settings": {
-            "title": "Sustainability",
-            "heading_size": 7
-          }
-        },
-        "text_3UMYgJ": {
-          "type": "text",
-          "settings": {
-            "description": "Tell your brand's story through images.",
-            "text_size": 3,
-            "text_style": "font-body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_9yzrUQ",
-        "text_3UMYgJ"
-      ],
       "settings": {
         "height": "screen-height-one-half",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/tiege_sustanability_del.jpg",
+        "image_1": "shopify:\/\/shop_images\/Drop.png",
         "link": "",
         "mobile_height": "screen-height-three-quarters--mobile",
         "flex_align_desktop": "align--middle-center-desktop",
