@@ -25571,8 +25571,8 @@ fieldset .select-popout__toggle span {
 }
 @media (min-width: 750px) and (max-width: 1127px) {
     .rc-template__radio-group .rc-radio .rc-radio__label {
-      font-size: 12px;
-    letter-spacing: 0;
+      font-size: 14px;
+    letter-spacing: 0.04em;
   }
 }
 .rc-template__radio-group .rc-radio:not(:first-child) {
