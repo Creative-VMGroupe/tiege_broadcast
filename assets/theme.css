@@ -25659,11 +25659,10 @@ div.rc_popup {
   .product-quick-add__content {
     max-width: none !important;
   }  
+}
   .product-quick-add__form .select-popout {
     width: calc(100vw - 40px);
   }
-}
-
 .product-quick-add__form .product__title {
   display: flex;
 }
