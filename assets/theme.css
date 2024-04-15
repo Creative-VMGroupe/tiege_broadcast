@@ -25655,6 +25655,12 @@ div.rc_popup {
   border-color: black !important;
 }
 /*QUICK VIEW*/
+@media (max-width: 749px) {
+.product-quick-add__content {
+  max-width: none;
+}  
+}
+
 .product-quick-add__form .product__title {
   display: flex;
 }
