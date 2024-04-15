@@ -25658,6 +25658,9 @@ div.rc_popup {
 .product-quick-add__form .product__title {
   display: flex;
 }
+.product-quick-add__form {
+  padding: 30px 20px;
+}
 /*instafeed*/
 #insta-feed h2 {
   margin: 60px 0 !important;
