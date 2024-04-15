@@ -369,6 +369,30 @@
         "padding_bottom": 0
       }
     },
+    "171319612680298cf4": {
+      "type": "apps",
+      "blocks": {
+        "ldt_product_compare_widget_HtjF8t": {
+          "type": "shopify:\/\/apps\/ldt-product-compare\/blocks\/widget\/4efd09c5-8a59-401e-a364-e3440f693913",
+          "settings": {
+            "title": "Compare Our Systems",
+            "description": "",
+            "products": [
+              "level-1-essential-routine-1",
+              "level-2-advanced-routine",
+              "the-collection-snowboard-liquid"
+            ],
+            "attribute_set": ""
+          }
+        }
+      },
+      "block_order": [
+        "ldt_product_compare_widget_HtjF8t"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
     "1713193502d18b128b": {
       "type": "apps",
       "blocks": {
@@ -529,6 +553,7 @@
     "section_double_slider_new_Gd6kgG",
     "section_double_slider_new_3LK9XP",
     "section_accordion_new_hde9c4",
+    "171319612680298cf4",
     "1713193502d18b128b",
     "section_accordion_new_RAhUrC",
     "171198624333c1780b",
