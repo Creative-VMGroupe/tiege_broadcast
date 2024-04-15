@@ -25510,9 +25510,9 @@ body.has-header-sticky .timeline {
     font-size: calc(var(--font-7) * var(--FONT-ADJUST-HEADING)) !important;
   }
 }
-#shopify-block-recharge_subscriptions_subscription_widget_8WKxnT {
+#shopify-block-recharge_subscriptions_subscription_widget_8WKxnT .rc-radio__label{
   opacity: 0;
-  animation: fadeInRecharge 1.5s ease-in-out forwards;
+  animation: fadeInRecharge 2 ease-in-out forwards;
 }
 @keyframes fadeInRecharge {
     from {
