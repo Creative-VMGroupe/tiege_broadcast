@@ -25512,7 +25512,7 @@ body.has-header-sticky .timeline {
 }
 #shopify-block-recharge_subscriptions_subscription_widget_8WKxnT label{
   opacity: 0;
-  animation: fadeInRecharge 2 ease-in-out forwards;
+  animation: fadeInRecharge 2s ease-in-out forwards;
 }
 @keyframes fadeInRecharge {
     from {
