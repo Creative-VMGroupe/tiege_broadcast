@@ -169,32 +169,6 @@
             "text_style": "font-body",
             "padding_bottom": 30
           }
-        },
-        "text_prjpUy": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Sincerely,<\/p>",
-            "text_size": 3,
-            "text_style": "font-body",
-            "padding_bottom": 16
-          }
-        },
-        "image_TTEzbc": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/tiege_sig_del.png",
-            "image_width": 20,
-            "padding_bottom": 16
-          }
-        },
-        "text_qNWtnD": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Kelly Thornton<\/p><p>Founder & CEO<\/p>",
-            "text_size": 3,
-            "text_style": "font-body",
-            "padding_bottom": 0
-          }
         }
       },
       "block_order": [
@@ -210,10 +184,7 @@
         "subheading_mFzEik",
         "text_t4QiDh",
         "subheading_pPr3UD",
-        "text_hpqgpC",
-        "text_prjpUy",
-        "image_TTEzbc",
-        "text_qNWtnD"
+        "text_hpqgpC"
       ],
       "settings": {
         "width": "wrapper--narrow",
@@ -397,7 +368,8 @@
         "instafeed_app_block_Fpe7BM"
       ],
       "custom_css": [
-
+        "#insta-feed {background-color: #f7f7f7; padding-top: 60px;}",
+        "#insta-feed h2 {margin-top: 0 !important;}"
       ],
       "settings": {
         "include_margins": false
