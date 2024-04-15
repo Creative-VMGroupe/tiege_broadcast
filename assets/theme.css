@@ -25677,6 +25677,9 @@ div.rc_popup {
   }
 }
 /*Cart Drawer*/
+.free-shipping {
+  border: none;
+}
 .cart-block--top {
   border-bottom: none;
 }
