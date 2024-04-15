@@ -25510,7 +25510,10 @@ body.has-header-sticky .timeline {
     font-size: calc(var(--font-7) * var(--FONT-ADJUST-HEADING)) !important;
   }
 }
-#shopify-block-recharge_subscriptions_subscription_widget_8WKxnT label{
+.recharge-subscription-widget {
+  min-height: 130px;
+}
+.recharge-subscription-widget label{
   opacity: 0;
   animation: fadeInRecharge 2s ease-in-out forwards;
 }
