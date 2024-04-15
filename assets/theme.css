@@ -25656,9 +25656,12 @@ div.rc_popup {
 }
 /*QUICK VIEW*/
 @media (max-width: 749px) {
-.product-quick-add__content {
-  max-width: none !important;
-}  
+  .product-quick-add__content {
+    max-width: none !important;
+  }  
+  .product-quick-add__form .select-popout {
+    width: calc(100vw - 40px);
+  }
 }
 
 .product-quick-add__form .product__title {
@@ -25681,9 +25684,6 @@ div.rc_popup {
   }
   .product-quick-add__form .radio__legend__value {
     display: none;
-  }
-  .product-quick-add__form .select-popout {
-    width: calc(100vw - 40px);
   }
   .product-quick-add__form .select-popout__toggle {
     display: flex;
