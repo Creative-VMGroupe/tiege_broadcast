@@ -25,14 +25,14 @@
           "type": "heading",
           "settings": {
             "title": "Become A Tiege Hanley Emerald Vip",
-            "heading_size": 8
+            "heading_size": 7
           }
         },
         "text_zddB3y": {
           "type": "text",
           "settings": {
             "description": "Tell your brand's story through images.",
-            "text_size": 4,
+            "text_size": 3,
             "text_style": "font-body"
           }
         }
@@ -63,7 +63,7 @@
           "type": "heading",
           "settings": {
             "title": "At Tiege Hanley",
-            "text_size": 8,
+            "text_size": 7,
             "padding_bottom": 16
           }
         },
@@ -167,7 +167,7 @@
           "type": "heading",
           "settings": {
             "title": "Membership Tiers",
-            "text_size": 8,
+            "text_size": 7,
             "padding_bottom": 16
           }
         },
@@ -225,7 +225,7 @@
           "type": "heading",
           "settings": {
             "title": "How Do I Get All Of This?",
-            "text_size": 8,
+            "text_size": 7,
             "padding_bottom": 16
           }
         },
