@@ -294,6 +294,49 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "section_rich_text_YWBiRt": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_e8Mxbf": {
+          "type": "heading",
+          "settings": {
+            "title": "#changingskincareformen",
+            "text_size": 7,
+            "padding_bottom": 16
+          }
+        },
+        "image_Bnzx8M": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/skin_logo_del.webp",
+            "image_width": 20,
+            "padding_bottom": 16
+          }
+        },
+        "text_wtJwrY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 2,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_e8Mxbf",
+        "image_Bnzx8M",
+        "text_wtJwrY"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-center",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
     }
   },
   "order": [
@@ -304,6 +347,7 @@
     "section_rich_text_ryAmny",
     "section_rich_text_XBBbBb",
     "section_text_row_4qA4id",
-    "section_double_yhTVDr"
+    "section_double_yhTVDr",
+    "section_rich_text_YWBiRt"
   ]
 }
