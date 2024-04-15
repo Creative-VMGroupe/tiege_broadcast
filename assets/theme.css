@@ -25661,6 +25661,17 @@ div.rc_popup {
 .product-quick-add__form {
   padding: 30px 20px;
 }
+@media only screen and (max-width: 749px) {
+  .product-quick-add__form .select__fieldset, .product-quick-add__form .radio__fieldset {
+    position: relative;
+  }
+  .product-quick-add__form .radio__legend {
+    position: absolute;
+  }
+  .product-quick-add__form .select-popout {
+    width: 350px;
+  }
+}
 /*instafeed*/
 #insta-feed h2 {
   margin: 60px 0 !important;
