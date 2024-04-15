@@ -55,10 +55,146 @@
         "bg_color": "",
         "color": "#ffffff"
       }
+    },
+    "section_rich_text_aieYzU": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_EJyThd": {
+          "type": "heading",
+          "settings": {
+            "title": "We are proud members of the Skin Cancer Foundation",
+            "text_size": 7,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_EJyThd"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-center",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_double_M3cHpz": {
+      "type": "section-double",
+      "blocks": {
+        "heading_Mewf4m": {
+          "type": "heading",
+          "settings": {
+            "title": "Something worth fighting for",
+            "text_size": 7,
+            "padding_bottom": 16
+          }
+        },
+        "text_GJBUjY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our co-founder’s father passed away from melanoma at age 54. So, making products that protect guys from the sun’s harmful rays and donating to The Skin Cancer Foundation has been core to Tiege Hanley since day one.<\/p><p>Our first donation to The Skin Cancer Foundation came within a few months in business and every year after. As we grew so has our donating, and to date we’ve donated over $39,000.<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_Mewf4m",
+        "text_GJBUjY"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/tiege_skin2_del.webp",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "padding_lr": 50,
+        "reverse_blocks": false,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_rich_text_ryAmny": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_Qze6m9": {
+          "type": "heading",
+          "settings": {
+            "title": "With your support we can make an impact",
+            "text_size": 7,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_Qze6m9"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-center",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_rich_text_XBBbBb": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_Eb37Li": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Introducing",
+            "text_size": 3,
+            "padding_bottom": 16
+          }
+        },
+        "heading_LQFtpw": {
+          "type": "heading",
+          "settings": {
+            "title": "Skin Cancer is the #1 most common cancer in the world",
+            "text_size": 7,
+            "padding_bottom": 16
+          }
+        },
+        "text_LBN8kV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_Eb37Li",
+        "heading_LQFtpw",
+        "text_LBN8kV"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-center",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
     }
   },
   "order": [
     "main",
-    "section_hero_KpG8aH"
+    "section_hero_KpG8aH",
+    "section_rich_text_aieYzU",
+    "section_double_M3cHpz",
+    "section_rich_text_ryAmny",
+    "section_rich_text_XBBbBb"
   ]
 }
