@@ -7230,8 +7230,8 @@
       constructor(el) {
         this.sliderule = el;
         this.key = this.sliderule.id;
-        const btnSelector = `.sliderow:not(.is-hidden)[${selectors$y.slideruleOpen}='${this.key}']`;
-        this.exitSelector = `.sliderow.is-hidden[${selectors$y.slideruleOpen}='${this.key}']`;
+        const btnSelector = `.sliderow:not(.is-active)[${selectors$y.slideruleOpen}='${this.key}']`;
+        this.exitSelector = `.sliderow.is-active[${selectors$y.slideruleOpen}='${this.key}']`;
         this.trigger = document.querySelector(btnSelector);
         this.exit = document.querySelectorAll(this.exitSelector);
         this.pane = document.querySelector(`[${selectors$y.sliderulePane}]`);
