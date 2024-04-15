@@ -25475,6 +25475,9 @@ body.has-header-sticky .timeline {
     padding-right: 16px !important;
   }
 }
+.product-item__price__holder {
+  margin-top: 0;
+}
 /* PDP */
 .comparable-selected-products .comparable-container {
   overflow: hidden;
