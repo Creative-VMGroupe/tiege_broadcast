@@ -20,27 +20,6 @@
     },
     "section_hero_KpG8aH": {
       "type": "section-hero",
-      "blocks": {
-        "heading_9yzrUQ": {
-          "type": "heading",
-          "settings": {
-            "title": "Image banner",
-            "heading_size": 7
-          }
-        },
-        "text_3UMYgJ": {
-          "type": "text",
-          "settings": {
-            "description": "Tell your brand's story through images.",
-            "text_size": 3,
-            "text_style": "font-body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_9yzrUQ",
-        "text_3UMYgJ"
-      ],
       "settings": {
         "height": "screen-height-one-half",
         "width": "wrapper--full",
@@ -59,17 +38,36 @@
     "section_rich_text_aieYzU": {
       "type": "section-rich-text",
       "blocks": {
+        "subheading_gdc8w6": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "MAKE AN IMPACT",
+            "text_size": 4,
+            "padding_bottom": 16
+          }
+        },
         "heading_EJyThd": {
           "type": "heading",
           "settings": {
-            "title": "We are proud members of the Skin Cancer Foundation",
+            "title": "Help Us Fight The #1 Cancer Impacting Men Around The World",
             "text_size": 7,
+            "padding_bottom": 16
+          }
+        },
+        "text_nx7XBi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are proud members of the Skin Cancer Foundation<\/p>",
+            "text_size": 5,
+            "text_style": "font-body",
             "padding_bottom": 16
           }
         }
       },
       "block_order": [
-        "heading_EJyThd"
+        "subheading_gdc8w6",
+        "heading_EJyThd",
+        "text_nx7XBi"
       ],
       "settings": {
         "width": "wrapper--narrow",
@@ -106,16 +104,16 @@
         "text_GJBUjY"
       ],
       "settings": {
-        "layout": "",
+        "layout": "is-reversed",
         "height": "screen-height-one-half",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/tiege_skin2_del.webp",
         "image_width": "one-half",
-        "text_alignment": "text-left",
+        "text_alignment": "text-center",
         "padding_lr": 50,
         "reverse_blocks": false,
-        "bg_color": "",
+        "bg_color": "#f7f7f7",
         "color": "",
         "padding_top": 0,
         "padding_bottom": 0
