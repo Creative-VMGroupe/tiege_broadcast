@@ -1110,7 +1110,7 @@
           "type": "buttons",
           "settings": {
             "button_text": "View the full guide",
-            "button_url": "shopify:\/\/pages\/level-guide-lp",
+            "button_url": "shopify:\/\/pages\/member-benefits",
             "button_type": "btn--secondary",
             "button_size": "btn--large",
             "button_style": "btn--solid",
