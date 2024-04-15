@@ -25667,6 +25667,10 @@ div.rc_popup {
   }
   .product-quick-add__form .radio__legend {
     position: absolute;
+    padding: 16px;
+  }
+  .product-quick-add__form .radio__legend__value {
+    display: none;
   }
   .product-quick-add__form .select-popout {
     width: 350px;
