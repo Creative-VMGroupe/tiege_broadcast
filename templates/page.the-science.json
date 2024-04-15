@@ -167,7 +167,7 @@
             "text": "<p>At the heart of our skin care line is the innovative peptide technology. Peptides are small protein fragments that have been shown to stimulate collagen production and reduce the appearance of wrinkles. This technology has been extensively studied and found to have numerous benefits for skin health and appearance. For instance, a <a href=\"https:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/PMC6981886\/\">2019 study<\/a> found that peptides can stimulate skin growth and repair, improve skin barrier function, and even have antimicrobial properties.<\/p><p>Tiege Hanley has harnessed the power of these peptides in its formulations, providing you with products that work at a cellular level to improve your skin's appearance and health. We invite you to experience the difference that a scientifically designed, peptide-based skin care regimen can make.<\/p><p>Let’s address the elephant in the room– there are many far too many beauty products out there. It’s really hard to know which to pick.<\/p><p>We sent Aaron on a mission to compare retail products to those found in the Tiege Hanley Systems. Here’s what he found:<\/p><p>Khiels and Neutrogena are amazing unisex brands but they have unfortunately high costs. Lower in the article we’ll show exactly <strong>why<\/strong> their costs are higher, and <strong>how<\/strong> we’ve been able to 📈 quality while 📉 costs.<\/p><p>Tiege was founded by <strong>three men<\/strong> who understood that men’s skin produces more sebum and tends to be oiler. Men are different, their products should be too.<\/p>",
             "text_size": 3,
             "text_style": "font-body",
-            "padding_bottom": 30
+            "padding_bottom": 0
           }
         }
       },
@@ -192,7 +192,7 @@
         "bg_color": "",
         "color": "",
         "padding_top": 60,
-        "padding_bottom": 0
+        "padding_bottom": 60
       }
     },
     "section_video_qzUgcT": {
