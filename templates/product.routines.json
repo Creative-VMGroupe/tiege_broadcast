@@ -828,6 +828,37 @@
       "settings": {
         "include_margins": false
       }
+    },
+    "1713198580f2f6c371": {
+      "type": "apps",
+      "blocks": {
+        "comparable_products_static_comparison_table_HptrbX": {
+          "type": "shopify:\/\/apps\/comparable-products\/blocks\/static_comparison_table\/a0463732-e49b-4c6e-b22b-3158b9b069a8",
+          "settings": {
+            "products": [
+              "level-1-essential-routine-1",
+              "level-2-advanced-routine",
+              "the-collection-snowboard-liquid"
+            ],
+            "heading_text": "",
+            "highlight_type": "no_highlight",
+            "highlight_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "comparable_products_static_comparison_table_HptrbX"
+      ],
+      "custom_css": [
+        ".comparable-selected-products .comparable-container {overflow: hidden;}",
+        ".comparable-selected-products .product-price-wrap {display: none;}",
+        ".comparable-selected-products .product-table-cell-container-wrap {padding: 0;}",
+        ".comparable-selected-products .add-to-cart-wrap {display: none;}",
+        ".product-table__header-row .product-table__cell {padding: 0;}"
+      ],
+      "settings": {
+        "include_margins": false
+      }
     }
   },
   "order": [
@@ -843,6 +874,7 @@
     "1711051410c76bca1d",
     "related",
     "section_recent_products_KDiXJb",
-    "171061224373a1e0d4"
+    "171061224373a1e0d4",
+    "1713198580f2f6c371"
   ]
 }
