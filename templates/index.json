@@ -429,7 +429,7 @@
             "text_size": 4,
             "text_style": "font-body",
             "button_text": "Learn more",
-            "button_url": "",
+            "button_url": "shopify:\/\/pages\/membership-benefit",
             "button_type": "btn--white",
             "button_size": "",
             "button_style": "btn--outline",
