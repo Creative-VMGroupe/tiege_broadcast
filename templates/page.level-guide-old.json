@@ -25,14 +25,14 @@
           "type": "heading",
           "settings": {
             "title": "Level Guide",
-            "heading_size": 8
+            "heading_size": 7
           }
         },
         "text_Dihbfe": {
           "type": "text",
           "settings": {
             "description": "Tell your brand's story through images.",
-            "text_size": 5,
+            "text_size": 3,
             "text_style": "font-body"
           }
         }
@@ -63,7 +63,7 @@
           "type": "heading",
           "settings": {
             "title": "Skincare Routine",
-            "text_size": 8,
+            "text_size": 7,
             "padding_bottom": 16
           }
         }
@@ -76,8 +76,8 @@
         "align_text": "text-left",
         "bg_color": "#ffffff",
         "color": "",
-        "padding_top": 50,
-        "padding_bottom": 50
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "section_double_cjpW8U": {
@@ -87,7 +87,7 @@
           "type": "heading",
           "settings": {
             "title": "Level 1: Essential Routine",
-            "text_size": 8,
+            "text_size": 7,
             "padding_bottom": 16
           }
         },
@@ -95,7 +95,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
+            "text_size": 3,
             "text_style": "font-body",
             "padding_bottom": 16
           }
@@ -144,10 +144,10 @@
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
-            "title": "Step 1: Single Product",
+            "title": "Single Product",
             "heading_size": 6,
             "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "text_size": 4,
+            "text_size": 3,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -163,10 +163,10 @@
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
-            "title": "Step 2: Single Product",
+            "title": "Single Product",
             "heading_size": 6,
             "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "text_size": 4,
+            "text_size": 3,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -182,10 +182,10 @@
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
-            "title": "Step 3: Single Product",
+            "title": "Single Product",
             "heading_size": 6,
             "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "text_size": 4,
+            "text_size": 3,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -201,10 +201,10 @@
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
-            "title": "Step 4: Single Product",
+            "title": "Single Product",
             "heading_size": 6,
             "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "text_size": 4,
+            "text_size": 3,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -222,7 +222,7 @@
       ],
       "settings": {
         "title": "Included in this System",
-        "heading_size": 6,
+        "heading_size": 7,
         "layout": "grid",
         "grid": 4,
         "align_heading": "text-left",
@@ -231,8 +231,8 @@
         "width": "wrapper--full-padded",
         "bg_color": "#ffffff",
         "color": "",
-        "padding_top": 50,
-        "padding_bottom": 50,
+        "padding_top": 60,
+        "padding_bottom": 60,
         "layout_mobile": "slider"
       }
     },
@@ -243,7 +243,7 @@
           "type": "heading",
           "settings": {
             "title": "Level 2: Advanced Routine",
-            "text_size": 8,
+            "text_size": 7,
             "padding_bottom": 16
           }
         },
@@ -251,7 +251,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
+            "text_size": 3,
             "text_style": "font-body",
             "padding_bottom": 16
           }
@@ -399,7 +399,7 @@
           "type": "heading",
           "settings": {
             "title": "Level 3: Anti-aging Routine",
-            "text_size": 8,
+            "text_size": 7,
             "padding_bottom": 16
           }
         },
@@ -407,7 +407,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
+            "text_size": 3,
             "text_style": "font-body",
             "padding_bottom": 16
           }
@@ -456,10 +456,10 @@
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
-            "title": "Step 1: Single Product",
+            "title": "Single Product",
             "heading_size": 6,
             "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "text_size": 4,
+            "text_size": 3,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -475,10 +475,10 @@
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
-            "title": "Step 2: Single Product",
+            "title": "Single Product",
             "heading_size": 6,
             "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "text_size": 4,
+            "text_size": 3,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -494,10 +494,10 @@
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
-            "title": "Step 3: Single Product",
+            "title": "Single Product",
             "heading_size": 6,
             "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "text_size": 4,
+            "text_size": 3,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -513,10 +513,10 @@
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
-            "title": "Step 4: Single Product",
+            "title": "Single Product",
             "heading_size": 6,
             "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "text_size": 4,
+            "text_size": 3,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -534,7 +534,7 @@
       ],
       "settings": {
         "title": "Included in this System",
-        "heading_size": 6,
+        "heading_size": 7,
         "layout": "grid",
         "grid": 4,
         "align_heading": "text-left",
@@ -543,8 +543,8 @@
         "width": "wrapper--full-padded",
         "bg_color": "#ffffff",
         "color": "",
-        "padding_top": 50,
-        "padding_bottom": 50,
+        "padding_top": 60,
+        "padding_bottom": 60,
         "layout_mobile": "slider"
       }
     },
@@ -555,7 +555,7 @@
           "type": "heading",
           "settings": {
             "title": "Acne Routine",
-            "text_size": 8,
+            "text_size": 7,
             "padding_bottom": 16
           }
         }
@@ -579,7 +579,7 @@
           "type": "heading",
           "settings": {
             "title": "Level 1: Acne Routine",
-            "text_size": 8,
+            "text_size": 7,
             "padding_bottom": 16
           }
         },
@@ -587,7 +587,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
+            "text_size": 3,
             "text_style": "font-body",
             "padding_bottom": 16
           }
@@ -636,10 +636,10 @@
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
-            "title": "Step 1: Single Product",
+            "title": "Single Product",
             "heading_size": 6,
             "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "text_size": 4,
+            "text_size": 3,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -655,10 +655,10 @@
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
-            "title": "Step 2: Single Product",
+            "title": "Single Product",
             "heading_size": 6,
             "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "text_size": 4,
+            "text_size": 3,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -674,10 +674,10 @@
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
-            "title": "Step 3: Single Product",
+            "title": "Single Product",
             "heading_size": 6,
             "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "text_size": 4,
+            "text_size": 3,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -693,10 +693,10 @@
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
-            "title": "Step 4: Single Product",
+            "title": "Single Product",
             "heading_size": 6,
             "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "text_size": 4,
+            "text_size": 3,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -714,7 +714,7 @@
       ],
       "settings": {
         "title": "Included in this System",
-        "heading_size": 6,
+        "heading_size": 7,
         "layout": "grid",
         "grid": 4,
         "align_heading": "text-left",
@@ -735,7 +735,7 @@
           "type": "heading",
           "settings": {
             "title": "Level 2: Advanced Acne Routine",
-            "text_size": 8,
+            "text_size": 7,
             "padding_bottom": 16
           }
         },
@@ -743,7 +743,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
+            "text_size": 3,
             "text_style": "font-body",
             "padding_bottom": 16
           }
@@ -792,10 +792,10 @@
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
-            "title": "Step 1: Single Product",
+            "title": "Single Product",
             "heading_size": 6,
             "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "text_size": 4,
+            "text_size": 3,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -804,17 +804,17 @@
             "show_arrow": false
           }
         },
-        "image_3NkpNr": {
+        "image_ceAkLr": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Wash.png",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
-            "title": "Step 2: Single Product",
+            "title": "Single Product",
             "heading_size": 6,
             "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "text_size": 4,
+            "text_size": 3,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -823,17 +823,17 @@
             "show_arrow": false
           }
         },
-        "image_GNEMMz": {
+        "image_XpHrBD": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Wash.png",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
-            "title": "Step 3: Single Product",
+            "title": "Single Product",
             "heading_size": 6,
             "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "text_size": 4,
+            "text_size": 3,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -842,17 +842,17 @@
             "show_arrow": false
           }
         },
-        "image_e7rDKK": {
+        "image_4LaWkP": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Wash.png",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
-            "title": "Step 4: Single Product",
+            "title": "Single Product",
             "heading_size": 6,
             "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "text_size": 4,
+            "text_size": 3,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -864,13 +864,13 @@
       },
       "block_order": [
         "image_wm6aCH",
-        "image_3NkpNr",
-        "image_GNEMMz",
-        "image_e7rDKK"
+        "image_ceAkLr",
+        "image_XpHrBD",
+        "image_4LaWkP"
       ],
       "settings": {
         "title": "Included in this System",
-        "heading_size": 6,
+        "heading_size": 7,
         "layout": "grid",
         "grid": 4,
         "align_heading": "text-left",
@@ -891,7 +891,7 @@
           "type": "heading",
           "settings": {
             "title": "Routine Quiz",
-            "text_size": 8,
+            "text_size": 7,
             "padding_bottom": 16
           }
         },
@@ -899,7 +899,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
+            "text_size": 3,
             "text_style": "font-body",
             "padding_bottom": 16
           }
@@ -947,6 +947,8 @@
             "title": "@tiegehanley",
             "title_color": "",
             "alignment": "center",
+            "margin_top": 0,
+            "margin_bottom": 0,
             "html_area": ""
           }
         }
