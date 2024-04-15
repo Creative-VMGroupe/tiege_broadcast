@@ -25690,6 +25690,7 @@ div.rc_popup {
     position: absolute;
     font-size: 12px;
     right: 2px;
+    width: 343px;
   }
   .product-quick-add__form .rc-template__radio-group .rc-radio {
     position: relative;
