@@ -178,6 +178,121 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
+    },
+    "section_text_row_4qA4id": {
+      "type": "section-text-row",
+      "blocks": {
+        "icon_H9xU8E": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-shield",
+            "icon_size": 20,
+            "icon_color": "#545454",
+            "title": "Sun Protection",
+            "heading_size": 4,
+            "text": "<p>Transactions are handled with bank-grade security.<\/p>",
+            "text_size": 3
+          }
+        },
+        "icon_NAz9yq": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-trophy",
+            "icon_size": 20,
+            "icon_color": "#545454",
+            "title": "Dollars Donated",
+            "heading_size": 4,
+            "text": "<p>Our secure checkout is quick and easy to use.<\/p>",
+            "text_size": 3
+          }
+        },
+        "icon_iPTQVX": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-chat",
+            "icon_size": 20,
+            "icon_color": "#545454",
+            "title": "Get Protected",
+            "heading_size": 4,
+            "text": "<p>Have questions? Get in touch with us at any time.<\/p>",
+            "text_size": 3
+          }
+        }
+      },
+      "block_order": [
+        "icon_H9xU8E",
+        "icon_NAz9yq",
+        "icon_iPTQVX"
+      ],
+      "settings": {
+        "title": "How You Can Make An Impact",
+        "heading_size": 7,
+        "layout": "grid",
+        "grid": 3,
+        "align_heading": "text-center",
+        "align_text": "text-center",
+        "icon_alignment": "icon--top",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "bg_color": "#f7f7f7",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "layout_mobile": "slider"
+      }
+    },
+    "section_double_yhTVDr": {
+      "type": "section-double",
+      "blocks": {
+        "heading_77aYTw": {
+          "type": "heading",
+          "settings": {
+            "title": "Get Involved",
+            "text_size": 7,
+            "padding_bottom": 16
+          }
+        },
+        "text_3biEU4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Shop Systems and Donate<\/p><p>Already a Tiege Guy? To donate, please log-in to your account and add a donation on to your next shipment.<\/p><p>New to Tiege Hanley? Click the button below to learn about our skin care systems and how you can add a donation to your system with Tiege Hanley membership.<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_NKzXmM": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Join Today",
+            "button_url": "shopify:\/\/pages\/membership-benefit",
+            "button_type": "btn--secondary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_77aYTw",
+        "text_3biEU4",
+        "buttons_NKzXmM"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_width": "one-half",
+        "text_alignment": "text-center",
+        "padding_lr": 50,
+        "reverse_blocks": false,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -186,6 +301,8 @@
     "section_rich_text_aieYzU",
     "section_double_M3cHpz",
     "section_rich_text_ryAmny",
-    "section_rich_text_XBBbBb"
+    "section_rich_text_XBBbBb",
+    "section_text_row_4qA4id",
+    "section_double_yhTVDr"
   ]
 }
