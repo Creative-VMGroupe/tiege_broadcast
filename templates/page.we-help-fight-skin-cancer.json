@@ -284,6 +284,7 @@
         "height": "screen-height-one-half",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/HARRYS_FW_PROD_0279_1.jpg",
         "image_width": "one-half",
         "text_alignment": "text-center",
         "padding_lr": 50,
