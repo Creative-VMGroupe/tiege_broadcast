@@ -7231,7 +7231,7 @@
         this.sliderule = el;
         this.key = this.sliderule.id;
         const btnSelector = `[${selectors$y.slideruleOpen}='${this.key}']`;
-        this.exitSelector = `[${selectors$y.slideruleClose}='${this.key}']`;
+        this.exitSelector = `[${selectors$y.slideruleOpen}='${this.key}']`;
         this.trigger = document.querySelector(btnSelector);
         this.exit = document.querySelectorAll(this.exitSelector);
         this.pane = document.querySelector(`[${selectors$y.sliderulePane}]`);
