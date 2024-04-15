@@ -25685,7 +25685,9 @@ div.rc_popup {
     align-items: center;
     padding: 10px 32px;
   }
-
+.product-quick-add__form .rc-template__radio-group .rc-radio .rc-radio__label {
+  flex-direction: row !important;
+}
 /*instafeed*/
 #insta-feed h2 {
   margin: 60px 0 !important;
