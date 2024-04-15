@@ -29,10 +29,10 @@
         "flex_align_desktop": "align--middle-center-desktop",
         "flex_align_mobile": "align--middle-center-mobile",
         "overlay_opacity": 0,
-        "overlay_color": "#000",
+        "overlay_color": "#000000",
         "show_overlay_text": false,
         "bg_color": "",
-        "color": "#FFFFFF"
+        "color": "#ffffff"
       }
     },
     "section_rich_text_HGVCbw": {
@@ -75,9 +75,9 @@
         "review_QxDdcL": {
           "type": "review",
           "settings": {
-            "title": "Willy Bridge",
-            "subheading": "Industry Expert",
-            "review_text": "Use this text to showcase a review from one of your customers. A great review is honest and speaks to the concerns of your customers.",
+            "title": "",
+            "subheading": "",
+            "review_text": "We’ve reinvented men’s skin care and changed the way  men think about their skin.",
             "review_url": ""
           }
         }
@@ -89,13 +89,13 @@
         "show_featured_image": false,
         "image_aspect_ratio": 1.3,
         "show_quotation_marks": true,
-        "text_align": "text-left",
-        "text_size": 4,
-        "bg_color": "",
+        "text_align": "text-center",
+        "text_size": 7,
+        "bg_color": "#f7f7f7",
         "color": "",
         "card_bg_color": "",
-        "padding_top": 50,
-        "padding_bottom": 50
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     }
   },
