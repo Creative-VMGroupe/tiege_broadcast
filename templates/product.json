@@ -534,6 +534,24 @@
       "settings": {
         "include_margins": false
       }
+    },
+    "1713193502d18b128b": {
+      "type": "apps",
+      "blocks": {
+        "comparable_products_product_specs_table_73YatF": {
+          "type": "shopify:\/\/apps\/comparable-products\/blocks\/product_specs_table\/a0463732-e49b-4c6e-b22b-3158b9b069a8",
+          "settings": {
+            "product": "{{product}}",
+            "heading_text": "Compare Our Systems"
+          }
+        }
+      },
+      "block_order": [
+        "comparable_products_product_specs_table_73YatF"
+      ],
+      "settings": {
+        "include_margins": false
+      }
     }
   },
   "order": [
@@ -544,6 +562,7 @@
     "section_accordion_new_RAhUrC",
     "171198624333c1780b",
     "related",
-    "1711936135ad982cf2"
+    "1711936135ad982cf2",
+    "1713193502d18b128b"
   ]
 }
