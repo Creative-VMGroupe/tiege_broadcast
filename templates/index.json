@@ -842,9 +842,9 @@
         "overlay_color": "#000000",
         "show_overlay_text": true,
         "title": "Aaron Marino",
-        "heading_size": 8,
+        "heading_size": 7,
         "description": "Talks facts about taking care of your skin.",
-        "text_size": 4,
+        "text_size": 3,
         "flex_align": "align--bottom-left",
         "flex_align_mobile": "align--bottom-left-mobile",
         "bg_color": "rgba(0,0,0,0)",
@@ -861,7 +861,7 @@
       "type": "section-collection-new",
       "settings": {
         "heading": "Our Bestsellers",
-        "heading_size": 8,
+        "heading_size": 7,
         "description": "",
         "layout": "inline",
         "link_text": "View All",
@@ -880,8 +880,8 @@
         "layout_mobile": "slider",
         "bg_color": "#000000",
         "color": "#ffffff",
-        "padding_top": 50,
-        "padding_bottom": 50
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "section_double_jKb3k6": {
@@ -1006,7 +1006,7 @@
       ],
       "settings": {
         "title": "A Quick Skincare Guide",
-        "heading_size": 8,
+        "heading_size": 7,
         "text": "<p>3 levels built to address your key skin concerns: Hydration, Crow's Feet, Dark Circles, & Anti-Aging.<\/p>",
         "text_size": 3,
         "text_alignment": "text-center",
@@ -1091,7 +1091,7 @@
           "type": "heading",
           "settings": {
             "title": "The Complete Guide",
-            "text_size": 8,
+            "text_size": 7,
             "padding_bottom": 16
           }
         },
@@ -1146,7 +1146,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Our high-quality skin care systems work to maximize results and eliminate guesswork for men of all skin types.<\/p>",
-            "text_size": 4,
+            "text_size": 3,
             "text_style": "font-body",
             "padding_bottom": 16
           }
@@ -1171,7 +1171,7 @@
       ],
       "settings": {
         "layout": "is-reversed",
-        "height": "image-height",
+        "height": "screen-height-one-half",
         "mobile_height": "screen-height-one-third--mobile",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png",
