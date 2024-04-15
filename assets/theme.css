@@ -25648,6 +25648,9 @@ div.rc_popup {
     height: 28px!important;
     top: 4px!important;
 }
+  .filter__price__input {
+    padding-right: 10px;
+  }
 @media only screen and (max-width: 749px) {
   .popout--group {
    width: 30%;
@@ -25656,9 +25659,6 @@ div.rc_popup {
     width: 30%;
     display: flex;
     justify-content: center;
-  }
-  .filter__price__input {
-    padding-right: 10px;
   }
 }
 /*Cart Drawer*/
