@@ -25685,7 +25685,7 @@ div.rc_popup {
   letter-spacing: 1px !important;
 }
 .cart__btn-custom{
-  font-size: calc(var(--font-2) * var(--FONT-ADJUST-HEADING)) !important;
+  font-size: 14px !important;
 }
 .cart__item-custom {
   margin: 15px !important;
