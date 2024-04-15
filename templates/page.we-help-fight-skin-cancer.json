@@ -292,8 +292,8 @@
         "text_alignment": "text-center",
         "padding_lr": 50,
         "reverse_blocks": false,
-        "bg_color": "",
-        "color": "",
+        "bg_color": "#000000",
+        "color": "#ffffff",
         "padding_top": 0,
         "padding_bottom": 0
       }
