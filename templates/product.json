@@ -106,27 +106,6 @@
           "settings": {
           }
         },
-        "essential_trust_badges_app_block_XTEtGz": {
-          "type": "shopify:\/\/apps\/essential-trust-badges\/blocks\/app-block\/0ff65b25-07e1-408e-950f-f54dd3d1751b",
-          "disabled": true,
-          "settings": {
-            "banner_display": "all",
-            "banner_id": "07becc1f-88fb-449c-86fa-a5a083cbd5f8"
-          }
-        },
-        "icon_1": {
-          "type": "icon",
-          "disabled": true,
-          "settings": {
-            "icon_name": "icon-email",
-            "icon_size": 20,
-            "icon_color": "#545454",
-            "title": "Free 30 Days Returns",
-            "text_size": 3,
-            "width": "full",
-            "padding_bottom": 16
-          }
-        },
         "tab_richtext_nDcaW6": {
           "type": "tab_richtext",
           "settings": {
@@ -160,18 +139,6 @@
             "bg_color": "",
             "padding_bottom": 16
           }
-        },
-        "upsell": {
-          "type": "upsell",
-          "disabled": true,
-          "settings": {
-            "upsell_product": "",
-            "upsell_product_list": [
-
-            ],
-            "bg_color": "",
-            "padding_bottom": 16
-          }
         }
       },
       "block_order": [
@@ -184,12 +151,9 @@
         "buttons",
         "text_e6RAMT",
         "metafield_icons_aLrgM3",
-        "essential_trust_badges_app_block_XTEtGz",
-        "icon_1",
         "tab_richtext_nDcaW6",
         "divider_1",
-        "complementary_products_C7V6rg",
-        "upsell"
+        "complementary_products_C7V6rg"
       ],
       "custom_css": [
         ".mock-notification {display: none;}",
@@ -558,6 +522,25 @@
       "settings": {
         "include_margins": false
       }
+    },
+    "1713195050c8f82219": {
+      "type": "apps",
+      "blocks": {
+        "ldt_product_compare_product_compare_list_4eiwft": {
+          "type": "shopify:\/\/apps\/ldt-product-compare\/blocks\/product-compare-list\/4efd09c5-8a59-401e-a364-e3440f693913",
+          "settings": {
+            "title": "Comparison Table",
+            "description": "",
+            "attribute_set": ""
+          }
+        }
+      },
+      "block_order": [
+        "ldt_product_compare_product_compare_list_4eiwft"
+      ],
+      "settings": {
+        "include_margins": false
+      }
     }
   },
   "order": [
@@ -569,6 +552,7 @@
     "section_accordion_new_RAhUrC",
     "171198624333c1780b",
     "related",
-    "1711936135ad982cf2"
+    "1711936135ad982cf2",
+    "1713195050c8f82219"
   ]
 }
