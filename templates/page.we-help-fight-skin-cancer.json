@@ -308,6 +308,7 @@
         },
         "image_Bnzx8M": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/skin_logo_del.webp",
             "image_width": 20,
@@ -337,6 +338,30 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
+    },
+    "1713201777b2f26263": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_DX8XhW": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "@tiegehanley",
+            "title_color": "",
+            "alignment": "center",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_DX8XhW"
+      ],
+      "custom_css": [
+        "#insta-feed {background-color: #f7f7f7; padding-top: 60px;}",
+        "#insta-feed h2 {margin-top: 0 !important;}"
+      ],
+      "settings": {
+        "include_margins": false
+      }
     }
   },
   "order": [
@@ -348,6 +373,7 @@
     "section_rich_text_XBBbBb",
     "section_text_row_4qA4id",
     "section_double_yhTVDr",
-    "section_rich_text_YWBiRt"
+    "section_rich_text_YWBiRt",
+    "1713201777b2f26263"
   ]
 }
