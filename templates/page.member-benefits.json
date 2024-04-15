@@ -145,7 +145,7 @@
       ],
       "settings": {
         "title": "Your Member Benefits Explained",
-        "heading_size": 6,
+        "heading_size": 7,
         "layout": "grid",
         "grid": 3,
         "align_heading": "text-center",
