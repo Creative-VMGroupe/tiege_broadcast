@@ -59,6 +59,7 @@
       id="sliderule-{{ key }}"
       data-sliderule="{{ link_level_next }}"
       data-scroll-lock-scrollable>
+      {% comment %}
       <div class="sliderow sliderow--back"
         data-animates="{{ link_level_next }}"
         data-animation="{{ animation_name }}"
@@ -72,6 +73,7 @@
         </button>
         {{ link_markup }}
       </div>
+      {% endcomment %}
       <div class="sliderow__links" data-links>
         {%- for link in link.links -%}
           {%- assign index_recursive = index | append: 'x' | append: forloop.index -%}
