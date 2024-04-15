@@ -24020,6 +24020,7 @@ dialog.is-loading .loader {
 
 .quick-add__button > span {
   pointer-events: none;
+  font-size: 14px;
 }
 
 @keyframes slideInUp {
