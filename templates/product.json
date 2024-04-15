@@ -522,25 +522,6 @@
       "settings": {
         "include_margins": false
       }
-    },
-    "1713195050c8f82219": {
-      "type": "apps",
-      "blocks": {
-        "ldt_product_compare_product_compare_list_4eiwft": {
-          "type": "shopify:\/\/apps\/ldt-product-compare\/blocks\/product-compare-list\/4efd09c5-8a59-401e-a364-e3440f693913",
-          "settings": {
-            "title": "Comparison Table",
-            "description": "",
-            "attribute_set": ""
-          }
-        }
-      },
-      "block_order": [
-        "ldt_product_compare_product_compare_list_4eiwft"
-      ],
-      "settings": {
-        "include_margins": false
-      }
     }
   },
   "order": [
@@ -552,7 +533,6 @@
     "section_accordion_new_RAhUrC",
     "171198624333c1780b",
     "related",
-    "1711936135ad982cf2",
-    "1713195050c8f82219"
+    "1711936135ad982cf2"
   ]
 }
