@@ -7218,8 +7218,8 @@
 
     const classes$p = {
       isVisible: 'is-visible',
-      isHiding: 'is-hidingA',
-      isHidden: 'is-hiddenA',
+      isHiding: 'is-hiding',
+      isHidden: 'is-hidden',
       focused: 'is-focused',
       scrolling: 'is-scrolling',
     };
