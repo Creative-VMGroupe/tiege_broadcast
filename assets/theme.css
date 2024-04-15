@@ -25668,6 +25668,8 @@ div.rc_popup {
   .product-quick-add__form .radio__legend {
     position: absolute;
     padding: 16px;
+    height: 82px;
+    display: flex;
   }
   .product-quick-add__form .radio__legend__value {
     display: none;
