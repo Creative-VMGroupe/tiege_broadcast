@@ -779,7 +779,7 @@
           "type": "button",
           "settings": {
             "link_text": "Learn More",
-            "link": "shopify:\/\/pages\/proof-lp",
+            "link": "shopify:\/\/pages\/the-science",
             "button_type": "btn--secondary",
             "button_size": "btn--large",
             "button_style": "btn--outline",
