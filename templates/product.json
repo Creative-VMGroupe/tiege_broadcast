@@ -216,30 +216,6 @@
         "padding_bottom": 0
       }
     },
-    "1713193502d18b128b": {
-      "type": "apps",
-      "blocks": {
-        "comparable_products_static_comparison_table_RRbgri": {
-          "type": "shopify:\/\/apps\/comparable-products\/blocks\/static_comparison_table\/a0463732-e49b-4c6e-b22b-3158b9b069a8",
-          "settings": {
-            "products": [
-              "level-1-essential-routine-1",
-              "level-2-advanced-routine",
-              "the-collection-snowboard-liquid"
-            ],
-            "heading_text": "",
-            "highlight_type": "no_highlight",
-            "highlight_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "comparable_products_static_comparison_table_RRbgri"
-      ],
-      "settings": {
-        "include_margins": false
-      }
-    },
     "section_double_slider_new_Gd6kgG": {
       "type": "section-double-slider-new",
       "blocks": {
@@ -429,6 +405,30 @@
         "padding_bottom": 0
       }
     },
+    "1713193502d18b128b": {
+      "type": "apps",
+      "blocks": {
+        "comparable_products_static_comparison_table_RRbgri": {
+          "type": "shopify:\/\/apps\/comparable-products\/blocks\/static_comparison_table\/a0463732-e49b-4c6e-b22b-3158b9b069a8",
+          "settings": {
+            "products": [
+              "level-1-essential-routine-1",
+              "level-2-advanced-routine",
+              "the-collection-snowboard-liquid"
+            ],
+            "heading_text": "",
+            "highlight_type": "no_highlight",
+            "highlight_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "comparable_products_static_comparison_table_RRbgri"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
     "section_accordion_new_RAhUrC": {
       "type": "section-accordion-new",
       "blocks": {
@@ -562,10 +562,10 @@
   },
   "order": [
     "main",
-    "1713193502d18b128b",
     "section_double_slider_new_Gd6kgG",
     "section_double_slider_new_3LK9XP",
     "section_accordion_new_hde9c4",
+    "1713193502d18b128b",
     "section_accordion_new_RAhUrC",
     "171198624333c1780b",
     "related",
