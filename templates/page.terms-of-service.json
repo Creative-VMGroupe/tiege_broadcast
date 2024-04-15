@@ -66,32 +66,19 @@
             "text_style": "font-body",
             "padding_bottom": 16
           }
-        },
-        "buttons_3JafV7": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "padding_bottom": 16
-          }
         }
       },
       "block_order": [
         "heading_hrVhJJ",
-        "text_3CGYc3",
-        "buttons_3JafV7"
+        "text_3CGYc3"
       ],
       "settings": {
         "width": "wrapper",
         "align_text": "text-center",
         "bg_color": "",
         "color": "",
-        "padding_top": 100,
-        "padding_bottom": 100
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     }
   },
