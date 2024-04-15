@@ -693,68 +693,6 @@
         "padding_bottom": 0
       }
     },
-    "section_accordion_NdXrTE": {
-      "type": "section-accordion",
-      "blocks": {
-        "text_yjDnEH": {
-          "type": "text",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
-          }
-        },
-        "text_ctetbG": {
-          "type": "text",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
-          }
-        },
-        "text_MmRGyf": {
-          "type": "text",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
-          }
-        },
-        "text_FRLfeV": {
-          "type": "text",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
-          }
-        },
-        "text_qyEjpp": {
-          "type": "text",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_yjDnEH",
-        "text_ctetbG",
-        "text_MmRGyf",
-        "text_FRLfeV",
-        "text_qyEjpp"
-      ],
-      "disabled": true,
-      "settings": {
-        "default_open": false,
-        "title": "FAQ",
-        "show_icon": false,
-        "icon_name": "icon-award",
-        "icon_size": 20,
-        "icon_color": "#545454",
-        "bg_color": "",
-        "color": "",
-        "border_color": "",
-        "width": "wrapper",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "1711051410c76bca1d": {
       "type": "apps",
       "blocks": {
@@ -814,61 +752,6 @@
       ],
       "settings": {
         "include_margins": false
-      }
-    },
-    "shipping": {
-      "type": "section-accordion",
-      "blocks": {
-        "shipping-0": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-fast-shipment",
-            "icon_size": 20,
-            "icon_color": "#545454",
-            "title": "Fast shipping",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
-          }
-        },
-        "shipping-1": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-box",
-            "icon_size": 20,
-            "icon_color": "#545454",
-            "title": "Order tracking",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
-          }
-        },
-        "shipping-2": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-chat",
-            "icon_size": 20,
-            "icon_color": "#545454",
-            "title": "Get in touch",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "shipping-0",
-        "shipping-1",
-        "shipping-2"
-      ],
-      "disabled": true,
-      "settings": {
-        "default_open": false,
-        "title": "Shipping",
-        "show_icon": false,
-        "icon_name": "icon-award",
-        "icon_size": 20,
-        "icon_color": "#545454",
-        "bg_color": "",
-        "color": "",
-        "border_color": "",
-        "width": "wrapper",
-        "padding_top": 0,
-        "padding_bottom": 0
       }
     },
     "related": {
@@ -957,9 +840,7 @@
     "section_accordion_new_DpxfiN",
     "faq",
     "section_accordion_new_4E9V9R",
-    "section_accordion_NdXrTE",
     "1711051410c76bca1d",
-    "shipping",
     "related",
     "section_recent_products_KDiXJb",
     "171061224373a1e0d4"
