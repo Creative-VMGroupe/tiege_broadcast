@@ -186,7 +186,7 @@
           "type": "icon",
           "settings": {
             "icon_name": "icon-shield",
-            "icon_size": 20,
+            "icon_size": 50,
             "icon_color": "#545454",
             "image": "shopify:\/\/shop_images\/sun-protection.png",
             "title": "Sun Protection",
@@ -199,7 +199,7 @@
           "type": "icon",
           "settings": {
             "icon_name": "icon-trophy",
-            "icon_size": 20,
+            "icon_size": 50,
             "icon_color": "#545454",
             "image": "shopify:\/\/shop_images\/Asset-1_4x_94d8ee25-9862-4bcd-8cef-c2ff5636fb17.png",
             "title": "Dollars Donated",
@@ -212,7 +212,7 @@
           "type": "icon",
           "settings": {
             "icon_name": "icon-chat",
-            "icon_size": 20,
+            "icon_size": 50,
             "icon_color": "#545454",
             "image": "shopify:\/\/shop_images\/get-protected.png",
             "title": "Get Protected",
