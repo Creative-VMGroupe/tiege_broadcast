@@ -395,7 +395,8 @@
             "button_type": "btn--white",
             "button_size": "",
             "button_style": "btn--outline",
-            "show_arrow": false
+            "show_arrow": false,
+            "image": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png"
           }
         },
         "text_slide_gDLxQn": {
@@ -404,7 +405,7 @@
             "subheading": "★★★★★",
             "subheading_size": 4,
             "title": "Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.",
-            "heading_size": 4,
+            "heading_size": 3,
             "text": "<p>- Name of Reviewer<\/p>",
             "text_size": 4,
             "text_style": "font-body",
@@ -413,7 +414,8 @@
             "button_type": "btn--white",
             "button_size": "",
             "button_style": "btn--outline",
-            "show_arrow": false
+            "show_arrow": false,
+            "image": "shopify:\/\/shop_images\/IMG_5261_VSCO.png"
           }
         },
         "text_slide_f7FiYT": {
@@ -422,7 +424,7 @@
             "subheading": "★★★★★",
             "subheading_size": 4,
             "title": "Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.",
-            "heading_size": 4,
+            "heading_size": 3,
             "text": "<p>- Name of Reviewer<\/p>",
             "text_size": 4,
             "text_style": "font-body",
