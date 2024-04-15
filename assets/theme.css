@@ -25661,7 +25661,9 @@ div.rc_popup {
 .product-quick-add__form {
   padding: 30px 20px;
 }
-
+.product-quick-add__form .product__title span {
+  font-size: 26px;
+}
   .product-quick-add__form .select__fieldset, .product-quick-add__form .radio__fieldset {
     position: relative;
   }
