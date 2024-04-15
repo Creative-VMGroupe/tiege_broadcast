@@ -25,9 +25,9 @@
           "type": "shopify:\/\/apps\/shop-quiz-product-recommender\/blocks\/inline-quiz\/672f3d48-fd3b-4227-8778-c6e58c4f8a98",
           "settings": {
             "quiz_id": "gWH2pX",
-            "quiz_height": 1000,
-            "quiz_autoscroll": false,
-            "quiz_fixed_height": false
+            "quiz_height": 800,
+            "quiz_autoscroll": true,
+            "quiz_fixed_height": true
           }
         }
       },
