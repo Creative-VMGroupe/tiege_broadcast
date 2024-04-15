@@ -25475,6 +25475,9 @@ body.has-header-sticky .timeline {
   }
 }
 /* PDP */
+.accordion-section .accordion {
+  border: none
+}
 .hero__subheading {
   text-transform: none;
 }
