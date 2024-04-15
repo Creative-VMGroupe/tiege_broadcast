@@ -7218,7 +7218,7 @@
 
     const classes$p = {
       isVisible: 'is-visible',
-      isHiding: 'is-hidingAA',
+      isHiding: 'is-hiding',
       isHidden: 'is-hidden',
       focused: 'is-focused',
       scrolling: 'is-scrolling',
@@ -7230,7 +7230,7 @@
       constructor(el) {
         this.sliderule = el;
         this.key = this.sliderule.id;
-        const btnSelector = `.sliderow[${selectors$y.slideruleOpen}='${this.key}']`;
+        const btnSelector = `.sliderow:not(.is-hidden)[${selectors$y.slideruleOpen}='${this.key}']`;
         this.exitSelector = `.sliderow.is-hidden[${selectors$y.slideruleOpen}='${this.key}']`;
         this.trigger = document.querySelector(btnSelector);
         this.exit = document.querySelectorAll(this.exitSelector);
