@@ -97,12 +97,59 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
+    },
+    "section_rich_text_abVwUy": {
+      "type": "section-rich-text",
+      "blocks": {
+        "text_NVa77p": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Four regular guys—inspired by real life experience, passion, insight and the desire to do good for our fellow men—who have reinvented men’s skin care and changed the way regular guys think about their skin.<br\/><br\/>Tiege Hanley's sole mission is to help guys look and feel amazing by providing a simplified skin care system.<br\/><br\/>We are truly \"Uncomplicated Skin Care for Men.\"<br\/><br\/>Aaron, Rob, Kelley & \"The Chemist\"<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "text_NVa77p"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-center",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "1713206343e4178672": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_C7HVwY": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "alignment": "center",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_C7HVwY"
+      ],
+      "settings": {
+        "include_margins": false
+      }
     }
   },
   "order": [
     "main",
     "section_hero_AKxdtT",
     "section_rich_text_HGVCbw",
-    "section_reviews_McPTbp"
+    "section_reviews_McPTbp",
+    "section_rich_text_abVwUy",
+    "1713206343e4178672"
   ]
 }
