@@ -174,7 +174,7 @@
       },
       "8554118278144459913": {
         "type": "shopify:\/\/apps\/ldt-product-compare\/blocks\/embed\/4efd09c5-8a59-401e-a364-e3440f693913",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       }
