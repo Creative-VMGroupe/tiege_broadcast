@@ -25518,7 +25518,7 @@ body.has-header-sticky .timeline {
   opacity: 0;
   animation: fadeInRecharge 2s ease-in-out forwards;
 }
-.recharge-subscription-widget .select-popout__toggle span {
+fieldset .select-popout__toggle span {
   margin-left: 15px;
 }
 @keyframes fadeInRecharge {
