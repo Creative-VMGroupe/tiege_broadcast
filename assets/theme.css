@@ -25657,7 +25657,7 @@ div.rc_popup {
 /*QUICK VIEW*/
 @media (max-width: 749px) {
 .product-quick-add__content {
-  max-width: none;
+  max-width: none !important;
 }  
 }
 
