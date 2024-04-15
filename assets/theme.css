@@ -25683,7 +25683,7 @@ div.rc_popup {
     display: none;
   }
   .product-quick-add__form .select-popout {
-    width: 335px;
+    width: calc(100vw - 40px);
   }
   .product-quick-add__form .select-popout__toggle {
     display: flex;
