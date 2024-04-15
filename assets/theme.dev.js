@@ -7375,7 +7375,7 @@
             const removeHidingClass = () => {
               element.classList.remove(classes$p.isHiding);
               if (parseInt(this.pane.getAttribute(selectors$y.sliderulePane)) !== oldPosition) {
-                // element.classList.add(classes$p.isHidden);
+                element.classList.add('is-active');
               }
 
               if (lastElement) {
