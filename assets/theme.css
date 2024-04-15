@@ -25514,6 +25514,7 @@ body.has-header-sticky .timeline {
   min-height: 133.62px;
 }
 .recharge-subscription-widget label{
+  height: 50px;
   opacity: 0;
   animation: fadeInRecharge 2s ease-in-out forwards;
 }
