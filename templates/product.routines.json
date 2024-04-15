@@ -186,47 +186,6 @@
         "padding_bottom": 0
       }
     },
-    "section_double_slider_wk8dA9": {
-      "type": "section-double-slider",
-      "blocks": {
-        "text_slide_UztTWq": {
-          "type": "text-slide",
-          "settings": {
-            "subheading": "",
-            "subheading_size": 4,
-            "title": "Willow Bark Extract",
-            "heading_size": 9,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
-            "text_style": "font-body",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--outline",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "text_slide_UztTWq"
-      ],
-      "disabled": true,
-      "settings": {
-        "layout": "is-reversed",
-        "height": "screen-height-three-quarters",
-        "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO3.png",
-        "image_2": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png",
-        "image_width": "one-half",
-        "text_alignment": "text-center",
-        "bg_color": "#f0f0f0",
-        "color": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "section_double_slider_new_ERgtDU": {
       "type": "section-double-slider-new",
       "blocks": {
@@ -536,109 +495,6 @@
         "layout_mobile": "slider"
       }
     },
-    "section_columns_WqpJx7": {
-      "type": "section-columns",
-      "blocks": {
-        "image_xqUYHR": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/HARRYS_FW_PROD_0279_1.jpg",
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "image_shape": "normal",
-            "title": "Step 1: Wash",
-            "heading_size": 6,
-            "text": "<p>Use Tiege Hanley's WASH facial cleanser. Wet your face, squeeze out the size of a nickel (yes, the coin) into your palm, rub it all over your wet face for about 10 seconds.<\/p>",
-            "text_size": 4,
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        },
-        "image_zRLKkf": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/HARRYS_FW_PORT_0529.jpg",
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "image_shape": "normal",
-            "title": "Step 2: Scrub",
-            "heading_size": 6,
-            "text": "<p>Why? Because your face is dirty.<\/p>",
-            "text_size": 4,
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        },
-        "image_GC8arG": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png",
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "image_shape": "normal",
-            "title": "Step 3:  AM Moisturize",
-            "heading_size": 6,
-            "text": "<p>Use Tiege Hanley's WASH facial cleanser. Wet your face, squeeze out the size of a nickel (yes, the coin) into your palm, rub it all over your wet face for about 10 seconds.<\/p>",
-            "text_size": 4,
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        },
-        "image_xbLnic": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO3.png",
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "image_shape": "normal",
-            "title": "Step 4: PM",
-            "heading_size": 6,
-            "text": "<p>Use Tiege Hanley's WASH facial cleanser. Wet your face, squeeze out the size of a nickel (yes, the coin) into your palm, rub it all over your wet face for about 10 seconds.<\/p>",
-            "text_size": 4,
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "image_xqUYHR",
-        "image_zRLKkf",
-        "image_GC8arG",
-        "image_xbLnic"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "How To",
-        "heading_size": 9,
-        "layout": "grid",
-        "grid": 2,
-        "align_heading": "text-left",
-        "align_text": "text-left",
-        "align_columns": "flex-align-top",
-        "width": "wrapper--full-padded",
-        "bg_color": "#ffffff",
-        "color": "",
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "layout_mobile": "slider"
-      }
-    },
     "section_accordion_new_DpxfiN": {
       "type": "section-accordion-new",
       "blocks": {
@@ -699,8 +555,8 @@
         "color": "#000000",
         "border_color": "",
         "width": "wrapper--full--custom",
-        "padding_top": 60,
-        "padding_bottom": 60
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "faq": {
@@ -844,8 +700,8 @@
         "color": "",
         "border_color": "",
         "width": "wrapper--full--custom",
-        "padding_top": 60,
-        "padding_bottom": 60
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "section_accordion_NdXrTE": {
@@ -1104,13 +960,11 @@
   },
   "order": [
     "main",
-    "section_double_slider_wk8dA9",
     "section_double_slider_new_ERgtDU",
     "section_double_slider_new_M974Kz",
     "section_double_slider_b33Ygi",
     "section_collection_YVbRj7",
     "section_columns_ycKyp7",
-    "section_columns_WqpJx7",
     "section_accordion_new_DpxfiN",
     "faq",
     "section_accordion_new_4E9V9R",
