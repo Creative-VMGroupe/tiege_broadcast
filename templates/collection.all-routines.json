@@ -57,6 +57,7 @@
         },
         "featured_image_kH7rEt": {
           "type": "featured_image",
+          "disabled": true,
           "settings": {
             "aspect_ratio": 0.5,
             "featured_image": "shopify:\/\/shop_images\/Messy_Hands.jpg",
