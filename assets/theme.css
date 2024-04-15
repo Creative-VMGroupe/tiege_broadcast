@@ -25679,6 +25679,7 @@ div.rc_popup {
     display: flex;
     justify-content: end;
     align-items: center;
+    padding: 10px 32px;
   }
 }
 /*instafeed*/
