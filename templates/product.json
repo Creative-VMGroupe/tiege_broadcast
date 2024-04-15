@@ -419,7 +419,7 @@
         ".comparable-selected-products .product-price-wrap {display: none;}",
         ".comparable-selected-products .product-table-cell-container-wrap {padding: 0;}",
         ".comparable-selected-products .add-to-cart-wrap {display: none;}",
-        ".comparable-selected-products .product-table__cell {padding: 0;}"
+        ".comparable-selected-products .product-table__cell {}"
       ],
       "settings": {
         "include_margins": false
