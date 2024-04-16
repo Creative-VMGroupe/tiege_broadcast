@@ -531,27 +531,27 @@
   --COLOR-A90: {{ settings.dark_text_color | color_modify: 'alpha', 0.90 }};
   --COLOR-A95: {{ settings.dark_text_color | color_modify: 'alpha', 0.95 }};
 
-  --COLOR-BORDER: {{ settings.site_border_color | color_to_rgb }};
-  --COLOR-BORDER-LIGHT: {{ settings.site_border_color | color_mix: settings.bg_color, 60 }};
-  --COLOR-BORDER-HAIRLINE: {{ settings.bg_color | color_darken: 3 }};
-  --COLOR-BORDER-DARK: {{ settings.site_border_color | color_darken: 20 }};
+  --COLOR-BORDER: {{ settings.dark_site_border_color | color_to_rgb }};
+  --COLOR-BORDER-LIGHT: {{ settings.dark_site_border_color | color_mix: settings.dark_bg_color, 60 }};
+  --COLOR-BORDER-HAIRLINE: {{ settings.dark_bg_color | color_darken: 3 }};
+  --COLOR-BORDER-DARK: {{ settings.dark_site_border_color | color_darken: 20 }};
 
-  {%- assign white = settings.bg_color | color_lighten: 100 -%}
-  {%- assign black = settings.bg_color | color_darken: 100 -%}
+  {%- assign white = settings.dark_bg_color | color_lighten: 100 -%}
+  {%- assign black = settings.dark_bg_color | color_darken: 100 -%}
   {%- assign contrast_limit = 2 -%}
-  {% if settings.high_contrast %}
+  {% if settings.dark_high_contrast %}
     {%- assign contrast_limit = 3 -%}
   {%- endif -%}
 
   /* === Bright color ===*/
-  --COLOR-PRIMARY: {{ settings.accent_bright }};
-  --COLOR-PRIMARY-HOVER: {{ settings.accent_bright | color_saturate: 10 | color_darken: 15 }};
-  --COLOR-PRIMARY-FADE: {{ settings.accent_bright | color_modify: 'alpha', 0.05 }};
-  --COLOR-PRIMARY-FADE-HOVER: {{ settings.accent_bright | color_modify: 'alpha', 0.1 }};
-  --COLOR-PRIMARY-LIGHT: {{ settings.accent_bright | color_saturate: 20 | color_lighten: 30 }};
+  --COLOR-PRIMARY: {{ settings.dark_accent_bright }};
+  --COLOR-PRIMARY-HOVER: {{ settings.dark_accent_bright | color_saturate: 10 | color_darken: 15 }};
+  --COLOR-PRIMARY-FADE: {{ settings.dark_accent_bright | color_modify: 'alpha', 0.05 }};
+  --COLOR-PRIMARY-FADE-HOVER: {{ settings.dark_accent_bright | color_modify: 'alpha', 0.1 }};
+  --COLOR-PRIMARY-LIGHT: {{ settings.dark_accent_bright | color_saturate: 20 | color_lighten: 30 }};
   {%- assign opposite = white -%}
-  {%- assign contrast_white = settings.accent_bright | color_contrast: white -%}
-  {%- assign contrast_black = settings.accent_bright | color_contrast: black -%}
+  {%- assign contrast_white = settings.dark_accent_bright | color_contrast: white -%}
+  {%- assign contrast_black = settings.dark_accent_bright | color_contrast: black -%}
   {%- if contrast_white < contrast_limit and contrast_black > contrast_white -%}
     {%- assign opposite = black -%}
   {%- endif -%}
@@ -560,13 +560,13 @@
 
 
   /* === link Color ===*/
-  --COLOR-LINK: {{ settings.link_color }};
-  --COLOR-LINK-HOVER: {{ settings.link_color | color_modify: 'alpha', hover_opacity }};
-  --COLOR-LINK-FADE: {{ settings.link_color | color_modify: 'alpha', 0.05 }};
-  --COLOR-LINK-FADE-HOVER: {{ settings.link_color | color_modify: 'alpha', 0.1 }};
+  --COLOR-LINK: {{ settings.dark_link_color }};
+  --COLOR-LINK-HOVER: {{ settings.dark_link_color | color_modify: 'alpha', hover_opacity }};
+  --COLOR-LINK-FADE: {{ settings.dark_link_color | color_modify: 'alpha', 0.05 }};
+  --COLOR-LINK-FADE-HOVER: {{ settings.dark_link_color | color_modify: 'alpha', 0.1 }};
   {%- assign opposite = white -%}
-  {%- assign contrast_white = settings.link_color | color_contrast: white -%}
-  {%- assign contrast_black = settings.link_color | color_contrast: black -%}
+  {%- assign contrast_white = settings.dark_link_color | color_contrast: white -%}
+  {%- assign contrast_black = settings.dark_link_color | color_contrast: black -%}
   {%- if contrast_white < contrast_limit and contrast_black > contrast_white -%}
     {%- assign opposite = black -%}
   {%- endif -%}
@@ -574,22 +574,22 @@
 
 
   /* === Product grid sale tags ===*/
-  --COLOR-SALE-BG: {{ settings.sale_bg_color }};
-  --COLOR-SALE-TEXT: {{ settings.sale_text_color }};
-  {%- assign sale_text_secondary = settings.sale_bg_color -%}
+  --COLOR-SALE-BG: {{ settings.dark_sale_bg_color }};
+  --COLOR-SALE-TEXT: {{ settings.dark_sale_text_color }};
+  {%- assign sale_text_secondary = settings.dark_sale_bg_color -%}
   {%- assign sale_text_secondary_downcase = sale_text_secondary | downcase -%}
-  {%- assign bg_color_global_downcase = settings.bg_color | downcase -%}
+  {%- assign bg_color_global_downcase = settings.dark_bg_color | downcase -%}
   {%- if sale_text_secondary_downcase == bg_color_global_downcase -%}
-    {%- assign sale_text_secondary = settings.text_color -%}
+    {%- assign sale_text_secondary = settings.dark_text_color -%}
   {%- endif -%}
   --COLOR-SALE-TEXT-SECONDARY: {{ sale_text_secondary }};
 
   /* === Product grid badges ===*/
-  --COLOR-BADGE-BG: {{ settings.badge_bg_color }};
-  --COLOR-BADGE-TEXT: {{ settings.badge_text_color }};
+  --COLOR-BADGE-BG: {{ settings.dark_badge_bg_color }};
+  --COLOR-BADGE-TEXT: {{ settings.dark_badge_text_color }};
 
   /* === Product sale color ===*/
-  --COLOR-SALE: {{ settings.sale_color }};
+  --COLOR-SALE: {{ settings.dark_sale_color }};
 
   /* === Gray background on Product grid items ===*/
   {%- if settings.show_gray_bg -%}
@@ -598,88 +598,66 @@
     --filter-bg: 1.0;
   {%- endif -%}
 
-  /* === Helper colors for form error states ===*/
-  --COLOR-ERROR: #721C24;
-  --COLOR-ERROR-BG: #F8D7DA;
-  --COLOR-ERROR-BORDER: #F5C6CB;
 
-
-  {% if settings.btn_border_style == 'rounded' %}
-    --RADIUS: 3px;
-    --RADIUS-SELECT: 3px;
-  {% elsif settings.btn_border_style == 'pill' %}
-    --RADIUS: 300px;
-    --RADIUS-SELECT: 22px;
-  {% else %}
-    --RADIUS: 0px;
-    --RADIUS-SELECT: 0px;
-  {% endif %}
-
-  {%- assign header_bg = settings.header_bg | strip -%}
+  {%- assign header_bg = settings.dark_header_bg | strip -%}
   {%- if header_bg == 'rgba(0,0,0,0)' or header_bg == blank -%}
     --COLOR-HEADER-BG: #ffffff;
   {%- else -%}
     --COLOR-HEADER-BG: {{ header_bg }};
   {%- endif -%}
 
-  --COLOR-HEADER-BG-TRANSPARENT: {{ settings.header_bg | color_modify: 'alpha', 0 }};
-  --COLOR-HEADER-LINK: {{ settings.header_link }};
-  --COLOR-HEADER-LINK-HOVER: {{ settings.header_link | color_modify: 'alpha', hover_opacity }};
+  --COLOR-HEADER-BG-TRANSPARENT: {{ settings.dark_header_bg | color_modify: 'alpha', 0 }};
+  --COLOR-HEADER-LINK: {{ settings.dark_header_link }};
+  --COLOR-HEADER-LINK-HOVER: {{ settings.dark_header_link | color_modify: 'alpha', hover_opacity }};
 
-  --COLOR-MENU-BG: {{ settings.menu_bg_color }};
-  --COLOR-MENU-LINK: {{ settings.menu_link_color }};
-  --COLOR-MENU-LINK-HOVER: {{ settings.menu_link_color | color_modify: 'alpha', hover_opacity }};
-  --COLOR-SUBMENU-BG: {{ settings.submenu_bg_color }};
-  --COLOR-SUBMENU-LINK: {{ settings.submenu_link_color }};
-  --COLOR-SUBMENU-LINK-HOVER: {{ settings.submenu_link_color | color_modify: 'alpha', hover_opacity }};
-  --COLOR-SUBMENU-TEXT-LIGHT: {{ settings.submenu_link_color | color_mix: settings.submenu_bg_color, 70 }};
-  --COLOR-MENU-TRANSPARENT: {{ settings.menu_transparent_color }};
-  --COLOR-MENU-TRANSPARENT-HOVER: {{ settings.menu_transparent_color | color_modify: 'alpha', hover_opacity }};
+  --COLOR-MENU-BG: {{ settings.dark_menu_bg_color }};
+  --COLOR-MENU-LINK: {{ settings.dark_menu_link_color }};
+  --COLOR-MENU-LINK-HOVER: {{ settings.dark_menu_link_color | color_modify: 'alpha', hover_opacity }};
+  --COLOR-SUBMENU-BG: {{ settings.dark_submenu_bg_color }};
+  --COLOR-SUBMENU-LINK: {{ settings.dark_submenu_link_color }};
+  --COLOR-SUBMENU-LINK-HOVER: {{ settings.dark_submenu_link_color | color_modify: 'alpha', hover_opacity }};
+  --COLOR-SUBMENU-TEXT-LIGHT: {{ settings.dark_submenu_link_color | color_mix: settings.submenu_bg_color, 70 }};
+  --COLOR-MENU-TRANSPARENT: {{ settings.dark_menu_transparent_color }};
+  --COLOR-MENU-TRANSPARENT-HOVER: {{ settings.dark_menu_transparent_color | color_modify: 'alpha', hover_opacity }};
 
   {%- liquid
-    assign footer_bg = settings.footer_bg
+    assign footer_bg = settings.dark_footer_bg
     assign footer_bg_brightness = footer_bg | color_brightness
     if footer_bg_brightness > 100
-      assign footer_bg_hairline = settings.footer_bg | color_darken: 3
+      assign footer_bg_hairline = settings.dark_footer_bg | color_darken: 3
     else
-      assign footer_bg_hairline = settings.footer_bg | color_lighten: 3
+      assign footer_bg_hairline = settings.dark_footer_bg | color_lighten: 3
     endif
   -%}
   --COLOR-FOOTER-BG: {{ footer_bg }};
   --COLOR-FOOTER-BG-HAIRLINE: {{ footer_bg_hairline }};
-  --COLOR-FOOTER-TEXT: {{ settings.footer_text }};
-  --COLOR-FOOTER-TEXT-A35: {{ settings.footer_text | color_modify: 'alpha', 0.35 }};
-  --COLOR-FOOTER-TEXT-A75: {{ settings.footer_text | color_modify: 'alpha', 0.75 }};
-  --COLOR-FOOTER-LINK: {{ settings.footer_link }};
-  --COLOR-FOOTER-LINK-HOVER: {{ settings.footer_link | color_modify: 'alpha', hover_opacity }};
-  --COLOR-FOOTER-BORDER: {{ settings.footer_border }};
+  --COLOR-FOOTER-TEXT: {{ settings.dark_footer_text }};
+  --COLOR-FOOTER-TEXT-A35: {{ settings.dark_footer_text | color_modify: 'alpha', 0.35 }};
+  --COLOR-FOOTER-TEXT-A75: {{ settings.dark_footer_text | color_modify: 'alpha', 0.75 }};
+  --COLOR-FOOTER-LINK: {{ settings.dark_footer_link }};
+  --COLOR-FOOTER-LINK-HOVER: {{ settings.dark_footer_link | color_modify: 'alpha', hover_opacity }};
+  --COLOR-FOOTER-BORDER: {{ settings.dark_footer_border }};
 
-  --TRANSPARENT: rgba(255, 255, 255, 0);
-
-  /* === Default overlay opacity ===*/
-  --overlay-opacity: 0;
-  --underlay-opacity: {{ backdrop_opacity }};
-  --underlay-bg: {{ backdrop_bg }};
-      /* === Button Primary ===*/
-  --BTN-PRIMARY-BORDER-COLOR: {{ settings.btn_primary_border_color }};
-  --BTN-PRIMARY-BG-COLOR: {{ settings.btn_primary_bg_color }};
-  --BTN-PRIMARY-TEXT-COLOR: {{ settings.btn_primary_text_color }};
-  {% assign btn_primary_brightness = settings.btn_primary_bg_color | color_brightness %}
+  /* === Button Primary ===*/
+  --BTN-PRIMARY-BORDER-COLOR: {{ settings.dark_btn_primary_border_color }};
+  --BTN-PRIMARY-BG-COLOR: {{ settings.dark_btn_primary_bg_color }};
+  --BTN-PRIMARY-TEXT-COLOR: {{ settings.dark_btn_primary_text_color }};
+  {% assign btn_primary_brightness = settings.dark_btn_primary_bg_color | color_brightness %}
   {% if btn_primary_brightness <= 65 %}
-    --BTN-PRIMARY-BG-COLOR-BRIGHTER: {{ settings.btn_primary_bg_color | color_lighten: 10 }};
+    --BTN-PRIMARY-BG-COLOR-BRIGHTER: {{ settings.dark_btn_primary_bg_color | color_lighten: 10 }};
   {% else %}
-    --BTN-PRIMARY-BG-COLOR-BRIGHTER: {{ settings.btn_primary_bg_color | color_darken: 5 }};
+    --BTN-PRIMARY-BG-COLOR-BRIGHTER: {{ settings.dark_btn_primary_bg_color | color_darken: 5 }};
   {% endif %}
 
   /* === Button Secondary ===*/
-  --BTN-SECONDARY-BORDER-COLOR: {{ settings.btn_secondary_border_color }};
-  --BTN-SECONDARY-BG-COLOR: {{ settings.btn_secondary_bg_color }};
-  --BTN-SECONDARY-TEXT-COLOR: {{ settings.btn_secondary_text_color }};
-  {% assign btn_secondary_brightness = settings.btn_secondary_bg_color | color_brightness %}
+  --BTN-SECONDARY-BORDER-COLOR: {{ settings.dark_btn_secondary_border_color }};
+  --BTN-SECONDARY-BG-COLOR: {{ settings.dark_btn_secondary_bg_color }};
+  --BTN-SECONDARY-TEXT-COLOR: {{ settings.dark_btn_secondary_text_color }};
+  {% assign btn_secondary_brightness = settings.dark_btn_secondary_bg_color | color_brightness %}
   {% if btn_secondary_brightness <= 65 %}
-    --BTN-SECONDARY-BG-COLOR-BRIGHTER: {{ settings.btn_secondary_bg_color | color_lighten: 10 }};
+    --BTN-SECONDARY-BG-COLOR-BRIGHTER: {{ settings.dark_btn_secondary_bg_color | color_lighten: 10 }};
   {% else %}
-    --BTN-SECONDARY-BG-COLOR-BRIGHTER: {{ settings.btn_secondary_bg_color | color_darken: 5 }};
+    --BTN-SECONDARY-BG-COLOR-BRIGHTER: {{ settings.dark_btn_secondary_bg_color | color_darken: 5 }};
   {% endif %}
   }
 {% endstyle %}
