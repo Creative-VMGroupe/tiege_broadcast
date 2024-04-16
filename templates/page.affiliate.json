@@ -41,6 +41,7 @@
         "heading_9yzrUQ",
         "text_3UMYgJ"
       ],
+      "disabled": true,
       "settings": {
         "height": "screen-height-one-half",
         "width": "wrapper--full",
@@ -50,15 +51,30 @@
         "flex_align_desktop": "align--middle-center-desktop",
         "flex_align_mobile": "align--middle-center-mobile",
         "overlay_opacity": 0,
-        "overlay_color": "#000",
+        "overlay_color": "#000000",
         "show_overlay_text": false,
         "bg_color": "",
-        "color": "#FFFFFF"
+        "color": "#ffffff"
+      }
+    },
+    "section_custom_code_cExwmp": {
+      "type": "section-custom-code",
+      "custom_css": [
+        "iframe {width: 100vw; height: 100vh;}"
+      ],
+      "settings": {
+        "code": "<iframe src=\"https:\/\/tiegehanley.refersion.com\/\" title=\"Affiliate\" ><\/iframe>",
+        "width": "wrapper--full",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
   "order": [
     "main",
-    "section_hero_KpG8aH"
+    "section_hero_KpG8aH",
+    "section_custom_code_cExwmp"
   ]
 }
