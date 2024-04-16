@@ -110,7 +110,7 @@
     transition: transform 0.3s ease-in, opacity 0.2s ease-in 0.1s;
   }
   
-  .color-mode-moon.visible {
+  .color-mode-moon.is-visible {
     pointer-events: auto;
     opacity: 1;
     transform: scale(1) rotate(0deg);
