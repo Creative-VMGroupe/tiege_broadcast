@@ -25807,7 +25807,7 @@ padding: 0;
 /*Compareable*/
 /*Compareable*/
 tr .product-table__cell:nth-child(2) {
-  background-color: #F0F0F0;
+  background-color: #F0F0F0 !important;
 }
 .comparable-container .product-table-cell-container .product-summary .image-wrap img {
       height: 250px !important;
