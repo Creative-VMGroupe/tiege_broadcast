@@ -4,6 +4,9 @@
   assign aspect_ratio = 1 | divided_by: section.settings.aspect_ratio
   assign bg_color = section.settings.bg_color
   assign text_color = section.settings.color
+  
+  assign dark_bg_color = section.settings.dark_bg_color
+  assign dark_text_color = section.settings.dark_color
 
   assign button_style = section.settings.button_style
   if button_style == 'btn--text' and section.settings.show_arrow
@@ -22,6 +25,16 @@
 
     {%- unless text_color == 'rgba(0,0,0,0)' or text_color == blank -%}
       --text: {{ text_color }};
+    {%- endunless -%}
+  }
+  /* CSS to add Dark Mode */
+  [data-theme="dark"] #SectionBeforeAfter--{{ section.id }} {
+    {%- unless dark_bg_color == blank -%}
+      --bg: {{ dark_bg_color }};
+    {%- endunless -%}
+
+    {%- unless dark_text_color == blank -%}
+      --text: {{ dark_text_color }};
     {%- endunless -%}
   }
 {%- endstyle -%}
@@ -240,6 +253,10 @@
         "content": "Colors"
       },
       {
+        "type": "paragraph",
+        "content" : "Light Mode"
+      },
+      {
         "type": "color",
         "id": "bg_color",
         "label": "Background"
@@ -247,6 +264,20 @@
       {
         "type": "color",
         "id": "color",
+        "label": "Text"
+      },
+      {
+        "type": "paragraph",
+        "content" : "Dark Mode"
+      },
+      {
+        "type": "color",
+        "id": "dark_bg_color",
+        "label": "Background"
+      },
+      {
+        "type": "color",
+        "id": "dark_color",
         "label": "Text"
       },
       {
