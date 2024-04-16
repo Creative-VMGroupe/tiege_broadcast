@@ -947,6 +947,10 @@
         "default": true
       },
       {
+        "type": "paragraph",
+        "content": "Light Mode"
+      },
+      {
         "type": "color",
         "id": "sale_bg_color",
         "label": "Background",
@@ -959,9 +963,29 @@
         "default": "#ffffff"
       },
       {
+        "type": "paragraph",
+        "content": "Dark Mode"
+      },
+      {
+        "type": "color",
+        "id": "dark_sale_bg_color",
+        "label": "Background",
+        "default": "#c84242"
+      },
+      {
+        "type": "color",
+        "id": "dark_sale_text_color",
+        "label": "Text",
+        "default": "#ffffff"
+      },
+      {
         "type": "header",
         "content": "Product badges",
         "info": "Add tag '_preorder' or '_badge_with_custom_text' to a product in order to show the badge"
+      },
+      {
+        "type": "paragraph",
+        "content": "Light Mode"
       },
       {
         "type": "color",
@@ -972,6 +996,22 @@
       {
         "type": "color",
         "id": "badge_text_color",
+        "label": "Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "paragraph",
+        "content": "Dark Mode"
+      },
+      {
+        "type": "color",
+        "id": "dark_badge_bg_color",
+        "label": "Background",
+        "default": "#444444"
+      },
+      {
+        "type": "color",
+        "id": "dark_badge_text_color",
         "label": "Text",
         "default": "#ffffff"
       },
@@ -1008,8 +1048,21 @@
         "default": true
       },
       {
+        "type": "paragraph",
+        "content": "Light Mode"
+      },
+      {
         "type": "color",
         "id": "cutline_color",
+        "label": "Text"
+      },
+      {
+        "type": "paragraph",
+        "content": "Dark Mode"
+      },
+      {
+        "type": "color",
+        "id": "dark_cutline_color",
         "label": "Text"
       }
     ]
