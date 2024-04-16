@@ -25806,6 +25806,11 @@ padding: 0;
   }
 /*Compareable*/
 /*Compareable*/
+@media (max-width: 749px) {
+.comparable-selected-products {
+  padding: 0;
+}  
+}
 .comparable-selected-products {
   padding: 0 10%;
 }
