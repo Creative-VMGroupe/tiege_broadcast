@@ -72,15 +72,23 @@ function detectColorScheme() {
   if (theme == "dark") {
     document.documentElement.setAttribute("data-theme", "dark");
   }
+  return theme;
 }
-detectColorScheme();
+const currentMode = detectColorScheme();
 const lightMode = document.querySelector('.color-mode-sun');
 const darkMode = document.querySelector('.color-mode-moon');
 const colorToggleButton = document.querySelector('.color-toogle-container');
 
 function switchTheme(e) {
-  localStorage.setItem("theme", "dark");
-  document.documentElement.setAttribute("data-theme", "dark");
+  if (currentMode == 'dark') {
+    localStorage.setItem("theme", "dark");
+    document.documentElement.setAttribute("data-theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+    document.documentElement.setAttribute("data-theme", "light");
+  }
+  lightMode.classList.toggle('is-visible');
+  darkMode.classList.toggle('is-visible');
 }
 colorToggleButton.addEventListener("click", switchTheme, false);
 if (document.documentElement.getAttribute("data-theme") == "dark") {
