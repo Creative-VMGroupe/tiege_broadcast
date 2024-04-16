@@ -25785,17 +25785,21 @@ div.rc_popup {
     width: 100%;
     border-collapse: separate;
   }
-  .attribute-empty {
+  .empty {
+ height: 332px
+  }
+  .attribute {
     position: absolute;
-    width: 300px;
+    width: 200px;
     top: auto;
     left: 0;
   }
   .td-image_container.active-item {
     position: absolute;
     top: auto;
-    left: 300px;
+    left: 200px;
     height: 332px;
+    width: 332px;
   }
   .td-image_container {
 
