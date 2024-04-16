@@ -733,7 +733,7 @@
       ],
       "settings": {
         "width": "wrapper",
-        "align_text": "text-left",
+        "align_text": "text-center",
         "bg_color": "",
         "color": "",
         "padding_top": 30,
