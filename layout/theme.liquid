@@ -284,16 +284,6 @@
     <script defer src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
     <!-- And above this comment line ================================================== -->
-    <button
-      class="color-toogle-container"
-      aria-label="Toggle Color Mode"
-      title="Toggle Color Mode"
-    >
-      <div class="color-mode-sun is-visible"></div>
-      <div class="color-mode-moon">
-        <div class="color-mode-star"></div>
-        <div class="color-mode-star star-small"></div>
-      </div>
-    </button>
+    {% render 'color-mode-toggle' %}
   </body>
 </html>
