@@ -25484,21 +25484,7 @@ body.has-header-sticky .timeline {
   justify-content: space-between;
   margin-bottom: 10px;
 }
-.comparable-selected-products .comparable-container {
-  overflow: hidden;
-}
-.comparable-selected-products .product-price-wrap {
-  display: none;
-}
-.comparable-selected-products .product-table-cell-container-wrap {
-  padding: 0;
-}
-.comparable-selected-products .add-to-cart-wrap {
-  display: none;
-}
-.product-table__header-row .product-table__cell {
-  padding: 0;
-}
+
 .accordion-section .accordion {
   border: none
 }
@@ -25818,3 +25804,20 @@ div.rc_popup {
     width: 200px;
 padding: 0;
   }
+/*Compareable*/
+/*Compareable*/
+  .comparable-selected-products .comparable-container {
+  overflow: hidden !important;
+}
+.comparable-selected-products .product-price-wrap {
+  display: none !important;
+}
+.comparable-selected-products .product-table-cell-container-wrap {
+  padding: 0 !important;
+}
+.comparable-selected-products .add-to-cart-wrap {
+  display: none !important;
+}
+.product-table__header-row .product-table__cell {
+  padding: 0 !important;
+}
