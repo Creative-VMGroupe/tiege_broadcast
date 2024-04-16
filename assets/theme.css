@@ -25809,6 +25809,9 @@ padding: 0;
 tr .product-table__cell:nth-child(2) {
   background-color: #F0F0F0 !important;
 }
+tr .product-table__cell:nth-child(4) {
+  background-color: #F0F0F0 !important;
+}
 .comparable-container .product-table-cell-container .product-summary .image-wrap img {
       height: 250px !important;
     width: 100% !important;
