@@ -25794,6 +25794,9 @@ div.rc_popup {
     top: auto;
     left: 0;
   }
+  .tr-header {
+    height: 200px;
+  }
   .td-image_container.active-item {
     position: absolute;
     top: auto;
@@ -25801,6 +25804,17 @@ div.rc_popup {
     height: 200px;
     width: 200px;
   }
+  .td-data-col.active {
+    position: absolute;
+    top: auto;
+    left: 200px;
+  }
+  .td-data-col {
+    height: 200px;
+    width: 200px;
+  }
   .td-image_container {
-
+    height: 200px;
+    width: 200px;
+padding: 0;
   }
