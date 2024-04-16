@@ -840,31 +840,31 @@
                             <div class="complementary-product__header">
                               <span style="font-weight: bold;"  class="complementary-products__title">Want to level up?</span>
                               <a href="{{ block.settings.level-guide_link }}">
-                                <product-modal class="product__block block-padding" {{ block_style }}>
-  <div style="justify-content: flex-end" class="product__icon__container product__icon__container--full">
-    <a class="radio__legend__link text-link" href="{{ block.settings.page.url }}" data-popup-open {{ block.shopify_attributes }}>
-      {{ link_text | escape }}
-    </a>
-  </div>
-
-  <dialog class="product-modal" aria-hidden="true" inert data-scroll-lock-required>
-    <form method="dialog">
-      <button class="visually-hidden no-js" aria-label="{{ 'general.accessibility.close' | t }}"></button>
-    </form>
-
-    <div style='max-width: 1000px' class="product-modal__outer prod-modal__container-custom">
-      <div class="product-modal__content small product-modal__container-custom" data-scroll-lock-scrollable>
-        <button type="button" class="product-modal__close" data-popup-close autofocus aria-label="{{ 'general.accessibility.close' | t }}">
-          {%- render 'icon-cancel' -%}
-        </button>
-{% render 'level-guide' with block.settings as block %}
-        {% comment %} {{ popup_content }} {% endcomment %}
-      </div>
-    </div>
-  </dialog>
-</product-modal>
+                
                               </a>
-                    
+                              <product-modal class="product__block block-padding" {{ block_style }}>
+                                <div style="justify-content: flex-end" class="product__icon__container product__icon__container--full">
+                                    <a class="radio__legend__link text-link" href="{{ block.settings.page.url }}" data-popup-open {{ block.shopify_attributes }}>
+        {{ link_text | escape }}
+      </a>
+    </div>
+  
+    <dialog class="product-modal" aria-hidden="true" inert data-scroll-lock-required>
+      <form method="dialog">
+        <button class="visually-hidden no-js" aria-label="{{ 'general.accessibility.close' | t }}"></button>
+      </form>
+  
+      <div style='max-width: 1000px' class="product-modal__outer prod-modal__container-custom">
+        <div class="product-modal__content small product-modal__container-custom" data-scroll-lock-scrollable>
+          <button type="button" class="product-modal__close" data-popup-close autofocus aria-label="{{ 'general.accessibility.close' | t }}">
+            {%- render 'icon-cancel' -%}
+          </button>
+  {% render 'level-guide' with block.settings as block %}
+          {% comment %} {{ popup_content }} {% endcomment %}
+        </div>
+      </div>
+    </dialog>
+  </product-modal>
                             </div>
                            
                           {%- endif -%}
