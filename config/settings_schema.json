@@ -11,7 +11,7 @@
     "name": "Colors",
     "settings": [
       {
-        "type": "header",
+        "type": "paragraph",
         "content": "Light Mode"
       },
       {
@@ -147,7 +147,7 @@
         "default": "#c0c0c0"
       },
       {
-        "type": "header",
+        "type": "paragraph",
         "content": "Dark Mode"
       },
       {
