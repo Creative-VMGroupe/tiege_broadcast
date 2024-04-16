@@ -17,7 +17,7 @@
         <tr class="replace-center-text">
           <td class="attribute empty">Empty</td>
           <td class="td-image_container active-item">
-            {{ image_1 | image_url }}
+            {% render 'image' image: image_1 %}
             {{ title_1 }}
           </td>
           <td class="td-image_container">
@@ -76,15 +76,15 @@
           <td>Y</td>
         </tr>
       {% comment %} 
-                                                                                                Load More by amount of columns    
-                                                                                                <tr class="replace-center-text">
-                                                                                                  <td class="attribute">Y</td>
-                                                                                                  <td>Y</td>
-                                                                                                  <td>Y</td>
-                                                                                                  <td>Y</td>
-                                                                                                  <td>Y</td>
-                                                                                                  <td>Y</td>
-                                                                          </tr> {% endcomment %}
+                                                                                                                Load More by amount of columns    
+                                                                                                                <tr class="replace-center-text">
+                                                                                                                  <td class="attribute">Y</td>
+                                                                                                                  <td>Y</td>
+                                                                                                                  <td>Y</td>
+                                                                                                                  <td>Y</td>
+                                                                                                                  <td>Y</td>
+                                                                                                                  <td>Y</td>
+                                                                                      </tr> {% endcomment %}
       </tbody>
 
 
