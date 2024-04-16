@@ -25811,6 +25811,7 @@ padding: 0;
 }
 .comparable-container table.comparison-table.border-separate {
   margin: 0;
+  border: none;
 }
 .product-table__cell > p {
   text-align: center !important;
