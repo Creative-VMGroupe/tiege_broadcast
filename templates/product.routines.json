@@ -662,7 +662,7 @@
         "align_text": "text-center",
         "bg_color": "",
         "color": "",
-        "padding_top": 100,
+        "padding_top": 60,
         "padding_bottom": 0
       }
     },
@@ -691,6 +691,53 @@
       ],
       "settings": {
         "include_margins": false
+      }
+    },
+    "section_rich_text_y6jeRp": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_jG6FTC": {
+          "type": "heading",
+          "settings": {
+            "title": "Unsure which system is right for you?",
+            "text_size": 7,
+            "padding_bottom": 16
+          }
+        },
+        "text_zHXKXM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Different strokes for different folks and different skin care regimen for different men. Take our 1-minute quiz to figure out which formulated system is perfect for you and your face<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_iJKwR7": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Take Our Quiz",
+            "button_url": "",
+            "button_type": "btn--secondary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 30
+          }
+        }
+      },
+      "block_order": [
+        "heading_jG6FTC",
+        "text_zHXKXM",
+        "buttons_iJKwR7"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 30,
+        "padding_bottom": 60
       }
     },
     "section_accordion_new_4E9V9R": {
@@ -897,6 +944,7 @@
     "faq",
     "section_rich_text_Ugjigy",
     "1713198580f2f6c371",
+    "section_rich_text_y6jeRp",
     "section_accordion_new_4E9V9R",
     "1711051410c76bca1d",
     "related",
