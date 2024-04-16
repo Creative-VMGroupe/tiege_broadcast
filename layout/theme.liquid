@@ -247,6 +247,10 @@
         {% sections 'group-header' %}
       </div>
 
+      <label id="theme-switch" class="theme-switch" for="checkbox_theme">
+        <input type="checkbox" id="checkbox_theme">
+      </label>
+
       {% sections 'group-overlay' %}
 
       <!-- CONTENT -->
@@ -284,6 +288,5 @@
     <script defer src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
     <!-- And above this comment line ================================================== -->
-
   </body>
 </html>
