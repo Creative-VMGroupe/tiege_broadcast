@@ -78,7 +78,6 @@ const currentMode = detectColorScheme();
 const lightMode = document.querySelector('.color-mode-sun');
 const darkMode = document.querySelector('.color-mode-moon');
 const colorToggleButton = document.querySelector('.color-toogle-container');
-
 function switchTheme(e) {
   if (currentMode == 'dark') {
     localStorage.setItem("theme", "dark");
