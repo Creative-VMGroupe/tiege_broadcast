@@ -161,7 +161,7 @@
     content: '';
   }
   
-  .color-mode-moon.visible .color-mode-star {
+  .color-mode-moon.is-visible .color-mode-star {
     opacity: .8;
   /*   transform: rotate(35deg); */
   }
@@ -175,7 +175,7 @@
     transition: all 0.2s ease-in 0.45s;
   }
   
-  .color-mode-moon.visible .color-mode-star.small {
+  .color-mode-moon.is-visible .color-mode-star.small {
     opacity: .7;
     transform: scale(0.45) rotate(35deg);
   }
