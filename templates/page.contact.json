@@ -64,7 +64,7 @@
         "text_Ywhd6e"
       ],
       "settings": {
-        "width": "wrapper",
+        "width": "wrapper--narrow",
         "align_text": "text-left",
         "bg_color": "",
         "color": "",
@@ -118,7 +118,7 @@
         "text_aztUdc"
       ],
       "settings": {
-        "width": "wrapper",
+        "width": "wrapper--narrow",
         "align_text": "text-left",
         "bg_color": "",
         "color": "",
@@ -191,7 +191,7 @@
       "settings": {
         "title": "Fill Our The Contact Form Below Or Just Give Us A Call",
         "terms": true,
-        "width": "wrapper",
+        "width": "wrapper--narrow",
         "bg_color": "",
         "color": "",
         "padding_top": 0,
