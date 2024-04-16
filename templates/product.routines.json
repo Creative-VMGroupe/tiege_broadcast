@@ -121,7 +121,12 @@
             "level-guide_link": "",
             "complementary_limit": 3,
             "bg_color": "",
-            "padding_bottom": 16
+            "padding_bottom": 16,
+            "title_1": "Level 1",
+            "title_2": "Level 2",
+            "title_3": "Level 3",
+            "title_4": "Acne Level 1",
+            "title_5": "Acne Level 2"
           }
         },
         "upsell": {
@@ -658,11 +663,7 @@
         "comparable_products_static_comparison_table_HptrbX"
       ],
       "custom_css": [
-        ".comparable-selected-products .comparable-container {overflow: hidden;}",
-        ".comparable-selected-products .product-price-wrap {display: none;}",
-        ".comparable-selected-products .product-table-cell-container-wrap {padding: 0;}",
-        ".comparable-selected-products .add-to-cart-wrap {display: none;}",
-        ".product-table__header-row .product-table__cell {padding: 0;}"
+
       ],
       "settings": {
         "include_margins": false
