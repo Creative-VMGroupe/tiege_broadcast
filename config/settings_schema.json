@@ -527,6 +527,10 @@
         "content": "Primary"
       },
       {
+        "type": "paragraph",
+        "content": "Light Mode"
+      },
+      {
         "type": "color",
         "id": "btn_primary_bg_color",
         "label": "Solid background",
@@ -545,8 +549,34 @@
         "default": "#AB8C52"
       },
       {
+        "type": "paragraph",
+        "content": "Dark Mode"
+      },
+      {
+        "type": "color",
+        "id": "dark_btn_primary_bg_color",
+        "label": "Solid background",
+        "default": "#AB8C52"
+      },
+      {
+        "type": "color",
+        "id": "dark_btn_primary_text_color",
+        "label": "Solid text",
+        "default": "#fff"
+      },
+      {
+        "type": "color",
+        "id": "dark_btn_primary_border_color",
+        "label": "Outline and text",
+        "default": "#AB8C52"
+      },
+      {
         "type": "header",
         "content": "Secondary"
+      },
+      {
+        "type": "paragraph",
+        "content": "Light Mode"
       },
       {
         "type": "color",
@@ -563,6 +593,28 @@
       {
         "type": "color",
         "id": "btn_secondary_border_color",
+        "label": "Outline and text",
+        "default": "#8191A4"
+      },
+      {
+        "type": "paragraph",
+        "content": "Dark Mode"
+      },
+      {
+        "type": "color",
+        "id": "dark_btn_secondary_bg_color",
+        "label": "Solid background",
+        "default": "#8191A4"
+      },
+      {
+        "type": "color",
+        "id": "dark_btn_secondary_text_color",
+        "label": "Solid text",
+        "default": "#212121"
+      },
+      {
+        "type": "color",
+        "id": "dark_btn_secondary_border_color",
         "label": "Outline and text",
         "default": "#8191A4"
       }
