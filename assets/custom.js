@@ -74,21 +74,16 @@ function detectColorScheme() {
   }
 }
 detectColorScheme();
-const toggleSwitch = document.querySelector(
-  '#theme-switch input[type="checkbox"]'
-);
+const lightMode = document.querySelector('.color-mode-sun');
+const darkMode = document.querySelector('.color-mode-moon');
+const colorToggleButton = document.querySelector('.color-toogle-container');
+
 function switchTheme(e) {
-  if (e.target.checked) {
-    localStorage.setItem("theme", "dark");
-    document.documentElement.setAttribute("data-theme", "dark");
-    toggleSwitch.checked = true;
-  } else {
-    localStorage.setItem("theme", "light");
-    document.documentElement.setAttribute("data-theme", "light");
-    toggleSwitch.checked = false;
-  }
+  localStorage.setItem("theme", "dark");
+  document.documentElement.setAttribute("data-theme", "dark");
 }
-toggleSwitch.addEventListener("change", switchTheme, false);
+colorToggleButton.addEventListener("click", switchTheme, false);
 if (document.documentElement.getAttribute("data-theme") == "dark") {
-  toggleSwitch.checked = true;
+  lightMode.classList.toggle('is-visible');
+  darkMode.classList.toggle('is-visible');
 }
