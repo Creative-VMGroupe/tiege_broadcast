@@ -25479,6 +25479,11 @@ body.has-header-sticky .timeline {
   margin-top: 0;
 }
 /* PDP */
+.complementary-product__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
 .comparable-selected-products .comparable-container {
   overflow: hidden;
 }

@@ -807,21 +807,6 @@
 
 <product-modal class="product__block block-padding" {{ block_style }}>
   <div style="justify-content: space-between" class="product__icon__container product__icon__container--full">
-    {% comment %} <div class="product__icon" data-aos="img-in" {{ icon_style }}>
-      {%- liquid
-        if image
-          assign icon_width = icon_size
-          assign icon_width_retina = icon_width | times: 2
-          assign icon_sizes = icon_width | append: 'px'
-          assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
-
-          render 'image' image: image, width: icon_width_retina, sizes: icon_sizes, widths: icon_widths, show_backfill: false
-        else
-          render 'animated-icon', filename: block.settings.icon_name
-        endif
-      -%}
-    </div> {% endcomment %}
-
     <a class="radio__legend__link text-link" href="{{ block.settings.page.url }}" data-popup-open {{ block.shopify_attributes }}>
       {{ link_text | escape }}
     </a>
@@ -852,11 +837,32 @@
                         {%- if recommendations.performed and recommendations.products_count > 0 -%}
                           {%- assign complementary_products_title = 'products.general.complementary_products_title' | t -%}
                           {%- if complementary_products_title != blank -%}
-                            <div style="    display: flex;
-                            justify-content: space-between; margin-bottom: 10px;">
+                            <div class="complementary-product__header">
                               <span style="font-weight: bold;"  class="complementary-products__title">Want to level up?</span>
                               <a href="{{ block.settings.level-guide_link }}">
-                                Level Guide
+                                <product-modal class="product__block block-padding" {{ block_style }}>
+  <div style="justify-content: flex-end" class="product__icon__container product__icon__container--full">
+    <a class="radio__legend__link text-link" href="{{ block.settings.page.url }}" data-popup-open {{ block.shopify_attributes }}>
+      {{ link_text | escape }}
+    </a>
+  </div>
+
+  <dialog class="product-modal" aria-hidden="true" inert data-scroll-lock-required>
+    <form method="dialog">
+      <button class="visually-hidden no-js" aria-label="{{ 'general.accessibility.close' | t }}"></button>
+    </form>
+
+    <div style='max-width: 1000px' class="product-modal__outer prod-modal__container-custom">
+      <div class="product-modal__content small product-modal__container-custom" data-scroll-lock-scrollable>
+        <button type="button" class="product-modal__close" data-popup-close autofocus aria-label="{{ 'general.accessibility.close' | t }}">
+          {%- render 'icon-cancel' -%}
+        </button>
+{% render 'level-guide' with block.settings as block %}
+        {% comment %} {{ popup_content }} {% endcomment %}
+      </div>
+    </div>
+  </dialog>
+</product-modal>
                               </a>
                     
                             </div>
