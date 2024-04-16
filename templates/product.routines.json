@@ -115,6 +115,39 @@
             "padding_bottom": 16
           }
         },
+        "popup_tfxe6b": {
+          "type": "popup",
+          "settings": {
+            "title": "Level Guide",
+            "supply": "",
+            "pop-heading": "Your Member Benefits Explained",
+            "pop-heading_size": 6,
+            "icon-sub_size": 6,
+            "icon-1_sub": "Save 20%",
+            "icon-1_text": "Get 20% with Autoship",
+            "icon-2_sub": "Great Gifts",
+            "icon-2_text": "7 Gifts in your first year",
+            "icon-3_sub": "Exclusive Offers",
+            "icon-3_text": "Products, gear, SWAG, and bundles",
+            "pop-heading-2": "Membership Tiers",
+            "box-1_text": "Member",
+            "box-1_gifts": "3 Routine-building Gifts",
+            "box-2_text": "VIP Member",
+            "box-2_gifts": "3 VIP Gifts, 1 Premium Gift",
+            "box-3_text": "Emerald VIP",
+            "box-3_gifts": "10% off every order, 2 Premium Gifts per year",
+            "member-link_text": "More Details",
+            "member_link": "",
+            "button_type": "btn--primary",
+            "button_style": "btn--text",
+            "text": "<p>Additonal information about the product.<\/p>",
+            "page": "",
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454",
+            "padding_bottom": 16
+          }
+        },
         "complementary_products_C7V6rg": {
           "type": "complementary-products",
           "settings": {
@@ -148,6 +181,7 @@
         "metafield_icons_BDHtFK",
         "tabs",
         "divider_1",
+        "popup_tfxe6b",
         "complementary_products_C7V6rg",
         "upsell"
       ],
