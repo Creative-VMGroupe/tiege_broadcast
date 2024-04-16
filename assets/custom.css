@@ -52,4 +52,20 @@
 }
 .sliderow.is-hidden {
   display: none;
+
+/*Compareable*/
+  .comparable-selected-products .comparable-container {
+  overflow: hidden;
+}
+.comparable-selected-products .product-price-wrap {
+  display: none;
+}
+.comparable-selected-products .product-table-cell-container-wrap {
+  padding: 0;
+}
+.comparable-selected-products .add-to-cart-wrap {
+  display: none;
+}
+.product-table__header-row .product-table__cell {
+  padding: 0;
 }
