@@ -642,6 +642,30 @@
         "padding_bottom": 0
       }
     },
+    "section_rich_text_Ugjigy": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_KmHdL7": {
+          "type": "heading",
+          "settings": {
+            "title": "Compare Our Systems",
+            "text_size": 7,
+            "padding_bottom": 30
+          }
+        }
+      },
+      "block_order": [
+        "heading_KmHdL7"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-center",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 100,
+        "padding_bottom": 0
+      }
+    },
     "1713198580f2f6c371": {
       "type": "apps",
       "blocks": {
@@ -871,6 +895,7 @@
     "section_columns_ycKyp7",
     "section_accordion_new_DpxfiN",
     "faq",
+    "section_rich_text_Ugjigy",
     "1713198580f2f6c371",
     "section_accordion_new_4E9V9R",
     "1711051410c76bca1d",
