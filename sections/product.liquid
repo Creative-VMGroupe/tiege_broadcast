@@ -839,14 +839,11 @@
                           {%- if complementary_products_title != blank -%}
                             <div class="complementary-product__header">
                               <span style="font-weight: bold;"  class="complementary-products__title">Want to level up?</span>
-                              <a href="{{ block.settings.level-guide_link }}">
-                
-                              </a>
                               <product-modal class="product__block block-padding" {{ block_style }}>
                                 <div style="justify-content: flex-end" class="product__icon__container product__icon__container--full">
                                     <a class="radio__legend__link text-link" href="{{ block.settings.page.url }}" data-popup-open {{ block.shopify_attributes }}>
-        {{ link_text | escape }}
-      </a>
+                                  {{ link_text | escape }}
+                                    </a>
     </div>
   
     <dialog class="product-modal" aria-hidden="true" inert data-scroll-lock-required>
@@ -2133,6 +2130,16 @@
             "unit": "px",
             "label": "Padding bottom",
             "default": 16
+          },
+          {
+            "type": "header",
+            "content": "Level Guide"
+          },
+          {
+            "type": "text",
+            "id": "title_1",
+            "label": "Heading",
+            "default": "Feature"
           }
         ]
       },
@@ -2153,11 +2160,11 @@
             "default": "30 day supply"
           },
           {
-        "type": "text",
-        "id": "pop-heading",
-        "label": "Main Heading",
-        "default": "Your Member Benefits Explained"
-      },
+          "type": "text",
+          "id": "pop-heading",
+          "label": "Main Heading",
+          "default": "Your Member Benefits Explained"
+            },
       {
             "type": "range",
             "id": "pop-heading_size",
@@ -2269,10 +2276,7 @@
         "label": "Tier 3 Gifts",
         "default": "10% off every order, 2 Premium Gifts per year"
       },
-
-
-
-          {
+      {
         "type": "text",
         "id": "member-link_text",
         "label": "Link Text",
@@ -2306,7 +2310,7 @@
         { "label": "Outline", "value": "btn--outline" },
         { "label": "Text", "value": "btn--text" }
       ]
-    },
+      },
     {
             "type": "richtext",
             "id": "text",

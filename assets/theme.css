@@ -25772,3 +25772,16 @@ div.rc_popup {
   .grid--mobile-slider {
     scroll-padding: 0;
   }}
+
+  /*Comparison Table*/
+  .comparison-table_container {
+    position: relative;
+
+  }
+  .table-slider {
+    padding-left: 500px;
+    overflow-x: scroll;
+    overflow-y: visible;
+    width: 100%;
+    border-collapse: separate;
+  }
