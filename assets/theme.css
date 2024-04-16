@@ -25806,10 +25806,6 @@ padding: 0;
   }
 /*Compareable*/
 /*Compareable*/
-@media (max-width: 749px) {
-.comparable-selected-products {
-  padding: 0;
-}  
 }
 .comparable-selected-products {
   padding: 0 10%;
@@ -25865,3 +25861,7 @@ table tbody:nth-child(8) {
 .product-table__header-row .product-table__cell {
   padding: 0 !important;
 }
+@media (max-width: 749px) {
+.comparable-selected-products {
+  padding: 0;
+}  
