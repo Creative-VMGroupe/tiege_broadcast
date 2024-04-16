@@ -25809,6 +25809,9 @@ padding: 0;
 .product-table__cell > p {
   text-align: center !important;
 }
+.product-table__cell {
+  text-align: center !important;
+}
 tr .product-table__cell:nth-child(2) {
   background-color: #F0F0F0 !important;
 }
