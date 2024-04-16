@@ -1,1 +1,208 @@
-{"sections":{"main":{"type":"main-page","settings":{"align_text":"text-center","bg_color":"#f7f7f7"}},"contact":{"type":"contact-form","blocks":{"Name":{"type":"text","settings":{}},"Email":{"type":"email","settings":{}},"Message":{"type":"body","settings":{}},"Optional-text":{"type":"formHeading","settings":{"title":"Optional"}},"Urgent-checkbox":{"type":"checkbox","settings":{"title":"This is urgent"}},"Options-select":{"type":"select","settings":{"title":"Select an option","label-one":"- Pick an option -","label-two":"Option one","label-three":"Option two","label-four":"Option three","label-five":"Option four","label-six":"Option five"}}},"block_order":["Name","Email","Message","Optional-text","Urgent-checkbox","Options-select"],"settings":{"title":"","padding_top":50,"padding_bottom":50}},"faq":{"type":"section-accordion-group","blocks":{"heading-0":{"type":"heading","settings":{"title":"FAQ"}},"question-1":{"type":"question","settings":{}},"question-2":{"type":"question","settings":{}},"question-3":{"type":"question","settings":{}}},"block_order":["heading-0","question-1","question-2","question-3"],"disabled":true,"settings":{"width":"wrapper--narrow","bg_color":"#fafafa","padding_top":50,"padding_bottom":50}}},"order":["main","contact","faq"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "subheading_size": 3,
+        "show_title": true,
+        "heading_size": 8,
+        "show_content": true,
+        "text_size": 4,
+        "align_text": "text-center",
+        "width": "wrapper",
+        "bg_color": "#f7f7f7",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "section_rich_text_biBPTf": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_EqDB7C": {
+          "type": "heading",
+          "settings": {
+            "title": "Contact Us",
+            "text_size": 7,
+            "padding_bottom": 30
+          }
+        },
+        "text_rLtwPL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Tiege Hanley, Inc.<\/p><p>2023 W. Carroll Ave<\/p><p>(312) 279-2780<\/p><p>Business Hours: 9am - 5pm CST<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 30
+          }
+        },
+        "text_n9cUr7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Need immediate answers? Explore <a href=\"\/pages\/faqs\" title=\"FAQs\">FAQs<\/a><\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 30
+          }
+        },
+        "text_Ywhd6e": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Have a Press, Influencer, Business Partnership, Charity, Event or other inquiry? Click Here.<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "heading_EqDB7C",
+        "text_rLtwPL",
+        "text_n9cUr7",
+        "text_Ywhd6e"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_rich_text_hYVVym": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_WHwqBe": {
+          "type": "heading",
+          "settings": {
+            "title": "Our Customer Experience Team Is Here For You!",
+            "text_size": 6,
+            "padding_bottom": 30
+          }
+        },
+        "text_CHxcpD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Tiege Hanley tries to cut out all the BS associated with men’s skin care and that extends to our customer service. If you have an issue, we got you!<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 30
+          }
+        },
+        "text_6dzKNQ": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li> <strong>Need help with your account?<\/strong> We’ll help you fix it!<\/li><li> <strong>Trouble with your delivery?<\/strong> No hassle reships!<\/li><li> <strong>Weren’t ready for your next box?<\/strong> Worry free returns!<\/li><\/ul>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 30
+          }
+        },
+        "text_aztUdc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you reach us during business hours you can expect a response within an hour! All inquiries will be responded to within 24 hours, guaranteed.<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "heading_WHwqBe",
+        "text_CHxcpD",
+        "text_6dzKNQ",
+        "text_aztUdc"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "contact": {
+      "type": "contact-form",
+      "blocks": {
+        "Name": {
+          "type": "text",
+          "settings": {
+            "title": "Name",
+            "required": true
+          }
+        },
+        "telephone_e7wiTj": {
+          "type": "telephone",
+          "settings": {
+            "title": "Phone Number",
+            "required": false
+          }
+        },
+        "Email": {
+          "type": "email",
+          "settings": {
+            "title": "Email",
+            "required": true
+          }
+        },
+        "select_bLTqtz": {
+          "type": "select",
+          "settings": {
+            "title": "Topic",
+            "label-one": "Can't Access My Account",
+            "label-two": "Product Feedback",
+            "label-three": "Product Questions",
+            "label-four": "Questions About My Order",
+            "label-five": "Questions About My Subscription",
+            "label-six": "Cancel My Order"
+          }
+        },
+        "text_BT9jVQ": {
+          "type": "text",
+          "settings": {
+            "title": "Subject",
+            "required": false
+          }
+        },
+        "Message": {
+          "type": "body",
+          "settings": {
+            "title": "Message",
+            "required": true
+          }
+        }
+      },
+      "block_order": [
+        "Name",
+        "telephone_e7wiTj",
+        "Email",
+        "select_bLTqtz",
+        "text_BT9jVQ",
+        "Message"
+      ],
+      "custom_css": [
+        "h2 {text-align: left;}"
+      ],
+      "settings": {
+        "title": "Fill Our The Contact Form Below Or Just Give Us A Call",
+        "terms": true,
+        "width": "wrapper",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 50
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_rich_text_biBPTf",
+    "section_rich_text_hYVVym",
+    "contact"
+  ]
+}
