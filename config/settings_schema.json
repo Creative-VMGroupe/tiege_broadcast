@@ -12,6 +12,10 @@
     "settings": [
       {
         "type": "header",
+        "content": "Light Mode"
+      },
+      {
+        "type": "header",
         "content": "General"
       },
       {
@@ -139,6 +143,142 @@
       {
         "type": "color",
         "id": "footer_link",
+        "label": "Links",
+        "default": "#c0c0c0"
+      },
+      {
+        "type": "header",
+        "content": "Dark Mode"
+      },
+      {
+        "type": "header",
+        "content": "General"
+      },
+      {
+        "type": "color",
+        "id": "dark_text_color",
+        "label": "Text",
+        "default": "#282C2E"
+      },
+      {
+        "type": "color",
+        "id": "dark_bg_color",
+        "label": "Background",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "id": "dark_secondary_bg_color",
+        "label": "Light background",
+        "default": "#F7F9FA",
+        "info": "Used for background accents on the home page"
+      },
+      {
+        "type": "color",
+        "id": "dark_accent_bright",
+        "label": "Bright accent",
+        "default": "#E03386",
+        "info": "Used to for bright highlights"
+      },
+      {
+        "type": "color",
+        "id": "dark_link_color",
+        "label": "Links",
+        "default": "#282C2E"
+      },
+      {
+        "type": "color",
+        "id": "dark_site_border_color",
+        "label": "Lines and borders",
+        "default": "#F3F3F3"
+      },
+      {
+        "type": "color",
+        "id": "dark_sale_color",
+        "label": "Sale",
+        "default": "#d20000"
+      },
+      {
+        "type": "checkbox",
+        "id": "dark_high_contrast",
+        "label": "Increase contrast",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "Header bar"
+      },
+      {
+        "type": "color",
+        "id": "dark_header_bg",
+        "label": "Background",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "dark_header_link",
+        "label": "Links",
+        "default": "#282C2E"
+      },
+      {
+        "type": "header",
+        "content": "Header navigation"
+      },
+      {
+        "type": "color",
+        "id": "dark_menu_bg_color",
+        "label": "Background",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "dark_menu_link_color",
+        "label": "Links",
+        "default": "#282C2E"
+      },
+      {
+        "type": "color",
+        "id": "dark_submenu_bg_color",
+        "label": "Dropdown background",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "dark_submenu_link_color",
+        "label": "Dropdown links",
+        "default": "#282C2E"
+      },
+      {
+        "type": "color",
+        "id": "dark_menu_transparent_color",
+        "label": "Transparent header text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "header",
+        "content": "Footer"
+      },
+      {
+        "type": "color",
+        "id": "dark_footer_bg",
+        "label": "Background",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "dark_footer_border",
+        "label": "Borders",
+        "default": "#F3F3F3"
+      },
+      {
+        "type": "color",
+        "id": "dark_footer_text",
+        "label": "Text",
+        "default": "#333333"
+      },
+      {
+        "type": "color",
+        "id": "dark_footer_link",
         "label": "Links",
         "default": "#c0c0c0"
       }
