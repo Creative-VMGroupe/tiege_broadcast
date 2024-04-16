@@ -25779,14 +25779,14 @@ div.rc_popup {
 
   }
   .table-slider {
-    padding-left: 500px;
+    padding-left: 200px;
     overflow-x: scroll;
     overflow-y: visible;
     width: 100%;
     border-collapse: separate;
   }
   .empty {
- height: 332px
+ height: 200px
   }
   .attribute {
     position: absolute;
@@ -25798,8 +25798,8 @@ div.rc_popup {
     position: absolute;
     top: auto;
     left: 200px;
-    height: 332px;
-    width: 332px;
+    height: 200px;
+    width: 200px;
   }
   .td-image_container {
 

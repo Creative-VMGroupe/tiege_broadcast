@@ -1,26 +1,32 @@
+{% liquid
+  assign image_1 = block.image_1
+  assign image_2 = block.image_2
+  assign image_3 = block.image_3
+  assign image_4 = block.image_4
+  assign image_5 = block.image_5
+%}
+
+
 <div id="comparison-tablee_container" class="comparison-table_container">
   <div class="table-slider">
     <table class="table-compare_container">
       <tbody>
         <tr class="replace-center-text">
           <td class="attribute empty">Empty</td>
-          <td class="td-image_container active-item">Image Container</td>
-          <td class="td-image_container">Image Container</td>
-          <td class="td-image_container">Image Container</td>
-          <td class="td-image_container">Image Container</td>
-          <td class="td-image_container">Image Container</td>
+          <td class="td-image_container active-item">
+            {{ image_1 | image_url }}
+            {{ title_1 }}
+          </td>
+          <td class="td-image_container">
+            {{ image_2 | image_url }}
+            {{ title_2 }}</td>
+          <td class="td-image_container">{{ title_3 }}</td>
+          <td class="td-image_container">{{ title_4 }}</td>
+          <td class="td-image_container">{{ title_5 }}</td>
         </tr>
         <tr class="replace-center-text">
           <td class="attribute">Y</td>
-          <td>Y</td>
-          <td>Y</td>
-          <td>Y</td>
-          <td>Y</td>
-          <td>Y</td>
-        </tr>
-        <tr class="replace-center-text">
-          <td class="attribute">Y</td>
-          <td>Y</td>
+          <td>Wash</td>
           <td>Y</td>
           <td>Y</td>
           <td>Y</td>
@@ -28,15 +34,7 @@
         </tr>
         <tr class="replace-center-text">
           <td class="attribute">Y</td>
-          <td>Y</td>
-          <td>Y</td>
-          <td>Y</td>
-          <td>Y</td>
-          <td>Y</td>
-        </tr>
-        <tr class="replace-center-text">
-          <td class="attribute">Y</td>
-          <td>Y</td>
+          <td>Scrub</td>
           <td>Y</td>
           <td>Y</td>
           <td>Y</td>
@@ -44,15 +42,7 @@
         </tr>
         <tr class="replace-center-text">
           <td class="attribute">Y</td>
-          <td>Y</td>
-          <td>Y</td>
-          <td>Y</td>
-          <td>Y</td>
-          <td>Y</td>
-        </tr>
-        <tr class="replace-center-text">
-          <td class="attribute">Y</td>
-          <td>Y</td>
+          <td>AM</td>
           <td>Y</td>
           <td>Y</td>
           <td>Y</td>
@@ -60,12 +50,38 @@
         </tr>
         <tr class="replace-center-text">
           <td class="attribute">Y</td>
-          <td>Y</td>
+          <td>PM</td>
           <td>Y</td>
           <td>Y</td>
           <td>Y</td>
           <td>Y</td>
         </tr>
+        <tr class="replace-center-text">
+          <td class="attribute">Y</td>
+          <td>Eyes</td>
+          <td>Y</td>
+          <td>Y</td>
+          <td>Y</td>
+          <td>Y</td>
+        </tr>
+        <tr class="replace-center-text">
+          <td class="attribute">Y</td>
+          <td>Serum</td>
+          <td>Y</td>
+          <td>Y</td>
+          <td>Y</td>
+          <td>Y</td>
+        </tr>
+      {% comment %} 
+                                                                                        Load More by amount of columns    
+                                                                                        <tr class="replace-center-text">
+                                                                                          <td class="attribute">Y</td>
+                                                                                          <td>Y</td>
+                                                                                          <td>Y</td>
+                                                                                          <td>Y</td>
+                                                                                          <td>Y</td>
+                                                                                          <td>Y</td>
+                                                                    </tr> {% endcomment %}
       </tbody>
 
 
