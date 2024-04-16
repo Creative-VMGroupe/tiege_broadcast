@@ -25813,6 +25813,9 @@ padding: 0;
   margin: 0;
   border: none;
 }
+.product-table__cell {
+  border: none;
+}
 .product-table__cell > p {
   text-align: center !important;
 }
