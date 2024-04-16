@@ -3,6 +3,10 @@
     "name": "Compare Systems - Tiege",
     "settings": [
       {
+        "type": "header",
+        "content": "Section Settings"
+      },
+      {
         "type": "text",
         "id": "heading",
         "label": "Heading",
@@ -39,7 +43,7 @@
       },
       {
         "type": "header",
-        "content": "Items"
+        "content": "Properties"
       },
       {
         "type":"text",
@@ -48,7 +52,32 @@
         "default": "Wash,Scrub,AM,PM,Eyes,Serum",
         "info": "Please add a comma seperated list of properties to compare"
       }
-  
+    ],
+    "blocks": [
+      {
+        "type": "item",
+        "name": "Product Item",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Level 1"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "properties",
+            "label": "Properties",
+            "default": "Yes,Yes,Yes,No,No",
+            "info": "Info for text item"
+          }
+        ]
+      }
     ]
   }
 {% endschema %}
