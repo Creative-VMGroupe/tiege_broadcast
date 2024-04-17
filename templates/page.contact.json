@@ -187,7 +187,7 @@
       ],
       "custom_css": [
         "h2 {text-align: left;}",
-        ".visually-hidden {position: static}"
+        ".visually-hidden {position: static !important;}"
       ],
       "settings": {
         "title": "Fill Our The Contact Form Below Or Just Give Us A Call",
