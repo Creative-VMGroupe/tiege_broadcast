@@ -25434,6 +25434,9 @@ body.has-header-sticky .timeline {
 .quick-add__button {
   left: 15px;
 }
+  .grid--mobile-slider {
+    margin-left: 0;
+  }
 }
 
 .btn-cart_container {
