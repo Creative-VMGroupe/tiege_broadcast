@@ -186,8 +186,7 @@
         "Message"
       ],
       "custom_css": [
-        "h2 {text-align: left;}",
-        ".custom-form__block {width: 50%;}"
+        "h2 {text-align: left;}"
       ],
       "settings": {
         "title": "Fill Our The Contact Form Below Or Just Give Us A Call",
