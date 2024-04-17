@@ -277,8 +277,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "title": "How can I get a Tiege Hanley DOPP bag?",
+            "content": "<p>Looking for our popular mesh DOPP bag?  Contact our Customer Experience team at<a href=\"mailto:info@tiege.com\" target=\"_self\">info@tiege.com<\/a> and we'll hook you up!<\/p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -289,8 +289,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "title": "Which level should I order if I'm under 25 years old?",
+            "content": "<p>The natural aging process in most men does not begin until age 25. If you are new to skin care, we would recommend a Level 1 box for you to get started. With Level 1, your skin will feel smooth, hydrated and energized!  That said, you would still see great benefits from using our anti-aging products found in Level 2 and Level 3 if you'd like something more advanced.  <\/p><p>If you’re looking to remove puffiness, dark circles and wrinkles around the eyes, consider Level 2 and our EYES cream. Level 3 adds our SUPER SERUM, which is packed with antioxidants, vitamins and anti-aging ingredients to improve skin tone, and reduce fine lines and wrinkles.<\/p><p>SERUM and EYES are also excellent for preventing environmental influences as well as stress influences. Antioxidants also protect against Blue Light, helping to reduce damage caused by blue light exposure from computer screens and phones.<\/p><p>Taking care of your face now will be a great investment in healthy skin for your future!<\/p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -301,8 +301,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "title": "Which level should I order if I'm under 15 years old?",
+            "content": "<p>If you are 15 years old or younger, we would suggest talking to your primary care physician or a dermatologist to see if our products are a good fit for you.<\/p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -313,8 +313,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "title": "Are your products vegan? Are they tested on animals?",
+            "content": "<p>Our products are not tested on animals.  We conduct all of our trials with human volunteers.<\/p><p>One of the waxes we use in our AM\/PM moisturizers and our EYES cream is made from beeswax, so our products aren’t completely vegan.<\/p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
