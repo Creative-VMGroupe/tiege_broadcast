@@ -20,6 +20,10 @@
   grid-column-start: 1;
   grid-column-end: 5;
 }
+#contact-us-page div:nth-of-type(5){
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
 #contact-us-page fieldset{
   grid-column-start: 3;
   grid-column-end: 5;
