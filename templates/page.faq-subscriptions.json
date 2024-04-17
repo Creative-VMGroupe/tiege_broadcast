@@ -2,9 +2,20 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+        "subheading": "",
+        "subheading_size": 3,
+        "show_title": true,
+        "heading_size": 8,
+        "show_content": true,
+        "text_size": 4,
         "align_text": "text-center",
-        "bg_color": "#f7f7f7"
+        "width": "wrapper",
+        "bg_color": "#f7f7f7",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
       }
     },
     "faq-first": {
@@ -19,16 +30,37 @@
         "faq-0": {
           "type": "question",
           "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
           }
         },
         "faq-1": {
           "type": "question",
           "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
           }
         },
         "faq-2": {
           "type": "question",
           "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
           }
         }
       },
@@ -39,6 +71,11 @@
         "faq-2"
       ],
       "settings": {
+        "width": "wrapper--narrow",
+        "columns": "1",
+        "bg_color": "",
+        "color": "",
+        "border_color": "",
         "padding_top": 50,
         "padding_bottom": 50
       }
@@ -55,16 +92,37 @@
         "question-1": {
           "type": "question",
           "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
           }
         },
         "question-2": {
           "type": "question",
           "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
           }
         },
         "question-3": {
           "type": "question",
           "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
           }
         }
       },
@@ -75,7 +133,11 @@
         "question-3"
       ],
       "settings": {
+        "width": "wrapper--narrow",
+        "columns": "1",
         "bg_color": "#fafafa",
+        "color": "",
+        "border_color": "",
         "padding_top": 50,
         "padding_bottom": 50
       }
@@ -92,16 +154,37 @@
         "question-1": {
           "type": "question",
           "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
           }
         },
         "question-2": {
           "type": "question",
           "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
           }
         },
         "question-3": {
           "type": "question",
           "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
           }
         }
       },
@@ -112,6 +195,11 @@
         "question-3"
       ],
       "settings": {
+        "width": "wrapper--narrow",
+        "columns": "1",
+        "bg_color": "",
+        "color": "",
+        "border_color": "",
         "padding_top": 50,
         "padding_bottom": 50
       }
@@ -123,24 +211,36 @@
           "type": "icon",
           "settings": {
             "icon_name": "icon-shield",
+            "icon_size": 20,
+            "icon_color": "#545454",
             "title": "Secure transactions",
-            "text": "<p>Transactions are handled with bank-grade security.<\/p>"
+            "heading_size": 4,
+            "text": "<p>Transactions are handled with bank-grade security.<\/p>",
+            "text_size": 3
           }
         },
         "icon-1": {
           "type": "icon",
           "settings": {
             "icon_name": "icon-recycle",
+            "icon_size": 20,
+            "icon_color": "#545454",
             "title": "Simple checkout",
-            "text": "<p>Our secure checkout is quick and easy to use.<\/p>"
+            "heading_size": 4,
+            "text": "<p>Our secure checkout is quick and easy to use.<\/p>",
+            "text_size": 3
           }
         },
         "icon-2": {
           "type": "icon",
           "settings": {
             "icon_name": "icon-chat",
+            "icon_size": 20,
+            "icon_color": "#545454",
             "title": "Get in touch",
-            "text": "<p>Have questions? Get in touch with us at any time.<\/p>"
+            "heading_size": 4,
+            "text": "<p>Have questions? Get in touch with us at any time.<\/p>",
+            "text_size": 3
           }
         }
       },
@@ -150,6 +250,20 @@
         "icon-2"
       ],
       "settings": {
+        "title": "",
+        "heading_size": 5,
+        "layout": "grid",
+        "grid": 3,
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "icon_alignment": "icon--top",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "layout_mobile": "slider"
       }
     }
   },
