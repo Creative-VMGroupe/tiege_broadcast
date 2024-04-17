@@ -1,3 +1,17 @@
+/*Contact Us - Form*/
+#contact-us-page {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+#contact-us-page:nth-child(1 of div){
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+#contact-us-page:nth-child(2 of div){
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
 .rc-radio-group__options {
   border: unset !important;
 }
