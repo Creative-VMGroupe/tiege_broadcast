@@ -188,7 +188,8 @@
       "custom_css": [
         "h2 {text-align: left; margin-bottom: 30px;}",
         ".visually-hidden {position: static !important;}",
-        "button {background-color: #00ad2d; border-color: #00ad2d;}"
+        "button {background-color: #00ad2d; border-color: #00ad2d;}",
+        ".field {border: 1px solid;}"
       ],
       "settings": {
         "title": "Fill Our The Contact Form Below Or Just Give Us A Call",
