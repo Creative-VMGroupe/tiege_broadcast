@@ -186,8 +186,10 @@
         "Message"
       ],
       "custom_css": [
-        "h2 {text-align: left;}",
-        ".visually-hidden {position: static !important;}"
+        "h2 {text-align: left; margin-bottom: 30px;}",
+        ".visually-hidden {position: static !important;}",
+        "button {background-color: #00ad2d; border-color: #00ad2d;}",
+        "button:hover {background-color: #009426 !important; border-color: ##009426 !important;}"
       ],
       "settings": {
         "title": "Fill Our The Contact Form Below Or Just Give Us A Call",
