@@ -97,8 +97,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "title": "Where does the name \"Tiege Hanley\" come from?",
+            "content": "<p>“Tiege Hanley” was a name that our founder, Kelley, discovered written down in a family tree within the first few pages of a bible which had been in his family for many generations.  Upon seeing the name, Kelley lit up and decided if he ever started a company, it would be named “Tiege Hanley.”  <\/p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -109,8 +109,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "title": "What is your return policy?",
+            "content": "<p>Please contact us at<a href=\"mailto:info@tiege.com\" target=\"_blank\">info@tiege.com<\/a>, and we'll be able to assist you with return instructions. <\/p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -121,8 +121,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "title": "Are your products Non-Comedogenic?",
+            "content": "<p>Unfortunately, we're unable to make any guarantees regarding clogged pores, as everyone's skin is different. But that being said, our WASH, SCRUB, and AM moisturizer are designed to be very lightweight and shouldn’t clog pores. The PM is slightly heavier, and that is very much by design. The PM acts as a nighttime barrier to diminish water loss, so that the anti-aging and moisturizing ingredients are more efficient and effective.<\/p><p> <\/p><p>Most of our ingredients will be non-comedogenic, but peptide ingredients are another issue. Be careful with SERUM, EYES, and PM. If you have sensitive skin, the peptides can cause irritation and possibly inflammation within pores, thus clogging them.<\/p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -133,8 +133,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "title": "Are your products fragrance free?",
+            "content": "<p>The products in your system are fragrance free. The light scents in PM, AM, and WASH come from the ingredients, primarily natural extracts that dissipate quickly. SCRUB has a menthol ingredient\/scent to soothe the skin, but like WASH it washes away when you rinse. EYES, SERUM, and ACNE have pretty much no fragrance.<br\/><br\/>Our body soaps, body washes, DEO, and BALLS powder do have fragrance, so if you have certain fragrance sensitivities, we'd recommend avoiding those.<\/p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -145,8 +145,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "title": "Can Tiege Hanley help with dark circles?",
+            "content": "<p>When it comes to dark circles around your eyes, you want to be using our EYES cream. Tiege Hanley EYES is intended to brighten and tighten the skin around your eyes with the help of ingredients like collagen-stimulating peptides and caffeine. EYES has been designed to revitalize tired-looking skin by boosting circulation and improving skin tone.<\/p><p> <\/p><p>EYES is included in Skin Care Level 2 and Level 3, or it can be added to any system through Level YOU for just $11.50.<\/p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -157,7 +157,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
+            "title": "Are your products oil free?",
             "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
             "show_icon": false,
             "icon_name": "icon-award",
@@ -169,8 +169,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "title": "Does Tiege Hanley work for oily skin?",
+            "content": "<p>Our products have been designed for all skin types and they are very light compared to other products on the market. However, everyone is different when it comes to their skin, so we can’t guarantee our products will eliminate all the oil from your skin entirely.<\/p><p>If your skin tends to feel oily you'll end up using a bit more WASH and SCRUB in your routine. You can also reduce how much moisturizer you use if it feels too heavy after putting it on.<\/p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -178,6 +178,102 @@
           }
         },
         "question_m4n7Bw": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Does Tiege Hanley work for sensitive skin?",
+            "content": "<p>Our skin care systems are designed for all skin types, including sensitive skin.  Our WASH and SCRUB are considered to be mild in terms of skin abrasiveness, and the SCRUB is only recommended to be used twice a week.  Our AM and PM moisturizers are light-weight and non-comedogenic, meaning they are specially formulated to not clog pores.<\/p><p>For those with sensitive skin, we recommend being careful with the SCRUB, as exfoliation can cause skin irritation. Be sure to moisturize after using the SCRUB.  It may be a good idea to exfoliate at night, considering that our PM moisturizer contains rejuvenating properties.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_DQBDct": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Does Tiege Hanley work for combination skin?",
+            "content": "<p>Combination skin can be tricky, but our products have been formulated for all skin types, and should help your skin if used according to our instruction card.  Check out <a href=\"https:\/\/www.tiege.com\/blogs\/news\/what-is-combination-skin-how-to-know-if-you-have-it\" target=\"_blank\">this blog<\/a> on our site, as you'll likely fall into one of these cases.  <\/p><p>If you find that your T-Zone (forehead and nose) tend to stay oily after applying the products, with your cheeks and mouth area remaining dry, you'll want to switch up your usage a bit.  Try using a bit less moisturizer on your T-zone to start.  Making that change should help to eliminate some of the excess oil, while using your skin's natural oil production to stay hydrated.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_mLeqjx": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Does Tiege Hanley help remove blackheads?",
+            "content": "<p>While the system is not designed specifically for blackheads, WASH and SCRUB rinse off very quickly and cleanly, so nothing’s left behind to potentially clog pores. Our AM moisturizer has been designed to be very lightweight and shouldn’t clog pores.  If you use our products along with the ACNE cream, our active ingredient for treating acne is in the moisturizer applied AFTER you have already cleansed your skin. The ACNE cream will continue the cleansing process by dissolving the dead skin that clogs pores and causes skin eruptions.  This is the best time to do the work necessary for restoring your skin to its smooth, blemish-free state.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_rLRwDa": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Which Acne System should I order?",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_qttJ6h": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Will Tiege Hanley cure my acne?",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_9FT8gF": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Will Tiege Hanley repair existing acne scars?",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_YqEed9": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Does Tiege Hanley work for all ethnicities?",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_VUPnmp": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Does Tiege Hanley lighten your skin?",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_LjahXe": {
           "type": "question",
           "settings": {
             "default_open": false,
@@ -189,7 +285,55 @@
             "icon_color": "#545454"
           }
         },
-        "question_DQBDct": {
+        "question_9zMUWf": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_ECQiRM": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_L3HFTw": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_htPDF3": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_U4FgBz": {
           "type": "question",
           "settings": {
             "default_open": false,
@@ -215,7 +359,19 @@
         "question_JbxEi4",
         "question_WMEyA4",
         "question_m4n7Bw",
-        "question_DQBDct"
+        "question_DQBDct",
+        "question_mLeqjx",
+        "question_rLRwDa",
+        "question_qttJ6h",
+        "question_9FT8gF",
+        "question_YqEed9",
+        "question_VUPnmp",
+        "question_LjahXe",
+        "question_9zMUWf",
+        "question_ECQiRM",
+        "question_L3HFTw",
+        "question_htPDF3",
+        "question_U4FgBz"
       ],
       "settings": {
         "width": "wrapper--narrow",
