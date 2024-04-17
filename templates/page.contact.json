@@ -189,7 +189,7 @@
         "h2 {text-align: left; margin-bottom: 30px;}",
         ".visually-hidden {position: static !important;}",
         "button {background-color: #00ad2d; border-color: #00ad2d;}",
-        ".field {border: 1px solid;}"
+        ".field {border: 1px solid; padding-left: 20px;}"
       ],
       "settings": {
         "title": "Fill Our The Contact Form Below Or Just Give Us A Call",
