@@ -49,7 +49,7 @@
   variables depending on which container the text or background is inside.
 ============================================================================== */
 :root {
-  --bg: white;
+  --bg: var(--COLOR-BG);
   --bg-light: var(--LIGHT-BG)
   --bg-accent: var(--COLOR-BG-SECONDARY);
   --bg-accent-lighten: var(--COLOR-BG-SECONDARY-LIGHTEN);
