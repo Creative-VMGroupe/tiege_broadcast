@@ -1,4 +1,5 @@
 /*Contact Us - Form*/
+@media (min-width: 750px){
 #contact-us-page {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -36,6 +37,7 @@
   grid-column-start: 3;
   grid-column-end: 5;
 }
+  }
 .rc-radio-group__options {
   border: unset !important;
 }
