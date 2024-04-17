@@ -216,6 +216,10 @@
       "block_order": [
         "instafeed_app_block_CUYPCR"
       ],
+      "custom_css": [
+        "#insta-feed {background-color: #f7f7f7; padding-top: 60px;}",
+        "#insta-feed h2 {margin-top: 0 !important;}"
+      ],
       "settings": {
         "include_margins": false
       }
