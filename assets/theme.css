@@ -12301,7 +12301,8 @@ main-search .input-holder {
   height: 35px;
   background-color: inherit;
   border-radius: inherit;
-  opacity: 0.3;
+  /* opacity: 0.3; */
+  opacity: 0;
   position: absolute;
   top: -6px;
   left: -6px;
