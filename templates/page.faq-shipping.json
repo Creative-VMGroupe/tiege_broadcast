@@ -80,12 +80,90 @@
             "icon_size": 20,
             "icon_color": "#545454"
           }
+        },
+        "question_8xrkh3": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Does Tiege Hanley ship internationally?",
+            "content": "<p>Yes, Tiege Hanley ships to many international countries!  Delivery times vary by country. <\/p><p>There is a weight-based shipping fee determined by the costs of shipping to your country. You will see the cost to ship your order in checkout. <\/p><p>You will get a tracking email within 1 business day of ordering. Check the tracking link for the current status of your shipment, as well as estimated delivery. Asendia picks up international shipments from our facility Monday - Friday, except holidays:  New Year's Day, Memorial Day, Independence Day, Labor Day, Thanksgiving Day, and Christmas Day.<\/p><p>When ordering, ensure that your shipping address is correct, and write your address with the 26-letter ABC alphabet, and avoid accented letters. Undeliverable addresses cause delays and require pick up at a delivery office in your home city.<\/p><p>For some countries, Value Added Tax (VAT) will be assessed when your order is processed. That means your shipment qualifies for electronic customs clearance during transit. You should not have to pay additional customs duties or fees when the parcel arrives in your country.<\/p><p>If you are not asked to pay taxes, your box goes to a customs office. Please be aware your shipment could be held for customs fee collection. Payment would need to be completed in order to receive your package from your local post office or customs office.<\/p><p>You can choose your preferred currency from the dropdown menu by the shopping cart.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_qead3x": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Do you ship to my country?",
+            "content": "<p>While we ship to most countries around the world, we unfortunately do not support shipping to every country.<\/p><p>The following is a list of countries that we are unable to ship to:<\/p><ul><li>Algeria<\/li><li>Angola<\/li><li>Argentina<\/li><li>Bahrain<\/li><li>Bangladesh<\/li><li>Belarus<\/li><li>Bolivia<\/li><li>Burundi<\/li><li>Central African Republic<\/li><li>Chad<\/li><li>Chile<\/li><li>Congo<\/li><li>Congo - The Democratic Republic<\/li><li>Cuba<\/li><li>Côte d'Ivoire<\/li><li>Ecuador<\/li><li>El Salvador<\/li><li>French Polynesia<\/li><li>French Southern Territories<\/li><li>Guatemala<\/li><li>Heard Island And McDonald Islands<\/li><li>Honduras<\/li><li>Iran, Islamic Republic Of<\/li><li>Iraq<\/li><li>Kiribati<\/li><li>Kosovo<\/li><li>Korea - Democratic People's Republic Of<\/li><li>Kuwait<\/li><li>Lebanon<\/li><li>Liberia<\/li><li>Libyan Arab Jamahiriya<\/li><li>Morocco<\/li><li>Nauru<\/li><li>New Caledonia<\/li><li>Nicaragua<\/li><li>Niue<\/li><li>Norfolk Island<\/li><li>Papua New Guinea<\/li><li>Paraguay<\/li><li>Pitcairn<\/li><li>Russia<\/li><li>Rwanda<\/li><li>Samoa<\/li><li>Solomon Islands<\/li><li>Somalia<\/li><li>South Africa<\/li><li>South Georgia And The South Sandwich Islands<\/li><li>South Sudan<\/li><li>Sudan<\/li><li>Syria<\/li><li>Tanzania<\/li><li>Timor Leste<\/li><li>Tokelau<\/li><li>Tonga<\/li><li>Tuvalu<\/li><li>Ukraine<\/li><li>Vanuatu<\/li><li>Venezuela<\/li><li>Wallis And Futuna<\/li><li>Yemen<\/li><li>Zimbabwe<\/li><\/ul>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_x3nGK6": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_TpYige": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_MbYjdQ": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_6GJni7": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
         }
       },
       "block_order": [
         "faq-0",
         "faq-1",
-        "faq-2"
+        "faq-2",
+        "question_8xrkh3",
+        "question_qead3x",
+        "question_x3nGK6",
+        "question_TpYige",
+        "question_MbYjdQ",
+        "question_6GJni7"
       ],
       "settings": {
         "width": "wrapper--narrow",
