@@ -25489,6 +25489,11 @@ body.has-header-sticky .timeline {
 .product-item__price__holder {
   margin-top: 0;
 }
+/* HP */
+.timeline__dot {
+  top: 3px;
+  left: 3px;
+}
 /* PDP */
 .complementary-product__header {
   display: flex;
