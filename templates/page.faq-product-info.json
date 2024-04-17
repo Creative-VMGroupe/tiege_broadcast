@@ -325,8 +325,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "title": "Are your products recyclable? Are they safe for the environment?",
+            "content": "<p>Our tubes and caps for WASH, SCRUB, AM, and PM are recyclable. Our boxes are 100% recyclable and made from 80% recycled materials.<\/p><p> <\/p><p>All of our products are environmentally friendly should you choose to rinse off outdoors (for example, while camping). <\/p><p> <\/p><p>If you are using our Skin Care System Level 2 or Level 3, or Acne System Level 1 or Level 2, the EYES, SUPER SERUM, and ACNE airless pumps are not recyclable at this time. We have been able to significantly reduce the amount of plastic in our new EYES and SERUM tubes, and are working on creating a program for our members to send those back for us to process.<\/p><p> <\/p><p>We are looking to continue our commitment to recycled and reused materials, and are hopeful to have more innovations in this area as we continue to grow.<\/p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -337,8 +337,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "title": "What are the pH levels of your products?",
+            "content": "<p>The pH levels are as follows:<\/p><p><strong>WASH <\/strong>– 7.50<\/p><p><strong>SCRUB<\/strong> – 6.27<\/p><p><strong>AM<\/strong> – 5.58<\/p><p><strong>PM<\/strong> – 5.22<\/p><p><strong>EYES<\/strong> – 5.99<\/p><p><strong>SERUM<\/strong> – 4.51<\/p><p><strong>ACNE<\/strong> - 3.71<\/p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
