@@ -50,7 +50,6 @@
 ============================================================================== */
 :root {
   --bg: var(--COLOR-BG);
-  --bg-light: var(--LIGHT-BG);
   --bg-accent: var(--COLOR-BG-SECONDARY);
   --bg-accent-lighten: var(--COLOR-BG-SECONDARY-LIGHTEN);
   --text-dark: var(--COLOR-TEXT-DARK);
@@ -79,8 +78,6 @@
   --error: var(--COLOR-ERROR);
   --error-bg: var(--COLOR-ERROR-BG);
   --header-overlay-color: transparent;
---font-16-tiege: 16px;
---font-14-tiege: 14px;
 }
 
 .palette--contrast {
