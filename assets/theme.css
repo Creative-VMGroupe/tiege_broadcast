@@ -25430,13 +25430,18 @@ body.has-header-sticky .timeline {
 :root {
   --Font-12-CUSTOM: 12px;
 }
-
+.quick-add__button {
+  left: 15px;
+}
+@media(max-width: 749px) {
 .btn-cart_container {
   padding: 8px 10%;
   display: flex !important;
   justify-content: space-between;
   height: 50px;
+}  
 }
+
 .btn-cart_text-custom {
   display: flex !important;
   align-items: center;
