@@ -176,6 +176,9 @@
     },
     "section_video_qzUgcT": {
       "type": "section-video",
+      "custom_css": [
+        ".hero__video {max-width: 670px; margin: 0 auto;}"
+      ],
       "settings": {
         "show_video_popup": false,
         "video_popup_social": "https:\/\/www.youtube.com\/watch?v=nOjrW8jRB78",
@@ -183,7 +186,7 @@
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full-padded",
         "overlay_opacity": 0,
-        "overlay_color": "#000",
+        "overlay_color": "#000000",
         "show_overlay_text": false,
         "title": "",
         "heading_size": 7,
@@ -192,7 +195,7 @@
         "flex_align": "align--middle-center",
         "flex_align_mobile": "align--middle-center-mobile",
         "bg_color": "",
-        "color": "#FFFFFF",
+        "color": "#ffffff",
         "link_text": "",
         "link": "",
         "button_type": "btn--primary",
