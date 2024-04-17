@@ -223,70 +223,14 @@
         "bg_color": "",
         "color": "",
         "border_color": "",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
-    "faq-second": {
-      "type": "section-accordion-group",
-      "blocks": {
-        "question-1": {
-          "type": "question",
-          "settings": {
-            "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
-            "show_icon": false,
-            "icon_name": "icon-award",
-            "icon_size": 20,
-            "icon_color": "#545454"
-          }
-        },
-        "question-2": {
-          "type": "question",
-          "settings": {
-            "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
-            "show_icon": false,
-            "icon_name": "icon-award",
-            "icon_size": 20,
-            "icon_color": "#545454"
-          }
-        },
-        "question-3": {
-          "type": "question",
-          "settings": {
-            "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
-            "show_icon": false,
-            "icon_name": "icon-award",
-            "icon_size": 20,
-            "icon_color": "#545454"
-          }
-        }
-      },
-      "block_order": [
-        "question-1",
-        "question-2",
-        "question-3"
-      ],
-      "settings": {
-        "width": "wrapper--narrow",
-        "columns": "1",
-        "bg_color": "#fafafa",
-        "color": "",
-        "border_color": "",
-        "padding_top": 50,
-        "padding_bottom": 50
+        "padding_top": 0,
+        "padding_bottom": 60
       }
     }
   },
   "order": [
     "main",
     "section_rich_text_r9T9dm",
-    "faq-first",
-    "faq-second"
+    "faq-first"
   ]
 }
