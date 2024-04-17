@@ -45,18 +45,12 @@
     "faq-first": {
       "type": "section-accordion-group",
       "blocks": {
-        "faq-heading": {
-          "type": "heading",
-          "settings": {
-            "title": "FAQ"
-          }
-        },
         "faq-0": {
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "title": "Which level should I order?",
+            "content": "<p>The best way to find out which system is right for you is by filling out our product recommender!<\/p><p>You can <a href=\"https:\/\/www.tiege.com\/pages\/quiz\" target=\"_blank\">click here<\/a> to head back to our site and take the quiz.<\/p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -67,6 +61,42 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "title": "How soon should I see results after starting my Tiege Hanley System?",
+            "content": "<p>We have had customers see improvements in their skin in as few as 7 days, but everyone’s skin is different, so we unfortunately cannot make any guarantees regarding results.  Our recommendation is to use the product for about 3 weeks, which should be enough time to make a pretty firm judgment call on whether the system is something you’d like to continue using.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "faq-2": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "How long do your products last?",
+            "content": "<p>Our products have a recommended 2-year shelf life.  The only product with a definitive expiration date is our AM moisturizer.  You can find the expiration date on the front of the AM moisturizer, at the very top within the crimped section.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_G3LgUQ": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "What ingredients do you use in your products?",
+            "content": "<p>Here is a full list of the ingredients used in our products: <\/p><h6>DAILY FACE WASH 2.0<\/h6><p>Water \/ Eau \/ Aqua, Cocamidopropyl Hydroxysultaine, Sodium Cocoyl Isethionate, Sodium Lauroyl Methyl Isethionate, Acrylates Copolymer, Sodium Cocoyl Glycinate, Sodium Chloride, Sodium Methyl Cocoyl Taurate, Phytosteryl\/Octyldodecyl Lauroyl Glutamate, Phenoxyethanol, Glycol Distearate, Caprylic\/Capric Triglyceride, Glycerin, Maltooligosyl Glucoside, Jojoba Oil\/Macadamia Seed Oil Esters, Methyl Glucose Caprate\/Caprylate\/Oleate, Sodium Benzoate, Hydrogenated Starch Hydrolysate, Sodium Hydroxide, Eucalyptus Globulus Leaf Oil, Potassium Sorbate, Guar Hydroxypropyltrimonium Chloride, Ethylhexylglycerin, Panthenol, Citric Acid, Propanediol, Trisodium Ethylenediamine Disuccinate, Coconut Acid, Squalene, Lavandula Angustifolia (Lavender) Flower Oil, Sodium PCA, Tetrasodium Glutamate Diacetate, Linalool, Limonene, Phytosteryl Macadamiate, Niacinamide, Fumaric Acid, Phytosterols, Aloe Barbadensis Leaf Juice Powder, Tocopherol, Maltodextrin<\/p><h6>DAILY FACE WASH 1.0<\/h6><p>Water \/ Eau \/ Aqua, Ammonium Lauryl Sulfate, Disodium Cocoamphodipropionate, Coconut Oil Aminoethoxyethanol Amides, C32-36 Isoalkyl Stearate, Glycol Distearate, Glycerin, Cetearyl Alcohol, Polysorbate 60, Sodium Chloride, Phenoxyethanol, Caprylyl Glycol, Salix Alba (Willow) Bark Extract, Cucumis Sativus (Cucumber) Fruit Extract, Citric Acid, Acrylates\/C10-30 Alkyl Acrylate Crosspolymer, Lavandula Hybrida Oil, Eucalyptus Globulus Leaf Oil<\/p><h6>AM MORNING FACIAL MOISTURIZER (SPF 20)<\/h6><p><span style=\"text-decoration:underline\">Active Ingredients<\/span>......Purpose<\/p><p>Octinoxate 5.5%........Sunscreen<\/p><p>Avobenzone 2.2%.....Sunscreen<\/p><p>Octocrylene 2.0%......Sunscreen<\/p><p><span style=\"text-decoration:underline\">Inactive Ingredients:<\/span> Water \/ Eau \/ Aqua, Isodecyl Neopentanoate, Cyclopentasiloxane, Bis-PEG-12 Dimethicone Beeswax, Glycerin, Glyceryl Stearate, PEG-100 Stearate, Phenoxyethanol, Caprylyl Glycol, Sodium Hydroxide, Hydroxypropyl Starch Phosphate, C18-38 Alkyl Hydroxystearoyl Stearate, Sodium Acrylate\/Sodium Acryloyldimethyl Taurate Copolymer, Isohexadecane, Polysorbate 80, Calendula Officinalis Flower Extract, Plantago Major Leaf Extract, Carbomer, Disodium EDTA, Lavandula Officinalis (Lavender) Oil, Rosmarinus Officinalis (Rosemary) Leaf Oil<\/p><h6>PM BEDTIME FACIAL MOISTURIZER<\/h6><p>Water \/ Eau \/ Aqua, Glycerin, Potassium Sorbate, Acetyl Hexapeptide-8, Phenoxyethanol, Isohexadecane, C32-36 Isoalkyl Stearate, Cetearyl Alcohol, Soluble Collagen, Hydrolyzed Elastin, Bis-PEG-12 Dimethicone Beeswax, Dimethicone, Cetearyl Glucoside, Stearic Acid, Zea Mays (Corn) Starch, Niacinamide, Glyceryl Stearate, PEG-100 Stearate, Caprylic\/Capric Triglyceride, Sodium Hyaluronate, Caprylyl Glycol, Allantoin, Sodium Hydroxide, Camellia Sinensis Leaf Extract, Aloe Barbadensis Leaf Extract<\/p><h6>SCRUB EXFOLIATING FACIAL SCRUB<\/h6><p>Water \/ Eau \/ Aqua, Disodium Cocoamphodipropionate, Sodium C14-16 Olefin Sulfonate, Cetearyl Alcohol, Polyglyceryl-3 Stearate, Beheneth-5, C32-36 Isoalkyl Stearate, Prunus Armeniaca (Apricot) Seed Powder, Polyacrylate-33, Caprylic\/Capric Triglyceride, Menthyl Lactate, Sodium Acrylate\/Sodium Acryloyldimethyl Taurate Copolymer, Isohexadecane, Polysorbate 80, Glyceryl Stearate, Phenoxyethanol, Caprylyl Glycol, Allantoin, Cucumis Sativus (Cucumber) Fruit Extract, Citric Acid, Niacinamide<\/p><h6>EYES AM\/PM EYE CREAM<\/h6><p>Water \/ Eau \/ Aqua, Cyclopentasiloxane, Dimethicone Crosspolymer, Glycerin, Potassium Sorbate, Acetyl Hexapeptide-8, Phenoxyethanol, Niacinamide, Cetearyl Alcohol, Polymethylsilsesquioxane, Isopropyl Palmitate, Caffeine, Bis-PEG-12 Dimethicone Beeswax, C32-36 Isoalkyl Stearate, Glyceryl Stearate, PEG-100 Stearate, Sodium Acrylate\/Sodium Acryloyldimethyl Taurate Copolymer, Isohexadecane, Polysorbate 80, Cetearyl Glucoside, Stearic Acid, Caprylyl Glycol, Tocopheryl Acetate<\/p><h6>SUPER SERUM AM\/PM FIRMING SERUM<\/h6><p>Water \/ Eau \/ Aqua, Glycerin, Sodium Polystyrene Sulfonate, Acetyl Hexapeptide-8, Pentapeptide-18, Citric Acid, Caprylyl Glycol, Polyglyceryl-3 Stearate, Beheneth-5, Isopropyl Palmitate, Simmondsia Chinensis (Jojoba) Seed Oil, Camellia Sinensis Leaf Extract, Prunus Armeniaca (Apricot) Fruit Extract, Phenoxyethanol, Retinyl Palmitate, Xanthan Gum, Sodium Hydroxide, Acrylates\/C10-30 Alkyl Acrylate Crosspolymer, C18-38 Alkyl Hydroxystearoyl Stearate, Sodium Hyaluronate<\/p><h6>ACNE CREAM<\/h6><p><span style=\"text-decoration:underline\">Active Ingredients:<\/span>......Purpose<\/p><p>Salicylic Acid 1.6%.....Acne Treatment<\/p><p><span style=\"text-decoration:underline\">Inactive Ingredients:<\/span> Water \/ Eau \/ Aqua, Glycerin, Cyclopentasiloxane, Cocamidopropyl Dimethylamine, Ethyl Palmate, Behenyl Alcohol, Zea Mays (Corn) Starch, Beheneth-5, Polyglycerol-3 Stearate, Glyceryl Stearate, PEG-100 Stearate, Phenoxyethanol, Caprylyl Glycol, Ceteareth-25, Medicago Sativa (Alfalfa) Extract, Plantago Major Leaf Extract, Calendula Officinalis Flower Extract, Aleurites Moluccanus Seed Oil, Xanthan Gum, Sodium Hyaluronate<\/p><h6>RETINOL STICK<\/h6><p>Water \/ Eau \/ Aqua, Propanediol, Sodium Stearate, Polyglyceryl-10 Oleate, Zea Mays (Corn) Starch, Caprylic\/Capric Triglyceride, Glycerin, Squalane, Menthyl Lactate, Sodium Chloride, Dimer Dilinoleyl Dimer Dilinoleate, Coco- Caprylate\/Caprate, Niacinamide, Sodium Stearoyl Glutamate, Retinyl Linoleate, Aloe Barbadensis Leaf Juice, Stearic Acid, Ascorbic Acid, Sodium Hyaluronate, Terminalia Ferdinandiana Fruit Extract, Tocopherol<\/p><h6>GLYCOLIC PADS<\/h6><p>Aqua\/Water\/Eau, Alcohol Denat., Glycolic Acid, Hamamelis Virginiana (Witch Hazel) Water, Lactic Acid, Sodium Hydroxide, Salicylic Acid, Polysorbate 20, *Glycerin, Avena Sativa (Oat) Bran Extract, *Avena Sativa (Oat) Kernel Extract, Bisabolol, Allantoin, Phytic Acid, Benzoic Acid, Tetrasodium Glutamate Diacetate, Phenoxyethanol, Ethylhexylglycerin, Sodium Benzoate, Potassium Sorbate<\/p><p>*Organic Ingredients<\/p><h6>CLAY MASK<\/h6><p>Aqua\/Water\/Eau, Kaolin, Charcoal, Butylene Glycol, Magnesium Aluminum Silicate, Bisabolol, Allantoin, Aloe Barbadensis Leaf Extract, Cucumis Sativus (Cucumber) Fruit Extract, Xanthan Gum, Citric Acid, Disodium EDTA, Ethylhexylglycerin<\/p><h6>BODY WASH - Citrus<\/h6><p>Water \/ Eau \/ Aqua, Sodium C14-16 Olefin Sulfonate, Sodium Lauroyl Sarcosinate, Cocamidopropyl Betaine, Glycerin, Cocamide Mipa, Capryloyl\/Caproyl Methyl Glucamide, PPG-26-Buteth-26, Citrus Paradisi (Grapefruit) Peel Oil, PEG-40 Hydrogenated Castor Oil, Xanthan Gum, BIS-PEG-18 Methyl Ether Dimethyl Silane, Guar Hydroxypropyltrimonium Chloride, Ethylhexylglycerin, Polyquaternium-73, Cannabis Sativa Seed Oil, Moringa Oleifera Seed Oil, Citric Acid, Phenoxyethanol, Chlorphenesin, Sodium Benzoate, Disodium Edta<\/p><h6>BODY WASH - Cucumber<\/h6><p>Water \/ Eau \/ Aqua, Sodium C14-16 Olefin Sulfonate, Sodium Lauroyl Sarcosinate, Cocamidopropyl Betaine, Glycerin, Fragrance (parfum), Cocamide Mipa, Capryloyl\/Caproyl Methyl Glucamide, PPG-26-Buteth-26, PEG-40 Hydrogenated Castor Oil, Xanthan Gum, BIS-PEG-18 Methyl Ether Dimethyl Silane, Guar Hydroxypropyltrimonium Chloride, Ethylhexylglycerin, Polyquaternium-73, Cannabis Sativa Seed Oil, Moringa Oleifera Seed Oil, Citric Acid, Phenoxyethanol, Chlorphenesin, Disodium Edta<\/p><h6>BODY WASH - Eucalyptus<\/h6><p>Water \/ Eau \/ Aqua, Sodium C14-16 Olefin Sulfonate, Sodium Lauroyl Sarcosinate, Cocamidopropyl Betaine, Glycerin, Cocamide Mipa, Capryloyl\/Caproyl Methyl Glucamide, PPG-26-Buteth-26, PEG-40 Hydrogenated Castor Oil, Xanthan Gum, BIS-PEG-18 Methyl Ether Dimethyl Silane, Eucalyptus Globulus Leaf Oil, Lavandula Angustifolia (Lavender) Flower Oil, Guar Hydroxypropyltrimonium Chloride, Ethylhexylglycerin, Polyquaternium-73, Cannabis Sativa Seed Oil, Moringa Oleifera Seed Oil, Citric Acid, Phenoxyethanol, Chlorphenesin, Sodium Benzoate, Disodium Edta, Fragrance (Parfum), Linalool, Limonene<\/p><h6>BODY WASH - Clean<\/h6><p>Water \/ Eau \/ Aqua, Sodium C14-16 Olefin Sulfonate, Sodium Lauroyl Sarcosinate, Cocamidopropyl Betaine, Glycerin, Fragrance (parfum), Cocamide Mipa, Capryloyl\/Caproyl Methyl Glucamide, PPG-26-Buteth-26, PEG-40 Hydrogenated Castor Oil, Xanthan Gum, BIS-PEG-18 Methyl Ether Dimethyl Silane, Guar Hydroxypropyltrimonium Chloride, Ethylhexylglycerin, Polyquaternium-73, Cannabis Sativa Seed Oil, Moringa Oleifera Seed Oil, Citric Acid, Phenoxyethanol, Chlorphenesin, Sodium Benzoate, Disodium Edta<\/p><h6>BODY WASH - Sandalwood<\/h6><p>Water \/ Eau \/ Aqua, Sodium C14-16 Olefin Sulfonate, Sodium Lauroyl Sarcosinate, Cocamidopropyl Betaine, Glycerin, Cocamide Mipa, Capryloyl\/Caproyl Methyl Glucamide, Fragrance (parfum), PPG-26-Buteth-26, PEG-40 Hydrogenated Castor Oil, Xanthan Gum, BIS-PEG-18 Methyl Ether Dimethyl Silane, Guar Hydroxypropyltrimonium Chloride, Ethylhexylglycerin, Eucalyptus Globulus Leaf Oil, Polyquaternium-73, Cannabis Sativa Seed Oil, Moringa Oleifera Seed Oil, Citric Acid, Phenoxyethanol, Chlorphenesin, Sodium benzoate, Disodium Edta, Limonene<\/p><h6>WASH BODY BAR - Cucumber<\/h6><p>Sodium Palmate, Sodium Cocoate and\/or Sodium Palm Kernelate, Water (Aqua, Eau), Glycerin, Cetearyl Alcohol & Ceteareth-20, Squalane (Olive), Menthol & Menthyl Lactate, PARFUM, Sodium Chloride, Hydrogenated Simmondsia Chinensis (Jojoba) Seed Oil, Aloe Barbadensis (Aloe) Leaf Juice, Tocopheryl Acetate (Vitamin E), Pentasodium Pentetate<\/p><h6>SCRUB BODY BAR - Sandalwood<\/h6><p>Sodium Palmate, Sodium Cocoate and\/or Sodium Palm Kernelate, Water (Aqua, Eau), Glycerin, Menthol & Menthyl Lactate, Parfum, Hydogenated Jojoba Wax, Iron Oxides, Sodium Chloride, Cedrus Atlantica (Cedarwood) Bark Oil, Activated Charcoal, Eucalyptus (Eucalyptus Globulus) Oil, Pentasodium Pentetate<\/p><h6>MOISTURIZING BODY BAR - Eucalyptus<\/h6><p>Sodium Palmate, Sodium Cocoate and\/or Sodium Palm Kernelate, Purified De-Ionized Water (Aqua, Eau), Glycerin, Coco Glucoside, Stearic Acid, Eucalyptus Globulus Leaf Oil, Lavandula Angustifolia, Titanium Dioxide, Behentrimonium Methosulfate, Sodium Chloride, Cocos Nucifera (Coconut) Oil, Pentasodium Pentetate<\/p><h6>DEO<\/h6><p>Propylene Glycol, Water \/ Eau \/ Aqua, Propanediol, Sodium Stearate, Glycerin, Saccharomyces Ferment Filtrate, Sorbitan Oleate Decylglucoside Crosspolymer, Fragrance (Parfum), Diatomaceous Earth, Tapioca Starch, Aloe Barbadensis Leaf Juice, Camellia Sinensis Leaf Extract, Hydrolyzed Jojoba Esters, Sodium Chloride, Benzyl Benzoate, Alpha-Isomethyl Ionone, Linalool, Hexyl Cinnamal, Benzyl Salicylate, Citronellol, Phenethyl Alcohol<\/p><h6>BALLS<\/h6><p>Zea Mays (Corn) Starch, Tapioca Starch, Aluminum Starch Octenylsuccinate, Polysilicone-1 Crosspolymer, Maranta Arundinacea Root Powder, Silica Silylate, Sodium Bicarbonate, Aloe Barbadensis Leaf Juice Powder, Citronellyl Methylcrotonate, Menthol, Fragrance\/Parfum<\/p><h6>BODY LOTION<\/h6><p>Water \/ Eau \/ Aqua, Isocetyl Stearate, Glycerin, Caprylic\/Capric Triglyceride, Cetearyl Alcohol, Squalane, Moringa Oleifera Seed Oil, Polyglyceryl-6 Stearate, Dimethicone, Phenoxyethanol, Cetearyl Glucoside, Glyceryl Stearate, Caprylyl Glycol, Acrylates\/C10-30 Alkyl Acrylate Crosspolymer, Allantoin, Tocopheryl Acetate, Magnesium Ascorbyl Phosphate, Niacinamide, Xanthan Gum, Polyglyceryl-6 Behenate, Sodium Hydroxide, Disodium Edta, Sodium Hyaluronate, Tocopherol<\/p><h6>LIP<\/h6><p>Castor Oil, Sweet Almond Oil, Beeswax, Rice Bran Wax, Coconut Oil, Carnauba Wax, Jojoba Oil, Peppermint Oil, Hemp Seed Oil*, Squalane, Tocopheryl Acetate, Mango Butter<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_Pf4FJT": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
             "title": "Frequently asked question",
             "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
             "show_icon": false,
@@ -75,7 +105,91 @@
             "icon_color": "#545454"
           }
         },
-        "faq-2": {
+        "question_KGy8Nd": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_UQFr38": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_KwrU9M": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_ihLQAx": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_JbxEi4": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_WMEyA4": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_m4n7Bw": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_DQBDct": {
           "type": "question",
           "settings": {
             "default_open": false,
@@ -89,10 +203,19 @@
         }
       },
       "block_order": [
-        "faq-heading",
         "faq-0",
         "faq-1",
-        "faq-2"
+        "faq-2",
+        "question_G3LgUQ",
+        "question_Pf4FJT",
+        "question_KGy8Nd",
+        "question_UQFr38",
+        "question_KwrU9M",
+        "question_ihLQAx",
+        "question_JbxEi4",
+        "question_WMEyA4",
+        "question_m4n7Bw",
+        "question_DQBDct"
       ],
       "settings": {
         "width": "wrapper--narrow",
@@ -100,7 +223,7 @@
         "bg_color": "",
         "color": "",
         "border_color": "",
-        "padding_top": 50,
+        "padding_top": 0,
         "padding_bottom": 50
       }
     },
@@ -165,75 +288,12 @@
         "padding_top": 50,
         "padding_bottom": 50
       }
-    },
-    "faq-third": {
-      "type": "section-accordion-group",
-      "blocks": {
-        "heading-0": {
-          "type": "heading",
-          "settings": {
-            "title": "Returns questions"
-          }
-        },
-        "question-1": {
-          "type": "question",
-          "settings": {
-            "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
-            "show_icon": false,
-            "icon_name": "icon-award",
-            "icon_size": 20,
-            "icon_color": "#545454"
-          }
-        },
-        "question-2": {
-          "type": "question",
-          "settings": {
-            "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
-            "show_icon": false,
-            "icon_name": "icon-award",
-            "icon_size": 20,
-            "icon_color": "#545454"
-          }
-        },
-        "question-3": {
-          "type": "question",
-          "settings": {
-            "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
-            "show_icon": false,
-            "icon_name": "icon-award",
-            "icon_size": 20,
-            "icon_color": "#545454"
-          }
-        }
-      },
-      "block_order": [
-        "heading-0",
-        "question-1",
-        "question-2",
-        "question-3"
-      ],
-      "settings": {
-        "width": "wrapper--narrow",
-        "columns": "1",
-        "bg_color": "",
-        "color": "",
-        "border_color": "",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
     }
   },
   "order": [
     "main",
     "section_rich_text_NY3L7C",
     "faq-first",
-    "faq-second",
-    "faq-third"
+    "faq-second"
   ]
 }
