@@ -109,8 +109,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "title": "Shipping to my country is too expensive!",
+            "content": "<p>Since we use weight based shipping, certain locations may see very high shipping prices.  In order to keep your shipping costs down, we would recommend that you use a reshipping service.<\/p><p>Here are a couple of links to the different options currently available: <\/p><p><a href=\"https:\/\/www.shopandship.com\/\">www.shopandship.com<\/a><\/p><p><a href=\"https:\/\/www.fishisfast.com\/en\">www.fishisfast.com<\/a><\/p><p><a href=\"http:\/\/www.borderlinx.com\/\">www.borderlinx.com.<\/a><\/p><p>Once you create your account with the reshipping service, you can order from <a href=\"http:\/\/www.tiege.com\/\">Tiege.com<\/a> and ship to their facility.  You will only be charged one shipping fee, which will be assessed by the reshipper.<\/p><p>You’ll receive a tracking number from us. That will allow you to follow your order to the reshipping company's facility. Once they receive the package from us at Tiege Hanley, the shipping information they provide will be your resource for tracking the status of your package.<\/p><p>Once you have the information provided by the reshipper, you would fill in your shipping address at <a href=\"http:\/\/www.tiege.com\/\">Tiege.com<\/a> along with your reshipper account number (place on Line 2 of the address).  For example:<\/p><p><strong>John Smith         <\/strong>&lt;----- Your Name<\/p><p><strong>350 5th Ave         <\/strong>&lt;----- Reshipper Street Address<\/p><p><strong>#TB144133<\/strong>           &lt;----- Reshipping Account Number<\/p><p><strong>New York, NY 10118   <\/strong>&lt;----- Reshipper City, State, Zip Code<\/p><p>You are able to provide a separate billing address.<\/p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -121,8 +121,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "title": "You don't ship to my country. Can I still order Tiege Hanley?",
+            "content": "<p>Unfortunately, we do not ship Tiege Hanley directly to every country.  If we do not ship to your country and you would still like to order Tiege Hanley, you can use a reshipping service.<\/p><p>Here are a couple of links to the different options currently available: <\/p><p><a href=\"https:\/\/www.shopandship.com\/\">www.shopandship.com<\/a><\/p><p><a href=\"https:\/\/www.fishisfast.com\/en\">www.fishisfast.com<\/a><\/p><p><a href=\"http:\/\/www.borderlinx.com\/\">www.borderlinx.com.<\/a><\/p><p>Once you create your account with the reshipping service, you can order from <a href=\"http:\/\/www.tiege.com\/\">Tiege.com<\/a> and ship to their facility.  You will only be charged one shipping fee, which will be assessed by the reshipper.<\/p><p>You’ll receive a tracking number from us. That will allow you to follow your order to the reshipping company's facility. Once they receive the package from us at Tiege Hanley, the shipping information they provide will be your resource for tracking the status of your package.<\/p><p>Once you have the information provided by the reshipper, you would fill in your shipping address at <a href=\"http:\/\/www.tiege.com\/\">Tiege.com<\/a> along with your reshipper account number (place on Line 2 of the address).  For example:<\/p><p><strong>John Smith         <\/strong>&lt;----- Your Name<\/p><p><strong>350 5th Ave         <\/strong>&lt;----- Reshipper Street Address<\/p><p><strong>#TB144133<\/strong>           &lt;----- Reshipping Account Number<\/p><p><strong>New York, NY 10118   <\/strong>&lt;----- Reshipper City, State, Zip Code<\/p><p>You are able to provide a separate billing address at check out.<\/p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -133,8 +133,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "title": "How long until my order is delivered? (Canada)",
+            "content": "<p>Your order ships within 1 business day.<\/p><p>Once the package has left our facility in Chicago, it typically takes 5 - 7 days for delivery.  Asendia picks up your box from our warehouse. The parcel arrives in Canada and is delivered by a local courier or Canada Post. <\/p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -145,8 +145,56 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "title": "How long until my order is delivered? (Australia \/ New Zealand)",
+            "content": "<p>It typically takes 10–15 days for delivery to Australia and New Zealand. <\/p><p>You will get a tracking email within 1 business day of ordering. Check the tracking link for the current status of your shipment, as well as estimated delivery.<\/p><p>Asendia picks up international shipments from our Chicago facility Monday - Friday, except major holidays. Your shipment will be delivered locally by Australia Post or local courier. Check your tracking for local delivery information.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_mRD69b": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "If it takes 2-4 weeks for my international order to arrive, will I have to wait another 2-4 weeks for my renewal?",
+            "content": "<p>Your subscription is set up to bill and ship on approximately the same date each month, which will prevent you from running out of products.  <\/p><p>For example, if you ordered a box on January 1 and the package arrives on January 15, you would be using the products over 30 days from January 15 – February 15.  Your subscription, however, would renew on February 1 and will arrive by February 15, right on time to replenish your supply!<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_wPXdMa": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Do you offer express international shipping?",
+            "content": "<p>We are set up for FedEx\/UPS express shipments for Canada, EU \/ UK and Australia. That option would be 2-5 day delivery with the price available in checkout. Express pricing is weight based. <\/p><p>We do not offer express shipping to the rest of the world, but there are a number of reshipping services that can help with this. If you'd like to receive your package faster than our standard shipping time of 3 weeks, here are some links to the different options currently available:<\/p><ul><li><a href=\"http:\/\/www.borderlinx.com\/\" target=\"_blank\">Borderlinx<\/a><\/li><li><a href=\"http:\/\/www.fishisfast.com\/\" target=\"_blank\">Fishisfast<\/a><\/li><li><a href=\"http:\/\/www.shopandship.com\/\" target=\"_blank\">Shop and Ship<\/a><\/li><\/ul><p>If you'd like to go this route, go ahead and create your account with the reshipping service. After you've created your account, let us know, and we'll provide you with instructions on how to order.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_LRwqKX": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Will I be charged customs fees for my order?",
+            "content": "<p>It is always possible that there will be an import tax or extra fees assessed in customs.  This is not covered in your international shipping fee from Tiege Hanley.<\/p><p>If you are assessed a customs fee, you should see a notice from your local post office providing instructions on how to collect your package.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_693RDw": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "What are the sizes and weights of your boxes?",
+            "content": "<p>Here are the specs for all of our boxes:<\/p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -163,7 +211,11 @@
         "question_x3nGK6",
         "question_TpYige",
         "question_MbYjdQ",
-        "question_6GJni7"
+        "question_6GJni7",
+        "question_mRD69b",
+        "question_wPXdMa",
+        "question_LRwqKX",
+        "question_693RDw"
       ],
       "settings": {
         "width": "wrapper--narrow",
