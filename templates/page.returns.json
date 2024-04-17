@@ -20,27 +20,6 @@
     },
     "section_hero_KpG8aH": {
       "type": "section-hero",
-      "blocks": {
-        "heading_9yzrUQ": {
-          "type": "heading",
-          "settings": {
-            "title": "Image banner",
-            "heading_size": 7
-          }
-        },
-        "text_3UMYgJ": {
-          "type": "text",
-          "settings": {
-            "description": "Tell your brand's story through images.",
-            "text_size": 3,
-            "text_style": "font-body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_9yzrUQ",
-        "text_3UMYgJ"
-      ],
       "settings": {
         "height": "screen-height-one-half",
         "width": "wrapper--full",
@@ -50,15 +29,82 @@
         "flex_align_desktop": "align--middle-center-desktop",
         "flex_align_mobile": "align--middle-center-mobile",
         "overlay_opacity": 0,
-        "overlay_color": "#000",
+        "overlay_color": "#000000",
         "show_overlay_text": false,
         "bg_color": "",
-        "color": "#FFFFFF"
+        "color": "#ffffff"
+      }
+    },
+    "section_rich_text_gbj7tx": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_rDF4AG": {
+          "type": "heading",
+          "settings": {
+            "title": "Money Back Guarantee",
+            "text_size": 7,
+            "padding_bottom": 30
+          }
+        },
+        "text_GahYxh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Meet the Tiege Hanley<strong>Handsome Guarantee<\/strong>. We offer a<strong>100% money back guarantee<\/strong>on all purchases from tiege.com.<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 30
+          }
+        },
+        "text_rMRJdW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If for any reason the products do not work out for you, please contact us at <a href=\"mailto:info@tiege.com\" title=\"info@tiege.com\">info@tiege.com<\/a><br\/>or call <a href=\"tel:312-279-2780\" title=\"312-279-2780\">312-279-2780<\/a>. We'll be able to assist you with a refund for your purchase.*<\/p><p>*Up to 3 boxes are covered by our <strong>Handsome Guarantee<\/strong>.<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 30
+          }
+        },
+        "subheading_8aMiMM": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Are You A Tiege Guy?",
+            "text_size": 5,
+            "padding_bottom": 16
+          }
+        },
+        "buttons_Rbfd4m": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--secondary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "heading_rDF4AG",
+        "text_GahYxh",
+        "text_rMRJdW",
+        "subheading_8aMiMM",
+        "buttons_Rbfd4m"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-center",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     }
   },
   "order": [
     "main",
-    "section_hero_KpG8aH"
+    "section_hero_KpG8aH",
+    "section_rich_text_gbj7tx"
   ]
 }
