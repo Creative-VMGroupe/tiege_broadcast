@@ -100,11 +100,32 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
+    },
+    "171336495182e7e438": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_x8bxqD": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "@tiegehanley",
+            "title_color": "",
+            "alignment": "center",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_x8bxqD"
+      ],
+      "settings": {
+        "include_margins": false
+      }
     }
   },
   "order": [
     "main",
     "section_hero_KpG8aH",
-    "section_rich_text_gbj7tx"
+    "section_rich_text_gbj7tx",
+    "171336495182e7e438"
   ]
 }
