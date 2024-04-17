@@ -38,7 +38,7 @@
   grid-column-end: 5;
 }
   }
-#contact-us-page .btn--solid:after:hover {
+#contact-us-page .btn--solid:hover:after {
   background-color: #009426 !important;
   border-color: #009426 !important;
 }
