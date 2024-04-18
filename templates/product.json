@@ -207,6 +207,7 @@
         "item_UqPYKH",
         "item_8mfP8r"
       ],
+      "disabled": true,
       "settings": {
         "height": "screen-height-three-quarters",
         "mobile_height": "screen-height-one-half--mobile",
