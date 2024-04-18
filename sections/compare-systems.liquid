@@ -100,9 +100,6 @@
   #cd-table .cd-table-column ul {
     margin: 0;
   }
-  #cd-table .cd-table-column:last-child {
-    border-right: none;
-  }
   #cd-table h2, #cd-table ul > li {
     position: relative;
     text-align: center;
@@ -116,37 +113,11 @@
     font-size: 0.875rem;
     text-transform: uppercase;
     font-weight: bold;
-    color: #606272;
+    color: #121212;
   }
   #cd-table ul > li {
-    color: #787a8d;
+    color: #121212;
     list-style: none;
-  }
-  #cd-table ul > li:last-child {
-    border-bottom: none;
-  }
-  #cd-table .cd-unchecked span, #cd-table .cd-checked span {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    background-image: url("https://svgshare.com/i/NDN.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 32px 16px;
-    left: 50%;
-    top: 50%;
-    bottom: auto;
-    right: auto;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -o-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  #cd-table .cd-unchecked span {
-    background-position: -16px 0;
   }
   #cd-table header.cd-table-column {
     position: absolute;
@@ -161,15 +132,11 @@
   #cd-table header.cd-table-column h2, #cd-table header.cd-table-column li {
     background-color: transparent;
     text-align: left;
-    color: #edeef1;
+    color: #121212;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    border-bottom-color: #6b758d;
   }
   #cd-table header.cd-table-column h2 {
-    color: #edeef1;
-  }
-  #cd-table header.cd-table-column li:last-child {
-    border-bottom: 1px solid #6b758d;
+    color: #121212;
   }
   #cd-table .cd-scroll-right {
     display: block;
@@ -195,14 +162,14 @@
     }
     #cd-table .cd-table-wrapper {
       width: 100%;
-      padding-left: 16.6666666667%;
+      padding-left: 25%;
     }
     #cd-table .cd-table-column {
-      width: 33.33%;
+      width: 25%;
       float: left;
     }
     #cd-table header.cd-table-column {
-      width: 16.6666666667%;
+      width: 25%;
       float: left;
       box-shadow: none;
       pointer-events: auto;
