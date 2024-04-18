@@ -7655,7 +7655,6 @@ html:not(.no-js) body:not(.is-loaded) .header__desktop {
   width: 100%;
   top: 0;
   z-index: 5600;
-  background: #ffffff;
 }
 
 .js__header__stuck .theme__header::after,
@@ -7664,6 +7663,10 @@ html:not(.no-js) body:not(.is-loaded) .header__desktop {
   opacity: 1;
   visibility: visible;
   transition-delay: 0s;
+}
+
+.js__header__stuck .theme__header {
+   background: #ffffff;
 }
 
 .theme__header::after {
