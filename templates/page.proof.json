@@ -373,7 +373,7 @@
         ".slideshow .hero__content__wrapper {padding: 0;}"
       ],
       "settings": {
-        "height": "screen-height-one-half",
+        "height": "screen-height-one-third",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
         "transition": "slide",
@@ -422,7 +422,7 @@
         "image_1": "shopify:\/\/shop_images\/96B_Harun-Asceric_before.png",
         "image_2": "shopify:\/\/shop_images\/96B_Harun-Asceric_after.png",
         "aspect_ratio": 1,
-        "width": "wrapper",
+        "width": "wrapper--full-padded",
         "bg_color": "",
         "color": "",
         "dark_bg_color": "",
@@ -434,6 +434,9 @@
     },
     "section_before_after_yD7FLe": {
       "type": "section-before-after",
+      "custom_css": [
+        ".compare__body {flex-direction: row-reverse;}"
+      ],
       "settings": {
         "text_align_center": true,
         "heading": "★★★★★",
@@ -448,7 +451,7 @@
         "image_1": "shopify:\/\/shop_images\/96B_Harun-Asceric_before.png",
         "image_2": "shopify:\/\/shop_images\/96B_Harun-Asceric_after.png",
         "aspect_ratio": 1,
-        "width": "wrapper",
+        "width": "wrapper--full",
         "bg_color": "",
         "color": "",
         "dark_bg_color": "",
