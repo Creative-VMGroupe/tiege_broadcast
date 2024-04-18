@@ -25989,3 +25989,7 @@ body.has-line-design.grid-compact
   .grid-item-custom {
   margin-top: 0;
 }
+/*Buttons*/
+.btn__text{
+text-transform: uppercase;  
+}
