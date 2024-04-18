@@ -25951,10 +25951,9 @@ body.grid-classic.has-line-design .grid--mobile-slider-custom {
   width: 100%;
 }
 .grid-item-custom .btn__outer{
-  top: 80px;
   left: 10px;
   right: auto;
-  bottom: auto;
+  bottom: 110px;
 }
 .grid-item-custom .btn__outer .btn__plus {
   left: 4px;
