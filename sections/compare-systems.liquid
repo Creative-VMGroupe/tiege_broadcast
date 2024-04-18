@@ -1,382 +1,362 @@
 <style>
-  /* -------------------------------- 
-
-Modules - reusable parts of our design
-
--------------------------------- */
-#cd-table .cd-unchecked span, #cd-table .cd-checked span {
-  display: block;
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-}
-
-/* -------------------------------- 
-
-Main components 
-
--------------------------------- */
-#cd-table {
-  position: relative;
-  width: 90%;
-  max-width: 1170px;
-  margin: 1em auto;
-  font-size: 14px;
-  font-size: 0.875rem;
-  /* you may remove this border in case of dark backgrounds if it's annoying */
-  border-right: 1px solid #e6e7f1;
-}
-#cd-table::after {
-  /* clearfix */
-  content: "";
-  display: table;
-  clear: both;
-}
-#cd-table::before {
-  /* White color gradient on the right */
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -1px;
-  height: 100%;
-  width: 35px;
-  background: -webkit-linear-gradient(right, #FFF 10%, rgba(255, 255, 255, 0));
-  background: linear-gradient(to left, #FFF 10%, rgba(255, 255, 255, 0));
-  z-index: 5;
-  pointer-events: none;
-}
-.no-cssgradients #cd-table::before {
-  /* remove the gradient using modernizr if css gradients are not supported */
-  display: none;
-}
-#cd-table.table-end::before {
-  /* the gradient disappears when user is at the end of the table */
-  display: none;
-}
-#cd-table .cd-table-container {
-  position: relative;
-  width: 100%;
-  overflow-x: auto;
-  /* smooth scrolling on touch devices */
-  -webkit-overflow-scrolling: touch;
-}
-#cd-table .cd-table-wrapper {
-  width: 870px;
-  padding-left: 120px;
-}
-#cd-table .cd-table-column {
-  width: 150px;
-  float: left;
-  border: 1px solid #e6e7f1;
-  margin-left: -1px;
-}
-#cd-table .cd-table-column ul {
-  margin: 0;
-}
-#cd-table .cd-table-column:last-child {
-  border-right: none;
-}
-#cd-table h2, #cd-table ul > li {
-  position: relative;
-  text-align: center;
-  padding: 0 1em;
-  border-bottom: 1px solid #e6e7f1;
-  height: 42px;
-  line-height: 42px;
-  background-color: #FFF;
-}
-#cd-table h2 {
-  font-size: 14px;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #606272;
-}
-#cd-table ul > li {
-  color: #787a8d;
-  list-style: none;
-}
-#cd-table ul > li:last-child {
-  border-bottom: none;
-}
-#cd-table .cd-unchecked span, #cd-table .cd-checked span {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  background-image: url("https://svgshare.com/i/NDN.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: 32px 16px;
-  left: 50%;
-  top: 50%;
-  bottom: auto;
-  right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-#cd-table .cd-unchecked span {
-  background-position: -16px 0;
-}
-#cd-table .cd-select {
-  display: block;
-  height: 100%;
-  width: 100%;
-  font-weight: bold;
-}
-#cd-table header.cd-table-column {
-  position: absolute;
-  width: 120px;
-  height: 100%;
-  left: 0;
-  top: 0;
-  z-index: 10;
-  background: rgba(121, 130, 153, 0.95);
-  margin-left: 0;
-  border-color: #6b758d;
-  box-shadow: 2px 0 0 rgba(0, 0, 0, 0.1);
-  pointer-events: none;
-}
-#cd-table header.cd-table-column h2, #cd-table header.cd-table-column li {
-  background-color: transparent;
-  text-align: left;
-  color: #edeef1;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  border-bottom-color: #6b758d;
-}
-#cd-table header.cd-table-column h2 {
-  color: #edeef1;
-}
-#cd-table header.cd-table-column li:last-child {
-  border-bottom: 1px solid #6b758d;
-}
-#cd-table .cd-scroll-right {
-  /* small right arrow that indicates it's possible to scroll right */
-  display: block;
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  margin-top: -8px;
-  background: url("https://svgshare.com/i/NEg.svg") no-repeat center center;
-  z-index: 6;
-  -webkit-animation: cd-scroll-right 1.5s infinite;
-  -moz-animation: cd-scroll-right 1.5s infinite;
-  animation: cd-scroll-right 1.5s infinite;
-}
-@media only screen and (min-width: 870px) {
+  #cd-table .cd-unchecked span, #cd-table .cd-checked span {
+    display: block;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+  }
   #cd-table {
-    margin: 2em auto;
-    border-right: none;
-  }
-  #cd-table::before {
-    display: none;
-  }
-  #cd-table .cd-table-wrapper {
-    width: 100%;
-    padding-left: 16.6666666667%;
-  }
-  #cd-table .cd-table-column {
-    width: 20%;
-    float: left;
-  }
-  #cd-table .cd-table-column:last-child {
+    position: relative;
+    width: 90%;
+    max-width: 1170px;
+    margin: 1em auto;
+    font-size: 14px;
+    font-size: 0.875rem;
+    /* you may remove this border in case of dark backgrounds if it's annoying */
     border-right: 1px solid #e6e7f1;
   }
-  #cd-table header.cd-table-column {
-    width: 16.6666666667%;
-    float: left;
-    background: #798299;
-    box-shadow: none;
-    pointer-events: auto;
+  #cd-table::after {
+    /* clearfix */
+    content: "";
+    display: table;
+    clear: both;
   }
-  #cd-table .cd-scroll-right {
+  #cd-table::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -1px;
+    height: 100%;
+    width: 35px;
+    background: -webkit-linear-gradient(right, #FFF 10%, rgba(255, 255, 255, 0));
+    background: linear-gradient(to left, #FFF 10%, rgba(255, 255, 255, 0));
+    z-index: 5;
+    pointer-events: none;
+  }
+  .no-cssgradients #cd-table::before {
+    /* remove the gradient using modernizr if css gradients are not supported */
     display: none;
   }
-}
-@media only screen and (min-width: 1170px) {
-  #cd-table {
-    margin: 4em auto;
+  #cd-table.table-end::before {
+    /* the gradient disappears when user is at the end of the table */
+    display: none;
   }
-}
+  #cd-table .cd-table-container {
+    position: relative;
+    width: 100%;
+    overflow-x: auto;
+    /* smooth scrolling on touch devices */
+    -webkit-overflow-scrolling: touch;
+  }
+  #cd-table .cd-table-wrapper {
+    width: 870px;
+    padding-left: 120px;
+  }
+  #cd-table .cd-table-column {
+    width: 150px;
+    float: left;
+    border: 1px solid #e6e7f1;
+    margin-left: -1px;
+  }
+  #cd-table .cd-table-column ul {
+    margin: 0;
+  }
+  #cd-table .cd-table-column:last-child {
+    border-right: none;
+  }
+  #cd-table h2, #cd-table ul > li {
+    position: relative;
+    text-align: center;
+    padding: 0 1em;
+    border-bottom: 1px solid #e6e7f1;
+    height: 42px;
+    line-height: 42px;
+    background-color: #FFF;
+  }
+  #cd-table h2 {
+    font-size: 14px;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #606272;
+  }
+  #cd-table ul > li {
+    color: #787a8d;
+    list-style: none;
+  }
+  #cd-table ul > li:last-child {
+    border-bottom: none;
+  }
+  #cd-table .cd-unchecked span, #cd-table .cd-checked span {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url("https://svgshare.com/i/NDN.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 32px 16px;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  #cd-table .cd-unchecked span {
+    background-position: -16px 0;
+  }
+  #cd-table header.cd-table-column {
+    position: absolute;
+    width: 120px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background: rgba(121, 130, 153, 0.95);
+    margin-left: 0;
+    border-color: #6b758d;
+    box-shadow: 2px 0 0 rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+  }
+  #cd-table header.cd-table-column h2, #cd-table header.cd-table-column li {
+    background-color: transparent;
+    text-align: left;
+    color: #edeef1;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    border-bottom-color: #6b758d;
+  }
+  #cd-table header.cd-table-column h2 {
+    color: #edeef1;
+  }
+  #cd-table header.cd-table-column li:last-child {
+    border-bottom: 1px solid #6b758d;
+  }
+  #cd-table .cd-scroll-right {
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -8px;
+    background: url("https://svgshare.com/i/NEg.svg") no-repeat center center;
+    z-index: 6;
+    -webkit-animation: cd-scroll-right 1.5s infinite;
+    -moz-animation: cd-scroll-right 1.5s infinite;
+    animation: cd-scroll-right 1.5s infinite;
+  }
+  @media only screen and (min-width: 870px) {
+    #cd-table {
+      margin: 2em auto;
+      border-right: none;
+    }
+    #cd-table::before {
+      display: none;
+    }
+    #cd-table .cd-table-wrapper {
+      width: 100%;
+      padding-left: 16.6666666667%;
+    }
+    #cd-table .cd-table-column {
+      width: 20%;
+      float: left;
+    }
+    #cd-table .cd-table-column:last-child {
+      border-right: 1px solid #e6e7f1;
+    }
+    #cd-table header.cd-table-column {
+      width: 16.6666666667%;
+      float: left;
+      background: #798299;
+      box-shadow: none;
+      pointer-events: auto;
+    }
+    #cd-table .cd-scroll-right {
+      display: none;
+    }
+  }
+  @media only screen and (min-width: 1170px) {
+    #cd-table {
+      margin: 4em auto;
+    }
+  }
 
-@-webkit-keyframes cd-scroll-right {
-  0%, 100% {
-    -webkit-transform: translateX(0);
+  @-webkit-keyframes cd-scroll-right {
+    0%, 100% {
+      -webkit-transform: translateX(0);
+    }
+    50% {
+      -webkit-transform: translateX(3px);
+    }
   }
-  50% {
-    -webkit-transform: translateX(3px);
+  @-moz-keyframes cd-scroll-right {
+    0%, 100% {
+      -moz-transform: translateX(0);
+    }
+    50% {
+      -moz-transform: translateX(3px);
+    }
   }
-}
-@-moz-keyframes cd-scroll-right {
-  0%, 100% {
-    -moz-transform: translateX(0);
+  @keyframes cd-scroll-right {
+    0%, 100% {
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+      transform: translateX(0);
+    }
+    50% {
+      -webkit-transform: translateX(3px);
+      -moz-transform: translateX(3px);
+      -ms-transform: translateX(3px);
+      -o-transform: translateX(3px);
+      transform: translateX(3px);
+    }
   }
-  50% {
-    -moz-transform: translateX(3px);
-  }
-}
-@keyframes cd-scroll-right {
-  0%, 100% {
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-    transform: translateX(0);
-  }
-  50% {
-    -webkit-transform: translateX(3px);
-    -moz-transform: translateX(3px);
-    -ms-transform: translateX(3px);
-    -o-transform: translateX(3px);
-    transform: translateX(3px);
-  }
-}
-  .comparision-system {
-    display: flex;
-  }
-  .comparision-text {
-    
-  }
-  .comparision-text .sub-heading-text {
-    
-  }
-  
+    .comparision-system {
+      display: flex;
+    }
+    .comparision-text {
+
+    }
+    .comparision-text .sub-heading-text {
+
+    }
 </style>
 <section class="comparision-system">
   <div class="comparision-text">
     <div class="comparision-heading">
-      <p class="sub-heading-text">
-        Level Guide
-      </p>
-      <h3 class="heading-text">
-        Compare our Systems
-      </h3>
+      <p class="sub-heading-text">Level Guide</p>
+      <h3 class="heading-text">Compare our Systems</h3>
     </div>
     <div class="comparision-details">
       <h4 class="">Unsure which system is right for you?</h4>
-      <p>Different strokes for different folks and different skin care regimen for different men. Take our 1-minute quiz to figure out which formulated system is perfect for you and your face.</p>
+      <p>
+        Different strokes for different folks and different skin care regimen for different men. Take our 1-minute quiz
+        to figure out which formulated system is perfect for you and your face.
+      </p>
       <a href="#" class="btn btn--secondary btn--solid btn-cart_container">Take our Quiz</a>
     </div>
   </div>
   <div class="comparision-table" id="cd-table">
-	<header class="cd-table-column">
-		<h2>Features</h2>
-		<ul>
-			<li>Storage</li>
-			<li>People</li>
-			<li>Free trial</li>
-			<li>Support</li>
-			<li>Price</li>
-		</ul>
-	</header>
-	<div class="cd-table-container">
-		<div class="cd-table-wrapper">
+    <header class="cd-table-column">
+      <h2>Features</h2>
+      <ul>
+        <li>Storage</li>
+        <li>People</li>
+        <li>Free trial</li>
+        <li>Support</li>
+        <li>Price</li>
+      </ul>
+    </header>
+    <div class="cd-table-container">
+      <div class="cd-table-wrapper">
+        <div class="cd-table-column">
+          <h2>Plan 1</h2>
+          <ul>
+            <li>1 GB</li>
+            <li>2</li>
+            <li>30 days</li>
+            <li class="cd-unchecked"><span>No</span></li>
+            <li>$9.99</li>
+          </ul>
+        </div>
+        <!-- cd-table-column -->
 
-			<div class="cd-table-column">
-				<h2>Plan 1</h2>
-				<ul>
-					<li>1 GB</li>
-					<li>2</li>
-					<li>30 days</li>
-					<li class="cd-unchecked"><span>No</span></li>
-					<li>$9.99</li>
-				</ul>
-			</div> <!-- cd-table-column -->
+        <div class="cd-table-column">
+          <h2>Plan 2</h2>
+          <ul>
+            <li>2 GB</li>
+            <li>5</li>
+            <li>30 days</li>
+            <li class="cd-unchecked"><span>No</span></li>
+            <li>$19.99</li>
+          </ul>
+        </div>
+        <!-- cd-table-column -->
 
-			<div class="cd-table-column">
-				<h2>Plan 2</h2>
-				<ul>
-					<li>2 GB</li>
-					<li>5</li>
-					<li>30 days</li>
-					<li class="cd-unchecked"><span>No</span></li>
-					<li>$19.99</li>
-				</ul>
-			</div> <!-- cd-table-column -->
-
-			<div class="cd-table-column">
-				<h2>Plan 3</h2>
-				<ul>
-					<li>5 GB</li>
-					<li>10</li>
-					<li>30 days</li>
-					<li class="cd-checked"><span>Yes</span></li>
-					<li>$29.99</li>
-				</ul>
-			</div> 
-
-		</div> <!-- cd-table-wrapper -->
-	</div>
-	<em class="cd-scroll-right"></em>
+        <div class="cd-table-column">
+          <h2>Plan 3</h2>
+          <ul>
+            <li>5 GB</li>
+            <li>10</li>
+            <li>30 days</li>
+            <li class="cd-checked"><span>Yes</span></li>
+            <li>$29.99</li>
+          </ul>
+        </div>
+      </div>
+      <!-- cd-table-wrapper -->
+    </div>
+    <em class="cd-scroll-right"></em>
   </div>
 </section>
 {{ 'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js' | script_tag }}
 {{ 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' | script_tag }}
 <script>
-  jQuery(document).ready(function($){
-	var $columns_number = $('#cd-table .cd-table-container').find('.cd-table-column').length;
-	
-	$('.cd-table-container').on('scroll', function(){ 
-		$this = $(this);
-		//hide the arrow on scrolling
-		if( $this.scrollLeft() > 0 ) {
-			$('.cd-scroll-right').hide();
-		}
-		//remove color gradient when table has scrolled to the end
-		var total_table_width = parseInt($('.cd-table-wrapper').css('width').replace('px', '')),
-			table_viewport = parseInt($('#cd-table').css('width').replace('px', ''));
-			
-		if( $this.scrollLeft() >= total_table_width - table_viewport - $columns_number) {
-			$('#cd-table').addClass('table-end');
-		} else {
-			$('#cd-table').removeClass('table-end');
-		}
-	});
+    jQuery(document).ready(function($){
+  	var $columns_number = $('#cd-table .cd-table-container').find('.cd-table-column').length;
 
-	//scroll the table (scroll value equal to column width) when clicking on the .cd-scroll-right arrow
- 	$('.cd-scroll-right').on('click', function(){
- 		$this= $(this);
- 		var column_width = $(this).siblings('.cd-table-container').find('.cd-table-column').eq(0).css('width').replace('px', ''),
- 			new_left_scroll = parseInt($('.cd-table-container').scrollLeft()) + parseInt(column_width);
- 		
- 		$('.cd-table-container').animate( {scrollLeft: new_left_scroll}, 200 );
- 		$this.hide();
- 	});
-});
+  	$('.cd-table-container').on('scroll', function(){
+  		$this = $(this);
+  		//hide the arrow on scrolling
+  		if( $this.scrollLeft() > 0 ) {
+  			$('.cd-scroll-right').hide();
+  		}
+  		//remove color gradient when table has scrolled to the end
+  		var total_table_width = parseInt($('.cd-table-wrapper').css('width').replace('px', '')),
+  			table_viewport = parseInt($('#cd-table').css('width').replace('px', ''));
+
+  		if( $this.scrollLeft() >= total_table_width - table_viewport - $columns_number) {
+  			$('#cd-table').addClass('table-end');
+  		} else {
+  			$('#cd-table').removeClass('table-end');
+  		}
+  	});
+
+  	//scroll the table (scroll value equal to column width) when clicking on the .cd-scroll-right arrow
+   	$('.cd-scroll-right').on('click', function(){
+   		$this= $(this);
+   		var column_width = $(this).siblings('.cd-table-container').find('.cd-table-column').eq(0).css('width').replace('px', ''),
+   			new_left_scroll = parseInt($('.cd-table-container').scrollLeft()) + parseInt(column_width);
+
+   		$('.cd-table-container').animate( {scrollLeft: new_left_scroll}, 200 );
+   		$this.hide();
+   	});
+  });
 </script>
 
 {% schema %}
-  {
-    "name": "Compare Systems - Tiege",
-    "settings": [
-      {
-        "type": "header",
-        "content": "Section Settings"
-      },
-      {
-      "type": "select",
-      "id": "height",
-      "label": "Desktop height",
-      "default": "screen-height-three-quarters",
-      "options": [
-        { "value": "image-height", "label": "Image height" },
-        { "value": "screen-height-full", "label": "Full screen height"},
-        { "value": "screen-height-three-quarters", "label": "3/4 of screen"},
-        { "value": "screen-height-two-thirds", "label": "2/3 of screen"},
-        { "value": "screen-height-one-half", "label": "1/2 of screen"},
-        { "value": "screen-height-one-third", "label": "1/3 of screen"},
-        { "value": "seven-fifty-height-hero", "label": "750px" },
-        { "value": "sixty-fifty-height-hero", "label": "650px" },
-        { "value": "five-fifty-height-hero", "label": "550px" },
-        { "value": "four-fifty-height-hero", "label": "450px" }
-      ]
+{
+  "name": "Compare Systems - Tiege",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Settings"
     },
+    {
+    "type": "select",
+    "id": "height",
+    "label": "Desktop height",
+    "default": "screen-height-three-quarters",
+    "options": [
+      { "value": "image-height", "label": "Image height" },
+      { "value": "screen-height-full", "label": "Full screen height"},
+      { "value": "screen-height-three-quarters", "label": "3/4 of screen"},
+      { "value": "screen-height-two-thirds", "label": "2/3 of screen"},
+      { "value": "screen-height-one-half", "label": "1/2 of screen"},
+      { "value": "screen-height-one-third", "label": "1/3 of screen"},
+      { "value": "seven-fifty-height-hero", "label": "750px" },
+      { "value": "sixty-fifty-height-hero", "label": "650px" },
+      { "value": "five-fifty-height-hero", "label": "550px" },
+      { "value": "four-fifty-height-hero", "label": "450px" }
+    ]
+  },
     {
       "type": "select",
       "id": "mobile_height",
@@ -406,95 +386,171 @@ Main components
         {"value": "wrapper", "label": "Normal"}
       ]
     },
-      {
-        "type": "header",
-        "content": "Section Content"
-      },
-      {
-        "type": "text",
-        "id": "heading",
-        "label": "Heading",
-        "default": "Compare Our Systems"
-      },
-      {
-        "type": "text",
-        "id": "caption",
-        "label": "Caption",
-        "default": "Level Guide"
-      },
-      {
-        "type": "text",
-        "id": "sub_heading",
-        "label": "Sub Heading",
-        "default": "Level Guide"
-      },
-      {
-        "type": "richtext",
-        "id": "description",
-        "label": "Description",
-        "default": "<p>Lorem Ipsum</p>"
-      },
-      {
-        "type": "text",
-        "id": "btn_text",
-        "label": "Link Text",
-        "default": "Take our Quiz"
-      },
-      {
-        "type": "url",
-        "id": "btn_link",
-        "label" : "Link URL"
-      },
-      {
-        "type": "header",
-        "content": "Properties"
-      },
-      {
-        "type":"text",
-        "id" : "items_detail",
-        "label" : "Comparables",
-        "default": "Wash,Scrub,AM,PM,Eyes,Serum",
-        "info": "Please add a comma seperated list of properties to compare"
-      }
-    ],
-    "blocks": [
-      {
-        "type": "item",
-        "name": "Product Item",
-        "settings": [
-          {
-            "type": "text",
-            "id": "title",
-            "label": "Title",
-            "default": "Level 1"
-          },
-          {
-            "type": "image_picker",
-            "id": "image",
-            "label": "Image"
-          },
-          {
-            "type": "text",
-            "id": "properties",
-            "label": "Properties",
-            "default": "Yes,Yes,Yes,No,No",
-            "info": "Info for text item"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "Compare Systems - Tiege",
-        "blocks": [
-          {
-            "type": "item"
-          },
-          {
-            "type": "item"
-          }
-        ]
-      }
-    ]
-  }
+    {
+    "type": "header",
+    "content": "Comparison Table"
+  },
+    {
+      "type": "select",
+      "id": "table_width",
+      "label": "Table width",
+      "default": "one-half",
+      "options": [
+        { "value": "one-half", "label": "50%"},
+        { "value": "three-quarters", "label": "75%" }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Text"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Alignment",
+      "default": "text-left",
+      "options": [
+        {"value": "text-left","label": "Left"},
+        {"value": "text-center","label": "Centered"}
+      ]
+    },
+    {
+      "type": "range",
+      "id": "padding_lr",
+      "min": 0,
+      "max": 125,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Left/Right",
+      "default": 50
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background"
+    },
+    {
+      "type": "color",
+      "id": "color",
+      "label": "Text"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Section Content"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Compare Our Systems"
+    },
+    {
+      "type": "text",
+      "id": "caption",
+      "label": "Caption",
+      "default": "Level Guide"
+    },
+    {
+      "type": "text",
+      "id": "sub_heading",
+      "label": "Sub Heading",
+      "default": "Level Guide"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Lorem Ipsum</p>"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Link Text",
+      "default": "Take our Quiz"
+    },
+    {
+      "type": "url",
+      "id": "btn_link",
+      "label" : "Link URL"
+    },
+    {
+      "type": "header",
+      "content": "Properties"
+    },
+    {
+      "type":"text",
+      "id" : "items_detail",
+      "label" : "Comparables",
+      "default": "Wash,Scrub,AM,PM,Eyes,Serum",
+      "info": "Please add a comma seperated list of properties to compare"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Product Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Level 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "properties",
+          "label": "Properties",
+          "default": "Yes,Yes,Yes,No,No",
+          "info": "Info for text item"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Compare Systems - Tiege",
+      "blocks": [
+        {
+          "type": "item"
+        },
+        {
+          "type": "item"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
