@@ -315,9 +315,11 @@
                 <ul>
                   {%- assign block_properties = block.settings.properties | split: ',' -%}
                   {% for i in (1..properties_count) %}
-                    {{ block_properties[i] }}
-                    <li>1 GB</li>
-                    <li class="cd-unchecked"><span>No</span></li>
+                    {%- assign current_value = block_properties[i] | downcase -%}
+                    {% if current_value == 'yes' %}
+                      <li class="cd-checked"><span>Yes</span></li>
+                    {% else %}
+                    {% endif %}
                   {% endfor %}
                 </ul>
               </div>
