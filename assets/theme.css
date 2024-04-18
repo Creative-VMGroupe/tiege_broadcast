@@ -14275,7 +14275,8 @@ body.has-header-transparent.has-first-section-overlay-header .product__content {
 
 .product__complementary .complementary-products.is-loaded {
   display: block;
-  margin-bottom: var(--block-padding-bottom, 16px);
+  /* margin-bottom: var(--block-padding-bottom, 16px); */
+  margin-bottom: 0;
 }
 
 .product__complementary .complementary-products__title {
@@ -25941,6 +25942,9 @@ body.grid-classic.has-line-design .grid--mobile-slider-custom {
 .grid-item-custom .product-upsell__holder {
   height: 100%;
   margin-top: 0;
+}
+.grid-item-custom .product-upsell {
+  height: 100%;
 }
 .grid--mobile-slider-custom .grid-item-custom {
   flex: 0 0 auto;
