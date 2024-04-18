@@ -141,7 +141,7 @@
       ],
       "custom_css": [
         ".hero__image {display: none;}",
-        ".slideshow .hero__content__wrapper{padding: 0;}"
+        ".slideshow .hero__content__wrapper {padding: 0;}"
       ],
       "settings": {
         "height": "screen-height-one-third",
@@ -367,6 +367,10 @@
         "image_kK9eJF",
         "image_mBiawm",
         "image_AhFh9K"
+      ],
+      "custom_css": [
+        ".hero__image {display: none;}",
+        ".slideshow .hero__content__wrapper {padding: 0;}"
       ],
       "settings": {
         "height": "screen-height-one-half",
