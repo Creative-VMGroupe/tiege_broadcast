@@ -42,221 +42,222 @@
   endcapture
 -%}
 <style>
-  #cd-table .cd-unchecked span, #cd-table .cd-checked span {
-    display: block;
-    overflow: hidden;
-    text-indent: 100%;
-    white-space: nowrap;
+  #cd-table .cd-unchecked span,
+  #cd-table .cd-checked span {
+      display: block;
+      overflow: hidden;
+      text-indent: 100%;
+      white-space: nowrap;
   }
   #cd-table {
-    position: relative;
-    width: 90%;
-    max-width: 1170px;
-    margin: auto;
-    font-size: 14px;
-    font-size: 0.875rem;
+      position: relative;
+      width: 90%;
+      max-width: 1170px;
+      margin: auto;
+      font-size: 14px;
+      font-size: 0.875rem;
   }
   #cd-table::after {
-    content: "";
-    display: table;
-    clear: both;
+      content: "";
+      display: table;
+      clear: both;
   }
   #cd-table::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -1px;
-    height: 100%;
-    width: 35px;
-    background: -webkit-linear-gradient(right, #FFF 10%, rgba(255, 255, 255, 0));
-    background: linear-gradient(to left, #FFF 10%, rgba(255, 255, 255, 0));
-    z-index: 5;
-    pointer-events: none;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -1px;
+      height: 100%;
+      width: 35px;
+      background: -webkit-linear-gradient(right, #FFF 10%, rgba(255, 255, 255, 0));
+      background: linear-gradient(to left, #FFF 10%, rgba(255, 255, 255, 0));
+      z-index: 5;
+      pointer-events: none;
   }
   .no-cssgradients #cd-table::before {
-    /* remove the gradient using modernizr if css gradients are not supported */
-    display: none;
+      display: none;
   }
   #cd-table.table-end::before {
-    /* the gradient disappears when user is at the end of the table */
-    display: none;
+      display: none;
   }
   #cd-table .cd-table-container {
-    position: relative;
-    width: 100%;
-    overflow-x: auto;
-    /* smooth scrolling on touch devices */
-    -webkit-overflow-scrolling: touch;
+      position: relative;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
   }
   #cd-table .cd-table-wrapper {
-    width: 870px;
-    padding-left: 120px;
+      width: 870px;
+      padding-left: 120px;
   }
   #cd-table .cd-table-column {
-    width: 150px;
-    float: left;
-    margin-left: -1px;
+      width: 150px;
+      float: left;
+      margin-left: -1px;
   }
   #cd-table .cd-table-column ul {
-    margin: 0;
+      margin: 0;
   }
-  #cd-table h2, #cd-table ul > li {
-    position: relative;
-    text-align: center;
-    padding: 0 1em;
-    height: 56px;
-    line-height: 56px;
-    background-color: #FFF;
-    margin: 0;
+  #cd-table h2,
+  #cd-table ul>li {
+      position: relative;
+      text-align: center;
+      padding: 0 1em;
+      height: 56px;
+      line-height: 56px;
+      background-color: #FFF;
+      margin: 0;
   }
   #cd-table h2 {
-    font-size: 14px;
-    font-size: 0.875rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #121212;
+      font-size: 14px;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #121212;
   }
-  #cd-table ul > li {
-    color: #121212;
-    list-style: none;
+  #cd-table ul>li {
+      color: #121212;
+      list-style: none;
   }
   #cd-table header.cd-table-column {
-    position: absolute;
-    width: 120px;
-    height: 100%;
-    left: 0;
-    top: 0;
-    z-index: 10;
-    margin-left: 0;
-    pointer-events: none;
+      position: absolute;
+      width: 120px;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 10;
+      margin-left: 0;
+      pointer-events: none;
   }
   .cd-table-wrapper .cd-table-column:nth-child(odd),
   #cd-table .cd-table-column li:nth-child(odd) {
-    background: rgba(0,0,0,0.025);
+      background: rgba(0, 0, 0, 0.025);
   }
-  #cd-table header.cd-table-column h2, #cd-table header.cd-table-column li {
-    background-color: transparent;
-    text-align: left;
-    color: #121212;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  #cd-table header.cd-table-column h2,
+  #cd-table header.cd-table-column li {
+      background-color: transparent;
+      text-align: left;
+      color: #121212;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   }
   #cd-table header.cd-table-column h2 {
-    color: #121212;
+      color: #121212;
   }
   #cd-table .cd-scroll-right {
-    display: block;
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    margin-top: -8px;
-    background: url("https://svgshare.com/i/NEg.svg") no-repeat center center;
-    z-index: 6;
-    -webkit-animation: cd-scroll-right 1.5s infinite;
-    -moz-animation: cd-scroll-right 1.5s infinite;
-    animation: cd-scroll-right 1.5s infinite;
+      display: block;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -8px;
+      background: url("https://svgshare.com/i/NEg.svg") no-repeat center center;
+      z-index: 6;
+      -webkit-animation: cd-scroll-right 1.5s infinite;
+      -moz-animation: cd-scroll-right 1.5s infinite;
+      animation: cd-scroll-right 1.5s infinite;
   }
   @media only screen and (min-width: 870px) {
-    #cd-table {
-      border-right: none;
-    }
-    #cd-table::before {
-      display: none;
-    }
-    #cd-table .cd-table-wrapper {
-      width: 100%;
-      padding-left: 25%;
-    }
-    #cd-table .cd-table-column {
-      width: 33.33%;
-      float: left;
-    }
-    #cd-table header.cd-table-column {
-      width: 25%;
-      float: left;
-      box-shadow: none;
-      pointer-events: auto;
-    }
-    #cd-table .cd-scroll-right {
-      display: none;
-    }
+      #cd-table {
+          border-right: none;
+      }
+      #cd-table::before {
+          display: none;
+      }
+      #cd-table .cd-table-wrapper {
+          width: 100%;
+          padding-left: 25%;
+      }
+      #cd-table .cd-table-column {
+          width: 33.33%;
+          float: left;
+      }
+      #cd-table header.cd-table-column {
+          width: 25%;
+          float: left;
+          box-shadow: none;
+          pointer-events: auto;
+      }
+      #cd-table .cd-scroll-right {
+          display: none;
+      }
   }
   @-webkit-keyframes cd-scroll-right {
-    0%, 100% {
-      -webkit-transform: translateX(0);
-    }
-    50% {
-      -webkit-transform: translateX(3px);
-    }
+      0%,
+      100% {
+          -webkit-transform: translateX(0);
+      }
+      50% {
+          -webkit-transform: translateX(3px);
+      }
   }
+  
   @-moz-keyframes cd-scroll-right {
-    0%, 100% {
-      -moz-transform: translateX(0);
-    }
-    50% {
-      -moz-transform: translateX(3px);
-    }
+      0%,
+      100% {
+          -moz-transform: translateX(0);
+      }
+      50% {
+          -moz-transform: translateX(3px);
+      }
   }
+  
   @keyframes cd-scroll-right {
-    0%, 100% {
-      -webkit-transform: translateX(0);
-      -moz-transform: translateX(0);
-      -ms-transform: translateX(0);
-      -o-transform: translateX(0);
-      transform: translateX(0);
-    }
-    50% {
-      -webkit-transform: translateX(3px);
-      -moz-transform: translateX(3px);
-      -ms-transform: translateX(3px);
-      -o-transform: translateX(3px);
-      transform: translateX(3px);
-    }
+      0%,
+      100% {
+          -webkit-transform: translateX(0);
+          -moz-transform: translateX(0);
+          -ms-transform: translateX(0);
+          -o-transform: translateX(0);
+          transform: translateX(0);
+      }
+      50% {
+          -webkit-transform: translateX(3px);
+          -moz-transform: translateX(3px);
+          -ms-transform: translateX(3px);
+          -o-transform: translateX(3px);
+          transform: translateX(3px);
+      }
   }
-    .comparision-system {
+  .comparision-system {
       display: flex;
       padding-top: var(--PT);
       padding-bottom: var(--PB);
-    }
-  .comparision-wrapper {
-    display: flex;
   }
-    .comparision-text {
+  .comparision-wrapper {
+      display: flex;
+  }
+  .comparision-text {
       flex: 25%;
       padding: 0 2rem;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-    }
+  }
   .comparision-text .caption-text {
-    margin-bottom: 0;
-    text-transform: uppercase;
+      margin-bottom: 0;
+      text-transform: uppercase;
   }
   .comparision-text .heading-text {
-    margin-top: 0; 
+      margin-top: 0;
   }
   header.cd-table-column .header-row svg {
-    opacity: 0;
-    visiblity: hidden;
+      opacity: 0;
+      visibility: hidden;
   }
   .header-row {
-    min-height: 10rem;
-    display: flex;
-    flex-direction: column;
-    
+      min-height: 10rem;
+      display: flex;
+      flex-direction: column;
   }
   .header-row img,
   .header-row svg {
-    max-height: 8rem;
-    margin: 0 auto;
+      max-height: 8rem;
+      margin: 0 auto;
   }
   .comparision-details-text {
-    margin-bottom: 2rem;
+      margin-bottom: 2rem;
   }
-    .comparision-text .sub-heading-text {
-
-    }
 </style>
 <section 
   class="comparision-system"
