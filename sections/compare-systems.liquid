@@ -1,3 +1,74 @@
+{%- liquid
+  assign desktop_height = section.settings.height
+  assign mobile_height = section.settings.mobile_height
+  assign width = section.settings.width
+  
+  assign animation_anchor = '#CompareSection--' | append: section.id
+  assign animation_order = 0
+  assign accordion_blocks = section.blocks | where: "type", "accordion"
+  assign bg_color = section.settings.bg_color
+  assign bg_color_transparent = bg_color | color_modify: 'alpha', 0
+  assign text_color = section.settings.color
+
+  capture style
+    echo '--PT: ' | append: section.settings.padding_top | append: 'px;'
+    echo '--PB: ' | append: section.settings.padding_bottom | append: 'px;'
+
+    unless bg_color == 'rgba(0,0,0,0)' or bg_color == blank
+      echo '--bg: ' | append: bg_color | append: ';'
+      echo '--bg-transparent: ' | append: bg_color_transparent | append: ';'
+    endunless
+
+    unless text_color == 'rgba(0,0,0,0)' or text_color == blank
+      assign text_light = text_color | color_mix: settings.bg_color, 70
+      assign text_dark = text_color | color_saturate: 10 | color_darken: 15
+      echo '--text: ' | append: text_color | append: ';'
+      echo '--text-light: ' | append: text_light | append: ';'
+      echo '--text-dark: ' | append: text_dark | append: ';'
+    endunless
+  endcapture
+
+  assign figure_width_class = ''
+  assign item_sizes_width = '50vw'
+  assign item_placeholder = '||number-items-placeholder||'
+  assign item_per_row_medium = item_placeholder
+  if table_width == 'three-quarters'
+    assign figure_width_class = ' brick__block--three-quarters'
+    assign item_sizes_width = '35vw'
+    assign item_per_row_medium = 1
+  endif
+
+  assign item_sizes_padding_desktop = '100px'
+  assign item_sizes_padding_tablet = '60px'
+  if settings.grid_style == 'compact'
+    assign item_sizes_padding_desktop = '64px'
+    assign item_sizes_padding_tablet = '44px'
+  endif
+
+  assign item_sizes_images_mobile = 'calc(100vw / ' | append: item_placeholder | append: ')'
+  assign item_sizes_images_tablet = '(min-width: 750px) calc(((' | append: item_sizes_width | append: ' * 90 / 100) - ' | append: item_sizes_padding_tablet | append: ') / ' | append: item_per_row_medium | append: ')'
+  assign item_sizes_images_desktop = '(min-width: 990px) calc(((' | append: item_sizes_width | append: ' * 84 / 100) - ' | append: item_sizes_padding_desktop | append: ') / ' | append: item_per_row_medium | append: ')'
+  assign item_sizes_images_widescreen = '(min-width: 1400px) calc(((' | append: item_sizes_width | append: ' * 76 / 100) - ' | append: item_sizes_padding_desktop | append: ') / ' | append: item_placeholder | append: ')'
+  capture item_sizes_images
+    echo item_sizes_images_widescreen | append: ', ' | append: item_sizes_images_desktop | append: ', ' | append: item_sizes_images_tablet | append: ', ' | append: item_sizes_images_mobile
+  endcapture
+
+  capture columns_style
+    echo '--COLUMNS-WIDESCREEN: ' | append: item_placeholder | append: ';'
+    echo '--COLUMNS: ' | append: item_per_row_medium | append: ';'
+    echo '--COLUMNS-MEDIUM: ' | append: item_per_row_medium | append: ';'
+    echo '--COLUMNS-SMALL: ' | append: item_placeholder | append: ';'
+    echo '--COLUMNS-MOBILE: ' | append: item_placeholder | append: ';'
+  endcapture
+
+  capture alignment
+    if section.settings.text_alignment == 'text-left'
+      echo ' align--middle-left'
+    else
+      echo ' align--middle-center'
+    endif
+  endcapture
+-%}
 <style>
   #cd-table .cd-unchecked span, #cd-table .cd-checked span {
     display: block;
@@ -340,30 +411,28 @@
       "content": "Section Settings"
     },
     {
-    "type": "select",
-    "id": "height",
-    "label": "Desktop height",
-    "default": "screen-height-three-quarters",
-    "options": [
-      { "value": "image-height", "label": "Image height" },
-      { "value": "screen-height-full", "label": "Full screen height"},
-      { "value": "screen-height-three-quarters", "label": "3/4 of screen"},
-      { "value": "screen-height-two-thirds", "label": "2/3 of screen"},
-      { "value": "screen-height-one-half", "label": "1/2 of screen"},
-      { "value": "screen-height-one-third", "label": "1/3 of screen"},
-      { "value": "seven-fifty-height-hero", "label": "750px" },
-      { "value": "sixty-fifty-height-hero", "label": "650px" },
-      { "value": "five-fifty-height-hero", "label": "550px" },
-      { "value": "four-fifty-height-hero", "label": "450px" }
-    ]
-  },
+      "type": "select",
+      "id": "height",
+      "label": "Desktop height",
+      "default": "screen-height-three-quarters",
+      "options": [
+        { "value": "screen-height-full", "label": "Full screen height"},
+        { "value": "screen-height-three-quarters", "label": "3/4 of screen"},
+        { "value": "screen-height-two-thirds", "label": "2/3 of screen"},
+        { "value": "screen-height-one-half", "label": "1/2 of screen"},
+        { "value": "screen-height-one-third", "label": "1/3 of screen"},
+        { "value": "seven-fifty-height-hero", "label": "750px" },
+        { "value": "sixty-fifty-height-hero", "label": "650px" },
+        { "value": "five-fifty-height-hero", "label": "550px" },
+        { "value": "four-fifty-height-hero", "label": "450px" }
+      ]
+    },
     {
       "type": "select",
       "id": "mobile_height",
       "label": "Mobile height",
       "default": "screen-height-one-half--mobile",
       "options": [
-        { "value": "image-height--mobile", "label": "Image height" },
         { "value": "screen-height-full--mobile", "label": "Full screen height"},
         { "value": "screen-height-three-quarters--mobile", "label": "3/4 of screen"},
         { "value": "screen-height-two-thirds--mobile", "label": "2/3 of screen"},
