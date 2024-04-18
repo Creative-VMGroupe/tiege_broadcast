@@ -259,7 +259,8 @@
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
-            "show_arrow": false
+            "show_arrow": false,
+            "image": "shopify:\/\/shop_images\/willow-v1608581883683.png"
           }
         },
         "text_slide_i3an9N": {
@@ -277,7 +278,8 @@
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
-            "show_arrow": false
+            "show_arrow": false,
+            "image": "shopify:\/\/shop_images\/rosemary-v1608581888105.png"
           }
         }
       },
@@ -796,6 +798,30 @@
         "padding_bottom": 0
       }
     },
+    "section_rich_text_e66XhK": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_jrPJjM": {
+          "type": "heading",
+          "settings": {
+            "title": "Reviews",
+            "text_size": 7,
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "heading_jrPJjM"
+      ],
+      "settings": {
+        "width": "wrapper--full-padded",
+        "align_text": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 24,
+        "padding_bottom": 0
+      }
+    },
     "1711051410c76bca1d": {
       "type": "apps",
       "blocks": {
@@ -890,20 +916,6 @@
         "padding_bottom": 60
       }
     },
-    "section_recent_products_KDiXJb": {
-      "type": "section-recent-products",
-      "disabled": true,
-      "settings": {
-        "product_recently_heading": "Recently viewed",
-        "heading_size": 8,
-        "product_recently_limit": 6,
-        "product_recently_minimum": 4,
-        "bg_color": "",
-        "color": "",
-        "padding_top": 30,
-        "padding_bottom": 0
-      }
-    },
     "171061224373a1e0d4": {
       "type": "apps",
       "blocks": {
@@ -946,9 +958,9 @@
     "1713198580f2f6c371",
     "section_rich_text_y6jeRp",
     "section_accordion_new_4E9V9R",
+    "section_rich_text_e66XhK",
     "1711051410c76bca1d",
     "related",
-    "section_recent_products_KDiXJb",
     "171061224373a1e0d4"
   ]
 }
