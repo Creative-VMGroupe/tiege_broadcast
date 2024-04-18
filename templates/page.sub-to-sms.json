@@ -108,11 +108,32 @@
         "padding_top": 50,
         "padding_bottom": 50
       }
+    },
+    "171342935398ce8769": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_VkTgEU": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "@tiegehanlet",
+            "title_color": "",
+            "alignment": "center",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_VkTgEU"
+      ],
+      "settings": {
+        "include_margins": false
+      }
     }
   },
   "order": [
     "main",
     "section_rich_text_wC6zr8",
-    "contact"
+    "contact",
+    "171342935398ce8769"
   ]
 }
