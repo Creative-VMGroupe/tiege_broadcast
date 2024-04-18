@@ -78,7 +78,8 @@
         "buttons_YGTL3b"
       ],
       "custom_css": [
-        ".frame {height: 100%;}"
+        ".frame {height: 100%;}",
+        ".wide-image {height: 100%;}"
       ],
       "settings": {
         "layout": "",
