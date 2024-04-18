@@ -233,7 +233,7 @@
 
   <body
     id="{{ page_title | handle }}"
-    class="template-{{ template.name | handle }} grid-{{ settings.grid_style }}{% if customer %} customer-logged-in{% endif %}{% if settings.animations_enable %} aos-initialized{% endif %}{% if settings.product_grid_outline %} has-line-design{% endif %} light-mode"
+    class="template-{{ template.name | handle }} grid-{{ settings.grid_style }}{% if customer %} customer-logged-in{% endif %}{% if settings.animations_enable %} aos-initialized{% endif %}{% if settings.product_grid_outline %} has-line-design{% endif %}"
     data-animations="{{ settings.animations_enable }}"
   >
     {%- render 'loading' -%}
@@ -284,6 +284,5 @@
     <script defer src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
     <!-- And above this comment line ================================================== -->
-    {% render 'color-mode-toggle' %}
   </body>
 </html>
