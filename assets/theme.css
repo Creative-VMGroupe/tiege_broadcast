@@ -25944,7 +25944,7 @@ body.grid-classic.has-line-design .grid--mobile-slider-custom {
   margin-top: 0;
 }
 .grid-item-custom .product-upsell {
-  height: auto;
+  height: 100%;
   flex-flow: column;
 }
 .grid-item-custom .product-upsell__content {
@@ -25969,7 +25969,6 @@ body.grid-classic.has-line-design .grid--mobile-slider-custom {
   margin-right: var(--gap);
   scroll-snap-align: start;
   margin-top: 0;
-  max-width: 200px;
 }
 .grid--mobile-slider-custom .grid-item-custom:last-child {
   margin-right: 0;
