@@ -2,162 +2,329 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+        "subheading": "",
+        "subheading_size": 3,
+        "show_title": true,
+        "heading_size": 8,
+        "show_content": true,
+        "text_size": 4,
         "align_text": "text-center",
-        "bg_color": "#f7f7f7"
-      }
-    },
-    "faq-first": {
-      "type": "section-accordion-group",
-      "blocks": {
-        "faq-heading": {
-          "type": "heading",
-          "settings": {
-            "title": "FAQ"
-          }
-        },
-        "faq-0": {
-          "type": "question",
-          "settings": {
-          }
-        },
-        "faq-1": {
-          "type": "question",
-          "settings": {
-          }
-        },
-        "faq-2": {
-          "type": "question",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "faq-heading",
-        "faq-0",
-        "faq-1",
-        "faq-2"
-      ],
-      "settings": {
+        "width": "wrapper",
+        "bg_color": "#f7f7f7",
+        "color": "",
         "padding_top": 50,
         "padding_bottom": 50
       }
     },
-    "faq-second": {
-      "type": "section-accordion-group",
+    "section_rich_text_XMUxA8": {
+      "type": "section-rich-text",
       "blocks": {
-        "heading-0": {
+        "heading_jEVhW7": {
           "type": "heading",
           "settings": {
-            "title": "Shipping questions"
-          }
-        },
-        "question-1": {
-          "type": "question",
-          "settings": {
-          }
-        },
-        "question-2": {
-          "type": "question",
-          "settings": {
-          }
-        },
-        "question-3": {
-          "type": "question",
-          "settings": {
+            "title": "Using Tiege",
+            "text_size": 7,
+            "padding_bottom": 16
           }
         }
       },
       "block_order": [
-        "heading-0",
-        "question-1",
-        "question-2",
-        "question-3"
+        "heading_jEVhW7"
+      ],
+      "custom_css": [
+
       ],
       "settings": {
-        "bg_color": "#fafafa",
-        "padding_top": 50,
-        "padding_bottom": 50
+        "width": "wrapper--narrow",
+        "align_text": "text-center",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 60,
+        "padding_bottom": 30
       }
     },
     "faq-third": {
       "type": "section-accordion-group",
       "blocks": {
-        "heading-0": {
-          "type": "heading",
-          "settings": {
-            "title": "Returns questions"
-          }
-        },
         "question-1": {
           "type": "question",
           "settings": {
+            "default_open": false,
+            "title": "Can I use another brand's products with Tiege Hanley?",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
           }
         },
         "question-2": {
           "type": "question",
           "settings": {
+            "default_open": false,
+            "title": "Should I apply products on top of the eye cream?",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
           }
         },
         "question-3": {
           "type": "question",
           "settings": {
+            "default_open": false,
+            "title": "Is it normal to feel a tingling sensation after applying EYES?",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_p6mFQr": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "I am not seeing results. Actually, my skin is a bit worse!",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_UH6tzA": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Is it normal to feel a tingling sensation after applying EYES?",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_EPkPRF": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "How soon should I expect to see results from the Acne System?",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_6KiYxE": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Can I use Tiege Hanley on my back or chest?",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_ziXGXX": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "How do I incorporate Tiege Hanley into my gym routine?",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_idFEhx": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "How do I incorporate Tiege Hanley into my shaving routine?",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_4HCgwK": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "How should I apply Tiege Hanley if I have a beard?",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_tz3WLQ": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Can I use Tiege Hanley with another acne cream?",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_Y7knF8": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Can I use the ACNE cream with Tiege Hanley's anti-aging products?",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_HDC9Vd": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "How should I use Tiege Hanley if I work a night shift?",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_WFJ4qm": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "I've been spending a lot of time indoors, do I need the AM moisturizer with SPF 20?",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_bL38ed": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "One of my pumps is not dispensing product!",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_TUkKGh": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Do I need to use a toner with Tiege Hanley?",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_4a34WF": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Can I use self-tanner with Tiege Hanley products?",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_4j8XTd": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Can I use a PMD with Tiege Hanley?",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_gYeLhX": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Can I use a spin brush with Tiege Hanley products?",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_BaPDAi": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Can women use Tiege Hanley, too?",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
           }
         }
       },
       "block_order": [
-        "heading-0",
         "question-1",
         "question-2",
-        "question-3"
+        "question-3",
+        "question_p6mFQr",
+        "question_UH6tzA",
+        "question_EPkPRF",
+        "question_6KiYxE",
+        "question_ziXGXX",
+        "question_idFEhx",
+        "question_4HCgwK",
+        "question_tz3WLQ",
+        "question_Y7knF8",
+        "question_HDC9Vd",
+        "question_WFJ4qm",
+        "question_bL38ed",
+        "question_TUkKGh",
+        "question_4a34WF",
+        "question_4j8XTd",
+        "question_gYeLhX",
+        "question_BaPDAi"
       ],
       "settings": {
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
-    "icons": {
-      "type": "section-text-row",
-      "blocks": {
-        "icon-0": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-shield",
-            "title": "Secure transactions",
-            "text": "<p>Transactions are handled with bank-grade security.<\/p>"
-          }
-        },
-        "icon-1": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-recycle",
-            "title": "Simple checkout",
-            "text": "<p>Our secure checkout is quick and easy to use.<\/p>"
-          }
-        },
-        "icon-2": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-chat",
-            "title": "Get in touch",
-            "text": "<p>Have questions? Get in touch with us at any time.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "icon-0",
-        "icon-1",
-        "icon-2"
-      ],
-      "settings": {
+        "width": "wrapper--narrow",
+        "columns": "1",
+        "bg_color": "",
+        "color": "",
+        "border_color": "",
+        "padding_top": 0,
+        "padding_bottom": 60
       }
     }
   },
   "order": [
     "main",
-    "faq-first",
-    "faq-second",
-    "faq-third",
-    "icons"
+    "section_rich_text_XMUxA8",
+    "faq-third"
   ]
 }
