@@ -25959,9 +25959,9 @@ body.grid-classic.has-line-design .grid--mobile-slider-custom {
 .grid-item-custom .btn__outer .btn__plus {
   left: 4px;
 }
-.grid-item-custom .product-upsell__image {
+/* .grid-item-custom .product-upsell__image {
   width: 100%;
-}
+} */
 .grid--mobile-slider-custom .grid-item-custom {
   flex: 0 0 auto;
   width: calc(100% - 50px);
