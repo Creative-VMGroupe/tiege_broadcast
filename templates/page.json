@@ -106,7 +106,14 @@
         "text_xRdkVF": {
           "type": "text",
           "settings": {
-            "title": "Full Name",
+            "title": "First Name",
+            "required": false
+          }
+        },
+        "text_ybmiXM": {
+          "type": "text",
+          "settings": {
+            "title": "Last Name",
             "required": false
           }
         },
@@ -120,7 +127,14 @@
       },
       "block_order": [
         "text_xRdkVF",
+        "text_ybmiXM",
         "email_MPXE7P"
+      ],
+      "custom_css": [
+        "h2 {text-align: left; margin-bottom: 30px;}",
+        ".visually-hidden {position: static !important;}",
+        "button {background-color: #00ad2d; border-color: #00ad2d;}",
+        ".field {border: 1px solid; padding-left: 20px;}"
       ],
       "settings": {
         "title": "",
@@ -131,12 +145,33 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
+    },
+    "1713433291682d433b": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_cbp6bd": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "@tiegehanley",
+            "title_color": "",
+            "alignment": "center",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_cbp6bd"
+      ],
+      "settings": {
+        "include_margins": false
+      }
     }
   },
   "order": [
     "main",
     "section_hero_KpG8aH",
     "section_rich_text_jNheMR",
-    "contact_form_JMNxML"
+    "contact_form_JMNxML",
+    "1713433291682d433b"
   ]
 }
