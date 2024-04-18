@@ -29,10 +29,10 @@
         "flex_align_desktop": "align--middle-center-desktop",
         "flex_align_mobile": "align--middle-center-mobile",
         "overlay_opacity": 0,
-        "overlay_color": "#000",
+        "overlay_color": "#000000",
         "show_overlay_text": false,
         "bg_color": "",
-        "color": "#FFFFFF"
+        "color": "#ffffff"
       }
     },
     "section_rich_text_nGa8WC": {
@@ -78,7 +78,7 @@
             "heading": "Product Information",
             "url": "shopify:\/\/pages\/product-information",
             "color": "",
-            "bg_color": "#F7F9FA",
+            "bg_color": "#f7f9fa",
             "border_color": ""
           }
         },
@@ -126,7 +126,7 @@
       ],
       "settings": {
         "style": "rectangle",
-        "grid": 6,
+        "grid": 3,
         "width": "wrapper--full-padded",
         "heading": "",
         "heading_position": "text-center",
