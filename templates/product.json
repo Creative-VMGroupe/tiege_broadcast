@@ -185,6 +185,38 @@
         "padding_bottom": 0
       }
     },
+    "compare_systems_kLR7bT": {
+      "type": "compare-systems",
+      "blocks": {
+        "item_UqPYKH": {
+          "type": "item",
+          "settings": {
+            "title": "Level 1",
+            "properties": "Yes,Yes,Yes,No,No"
+          }
+        },
+        "item_8mfP8r": {
+          "type": "item",
+          "settings": {
+            "title": "Level 1",
+            "properties": "Yes,Yes,Yes,No,No"
+          }
+        }
+      },
+      "block_order": [
+        "item_UqPYKH",
+        "item_8mfP8r"
+      ],
+      "settings": {
+        "heading": "Compare Our Systems",
+        "caption": "Level Guide",
+        "sub_heading": "Level Guide",
+        "description": "<p>Lorem Ipsum<\/p>",
+        "btn_text": "Take our Quiz",
+        "btn_link": "",
+        "items_detail": "Wash,Scrub,AM,PM,Eyes,Serum"
+      }
+    },
     "section_double_slider_new_Gd6kgG": {
       "type": "section-double-slider-new",
       "blocks": {
@@ -590,6 +622,7 @@
   },
   "order": [
     "main",
+    "compare_systems_kLR7bT",
     "section_double_slider_new_Gd6kgG",
     "section_double_slider_new_3LK9XP",
     "section_accordion_new_hde9c4",
