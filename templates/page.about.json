@@ -129,7 +129,7 @@
         "instafeed_app_block_C7HVwY": {
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "title": "",
+            "title": "@tiegehanley",
             "title_color": "",
             "alignment": "center",
             "html_area": ""
@@ -138,6 +138,10 @@
       },
       "block_order": [
         "instafeed_app_block_C7HVwY"
+      ],
+      "custom_css": [
+        "#insta-feed {background-color: #f7f7f7; padding-top: 60px;}",
+        "#insta-feed h2 {margin-top: 0 !important;}"
       ],
       "settings": {
         "include_margins": false
