@@ -299,7 +299,14 @@
 
     }
 </style>
-<section class="comparision-system">
+<section 
+  class="comparision-system"
+  id="ComparisionSection--{{ section.id }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="comparision"
+  class="index-comparision section-padding {{ section.settings.text_alignment }}"
+  style="{{ style }}"
+  >
   <div class="comparision-text">
     <div class="comparision-heading">
       <p class="sub-heading-text">Level Guide</p>
