@@ -294,11 +294,12 @@
             <h2>&nbsp;</h2>
           </div>
           {%- assign properties_data = section.settings.items_detail | split: ',' -%}
-          {{ properties_data.length }}
           <ul>
             {% for property in properties_data %}
+              {%- assign properties_count = forloop.length -%}
               <li>{{ property }}</li>
             {% endfor %}
+            {{ properties_count }}
           </ul>
         </header>
         <div class="cd-table-container">
