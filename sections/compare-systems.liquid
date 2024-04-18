@@ -288,45 +288,47 @@
           <a href="{{ section.settings.btn_link.url }}" class="btn btn--secondary btn--solid">{{ section.settings.btn_text }}</a>
         </div>
       </div>
-      <div class="comparision-table {{ table_width }}" id="cd-table">
-        <header class="cd-table-column">
-          <div class="header-row">
-            {{ 'product-1' | placeholder_svg_tag }}
-            <h2>&nbsp;</h2>
-          </div>
-          {%- assign properties_data = section.settings.items_detail | split: ',' -%}
-          <ul>
-            {% for property in properties_data %}
-              {%- assign properties_count = forloop.length -%}
-              <li>{{ property }}</li>
-            {% endfor %}
-          </ul>
-        </header>
-        <div class="cd-table-container">
-          <div class="cd-table-wrapper">
-            {% for block in section.blocks %}
-              <div class="cd-table-column">
-                <div class="header-row">
-                  {% if block.settings.image != blank %}
-                    {{ block.settings.image | image_url: width: '360' | image_tag }}
-                  {% else %}
-                  {{ 'product-1' | placeholder_svg_tag }}
-                  {% endif %}
-                  <h2>{{ block.settings.title }}</h2>
-                </div>
-                <ul>
-                  {%- assign block_properties = block.settings.properties | split: ',' -%}
-                  {% for i in (1..properties_count) %}
-                    {%- assign current_value = block_properties[i] | downcase -%}
-                    {% if current_value == 'yes' %}
-                      <li class="cd-checked"><span>Yes</span></li>
+      <div class="comparision-table {{ table_width }}">
+        <div id="cd-table">
+          <header class="cd-table-column">
+            <div class="header-row">
+              {{ 'product-1' | placeholder_svg_tag }}
+              <h2>&nbsp;</h2>
+            </div>
+            {%- assign properties_data = section.settings.items_detail | split: ',' -%}
+            <ul>
+              {% for property in properties_data %}
+                {%- assign properties_count = forloop.length -%}
+                <li>{{ property }}</li>
+              {% endfor %}
+            </ul>
+          </header>
+          <div class="cd-table-container">
+            <div class="cd-table-wrapper">
+              {% for block in section.blocks %}
+                <div class="cd-table-column">
+                  <div class="header-row">
+                    {% if block.settings.image != blank %}
+                      {{ block.settings.image | image_url: width: '360' | image_tag }}
                     {% else %}
-                      <li></li>
+                    {{ 'product-1' | placeholder_svg_tag }}
                     {% endif %}
-                  {% endfor %}
-                </ul>
-              </div>
-            {% endfor %}
+                    <h2>{{ block.settings.title }}</h2>
+                  </div>
+                  <ul>
+                    {%- assign block_properties = block.settings.properties | split: ',' -%}
+                    {% for i in (1..properties_count) %}
+                      {%- assign current_value = block_properties[i] | downcase -%}
+                      {% if current_value == 'yes' %}
+                        <li class="cd-checked"><span>Yes</span></li>
+                      {% else %}
+                        <li></li>
+                      {% endif %}
+                    {% endfor %}
+                  </ul>
+                </div>
+              {% endfor %}
+            </div>
           </div>
         </div>
         <em class="cd-scroll-right"></em>
