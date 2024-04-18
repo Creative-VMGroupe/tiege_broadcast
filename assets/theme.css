@@ -25909,6 +25909,8 @@ table tbody:nth-child(8) {
   flex: 0 1 100%;
 }
 /*Adjust Upper classes*/
-body.has-line-design.grid-compact .grid--mobile-slider-custom .grid-item {
+body.has-line-design.grid-compact
+  .grid--mobile-slider-custom
+  .grid-item-custom {
   margin-top: 0;
 }
