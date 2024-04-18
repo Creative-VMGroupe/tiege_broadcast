@@ -258,6 +258,9 @@
   .comparision-details-text {
       margin-bottom: 2rem;
   }
+  section.comparision-system .comparision-wrapper {
+    
+  }
 </style>
 
 <section 
@@ -273,18 +276,15 @@
     <div class="comparision-wrapper">
       <div class="comparision-text">
         <div class="comparision-heading">
-          <p class="caption-text">Level Guide</p>
-          <h3 class="heading-text">Compare our Systems</h3>
+          <p class="caption-text">{{ section.settings.caption }}</p>
+          <h3 class="heading-text">{{ section.settings.heading }}</h3>
         </div>
         <div class="comparision-details">
           <div class="comparision-details-text">
-            <h4 class="sub-heading-text">Unsure which system is right for you?</h4>
-            <p>
-              Different strokes for different folks and different skin care regimen for different men. Take our 1-minute quiz
-              to figure out which formulated system is perfect for you and your face.
-            </p>
+            <h4 class="sub-heading-text">{{ section.settings.sub_heading }}</h4>
+            {{ section.settings.description }}
           </div>
-          <a href="#" class="btn btn--secondary btn--solid">Take our Quiz</a>
+          <a href="{{ section.settings.btn_link.url }}" class="btn btn--secondary btn--solid">{{ section.settings.btn_text }}</a>
         </div>
       </div>
       <div class="comparision-table {{ table_width }}" id="cd-table">
@@ -293,6 +293,8 @@
             {{ 'product-1' | placeholder_svg_tag }}
             <h2>&nbsp;</h2>
           </div>
+          {%- assign properties_data = section.settings.items_detail | split: ',' -%}
+          {{ properties_data | json }}
           <ul>
             <li>Storage</li>
             <li>People</li>
