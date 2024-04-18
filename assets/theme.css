@@ -25945,6 +25945,7 @@ body.grid-classic.has-line-design .grid--mobile-slider-custom {
 }
 .grid-item-custom .product-upsell {
   height: 100%;
+  flex-flow: column;
 }
 .grid--mobile-slider-custom .grid-item-custom {
   flex: 0 0 auto;
