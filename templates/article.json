@@ -56,9 +56,18 @@
         },
         "heading_cqJE9M": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "title": "3rd Image",
-            "text_size": 8,
+            "text_size": 7,
+            "padding_bottom": 16
+          }
+        },
+        "image_iaXbY9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/eucalyptus-v1608581874819.png",
+            "image_width": 100,
             "padding_bottom": 16
           }
         },
@@ -75,6 +84,7 @@
       "block_order": [
         "subheading_WkAyha",
         "heading_cqJE9M",
+        "image_iaXbY9",
         "text_dPC6tc"
       ],
       "settings": {
