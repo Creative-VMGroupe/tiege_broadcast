@@ -137,7 +137,12 @@
             "level-guide_link": "",
             "complementary_limit": 3,
             "bg_color": "",
-            "padding_bottom": 16
+            "padding_bottom": 16,
+            "title_1": "Level 1",
+            "title_2": "Level 2",
+            "title_3": "Level 3",
+            "title_4": "Acne Level 1",
+            "title_5": "Acne Level 2"
           }
         }
       },
@@ -482,6 +487,30 @@
         "padding_bottom": 0
       }
     },
+    "section_rich_text_phTXMH": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_Kkirxy": {
+          "type": "heading",
+          "settings": {
+            "title": "Reviews",
+            "text_size": 7,
+            "padding_bottom": 30
+          }
+        }
+      },
+      "block_order": [
+        "heading_Kkirxy"
+      ],
+      "settings": {
+        "width": "wrapper--full-padded",
+        "align_text": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 24,
+        "padding_bottom": 30
+      }
+    },
     "171198624333c1780b": {
       "type": "apps",
       "blocks": {
@@ -565,6 +594,7 @@
     "171319612680298cf4",
     "1713193502d18b128b",
     "section_accordion_new_RAhUrC",
+    "section_rich_text_phTXMH",
     "171198624333c1780b",
     "related",
     "1711936135ad982cf2"
