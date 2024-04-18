@@ -351,7 +351,7 @@
             "text_size": 5,
             "flex_align_desktop": "align--middle-center-desktop",
             "flex_align_mobile": "align--middle-center-mobile",
-            "bg_color": "",
+            "bg_color": "#ffffff",
             "color": "#000000",
             "first_button_text": "",
             "first_button_link": "",
@@ -464,7 +464,7 @@
         "bg_color": "#f7f7f7",
         "color": "#000000",
         "padding_top": 60,
-        "padding_bottom": 60
+        "padding_bottom": 30
       }
     },
     "section_before_after_q3KGGj": {
