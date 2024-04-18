@@ -108,7 +108,7 @@
             "heading": "Shipping",
             "url": "shopify:\/\/pages\/shipping-1",
             "color": "",
-            "bg_color": "#F0F0F0",
+            "bg_color": "#f7f7f7",
             "border_color": ""
           }
         }
@@ -133,10 +133,10 @@
         "heading_size": 7,
         "text_size": 3,
         "color": "",
-        "bg_color": "",
+        "bg_color": "#ffffff",
         "layout_mobile": "2",
         "padding_top": 0,
-        "padding_bottom": 60
+        "padding_bottom": 0
       }
     },
     "1713430981e4110198": {
