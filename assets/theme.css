@@ -25974,6 +25974,9 @@ body.grid-classic.has-line-design .grid--mobile-slider-custom {
 .grid--mobile-slider-custom .grid-item-custom:only-child {
   flex: 0 1 100%;
 }
+.grid-outer:has(.grid-custom) {
+  padding-left: 32px;
+}
 /*Adjust Upper classes*/
 body.has-line-design.grid-compact
   .grid--mobile-slider-custom
