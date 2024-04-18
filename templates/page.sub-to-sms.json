@@ -67,7 +67,14 @@
         "Name": {
           "type": "text",
           "settings": {
-            "title": "Full Name",
+            "title": "First Name",
+            "required": false
+          }
+        },
+        "text_YMcPma": {
+          "type": "text",
+          "settings": {
+            "title": "Last Name",
             "required": false
           }
         },
@@ -78,46 +85,19 @@
             "required": true
           }
         },
-        "Message": {
-          "type": "body",
+        "telephone_RzPXRE": {
+          "type": "telephone",
           "settings": {
-            "title": "Message",
-            "required": true
-          }
-        },
-        "Optional-text": {
-          "type": "formHeading",
-          "settings": {
-            "title": "Optional"
-          }
-        },
-        "Urgent-checkbox": {
-          "type": "checkbox",
-          "settings": {
-            "title": "This is urgent",
+            "title": "Phone Number",
             "required": false
-          }
-        },
-        "Options-select": {
-          "type": "select",
-          "settings": {
-            "title": "Select an option",
-            "label-one": "- Pick an option -",
-            "label-two": "Option one",
-            "label-three": "Option two",
-            "label-four": "Option three",
-            "label-five": "Option four",
-            "label-six": "Option five"
           }
         }
       },
       "block_order": [
         "Name",
+        "text_YMcPma",
         "Email",
-        "Message",
-        "Optional-text",
-        "Urgent-checkbox",
-        "Options-select"
+        "telephone_RzPXRE"
       ],
       "settings": {
         "title": "",
