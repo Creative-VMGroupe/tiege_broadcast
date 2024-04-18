@@ -255,7 +255,7 @@
         "text_slide_QWrw4g": {
           "type": "text-slide",
           "settings": {
-            "subheading": "Introducing",
+            "subheading": "",
             "subheading_size": 3,
             "title": "Willow Bark Extract",
             "heading_size": 7,
@@ -267,13 +267,14 @@
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
-            "show_arrow": false
+            "show_arrow": false,
+            "image": "shopify:\/\/shop_images\/willow-v1608581883683.png"
           }
         },
         "text_slide_brLbph": {
           "type": "text-slide",
           "settings": {
-            "subheading": "Introducing",
+            "subheading": "",
             "subheading_size": 3,
             "title": "Image with text slider",
             "heading_size": 7,
@@ -285,7 +286,8 @@
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
-            "show_arrow": false
+            "show_arrow": false,
+            "image": "shopify:\/\/shop_images\/rosemary-v1608581888105.png"
           }
         }
       },
