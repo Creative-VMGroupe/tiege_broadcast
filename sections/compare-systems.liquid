@@ -299,52 +299,32 @@
               {%- assign properties_count = forloop.length -%}
               <li>{{ property }}</li>
             {% endfor %}
-            {{ properties_count }}
           </ul>
         </header>
         <div class="cd-table-container">
           <div class="cd-table-wrapper">
-            <div class="cd-table-column">
-              <div class="header-row">
-                {{ 'product-1' | placeholder_svg_tag }}
-                <h2>Plan 1</h2>
+            {% for block in settings.blocks %}
+              <div class="cd-table-column">
+                <div class="header-row">
+                  {% if block.settings.image != blank %}
+                  {% else %}
+                  {{ 'product-1' | placeholder_svg_tag }}
+                  {% endif %}
+                  <h2>{{ block.settings.title }}</h2>
+                </div>
+                <ul>
+                  {%- assign block_properties = block.settings.properties | split: ',' -%}
+                  {% for i in (1..properties_count) %}
+                    {{ block_properties[i] }}
+                    <li>1 GB</li>
+                  {% endfor %}
+                  <li>2</li>
+                  <li>30 days</li>
+                  <li class="cd-unchecked"><span>No</span></li>
+                  <li>$9.99</li>
+                </ul>
               </div>
-              <ul>
-                <li>1 GB</li>
-                <li>2</li>
-                <li>30 days</li>
-                <li class="cd-unchecked"><span>No</span></li>
-                <li>$9.99</li>
-              </ul>
-            </div>
-    
-            <div class="cd-table-column">
-              <div class="header-row">
-                {{ 'product-1' | placeholder_svg_tag }}
-                <h2>Plan 2</h2>
-              </div>
-              <ul>
-                <li>2 GB</li>
-                <li>5</li>
-                <li>30 days</li>
-                <li class="cd-unchecked"><span>No</span></li>
-                <li>$19.99</li>
-              </ul>
-            </div>
-    
-            <div class="cd-table-column">
-              <div class="header-row">
-                {{ 'product-1' | placeholder_svg_tag }}
-                <h2>Plan 3</h2>
-              </div>
-              <ul>
-                <li>5 GB</li>
-                <li>10</li>
-                <li>30 days</li>
-                <li class="cd-checked"><span>Yes</span></li>
-                <li>$29.99</li>
-              </ul>
-            </div>
+            {% endfor %}
           </div>
         </div>
         <em class="cd-scroll-right"></em>
