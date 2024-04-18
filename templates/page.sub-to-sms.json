@@ -100,8 +100,11 @@
         "telephone_RzPXRE"
       ],
       "custom_css": [
-        "[data-aos-order=\"5\"] {grid-column-start: 3; grid-column-end: 5;}",
-        "[data-aos-order=\"6\"] {display: none;}"
+        "[data-aos-order=\"5\"] {grid-column-start: 3 !important; grid-column-end: 5;}",
+        "[data-aos-order=\"6\"] {display: none;}",
+        ".visually-hidden {position: static !important;}",
+        "button {background-color: #00ad2d; border-color: #00ad2d;}",
+        ".field {border: 1px solid; padding-left: 20px;}"
       ],
       "settings": {
         "title": "",
