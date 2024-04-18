@@ -383,66 +383,24 @@
         "padding_bottom": 50
       }
     },
-    "faq-second": {
-      "type": "section-accordion-group",
+    "17134327953cc58691": {
+      "type": "apps",
       "blocks": {
-        "heading-0": {
-          "type": "heading",
+        "instafeed_app_block_MLQzQw": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "title": "Shipping questions"
-          }
-        },
-        "question-1": {
-          "type": "question",
-          "settings": {
-            "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
-            "show_icon": false,
-            "icon_name": "icon-award",
-            "icon_size": 20,
-            "icon_color": "#545454"
-          }
-        },
-        "question-2": {
-          "type": "question",
-          "settings": {
-            "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
-            "show_icon": false,
-            "icon_name": "icon-award",
-            "icon_size": 20,
-            "icon_color": "#545454"
-          }
-        },
-        "question-3": {
-          "type": "question",
-          "settings": {
-            "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
-            "show_icon": false,
-            "icon_name": "icon-award",
-            "icon_size": 20,
-            "icon_color": "#545454"
+            "title": "@tiegehanley",
+            "title_color": "",
+            "alignment": "center",
+            "html_area": ""
           }
         }
       },
       "block_order": [
-        "heading-0",
-        "question-1",
-        "question-2",
-        "question-3"
+        "instafeed_app_block_MLQzQw"
       ],
       "settings": {
-        "width": "wrapper--narrow",
-        "columns": "1",
-        "bg_color": "#fafafa",
-        "color": "",
-        "border_color": "",
-        "padding_top": 50,
-        "padding_bottom": 50
+        "include_margins": false
       }
     }
   },
@@ -450,6 +408,6 @@
     "main",
     "section_rich_text_NY3L7C",
     "faq-first",
-    "faq-second"
+    "17134327953cc58691"
   ]
 }
