@@ -238,8 +238,8 @@ Main components
   }
 }
 </style>
-
-<section id="cd-table">
+<section>
+  <div id="cd-table">
 	<header class="cd-table-column">
 		<h2>Features</h2>
 		<ul>
@@ -250,7 +250,6 @@ Main components
 			<li>Price</li>
 		</ul>
 	</header>
-
 	<div class="cd-table-container">
 		<div class="cd-table-wrapper">
 
@@ -289,10 +288,11 @@ Main components
 
 		</div> <!-- cd-table-wrapper -->
 	</div> <!-- cd-table-container -->
-
 	<em class="cd-scroll-right"></em>
-</section> <!-- cd-table -->
-
+  </div>
+</section>
+{{ 'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js' | script_tag }}
+{{ 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' | script_tag }}
 <script>
   jQuery(document).ready(function($){
 	var $columns_number = $('#cd-table .cd-table-container').find('.cd-table-column').length;
