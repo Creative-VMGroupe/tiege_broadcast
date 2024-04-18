@@ -41,6 +41,7 @@
         "heading_9yzrUQ",
         "text_3UMYgJ"
       ],
+      "disabled": true,
       "settings": {
         "height": "screen-height-one-half",
         "width": "wrapper--full",
@@ -50,15 +51,92 @@
         "flex_align_desktop": "align--middle-center-desktop",
         "flex_align_mobile": "align--middle-center-mobile",
         "overlay_opacity": 0,
-        "overlay_color": "#000",
+        "overlay_color": "#000000",
         "show_overlay_text": false,
         "bg_color": "",
-        "color": "#FFFFFF"
+        "color": "#ffffff"
+      }
+    },
+    "section_rich_text_jNheMR": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_mUQcy6": {
+          "type": "heading",
+          "settings": {
+            "title": "Sign Up For SMS",
+            "text_size": 7,
+            "padding_bottom": 30
+          }
+        },
+        "subheading_YRywd3": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Sign Up For Our VIP SMS List!",
+            "text_size": 5,
+            "padding_bottom": 16
+          }
+        },
+        "text_7736yN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Get early access to new products, exclusive offers, and more!<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "heading_mUQcy6",
+        "subheading_YRywd3",
+        "text_7736yN"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "contact_form_JMNxML": {
+      "type": "contact-form",
+      "blocks": {
+        "text_xRdkVF": {
+          "type": "text",
+          "settings": {
+            "title": "Full Name",
+            "required": false
+          }
+        },
+        "email_MPXE7P": {
+          "type": "email",
+          "settings": {
+            "title": "Email",
+            "required": true
+          }
+        }
+      },
+      "block_order": [
+        "text_xRdkVF",
+        "email_MPXE7P"
+      ],
+      "settings": {
+        "title": "",
+        "terms": true,
+        "width": "wrapper--narrow",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     }
   },
   "order": [
     "main",
-    "section_hero_KpG8aH"
+    "section_hero_KpG8aH",
+    "section_rich_text_jNheMR",
+    "contact_form_JMNxML"
   ]
 }

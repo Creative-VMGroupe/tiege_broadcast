@@ -2,9 +2,63 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+        "subheading": "",
+        "subheading_size": 3,
+        "show_title": true,
+        "heading_size": 8,
+        "show_content": true,
+        "text_size": 4,
         "align_text": "text-center",
-        "bg_color": "#f7f7f7"
+        "width": "wrapper",
+        "bg_color": "#f7f7f7",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "section_rich_text_wC6zr8": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_qarmrY": {
+          "type": "heading",
+          "settings": {
+            "title": "Sign Up For SMS!",
+            "text_size": 7,
+            "padding_bottom": 30
+          }
+        },
+        "subheading_J48pxm": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Sign Up For Our VIP SMS List",
+            "text_size": 5,
+            "padding_bottom": 16
+          }
+        },
+        "text_KEAKQq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Get early access to new products, exclusive offers, and more!<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "heading_qarmrY",
+        "subheading_J48pxm",
+        "text_KEAKQq"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 60,
+        "padding_bottom": 0
       }
     },
     "contact": {
@@ -13,16 +67,22 @@
         "Name": {
           "type": "text",
           "settings": {
+            "title": "Full Name",
+            "required": false
           }
         },
         "Email": {
           "type": "email",
           "settings": {
+            "title": "Email",
+            "required": true
           }
         },
         "Message": {
           "type": "body",
           "settings": {
+            "title": "Message",
+            "required": true
           }
         },
         "Optional-text": {
@@ -34,7 +94,8 @@
         "Urgent-checkbox": {
           "type": "checkbox",
           "settings": {
-            "title": "This is urgent"
+            "title": "This is urgent",
+            "required": false
           }
         },
         "Options-select": {
@@ -60,45 +121,10 @@
       ],
       "settings": {
         "title": "",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
-    "faq": {
-      "type": "section-accordion-group",
-      "blocks": {
-        "heading-0": {
-          "type": "heading",
-          "settings": {
-            "title": "FAQ"
-          }
-        },
-        "question-1": {
-          "type": "question",
-          "settings": {
-          }
-        },
-        "question-2": {
-          "type": "question",
-          "settings": {
-          }
-        },
-        "question-3": {
-          "type": "question",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "heading-0",
-        "question-1",
-        "question-2",
-        "question-3"
-      ],
-      "disabled": true,
-      "settings": {
+        "terms": true,
         "width": "wrapper--narrow",
-        "bg_color": "#fafafa",
+        "bg_color": "",
+        "color": "",
         "padding_top": 50,
         "padding_bottom": 50
       }
@@ -106,7 +132,7 @@
   },
   "order": [
     "main",
-    "contact",
-    "faq"
+    "section_rich_text_wC6zr8",
+    "contact"
   ]
 }
