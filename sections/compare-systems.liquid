@@ -259,6 +259,7 @@
       margin-bottom: 2rem;
   }
 </style>
+
 <section 
   class="comparision-system"
   id="ComparisionSection--{{ section.id }}"
@@ -267,6 +268,7 @@
   class="index-comparision section-padding {{ section.settings.text_alignment }} {{ desktop_height }} {{ mobile_height }}"
   style="{{ style }}"
   >
+  {% capture popup_content %}
   <div class="{{ width }}">
     <div class="comparision-wrapper">
       <div class="comparision-text">
@@ -348,7 +350,32 @@
       </div>
     </div>
   </div>
+  {% endcapture %}
+  {{ popup_content }}
 </section>
+<product-modal class="product__block block-padding" style=" --block-padding-bottom: 30px;">
+  <div style="justify-content: space-between" class="product__icon__container product__icon__container--full">
+    <a class="radio__legend__link text-link" href="{{ block.settings.page.url }}" data-popup-open {{ block.shopify_attributes }}>
+      {{ link_text | escape }}
+    </a>
+    <span style="padding: 0 0 5px">{{supply}}</span>
+  </div>
+
+  <dialog class="product-modal" aria-hidden="true" inert data-scroll-lock-required>
+    <form method="dialog">
+      <button class="visually-hidden no-js" aria-label="{{ 'general.accessibility.close' | t }}"></button>
+    </form>
+
+    <div style='max-width: 1000px' class="product-modal__outer prod-modal__container-custom">
+      <div class="product-modal__content small product-modal__container-custom" data-scroll-lock-scrollable>
+        <button type="button" class="product-modal__close" data-popup-close autofocus aria-label="{{ 'general.accessibility.close' | t }}">
+          {%- render 'icon-cancel' -%}
+        </button>
+        {{ popup_content }}
+      </div>
+    </div>
+  </dialog>
+</product-modal>
 {{ 'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js' | script_tag }}
 {{ 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' | script_tag }}
 <script>
