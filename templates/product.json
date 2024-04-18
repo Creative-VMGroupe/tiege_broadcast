@@ -208,6 +208,16 @@
         "item_8mfP8r"
       ],
       "settings": {
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "table_width": "one-half",
+        "text_alignment": "text-left",
+        "padding_lr": 30,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 60,
+        "padding_bottom": 60,
         "heading": "Compare Our Systems",
         "caption": "Level Guide",
         "sub_heading": "Level Guide",
