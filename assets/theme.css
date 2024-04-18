@@ -25893,6 +25893,52 @@ table tbody:nth-child(8) {
   --columns: var(--COLUMNS-MOBILE);
 }
 .grid--mobile-slider-custom {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  gap: 0;
+  margin-left: var(--outer-offset);
+  margin-right: var(--outer-offset);
+  padding-left: var(--outer);
+  padding-right: 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-padding: var(--outer);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  /* for Internet Explorer, Edge */
+}
+.grid--mobile-slider-custom::-webkit-scrollbar {
+  display: none;
+  /* for Chrome, Safari, and Opera */
+}
+.grid--mobile-slider-custom.is-enabled {
+  cursor: grab;
+}
+.grid--mobile-slider-custom.is-dragging:active {
+  cursor: grabbing;
+}
+.grid--mobile-slider-custom.is-dragging a {
+  pointer-events: none;
+}
+.grid--mobile-slider-custom.is-scrolling {
+  scroll-snap-type: none;
+}
+body.grid-compact.has-line-design .grid--mobile-slider-custom {
+  padding-left: 1px;
+}
+body.grid-classic.has-line-design .grid--mobile-slider-custom {
+  padding-left: var(--outer);
+}
+.grid--mobile-slider-custom::after {
+  content: "";
+  min-height: 1px;
+  display: block;
+  position: relative;
+  padding-right: var(--outer);
+}
+.grid--mobile-slider-custom {
   scroll-padding: 0;
 }
 
