@@ -99,6 +99,10 @@
         "Email",
         "telephone_RzPXRE"
       ],
+      "custom_css": [
+        "[data-aos-order=\"5\"] {grid-column-start: 3; grid-column-end: 5;}",
+        "[data-aos-order=\"6\"] {display: none;}"
+      ],
       "settings": {
         "title": "",
         "terms": true,
