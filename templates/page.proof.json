@@ -140,7 +140,7 @@
         "image_baBAmG"
       ],
       "custom_css": [
-        "img {display: none;}"
+        ".lazy-image img.is-loading {display: none;}"
       ],
       "settings": {
         "height": "screen-height-one-half",
