@@ -5,7 +5,6 @@
   
   assign animation_anchor = '#CompareSection--' | append: section.id
   assign animation_order = 0
-  assign accordion_blocks = section.blocks | where: "type", "accordion"
   assign bg_color = section.settings.bg_color
   assign bg_color_transparent = bg_color | color_modify: 'alpha', 0
   assign text_color = section.settings.color
@@ -29,38 +28,10 @@
   endcapture
 
   assign figure_width_class = ''
-  assign item_sizes_width = '50vw'
-  assign item_placeholder = '||number-items-placeholder||'
-  assign item_per_row_medium = item_placeholder
   if table_width == 'three-quarters'
     assign figure_width_class = ' table__block--three-quarters'
-    assign item_sizes_width = '35vw'
-    assign item_per_row_medium = 1
   endif
-
-  assign item_sizes_padding_desktop = '100px'
-  assign item_sizes_padding_tablet = '60px'
-  if settings.grid_style == 'compact'
-    assign item_sizes_padding_desktop = '64px'
-    assign item_sizes_padding_tablet = '44px'
-  endif
-
-  assign item_sizes_images_mobile = 'calc(100vw / ' | append: item_placeholder | append: ')'
-  assign item_sizes_images_tablet = '(min-width: 750px) calc(((' | append: item_sizes_width | append: ' * 90 / 100) - ' | append: item_sizes_padding_tablet | append: ') / ' | append: item_per_row_medium | append: ')'
-  assign item_sizes_images_desktop = '(min-width: 990px) calc(((' | append: item_sizes_width | append: ' * 84 / 100) - ' | append: item_sizes_padding_desktop | append: ') / ' | append: item_per_row_medium | append: ')'
-  assign item_sizes_images_widescreen = '(min-width: 1400px) calc(((' | append: item_sizes_width | append: ' * 76 / 100) - ' | append: item_sizes_padding_desktop | append: ') / ' | append: item_placeholder | append: ')'
-  capture item_sizes_images
-    echo item_sizes_images_widescreen | append: ', ' | append: item_sizes_images_desktop | append: ', ' | append: item_sizes_images_tablet | append: ', ' | append: item_sizes_images_mobile
-  endcapture
-
-  capture columns_style
-    echo '--COLUMNS-WIDESCREEN: ' | append: item_placeholder | append: ';'
-    echo '--COLUMNS: ' | append: item_per_row_medium | append: ';'
-    echo '--COLUMNS-MEDIUM: ' | append: item_per_row_medium | append: ';'
-    echo '--COLUMNS-SMALL: ' | append: item_placeholder | append: ';'
-    echo '--COLUMNS-MOBILE: ' | append: item_placeholder | append: ';'
-  endcapture
-
+  
   capture alignment
     if section.settings.text_alignment == 'text-left'
       echo ' align--middle-left'
@@ -307,7 +278,7 @@
   class="index-comparision section-padding {{ section.settings.text_alignment }} {{ desktop_height }} {{ mobile_height }}"
   style="{{ style }}"
   >
-  <div class="comparision-text">
+  <div class="comparision-text {{ alignment }}">
     <div class="comparision-heading">
       <p class="sub-heading-text">Level Guide</p>
       <h3 class="heading-text">Compare our Systems</h3>
@@ -321,7 +292,7 @@
       <a href="#" class="btn btn--secondary btn--solid btn-cart_container">Take our Quiz</a>
     </div>
   </div>
-  <div class="comparision-table" id="cd-table">
+  <div class="comparision-table {{ table_width }}" id="cd-table">
     <header class="cd-table-column">
       <h2>Features</h2>
       <ul>
