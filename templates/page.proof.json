@@ -30,7 +30,7 @@
         "overlay_opacity": 0,
         "overlay_color": "#000000",
         "show_overlay_text": false,
-        "title": "The Prood",
+        "title": "The Proof",
         "heading_size": 7,
         "description": "Tell your brand's story through images.",
         "text_size": 3,
@@ -145,7 +145,7 @@
       ],
       "settings": {
         "height": "screen-height-one-third",
-        "mobile_height": "screen-height-one-half--mobile",
+        "mobile_height": "screen-height-one-third--mobile",
         "width": "wrapper--full-padded",
         "transition": "slide",
         "show_arrows": true,
@@ -374,7 +374,7 @@
       ],
       "settings": {
         "height": "screen-height-one-third",
-        "mobile_height": "screen-height-one-half--mobile",
+        "mobile_height": "screen-height-one-third--mobile",
         "width": "wrapper--full",
         "transition": "slide",
         "show_arrows": true,
