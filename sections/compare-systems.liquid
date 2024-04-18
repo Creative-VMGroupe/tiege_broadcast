@@ -296,11 +296,9 @@
           {%- assign properties_data = section.settings.items_detail | split: ',' -%}
           {{ properties_data | json }}
           <ul>
-            <li>Storage</li>
-            <li>People</li>
-            <li>Free trial</li>
-            <li>Support</li>
-            <li>Price</li>
+            {% for property in properties_data %}
+              <li>{{ property }}</li>
+            {% endfor %}
           </ul>
         </header>
         <div class="cd-table-container">
