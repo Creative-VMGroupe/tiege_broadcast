@@ -25938,15 +25938,16 @@ body.grid-classic.has-line-design .grid--mobile-slider-custom {
   position: relative;
   padding-right: var(--outer);
 }
-.grid--mobile-slider-custom {
-  scroll-padding: 0;
+.grid-item-custom .product-upsell__holder {
+  height: 100%;
+  margin-top: 0;
 }
-
 .grid--mobile-slider-custom .grid-item-custom {
   flex: 0 0 auto;
   width: calc(100% - 50px);
   margin-right: var(--gap);
   scroll-snap-align: start;
+  margin-top: 0;
 }
 .grid--mobile-slider-custom .grid-item-custom:last-child {
   margin-right: 0;
