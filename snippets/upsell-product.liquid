@@ -25,7 +25,7 @@
 -%}
 
 {%- if show_upsell -%}
-  <quick-add-product class="grid-item ">
+  <quick-add-product class="grid-item-custom ">
     <div class="product-upsell__holder{% if upsell_error %} product-upsell__holder--onboarding{% endif %}{% if is_cart %} product-upsell__holder--cart{% endif %}" data-quick-add-holder="{{ upsell_product.id }}">
       {%- if upsell_title != '' -%}
         <p class="product-upsell__holder__title">{{ upsell_title }}</p>
