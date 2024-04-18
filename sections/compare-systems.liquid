@@ -303,7 +303,7 @@
         </header>
         <div class="cd-table-container">
           <div class="cd-table-wrapper">
-            {% for block in settings.blocks %}
+            {% for block in section.blocks %}
               <div class="cd-table-column">
                 <div class="header-row">
                   {% if block.settings.image != blank %}
@@ -317,11 +317,8 @@
                   {% for i in (1..properties_count) %}
                     {{ block_properties[i] }}
                     <li>1 GB</li>
+                    <li class="cd-unchecked"><span>No</span></li>
                   {% endfor %}
-                  <li>2</li>
-                  <li>30 days</li>
-                  <li class="cd-unchecked"><span>No</span></li>
-                  <li>$9.99</li>
                 </ul>
               </div>
             {% endfor %}
