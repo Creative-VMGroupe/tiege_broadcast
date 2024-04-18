@@ -66,47 +66,47 @@
           "type": "highlight",
           "settings": {
             "heading": "Subscription Management",
-            "url": "",
+            "url": "shopify:\/\/pages\/subscription-management",
             "color": "",
-            "bg_color": "#F0F0F0",
+            "bg_color": "#ffffff",
             "border_color": ""
           }
         },
         "highlight_iAayCr": {
           "type": "highlight",
           "settings": {
-            "heading": "Dresses",
-            "url": "",
+            "heading": "Product Information",
+            "url": "shopify:\/\/pages\/product-information",
             "color": "",
-            "bg_color": "#F0F0F0",
+            "bg_color": "#F7F9FA",
             "border_color": ""
           }
         },
         "highlight_MhWrWX": {
           "type": "highlight",
           "settings": {
-            "heading": "Socks",
-            "url": "",
+            "heading": "Customization",
+            "url": "shopify:\/\/pages\/customization",
             "color": "",
-            "bg_color": "#F0F0F0",
+            "bg_color": "#ffffff",
             "border_color": ""
           }
         },
         "highlight_FwaQKr": {
           "type": "highlight",
           "settings": {
-            "heading": "Sales",
-            "url": "",
+            "heading": "Using Tiege",
+            "url": "shopify:\/\/pages\/using-tiege",
             "color": "",
-            "bg_color": "#F0F0F0",
+            "bg_color": "#ffffff",
             "border_color": ""
           }
         },
         "highlight_LiF6AM": {
           "type": "highlight",
           "settings": {
-            "heading": "New Arrivals",
-            "url": "",
+            "heading": "Shipping",
+            "url": "shopify:\/\/pages\/shipping-1",
             "color": "",
             "bg_color": "#F0F0F0",
             "border_color": ""
