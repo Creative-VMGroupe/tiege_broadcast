@@ -18,47 +18,37 @@
         "padding_bottom": 50
       }
     },
-    "section_hero_KpG8aH": {
-      "type": "section-hero",
-      "blocks": {
-        "heading_9yzrUQ": {
-          "type": "heading",
-          "settings": {
-            "title": "Image banner",
-            "heading_size": 7
-          }
-        },
-        "text_3UMYgJ": {
-          "type": "text",
-          "settings": {
-            "description": "Tell your brand's story through images.",
-            "text_size": 3,
-            "text_style": "font-body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_9yzrUQ",
-        "text_3UMYgJ"
-      ],
+    "section_video_FYBKW8": {
+      "type": "section-video",
       "settings": {
-        "height": "screen-height-one-half",
+        "video": "shopify:\/\/files\/videos\/Tiege_Hanley_Routine_Hero_IG_noaudio_shorter.mp4",
+        "show_video_popup": false,
+        "video_popup_social": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "desktop_height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO3.jpg",
-        "link": "",
-        "mobile_height": "screen-height-three-quarters--mobile",
-        "flex_align_desktop": "align--middle-center-desktop",
-        "flex_align_mobile": "align--middle-center-mobile",
         "overlay_opacity": 0,
         "overlay_color": "#000",
         "show_overlay_text": false,
+        "title": "The Prood",
+        "heading_size": 7,
+        "description": "Tell your brand's story through images.",
+        "text_size": 3,
+        "flex_align": "align--bottom-left",
+        "flex_align_mobile": "align--bottom-left-mobile",
         "bg_color": "",
-        "color": "#FFFFFF"
+        "color": "#FFFFFF",
+        "link_text": "",
+        "link": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false
       }
     }
   },
   "order": [
     "main",
-    "section_hero_KpG8aH"
+    "section_video_FYBKW8"
   ]
 }
