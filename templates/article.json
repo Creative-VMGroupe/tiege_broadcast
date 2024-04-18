@@ -280,7 +280,7 @@
         "title": "Related Articles",
         "heading_size": 7,
         "width": "wrapper--full-padded",
-        "grid": 4,
+        "grid": 3,
         "rows": 1,
         "aspect_ratio": 1,
         "title_size": 4,
