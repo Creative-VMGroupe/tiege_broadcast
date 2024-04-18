@@ -239,11 +239,32 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
+    },
+    "1713430998fff76ded": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_9WhRYY": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "@tiegehanley",
+            "title_color": "",
+            "alignment": "center",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_9WhRYY"
+      ],
+      "settings": {
+        "include_margins": false
+      }
     }
   },
   "order": [
     "main",
     "section_rich_text_rgiXyJ",
-    "faq-first"
+    "faq-first",
+    "1713430998fff76ded"
   ]
 }
