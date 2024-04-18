@@ -843,10 +843,15 @@
                             </div>
                            
                           {%- endif -%}
+<div class="grid-outer">
+  <div class="grid grid--mobile-slider">
 
+  
                           {%- for product in recommendations.products limit: block.settings.complementary_limit-%}
                             {%- render 'upsell-product', upsell_product: product -%}
                           {%- endfor -%}
+  </div>
+</div>
                         {%- endif -%}
                       </complementary-products>
                     </div>
