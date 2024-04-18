@@ -25979,6 +25979,9 @@ body.grid-classic.has-line-design .grid--mobile-slider-custom {
 .grid-outer:has(.grid-custom) {
   padding-left: 32px;
 }
+.container {
+  overflow-x: hidden;
+}
 /*Adjust Upper classes*/
 body.has-line-design.grid-compact
   .grid--mobile-slider-custom
