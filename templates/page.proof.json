@@ -271,6 +271,205 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "section_slideshow_F6MaRE": {
+      "type": "section-slideshow",
+      "blocks": {
+        "image_kK9eJF": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "title": "★★★★★",
+            "heading_size": 3,
+            "description": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor\"\n- Name of Reviewer",
+            "text_size": 5,
+            "flex_align_desktop": "align--middle-center-desktop",
+            "flex_align_mobile": "align--middle-center-mobile",
+            "bg_color": "",
+            "color": "#000000",
+            "first_button_text": "",
+            "first_button_link": "",
+            "first_button_type": "btn--primary",
+            "first_button_size": "",
+            "first_button_style": "btn--solid",
+            "first_button_show_arrow": false,
+            "second_button_text": "",
+            "second_button_link": "",
+            "second_button_type": "btn--white",
+            "second_button_size": "",
+            "second_button_style": "btn--solid",
+            "second_button_show_arrow": false
+          }
+        },
+        "image_mBiawm": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "title": "★★★★★",
+            "heading_size": 3,
+            "description": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor\"\n- Name of Reviewer",
+            "text_size": 5,
+            "flex_align_desktop": "align--middle-center-desktop",
+            "flex_align_mobile": "align--middle-center-mobile",
+            "bg_color": "",
+            "color": "#000000",
+            "first_button_text": "",
+            "first_button_link": "",
+            "first_button_type": "btn--primary",
+            "first_button_size": "",
+            "first_button_style": "btn--solid",
+            "first_button_show_arrow": false,
+            "second_button_text": "",
+            "second_button_link": "",
+            "second_button_type": "btn--white",
+            "second_button_size": "",
+            "second_button_style": "btn--solid",
+            "second_button_show_arrow": false
+          }
+        },
+        "image_AhFh9K": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "title": "★★★★★",
+            "heading_size": 3,
+            "description": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor\"\n- Name of Reviewer",
+            "text_size": 5,
+            "flex_align_desktop": "align--middle-center-desktop",
+            "flex_align_mobile": "align--middle-center-mobile",
+            "bg_color": "",
+            "color": "#000000",
+            "first_button_text": "",
+            "first_button_link": "",
+            "first_button_type": "btn--primary",
+            "first_button_size": "",
+            "first_button_style": "btn--solid",
+            "first_button_show_arrow": false,
+            "second_button_text": "",
+            "second_button_link": "",
+            "second_button_type": "btn--white",
+            "second_button_size": "",
+            "second_button_style": "btn--solid",
+            "second_button_show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "image_kK9eJF",
+        "image_mBiawm",
+        "image_AhFh9K"
+      ],
+      "settings": {
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "transition": "slide",
+        "show_arrows": true,
+        "autoplay": false,
+        "autoplay_speed": 8
+      }
+    },
+    "section_rich_text_mAEfrd": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_DbVU7P": {
+          "type": "heading",
+          "settings": {
+            "title": "See the Difference",
+            "text_size": 7,
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "heading_DbVU7P"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-center",
+        "bg_color": "#f7f7f7",
+        "color": "#000000",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_before_after_q3KGGj": {
+      "type": "section-before-after",
+      "settings": {
+        "text_align_center": true,
+        "heading": "★★★★★",
+        "heading_size": 5,
+        "description": "<p>\"Share success stories using before and after images to demonstrate how effective your products are.\"<\/p><p>- Name of Reviewer<\/p>",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "image_1": "shopify:\/\/shop_images\/96B_Harun-Asceric_before.png",
+        "image_2": "shopify:\/\/shop_images\/96B_Harun-Asceric_after.png",
+        "aspect_ratio": 1,
+        "width": "wrapper",
+        "bg_color": "",
+        "color": "",
+        "dark_bg_color": "",
+        "dark_color": "",
+        "padding_lr": 50,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_before_after_yD7FLe": {
+      "type": "section-before-after",
+      "settings": {
+        "text_align_center": true,
+        "heading": "★★★★★",
+        "heading_size": 5,
+        "description": "<p>\"Share success stories using before and after images to demonstrate how effective your products are.\"<\/p><p>- Name of Reviewer<\/p>",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "image_1": "shopify:\/\/shop_images\/96B_Harun-Asceric_before.png",
+        "image_2": "shopify:\/\/shop_images\/96B_Harun-Asceric_after.png",
+        "aspect_ratio": 1,
+        "width": "wrapper",
+        "bg_color": "",
+        "color": "",
+        "dark_bg_color": "",
+        "dark_color": "",
+        "padding_lr": 50,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "1713424042503d4ba1": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_d8JxFr": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "@tiegehanley",
+            "title_color": "",
+            "alignment": "center",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_d8JxFr"
+      ],
+      "settings": {
+        "include_margins": false
+      }
     }
   },
   "order": [
@@ -279,6 +478,11 @@
     "section_slideshow_69Gkbk",
     "section_rich_text_KjwWhd",
     "section_double_static_vm_4aHUtL",
-    "section_double_static_vm_8DxTF4"
+    "section_double_static_vm_8DxTF4",
+    "section_slideshow_F6MaRE",
+    "section_rich_text_mAEfrd",
+    "section_before_after_q3KGGj",
+    "section_before_after_yD7FLe",
+    "1713424042503d4ba1"
   ]
 }
