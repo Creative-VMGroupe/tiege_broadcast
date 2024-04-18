@@ -7655,6 +7655,7 @@ html:not(.no-js) body:not(.is-loaded) .header__desktop {
   width: 100%;
   top: 0;
   z-index: 5600;
+  background: #ffffff;
 }
 
 .js__header__stuck .theme__header::after,
