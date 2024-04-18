@@ -210,7 +210,7 @@
       "settings": {
         "height": "screen-height-three-quarters",
         "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full-padded",
+        "width": "wrapper--full",
         "table_width": "one-half",
         "text_alignment": "text-left",
         "padding_lr": 30,
