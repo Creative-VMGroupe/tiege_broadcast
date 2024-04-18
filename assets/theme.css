@@ -25950,6 +25950,7 @@ body.grid-classic.has-line-design .grid--mobile-slider-custom {
 .grid-item-custom .product-upsell__content {
   width: 100%;
   background-color: white;
+  padding-left: 0;
 }
 .grid-item-custom .btn__outer{
   left: 10px;
