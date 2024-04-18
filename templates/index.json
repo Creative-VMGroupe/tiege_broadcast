@@ -829,7 +829,7 @@
           "type": "buttons",
           "settings": {
             "button_text": "View the full guide",
-            "button_url": "shopify:\/\/pages\/membership-benefit",
+            "button_url": "shopify:\/\/pages\/level-guide",
             "button_type": "btn--secondary",
             "button_size": "btn--large",
             "button_style": "btn--solid",
