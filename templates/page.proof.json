@@ -153,6 +153,67 @@
         "autoplay_speed": 8
       }
     },
+    "section_highlights_EmCUMF": {
+      "type": "section-highlights",
+      "blocks": {
+        "highlight_YUwCew": {
+          "type": "highlight",
+          "settings": {
+            "heading": "",
+            "url": "",
+            "image": "shopify:\/\/shop_images\/IMG_5261_VSCO_dadb3224-ffb7-49c5-a6b4-ff2ce31e2a09.jpg",
+            "color": "",
+            "bg_color": "#F0F0F0",
+            "border_color": ""
+          }
+        },
+        "highlight_mfxYAB": {
+          "type": "highlight",
+          "settings": {
+            "heading": "",
+            "url": "",
+            "image": "shopify:\/\/shop_images\/HARRYS_FW_PORT_0529.jpg",
+            "color": "",
+            "bg_color": "#F0F0F0",
+            "border_color": ""
+          }
+        },
+        "highlight_Yq3Vyf": {
+          "type": "highlight",
+          "settings": {
+            "heading": "",
+            "url": "",
+            "image": "shopify:\/\/shop_images\/TH_GRWM_Screenshot_2024-03-22_at_11.03.12_PM.png",
+            "color": "",
+            "bg_color": "#F0F0F0",
+            "border_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "highlight_YUwCew",
+        "highlight_mfxYAB",
+        "highlight_Yq3Vyf"
+      ],
+      "custom_css": [
+        ".highlights__item {padding: 0;}",
+        ".wrapper--full-padded {padding: 0;}"
+      ],
+      "settings": {
+        "style": "rectangle",
+        "grid": 3,
+        "width": "wrapper--full-padded",
+        "heading": "",
+        "heading_position": "text-center",
+        "heading_size": 7,
+        "text_size": 3,
+        "color": "",
+        "bg_color": "",
+        "layout_mobile": "slider",
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
     "section_rich_text_KjwWhd": {
       "type": "section-rich-text",
       "blocks": {
@@ -480,69 +541,13 @@
       "settings": {
         "include_margins": false
       }
-    },
-    "section_highlights_EmCUMF": {
-      "type": "section-highlights",
-      "blocks": {
-        "highlight_YUwCew": {
-          "type": "highlight",
-          "settings": {
-            "heading": "Socks",
-            "url": "",
-            "color": "",
-            "bg_color": "#F0F0F0",
-            "border_color": ""
-          }
-        },
-        "highlight_mfxYAB": {
-          "type": "highlight",
-          "settings": {
-            "heading": "Sales",
-            "url": "",
-            "color": "",
-            "bg_color": "#F0F0F0",
-            "border_color": ""
-          }
-        },
-        "highlight_Yq3Vyf": {
-          "type": "highlight",
-          "settings": {
-            "heading": "New Arrivals",
-            "url": "",
-            "color": "",
-            "bg_color": "#F0F0F0",
-            "border_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "highlight_YUwCew",
-        "highlight_mfxYAB",
-        "highlight_Yq3Vyf"
-      ],
-      "custom_css": [
-        ".highlights__item {padding: 0;}"
-      ],
-      "settings": {
-        "style": "rectangle",
-        "grid": 3,
-        "width": "wrapper--full-padded",
-        "heading": "Highlights",
-        "heading_position": "text-center",
-        "heading_size": 7,
-        "text_size": 3,
-        "color": "",
-        "bg_color": "",
-        "layout_mobile": "2",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
     }
   },
   "order": [
     "main",
     "section_video_FYBKW8",
     "section_slideshow_69Gkbk",
+    "section_highlights_EmCUMF",
     "section_rich_text_KjwWhd",
     "section_double_static_vm_4aHUtL",
     "section_double_static_vm_8DxTF4",
@@ -550,7 +555,6 @@
     "section_rich_text_mAEfrd",
     "section_before_after_q3KGGj",
     "section_before_after_yD7FLe",
-    "1713424042503d4ba1",
-    "section_highlights_EmCUMF"
+    "1713424042503d4ba1"
   ]
 }
