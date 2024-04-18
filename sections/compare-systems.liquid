@@ -294,7 +294,7 @@
             <h2>&nbsp;</h2>
           </div>
           {%- assign properties_data = section.settings.items_detail | split: ',' -%}
-          {{ properties_data | json }}
+          {{ properties_data.length }}
           <ul>
             {% for property in properties_data %}
               <li>{{ property }}</li>
