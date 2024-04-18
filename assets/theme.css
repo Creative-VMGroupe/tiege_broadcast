@@ -25900,7 +25900,7 @@ table tbody:nth-child(8) {
   gap: 0;
   margin-left: var(--outer-offset);
   margin-right: var(--outer-offset);
-  padding-left: var(--outer);
+  /* padding-left: var(--outer); */
   padding-right: 0;
   overflow-x: scroll;
   overflow-y: hidden;
