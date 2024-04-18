@@ -79,7 +79,8 @@
       ],
       "custom_css": [
         ".frame {height: 100%;}",
-        ".wide-image {height: 100%;}"
+        ".wide-image {height: 100%;}",
+        ".hero__content {height: 100%;}"
       ],
       "settings": {
         "layout": "",
