@@ -497,7 +497,7 @@
           "settings": {
             "title": "Reviews",
             "text_size": 7,
-            "padding_bottom": 30
+            "padding_bottom": 0
           }
         }
       },
@@ -510,7 +510,7 @@
         "bg_color": "",
         "color": "",
         "padding_top": 24,
-        "padding_bottom": 30
+        "padding_bottom": 0
       }
     },
     "171198624333c1780b": {
