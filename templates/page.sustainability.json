@@ -204,6 +204,22 @@
         "padding_bottom": 0
       }
     },
+    "section_hero_TbDK6d": {
+      "type": "section-hero",
+      "settings": {
+        "height": "screen-height-one-half",
+        "width": "wrapper--full",
+        "link": "",
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "overlay_opacity": 0,
+        "overlay_color": "#000",
+        "show_overlay_text": false,
+        "bg_color": "",
+        "color": "#FFFFFF"
+      }
+    },
     "1713200593b3060898": {
       "type": "apps",
       "blocks": {
@@ -232,6 +248,7 @@
     "main",
     "section_hero_KpG8aH",
     "section_rich_text_TXLJKC",
+    "section_hero_TbDK6d",
     "1713200593b3060898"
   ]
 }
