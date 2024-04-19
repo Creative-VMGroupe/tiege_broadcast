@@ -351,41 +351,7 @@
             "text": "<p>Compared to competitors, the concentration of Acetyl Hexapeptide-8 and Retinyl Palmitate in our EYES and SERUM products is much higher.<\/p><p>Repeated muscle contractions increase the <strong>depth<\/strong> of facial wrinkles. Acetyl Hexapeptide-8 & Pentapeptide-18 work by <strong>intercepting<\/strong> these muscle contraction signals sent by the brain. This is much less invasive than Botox injections.<\/p><p>Our ACNE product has Salicylic Acid at 1.6%. Some say we should go to 2% which a lot of competitors have. But what they don’t know is that our product is a leave-on cream, not a rinse-off product like a cleanser or toner. We tested Salicylic Acid at 2% and I wanted to scratch the skin off my face at the end of the day!<\/p><p>This Skin Care Routine for Men kit is fragrance-free to avoid skin irritation. The scents in it are from carefully selected natural extracts.<\/p>",
             "text_size": 3,
             "text_style": "font-body",
-            "padding_bottom": 30
-          }
-        },
-        "subheading_iHegC6": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "“Are You Made in 🇺🇸?”",
-            "text_size": 5,
-            "padding_bottom": 30
-          }
-        },
-        "text_9zGRgK": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Yes—manufactured and formulated in the USA.<\/p>",
-            "text_size": 3,
-            "text_style": "font-body",
-            "padding_bottom": 30
-          }
-        },
-        "subheading_PdVDEy": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "If Your Products Are So Premium, Why Don’t They Cost More?",
-            "text_size": 5,
-            "padding_bottom": 30
-          }
-        },
-        "text_Bb7FKV": {
-          "type": "text",
-          "settings": {
-            "text": "<p>The big boys spend years, and millions building retail partnerships. As a result, their operating costs are huge. They can’t just get up and exit longstanding retail partnerships.<\/p><p>We understand the difficult situation they’re in.<\/p><p>Because we were born on the Internet we were fortunate we didn’t have to rely on a middleman to reach our end buyer.<\/p><p>This meant we could deliver high quality products at lower costs.<\/p><p>We also don't have super high-paid executives, expensive real-estate, or stockholders. All this allows us to eliminate the CRAZY markups and margins.<\/p><p>The big brands charge whatever they want because they assume men don’t know any better—most of us are new to this. Our pricing is incredibly reasonable because our fine-tuned system provides the <strong>exact amount of product you need on a daily basis<\/strong>. You won’t be overpaying or underusing anything.<\/p><p>Also, because we are a subscription business our relationships aren’t transactional– we have skin in the game.<\/p><p>There’s far too much pressure to buy now, act now. Don’t feel rushed. We aren’t going anywhere. And when you’re ready we look forward to giving you the best skin of your life.<\/p><p>At Tiege Hanley, we believe that skin care for men should be straightforward, affordable, and effective. That’s why we’ve devoted our efforts to designing, formulating, and testing our products to work seamlessly together within specific skin care systems. We’ve built each system around a 30-day regimen, providing guys with a simple, efficient approach to skin health that they can use confidently every day.<\/p>",
-            "text_size": 3,
-            "text_style": "font-body",
-            "padding_bottom": 30
+            "padding_bottom": 0
           }
         }
       },
@@ -397,13 +363,78 @@
         "subheading_DiQkFJ",
         "text_iMBCLH",
         "subheading_4xAXVh",
-        "text_jbJy4J",
-        "subheading_iHegC6",
-        "text_9zGRgK",
-        "subheading_PdVDEy",
-        "text_Bb7FKV"
+        "text_jbJy4J"
       ],
-      "disabled": true,
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-center",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_hero_nJEjWG": {
+      "type": "section-hero",
+      "settings": {
+        "height": "screen-height-one-half",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/Drop.png",
+        "link": "",
+        "mobile_height": "screen-height-one-half--mobile",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "show_overlay_text": false,
+        "bg_color": "",
+        "color": "#ffffff"
+      }
+    },
+    "section_rich_text_K7Njz3": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_HaTUFR": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "“Are You Made in 🇺🇸?”",
+            "text_size": 5,
+            "padding_bottom": 30
+          }
+        },
+        "text_VcQ8gr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Yes—manufactured and formulated in the USA.<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 30
+          }
+        },
+        "subheading_TEjnja": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "If Your Products Are So Premium, Why Don’t They Cost More?",
+            "text_size": 5,
+            "padding_bottom": 30
+          }
+        },
+        "text_qi7QGY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The big boys spend years, and millions building retail partnerships. As a result, their operating costs are huge. They can’t just get up and exit longstanding retail partnerships.<\/p><p>We understand the difficult situation they’re in.<\/p><p>Because we were born on the Internet we were fortunate we didn’t have to rely on a middleman to reach our end buyer.<\/p><p>This meant we could deliver high quality products at lower costs.<\/p><p>We also don't have super high-paid executives, expensive real-estate, or stockholders. All this allows us to eliminate the CRAZY markups and margins.<\/p><p>The big brands charge whatever they want because they assume men don’t know any better—most of us are new to this. Our pricing is incredibly reasonable because our fine-tuned system provides the <strong>exact amount of product you need on a daily basis<\/strong>. You won’t be overpaying or underusing anything.<\/p><p>Also, because we are a subscription business our relationships aren’t transactional– we have skin in the game.<\/p><p>There’s far too much pressure to buy now, act now. Don’t feel rushed. We aren’t going anywhere. And when you’re ready we look forward to giving you the best skin of your life.<\/p><p>At Tiege Hanley, we believe that skin care for men should be straightforward, affordable, and effective. That’s why we’ve devoted our efforts to designing, formulating, and testing our products to work seamlessly together within specific skin care systems. We’ve built each system around a 30-day regimen, providing guys with a simple, efficient approach to skin health that they can use confidently every day.<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "subheading_HaTUFR",
+        "text_VcQ8gr",
+        "subheading_TEjnja",
+        "text_qi7QGY"
+      ],
       "settings": {
         "width": "wrapper--narrow",
         "align_text": "text-center",
@@ -448,6 +479,8 @@
     "section_rich_text_HTLWQR",
     "section_video_gtEi3V",
     "section_rich_text_z7jagt",
+    "section_hero_nJEjWG",
+    "section_rich_text_K7Njz3",
     "1713200593b3060898"
   ]
 }
