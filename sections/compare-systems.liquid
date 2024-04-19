@@ -142,7 +142,8 @@
                   </div>
                   <ul>
                     {%- assign block_properties = block.settings.properties | split: ',' -%}
-                    {% for i in (1..properties_count) %}
+                    {% assign loop_lenth = properties_count | minus: 1 %}
+                    {% for i in (0..loop_lenth) %}
                       {%- assign current_value = block_properties[i] | downcase -%}
                       {% if current_value == 'yes' %}
                         <li><span class="green-dot"></span></li>
