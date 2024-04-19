@@ -41,6 +41,131 @@
     endif
   endcapture
 -%}
+
+{% capture popup_content %}
+  <div class="{{ width }}">
+    <div class="comparision-wrapper">
+      <div class="comparision-text">
+        <div class="comparision-heading">
+          <p class="caption-text">{{ section.settings.caption }}</p>
+          <h3 class="heading-text">{{ section.settings.heading }}</h3>
+        </div>
+        <div class="comparision-details">
+          <div class="comparision-details-text">
+            <h4 class="sub-heading-text">{{ section.settings.sub_heading }}</h4>
+            {{ section.settings.description }}
+          </div>
+          <a href="{{ section.settings.btn_link.url }}" class="btn btn--secondary btn--solid">{{ section.settings.btn_text }}</a>
+        </div>
+      </div>
+      <div class="comparision-table">
+        <div id="cd-table">
+          <header class="cd-table-column">
+            <div class="header-row">
+              {{ 'product-1' | placeholder_svg_tag }}
+              <h2>&nbsp;</h2>
+            </div>
+            {%- assign properties_data = section.settings.items_detail | split: ',' -%}
+            <ul>
+              {% for property in properties_data %}
+                {%- assign properties_count = forloop.length -%}
+                <li>{{ property }}</li>
+              {% endfor %}
+            </ul>
+          </header>
+          <div class="cd-table-container">
+            <div class="cd-table-wrapper">
+              {% for block in section.blocks %}
+                <div class="cd-table-column">
+                  <div class="header-row">
+                    {% if block.settings.image != blank %}
+                      {{ block.settings.image | image_url: width: '640' | image_tag }}
+                    {% else %}
+                    {{ 'product-1' | placeholder_svg_tag }}
+                    {% endif %}
+                    <h2>{{ block.settings.title }}</h2>
+                  </div>
+                  <ul>
+                    {%- assign block_properties = block.settings.properties | split: ',' -%}
+                    {% for i in (1..properties_count) %}
+                      {%- assign current_value = block_properties[i] | downcase -%}
+                      {% if current_value == 'yes' %}
+                        <li><span class="green-dot"></span></li>
+                      {% else %}
+                        <li></li>
+                      {% endif %}
+                    {% endfor %}
+                  </ul>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endcapture %}
+{% capture section_content %}
+  <div class="{{ width }}">
+    <div class="comparision-wrapper">
+      <div class="comparision-heading">
+        <p class="caption-text">{{ section.settings.caption }}</p>
+        <h3 class="heading-text">{{ section.settings.heading }}</h3>
+      </div>
+      <div class="comparision-table">
+        <div id="cd-table">
+          <header class="cd-table-column">
+            <div class="header-row">
+              {{ 'product-1' | placeholder_svg_tag }}
+              <h2>&nbsp;</h2>
+            </div>
+            {%- assign properties_data = section.settings.items_detail | split: ',' -%}
+            <ul>
+              {% for property in properties_data %}
+                {%- assign properties_count = forloop.length -%}
+                <li>{{ property }}</li>
+              {% endfor %}
+            </ul>
+          </header>
+          <div class="cd-table-container">
+            <div class="cd-table-wrapper">
+              {% for block in section.blocks %}
+                <div class="cd-table-column">
+                  <div class="header-row">
+                    {% if block.settings.image != blank %}
+                      {{ block.settings.image | image_url: width: '640' | image_tag }}
+                    {% else %}
+                    {{ 'product-1' | placeholder_svg_tag }}
+                    {% endif %}
+                    <h2>{{ block.settings.title }}</h2>
+                  </div>
+                  <ul>
+                    {%- assign block_properties = block.settings.properties | split: ',' -%}
+                    {% for i in (1..properties_count) %}
+                      {%- assign current_value = block_properties[i] | downcase -%}
+                      {% if current_value == 'yes' %}
+                        <li><span class="green-dot"></span></li>
+                      {% else %}
+                        <li></li>
+                      {% endif %}
+                    {% endfor %}
+                  </ul>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="comparision-details">
+          <div class="comparision-details-text">
+            <h4 class="sub-heading-text">{{ section.settings.sub_heading }}</h4>
+            {{ section.settings.description }}
+          </div>
+          <a href="{{ section.settings.btn_link.url }}" class="btn btn--secondary btn--solid">{{ section.settings.btn_text }}</a>
+        </div>
+    </div>
+  </div>
+{% endcapture %}
 <style>
   #cd-table {
     position: relative;
@@ -205,70 +330,7 @@
   class="comparision-system index-comparision section-padding {{ section.settings.text_alignment }} {{ desktop_height }} {{ mobile_height }}"
   style="{{ style }}"
   >
-  {% capture popup_content %}
-  <div class="{{ width }}">
-    <div class="comparision-wrapper">
-      <div class="comparision-text">
-        <div class="comparision-heading">
-          <p class="caption-text">{{ section.settings.caption }}</p>
-          <h3 class="heading-text">{{ section.settings.heading }}</h3>
-        </div>
-        <div class="comparision-details">
-          <div class="comparision-details-text">
-            <h4 class="sub-heading-text">{{ section.settings.sub_heading }}</h4>
-            {{ section.settings.description }}
-          </div>
-          <a href="{{ section.settings.btn_link.url }}" class="btn btn--secondary btn--solid">{{ section.settings.btn_text }}</a>
-        </div>
-      </div>
-      <div class="comparision-table">
-        <div id="cd-table">
-          <header class="cd-table-column">
-            <div class="header-row">
-              {{ 'product-1' | placeholder_svg_tag }}
-              <h2>&nbsp;</h2>
-            </div>
-            {%- assign properties_data = section.settings.items_detail | split: ',' -%}
-            <ul>
-              {% for property in properties_data %}
-                {%- assign properties_count = forloop.length -%}
-                <li>{{ property }}</li>
-              {% endfor %}
-            </ul>
-          </header>
-          <div class="cd-table-container">
-            <div class="cd-table-wrapper">
-              {% for block in section.blocks %}
-                <div class="cd-table-column">
-                  <div class="header-row">
-                    {% if block.settings.image != blank %}
-                      {{ block.settings.image | image_url: width: '640' | image_tag }}
-                    {% else %}
-                    {{ 'product-1' | placeholder_svg_tag }}
-                    {% endif %}
-                    <h2>{{ block.settings.title }}</h2>
-                  </div>
-                  <ul>
-                    {%- assign block_properties = block.settings.properties | split: ',' -%}
-                    {% for i in (1..properties_count) %}
-                      {%- assign current_value = block_properties[i] | downcase -%}
-                      {% if current_value == 'yes' %}
-                        <li><span class="green-dot"></span></li>
-                      {% else %}
-                        <li></li>
-                      {% endif %}
-                    {% endfor %}
-                  </ul>
-                </div>
-              {% endfor %}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  {% endcapture %}
-  {{ popup_content }}
+  {{ section_content }}
 </section>
 
 <product-modal class="product__block block-padding" style=" --block-padding-bottom: 30px;">
