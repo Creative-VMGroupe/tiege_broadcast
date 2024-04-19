@@ -178,6 +178,19 @@
     margin: auto;
     font-size: 0.875rem;
   }
+  #cd-table::before {
+    /* White color gradient on the right */
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -1px;
+    height: 100%;
+    width: 35px;
+    background: -webkit-linear-gradient(right, #FFF 10%, rgba(255, 255, 255, 0));
+    background: linear-gradient(to left, #FFF 10%, rgba(255, 255, 255, 0));
+    z-index: 5;
+    pointer-events: none;
+  }
   #cd-table::after {
     content: "";
     display: table;
