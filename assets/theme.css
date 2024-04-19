@@ -25634,7 +25634,7 @@ div.rc_popup {
 }
 .prod-link-custom {
   color: black;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
 }
 .prod-item__info-custom {
   padding-top: 10px !important;
