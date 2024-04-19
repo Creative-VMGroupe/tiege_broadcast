@@ -4,8 +4,8 @@
     "theme_name": "Broadcast",
     "theme_version": "5.5.0",
     "theme_author": "Invisible",
-    "theme_support_url": "https:\/\/broadcast.invisiblethemes.com\/support\/contacting-support",
-    "theme_documentation_url": "https:\/\/broadcast.invisiblethemes.com"
+    "theme_support_url": "https://broadcast.invisiblethemes.com/support/contacting-support",
+    "theme_documentation_url": "https://broadcast.invisiblethemes.com"
   },
   {
     "name": "Colors",
@@ -170,10 +170,10 @@
       {
         "type": "range",
         "id": "heading_letter_spacing",
-        "min": -25,
-        "max": 200,
-        "step": 25,
-        "unit": "%",
+        "min": 0,
+        "max": 3,
+        "step": 0.25,
+        "unit": "px",
         "label": "Letter spacing",
         "default": 0
       },
@@ -216,12 +216,12 @@
       {
         "type": "range",
         "id": "sub_letter_spacing",
-        "min": -25,
-        "max": 200,
-        "step": 25,
-        "unit": "%",
+        "min": 0,
+        "max": 3,
+        "step": 0.25,
+        "unit": "px",
         "label": "Letter spacing",
-        "default": 100
+        "default": 0
       },
       {
         "type": "checkbox",
@@ -252,10 +252,10 @@
       {
         "type": "range",
         "id": "body_letter_spacing",
-        "min": -25,
-        "max": 200,
-        "step": 25,
-        "unit": "%",
+        "min": 0,
+        "max": 3,
+        "step": 0.25,
+        "unit": "px",
         "label": "Letter spacing",
         "default": 0
       },
@@ -292,10 +292,10 @@
       {
         "type": "range",
         "id": "nav_letter_spacing",
-        "min": -25,
-        "max": 200,
-        "step": 25,
-        "unit": "%",
+        "min": 0,
+        "max": 3,
+        "step": 0.25,
+        "unit": "px",
         "label": "Letter spacing",
         "default": 0
       },
@@ -349,12 +349,12 @@
       {
         "type": "range",
         "id": "btn_letter_spacing",
-        "min": -25,
-        "max": 200,
-        "step": 25,
-        "unit": "%",
+        "min": 0,
+        "max": 3,
+        "step": 0.25,
+        "unit": "px",
         "label": "Letter spacing",
-        "default": 100
+        "default": 0
       },
       {
         "type": "range",
@@ -625,67 +625,67 @@
         "type": "text",
         "id": "instagram_link",
         "label": "Instagram",
-        "info": "https:\/\/instagram.com\/shopify"
+        "info": "https://instagram.com/shopify"
       },
       {
         "type": "text",
         "id": "facebook_link",
         "label": "Facebook",
-        "info": "https:\/\/facebook.com\/shopify"
+        "info": "https://facebook.com/shopify"
       },
       {
         "type": "text",
         "id": "twitter_link",
         "label": "X (Twitter)",
-        "info": "https:\/\/twitter.com\/shopify"
+        "info": "https://twitter.com/shopify"
       },
       {
         "type": "text",
         "id": "tiktok_link",
         "label": "TikTok",
-        "info": "https:\/\/tiktok.com\/@shopify"
+        "info": "https://tiktok.com/@shopify"
       },
       {
         "type": "text",
         "id": "pinterest_link",
         "label": "Pinterest",
-        "info": "https:\/\/pinterest.com\/shopify"
+        "info": "https://pinterest.com/shopify"
       },
       {
         "type": "text",
         "id": "tumblr_link",
         "label": "Tumblr",
-        "info": "http:\/\/shopify.tumblr.com"
+        "info": "http://shopify.tumblr.com"
       },
       {
         "type": "text",
         "id": "youtube_link",
         "label": "YouTube",
-        "info": "https:\/\/youtube.com\/shopify"
+        "info": "https://youtube.com/shopify"
       },
       {
         "type": "text",
         "id": "vimeo_link",
         "label": "Vimeo",
-        "info": "https:\/\/vimeo.com\/shopify"
+        "info": "https://vimeo.com/shopify"
       },
       {
         "type": "text",
         "id": "linkedin_link",
         "label": "LinkedIn",
-        "info": "https:\/\/linkedin.com\/company\/shopify"
+        "info": "https://linkedin.com/company/shopify"
       },
       {
         "type": "text",
         "id": "snapchat_link",
         "label": "Snapchat",
-        "info": "https:\/\/snapchat.com\/add\/shopify"
+        "info": "https://snapchat.com/add/shopify"
       },
       {
         "type": "text",
         "id": "feed_link",
         "label": "Blog feed",
-        "info": "http:\/\/store.myshopify.com\/blogs\/news.atom"
+        "info": "http://store.myshopify.com/blogs/news.atom"
       },
       {
         "type": "header",
@@ -798,7 +798,7 @@
       {
         "type": "checkbox",
         "id": "quickview_enable",
-        "label": "Enable quick add. [Learn more](https:\/\/broadcast.invisiblethemes.com\/collections\/collection-pages\/quick-add)",
+        "label": "Enable quick add. [Learn more](https://broadcast.invisiblethemes.com/collections/collection-pages/quick-add)",
         "default": true
       },
       {
@@ -809,7 +809,7 @@
         "type": "checkbox",
         "label": "Show siblings on collections",
         "id": "show_siblings",
-        "info": "Learn more about linked [color siblings](https:\/\/broadcast.invisiblethemes.com\/siblings\/product-siblings\/about-product-siblings)",
+        "info": "Learn more about linked [color siblings](https://broadcast.invisiblethemes.com/siblings/product-siblings/about-product-siblings)",
         "default": true
       },
       {
@@ -820,7 +820,7 @@
         "type": "checkbox",
         "label": "Show cutline",
         "id": "show_cutline",
-        "info": "Learn more about [cutlines](https:\/\/broadcast.invisiblethemes.com\/collections\/collection-pages\/cutline)",
+        "info": "Learn more about [cutlines](https://broadcast.invisiblethemes.com/collections/collection-pages/cutline)",
         "default": true
       },
       {
@@ -891,7 +891,7 @@
     "settings": [
       {
         "type": "paragraph",
-        "content": "To use swatches on variants other than color, visit your [language files](\/admin\/settings\/languages)"
+        "content": "To use swatches on variants other than color, visit your [language files](/admin/settings/languages)"
       },
       {
         "type": "checkbox",
@@ -958,7 +958,7 @@
         "id": "swatch_color_list",
         "label": "HEX codes and files",
         "default": "Black: #000000\nWhite: #fafafa\nBlank: blank.png",
-        "info": "Each rule must be in its own line. HEX codes and [image files](\/admin\/content\/files?selectedView=all&media_type=IMAGE) accepted. [Learn more](https:\/\/broadcast.invisiblethemes.com\/products\/swatches)"
+        "info": "Each rule must be in its own line. HEX codes and [image files](/admin/content/files?selectedView=all&media_type=IMAGE) accepted. [Learn more](https://broadcast.invisiblethemes.com/products/swatches)"
       }
     ]
   },
@@ -997,7 +997,7 @@
         "id": "free_shipping_limit",
         "label": "Minimum spend for free shipping",
         "default": "100",
-        "info": "Use round numbers. Exclude currency, symbols, and letters. [More info](https:\/\/help.shopify.com\/en\/manual\/shipping\/setting-up-and-managing-your-shipping\/free-shipping-rates#free-shipping-over-a-certain-value)"
+        "info": "Use round numbers. Exclude currency, symbols, and letters. [More info](https://help.shopify.com/en/manual/shipping/setting-up-and-managing-your-shipping/free-shipping-rates#free-shipping-over-a-certain-value)"
       },
       {
         "type": "checkbox",
@@ -1020,7 +1020,7 @@
         "type": "richtext",
         "id": "accept_terms_text",
         "label": "Checkbox label",
-        "default": "<p>I agree to the terms and conditions<\/p>"
+        "default": "<p>I agree to the terms and conditions</p>"
       },
       {
         "type": "header",
