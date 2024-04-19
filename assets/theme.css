@@ -25569,7 +25569,7 @@ fieldset .select-popout__toggle span {
 
 .prod-rec_text-custom {
   text-transform: none;
-  letter-spacing: normal;
+  letter-spacing: var(--ltr-spacing-tiege);
 }
 .prod-modal__container-custom {
   max-width: 1000px;
@@ -25594,19 +25594,19 @@ fieldset .select-popout__toggle span {
   font-size: 14px !important;
   gap: 5px;
   justify-content: center;
-  letter-spacing: 0.08em;
+  letter-spacing: var(--ltr-spacing-tiege);
   flex-direction: row-reverse !important;
   flex: 1 !important;
 }
 @media (min-width: 750px) and (max-width: 1415px) {
   .rc-template__radio-group .rc-radio .rc-radio__label {
-    letter-spacing: 0;
+    letter-spacing: var(--ltr-spacing-tiege);
   }
 }
 @media (min-width: 750px) and (max-width: 1127px) {
   .rc-template__radio-group .rc-radio .rc-radio__label {
     font-size: 14px;
-    letter-spacing: 0.04em;
+    letter-spacing: var(--ltr-spacing-tiege);
   }
 }
 .rc-template__radio-group .rc-radio:not(:first-child) {
@@ -25634,7 +25634,7 @@ div.rc_popup {
 }
 .prod-link-custom {
   color: black;
-  letter-spacing: 0px;
+  letter-spacing: var(--ltr-spacing-tiege);
 }
 .prod-item__info-custom {
   padding-top: 10px !important;
@@ -25659,7 +25659,7 @@ div.rc_popup {
 /*Filter*/
 .filter__heading-custom {
   font-size: calc(var(--font-7) * var(--FONT-ADJUST-HEADING)) !important;
-  letter-spacing: 1px !important;
+  letter-spacing: var(--ltr-spacing-tiege) !important;
   text-transform: capitalize;
 }
 .filter-heading__container-custom {
@@ -25700,7 +25700,7 @@ div.rc_popup {
 }
 .cart__sub-custom {
   font-size: calc(1.5rem * var(--FONT-ADJUST-BODY)) !important;
-  letter-spacing: 1px !important;
+  letter-spacing: var(--ltr-spacing-tiege) !important;
 }
 .cart__btn-custom {
   font-size: 14px !important;
@@ -25761,7 +25761,7 @@ div.rc_popup {
   position: absolute;
   font-size: 14px;
   right: 2px;
-  letter-spacing: 0.1em;
+  letter-spacing: var(--ltr-spacing-tiege);
 }
 .product-quick-add__form
   .rc-template__radio-group
