@@ -219,7 +219,7 @@
         "item_YTLpqP"
       ],
       "settings": {
-        "height": "screen-height-full",
+        "height": "screen-height-one-half",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
         "text_alignment": "text-left",
