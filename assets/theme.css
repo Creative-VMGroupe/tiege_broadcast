@@ -25766,7 +25766,7 @@ div.rc_popup {
   .rc-template__radio-group
   .rc-radio
   .rc-radio__label[data-label-onetime] {
-  width: 100%;
+  width: 343px;
 }
 .product-quick-add__form .rc-template__radio-group .rc-radio {
   position: relative;
