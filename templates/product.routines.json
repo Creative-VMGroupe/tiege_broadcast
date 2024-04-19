@@ -958,14 +958,14 @@
         "item_mrYB9Q": {
           "type": "item",
           "settings": {
-            "title": "Level 1",
-            "properties": "Yes,Yes,Yes,No,No"
+            "title": "Level 2",
+            "properties": "Yes,Yes,Yes,Yes,Yes"
           }
         },
         "item_XqTKk9": {
           "type": "item",
           "settings": {
-            "title": "Level 1",
+            "title": "Level 3",
             "properties": "Yes,Yes,Yes,No,No"
           }
         }
