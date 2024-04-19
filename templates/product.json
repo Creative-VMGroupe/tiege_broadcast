@@ -193,7 +193,7 @@
           "settings": {
             "title": "Level 1",
             "image": "shopify:\/\/shop_images\/Asset-1_4x_94d8ee25-9862-4bcd-8cef-c2ff5636fb17.png",
-            "properties": "Yes,Yes,Yes,No,No"
+            "properties": "Yes,Yes,Yes,Yes"
           }
         },
         "item_8mfP8r": {
@@ -201,7 +201,7 @@
           "settings": {
             "title": "Level 2",
             "image": "shopify:\/\/shop_images\/sun-protection.png",
-            "properties": "Yes,Yes,Yes,No,No"
+            "properties": "Yes,Yes,Yes,yes,Yes"
           }
         },
         "item_YTLpqP": {
@@ -209,7 +209,7 @@
           "settings": {
             "title": "Level 1",
             "image": "shopify:\/\/shop_images\/get-protected.png",
-            "properties": "Yes,Yes,Yes,No,No"
+            "properties": "Yes,Yes,Yes,Yes,Yes,Yes"
           }
         }
       },
