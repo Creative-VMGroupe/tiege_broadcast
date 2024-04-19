@@ -328,12 +328,9 @@
   }
   section.comparision-system .comparision-details {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-  }
-  section.comparision-system .comparision-details-text {
-    max-width: 50%;
   }
   @media only screen and (min-width: 870px) {
       .comparision-table {
@@ -367,6 +364,9 @@
       }
       section.comparision-system .comparision-details {
         flex-direction: column;
+      }
+      section.comparision-system .comparision-details-text {
+        max-width: 50%;
       }
   }
 </style>
