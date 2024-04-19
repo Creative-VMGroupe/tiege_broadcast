@@ -3,8 +3,6 @@
   assign mobile_height = section.settings.mobile_height
   assign width = section.settings.width
   
-  assign animation_anchor = '#CompareSection--' | append: section.id
-  assign animation_order = 0
   assign bg_color = section.settings.bg_color
   assign bg_color_transparent = bg_color | color_modify: 'alpha', 0
   assign text_color = section.settings.color
@@ -26,19 +24,6 @@
       echo '--text-light: ' | append: text_light | append: ';'
       echo '--text-dark: ' | append: text_dark | append: ';'
     endunless
-  endcapture
-
-  assign figure_width_class = ''
-  if table_width == 'three-quarters'
-    assign figure_width_class = ' table__block--three-quarters'
-  endif
-  
-  capture alignment
-    if section.settings.text_alignment == 'text-left'
-      echo ' align--middle-left'
-    else
-      echo ' align--middle-center'
-    endif
   endcapture
 -%}
 
