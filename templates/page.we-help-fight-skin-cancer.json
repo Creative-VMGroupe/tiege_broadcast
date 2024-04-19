@@ -127,7 +127,7 @@
           "settings": {
             "title": "With your support we can make an impact",
             "text_size": 7,
-            "padding_bottom": 16
+            "padding_bottom": 50
           }
         },
         "columns_E8eFyk": {
@@ -147,34 +147,58 @@
             "text_columns": 2,
             "text_size": 3,
             "text_style": "font-body",
-            "padding_bottom": 16
-          }
-        },
-        "text_iWkUYa": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Age-adjusted Melanoma Incidence Rates,<\/p>",
-            "text_size": 3,
-            "text_style": "font-body",
-            "padding_bottom": 16
-          }
-        },
-        "text_f8NRX8": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Actual And Projected, By Sex, 1975-2020<\/p>",
-            "text_size": 3,
-            "text_style": "font-body",
-            "padding_bottom": 16
+            "padding_bottom": 0
           }
         }
       },
       "block_order": [
         "heading_Qze6m9",
         "columns_E8eFyk",
-        "columns_XeCcXJ",
-        "text_iWkUYa",
-        "text_f8NRX8"
+        "columns_XeCcXJ"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-center",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "section_rich_text_8WGREr": {
+      "type": "section-rich-text",
+      "blocks": {
+        "text_9rUGRr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Age-adjusted Melanoma Incidence Rates,<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "text_9TTK3g": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Actual And Projected, By Sex, 1975-2020<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 30
+          }
+        },
+        "image_CrzRBe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_1920_mobile.svg",
+            "image_width": 100,
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "text_9rUGRr",
+        "text_9TTK3g",
+        "image_CrzRBe"
       ],
       "settings": {
         "width": "wrapper--narrow",
@@ -412,6 +436,7 @@
     "section_rich_text_aieYzU",
     "section_double_M3cHpz",
     "section_rich_text_ryAmny",
+    "section_rich_text_8WGREr",
     "section_rich_text_XBBbBb",
     "section_text_row_4qA4id",
     "section_double_yhTVDr",
