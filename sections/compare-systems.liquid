@@ -28,7 +28,7 @@
 -%}
 
 {% capture popup_content %}
-  <div class="{{ width }}">
+  <div class="wrapper--full">
     <div class="comparision-wrapper">
       <div class="comparision-text">
         <div class="comparision-heading">
@@ -411,6 +411,7 @@
     </div>
   </dialog>
 </product-modal>
+{% comment %}
 {{ 'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js' | script_tag }}
 {{ 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' | script_tag }}
 <script>
@@ -445,7 +446,7 @@
    	});
   });
 </script>
-
+{% endcomment %}
 {% schema %}
 {
   "name": "Compare Systems - Tiege",
