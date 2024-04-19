@@ -79,8 +79,8 @@
   --error: var(--COLOR-ERROR);
   --error-bg: var(--COLOR-ERROR-BG);
   --header-overlay-color: transparent;
-  --font-16-tiege: 16px;
-  --font-14-tiege: 14px;
+  --font-medium-tiege: 16px;
+  --font-small-tiege: 14px;
 }
 
 .palette--contrast {
@@ -13482,7 +13482,7 @@ main-search .input-holder {
 .product-item__title {
   position: relative;
   font-weight: var(--FONT-WEIGHT-BODY);
-  font-size: var(--font-16-tiege);
+  font-size: var(--font-medium-tiege);
   color: inherit;
   margin: 0;
   transition: color 0.3s;
@@ -13490,18 +13490,18 @@ main-search .input-holder {
 @media only screen and (max-width: 749px) {
   .product-item__title {
     margin: 0;
-    font-size: var(--font-14-tiege);
+    font-size: var(--font-small-tiege);
   }
 }
 
 .product-item__cutline,
 .product-item__price {
-  font-size: var(--font-16-tiege);
+  font-size: var(--font-medium-tiege);
 }
 @media only screen and (max-width: 749px) {
   .product-item__cutline,
   .product-item__price {
-    font-size: var(--font-14-tiege);
+    font-size: var(--font-small-tiege);
   }
 }
 
@@ -19653,7 +19653,7 @@ body.has-header-transparent
   border-bottom: none;
   border-right: none;
   margin: 0;
-  font-size: var(--font-16-tiege);
+  font-size: var(--font-medium-tiege);
 }
 @media only screen and (min-width: 990px) {
   .popout--group .popout__toggle,
