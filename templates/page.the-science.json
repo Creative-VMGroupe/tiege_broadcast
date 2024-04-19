@@ -205,23 +205,6 @@
     "section_rich_text_HTLWQR": {
       "type": "section-rich-text",
       "blocks": {
-        "subheading_RBGj4f": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "A Peek into the Tiege Hanley Product Line",
-            "text_size": 5,
-            "padding_bottom": 30
-          }
-        },
-        "text_nKqHKG": {
-          "type": "text",
-          "settings": {
-            "text": "<p><a href=\"https:\/\/www.tiege.com\/products\/daily-face-wash-for-men\"><strong>WASH<\/strong><\/a>: Given that men produce more oil than women, there's a higher risk of skin irritations and blemishes. Over-cleaning can strip away essential oils and trigger the skin to compensate by producing more oil. WASH efficiently removes dirt, grime, and excess oil, alleviating redness and inflammation without drying the skin.<\/p><p><a href=\"https:\/\/www.tiege.com\/products\/face-scrub-for-men\"><strong>SCRUB<\/strong><\/a>: The thicker skin and abundant facial hair of men necessitate a potent exfoliator. SCRUB successfully removes dead skin cells, enhancing the absorption of powerful ingredients in our SUPER SERUM and ACNE products, all without causing irritation.<\/p><p><strong>MOISTURIZERS (<\/strong><a href=\"https:\/\/www.tiege.com\/products\/moisturizer-with-spf-for-men\"><strong>AM<\/strong><\/a><strong> and <\/strong><a href=\"https:\/\/www.tiege.com\/products\/nightly-moisturizer-for-men\"><strong>PM<\/strong><\/a><strong>)<\/strong>: Moisturizing helps protect the skin against damaging UV rays and environmental stressors that cause wrinkles, discoloration, acne, and dehydration. Our AM moisturizer provides lightweight, non-greasy hydration, offers anti-aging skin protection, and reduces UV-induced skin cancer risk. In contrast, our PM moisturizer works overnight to repair and hydrate the skin, mitigating daily environmental skin stressors.<\/p><p><a href=\"https:\/\/www.tiege.com\/products\/eye-cream-for-men\"><strong>EYES<\/strong><\/a>: Specifically formulated to hydrate and treat the delicate area under men's eyes.<\/p><p><a href=\"https:\/\/www.tiege.com\/products\/face-serum-for-men\"><strong>SERUM<\/strong><\/a>: Our revolutionary SUPER SERUM is designed to deliver targeted hydration, enhance skin texture, and address signs of aging. Formulated with potent ingredients, the serum gets absorbed quickly, leaving your skin feeling smooth, revitalized, and youthful.<\/p>",
-            "text_size": 3,
-            "text_style": "font-body",
-            "padding_bottom": 30
-          }
-        },
         "subheading_TnXyDM": {
           "type": "subheading",
           "settings": {
@@ -258,14 +241,11 @@
         }
       },
       "block_order": [
-        "subheading_RBGj4f",
-        "text_nKqHKG",
         "subheading_TnXyDM",
         "text_PBT7G3",
         "subheading_CYqyHB",
         "text_XkLRAw"
       ],
-      "disabled": true,
       "settings": {
         "width": "wrapper--narrow",
         "align_text": "text-center",
@@ -273,6 +253,34 @@
         "color": "",
         "padding_top": 60,
         "padding_bottom": 60
+      }
+    },
+    "section_video_gtEi3V": {
+      "type": "section-video",
+      "settings": {
+        "show_video_popup": true,
+        "video_popup_social": "https:\/\/www.youtube.com\/watch?v=nOjrW8jRB78",
+        "image": "shopify:\/\/shop_images\/tiege_vid_prev_img_del.webp",
+        "desktop_height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "show_overlay_text": false,
+        "title": "",
+        "heading_size": 7,
+        "description": "",
+        "text_size": 3,
+        "flex_align": "align--middle-center",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "bg_color": "",
+        "color": "#ffffff",
+        "link_text": "",
+        "link": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false
       }
     },
     "section_rich_text_z7jagt": {
@@ -438,6 +446,7 @@
     "section_rich_text_xhkXAn",
     "section_double_static_vm_9hVQ9m",
     "section_rich_text_HTLWQR",
+    "section_video_gtEi3V",
     "section_rich_text_z7jagt",
     "1713200593b3060898"
   ]
