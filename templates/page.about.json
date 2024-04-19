@@ -25,7 +25,7 @@
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/tiege_about_del.jpg",
         "link": "",
-        "mobile_height": "screen-height-three-quarters--mobile",
+        "mobile_height": "screen-height-one-half--mobile",
         "flex_align_desktop": "align--middle-center-desktop",
         "flex_align_mobile": "align--middle-center-mobile",
         "overlay_opacity": 0,
@@ -61,7 +61,60 @@
         "text_MAbKKh"
       ],
       "settings": {
-        "width": "wrapper",
+        "width": "wrapper--narrow",
+        "align_text": "text-center",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "section_video_mgWJmA": {
+      "type": "section-video",
+      "settings": {
+        "video": "shopify:\/\/files\/videos\/tolstoy_43f7743e-5867-4922-aa81-d03899ca32a6.webm",
+        "show_video_popup": false,
+        "video_popup_social": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "desktop_height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "overlay_opacity": 0,
+        "overlay_color": "#000",
+        "show_overlay_text": false,
+        "title": "",
+        "heading_size": 8,
+        "description": "",
+        "text_size": 3,
+        "flex_align": "align--middle-center",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "bg_color": "",
+        "color": "#FFFFFF",
+        "link_text": "",
+        "link": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false
+      }
+    },
+    "section_rich_text_KVkbW8": {
+      "type": "section-rich-text",
+      "blocks": {
+        "text_48eQNK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Drawing on his marketing and brand management experience, Kelley got to work, enlisting his UConn college roommate turned software industry guru, Rob Hoxie, to help mastermind a skin care solution for men that hits all three points—it has to be sensible, simple and affordable.<br\/><br\/>Kelley and Rob wanted to help regular guys look and feel amazing by creating a skin care system that was easy to understand and to use. But what good is an idea without an audience? Enter Aaron Marino—men's lifestyle expert, grooming guru, YouTube sensation and serial entrepreneur. Aaron’s male-centric passion for health and lifestyle, personal brand and cult-like following made him Tiege Hanley’s ideal partner number three.<br\/><br\/>Now that the team had a powerful way to reach men, they were only missing the final ingredient—the products themselves. Daunting undertaking? Nah! They did what any regular guys would do—took their idea to the golf course, where they teed up with the man who would become Tiege Hanley’s master skin care formulator. Known only as The Chemist (who prefers to remain incognito) and with more than 35 years of experience formulating products for some of the top skin care brands, he agreed to join the team as fourth partner and is the creator of what the team calls their “Ferrari formulas.”<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "text_48eQNK"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
         "align_text": "text-center",
         "bg_color": "",
         "color": "",
@@ -152,6 +205,8 @@
     "main",
     "section_hero_AKxdtT",
     "section_rich_text_HGVCbw",
+    "section_video_mgWJmA",
+    "section_rich_text_KVkbW8",
     "section_reviews_McPTbp",
     "section_rich_text_abVwUy",
     "1713206343e4178672"
