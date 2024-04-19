@@ -81,100 +81,6 @@
             "text": "<p>We care about the environment because it is our responsibility to make a difference. It’s hard to be environmentally friendly. Most people do not realize how big of a commitment it is, or what it costs a business, however, they know it’s the right thing to do. Tiege Hanley is prioritizing environmental stewardship and we hope you will join us.<\/p>",
             "text_size": 3,
             "text_style": "font-body",
-            "padding_bottom": 30
-          }
-        },
-        "subheading_3pHGUc": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Our Commitment",
-            "text_size": 4,
-            "padding_bottom": 16
-          }
-        },
-        "text_9WhBVL": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Tiege Hanley feels that it can make the biggest impact by committing to a closed-loop recycling program. Doing so will limit the amount of new waste we contribute to the environment.<\/p><p>Put simply, we want to limit the waste we add to the environment, and we want to become waste\/plastic neutral. Ultimately, we want to recycle environmental waste in our supply chain, which means Tiege Hanley is not contributing to increased environmental waste. This strategy can drill down into waste as a byproduct of shipping, such as finding ways we can contribute to reducing carbon or receiving used packaging from our customers that can be recycled.<\/p>",
-            "text_size": 3,
-            "text_style": "font-body",
-            "padding_bottom": 30
-          }
-        },
-        "subheading_acPFBF": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "What have we done so far",
-            "text_size": 4,
-            "padding_bottom": 16
-          }
-        },
-        "text_HzFxFE": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We have initiated a company policy to use a minimum of 35% post-consumer recycled (PCR) material in all our new product packaging. Our goal is to increase the amount of PCR in all our plastic and paper packaging materials. The result of this work significantly reduces the amount of virgin plastic going into environmental waste. Since the beginning of this program, we have addressed packaging on several items, and we hope to switch all our packaging to PCR over the next few years.<\/p>",
-            "text_size": 3,
-            "text_style": "font-body",
-            "padding_bottom": 30
-          }
-        },
-        "subheading_hfNLHR": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "What is closed-loop recycling?",
-            "text_size": 4,
-            "padding_bottom": 16
-          }
-        },
-        "text_7LDADb": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Put simply, we don’t want to add waste to the environment and we want to become waste\/plastic neutral. What we can do is recycle environmental waste in our supply chain, which means Tiege Hanley isn’t contributing to increased environmental waste. This strategy can drill down into waste as a byproduct of shipping, such as finding ways we can contribute to reducing carbon.<\/p><p>We have initiated a company policy to use a minimum of 35% post-consumer recycled (PCR) material in all our new product packaging. Our goal over the next two years is to increase the amount of PCR in all of our plastic and paper packaging materials.<\/p>",
-            "text_size": 3,
-            "text_style": "font-body",
-            "padding_bottom": 30
-          }
-        },
-        "subheading_mFzEik": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Did you know?",
-            "text_size": 4,
-            "padding_bottom": 16
-          }
-        },
-        "text_t4QiDh": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Black plastic is one of the most difficult plastics to recycle. Most municipal recycling centers lack the equipment to accurately sort black materials. We became aware of this issue in 2020 and began converting to a non-carbon black in our new product plastic that is more easily sorted. Unfortunately, despite the energy and money it takes Tiege Hanley to make this change, many recycling centers may still lack the appropriate sorting capabilities.<\/p>",
-            "text_size": 3,
-            "text_style": "font-body",
-            "padding_bottom": 30
-          }
-        },
-        "text_prjpUy": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Sincerely,<\/p>",
-            "text_size": 3,
-            "text_style": "font-body",
-            "padding_bottom": 16
-          }
-        },
-        "image_TTEzbc": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/tiege_sig_del.png",
-            "image_width": 20,
-            "padding_bottom": 16
-          }
-        },
-        "text_qNWtnD": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Kelly Thornton<\/p><p>Founder & CEO<\/p>",
-            "text_size": 3,
-            "text_style": "font-body",
             "padding_bottom": 0
           }
         }
@@ -182,18 +88,7 @@
       "block_order": [
         "heading_DjekAc",
         "subheading_FWDe88",
-        "text_jjTk74",
-        "subheading_3pHGUc",
-        "text_9WhBVL",
-        "subheading_acPFBF",
-        "text_HzFxFE",
-        "subheading_hfNLHR",
-        "text_7LDADb",
-        "subheading_mFzEik",
-        "text_t4QiDh",
-        "text_prjpUy",
-        "image_TTEzbc",
-        "text_qNWtnD"
+        "text_jjTk74"
       ],
       "settings": {
         "width": "wrapper--narrow",
@@ -201,7 +96,7 @@
         "bg_color": "",
         "color": "",
         "padding_top": 60,
-        "padding_bottom": 0
+        "padding_bottom": 60
       }
     },
     "section_hero_TbDK6d": {
@@ -218,6 +113,216 @@
         "show_overlay_text": false,
         "bg_color": "",
         "color": "#FFFFFF"
+      }
+    },
+    "section_double_static_vm_QMXVUx": {
+      "type": "section-double-static-vm",
+      "blocks": {
+        "heading_nNjTcb": {
+          "type": "heading",
+          "settings": {
+            "title": "Our Commitment",
+            "text_size": 7,
+            "padding_bottom": 16
+          }
+        },
+        "text_tjUtJ3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Tiege Hanley feels that it can make the biggest impact by committing to a closed-loop recycling program. Doing so will limit the amount of new waste we contribute to the environment.<\/p><p>Put simply, we want to limit the waste we add to the environment, and we want to become waste\/plastic neutral. Ultimately, we want to recycle environmental waste in our supply chain, which means Tiege Hanley is not contributing to increased environmental waste. This strategy can drill down into waste as a byproduct of shipping, such as finding ways we can contribute to reducing carbon or receiving used packaging from our customers that can be recycled.<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_nNjTcb",
+        "text_tjUtJ3"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_width": "one-half",
+        "text_alignment": "text-center",
+        "reverse_blocks": false,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_double_static_vm_acAqbX": {
+      "type": "section-double-static-vm",
+      "blocks": {
+        "heading_iKAHx4": {
+          "type": "heading",
+          "settings": {
+            "title": "What have we done so far",
+            "text_size": 7,
+            "padding_bottom": 16
+          }
+        },
+        "text_CdbzVE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We have initiated a company policy to use a minimum of 35% post-consumer recycled (PCR) material in all our new product packaging. Our goal is to increase the amount of PCR in all our plastic and paper packaging materials. The result of this work significantly reduces the amount of virgin plastic going into environmental waste. Since the beginning of this program, we have addressed packaging on several items, and we hope to switch all our packaging to PCR over the next few years.<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_iKAHx4",
+        "text_CdbzVE"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_width": "one-half",
+        "text_alignment": "text-center",
+        "reverse_blocks": false,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_rich_text_7KXRxY": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_DPi9aG": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "What is closed-loop recycling?",
+            "text_size": 7,
+            "padding_bottom": 16
+          }
+        },
+        "text_aACJjy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Put simply, we don’t want to add waste to the environment and we want to become waste\/plastic neutral. What we can do is recycle environmental waste in our supply chain, which means Tiege Hanley isn’t contributing to increased environmental waste. This strategy can drill down into waste as a byproduct of shipping, such as finding ways we can contribute to reducing carbon.<\/p><p>We have initiated a company policy to use a minimum of 35% post-consumer recycled (PCR) material in all our new product packaging. Our goal over the next two years is to increase the amount of PCR in all of our plastic and paper packaging materials.<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "subheading_DPi9aG",
+        "text_aACJjy"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-center",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_hero_TJfLYW": {
+      "type": "section-hero",
+      "settings": {
+        "height": "screen-height-one-half",
+        "width": "wrapper--full",
+        "link": "",
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "overlay_opacity": 0,
+        "overlay_color": "#000",
+        "show_overlay_text": false,
+        "bg_color": "",
+        "color": "#FFFFFF"
+      }
+    },
+    "section_rich_text_V4nJig": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_BJETaU": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Did you know?",
+            "text_size": 7,
+            "padding_bottom": 16
+          }
+        },
+        "text_YcbzVh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Black plastic is one of the most difficult plastics to recycle. Most municipal recycling centers lack the equipment to accurately sort black materials. We became aware of this issue in 2020 and began converting to a non-carbon black in our new product plastic that is more easily sorted. Unfortunately, despite the energy and money it takes Tiege Hanley to make this change, many recycling centers may still lack the appropriate sorting capabilities.<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 30
+          }
+        },
+        "heading_bjAaeY": {
+          "type": "heading",
+          "settings": {
+            "title": "What Does It Cost?",
+            "text_size": 7,
+            "padding_bottom": 16
+          }
+        },
+        "text_eep6bi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Adding PCR to our packaging and switching to non-carbon black has cost Tiege Hanley a lot of money. On average PCR packaging cost 15% more than virgin plastic. We are trying to absorb as much of this cost as possible. We are making every effort to avoid price increases or formulating them with cheaper ingredients, which we’ve noticed is a common practice.<\/p><p>JOIN OUR MISSION TO BE BETTER STEWARDS OF THE ENVIRONMENT<\/p><p>If you have questions, suggestions, or want more information, please email <a href=\"mailto:info@Tiege.com\">Info@Tiege.com<\/a>  with the word “Sustainability” in the subject line.<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 30
+          }
+        },
+        "text_6CipJA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Sincerely,<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "image_kDw4qU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tiege_sig_del.png",
+            "image_width": 20,
+            "padding_bottom": 16
+          }
+        },
+        "text_kaq8KH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Kelly Thornton<\/p><p>Founder & CEO<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "subheading_BJETaU",
+        "text_YcbzVh",
+        "heading_bjAaeY",
+        "text_eep6bi",
+        "text_6CipJA",
+        "image_kDw4qU",
+        "text_kaq8KH"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-center",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "1713200593b3060898": {
@@ -249,6 +354,11 @@
     "section_hero_KpG8aH",
     "section_rich_text_TXLJKC",
     "section_hero_TbDK6d",
+    "section_double_static_vm_QMXVUx",
+    "section_double_static_vm_acAqbX",
+    "section_rich_text_7KXRxY",
+    "section_hero_TJfLYW",
+    "section_rich_text_V4nJig",
     "1713200593b3060898"
   ]
 }
