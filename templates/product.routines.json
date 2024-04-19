@@ -944,6 +944,55 @@
       "settings": {
         "include_margins": false
       }
+    },
+    "compare_systems_PgJw6T": {
+      "type": "compare-systems",
+      "blocks": {
+        "item_RVnM9d": {
+          "type": "item",
+          "settings": {
+            "title": "Level 1",
+            "properties": "Yes,Yes,Yes,No,No"
+          }
+        },
+        "item_mrYB9Q": {
+          "type": "item",
+          "settings": {
+            "title": "Level 1",
+            "properties": "Yes,Yes,Yes,No,No"
+          }
+        },
+        "item_XqTKk9": {
+          "type": "item",
+          "settings": {
+            "title": "Level 1",
+            "properties": "Yes,Yes,Yes,No,No"
+          }
+        }
+      },
+      "block_order": [
+        "item_RVnM9d",
+        "item_mrYB9Q",
+        "item_XqTKk9"
+      ],
+      "settings": {
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "text_alignment": "text-left",
+        "padding_lr": 50,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "heading": "Compare Our Systems",
+        "caption": "Level Guide",
+        "sub_heading": "Unsure which system is right for you ?",
+        "description": "<p>Different strokes for different folks and different skin care reginem for different men. Take our 1-minute quiz to figure out which formulated system is for you and your face.<\/p>",
+        "btn_text": "Take our Quiz",
+        "btn_link": "",
+        "items_detail": "Wash,Scrub,AM,PM,Eyes,Serum"
+      }
     }
   },
   "order": [
@@ -962,6 +1011,7 @@
     "section_rich_text_e66XhK",
     "1711051410c76bca1d",
     "related",
-    "171061224373a1e0d4"
+    "171061224373a1e0d4",
+    "compare_systems_PgJw6T"
   ]
 }
