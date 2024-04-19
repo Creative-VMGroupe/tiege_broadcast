@@ -81,6 +81,7 @@
   --header-overlay-color: transparent;
   --font-medium-tiege: 16px;
   --font-small-tiege: 14px;
+  --ltr-spacing-tiege: 0'
 }
 
 .palette--contrast {
@@ -25765,7 +25766,7 @@ div.rc_popup {
   .rc-template__radio-group
   .rc-radio
   .rc-radio__label[data-label-onetime] {
-  width: 343px;
+  width: 100%;
 }
 .product-quick-add__form .rc-template__radio-group .rc-radio {
   position: relative;
