@@ -153,8 +153,17 @@
         "text_iWkUYa": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
+            "text": "<p>Age-adjusted Melanoma Incidence Rates,<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "text_f8NRX8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Actual And Projected, By Sex, 1975-2020<\/p>",
+            "text_size": 3,
             "text_style": "font-body",
             "padding_bottom": 16
           }
@@ -164,7 +173,8 @@
         "heading_Qze6m9",
         "columns_E8eFyk",
         "columns_XeCcXJ",
-        "text_iWkUYa"
+        "text_iWkUYa",
+        "text_f8NRX8"
       ],
       "settings": {
         "width": "wrapper--narrow",
