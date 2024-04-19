@@ -129,10 +129,42 @@
             "text_size": 7,
             "padding_bottom": 16
           }
+        },
+        "columns_E8eFyk": {
+          "type": "columns",
+          "settings": {
+            "text": "<p><span style=\"text-decoration:underline\"><strong>42,610,590<\/strong><\/span><\/p><p><span style=\"text-decoration:underline\"><strong>$57,948<\/strong><\/span><\/p>",
+            "text_columns": 2,
+            "text_size": 6,
+            "text_style": "font-heading",
+            "padding_bottom": 16
+          }
+        },
+        "columns_XeCcXJ": {
+          "type": "columns",
+          "settings": {
+            "text": "<p>Days protecting guys from the sun's harmful UV rays<\/p><p>Dollars donated and counting<\/p>",
+            "text_columns": 2,
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "text_iWkUYa": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
         }
       },
       "block_order": [
-        "heading_Qze6m9"
+        "heading_Qze6m9",
+        "columns_E8eFyk",
+        "columns_XeCcXJ",
+        "text_iWkUYa"
       ],
       "settings": {
         "width": "wrapper--narrow",
