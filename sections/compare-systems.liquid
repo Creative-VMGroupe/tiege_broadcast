@@ -231,7 +231,7 @@
                 <div class="cd-table-column">
                   <div class="header-row">
                     {% if block.settings.image != blank %}
-                      {{ block.settings.image | image_url: width: '360' | image_tag }}
+                      {{ block.settings.image | image_url: width: '640' | image_tag }}
                     {% else %}
                     {{ 'product-1' | placeholder_svg_tag }}
                     {% endif %}
