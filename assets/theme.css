@@ -25562,8 +25562,8 @@ fieldset .select-popout__toggle span {
   }
 }
 .product-recomend_wrapper {
-  padding-left: 32px !important;
-  padding-right: 32px !important;
+  padding-left: var(--outer) !important;
+  padding-right: var(--outer) !important;
 }
 
 .prod-rec_text-custom {
