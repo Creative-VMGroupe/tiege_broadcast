@@ -286,7 +286,7 @@
           <a href="{{ section.settings.btn_link.url }}" class="btn btn--secondary btn--solid">{{ section.settings.btn_text }}</a>
         </div>
       </div>
-      <div class="comparision-table {{ table_width }}">
+      <div class="comparision-table">
         <div id="cd-table">
           <header class="cd-table-column">
             <div class="header-row">
@@ -318,7 +318,7 @@
                     {% for i in (1..properties_count) %}
                       {%- assign current_value = block_properties[i] | downcase -%}
                       {% if current_value == 'yes' %}
-                        <li><div class="green-dot"></div></li>
+                        <li><span class="green-dot"></span></li>
                       {% else %}
                         <li></li>
                       {% endif %}
