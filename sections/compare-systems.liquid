@@ -12,7 +12,7 @@
   capture style
     echo '--PT: ' | append: section.settings.padding_top | append: 'px;'
     echo '--PB: ' | append: section.settings.padding_bottom | append: 'px;'
-    echo '--outer: ' | append: section.settings.padding_lr | append: ' px;'
+    echo '--outer: ' | append: section.settings.padding_lr | append: 'px;'
 
     unless bg_color == 'rgba(0,0,0,0)' or bg_color == blank
       echo '--bg: ' | append: bg_color | append: ';'
