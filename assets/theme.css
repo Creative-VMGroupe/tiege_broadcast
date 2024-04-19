@@ -25484,12 +25484,12 @@ body.has-header-sticky .timeline {
     margin: 0 32px;
   }
 }
-@media only screen and (max-width: 749px) {
+/* @media only screen and (max-width: 749px) {
   .p-32px-16px-mobile-custom {
     padding-left: 16px !important;
     padding-right: 16px !important;
   }
-}
+} */
 .product-item__price__holder {
   margin-top: 0;
 }
