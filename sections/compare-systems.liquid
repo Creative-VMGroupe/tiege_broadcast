@@ -318,7 +318,7 @@
                     {% for i in (1..properties_count) %}
                       {%- assign current_value = block_properties[i] | downcase -%}
                       {% if current_value == 'yes' %}
-                        <li class="cd-checked">&middot;</li>
+                        <li><div class="green-dot"></div></li>
                       {% else %}
                         <li></li>
                       {% endif %}
