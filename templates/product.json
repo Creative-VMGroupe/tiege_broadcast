@@ -209,7 +209,7 @@
         "item_8mfP8r"
       ],
       "settings": {
-        "height": "screen-height-three-quarters",
+        "height": "screen-height-full",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
         "text_alignment": "text-left",
