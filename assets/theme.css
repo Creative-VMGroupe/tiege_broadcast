@@ -25614,6 +25614,7 @@ fieldset .select-popout__toggle span {
 }
 .rc-template__radio-group .rc-radio.rc-option__subsave .rc-radio__label {
   font-weight: 400 !important;
+  width: 100%;
 }
 .rc-template__radio-group .rc-radio .rc-radio__label .rc-option__price {
   font-weight: 400 !important;
