@@ -7257,6 +7257,7 @@
           this.showSliderule();
           this.exit.forEach((element) => {
             element.addEventListener('click', () => {
+              console.log('Element Clicked');
               this.hideSliderule();
             });
           });
