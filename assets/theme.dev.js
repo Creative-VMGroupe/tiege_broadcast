@@ -7255,7 +7255,7 @@
         this.trigger.addEventListener('click', () => {
           this.cachedButton = this.trigger;
           this.showSliderule();
-          this.exit.forEach((element) => {
+          document.querySelectorAll(this.exitSelector).forEach((element) => {
             console.log(element);
             element.addEventListener('click', () => {
               console.log('Element Clicked');
