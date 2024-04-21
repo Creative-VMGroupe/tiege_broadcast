@@ -230,3 +230,6 @@
 .sliderow.is-active .sliderule__chevron--up {
   display: flex;
 }
+.drawer__menu {
+  overflow-y: visible;
+}
