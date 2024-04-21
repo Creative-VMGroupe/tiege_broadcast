@@ -47,8 +47,8 @@
   }
   
   $('.sliderow').click(function() {
-    $(this).addClass('is-active')
-    $(this).siblings('.mobile__menu__dropdown').addClass('is-visible');
+    $(this).toggleClass('is-active')
+    $(this).siblings('.mobile__menu__dropdown').toggleClass('is-visible');
   });
   
 })();
