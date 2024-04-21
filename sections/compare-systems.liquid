@@ -25,6 +25,10 @@
       echo '--text-dark: ' | append: text_dark | append: ';'
     endunless
   endcapture
+  assign scrollable = false
+  if section.blocks.size > 3
+    assign scrollable = true
+  endif
 -%}
 
 {% capture popup_content %}
@@ -203,6 +207,7 @@
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
 }
+{% if scrollable %}
 #cd-table .cd-table-wrapper {
     width: 870px;
     padding-left: 120px;
@@ -222,6 +227,7 @@
     float: left;
     margin-left: -1px;
 }
+{% endif %}
 #cd-table .cd-table-column ul {
     margin: 0;
 }
