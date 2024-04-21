@@ -256,94 +256,66 @@ span.green-dot {
     flex-direction: column;
     justify-content: space-between;
 }
-
 .comparision-text .caption-text {
     margin-bottom: 0;
     text-transform: uppercase;
 }
-
 .comparision-text .heading-text {
     margin-top: 0;
 }
-
 header.cd-table-column .header-row svg {
     opacity: 0;
     visibility: hidden;
 }
-
 .header-row {
     min-height: 10rem;
     display: flex;
     flex-direction: column;
 }
-
 .header-row img,
 .header-row svg {
     max-height: 8rem;
     margin: 0 auto;
     width: auto;
 }
-
 .comparision-details-text {
     margin-bottom: 2rem;
 }
-
 /* Section specific CSS */
 section.comparision-system .comparision-wrapper {
     flex-direction: column;
     gap: 3rem;
 }
-
 section.comparision-system .caption-text {
     display: none;
 }
-
 section.comparision-system .comparision-heading {
     text-align: center
 }
-
 section.comparision-system .comparision-table {
     width: 100%;
 }
-
 section.comparision-system .comparision-details {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-
 .product-modal .comparision-wrapper {
     flex-direction: column;
     padding: 0;
 }
-
 .product-modal .comparision-text {
     width: 100%;
     padding: 0;
     margin-bottom: 2rem;
 }
-
 .product-modal .comparision-table {
     width: 100%;
 }
-
 @media only screen and (min-width: 870px) {
     .comparision-table {
         width: auto;
-    }
-
-    .product-modal .comparision-text {
-        width: 30%;
-    }
-
-    .product-modal .comparision-table {
-        width: 70%;
-    }
-
-    .product-modal .comparision-wrapper {
-        flex-direction: row;
-        padding: 0 var(--inner);
     }
 
     #cd-table {
@@ -374,7 +346,7 @@ section.comparision-system .comparision-details {
     #cd-table .cd-scroll-right {
         display: none;
     }
-
+    /* Section specific CSS */
     section.comparision-system #cd-table {
         width: 100%;
     }
@@ -385,6 +357,19 @@ section.comparision-system .comparision-details {
 
     section.comparision-system .comparision-details-text {
         max-width: 50%;
+    }
+    /* Modal specific CSS */
+    .product-modal .comparision-text {
+        width: 30%;
+    }
+
+    .product-modal .comparision-table {
+        width: 70%;
+    }
+
+    .product-modal .comparision-wrapper {
+        flex-direction: row;
+        padding: 0 var(--inner);
     }
 }
 </style>
