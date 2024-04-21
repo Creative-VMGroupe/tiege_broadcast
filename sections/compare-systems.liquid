@@ -39,7 +39,7 @@
           <p class="caption-text">{{ section.settings.caption }}</p>
           <h2 class="heading-text heading-size-7">{{ section.settings.heading }}</h2>
         </div>
-        <div class="comparision-details">
+        <div class="comparision-details hidden-lt-md">
           <div class="comparision-details-text">
             <h4 class="sub-heading-text heading-size-5">{{ section.settings.sub_heading }}</h4>
             {{ section.settings.description }}
@@ -91,6 +91,13 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="comparision-details hidden-gt-md">
+        <div class="comparision-details-text">
+          <h4 class="sub-heading-text heading-size-5">{{ section.settings.sub_heading }}</h4>
+          {{ section.settings.description }}
+        </div>
+        <a href="{{ section.settings.btn_link.url }}" class="btn btn--secondary btn--solid">{{ section.settings.btn_text }}</a>
       </div>
     </div>
   </div>
@@ -329,7 +336,19 @@ section.comparision-system .comparision-details {
 .product-modal .comparision-table {
     width: 100%;
 }
+.hidden-lt-md {
+  display: block;
+}
+.hidden-gt-md {
+  display: none;
+}
 @media only screen and (min-width: 870px) {
+    .hidden-lt-md {
+      display: none;
+    }
+    .hidden-gt-md {
+      display: block;
+    }
     #cd-table::before {
         display: none;
     }
