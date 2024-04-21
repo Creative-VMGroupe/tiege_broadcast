@@ -7253,7 +7253,7 @@
 
       clickEvents() {
         this.trigger.addEventListener('click', () => {
-          console.log('ThisClick trigerred');
+          console.log('ThisClick trigerred', this.btnSelector, this.exitSelector);
           this.cachedButton = this.trigger;
           this.showSliderule();
           document.querySelectorAll(this.exitSelector).forEach((element) => {
