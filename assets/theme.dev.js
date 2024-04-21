@@ -7414,6 +7414,7 @@
       onLoad() {
         sections$e[this.id] = [];
         const els = this.container.querySelectorAll(selectors$y.slideruleWrappper);
+        console.log(els);
         els.forEach((el) => {
           sections$e[this.id].push(new HeaderMobileSliderule(el));
         });
