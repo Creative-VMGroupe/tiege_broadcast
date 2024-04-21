@@ -51,7 +51,9 @@
         <div id="cd-table">
           <header class="cd-table-column">
             <div class="header-row">
-              {{ 'product-1' | placeholder_svg_tag }}
+              <div class="image-holder">
+                {{ 'product-1' | placeholder_svg_tag }}
+              </div>
               <h3 class="heading-size-4">&nbsp;</h3>
             </div>
             {%- assign properties_data = section.settings.items_detail | split: ',' -%}
@@ -67,11 +69,13 @@
               {% for block in section.blocks %}
                 <div class="cd-table-column">
                   <div class="header-row">
-                    {% if block.settings.image != blank %}
-                      {{ block.settings.image | image_url: width: '640' | image_tag }}
-                    {% else %}
-                    {{ 'product-1' | placeholder_svg_tag }}
-                    {% endif %}
+                    <div class="image-holder">
+                      {% if block.settings.image != blank %}
+                        {{ block.settings.image | image_url: width: '640' | image_tag }}
+                      {% else %}
+                      {{ 'product-1' | placeholder_svg_tag }}
+                      {% endif %}
+                    </div>
                     <h3 class="heading-size-4">{{ block.settings.title }}</h3>
                   </div>
                   <ul>
@@ -113,7 +117,9 @@
         <div id="cd-table">
           <header class="cd-table-column">
             <div class="header-row">
-              {{ 'product-1' | placeholder_svg_tag }}
+              <div class="image-holder">
+                {{ 'product-1' | placeholder_svg_tag }}
+              </div>
               <h3 class="heading-size-4">&nbsp;</h3>
             </div>
             {%- assign properties_data = section.settings.items_detail | split: ',' -%}
@@ -129,11 +135,13 @@
               {% for block in section.blocks %}
                 <div class="cd-table-column">
                   <div class="header-row">
-                    {% if block.settings.image != blank %}
-                      {{ block.settings.image | image_url: width: '640' | image_tag }}
-                    {% else %}
-                    {{ 'product-1' | placeholder_svg_tag }}
-                    {% endif %}
+                    <div class="image-holder">
+                      {% if block.settings.image != blank %}
+                        {{ block.settings.image | image_url: width: '640' | image_tag }}
+                      {% else %}
+                      {{ 'product-1' | placeholder_svg_tag }}
+                      {% endif %}
+                    </div>
                     <h3 class="heading-size-4">{{ block.settings.title }}</h3>
                   </div>
                   <ul>
