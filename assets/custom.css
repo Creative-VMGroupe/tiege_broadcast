@@ -239,7 +239,7 @@
 .product__page {
   display: flex;
 }
-.product__page product__images.product__images {
+.product__page .product__images {
   width: calc(100% - 600px);
 }
 .product__page .product__content {
@@ -249,7 +249,7 @@
   
 }
 @media only screen and (max-width: 1440px) {
- .product__page product__images.product__images {
+ .product__page .product__images {
     width: calc(100% - 500px);
   }
   .product__page .product__content {
