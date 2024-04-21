@@ -323,10 +323,12 @@ section.comparision-system .comparision-details {
     }
     #cd-table .cd-table-wrapper {
         width: 100%;
+        {% if scrollable %}
         padding-left: 30%;
+        {% endif %}
     }
     #cd-table .cd-table-column {
-        width: 33.33%;
+        width: {% if scrollable %}33.33% {% else %} 25%{% endif %};
         float: left;
     }
     #cd-table header.cd-table-column {
