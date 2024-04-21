@@ -250,7 +250,7 @@
     width: 400px;
   } 
 }
-@media only screen and (min-width: 749px) and (min-width: 1079px) {
+@media only screen and (min-width: 749px) and (max-width: 1079px) {
  .product__page .product__images {
     width: calc(100% - 300px);
   }
