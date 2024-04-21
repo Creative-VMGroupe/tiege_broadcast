@@ -45,6 +45,9 @@
     }
     lastScrollTop = st;
   }
+  $('.sliderow').click({
+    console.log('this');
+  });
 })();
 
 document.addEventListener("theme:quick-add:open", function (event) {
