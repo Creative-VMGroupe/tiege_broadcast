@@ -574,11 +574,19 @@
             "properties": "Yes,Yes,Yes,Yes,Yes"
           }
         },
-        "item_MWg3mp": {
+        "item_XTijTQ": {
           "type": "item",
           "settings": {
             "title": "Level 3",
             "image": "shopify:\/\/shop_images\/L3_TiegeHanley_Anti-Aging_Routine_Hero.jpg",
+            "properties": "Yes,Yes,Yes,Yes,Yes,Yes"
+          }
+        },
+        "item_Be9ifm": {
+          "type": "item",
+          "settings": {
+            "title": "Level 4",
+            "image": "shopify:\/\/shop_images\/Acne_RoutineL1_Tiege_Hanley_Acne_Hero.jpg",
             "properties": "Yes,Yes,Yes,No,No"
           }
         }
@@ -586,7 +594,8 @@
       "block_order": [
         "item_RVnM9d",
         "item_mrYB9Q",
-        "item_MWg3mp"
+        "item_XTijTQ",
+        "item_Be9ifm"
       ],
       "settings": {
         "height": "screen-height-three-quarters",
