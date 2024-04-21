@@ -175,6 +175,7 @@
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
 }
+{% if section.blocks.size > 3 %}
 #cd-table .cd-table-wrapper {
     width: 870px;
     padding-left: 120px;
@@ -184,6 +185,7 @@
     float: left;
     margin-left: -1px;
 }
+{% endif %}
 #cd-table .cd-table-column ul {
     margin: 0;
 }
