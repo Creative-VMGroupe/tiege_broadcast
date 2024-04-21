@@ -840,8 +840,12 @@
                               <span style="font-weight: bold;"  class="complementary-products__title">Want to level up?</span>
                             </div>
                           {%- endif -%}
-                            <div class="grid-outer">
-                              <div class="grid-custom  grid--mobile-slider-custom ">
+                            <div class="grid-outer"
+                              data-slider
+                              data-dots="line"
+                              data-options='{"pageDots": true, "prevNextButtons": true, "autoPlay": 4000, "pauseAutoPlayOnHover": false}'
+                            >
+                              <div class="grid-custom grid--mobile-slider-custom ">
                                 {%- for product in recommendations.products limit: block.settings.complementary_limit-%}
                                   {%- render 'upsell-product', upsell_product: product -%}
                                 {%- endfor -%}
