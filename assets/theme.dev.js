@@ -7255,12 +7255,12 @@
         this.trigger.addEventListener('click', () => {
           this.cachedButton = this.trigger;
           this.showSliderule();
-          document.querySelectorAll(this.exitSelector).forEach((element) => {
-            console.log(element);
-            element.addEventListener('click', () => {
-              console.log('Element Clicked');
-              this.hideSliderule();
-            });
+        });
+        this.exit.forEach((element) => {
+          console.log(element);
+          element.addEventListener('click', () => {
+            console.log('Element Clicked');
+            this.hideSliderule();
           });
         });
       }
