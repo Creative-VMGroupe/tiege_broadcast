@@ -45,7 +45,7 @@
     }
     lastScrollTop = st;
   }
-  $('.sliderow').click(function {
+  $('.sliderow').click(function() {
     console.log('this');
   });
 })();
