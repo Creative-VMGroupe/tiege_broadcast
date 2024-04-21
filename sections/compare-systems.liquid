@@ -328,11 +328,11 @@ section.comparision-system .comparision-details {
         {% endif %}
     }
     #cd-table .cd-table-column {
-        width: {% if scrollable %}33.33% {% else %} 25%{% endif %};
+        width: {% if scrollable %}33.33%{% else %}25%{% endif %};
         float: left;
     }
     #cd-table header.cd-table-column {
-        width: 30%;
+        width: {% if scrollable %}30%{% else %}25%{% endif %};
         float: left;
         box-shadow: none;
         pointer-events: auto;
