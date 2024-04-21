@@ -581,21 +581,12 @@
             "image": "shopify:\/\/shop_images\/sun-protection.png",
             "properties": "Yes,Yes,Yes,No,No"
           }
-        },
-        "item_9a3XhN": {
-          "type": "item",
-          "settings": {
-            "title": "Level 4",
-            "image": "shopify:\/\/shop_images\/Group_1824.svg",
-            "properties": "Yes,Yes,Yes,No,No"
-          }
         }
       },
       "block_order": [
         "item_RVnM9d",
         "item_mrYB9Q",
-        "item_MWg3mp",
-        "item_9a3XhN"
+        "item_MWg3mp"
       ],
       "settings": {
         "height": "screen-height-three-quarters",
