@@ -354,7 +354,13 @@ section.comparision-system .comparision-details {
 .footer-popup .comparision-details-text {
   text-align: center;
 }
+.compare-system-modal .product-modal__container {
+  height: 100vh;
+}
 @media only screen and (min-width: 870px) {
+    .compare-system-modal .product-modal__container {
+      height: auto;
+    }
     .hidden-lt-md {
       display: flex;
     }
@@ -415,7 +421,7 @@ section.comparision-system .comparision-details {
   >
   {{ section_content }}
 </section>
-<product-modal class="product__block block-padding" style=" --block-padding-bottom: 30px;">
+<product-modal class="product__block block-padding compare-system-modal" style=" --block-padding-bottom: 30px;">
   <div class="product__icon__container product__icon__container--full">
     <a class="radio__legend__link text-link" data-popup-open {{ section.shopify_attributes }}>
       Compare our Systems
@@ -428,7 +434,7 @@ section.comparision-system .comparision-details {
     </form>
 
     <div style='max-width: 1440px; --outer: 0px;' class="product-modal__outer prod-modal__container">
-      <div class="product-modal__content small product-modal__container" data-scroll-lock-scrollable style="height: 100vh">
+      <div class="product-modal__content small product-modal__container" data-scroll-lock-scrollable>
         <button type="button" class="product-modal__close" data-popup-close autofocus aria-label="{{ 'general.accessibility.close' | t }}">
           {%- render 'icon-cancel' -%}
         </button>
