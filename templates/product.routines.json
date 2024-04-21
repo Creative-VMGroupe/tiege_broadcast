@@ -581,7 +581,13 @@
         },
         "item_ztLLFp": {
           "type": "item",
-          "disabled": true,
+          "settings": {
+            "title": "Level 1",
+            "properties": "Yes,Yes,Yes,No,No"
+          }
+        },
+        "item_8U7FiP": {
+          "type": "item",
           "settings": {
             "title": "Level 1",
             "properties": "Yes,Yes,Yes,No,No"
@@ -592,7 +598,8 @@
         "item_RVnM9d",
         "item_mrYB9Q",
         "item_XqTKk9",
-        "item_ztLLFp"
+        "item_ztLLFp",
+        "item_8U7FiP"
       ],
       "settings": {
         "height": "screen-height-three-quarters",
