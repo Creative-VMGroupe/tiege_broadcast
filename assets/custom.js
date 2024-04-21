@@ -47,8 +47,7 @@
   }
   
   $('.sliderow').click(function() {
-    console.log($(this));
-        // mobile__menu__dropdown
+    console.log($(this), $(this).siblings('.mobile__menu__dropdown'));
   });
   
 })();
