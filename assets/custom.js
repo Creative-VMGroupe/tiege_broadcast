@@ -50,7 +50,7 @@
     $(this).toggleClass('is-active')
     $(this).siblings('.mobile__menu__dropdown').toggleClass('is-visible');
     let slideRule = $(this).siblings('.mobile__menu__dropdown').data('sliderule');
-    $(this).parents('.drawer__menu')['0'].data('sliderulePane', slideRule);
+    // $(this).parents('.drawer__menu')['0'].data('sliderulePane', slideRule);
     console.log($(this).parents('.drawer__menu'));
   });
   
