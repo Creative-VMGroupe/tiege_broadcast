@@ -92,7 +92,7 @@
           </div>
         </div>
       </div>
-      <div class="comparision-details hidden-gt-md">
+      <div class="comparision-details footer-popup hidden-gt-md">
         <div class="comparision-details-text">
           <h4 class="sub-heading-text heading-size-5">{{ section.settings.sub_heading }}</h4>
           {{ section.settings.description }}
@@ -348,6 +348,11 @@ section.comparision-system .comparision-details {
     }
     .hidden-gt-md {
       display: none;
+    }
+    .footer-popup {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     #cd-table::before {
         display: none;
