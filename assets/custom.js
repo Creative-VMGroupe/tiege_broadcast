@@ -49,7 +49,7 @@
   $('.sliderow').click(function() {
     $(this).toggleClass('is-active')
     $(this).siblings('.mobile__menu__dropdown').toggleClass('is-visible');
-    let slideRule = $(this).siblings('.mobile__menu__dropdown').data('sliderule');
+    let slideRule = $(this).siblings('.mobile__menu__dropdown').data('sliderule-pane');
     $('.drawer__menu').data('sliderule-pane', slideRule);
   });
   
