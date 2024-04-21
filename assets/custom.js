@@ -51,7 +51,7 @@
     $(this).siblings('.mobile__menu__dropdown').toggleClass('is-visible');
     let slideRule = $(this).siblings('.mobile__menu__dropdown').data('sliderule');
     $(this).parent('.drawer__menu').data('sliderulePane', slideRule);
-    console.log(slideRule, $(this).parent('.drawer__menu').data());
+    console.log(slideRule, $(this).parent('.drawer__menu'));
   });
   
 })();
