@@ -247,7 +247,7 @@
     display: grid;
   }
 }
-@media only screen and (max-width: 749px) {
+@media only screen and (min-width: 749px) {
  .product__page .product__images {
     width: calc(100% - 300px);
   }
