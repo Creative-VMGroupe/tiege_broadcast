@@ -233,3 +233,18 @@
 .drawer__menu {
   overflow-y: visible;
 }
+@media only screen and (max-width: 749px) {
+  
+}
+.product__page {
+  display: flex;
+}
+.product__page product__images.product__images {
+  width: calc(100% - 600px);
+}
+.product__page .product__content {
+  width: 600px;
+}
+@media only screen and (max-width: 749px) {
+  
+}
