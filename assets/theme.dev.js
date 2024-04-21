@@ -7206,7 +7206,7 @@
       slideruleOpen: 'data-sliderule-open',
       slideruleClose: 'data-sliderule-close',
       sliderulePane: 'data-sliderule-pane',
-      slideruleWrappper: '[data-sliderule]',
+      slideruleWrappper: '[data-slideruleA]',
       drawerContent: '[data-drawer-content]',
       focusable: 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
       dataAnimates: 'data-animates',
@@ -7407,23 +7407,22 @@
       }
     }
 
-    // const headerMobileSliderule = {
-    //   onLoad() {
-    //     sections$e[this.id] = [];
-    //     const els = this.container.querySelectorAll(selectors$y.slideruleWrappper);
-    //     console.log(els);
-    //     els.forEach((el) => {
-    //       sections$e[this.id].push(new HeaderMobileSliderule(el));
-    //     });
-    //   },
-    //   onUnload() {
-    //     sections$e[this.id].forEach((el) => {
-    //       if (typeof el.onUnload === 'function') {
-    //         el.onUnload();
-    //       }
-    //     });
-    //   },
-    // };
+    const headerMobileSliderule = {
+      onLoad() {
+        sections$e[this.id] = [];
+        const els = this.container.querySelectorAll(selectors$y.slideruleWrappper);
+        els.forEach((el) => {
+          sections$e[this.id].push(new HeaderMobileSliderule(el));
+        });
+      },
+      onUnload() {
+        sections$e[this.id].forEach((el) => {
+          if (typeof el.onUnload === 'function') {
+            el.onUnload();
+          }
+        });
+      },
+    };
 
     const selectors$x = {
       wrapper: '[data-header-wrapper]',
