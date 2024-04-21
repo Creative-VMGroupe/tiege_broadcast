@@ -7206,7 +7206,7 @@
       slideruleOpen: 'data-sliderule-open',
       slideruleClose: 'data-sliderule-close',
       sliderulePane: 'data-sliderule-pane',
-      slideruleWrappper: '[data-slideruleA]',
+      slideruleWrappper: '[data-sliderule]',
       drawerContent: '[data-drawer-content]',
       focusable: 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
       dataAnimates: 'data-animates',
