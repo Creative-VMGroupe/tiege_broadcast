@@ -7256,6 +7256,7 @@
           this.cachedButton = this.trigger;
           this.showSliderule();
           this.exit.forEach((element) => {
+            console.log(element);
             element.addEventListener('click', () => {
               console.log('Element Clicked');
               this.hideSliderule();
