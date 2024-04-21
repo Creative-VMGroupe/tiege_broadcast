@@ -49,7 +49,8 @@
   $('.sliderow').click(function() {
     $(this).toggleClass('is-active')
     $(this).siblings('.mobile__menu__dropdown').toggleClass('is-visible');
-    let slideRule = $(this).siblings('.mobile__menu__dropdown').data('sliderule-pane');
+    let slideRule = $(this).siblings('.mobile__menu__dropdown').data('sliderule');
+    console.log(slideRule);
     $('.drawer__menu').data('sliderule-pane', slideRule);
   });
   
