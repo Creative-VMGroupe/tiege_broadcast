@@ -571,19 +571,11 @@
             "title": "Level 2",
             "properties": "Yes,Yes,Yes,Yes,Yes"
           }
-        },
-        "item_XqTKk9": {
-          "type": "item",
-          "settings": {
-            "title": "Level 3",
-            "properties": "Yes,Yes,Yes,Yes,Yes,Yes"
-          }
         }
       },
       "block_order": [
         "item_RVnM9d",
-        "item_mrYB9Q",
-        "item_XqTKk9"
+        "item_mrYB9Q"
       ],
       "settings": {
         "height": "screen-height-three-quarters",
