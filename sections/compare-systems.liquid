@@ -336,15 +336,15 @@ section.comparision-system .comparision-details {
     #cd-table .cd-table-wrapper {
         width: 100%;
         {% if scrollable %}
-        padding-left: 30%;
+        padding-left: calc(100%/{{ section.blocks.size }});
         {% endif %}
     }
     #cd-table .cd-table-column {
-        width: 33.33%;
+        width: calc(100%/{{ section.blocks.size | minus: 1 }});
         float: left;
     }
     #cd-table header.cd-table-column {
-        width: 25%;
+        width: calc(100%/{{ section.blocks.size }});
         float: left;
         box-shadow: none;
         pointer-events: auto;
