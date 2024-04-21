@@ -832,26 +832,21 @@
 
                   {%- when 'complementary-products' -%}
                     <div class="product__block product__complementary block-padding" {{ block.shopify_attributes }} {{ block_style }}>
-                      <complementary-products class="complementary-products"
-                        data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=10&intent=complementary" >
+                      <complementary-products class="complementary-products" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=10&intent=complementary" >
                         {%- if recommendations.performed and recommendations.products_count > 0 -%}
                           {%- assign complementary_products_title = 'products.general.complementary_products_title' | t -%}
                           {%- if complementary_products_title != blank -%}
                             <div class="complementary-product__header">
                               <span style="font-weight: bold;"  class="complementary-products__title">Want to level up?</span>
-                              
                             </div>
-                           
                           {%- endif -%}
-<div class="grid-outer">
-  <div class="grid-custom  grid--mobile-slider-custom ">
-
-  
-                          {%- for product in recommendations.products limit: block.settings.complementary_limit-%}
-                            {%- render 'upsell-product', upsell_product: product -%}
-                          {%- endfor -%}
-  </div>
-</div>
+                            <div class="grid-outer">
+                              <div class="grid-custom  grid--mobile-slider-custom ">
+                                {%- for product in recommendations.products limit: block.settings.complementary_limit-%}
+                                  {%- render 'upsell-product', upsell_product: product -%}
+                                {%- endfor -%}
+                              </div>
+                            </div>
                         {%- endif -%}
                       </complementary-products>
                     </div>
