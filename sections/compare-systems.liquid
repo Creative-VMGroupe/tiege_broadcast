@@ -227,6 +227,21 @@
     float: left;
     margin-left: -1px;
 }
+{% else %}
+#cd-table .cd-table-wrapper {
+    width: 75%;
+}
+#cd-table header.cd-table-column {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    pointer-events: none;
+}
+#cd-table .cd-table-column {
+    width: 25%;
+    float: left;
+    margin-left: -1px;
+}
 {% endif %}
 #cd-table .cd-table-column ul {
     margin: 0;
