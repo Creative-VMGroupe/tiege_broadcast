@@ -845,9 +845,7 @@
                               data-dots="line"
                               data-options='{"pageDots": true, "prevNextButtons": true, "autoPlay": 4000, "pauseAutoPlayOnHover": false}'>
                                 {%- for product in recommendations.products limit: block.settings.complementary_limit-%}
-                                  <div data-slide>
-                                    {%- render 'upsell-product', upsell_product: product -%}
-                                  </div>
+                                  {%- render 'upsell-product', upsell_product: product -%}
                                 {%- endfor -%}
                               </div>
                             </div>
