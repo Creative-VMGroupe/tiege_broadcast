@@ -248,3 +248,11 @@
 @media only screen and (max-width: 749px) {
   
 }
+@media only screen and (max-width: 1440px) {
+ .product__page product__images.product__images {
+    width: calc(100% - 500px);
+  }
+  .product__page .product__content {
+    width: 500px;
+  } 
+}
