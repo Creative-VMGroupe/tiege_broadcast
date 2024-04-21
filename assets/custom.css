@@ -262,4 +262,10 @@
   .product__page {
     display: grid;
   }
+  .product__page .product__images {
+    width: 100%;
+  }
+  .product__page .product__content {
+    width: 100%;
+  }
 }
