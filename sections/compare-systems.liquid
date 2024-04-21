@@ -203,7 +203,7 @@
 }
 #cd-table .cd-table-container {
     position: relative;
-    width: calc(100% - calc(100%/{{ section.blocks.size | plus: 1 }}));
+    width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
 }
@@ -338,7 +338,7 @@ section.comparision-system .comparision-details {
         padding-left: 0;
     }
     #cd-table .cd-table-container {
-      width: 100%;
+      width: calc(100% - calc(100%/{{ section.blocks.size | plus: 1 }}));
     }
     #cd-table .cd-table-column {
         width: calc(100%/{{ section.blocks.size }});
