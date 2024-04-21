@@ -223,3 +223,10 @@
     opacity: .7;
     transform: scale(0.45) rotate(35deg);
   }
+.sliderow .sliderule__chevron--up,
+.sliderow.is-active .sliderule__chevron--right {
+  display: none;
+}
+.sliderow.is-active .sliderule__chevron--up {
+  display: flex;
+}
