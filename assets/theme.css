@@ -24304,7 +24304,7 @@ dialog.is-loading .loader {
 .highlights__item__background {
   position: relative;
   width: 100%;
-  min-height: inherit;
+  /* min-height: inherit; */
   padding-bottom: 100%;
   overflow: hidden;
   background-color: var(--bg);
