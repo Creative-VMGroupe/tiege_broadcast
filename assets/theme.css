@@ -55,6 +55,7 @@
   --bg-accent-lighten: var(--COLOR-BG-SECONDARY-LIGHTEN);
   --text-dark: var(--COLOR-TEXT-DARK);
   --text: var(--COLOR-TEXT);
+  --sub-color: var(--COLOR-SUB);
   --text-light: var(--COLOR-TEXT-LIGHT);
   --text-a35: var(--COLOR-A35);
   --text-a70: var(--COLOR-A70);
@@ -25511,6 +25512,7 @@ body.has-header-sticky .timeline {
 }
 .hero__subheading {
   text-transform: none;
+  color: var(--sub-color)
 }
 .product__title-custom {
   margin-bottom: 0;
