@@ -22,6 +22,12 @@
       },
       {
         "type": "color",
+        "id": "sub_color",
+        "label": "Subheading",
+        "default": "#00ad2d"
+      },
+      {
+        "type": "color",
         "id": "bg_color",
         "label": "Background",
         "default": "#FFFFFF"
