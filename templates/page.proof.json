@@ -203,6 +203,8 @@
         "grid": 3,
         "compact": true,
         "width": "wrapper--full-padded",
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
         "heading": "",
         "heading_position": "text-center",
         "heading_size": 7,
