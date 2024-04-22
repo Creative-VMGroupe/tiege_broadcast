@@ -26002,6 +26002,7 @@ text-transform: uppercase;
 /*Media with Text - Tiege*/
 .hero__content:has(.hero__media) {
   padding-bottom: 50px;
+  height: 100%;
 }
 
 .index-image-text .frame {
