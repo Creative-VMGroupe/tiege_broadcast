@@ -339,6 +339,8 @@
 --FONT-UPPERCASE-HEADING: {{ heading_font_uppercase }};
 --LETTER-SPACING-HEADING: {{ settings.heading_letter_spacing | append: 'px' }};
 
+--LINE-HEIGHT: {{ settings.line_height | divided_by: 10 }}
+    
 --FONT-STACK-HEADING: {{ heading_font.family }}, 
 {{ heading_font.fallback_families }};
 --FONT-STYLE-HEADING: {{ heading_font.style }};
