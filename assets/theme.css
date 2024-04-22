@@ -26000,6 +26000,6 @@ body.has-line-design.grid-compact
 text-transform: uppercase;  
 }
 /*Media with Text - Tiege*/
-.brick__block--text .hero__media {
-  flex-basis: 50%
+.hero__content:has(.hero__media) {
+  padding-bottom: 55px;
 }
