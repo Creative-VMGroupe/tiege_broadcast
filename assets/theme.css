@@ -26012,3 +26012,6 @@ text-transform: uppercase;
 .highlights-compact__container-vm {
   padding: 0;
 }
+.highlights-compact__container-vm .highlights__item {
+  padding: 0;
+}
