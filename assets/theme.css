@@ -26008,3 +26008,7 @@ text-transform: uppercase;
   padding-bottom: 65px;
 } 
 }
+/*Highlights*/
+.highlights-compact__container-vm {
+  padding: 0;
+}
