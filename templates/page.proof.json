@@ -199,7 +199,7 @@
 
       ],
       "settings": {
-        "style": "rectangle",
+        "style": "square",
         "grid": 3,
         "compact": true,
         "width": "wrapper--full-padded",
