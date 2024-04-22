@@ -196,8 +196,7 @@
         "highlight_Yq3Vyf"
       ],
       "custom_css": [
-        ".highlights__item {padding: 0;}",
-        ".wrapper--full-padded {padding: 0;}"
+
       ],
       "settings": {
         "style": "rectangle",
