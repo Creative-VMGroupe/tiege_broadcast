@@ -149,6 +149,20 @@
     "settings": [
       {
         "type": "header",
+        "content": "Line Height"
+      },
+      {
+        "type": "range",
+        "id": "line_height",
+        "min": 0,
+        "max": 40,
+        "step": 1,
+        "unit": "-",
+        "label": "Letter spacing",
+        "default": 20
+      },
+      {
+        "type": "header",
         "content": "Headings"
       },
       {
