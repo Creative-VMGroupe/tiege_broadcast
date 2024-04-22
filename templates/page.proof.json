@@ -201,6 +201,7 @@
       "settings": {
         "style": "rectangle",
         "grid": 3,
+        "compact": true,
         "width": "wrapper--full-padded",
         "heading": "",
         "heading_position": "text-center",
