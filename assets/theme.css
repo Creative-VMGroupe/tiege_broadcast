@@ -26004,16 +26004,16 @@ text-transform: uppercase;
   letter-spacing: 0 !important;
 }
 .sub-letter-spacing-5 {
-  letter-spacing: 5 !important;
+  letter-spacing: 5px !important;
 }
 .sub-letter-spacing-10 {
-  letter-spacing: 10 !important;
+  letter-spacing: 10px !important;
 }
 .sub-letter-spacing-15 {
-  letter-spacing: 15 !important;
+  letter-spacing: 15px !important;
 }
 .sub-letter-spacing-20 {
-  letter-spacing: 20 !important;
+  letter-spacing: 20px !important;
 }
 /*Media with Text - Tiege*/
 .hero__content:has(.hero__media) {
