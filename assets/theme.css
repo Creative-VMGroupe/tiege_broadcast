@@ -4287,7 +4287,7 @@ body {
   letter-spacing: var(--LETTER-SPACING-BODY);
   text-transform: none;
   margin: 0.5em 0;
-  line-height: 1.2;
+  line-height: var(--LINE-HEIGHT);
 }
 .h1--body a,
 .h2--body a,
@@ -4342,7 +4342,7 @@ p small {
   font-style: var(--FONT-STYLE-BODY);
   font-weight: var(--FONT-WEIGHT-BODY);
   letter-spacing: var(--LETTER-SPACING-BODY);
-  line-height: 1.5em !important;
+  line-height: var(--LINE-HEIGHT) !important;
 }
 
 .font-heading {
