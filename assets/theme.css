@@ -26020,5 +26020,7 @@ text-transform: uppercase;
   border: none !important
 }
 @media only screen (max-width: 749px) {
-  .highlights-compact__container-vm .highlights__item
+  .highlights-compact__container-vm .highlights__item {
+    width: 100% !important
+  }
 }
