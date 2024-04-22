@@ -26003,3 +26003,8 @@ text-transform: uppercase;
 .hero__content:has(.hero__media) {
   padding-bottom: 55px;
 }
+@media(min-width: 1800px) {
+ .hero__content:has(.hero__media) {
+  padding-bottom: 65px;
+} 
+}
