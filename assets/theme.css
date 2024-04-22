@@ -26019,7 +26019,7 @@ text-transform: uppercase;
 .highlights-compact__container-vm .highlights__item__background {
   border: none !important;
 }
-@media only screen (max-width: 749px) {
+@media only screen and (max-width: 749px) {
   .highlights-compact__container-vm .highlights__items--mobile-slider .highlights__item {
     width: 100% !important;
   }
