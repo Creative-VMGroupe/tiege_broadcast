@@ -48,7 +48,7 @@
   id="highlights--{{ unique }}"
   data-section-id="{{ unique }}"
   data-section-type="highlights">
-  <div class="{{ section.settings.width }} highlights__container">
+  <div class="{{ section.settings.width }} highlights__container {% if section.settings.compact %} highlights-compact__container-vm {% endif %}">
 
     {%- if heading != blank -%}
       <div class="grid__heading-holder {{ section.settings.heading_position }}">
@@ -219,6 +219,12 @@
         "type": "header",
         "content": "Style"
       },
+      {
+  "type": "checkbox",
+  "id": "compact",
+  "label": "Toggle Compact Grid",
+  "default": false
+},
       {
         "type": "select",
         "id": "width",
