@@ -26003,6 +26003,13 @@ text-transform: uppercase;
 .hero__content:has(.hero__media) {
   padding-bottom: 50px;
 }
+
+.index-image-text .frame {
+  height: 100%;
+}
+.index-image-text .wide-image {
+  height: 100%;
+}
 @media(min-width: 1800px) {
  .hero__content:has(.hero__media) {
   padding-bottom: 65px;
