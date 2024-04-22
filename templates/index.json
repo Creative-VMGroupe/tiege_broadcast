@@ -245,7 +245,7 @@
             "title": "\"Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.\"",
             "heading_size": 3,
             "text": "<p>- Name of Reviewer<\/p>",
-            "text_size": 3,
+            "text_size": 2,
             "text_style": "font-body",
             "button_text": "Learn more",
             "button_url": "shopify:\/\/pages\/membership-benefit",
