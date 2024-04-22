@@ -26017,7 +26017,7 @@ text-transform: uppercase;
   margin: 0 !important;
 }
 .highlights-compact__container-vm .highlights__item__background {
-  border: none !important
+  border: none !important;
 }
 @media only screen (max-width: 749px) {
   .highlights-compact__container-vm .highlights__items--mobile-slider .highlights__item {
