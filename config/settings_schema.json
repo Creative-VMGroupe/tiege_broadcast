@@ -158,7 +158,7 @@
         "max": 40,
         "step": 1,
         "unit": "-",
-        "label": "Letter spacing",
+        "label": "Line Height",
         "default": 20
       },
       {
