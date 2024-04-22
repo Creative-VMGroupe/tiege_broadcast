@@ -302,7 +302,7 @@
         "text_slide_f7FiYT"
       ],
       "custom_css": [
-        ".hero__subheading {color: #00ad2d;}"
+
       ],
       "settings": {
         "layout": "",
@@ -314,6 +314,7 @@
         "text_alignment": "text-center",
         "bg_color": "#000000",
         "color": "#ffffff",
+        "sub_color": "#00ad2d",
         "padding_top": 0,
         "padding_bottom": 0
       }
