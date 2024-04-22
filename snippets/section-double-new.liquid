@@ -19,6 +19,7 @@
   assign bg_color = section.settings.bg_color
   assign bg_color_transparent = bg_color | color_modify: 'alpha', 0
   assign text_color = section.settings.color
+  assign sub_color = section.settings.sub_color
 
   if text_slide_blocks.size > 1
     assign enable_text_slider = true
@@ -49,7 +50,15 @@
       echo '--text-light: ' | append: text_light | append: ';'
       echo '--text-dark: ' | append: text_dark | append: ';'
     endunless
+
+    unless text_color == 'rgba(0,0,0,0)' or text_color == blank
+      echo '--sub-color: ' | append: sub_color | append: ';'
+    endunless
   endcapture
+
+
+  
+
 
   assign image_1 = section.settings.image_1
   assign image_2 = section.settings.image_2
