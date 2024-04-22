@@ -25999,3 +25999,7 @@ body.has-line-design.grid-compact
 .btn__text{
 text-transform: uppercase;  
 }
+/*Media with Text - Tiege*/
+.brick__block--text .hero__media {
+  flex-basis: 50%
+}
