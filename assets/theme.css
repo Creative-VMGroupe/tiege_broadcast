@@ -26001,7 +26001,7 @@ text-transform: uppercase;
 }
 /*Media with Text - Tiege*/
 .hero__content:has(.hero__media) {
-  padding-bottom: 55px;
+  padding-bottom: 50px;
 }
 @media(min-width: 1800px) {
  .hero__content:has(.hero__media) {
