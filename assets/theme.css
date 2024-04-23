@@ -25641,6 +25641,14 @@ fieldset .select-popout__toggle span {
 div.rc_popup {
   display: none !important;
 }
+
+/*Recharge PDP Buttons*/
+.rc-template__radio-group .rc-radio .rc-radio__label .discount-label {
+    flex: 1 !important;
+    font-weight: 400 !important;
+  text-transform: uppercase;
+}
+
 /*CLP*/
 .prod-featured__image__container {
   --PRODUCT-GRID-ASPECT-RATIO: 49% !important;
