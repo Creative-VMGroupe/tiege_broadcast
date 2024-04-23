@@ -51,10 +51,7 @@
 .rc-template__radio-group .rc-radio .rc-radio__label {
     flex: 1 !important;
 }
-.rc-template__radio-group .rc-radio .rc-radio__label .discount-label {
-    flex: 1 !important;
-    font-weight: 400 !important;
-}
+
 .rc-radio:first-child {
   margin-bottom: 12px !important;
 }
