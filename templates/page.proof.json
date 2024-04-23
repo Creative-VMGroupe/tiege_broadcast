@@ -52,9 +52,9 @@
         "text_slide_yJn8Aw": {
           "type": "text-slide",
           "settings": {
-            "subheading": "Tiege Subheading",
+            "subheading": "★★★★★",
             "subheading_size": 3,
-            "sub_letter_spacing": 0,
+            "sub_letter_spacing": 5,
             "title": "",
             "heading_size": 7,
             "text": "<p>\"Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.\"<\/p>",
@@ -62,7 +62,49 @@
             "text_style": "font-body",
             "reg_text": true,
             "button_text": "-Name of Reviewer",
-            "btn_size": 4,
+            "btn_size": 2,
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false
+          }
+        },
+        "text_slide_qaWtgd": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "★★★★★",
+            "subheading_size": 3,
+            "sub_letter_spacing": 5,
+            "title": "",
+            "heading_size": 7,
+            "text": "<p>\"Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.\"<\/p>",
+            "text_size": 7,
+            "text_style": "font-body",
+            "reg_text": true,
+            "button_text": "-Name of Reviewer",
+            "btn_size": 2,
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false
+          }
+        },
+        "text_slide_Fr4gep": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "★★★★★",
+            "subheading_size": 3,
+            "sub_letter_spacing": 5,
+            "title": "",
+            "heading_size": 7,
+            "text": "<p>\"Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.\"<\/p>",
+            "text_size": 7,
+            "text_style": "font-body",
+            "reg_text": true,
+            "button_text": "-Name of Reviewer",
+            "btn_size": 2,
             "button_url": "",
             "button_type": "btn--primary",
             "button_size": "",
@@ -72,7 +114,9 @@
         }
       },
       "block_order": [
-        "text_slide_yJn8Aw"
+        "text_slide_yJn8Aw",
+        "text_slide_qaWtgd",
+        "text_slide_Fr4gep"
       ],
       "settings": {
         "height": "screen-height-one-half",
