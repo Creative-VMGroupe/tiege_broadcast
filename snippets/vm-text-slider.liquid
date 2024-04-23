@@ -1,6 +1,11 @@
 {%- comment -%} 
+<<<<<<< HEAD
                         "enable_slider" is used for "text-slide" blocks with "Optional image" added and make the entire Image & text block a single slide.
                         "enable_text_slider" is used for "text-slide" blocks without "Optional image" added. Then we only create a slider for the text blocks and the images are static. 
+=======
+                      "enable_slider" is used for "text-slide" blocks with "Optional image" added and make the entire Image & text block a single slide.
+                      "enable_text_slider" is used for "text-slide" blocks without "Optional image" added. Then we only create a slider for the text blocks and the images are static. 
+>>>>>>> 99c3633102da8f076a025c4c1b5ad09a283ebcc6
 {%- endcomment -%}
 
 {%- liquid
@@ -158,7 +163,11 @@
 
                   {%- if button_text != blank -%}
                     {%- liquid
+<<<<<<< HEAD
                       assign btn_size_class = block.settings.btn_size | prepend: 'body-size-'
+=======
+                      assign sub_font_size_class = block.settings.sub-text_size | prepend: 'body-size-'
+>>>>>>> 99c3633102da8f076a025c4c1b5ad09a283ebcc6
 
                       assign button_style = block.settings.button_style
                       if button_style == 'btn--text' and block.settings.show_arrow
@@ -167,6 +176,7 @@
                     -%}
 
                     <div class="hero__button">
+<<<<<<< HEAD
 
                       {% if reg_text == false %}
                         <a href="{{ block.settings.button_url | default: '#!' }}" class="btn {{ button_style }} {{ block.settings.button_size }} {{ block.settings.button_type }}">
@@ -181,6 +191,9 @@
                       {% endif %}
 
 
+=======
+                      <span class="{{ sub_font_size_class }}">{{ button_text }}</span>
+>>>>>>> 99c3633102da8f076a025c4c1b5ad09a283ebcc6
                     </div>
                   {%- endif -%}
                 </div>
