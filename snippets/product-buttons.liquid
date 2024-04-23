@@ -4,7 +4,7 @@
   assign show_quantity = show_quantity | default: block.settings.show_quantity | default: false
   assign is_quickview = quickview | default: false
 
-  assign button_text = 'products.product.add_to_cart' | t
+  assign button_text = 'products.product.checkout' | t
   if preorder
     assign button_text =  'products.product.pre_order' | t
   endif
