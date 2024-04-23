@@ -165,8 +165,7 @@
         ".rc-widget label {border-radius: 300px;}",
         ".accordion__title {font-weight: bold;}",
         ".accordion {border: none;}",
-        ".rc-widget {padding-top: 30px;}",
-        ".rc-template__radio-group .rc-radio .rc-radio__label {display: flex !important;flex-direction: row-reverse !important;}"
+        ".rc-widget {padding-top: 30px;}"
       ],
       "settings": {
         "product_sticky_enable": true,
