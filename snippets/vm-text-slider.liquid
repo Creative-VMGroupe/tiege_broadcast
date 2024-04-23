@@ -1,8 +1,8 @@
 {%- comment -%} 
-    
-                              "enable_slider" is used for "text-slide" blocks with "Optional image" added and make the entire Image & text block a single slide.
-                              "enable_text_slider" is used for "text-slide" blocks without "Optional image" added. Then we only create a slider for the text blocks and the images are static. 
-     
+      
+                                "enable_slider" is used for "text-slide" blocks with "Optional image" added and make the entire Image & text block a single slide.
+                                "enable_text_slider" is used for "text-slide" blocks without "Optional image" added. Then we only create a slider for the text blocks and the images are static. 
+       
 {%- endcomment -%}
 
 {%- liquid
@@ -260,6 +260,8 @@
 
                     {%- if block.settings.button_text != blank -%}
                       {%- liquid
+                        assign btn_size_class = block.settings.btn_size | prepend: 'body-size-'
+
                         assign button_style = block.settings.button_style
                         if button_style == 'btn--text' and block.settings.show_arrow
                           assign button_style = button_style | append: ' btn--text-no-underline'
