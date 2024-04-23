@@ -119,7 +119,7 @@
         "text_slide_Fr4gep"
       ],
       "settings": {
-        "height": "screen-height-one-half",
+        "height": "screen-height-one-third",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
         "text_alignment": "text-center",
