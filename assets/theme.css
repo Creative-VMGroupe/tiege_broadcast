@@ -26082,3 +26082,11 @@ text-transform: uppercase;
     width: 100% !important;
   }
 }
+/*Text Slider*/
+.grid--mobile-slider .grid-item.text-slider__slide-custom {
+  padding: 0 !important;
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
