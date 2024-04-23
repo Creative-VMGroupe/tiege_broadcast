@@ -160,7 +160,6 @@
         ".mock-notification {display: none;}",
         ".rc-subscription-details {display: none;}",
         ".rc-radio {border: 1px solid black;}",
-        ".rc-template__radio {display: flex; flex-direction: column; gap: 8px;}",
         ".rc-selling-plans {display: none;}",
         ".bi-star::before {height: 30px; width: 20px;}",
         ".rc-widget label {border-radius: 300px;}",
@@ -188,6 +187,7 @@
           "settings": {
             "subheading": "",
             "subheading_size": 3,
+            "sub_letter_spacing": 0,
             "title": "Proof",
             "heading_size": 7,
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
@@ -207,6 +207,7 @@
           "settings": {
             "subheading": "★★★★★",
             "subheading_size": 3,
+            "sub_letter_spacing": 0,
             "title": "Willow Bark Test",
             "heading_size": 7,
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
@@ -237,6 +238,7 @@
         "text_alignment": "text-center",
         "bg_color": "#000000",
         "color": "#ffffff",
+        "sub_color": "",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -249,6 +251,7 @@
           "settings": {
             "subheading": "",
             "subheading_size": 3,
+            "sub_letter_spacing": 0,
             "title": "Willow Bark Extract",
             "heading_size": 7,
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
@@ -268,6 +271,7 @@
           "settings": {
             "subheading": "",
             "subheading_size": 3,
+            "sub_letter_spacing": 0,
             "title": "Ingredient #2",
             "heading_size": 7,
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
@@ -300,6 +304,7 @@
         "text_alignment": "text-center",
         "bg_color": "#f7f7f7",
         "color": "",
+        "sub_color": "",
         "padding_top": 0,
         "padding_bottom": 0
       }
