@@ -25747,6 +25747,9 @@ div.rc_popup {
   display: block !important;
   height: auto !important;
 }
+.btn-quick-view_container {
+  height: var(--BUTTON-MIN-HEIGHT)
+}
 .product-quick-add__form .product__title {
   display: flex;
 }
