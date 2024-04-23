@@ -25563,7 +25563,7 @@ body.has-header-sticky .timeline {
 .rc-template__radio-group .rc-radio .rc-radio__label .rc-option__discount, 
 .rc-template__radio-group .rc-radio .rc-radio__label .rc-option__text, 
 .rc-template__radio-group .rc-radio .rc-radio__label .rc-option__price {
-  order: initial;
+  order: initial !important;
 }
 .radio__legend__option-name {
  text-transform: var(--BTN-UPPERCASE); 
