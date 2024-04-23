@@ -1,8 +1,8 @@
 {%- comment -%} 
-      
-                                "enable_slider" is used for "text-slide" blocks with "Optional image" added and make the entire Image & text block a single slide.
-                                "enable_text_slider" is used for "text-slide" blocks without "Optional image" added. Then we only create a slider for the text blocks and the images are static. 
-       
+        
+                                  "enable_slider" is used for "text-slide" blocks with "Optional image" added and make the entire Image & text block a single slide.
+                                  "enable_text_slider" is used for "text-slide" blocks without "Optional image" added. Then we only create a slider for the text blocks and the images are static. 
+         
 {%- endcomment -%}
 
 {%- liquid
@@ -221,6 +221,12 @@
                   capture block_style
                     echo '--block-padding-bottom:' | append: block.settings.padding_bottom | append: 'px;'
                   endcapture
+
+                  assign subheading = block.settings.subheading
+                  assign title = block.settings.title
+                  assign text = block.settings.text
+                  assign button_text = block.settings.button_text
+                  assign reg_text = block.settings.reg_text
                 -%}
 
                 {%- if enable_text_slider -%}
