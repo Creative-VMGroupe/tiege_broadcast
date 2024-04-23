@@ -82,7 +82,7 @@
         </div>
       {%- endif -%}
 
-      {%- render 'product-buttons', product: product, unique: unique, product_form_id: product_form_id, animation_name: animation_name, animation_delay: animation_delay, animation_duration: animation_duration, quickview: true -%}
+      {%- render 'product-buttons-vm', product: product, unique: unique, product_form_id: product_form_id, animation_name: animation_name, animation_delay: animation_delay, animation_duration: animation_duration, quickview: true -%}
 
       {% comment %} The input with name="id" submits to cart {% endcomment %}
       <input type="hidden" name="id" value="{{ current_variant.id }}" form="{{ product_form_id }}">
