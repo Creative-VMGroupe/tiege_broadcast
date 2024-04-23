@@ -236,75 +236,20 @@
             ]
           }, {
             "type": "header",
-            "content": "Button"
-          }, {
-            "type": "checkbox",
-            "id": "reg_text",
-            "label": "Show as Regular Text",
-            "default": true
+            "content": "Sub Body Text"
           }, {
             "type": "text",
             "id": "button_text",
             "label": "Text",
             "default": "Learn more"
           }, {
-            "type": "url",
-            "id": "button_url",
-            "label": "Link"
-          }, {
-            "type": "select",
-            "id": "button_type",
-            "label": "Color",
-            "default": "btn--primary",
-            "options": [
-              {
-                "value": "btn--primary",
-                "label": "Primary"
-              }, {
-                "value": "btn--secondary",
-                "label": "Secondary"
-              }, {
-                "value": "btn--white",
-                "label": "White"
-              }, {
-                "value": "btn--black",
-                "label": "Black"
-              }
-            ]
-          }, {
-            "type": "select",
-            "id": "button_size",
+            "type": "range",
+            "id": "sub-text_size",
             "label": "Size",
-            "default": "",
-            "options": [
-              {
-                "label": "Small",
-                "value": "btn--small"
-              }, {
-                "label": "Medium",
-                "value": ""
-              }, {
-                "label": "Large",
-                "value": "btn--large"
-              }
-            ]
-          }, {
-            "type": "select",
-            "id": "button_style",
-            "label": "Style",
-            "default": "btn--solid",
-            "options": [
-              {
-                "label": "Solid",
-                "value": "btn--solid"
-              }, {
-                "label": "Outline",
-                "value": "btn--outline"
-              }, {
-                "label": "Text",
-                "value": "btn--text"
-              }
-            ]
+            "min": 1,
+            "max": 15,
+            "step": 1,
+            "default": 4
           }, {
             "type": "checkbox",
             "id": "show_arrow",
