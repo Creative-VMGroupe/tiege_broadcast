@@ -46,6 +46,44 @@
         "show_arrow": false
       }
     },
+    "vm_text_slider_wFfQLi": {
+      "type": "vm-text-slider",
+      "blocks": {
+        "text_slide_yJn8Aw": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "Tiege Subheading",
+            "subheading_size": 3,
+            "sub_letter_spacing": 0,
+            "title": "",
+            "heading_size": 7,
+            "text": "<p>\"Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.\"<\/p>",
+            "text_size": 7,
+            "text_style": "font-body",
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "text_slide_yJn8Aw"
+      ],
+      "settings": {
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "text_alignment": "text-center",
+        "bg_color": "",
+        "color": "",
+        "sub_color": "#00ad2d",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_slideshow_69Gkbk": {
       "type": "section-slideshow",
       "blocks": {
@@ -139,6 +177,7 @@
         "image_jLX3QN",
         "image_baBAmG"
       ],
+      "disabled": true,
       "custom_css": [
         ".hero__image {display: none;}",
         ".slideshow .hero__content__wrapper {padding: 0;}"
@@ -431,6 +470,7 @@
         "image_mBiawm",
         "image_AhFh9K"
       ],
+      "disabled": true,
       "custom_css": [
         ".hero__image {display: none;}",
         ".slideshow .hero__content__wrapper {padding: 0;}"
@@ -544,6 +584,7 @@
   "order": [
     "main",
     "section_video_FYBKW8",
+    "vm_text_slider_wFfQLi",
     "section_slideshow_69Gkbk",
     "section_highlights_EmCUMF",
     "section_rich_text_KjwWhd",
