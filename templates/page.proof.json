@@ -60,7 +60,9 @@
             "text": "<p>\"Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.\"<\/p>",
             "text_size": 7,
             "text_style": "font-body",
+            "reg_text": true,
             "button_text": "-Name of Reviewer",
+            "btn_size": 4,
             "button_url": "",
             "button_type": "btn--primary",
             "button_size": "",
@@ -251,7 +253,7 @@
         "color": "",
         "bg_color": "",
         "layout_mobile": "slider",
-        "padding_top": 60,
+        "padding_top": 0,
         "padding_bottom": 0
       }
     },
