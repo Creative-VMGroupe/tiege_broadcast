@@ -25606,7 +25606,7 @@ fieldset .select-popout__toggle span {
 }
 
 .rc-template__radio-group .rc-radio .rc-radio__label {
-  display: block;
+  display: block !important;
   text-align: center;
   font-size: 14px !important;
   gap: 5px;
