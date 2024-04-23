@@ -25545,6 +25545,25 @@ body.has-header-sticky .timeline {
     font-size: calc(var(--font-7) * var(--FONT-ADJUST-HEADING)) !important;
   }
 }
+
+.product-recomend_wrapper {
+  padding-left: var(--outer) !important;
+  padding-right: var(--outer) !important;
+}
+
+.prod-rec_text-custom {
+  text-transform: none;
+  letter-spacing: var(--ltr-spacing-tiege);
+}
+.prod-modal__container-custom {
+  max-width: 1000px;
+  padding: 16px;
+}
+/*Recharge*/
+.rc-widget .rc-option__text {
+  text-transform: var(--BTN-UPPERCASE)
+}
+
 .recharge-subscription-widget {
   min-height: 133.62px;
 }
@@ -25564,20 +25583,6 @@ fieldset .select-popout__toggle span {
     opacity: 1;
   }
 }
-.product-recomend_wrapper {
-  padding-left: var(--outer) !important;
-  padding-right: var(--outer) !important;
-}
-
-.prod-rec_text-custom {
-  text-transform: none;
-  letter-spacing: var(--ltr-spacing-tiege);
-}
-.prod-modal__container-custom {
-  max-width: 1000px;
-  padding: 16px;
-}
-/*Recharge*/
 .price-label {
   font-weight: 400 !important;
 }
