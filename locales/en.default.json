@@ -37,7 +37,7 @@
       "submit": "Join",
       "placeholder": "Email Address",
       "thank_you": "Thanks for signing up!",
-      "thank_you_with_code_html": "Thanks for signing up! Use the code <span>Discount10</span> for 10% off.",
+      "thank_you_with_code_html": "Thanks for signing up! Use the code <span>Discount10<\/span> for 10% off.",
       "error_message": "This customer is already subscribed!"
     },
     "search": {
@@ -171,7 +171,7 @@
       "update": "Update Cart",
       "checkout": "Check Out",
       "accept_terms": "You must accept our terms and conditions.",
-      "accepted_terms": "Accepted terms/conditions?",
+      "accepted_terms": "Accepted terms\/conditions?",
       "view_cart": "View cart",
       "empty": "Your Cart is Empty",
       "savings": "You're saving",
@@ -275,7 +275,7 @@
       "city": "City",
       "country": "Country",
       "province": "Province",
-      "zip": "Postal/Zip Code",
+      "zip": "Postal\/Zip Code",
       "phone": "Phone",
       "set_default": "Set as default address",
       "add": "Add Address",
@@ -367,10 +367,10 @@
       "news_title": "Latest News"
     },
     "onboarding": {
-      "no_products_html": "You have no products in your Frontpage collection. This placeholder will appear until you <a href=\"/admin/custom_collections\">add a product to this collection</a>.",
+      "no_products_html": "You have no products in your Frontpage collection. This placeholder will appear until you <a href=\"\/admin\/custom_collections\">add a product to this collection<\/a>.",
       "add_product": "Add Product",
       "product_title": "Product Title",
-      "no_collections_html": "You don't have any collections to show here. <a href=\"/admin/custom_collections\">Add some collections</a> to go along with the default Frontpage.",
+      "no_collections_html": "You don't have any collections to show here. <a href=\"\/admin\/custom_collections\">Add some collections<\/a> to go along with the default Frontpage.",
       "no_description": "This is a sample description for a product. Once you add a product, this text will change.",
       "no_content": "This section doesn’t currently include any content. Add content to this section using the sidebar.",
       "collection_image": "Collection Image",
@@ -445,6 +445,7 @@
       "one_time_purchase": "One-time purchase",
       "quantity": "Quantity",
       "add_to_cart": "Add to cart",
+      "checkout": "Checkout",
       "added": "Added to your cart:",
       "vendor": "Vendor",
       "type": "Type",
@@ -466,8 +467,8 @@
         "view_store_info": "View store information",
         "check_other_stores": "Check availability at other stores",
         "pick_up_available": "Pickup available",
-        "pick_up_available_at_html": "Pickup available at <strong>{{ location_name }}</strong>",
-        "pick_up_unavailable_at_html": "Pickup currently unavailable at <strong>{{ location_name }}</strong>",
+        "pick_up_available_at_html": "Pickup available at <strong>{{ location_name }}<\/strong>",
+        "pick_up_unavailable_at_html": "Pickup currently unavailable at <strong>{{ location_name }}<\/strong>",
         "unavailable": "Couldn't load pickup availability",
         "refresh": "Refresh"
       }
