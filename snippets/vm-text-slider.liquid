@@ -1,6 +1,6 @@
 {%- comment -%} 
-        "enable_slider" is used for "text-slide" blocks with "Optional image" added and make the entire Image & text block a single slide.
-        "enable_text_slider" is used for "text-slide" blocks without "Optional image" added. Then we only create a slider for the text blocks and the images are static. 
+            "enable_slider" is used for "text-slide" blocks with "Optional image" added and make the entire Image & text block a single slide.
+            "enable_text_slider" is used for "text-slide" blocks without "Optional image" added. Then we only create a slider for the text blocks and the images are static. 
 {%- endcomment -%}
 
 {%- liquid
@@ -164,13 +164,20 @@
                     -%}
 
                     <div class="hero__button">
-                      <a href="{{ block.settings.button_url | default: '#!' }}" class="btn {{ button_style }} {{ block.settings.button_size }} {{ block.settings.button_type }}">
-                        <span>{{ button_text }}</span>
 
-                        {%- if block.settings.show_arrow -%}
-                          {%- render 'icon-arrow-right' -%}
-                        {%- endif -%}
-                      </a>
+                      {% unless block.settings.reg_text == false %}
+                        <span>{{ button_text }}</span>
+                      {% endunless %}
+
+                      {% unless block.settings.reg_text == true %}
+                        <a href="{{ block.settings.button_url | default: '#!' }}" class="btn {{ button_style }} {{ block.settings.button_size }} {{ block.settings.button_type }}">
+                          <span>{{ button_text }}</span>
+
+                          {%- if block.settings.show_arrow -%}
+                            {%- render 'icon-arrow-right' -%}
+                          {%- endif -%}
+                        </a>
+                      {% endunless %}
                     </div>
                   {%- endif -%}
                 </div>
