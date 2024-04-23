@@ -1,6 +1,6 @@
 {%- comment -%} 
-            "enable_slider" is used for "text-slide" blocks with "Optional image" added and make the entire Image & text block a single slide.
-            "enable_text_slider" is used for "text-slide" blocks without "Optional image" added. Then we only create a slider for the text blocks and the images are static. 
+              "enable_slider" is used for "text-slide" blocks with "Optional image" added and make the entire Image & text block a single slide.
+              "enable_text_slider" is used for "text-slide" blocks without "Optional image" added. Then we only create a slider for the text blocks and the images are static. 
 {%- endcomment -%}
 
 {%- liquid
@@ -118,6 +118,7 @@
             assign title = block.settings.title
             assign text = block.settings.text
             assign button_text = block.settings.button_text
+            assign reg_text = block.settings.reg_text
           -%}
 
           <div
@@ -165,11 +166,11 @@
 
                     <div class="hero__button">
 
-                      {% unless block.settings.reg_text == false %}
+                      {% unless reg_text == false %}
                         <span>{{ button_text }}</span>
                       {% endunless %}
 
-                      {% unless block.settings.reg_text == true %}
+                      {% unless reg_text == true %}
                         <a href="{{ block.settings.button_url | default: '#!' }}" class="btn {{ button_style }} {{ block.settings.button_size }} {{ block.settings.button_type }}">
                           <span>{{ button_text }}</span>
 
