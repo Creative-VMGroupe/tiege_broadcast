@@ -131,114 +131,6 @@
         "padding_bottom": 0
       }
     },
-    "section_slideshow_69Gkbk": {
-      "type": "section-slideshow",
-      "blocks": {
-        "image_wTYADt": {
-          "type": "image",
-          "settings": {
-            "overlay_opacity": 0,
-            "overlay_color": "#000000",
-            "show_overlay_text": false,
-            "title": "★★★★★",
-            "heading_size": 3,
-            "description": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor\"\n- Name of Reviewer",
-            "text_size": 5,
-            "flex_align_desktop": "align--middle-center-desktop",
-            "flex_align_mobile": "align--middle-center-mobile",
-            "bg_color": "",
-            "color": "#000000",
-            "first_button_text": "",
-            "first_button_link": "",
-            "first_button_type": "btn--primary",
-            "first_button_size": "",
-            "first_button_style": "btn--solid",
-            "first_button_show_arrow": false,
-            "second_button_text": "",
-            "second_button_link": "",
-            "second_button_type": "btn--white",
-            "second_button_size": "",
-            "second_button_style": "btn--solid",
-            "second_button_show_arrow": false
-          }
-        },
-        "image_jLX3QN": {
-          "type": "image",
-          "settings": {
-            "overlay_opacity": 0,
-            "overlay_color": "#000000",
-            "show_overlay_text": false,
-            "title": "★★★★★",
-            "heading_size": 3,
-            "description": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor\"\n- Name of Reviewer",
-            "text_size": 5,
-            "flex_align_desktop": "align--middle-center-desktop",
-            "flex_align_mobile": "align--middle-center-mobile",
-            "bg_color": "",
-            "color": "#000000",
-            "first_button_text": "",
-            "first_button_link": "",
-            "first_button_type": "btn--primary",
-            "first_button_size": "",
-            "first_button_style": "btn--solid",
-            "first_button_show_arrow": false,
-            "second_button_text": "",
-            "second_button_link": "",
-            "second_button_type": "btn--white",
-            "second_button_size": "",
-            "second_button_style": "btn--solid",
-            "second_button_show_arrow": false
-          }
-        },
-        "image_baBAmG": {
-          "type": "image",
-          "settings": {
-            "overlay_opacity": 0,
-            "overlay_color": "#000000",
-            "show_overlay_text": false,
-            "title": "★★★★★",
-            "heading_size": 3,
-            "description": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor\"\n- Name of Reviewer",
-            "text_size": 5,
-            "flex_align_desktop": "align--middle-center-desktop",
-            "flex_align_mobile": "align--middle-center-mobile",
-            "bg_color": "",
-            "color": "#000000",
-            "first_button_text": "",
-            "first_button_link": "",
-            "first_button_type": "btn--primary",
-            "first_button_size": "",
-            "first_button_style": "btn--solid",
-            "first_button_show_arrow": false,
-            "second_button_text": "",
-            "second_button_link": "",
-            "second_button_type": "btn--white",
-            "second_button_size": "",
-            "second_button_style": "btn--solid",
-            "second_button_show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "image_wTYADt",
-        "image_jLX3QN",
-        "image_baBAmG"
-      ],
-      "disabled": true,
-      "custom_css": [
-        ".hero__image {display: none;}",
-        ".slideshow .hero__content__wrapper {padding: 0;}"
-      ],
-      "settings": {
-        "height": "screen-height-one-third",
-        "mobile_height": "screen-height-one-third--mobile",
-        "width": "wrapper--full-padded",
-        "transition": "slide",
-        "show_arrows": true,
-        "autoplay": false,
-        "autoplay_speed": 8
-      }
-    },
     "section_highlights_EmCUMF": {
       "type": "section-highlights",
       "blocks": {
@@ -424,112 +316,89 @@
         "padding_bottom": 0
       }
     },
-    "section_slideshow_F6MaRE": {
-      "type": "section-slideshow",
+    "vm_text_slider_3Q9fmB": {
+      "type": "vm-text-slider",
       "blocks": {
-        "image_kK9eJF": {
-          "type": "image",
+        "text_slide_XyzJy4": {
+          "type": "text-slide",
           "settings": {
-            "overlay_opacity": 0,
-            "overlay_color": "#000000",
-            "show_overlay_text": false,
-            "title": "★★★★★",
-            "heading_size": 3,
-            "description": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor\"\n- Name of Reviewer",
-            "text_size": 5,
-            "flex_align_desktop": "align--middle-center-desktop",
-            "flex_align_mobile": "align--middle-center-mobile",
-            "bg_color": "#ffffff",
-            "color": "#000000",
-            "first_button_text": "",
-            "first_button_link": "",
-            "first_button_type": "btn--primary",
-            "first_button_size": "",
-            "first_button_style": "btn--solid",
-            "first_button_show_arrow": false,
-            "second_button_text": "",
-            "second_button_link": "",
-            "second_button_type": "btn--white",
-            "second_button_size": "",
-            "second_button_style": "btn--solid",
-            "second_button_show_arrow": false
+            "subheading": "★★★★★",
+            "subheading_size": 3,
+            "sub_letter_spacing": 5,
+            "title": "",
+            "heading_size": 7,
+            "text": "<p>\"Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.\"<\/p>",
+            "text_size": 6,
+            "text_style": "font-body",
+            "reg_text": true,
+            "button_text": "-Name of Reviewer",
+            "btn_size": 2,
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false
           }
         },
-        "image_mBiawm": {
-          "type": "image",
+        "text_slide_W4t76J": {
+          "type": "text-slide",
           "settings": {
-            "overlay_opacity": 0,
-            "overlay_color": "#000000",
-            "show_overlay_text": false,
-            "title": "★★★★★",
-            "heading_size": 3,
-            "description": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor\"\n- Name of Reviewer",
-            "text_size": 5,
-            "flex_align_desktop": "align--middle-center-desktop",
-            "flex_align_mobile": "align--middle-center-mobile",
-            "bg_color": "",
-            "color": "#000000",
-            "first_button_text": "",
-            "first_button_link": "",
-            "first_button_type": "btn--primary",
-            "first_button_size": "",
-            "first_button_style": "btn--solid",
-            "first_button_show_arrow": false,
-            "second_button_text": "",
-            "second_button_link": "",
-            "second_button_type": "btn--white",
-            "second_button_size": "",
-            "second_button_style": "btn--solid",
-            "second_button_show_arrow": false
+            "subheading": "★★★★★",
+            "subheading_size": 3,
+            "sub_letter_spacing": 5,
+            "title": "",
+            "heading_size": 7,
+            "text": "<p>\"Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.\"<\/p>",
+            "text_size": 6,
+            "text_style": "font-body",
+            "reg_text": true,
+            "button_text": "-Name of Reviewer",
+            "btn_size": 2,
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false
           }
         },
-        "image_AhFh9K": {
-          "type": "image",
+        "text_slide_HLtc84": {
+          "type": "text-slide",
           "settings": {
-            "overlay_opacity": 0,
-            "overlay_color": "#000000",
-            "show_overlay_text": false,
-            "title": "★★★★★",
-            "heading_size": 3,
-            "description": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor\"\n- Name of Reviewer",
-            "text_size": 5,
-            "flex_align_desktop": "align--middle-center-desktop",
-            "flex_align_mobile": "align--middle-center-mobile",
-            "bg_color": "",
-            "color": "#000000",
-            "first_button_text": "",
-            "first_button_link": "",
-            "first_button_type": "btn--primary",
-            "first_button_size": "",
-            "first_button_style": "btn--solid",
-            "first_button_show_arrow": false,
-            "second_button_text": "",
-            "second_button_link": "",
-            "second_button_type": "btn--white",
-            "second_button_size": "",
-            "second_button_style": "btn--solid",
-            "second_button_show_arrow": false
+            "subheading": "★★★★★",
+            "subheading_size": 3,
+            "sub_letter_spacing": 5,
+            "title": "",
+            "heading_size": 7,
+            "text": "<p>\"Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.\"<\/p>",
+            "text_size": 6,
+            "text_style": "font-body",
+            "reg_text": true,
+            "button_text": "-Name of Reviewer",
+            "btn_size": 2,
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false
           }
         }
       },
       "block_order": [
-        "image_kK9eJF",
-        "image_mBiawm",
-        "image_AhFh9K"
-      ],
-      "disabled": true,
-      "custom_css": [
-        ".hero__image {display: none;}",
-        ".slideshow .hero__content__wrapper {padding: 0;}"
+        "text_slide_XyzJy4",
+        "text_slide_W4t76J",
+        "text_slide_HLtc84"
       ],
       "settings": {
+        "text_width": "wrapper--narrow",
         "height": "screen-height-one-third",
-        "mobile_height": "screen-height-one-third--mobile",
+        "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
-        "transition": "slide",
-        "show_arrows": true,
-        "autoplay": false,
-        "autoplay_speed": 8
+        "text_alignment": "text-center",
+        "bg_color": "#000000",
+        "color": "#ffffff",
+        "sub_color": "#00ad2d",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "section_rich_text_mAEfrd": {
@@ -632,12 +501,11 @@
     "main",
     "section_video_FYBKW8",
     "vm_text_slider_wFfQLi",
-    "section_slideshow_69Gkbk",
     "section_highlights_EmCUMF",
     "section_rich_text_KjwWhd",
     "section_double_static_vm_4aHUtL",
     "section_double_static_vm_8DxTF4",
-    "section_slideshow_F6MaRE",
+    "vm_text_slider_3Q9fmB",
     "section_rich_text_mAEfrd",
     "section_before_after_q3KGGj",
     "section_before_after_yD7FLe",
