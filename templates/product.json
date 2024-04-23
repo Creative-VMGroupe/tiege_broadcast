@@ -170,7 +170,8 @@
         ".accordion__title {font-weight: bold;}",
         ".accordion {border: none;}",
         ".select__fieldset > .radio__legend {display: none;}",
-        ".rc-widget {padding-top: 30px;}"
+        ".rc-widget {padding-top: 30px;}",
+        ".rc-template__radio-group .rc-radio .rc-radio__label {display: flex !important; flex-direction: row-reverse !important;}"
       ],
       "settings": {
         "product_sticky_enable": true,
