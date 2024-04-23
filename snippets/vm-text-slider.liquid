@@ -1,8 +1,8 @@
 {%- comment -%} 
-          
-                                    "enable_slider" is used for "text-slide" blocks with "Optional image" added and make the entire Image & text block a single slide.
-                                    "enable_text_slider" is used for "text-slide" blocks without "Optional image" added. Then we only create a slider for the text blocks and the images are static. 
-           
+                
+                                          "enable_slider" is used for "text-slide" blocks with "Optional image" added and make the entire Image & text block a single slide.
+                                          "enable_text_slider" is used for "text-slide" blocks without "Optional image" added. Then we only create a slider for the text blocks and the images are static. 
+                 
 {%- endcomment -%}
 
 {%- liquid
@@ -41,6 +41,10 @@
     unless bg_color == 'rgba(0,0,0,0)' or bg_color == blank
       echo '--bg: ' | append: bg_color | append: ';'
       echo '--bg-transparent: ' | append: bg_color_transparent | append: ';'
+    endunless
+
+    unless sub_color == 'rgba(0,0,0,0)' or sub_color == blank
+      echo '--sub-color: ' | append: sub_color | append: ';'
     endunless
 
     unless text_color == 'rgba(0,0,0,0)' or text_color == blank
