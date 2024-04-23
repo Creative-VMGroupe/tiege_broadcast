@@ -25767,7 +25767,7 @@ div.rc_popup {
   padding: 10px 32px;
 }
 .product-quick-add__form .rc-template__radio-group .rc-radio .rc-radio__label {
-  flex-direction: row !important;
+  flex-direction: row-reverse !important;
   position: absolute;
   font-size: 14px;
   right: 2px;
