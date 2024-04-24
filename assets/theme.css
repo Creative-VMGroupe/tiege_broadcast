@@ -26085,6 +26085,12 @@ text-transform: uppercase;
     display: flex !important;
     flex-direction: column !important;
   }
+  .highlights__items--mobile:nth-child(even) {
+    background-color: #f7f7f7 !important;
+  }
+  .highlights__items--mobile:nth-child(odd) {
+    background-color: white !important;
+  }
 }
 /*Text Slider*/
 .grid--mobile-slider .grid-item.text-slider__slide-custom {
