@@ -231,7 +231,7 @@
       ],
       "custom_css": [
         ".hero__content {display: grid; grid-template-columns: 1fr 1fr;}",
-        "p:nth-child(-n + 2) {text-decoration: underline;}"
+        ".hero__subheading {text-decoration: underline;}"
       ],
       "settings": {
         "width": "wrapper--narrow",
