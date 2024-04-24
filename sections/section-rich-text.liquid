@@ -28,7 +28,7 @@
 
   {% if section.settings.image_1 != blank %} 
   <figure>
-    <img src='{{ section.settings.image_1 }}'/>
+    <img src='{{ section.settings.image_1 | image_url }}' style='width: 100px; height: 100px'/>
   </figure>  
   {% endif %}
   {%- if section.blocks.size > 0 -%}
