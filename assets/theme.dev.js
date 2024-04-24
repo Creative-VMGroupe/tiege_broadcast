@@ -13879,11 +13879,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const levelGuideBtn = document.getElementById('level-guide-btn');
     console.log(levelGuideBtn); // Make sure to close the log statement with a semicolon
    
-    if (levelGuideBtn) {
+    
         levelGuideBtn.addEventListener('click', () => {
            console.log('Clicked'); // Make sure to close the log statement with a semicolon
             const levelGuidePopUp = document.getElementById('level-guide-pop-up');
             levelGuidePopUp.click();
         });
-    }
+    
 });
