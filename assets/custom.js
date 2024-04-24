@@ -90,7 +90,9 @@ document.addEventListener('click', function(event) {
     if (event.target && event.target.id === 'levelGuideBtn') {
         console.log('Clicked');
         const levelGuidePopUp = document.getElementById('level-guide-pop-up');
-        if (levelGuidePopUp) {
+      console.log(levelGuidePopUp);  
+      if (levelGuidePopUp) {
+          console.log('If');
             levelGuidePopUp.click();
         } else {
             console.log('levelGuidePopUp not found');
