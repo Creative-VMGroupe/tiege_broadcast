@@ -20,9 +20,6 @@
       echo '--sub-color: ' | append: sub_color | append: ';'
     endunless
 
-    {% unless heading_color == 'rgba(0,0,0,0)' or heading_color == blank %}
-       --sub-color: {{ heading_color }}
-    {%- endunless -%}
     {%- unless bg_color == 'rgba(0,0,0,0)' or bg_color == blank -%}
       --bg: {{ bg_color }};
     {%- endunless -%}
@@ -32,6 +29,9 @@
     {%- endunless -%}
   }
   .section-before-after {
+    {% unless heading_color == 'rgba(0,0,0,0)' or heading_color == blank %}
+       --sub-color: {{ heading_color }}
+    {%- endunless -%}
     color: var(--sub-color)
   }
 {%- endstyle -%}
