@@ -26004,7 +26004,7 @@ body.grid-classic.has-line-design .grid--mobile-slider-custom {
   right: auto;
   bottom: 155px;
 }
-.grid-item-custom .btn__outer .btn__plus, 
+.grid-item-custom .btn__outer .btn__text, 
 .grid-item-custom .btn__outer .btn__loader, 
 .grid-item-custom .btn__outer .btn__added{
   display: none;
