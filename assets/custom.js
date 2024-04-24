@@ -14,6 +14,13 @@
   var delta = 5;
   var navbarHeight = $(".header__wrapper").outerHeight();
 
+$(document).ready(function() {
+  console.log(window.location.href.indexOf("products") > -1);
+    // Modify the opacity of the specified class to 1
+    $('body:has(.main-content > .shopify-section.section-overlay-header:first-of-type) [data-header-transparent]:not(.meganav--visible):not(.js__header__stuck) .header__logo--has-transparent .logo__img--color').css('opacity', '1');
+});
+
+  
   $(window).scroll(function (event) {
     didScroll = true;
   });
