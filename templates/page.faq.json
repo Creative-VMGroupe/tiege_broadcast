@@ -130,7 +130,7 @@
         ".wrapper--full-padded {padding: 0;}",
         ".highlights__items [data-aos-delay=\"450\"] {flex: 1; max-height: 350px;}",
         ".highlights__items [data-aos-delay=\"600\"] {flex: 1; max-height: 350px;}",
-        ".highlights__item__content {max-width: 70%}"
+        ".highlights__item__content {max-width: 70%;}"
       ],
       "settings": {
         "style": "rectangle",
@@ -141,7 +141,7 @@
         "mobile_height": "screen-height-one-half--mobile",
         "heading": "",
         "heading_position": "text-center",
-        "heading_size": 7,
+        "heading_size": 5,
         "text_size": 3,
         "color": "",
         "bg_color": "#ffffff",
