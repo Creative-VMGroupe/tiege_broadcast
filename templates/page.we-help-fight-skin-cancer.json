@@ -150,6 +150,7 @@
         },
         "columns_E8eFyk": {
           "type": "columns",
+          "disabled": true,
           "settings": {
             "text": "<p><span style=\"text-decoration:underline\"><strong>42,610,590<\/strong><\/span><\/p><p><span style=\"text-decoration:underline\"><strong>$57,948<\/strong><\/span><\/p>",
             "text_columns": 2,
@@ -160,6 +161,7 @@
         },
         "columns_XeCcXJ": {
           "type": "columns",
+          "disabled": true,
           "settings": {
             "text": "<p>Days protecting guys from the sun's harmful UV rays<\/p><p>Dollars donated and counting<\/p>",
             "text_columns": 2,
@@ -180,6 +182,63 @@
         "bg_color": "",
         "color": "",
         "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "section_rich_text_W7bbeY": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_pw7Jn8": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "42,610,590",
+            "text_size": 5,
+            "padding_bottom": 16
+          }
+        },
+        "subheading_jc3H4e": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "$57,948",
+            "text_size": 5,
+            "padding_bottom": 16
+          }
+        },
+        "text_Uqj4Lp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Days protecting guys from the sun's harmful UV rays<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "text_ReYa4X": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Dollars donated and counting<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_pw7Jn8",
+        "subheading_jc3H4e",
+        "text_Uqj4Lp",
+        "text_ReYa4X"
+      ],
+      "custom_css": [
+        ".hero__content {display: grid; grid-template-columns: 1fr 1fr;}",
+        "p:nth-child(-n + 2) {text-decoration: underline;}"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-center",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
         "padding_bottom": 0
       }
     },
@@ -415,7 +474,7 @@
         "text_wtJwrY"
       ],
       "custom_css": [
-        ".hero__content:has(.hero__media) {padding-bottom: 0}"
+        ".hero__content:has(.hero__media) {padding-bottom: 0;}"
       ],
       "settings": {
         "width": "wrapper--narrow",
@@ -458,6 +517,7 @@
     "section_rich_text_QVtJ7U",
     "section_double_M3cHpz",
     "section_rich_text_ryAmny",
+    "section_rich_text_W7bbeY",
     "section_rich_text_8WGREr",
     "section_rich_text_XBBbBb",
     "section_text_row_4qA4id",
