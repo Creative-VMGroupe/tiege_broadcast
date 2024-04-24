@@ -26083,7 +26083,7 @@ text-transform: uppercase;
   }
   .highlights__items--mobile {
     display: flex !important;
-    flex-direction: columns !important;
+    flex-direction: column !important;
   }
 }
 /*Text Slider*/
