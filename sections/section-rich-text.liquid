@@ -27,6 +27,11 @@
   data-section-type="rich-text"
   {% if section.settings.image_1 != blank %} 
   style='position: relative'>
+ 
+  <figure class='rich-text__img__container'>
+    <img src='{{ section.settings.image_1 | image_url }}' class='rich-text__img'/>
+  </figure>  
+  
   {% endif %}
   
   {%- if section.blocks.size > 0 -%}
