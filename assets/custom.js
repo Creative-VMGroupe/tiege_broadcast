@@ -70,3 +70,20 @@ document.addEventListener("theme:quick-add:open", function (event) {
     window.ReChargeWidget.createWidget(config);
   }
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+        const levelGuideBtn = document.getElementById('levelGuideBtn');
+  const test = document.querySelector('.levelTest')
+  console.log(test)
+        console.log(levelGuideBtn);
+        console.log('Working');
+        
+        if (levelGuideBtn) {
+            levelGuideBtn.addEventListener('click', () => {
+                console.log('Clicked');
+                const levelGuidePopUp = document.getElementById('level-guide-pop-up');
+                levelGuidePopUp.click();
+            });
+        }
+    });
