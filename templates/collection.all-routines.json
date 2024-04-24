@@ -45,7 +45,7 @@
             "featured_text": "",
             "featured_button_text": "",
             "featured_button_link": "",
-            "text_under_img": "Lorem ipsum dolor sit amet, consetetur sadipscing",
+            "text_under_img": "A Simplified Skincare Routine For Men",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--outline",
@@ -214,7 +214,7 @@
       ],
       "settings": {
         "layout": "is-reversed",
-        "height": "screen-height-one-third",
+        "height": "screen-height-two-thirds",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/Mask_Group_3.png",
