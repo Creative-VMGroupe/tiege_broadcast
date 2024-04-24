@@ -74,8 +74,8 @@ document.addEventListener("theme:quick-add:open", function (event) {
 
 document.addEventListener('DOMContentLoaded', function () {
         const levelGuideBtn = document.getElementById('levelGuideBtn');
-  const test = document.querySelector('.levelTest')
-  console.log(test)
+  const test = document.querySelector('.levelTest');
+  console.log(test);
         console.log(levelGuideBtn);
         console.log('Working');
         
@@ -88,5 +88,5 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     
 if (document.readyState === 'complete') {
-  console.log('Complete')
+  console.log('Complete');
 }
