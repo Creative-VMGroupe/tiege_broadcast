@@ -13876,7 +13876,8 @@
 
 })(themeVendor.ScrollLock, themeVendor.themeAddresses, themeVendor.themeCurrency, themeVendor.Rellax, themeVendor.Flickity, themeVendor.FlickityFade, themeVendor.themeImages);
 document.addEventListener('DOMContentLoaded', function () {
-  const levelGuideBtn = document.getElementById('level-guide-btn')
+  const levelGuideBtn = document.getElementById('level-guide-btn
+                                                console.log('Working')
   if(levelGuideBtn) {
     
       levelGuideBtn.addEventListener('click', ()=> {
