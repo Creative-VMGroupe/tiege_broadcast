@@ -12,7 +12,7 @@
 *
 */
 
-
+setTimeout(function() {
     document.addEventListener('DOMContentLoaded', function () {
         const levelGuideBtn = document.getElementById('level-guide-btn');
         console.log(levelGuideBtn);
@@ -26,7 +26,7 @@
             });
         }
     });
-
+}, 2500);
 
 
 (function (scrollLock, themeAddresses, themeCurrency, Rellax, Flickity, FlickityFade, themeImages) {
