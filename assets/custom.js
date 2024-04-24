@@ -18,15 +18,6 @@
     didScroll = true;
   });
 
-document.addEventListener("DOMContentLoaded", (event) => {
-  if(window.location.href.indexOf("products") > -1) {
-  console.log(window.location.href.indexOf("products") > -1);
-
-    
-  }
-  
-
-  
   setInterval(function () {
     if (didScroll) {
       hasScrolled();
@@ -36,21 +27,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   function hasScrolled() {
     var st = $(this).scrollTop();
-    if (Math.abs(lastScrollTop - st) <= delta) return 
-    if (st > lastScrollTop && st > navbarHeight ) {
-      console.log(window.location.href.indexOf("products") > -1)
+    if (Math.abs(lastScrollTop - st) <= delta) return;
+    if (st > lastScrollTop && st > navbarHeight) {
       $(".header__wrapper")
         .removeClass("js__header__stuck")
         .addClass("aos-animate");
-    } else if (st === 0 ) {
-      
-        
-      
+    } else if (st === 0) {
       $(".header__wrapper")
         .removeClass("js__header__stuck")
-        .addClass("aos-animate");  
-      
-      
+        .addClass("aos-animate");
     } else {
       if (st + $(window).height() < $(document).height()) {
         $(".header__wrapper")
@@ -73,7 +58,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 document.addEventListener("theme:quick-add:open", function (event) {
   let openedModals = document.querySelectorAll(".product-quick-add");
-  
   const currentModal = openedModals[openedModals.length - 1];
   const config = {
     productId: currentModal.dataset.productId,
@@ -86,31 +70,3 @@ document.addEventListener("theme:quick-add:open", function (event) {
     window.ReChargeWidget.createWidget(config);
   }
 });
-
-
-// document.addEventListener('DOMContentLoaded', function () {
-//     const levelGuideBtn = document.getElementById('levelGuideBtn');
-//     console.log(levelGuideBtn);
-//     console.log('Working');
-    
-//     if (levelGuideBtn) {
-//         levelGuideBtn.addEventListener('click', () => {
-//             console.log('Clicked');
-//             const levelGuidePopUp = document.getElementById('level-guide-pop-up');
-//             levelGuidePopUp.click();
-//         });
-//     }
-// });
-document.addEventListener('click', function(event) {
-    if (event.target && event.target.id === 'levelGuideBtn') {
-        console.log('Clicked');
-        const levelGuidePopUp = document.getElementById('level-guide-pop-up');
-      if (levelGuidePopUp) {
-            levelGuidePopUp.click();
-        } else {
-            console.log('levelGuidePopUp not found');
-        }
-    }
-});
-
-
