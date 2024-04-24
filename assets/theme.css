@@ -26107,3 +26107,6 @@ text-transform: uppercase;
 .two-columns__box {
   max-width: 200px;
 }
+.two-columns__title {
+  text-decoration: underline;
+}
