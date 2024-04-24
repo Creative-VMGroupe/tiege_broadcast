@@ -186,9 +186,9 @@
         "text_slide_7rbw3L": {
           "type": "text-slide",
           "settings": {
-            "subheading": "",
+            "subheading": "★★★★★",
             "subheading_size": 3,
-            "sub_letter_spacing": 0,
+            "sub_letter_spacing": 5,
             "title": "Proof",
             "heading_size": 7,
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
@@ -208,7 +208,7 @@
           "settings": {
             "subheading": "★★★★★",
             "subheading_size": 3,
-            "sub_letter_spacing": 0,
+            "sub_letter_spacing": 5,
             "title": "Willow Bark Test",
             "heading_size": 7,
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
