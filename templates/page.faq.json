@@ -66,6 +66,7 @@
           "type": "highlight",
           "settings": {
             "heading": "Subscription Management",
+            "subheading": "Details about billing, loyalty rewards, and member benefits!",
             "url": "shopify:\/\/pages\/subscription-management",
             "color": "",
             "bg_color": "#ffffff",
@@ -76,6 +77,7 @@
           "type": "highlight",
           "settings": {
             "heading": "Product Information",
+            "subheading": "Find the right products to fit your needs!",
             "url": "shopify:\/\/pages\/product-information",
             "color": "",
             "bg_color": "#f7f9fa",
@@ -86,6 +88,7 @@
           "type": "highlight",
           "settings": {
             "heading": "Customization",
+            "subheading": "Find out how to get what you want, when you want it!",
             "url": "shopify:\/\/pages\/customization",
             "color": "",
             "bg_color": "#ffffff",
@@ -96,6 +99,7 @@
           "type": "highlight",
           "settings": {
             "heading": "Using Tiege",
+            "subheading": "Helpful tips for using our products!",
             "url": "shopify:\/\/pages\/using-tiege",
             "color": "",
             "bg_color": "#ffffff",
@@ -106,6 +110,7 @@
           "type": "highlight",
           "settings": {
             "heading": "Shipping",
+            "subheading": "Answers to our most common shipping questions!",
             "url": "shopify:\/\/pages\/shipping-1",
             "color": "",
             "bg_color": "#f7f7f7",
