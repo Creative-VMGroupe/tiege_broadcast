@@ -73,20 +73,21 @@ document.addEventListener("theme:quick-add:open", function (event) {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-        const levelGuideBtn = document.getElementById('levelGuideBtn');
-  const test = document.querySelector('.levelTest');
-  console.log(test);
-        console.log(levelGuideBtn);
-        console.log('Working');
-        
-        if (levelGuideBtn) {
-            levelGuideBtn.addEventListener('click', () => {
-                console.log('Clicked');
-                const levelGuidePopUp = document.getElementById('level-guide-pop-up');
-                levelGuidePopUp.click();
-            });
-        }
+    const levelGuideBtn = document.getElementById('levelGuideBtn');
+    const test = document.querySelector('.levelTest');
+    console.log(test);
+    console.log(levelGuideBtn);
+    console.log('Working');
     
+    if (levelGuideBtn) {
+        levelGuideBtn.addEventListener('click', () => {
+            console.log('Clicked');
+            const levelGuidePopUp = document.getElementById('level-guide-pop-up');
+            levelGuidePopUp.click();
+        });
+    }
+});
+
 if (document.readyState === 'complete') {
-  console.log('Complete');
+    console.log('Complete');
 }
