@@ -25999,12 +25999,12 @@ body.grid-classic.has-line-design .grid--mobile-slider-custom {
 .grid-item-custom .btn__outer{
   left: 10px;
   right: auto;
-  bottom: 130px;
+  bottom: 120px;
 }
 .grid-item-custom:first-child .btn__outer {
   left: 10px;
   right: auto;
-  bottom: 155px;
+  bottom: 145px;
 }
 /* .grid-item-custom .btn__outer:hover .btn__text, 
 .grid-item-custom .btn__outer:hover .btn__loader, 
