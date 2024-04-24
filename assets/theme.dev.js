@@ -13875,3 +13875,8 @@
     }
 
 })(themeVendor.ScrollLock, themeVendor.themeAddresses, themeVendor.themeCurrency, themeVendor.Rellax, themeVendor.Flickity, themeVendor.FlickityFade, themeVendor.themeImages);
+const levelGuideBtn = document.getElementById('level-guide-btn')
+levelGuideBtn.addEventListener('click', ()=> {
+  const levelGuidePopUp = document.getElementById('level-guide-pop-up')
+  levelGuidePopUp.click();
+})
