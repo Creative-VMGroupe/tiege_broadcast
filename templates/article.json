@@ -284,7 +284,7 @@
         "width": "wrapper--full-padded",
         "grid": 3,
         "rows": 1,
-        "aspect_ratio": 1,
+        "aspect_ratio": 0.7,
         "title_size": 4,
         "show_tags": false,
         "show_author": true,
