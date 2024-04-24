@@ -31,7 +31,7 @@
   }
   .section-before-after {
     {% unless heading_color == 'rgba(0,0,0,0)' or heading_color == blank %}
-       --sub-color: {{ heading_color }}
+       --sub-color: {{ section.settings.heading_color }}
     {%- endunless -%}
     color: var(--sub-color)
   }
