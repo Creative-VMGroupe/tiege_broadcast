@@ -66,7 +66,7 @@
     {%- endif -%}
 
     {%- if section.blocks.size > 0 -%}
-      <div class="{{ items_classes }}">
+      <div class="{{ items_classes }} highlights__items--mobile">
         {%- for block in section.blocks -%}
           {%- liquid
             assign image = block.settings.image
