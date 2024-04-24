@@ -320,6 +320,9 @@
         "image_kDw4qU",
         "text_kaq8KH"
       ],
+      "custom_css": [
+        ".hero__content:has(.hero__media) {padding-bottom: 0;}"
+      ],
       "settings": {
         "width": "wrapper--narrow",
         "align_text": "text-center",
@@ -346,7 +349,8 @@
         "instafeed_app_block_Fpe7BM"
       ],
       "custom_css": [
-
+        "#insta-feed {background-color: #f7f7f7; padding-top: 60px;}",
+        "#insta-feed h2 {margin-top: 0 !important;}"
       ],
       "settings": {
         "include_margins": false
