@@ -30,8 +30,8 @@
   {% endif %}
   
   {% if section.settings.image_1 != blank %} 
-  <figure>
-    <img src='{{ section.settings.image_1 | image_url }}' style='width: 100px; height: 100px'/>
+  <figure class='rich-text__img__container'>
+    <img src='{{ section.settings.image_1 | image_url }}' class='rich-text__img'/>
   </figure>  
   {% endif %}
   {%- if section.blocks.size > 0 -%}
