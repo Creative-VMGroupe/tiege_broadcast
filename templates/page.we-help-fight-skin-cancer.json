@@ -248,8 +248,7 @@
         "2_columns_N4pL7z"
       ],
       "custom_css": [
-        ".hero__content {display: grid; grid-template-columns: 1fr 1fr;}",
-        ".hero__subheading {text-decoration: underline;}"
+
       ],
       "settings": {
         "width": "wrapper--narrow",
