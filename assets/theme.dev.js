@@ -12,8 +12,7 @@
 *
 */
 
-setTimeout(function() {
-    document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
         const levelGuideBtn = document.getElementById('level-guide-btn');
         console.log(levelGuideBtn);
         console.log('Working');
@@ -26,7 +25,7 @@ setTimeout(function() {
             });
         }
     });
-}, 2500);
+
 
 
 (function (scrollLock, themeAddresses, themeCurrency, Rellax, Flickity, FlickityFade, themeImages) {
