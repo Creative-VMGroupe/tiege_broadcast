@@ -185,6 +185,14 @@
     "section_rich_text_xYMXGY": {
       "type": "section-rich-text",
       "blocks": {
+        "image_eeGWDX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tiege_icon_del.png",
+            "image_width": 20,
+            "padding_bottom": 16
+          }
+        },
         "heading_kCi8Xw": {
           "type": "heading",
           "settings": {
@@ -196,29 +204,17 @@
         "text_bQLDGm": {
           "type": "text",
           "settings": {
-            "text": "<p>It's not complicated, but we understand you may want to do a bit more digging and see the full picture.<\/p>",
+            "text": "<p>Peptides are highly effective, multi-functional, and very stable and safe. It is proven to be the best way to improve the function and appearance of your skin--inside and out.<\/p>",
             "text_size": 3,
             "text_style": "font-body",
-            "padding_bottom": 16
-          }
-        },
-        "buttons_dRX4wV": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "View the full guide",
-            "button_url": "shopify:\/\/pages\/level-guide",
-            "button_type": "btn--secondary",
-            "button_size": "btn--large",
-            "button_style": "btn--solid",
-            "show_arrow": false,
             "padding_bottom": 16
           }
         }
       },
       "block_order": [
+        "image_eeGWDX",
         "heading_kCi8Xw",
-        "text_bQLDGm",
-        "buttons_dRX4wV"
+        "text_bQLDGm"
       ],
       "settings": {
         "width": "wrapper--narrow",
@@ -226,7 +222,7 @@
         "bg_color": "#ffffff",
         "color": "#000000",
         "padding_top": 60,
-        "padding_bottom": 78
+        "padding_bottom": 60
       }
     },
     "section_hero_tTCULG": {
