@@ -26085,10 +26085,10 @@ text-transform: uppercase;
     display: flex !important;
     flex-direction: column !important;
   }
-  .highlights__items--mobile:nth-child(even) {
+  .highlights__items--mobile .highlights__item:nth-child(even) {
     background-color: #f7f7f7 !important;
   }
-  .highlights__items--mobile:nth-child(odd) {
+  .highlights__items--mobile .highlights__item:nth-child(odd) {
     background-color: white !important;
   }
 }
