@@ -182,6 +182,53 @@
         "padding_bottom": 50
       }
     },
+    "section_rich_text_xYMXGY": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_kCi8Xw": {
+          "type": "heading",
+          "settings": {
+            "title": "Tiege Hanley is made with revolutionary, all-natural peptide technology.",
+            "text_size": 7,
+            "padding_bottom": 16
+          }
+        },
+        "text_bQLDGm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>It's not complicated, but we understand you may want to do a bit more digging and see the full picture.<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_dRX4wV": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "View the full guide",
+            "button_url": "shopify:\/\/pages\/level-guide",
+            "button_type": "btn--secondary",
+            "button_size": "btn--large",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_kCi8Xw",
+        "text_bQLDGm",
+        "buttons_dRX4wV"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-center",
+        "bg_color": "#ffffff",
+        "color": "#000000",
+        "padding_top": 60,
+        "padding_bottom": 78
+      }
+    },
     "section_hero_tTCULG": {
       "type": "section-hero",
       "blocks": {
@@ -218,6 +265,7 @@
         "text_p6pXEy",
         "button_dDrGyT"
       ],
+      "disabled": true,
       "settings": {
         "height": "screen-height-one-half",
         "width": "wrapper--full",
@@ -911,8 +959,8 @@
         "align_text": "text-center",
         "bg_color": "#000000",
         "color": "#ffffff",
-        "padding_top": 80,
-        "padding_bottom": 78
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "section_double_yp4ajU": {
@@ -1031,6 +1079,7 @@
     "section_video_V7NQ8N",
     "section_double_static_vm_YWUYXa",
     "section_text_with_products_h3WNiQ",
+    "section_rich_text_xYMXGY",
     "section_hero_tTCULG",
     "section_collection_new_JPPdmt",
     "section_collection_JXEkNP",
