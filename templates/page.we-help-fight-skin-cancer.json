@@ -190,6 +190,7 @@
       "blocks": {
         "subheading_pw7Jn8": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "subheading": "42,610,590",
             "text_size": 5,
@@ -198,6 +199,7 @@
         },
         "subheading_jc3H4e": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "subheading": "$57,948",
             "text_size": 5,
@@ -206,6 +208,7 @@
         },
         "text_Uqj4Lp": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Days protecting guys from the sun's harmful UV rays<\/p>",
             "text_size": 4,
@@ -215,10 +218,24 @@
         },
         "text_ReYa4X": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Dollars donated and counting<\/p>",
             "text_size": 4,
             "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "2_columns_N4pL7z": {
+          "type": "2Columns",
+          "settings": {
+            "title1": "Rich text",
+            "heading_size": 8,
+            "text1": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "title2": "Rich text",
+            "text2": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
             "padding_bottom": 16
           }
         }
@@ -227,7 +244,8 @@
         "subheading_pw7Jn8",
         "subheading_jc3H4e",
         "text_Uqj4Lp",
-        "text_ReYa4X"
+        "text_ReYa4X",
+        "2_columns_N4pL7z"
       ],
       "custom_css": [
         ".hero__content {display: grid; grid-template-columns: 1fr 1fr;}",
