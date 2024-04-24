@@ -190,7 +190,7 @@
       ],
       "settings": {
         "layout": "is-reversed",
-        "height": "screen-height-one-third",
+        "height": "screen-height-two-thirds",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/Mask_Group_3.png",
