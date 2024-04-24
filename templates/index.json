@@ -217,7 +217,7 @@
         "text_bQLDGm"
       ],
       "custom_css": [
-        ".hero__content:has(.hero__media) {padding-bottom: 0}"
+        ".hero__content:has(.hero__media) {padding-bottom: 0;}"
       ],
       "settings": {
         "image_1": "shopify:\/\/shop_images\/AdobeStock_403007779.jpg",
