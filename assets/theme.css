@@ -25794,6 +25794,7 @@ div.rc_popup {
   padding: 10px 32px;
 }
 .product-quick-add__form .rc-template__radio-group .rc-radio .rc-radio__label {
+  padding-left: 20px;
   position: absolute;
   font-size: 14px;
   right: 2px;
