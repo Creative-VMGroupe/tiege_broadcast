@@ -27,14 +27,14 @@
 
   function hasScrolled() {
     var st = $(this).scrollTop();
+    const currentUrl = this.location.path();
+    const urlContainsFoo = currentUrl.includes('products')
     if (Math.abs(lastScrollTop - st) <= delta) return;
     if (st > lastScrollTop && st > navbarHeight ) {
-      if(window.location.href.indexOf("/products") === -1) {
+      console.log(urlContainsFoo)
       $(".header__wrapper")
         .removeClass("js__header__stuck")
-        .addClass("aos-animate");  
-      }
-      
+        .addClass("aos-animate");
     } else if (st === 0 ) {
       $(".header__wrapper")
         .removeClass("js__header__stuck")
