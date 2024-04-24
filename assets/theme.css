@@ -26081,6 +26081,10 @@ text-transform: uppercase;
   .highlights-compact__container-vm .highlights__items--mobile-slider .highlights__item {
     width: 100% !important;
   }
+  .highlights__items--mobile {
+    display: flex !important;
+    flex-direction: columns !important;
+  }
 }
 /*Text Slider*/
 .grid--mobile-slider .grid-item.text-slider__slide-custom {
