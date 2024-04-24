@@ -29,11 +29,12 @@
     var st = $(this).scrollTop();
     if (Math.abs(lastScrollTop - st) <= delta) return;
     if (st > lastScrollTop && st > navbarHeight ) {
-      console.log(window.location.href.indexOf("products") > -1)
+      
       $(".header__wrapper")
         .removeClass("js__header__stuck")
         .addClass("aos-animate");
     } else if (st === 0 ) {
+      console.log(window.location.href.indexOf("products") > -1)
       $(".header__wrapper")
         .removeClass("js__header__stuck")
         .addClass("aos-animate");
