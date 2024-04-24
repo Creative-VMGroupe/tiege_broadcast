@@ -26146,4 +26146,7 @@ text-transform: uppercase;
 .mobile__menu__dropdown.sliderule__panel.is-visible .mobile__menu__dropdown.sliderule__panel.is-visible {
   padding-left: 32px;
 }
+.mobile__menu__dropdown.sliderule__panel.is-visible .mobile__menu__dropdown.sliderule__panel.is-visible .sliderow__title{
+  color: gray;
+}
   }
