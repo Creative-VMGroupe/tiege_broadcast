@@ -38,6 +38,21 @@
           -%}
 
           {%- case block.type -%}
+            {% when '2columns'%}
+            <div>
+            <div>
+            <div>
+            <p></p>
+            <p></p>
+            </div>
+            <div>
+            <p></p>
+            <p></p>
+            </div>
+            </div>
+            
+            
+            </div>
             {%- when 'heading' -%}
               {%- if block.settings.title != blank -%}
                 {%- assign animation_order = animation_order | plus: 1 -%}
