@@ -19,11 +19,15 @@
   });
 
 document.addEventListener("DOMContentLoaded", (event) => {
+  if(window.location.href.indexOf("products") > -1) {
   console.log(window.location.href.indexOf("products") > -1);
-  $(".header__wrapper")
+$(".header__wrapper")
         .removeClass("js__header__stuck")
         .addClass("aos-animate");
 });
+    
+  }
+  
 
   
   setInterval(function () {
