@@ -26093,5 +26093,6 @@ text-transform: uppercase;
 
 /*Misc*/
 .ptb-0 {
-  padding: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
