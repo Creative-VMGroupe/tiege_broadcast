@@ -25,12 +25,10 @@
   class="index-rte section-padding"
   data-section-id="{{ section.id }}"
   data-section-type="rich-text"
-  {% unless section.settings.image_1 == blank %} 
+  {% if section.settings.image_1 != blank %} 
   style='position: relative'>
- 
-    
   
-  {% endunless %}
+  {% endif %}
   
   {%- if section.blocks.size > 0 -%}
     
