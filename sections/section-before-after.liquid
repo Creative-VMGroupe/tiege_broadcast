@@ -2,7 +2,7 @@
   assign animation_order = 0
   assign animation_anchor = '#SectionBeforeAfter--' | append: section.id
   assign aspect_ratio = 1 | divided_by: section.settings.aspect_ratio
-   assign heading_color = section.settings.heading_color
+  assign heading_color = section.settings.heading_color
   assign bg_color = section.settings.bg_color
   assign text_color = section.settings.color
   
@@ -25,14 +25,16 @@
       --bg: {{ bg_color }};
     {%- endunless -%}
 
+    {% unless heading_color == 'rgba(0,0,0,0)' or heading_color == blank %}
+       --sub-color: {{ heading_color }}
+    {%- endunless -%}
+    
     {%- unless text_color == 'rgba(0,0,0,0)' or text_color == blank -%}
       --text: {{ text_color }};
     {%- endunless -%}
   }
   .section-before-after {
-    {% unless heading_color == 'rgba(0,0,0,0)' or heading_color == blank %}
-       --sub-color: {{ section.settings.heading_color }}
-    {%- endunless -%}
+
     color: var(--sub-color)
   }
 {%- endstyle -%}
