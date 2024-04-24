@@ -25999,10 +25999,10 @@ body.grid-classic.has-line-design .grid--mobile-slider-custom {
   right: auto;
   bottom: 130px;
 }
-.product-upsell__content .grid-item-custom .btn__outer:first-child{
+.grid-item-custom .btn__outer:first-child{
   left: 10px;
   right: auto;
-  bottom: 140px;
+  bottom: 160px;
 }
 .grid-item-custom .btn__outer .btn__plus {
   left: 4px;
