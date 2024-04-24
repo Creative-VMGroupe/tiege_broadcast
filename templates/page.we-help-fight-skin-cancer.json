@@ -405,7 +405,7 @@
             "text": "<p>[1] <a href=\"https:\/\/blog.skincancer.org\/2018\/05\/30\/men-on-the-hook\/\" title=\"Men on the Hook\">\"Men on the Hook.\"<\/a> - The Skin Cancer Foundation Annual Journal - 2018<\/p><p>[2] Graph: Data after vertical dotted line are projected rates. Surveillance, Epidemiology, and End Results (SEER) Program, National Cancer Institute (http:\/\/www.seer.cancer.gov). SEER 9 Incidence Database (1973–2010). November 2011 submission. Nordpred software used to create age-period-cohort regression models to calculate projections.<\/p>",
             "text_size": 3,
             "text_style": "font-body",
-            "padding_bottom": 16
+            "padding_bottom": 0
           }
         }
       },
@@ -413,6 +413,9 @@
         "heading_e8Mxbf",
         "image_Bnzx8M",
         "text_wtJwrY"
+      ],
+      "custom_css": [
+        ".hero__content:has(.hero__media) {padding-bottom: 0}"
       ],
       "settings": {
         "width": "wrapper--narrow",
