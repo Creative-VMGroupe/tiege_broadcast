@@ -104,6 +104,69 @@
         "padding_bottom": 0
       }
     },
+    "section_highlights_tqjrWA": {
+      "type": "section-highlights",
+      "blocks": {
+        "highlight_NRKmqD": {
+          "type": "highlight",
+          "settings": {
+            "heading": "",
+            "subheading": "",
+            "url": "",
+            "image": "shopify:\/\/shop_images\/rosemary-v1608581888105.png",
+            "color": "",
+            "bg_color": "#F0F0F0",
+            "border_color": ""
+          }
+        },
+        "highlight_J8f8Ug": {
+          "type": "highlight",
+          "settings": {
+            "heading": "",
+            "subheading": "",
+            "url": "",
+            "image": "shopify:\/\/shop_images\/willow-v1608581883683.png",
+            "color": "",
+            "bg_color": "#F0F0F0",
+            "border_color": ""
+          }
+        },
+        "highlight_iUyMhm": {
+          "type": "highlight",
+          "settings": {
+            "heading": "",
+            "subheading": "",
+            "url": "",
+            "image": "shopify:\/\/shop_images\/eucalyptus-v1608581874819.png",
+            "color": "",
+            "bg_color": "#F0F0F0",
+            "border_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "highlight_NRKmqD",
+        "highlight_J8f8Ug",
+        "highlight_iUyMhm"
+      ],
+      "settings": {
+        "style": "rectangle",
+        "grid": 3,
+        "compact": true,
+        "width": "wrapper--full-padded",
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "heading": "",
+        "heading_position": "text-center",
+        "heading_size": 8,
+        "text_size": 3,
+        "color": "",
+        "bg_color": "",
+        "layout_mobile": "slider",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_rich_text_GDUWCk": {
       "type": "section-rich-text",
       "blocks": {
@@ -322,6 +385,7 @@
   "order": [
     "main",
     "section_double_BCKiMQ",
+    "section_highlights_tqjrWA",
     "section_rich_text_GDUWCk",
     "section_reviews_6RY6Fc",
     "section_columns_zYbRC3",
