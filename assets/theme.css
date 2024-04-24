@@ -26150,6 +26150,18 @@ text-transform: uppercase;
   padding-bottom: 30px;
 }
 }
+/*Rich Text*/
+.rich-text__img__container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.rich-text__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 /*Mobile Menu*/
 @media (max-width: 479px) {
 .mobile__menu__dropdown.sliderule__panel.is-visible button.sliderow {
