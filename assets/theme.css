@@ -26105,5 +26105,5 @@ text-transform: uppercase;
   justify-content: space-between;
 }
 .two-columns__box {
-  
+  max-width: 200px;
 }
