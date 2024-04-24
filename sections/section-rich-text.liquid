@@ -32,9 +32,9 @@
   {%- if section.blocks.size > 0 -%}
     
   {%- if section.settings.image_1 != blank -%} 
-  <div class='rich-text__img__container'>
+  <figure class='rich-text__img__container'>
     <img src='{{ section.settings.image_1 | image_url }}' class='rich-text__img'/>
-  </div>  
+  </figure>  
   {%- endif -%}
     <div class="hero__content__wrapper {{ section.settings.align_text }} {{ section.settings.width }}">
       <div class="hero__content hero__content--compact" 
