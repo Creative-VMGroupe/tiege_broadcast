@@ -13616,6 +13616,7 @@ main-search .input-holder {
 
 .sale .new-price {
   color: var(--COLOR-TEXT-DARK);
+  font-size: calc(var(--font-2) * var(--FONT-ADJUST-BODY));
 }
 
 .new-price {
@@ -13631,6 +13632,7 @@ main-search .input-holder {
   text-decoration: line-through;
   color: var(--text-light);
   color: black;
+  font-size: calc(var(--font-2) * var(--FONT-ADJUST-BODY));
 }
 
 .no-results {
