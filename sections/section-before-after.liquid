@@ -43,11 +43,13 @@
   data-section-id="{{ section.id }}"
   data-section-type="before-after">
   <div class="{{ section.settings.width }}">
-    <div class="compare__body">
+    <div class="compare__body {% if section.settings.layout == 'is-reversed' %} brick__section--reversed{% endif %}">
       {%- if section.settings.heading != blank or section.settings.description != blank or button_html != blank -%}
         <div class="compare__content {% if section.settings.text_align_center == true %}
           text-center
-        {% endif %} plr-10-custom" >
+        {% endif %} 
+          {% if section.settings.layout == 'is-reversed' %} brick__block{% endif %}
+          plr-10-custom" >
           {%- if section.settings.heading != blank -%}
             {%- assign animation_order = animation_order | plus: 1 -%}
                     {%- liquid
@@ -88,7 +90,7 @@
         </div>
       {%- endif -%}
 
-      <div class="compare__images">
+      <div class="compare__images {% if section.settings.layout == 'is-reversed' %} brick__block{% endif %}">
         {%- render 'compare-images', image_1: section.settings.image_1, image_2: section.settings.image_2, image_position: section.settings.image_position, animation_anchor: animation_anchor, aspect_ratio: aspect_ratio, wrapper: section.settings.width -%}
       </div>
     </div>
