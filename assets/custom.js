@@ -86,4 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 levelGuidePopUp.click();
             });
         }
-    });
+    
+if (document.readyState === 'complete' {
+  console.log('Complete')
+}
