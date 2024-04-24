@@ -26110,3 +26110,10 @@ text-transform: uppercase;
 .two-columns__title {
   text-decoration: underline;
 }
+@media (max-width: 749px) {
+  .two-columns__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
