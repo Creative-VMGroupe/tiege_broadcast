@@ -26101,7 +26101,8 @@ text-transform: uppercase;
   
 }
 .2columns__wrapper {
-  
+  display: flex;
+  justify-content: space-between;
 }
 .2columns__box {
   
