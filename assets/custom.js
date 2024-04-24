@@ -27,7 +27,7 @@
 
   function hasScrolled() {
     var st = $(this).scrollTop();
-    if (Math.abs(lastScrollTop - st) <= delta) return console.log(window.location.href.indexOf("products") > -1);
+    if (Math.abs(lastScrollTop - st) <= delta) return 
     if (st > lastScrollTop && st > navbarHeight ) {
       console.log(window.location.href.indexOf("products") > -1)
       $(".header__wrapper")
