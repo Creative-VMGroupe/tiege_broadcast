@@ -10038,7 +10038,7 @@ body.has-header-transparent.has-first-section-overlay-header .header__backfill {
 }
 
 body.has-header-transparent .section-overlay-header .hero__content__wrapper {
-  padding-top: var(--header-height);
+  /* padding-top: var(--header-height); */
 }
 
 body.has-header-transparent
