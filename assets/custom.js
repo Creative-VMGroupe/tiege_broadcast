@@ -17,8 +17,8 @@
 $(document).ready(function() {
     // Modify the opacity of the specified class to 1
   if(window.location.href.indexOf("products") > -1) 
+    console.log(window.location.href.indexOf("products") > -1)
     
-
     $('body:has(.main-content > .shopify-section.section-overlay-header:first-of-type) [data-header-transparent]:not(.meganav--visible):not(.js__header__stuck) .header__logo--has-transparent .logo__img--color').css('opacity', '1');
 }
   });
