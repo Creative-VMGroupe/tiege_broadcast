@@ -26181,3 +26181,6 @@ text-transform: uppercase;
 .header__dropdown .hero__content p {
   margin:0;
 }
+.header__dropdown .hero__content h2 {
+  margin:0;
+}
