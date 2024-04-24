@@ -17723,7 +17723,6 @@ popout-select {
 
 .popout-list__option:hover {
   /* background-color: var(--hairline); */
-  color: var(--link-hover);
 }
 
 .popout-list__option--reset {
