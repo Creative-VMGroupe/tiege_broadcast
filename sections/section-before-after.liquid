@@ -66,14 +66,14 @@
           {%- if section.settings.heading != blank -%}
             {%- assign animation_order = animation_order | plus: 1 -%}
                     {%- liquid
-    
+          assign sub_letter_spacing = block.settings.sub_letter_spacing | prepend: 'sub-letter-spacing-'
           if section.settings.heading_size != blank
             assign heading_size = 'heading-size-' | append: section.settings.heading_size
           else
             assign heading_size = 'heading-size-6'
           endif
         -%}
-            <h2 class="h5 section__title {{ heading_size }}"
+            <h2 class="h5 section__title {{ heading_size }} {{ sub_letter_spacing }}"
               data-aos="hero"
               data-aos-order="{{ animation_order }}"
               data-aos-anchor="{{ animation_anchor }}">
