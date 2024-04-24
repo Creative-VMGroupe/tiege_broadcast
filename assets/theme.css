@@ -6764,7 +6764,7 @@ toggle-ellipsis {
 .drawer .cart__foot__inner {
   margin: 0 15px;
   padding: calc(var(--inner) - 2px) 0;
-  border-bottom: 2px solid lightgray!important;
+  border-top: 2px solid lightgray !important;
 }
 .drawer .cart__note {
   margin: 0;
@@ -6784,7 +6784,7 @@ toggle-ellipsis {
   position: relative;
   width: 100%;
   padding: var(--inner);
-  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
 .drawer__head h3 {
   margin: 0 0 -3px;
