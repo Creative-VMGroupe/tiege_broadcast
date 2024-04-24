@@ -35,7 +35,7 @@
         .addClass("aos-animate");
     } else if (st === 0 ) {
       if(window.location.href.indexOf("products") > -1) {
-        return
+        console.log(window.location.href.indexOf("products") > -1)
       } else {
       $(".header__wrapper")
         .removeClass("js__header__stuck")
