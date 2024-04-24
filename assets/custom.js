@@ -32,7 +32,7 @@
       $(".header__wrapper")
         .removeClass("js__header__stuck")
         .addClass("aos-animate");
-    } else if (st === 0) {
+    } else if (st === 0 && window.location.href.indexOf("/products") !== -1) {
       $(".header__wrapper")
         .removeClass("js__header__stuck")
         .addClass("aos-animate");
