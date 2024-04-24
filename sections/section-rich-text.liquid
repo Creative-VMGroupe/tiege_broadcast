@@ -25,9 +25,6 @@
   class="index-rte section-padding"
   data-section-id="{{ section.id }}"
   data-section-type="rich-text"
-  {% if section.settings.image_1 != blank%}
-  style='background-image: url("{{ section.settings.image_1 | image_url }}")'>
-  {% endif %}
   {%- if section.blocks.size > 0 -%}
     <div class="hero__content__wrapper {{ section.settings.align_text }} {{ section.settings.width }}">
       <div class="hero__content hero__content--compact">
