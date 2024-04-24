@@ -193,10 +193,11 @@
         "height": "screen-height-one-half",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/L2_TiegeHanley_Advanced_Routine_Hero.jpg",
         "image_width": "one-half",
         "text_alignment": "text-center",
         "reverse_blocks": false,
-        "bg_color": "",
+        "bg_color": "#f7f7f7",
         "color": "",
         "padding_top": 0,
         "padding_bottom": 0
