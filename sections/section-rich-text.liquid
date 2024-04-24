@@ -25,6 +25,12 @@
   class="index-rte section-padding"
   data-section-id="{{ section.id }}"
   data-section-type="rich-text">
+
+  {% if section.settings.image_1 != blank %} 
+  <figure>
+    <img src='{{ section.settings.image_1 }}'/>
+  </figure>  
+  {% endif %}
   {%- if section.blocks.size > 0 -%}
     <div class="hero__content__wrapper {{ section.settings.align_text }} {{ section.settings.width }}">
       <div class="hero__content hero__content--compact">
@@ -289,6 +295,12 @@
 {
   "name": "Rich text",
   "settings": [
+    {
+  "type": "image_picker",
+  "id": "image_1",
+  "label": "Image"
+},
+
     {
       "type": "header",
       "content": "Style"
