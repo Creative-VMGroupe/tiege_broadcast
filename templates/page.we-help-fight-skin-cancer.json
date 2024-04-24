@@ -153,7 +153,7 @@
         "heading_Qze6m9"
       ],
       "custom_css": [
-        ".hero__title {margin-bottom: 0}"
+        ".hero__title {margin-bottom: 0;}"
       ],
       "settings": {
         "width": "wrapper--narrow",
@@ -161,7 +161,7 @@
         "bg_color": "",
         "color": "",
         "padding_top": 60,
-        "padding_bottom": 0
+        "padding_bottom": 30
       }
     },
     "section_rich_text_W7bbeY": {
