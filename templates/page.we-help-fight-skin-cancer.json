@@ -147,34 +147,13 @@
             "text_size": 7,
             "padding_bottom": 50
           }
-        },
-        "columns_E8eFyk": {
-          "type": "columns",
-          "disabled": true,
-          "settings": {
-            "text": "<p><span style=\"text-decoration:underline\"><strong>42,610,590<\/strong><\/span><\/p><p><span style=\"text-decoration:underline\"><strong>$57,948<\/strong><\/span><\/p>",
-            "text_columns": 2,
-            "text_size": 6,
-            "text_style": "font-heading",
-            "padding_bottom": 16
-          }
-        },
-        "columns_XeCcXJ": {
-          "type": "columns",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Days protecting guys from the sun's harmful UV rays<\/p><p>Dollars donated and counting<\/p>",
-            "text_columns": 2,
-            "text_size": 3,
-            "text_style": "font-body",
-            "padding_bottom": 0
-          }
         }
       },
       "block_order": [
-        "heading_Qze6m9",
-        "columns_E8eFyk",
-        "columns_XeCcXJ"
+        "heading_Qze6m9"
+      ],
+      "custom_css": [
+        ".hero__title {margin-bottom: 0}"
       ],
       "settings": {
         "width": "wrapper--narrow",
