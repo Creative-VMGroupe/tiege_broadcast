@@ -181,6 +181,57 @@
         "padding_bottom": 50
       }
     },
+    "section_hero_tTCULG": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_9NdwQF": {
+          "type": "heading",
+          "settings": {
+            "title": "Tiege Hanley is made with revolutionary, all-natural peptide technology.",
+            "heading_size": 7
+          }
+        },
+        "text_p6pXEy": {
+          "type": "text",
+          "settings": {
+            "description": "Peptides are highly effective, multi-functional, and very stable and safe. It is proven to be the best way to improve the function and appearance of your skin--inside and out.",
+            "text_size": 3,
+            "text_style": "font-body"
+          }
+        },
+        "button_dDrGyT": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link_text": "Learn More",
+            "link": "shopify:\/\/pages\/the-science",
+            "button_type": "btn--secondary",
+            "button_size": "btn--large",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_9NdwQF",
+        "text_p6pXEy",
+        "button_dDrGyT"
+      ],
+      "settings": {
+        "height": "screen-height-one-half",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/Peptides_AdobeStock_403007779_transparent.png",
+        "link": "",
+        "mobile_height": "screen-height-one-half--mobile",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "show_overlay_text": false,
+        "bg_color": "",
+        "color": "#212121"
+      }
+    },
     "section_collection_new_JPPdmt": {
       "type": "section-collection-new",
       "settings": {
@@ -979,6 +1030,7 @@
     "section_video_V7NQ8N",
     "section_double_static_vm_YWUYXa",
     "section_text_with_products_h3WNiQ",
+    "section_hero_tTCULG",
     "section_collection_new_JPPdmt",
     "section_collection_JXEkNP",
     "section_double_slider_new_tQFDaG",
