@@ -6762,7 +6762,9 @@ toggle-ellipsis {
   border-top: 0;
 }
 .drawer .cart__foot__inner {
-  padding: calc(var(--inner) - 2px) var(--inner);
+  margin: 0 15px;
+  padding: calc(var(--inner) - 2px) 0;
+  border-bottom: 2px solid lightgray!important;
 }
 .drawer .cart__note {
   margin: 0;
