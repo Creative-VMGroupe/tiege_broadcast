@@ -185,58 +185,6 @@
         "padding_bottom": 0
       }
     },
-    "compare_systems_kLR7bT": {
-      "type": "compare-systems",
-      "blocks": {
-        "item_UqPYKH": {
-          "type": "item",
-          "settings": {
-            "title": "Level 1",
-            "image": "shopify:\/\/shop_images\/Asset-1_4x_94d8ee25-9862-4bcd-8cef-c2ff5636fb17.png",
-            "properties": "Yes,Yes,Yes,Yes"
-          }
-        },
-        "item_8mfP8r": {
-          "type": "item",
-          "settings": {
-            "title": "Level 2",
-            "image": "shopify:\/\/shop_images\/sun-protection.png",
-            "properties": "Yes,Yes,Yes,yes,Yes"
-          }
-        },
-        "item_YTLpqP": {
-          "type": "item",
-          "settings": {
-            "title": "Level 1",
-            "image": "shopify:\/\/shop_images\/get-protected.png",
-            "properties": "Yes,Yes,Yes,Yes,Yes,Yes"
-          }
-        }
-      },
-      "block_order": [
-        "item_UqPYKH",
-        "item_8mfP8r",
-        "item_YTLpqP"
-      ],
-      "settings": {
-        "height": "screen-height-one-half",
-        "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full-padded",
-        "text_alignment": "text-left",
-        "padding_lr": 30,
-        "bg_color": "",
-        "color": "",
-        "padding_top": 60,
-        "padding_bottom": 60,
-        "heading": "Compare Our Systems",
-        "caption": "Level Guide",
-        "sub_heading": "Unsure which system is right for you ?",
-        "description": "<p>Diferent strokes for different folks and different skin care reginem for different men. Take our 1-minute quiz to figure out which formulated system is for you and your face.<\/p>",
-        "btn_text": "Take our Quiz",
-        "btn_link": "shopify:\/\/pages\/accessibility",
-        "items_detail": "Wash,Scrub,AM,PM,Eyes,Serum"
-      }
-    },
     "section_double_slider_new_Gd6kgG": {
       "type": "section-double-slider-new",
       "blocks": {
@@ -648,7 +596,6 @@
   },
   "order": [
     "main",
-    "compare_systems_kLR7bT",
     "section_double_slider_new_Gd6kgG",
     "section_double_slider_new_3LK9XP",
     "section_accordion_new_hde9c4",
