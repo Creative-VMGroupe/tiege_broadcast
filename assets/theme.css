@@ -26090,3 +26090,8 @@ text-transform: uppercase;
   flex-direction: column !important;
   justify-content: center !important;
 }
+
+/*Misc*/
+.p-0 {
+  padding: 0 !important;
+}
