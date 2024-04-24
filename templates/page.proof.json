@@ -452,7 +452,7 @@
     "section_before_after_yD7FLe": {
       "type": "section-before-after",
       "custom_css": [
-        ".compare__body {flex-direction: row-reverse;}"
+
       ],
       "settings": {
         "text_align_center": true,
