@@ -43,67 +43,6 @@
         "padding_bottom": 0
       }
     },
-    "section_double_BCKiMQ": {
-      "type": "section-double",
-      "blocks": {
-        "subheading_WkAyha": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "",
-            "text_size": 3,
-            "padding_bottom": 16
-          }
-        },
-        "heading_cqJE9M": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "title": "3rd Image",
-            "text_size": 7,
-            "padding_bottom": 16
-          }
-        },
-        "image_iaXbY9": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/rosemary-v1608581888105.png",
-            "image_width": 100,
-            "padding_bottom": 16
-          }
-        },
-        "text_dPC6tc": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "text_size": 4,
-            "text_style": "font-body",
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "subheading_WkAyha",
-        "heading_cqJE9M",
-        "image_iaXbY9",
-        "text_dPC6tc"
-      ],
-      "settings": {
-        "layout": "",
-        "height": "screen-height-three-quarters",
-        "mobile_height": "screen-height-one-third--mobile",
-        "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/uZr3qZvfRNuNZb2xaQjw.png",
-        "image_2": "shopify:\/\/shop_images\/eucalyptus-v1608581874819.png",
-        "image_width": "three-quarters",
-        "text_alignment": "text-center",
-        "padding_lr": 50,
-        "reverse_blocks": false,
-        "bg_color": "",
-        "color": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "section_highlights_tqjrWA": {
       "type": "section-highlights",
       "blocks": {
@@ -384,7 +323,6 @@
   },
   "order": [
     "main",
-    "section_double_BCKiMQ",
     "section_highlights_tqjrWA",
     "section_rich_text_GDUWCk",
     "section_reviews_6RY6Fc",
