@@ -959,8 +959,8 @@
         "align_text": "text-center",
         "bg_color": "#000000",
         "color": "#ffffff",
-        "padding_top": 60,
-        "padding_bottom": 60
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
     "section_double_yp4ajU": {
@@ -1003,7 +1003,7 @@
       ],
       "settings": {
         "layout": "is-reversed",
-        "height": "screen-height-one-half",
+        "height": "screen-height-two-thirds",
         "mobile_height": "screen-height-one-third--mobile",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png",
