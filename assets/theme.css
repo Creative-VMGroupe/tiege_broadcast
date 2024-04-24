@@ -6976,7 +6976,9 @@ toggle-ellipsis {
 .cart-block .cart__price__holder .cart__total:first-child {
   margin-top: 0;
 }
-
+.cart-block .cart__price__holder {
+  font-size: calc(1.5rem * var(--FONT-ADJUST-BODY));
+}
 /*====== Cart Item ======*/
 .cart__item {
   position: relative;
