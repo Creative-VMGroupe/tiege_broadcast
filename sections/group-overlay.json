@@ -81,7 +81,7 @@
         "checkout-buttons"
       ],
       "custom_css": [
-        ".cart__sub-custom {font-size: calc(1.5rem * var(--FONT-ADJUST-BODY))!important;}"
+
       ],
       "settings": {
       }
