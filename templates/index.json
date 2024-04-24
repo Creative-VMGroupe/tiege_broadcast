@@ -220,7 +220,7 @@
         ".hero__content:has(.hero__media) {padding-bottom: 0;}"
       ],
       "settings": {
-        "image_1": "shopify:\/\/shop_images\/AdobeStock_403007779.jpg",
+        "image_1": "shopify:\/\/shop_images\/Layer_1.png",
         "width": "wrapper--narrow",
         "align_text": "text-center",
         "bg_color": "#ffffff",
