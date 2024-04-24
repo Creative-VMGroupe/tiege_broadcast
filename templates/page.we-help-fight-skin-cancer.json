@@ -77,7 +77,7 @@
             "text": "<p>We are proud members of the Skin Cancer Foundation<\/p>",
             "text_size": 5,
             "text_style": "font-body",
-            "padding_bottom": 16
+            "padding_bottom": 0
           }
         }
       },
