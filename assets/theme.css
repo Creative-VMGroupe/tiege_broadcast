@@ -9395,7 +9395,7 @@ header-search-popdown > details {
 }
 @media only screen and (max-width: 479px) {
   .sliderule-grid .hero__content {
-    padding: 5px;
+    padding: var(--outer);
   }
 }
 
