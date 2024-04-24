@@ -26176,3 +26176,8 @@ text-transform: uppercase;
   color: gray;
 }
   }
+
+/*Header*/
+.header__dropdown .hero__content p {
+  margin:0;
+}
