@@ -122,10 +122,10 @@
         "instafeed_app_block_VkTgEU": {
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "title": "",
+            "title": "@tiegehanley",
             "title_color": "",
             "alignment": "center",
-            "html_area": "<h2 style=\"text-align:center;margin-top:50px\">@tiegehanley<\/h2><p style=\"text-align:center;\">Lorem ipsum dolor sit amet, constetur sadipscing elitir, sed diam nonumy eirmod<\/p>"
+            "html_area": ""
           }
         }
       },
