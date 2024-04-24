@@ -576,8 +576,8 @@
         "width": "wrapper--full-padded",
         "bg_color": "#f7f9fa",
         "color": "",
-        "padding_top": 100,
-        "padding_bottom": 100,
+        "padding_top": 80,
+        "padding_bottom": 80,
         "layout_mobile": "slider"
       }
     },
@@ -849,7 +849,7 @@
         "width": "wrapper--full",
         "mobile_height": "screen-height-one-third--mobile",
         "padding_lr": 40,
-        "padding_top": 60,
+        "padding_top": 80,
         "padding_bottom": 0
       }
     },
