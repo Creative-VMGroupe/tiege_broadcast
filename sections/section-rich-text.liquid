@@ -47,6 +47,7 @@
             assign text2 = block.settings.text2
             assign subheading_size_class = block.settings.text_size | prepend: 'subheading-size-'
             %}
+             {%- if block.settings.title != blank -%}
             <div>
             <div>
             <div>
@@ -58,9 +59,8 @@
             <p class='{{ subheading_size_class }}'>{{ text2 }}</p>
             </div>
             </div>
-            
-            
             </div>
+               {%- endif -%}
             {%- when 'heading' -%}
               {%- if block.settings.title != blank -%}
                 {%- assign animation_order = animation_order | plus: 1 -%}
