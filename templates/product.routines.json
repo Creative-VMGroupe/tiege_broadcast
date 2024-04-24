@@ -128,18 +128,6 @@
             "title_4": "Acne Level 1",
             "title_5": "Acne Level 2"
           }
-        },
-        "upsell": {
-          "type": "upsell",
-          "disabled": true,
-          "settings": {
-            "upsell_product": "",
-            "upsell_product_list": [
-
-            ],
-            "bg_color": "",
-            "padding_bottom": 16
-          }
         }
       },
       "block_order": [
@@ -153,8 +141,7 @@
         "metafield_icons_BDHtFK",
         "tabs",
         "divider_1",
-        "complementary_products_C7V6rg",
-        "upsell"
+        "complementary_products_C7V6rg"
       ],
       "custom_css": [
         ".mock-notification {display: none;}",
