@@ -87,6 +87,6 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
     
-if (document.readyState === 'complete' {
+if (document.readyState === 'complete') {
   console.log('Complete')
 }
