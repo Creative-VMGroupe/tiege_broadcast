@@ -18,6 +18,14 @@
     didScroll = true;
   });
 
+document.addEventListener("DOMContentLoaded", (event) => {
+  console.log(window.location.href.indexOf("products") > -1);
+  $(".header__wrapper")
+        .removeClass("js__header__stuck")
+        .addClass("aos-animate");
+});
+
+  
   setInterval(function () {
     if (didScroll) {
       hasScrolled();
