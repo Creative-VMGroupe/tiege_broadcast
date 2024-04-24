@@ -58,7 +58,7 @@
 
 document.addEventListener("theme:quick-add:open", function (event) {
   let openedModals = document.querySelectorAll(".product-quick-add");
-  console.log('openedModals')
+  ')
   const currentModal = openedModals[openedModals.length - 1];
   const config = {
     productId: currentModal.dataset.productId,
