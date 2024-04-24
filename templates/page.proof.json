@@ -428,6 +428,7 @@
     "section_before_after_q3KGGj": {
       "type": "section-before-after",
       "settings": {
+        "layout": "",
         "text_align_center": true,
         "heading": "★★★★★",
         "heading_size": 5,
@@ -455,6 +456,7 @@
 
       ],
       "settings": {
+        "layout": "is-reversed",
         "text_align_center": true,
         "heading": "★★★★★",
         "heading_size": 5,
