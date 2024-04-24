@@ -28,7 +28,8 @@
   {% if section.settings.image_1 != blank %} 
   style='position: relative'>
  
-  
+    
+    <img src='{{ section.settings.image_1 | image_url }}' class='rich-text__img'/>
   
   {% endif %}
   
