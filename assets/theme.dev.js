@@ -13,7 +13,9 @@
 */
 
 document.addEventListener('DOMContentLoaded', function () {
-        const levelGuideBtn = document.getElementById('level-guide-btn');
+        const levelGuideBtn = document.getElementById('levelGuideBtn');
+  const test = document.querySelector('.levelTest')
+  console.log(test)
         console.log(levelGuideBtn);
         console.log('Working');
         
