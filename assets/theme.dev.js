@@ -12,17 +12,22 @@
 *
 */
 
-document.addEventListener('DOMContentLoaded', function () {
-    const levelGuideBtn = document.getElementById('level-guide-btn');
-    console.log(levelGuideBtn); // Make sure to close the log statement with a semicolon
-   console.log('Workinf'); // Make sure to close the log statement with a semicolon
-    levelGuideBtn.addEventListener('click', () => {
-           console.log('Clicked'); // Make sure to close the log statement with a semicolon
-            const levelGuidePopUp = document.getElementById('level-guide-pop-up');
-            levelGuidePopUp.click();
-        });
-    
-});
+setTimeout(function() {
+    document.addEventListener('DOMContentLoaded', function () {
+        const levelGuideBtn = document.getElementById('level-guide-btn');
+        console.log(levelGuideBtn);
+        console.log('Working');
+        
+        if (levelGuideBtn) {
+            levelGuideBtn.addEventListener('click', () => {
+                console.log('Clicked');
+                const levelGuidePopUp = document.getElementById('level-guide-pop-up');
+                levelGuidePopUp.click();
+            });
+        }
+    });
+}, 500);
+
 
 (function (scrollLock, themeAddresses, themeCurrency, Rellax, Flickity, FlickityFade, themeImages) {
     'use strict';
