@@ -25731,9 +25731,9 @@ div.rc_popup {
   font-size: calc(1.5rem * var(--FONT-ADJUST-BODY)) !important;
   letter-spacing: var(--ltr-spacing-tiege) !important;
 }
-.cart__btn-custom {
+/* .cart__btn-custom {
   font-size: 14px !important;
-}
+} */
 .cart__item-custom {
   margin: 15px !important;
   padding: 0 0 15px 0 !important;
