@@ -442,7 +442,7 @@
         "image_1": "shopify:\/\/shop_images\/96B_Harun-Asceric_before.png",
         "image_2": "shopify:\/\/shop_images\/96B_Harun-Asceric_after.png",
         "aspect_ratio": 1,
-        "width": "wrapper--full-padded",
+        "width": "wrapper--full",
         "bg_color": "#f7f7f7",
         "color": "",
         "padding_lr": 50,
