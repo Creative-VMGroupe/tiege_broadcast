@@ -17029,6 +17029,7 @@ a.review {
   text-transform: uppercase;
   letter-spacing: 0.14em;
   padding-right: 10px;
+  font-size: calc(1.5rem * var(--FONT-ADJUST-BODY))
 }
 
 .cart__total__price {
