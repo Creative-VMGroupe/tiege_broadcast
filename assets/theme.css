@@ -7953,7 +7953,7 @@ body:not(.has-line-design) .header__dropdown {
   opacity: 1;
 }
 .header__dropdown__image .hero__content {
-  padding: 14px;
+  padding: var(--outer);
   margin: 0;
   max-width: none;
 }
