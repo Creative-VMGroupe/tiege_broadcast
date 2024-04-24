@@ -26097,13 +26097,13 @@ text-transform: uppercase;
   padding-bottom: 0 !important;
 }
 /*Rich Text 2Columns*/
-.2columns__container {
+.two-columns__container {
   
 }
-.2columns__wrapper {
+.two-columns__wrapper {
   display: flex;
   justify-content: space-between;
 }
-.2columns__box {
+.two-columns__box {
   
 }
