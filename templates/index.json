@@ -304,8 +304,8 @@
         "layout_mobile": "1",
         "bg_color": "#f7f7f7",
         "color": "",
-        "padding_top": 60,
-        "padding_bottom": 50
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
     "section_collection_JXEkNP": {
@@ -406,7 +406,7 @@
       ],
       "settings": {
         "layout": "",
-        "height": "screen-height-one-half",
+        "height": "screen-height-two-thirds",
         "mobile_height": "screen-height-one-third--mobile",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/Snapinsta.app_337156675_1554687731680146_2432232004487884860_n_1080.jpg",
@@ -442,8 +442,8 @@
         "layout_mobile": "1",
         "bg_color": "#f7f7f7",
         "color": "",
-        "padding_top": 60,
-        "padding_bottom": 60
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
     "section_video_W9NxLi": {
@@ -617,7 +617,7 @@
         "button_imf4CU"
       ],
       "settings": {
-        "height": "screen-height-one-half",
+        "height": "screen-height-two-thirds",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/Peptides_AdobeStock_403007779_transparent.png",
         "link": "",
@@ -712,8 +712,8 @@
         "layout_mobile": "slider",
         "bg_color": "#000000",
         "color": "#ffffff",
-        "padding_top": 60,
-        "padding_bottom": 60
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
     "section_double_jKb3k6": {
@@ -912,7 +912,7 @@
         "width": "wrapper--full",
         "mobile_height": "screen-height-one-third--mobile",
         "padding_lr": 50,
-        "padding_top": 60,
+        "padding_top": 80,
         "padding_bottom": 0
       }
     },
