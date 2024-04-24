@@ -217,7 +217,7 @@
       ],
       "settings": {
         "layout": "is-reversed",
-        "height": "screen-height-one-half",
+        "height": "screen-height-two-thirds",
         "mobile_height": "screen-height-one-third--mobile",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO3.png",
@@ -284,7 +284,7 @@
       ],
       "settings": {
         "layout": "is-reversed",
-        "height": "screen-height-one-half",
+        "height": "screen-height-two-thirds",
         "mobile_height": "screen-height-one-third--mobile",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/uZr3qZvfRNuNZb2xaQjw.png",
@@ -479,8 +479,8 @@
         "width": "wrapper--full-padded",
         "bg_color": "#ffffff",
         "color": "",
-        "padding_top": 60,
-        "padding_bottom": 60,
+        "padding_top": 80,
+        "padding_bottom": 80,
         "layout_mobile": "slider"
       }
     },
