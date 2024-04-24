@@ -10023,7 +10023,7 @@ body:has([data-header-transparent]):has(
 body:has([data-header-transparent])
   .section-overlay-header
   .hero__content__wrapper {
-  padding-top: var(--header-height);
+  /* padding-top: var(--header-height); */
 }
 
 body:has([data-header-transparent])
