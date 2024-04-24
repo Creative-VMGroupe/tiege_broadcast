@@ -26001,7 +26001,7 @@ body.grid-classic.has-line-design .grid--mobile-slider-custom {
   right: auto;
   bottom: 120px;
 }
-.grid-item-custom:first-child .btn__outer {
+.grid-item-custom form .btn__outer {
   left: 10px;
   right: auto;
   bottom: 145px;
