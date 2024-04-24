@@ -28,10 +28,13 @@
   function hasScrolled() {
     var st = $(this).scrollTop();
     if (Math.abs(lastScrollTop - st) <= delta) return;
-    if (st > lastScrollTop && st > navbarHeight && window.location.href.indexOf("/products") !== -1) {
+    if (st > lastScrollTop && st > navbarHeight ) {
+      if(window.location.href.indexOf("/products") === -1) {
       $(".header__wrapper")
         .removeClass("js__header__stuck")
-        .addClass("aos-animate");
+        .addClass("aos-animate");  
+      }
+      
     } else if (st === 0 ) {
       $(".header__wrapper")
         .removeClass("js__header__stuck")
