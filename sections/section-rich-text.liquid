@@ -24,8 +24,11 @@
 <section id="Rte--{{ section.id }}"
   class="index-rte section-padding"
   data-section-id="{{ section.id }}"
-  data-section-type="rich-text">
-
+  data-section-type="rich-text"
+  {% if section.settings.image_1 != blank %} 
+  style='position: relative'>
+  {% endif %}
+  
   {% if section.settings.image_1 != blank %} 
   <figure>
     <img src='{{ section.settings.image_1 | image_url }}' style='width: 100px; height: 100px'/>
