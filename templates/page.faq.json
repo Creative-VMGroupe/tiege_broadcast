@@ -129,7 +129,8 @@
         ".highlights__item {padding: 0; margin: 0; max-height: 350px;}",
         ".wrapper--full-padded {padding: 0;}",
         ".highlights__items [data-aos-delay=\"450\"] {flex: 1; max-height: 350px;}",
-        ".highlights__items [data-aos-delay=\"600\"] {flex: 1; max-height: 350px;}"
+        ".highlights__items [data-aos-delay=\"600\"] {flex: 1; max-height: 350px;}",
+        ".highlights__item__content {max-width: 70%}"
       ],
       "settings": {
         "style": "rectangle",
