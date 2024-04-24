@@ -26175,6 +26175,13 @@ text-transform: uppercase;
 .mobile__menu__dropdown.sliderule__panel.is-visible .mobile__menu__dropdown.sliderule__panel.is-visible .sliderow__title{
   color: gray;
 }
+  
+.mobile__menu__dropdown .hero__content p {
+  margin:0;
+}
+.mobile__menu__dropdown .hero__content h2 {
+  margin:0;
+}
   }
 
 /*Header*/
