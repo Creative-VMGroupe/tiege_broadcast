@@ -2,9 +2,10 @@
   assign animation_order = 0
   assign animation_anchor = '#SectionBeforeAfter--' | append: section.id
   assign aspect_ratio = 1 | divided_by: section.settings.aspect_ratio
+   assign heading_color = section.settings.heading_color
   assign bg_color = section.settings.bg_color
   assign text_color = section.settings.color
-  assign heading_color = section.settings.heading_color
+  
   assign button_style = section.settings.button_style
   if button_style == 'btn--text' and section.settings.show_arrow
     assign button_style = button_style | append: ' btn--text-no-underline'
