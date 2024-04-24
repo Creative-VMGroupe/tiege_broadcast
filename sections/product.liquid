@@ -860,7 +860,7 @@
                       {{ block_style }}>
 
                       {%- if badge != '' and block.settings.product_badges -%}
-                        <span class="badge-box">{{ badge }}</span>
+                        <a href='{{ product.url }}' class="badge-box">{{ badge }}</a>
                       {%- endif -%}
 
                       {%- if preorder and sold_out == false and block.settings.product_badges-%}
