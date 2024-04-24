@@ -64,8 +64,8 @@
   text-align: center;
 }
 .level-guide-member-tiers-wrapper-custom {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: var(--outer);
+  padding-right: var(--outer);
 }
 .level-guide-member-tiers_container{
   gap: 4px;
