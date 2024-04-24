@@ -26107,6 +26107,7 @@ text-transform: uppercase;
 .two-columns__box {
   max-width: 200px;
 }
+
 .two-columns__title {
   text-decoration: underline;
 }
@@ -26116,4 +26117,7 @@ text-transform: uppercase;
     flex-direction: column;
     align-items: center;
   }
+  .two-columns__box:first-child {
+  padding-bottom: 30px;
+}
 }
