@@ -25999,7 +25999,7 @@ body.grid-classic.has-line-design .grid--mobile-slider-custom {
   right: auto;
   bottom: 130px;
 }
-.grid-item-custom .btn__outer :first-of-type {
+.grid-item-custom .btn__outer:first-of-type {
   left: 10px;
   right: auto;
   bottom: 160px;
