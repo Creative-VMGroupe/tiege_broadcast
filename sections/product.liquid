@@ -831,6 +831,25 @@
 </product-modal>
 
                   {%- when 'complementary-products' -%}
+      <script>
+
+document.addEventListener('DOMContentLoaded', function () {
+        const levelGuideBtn = document.getElementById('levelGuideBtn');
+  const test = document.querySelector('.levelTest')
+  console.log(test)
+        console.log(levelGuideBtn);
+        console.log('Working');
+        
+        if (levelGuideBtn) {
+            levelGuideBtn.addEventListener('click', () => {
+                console.log('Clicked');
+                const levelGuidePopUp = document.getElementById('level-guide-pop-up');
+                levelGuidePopUp.click();
+            });
+        }
+    });
+        
+      </script>
                     <div class="product__block product__complementary block-padding" {{ block.shopify_attributes }} {{ block_style }}>
                       <complementary-products class="complementary-products" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=10&intent=complementary" >
                         {%- if recommendations.performed and recommendations.products_count > 0 -%}
