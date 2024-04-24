@@ -25,11 +25,22 @@
   class="index-rte section-padding"
   data-section-id="{{ section.id }}"
   data-section-type="rich-text"
+  {% if section.settings.image_1 != blank %} 
+  style='position: relative'>
+  {% endif %}
   
   {%- if section.blocks.size > 0 -%}
+    
+  {% if section.settings.image_1 != blank %} 
+  <figure class='rich-text__img__container'>
+    <img src='{{ section.settings.image_1 | image_url }}' class='rich-text__img'/>
+  </figure>  
+  {% endif %}
     <div class="hero__content__wrapper {{ section.settings.align_text }} {{ section.settings.width }}">
       <div class="hero__content hero__content--compact" 
-      
+      {% if section.settings.image_1 != blank %} 
+      style='background-color: transparent;'
+      {% endif %}>
         {%- for block in section.blocks -%}
           {%- liquid
             capture block_style
@@ -291,11 +302,7 @@
 {
   "name": "Rich text",
   "settings": [
-    {
-  "type": "image_picker",
-  "id": "image_1",
-  "label": "Image"
-},
+    
 
     {
       "type": "header",
