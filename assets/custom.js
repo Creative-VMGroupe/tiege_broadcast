@@ -73,18 +73,18 @@ document.addEventListener("theme:quick-add:open", function (event) {
 });
 
 
-// document.addEventListener('DOMContentLoaded', function () {
-//     const levelGuideBtn = document.getElementById('levelGuideBtn');
-//     console.log(levelGuideBtn);
-//     console.log('Working');
+document.addEventListener('DOMContentLoaded', function () {
+    const levelGuideBtn = document.getElementById('levelGuideBtn');
+    console.log(levelGuideBtn);
+    console.log('Working');
     
-//     if (levelGuideBtn) {
-//         levelGuideBtn.addEventListener('click', () => {
-//             console.log('Clicked');
-//             const levelGuidePopUp = document.getElementById('level-guide-pop-up');
-//             levelGuidePopUp.click();
-//         });
-//     }
-// });
+    if (levelGuideBtn) {
+        levelGuideBtn.addEventListener('click', () => {
+            console.log('Clicked');
+            const levelGuidePopUp = document.getElementById('level-guide-pop-up');
+            levelGuidePopUp.click();
+        });
+    }
+});
 
 
