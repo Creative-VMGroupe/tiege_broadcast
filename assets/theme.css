@@ -25448,6 +25448,7 @@ body.has-header-sticky .timeline {
 @media (max-width: 749px) {
   .quick-add__button {
     left: 15px;
+    bottom: 15px;
   }
   .grid--mobile-slider {
     margin-left: 0;
