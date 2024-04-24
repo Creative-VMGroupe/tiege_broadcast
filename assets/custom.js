@@ -27,11 +27,9 @@
 
   function hasScrolled() {
     var st = $(this).scrollTop();
-    const currentUrl = this.location.path();
-    const urlContainsFoo = currentUrl.includes('products')
     if (Math.abs(lastScrollTop - st) <= delta) return;
     if (st > lastScrollTop && st > navbarHeight ) {
-      console.log(urlContainsFoo)
+      console.log(window.location.href.indexOf("products") > -1)
       $(".header__wrapper")
         .removeClass("js__header__stuck")
         .addClass("aos-animate");
