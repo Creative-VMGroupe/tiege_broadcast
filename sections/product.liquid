@@ -838,28 +838,7 @@
                           {%- if complementary_products_title != blank -%}
                             <div class="complementary-product__header">
                               <span style="font-weight: bold;"  class="complementary-products__title">Want to level up?</span>
-                              <product-modal class="product__block block-padding compare-system-modal" style=" --block-padding-bottom: 30px;">
-  <div class="product__icon__container product__icon__container--full">
-    <a class="radio__legend__link text-link" data-popup-open {{ section.shopify_attributes }}>
-      Compare our Systems
-    </a>
-  </div>
-
-  <dialog class="product-modal" aria-hidden="true" inert data-scroll-lock-required>
-    <form method="dialog">
-      <button class="visually-hidden no-js" aria-label="{{ 'general.accessibility.close' | t }}"></button>
-    </form>
-
-    <div style='max-width: 1440px; --outer: 0px;' class="product-modal__outer prod-modal__container">
-      <div class="product-modal__content small product-modal__container" data-scroll-lock-scrollable>
-        <button type="button" class="product-modal__close" data-popup-close autofocus aria-label="{{ 'general.accessibility.close' | t }}">
-          {%- render 'icon-cancel' -%}
-        </button>
-        {{ popup_content }}
-      </div>
-    </div>
-  </dialog>
-</product-modal>
+                              <span style='text-decoration: underline; color: lightgray;'>Level Guide</span>
                             </div>
                           {%- endif -%}
                             <div class="grid-outer">
