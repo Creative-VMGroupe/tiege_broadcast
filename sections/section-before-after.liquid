@@ -5,6 +5,7 @@
   assign heading_color = section.settings.heading_color
   assign bg_color = section.settings.bg_color
   assign text_color = section.settings.color
+  assign reg_text = section.settings.reg_text
   
   assign button_style = section.settings.button_style
   if button_style == 'btn--text' and section.settings.show_arrow
@@ -93,13 +94,19 @@
           {%- endif -%}
 
           {%- if button_html != blank -%}
+            {% if reg_text == false %}
             {%- assign animation_order = animation_order | plus: 1 -%}
+              {% assign btn_size_class = section.settings.btn_size | prepend: 'body-size-' %}
             <div class="compare__buttons"
               data-aos="hero"
               data-aos-order="{{ animation_order }}"
               data-aos-anchor="{{ animation_anchor }}">
               {{ button_html }}
             </div>
+              {% else %}
+              
+              <span class="{{ btn_size_class }}">{{ section.settings.link_text | escape }}</span>
+          {%- endif -%}    
           {%- endif -%}
         </div>
       {%- endif -%}
