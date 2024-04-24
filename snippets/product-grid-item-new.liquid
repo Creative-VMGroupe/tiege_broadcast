@@ -310,11 +310,11 @@
   -%}
 
   {%- if badge != '' -%}
-    <span class="badge-box"
+    <a href='{{ product.url }}' class="badge-box"
       data-aos="fade"
       data-aos-delay="{{ aos_delay }}"
       data-aos-duration="{{ aos_duration }}"
-      data-aos-anchor="{{ aos_anchor }}">{{ badge }}</span>
+      data-aos-anchor="{{ aos_anchor }}">{{ badge }}</a>
   {%- elsif preorder and sold_out == false -%}
     <span class="preorder-box"
       data-aos="fade"
