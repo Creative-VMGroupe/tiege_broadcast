@@ -27,20 +27,20 @@
 
   function hasScrolled() {
     var st = $(this).scrollTop();
-    if (Math.abs(lastScrollTop - st) <= delta) return;
+    if (Math.abs(lastScrollTop - st) <= delta) return console.log(window.location.href.indexOf("products") > -1);
     if (st > lastScrollTop && st > navbarHeight ) {
       console.log(window.location.href.indexOf("products") > -1)
       $(".header__wrapper")
         .removeClass("js__header__stuck")
         .addClass("aos-animate");
     } else if (st === 0 ) {
-      if(window.location.href.indexOf("products") > -1) {
-        console.log(window.location.href.indexOf("products") > -1)
-      } else {
+      
+        
+      
       $(".header__wrapper")
         .removeClass("js__header__stuck")
         .addClass("aos-animate");  
-      }
+      
       
     } else {
       if (st + $(window).height() < $(document).height()) {
