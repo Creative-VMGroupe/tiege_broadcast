@@ -4,6 +4,7 @@
   assign aspect_ratio = 1 | divided_by: section.settings.aspect_ratio
   assign bg_color = section.settings.bg_color
   assign text_color = section.settings.color
+  assign sub_color = section.settings.color
   assign button_style = section.settings.button_style
   if button_style == 'btn--text' and section.settings.show_arrow
     assign button_style = button_style | append: ' btn--text-no-underline'
@@ -144,7 +145,11 @@
       "step": 1,
       "default":8
     },
-
+{
+        "type": "color",
+        "id": "heading_color",
+        "label": "Heading Color"
+      }, 
       {
         "type": "richtext",
         "id": "description",
