@@ -167,44 +167,6 @@
     "section_rich_text_W7bbeY": {
       "type": "section-rich-text",
       "blocks": {
-        "subheading_pw7Jn8": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "subheading": "42,610,590",
-            "text_size": 5,
-            "padding_bottom": 16
-          }
-        },
-        "subheading_jc3H4e": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "subheading": "$57,948",
-            "text_size": 5,
-            "padding_bottom": 16
-          }
-        },
-        "text_Uqj4Lp": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Days protecting guys from the sun's harmful UV rays<\/p>",
-            "text_size": 4,
-            "text_style": "font-body",
-            "padding_bottom": 16
-          }
-        },
-        "text_ReYa4X": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Dollars donated and counting<\/p>",
-            "text_size": 4,
-            "text_style": "font-body",
-            "padding_bottom": 16
-          }
-        },
         "2_columns_N4pL7z": {
           "type": "2Columns",
           "settings": {
@@ -220,10 +182,6 @@
         }
       },
       "block_order": [
-        "subheading_pw7Jn8",
-        "subheading_jc3H4e",
-        "text_Uqj4Lp",
-        "text_ReYa4X",
         "2_columns_N4pL7z"
       ],
       "custom_css": [
@@ -235,7 +193,7 @@
         "bg_color": "",
         "color": "",
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 30
       }
     },
     "section_rich_text_8WGREr": {
