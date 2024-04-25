@@ -63,8 +63,8 @@ $(document).ready(function() {
     let slideRule = $(this).siblings('.mobile__menu__dropdown').data('sliderule');
     let parentMenu = $(this).parents('.drawer__menu').get(0);
     console.log(parentMenu.dataset.sliderulePane, slideRule);
-    parentMenu.dataset.sliderulePane = slideRule;
-    if (parentMenu.dataset.sliderulePane === 2 && slideRule != 2) {
+    if (parentMenu.dataset.sliderulePane < slideRule) {
+      parentMenu.dataset.sliderulePane = slideRule;
     }
   });
   
