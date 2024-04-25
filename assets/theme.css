@@ -26033,10 +26033,12 @@ body.grid-classic.has-line-design .grid--mobile-slider-custom {
 }
 .grid-outer:has(.grid-custom) {
   padding-left: 32px;
+  padding-right: 32px;
 }
 @media (max-width: 749px) {
  .grid-outer:has(.grid-custom) {
   padding-left: 16px;
+  padding-right: 16px;
 } 
 }
 /* .container {
