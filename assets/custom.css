@@ -266,3 +266,6 @@
     width: 100%;
   }
 }
+.icon-chevron {
+  fill: currentcolor !important;
+}
