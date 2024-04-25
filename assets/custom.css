@@ -266,9 +266,11 @@
     width: 100%;
   }
 }
+.sliderule__chevron--up {
+  width: 20px;
+  height: 20px;
+}
 .icon-chevron {
-  /* width: ;
-  height: ; */
   --icon-size: 15px;
   fill: currentcolor !important;
 }
