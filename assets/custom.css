@@ -267,5 +267,8 @@
   }
 }
 .icon-chevron {
+  /* width: ;
+  height: ; */
+  --icon-size: 15px;
   fill: currentcolor !important;
 }
