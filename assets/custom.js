@@ -62,6 +62,7 @@ $(document).ready(function() {
     $(this).siblings('.mobile__menu__dropdown').toggleClass('is-visible');
     let slideRule = $(this).siblings('.mobile__menu__dropdown').data('sliderule');
     let parentMenu = $(this).parents('.drawer__menu').get(0);
+    console.log(parentMenu.dataset.sliderulePane);
     parentMenu.dataset.sliderulePane = slideRule;
   });
   
