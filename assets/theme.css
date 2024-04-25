@@ -26193,3 +26193,7 @@ text-transform: uppercase;
 .header__dropdown .hero__content h2 {
   margin:0;
 }
+.sliderow.is-active .sliderule__panel.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
