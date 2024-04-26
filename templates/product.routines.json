@@ -872,9 +872,10 @@
         "include_margins": false,
         "default_open": false,
         "title": "Reviews",
-        "show_icon": true,
+        "heading_size": 8,
+        "show_icon": false,
         "icon_name": "icon-droplet",
-        "icon_size": 20,
+        "icon_size": 50,
         "icon_color": "#545454"
       }
     }
