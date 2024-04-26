@@ -14,17 +14,6 @@
   var delta = 5;
   var navbarHeight = $(".header__wrapper").outerHeight();
 
-// $(document).ready(function() {
-//     // Modify the opacity of the specified class to 1
-//   if(window.location.href.indexOf("products") > -1) {
-//     console.log(window.location.href.indexOf("products") > -1)
-//     $('body:has(.main-content > .shopify-section.section-overlay-header:first-of-type) [data-header-transparent]:not(.meganav--visible):not(.js__header__stuck) .header__logo--has-transparent .logo__img--transparent').css('opacity', '0');
-
-//     $('body:has(.main-content > .shopify-section.section-overlay-header:first-of-type) [data-header-transparent]:not(.meganav--visible):not(.js__header__stuck) .header__logo--has-transparent .logo__img--color').css('opacity', '1');
-// }
-//   });
-
-  
   $(window).scroll(function (event) {
     didScroll = true;
   });
@@ -84,14 +73,9 @@ document.addEventListener("theme:quick-add:open", function (event) {
   }
 });
 
-document.addEventListener('click', function(event) {
-    if (event.target && event.target.id === 'levelGuideBtn') {
-        console.log('Clicked');
-        const levelGuidePopUp = document.getElementById('level-guide-pop-up');
-      if (levelGuidePopUp) {
-            levelGuidePopUp.click();
-        } else {
-            console.log('levelGuidePopUp not found');
-        }
-    }
-})
+$("#levelGuideBtn").click(function(){
+  const levelGuidePopUp = document.getElementById('level-guide-pop-up');
+  if (levelGuidePopUp) {
+    levelGuidePopUp.click();
+  }
+});
