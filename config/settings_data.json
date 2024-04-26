@@ -89,12 +89,6 @@
 
     ],
     "blocks": {
-      "7885500093077574326": {
-        "type": "shopify:\/\/apps\/videowise-video-platform-ugc\/blocks\/script_embed\/b48d6c0c-3e3f-4791-a9ab-a5ab7ec82f4d",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "17824471530847535147": {
         "type": "shopify:\/\/apps\/web-accessibility-by-accessibe\/blocks\/accessiBe\/149b77a2-0170-42f6-9355-0bef39587b09",
         "disabled": false,
@@ -120,64 +114,9 @@
         "settings": {
         }
       },
-      "10830403595879607806": {
-        "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-core\/92a082e5-b297-4e88-b428-ac96cbc505f9",
-        "disabled": true,
-        "settings": {
-          "url_key": "vmgroupe.com",
-          "lang": "auto"
-        }
-      },
-      "16274361319697914395": {
-        "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-floating\/92a082e5-b297-4e88-b428-ac96cbc505f9",
-        "disabled": true,
-        "settings": {
-          "widget_id": "",
-          "show_all": true,
-          "show_index": true,
-          "show_product": true,
-          "show_collection": true,
-          "show_cart": true
-        }
-      },
-      "15316669992541710076": {
-        "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-snippet\/92a082e5-b297-4e88-b428-ac96cbc505f9",
-        "disabled": true,
-        "settings": {
-          "star": "#000000",
-          "text_color": "#333333",
-          "snippet_mode": "default",
-          "text": "Reviews",
-          "line_break": false,
-          "listen_for_changes": false,
-          "rating_without_brackets": false,
-          "format_review_count": false,
-          "show_popup": true,
-          "anchor_to_reviews_widget": false,
-          "show_empty_stars": false
-        }
-      },
-      "6913107989674730356": {
-        "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-sessions\/92a082e5-b297-4e88-b428-ac96cbc505f9",
-        "disabled": true,
-        "settings": {
-        }
-      },
-      "3228365661995190140": {
-        "type": "shopify:\/\/apps\/comparable-products\/blocks\/compare_products\/a0463732-e49b-4c6e-b22b-3158b9b069a8",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "940650814580334357": {
         "type": "shopify:\/\/apps\/product-compare\/blocks\/app-embed-block\/2ec083cc-5677-4d10-a2af-c02464aa361b",
         "disabled": false,
-        "settings": {
-        }
-      },
-      "8554118278144459913": {
-        "type": "shopify:\/\/apps\/ldt-product-compare\/blocks\/embed\/4efd09c5-8a59-401e-a364-e3440f693913",
-        "disabled": true,
         "settings": {
         }
       }

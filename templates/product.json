@@ -171,7 +171,8 @@
         ".accordion {border: none;}",
         ".select__fieldset > .radio__legend {display: none;}",
         ".rc-widget {padding-top: 30px;}",
-        ".rc-template__radio-group .rc-radio .rc-radio__label {display: flex !important; flex-direction: row-reverse !important;}"
+        ".rc-template__radio-group .rc-radio .rc-radio__label {display: flex !important; flex-direction: row-reverse !important;}",
+        "#routine_title {display: none}"
       ],
       "settings": {
         "product_sticky_enable": true,
@@ -384,24 +385,6 @@
     },
     "171319612680298cf4": {
       "type": "apps",
-      "blocks": {
-        "ldt_product_compare_widget_HtjF8t": {
-          "type": "shopify:\/\/apps\/ldt-product-compare\/blocks\/widget\/4efd09c5-8a59-401e-a364-e3440f693913",
-          "settings": {
-            "title": "Compare Our Systems",
-            "description": "",
-            "products": [
-              "level-1-essential-routine-1",
-              "level-2-advanced-routine",
-              "the-collection-snowboard-liquid"
-            ],
-            "attribute_set": ""
-          }
-        }
-      },
-      "block_order": [
-        "ldt_product_compare_widget_HtjF8t"
-      ],
       "disabled": true,
       "settings": {
         "include_margins": false
@@ -409,24 +392,6 @@
     },
     "1713193502d18b128b": {
       "type": "apps",
-      "blocks": {
-        "comparable_products_static_comparison_table_RRbgri": {
-          "type": "shopify:\/\/apps\/comparable-products\/blocks\/static_comparison_table\/a0463732-e49b-4c6e-b22b-3158b9b069a8",
-          "settings": {
-            "products": [
-              "level-1-essential-routine-1",
-              "level-2-advanced-routine",
-              "the-collection-snowboard-liquid"
-            ],
-            "heading_text": "",
-            "highlight_type": "no_highlight",
-            "highlight_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "comparable_products_static_comparison_table_RRbgri"
-      ],
       "disabled": true,
       "custom_css": [
         ".comparable-selected-products .comparable-container {overflow: hidden;}",

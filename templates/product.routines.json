@@ -18,13 +18,6 @@
             "product": "{{product}}"
           }
         },
-        "reviews_io_reviewsio_rating_bar_QKFCJa": {
-          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-bar\/92a082e5-b297-4e88-b428-ac96cbc505f9",
-          "disabled": true,
-          "settings": {
-            "widget_id": "6LafXxIVcHP8Yopz"
-          }
-        },
         "recharge_subscriptions_subscription_widget_xPdPVc": {
           "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
           "settings": {
@@ -133,7 +126,6 @@
       "block_order": [
         "title",
         "okendo_star_rating_ePti3c",
-        "reviews_io_reviewsio_rating_bar_QKFCJa",
         "recharge_subscriptions_subscription_widget_xPdPVc",
         "popup_8GXMmM",
         "buttons",
@@ -153,7 +145,8 @@
         ".accordion__title {font-weight: bold;}",
         ".accordion {border: none;}",
         ".rc-widget {padding-top: 30px;}",
-        ".rc-template__radio-group .rc-radio .rc-radio__label {display: flex !important; flex-direction: row-reverse !important;}"
+        ".rc-template__radio-group .rc-radio .rc-radio__label {display: flex !important; flex-direction: row-reverse !important;}",
+        "#single_title {display: none;}"
       ],
       "settings": {
         "product_sticky_enable": true,
@@ -795,43 +788,11 @@
             "product": "{{product}}",
             "widget_type": "reviews_widget"
           }
-        },
-        "reviews_io_reviewsio_polaris_WQyU3t": {
-          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-polaris\/92a082e5-b297-4e88-b428-ac96cbc505f9",
-          "disabled": true,
-          "settings": {
-            "star": "#000000",
-            "review_type": "product_review,questions",
-            "per_page": 10,
-            "primary_btn_bg_color": "#000000",
-            "primary_btn_border_color": "#000000",
-            "primary_btn_text_color": "#ffffff",
-            "secondary_btn_border_color": "#000000",
-            "secondary_btn_text_color": "#000000",
-            "border_color": "#000000",
-            "heading_text_color": "#000000",
-            "heading_font": "helvetica_n4",
-            "body_text_color": "#000000",
-            "badge_icon_color": "#000000",
-            "badge_text_color": "#000000",
-            "enable_rich_snippets": true,
-            "show_location": true,
-            "show_tab_selector": false,
-            "show_dates": true,
-            "show_avatar": true,
-            "enable_replies": false,
-            "widget_spacing": 0,
-            "capitalise_headers": false,
-            "capitalise_buttons": false,
-            "show_review_title": false,
-            "default_sort": "date_desc"
-          }
         }
       },
       "block_order": [
         "trustreviews_reviews_widget_8YLWPV",
-        "okendo_reviews_widget_WJeEBc",
-        "reviews_io_reviewsio_polaris_WQyU3t"
+        "okendo_reviews_widget_WJeEBc"
       ],
       "custom_css": [
         "#trustreviews {max-width: 90%;}"
@@ -876,13 +837,6 @@
     "171061224373a1e0d4": {
       "type": "apps",
       "blocks": {
-        "videowise_video_platform_ugc_videowise_page_widgets_F9irDP": {
-          "type": "shopify:\/\/apps\/videowise-video-platform-ugc\/blocks\/videowise-page-widgets\/b48d6c0c-3e3f-4791-a9ab-a5ab7ec82f4d",
-          "disabled": true,
-          "settings": {
-            "videowise_embed": "<div class=\"reeview-app-widget\" id=\"reeview-app-widget_65f5deec895c9e0028f2bd85\"><\/div>"
-          }
-        },
         "instafeed_app_block_Gap9kU": {
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
@@ -894,7 +848,6 @@
         }
       },
       "block_order": [
-        "videowise_video_platform_ugc_videowise_page_widgets_F9irDP",
         "instafeed_app_block_Gap9kU"
       ],
       "settings": {
