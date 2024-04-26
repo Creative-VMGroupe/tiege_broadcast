@@ -73,7 +73,7 @@ document.addEventListener("theme:quick-add:open", function (event) {
   }
 });
 
-$("#levelGuideBtn").click(function(){
+$("#levelGuideBtn").on("click", function(){
   const levelGuidePopUp = document.getElementById('level-guide-pop-up');
   if (levelGuidePopUp) {
     levelGuidePopUp.click();
