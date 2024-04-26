@@ -1,6 +1,7 @@
 {% liquid
   assign default_open = section.settings.default_open
   assign animation_anchor = '#app--' | append: section.id
+  assign font_size_class = section.settings.heading_size | prepend: 'heading-size-'
 %}
 <section
   id="app--{{ section.id }}"
@@ -20,7 +21,7 @@
         data-collapsible
       >
         {%- if section.settings.title != blank -%}
-          <summary class="accordion__title h6" data-collapsible-trigger>
+          <summary class="accordion__title {{ font_size_class }}" data-collapsible-trigger>
             {%- if section.settings.show_icon -%}
               {%- liquid
                 assign icon_size = section.settings.icon_size
@@ -102,6 +103,15 @@
       "label": "Heading",
       "info": "Section will not be visible if left empty.",
       "default": "FAQ"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 8
     },
     {
       "type": "header",
