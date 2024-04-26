@@ -55,7 +55,14 @@
       parentMenu.dataset.sliderulePane = slideRule;
     }
   });
-  
+
+  $("#levelGuideBtn").on("click", function() {
+    console.log('Item clicked', $('#level-guide-pop-up'));
+    const levelGuidePopUp = document.getElementById('level-guide-pop-up');
+    if (levelGuidePopUp) {
+      levelGuidePopUp.click();
+    }
+  });
 })();
 
 document.addEventListener("theme:quick-add:open", function (event) {
@@ -70,15 +77,5 @@ document.addEventListener("theme:quick-add:open", function (event) {
   };
   if (currentModal.querySelectorAll(".rc-widget").length === 0) {
     window.ReChargeWidget.createWidget(config);
-  }
-});
-
-console.log($("#levelGuideBtn"));
-
-$("#levelGuideBtn").on("click", function() {
-  console.log('Item clicked', $('#level-guide-pop-up'));
-  const levelGuidePopUp = document.getElementById('level-guide-pop-up');
-  if (levelGuidePopUp) {
-    levelGuidePopUp.click();
   }
 });
