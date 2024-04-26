@@ -1,4 +1,7 @@
 {% liquid
+  assign bg_color = section.settings.bg_color
+  assign text_color = section.settings.color
+  assign border_color = section.settings.border_color
   assign default_open = section.settings.default_open
   assign animation_anchor = '#app--' | append: section.id
   assign font_size_class = section.settings.heading_size | prepend: 'heading-size-'
@@ -7,6 +10,30 @@
     assign largeIcon = false
   endif
 %}
+{%- if section.blocks.size > 0 -%}
+  {%- style -%}
+    #Faq--{{ section.id }} {
+      --PT: {{ section.settings.padding_top }}px;
+      --PB: {{ section.settings.padding_bottom }}px;
+
+      {%- unless bg_color == 'rgba(0,0,0,0)' or bg_color == blank -%}
+        --bg: {{ bg_color }};
+      {%- endunless -%}
+
+      {%- unless text_color == 'rgba(0,0,0,0)' or text_color == blank -%}
+        --text: {{ text_color }};
+        --text-dark: {{ text_color | color_saturate: 10 | color_darken: 15 }};
+        --text-a35: {{ text_color | color_modify: 'alpha', 0.35 }};
+        --text-a70: {{ text_color | color_modify: 'alpha', 0.70 }};
+        --text-a75: {{ text_color | color_modify: 'alpha', 0.75 }};
+      {%- endunless -%}
+
+      {%- unless border_color == 'rgba(0,0,0,0)' or border_color == blank -%}
+        --border: {{ border_color }};
+      {%- endunless -%}
+    }
+  {%- endstyle -%}
+{% endif %}
 <section
   id="app--{{ section.id }}"
   class="accordion-section section-padding"
@@ -15,7 +42,7 @@
   data-aos="hero"
   data-aos-anchor="{{ animation_anchor }}"
 >
-  <div class="{% if section.settings.include_margins %}wrapper{% endif %}">
+  <div class="{{ section.settings.width }}">
     <collapsible-elements>
       <details
         class="accordion"
@@ -89,12 +116,6 @@
   "tag": "section",
   "max_blocks": 1,
   "settings": [
-    {
-      "type": "checkbox",
-      "id": "include_margins",
-      "default": false,
-      "label": "Include margins"
-    },
     {
       "type": "checkbox",
       "id": "default_open",
@@ -192,6 +213,59 @@
       "id": "icon_color",
       "label": "Icon color",
       "default": "#545454"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background"
+    },
+    {
+      "type": "color",
+      "id": "color",
+      "label": "Text"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border"
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "default": "wrapper--full--custom",
+      "options": [{"value": "wrapper--full--custom", "label": "Full Width"},
+        {"value": "wrapper", "label": "Normal"},
+        {"value": "wrapper--narrow", "label": "Narrow"}
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 0
     }
   ],
   "blocks": [
