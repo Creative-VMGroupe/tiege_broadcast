@@ -1,6 +1,33 @@
+<div class="{% if section.settings.include_margins %}wrapper{% endif %}">
+  {%- for block in section.blocks -%}
+    {% render block %}
+  {%- endfor -%}
+</div>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+{
+  "name": "Apps - Accordion",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "include_margins",
+      "default": false,
+      "label": "Include margins"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Apps - Accordion"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header","aside","footer"]
   }
+}
 {% endschema %}
