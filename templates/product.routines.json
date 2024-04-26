@@ -834,73 +834,6 @@
         "padding_bottom": 60
       }
     },
-    "custom_section_double_static_pQqinK": {
-      "type": "custom-section-double-static",
-      "blocks": {
-        "subheading_HqEmxf": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Introducing",
-            "text_size": 3,
-            "padding_bottom": 16
-          }
-        },
-        "heading_KVypzw": {
-          "type": "heading",
-          "settings": {
-            "title": "Image with text",
-            "text_size": 8,
-            "padding_bottom": 16
-          }
-        },
-        "text_AmdEHC": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
-            "text_style": "font-body",
-            "padding_bottom": 16
-          }
-        },
-        "buttons_Ywb4zb": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "subheading_HqEmxf",
-        "heading_KVypzw",
-        "text_AmdEHC",
-        "buttons_Ywb4zb"
-      ],
-      "settings": {
-        "layout": "",
-        "height": "screen-height-three-quarters",
-        "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full",
-        "padding": 16,
-        "padding_mobile": 16,
-        "image_1": "shopify:\/\/shop_images\/L2-Image1.jpg",
-        "image_2": "shopify:\/\/shop_images\/ujhwalrajput_1708502532_3307481420620264931_2187891039.jpg",
-        "image_width": "one-half",
-        "hover_effect": false,
-        "text_alignment": "left",
-        "text_alignment_mobile": "left",
-        "reverse_blocks": false,
-        "bg_color": "",
-        "color": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "171061224373a1e0d4": {
       "type": "apps",
       "blocks": {
@@ -936,7 +869,6 @@
     "section_rich_text_e66XhK",
     "1711051410c76bca1d",
     "related",
-    "custom_section_double_static_pQqinK",
     "171061224373a1e0d4"
   ]
 }
