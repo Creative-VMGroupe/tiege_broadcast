@@ -164,7 +164,17 @@
         "max": 40,
         "step": 1,
         "unit": "-",
-        "label": "Line Height",
+        "label": "Headings Line Height",
+        "default": 20
+      },
+      {
+        "type": "range",
+        "id": "body-line_height",
+        "min": 0,
+        "max": 40,
+        "step": 1,
+        "unit": "-",
+        "label": "Body Line Height",
         "default": 20
       },
       {
