@@ -25816,6 +25816,9 @@ div.rc_popup {
   margin: 60px 0 !important;
 }
 /*Global*/
+p, a, span, h2.column__heading {
+  line-height: var(--BODY-LINE-HEIGHT);
+}
 @media only screen and (max-width: 749px) {
   .grid--mobile-slider {
     scroll-padding: 0;
