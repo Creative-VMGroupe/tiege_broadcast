@@ -180,11 +180,6 @@
 {% endcapture %}
 {% assign number_of_blocks = section.blocks.size %}
 <style>
-  @media(max-width: 869px) {
-    .product-modal__content {
-      padding: calc(var(--inner) * 1.5) 0;
-    }
-  }
   @media(max-width: 749px) {
     .text-left {
       text-align: center;
@@ -396,6 +391,7 @@ section.comparision-system .comparision-details {
 }
 .compare-system-modal .product-modal__container {
   height: 100vh;
+  width: 100vw;
 }
 @media only screen and (min-width: 870px) {
     .compare-system-modal .product-modal__container {
