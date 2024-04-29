@@ -14,35 +14,30 @@
   var delta = 5;
   var navbarHeight = $(".header__wrapper").outerHeight();
 
-  if (window.innerWidth > 749) {
-    $(window).scroll(function (event) {
-      didScroll = true;
-    });
-  
-    setInterval(function () {
-      if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-      }
-    }, 250);
-  }
+  $(window).scroll(function (event) {
+    didScroll = true;
+  });
+
+  setInterval(function () {
+    if (didScroll) {
+      hasScrolled();
+      didScroll = false;
+    }
+  }, 250);
 
   function hasScrolled() {
     var st = $(this).scrollTop();
     if (Math.abs(lastScrollTop - st) <= delta) return;
     if (st > lastScrollTop && st > navbarHeight) {
       $(".header__wrapper")
-        .removeClass("js__header__stuck")
-        .addClass("aos-animate");
+        .removeClass("js__header__stuck");
     } else if (st === 0) {
       $(".header__wrapper")
-        .removeClass("js__header__stuck")
-        .addClass("aos-animate");
+        .removeClass("js__header__stuck");
     } else {
       if (st + $(window).height() < $(document).height()) {
         $(".header__wrapper")
-          .addClass("js__header__stuck")
-          .removeClass("aos-animate");
+          .addClass("js__header__stuck");
       }
     }
     lastScrollTop = st;
