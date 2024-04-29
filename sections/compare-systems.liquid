@@ -293,7 +293,6 @@
     height: 56px;
     line-height: 56px;
     margin: 0;
-  text-wrap: nowrap;
 }
 #cd-table ul>li {
     list-style: none;
@@ -392,6 +391,11 @@ section.comparision-system .comparision-details {
 }
 .compare-system-modal .product-modal__container {
   height: 100vh;
+}
+@media only screen and (max-width: 869px) {
+  .compare-system-modal .comparision-wrapper {
+    max-width: 100vw;
+  }
 }
 @media only screen and (min-width: 870px) {
     .compare-system-modal .product-modal__container {
