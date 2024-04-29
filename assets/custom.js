@@ -55,7 +55,7 @@
       parentMenu.dataset.sliderulePane = slideRule;
     }
   });
-
+/*Level Guide Pop Up*/
 document.addEventListener('click', function(event) {
     if (event.target && event.target.id === 'levelGuideBtn') {
         console.log('Clicked');
