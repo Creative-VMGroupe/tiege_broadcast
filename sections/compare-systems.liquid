@@ -391,7 +391,11 @@ section.comparision-system .comparision-details {
 }
 .compare-system-modal .product-modal__container {
   height: 100vh;
-  width: 100vw;
+}
+@media only screen and (max-width: 870px) {
+  .compare-system-modal .comparision-wrapper {
+    max-width: 100vw;
+  }
 }
 @media only screen and (min-width: 870px) {
     .compare-system-modal .product-modal__container {
