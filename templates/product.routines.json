@@ -765,7 +765,7 @@
       "settings": {
         "default_open": false,
         "title": "Reviews",
-        "heading_size": 8,
+        "heading_size": 7,
         "show_icon": false,
         "icon_name": "icon-droplet",
         "icon_size": 50,
