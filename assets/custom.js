@@ -57,6 +57,7 @@
   });
 /*Level Guide Pop Up*/
 document.addEventListener('click', function(event) {
+  console.log('Level Guide')
     if (event.target && event.target.id === 'levelGuideBtn') {
         console.log('Clicked');
         const levelGuidePopUp = document.getElementById('level-guide-pop-up');
