@@ -42,6 +42,12 @@
     }
     lastScrollTop = st;
   }
+
+  $('.header__mobile__hamburger').click(function(){
+    if ($(".header__wrapper").hasClass("js__header__stuck")) {
+      $(".header__wrapper").removeClass("js__header__stuck");
+    }
+  });
   
   $('.sliderow').click(function() {
     $(this).toggleClass('is-active')
