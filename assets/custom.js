@@ -56,14 +56,17 @@
     }
   });
 
-  $("#levelGuideBtn").on("click", function() {
-    console.log('Item clicked', $('#level-guide-pop-up'));
-    const levelGuidePopUp = document.getElementById('level-guide-pop-up');
-    if (levelGuidePopUp) {
-      levelGuidePopUp.click();
+document.addEventListener('click', function(event) {
+    if (event.target && event.target.id === 'levelGuideBtn') {
+        console.log('Clicked');
+        const levelGuidePopUp = document.getElementById('level-guide-pop-up');
+      if (levelGuidePopUp) {
+            levelGuidePopUp.click();
+        } else {
+            console.log('levelGuidePopUp not found');
+        }
     }
-  });
-})();
+});
 
 document.addEventListener("theme:quick-add:open", function (event) {
   let openedModals = document.querySelectorAll(".product-quick-add");
