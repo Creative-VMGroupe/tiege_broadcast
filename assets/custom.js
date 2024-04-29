@@ -55,19 +55,15 @@
       parentMenu.dataset.sliderulePane = slideRule;
     }
   });
-/*Level Guide Pop Up*/
-document.addEventListener('click', function(event) {
-  console.log('Level Guide')
-    if (event.target && event.target.id === 'levelGuideBtn') {
-        console.log('Clicked');
-        const levelGuidePopUp = document.getElementById('level-guide-pop-up');
-      if (levelGuidePopUp) {
-            levelGuidePopUp.click();
-        } else {
-            console.log('levelGuidePopUp not found');
-        }
+
+  $("#levelGuideBtn").on("click", function() {
+    console.log('Item clicked', $('#level-guide-pop-up'));
+    const levelGuidePopUp = document.getElementById('level-guide-pop-up');
+    if (levelGuidePopUp) {
+      levelGuidePopUp.click();
     }
-});
+  });
+})();
 
 document.addEventListener("theme:quick-add:open", function (event) {
   let openedModals = document.querySelectorAll(".product-quick-add");
@@ -82,4 +78,18 @@ document.addEventListener("theme:quick-add:open", function (event) {
   if (currentModal.querySelectorAll(".rc-widget").length === 0) {
     window.ReChargeWidget.createWidget(config);
   }
+});
+
+/*Level Guide*/
+document.addEventListener('click', function(event) {
+  console.log("Level Guide")
+    if (event.target && event.target.id === 'levelGuideBtn') {
+        console.log('Clicked');
+        const levelGuidePopUp = document.getElementById('level-guide-pop-up');
+      if (levelGuidePopUp) {
+            levelGuidePopUp.click();
+        } else {
+            console.log('levelGuidePopUp not found');
+        }
+    }
 });
