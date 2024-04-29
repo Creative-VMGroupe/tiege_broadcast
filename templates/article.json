@@ -54,7 +54,7 @@
             "url": "",
             "image": "shopify:\/\/shop_images\/rosemary-v1608581888105.png",
             "color": "",
-            "bg_color": "#F0F0F0",
+            "bg_color": "#f0f0f0",
             "border_color": ""
           }
         },
@@ -66,7 +66,7 @@
             "url": "",
             "image": "shopify:\/\/shop_images\/willow-v1608581883683.png",
             "color": "",
-            "bg_color": "#F0F0F0",
+            "bg_color": "#f0f0f0",
             "border_color": ""
           }
         },
@@ -78,7 +78,7 @@
             "url": "",
             "image": "shopify:\/\/shop_images\/eucalyptus-v1608581874819.png",
             "color": "",
-            "bg_color": "#F0F0F0",
+            "bg_color": "#f0f0f0",
             "border_color": ""
           }
         }
@@ -181,6 +181,20 @@
         "card_bg_color": "",
         "padding_top": 50,
         "padding_bottom": 50
+      }
+    },
+    "section_product_7ePe7T": {
+      "type": "section-product",
+      "settings": {
+        "layout": "",
+        "product": "level-1-acne-routine-1",
+        "limit": 5,
+        "image": "shopify:\/\/shop_images\/black_square_del.webp",
+        "scrolling_styles": "vertical",
+        "horizontal_scroll": false,
+        "bg_color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "section_columns_zYbRC3": {
@@ -326,6 +340,7 @@
     "section_highlights_tqjrWA",
     "section_rich_text_GDUWCk",
     "section_reviews_6RY6Fc",
+    "section_product_7ePe7T",
     "section_columns_zYbRC3",
     "section_blog_43mLzn",
     "1712723703b76a9181"
