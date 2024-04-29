@@ -180,6 +180,11 @@
 {% endcapture %}
 {% assign number_of_blocks = section.blocks.size %}
 <style>
+  @media(max-width: 869px) {
+    .product-modal__content {
+      padding: calc(var(--inner) * 1.5) 0;
+    }
+  }
   @media(max-width: 749px) {
     .text-left {
       text-align: center;
