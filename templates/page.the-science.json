@@ -189,7 +189,7 @@
         "text_RiTpBb"
       ],
       "custom_css": [
-        ".brick__block__text {padding: 80px var(--outer);}"
+        ".brick__block__text {padding: 60px var(--outer);}"
       ],
       "settings": {
         "layout": "",
