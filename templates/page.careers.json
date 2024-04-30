@@ -286,15 +286,15 @@
         "heading_BwXpkV": {
           "type": "heading",
           "settings": {
-            "title": "Rich text",
-            "text_size": 8,
+            "title": "Join Our Team",
+            "text_size": 7,
             "padding_bottom": 16
           }
         },
         "text_yWC9iV": {
           "type": "text",
           "settings": {
-            "text": "<p>Tiege Hanley's rocket ship growth trajectory, fueled by a diverse team hailing from top universities, entrepreneurial backgrounds, and companies, is united by a singular, impactful mission: to revolutionize men's skin care.<\/p>",
+            "text": "<p>Are you envisioning yourself as a part of this team? If so, we are eager to hear from you! Click the button below to explore the available positions and proceed with your application.<\/p>",
             "text_size": 5,
             "text_style": "font-body",
             "padding_bottom": 16
@@ -303,9 +303,9 @@
         "buttons_yE8faa": {
           "type": "buttons",
           "settings": {
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
+            "button_text": "View Open Positions",
+            "button_url": "https:\/\/recruiting.paylocity.com\/recruiting\/jobs\/All\/00176a66-1b60-4deb-8861-0957a91fd6e1\/Tiege-Hanley-LLC?ip_et_ctx=23825823_103_20",
+            "button_type": "btn--secondary",
             "button_size": "",
             "button_style": "btn--solid",
             "show_arrow": false,
