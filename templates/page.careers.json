@@ -18,121 +18,6 @@
         "padding_bottom": 50
       }
     },
-    "section_hero_KpG8aH": {
-      "type": "section-hero",
-      "blocks": {
-        "heading_9yzrUQ": {
-          "type": "heading",
-          "settings": {
-            "title": "Image banner",
-            "heading_size": 7
-          }
-        },
-        "text_3UMYgJ": {
-          "type": "text",
-          "settings": {
-            "description": "Tell your brand's story through images.",
-            "text_size": 3,
-            "text_style": "font-body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_9yzrUQ",
-        "text_3UMYgJ"
-      ],
-      "disabled": true,
-      "settings": {
-        "height": "screen-height-one-half",
-        "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO3.jpg",
-        "link": "",
-        "mobile_height": "screen-height-three-quarters--mobile",
-        "flex_align_desktop": "align--middle-center-desktop",
-        "flex_align_mobile": "align--middle-center-mobile",
-        "overlay_opacity": 0,
-        "overlay_color": "#000000",
-        "show_overlay_text": false,
-        "bg_color": "",
-        "color": "#ffffff"
-      }
-    },
-    "section_accordion_new_aR6m4x": {
-      "type": "section-accordion-new",
-      "blocks": {
-        "text_RabEtT": {
-          "type": "text",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
-          }
-        },
-        "text_ywAY9g": {
-          "type": "text",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
-          }
-        },
-        "text_6cyrKc": {
-          "type": "text",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
-          }
-        },
-        "text_nYK7dA": {
-          "type": "text",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_RabEtT",
-        "text_ywAY9g",
-        "text_6cyrKc",
-        "text_nYK7dA"
-      ],
-      "settings": {
-        "default_open": true,
-        "title": "Benefits",
-        "heading_size": 7,
-        "subheading_size": 6,
-        "text_size": 3,
-        "show_icon": false,
-        "icon_name": "icon-award",
-        "icon_size": 20,
-        "icon_color": "#545454",
-        "bg_color": "#f7f7f7",
-        "color": "",
-        "border_color": "",
-        "width": "wrapper--narrow",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "1713433291682d433b": {
-      "type": "apps",
-      "blocks": {
-        "instafeed_app_block_cbp6bd": {
-          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
-          "settings": {
-            "title": "@tiegehanley",
-            "title_color": "",
-            "alignment": "center",
-            "html_area": ""
-          }
-        }
-      },
-      "block_order": [
-        "instafeed_app_block_cbp6bd"
-      ],
-      "settings": {
-        "include_margins": false
-      }
-    },
     "section_accordion_group_gwwmkH": {
       "type": "section-accordion-group",
       "blocks": {
@@ -207,13 +92,185 @@
         "padding_top": 80,
         "padding_bottom": 80
       }
+    },
+    "section_accordion_group_RtmWNU": {
+      "type": "section-accordion-group",
+      "blocks": {
+        "heading_NMWj7K": {
+          "type": "heading",
+          "settings": {
+            "title": "Culture & Core Values"
+          }
+        },
+        "question_yxk7bc": {
+          "type": "question",
+          "settings": {
+            "default_open": true,
+            "title": "Our Mission",
+            "content": "<p>Tiege Hanley provides simple men's skin care routines that ensure consistent, visible results, boosting confidence & personal success. Our mission is to offer uncomplicated skin care, empowering men to look, feel, and be their best.<br\/><\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_pGHYUd": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Be Creative",
+            "content": "<p>We challenge the status quo and embrace originality, using creativity as a catalyst for innovative problem-solving and unique strategies, all aimed at delivering results and setting us apart in our industry.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_fWDzG7": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "(Keep it) UNCOMPLICATED.",
+            "content": "<p>Uncomplicated became our motto for making skin care for men easy.  But UNCOMPLICATED became much more; it permeates our business, guides our processes, the ideas we come up with, and the products we develop.  We expect innovation from our teams but want to find ways to simplify. With every decision ask yourself, “Is this Uncomplicated?”<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_AGjdEQ": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Tiege Guys First",
+            "content": "<p>Making our customers look and feel amazing is at the forefront of what we do.   Make it easy for guys to engage and buy while working to earn and keep their trust.   We do what’s right for our team members while obsessing over our guys.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_YtRjyC": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Have a BackBone",
+            "content": "<p>We have conviction and are passionate about our business goals but are obligated to respectively receive and challenge ideas when we disagree.   We do not compromise for social cohesion, but once a decision is determined, we commit wholly, to supporting our Further Together Value.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_6tUUXB": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Further Together",
+            "content": "<p>When we win, we win together.   We all listen attentively, speak candidly, and treat others respectfully.  Leaders are vocally self-critical, even when doing so is awkward or embarrassing.  We put the team’s success ahead of individual wins.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_6CDgrM": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Hire And Develop The Best",
+            "content": "<p>Our success is predicated on the quality of our team.  Leaders raise the performance bar with every hire and promotion.  They recognize exceptional talent, take their role in coaching seriously and willingly move them to higher levels. In a lean, fast-paced business, we encourage individuals to take the initiative to deliver results and solve problems independently.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_LQ6eHF": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Need For Speed",
+            "content": "<p>We have things to accomplish; time is not our friend.   However, it is our competitive advantage.  We are a disrupter brand that values calculated risk-taking.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_QbBxHP": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Act Like An Owner",
+            "content": "<p>We act like owners who deploy the financial and human capital of the company like it is their own while acting on behalf of the entire company and beyond ourselves.   Owners use data when making decisions and never say, “That’s not my job.\" <\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_yAiTgw": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Connected To Data",
+            "content": "<p>We stay connected to data and audit frequently.  Leaders pair data with context and our Tiege Guys First and Act Like an Owner mindset to answer the “why” of every decision we make.   We are skeptical when metrics and anecdotes differ. <\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NMWj7K",
+        "question_yxk7bc",
+        "question_pGHYUd",
+        "question_fWDzG7",
+        "question_AGjdEQ",
+        "question_YtRjyC",
+        "question_6tUUXB",
+        "question_6CDgrM",
+        "question_LQ6eHF",
+        "question_QbBxHP",
+        "question_yAiTgw"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "columns": "1",
+        "bg_color": "#f7f7f7",
+        "color": "",
+        "border_color": "",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "1713433291682d433b": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_cbp6bd": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "@tiegehanley",
+            "title_color": "",
+            "alignment": "center",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_cbp6bd"
+      ],
+      "settings": {
+        "include_margins": false
+      }
     }
   },
   "order": [
     "main",
-    "section_hero_KpG8aH",
-    "section_accordion_new_aR6m4x",
-    "1713433291682d433b",
-    "section_accordion_group_gwwmkH"
+    "section_accordion_group_gwwmkH",
+    "section_accordion_group_RtmWNU",
+    "1713433291682d433b"
   ]
 }
