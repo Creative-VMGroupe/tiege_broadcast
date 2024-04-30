@@ -103,7 +103,7 @@
         "highlight_iUyMhm"
       ],
       "custom_css": [
-        ".reviews__grid:after {padding: 0;}"
+
       ],
       "settings": {
         "style": "rectangle",
