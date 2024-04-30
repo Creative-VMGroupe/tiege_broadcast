@@ -15785,9 +15785,11 @@ body.has-line-design.grid-compact .reviews__grid {
   --columns: var(--COLUMNS);
   flex: 0 0 auto;
   display: flex;
+  /* Edited for Science page
   width: calc(
     100% / var(--columns) - var(--gap) * (var(--columns) - 1) / var(--columns)
-  );
+  ); */
+  width: 100%;
   margin-right: var(--gap);
 }
 @media only screen and (min-width: 750px) and (max-width: 989px) {
