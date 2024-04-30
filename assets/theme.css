@@ -15729,6 +15729,7 @@ body.has-line-design.grid-compact .reviews__grid {
 @media only screen and (max-width: 749px) {
   .reviews__grid {
     padding-left: var(--outer);
+    padding-right: var(--outer);
     margin-left: var(--outer-offset);
     margin-right: var(--outer-offset);
     gap: 0;
