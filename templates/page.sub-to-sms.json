@@ -122,7 +122,7 @@
         "text_fkLdgL": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text": "<p>Optional: By entering your number and clicking Sign Up!, you agree to receive marketing and promotional messages and\/or non-marketing updates and information from Tiege Hanley at the number providfed. Consent is not a contion of purchase. Message and data rates mat apply. Message frequenct varies. Reply HELP for help or STOP to cancel. View our Privacy Policy & Terms.<\/p>",
             "text_size": 4,
             "text_style": "font-body",
             "padding_bottom": 16
