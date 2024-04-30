@@ -18,52 +18,13 @@
         "padding_bottom": 50
       }
     },
-    "section_hero_KpG8aH": {
-      "type": "section-hero",
-      "blocks": {
-        "heading_9yzrUQ": {
-          "type": "heading",
-          "settings": {
-            "title": "Image banner",
-            "heading_size": 7
-          }
-        },
-        "text_3UMYgJ": {
-          "type": "text",
-          "settings": {
-            "description": "Tell your brand's story through images.",
-            "text_size": 3,
-            "text_style": "font-body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_9yzrUQ",
-        "text_3UMYgJ"
-      ],
-      "disabled": true,
-      "settings": {
-        "height": "screen-height-one-half",
-        "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO3.jpg",
-        "link": "",
-        "mobile_height": "screen-height-three-quarters--mobile",
-        "flex_align_desktop": "align--middle-center-desktop",
-        "flex_align_mobile": "align--middle-center-mobile",
-        "overlay_opacity": 0,
-        "overlay_color": "#000000",
-        "show_overlay_text": false,
-        "bg_color": "",
-        "color": "#ffffff"
-      }
-    },
     "section_rich_text_jNheMR": {
       "type": "section-rich-text",
       "blocks": {
         "heading_mUQcy6": {
           "type": "heading",
           "settings": {
-            "title": "Sign Up For SMS",
+            "title": "Accessibility",
             "text_size": 7,
             "padding_bottom": 30
           }
@@ -71,7 +32,7 @@
         "subheading_YRywd3": {
           "type": "subheading",
           "settings": {
-            "subheading": "Sign Up For Our VIP SMS List!",
+            "subheading": "Our Commitment to Accessibility",
             "text_size": 5,
             "padding_bottom": 16
           }
@@ -79,7 +40,7 @@
         "text_7736yN": {
           "type": "text",
           "settings": {
-            "text": "<p>Get early access to new products, exclusive offers, and more!<\/p>",
+            "text": "<p>Tiege Hanley is committed to making our website's content accessible and user friendly to everyone. If you are having difficulty viewing or navigating the content on this website, or notice any content, feature, or functionality that you believe is not fully accessible to people with disabilities, please call our Customer Service team at 636.626.2273 or email our team at<a href=\"mailto:accessibility@tiege.com?subject=Disabled%20Access\">accessibility@tiege.com <\/a>with “Disabled Access” in the subject line and provide a description of the specific feature you feel is not fully accessible or a suggestion for improvement. We take your feedback seriously and will consider it as we evaluate ways to accommodate all of our customers and our overall accessibility policies. Additionally, while we do not control such vendors, we strongly encourage vendors of third-party digital content to provide content that is accessible and user friendly.<\/p>",
             "text_size": 3,
             "text_style": "font-body",
             "padding_bottom": 0
@@ -93,57 +54,11 @@
       ],
       "settings": {
         "width": "wrapper--narrow",
-        "align_text": "text-left",
+        "align_text": "text-center",
         "bg_color": "",
         "color": "",
-        "padding_top": 60,
+        "padding_top": 80,
         "padding_bottom": 0
-      }
-    },
-    "contact_form_JMNxML": {
-      "type": "contact-form",
-      "blocks": {
-        "text_xRdkVF": {
-          "type": "text",
-          "settings": {
-            "title": "First Name",
-            "required": false
-          }
-        },
-        "text_ybmiXM": {
-          "type": "text",
-          "settings": {
-            "title": "Last Name",
-            "required": false
-          }
-        },
-        "email_MPXE7P": {
-          "type": "email",
-          "settings": {
-            "title": "Email",
-            "required": true
-          }
-        }
-      },
-      "block_order": [
-        "text_xRdkVF",
-        "text_ybmiXM",
-        "email_MPXE7P"
-      ],
-      "custom_css": [
-        "h2 {text-align: left; margin-bottom: 30px;}",
-        ".visually-hidden {position: static !important;}",
-        "button {background-color: #00ad2d; border-color: #00ad2d;}",
-        ".field {border: 1px solid; padding-left: 20px;}"
-      ],
-      "settings": {
-        "title": "",
-        "terms": true,
-        "width": "wrapper--narrow",
-        "bg_color": "",
-        "color": "",
-        "padding_top": 60,
-        "padding_bottom": 60
       }
     },
     "1713433291682d433b": {
@@ -169,9 +84,7 @@
   },
   "order": [
     "main",
-    "section_hero_KpG8aH",
     "section_rich_text_jNheMR",
-    "contact_form_JMNxML",
     "1713433291682d433b"
   ]
 }
