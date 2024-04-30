@@ -139,7 +139,7 @@
         "review_QxDdcL"
       ],
       "custom_css": [
-        ".reviews__grid-item {width: 100%;}"
+        ".reviews__grid-item {width: 50%; margin: 0 auto;}"
       ],
       "settings": {
         "show_featured_image": false,
