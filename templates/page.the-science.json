@@ -263,7 +263,7 @@
       "type": "section-video",
       "settings": {
         "video": "shopify:\/\/files\/videos\/f7db5c375de94bceb432a68695da9d5d.mov",
-        "show_video_popup": false,
+        "show_video_popup": true,
         "video_popup_social": "https:\/\/www.youtube.com\/watch?v=nOjrW8jRB78",
         "desktop_height": "screen-height-one-half",
         "mobile_height": "screen-height-one-half--mobile",
@@ -280,7 +280,7 @@
         "bg_color": "",
         "color": "#ffffff",
         "link_text": "Watch",
-        "link": "",
+        "link": "https:\/\/www.youtube.com\/watch?v=nOjrW8jRB78",
         "button_type": "btn--white",
         "button_size": "",
         "button_style": "btn--outline",
