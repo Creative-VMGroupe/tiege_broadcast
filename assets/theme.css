@@ -25344,6 +25344,9 @@ body.has-header-sticky .timeline {
   .grid-membership-icons__container {
   padding: 0 16px;
 }
+  .member-tiers-wrapper-custom {
+    padding: 0 16px;
+  }
   .member-benefits__text {
     padding: 0 20px;
   }
