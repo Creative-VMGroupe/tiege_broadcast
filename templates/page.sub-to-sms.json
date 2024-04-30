@@ -113,7 +113,7 @@
         "bg_color": "",
         "color": "",
         "padding_top": 50,
-        "padding_bottom": 50
+        "padding_bottom": 30
       }
     },
     "section_rich_text_g3V9f9": {
@@ -131,6 +131,9 @@
       },
       "block_order": [
         "text_fkLdgL"
+      ],
+      "custom_css": [
+        ".hero__content.hero__content--compact {width: 70%;}"
       ],
       "settings": {
         "width": "wrapper--narrow",
