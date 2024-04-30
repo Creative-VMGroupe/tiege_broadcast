@@ -138,6 +138,7 @@
           "type": "highlight",
           "settings": {
             "heading": "",
+            "subheading": "Subheading",
             "url": "",
             "image": "shopify:\/\/shop_images\/IMG_5261_VSCO_dadb3224-ffb7-49c5-a6b4-ff2ce31e2a09.jpg",
             "color": "",
@@ -149,6 +150,7 @@
           "type": "highlight",
           "settings": {
             "heading": "",
+            "subheading": "Subheading",
             "url": "",
             "image": "shopify:\/\/shop_images\/HARRYS_FW_PORT_0529.jpg",
             "color": "",
@@ -160,6 +162,7 @@
           "type": "highlight",
           "settings": {
             "heading": "",
+            "subheading": "Subheading",
             "url": "",
             "image": "shopify:\/\/shop_images\/TH_GRWM_Screenshot_2024-03-22_at_11.03.12_PM.png",
             "color": "",
@@ -504,6 +507,24 @@
       "block_order": [
         "instafeed_app_block_d8JxFr"
       ],
+      "disabled": true,
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "171444854930410d14": {
+      "type": "apps",
+      "blocks": {
+        "okendo_media_carousel_gnarUN": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/media-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "level-1-essential-routine-1"
+          }
+        }
+      },
+      "block_order": [
+        "okendo_media_carousel_gnarUN"
+      ],
       "settings": {
         "include_margins": false
       }
@@ -521,6 +542,7 @@
     "section_rich_text_mAEfrd",
     "section_before_after_q3KGGj",
     "section_before_after_yD7FLe",
-    "1713424042503d4ba1"
+    "1713424042503d4ba1",
+    "171444854930410d14"
   ]
 }
