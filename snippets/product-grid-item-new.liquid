@@ -11,7 +11,15 @@
   Usage: 
   {% render 'product-grid-item', product: product, index: index, sizes: image_sizes %} 
 {% endcomment %}
+{%- style -%}
+  #Product--{{ section.id }}.product-item{
+   
+  {%- unless text_color == 'rgba(0,0,0,0)' or text_color == blank -%}
+      --text: {{ text_color }};
+    {%- endunless -%}
+  }
 
+{%- endstyle -%}
 {%- liquid
   assign animation_delay = animation_delay | default: 0
   assign aos_delay_default = animation_delay | times: 100
