@@ -4783,7 +4783,8 @@ p,
 
 .strong,
 strong {
-  font-weight: var(--FONT-WEIGHT-BODY-BOLD);
+  /* font-weight: var(--FONT-WEIGHT-BODY-BOLD); */
+  font-weight: 600;
 }
 
 a {
