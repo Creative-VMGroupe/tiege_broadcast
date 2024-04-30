@@ -18,6 +18,30 @@
         "padding_bottom": 50
       }
     },
+    "section_rich_text_tfDRaN": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_ipzcW6": {
+          "type": "heading",
+          "settings": {
+            "title": "Tiege Hanley Is Seeking \"A\" Players.",
+            "text_size": 7,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_ipzcW6"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-center",
+        "bg_color": "#ffffff",
+        "color": "",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
     "section_accordion_group_gwwmkH": {
       "type": "section-accordion-group",
       "blocks": {
@@ -343,6 +367,10 @@
       "block_order": [
         "instafeed_app_block_cbp6bd"
       ],
+      "custom_css": [
+        "#insta-feed {background-color: #f7f7f7; padding-top: 60px;}",
+        "#insta-feed h2 {margin-top: 0 !important;}"
+      ],
       "settings": {
         "include_margins": false
       }
@@ -350,6 +378,7 @@
   },
   "order": [
     "main",
+    "section_rich_text_tfDRaN",
     "section_accordion_group_gwwmkH",
     "section_accordion_group_RtmWNU",
     "section_rich_text_PhrTbk",
