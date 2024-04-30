@@ -43,6 +43,20 @@
         "padding_bottom": 0
       }
     },
+    "section_product_7ePe7T": {
+      "type": "section-product",
+      "settings": {
+        "layout": "",
+        "product": "level-1-acne-routine-1",
+        "limit": 5,
+        "scrolling_styles": "vertical",
+        "horizontal_scroll": false,
+        "bg_color": "#f7f7f7",
+        "text_color": "#000000",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_highlights_tqjrWA": {
       "type": "section-highlights",
       "blocks": {
@@ -181,20 +195,6 @@
         "card_bg_color": "",
         "padding_top": 50,
         "padding_bottom": 50
-      }
-    },
-    "section_product_7ePe7T": {
-      "type": "section-product",
-      "settings": {
-        "layout": "",
-        "product": "level-1-acne-routine-1",
-        "limit": 5,
-        "scrolling_styles": "vertical",
-        "horizontal_scroll": false,
-        "bg_color": "#000000",
-        "text_color": "#ffffff",
-        "padding_top": 0,
-        "padding_bottom": 0
       }
     },
     "section_columns_zYbRC3": {
@@ -337,10 +337,10 @@
   },
   "order": [
     "main",
+    "section_product_7ePe7T",
     "section_highlights_tqjrWA",
     "section_rich_text_GDUWCk",
     "section_reviews_6RY6Fc",
-    "section_product_7ePe7T",
     "section_columns_zYbRC3",
     "section_blog_43mLzn",
     "1712723703b76a9181"
