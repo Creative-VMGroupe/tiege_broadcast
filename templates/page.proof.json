@@ -491,6 +491,23 @@
         "padding_bottom": 0
       }
     },
+    "171444854930410d14": {
+      "type": "apps",
+      "blocks": {
+        "okendo_media_carousel_gnarUN": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/media-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "level-1-essential-routine-1"
+          }
+        }
+      },
+      "block_order": [
+        "okendo_media_carousel_gnarUN"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
     "1713424042503d4ba1": {
       "type": "apps",
       "blocks": {
@@ -510,23 +527,6 @@
       "settings": {
         "include_margins": false
       }
-    },
-    "171444854930410d14": {
-      "type": "apps",
-      "blocks": {
-        "okendo_media_carousel_gnarUN": {
-          "type": "shopify:\/\/apps\/okendo\/blocks\/media-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
-          "settings": {
-            "product": "level-1-essential-routine-1"
-          }
-        }
-      },
-      "block_order": [
-        "okendo_media_carousel_gnarUN"
-      ],
-      "settings": {
-        "include_margins": false
-      }
     }
   },
   "order": [
@@ -541,7 +541,7 @@
     "section_rich_text_mAEfrd",
     "section_before_after_q3KGGj",
     "section_before_after_yD7FLe",
-    "1713424042503d4ba1",
-    "171444854930410d14"
+    "171444854930410d14",
+    "1713424042503d4ba1"
   ]
 }
