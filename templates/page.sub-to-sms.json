@@ -123,7 +123,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Optional: By entering your number and clicking Sign Up!, you agree to receive marketing and promotional messages and\/or non-marketing updates and information from Tiege Hanley at the number provided. Consent is not a condition of purchase. Message and data rates mat apply. Message frequency varies. Reply HELP for help or STOP to cancel. View our Privacy Policy & Terms.<\/p>",
-            "text_size": 4,
+            "text_size": 3,
             "text_style": "font-body",
             "padding_bottom": 16
           }
