@@ -28,12 +28,24 @@
 -%}
 
 {%- style -%}
-   .product-item__title {
+   #Product--{{ section.id }} .product-item__title {
        {%- unless text_color == 'rgba(0,0,0,0)' or text_color == blank -%}
       --text: {{ text_color }};
     {%- endunless -%}
   color: var(--text)
    }
+  #Product--{{ section.id }} .sale .new-price {
+           {%- unless text_color == 'rgba(0,0,0,0)' or text_color == blank -%}
+      --text: {{ text_color }};
+    {%- endunless -%}
+  color: var(--text)
+  }
+  #Product--{{ section.id }} .old-price {
+           {%- unless text_color == 'rgba(0,0,0,0)' or text_color == blank -%}
+      --text: {{ text_color }};
+    {%- endunless -%}
+  color: var(--text)
+  }
   #Product--{{ section.id }} {
     --PT: {{ section.settings.padding_top }}px;
     --PB: {{ section.settings.padding_bottom }}px;
