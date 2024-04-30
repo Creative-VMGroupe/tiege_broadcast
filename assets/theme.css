@@ -25394,6 +25394,7 @@ body.has-header-sticky .timeline {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding: 0 16px;
 }
 .member-footer_wrapper {
   margin-top: 16px;
