@@ -127,8 +127,8 @@
         "bg_color": "",
         "color": "",
         "sub_color": "#00ad2d",
-        "padding_top": 60,
-        "padding_bottom": 60
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
     "section_highlights_EmCUMF": {
@@ -138,7 +138,7 @@
           "type": "highlight",
           "settings": {
             "heading": "",
-            "subheading": "Subheading",
+            "subheading": "",
             "url": "",
             "image": "shopify:\/\/shop_images\/IMG_5261_VSCO_dadb3224-ffb7-49c5-a6b4-ff2ce31e2a09.jpg",
             "color": "",
@@ -150,7 +150,7 @@
           "type": "highlight",
           "settings": {
             "heading": "",
-            "subheading": "Subheading",
+            "subheading": "",
             "url": "",
             "image": "shopify:\/\/shop_images\/HARRYS_FW_PORT_0529.jpg",
             "color": "",
@@ -162,7 +162,7 @@
           "type": "highlight",
           "settings": {
             "heading": "",
-            "subheading": "Subheading",
+            "subheading": "",
             "url": "",
             "image": "shopify:\/\/shop_images\/TH_GRWM_Screenshot_2024-03-22_at_11.03.12_PM.png",
             "color": "",
