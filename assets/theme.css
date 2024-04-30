@@ -25324,6 +25324,7 @@ body.has-header-sticky .timeline {
 .grid-membership-icons__container {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
+
 .icon_sub-custom {
   color: #00ad2d;
   margin: 10px 0;
@@ -25340,6 +25341,9 @@ body.has-header-sticky .timeline {
 }
 
 @media screen and (max-width: 749px) {
+  .grid-membership-icons__container {
+  padding: 0 16px;
+}
   .member-benefits__text {
     padding: 0 20px;
   }
