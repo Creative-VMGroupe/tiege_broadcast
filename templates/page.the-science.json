@@ -276,7 +276,7 @@
         "description": "Lorem ipsum dolor sit amet, consetetur",
         "text_size": 3,
         "flex_align": "align--bottom-left",
-        "flex_align_mobile": "align--middle-center-mobile",
+        "flex_align_mobile": "align--bottom-left-mobile",
         "bg_color": "",
         "color": "#ffffff",
         "link_text": "Watch",
