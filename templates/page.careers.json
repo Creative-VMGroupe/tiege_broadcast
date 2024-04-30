@@ -57,31 +57,31 @@
         "color": "#ffffff"
       }
     },
-    "section_accordion_wyg9pC": {
-      "type": "section-accordion",
+    "section_accordion_new_aR6m4x": {
+      "type": "section-accordion-new",
       "blocks": {
-        "text_h3mX3n": {
+        "text_RabEtT": {
           "type": "text",
           "settings": {
             "title": "Frequently asked question",
             "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
           }
         },
-        "text_bhk3wa": {
+        "text_ywAY9g": {
           "type": "text",
           "settings": {
             "title": "Frequently asked question",
             "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
           }
         },
-        "text_CTQwGh": {
+        "text_6cyrKc": {
           "type": "text",
           "settings": {
             "title": "Frequently asked question",
             "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
           }
         },
-        "text_mNb8Q7": {
+        "text_nYK7dA": {
           "type": "text",
           "settings": {
             "title": "Frequently asked question",
@@ -90,19 +90,22 @@
         }
       },
       "block_order": [
-        "text_h3mX3n",
-        "text_bhk3wa",
-        "text_CTQwGh",
-        "text_mNb8Q7"
+        "text_RabEtT",
+        "text_ywAY9g",
+        "text_6cyrKc",
+        "text_nYK7dA"
       ],
       "settings": {
-        "default_open": false,
+        "default_open": true,
         "title": "Benefits",
+        "heading_size": 7,
+        "subheading_size": 6,
+        "text_size": 3,
         "show_icon": false,
         "icon_name": "icon-award",
         "icon_size": 20,
         "icon_color": "#545454",
-        "bg_color": "",
+        "bg_color": "#f7f7f7",
         "color": "",
         "border_color": "",
         "width": "wrapper--narrow",
@@ -129,12 +132,88 @@
       "settings": {
         "include_margins": false
       }
+    },
+    "section_accordion_group_gwwmkH": {
+      "type": "section-accordion-group",
+      "blocks": {
+        "heading_AAPYi7": {
+          "type": "heading",
+          "settings": {
+            "title": "Benefits"
+          }
+        },
+        "question_nijFyT": {
+          "type": "question",
+          "settings": {
+            "default_open": true,
+            "title": "Career Growth Opportunities",
+            "content": "<p>We embrace creativity and uncomplicated processes to accelerate your career progression. Our need for speed, coupled with our penchant for hiring and developing the best, allows us to foster an environment where you can reach your full potential swiftly.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_d9MejY": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Competitive Compensation",
+            "content": "<p>We believe in acting like owners, which translates into competitive rewards for the hard work you put in. As a valued member of our team, we ensure that your financial needs are met and that your efforts are adequately compensated.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_rqFQG4": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Unlimited PTO & Hybrid Office",
+            "content": "<p>Acting like an owner also means knowing when to recharge. With our unlimited PTO, you can balance your work commitments and personal needs, keeping you motivated and at your best.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_ecncnA": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Passionate Team",
+            "content": "<p>Our 'Further Together' principle epitomizes our team spirit. As a part of the Tiege Hanley family, you'll work with passionate, dedicated professionals who put the team’s success ahead of individual wins.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        }
+      },
+      "block_order": [
+        "heading_AAPYi7",
+        "question_nijFyT",
+        "question_d9MejY",
+        "question_rqFQG4",
+        "question_ecncnA"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "columns": "1",
+        "bg_color": "#f7f7f7",
+        "color": "",
+        "border_color": "",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
     }
   },
   "order": [
     "main",
     "section_hero_KpG8aH",
-    "section_accordion_wyg9pC",
-    "1713433291682d433b"
+    "section_accordion_new_aR6m4x",
+    "1713433291682d433b",
+    "section_accordion_group_gwwmkH"
   ]
 }
