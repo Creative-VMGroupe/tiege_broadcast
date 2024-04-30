@@ -133,7 +133,7 @@
         "text_fkLdgL"
       ],
       "custom_css": [
-        ".hero__content.hero__content--compact {width: 70%;}"
+        ".hero__content.hero__content--compact {max-width: 450px;}"
       ],
       "settings": {
         "width": "wrapper--narrow",
