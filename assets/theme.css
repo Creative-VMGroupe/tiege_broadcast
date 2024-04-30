@@ -25590,6 +25590,7 @@ body.has-header-sticky .timeline {
 }
 .radio__legend__option-name {
  text-transform: var(--BTN-UPPERCASE); 
+  font-size: 14px;
 }
 .rc-widget .rc-option__text {
   text-transform: var(--BTN-UPPERCASE);
