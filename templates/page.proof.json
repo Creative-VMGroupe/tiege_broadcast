@@ -217,7 +217,7 @@
         "align_text": "text-center",
         "bg_color": "#ffffff",
         "color": "#000000",
-        "padding_top": 60,
+        "padding_top": 80,
         "padding_bottom": 30
       }
     },
@@ -400,8 +400,8 @@
         "bg_color": "#000000",
         "color": "#ffffff",
         "sub_color": "#00ad2d",
-        "padding_top": 60,
-        "padding_bottom": 60
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
     "section_rich_text_mAEfrd": {
@@ -424,7 +424,7 @@
         "align_text": "text-center",
         "bg_color": "#f7f7f7",
         "color": "#000000",
-        "padding_top": 60,
+        "padding_top": 80,
         "padding_bottom": 30
       }
     },
