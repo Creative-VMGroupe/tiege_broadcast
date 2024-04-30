@@ -239,9 +239,90 @@
       "settings": {
         "width": "wrapper--narrow",
         "columns": "1",
-        "bg_color": "#f7f7f7",
+        "bg_color": "#ffffff",
         "color": "",
         "border_color": "",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "section_rich_text_PhrTbk": {
+      "type": "section-rich-text",
+      "blocks": {
+        "text_kiCxaA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Tiege Hanley's rocket ship growth trajectory, fueled by a diverse team hailing from top universities, entrepreneurial backgrounds, and companies, is united by a singular, impactful mission: to revolutionize men's skin care.<\/p>",
+            "text_size": 5,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "subheading_3yAQae": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "- Thomas Robinson, Sr. Director of Growth",
+            "text_size": 3,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "text_kiCxaA",
+        "subheading_3yAQae"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-center",
+        "bg_color": "#f7f7f7",
+        "color": "",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "section_rich_text_HHkfDr": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_BwXpkV": {
+          "type": "heading",
+          "settings": {
+            "title": "Rich text",
+            "text_size": 8,
+            "padding_bottom": 16
+          }
+        },
+        "text_yWC9iV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Tiege Hanley's rocket ship growth trajectory, fueled by a diverse team hailing from top universities, entrepreneurial backgrounds, and companies, is united by a singular, impactful mission: to revolutionize men's skin care.<\/p>",
+            "text_size": 5,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_yE8faa": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_BwXpkV",
+        "text_yWC9iV",
+        "buttons_yE8faa"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-center",
+        "bg_color": "#ffffff",
+        "color": "",
         "padding_top": 80,
         "padding_bottom": 80
       }
@@ -271,6 +352,8 @@
     "main",
     "section_accordion_group_gwwmkH",
     "section_accordion_group_RtmWNU",
+    "section_rich_text_PhrTbk",
+    "section_rich_text_HHkfDr",
     "1713433291682d433b"
   ]
 }
