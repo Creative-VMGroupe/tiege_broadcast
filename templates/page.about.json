@@ -138,6 +138,9 @@
       "block_order": [
         "review_QxDdcL"
       ],
+      "custom_css": [
+        ".reviews__grid-item {width: 100%;}"
+      ],
       "settings": {
         "show_featured_image": false,
         "image_aspect_ratio": 1.3,
