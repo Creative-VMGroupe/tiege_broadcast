@@ -63,7 +63,7 @@
     <div class="featured-product__content" data-featured-content>
       <div class="featured-product__card">
         {%- if product != blank -%}
-          {%- render 'product-grid-item', product: product, index: forloop.index, sizes: grid_item_sizes -%}
+          {%- render 'product-grid-item', product: product, index: forloop.index, sizes: grid_item_sizes, text_color: text_color -%}
         {%- else -%}
           {%- render 'onboarding-product-grid-item', index: forloop.index -%}
         {%- endif -%}
