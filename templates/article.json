@@ -189,10 +189,9 @@
         "layout": "",
         "product": "level-1-acne-routine-1",
         "limit": 5,
-        "image": "shopify:\/\/shop_images\/black_square_del.webp",
         "scrolling_styles": "vertical",
         "horizontal_scroll": false,
-        "bg_color": "",
+        "bg_color": "#ffffff",
         "padding_top": 0,
         "padding_bottom": 0
       }
