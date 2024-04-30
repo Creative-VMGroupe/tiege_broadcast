@@ -191,8 +191,8 @@
         "limit": 5,
         "scrolling_styles": "vertical",
         "horizontal_scroll": false,
-        "bg_color": "#ffffff",
-        "text_color": "#00ad2d",
+        "bg_color": "#000000",
+        "text_color": "#ffffff",
         "padding_top": 0,
         "padding_bottom": 0
       }
