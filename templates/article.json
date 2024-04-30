@@ -102,6 +102,9 @@
         "highlight_J8f8Ug",
         "highlight_iUyMhm"
       ],
+      "custom_css": [
+        ".reviews__grid:after {padding: 0;}"
+      ],
       "settings": {
         "style": "rectangle",
         "grid": 3,
