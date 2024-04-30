@@ -25347,6 +25347,9 @@ body.has-header-sticky .timeline {
   .member-tiers-wrapper-custom {
     padding: 0 16px;
   }
+  .member-footer_wrapper {
+    padding: 0 16px;
+  }
   .member-benefits__text {
     padding: 0 20px;
   }
