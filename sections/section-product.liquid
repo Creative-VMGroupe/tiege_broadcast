@@ -28,6 +28,11 @@
 -%}
 
 {%- style -%}
+   #Product--{{ section.id }}.product-item {
+       {%- unless text_color == 'rgba(0,0,0,0)' or text_color == blank -%}
+      --text: {{ text_color }};
+    {%- endunless -%}
+   }
   #Product--{{ section.id }} {
     --PT: {{ section.settings.padding_top }}px;
     --PB: {{ section.settings.padding_bottom }}px;
