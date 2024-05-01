@@ -26225,8 +26225,8 @@ text-transform: uppercase;
   flex: 1;
 }
 .link-tab__underline {
-  border-bottom: 2px solid gray;
+  border-bottom: 2px solid lightgray;
 }
 .link-tab__active__underline {
-   border-bottom: 2px solid lightgray;
+   border-bottom: 2px solid gray;
 }
