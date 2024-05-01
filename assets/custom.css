@@ -325,3 +325,17 @@ body.template-product:has(.main-content > .shopify-section.section-overlay-heade
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
+@-webkit-keyframes fadeOutUp{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}@keyframes fadeOutUp{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}
+.js__header_animate {
+  -webkit-animation-name: fadeOutUp;
+  animation-name: fadeOutUp;
+  --animate-duration: 1s;
+  --animate-delay: 1s;
+  --animate-repeat: 1;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
