@@ -3463,7 +3463,7 @@ grid-slider {
     /* for Internet Explorer, Edge */
   }
   .grid--mobile-slider::-webkit-scrollbar {
-    display: none;
+    display: block;
     /* for Chrome, Safari, and Opera */
   }
   .grid--mobile-slider.is-enabled {
