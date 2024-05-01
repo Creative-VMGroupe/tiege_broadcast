@@ -5,11 +5,11 @@
       <p class='jobs-desc__title'>Location</p>
     </div>
     <div class="jobs-openings__container">
-      {% for block in blocks %}
+      {% for block in section.blocks %}
         <div class="available-job">
-          <p>{{ block.settings.job-name }}</p> 
-          <p>{{ block.settings.job-location }}</p> 
-          <a href="{{ block.settings.linkurl }}"><span>Learn More</span></a>
+          <p class='job-name'>{{ block.settings.job-name }}</p> 
+          <p class='job-loc'>{{ block.settings.job-location }}</p> 
+          <a href="{{ block.settings.linkurl }}" class='job-link'><span>Learn More</span></a>
         </div>
       {% endfor %}
     </div>

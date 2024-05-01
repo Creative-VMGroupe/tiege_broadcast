@@ -56,6 +56,19 @@
     },
     "jobs_container_Mk6ckg": {
       "type": "jobs-container",
+      "blocks": {
+        "jobs_6qGzFY": {
+          "type": "Jobs",
+          "settings": {
+            "job-name": "Sr. Marketplace Marketing Manager",
+            "job-location": "Chicago, IL",
+            "linkurl": "https:\/\/recruiting.paylocity.com\/Recruiting\/Jobs\/Details\/2330336?ip_et_ctx=23825823_103_20"
+          }
+        }
+      },
+      "block_order": [
+        "jobs_6qGzFY"
+      ],
       "settings": {
       }
     },
