@@ -351,4 +351,14 @@ body.template-product:has(.main-content > .shopify-section.section-overlay-heade
   .grid--mobile-slider::-webkit-scrollbar {
     display: unset !important;
   }
+  .grid--mobile-slider::-webkit-scrollbar {
+    width: 10px; /* Mostly for vertical scrollbars */
+    height: 10px; /* Mostly for horizontal scrollbars */
+  }
+  .grid--mobile-slider::-webkit-scrollbar-thumb { /* Foreground */
+    background: #999;
+  }
+  .grid--mobile-slider::-webkit-scrollbar-track { /* Background */
+    background: #333;
+  }
 }
