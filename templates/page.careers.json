@@ -18,6 +18,12 @@
         "padding_bottom": 50
       }
     },
+    "vm_link_tabs_xEMytP": {
+      "type": "vm-link-tabs",
+      "settings": {
+        "title": "Tabs"
+      }
+    },
     "section_rich_text_tfDRaN": {
       "type": "section-rich-text",
       "blocks": {
@@ -378,6 +384,7 @@
   },
   "order": [
     "main",
+    "vm_link_tabs_xEMytP",
     "section_rich_text_tfDRaN",
     "section_accordion_group_gwwmkH",
     "section_accordion_group_RtmWNU",
