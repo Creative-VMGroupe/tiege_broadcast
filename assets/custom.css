@@ -347,19 +347,22 @@ body.template-product:has(.main-content > .shopify-section.section-overlay-heade
 .js__header_animate .theme__header {
   background: #ffffff;
 }
-@media only screen and (max-width: 749px) {
+.grid-icon {
+  width: 100%;
+}
+/* @media only screen and (max-width: 749px) {
   .grid--mobile-slider::-webkit-scrollbar {
     display: unset !important;
     scrollbar-width: thin;
   }
   .grid--mobile-slider::-webkit-scrollbar {
-    width: 10px; /* Mostly for vertical scrollbars */
-    height: 10px; /* Mostly for horizontal scrollbars */
+    width: 10px;
+    height: 10px;
   }
-  .grid--mobile-slider::-webkit-scrollbar-thumb { /* Foreground */
+  .grid--mobile-slider::-webkit-scrollbar-thumb {
     background: #999;
   }
-  .grid--mobile-slider::-webkit-scrollbar-track { /* Background */
+  .grid--mobile-slider::-webkit-scrollbar-track {
     background: #333;
   }
-}
+} */
