@@ -3,13 +3,13 @@
   
   <div>
     <div>
-      <p>Open Positions</p>
+      <p>{{ section.settings.tab3 }}</p>
     </div>
     <div>
-      <p>Link 2</p>
+      <p>{{ section.settings.tab3 }}</p>
     </div>
     <div>
-      <p>{{ section.settings.title }}</p>
+      <p>{{ section.settings.tab3 }}</p>
     </div>
   </div>
 
@@ -22,16 +22,42 @@
     "settings": [
       {
       "type": "text",
-      "id": "title",
-      "label": "Tab 1"
-    } 
+      "id": "tab1",
+      "label": "Tab 1",
+        "default": "Open Positions"
+    },
+       {
+          "type": "url",
+          "id": "tab1_url",
+          "label": "Link"
+        },
+      {
+      "type": "text",
+      "id": "tab2",
+      "label": "Tab 2",
+        "default": "Benefits"
+    },
+            {
+          "type": "url",
+          "id": "tab2_url",
+          "label": "Link"
+        },
+      {
+      "type": "text",
+      "id": "tab3",
+      "label": "Tab 1",
+        "default": "Culture"
+    },
+            {
+          "type": "url",
+          "id": "tab3_url",
+          "label": "Link"
+        }
     ],
     "presets": [
       {
-      "name": "Link Tabs - Tiege",
-      "settings": {
-        "title": "Tabs"
-                  }
+      "name": "Link Tabs - Tiege"
+      
       }
       ]
     
