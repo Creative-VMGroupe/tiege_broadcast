@@ -26224,3 +26224,9 @@ text-transform: uppercase;
 .link-tabs__tab {
   flex: 1;
 }
+.link-tab__underline {
+  border-bottom: 2px solid gray;
+}
+.link-tab__active__underline {
+   border-bottom: 2px solid lightgray;
+}
