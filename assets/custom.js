@@ -98,3 +98,25 @@ document.addEventListener('click', function(event) {
         }
     }
 });
+
+/*Link Tabs*/
+linkElements.forEach(element => {
+    element.addEventListener('click', () => {
+        
+        console.log('Clicked on a link-tabs__tab element');
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+let linkElements = document.getElementsByClassName("link-tabs__tab");
+let i;
+console.log('Ok')
+  
+for (i = 0; i < linkElements.length; i++) {
+  linkElements[i].addEventListener("click", function() {
+    this.classList.toggle("link-tab__active__underline");
+	console.log('Works') 
+  });
+
+  }
+})
