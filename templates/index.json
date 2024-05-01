@@ -477,62 +477,107 @@
     "vm_section_text_row_LxAydb": {
       "type": "vm-section-text-row",
       "blocks": {
-        "icon_6yzDi4": {
+        "icon_GQqWWM": {
           "type": "icon",
           "settings": {
             "icon_name": "icon-shield",
-            "icon_size": 20,
+            "icon_size": 80,
             "icon_color": "#545454",
-            "title": "Secure transactions",
-            "heading_size": 4,
-            "text": "<p>Transactions are handled with bank-grade security.<\/p>",
+            "image": "shopify:\/\/shop_images\/noun-strong-4023355.png",
+            "title": "Designed for Men",
+            "heading_size": 3,
+            "text": "",
             "text_size": 3
           }
         },
-        "icon_4dYdED": {
+        "icon_xrpAkU": {
           "type": "icon",
           "settings": {
             "icon_name": "icon-trophy",
-            "icon_size": 20,
+            "icon_size": 80,
             "icon_color": "#545454",
-            "title": "Simple checkout",
-            "heading_size": 4,
-            "text": "<p>Our secure checkout is quick and easy to use.<\/p>",
+            "image": "shopify:\/\/shop_images\/noun-paw-1054352.png",
+            "title": "Never Tested on Animals",
+            "heading_size": 3,
+            "text": "",
             "text_size": 3
           }
         },
-        "icon_WhRJjL": {
+        "icon_RPqK9t": {
           "type": "icon",
           "settings": {
             "icon_name": "icon-chat",
-            "icon_size": 20,
+            "icon_size": 80,
             "icon_color": "#545454",
-            "title": "Get in touch",
-            "heading_size": 4,
-            "text": "<p>Have questions? Get in touch with us at any time.<\/p>",
+            "image": "shopify:\/\/shop_images\/noun-plane-2869631.png",
+            "title": "TSA Compliant",
+            "heading_size": 3,
+            "text": "",
+            "text_size": 3
+          }
+        },
+        "icon_UrxwKk": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-award",
+            "icon_size": 80,
+            "icon_color": "#545454",
+            "image": "shopify:\/\/shop_images\/noun-usa-map-4303861.png",
+            "title": "Made in USA",
+            "heading_size": 3,
+            "text": "",
+            "text_size": 3
+          }
+        },
+        "icon_hp678W": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-award",
+            "icon_size": 80,
+            "icon_color": "#545454",
+            "image": "shopify:\/\/shop_images\/noun-fragrance-free-4744189.png",
+            "title": "Fragrance-Free",
+            "heading_size": 3,
+            "text": "",
+            "text_size": 3
+          }
+        },
+        "icon_Bwk7Y3": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-award",
+            "icon_size": 80,
+            "icon_color": "#545454",
+            "image": "shopify:\/\/shop_images\/noun-chemist-erlenmeyer-2843246.png",
+            "title": "Chemist-Formulated",
+            "heading_size": 3,
+            "text": "",
             "text_size": 3
           }
         }
       },
       "block_order": [
-        "icon_6yzDi4",
-        "icon_4dYdED",
-        "icon_WhRJjL"
+        "icon_GQqWWM",
+        "icon_xrpAkU",
+        "icon_RPqK9t",
+        "icon_UrxwKk",
+        "icon_hp678W",
+        "icon_Bwk7Y3"
       ],
       "settings": {
-        "title": "",
-        "heading_size": 5,
+        "title": "Our Difference",
+        "heading_size": 7,
         "layout": "grid",
-        "grid": 3,
-        "align_heading": "text-left",
-        "align_text": "text-left",
+        "grid": 6,
+        "align_heading": "text-center",
+        "align_text": "text-center",
         "icon_alignment": "icon--top",
         "align_columns": "flex-align-top",
         "width": "wrapper--full-padded",
-        "bg_color": "",
+        "bg_color": "#f7f9fa",
         "color": "",
-        "padding_top": 50,
-        "padding_bottom": 50,
+        "padding_top": 80,
+        "padding_bottom": 80,
         "layout_mobile": "slider"
       }
     },
