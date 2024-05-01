@@ -34,8 +34,7 @@
         .addClass("js__header_animate");
     } else if (st === 0) {
       $(".header__wrapper")
-        .removeClass("js__header__stuck")
-        .addClass("js__header_animate");
+        .removeClass("js__header__stuck");
     } else {
       if (st + $(window).height() < $(document).height()) {
         $(".header__wrapper")
