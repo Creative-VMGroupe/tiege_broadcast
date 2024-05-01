@@ -153,16 +153,13 @@
 
     {%- if blocks_size > 0 -%}
       {%- capture columns_content -%}
-        <div class="grid {{ section.settings.align_columns }} {{ section.settings.align_text }} flickity-enabled mobile"
+        <div class="{{ layout_class }} {{ section.settings.align_columns }} {{ section.settings.align_text }}"
           {% if enable_slider %}
             data-grid-slider
             {% if request.design_mode %}
               data-block-scroll
             {% endif %}
           {% endif %}
-          data-slider
-          data-dots="line"
-          data-options='{"pageDots": true, "prevNextButtons": true, "autoPlay": 4000, "pauseAutoPlayOnHover": false}'
         >
           {%- for block in section.blocks -%}
             {%- liquid
@@ -239,7 +236,6 @@
                   {{ block_style }}
                   {% if enable_slider %}
                     data-grid-item
-                    data-slide
                   {% endif %}
                   {{ block.shopify_attributes }}
                 >
@@ -324,9 +320,8 @@
                   {%- endif -%}
                 {%- endcapture -%}
 
-                <div class="grid-item grid-icon mobile"
+                <div class="grid-item"
                   {{ block_style }}
-                  data-slide
                   {% if enable_slider %}
                     data-grid-item
                   {% endif %}
@@ -380,7 +375,6 @@
                   {{ block_style }}
                   {% if enable_slider %}
                     data-grid-item
-                    data-slide
                   {% endif %}
                   {{ block.shopify_attributes }}
                 >
