@@ -4,17 +4,17 @@
   <div class='link-tabs__container'>
     <div class='link-tabs__tab'>
       <a href='{{ section.settings.tab1_url }}'>
-      <span>{{ section.settings.tab1 }}</span>
+      <span class='{{ section.settings.heading_size }}' >{{ section.settings.tab1 }}</span>
       </a>
     </div>
     <div class='link-tabs__tab'>
       <a href='{{ section.settings.tab2_url }}'>
-      <span>{{ section.settings.tab2 }}</span>
+      <span class='{{ section.settings.heading_size }}'>{{ section.settings.tab2 }}</span>
       </a>
     </div>
     <div class='link-tabs__tab'>
       <a href='{{ section.settings.tab3_url }}'>
-      <span>{{ section.settings.tab3 }}</span>
+      <span class='{{ section.settings.heading_size }}'>{{ section.settings.tab3 }}</span>
       </a>
     </div>
   </div>
@@ -26,6 +26,15 @@
   {
     "name": "Link Tabs - Tiege",
     "settings": [
+            {
+            "type": "range",
+            "id": "heading_size",
+            "label": "Heading size",
+            "min": 1,
+            "max": 6,
+            "step": 1,
+            "default": 5
+          },
       {
       "type": "text",
       "id": "tab1",
