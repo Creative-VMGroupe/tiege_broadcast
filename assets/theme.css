@@ -26230,3 +26230,18 @@ text-transform: uppercase;
 .link-tab__active__underline {
    border-bottom: 2px solid gray;
 }
+/*Job Openings*/
+.jobs__wrapper {
+  
+}
+.jobs-desc__container {
+  display: flex;
+}
+.jobs-desc__title {
+flex: 1;
+}
+.jobs-openings__container {
+  
+}
+.available-job {}
+
