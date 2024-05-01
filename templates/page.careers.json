@@ -21,7 +21,13 @@
     "vm_link_tabs_xEMytP": {
       "type": "vm-link-tabs",
       "settings": {
-        "title": "Tabs"
+        "heading_size": 5,
+        "tab1": "Open Positions",
+        "tab1_url": "AccordionGroup--template--16844073402562__section_accordion_group_gwwmkH",
+        "tab2": "Benefits",
+        "tab2_url": "",
+        "tab3": "Culture",
+        "tab3_url": ""
       }
     },
     "section_rich_text_tfDRaN": {
