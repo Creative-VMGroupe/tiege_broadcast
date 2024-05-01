@@ -26219,5 +26219,8 @@ text-transform: uppercase;
 /*Link Tabs*/
 .link-tabs__container {
   display: flex;
-  
+  text-align: center;
+}
+.link-tabs__tab {
+  flex: 1;
 }
