@@ -26121,7 +26121,7 @@ text-transform: uppercase;
   .highlights-compact__container-vm .highlights__items--mobile-slider .highlights__item {
     width: 100% !important;
   }
-  div:not(.highlights-compact__container-vm) .highlights__items--mobile {
+  div:not(.highlights-compact__container-vm) > .highlights__items--mobile {
     display: flex !important;
     flex-direction: column !important;
   }
