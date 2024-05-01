@@ -350,6 +350,7 @@ body.template-product:has(.main-content > .shopify-section.section-overlay-heade
 @media only screen and (max-width: 749px) {
   .grid--mobile-slider::-webkit-scrollbar {
     display: unset !important;
+    scrollbar-width: thin;
   }
   .grid--mobile-slider::-webkit-scrollbar {
     width: 10px; /* Mostly for vertical scrollbars */
