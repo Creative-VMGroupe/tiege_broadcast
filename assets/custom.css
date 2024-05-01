@@ -338,5 +338,9 @@ body.template-product:has(.main-content > .shopify-section.section-overlay-heade
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 5600;
   opacity: 0;
 }
