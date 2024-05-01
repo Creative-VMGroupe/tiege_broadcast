@@ -5296,6 +5296,8 @@
         this.container = container;
         this.slideshow = slideshow || this.container.querySelector(selectors$I.slider);
 
+        console.log(this.container, this.slideshow);
+
         if (!this.slideshow) return;
 
         this.slideshowSlides = this.slideshow.querySelectorAll(selectors$I.slide);
