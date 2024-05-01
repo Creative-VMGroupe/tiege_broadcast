@@ -344,3 +344,6 @@ body.template-product:has(.main-content > .shopify-section.section-overlay-heade
   z-index: 5600;
   opacity: 0;
 }
+.js__header_animate .theme__header {
+  background: #ffffff;
+}
