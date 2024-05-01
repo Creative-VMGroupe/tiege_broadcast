@@ -5296,12 +5296,14 @@
         this.container = container;
         this.slideshow = slideshow || this.container.querySelector(selectors$I.slider);
 
-        console.log(this.container, this.slideshow);
 
         if (!this.slideshow) return;
 
         this.slideshowSlides = this.slideshow.querySelectorAll(selectors$I.slide);
 
+        console.log(this.container, this.slideshow, this.slideshowSlides);
+
+        
         if (this.slideshowSlides.length <= 1) return;
 
         this.sliderThumbs = this.container.querySelectorAll(selectors$I.sliderThumb);
