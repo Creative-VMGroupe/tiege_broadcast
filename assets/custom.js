@@ -100,13 +100,6 @@ document.addEventListener('click', function(event) {
 });
 
 /*Link Tabs*/
-linkElements.forEach(element => {
-    element.addEventListener('click', () => {
-        
-        console.log('Clicked on a link-tabs__tab element');
-    });
-});
-
 document.addEventListener('DOMContentLoaded', function() {
 let linkElements = document.getElementsByClassName("link-tabs__tab");
 let i;
