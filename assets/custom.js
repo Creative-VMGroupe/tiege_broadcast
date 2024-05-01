@@ -101,15 +101,21 @@ document.addEventListener('click', function(event) {
 
 /*Link Tabs*/
 document.addEventListener('DOMContentLoaded', function() {
-let linkElements = document.getElementsByClassName("link-tabs__tab");
-let i;
-console.log('Ok')
-  
-for (i = 0; i < linkElements.length; i++) {
-  linkElements[i].addEventListener("click", function() {
-    this.classList.toggle("link-tab__active__underline");
-	console.log('Works') 
-  });
+    let linkElements = document.getElementsByClassName("link-tabs__tab");
 
-  }
-})
+    for (let i = 0; i < linkElements.length; i++) {
+        linkElements[i].addEventListener("click", function() {
+            // Remove the class from all elements
+            for (let j = 0; j < linkElements.length; j++) {
+                if (linkElements[j] !== this) {
+                    linkElements[j].classList.remove("link-tab__active__underline");
+                }
+            }
+
+            // Toggle the class for the clicked element
+            this.classList.toggle("link-tab__active__underline");
+
+            console.log('Works');
+        });
+    }
+});
