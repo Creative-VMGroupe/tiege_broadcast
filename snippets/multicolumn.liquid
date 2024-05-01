@@ -161,6 +161,8 @@
             {% endif %}
           {% endif %}
           data-slider
+          data-dots="line"
+          data-options='{"pageDots": true, "prevNextButtons": true, "autoPlay": 4000, "pauseAutoPlayOnHover": false}'
         >
           {%- for block in section.blocks -%}
             {%- liquid
