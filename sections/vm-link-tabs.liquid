@@ -9,7 +9,7 @@
       <p>Link 2</p>
     </div>
     <div>
-      <p>Link 3</p>
+      <p>{{ section.settings.title }}</p>
     </div>
   </div>
 
@@ -19,6 +19,21 @@
 {% schema %}
   {
     "name": "Link Tabs - Tiege",
-    "settings": []
+    "settings": [
+      {
+      "type": "text",
+      "id": "title",
+      "label": "Tab 1"
+    } 
+    ],
+    "presets": [
+      {
+      "name": "Link Tabs - Tiege",
+      "settings": {
+        "title": "Tabs"
+                  }
+      }
+      ]
+    
   }
 {% endschema %}
