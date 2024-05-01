@@ -5534,8 +5534,6 @@
 
     register('double', slider);
 
-    register('columns', slider);
-
     const scrollTo = (elementTop) => {
       /* Sticky header check */
       let {stickyHeaderHeight} = readHeights();
