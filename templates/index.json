@@ -474,6 +474,68 @@
         "show_arrow": false
       }
     },
+    "vm_section_text_row_LxAydb": {
+      "type": "vm-section-text-row",
+      "blocks": {
+        "icon_6yzDi4": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-shield",
+            "icon_size": 20,
+            "icon_color": "#545454",
+            "title": "Secure transactions",
+            "heading_size": 4,
+            "text": "<p>Transactions are handled with bank-grade security.<\/p>",
+            "text_size": 3
+          }
+        },
+        "icon_4dYdED": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-trophy",
+            "icon_size": 20,
+            "icon_color": "#545454",
+            "title": "Simple checkout",
+            "heading_size": 4,
+            "text": "<p>Our secure checkout is quick and easy to use.<\/p>",
+            "text_size": 3
+          }
+        },
+        "icon_WhRJjL": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-chat",
+            "icon_size": 20,
+            "icon_color": "#545454",
+            "title": "Get in touch",
+            "heading_size": 4,
+            "text": "<p>Have questions? Get in touch with us at any time.<\/p>",
+            "text_size": 3
+          }
+        }
+      },
+      "block_order": [
+        "icon_6yzDi4",
+        "icon_4dYdED",
+        "icon_WhRJjL"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": 5,
+        "layout": "grid",
+        "grid": 3,
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "icon_alignment": "icon--top",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "layout_mobile": "slider"
+      }
+    },
     "section_text_row_YFhUxM": {
       "type": "section-text-row",
       "blocks": {
@@ -1086,6 +1148,7 @@
     "section_double_slider_new_tQFDaG",
     "section_collection_new_MWikbY",
     "section_video_W9NxLi",
+    "vm_section_text_row_LxAydb",
     "section_text_row_YFhUxM",
     "section_hero_iEX3nG",
     "section_before_after_hzKE7H",
