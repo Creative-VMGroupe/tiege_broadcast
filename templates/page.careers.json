@@ -18,18 +18,6 @@
         "padding_bottom": 50
       }
     },
-    "vm_link_tabs_xEMytP": {
-      "type": "vm-link-tabs",
-      "settings": {
-        "heading_size": 5,
-        "tab1": "Open Positions",
-        "tab1_url": "",
-        "tab2": "Benefits",
-        "tab2_url": "#AccordionGroup--template--16844073402562__section_accordion_group_gwwmkH",
-        "tab3": "Culture",
-        "tab3_url": "#AccordionGroup--template--16844073402562__section_accordion_group_RtmWNU"
-      }
-    },
     "section_rich_text_tfDRaN": {
       "type": "section-rich-text",
       "blocks": {
@@ -48,6 +36,42 @@
       "settings": {
         "width": "wrapper--narrow",
         "align_text": "text-center",
+        "bg_color": "#ffffff",
+        "color": "",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "vm_link_tabs_xEMytP": {
+      "type": "vm-link-tabs",
+      "settings": {
+        "heading_size": 5,
+        "tab1": "Open Positions",
+        "tab1_url": "",
+        "tab2": "Benefits",
+        "tab2_url": "#AccordionGroup--template--16844073402562__section_accordion_group_gwwmkH",
+        "tab3": "Culture",
+        "tab3_url": "#AccordionGroup--template--16844073402562__section_accordion_group_RtmWNU"
+      }
+    },
+    "section_rich_text_bmDDRz": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_BrT7qD": {
+          "type": "heading",
+          "settings": {
+            "title": "Open Positions",
+            "text_size": 7,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_BrT7qD"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-left",
         "bg_color": "#ffffff",
         "color": "",
         "padding_top": 80,
@@ -390,8 +414,9 @@
   },
   "order": [
     "main",
-    "vm_link_tabs_xEMytP",
     "section_rich_text_tfDRaN",
+    "vm_link_tabs_xEMytP",
+    "section_rich_text_bmDDRz",
     "section_accordion_group_gwwmkH",
     "section_accordion_group_RtmWNU",
     "section_rich_text_PhrTbk",
