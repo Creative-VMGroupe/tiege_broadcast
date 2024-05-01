@@ -5,47 +5,58 @@
       <p class='jobs-desc__title'>Location</p>
     </div>
     <div class="jobs-openings__container">
-      <div class="available-job">
-        <p>A Job</p> 
-        <p>Location</p> 
-        <a href=""><span>Learn More</span></a>
-      </div>
+      {% for block in blocks %}
+        <div class="available-job">
+          <p>{{ block.settings.job-name }}</p> 
+          <p>{{ block.settings.job-location }}</p> 
+          <a href="{{ block.settings.linkurl }}"><span>Learn More</span></a>
+        </div>
+      {% endfor %}
     </div>
   </div>
 </div>
 
 {% schema %}
-  {
-    "name": "Jobs - Tiege",
-    "settings": [],
-    "blocks": [
-      {
-        "type": "Jobs",
-        "name": "Job",
-        "settings": [
-           {
+{
+  "name": "Jobs - Tiege",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "Jobs",
+      "name": "Job",
+      "settings": [
+        {
           "id": "job-name",
           "type": "text",
           "label": "Job Name"
         },
-                     {
+        {
           "id": "job-location",
           "type": "text",
           "label": "Job Location"
         },
-              {
+        {
           "id": "linkurl",
           "type": "url",
           "label": "URL link"
         }
-       
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "Jobs - Tiege"
-      }
-    ]
-  }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Jobs - Tiege",
+      "blocks": [
+        {
+          "type": "Jobs",
+          "settings": {
+            "job-name": "Default Job Name",
+            "job-location": "Default Job Location",
+            "linkurl": "https://example.com"
+          }
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
