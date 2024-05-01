@@ -26236,6 +26236,7 @@ text-transform: uppercase;
 }
 .jobs-desc__container {
   display: flex;
+  border-bottom: 2px solid gray;
 }
 .jobs-desc__title {
 flex: 1;
