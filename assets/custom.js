@@ -30,14 +30,17 @@
     if (Math.abs(lastScrollTop - st) <= delta) return;
     if (st > lastScrollTop && st > navbarHeight) {
       $(".header__wrapper")
-        .removeClass("js__header__stuck");
+        .removeClass("js__header__stuck")
+        .addClass("js__header_animate");
     } else if (st === 0) {
       $(".header__wrapper")
-        .removeClass("js__header__stuck");
+        .removeClass("js__header__stuck")
+        .addClass("js__header_animate");
     } else {
       if (st + $(window).height() < $(document).height()) {
         $(".header__wrapper")
-          .addClass("js__header__stuck");
+          .addClass("js__header__stuck")
+          .removeClass("js__header_animate");
       }
     }
     lastScrollTop = st;
