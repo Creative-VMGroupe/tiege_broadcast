@@ -26216,3 +26216,8 @@ text-transform: uppercase;
   opacity: 1;
   visibility: visible;
 }
+/*Link Tabs*/
+.link-tabs__container {
+  display: flex;
+  
+}
