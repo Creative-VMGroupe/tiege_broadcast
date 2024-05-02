@@ -26266,6 +26266,7 @@ flex: 1;
 @media (max-width: 749px) { /* Adjust breakpoint as needed */
   .available-job {
     flex-wrap: wrap;
+    padding: 0;
   }
   
 
