@@ -26259,3 +26259,15 @@ flex: 1;
   flex: 1;
   padding: 15px 0;
 }
+@media (max-width: 749px) { /* Adjust breakpoint as needed */
+  .available-job {
+    flex-wrap: wrap;
+  }
+  
+
+
+  .job-name,
+  .job-loc {
+    flex-basis: 50%; /* Make the first two elements take up 50% of the container width */
+  }
+}
