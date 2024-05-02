@@ -26284,7 +26284,7 @@ flex: 1;
   .job-name,
   .job-loc {
     flex-basis: 50%; /* Make the first two elements take up 50% of the container width */
-    paddingt: 25px var(--outer);
+    padding: 25px var(--outer);
     
   }
 }
