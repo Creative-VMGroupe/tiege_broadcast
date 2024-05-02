@@ -26277,6 +26277,10 @@ flex: 1;
   .jobs__container {
     padding: 0 !important;
   }
+  .jobs-openings__container::after {
+  margin-left: var(--outer);
+  margin-right: var(--outer);
+}
   .jobs-desc__container {
     margin-left: var(--outer);
     margin-right: var(--outer);
