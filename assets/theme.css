@@ -26272,11 +26272,19 @@ flex: 1;
   .jobs__container {
     padding: 0 !important;
   }
+  .jobs-desc__container {
+    padding-left: var(--outer);
+    padding-right: var(--outer);
+  }
   .job-link {
     text-align: start;
+    padding-left: var(--outer);
+    padding-right: var(--outer);
   }
   .job-name,
   .job-loc {
     flex-basis: 50%; /* Make the first two elements take up 50% of the container width */
+    padding-left: var(--outer);
+    padding-right: var(--outer);
   }
 }
