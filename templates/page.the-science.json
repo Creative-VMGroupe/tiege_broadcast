@@ -200,7 +200,7 @@
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/L2_TiegeHanley_Advanced_Routine_Hero.jpg",
         "image_width": "one-half",
-        "text_alignment": "text-center",
+        "text_alignment": "text-left",
         "reverse_blocks": false,
         "bg_color": "#f7f7f7",
         "color": "",
