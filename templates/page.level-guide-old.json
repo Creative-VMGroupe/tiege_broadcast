@@ -103,7 +103,7 @@
         "buttons_UFHAD6": {
           "type": "buttons",
           "settings": {
-            "button_text": "Learn more",
+            "button_text": "Shop Now",
             "button_url": "shopify:\/\/products\/level-1-essential-routine-1",
             "button_type": "btn--secondary",
             "button_size": "",
@@ -259,7 +259,7 @@
         "buttons_Y7EyTf": {
           "type": "buttons",
           "settings": {
-            "button_text": "Learn more",
+            "button_text": "Shop Now",
             "button_url": "shopify:\/\/products\/level-2-advanced-routine",
             "button_type": "btn--secondary",
             "button_size": "",
@@ -415,7 +415,7 @@
         "buttons_PpGqfW": {
           "type": "buttons",
           "settings": {
-            "button_text": "Learn more",
+            "button_text": "Shop Now",
             "button_url": "shopify:\/\/products\/the-collection-snowboard-liquid",
             "button_type": "btn--secondary",
             "button_size": "",
@@ -595,7 +595,7 @@
         "buttons_4gte7z": {
           "type": "buttons",
           "settings": {
-            "button_text": "Learn more",
+            "button_text": "Shop Now",
             "button_url": "shopify:\/\/products\/level-1-acne-routine-1",
             "button_type": "btn--secondary",
             "button_size": "",
@@ -751,7 +751,7 @@
         "buttons_4wy7i8": {
           "type": "buttons",
           "settings": {
-            "button_text": "Learn more",
+            "button_text": "Shop Now",
             "button_url": "shopify:\/\/products\/level-2-advanced-acne-routine-1",
             "button_type": "btn--secondary",
             "button_size": "",
