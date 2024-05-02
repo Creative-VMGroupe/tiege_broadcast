@@ -741,6 +741,9 @@
     },
     "section_before_after_hzKE7H": {
       "type": "section-before-after",
+      "custom_css": [
+        ".wrapper--full .compare__buttons {padding: 0;}"
+      ],
       "settings": {
         "layout": "",
         "text_align_center": false,
@@ -861,6 +864,9 @@
         "heading_7d9jEX",
         "text_aFT9TL",
         "buttons_FF8pXr"
+      ],
+      "custom_css": [
+
       ],
       "settings": {
         "layout": "is-reversed",
