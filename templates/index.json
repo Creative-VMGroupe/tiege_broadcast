@@ -564,6 +564,7 @@
         "icon_hp678W",
         "icon_Bwk7Y3"
       ],
+      "disabled": true,
       "settings": {
         "title": "Our Difference",
         "heading_size": 7,
@@ -671,7 +672,6 @@
         "icon_hp678W",
         "icon_Bwk7Y3"
       ],
-      "disabled": true,
       "settings": {
         "title": "Our Difference",
         "heading_size": 7,
@@ -1245,6 +1245,7 @@
         "text_slide_FW3MAd",
         "text_slide_mmgFre"
       ],
+      "disabled": true,
       "settings": {
         "layout": "",
         "height": "screen-height-three-quarters",
