@@ -25529,6 +25529,9 @@ body.has-header-sticky .timeline {
   left: 3px;
 }
 /* PDP */
+.product__content {
+  padding-bottom: 80px;
+}
 .complementary-product__header {
   display: flex;
   justify-content: space-between;
@@ -25546,6 +25549,9 @@ body.has-header-sticky .timeline {
   margin-bottom: 0;
 }
 @media only screen and (max-width: 749px) {
+  .product__content {
+  padding-bottom: 48px;
+}
   #shopify-block-okendo_star_rating_DPzCnp {
     display: flex;
     justify-content: center;
