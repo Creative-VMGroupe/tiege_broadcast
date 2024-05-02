@@ -25455,6 +25455,7 @@ body.has-header-sticky .timeline {
 }
 .metafield-icons_text {
   max-width: 80px;
+  font-size: 14px;
 }
 .new-class {
   display: flex;
