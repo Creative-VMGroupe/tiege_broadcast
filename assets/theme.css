@@ -7983,7 +7983,8 @@ body:not(.has-line-design) .header__dropdown {
 }
 .grandparent .menu__blocks {
   display: flex;
-  flex: var(--images-space, 1);
+  /* flex: var(--images-space, 1); */
+  flex: 1;
 }
 body.grid-classic .grandparent .menu__blocks .menu__block {
   padding: var(--gap) calc(var(--gap) / 2);
