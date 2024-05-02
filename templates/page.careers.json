@@ -198,6 +198,9 @@
         "question_rqFQG4",
         "question_ecncnA"
       ],
+      "custom_css": [
+        "h3 {font-size: calc(var(--font-7) * var(--FONT-ADJUST-HEADING));}"
+      ],
       "settings": {
         "width": "wrapper--narrow",
         "columns": "1",
@@ -350,6 +353,9 @@
         "question_LQ6eHF",
         "question_QbBxHP",
         "question_yAiTgw"
+      ],
+      "custom_css": [
+        "h3 {font-size: calc(var(--font-7) * var(--FONT-ADJUST-HEADING));}"
       ],
       "settings": {
         "width": "wrapper--narrow",
