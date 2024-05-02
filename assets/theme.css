@@ -26241,9 +26241,14 @@ text-transform: uppercase;
 .jobs-desc__title {
 flex: 1;
 }
-.jobs-openings__container {
- 
+.jobs-openings__container::after {
+   content: '';
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid lightgray;
+  margin-top: 10px; /* Adjust as needed */
 }
+
 .available-job {
   display: flex;
    padding: 0px 25px;
