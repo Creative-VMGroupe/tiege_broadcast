@@ -778,7 +778,7 @@
         "video": "shopify:\/\/files\/videos\/49cdabb0f6154023b4b9d256784ae151.mp4",
         "show_video_popup": true,
         "video_popup_social": "https:\/\/www.youtube.com\/watch?v=yMIMUKZrSEg",
-        "desktop_height": "screen-height-one-half",
+        "desktop_height": "screen-height-two-thirds",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
         "overlay_opacity": 35,
