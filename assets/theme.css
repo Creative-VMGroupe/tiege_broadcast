@@ -9275,7 +9275,8 @@ header-search-popdown > details {
 
 @media (hover: hover) {
   .sliderow:hover .sliderow__title {
-    background: var(--bg-accent);
+    opacity: 50%;
+    /* background: var(--bg-accent); */
   }
 }
 .sliderow__title--highlight {
