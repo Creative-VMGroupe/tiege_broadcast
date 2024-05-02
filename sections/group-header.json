@@ -166,6 +166,9 @@
         "image_Kg8ziG",
         "image_WYFAXy"
       ],
+      "custom_css": [
+        "[class*=images-].grandparent.kids-4 .header__grandparent__links {grid-template-columns: repeat(4,minmax(0,1fr));}"
+      ],
       "settings": {
         "header_sticky": false,
         "header_style": "logo_center_menu_left",
