@@ -25685,7 +25685,7 @@ div.rc_popup {
 .rc-template__radio-group .rc-radio .rc-radio__label .discount-label {
     flex: 1 !important;
     font-weight: 400 !important;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 /*CLP*/
