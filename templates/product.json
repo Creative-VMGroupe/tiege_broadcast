@@ -165,7 +165,6 @@
         ".rc-subscription-details {display: none;}",
         ".rc-radio {border: 1px solid black;}",
         ".rc-selling-plans {display: none;}",
-        ".bi-star::before {height: 30px; width: 20px;}",
         ".rc-widget label {border-radius: 300px;}",
         ".accordion__title {font-weight: bold;}",
         ".accordion {border: none;}",
