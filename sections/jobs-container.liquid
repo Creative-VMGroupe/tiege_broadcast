@@ -7,9 +7,9 @@
     <div class="jobs-openings__container">
       {% for block in section.blocks %}
         <div class="available-job">
-          <p class='job-name'>{{ block.settings.job-name }}</p> 
-          <p class='job-loc'>{{ block.settings.job-location }}</p> 
-          <a href="{{ block.settings.linkurl }}" class='job-link '><p>Learn More</p></a>
+          <span class='job-name'>{{ block.settings.job-name }}</span> 
+          <span class='job-loc'>{{ block.settings.job-location }}</span> 
+          <a href="{{ block.settings.linkurl }}" class='job-link btn btn--text  btn--secondary'><span>Learn More</span></a>
         </div>
       {% endfor %}
     </div>
