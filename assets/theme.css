@@ -25341,6 +25341,9 @@ body.has-header-sticky .timeline {
 }
 
 @media screen and (max-width: 749px) {
+  .prod-modal__container-custom {
+    padding: 0;
+  }
   .grid-membership-icons__container {
   padding: 0 16px;
 }
