@@ -26278,13 +26278,13 @@ flex: 1;
   }
   .job-link {
     text-align: start;
-    padding-left: var(--outer);
-    padding-right: var(--outer);
+    padding: 0 var(--outer) 10px;
+    
   }
   .job-name,
   .job-loc {
     flex-basis: 50%; /* Make the first two elements take up 50% of the container width */
-    padding-left: var(--outer);
-    padding-right: var(--outer);
+    paddingt: 25px var(--outer);
+    
   }
 }
