@@ -26273,8 +26273,8 @@ flex: 1;
     padding: 0 !important;
   }
   .jobs-desc__container {
-    padding-left: var(--outer);
-    padding-right: var(--outer);
+    margin-left: var(--outer);
+    margin-right: var(--outer);
   }
   .job-link {
     text-align: start;
