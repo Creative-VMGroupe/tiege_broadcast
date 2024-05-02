@@ -26269,7 +26269,9 @@ flex: 1;
     padding: 0;
   }
   
-
+  .jobs__container {
+    padding: 0 !important;
+  }
   .job-link {
     text-align: start;
   }
