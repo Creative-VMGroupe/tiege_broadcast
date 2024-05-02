@@ -26265,7 +26265,9 @@ flex: 1;
   }
   
 
-
+  .job-link {
+    text-align: start;
+  }
   .job-name,
   .job-loc {
     flex-basis: 50%; /* Make the first two elements take up 50% of the container width */
