@@ -26301,3 +26301,12 @@ flex: 1;
     
   }
 }
+/*Image with Text*/
+.brick__block__text.plr-custom .hero__button-group {
+  flex-flow: row;
+}
+@media (max-width: 749px) {
+  .brick__block__text.plr-custom .hero__button-group {
+  flex-flow: column;
+}
+}

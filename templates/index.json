@@ -1094,7 +1094,19 @@
         "buttons_Qik6Rk": {
           "type": "buttons",
           "settings": {
-            "button_text": "Get The App",
+            "button_text": "Download for iPhone",
+            "button_url": "shopify:\/\/pages\/find-my-routine",
+            "button_type": "btn--secondary",
+            "button_size": "btn--large",
+            "button_style": "btn--outline",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        },
+        "buttons_Y8aEUf": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Download for Android",
             "button_url": "shopify:\/\/pages\/find-my-routine",
             "button_type": "btn--secondary",
             "button_size": "btn--large",
@@ -1107,7 +1119,11 @@
       "block_order": [
         "heading_7GyTji",
         "text_CKiGjj",
-        "buttons_Qik6Rk"
+        "buttons_Qik6Rk",
+        "buttons_Y8aEUf"
+      ],
+      "custom_css": [
+        ".hero__button-group {flex-flow: row;}"
       ],
       "settings": {
         "layout": "is-reversed",
