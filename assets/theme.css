@@ -25581,7 +25581,7 @@ body.has-header-sticky .timeline {
 }
 @media (min-width: 750px) {
   .product-recomend_tab {
-    font-size: calc(var(--font-7) * var(--FONT-ADJUST-HEADING)) !important;
+    font-size: calc(var(--font-5) * var(--FONT-ADJUST-HEADING)) !important;
   }
 }
 
