@@ -134,162 +134,6 @@
         "padding_bottom": 0
       }
     },
-    "section_columns_8mpFhV": {
-      "type": "section-columns",
-      "blocks": {
-        "image_6CqHfH": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Wash.png",
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "image_shape": "normal",
-            "title": "Wash",
-            "heading_size": 6,
-            "text": "<p>WASH is the foundation of the Tiege Hanley Skin Care System. WASH provides a clean canvas for all other Tiege Hanley products to play together in perfect harmony. Just WASH twice a day, every day.<\/p>",
-            "text_size": 3,
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        },
-        "image_wzA6hz": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Wash.png",
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "image_shape": "normal",
-            "title": "Scrub",
-            "heading_size": 6,
-            "text": "<p>SCRUB is the bacteria-buster of the bunch. It helps you to not only keep the surface of your skin clean, but scrub away any harmful bacteria that might cause future damage. Twice a week, work the SCRUB into your damp face for about 10 seconds, rinse off and pat dry.<\/p>",
-            "text_size": 3,
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        },
-        "image_Aejbfx": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Wash.png",
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "image_shape": "normal",
-            "title": "AM",
-            "heading_size": 6,
-            "text": "<p>AM is your morning-time moisturizer. (Yeah. Guys have to moisturize too) After WASHing in the morning, work the AM moisturizer onto your face for about 10 seconds.<\/p>",
-            "text_size": 3,
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        },
-        "image_VHKMEc": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Wash.png",
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "image_shape": "normal",
-            "title": "PM",
-            "heading_size": 6,
-            "text": "<p>PM is your nightly moisturizer. You know the drill. After WASHing, work the PM moisturizer onto your face for about 10 seconds.<\/p>",
-            "text_size": 3,
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "image_6CqHfH",
-        "image_wzA6hz",
-        "image_Aejbfx",
-        "image_VHKMEc"
-      ],
-      "settings": {
-        "title": "Included in this System",
-        "heading_size": 7,
-        "layout": "grid",
-        "grid": 4,
-        "align_heading": "text-left",
-        "align_text": "text-left",
-        "align_columns": "flex-align-top",
-        "width": "wrapper--full-padded",
-        "bg_color": "#ffffff",
-        "color": "",
-        "padding_top": 80,
-        "padding_bottom": 80,
-        "layout_mobile": "slider"
-      }
-    },
-    "section_double_k3aGgY": {
-      "type": "section-double",
-      "blocks": {
-        "heading_9cY3GQ": {
-          "type": "heading",
-          "settings": {
-            "title": "Level 2: Advanced Routine",
-            "text_size": 7,
-            "padding_bottom": 16
-          }
-        },
-        "text_d3VXVD": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 3,
-            "text_style": "font-body",
-            "padding_bottom": 16
-          }
-        },
-        "buttons_Y7EyTf": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "Shop Now",
-            "button_url": "shopify:\/\/products\/level-2-advanced-routine",
-            "button_type": "btn--secondary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "heading_9cY3GQ",
-        "text_d3VXVD",
-        "buttons_Y7EyTf"
-      ],
-      "settings": {
-        "layout": "",
-        "height": "screen-height-three-quarters",
-        "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/L2_TiegeHanley_Advanced_Routine_Hero.jpg",
-        "image_width": "one-half",
-        "text_alignment": "text-center",
-        "padding_lr": 50,
-        "reverse_blocks": false,
-        "bg_color": "#f7f7f7",
-        "color": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "section_columns_TFbgVV": {
       "type": "section-columns",
       "blocks": {
@@ -375,6 +219,182 @@
         "image_rqGe7t",
         "image_cce9hD",
         "image_E3zcdr"
+      ],
+      "settings": {
+        "title": "Included in this System",
+        "heading_size": 7,
+        "layout": "grid",
+        "grid": 4,
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "bg_color": "#ffffff",
+        "color": "",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "layout_mobile": "slider"
+      }
+    },
+    "section_double_k3aGgY": {
+      "type": "section-double",
+      "blocks": {
+        "heading_9cY3GQ": {
+          "type": "heading",
+          "settings": {
+            "title": "Level 2: Advanced Routine",
+            "text_size": 7,
+            "padding_bottom": 16
+          }
+        },
+        "text_d3VXVD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_Y7EyTf": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Shop Now",
+            "button_url": "shopify:\/\/products\/level-2-advanced-routine",
+            "button_type": "btn--secondary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_9cY3GQ",
+        "text_d3VXVD",
+        "buttons_Y7EyTf"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/L2_TiegeHanley_Advanced_Routine_Hero.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-center",
+        "padding_lr": 50,
+        "reverse_blocks": false,
+        "bg_color": "#f7f7f7",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_columns_B7wVFM": {
+      "type": "section-columns",
+      "blocks": {
+        "image_wzWXt7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Wash",
+            "heading_size": 6,
+            "text": "<p>WASH is the foundation of the Tiege Hanley Skin Care System. WASH provides a clean canvas for all other Tiege Hanley products to play together in perfect harmony. Just WASH twice a day, every day.<\/p>",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_qDDgEW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ecom_flat_01_scrub_01.jpg",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Scrub",
+            "heading_size": 6,
+            "text": "<p>SCRUB is the bacteria-buster of the bunch. It helps you to not only keep the surface of your skin clean, but scrub away any harmful bacteria that might cause future damage. Twice a week, work the SCRUB into your damp face for about 10 seconds, rinse off and pat dry.<\/p>",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_MraTbB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AM-1.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "AM",
+            "heading_size": 6,
+            "text": "<p>AM is your morning-time moisturizer. (Yeah. Guys have to moisturize too) After WASHing in the morning, work the AM moisturizer onto your face for about 10 seconds.<\/p>",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_kGLgRV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PM-1.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "PM",
+            "heading_size": 6,
+            "text": "<p>PM is your nightly moisturizer. You know the drill. After WASHing, work the PM moisturizer onto your face for about 10 seconds.<\/p>",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_VB76n4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PM-1.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Eyes",
+            "heading_size": 6,
+            "text": "<p>EYES helps keep the skin around your peepers looking healthy. EYES combines Caffeine and Acetyl Hexapeptitde-8 to increase circulation and ease the muscle contractions that cause bags and puffiness. Use eyes twice a day.<\/p>",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "image_wzWXt7",
+        "image_qDDgEW",
+        "image_MraTbB",
+        "image_kGLgRV",
+        "image_VB76n4"
       ],
       "settings": {
         "title": "Included in this System",
@@ -1069,9 +1089,9 @@
     "section_hero_kdbpRc",
     "section_rich_text_MfyXMb",
     "section_double_cjpW8U",
-    "section_columns_8mpFhV",
-    "section_double_k3aGgY",
     "section_columns_TFbgVV",
+    "section_double_k3aGgY",
+    "section_columns_B7wVFM",
     "section_columns_4xBK9p",
     "section_double_EFMiLM",
     "section_columns_rKmJAH",
