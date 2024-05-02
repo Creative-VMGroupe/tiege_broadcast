@@ -326,7 +326,7 @@
         "subheading_iCNmeX": {
           "type": "subheading",
           "settings": {
-            "subheading": "Older Guys Get it",
+            "subheading": "Lorem Ipsum Dolor Sit Amet, Consetetur",
             "text_size": 5,
             "padding_bottom": 16
           }
@@ -334,7 +334,7 @@
         "text_mDCVF7": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>83%<\/strong>of men 65 and older agree that, “Men need to look after their skin,” while<strong>only 59%<\/strong>of young men aged 18-24 agree. Looks like skin health is something men recognize later in life, which is unfortunate.<\/p>",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar diam ac risus lobortis, eget scelerisque sem bibendum. Nullam ornare massa a est mattis, ac molestie mi dictum. Sed non eros a nibh feugiat sodales. Vestibulum ut augue in odio tincidunt rhoncus sed eget leo. Quisque vehicula neque ut erat fermentum, sit amet mattis libero feugiat. Integer varius magna at dui ultrices, id dignissim libero ultricies. Fusce convallis euismod dolor, a consectetur risus consequat nec. In non elit nec lorem volutpat aliquam eget at enim. Sed fermentum nisl sed tincidunt tristique.<\/p>",
             "text_size": 3,
             "text_style": "font-body",
             "padding_bottom": 30
@@ -342,6 +342,7 @@
         },
         "subheading_mGH8bK": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "subheading": "Why Cure When Prevention Is on the Table?",
             "text_size": 5,
@@ -350,6 +351,7 @@
         },
         "text_Rz6Ead": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Men are selective about health care– caring about some aspects while ignoring others.<\/p><p>For example, we’ve been conditioned to pay attention to dental hygiene, brushing and flossing daily. We visit the dentist regularly and listen to what the doc says.<\/p><p>Contrast this with another type of visit. In an ideal world, you’re seeing a dermatologist once a year. The worst thing a Derm can tell you is you’re not using sunscreen and you’ve developed pre-cancerous spots or something along those lines. But they should also reveal if our skin is dry, oily or acne prone, which they don’t.<\/p><p>What makes it normal to take care of teeth but not your skin?<\/p>",
             "text_size": 3,
@@ -359,6 +361,7 @@
         },
         "subheading_DiQkFJ": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "subheading": "Tiege Didn’t Just Get It Right on the First Try",
             "text_size": 5,
@@ -367,6 +370,7 @@
         },
         "text_iMBCLH": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>We started by trying to shortlist the best men's skin care products (that already existed) and selling them in bundles. It quickly became clear these products were <strong>too expensive<\/strong> or <strong>were not formulated for men<\/strong>.<\/p><p>So we pivoted to the expensive route of custom formulations.<\/p><p>Through <strong>a lot of trial and error<\/strong>– that nearly killed us– we eventually found the perfect regimen.<\/p><p>I’m sharing this so you can see that having a product that <strong>actually delivers<\/strong> is so much more valuable than fancy packaging.<\/p><p>If you buy our system, and don’t see solid results, send it back. No ifs, ands, or buts.<\/p>",
             "text_size": 3,
@@ -376,6 +380,7 @@
         },
         "subheading_4xAXVh": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "subheading": "Sweating the Small Stuff",
             "text_size": 5,
@@ -384,6 +389,7 @@
         },
         "text_jbJy4J": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Compared to competitors, the concentration of Acetyl Hexapeptide-8 and Retinyl Palmitate in our EYES and SERUM products is much higher.<\/p><p>Repeated muscle contractions increase the <strong>depth<\/strong> of facial wrinkles. Acetyl Hexapeptide-8 & Pentapeptide-18 work by <strong>intercepting<\/strong> these muscle contraction signals sent by the brain. This is much less invasive than Botox injections.<\/p><p>Our ACNE product has Salicylic Acid at 1.6%. Some say we should go to 2% which a lot of competitors have. But what they don’t know is that our product is a leave-on cream, not a rinse-off product like a cleanser or toner. We tested Salicylic Acid at 2% and I wanted to scratch the skin off my face at the end of the day!<\/p><p>This Skin Care Routine for Men kit is fragrance-free to avoid skin irritation. The scents in it are from carefully selected natural extracts.<\/p>",
             "text_size": 3,
@@ -413,6 +419,7 @@
     },
     "section_hero_nJEjWG": {
       "type": "section-hero",
+      "disabled": true,
       "settings": {
         "height": "screen-height-one-half",
         "width": "wrapper--full",
@@ -472,6 +479,7 @@
         "subheading_TEjnja",
         "text_qi7QGY"
       ],
+      "disabled": true,
       "settings": {
         "width": "wrapper--narrow",
         "align_text": "text-center",
