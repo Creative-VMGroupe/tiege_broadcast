@@ -5507,7 +5507,7 @@
       onLoad() {
         sections$k[this.id] = [];
         const els = this.container.querySelectorAll(selectors$I.slider);
-        console.log(els);
+        console.log(this.container, els);
         els.forEach((el) => {
           sections$k[this.id].push(new Slider(this.container, el));
         });
