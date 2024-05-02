@@ -26245,8 +26245,8 @@ flex: 1;
    content: '';
   display: block;
   width: 100%;
-  border-bottom: 2px solid lightgray;
-  margin-top: 10px; /* Adjust as needed */
+  border-bottom: 2px solid gray;
+ 
 }
 
 .available-job {
