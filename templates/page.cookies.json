@@ -88,7 +88,7 @@
         "bg_color": "",
         "color": "",
         "padding_top": 80,
-        "padding_bottom": 0
+        "padding_bottom": 80
       }
     },
     "1713433291682d433b": {
@@ -106,6 +106,10 @@
       },
       "block_order": [
         "instafeed_app_block_cbp6bd"
+      ],
+      "custom_css": [
+        "#insta-feed {background-color: #f7f7f7; padding-top: 60px;}",
+        "#insta-feed h2 {margin-top: 0 !important;}"
       ],
       "settings": {
         "include_margins": false
