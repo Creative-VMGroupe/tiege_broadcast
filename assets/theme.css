@@ -26244,11 +26244,15 @@ flex: 1;
 .jobs-openings__container {
   
 }
-.available-job {}
-.job-name {}
+.available-job {
+  display: flex;
+}
+.job-name {
+  flex: 2;
+}
 .job-loc {
-  
+  flex: 1;
 }
 .job-link {
-  
+  flex: 1;
 }
