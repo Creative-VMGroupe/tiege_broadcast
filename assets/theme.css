@@ -26242,10 +26242,11 @@ text-transform: uppercase;
 flex: 1;
 }
 .jobs-openings__container {
-  padding: 0px 25px;
+ 
 }
 .available-job {
   display: flex;
+   padding: 0px 25px;
 }
 .job-name {
   flex: 2;
@@ -26259,7 +26260,7 @@ flex: 1;
   flex: 1;
   padding: 15px 0;
 }
-.jobs-openings__container .available-job:nth-child(odd) {
+.jobs-openings__container .available-job:nth-child(even) {
   background-color: #f7f7f7;
 }
 @media (max-width: 749px) { /* Adjust breakpoint as needed */
