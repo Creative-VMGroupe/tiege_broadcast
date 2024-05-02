@@ -25486,6 +25486,7 @@ body.has-header-sticky .timeline {
 }
 .level-guide-member-single-tier_container {
   text-align: center;
+  height: 170px;
 }
 .level-guide-member-tiers-wrapper-custom {
   max-width: 800px;

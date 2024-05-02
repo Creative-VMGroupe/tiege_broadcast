@@ -31,7 +31,7 @@
         "text_zddB3y": {
           "type": "text",
           "settings": {
-            "description": "Tell your brand's story through images.",
+            "description": "MEMBERSHIP BENEFITS",
             "text_size": 3,
             "text_style": "font-body"
           }
@@ -70,7 +70,7 @@
         "text_LLtMee": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text": "<p>We believe a consistent skin care routine is crucial for success. Like gym consistency, it's key to seeing results. Our Membership program helps you establish this routine with guidance through your first 12 Tiege Hanley orders and beyond. As part of the Tiege Family, we ensure your routine is rewarding, offering incredible benefits to all members.<\/p>",
             "text_size": 3,
             "text_style": "font-body",
             "padding_bottom": 16
@@ -175,7 +175,7 @@
         "text_JAnBM6": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text": "<p>We want to guide you on a successful skin care journey by helping you develop a routine. Our Membership program is designed to assist you through your first 12 orders, turning you into a skin care expert!<\/p>",
             "text_size": 3,
             "text_style": "font-body",
             "padding_bottom": 32
@@ -187,13 +187,13 @@
             "pop-heading_size": 6,
             "box-1_text": "Member",
             "box-1_gifts": "3 Routine-building Gifts",
-            "box-1_description": "Tier 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "box-1_description": "All Tiege Hanley customers are Members upon their first subscription purchase. We want our members to get in the habit of completing their Tiege Hanley routine both morning and night, so we are going to provide you with some routine enforcing gifts on your 2nd, 4th, and 6th orders to keep you motivated!",
             "box-2_text": "VIP Member",
             "box-2_gifts": "3 VIP Gifts, 1 Premium Gift",
-            "box-2_description": "Tier 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "box-2_description": "By this point in your journey, you’ve committed to a routine that has started to show amazing results…that deserves a celebration! You’ll be upgraded to a VIP Member, and we’ll roll out the red carpet for you with three VIP gifts in your 8th, 10th, and 12th orders. To make it even better, all VIP Members also receive a premium gift as part of Tiege’s birthday celebration in July.",
             "box-3_text": "Emerald VIP",
             "box-3_gifts": "10% off every order, 2 Premium Gifts per year",
-            "box-3_description": "Tier 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "box-3_description": "After 12 orders with us, you’ve earned the title of EMERALD VIP, our elite customer status. This gives you an additional 10% off all Tiege Hanley orders for life, along with 2 premium EMERALD VIP gifts every year."
           }
         }
       },
