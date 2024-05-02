@@ -182,31 +182,10 @@
             "show_arrow": false,
             "image": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO_3.png"
           }
-        },
-        "text_slide_mtHNtP": {
-          "type": "text-slide",
-          "settings": {
-            "subheading": "★★★★★",
-            "subheading_size": 3,
-            "sub_letter_spacing": 5,
-            "title": "Willow Bark Test",
-            "heading_size": 7,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 3,
-            "text_style": "font-body",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png"
-          }
         }
       },
       "block_order": [
-        "text_slide_7rbw3L",
-        "text_slide_mtHNtP"
+        "text_slide_7rbw3L"
       ],
       "settings": {
         "layout": "is-reversed",
@@ -763,7 +742,7 @@
         "okendo_reviews_widget_NbUizF"
       ],
       "custom_css": [
-        ".rte a {background: none}"
+        ".rte a {background: none;}"
       ],
       "settings": {
         "default_open": false,
