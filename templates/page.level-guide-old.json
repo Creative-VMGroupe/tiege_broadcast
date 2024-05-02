@@ -789,19 +789,19 @@
         "padding_bottom": 0
       }
     },
-    "section_columns_6QqeUg": {
+    "section_columns_xe8AXT": {
       "type": "section-columns",
       "blocks": {
-        "image_bL8Tti": {
+        "image_3zgkYL": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Wash.png",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
-            "title": "Single Product",
+            "title": "Wash",
             "heading_size": 6,
-            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text": "<p>WASH is the foundation of the Tiege Hanley Skin Care System. WASH provides a clean canvas for all other Tiege Hanley products to play together in perfect harmony. Just WASH twice a day, every day.<\/p>",
             "text_size": 3,
             "button_text": "",
             "button_url": "",
@@ -811,16 +811,16 @@
             "show_arrow": false
           }
         },
-        "image_YqJxY9": {
+        "image_GjXM4J": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image": "shopify:\/\/shop_images\/ecom_flat_01_scrub_01.jpg",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
-            "title": "Single Product",
+            "title": "Scrub",
             "heading_size": 6,
-            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text": "<p>SCRUB is the bacteria-buster of the bunch. It helps you to not only keep the surface of your skin clean, but scrub away any harmful bacteria that might cause future damage. Twice a week, work the SCRUB into your damp face for about 10 seconds, rinse off and pat dry.<\/p>",
             "text_size": 3,
             "button_text": "",
             "button_url": "",
@@ -830,16 +830,16 @@
             "show_arrow": false
           }
         },
-        "image_Hcxec3": {
+        "image_FhBDTQ": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image": "shopify:\/\/shop_images\/AM-1.png",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
-            "title": "Single Product",
+            "title": "AM",
             "heading_size": 6,
-            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text": "<p>AM is your morning-time moisturizer. (Yeah. Guys have to moisturize too) After WASHing in the morning, work the AM moisturizer onto your face for about 10 seconds.<\/p>",
             "text_size": 3,
             "button_text": "",
             "button_url": "",
@@ -849,16 +849,16 @@
             "show_arrow": false
           }
         },
-        "image_hHiM3V": {
+        "image_aANiHR": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image": "shopify:\/\/shop_images\/PM-1.png",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
-            "title": "Single Product",
+            "title": "Acne",
             "heading_size": 6,
-            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text": "<p>What makes ACNE different is its formulation as a moisturizer as opposed to a face wash. By applying ACNE before you go to bed, the active ingredient, Salicylic Acid, is able to work its magic for 6-8 hours at a time. Incredibly helpful for mild to moderate acne.<\/p>",
             "text_size": 3,
             "button_text": "",
             "button_url": "",
@@ -870,10 +870,10 @@
         }
       },
       "block_order": [
-        "image_bL8Tti",
-        "image_YqJxY9",
-        "image_Hcxec3",
-        "image_hHiM3V"
+        "image_3zgkYL",
+        "image_GjXM4J",
+        "image_FhBDTQ",
+        "image_aANiHR"
       ],
       "settings": {
         "title": "Included in this System",
@@ -886,8 +886,8 @@
         "width": "wrapper--full-padded",
         "bg_color": "#ffffff",
         "color": "",
-        "padding_top": 50,
-        "padding_bottom": 50,
+        "padding_top": 80,
+        "padding_bottom": 80,
         "layout_mobile": "slider"
       }
     },
@@ -945,19 +945,19 @@
         "padding_bottom": 0
       }
     },
-    "section_columns_hP7qVH": {
+    "section_columns_iJ9nWA": {
       "type": "section-columns",
       "blocks": {
-        "image_wm6aCH": {
+        "image_4KTHBD": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Wash.png",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
-            "title": "Single Product",
+            "title": "Wash",
             "heading_size": 6,
-            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text": "<p>WASH is the foundation of the Tiege Hanley Skin Care System. WASH provides a clean canvas for all other Tiege Hanley products to play together in perfect harmony. Just WASH twice a day, every day.<\/p>",
             "text_size": 3,
             "button_text": "",
             "button_url": "",
@@ -967,16 +967,16 @@
             "show_arrow": false
           }
         },
-        "image_ceAkLr": {
+        "image_rF8n4W": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image": "shopify:\/\/shop_images\/ecom_flat_01_scrub_01.jpg",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
-            "title": "Single Product",
+            "title": "Scrub",
             "heading_size": 6,
-            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text": "<p>SCRUB is the bacteria-buster of the bunch. It helps you to not only keep the surface of your skin clean, but scrub away any harmful bacteria that might cause future damage. Twice a week, work the SCRUB into your damp face for about 10 seconds, rinse off and pat dry.<\/p>",
             "text_size": 3,
             "button_text": "",
             "button_url": "",
@@ -986,16 +986,16 @@
             "show_arrow": false
           }
         },
-        "image_XpHrBD": {
+        "image_f4LVa6": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image": "shopify:\/\/shop_images\/AM-1.png",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
-            "title": "Single Product",
+            "title": "AM",
             "heading_size": 6,
-            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text": "<p>AM is your morning-time moisturizer. (Yeah. Guys have to moisturize too) After WASHing in the morning, work the AM moisturizer onto your face for about 10 seconds.<\/p>",
             "text_size": 3,
             "button_text": "",
             "button_url": "",
@@ -1005,16 +1005,16 @@
             "show_arrow": false
           }
         },
-        "image_4LaWkP": {
+        "image_yzMFdq": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image": "shopify:\/\/shop_images\/PM-1.png",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
-            "title": "Single Product",
+            "title": "Acne",
             "heading_size": 6,
-            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text": "<p>What makes ACNE different is its formulation as a moisturizer as opposed to a face wash. By applying ACNE before you go to bed, the active ingredient, Salicylic Acid, is able to work its magic for 6-8 hours at a time. Incredibly helpful for mild to moderate acne.<\/p>",
             "text_size": 3,
             "button_text": "",
             "button_url": "",
@@ -1026,10 +1026,10 @@
         }
       },
       "block_order": [
-        "image_wm6aCH",
-        "image_ceAkLr",
-        "image_XpHrBD",
-        "image_4LaWkP"
+        "image_4KTHBD",
+        "image_rF8n4W",
+        "image_f4LVa6",
+        "image_yzMFdq"
       ],
       "settings": {
         "title": "Included in this System",
@@ -1042,8 +1042,8 @@
         "width": "wrapper--full-padded",
         "bg_color": "#ffffff",
         "color": "",
-        "padding_top": 50,
-        "padding_bottom": 50,
+        "padding_top": 80,
+        "padding_bottom": 80,
         "layout_mobile": "slider"
       }
     },
@@ -1137,9 +1137,9 @@
     "section_columns_FYFpyV",
     "section_rich_text_7JJpjm",
     "section_double_EYmFV8",
-    "section_columns_6QqeUg",
+    "section_columns_xe8AXT",
     "section_double_JTYC7p",
-    "section_columns_hP7qVH",
+    "section_columns_iJ9nWA",
     "section_double_GQW4FL",
     "1711936304219d12eb"
   ]
