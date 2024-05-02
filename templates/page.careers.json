@@ -54,10 +54,10 @@
         "tab3_url": "#AccordionGroup--template--16844073402562__section_accordion_group_RtmWNU"
       }
     },
-    "section_rich_text_bmDDRz": {
+    "section_rich_text_kqTxkq": {
       "type": "section-rich-text",
       "blocks": {
-        "heading_BrT7qD": {
+        "heading_WchFEC": {
           "type": "heading",
           "settings": {
             "title": "Open Positions",
@@ -67,7 +67,7 @@
         }
       },
       "block_order": [
-        "heading_BrT7qD"
+        "heading_WchFEC"
       ],
       "settings": {
         "width": "wrapper--narrow",
@@ -103,6 +103,34 @@
         "jobs_QBrr9F"
       ],
       "settings": {
+      }
+    },
+    "section_rich_text_bmDDRz": {
+      "type": "section-rich-text",
+      "blocks": {
+        "buttons_daDyFj": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "View Open Positions",
+            "button_url": "",
+            "button_type": "btn--secondary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "buttons_daDyFj"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-left",
+        "bg_color": "#ffffff",
+        "color": "",
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "section_accordion_group_gwwmkH": {
@@ -443,8 +471,9 @@
     "main",
     "section_rich_text_tfDRaN",
     "vm_link_tabs_xEMytP",
-    "section_rich_text_bmDDRz",
+    "section_rich_text_kqTxkq",
     "jobs_container_Mk6ckg",
+    "section_rich_text_bmDDRz",
     "section_accordion_group_gwwmkH",
     "section_accordion_group_RtmWNU",
     "section_rich_text_PhrTbk",
