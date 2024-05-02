@@ -114,7 +114,8 @@
     {%- if enable_slider -%}
       <div
         class="brick__slider"
-        data-slider
+        data-slider="BrickSlider--{{ section.id }}"
+        data-slider-mobile
         data-dots="{{ settings.dots_style }}"
         data-options='{"pageDots": true, "prevNextButtons": true, "autoPlay": 4000, "pauseAutoPlayOnHover": false}'>
         {%- for block in section.blocks -%}
@@ -129,7 +130,8 @@
 
           <div
             class="brick__section{% if section.settings.layout == 'is-reversed' %} brick__section--reversed{% endif %}{% if section.settings.reverse_blocks %} brick__section--reversed-mobile{% endif %} {{ width }} {{ desktop_height }} {{ mobile_height }}"
-            data-slide
+            data-slide="{{ block.id }}"
+            data-slide-index="{{ forloop.index0 }}"
             {{ block.shopify_attributes }}>
 
 
