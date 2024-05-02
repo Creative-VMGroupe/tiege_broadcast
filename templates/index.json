@@ -869,7 +869,7 @@
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/Snapinsta.app_337156675_1554687731680146_2432232004487884860_n_1080.jpg",
         "image_width": "one-half",
-        "text_alignment": "text-center",
+        "text_alignment": "text-left",
         "padding_lr": 50,
         "reverse_blocks": false,
         "bg_color": "#ffffff",
