@@ -26249,10 +26249,13 @@ flex: 1;
 }
 .job-name {
   flex: 2;
+  padding: 20px 0;
 }
 .job-loc {
   flex: 1;
+  padding: 20px ;
 }
 .job-link {
   flex: 1;
+  padding: 20px 0;
 }
