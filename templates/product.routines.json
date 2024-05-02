@@ -110,6 +110,7 @@
         },
         "complementary_products_C7V6rg": {
           "type": "complementary-products",
+          "disabled": true,
           "settings": {
             "level-guide_link": "#open-modal",
             "complementary_limit": 3,
@@ -140,13 +141,13 @@
         ".rc-subscription-details {display: none;}",
         ".rc-radio {border: 1px solid black;}",
         ".rc-selling-plans {display: none;}",
-        ".bi-star::before {height: 30px; width: 20px;}",
         ".rc-widget label {border-radius: 300px;}",
         ".accordion__title {font-weight: bold;}",
         ".accordion {border: none;}",
         ".rc-widget {padding-top: 30px;}",
         ".rc-template__radio-group .rc-radio .rc-radio__label {display: flex !important; flex-direction: row-reverse !important;}",
-        "#single_title {display: none;}"
+        "#single_title {display: none;}",
+        ".product-accordion details:last-child .accordion__body {padding-bottom: 30px;}"
       ],
       "settings": {
         "product_sticky_enable": true,
