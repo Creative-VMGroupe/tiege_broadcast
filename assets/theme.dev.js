@@ -4858,7 +4858,7 @@
       const section = new Registration(type, components);
       registered[type] = section;
 
-      console.log(registered);
+      console.log(registered); // Delete
 
       return registered;
     }
@@ -5507,6 +5507,7 @@
       onLoad() {
         sections$k[this.id] = [];
         const els = this.container.querySelectorAll(selectors$I.slider);
+        console.log(els);
         els.forEach((el) => {
           sections$k[this.id].push(new Slider(this.container, el));
         });
