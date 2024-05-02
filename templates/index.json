@@ -743,7 +743,7 @@
       "type": "section-before-after",
       "settings": {
         "layout": "",
-        "text_align_center": true,
+        "text_align_center": false,
         "heading": "Real People, Real Results",
         "heading_size": 7,
         "heading_letter_spacing": 0,
