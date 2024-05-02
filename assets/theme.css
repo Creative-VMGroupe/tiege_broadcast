@@ -25529,7 +25529,7 @@ body.has-header-sticky .timeline {
   left: 3px;
 }
 /* PDP */
-.product__content {
+.product__content .product__block.tabs-wrapper {
   padding-bottom: 80px;
 }
 .complementary-product__header {
@@ -25549,7 +25549,7 @@ body.has-header-sticky .timeline {
   margin-bottom: 0;
 }
 @media only screen and (max-width: 749px) {
-  .product__content {
+  .product__content .product__block.tabs-wrapper {
   padding-bottom: 48px;
 }
   #shopify-block-okendo_star_rating_DPzCnp {
