@@ -1123,7 +1123,7 @@
         "buttons_Y8aEUf"
       ],
       "custom_css": [
-        ".hero__button-group {flex-flow: row;}"
+
       ],
       "settings": {
         "layout": "is-reversed",
