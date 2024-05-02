@@ -103,6 +103,7 @@
         },
         "divider_1": {
           "type": "divider",
+          "disabled": true,
           "settings": {
             "show_line": false,
             "padding_bottom": 16
@@ -110,7 +111,6 @@
         },
         "complementary_products_C7V6rg": {
           "type": "complementary-products",
-          "disabled": true,
           "settings": {
             "level-guide_link": "#open-modal",
             "complementary_limit": 3,
