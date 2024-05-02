@@ -54,24 +54,6 @@
         "tab3_url": "#AccordionGroup--template--16844073402562__section_accordion_group_RtmWNU"
       }
     },
-    "jobs_container_Mk6ckg": {
-      "type": "jobs-container",
-      "blocks": {
-        "jobs_6qGzFY": {
-          "type": "Jobs",
-          "settings": {
-            "job-name": "Sr. Marketplace Marketing Manager",
-            "job-location": "Chicago, IL",
-            "linkurl": "https:\/\/recruiting.paylocity.com\/Recruiting\/Jobs\/Details\/2330336?ip_et_ctx=23825823_103_20"
-          }
-        }
-      },
-      "block_order": [
-        "jobs_6qGzFY"
-      ],
-      "settings": {
-      }
-    },
     "section_rich_text_bmDDRz": {
       "type": "section-rich-text",
       "blocks": {
@@ -93,7 +75,34 @@
         "bg_color": "#ffffff",
         "color": "",
         "padding_top": 80,
-        "padding_bottom": 80
+        "padding_bottom": 40
+      }
+    },
+    "jobs_container_Mk6ckg": {
+      "type": "jobs-container",
+      "blocks": {
+        "jobs_6qGzFY": {
+          "type": "Jobs",
+          "settings": {
+            "job-name": "Sr. Marketplace Marketing Manager",
+            "job-location": "Chicago, IL",
+            "linkurl": "https:\/\/recruiting.paylocity.com\/Recruiting\/Jobs\/Details\/2330336?ip_et_ctx=23825823_103_20"
+          }
+        },
+        "jobs_QBrr9F": {
+          "type": "Jobs",
+          "settings": {
+            "job-name": "Sr. Marketplace Marketing Manager",
+            "job-location": "Chicago, IL",
+            "linkurl": "https:\/\/recruiting.paylocity.com\/Recruiting\/Jobs\/Details\/2330336?ip_et_ctx=23825823_103_20"
+          }
+        }
+      },
+      "block_order": [
+        "jobs_6qGzFY",
+        "jobs_QBrr9F"
+      ],
+      "settings": {
       }
     },
     "section_accordion_group_gwwmkH": {
@@ -434,8 +443,8 @@
     "main",
     "section_rich_text_tfDRaN",
     "vm_link_tabs_xEMytP",
-    "jobs_container_Mk6ckg",
     "section_rich_text_bmDDRz",
+    "jobs_container_Mk6ckg",
     "section_accordion_group_gwwmkH",
     "section_accordion_group_RtmWNU",
     "section_rich_text_PhrTbk",
