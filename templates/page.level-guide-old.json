@@ -76,8 +76,8 @@
         "align_text": "text-left",
         "bg_color": "#ffffff",
         "color": "",
-        "padding_top": 60,
-        "padding_bottom": 60
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
     "section_double_cjpW8U": {
@@ -231,8 +231,8 @@
         "width": "wrapper--full-padded",
         "bg_color": "#ffffff",
         "color": "",
-        "padding_top": 60,
-        "padding_bottom": 60,
+        "padding_top": 80,
+        "padding_bottom": 80,
         "layout_mobile": "slider"
       }
     },
@@ -288,6 +288,108 @@
         "color": "",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "section_columns_TFbgVV": {
+      "type": "section-columns",
+      "blocks": {
+        "image_Fq9Wwf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Wash",
+            "heading_size": 6,
+            "text": "<p>WASH is the foundation of the Tiege Hanley Skin Care System. WASH provides a clean canvas for all other Tiege Hanley products to play together in perfect harmony. Just WASH twice a day, every day.<\/p>",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_rqGe7t": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ecom_flat_01_scrub_01.jpg",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "Scrub",
+            "heading_size": 6,
+            "text": "<p>SCRUB is the bacteria-buster of the bunch. It helps you to not only keep the surface of your skin clean, but scrub away any harmful bacteria that might cause future damage. Twice a week, work the SCRUB into your damp face for about 10 seconds, rinse off and pat dry.<\/p>",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_cce9hD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AM-1.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "AM",
+            "heading_size": 6,
+            "text": "<p>AM is your morning-time moisturizer. (Yeah. Guys have to moisturize too) After WASHing in the morning, work the AM moisturizer onto your face for about 10 seconds.<\/p>",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_E3zcdr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PM-1.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "PM",
+            "heading_size": 6,
+            "text": "<p>PM is your nightly moisturizer. You know the drill. After WASHing, work the PM moisturizer onto your face for about 10 seconds.<\/p>",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "image_Fq9Wwf",
+        "image_rqGe7t",
+        "image_cce9hD",
+        "image_E3zcdr"
+      ],
+      "settings": {
+        "title": "Included in this System",
+        "heading_size": 7,
+        "layout": "grid",
+        "grid": 4,
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "bg_color": "#ffffff",
+        "color": "",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "layout_mobile": "slider"
       }
     },
     "section_columns_4xBK9p": {
@@ -376,6 +478,7 @@
         "image_zXWGq6",
         "image_DMBT3P"
       ],
+      "disabled": true,
       "settings": {
         "title": "Included in this System",
         "heading_size": 6,
@@ -387,8 +490,8 @@
         "width": "wrapper--full-padded",
         "bg_color": "#ffffff",
         "color": "",
-        "padding_top": 50,
-        "padding_bottom": 50,
+        "padding_top": 80,
+        "padding_bottom": 80,
         "layout_mobile": "slider"
       }
     },
@@ -968,6 +1071,7 @@
     "section_double_cjpW8U",
     "section_columns_8mpFhV",
     "section_double_k3aGgY",
+    "section_columns_TFbgVV",
     "section_columns_4xBK9p",
     "section_double_EFMiLM",
     "section_columns_rKmJAH",
