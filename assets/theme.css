@@ -26242,7 +26242,7 @@ text-transform: uppercase;
 flex: 1;
 }
 .jobs-openings__container {
-  
+  padding: 30px 25px;
 }
 .available-job {
   display: flex;
