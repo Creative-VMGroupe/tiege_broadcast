@@ -115,7 +115,8 @@
     width: calc(100% - 300px);
   }
   .product__page .product__content {
-    width: 300px;
+    width: 460px;
+    padding: 0 48px 0 80px;
   }
 }
 @media only screen and (max-width: 748px) {
