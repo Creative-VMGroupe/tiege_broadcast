@@ -26259,6 +26259,9 @@ flex: 1;
   flex: 1;
   padding: 15px 0;
 }
+.jobs-openings__container .available-job:nth-child(odd) {
+  background-color: #f7f7f7;
+}
 @media (max-width: 749px) { /* Adjust breakpoint as needed */
   .available-job {
     flex-wrap: wrap;
