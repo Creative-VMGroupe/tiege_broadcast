@@ -172,7 +172,7 @@
         ".select__fieldset > .radio__legend {display: none;}",
         ".rc-widget {padding-top: 30px;}",
         ".rc-template__radio-group .rc-radio .rc-radio__label {display: flex !important; flex-direction: row-reverse !important;}",
-        "#routine_title {display: none}"
+        "#routine_title {display: none;}"
       ],
       "settings": {
         "product_sticky_enable": true,
@@ -475,6 +475,7 @@
       "block_order": [
         "heading_Kkirxy"
       ],
+      "disabled": true,
       "settings": {
         "width": "wrapper--full-padded",
         "align_text": "text-left",
@@ -498,8 +499,42 @@
       "block_order": [
         "okendo_reviews_widget_MJ7BBH"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": false
+      }
+    },
+    "app_accordion_8mPAjc": {
+      "type": "app-accordion",
+      "blocks": {
+        "okendo_reviews_widget_HBKdPr": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "okendo_reviews_widget_HBKdPr"
+      ],
+      "custom_css": [
+        ".rte a {background: none}"
+      ],
+      "settings": {
+        "default_open": false,
+        "title": "Reviews",
+        "heading_size": 7,
+        "show_icon": false,
+        "icon_name": "icon-award",
+        "icon_size": 20,
+        "icon_color": "#545454",
+        "bg_color": "",
+        "color": "",
+        "border_color": "",
+        "width": "wrapper--full--custom",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "related": {
@@ -569,6 +604,7 @@
     "section_accordion_new_RAhUrC",
     "section_rich_text_phTXMH",
     "171198624333c1780b",
+    "app_accordion_8mPAjc",
     "related",
     "1711936135ad982cf2"
   ]
