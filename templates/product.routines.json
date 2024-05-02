@@ -147,7 +147,7 @@
         ".rc-widget {padding-top: 30px;}",
         ".rc-template__radio-group .rc-radio .rc-radio__label {display: flex !important; flex-direction: row-reverse !important;}",
         "#single_title {display: none;}",
-        ".product-accordion details:last-child .accordion__body {padding-bottom: 30px;}"
+        ".product-accordion details:last-child .accordion__title {padding-bottom: 30px;}"
       ],
       "settings": {
         "product_sticky_enable": true,
