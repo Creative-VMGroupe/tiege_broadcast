@@ -170,7 +170,7 @@
         "[class*=\"images-\"].grandparent.kids-4 .header__grandparent__links {grid-template-columns: repeat(4, minmax(0, 1fr));}",
         ".grandparent .menu__blocks {flex: 2;}",
         ".dropdown__family a:first-child .navtext {font-weight: bold;}",
-        ".dropdown__family:first-of-type a:last-child .navtext {font-style: italic; color: gray;}"
+        ".header__grandparent__links .dropdown__family:first-child .navtext {font-weight: bold;}"
       ],
       "settings": {
         "header_sticky": false,
