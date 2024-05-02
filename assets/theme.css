@@ -26278,8 +26278,8 @@ flex: 1;
     padding: 0 !important;
   }
   .jobs-openings__container::after {
-  margin-left: var(--outer);
-  margin-right: var(--outer);
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
 }
   .jobs-desc__container {
     margin-left: var(--outer);
