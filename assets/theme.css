@@ -25853,6 +25853,8 @@ div.rc_popup {
     width: 343px;
   }
 }
+.product__block .rc-widget .rc-radio.rc-option__onetime {}
+.product__block .rc-widget .rc-radio.rc-option__subsave {}
 .product-quick-add__content .select__fieldset .select-popout svg {
   position: static;
 }
