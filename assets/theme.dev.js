@@ -5301,9 +5301,6 @@
 
         this.slideshowSlides = this.slideshow.querySelectorAll(selectors$I.slide);
 
-        console.log(this.container, this.slideshow, this.slideshowSlides);
-
-        
         if (this.slideshowSlides.length <= 1) return;
 
         this.sliderThumbs = this.container.querySelectorAll(selectors$I.sliderThumb);
@@ -5505,7 +5502,7 @@
       onLoad() {
         sections$k[this.id] = [];
         const els = this.container.querySelectorAll(selectors$I.slider);
-        console.log(this.container, els);
+        
         els.forEach((el) => {
           sections$k[this.id].push(new Slider(this.container, el));
         });
