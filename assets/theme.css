@@ -25604,6 +25604,10 @@ body.has-header-sticky .timeline {
 .rc-template__radio-group .rc-radio .rc-radio__label .rc-option__price {
   order: initial !important;
 }
+.rc-widget label.px-3 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
 .radio__legend__option-name {
  text-transform: var(--BTN-UPPERCASE); 
   font-size: 14px;
