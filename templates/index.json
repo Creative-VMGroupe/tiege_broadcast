@@ -564,7 +564,6 @@
         "icon_hp678W",
         "icon_Bwk7Y3"
       ],
-      "disabled": true,
       "settings": {
         "title": "Our Difference",
         "heading_size": 7,
@@ -672,6 +671,7 @@
         "icon_hp678W",
         "icon_Bwk7Y3"
       ],
+      "disabled": true,
       "settings": {
         "title": "Our Difference",
         "heading_size": 7,
