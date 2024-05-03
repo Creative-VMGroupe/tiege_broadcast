@@ -835,6 +835,9 @@
         "related",
         "recent"
       ],
+      "custom_css": [
+        ".tabs {padding: 5px 0 24px 0}"
+      ],
       "settings": {
         "enable_tabs": true,
         "heading_alignment": "text-center",
