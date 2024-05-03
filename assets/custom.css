@@ -241,3 +241,12 @@ body.template-product:has(
 .grid-icon {
   width: 100%;
 }
+[data-slider-mobile]:after {
+  content: "";
+}
+@media only screen and (max-width: 749px) {
+  [data-slider-mobile]:after {
+    content: "flickity";
+    display: none;
+  }
+}
