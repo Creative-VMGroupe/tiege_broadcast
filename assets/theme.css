@@ -26268,6 +26268,11 @@ text-transform: uppercase;
   }
 
 /*Header*/
+/*Desktop*/
+.menu__item:nth-child(2) .dropdown__family:nth-child(2) .navtext {
+  text-wrap: nowrap;
+}
+/*Mobile*/
 .header__dropdown .hero__content p {
   margin:0;
 }
