@@ -170,8 +170,7 @@
         "[class*=\"images-\"].grandparent.kids-4 .header__grandparent__links {grid-template-columns: repeat(4, minmax(0, 1fr));}",
         ".grandparent .menu__blocks {flex: 2;}",
         ".dropdown__family a:first-child .navtext {font-weight: bold;}",
-        ".menu__item:first-child .dropdown__family:nth-child(-n + 3) a:last-child .navtext {font-style: italic; color: gray;}",
-        ".menu__item:nth-child(2) .dropdown__family:nth-child(2) .navtext {text-wrap: nowrap;}"
+        ".menu__item:first-child .dropdown__family:nth-child(-n + 3) a:last-child .navtext {font-style: italic; color: gray;}"
       ],
       "settings": {
         "header_sticky": false,
