@@ -25599,6 +25599,10 @@ body.has-header-sticky .timeline {
   padding: 16px;
 }
 /*Recharge*/
+
+div.rc-subscription-details {
+  display: none;
+}
 .rc-template__radio-group .rc-radio .rc-radio__label .rc-option__discount, 
 .rc-template__radio-group .rc-radio .rc-radio__label .rc-option__text, 
 .rc-template__radio-group .rc-radio .rc-radio__label .rc-option__price {
