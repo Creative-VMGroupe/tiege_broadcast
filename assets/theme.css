@@ -26177,6 +26177,11 @@ body.has-line-design.grid-compact
 text-transform: uppercase;  
 }
 /*Image with Slider - Tiege*/
+.brick__slider .flickity-page-dots{
+    padding: var(--outer);
+    width: 50%;
+    right: 0;
+}
 .sub-letter-spacing-0 {
   letter-spacing: 0 !important;
 }
