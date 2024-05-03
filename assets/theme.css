@@ -25634,7 +25634,7 @@ background-size: 0% 1px;
   padding: 16px;
 }
 /*Recharge*/
-.rc-radio.subscription-radio {
+.rc-radio.rc-radio--active {
   background-color: #CED6BD !important;
   border: none;
 }
@@ -25645,7 +25645,7 @@ background-size: 0% 1px;
     background-color: #00ad2d !important;
     border-radius: 50%;
 }
-.rc-radio.onetime-radio {
+.rc-radio.rc-radio--active {
   background-color: #F0EEEA !important;
   border: none;
 }
