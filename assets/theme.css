@@ -25534,6 +25534,9 @@ body.has-header-sticky .timeline {
 /* .product__content .product__block.tabs-wrapper {
   padding-bottom: 80px;
 } */
+.product__block .select-popout__toggle {
+  padding-left: 40px;
+}
 .product__block .product-accordion .toggle-ellipsis__actions button span{
   /* display: none; */
   text-transform: capitalize !important;
