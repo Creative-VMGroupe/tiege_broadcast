@@ -25535,7 +25535,7 @@ body.has-header-sticky .timeline {
   padding-bottom: 80px;
 } */
 .product__block .product-accordion .toggle-ellipsis__actions {
-  display: none;
+  /* display: none; */
 }
 .product-accordion details:last-child .accordion__title {
   padding-bottom: 30px;
