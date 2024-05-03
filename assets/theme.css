@@ -25551,6 +25551,9 @@ body.has-header-sticky .timeline {
     background-repeat: no-repeat;
     transition: color .25s ease-in,background-size .25s ease-in;
 }
+.product__block .product-accordion .toggle-ellipsis__actions button span:hover {
+background-size: 0% 1px;  
+}
 .product-accordion details:last-child .accordion__title {
   padding-bottom: 30px;
 }
