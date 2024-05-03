@@ -16558,7 +16558,7 @@ a.review {
   .cart-bar__form .product__submit__add {
     display: block;
     width: 100%;
-    min-height: var(--btn-height, 42px);
+    min-height: var(--btn-height, 50px);
   }
 }
 
