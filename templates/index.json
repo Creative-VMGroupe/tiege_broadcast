@@ -1129,7 +1129,7 @@
         "buttons_Y8aEUf"
       ],
       "custom_css": [
-
+        "div.hero__button .btn {width: 270px;}"
       ],
       "settings": {
         "layout": "is-reversed",
