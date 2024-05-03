@@ -25643,7 +25643,7 @@ background-size: 0% 1px;
 .rc-radio input{
     appearance: none;
     padding: 8px;
-    background-color: #00ad2d;
+    background-color: white;
     border-radius: 50%;
 }
 div.rc-subscription-details {
