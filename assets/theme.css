@@ -25679,6 +25679,7 @@ div.rc-subscription-details {
 }
 fieldset .select-popout__toggle span {
   flex: 1;
+  text-align: end;
   /* margin-left: 15px; */
 }
 .product__block fieldset .select-popout__toggle svg{
