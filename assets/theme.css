@@ -25608,6 +25608,9 @@ body.has-header-sticky .timeline {
   padding-left: 40px;
   padding-right: 40px;
 }
+.rc-widget label.px-3 .price-label {
+  margin: 0;
+}
 .radio__legend__option-name {
  text-transform: var(--BTN-UPPERCASE); 
   font-size: 14px;
