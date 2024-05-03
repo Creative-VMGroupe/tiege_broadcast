@@ -25623,7 +25623,7 @@ div.rc-subscription-details {
   font-size: 14px;
 }
 .rc-widget .rc-option__text {
-  text-transform: var(--BTN-UPPERCASE);
+  text-transform: capitalize;
 }
 
 .recharge-subscription-widget {
