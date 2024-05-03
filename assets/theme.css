@@ -25537,6 +25537,19 @@ body.has-header-sticky .timeline {
 .product__block .product-accordion .toggle-ellipsis__actions button span{
   /* display: none; */
   text-transform: capitalize !important;
+      --link: currentcolor;
+    --link-hover: currentcolor;
+    display: inline;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0 0 5px;
+    color: var(--link);
+    line-height: normal;
+    background: linear-gradient(to right,currentColor,currentColor);
+    background-size: 100% 1px;
+    background-position: 50% 86%;
+    background-repeat: no-repeat;
+    transition: color .25s ease-in,background-size .25s ease-in;
 }
 .product-accordion details:last-child .accordion__title {
   padding-bottom: 30px;
