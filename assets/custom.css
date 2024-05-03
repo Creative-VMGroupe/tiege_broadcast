@@ -186,7 +186,7 @@ body.template-product:has(
 .js__header__stuck {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
-  --animate-duration: 1s;
+  --animate-duration: .5s;
   --animate-delay: 1s;
   --animate-repeat: 1;
   -webkit-animation-duration: 1s;
@@ -199,7 +199,7 @@ body.template-product:has(
 .js__header__stuck header {
    -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
-  --animate-duration: 1s;
+  --animate-duration: .5s;
   --animate-delay: 1s;
   --animate-repeat: 1;
   -webkit-animation-duration: 1s;
@@ -232,7 +232,7 @@ body.template-product:has(
 .js__header_animate {
   -webkit-animation-name: fadeOutUp;
   animation-name: fadeOutUp;
-  --animate-duration: 1s;
+  --animate-duration: .5s;
   --animate-delay: 1s;
   --animate-repeat: 1;
   -webkit-animation-duration: 1s;
@@ -250,7 +250,7 @@ body.template-product:has(
 .js__header_animate header {
   -webkit-animation-name: fadeOutUp;
   animation-name: fadeOutUp;
-  --animate-duration: 1s;
+  --animate-duration: .5s;
   --animate-delay: 1s;
   --animate-repeat: 1;
   -webkit-animation-duration: 1s;
