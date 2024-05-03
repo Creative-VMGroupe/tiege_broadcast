@@ -25822,6 +25822,9 @@ div.rc_popup {
     width: 343px;
   }
 }
+.product-quick-add__content .select__fieldset .select-popout svg {
+  position: static;
+}
 .btn-quick-view__checkout {
   display: block !important;
   height: auto !important;
