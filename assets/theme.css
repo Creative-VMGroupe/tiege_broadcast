@@ -16624,7 +16624,7 @@ a.review {
   .cart-bar__product__price {
     display: inline;
     padding: 0 3px;
-    font-size: calc(0.75rem * var(--FONT-ADJUST-BODY));
+    font-size: 14px;
   }
 }
 .variant--unavailable .cart-bar__product__price {
