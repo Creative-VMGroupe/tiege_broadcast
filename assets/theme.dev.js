@@ -4858,8 +4858,6 @@
       const section = new Registration(type, components);
       registered[type] = section;
 
-      console.log(registered); // Delete
-
       return registered;
     }
 
