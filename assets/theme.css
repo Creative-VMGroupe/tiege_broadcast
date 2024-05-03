@@ -25661,7 +25661,7 @@ fieldset .select-popout__toggle span {
   flex: 1;
   /* margin-left: 15px; */
 }
-fieldset .select-popout__toggle {
+.product__block fieldset .select-popout__toggle svg{
   position: static;
 }
 @keyframes fadeInRecharge {
