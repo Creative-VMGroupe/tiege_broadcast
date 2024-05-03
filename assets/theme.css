@@ -25626,7 +25626,11 @@ background-size: 0% 1px;
 }
 /*Recharge*/
 .rc-radio--active {
-  background-color: #CED6BD;
+  background-color: #CED6BD !important;
+  border: none;
+}
+.rc-radio {
+  background-color: #F0EEEA;
   border: none;
 }
 div.rc-subscription-details {
