@@ -25877,6 +25877,7 @@ div.rc_popup {
 .product-quick-add__form .rc-template__radio-group .rc-radio {
   position: relative;
   height: 50px;
+  padding: 8px 40px;
 }
 /*instafeed*/
 #insta-feed h2 {
