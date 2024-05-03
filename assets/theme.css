@@ -25637,7 +25637,7 @@ background-size: 0% 1px;
     border-radius: 50%;
 }
 .rc-radio.onetime-radio {
-  background-color: #F0EEEA;
+  background-color: #F0EEEA !important;
   border: none;
 }
 .rc-radio input{
