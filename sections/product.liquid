@@ -147,7 +147,7 @@
             {%- endcapture -%}
 
             {%- if section.settings.enable_zoom -%}
-              <zoom-images {{ product_slides_attributes }}>
+              <zoom-images {{ product_slides_attributes }} data-slider>
             {%- else -%}
               <div {{ product_slides_attributes }}>
             {%- endif -%}
