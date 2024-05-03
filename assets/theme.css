@@ -25645,7 +25645,7 @@ background-size: 0% 1px;
     background-color: #00ad2d !important;
     border-radius: 50%;
 }
-.rc-radio.rc-radio--active {
+.rc-radio {
   background-color: #F0EEEA !important;
   border: none;
 }
