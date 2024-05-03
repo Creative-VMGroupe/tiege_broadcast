@@ -25633,7 +25633,7 @@ background-size: 0% 1px;
 .rc-radio--active input{
     appearance: none;
     padding: 8px;
-    background-color: #00ad2d;
+    background-color: #00ad2d !important;
     border-radius: 50%;
 }
 .rc-radio {
