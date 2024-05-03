@@ -25534,8 +25534,9 @@ body.has-header-sticky .timeline {
 /* .product__content .product__block.tabs-wrapper {
   padding-bottom: 80px;
 } */
-.product__block .product-accordion .toggle-ellipsis__actions {
+.product__block .product-accordion .toggle-ellipsis__actions button span{
   /* display: none; */
+  text-transform: none !important;
 }
 .product-accordion details:last-child .accordion__title {
   padding-bottom: 30px;
