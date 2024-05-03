@@ -161,9 +161,9 @@
             {% endif %}
           {% endif %}
           data-slider="Slider--{{ section.id }}"
-          data-slider-desktop
+          data-slider-mobile
           data-dots="line"
-          data-options='{"pageDots": true, "prevNextButtons": true, "autoPlay": 4000, "pauseAutoPlayOnHover": false}'
+          data-options='{"watchCSS": true, "pageDots": true, "prevNextButtons": true, "autoPlay": 4000, "pauseAutoPlayOnHover": false}'
         >
           {%- for block in section.blocks -%}
             {%- liquid
