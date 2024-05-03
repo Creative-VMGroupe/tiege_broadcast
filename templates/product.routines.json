@@ -139,7 +139,6 @@
       "custom_css": [
         ".mock-notification {display: none;}",
         ".rc-subscription-details {display: none;}",
-        ".rc-radio {border: 1px solid black;}",
         ".rc-selling-plans {display: none;}",
         ".rc-widget label {border-radius: 300px;}",
         ".accordion__title {font-weight: bold;}",
