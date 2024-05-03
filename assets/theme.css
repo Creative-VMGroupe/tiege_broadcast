@@ -25683,7 +25683,7 @@ fieldset .select-popout__toggle span {
   font-weight: 400 !important;
 }
 .rc-template__radio-group .rc-radio {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 300px;
 }
 .rc-template__radio-group .rc-radio .rc-radio__input {
