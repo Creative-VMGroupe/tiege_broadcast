@@ -1114,5 +1114,51 @@
         "info": "Use comma to separate the collections"
       }
     ]
+  },
+  {
+    "name": "Gift Item",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable_gift",
+        "label": "Enable Free Gift ?",
+        "default": false
+      },
+      {
+        "type": "product",
+        "id": "gift_item",
+        "label": "Free Gift Item",
+        "info": "The first available varint of this product will be added to the cart upon eligibility"
+      },
+      {
+        "type": "radio",
+        "id": "method",
+        "label": "Condition to add Free Gift",
+        "options": [
+          {
+            "label": "Minimum Cart Value",
+            "value": "cart"
+          },
+          {
+            "label": "Product from Collection",
+            "value": "collection"
+          }
+        ],
+        "default": "cart"
+      },
+      {
+        "id": "cart_value",
+        "type": "number",
+        "label": "Minimum Cart Value",
+        "info": "Only applicable if Minimum Cart Value is selected for Condition to add Free Gift",
+        "default": 100
+      },
+      {
+        "type": "collection",
+        "id": "collection",
+        "label": "Collection",
+        "info": "If any line item in the cart is part of the above defined collection, the gift item will be added automatically"
+      }
+    ]
   }
 ]
