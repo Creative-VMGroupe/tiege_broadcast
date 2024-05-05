@@ -185,7 +185,28 @@
       info: {
         name: 'broadcast'
       },
-      version: '5.5.0'
+      version: '5.5.0',
+      cartSettings: {
+        giftItem : {
+          enabled: {{ settings.enable_gift }},
+          method: "{{ settings.gift_item_method }}",
+          collection: {{ settings.gift_item_collection.id }}
+          cartValue : {{ settings.gift_item_cart_value }}
+        },
+        singleRoutine : {
+          enabled: {{ settings.enable_single_routine }},
+          tag: "{{ settings.single_routine_tag }}",
+          alert: "{{ settings.single_routine_alert }}"
+        },
+        duplication : {
+          enabled: {{ settings.enable_duplicate_check }},
+          alert: "{{ settings.duplication_alert }}"
+        },
+        upgradability : {
+          enabled: {{ settings.enable_upgrade_check }},
+          alert: "{{ settings.upgrade_alert }}"
+        }
+      }
     };
 
     let windowInnerHeight = window.innerHeight;
