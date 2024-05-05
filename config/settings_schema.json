@@ -1132,7 +1132,7 @@
       },
       {
         "type": "radio",
-        "id": "method",
+        "id": "gift_item_method",
         "label": "Condition to add Free Gift",
         "options": [
           {
@@ -1147,15 +1147,15 @@
         "default": "cart"
       },
       {
-        "id": "cart_value",
         "type": "number",
+        "id": "gift_item_cart_value",
         "label": "Minimum Cart Value",
         "info": "Only applicable if Minimum Cart Value is selected for Condition to add Free Gift",
         "default": 100
       },
       {
         "type": "collection",
-        "id": "collection",
+        "id": "gift_item_collection",
         "label": "Collection",
         "info": "If any line item in the cart is part of the above defined collection, the gift item will be added automatically."
       }
