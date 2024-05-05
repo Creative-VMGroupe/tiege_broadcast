@@ -1157,7 +1157,78 @@
         "type": "collection",
         "id": "collection",
         "label": "Collection",
-        "info": "If any line item in the cart is part of the above defined collection, the gift item will be added automatically"
+        "info": "If any line item in the cart is part of the above defined collection, the gift item will be added automatically."
+      }
+    ]
+  },
+  {
+    "name": "Single Routine Configuration",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Single Routine in One Order Settings",
+        "info": "Only one routine is allowed to add at a time in the cart and proceed to checkout"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_single_routine",
+        "label": "Enable Single Routine per Order",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "single_routine_tag",
+        "label": "Routine Tag",
+        "info": "Product tag to identify eligible routines",
+        "default": "single_purchase_routine"
+      },
+      {
+        "type": "text",
+        "id": "single_routine_alert",
+        "label": "Alert Message",
+        "info": "Specify message to be displayed upon replacing the routine in the cart",
+        "default": "Only one routine is allowed per purchase. Your cart has been updated with your selection."
+      }
+    ]
+  },
+  {
+    "name": "Duplication and Upgradability Checks",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Duplicate Product Check"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_duplicate_check",
+        "label": "Enable Duplicate line item check",
+        "default": true,
+        "info": "Alert customer if line item added to the cart exists in routine"
+      },
+      {
+        "type": "text",
+        "id": "duplication_alert",
+        "label": "Alert Message",
+        "info": "Specify message to be displayed if duplication found in the cart",
+        "default": "Product(s) previously in your cart are already included in this system, so they have been removed automatically."
+      },
+      {
+        "type": "header",
+        "content": "Upgradability Check"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_upgrade_check",
+        "label": "Enable Upgradability Check",
+        "default": true,
+        "info": "Alert customer if line item(s) and routine added to the cart are upgradable"
+      },
+      {
+        "type": "text",
+        "id": "upgrade_alert",
+        "label": "Alert Message",
+        "info": "Specify message to be displayed if route upgraded",
+        "default": "Product(s) previously in your cart are already upgradable to a cheaper system, so they have been upgraded automatically."
       }
     ]
   }
