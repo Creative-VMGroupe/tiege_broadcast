@@ -164,7 +164,6 @@
       "blocks": {
         "text_slide_7rbw3L": {
           "type": "text-slide",
-          "disabled": true,
           "settings": {
             "subheading": "★★★★★",
             "subheading_size": 3,
@@ -179,34 +178,12 @@
             "button_type": "btn--white",
             "button_size": "",
             "button_style": "btn--outline",
-            "show_arrow": false,
-            "image": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO_3.png"
-          }
-        },
-        "text_slide_fH3Npa": {
-          "type": "text-slide",
-          "settings": {
-            "subheading": "Tiege Subheading",
-            "subheading_size": 3,
-            "sub_letter_spacing": 0,
-            "title": "Image with text slider",
-            "heading_size": 8,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
-            "text_style": "font-body",
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image": "shopify:\/\/shop_images\/ujhwalrajput_1708502532_3307481420620264931_2187891039.jpg"
+            "show_arrow": false
           }
         }
       },
       "block_order": [
-        "text_slide_7rbw3L",
-        "text_slide_fH3Npa"
+        "text_slide_7rbw3L"
       ],
       "settings": {
         "layout": "is-reversed",
