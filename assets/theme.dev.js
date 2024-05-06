@@ -11880,7 +11880,7 @@
       },
     };
 
-    register('product', [productSection, tooltipSection, tabs, productStickySection, slider]);
+    register('product', [productSection, tooltipSection, tabs, productStickySection]);
 
     if (!customElements.get('complementary-products')) {
       customElements.define('complementary-products', ComplementaryProducts);
