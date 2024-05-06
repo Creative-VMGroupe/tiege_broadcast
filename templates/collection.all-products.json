@@ -5,7 +5,7 @@
       "settings": {
         "show_title": true,
         "show_description": true,
-        "flex_align": "align--bottom-left",
+        "flex_align": "align--middle-center",
         "bg_color": "rgba(0,0,0,0)",
         "color": "#212121",
         "show_image": true,
