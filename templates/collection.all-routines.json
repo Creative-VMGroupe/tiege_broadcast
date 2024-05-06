@@ -5,7 +5,7 @@
       "settings": {
         "show_title": true,
         "show_description": true,
-        "flex_align": "align--middle-center",
+        "flex_align": "align--bottom-left",
         "bg_color": "",
         "color": "#ffffff",
         "show_image": true,
@@ -14,7 +14,7 @@
         "mobile_height": "screen-height-one-half--mobile",
         "overlay_opacity": 20,
         "overlay_color": "#000000",
-        "show_overlay_text": true,
+        "show_overlay_text": false,
         "padding_top": 0,
         "padding_bottom": 0
       }
