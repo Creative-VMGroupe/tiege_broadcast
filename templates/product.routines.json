@@ -164,6 +164,7 @@
       "blocks": {
         "text_slide_7rbw3L": {
           "type": "text-slide",
+          "disabled": true,
           "settings": {
             "subheading": "★★★★★",
             "subheading_size": 3,
@@ -181,10 +182,31 @@
             "show_arrow": false,
             "image": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO_3.png"
           }
+        },
+        "text_slide_fH3Npa": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "Tiege Subheading",
+            "subheading_size": 3,
+            "sub_letter_spacing": 0,
+            "title": "Image with text slider",
+            "heading_size": 8,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image": "shopify:\/\/shop_images\/ecom_flat_01_scrub_01_943e4d86-48a3-47ce-8acb-ead022eefd45.jpg"
+          }
         }
       },
       "block_order": [
-        "text_slide_7rbw3L"
+        "text_slide_7rbw3L",
+        "text_slide_fH3Npa"
       ],
       "settings": {
         "layout": "is-reversed",
@@ -351,6 +373,82 @@
         "color": "",
         "padding_top": 50,
         "padding_bottom": 50
+      }
+    },
+    "section_double_slider_fd6ndq": {
+      "type": "section-double-slider",
+      "blocks": {
+        "text_slide_8BJYtR": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "Introducing",
+            "subheading_size": 3,
+            "title": "Image with text slider",
+            "heading_size": 8,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "text_slide_QwUFNg": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "Introducing",
+            "subheading_size": 3,
+            "title": "Image with text slider",
+            "heading_size": 8,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "text_slide_yNRzMc": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "Introducing",
+            "subheading_size": 3,
+            "title": "Image with text slider",
+            "heading_size": 8,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "text_slide_8BJYtR",
+        "text_slide_QwUFNg",
+        "text_slide_yNRzMc"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "section_columns_ycKyp7": {
@@ -758,61 +856,6 @@
         "padding_bottom": 0
       }
     },
-    "section_rich_text_e66XhK": {
-      "type": "section-rich-text",
-      "blocks": {
-        "heading_jrPJjM": {
-          "type": "heading",
-          "settings": {
-            "title": "Reviews",
-            "text_size": 7,
-            "padding_bottom": 0
-          }
-        }
-      },
-      "block_order": [
-        "heading_jrPJjM"
-      ],
-      "disabled": true,
-      "settings": {
-        "width": "wrapper--full-padded",
-        "align_text": "text-left",
-        "bg_color": "",
-        "color": "",
-        "padding_top": 24,
-        "padding_bottom": 0
-      }
-    },
-    "1711051410c76bca1d": {
-      "type": "apps",
-      "blocks": {
-        "trustreviews_reviews_widget_8YLWPV": {
-          "type": "shopify:\/\/apps\/trustreviews\/blocks\/reviews_widget\/56d0fe1b-e701-4cff-8f84-466a26e09adb",
-          "disabled": true,
-          "settings": {
-            "product": "{{product}}"
-          }
-        },
-        "okendo_reviews_widget_WJeEBc": {
-          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
-          "settings": {
-            "product": "{{product}}",
-            "widget_type": "reviews_widget"
-          }
-        }
-      },
-      "block_order": [
-        "trustreviews_reviews_widget_8YLWPV",
-        "okendo_reviews_widget_WJeEBc"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "#trustreviews {max-width: 90%;}"
-      ],
-      "settings": {
-        "include_margins": false
-      }
-    },
     "related": {
       "type": "related",
       "blocks": {
@@ -836,7 +879,7 @@
         "recent"
       ],
       "custom_css": [
-        ".tabs {padding: 5px 0 24px 0}"
+        ".tabs {padding: 5px 0 24px 0;}"
       ],
       "settings": {
         "enable_tabs": true,
@@ -876,14 +919,13 @@
     "section_double_slider_new_M974Kz",
     "section_double_slider_b33Ygi",
     "section_collection_YVbRj7",
+    "section_double_slider_fd6ndq",
     "section_columns_ycKyp7",
     "section_accordion_new_DpxfiN",
     "compare_systems_PgJw6T",
     "faq",
     "section_accordion_new_4E9V9R",
     "app_accordion_Qtcf8J",
-    "section_rich_text_e66XhK",
-    "1711051410c76bca1d",
     "related",
     "171061224373a1e0d4"
   ]
