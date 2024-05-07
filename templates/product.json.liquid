@@ -1,5 +1,7 @@
 {% layout none %}
-{{ product.metafields.custom.products_included_in_routine.value }}
+{% for variant in product.metafields.custom.products_included_in_routine.value %}
+  {{ variant.id }}
+{% endfor %}
 {% comment %}
 {% capture jsonData %}
 {
