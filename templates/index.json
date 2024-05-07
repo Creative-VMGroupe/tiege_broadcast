@@ -376,7 +376,7 @@
         "show_video_popup": false,
         "video_popup_social": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "desktop_height": "screen-height-two-thirds",
-        "mobile_height": "screen-height-one-half--mobile",
+        "mobile_height": "screen-height-one-third--mobile",
         "width": "wrapper--full",
         "overlay_opacity": 0,
         "overlay_color": "#000000",
@@ -758,7 +758,7 @@
           "type": "heading",
           "settings": {
             "title": "Routine Quiz",
-            "text_size": 9,
+            "text_size": 7,
             "padding_bottom": 16
           }
         },
