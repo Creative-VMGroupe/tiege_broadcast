@@ -287,7 +287,7 @@
       "settings": {
         "layout": "is-reversed",
         "height": "screen-height-one-half",
-        "mobile_height": "screen-height-one-half--mobile",
+        "mobile_height": "screen-height-one-third--mobile",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/uZr3qZvfRNuNZb2xaQjw.png",
         "image_width": "one-half",
