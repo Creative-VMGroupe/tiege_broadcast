@@ -124,14 +124,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('theme:product:add', function(e) {
   let addedItem = e.detail.response;
-  console.log(addedItem);
+  console.log(addedItem.handle);
 
   // Free Item Addition
   if (theme.cartSettings.giftItem.enabled) {
     fetch(window.theme.routes.cart_url + '.json')
     .then(response => response.json())
     .then(data => {
-      let giftExists = data.items.filter((item) => item.product_id == theme.cartSettings.giftItem.variantId).length;
+      let giftExists = data.items.filter((item) => item.product_id == theme.cartSettings.giftItem.productId).length;
       if (theme.cartSettings.giftItem.method == "cart") {
         let minCartValue = parseInt(theme.cartSettings.giftItem.cartValue * 100);
         if (data.total_price > minCartValue) {
@@ -143,7 +143,6 @@ document.addEventListener('theme:product:add', function(e) {
             // Remove Gift Item
           }
         }
-        
       } else {
         
       }
