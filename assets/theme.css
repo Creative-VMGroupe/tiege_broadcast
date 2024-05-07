@@ -7067,7 +7067,7 @@ toggle-ellipsis {
 
 .cart__quantity-counter {
   display: flex;
-  align-items: center;
+  align-items: end;
 }
 
 .cart__item__remove {
