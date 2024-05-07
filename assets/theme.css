@@ -25540,6 +25540,9 @@ body.has-header-sticky .timeline {
 .product__page product-modal.product__block  {
   margin-bottom: 0 !important;
 }
+.product__page .form__wrapper--classic .select__fieldset {
+  padding-top: 8px;
+}
 .product__page .product__form__outer .radio__legend{
       padding: 10px 0 10px 40px;
     position: absolute;
