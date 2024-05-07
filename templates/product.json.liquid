@@ -2,7 +2,10 @@
 {
   "isRoutine": {{ product.metafields.custom.is_routine.value }},
   {% if product.metafields.custom.next_level_routine != blank %}
-    "nextRoutine" : {{ product.metafields.custom.next_level_routine.value.id }},
+    "nextRoutine" : {
+      "id" : {{ product.metafields.custom.next_level_routine.value.id }},
+      "handle" : "{{ product.metafields.custom.next_level_routine.value.handle }}"
+    },
   {% else %}
     "nextRoutine": false,
   {% endif %}
