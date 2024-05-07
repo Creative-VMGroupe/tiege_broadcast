@@ -133,7 +133,7 @@ document.addEventListener('theme:product:add', function(e) {
     .then(data => {
       if (data.items.length) {
         let giftExists = data.items.filter((item) => item.id === theme.cartSettings.giftItem.variantId);
-        console.log(giftExists);
+        console.log(data.items.giftExists);
       }
       if (theme.cartSettings.giftItem.method == "cart") {
         let minCartValue = parseInt(theme.cartSettings.giftItem.cartValue * 100);
