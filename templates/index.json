@@ -4,7 +4,7 @@
       "type": "section-video",
       "settings": {
         "video": "shopify:\/\/files\/videos\/Tiege_Hanley_Routine_Hero_IG_noaudio_shorter.mp4",
-        "show_video_popup": true,
+        "show_video_popup": false,
         "video_popup_social": "https:\/\/www.youtube.com\/watch?v=yhnFvUs5SeI",
         "desktop_height": "seven-fifty-height-hero",
         "mobile_height": "sixty-fifty-height-hero--mobile",
