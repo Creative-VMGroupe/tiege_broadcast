@@ -26432,3 +26432,9 @@ flex: 1;
   padding-bottom: 25px;
 }
 }
+/*Multicolumn VM*/
+@media (min-width: 480px) and (max-width: 749px) {
+.grid-column-tablet {
+  --columns: 1;
+} 
+}
