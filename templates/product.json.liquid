@@ -2,32 +2,32 @@
 {% capture jsonData %}
 {
   {% if product.metafields.custom.is_routine != blank %}
-  isRoutine: {{ product.metafields.custom.is_routine.value }},
+  "isRoutine": {{ product.metafields.custom.is_routine.value }},
   {% else %}
-    isRoutine: false,
+    "isRoutine": false,
   {% endif %}
   {% if product.metafields.custom.next_level_routine != blank %}
-    nextRoutine : {
-      id : {{ product.metafields.custom.next_level_routine.value.id }},
-      handle : "{{ product.metafields.custom.next_level_routine.value.handle }}"
+    "nextRoutine" : {
+      "id" : {{ product.metafields.custom.next_level_routine.value.id }},
+      "handle" : "{{ product.metafields.custom.next_level_routine.value.handle }}"
     },
   {% else %}
-    nextRoutine: false,
+    "nextRoutine": false,
   {% endif %}
   {% if product.metafields.custom.next_routine_line_item != blank %}
-    nextRoutineLineItem : {
+    "nextRoutineLineItem": {
       id : {{ product.metafields.custom.next_routine_line_item.value.id }},
       details : {{ product.metafields.custom.next_routine_line_item.value | json }}
     },
   {% else %}
-    nextRoutineLineItem: false,
+    "nextRoutineLineItem": false,
   {% endif %}
   {% if product.metafields.custom.products_included_in_routine.value != blank %}
-    routineVariants: [
+    "routineVariants": [
       {% for variant in product.metafields.custom.products_included_in_routine.value %}
         {
-          id: {{ variant.id }},
-          detail: {{ variant | json }}
+          "id": {{ variant.id }},
+          "detail": {{ variant | json }}
         {% if forloop.last %}
           }
         {% else %}
@@ -36,7 +36,7 @@
       {% endfor %}
     ]
   {% else %}
-    routineVariants : []
+    "routineVariants" : []
   {% endif %}
 }
 {% endcapture %}
