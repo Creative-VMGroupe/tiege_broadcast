@@ -164,6 +164,7 @@
       "blocks": {
         "text_slide_7rbw3L": {
           "type": "text-slide",
+          "disabled": true,
           "settings": {
             "subheading": "★★★★★",
             "subheading_size": 3,
@@ -198,8 +199,7 @@
             "button_type": "btn--white",
             "button_size": "",
             "button_style": "btn--outline",
-            "show_arrow": false,
-            "image": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO3.png"
+            "show_arrow": false
           }
         }
       },
