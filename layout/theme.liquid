@@ -188,7 +188,7 @@
       version: '5.5.0',
       cartSettings: {
         giftItem : {
-          enabled: {{ settings.enable_gift }},
+          enabled: {% if settings.gift_item != blank %}{{ settings.enable_gift }} {% else %}false{% endif %},
           variantId: {{ settings.gift_item.id }},
           method: "{{ settings.gift_item_method }}",
           collection: {% if settings.gift_item_collection != blank %}{{ settings.gift_item_collection.id }}{% else %}0{% endif %},
