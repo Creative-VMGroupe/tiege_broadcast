@@ -4,7 +4,6 @@
   assign text_color = section.settings.color
   assign animation_anchor = '#Rte--' | append: section.id
   assign animation_order = 0
-  assign mobile_padding = section.settings.mobile_padding
 -%}
 
 {%- style -%}
@@ -23,7 +22,7 @@
 {%- endstyle -%}
 
 <section id="Rte--{{ section.id }} "
-  class="index-rte section-padding {% if mobile_padding %} padding-80_mobile {% endif %}"
+  class="index-rte section-padding"
   data-section-id="{{ section.id }}"
   data-section-type="rich-text"
   {% if section.settings.image_1 != blank %} 
@@ -373,13 +372,8 @@
       "unit": "px",
       "label": "Padding bottom",
       "default": 100
-    },
-        {
-  "type": "checkbox",
-  "id": "mobile_padding",
-  "label": "Adjust mobile padding to 80px",
-  "default": false
-}
+    }
+
   ],
   "blocks": [
     {
