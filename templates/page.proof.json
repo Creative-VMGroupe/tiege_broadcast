@@ -118,6 +118,9 @@
         "text_slide_qaWtgd",
         "text_slide_Fr4gep"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "text_width": "wrapper--narrow",
         "height": "screen-height-one-third",
@@ -127,8 +130,8 @@
         "bg_color": "",
         "color": "",
         "sub_color": "#00ad2d",
-        "padding_top": 80,
-        "padding_bottom": 80
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "171444854930410d14": {
@@ -448,6 +451,10 @@
     },
     "section_before_after_q3KGGj": {
       "type": "section-before-after",
+      "custom_css": [
+        ".compare__body {background-color: #f7f7f7;}",
+        ".compare__content {background-color: #f7f7f7;}"
+      ],
       "settings": {
         "layout": "",
         "text_align_center": true,
@@ -479,7 +486,7 @@
     "section_before_after_yD7FLe": {
       "type": "section-before-after",
       "custom_css": [
-
+        ".compare__body {background-color: #f7f7f7;}"
       ],
       "settings": {
         "layout": "is-reversed",
