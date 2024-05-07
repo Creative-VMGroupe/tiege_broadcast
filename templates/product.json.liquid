@@ -1,14 +1,22 @@
 {% layout none %}
 {
-  "isRoutine": {{ product.metafields.custom.is_routine.value }},
+  isRoutine: {{ product.metafields.custom.is_routine.value }},
   {% if product.metafields.custom.next_level_routine != blank %}
-    "nextRoutine" : {
-      "id" : {{ product.metafields.custom.next_level_routine.value.id }},
-      "handle" : "{{ product.metafields.custom.next_level_routine.value.handle }}"
+    nextRoutine : {
+      id : {{ product.metafields.custom.next_level_routine.value.id }},
+      handle : "{{ product.metafields.custom.next_level_routine.value.handle }}"
     },
   {% else %}
-    "nextRoutine": false,
+    nextRoutine: false,
   {% endif %}
-  "nextRoutineLineItem" : {{ product.metafields.custom.next_routine_line_item }},
+
+  {% if product.metafields.custom.next_routine_line_item != blank %}
+    nextRoutineLineItem : {
+      id : {{ product.metafields.custom.next_routine_line_item.value.id }},
+      handle : "{{ product.metafields.custom.next_routine_line_item.value.handle }}"
+    },
+  {% else %}
+    nextRoutineLineItem: false,
+  {% endif %}
   <!-- "routineVariants" : {{ product.metafields.custom.products_included_in_routine }} -->
 }
