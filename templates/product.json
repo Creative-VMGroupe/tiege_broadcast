@@ -133,6 +133,7 @@
         },
         "complementary_products_C7V6rg": {
           "type": "complementary-products",
+          "disabled": true,
           "settings": {
             "level-guide_link": "",
             "complementary_limit": 3,
@@ -168,7 +169,7 @@
         ".rc-widget label {border-radius: 300px;}",
         ".accordion__title {font-weight: bold;}",
         ".accordion {border: none;}",
-        ".radio__legend__value {display:none;}",
+        ".radio__legend__value {display: none;}",
         ".rc-widget {padding-top: 30px;}",
         ".rc-template__radio-group .rc-radio .rc-radio__label {display: flex !important; flex-direction: row-reverse !important;}",
         "#routine_title {display: none;}"
