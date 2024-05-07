@@ -22,7 +22,8 @@
 {%- endstyle -%}
 
 <section id="Rte--{{ section.id }}"
-  class="index-rte section-padding"
+  class="index-rte section-padding   {% if section.settings.image_1 != blank %} rich-text_image_padding
+  {% endif %}"
   data-section-id="{{ section.id }}"
   data-section-type="rich-text"
   {% if section.settings.image_1 != blank %} 
