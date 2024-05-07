@@ -4,6 +4,7 @@
   assign text_color = section.settings.color
   assign animation_anchor = '#Rte--' | append: section.id
   assign animation_order = 0
+   assign desktop_height = section.settings.height
 -%}
 
 {%- style -%}
@@ -21,7 +22,7 @@
   }
 {%- endstyle -%}
 
-<section id="Rte--{{ section.id }}"
+<section id="Rte--{{ section.id }} {{ desktop_height }}"
   class="index-rte section-padding"
   data-section-id="{{ section.id }}"
   data-section-type="rich-text"
@@ -304,7 +305,24 @@
   "id": "image_1",
   "label": "Image"
 },
-
+{
+      "type": "select",
+      "id": "height",
+      "label": "Height",
+      "default": "screen-height-two-thirds",
+      "options": [
+        { "value": "image-height", "label": "Image height" },
+        { "value": "screen-height-full", "label": "Full screen height"},
+        { "value": "screen-height-three-quarters", "label": "3/4 of screen"},
+        { "value": "screen-height-two-thirds", "label": "2/3 of screen"},
+        { "value": "screen-height-one-half", "label": "1/2 of screen"},
+        { "value": "screen-height-one-third", "label": "1/3 of screen"},
+        { "value": "seven-fifty-height-hero", "label": "750px" },
+        { "value": "sixty-fifty-height-hero", "label": "650px" },
+        { "value": "five-fifty-height-hero ", "label": "550px" },
+        { "value": "four-fifty-height-hero", "label": "450px" }
+      ]
+    },
     {
       "type": "header",
       "content": "Style"
