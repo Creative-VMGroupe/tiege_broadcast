@@ -10,14 +10,13 @@
   {% else %}
     nextRoutine: false,
   {% endif %}
-  {{ product.metafields.custom.next_routine_line_item.value | json }}
   {% if product.metafields.custom.next_routine_line_item != blank %}
     nextRoutineLineItem : {
       id : {{ product.metafields.custom.next_routine_line_item.value.id }},
-      handle : "{{ product.metafields.custom.next_routine_line_item.value.handle }}"
+      details : {{ product.metafields.custom.next_routine_line_item.value | json }}
     },
   {% else %}
-    nextRoutineLineItem: false
+    nextRoutineLineItem: false,
   {% endif %}
   <!-- "routineVariants" : {{ product.metafields.custom.products_included_in_routine }} -->
 }
