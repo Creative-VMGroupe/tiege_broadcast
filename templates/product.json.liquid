@@ -10,7 +10,7 @@
   {% else %}
     nextRoutine: false,
   {% endif %}
-  {{ product.metafields.custom.next_routine_line_item }}
+  {{ product.metafields.custom.next_routine_line_item.value | json }}
   {% if product.metafields.custom.next_routine_line_item != blank %}
     nextRoutineLineItem : {
       id : {{ product.metafields.custom.next_routine_line_item.value.id }},
