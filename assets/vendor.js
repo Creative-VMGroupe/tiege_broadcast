@@ -860,6 +860,7 @@ var themeVendor = (function (t) {
                 this.positionCells(),
                 this._updateWrapShiftCells(),
                 this.setGallerySize();
+ 
             }),
             (p._makeCells = function (t) {
               return this._filterFindCellElements(t).map((t) => new s(t));
@@ -958,6 +959,8 @@ var themeVendor = (function (t) {
               e && (this.cellAlign = 1 - this.cellAlign);
           }),
             (p.setGallerySize = function () {
+                           console.log(this.maxCellHeight)
+              console.log(this.options.adaptiveHeight)
               if (!this.options.setGallerySize) return;
               let t =
                 this.options.adaptiveHeight && this.selectedSlide
