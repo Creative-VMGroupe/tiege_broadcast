@@ -6987,7 +6987,7 @@ toggle-ellipsis {
 .cart__item {
   position: relative;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row;
   justify-content: flex-start;
   align-items: center;
   padding: var(--inner);
