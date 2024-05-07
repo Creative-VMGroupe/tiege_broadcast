@@ -6695,7 +6695,7 @@ toggle-ellipsis {
 /*================ MODULES ================*/
 /*====== Cart Dropdown ======*/
 .drawer {
-  --inner: 15px;
+  --inner: 20px;
   --inner-offset: -15px;
 }
 .drawer .cart__checkout {
