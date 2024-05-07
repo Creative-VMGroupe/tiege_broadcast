@@ -6,26 +6,7 @@
  * to use this file you will need to open layout/theme.liquid and uncomment
  * the custom.js script import line near the bottom of the file.
  */
-function checkAndRemoveHeaderStuck() {
-  // Check if the user has scrolled up
-  if (window.scrollY < lastScrollTop) {
-    // Check if the user is at the top of the viewport
-    if (window.scrollY === 0) {
-      // Check if the header has the js__header__stuck class
-      if ($(".header__wrapper").hasClass("js__header__stuck")) {
-        // Check if the user is at the top of the document
-        if (document.documentElement.scrollTop === 0) {
-          // Remove the js__header__stuck class from the header
-          console.log("Running")
-          $(".header__wrapper").removeClass("js__header__stuck");
-        }
-      }
-    }
-  }
-}
 
-// Run the function every 250 milliseconds
-setInterval(checkAndRemoveHeaderStuck, 250);
 
 (function () {
   // Hide Header on on scroll down
