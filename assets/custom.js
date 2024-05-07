@@ -125,10 +125,6 @@ document.addEventListener('theme:product:add', function(e) {
   console.log(e);
 });
 
-document.addEventListener('theme:cart:update', function(e) {
-  console.log(e);
-});
-
 document.addEventListener('theme:cart:change', function(e) {
   console.log(e);
 });
