@@ -1,7 +1,11 @@
 {% layout none %}
 {% capture jsonData %}
 {
+  {% if product.metafields.custom.is_routine != blank %}
   isRoutine: {{ product.metafields.custom.is_routine.value }},
+  {% else %}
+    isRoutine: false,
+  {% endif %}
   {% if product.metafields.custom.next_level_routine != blank %}
     nextRoutine : {
       id : {{ product.metafields.custom.next_level_routine.value.id }},
