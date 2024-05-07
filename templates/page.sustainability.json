@@ -199,8 +199,17 @@
     "section_rich_text_7KXRxY": {
       "type": "section-rich-text",
       "blocks": {
+        "heading_9MYCNH": {
+          "type": "heading",
+          "settings": {
+            "title": "What Is Closed-Loop Recycling?",
+            "text_size": 7,
+            "padding_bottom": 16
+          }
+        },
         "subheading_DPi9aG": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "subheading": "What Is Closed-Loop Recycling?",
             "text_size": 7,
@@ -218,6 +227,7 @@
         }
       },
       "block_order": [
+        "heading_9MYCNH",
         "subheading_DPi9aG",
         "text_aACJjy"
       ],
@@ -250,10 +260,10 @@
     "section_rich_text_V4nJig": {
       "type": "section-rich-text",
       "blocks": {
-        "subheading_BJETaU": {
-          "type": "subheading",
+        "heading_bjAaeY": {
+          "type": "heading",
           "settings": {
-            "subheading": "Did you know?",
+            "title": "Did you know?",
             "text_size": 7,
             "padding_bottom": 16
           }
@@ -267,7 +277,7 @@
             "padding_bottom": 30
           }
         },
-        "heading_bjAaeY": {
+        "heading_8weWyN": {
           "type": "heading",
           "settings": {
             "title": "What Does It Cost?",
@@ -312,9 +322,9 @@
         }
       },
       "block_order": [
-        "subheading_BJETaU",
-        "text_YcbzVh",
         "heading_bjAaeY",
+        "text_YcbzVh",
+        "heading_8weWyN",
         "text_eep6bi",
         "text_6CipJA",
         "image_kDw4qU",
