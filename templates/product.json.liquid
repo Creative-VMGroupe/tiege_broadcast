@@ -18,7 +18,7 @@
   {% else %}
     nextRoutineLineItem: false,
   {% endif %}
-  {{ product.metafields.custom.products_included_in_routine.value }}
+  {{ product.metafields.custom.products_included_in_routine.value[0] }}
   {% if product.metafields.custom.products_included_in_routine.value.size %}
     routineVariants: [
       {% for variant in product.metafields.custom.products_included_in_routine.value %}
