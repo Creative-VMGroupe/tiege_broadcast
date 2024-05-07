@@ -17213,7 +17213,7 @@ input.cart__acceptance__input {
 }
 .cart__quantity .cart__quantity-field {
   border-radius: 300px;
-  padding: 10px 30px;
+  padding: 15px 30px;
   border-color: var(--border);
   margin: 0;
   background-color: transparent;
