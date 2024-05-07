@@ -18,10 +18,19 @@
   {% else %}
     nextRoutineLineItem: false,
   {% endif %}
-  {{ product.metafields.custom.products_included_in_routine.values }}
+  {% for variant in product.metafields.custom.products_included_in_routine.value %}
+        {
+          id: {{ variant.value.id }},
+          detail: {{ variant.value | json }}
+        {% if forloop.last %}
+          }
+        {% else %}
+          },
+        {% endif %}
+      {% endfor %}
   {% if product.metafields.custom.products_included_in_routine.value.size %}
     routineVariants: [
-      {% for variant in product.metafields.custom.products_included_in_routine %}
+      {% for variant in product.metafields.custom.products_included_in_routine.value %}
         {
           id: {{ variant.value.id }},
           detail: {{ variant.value | json }}
