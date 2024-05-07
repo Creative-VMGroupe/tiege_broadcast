@@ -125,6 +125,11 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('theme:product:add', function(e) {
   let addedItem = e.detail.response;
   console.log(addedItem);
+
+  // Free Item Addition
+  if (theme.cartSettings.giftItem.enabled) {
+    console.log('Enabled');
+  }
   
 
   fetch(window.theme.routes.cart_url + '.json')
