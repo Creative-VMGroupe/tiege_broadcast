@@ -128,18 +128,26 @@ document.addEventListener('theme:product:add', function(e) {
 
   // Free Item Addition
   if (theme.cartSettings.giftItem.enabled) {
-    if (theme.cartSettings.giftItem.method == "cart") {
-      let minCartValue = parseInt(theme.cartSettings.giftItem.cartValue * 100);
-      console.log(minCartValue);
-    } else {
-      
-    }
+    fetch(window.theme.routes.cart_url + '.json')
+    .then(response => response.json())
+    .then(data => {
+      if (data.items.length) {
+        let giftExists = data.items.filter((item) => item.id === theme.cartSettings.giftItem.variantId);
+        console.log(giftExists);
+      }
+      if (theme.cartSettings.giftItem.method == "cart") {
+        let minCartValue = parseInt(theme.cartSettings.giftItem.cartValue * 100);
+        if (data.total_price > minCartValue) {
+          
+        }
+        
+      } else {
+        
+      }
+    });
   }
   
 
-  fetch(window.theme.routes.cart_url + '.json')
-  .then(response => response.json())
-  .then(data => console.log(data));
 
   fetch("https://tiege-hanley-store.myshopify.com/products/level-1-acne-routine-1?view=json")
   .then(response => response.json())
