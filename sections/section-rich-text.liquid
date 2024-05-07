@@ -24,11 +24,11 @@
 {%- endstyle -%}
 
 <section id="Rte--{{ section.id }} "
-  class="index-rte section-padding {{ desktop_height }} {{ mobile_height }}"
+  class="index-rte section-padding {% if section.settings.image_1 != blank %} {{ desktop_height }} {{ mobile_height }} {%- endif -%}"
   data-section-id="{{ section.id }}"
   data-section-type="rich-text"
   {% if section.settings.image_1 != blank %} 
-  style='position: relative; display: flex; align-items: center'
+  style='position: relative;{% if section.settings.image_1 != blank %} display: flex; align-items: center {%- endif -%}'
   {% endif %}
   >
   {% if section.settings.image_1 != blank %} 
