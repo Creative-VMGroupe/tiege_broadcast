@@ -6772,7 +6772,7 @@ toggle-ellipsis {
   margin: 0;
 }
 .drawer .cart__widget__title {
-  padding-left: var(--inner);
+  padding-left: 20px;
 }
 .drawer .cart__widget__content__inner {
   padding-left: var(--inner);
@@ -16914,7 +16914,7 @@ a.review {
 }
 .cart__widget__title .icon {
   --icon-size: 16px;
-  right: var(--inner);
+  right: 20px;
 }
 
 .cart__widget label {
