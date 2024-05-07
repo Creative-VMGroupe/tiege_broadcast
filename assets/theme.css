@@ -25948,6 +25948,9 @@ div.rc_popup {
 p, a, span, h2.column__heading {
   line-height: var(--BODY-LINE-HEIGHT);
 }
+h2.column__heading {
+  font-size: 14px;
+}
 @media only screen and (max-width: 749px) {
   .grid--mobile-slider {
     scroll-padding: 0;
