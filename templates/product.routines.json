@@ -143,7 +143,7 @@
         ".rc-widget label {border-radius: 300px;}",
         ".accordion__title {font-weight: bold;}",
         ".accordion {border: none;}",
-        ".rc-widget {padding-top: 30px;}",
+        ".rc-widget {padding-top: 20px;}",
         ".rc-template__radio-group .rc-radio .rc-radio__label {display: flex !important; flex-direction: row-reverse !important;}",
         "#single_title {display: none;}"
       ],
@@ -209,7 +209,7 @@
       ],
       "custom_css": [
         ".flickity-viewport {height: calc(100vh \/ 3) !important;}",
-        ".brick__block__text {padding-bottom: 80px; padding-top: 80px}"
+        ".brick__block__text {padding-bottom: 80px; padding-top: 80px;}"
       ],
       "settings": {
         "layout": "is-reversed",
