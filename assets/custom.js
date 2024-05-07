@@ -6,6 +6,29 @@
  * to use this file you will need to open layout/theme.liquid and uncomment
  * the custom.js script import line near the bottom of the file.
  */
+// Variable to store the last scroll position
+var lastScrollTop = 0;
+
+// Event listener to update the last scroll position and check if the user scrolled up
+$(window).scroll(function (event) {
+  var currentScrollTop = window.scrollY;
+  // Check if the user scrolled up
+  if (currentScrollTop < lastScrollTop) {
+    // Check if the user is at the top of the viewport
+    if (currentScrollTop === 0) {
+      // Check if the header has the js__header__stuck class
+      if ($(".header__wrapper").hasClass("js__header__stuck")) {
+        // Check if the user is at the top of the document
+        if (document.documentElement.scrollTop === 0) {
+          // Remove the js__header__stuck class from the header
+          $(".header__wrapper").removeClass("js__header__stuck");
+        }
+      }
+    }
+  }
+  // Update the last scroll position
+  lastScrollTop = currentScrollTop;
+});
 
 
 (function () {
