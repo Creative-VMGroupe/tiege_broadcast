@@ -215,7 +215,7 @@
       ],
       "custom_css": [
         "h2 {color: #00ad2d;}",
-        ".flickity-viewport {height: 100vh \/ 3}"
+        ".flickity-viewport {height: 100vh \/ 3 !important;}"
       ],
       "settings": {
         "layout": "is-reversed",
