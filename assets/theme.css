@@ -26426,3 +26426,9 @@ flex: 1;
   flex-flow: column;
 }
 }
+/*Level Guide*/
+@media (max-width: 869px){
+  #cd-table .cd-table-container {
+  padding-bottom: 25px;
+}
+}
