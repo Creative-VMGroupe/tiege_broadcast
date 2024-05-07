@@ -1,4 +1,5 @@
 {% layout none %}
+{% capture jsonData %}
 {
   isRoutine: {{ product.metafields.custom.is_routine.value }},
   {% if product.metafields.custom.next_level_routine != blank %}
@@ -9,7 +10,6 @@
   {% else %}
     nextRoutine: false,
   {% endif %}
-
   {% if product.metafields.custom.next_routine_line_item != blank %}
     nextRoutineLineItem : {
       id : {{ product.metafields.custom.next_routine_line_item.value.id }},
@@ -20,3 +20,5 @@
   {% endif %}
   <!-- "routineVariants" : {{ product.metafields.custom.products_included_in_routine }} -->
 }
+{% endcapture %}
+{{- jsonData -}}
