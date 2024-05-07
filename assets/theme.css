@@ -17173,7 +17173,7 @@ input.cart__acceptance__input {
 /*====== Cart Quantity ======*/
 .cart__quantity {
   position: relative;
-  width: 95px;
+  width: 140px;
   transition: opacity 0.4s;
 }
 @media only screen and (max-width: 479px) {
