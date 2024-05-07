@@ -225,8 +225,8 @@
         "align_text": "text-center",
         "bg_color": "#ffffff",
         "color": "#000000",
-        "padding_top": 80,
-        "padding_bottom": 80
+        "padding_top": 90,
+        "padding_bottom": 90
       }
     },
     "section_collection_new_JPPdmt": {
@@ -376,7 +376,7 @@
         "show_video_popup": false,
         "video_popup_social": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "desktop_height": "screen-height-two-thirds",
-        "mobile_height": "screen-height-one-third--mobile",
+        "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
         "overlay_opacity": 0,
         "overlay_color": "#000000",
@@ -653,7 +653,7 @@
         "image_1": "shopify:\/\/shop_images\/Peptides_AdobeStock_403007779_transparent.png",
         "image_2": "shopify:\/\/shop_images\/HARRYS_FW_PROD_0279_1.jpg",
         "link": "",
-        "mobile_height": "screen-height-one-third--mobile",
+        "mobile_height": "screen-height-one-half--mobile",
         "flex_align_desktop": "align--middle-center-desktop",
         "flex_align_mobile": "align--middle-center-mobile",
         "overlay_opacity": 0,
