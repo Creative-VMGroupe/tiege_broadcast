@@ -21,8 +21,8 @@
   }
 {%- endstyle -%}
 
-<section id="Rte--{{ section.id }}"
-  class="index-rte section-padding"
+<section id="Rte--{{ section.id }} "
+  class="index-rte section-padding {% if mobile_padding %} padding-80_mobile {% endif %}"
   data-section-id="{{ section.id }}"
   data-section-type="rich-text"
   {% if section.settings.image_1 != blank %} 
@@ -299,6 +299,7 @@
 {
   "name": "Rich text",
   "settings": [
+
     {
   "type": "image_picker",
   "id": "image_1",
@@ -371,7 +372,13 @@
       "unit": "px",
       "label": "Padding bottom",
       "default": 100
-    }
+    },
+        {
+  "type": "checkbox",
+  "id": "mobile_padding",
+  "label": "Adjust mobile padding to 80px",
+  "default": false
+}
   ],
   "blocks": [
     {
