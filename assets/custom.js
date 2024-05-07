@@ -23,7 +23,7 @@
       hasScrolled();
       didScroll = false;
     }
-  }, 0);
+  }, 50);
 
   function hasScrolled() {
     var st = $(this).scrollTop();
