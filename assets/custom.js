@@ -128,7 +128,12 @@ document.addEventListener('theme:product:add', function(e) {
 
   // Free Item Addition
   if (theme.cartSettings.giftItem.enabled) {
-    console.log('Enabled');
+    if (theme.cartSettings.giftItem.method == "cart") {
+      let minCartValue = parseInt(theme.cartSettings.giftItem.cartValue * 100);
+      console.log(minCartValue);
+    } else {
+      
+    }
   }
   
 
