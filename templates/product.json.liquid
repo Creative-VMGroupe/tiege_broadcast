@@ -1,6 +1,4 @@
 {% layout none %}
-{{ product.metafields.custom.products_included_in_routine.type }}
-{% comment %}
 {% capture jsonData %}
 {
   isRoutine: {{ product.metafields.custom.is_routine.value }},
@@ -20,7 +18,7 @@
   {% else %}
     nextRoutineLineItem: false,
   {% endif %}
-  {% if product.metafields.custom.products_included_in_routine.value.size %}
+  {% if product.metafields.custom.products_included_in_routine.value != blank %}
     routineVariants: [
       {% for variant in product.metafields.custom.products_included_in_routine.value %}
         {
@@ -39,4 +37,3 @@
 }
 {% endcapture %}
 {{- jsonData -}}
-{% endcomment %}
