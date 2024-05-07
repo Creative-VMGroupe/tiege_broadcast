@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('theme:product:add', function(e) {
   console.log(e);
 
-  fetch(window.theme.routes.root + '.json')
+  fetch(window.theme.routes.cart_url + '.json')
   .then(response => response.json())
   .then(data => console.log(data));
 
