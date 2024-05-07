@@ -16,9 +16,9 @@
       handle : "{{ product.metafields.custom.next_routine_line_item.value.handle }}"
     },
   {% else %}
-    nextRoutineLineItem: false,
+    nextRoutineLineItem: false
   {% endif %}
-  <!-- "routineVariants" : {{ product.metafields.custom.products_included_in_routine }} -->
+  
 }
 {% endcapture %}
 {{- jsonData -}}
