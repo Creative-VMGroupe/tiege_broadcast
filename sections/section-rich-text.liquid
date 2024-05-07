@@ -4,7 +4,7 @@
   assign text_color = section.settings.color
   assign animation_anchor = '#Rte--' | append: section.id
   assign animation_order = 0
-   assign desktop_height = section.settings.height
+  
 -%}
 
 {%- style -%}
@@ -22,7 +22,7 @@
   }
 {%- endstyle -%}
 
-<section id="Rte--{{ section.id }} {{ desktop_height }}"
+<section id="Rte--{{ section.id }}"
   class="index-rte section-padding"
   data-section-id="{{ section.id }}"
   data-section-type="rich-text"
