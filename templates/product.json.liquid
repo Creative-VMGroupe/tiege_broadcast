@@ -18,13 +18,12 @@
   {% else %}
     nextRoutineLineItem: false,
   {% endif %}
-  {{ product.metafields.custom.products_included_in_routine }}
   {% if product.metafields.custom.products_included_in_routine != blank %}
     routineVariants: [
       {% for variant in product.metafields.custom.products_included_in_routine %}
         {
-          id: {{ variant.id }},
-          detail: {{ variant | json }}
+          id: {{ variant.value.id }},
+          detail: {{ variant.value | json }}
         {% if forloop.last %}
           }
         {% else %}
