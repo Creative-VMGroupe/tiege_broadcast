@@ -39,7 +39,7 @@
         "bg_color": "#ffffff",
         "color": "",
         "padding_top": 80,
-        "padding_bottom": 80
+        "padding_bottom": 40
       }
     },
     "vm_link_tabs_xEMytP": {
@@ -75,7 +75,7 @@
         "bg_color": "#ffffff",
         "color": "",
         "padding_top": 80,
-        "padding_bottom": 40
+        "padding_bottom": 20
       }
     },
     "jobs_container_Mk6ckg": {
