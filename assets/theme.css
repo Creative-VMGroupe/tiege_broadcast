@@ -26262,9 +26262,15 @@ text-transform: uppercase;
 }
 
 /*Misc*/
-.ptb-0 {
+.ptb-custom {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
+}
+@media (max-width: 749px){
+  .ptb-custom {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
 }
 /*Rich Text 2Columns*/
 .two-columns__container {
