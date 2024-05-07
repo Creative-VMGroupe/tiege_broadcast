@@ -208,12 +208,13 @@
         "text_slide_Ey9Vkb"
       ],
       "custom_css": [
-        ".flickity-viewport {height: calc(100vh \/ 3) !important;}"
+        ".flickity-viewport {height: calc(100vh \/ 3) !important;}",
+        ".brick__block__text {padding-bottom: 80px; padding-top: 80px}"
       ],
       "settings": {
         "layout": "is-reversed",
         "height": "screen-height-two-thirds",
-        "mobile_height": "screen-height-one-half--mobile",
+        "mobile_height": "screen-height-one-third--mobile",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO3.png",
         "image_2": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png",
