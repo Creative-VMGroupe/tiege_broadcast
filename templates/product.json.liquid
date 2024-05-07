@@ -16,8 +16,8 @@
   {% endif %}
   {% if product.metafields.custom.next_routine_line_item != blank %}
     "nextRoutineLineItem": {
-      id : {{ product.metafields.custom.next_routine_line_item.value.id }},
-      details : {{ product.metafields.custom.next_routine_line_item.value | json }}
+      "id": {{ product.metafields.custom.next_routine_line_item.value.id }},
+      "details": {{ product.metafields.custom.next_routine_line_item.value | json }}
     },
   {% else %}
     "nextRoutineLineItem": false,
