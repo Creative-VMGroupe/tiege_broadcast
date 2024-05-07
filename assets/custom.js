@@ -131,12 +131,17 @@ document.addEventListener('theme:product:add', function(e) {
     fetch(window.theme.routes.cart_url + '.json')
     .then(response => response.json())
     .then(data => {
-      let giftExists = data.items.filter((item) => item.product_id == theme.cartSettings.giftItem.variantId);
-      console.log(data.items, giftExists);
+      let giftExists = data.items.filter((item) => item.product_id == theme.cartSettings.giftItem.variantId).length;
       if (theme.cartSettings.giftItem.method == "cart") {
         let minCartValue = parseInt(theme.cartSettings.giftItem.cartValue * 100);
         if (data.total_price > minCartValue) {
-          
+          if (!giftExists) {
+            // Add Gift Item
+          }
+        } else {
+          if (giftExists) {
+            // Remove Gift Item
+          }
         }
         
       } else {
