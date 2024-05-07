@@ -24,7 +24,11 @@
         {
           id: {{ variant.id }},
           detail: {{ variant | json }}
-        },
+        {% if forloop.last %}
+          }
+        {% else %}
+          },
+        {% endif %}
       {% endfor %}
     ]
   {% else %}
