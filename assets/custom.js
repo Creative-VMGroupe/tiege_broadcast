@@ -128,6 +128,14 @@ document.addEventListener('theme:product:add', function(e) {
   fetch(window.theme.routes.cart_url)
   .then(response => response.json())
   .then(data => console.log(data));
+
+  fetch("https://tiege-hanley-store.myshopify.com/products/level-1-acne-routine-1?view=json")
+  .then(response => response.json())
+  .then(data => console.log(data));
+
+  fetch("https://tiege-hanley-store.myshopify.com/products/level-2-advanced-acne-routine-1?view=json")
+  .then(response => response.json())
+  .then(data => console.log(data));
 });
 
 document.addEventListener('theme:cart:change', function(e) {
