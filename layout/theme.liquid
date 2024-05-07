@@ -189,6 +189,7 @@
       cartSettings: {
         giftItem : {
           enabled: {{ settings.enable_gift }},
+          variantId: {{ settings.gift_item.id }},
           method: "{{ settings.gift_item_method }}",
           collection: {% if settings.gift_item_collection != blank %}{{ settings.gift_item_collection.id }}{% else %}0{% endif %},
           cartValue : {{ settings.gift_item_cart_value }}
