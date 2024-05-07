@@ -16755,7 +16755,7 @@ a.review {
 }
 
 .cart__title {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-family: var(--FONT-STACK-BODY);
   font-weight: var(--FONT-WEIGHT-BODY);
   font-size: calc(11px * var(--FONT-ADJUST-BODY));
