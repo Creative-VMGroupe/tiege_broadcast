@@ -5,6 +5,7 @@
   assign animation_anchor = '#Rte--' | append: section.id
   assign animation_order = 0
   assign desktop_height = section.settings.height
+    assign mobile_height = section.settings.mobile_height
 -%}
 
 {%- style -%}
@@ -23,7 +24,7 @@
 {%- endstyle -%}
 
 <section id="Rte--{{ section.id }} "
-  class="index-rte section-padding {{ desktop_height }}"
+  class="index-rte section-padding {{ desktop_height }} {{ mobile_height }}"
   data-section-id="{{ section.id }}"
   data-section-type="rich-text"
   {% if section.settings.image_1 != blank %} 
@@ -321,6 +322,28 @@
         { "value": "sixty-fifty-height-hero", "label": "650px" },
         { "value": "five-fifty-height-hero ", "label": "550px" },
         { "value": "four-fifty-height-hero", "label": "450px" }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Mobile"
+    },
+    {
+      "type": "select",
+      "id": "mobile_height",
+      "label": "Height",
+      "default": "screen-height-three-quarters--mobile",
+      "options": [
+        { "value": "image-height--mobile", "label": "Image height" },
+        { "value": "screen-height-full--mobile", "label": "Full screen height"},
+        { "value": "screen-height-three-quarters--mobile", "label": "3/4 of screen"},
+        { "value": "screen-height-two-thirds--mobile", "label": "2/3 of screen"},
+        { "value": "screen-height-one-half--mobile", "label": "1/2 of screen"},
+        { "value": "screen-height-one-third--mobile", "label": "1/3 of screen"},
+        { "value": "seven-fifty-height-hero--mobile", "label": "750px" },
+        { "value": "sixty-fifty-height-hero--mobile", "label": "650px" },
+        { "value": "five-fifty-height-hero--mobile", "label": "550px" },
+        { "value": "four-fifty-height-hero--mobile", "label": "450px" }
       ]
     },
     {
