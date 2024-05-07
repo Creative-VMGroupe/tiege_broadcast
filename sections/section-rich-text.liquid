@@ -22,8 +22,8 @@
   }
 {%- endstyle -%}
 
-<section id="Rte--{{ section.id }}"
-  class="index-rte section-padding"
+<section id="Rte--{{ section.id }} "
+  class="index-rte section-padding {{ desktop_height }}"
   data-section-id="{{ section.id }}"
   data-section-type="rich-text"
   {% if section.settings.image_1 != blank %} 
@@ -34,7 +34,7 @@
   <img src='{{ section.settings.image_1 | image_url }}' class='rich-text__img'/>
   {% endif %}
   {%- if section.blocks.size > 0 -%}  
-    <div class="hero__content__wrapper {{ section.settings.align_text }} {{ section.settings.width }}  {{ desktop_height }}">
+    <div class="hero__content__wrapper {{ section.settings.align_text }} {{ section.settings.width }}">
       <div class="hero__content hero__content--compact" 
       {% if section.settings.image_1 != blank %} 
       style='background-color: transparent;'
