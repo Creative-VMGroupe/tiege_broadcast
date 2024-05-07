@@ -17178,7 +17178,7 @@ input.cart__acceptance__input {
 }
 @media only screen and (max-width: 479px) {
   .cart__quantity {
-    width: 120px;
+    width: 150px;
   }
 }
 .cart__quantity.read-only {
