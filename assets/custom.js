@@ -21,6 +21,7 @@ $(window).scroll(function (event) {
         // Check if the user is at the top of the document
         if (document.documentElement.scrollTop === 0) {
           // Remove the js__header__stuck class from the header
+          console.log('Running')
           $(".header__wrapper").removeClass("js__header__stuck");
         }
       }
