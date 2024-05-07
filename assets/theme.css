@@ -7981,7 +7981,7 @@ body:not(.has-line-design) .header__dropdown {
 }
 .grandparent .dropdown__family {
   padding-left: var(--outer);
-  padding-right: var(--outer);
+  /* padding-right: var(--outer); */
 }
 .grandparent .menu__blocks {
   display: flex;
