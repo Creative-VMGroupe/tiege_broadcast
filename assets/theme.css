@@ -21401,7 +21401,8 @@ body.grid-compact.has-line-design .brick__block__collection .look__slide {
     max-width: 100%;
   }
   .brick__block--text .hero__content--compact {
-    padding: var(--outer) var(--outer) calc(var(--outer) - var(--line));
+    /* padding: var(--outer) var(--outer) calc(var(--outer) - var(--line)); */
+    padding: var(--outer);
     margin-bottom: 0;
   }
   .brick__block--text .hero__content--no-padding {
