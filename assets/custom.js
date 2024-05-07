@@ -149,8 +149,9 @@ document.addEventListener('theme:product:add', function(e) {
               },
               body: JSON.stringify(formData)
             })
-            .then(response => {
-              return response.json();
+            .then(response => response.json())
+            .then(data => {
+              document.dispatchEvent('theme:cart-drawer:show');
             })
             .catch((error) => {
               console.error('Error:', error);
