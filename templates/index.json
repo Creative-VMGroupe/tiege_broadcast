@@ -221,8 +221,6 @@
       ],
       "settings": {
         "image_1": "shopify:\/\/shop_images\/Layer_1.png",
-        "height": "screen-height-two-thirds",
-        "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--narrow",
         "align_text": "text-center",
         "bg_color": "#ffffff",
@@ -653,6 +651,7 @@
         "height": "screen-height-two-thirds",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/Peptides_AdobeStock_403007779_transparent.png",
+        "image_2": "shopify:\/\/shop_images\/HARRYS_FW_PROD_0279_1.jpg",
         "link": "",
         "mobile_height": "screen-height-one-half--mobile",
         "flex_align_desktop": "align--middle-center-desktop",
@@ -994,8 +993,6 @@
         "buttons_ezNW6y"
       ],
       "settings": {
-        "height": "screen-height-two-thirds",
-        "mobile_height": "screen-height-three-quarters--mobile",
         "width": "wrapper--narrow",
         "align_text": "text-center",
         "bg_color": "#000000",
