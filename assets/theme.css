@@ -25808,7 +25808,7 @@ div.rc_popup {
   padding-bottom: 50px !important;
 }
 .filter__item-quantity {
-  font-size: calc(var(--font-3) * var(--FONT-ADJUST-HEADING)) !important;
+  font-size: 14px !important;
 }
 .range-height__dot {
   width: 28px !important;
