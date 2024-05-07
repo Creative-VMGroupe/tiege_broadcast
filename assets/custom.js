@@ -136,7 +136,25 @@ document.addEventListener('theme:product:add', function(e) {
         let minCartValue = parseInt(theme.cartSettings.giftItem.cartValue * 100);
         if (data.total_price > minCartValue) {
           if (!giftExists) {
-            // Add Gift Item
+            let formData = {
+             'items': [{
+              'id': theme.cartSettings.giftItem.variantId,
+              'quantity': 1
+              }]
+            };
+            fetch(window.Shopify.routes.root + 'cart/add.js', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(formData)
+            })
+            .then(response => {
+              return response.json();
+            })
+            .catch((error) => {
+              console.error('Error:', error);
+            });
           }
         } else {
           if (giftExists) {
