@@ -26,8 +26,8 @@
     routineVariants: [
       {% for variant in product.metafields.custom.products_included_in_routine.value %}
         {
-          id: {{ variant.value.id }},
-          detail: {{ variant.value | json }}
+          id: {{ variant.id }},
+          detail: {{ variant | json }}
         {% if forloop.last %}
           }
         {% else %}
