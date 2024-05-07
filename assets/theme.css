@@ -7036,7 +7036,7 @@ toggle-ellipsis {
 
 .cart__item__content {
   width: calc(100% - 90px);
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 .cart__item__title {
