@@ -37,7 +37,10 @@
         .removeClass("js__header__stuck");
     } else {
       if (st + $(window).height() < $(document).height()) {
-        console.log(st + $(window).height() + $(document).height())
+        console.log(st)
+        console.log(st + $(window).height() )
+        console.log($(document).height())
+        
         $(".header__wrapper")
           .addClass("js__header__stuck")
           .removeClass("js__header_animate");
