@@ -70,7 +70,7 @@
     "show_gift_card_recipient": true,
     "color_swatches": true,
     "enable_gift": true,
-    "gift_item": "single-product-name-5",
+    "gift_item": "gift-set-1",
     "checkout_logo_position": "left",
     "checkout_logo_size": "medium",
     "checkout_body_background_color": "#ffffff",
