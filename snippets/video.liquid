@@ -122,7 +122,7 @@
 
       {%- if link_text != blank and show_video_popup -%}
         <div class="hero__button-group">
-          {%- if link_text != blank -%}
+          {%- if link_text != blank and show_video_popup != true -%}
             {%- assign animation_order = animation_order | plus: 1 -%}
             <div class="hero__button"
               data-aos="hero"
