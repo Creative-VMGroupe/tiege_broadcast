@@ -6883,7 +6883,7 @@ toggle-ellipsis {
 }
 
 .drawer__message {
-  padding: 12px var(--inner);
+  padding: 12px 20px;
 }
 
 .drawer__message--custom {
