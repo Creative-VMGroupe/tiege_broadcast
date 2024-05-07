@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('theme:product:add', function(e) {
   console.log(e);
 
-  fetch(window.Shopify.routes.root + '/cart.js')
+  fetch(window.theme.routes.root + '.js')
   .then(response => response.json())
   .then(data => console.log(data));
 
