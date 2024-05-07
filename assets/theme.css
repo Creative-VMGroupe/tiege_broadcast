@@ -25855,7 +25855,7 @@ div.rc_popup {
   font-size: 14px !important;
 } */
 .cart__item-custom {
-  margin: 20px !important;
+  margin: var(--inner) !important;
   padding: 0 0 15px 0 !important;
   border-bottom: 2px solid lightgray !important;
 }
