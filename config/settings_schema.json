@@ -1158,6 +1158,24 @@
         "id": "gift_item_collection",
         "label": "Collection",
         "info": "If any line item in the cart is part of the above defined collection, the gift item will be added automatically."
+      },
+      {
+        "type": "header",
+        "content": "Alert Messages"
+      },
+      {
+        "type": "text",
+        "id": "gift_item_success",
+        "label": "Success message",
+        "info": "Specify message to be displayed upon replacing the routine in the cart",
+        "default": "Only one routine is allowed per purchase. Your cart has been updated with your selection."
+      },
+      {
+        "type": "text",
+        "id": "gift_item_error",
+        "label": "Error message",
+        "info": "Specify message to be displayed upon replacing the routine in the cart",
+        "default": "Only one routine is allowed per purchase. Your cart has been updated with your selection."
       }
     ]
   },
