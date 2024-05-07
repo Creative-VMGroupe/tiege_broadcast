@@ -959,8 +959,6 @@ var themeVendor = (function (t) {
               e && (this.cellAlign = 1 - this.cellAlign);
           }),
             (p.setGallerySize = function () {
-                           console.log(this.maxCellHeight)
-              console.log(this.options.adaptiveHeight)
               if (!this.options.setGallerySize) return;
               let t =
                 this.options.adaptiveHeight && this.selectedSlide
