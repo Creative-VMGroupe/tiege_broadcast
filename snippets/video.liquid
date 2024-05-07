@@ -151,7 +151,7 @@
               <a href="{{ video_popup }}"
                 class="btn {{ section.settings.button_size }} {{ section.settings.button_style }} {{ section.settings.button_type }} image__video__play"
                 data-video-play="{%- render 'photoswipe-video-html' item_link: video_popup, item_id: video_parent_id, item_enable_sound: 'false' -%}">
-                {% render 'icon-play' %}
+                <span>{{ link_text | escape }}</span>
               </a>
             </video-popup>
           {%- endif -%}
