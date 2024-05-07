@@ -189,7 +189,8 @@
       cartSettings: {
         giftItem : {
           enabled: {% if settings.gift_item != blank %}{{ settings.enable_gift }} {% else %}false{% endif %},
-          variantId: {{ settings.gift_item.id }},
+          productId: {{ settings.gift_item.id }},
+          variantId: {{ settings.gift_item.first_available_variant.id }},
           method: "{{ settings.gift_item_method }}",
           collection: {% if settings.gift_item_collection != blank %}{{ settings.gift_item_collection.id }}{% else %}0{% endif %},
           cartValue : {{ settings.gift_item_cart_value }},
