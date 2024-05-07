@@ -192,7 +192,9 @@
           variantId: {{ settings.gift_item.id }},
           method: "{{ settings.gift_item_method }}",
           collection: {% if settings.gift_item_collection != blank %}{{ settings.gift_item_collection.id }}{% else %}0{% endif %},
-          cartValue : {{ settings.gift_item_cart_value }}
+          cartValue : {{ settings.gift_item_cart_value }},
+          success_alert : {{ settings.gift_item_success }},
+          error_alert : {{ settings.gift_item_error }}
         },
         singleRoutine : {
           enabled: {{ settings.enable_single_routine }},
