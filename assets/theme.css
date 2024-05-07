@@ -17212,6 +17212,7 @@ input.cart__acceptance__input {
   --icon-size: 16px;
 }
 .cart__quantity .cart__quantity-field {
+  border-radius: 300px;
   padding: 10px 30px;
   border-color: var(--border);
   margin: 0;
