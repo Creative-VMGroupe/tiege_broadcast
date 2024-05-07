@@ -653,7 +653,7 @@
         "image_1": "shopify:\/\/shop_images\/Peptides_AdobeStock_403007779_transparent.png",
         "image_2": "shopify:\/\/shop_images\/HARRYS_FW_PROD_0279_1.jpg",
         "link": "",
-        "mobile_height": "screen-height-one-half--mobile",
+        "mobile_height": "screen-height-one-third--mobile",
         "flex_align_desktop": "align--middle-center-desktop",
         "flex_align_mobile": "align--middle-center-mobile",
         "overlay_opacity": 0,
