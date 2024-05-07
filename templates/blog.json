@@ -14,7 +14,7 @@
             "heading_size": 8,
             "description": "Tell your brand's story through images.",
             "text_size": 4,
-            "flex_align_desktop": "align--middle-left-desktop",
+            "flex_align_desktop": "align--bottom-left-desktop",
             "flex_align_mobile": "align--middle-center-mobile",
             "bg_color": "",
             "color": "#ffffff",
@@ -34,6 +34,7 @@
         },
         "image_6LzwVY": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/L2_TiegeHanley_Advanced_Routine_Hero.jpg",
             "overlay_opacity": 0,
