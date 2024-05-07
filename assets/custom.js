@@ -120,6 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+//  https://tiege-hanley-store.myshopify.com/products/{{PRODUCT_HANDLE}}?view=json
 
 document.addEventListener('theme:product:add', function(e) {
   console.log(e);
