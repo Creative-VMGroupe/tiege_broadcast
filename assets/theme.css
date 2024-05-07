@@ -21024,7 +21024,8 @@ compare-images {
 }
 @media only screen and (max-width: 749px) {
   .brick__slider .flickity-page-dots {
-    padding: 0 calc(var(--outer) * 2);
+    /* padding: 0 calc(var(--outer) * 2); */
+    padding: 0 calc(var(--outer) );
   }
   .text-left .brick__slider .flickity-page-dots {
     justify-content: flex-start;
