@@ -120,7 +120,7 @@
         </p>
       {%- endif -%}
 
-      {%- if link_text != blank or show_video_popup -%}
+      {%- if link_text != blank and show_video_popup != true -%}
         <div class="hero__button-group">
           {%- if link_text != blank -%}
             {%- assign animation_order = animation_order | plus: 1 -%}
@@ -149,7 +149,7 @@
               data-aos-anchor="{{ animation_anchor }}"
               data-aos-order="{{ animation_order }}">
               <a href="{{ video_popup }}"
-                class="btn {{ section.settings.button_size }} {{ section.settings.button_style }} {{ section.settings.button_type }} image__video__play"
+                class="btn {{ section.settings.button_size }} {{ section.settings.button_style }} {{ section.settings.button_type }}"
                 data-video-play="{%- render 'photoswipe-video-html' item_link: video_popup, item_id: video_parent_id, item_enable_sound: 'false' -%}">
                 <span>{{ link_text | escape }}</span>
               </a>
