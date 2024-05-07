@@ -26438,3 +26438,9 @@ flex: 1;
   --columns: 1;
 } 
 }
+/*Rich Text*/
+@media (max-width: 749px) {
+.padding-80_mobile {
+  padding: 80px 0
+} 
+}
