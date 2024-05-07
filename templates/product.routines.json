@@ -207,6 +207,9 @@
         "text_slide_7rbw3L",
         "text_slide_Ey9Vkb"
       ],
+      "custom_css": [
+        ".flickity-viewport {height: calc(100vh \/ 3) !important;}"
+      ],
       "settings": {
         "layout": "is-reversed",
         "height": "screen-height-two-thirds",
