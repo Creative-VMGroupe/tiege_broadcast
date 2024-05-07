@@ -152,7 +152,7 @@ document.addEventListener('theme:product:add', function(e) {
             .then(response => response.json())
             .then(data => {
               console.log('Event Triggered');
-              document.dispatchEvent('theme:cart-drawer:show');
+              openCartDrawer();
             })
             .catch((error) => {
               console.error('Error:', error);
