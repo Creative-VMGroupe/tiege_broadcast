@@ -123,7 +123,9 @@ document.addEventListener('DOMContentLoaded', function() {
 //  https://tiege-hanley-store.myshopify.com/products/{{PRODUCT_HANDLE}}?view=json
 
 document.addEventListener('theme:product:add', function(e) {
-  console.log(e);
+  let addedItem = e.detail.response;
+  console.log(addedItem);
+  
 
   fetch(window.theme.routes.cart_url + '.json')
   .then(response => response.json())
