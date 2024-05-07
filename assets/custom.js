@@ -131,6 +131,7 @@ document.addEventListener('theme:product:add', function(e) {
     fetch(window.theme.routes.cart_url + '.json')
     .then(response => response.json())
     .then(data => {
+      console.log(data);
       if (data.items.length) {
         let giftExists = data.items.filter((item) => item.id === theme.cartSettings.giftItem.variantId);
         console.log(data.items.giftExists);
