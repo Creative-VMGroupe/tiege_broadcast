@@ -71,6 +71,9 @@
       "block_order": [
         "heading_wVwX8p"
       ],
+      "custom_css": [
+        "h2 {margin: 0;}"
+      ],
       "settings": {
         "width": "wrapper--full-padded",
         "align_text": "text-left",
