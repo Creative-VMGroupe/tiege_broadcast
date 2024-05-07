@@ -1167,15 +1167,15 @@
         "type": "text",
         "id": "gift_item_success",
         "label": "Success message",
-        "info": "Specify message to be displayed upon replacing the routine in the cart",
-        "default": "Only one routine is allowed per purchase. Your cart has been updated with your selection."
+        "info": "Specify message to be displayed when gift item is added to the cart",
+        "default": "Your cart is eligible for the free gift."
       },
       {
         "type": "text",
         "id": "gift_item_error",
         "label": "Error message",
-        "info": "Specify message to be displayed upon replacing the routine in the cart",
-        "default": "Only one routine is allowed per purchase. Your cart has been updated with your selection."
+        "info": "Specify message to be displayed when gift item is removed from the cart",
+        "default": "Your cart is not eligible for the free gift."
       }
     ]
   },
