@@ -80,7 +80,7 @@
       "custom_css": [
         ".hero__content {height: 100%;}",
         ".hero__button {margin-bottom: 0;}",
-        ".hero__content {justify-content:center}"
+        ".hero__content {justify-content: center;}"
       ],
       "settings": {
         "layout": "",
@@ -488,6 +488,9 @@
         "icon_UrxwKk",
         "icon_hp678W",
         "icon_Bwk7Y3"
+      ],
+      "custom_css": [
+        ".section-columns {padding-top: 80px; padding-bottom: 80px;}"
       ],
       "settings": {
         "title": "Our Difference",
