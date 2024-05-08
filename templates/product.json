@@ -442,50 +442,6 @@
         "padding_bottom": 0
       }
     },
-    "section_rich_text_phTXMH": {
-      "type": "section-rich-text",
-      "blocks": {
-        "heading_Kkirxy": {
-          "type": "heading",
-          "settings": {
-            "title": "Reviews",
-            "text_font": 40,
-            "padding_bottom": 0
-          }
-        }
-      },
-      "block_order": [
-        "heading_Kkirxy"
-      ],
-      "disabled": true,
-      "settings": {
-        "width": "wrapper--full-padded",
-        "align_text": "text-left",
-        "bg_color": "",
-        "color": "",
-        "padding_top": 24,
-        "padding_bottom": 0
-      }
-    },
-    "171198624333c1780b": {
-      "type": "apps",
-      "blocks": {
-        "okendo_reviews_widget_MJ7BBH": {
-          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
-          "settings": {
-            "product": "{{product}}",
-            "widget_type": "reviews_widget"
-          }
-        }
-      },
-      "block_order": [
-        "okendo_reviews_widget_MJ7BBH"
-      ],
-      "disabled": true,
-      "settings": {
-        "include_margins": false
-      }
-    },
     "app_accordion_8mPAjc": {
       "type": "app-accordion",
       "blocks": {
@@ -584,8 +540,6 @@
     "171319612680298cf4",
     "1713193502d18b128b",
     "section_accordion_new_RAhUrC",
-    "section_rich_text_phTXMH",
-    "171198624333c1780b",
     "app_accordion_8mPAjc",
     "related",
     "1711936135ad982cf2"
