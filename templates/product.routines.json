@@ -8,7 +8,7 @@
           "settings": {
             "subheading_option": "collection",
             "collection": "skin-care-system",
-            "text_size": 6,
+            "text_size": 14,
             "padding_bottom": 10
           }
         },
@@ -30,8 +30,8 @@
             "title": "Membership Benefits",
             "supply": "30 day supply",
             "pop-heading": "Your Member Benefits Explained",
-            "pop-heading_size": 6,
-            "icon-sub_size": 2,
+            "pop-heading_size": 32,
+            "icon-sub_size": 32,
             "image_1": "shopify:\/\/shop_images\/Group_1825.svg",
             "icon-1_sub": "Save 20%",
             "icon-1_text": "Get 20% with Autoship",
@@ -167,12 +167,12 @@
           "disabled": true,
           "settings": {
             "subheading": "★★★★★",
-            "subheading_size": 3,
+            "subheading_font": 14,
             "sub_letter_spacing": 5,
             "title": "Proof",
-            "heading_size": 7,
+            "heading_font": 32,
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 3,
+            "text_size": 14,
             "text_style": "font-body",
             "button_text": "",
             "button_url": "",
@@ -187,12 +187,12 @@
           "type": "text-slide",
           "settings": {
             "subheading": "★★★★★",
-            "subheading_size": 3,
-            "sub_letter_spacing": 5,
+            "subheading_font": 16,
+            "sub_letter_spacing": 0,
             "title": "Proof",
-            "heading_size": 7,
+            "heading_font": 40,
             "text": "<p>\"Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.\"<\/p>",
-            "text_size": 5,
+            "text_size": 16,
             "text_style": "font-body",
             "button_text": "",
             "button_url": "",
@@ -234,12 +234,12 @@
           "type": "text-slide",
           "settings": {
             "subheading": "",
-            "subheading_size": 3,
+            "subheading_font": 16,
             "sub_letter_spacing": 0,
             "title": "Willow Bark Extract",
-            "heading_size": 7,
+            "heading_font": 40,
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 3,
+            "text_size": 16,
             "text_style": "font-body",
             "button_text": "",
             "button_url": "",
@@ -254,12 +254,12 @@
           "type": "text-slide",
           "settings": {
             "subheading": "",
-            "subheading_size": 3,
+            "subheading_font": 14,
             "sub_letter_spacing": 0,
             "title": "Ingredient #2",
-            "heading_size": 7,
+            "heading_font": 40,
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 3,
+            "text_size": 16,
             "text_style": "font-body",
             "button_text": "",
             "button_url": "",
@@ -289,168 +289,6 @@
         "bg_color": "#f7f7f7",
         "color": "",
         "sub_color": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_double_slider_b33Ygi": {
-      "type": "section-double-slider",
-      "blocks": {
-        "text_slide_Nb3dBi": {
-          "type": "text-slide",
-          "settings": {
-            "subheading": "",
-            "subheading_size": 4,
-            "title": "Willow Bark Extract",
-            "heading_size": 9,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
-            "text_style": "font-body",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--outline",
-            "show_arrow": false
-          }
-        },
-        "text_slide_68g7FR": {
-          "type": "text-slide",
-          "settings": {
-            "subheading": "",
-            "subheading_size": 4,
-            "title": "Willow Bark Extract",
-            "heading_size": 9,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
-            "text_style": "font-body",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--outline",
-            "show_arrow": true
-          }
-        }
-      },
-      "block_order": [
-        "text_slide_Nb3dBi",
-        "text_slide_68g7FR"
-      ],
-      "disabled": true,
-      "settings": {
-        "layout": "is-reversed",
-        "height": "screen-height-three-quarters",
-        "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/uZr3qZvfRNuNZb2xaQjw.png",
-        "image_2": "shopify:\/\/shop_images\/rosemary-v1608581888105.png",
-        "image_width": "one-half",
-        "text_alignment": "text-center",
-        "bg_color": "#f0f0f0",
-        "color": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_collection_YVbRj7": {
-      "type": "section-collection",
-      "disabled": true,
-      "settings": {
-        "heading": "Included in this System",
-        "description": "",
-        "layout": "inline",
-        "link_text": "",
-        "link_url": "",
-        "button_type": "btn--primary",
-        "button_size": "",
-        "button_style": "btn--solid",
-        "show_arrow": false,
-        "featured_collection": "best-sellers",
-        "layout_desktop": "grid",
-        "grid": 4,
-        "rows": 1,
-        "width": "wrapper--full-padded",
-        "layout_mobile": "slider",
-        "bg_color": "#e8e8e8",
-        "color": "",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
-    "section_double_slider_fd6ndq": {
-      "type": "section-double-slider",
-      "blocks": {
-        "text_slide_8BJYtR": {
-          "type": "text-slide",
-          "settings": {
-            "subheading": "Introducing",
-            "subheading_size": 3,
-            "title": "Image with text slider",
-            "heading_size": 8,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
-            "text_style": "font-body",
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        },
-        "text_slide_QwUFNg": {
-          "type": "text-slide",
-          "settings": {
-            "subheading": "Introducing",
-            "subheading_size": 3,
-            "title": "Image with text slider",
-            "heading_size": 8,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
-            "text_style": "font-body",
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        },
-        "text_slide_yNRzMc": {
-          "type": "text-slide",
-          "settings": {
-            "subheading": "Introducing",
-            "subheading_size": 3,
-            "title": "Image with text slider",
-            "heading_size": 8,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
-            "text_style": "font-body",
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "text_slide_8BJYtR",
-        "text_slide_QwUFNg",
-        "text_slide_yNRzMc"
-      ],
-      "disabled": true,
-      "settings": {
-        "layout": "",
-        "height": "screen-height-three-quarters",
-        "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full",
-        "image_width": "one-half",
-        "text_alignment": "text-left",
-        "bg_color": "",
-        "color": "",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -606,9 +444,9 @@
       "settings": {
         "default_open": true,
         "title": "How To",
-        "heading_size": 7,
-        "subheading_size": 5,
-        "text_size": 3,
+        "heading_size": 32,
+        "subheading_size": 32,
+        "text_size": 14,
         "show_icon": false,
         "icon_name": "icon-award",
         "icon_size": 20,
@@ -682,95 +520,6 @@
         "items_detail": "Wash,Scrub,AM,PM,Eyes,Serum"
       }
     },
-    "faq": {
-      "type": "section-accordion",
-      "blocks": {
-        "faq-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "title": "Step 1: Wash",
-            "text": "<p>Use Tiege Hanley’s WASH facial cleanser. Wet your face, squeeze out the size of a nickel (yes, the coin) into your palm, rub it all over your wet face for about 10 seconds, then wash it off.<\/p><p><strong>Why:<\/strong> It’s like sanding a piece of wood before applying a rich, mahogany stain. Getting rid of any dead skin cells and pore-clogging debris and build-up is essential for achieving healthy-looking skin.<\/p>"
-          }
-        },
-        "image_MXQg98": {
-          "type": "image",
-          "settings": {
-            "title": "Step 1: Wash",
-            "text": "<p>Use Tiege Hanley's WASH facial cleanser. Wet your face, squeeze out the size of a nickel (yes, the coin) into your palm, rub it all over your wet face for about 10 seconds.<\/p>",
-            "image": "shopify:\/\/shop_images\/HARRYS_FW_PROD_0279_1.jpg",
-            "aspect_ratio": 0.8
-          }
-        },
-        "image_4icANB": {
-          "type": "image",
-          "settings": {
-            "title": "Step 2: Scrub",
-            "text": "<p>Use Tiege Hanley’s AM moisturizer. Squeeze out the size of a pea into your palm and spend about 10 seconds massaging it all over your face.<\/p>",
-            "image": "shopify:\/\/shop_images\/HARRYS_FW_PORT_0529.jpg",
-            "aspect_ratio": 0.8
-          }
-        },
-        "image_Jbczgz": {
-          "type": "image",
-          "settings": {
-            "title": "Step 3: AM Moisturizer",
-            "text": "<p>Use Tiege Hanley’s AM moisturizer. Squeeze out the size of a pea into your palm and spend about 10 seconds massaging it all over your face.<\/p>",
-            "image": "shopify:\/\/shop_images\/HARRYS_FW_PORT_0529.jpg",
-            "aspect_ratio": 0.8
-          }
-        },
-        "image_8BQ9AN": {
-          "type": "image",
-          "settings": {
-            "title": "Step 4: PM",
-            "text": "<p>After washing and drying your face, dispense a bit of PM into your hand. Work the moisturizer all over your face for about 10 seconds. When it’s all rubbed in, go to bed<\/p>",
-            "image": "shopify:\/\/shop_images\/HARRYS_FW_PORT_0529.jpg",
-            "aspect_ratio": 0.8
-          }
-        },
-        "faq-3": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "title": "Step 3: AM Moisturize",
-            "text": "<p>Use Tiege Hanley’s AM moisturizer. Squeeze out the size of a pea into your palm and spend about 10 seconds massaging it all over your face.<\/p><p><strong>Why:<\/strong> Dry skin isn’t great to look at, feels even worse and can actually lead to other problems down the road. Without locking in moisture, your face is vulnerable to all sorts of pollutants, dirt and dust in the environment. Plus, our AM moisturizer contains SPF 20 to block UV rays because cancer is real and we’d like you and your handsome face to stick around a while.<\/p>"
-          }
-        },
-        "faq-4": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "title": "Step 4: PM",
-            "text": "<p>After washing and drying your face, dispense a bit of PM into your hand. Work the moisturizer all over your face for about 10 seconds. When it’s all rubbed in, go to bed<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "faq-1",
-        "image_MXQg98",
-        "image_4icANB",
-        "image_Jbczgz",
-        "image_8BQ9AN",
-        "faq-3",
-        "faq-4"
-      ],
-      "disabled": true,
-      "settings": {
-        "default_open": true,
-        "title": "How To Use",
-        "show_icon": false,
-        "icon_name": "icon-award",
-        "icon_size": 20,
-        "icon_color": "#545454",
-        "bg_color": "",
-        "color": "",
-        "border_color": "",
-        "width": "wrapper",
-        "padding_top": 30,
-        "padding_bottom": 0
-      }
-    },
     "section_accordion_new_4E9V9R": {
       "type": "section-accordion-new",
       "blocks": {
@@ -812,9 +561,9 @@
       "settings": {
         "default_open": false,
         "title": "FAQ",
-        "heading_size": 7,
-        "subheading_size": 6,
-        "text_size": 3,
+        "heading_size": 32,
+        "subheading_size": 32,
+        "text_size": 16,
         "show_icon": false,
         "icon_name": "icon-award",
         "icon_size": 20,
@@ -847,7 +596,7 @@
       "settings": {
         "default_open": false,
         "title": "Reviews",
-        "heading_size": 7,
+        "heading_size": 32,
         "show_icon": false,
         "icon_name": "icon-droplet",
         "icon_size": 50,
@@ -888,7 +637,7 @@
       "settings": {
         "enable_tabs": true,
         "heading_alignment": "text-center",
-        "heading_size": 7,
+        "heading_size": 32,
         "bg_color": "#ffffff",
         "color": "",
         "border_color": "",
@@ -921,13 +670,9 @@
     "main",
     "section_double_slider_new_ERgtDU",
     "section_double_slider_new_M974Kz",
-    "section_double_slider_b33Ygi",
-    "section_collection_YVbRj7",
-    "section_double_slider_fd6ndq",
     "section_columns_ycKyp7",
     "section_accordion_new_DpxfiN",
     "compare_systems_PgJw6T",
-    "faq",
     "section_accordion_new_4E9V9R",
     "app_accordion_Qtcf8J",
     "related",
