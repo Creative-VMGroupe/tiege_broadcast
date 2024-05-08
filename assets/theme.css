@@ -25961,13 +25961,13 @@ h2.column__heading {
   font-size: 14px;
 }
 .heading-size-24 {
-  font-size: 24px !important;
+  font-size: var(--heading-3) !important;
 }
 .heading-size-32 {
-  font-size: 32px !important;
+  font-size: var(--heading-2) !important;
 }
 .heading-size-40 {
-  font-size: 40px !important;
+  font-size: var(--heading-1) !important;
 }
 
 .heading-size-12 {
