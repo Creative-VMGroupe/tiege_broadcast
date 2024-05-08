@@ -166,7 +166,7 @@
         ".rc-radio {border: 1px solid black;}",
         ".rc-selling-plans {display: none;}",
         ".rc-widget label {border-radius: 300px;}",
-        ".accordion__title {font-weight: bold;}",
+        ".accordion__title {font-weight: bold; font-size: 14px;}",
         ".accordion {border: none;}",
         ".radio__legend__value {display: none;}",
         ".rc-widget {padding-top: 20px;}",
