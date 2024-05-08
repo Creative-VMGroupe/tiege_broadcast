@@ -26458,6 +26458,15 @@ flex: 1;
   --columns: 1;
 } 
 }
+@media(max-width: 749px){
+  .multicolumn-vm-section .flickity-page-dots {
+    bottom: -40px;
+  }
+    .multicolumn-vm-section {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+}
 .no-animation-custom {
   animation-delay: 0s !important;
   transition-delay: 0s !important;
