@@ -13,9 +13,9 @@
         "overlay_color": "#000000",
         "show_overlay_text": true,
         "title": "Uncomplicated",
-        "heading_size": 7,
+        "heading_font": 40,
         "description": "The solution for handsome skin guaranteed.",
-        "text_size": 3,
+        "text_font": 16,
         "flex_align": "align--bottom-left",
         "flex_align_mobile": "align--bottom-left-mobile",
         "bg_color": "",
@@ -266,7 +266,7 @@
           "type": "text-slide",
           "settings": {
             "subheading": "★★★★★",
-            "subheading_size": 4,
+            "subheading_font": 16,
             "sub_letter_spacing": 5,
             "title": "\"Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.\"",
             "heading_font": 24,
@@ -286,7 +286,7 @@
           "type": "text-slide",
           "settings": {
             "subheading": "★★★★★",
-            "subheading_size": 4,
+            "subheading_font": 16,
             "sub_letter_spacing": 5,
             "title": "Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.",
             "heading_font": 24,
@@ -306,7 +306,7 @@
           "type": "text-slide",
           "settings": {
             "subheading": "★★★★★",
-            "subheading_size": 4,
+            "subheading_font": 16,
             "sub_letter_spacing": 5,
             "title": "Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.",
             "heading_font": 24,
@@ -385,9 +385,9 @@
         "overlay_color": "#000000",
         "show_overlay_text": false,
         "title": "",
-        "heading_size": 7,
+        "heading_font": 40,
         "description": "",
-        "text_size": 3,
+        "text_font": 16,
         "flex_align": "align--middle-center",
         "flex_align_mobile": "align--middle-center-mobile",
         "bg_color": "",
@@ -677,10 +677,10 @@
         "layout": "",
         "text_align_center": false,
         "heading": "Real People, Real Results",
-        "heading_size": 7,
+        "heading_font": 40,
         "heading_letter_spacing": 0,
         "description": "<p>We are obsessed with providing all men simple, effective, and accessible skin care to help them maximize their confidence.<\/p>",
-        "text_size": 3,
+        "text_font": 16,
         "reg_text": false,
         "btn_size": 4,
         "link_text": "See Proof",
@@ -714,9 +714,9 @@
         "overlay_color": "#000000",
         "show_overlay_text": true,
         "title": "Aaron Marino",
-        "heading_size": 7,
+        "heading_font": 40,
         "description": "Talks facts about taking care of your skin.",
-        "text_size": 3,
+        "text_font": 16,
         "flex_align": "align--bottom-left",
         "flex_align_mobile": "align--bottom-left-mobile",
         "bg_color": "rgba(0,0,0,0)",
@@ -763,7 +763,7 @@
           "type": "heading",
           "settings": {
             "title": "Routine Quiz",
-            "text_size": 7,
+            "heading_font": 32,
             "padding_bottom": 16
           }
         },
@@ -771,7 +771,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Our high-quality skin care systems work to maximize results and eliminate guesswork for men of all skin types.<\/p>",
-            "text_size": 3,
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 16
           }
@@ -1013,7 +1013,7 @@
           "type": "heading",
           "settings": {
             "title": "Every Guy Deserves Amazing Skin",
-            "text_size": 7,
+            "heading_font": 40,
             "padding_bottom": 16
           }
         },
@@ -1021,7 +1021,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Our high-quality skin care systems work to maximize results and eliminate guesswork for men of all skin types.<\/p>",
-            "text_size": 3,
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 16
           }
