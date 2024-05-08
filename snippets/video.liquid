@@ -96,10 +96,10 @@
       {%- if title != blank -%}
         {%- liquid
           assign animation_order = animation_order | plus: 1
-          if section.settings.heading_size != blank
-            assign heading_size = 'heading-size-' | append: section.settings.heading_size
+          if section.settings.heading_font != blank
+            assign heading_size = 'heading-size-' | append: section.settings.heading_font
           else
-            assign heading_size = 'heading-size-6'
+            assign heading_size = 'heading-size-40'
           endif
         -%}
         <h2 class="hero__title {{ heading_size }}"
@@ -112,7 +112,7 @@
 
       {%- if description != blank -%}
         {%- assign animation_order = animation_order | plus: 1 -%}
-        <p class="hero__description {% if section.settings.text_size != blank %} body-size-{{ section.settings.text_size }}{% endif %}"
+        <p class="hero__description {% if section.settings.text_font != blank %} body-size-{{ section.settings.text_font }}{% endif %}"
           data-aos="hero"
           data-aos-anchor="{{ animation_anchor }}"
           data-aos-order="{{ animation_order }}">
