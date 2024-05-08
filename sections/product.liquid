@@ -564,7 +564,7 @@
   </div>
 
   {%- if block.settings.title != blank -%}
-    {%- assign font_size_class = block.settings.text_size | prepend: 'body-size-' -%}
+    {%- assign font_size_class = block.settings.text_font | prepend: 'body-size-' -%}
     <div class="product__icon__text {{ font_size_class }}" data-aos="fade" data-aos-duration="500">
       <p>{{ block.settings.title }}</p>
     </div>
@@ -759,7 +759,7 @@
                           </div>
 
                           {%- if title != blank -%}
-                            {%- assign font_size_class = block.settings.text_size | prepend: 'body-size-' -%}
+                            {%- assign font_size_class = block.settings.text_font | prepend: 'body-size-' -%}
                             <div class="product__icon__text {{ font_size_class }}">
                               <p>{{ title }}</p>
                             </div>
@@ -1202,12 +1202,12 @@
           },
           {
             "type": "range",
-            "id": "text_size",
+            "id": "text_font",
             "label": "Text size",
-            "min": 1,
-            "max": 15,
-            "step": 1,
-            "default": 6
+             "min": 12,
+          "max": 16,
+          "step": 2,
+          "default": 16
           },
           {
             "type": "header",
@@ -1801,12 +1801,12 @@
           },
           {
             "type": "range",
-            "id": "text_size",
+            "id": "text_font",
             "label": "Text size",
-            "min": 1,
-            "max": 15,
-            "step": 1,
-            "default": 3
+          "min": 12,
+          "max": 16,
+          "step": 2,
+          "default": 16
           },
           {
             "type": "header",
@@ -2022,12 +2022,12 @@
           },
           {
             "type": "range",
-            "id": "text_size",
+            "id": "text_font",
             "label": "Text size",
-            "min": 1,
-            "max": 15,
-            "step": 1,
-            "default": 3
+          "min": 12,
+          "max": 16,
+          "step": 2,
+          "default": 16
           },
           {
             "type": "richtext",
@@ -2199,21 +2199,21 @@
             },
       {
             "type": "range",
-            "id": "pop-heading_size",
+            "id": "pop-heading_font",
             "label": "Heading size",
-            "min": 1,
-            "max": 6,
-            "step": 1,
-            "default": 6
+           "min": 24,
+          "max": 40,
+          "step": 8,
+          "default": 32
           },
           {
             "type": "range",
-            "id": "icon-sub_size",
+            "id": "icon-sub_font",
             "label": "Icon Subheading size (Desktop only)",
-            "min": 1,
-            "max": 15,
-            "step": 1,
-            "default": 6
+          "min": 24,
+          "max": 40,
+          "step": 8,
+          "default": 32
           },
           {
             "type": "image_picker",
