@@ -25806,7 +25806,7 @@ div.rc_popup {
 }
 /*Filter*/
 .filter__heading-custom {
-  font-size: calc(var(--font-7) * var(--FONT-ADJUST-HEADING)) !important;
+  font-size: 40px !important;
   letter-spacing: var(--ltr-spacing-tiege) !important;
   text-transform: capitalize;
 }
