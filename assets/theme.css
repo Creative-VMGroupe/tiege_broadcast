@@ -25983,6 +25983,15 @@ h2.column__heading {
 .subheading-size-16 {
   font-size: 16px !important;
 }
+.body-size-12 {
+  font-size: 12px !important;
+}
+.body-size-14 {
+  font-size: 14px !important;
+}
+.body-size-16 {
+  font-size: 16px !important;
+}
 @media only screen and (max-width: 749px) {
   .grid--mobile-slider {
     scroll-padding: 0;
