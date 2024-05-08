@@ -53,10 +53,10 @@
             
             {%- assign title1 = block.settings.title1 -%}
             {%- assign title2 = block.settings.title2 -%}
-            {%- assign font_size_class = block.settings.heading_size | prepend: 'heading-size-' -%}
+            {%- assign font_size_class = block.settings.heading_font | prepend: 'heading-size-' -%}
             {%- assign text1 = block.settings.text1 -%}
             {%- assign text2 = block.settings.text2 -%}
-            {%- assign subheading_size_class = block.settings.text_size | prepend: 'subheading-size-' -%}
+            {%- assign subheading_size_class = block.settings.text_font | prepend: 'subheading-size-' -%}
             
              {%- if block.settings.title1 != blank -%}
             <div class='two-columns__container'>
@@ -75,7 +75,7 @@
             {%- when 'heading' -%}
               {%- if block.settings.title != blank -%}
                 {%- assign animation_order = animation_order | plus: 1 -%}
-                {%- assign font_size_class = block.settings.text_size | prepend: 'heading-size-' -%}
+                {%- assign font_size_class = block.settings.text_font | prepend: 'heading-size-' -%}
                 <h2 class="hero__title {{ font_size_class }} block-padding"
                   data-aos="hero"
                   data-aos-anchor="{{ animation_anchor }}"
@@ -90,7 +90,7 @@
             {%- when 'subheading' -%}
               {%- if block.settings.subheading != blank -%}
                 {%- assign animation_order = animation_order | plus: 1 -%}
-                {%- assign font_size_class = block.settings.text_size | prepend: 'subheading-size-' -%}
+                {%- assign font_size_class = block.settings.text_font | prepend: 'subheading-size-' -%}
                 <p class="hero__subheading {{ font_size_class }} block-padding"
                   data-aos="hero"
                   data-aos-anchor="{{ animation_anchor }}"
@@ -105,7 +105,7 @@
             {%- when 'text' -%}
               {%- if block.settings.text != blank -%}
                 {%- assign animation_order = animation_order | plus: 1 -%}
-                {%- assign font_size_class = block.settings.text_size | prepend: 'body-size-' -%}
+                {%- assign font_size_class = block.settings.text_font | prepend: 'body-size-' -%}
                 <div class="hero__rte {{ font_size_class }} {{ block.settings.text_style }} block-padding"
                   data-aos="hero"
                   data-aos-anchor="{{ animation_anchor }}"
@@ -120,7 +120,7 @@
             {%- when 'columns' -%}
               {%- if block.settings.text != blank -%}
                 {%- assign animation_order = animation_order | plus: 1 -%}
-                {%- assign font_size_class = block.settings.text_size | prepend: 'body-size-' -%}
+                {%- assign font_size_class = block.settings.text_font | prepend: 'body-size-' -%}
                 {%- assign text_columns_class = block.settings.text_columns | prepend: 'columns--' -%}
                 <div class="hero__rte {{ font_size_class }} {{ text_columns_class }} {{ block.settings.text_style }} block-padding"
                   data-aos="hero"
@@ -240,7 +240,7 @@
             <div class="member-tiers_container level-guide-member-tiers_container">
                 <div style="background-color: #f0f0f0" class="member-single-tier_container level-guide-member-single-tier_container">
                     <div class="member-tier_text">
-                        <p class="m-0 member-tier-header_text heading-size-{{ block.settings.pop-heading_size }}">{{ block.settings.box-1_text }}</p>
+                        <p class="m-0 member-tier-header_text heading-size-{{ block.settings.pop-heading_font }}">{{ block.settings.box-1_text }}</p>
                         <p class="m-0 member-tier-header_text">Month 1-6</p>
                     </div>
                     <div class="member-tier_text member-tier_secondary_text">
@@ -257,7 +257,7 @@
             <div class="member-tiers_container level-guide-member-tiers_container">
                 <div style="background-color: #B3B3B3" class="member-single-tier_container level-guide-member-single-tier_container">
                     <div class="member-tier_text">
-                        <p  class="m-0 heading-size-{{ block.settings.pop-heading_size }}">{{ block.settings.box-2_text }}</p>
+                        <p  class="m-0 heading-size-{{ block.settings.pop-heading_font }}">{{ block.settings.box-2_text }}</p>
                         <p class="m-0">Month 7-12</p>
                     </div>
                     <div class="member-tier_text member-tier_secondary_text">
@@ -274,7 +274,7 @@
             <div class="member-tiers_container level-guide-member-tiers_container">
                 <div style="background-color: #000" class="member-single-tier_container level-guide-member-single-tier_container">
                     <div style="color: white !important;" class="member-tier_text">
-                        <p class="m-0 heading-size-{{ block.settings.pop-heading_size }}">{{ block.settings.box-3_text }}</p>
+                        <p class="m-0 heading-size-{{ block.settings.pop-heading_font }}">{{ block.settings.box-3_text }}</p>
                         <p class="m-0">After 12 Months</p>
                     </div>
                     <div style="color: white !important;" class="member-tier_text member-tier_secondary_text">
@@ -387,12 +387,12 @@
         },
         {
           "type": "range",
-          "id": "text_size",
+          "id": "text_font",
           "label": "Text size",
-          "min": 1,
-          "max": 15,
-          "step": 1,
-          "default": 8
+          "min": 24,
+          "max": 40,
+          "step": 8,
+          "default": 40
         },
         {
           "type": "header",
@@ -422,12 +422,12 @@
         },
         {
           "type": "range",
-          "id": "text_size",
+          "id": "text_font",
           "label": "Text size",
-          "min": 1,
-          "max": 15,
-          "step": 1,
-          "default": 3
+          "min": 12,
+          "max": 16,
+          "step": 2,
+          "default": 16
         },
         {
           "type": "header",
@@ -457,12 +457,12 @@
         },
         {
           "type": "range",
-          "id": "text_size",
+          "id": "text_font",
           "label": "Text size",
-          "min": 1,
-          "max": 15,
-          "step": 1,
-          "default": 4
+          "min": 12,
+          "max": 16,
+          "step": 2,
+          "default": 16
         },
         {
           "type": "select",
@@ -512,12 +512,12 @@
         },
         {
           "type": "range",
-          "id": "text_size",
+          "id": "text_font",
           "label": "Text size",
-          "min": 1,
-          "max": 15,
-          "step": 1,
-          "default": 4
+          "min": 12,
+          "max": 16,
+          "step": 2,
+          "default": 16
         },
         {
           "type": "select",
@@ -685,12 +685,12 @@
         },
         {
           "type": "range",
-          "id": "heading_size",
+          "id": "heading_font",
           "label": "Heading size",
-          "min": 1,
-          "max": 15,
-          "step": 1,
-          "default": 6
+          "min": 24,
+          "max": 40,
+          "step": 8,
+          "default": 40
         },
         {
           "type": "richtext",
@@ -700,12 +700,12 @@
         },
         {
           "type": "range",
-          "id": "text_size",
+          "id": "text_font",
           "label": "Text size",
-          "min": 1,
-          "max": 15,
-          "step": 1,
-          "default": 3
+          "min": 12,
+          "max": 16,
+          "step": 2,
+          "default": 16
         },
         {
           "type": "select",
@@ -750,12 +750,12 @@
 "settings": [
       {
             "type": "range",
-            "id": "pop-heading_size",
+            "id": "pop-heading_font",
             "label": "Heading size",
-            "min": 1,
-            "max": 6,
-            "step": 1,
-            "default": 6
+          "min": 24,
+          "max": 40,
+          "step": 8,
+          "default": 40
           },
 
       {
