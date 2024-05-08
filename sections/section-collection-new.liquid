@@ -97,7 +97,9 @@
           <div class="grid__heading-text">
             {%- if heading != blank -%}
               {%- assign animation_order = animation_order | plus: 1 -%}
+              {%- if heading_size >= 24 and heading_size <= 40 -%}
               {%- assign font_size_class = section.settings.heading_size | prepend: 'heading-size-' -%}
+                {% endif %}
               <h2 class="grid__heading  {{font_size_class}}"
                 data-aos="hero"
                 data-aos-anchor="{{ animation_anchor }}"
