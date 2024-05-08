@@ -26458,6 +26458,10 @@ flex: 1;
   --columns: 1;
 } 
 }
+.no-animation-custom {
+  animation-delay: 0 !important;
+  transition-delay: 0 !important;
+}
 /*Rich Text*/
 @media (max-width: 749px) {
 .section-padding.rich-text_image_padding {
