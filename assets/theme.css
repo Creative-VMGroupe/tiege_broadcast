@@ -25955,6 +25955,15 @@ p, a, span, h2.column__heading {
 h2.column__heading {
   font-size: 14px;
 }
+.heading-size-24 {
+  font-size: 24px !important;
+}
+.heading-size-32 {
+  font-size: 32px !important;
+}
+.heading-size-40 {
+  font-size: 40px !important;
+}
 @media only screen and (max-width: 749px) {
   .grid--mobile-slider {
     scroll-padding: 0;
