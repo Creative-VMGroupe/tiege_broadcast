@@ -7521,7 +7521,7 @@ html:not(.no-js) body:not(.is-loaded) .header__desktop {
   font-weight: var(--FONT-WEIGHT-NAV);
   letter-spacing: var(--LETTER-SPACING-NAV);
   line-height: 1.2;
-  padding: 5px 0;
+  padding: 2px 0;
   position: relative;
   transition: none;
 }
