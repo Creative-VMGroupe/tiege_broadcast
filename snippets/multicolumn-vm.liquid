@@ -286,7 +286,7 @@
 
                     <div class="column__content">
                       {%- if title != blank -%}
-                        {%- assign font_size_class = block.settings.heading_font | prepend: 'heading-size-' -%}
+                        {%- assign font_size_class = block.settings.heading_size | prepend: 'heading-size-' -%}
                         <h2 class="column__heading {{ font_size_class }}">
                           {{- title -}}
                         </h2>
@@ -319,7 +319,7 @@
                   --icon-size: {{ icon_size }}px;
 
                   {%- if title != blank -%}
-                    --icon-line-height: calc(1.2 * var(--font-{{ block.settings.heading_font }}) * var(--FONT-ADJUST-HEADING));
+                    --icon-line-height: calc(1.2 * var(--font-{{ block.settings.heading_size }}) * var(--FONT-ADJUST-HEADING));
                   {%- elsif text != blank-%}
                     --icon-line-height: calc(1.5 * var(--font-{{ block.settings.text_size }}) * var(--FONT-ADJUST-BODY));
                   {%- endif -%}
@@ -356,7 +356,7 @@
                       {%- if title != blank or text != blank -%}
                         <div class="column__content">
                           {%- if title != blank -%}
-                            {%- assign font_size_class = block.settings.heading_font | prepend: 'heading-size-' -%}
+                            {%- assign font_size_class = block.settings.heading_size | prepend: 'heading-size-' -%}
 
                             <h2 class="column__heading {{ font_size_class }}">
                               {{ title }}
@@ -391,7 +391,7 @@
                     data-aos-order="{{ animation_order }}">
                     <div class="column__content">
                       {%- if title != blank -%}
-                        {%- assign font_size_class = block.settings.heading_font | prepend: 'heading-size-' -%}
+                        {%- assign font_size_class = block.settings.heading_size | prepend: 'heading-size-' -%}
 
                         <h2 class="column__heading {{ font_size_class }}">
                           {{ title }}
