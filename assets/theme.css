@@ -26489,8 +26489,13 @@ flex: 1;
 }  
 }
 /*Accorion - VM*/
+.accordion-vm-section {
+  --padding-top: calc(var(--PT) * .6);
+  --padding-bottom: calc(var(--PB) * .6);
+}
 @media(min-width: 750px){
   .accordion-vm-section {
-    
+      --padding-top: 80px;
+  --padding-bottom: 80px;
   }
 }
