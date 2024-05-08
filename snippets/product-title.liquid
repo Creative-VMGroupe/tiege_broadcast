@@ -30,7 +30,7 @@
   {%- endcase -%}
 
   <div class="product__title__wrapper" {{ block.shopify_attributes }}>
-    <h1 class="product__title {{ text_size }}">
+    <h1 class="product__title heading-size-40">
       {%- unless is_title_linked -%}
         <span data-zoom-caption>{{ product.title | strip_html }}</span>
       {%- else -%}
