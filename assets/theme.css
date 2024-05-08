@@ -20538,11 +20538,11 @@ body.is-focused .subcollection__item:focus-within .image-overlay-bottom {
 }
 
 .footer__quicklinks {
-  font-size: calc(1rem * var(--FONT-ADJUST-BODY));
+  font-size: 14px;
 }
 
 .footer__quicklinks li {
-  margin: 0 0 1.25em;
+  margin: 0 0 3px;
 }
 .footer__quicklinks li:last-child {
   margin-bottom: 0;
