@@ -506,7 +506,7 @@
       "settings": {
         "default_open": false,
         "title": "Reviews",
-        "heading_size": 7,
+        "heading_size": 40,
         "show_icon": false,
         "icon_name": "icon-award",
         "icon_size": 20,
@@ -544,7 +544,7 @@
       "settings": {
         "enable_tabs": true,
         "heading_alignment": "text-center",
-        "heading_size": 7,
+        "heading_size": 32,
         "bg_color": "#ffffff",
         "color": "",
         "border_color": "",
