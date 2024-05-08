@@ -8,7 +8,7 @@
           "settings": {
             "subheading_option": "collection",
             "collection": "face",
-            "text_size": 6,
+            "text_size": 14,
             "padding_bottom": 8
           }
         },
@@ -30,8 +30,8 @@
             "title": "Membership Benefits",
             "supply": "30 day supply",
             "pop-heading": "Your Member Benefits Explained",
-            "pop-heading_size": 6,
-            "icon-sub_size": 6,
+            "pop-heading_size": 32,
+            "icon-sub_size": 32,
             "image_1": "shopify:\/\/shop_images\/Group_1601.png",
             "icon-1_sub": "Save 20%",
             "icon-1_text": "Get 20% with Autoship",
@@ -193,10 +193,10 @@
           "type": "text-slide",
           "settings": {
             "subheading": "Proof",
-            "subheading_size": 7,
+            "subheading_font": 16,
             "sub_letter_spacing": 0,
             "title": "★★★★★★",
-            "heading_size": 3,
+            "heading_font": 40,
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p><p>- Name of Reviewer<\/p>",
             "text_size": 3,
             "text_style": "font-body",
@@ -240,10 +240,10 @@
           "type": "text-slide",
           "settings": {
             "subheading": "",
-            "subheading_size": 3,
+            "subheading_font": 16,
             "sub_letter_spacing": 0,
             "title": "Willow Bark Extract",
-            "heading_size": 7,
+            "heading_font": 40,
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
             "text_size": 3,
             "text_style": "font-body",
@@ -260,10 +260,10 @@
           "type": "text-slide",
           "settings": {
             "subheading": "",
-            "subheading_size": 3,
+            "subheading_font": 16,
             "sub_letter_spacing": 0,
             "title": "Image with text slider",
-            "heading_size": 7,
+            "heading_font": 40,
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
             "text_size": 3,
             "text_style": "font-body",
@@ -447,7 +447,7 @@
           "type": "heading",
           "settings": {
             "title": "Reviews",
-            "text_size": 7,
+            "text_font": 40,
             "padding_bottom": 0
           }
         }
