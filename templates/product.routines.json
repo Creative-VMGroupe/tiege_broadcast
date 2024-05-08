@@ -254,7 +254,7 @@
           "type": "text-slide",
           "settings": {
             "subheading": "",
-            "subheading_font": 14,
+            "subheading_font": 16,
             "sub_letter_spacing": 0,
             "title": "Ingredient #2",
             "heading_font": 40,
@@ -444,9 +444,9 @@
       "settings": {
         "default_open": true,
         "title": "How To",
-        "heading_size": 32,
-        "subheading_size": 32,
-        "text_size": 14,
+        "heading_size": 40,
+        "subheading_size": 24,
+        "text_size": 16,
         "show_icon": false,
         "icon_name": "icon-award",
         "icon_size": 20,
