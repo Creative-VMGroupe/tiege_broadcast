@@ -83,6 +83,10 @@
   --font-medium-tiege: 16px;
   --font-small-tiege: 14px;
   --ltr-spacing-tiege: 0;
+  --heading-1: 40px;
+  --heading-2: 32px;
+  --heading-3: 24px;
+  --heading-4: 14px;
 }
 
 .palette--contrast {
@@ -19292,7 +19296,7 @@ body.has-header-transparent
 
 .collection__sidebar {
   padding: var(--inner);
-  font-size: calc(0.825rem * var(--FONT-ADJUST-BODY));
+  font-size: var(--heading-4);
   overflow-y: auto;
   max-height: 100%;
   min-width: var(--sidebar-width);
