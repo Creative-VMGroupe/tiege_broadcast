@@ -198,7 +198,7 @@
             "title": "Proof",
             "heading_font": 40,
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p><p>- Name of Reviewer<\/p>",
-            "text_size": 3,
+            "text_size": 16,
             "text_style": "font-body",
             "button_text": "View 1000+ Reviews",
             "button_url": "",
@@ -218,7 +218,7 @@
         "p.hero__subheading {order: 2;}",
         "h2.hero__title {order: 1;}",
         ".hero__rte {order: 3;}",
-        ".hero__button{order: 4;}"
+        ".hero__button {order: 4;}"
       ],
       "settings": {
         "layout": "is-reversed",
@@ -248,7 +248,7 @@
             "title": "Willow Bark Extract",
             "heading_font": 40,
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 3,
+            "text_size": 16,
             "text_style": "font-body",
             "button_text": "",
             "button_url": "",
@@ -268,7 +268,7 @@
             "title": "Image with text slider",
             "heading_font": 40,
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 3,
+            "text_size": 16,
             "text_style": "font-body",
             "button_text": "",
             "button_url": "",
