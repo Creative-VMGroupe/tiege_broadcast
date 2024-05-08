@@ -26459,8 +26459,8 @@ flex: 1;
 } 
 }
 .no-animation-custom {
-  animation-delay: 0 !important;
-  transition-delay: 0 !important;
+  animation-delay: 0s !important;
+  transition-delay: 0s !important;
 }
 /*Rich Text*/
 @media (max-width: 749px) {
