@@ -25564,6 +25564,9 @@ body.has-header-sticky .timeline {
   padding-left: 40px;
   padding-right: 40px;
 }
+.product__block .product-accordion .toggle-ellipsis__actions {
+  padding: 5px 0;
+}
 .product__block .product-accordion .toggle-ellipsis__actions button span{
   /* display: none; */
   text-transform: capitalize !important;
