@@ -193,7 +193,7 @@
               <div class="brick__block__text">
                 <div class="hero__content hero__content--compact" >
                   {%- if subheading != blank -%}
-                    {%- assign font_size_class = block.settings.subheading_font | prepend: 'subheading-size-' -%}
+                    {%- assign font_size_class = block.subheading_font | prepend: 'subheading-size-' -%}
                     {%- assign sub_letter_spacing = block.settings.sub_letter_spacing | prepend: 'sub-letter-spacing-' -%}
                     <p class="hero__subheading {{ font_size_class }} {{ sub_letter_spacing }}">
                       {{ subheading }}
@@ -201,7 +201,7 @@
                   {%- endif -%}
 
                   {%- if title != blank -%}
-                    {%- assign font_size_class = block.settings.heading_font | prepend: 'heading-size-' -%}
+                    {%- assign font_size_class = block.heading_font | prepend: 'heading-size-' -%}
                     <h2 class="hero__title {{ font_size_class }}">
                       {{ title }}
                     </h2>
@@ -289,7 +289,7 @@
 
                   {%- when 'text-slide' -%}
                     {%- if block.settings.subheading != blank -%}
-                      {%- assign font_size_class = block.settings.subheading_font | prepend: 'subheading-size-' -%}
+                      {%- assign font_size_class = block.subheading_font | prepend: 'subheading-size-' -%}
 
                       <p class="hero__subheading {{ font_size_class }}">
                         {{ block.settings.subheading }}
@@ -297,7 +297,7 @@
                     {%- endif -%}
 
                     {%- if block.settings.title != blank -%}
-                      {%- assign font_size_class = block.settings.heading_font | prepend: 'heading-size-' -%}
+                      {%- assign font_size_class = block.heading_font | prepend: 'heading-size-' -%}
 
                       <h2 class="hero__title {{ font_size_class }}">
                         {{ block.settings.title }}
