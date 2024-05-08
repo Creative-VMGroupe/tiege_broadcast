@@ -491,6 +491,7 @@
         "icon_Bwk7Y3"
       ],
       "custom_css": [
+        ".section-columns {padding-top: 80px !important; padding-bottom: 80px;}",
         ".section-columns .grid__heading-holder {margin-bottom: 20px;}"
       ],
       "settings": {
