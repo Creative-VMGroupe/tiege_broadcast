@@ -5887,7 +5887,7 @@ select,
   font-weight: var(--FONT-WEIGHT-BODY);
   letter-spacing: var(--LETTER-SPACING-BODY);
   border: 1px solid var(--COLOR-BORDER);
-  font-size: var(--FONT-SIZE-BASE);
+  font-size: var(--heading-4);
   border-radius: var(--RADIUS-SELECT);
   max-width: 100%;
   padding: 9px 16px;
