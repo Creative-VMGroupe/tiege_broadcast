@@ -69,10 +69,10 @@
             {%- assign animation_order = animation_order | plus: 1 -%}
                     {%- liquid
           assign heading_letter_spacing = section.settings.heading_letter_spacing | prepend: 'sub-letter-spacing-'
-          if section.settings.heading_size != blank
-            assign heading_size = 'heading-size-' | append: section.settings.heading_size
+          if section.settings.heading_font != blank
+            assign heading_size = 'heading-size-' | append: section.settings.heading_font
           else
-            assign heading_size = 'heading-size-6'
+            assign heading_size = 'heading-size-40'
           endif
         -%}
             <h2 class="h5 section__title {{ heading_size }} {{ heading_letter_spacing }}"
@@ -85,7 +85,7 @@
 
           {%- if section.settings.description != blank -%}
             {%- assign animation_order = animation_order | plus: 1 -%}
-            {%- assign font_size_class = section.settings.text_size | prepend: 'subheading-size-' -%}
+            {%- assign font_size_class = section.settings.text_font | prepend: 'subheading-size-' -%}
             <div class="hero__description h5--body section__description {{ font_size_class }}"
               data-aos="hero"
               data-aos-order="{{ animation_order }}"
@@ -157,15 +157,15 @@
         "label": "Heading",
         "default": "Real People, Real Results"
       },
-          {
-      "type":  "range",
-      "id":    "heading_size",
-      "label": "Heading size",
-      "min": 1,
-      "max": 15,
-      "step": 1,
-      "default":5
-    },
+        {
+          "type": "range",
+          "id": "heading_font",
+          "label": "Size",
+          "min": 24,
+          "max": 40,
+          "step": 8,
+          "default": 40
+        },
 
           {
             "type": "range",
@@ -183,15 +183,15 @@
         "label": "Text",
         "default": "<p>Share success stories using before and after images to demonstrate how effective your products are.</p>"
       },
-      {
-            "type": "range",
-            "id": "text_size",
-            "label": "Size",
-            "min": 1,
-            "max": 15,
-            "step": 1,
-            "default": 3
-      },
+        {
+          "type":  "range",
+          "id":    "text_font",
+          "label": "Size",
+          "min": 12,
+          "max": 16,
+          "step": 2,
+          "default": 16
+        },
       {
         "type": "header",
         "content": "Button"
