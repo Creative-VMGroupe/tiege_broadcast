@@ -19538,7 +19538,7 @@ body.has-header-transparent
 
 .sidebar__item {
   position: relative;
-  font-size: calc(0.725rem * var(--FONT-ADJUST-BODY));
+  font-size: var(--heading-4);
   padding: 0;
   margin: 12px 0 0;
 }
