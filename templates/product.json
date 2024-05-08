@@ -205,8 +205,7 @@
             "button_type": "btn--white",
             "button_size": "",
             "button_style": "btn--text",
-            "show_arrow": false,
-            "image": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO3.png"
+            "show_arrow": false
           }
         }
       },
