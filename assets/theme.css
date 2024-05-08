@@ -26488,3 +26488,9 @@ flex: 1;
     margin: 0 auto;
 }  
 }
+/*Accorion - VM*/
+@media(min-width: 750px){
+  .accordion-vm-section {
+    
+  }
+}
