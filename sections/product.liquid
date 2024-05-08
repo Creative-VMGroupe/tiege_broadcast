@@ -564,7 +564,7 @@
   </div>
 
   {%- if block.settings.title != blank -%}
-    {%- assign font_size_class = block.settings.text_font | prepend: 'body-size-' -%}
+    {%- assign font_size_class = block.settings.text_size | prepend: 'body-size-' -%}
     <div class="product__icon__text {{ font_size_class }}" data-aos="fade" data-aos-duration="500">
       <p>{{ block.settings.title }}</p>
     </div>
@@ -759,7 +759,7 @@
                           </div>
 
                           {%- if title != blank -%}
-                            {%- assign font_size_class = block.settings.text_font | prepend: 'body-size-' -%}
+                            {%- assign font_size_class = block.settings.text_size | prepend: 'body-size-' -%}
                             <div class="product__icon__text {{ font_size_class }}">
                               <p>{{ title }}</p>
                             </div>
@@ -1202,7 +1202,7 @@
           },
           {
             "type": "range",
-            "id": "text_font",
+            "id": "text_size",
             "label": "Text size",
              "min": 12,
           "max": 16,
@@ -1801,7 +1801,7 @@
           },
           {
             "type": "range",
-            "id": "text_font",
+            "id": "text_size",
             "label": "Text size",
           "min": 12,
           "max": 16,
@@ -2022,7 +2022,7 @@
           },
           {
             "type": "range",
-            "id": "text_font",
+            "id": "text_size",
             "label": "Text size",
           "min": 12,
           "max": 16,
@@ -2199,7 +2199,7 @@
             },
       {
             "type": "range",
-            "id": "pop-heading_font",
+            "id": "pop-heading_size",
             "label": "Heading size",
            "min": 24,
           "max": 40,
@@ -2208,7 +2208,7 @@
           },
           {
             "type": "range",
-            "id": "icon-sub_font",
+            "id": "icon-sub_size",
             "label": "Icon Subheading size (Desktop only)",
           "min": 24,
           "max": 40,
