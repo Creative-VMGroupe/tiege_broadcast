@@ -26463,8 +26463,8 @@ flex: 1;
     bottom: -40px;
   }
     .multicolumn-vm-section {
-      padding-top: 80px;
-      padding-bottom: 80px;
+      padding-top: 80px !important;
+      padding-bottom: 80px !important;
     }
 }
 .no-animation-custom {
