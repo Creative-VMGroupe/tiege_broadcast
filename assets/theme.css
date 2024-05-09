@@ -25990,7 +25990,7 @@ div.rc_popup {
   margin-bottom: 80px !important;
 }
 #insta-feed {
- padding-top: 80px; 
+ padding-top: 80px !important; 
 } 
 }
 /*Global*/
