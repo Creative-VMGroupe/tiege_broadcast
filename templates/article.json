@@ -289,9 +289,7 @@
     "section_blog_43mLzn": {
       "type": "section-blog",
       "custom_css": [
-        ".article__meta {margin-bottom: 8px;}",
-        ".article__excerpt {display: none;}",
-        ".article__link {margin-top: 0;}"
+
       ],
       "settings": {
         "blog_name": "news",
