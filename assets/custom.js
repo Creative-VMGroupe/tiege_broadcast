@@ -212,18 +212,19 @@ async function productData(handle) {
 document.addEventListener('theme:product:add', function(e) {
   let addedItem = e.detail.response;
 
+  localStorage.clear();
+
+  var currentCart = {};
   productData(addedItem.handle).then((data) => {
-    var productOneData = data;
-    console.log(productOneData);
+    localStorage.setItem('lastAddedItem', data);
   });
 
-  console.log(productOneData);
-  
   // Free Item Addition
-  if (theme.cartSettings.giftItem.enabled) {
-    fetch(window.theme.routes.cart_url + '.json')
-    .then(response => response.json())
-    .then(data => {
+  fetch(window.theme.routes.cart_url + '.json')
+  .then(response => response.json())
+  .then(data => {
+    if (theme.cartSettings.giftItem.enabled) {
+      console.log(localStorage.getItem(lastAddedItem));
       let giftExists = data.items.filter((item) => item.product_id == theme.cartSettings.giftItem.productId);
       if (theme.cartSettings.giftItem.method == "cart") {
         let minCartValue = parseInt(theme.cartSettings.giftItem.cartValue * 100);
@@ -239,18 +240,8 @@ document.addEventListener('theme:product:add', function(e) {
       } else {
         
       }
-    });
-  }
-  
-
-
-  fetch("https://tiege-hanley-store.myshopify.com/products/level-1-acne-routine-1?view=json")
-  .then(response => response.json())
-  .then(data => console.log(data));
-
-  fetch("https://tiege-hanley-store.myshopify.com/products/level-2-advanced-acne-routine-1?view=json")
-  .then(response => response.json())
-  .then(data => console.log(data));
+    }
+  });
 });
 
 document.addEventListener('theme:cart:change', function(e) {
