@@ -203,7 +203,7 @@
             "title": "Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.",
             "heading_font": 24,
             "text": "<p>- Name of Reviewer<\/p>",
-            "text_size": 14,
+            "text_size": 12,
             "text_style": "font-body",
             "button_text": "Learn more",
             "button_url": "shopify:\/\/pages\/membership-benefit",
@@ -416,7 +416,7 @@
           "type": "text",
           "settings": {
             "description": "Want great skin? We got you, and we got cutting-edge formulas.",
-            "text_font": 14,
+            "text_font": 16,
             "text_style": "font-body"
           }
         },
@@ -500,7 +500,7 @@
         "title": "Aaron Marino",
         "heading_font": 40,
         "description": "Talks facts about taking care of your skin.",
-        "text_font": 14,
+        "text_font": 16,
         "flex_align": "align--bottom-left",
         "flex_align_mobile": "align--bottom-left-mobile",
         "bg_color": "rgba(0,0,0,0)",
