@@ -269,7 +269,9 @@ document.addEventListener('theme:product:add', function(e) {
       if (routineItem != null) {
         let otherItems = data.items.filter((item) => item.product_id != routineItem.product_id);
         let otherItemIds = otherItems.map((item) => item.variant_id);
-        console.log(allProducts[routineItem.product_id]['routineVariants'].map((item) => item.id));
+        let variantsOfRoutine = allProducts[routineItem.product_id]['routineVariants'].map((item) => item.id);
+
+        console.log(otherItems, otherItemIds, variantsOfRoutine, otherItemIds.some(item => variantsOfRoutine.includes(item)))
       }
       
     }
