@@ -257,6 +257,22 @@ document.addEventListener('theme:product:add', function(e) {
         changeItemQty(routineItem.key, '0');
       }
     }
+
+    // Duplication Check
+    if (theme.cartSettings.duplication.enabled) {
+      let routineItem = null;
+      data.items.forEach((element) => {
+        if (allProducts[element.product_id].isRoutine) {
+          routineItem = element;
+        }
+      });
+      if (routineItem != null) {
+        let otherItems = data.items.filter((item) => item.product_id != routineItem.product_id);
+        let otherItemIds = otherItems.map((item) => item.variant_id);
+        console.log(allProducts[routineItem.product_id]['routineVariants']);
+      }
+      
+    }
   });
 });
 
