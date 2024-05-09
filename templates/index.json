@@ -178,7 +178,7 @@
         "text_slide_MWCM8L": {
           "type": "text-slide",
           "settings": {
-            "stars_enabled": false,
+            "stars_enabled": true,
             "subheading": "★★★★★",
             "subheading_font": 16,
             "title": "\"Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.\"",
@@ -198,7 +198,7 @@
         "text_slide_gDLxQn": {
           "type": "text-slide",
           "settings": {
-            "stars_enabled": false,
+            "stars_enabled": true,
             "subheading": "★★★★★",
             "subheading_font": 16,
             "title": "Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.",
