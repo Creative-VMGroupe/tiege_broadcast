@@ -186,9 +186,6 @@ function changeItemQty(lineItem, qty) {
   formData.append(`updates['${lineItem}']`, qty);
   fetch(window.Shopify.routes.root + 'cart/update.js', {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
     body: formData
   })
   .then(response => response.json())
