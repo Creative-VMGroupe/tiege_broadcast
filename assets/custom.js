@@ -219,10 +219,10 @@ document.addEventListener('theme:product:add', function(e) {
     localStorage.setItem('lastAddedItem', data);
   });
 
-  // Free Item Addition
   fetch(window.theme.routes.cart_url + '.json')
   .then(response => response.json())
   .then(data => {
+    // Free Item Addition
     if (theme.cartSettings.giftItem.enabled) {
       console.log('getLastAddedItem',localStorage.getItem(lastAddedItem));
       let giftExists = data.items.filter((item) => item.product_id == theme.cartSettings.giftItem.productId);
