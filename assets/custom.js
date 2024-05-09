@@ -182,8 +182,10 @@ document.addEventListener('theme:product:add', function(e) {
             .then(data => {
               console.log('Event Triggered');
               var eventClose = new Event('theme:cart-drawer:close', { bubbles: true, cancelable: false });
+              var cartUpdate = new Event('theme:cart:update', { bubbles: true, cancelable: false });
               var eventOpen = new Event('theme:cart-drawer:open', { bubbles: true, cancelable: false });
               document.dispatchEvent(eventClose);
+              document.dispatchEvent(cartUpdate);
               document.dispatchEvent(eventOpen);
             })
             .catch((error) => {
