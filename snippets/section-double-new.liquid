@@ -173,7 +173,7 @@
             assign title = block.settings.title
             assign text = block.settings.text
             assign button_text = block.settings.button_text
-            assign star_styling = block.settings.stars_enabled
+            
           -%}
 
           <div
@@ -292,7 +292,7 @@
                   {%- when 'text-slide' -%}
                     {%- if block.settings.subheading != blank -%}
                       {%- assign font_size_class = block.settings.subheading_font | prepend: 'subheading-size-' -%}
-
+                      {%-     assign star_styling = block.settings.stars_enabled -%}
                       <p class="hero__subheading {{ font_size_class }} {%- if star_styling -%} stars__subheading-custom {%- endif -%}">
                         {{ block.settings.subheading }}
                       </p>
@@ -353,7 +353,7 @@
                       {%- assign animation_order = animation_order | plus: 1 -%}
                       {%- assign font_size_class = block.settings.text_size | prepend: 'subheading-size-' -%}
                       {%- assign sub_letter_spacing = block.settings.sub_letter_spacing | prepend: 'sub-letter-spacing-' -%}
-                      <p class="hero__subheading {{ font_size_class }} block-padding {{ sub_letter_spacing }}"
+                      <p class="hero__subheading {{ font_size_class }} block-padding {{ sub_letter_spacing }} {%- if star_styling -%}stars__subheading-custom {%- endif -%}"
                         data-aos="hero"
                         data-aos-anchor="{{ animation_anchor }}"
                         data-aos-order="{{ animation_order }}"
