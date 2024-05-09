@@ -287,7 +287,7 @@
 
                     {%- if block.settings.title != blank -%}
                       {%- assign font_size_class = block.settings.heading_size | prepend: 'heading-size-' -%}
-
+ {%- assign font_size_class = 'heading-size-' | append: block.settings.heading_size -%}
                       <h2 class="test-{{ block.settings.heading_size }} hero__title {{ font_size_class }}">
                         {{ block.settings.title }}
                       </h2>
