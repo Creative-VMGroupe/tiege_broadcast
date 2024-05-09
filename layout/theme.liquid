@@ -211,7 +211,8 @@
           alert: "{{ settings.upgrade_alert }}"
         },
         products : {
-          {% for product in collection['all-products'] %}
+          {% assign collection_handle = 'all-products' %}
+          {% for product in collections[collection_handle].products %}
             {% capture jsonData %}
               {
                 {% if product.metafields.custom.is_routine != blank %}
