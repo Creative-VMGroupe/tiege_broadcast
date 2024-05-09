@@ -212,7 +212,10 @@ async function productData(handle) {
 document.addEventListener('theme:product:add', function(e) {
   let addedItem = e.detail.response;
 
-  productData(addedItem.handle).then((data) => { var productOneData = data; });
+  productData(addedItem.handle).then((data) => {
+    var productOneData = data;
+    console.log(productOneData);
+  });
 
   console.log(productOneData);
   
