@@ -26307,6 +26307,10 @@ body.has-line-design.grid-compact
 .sub-letter-spacing-20 {
   letter-spacing: 20px !important;
 }
+.stars__subheading-custom {
+  font-size: 24px !important;
+  letter-spacing: 10px !important;
+}
 @media(max-width: 749px){
   .image-with-slider__container {
   padding-bottom: 28px !important
