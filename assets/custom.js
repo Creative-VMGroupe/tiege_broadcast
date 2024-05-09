@@ -181,7 +181,8 @@ document.addEventListener('theme:product:add', function(e) {
             .then(response => response.json())
             .then(data => {
               console.log('Event Triggered');
-              document.dispatchEvent('theme:cart-drawer:open');
+              var event = new Event('theme:cart-drawer:open', { bubbles: true, cancelable: false });
+              document.dispatchEvent(event);
             })
             .catch((error) => {
               console.error('Error:', error);
