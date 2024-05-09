@@ -206,7 +206,7 @@ document.addEventListener('theme:product:add', function(e) {
   let addedItem = e.detail.response;
 
   const allProducts = theme.cartSettings.products;
-  console.log(allProducts, addedItem.id);
+  console.log(allProducts, addedItem.product_id);
   let isCurrentAddedItemRoutine = allProducts[addedItem.id];
 
   console.log(isCurrentAddedItemRoutine);
