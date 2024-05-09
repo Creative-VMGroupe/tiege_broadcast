@@ -24,15 +24,13 @@
         "heading_QryjzA": {
           "type": "heading",
           "settings": {
-            "title": "Become A Tiege Hanley Emerald Vip",
-            "heading_size": 7
+            "title": "Become A Tiege Hanley Emerald Vip"
           }
         },
         "text_zddB3y": {
           "type": "text",
           "settings": {
             "description": "MEMBERSHIP BENEFITS",
-            "text_size": 3,
             "text_style": "font-body"
           }
         }
@@ -63,7 +61,6 @@
           "type": "heading",
           "settings": {
             "title": "At Tiege Hanley",
-            "text_size": 7,
             "padding_bottom": 16
           }
         },
@@ -71,7 +68,6 @@
           "type": "text",
           "settings": {
             "text": "<p>We believe a consistent skin care routine is crucial for success. Like gym consistency, it's key to seeing results. Our Membership program helps you establish this routine with guidance through your first 12 Tiege Hanley orders and beyond. As part of the Tiege Family, we ensure your routine is rewarding, offering incredible benefits to all members.<\/p>",
-            "text_size": 3,
             "text_style": "font-body",
             "padding_bottom": 16
           }
@@ -141,7 +137,7 @@
       "custom_css": [
         ".image-wrapper {padding-top: 100%;}",
         ".grid__heading-holder {margin-bottom: 30px;}",
-        ".column__heading {color: #00ad2d;}",
+        ".column__heading {color: #42B029 ;}",
         ".wrapper--full-padded {max-width: 840px;}"
       ],
       "settings": {
@@ -168,7 +164,6 @@
           "type": "heading",
           "settings": {
             "title": "Membership Tiers",
-            "text_size": 7,
             "padding_bottom": 16
           }
         },
@@ -176,7 +171,6 @@
           "type": "text",
           "settings": {
             "text": "<p>We want to guide you on a successful skin care journey by helping you develop a routine. Our Membership program is designed to assist you through your first 12 orders, turning you into a skin care expert!<\/p>",
-            "text_size": 3,
             "text_style": "font-body",
             "padding_bottom": 32
           }
@@ -184,7 +178,6 @@
         "memberboxes_JW3UUT": {
           "type": "memberboxes",
           "settings": {
-            "pop-heading_size": 6,
             "box-1_text": "Member",
             "box-1_gifts": "3 Routine-building Gifts",
             "box-1_description": "All Tiege Hanley customers are Members upon their first subscription purchase. We want our members to get in the habit of completing their Tiege Hanley routine both morning and night, so we are going to provide you with some routine enforcing gifts on your 2nd, 4th, and 6th orders to keep you motivated!",
@@ -218,7 +211,6 @@
           "type": "subheading",
           "settings": {
             "subheading": "BECOME A MEMBER TODAY",
-            "text_size": 3,
             "padding_bottom": 16
           }
         },
@@ -226,7 +218,6 @@
           "type": "heading",
           "settings": {
             "title": "How Do I Get All Of This?",
-            "text_size": 7,
             "padding_bottom": 16
           }
         },
@@ -234,7 +225,6 @@
           "type": "text",
           "settings": {
             "text": "<p>TIEGE STREAKS! Maintain your benefits by ordering a minimum of $20 every 90 days. Feel free to skip or reschedule—just don't cancel, or your streak will resta<\/p>",
-            "text_size": 3,
             "text_style": "font-body",
             "padding_bottom": 16
           }

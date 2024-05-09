@@ -24,15 +24,13 @@
         "heading_9yzrUQ": {
           "type": "heading",
           "settings": {
-            "title": "Image banner",
-            "heading_size": 7
+            "title": "Image banner"
           }
         },
         "text_3UMYgJ": {
           "type": "text",
           "settings": {
             "description": "Tell your brand's story through images.",
-            "text_size": 3,
             "text_style": "font-body"
           }
         }
@@ -64,7 +62,6 @@
           "type": "heading",
           "settings": {
             "title": "Sign Up For SMS",
-            "text_size": 7,
             "padding_bottom": 30
           }
         },
@@ -72,7 +69,6 @@
           "type": "subheading",
           "settings": {
             "subheading": "Sign Up For Our VIP SMS List!",
-            "text_size": 5,
             "padding_bottom": 16
           }
         },
@@ -80,7 +76,6 @@
           "type": "text",
           "settings": {
             "text": "<p>Get early access to new products, exclusive offers, and more!<\/p>",
-            "text_size": 3,
             "text_style": "font-body",
             "padding_bottom": 0
           }
@@ -133,7 +128,7 @@
       "custom_css": [
         "h2 {text-align: left; margin-bottom: 30px;}",
         ".visually-hidden {position: static !important;}",
-        "button {background-color: #00ad2d; border-color: #00ad2d;}",
+        "button {background-color: #42B029 ; border-color: #42B029;}",
         ".field {border: 1px solid; padding-left: 20px;}"
       ],
       "settings": {
