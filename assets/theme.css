@@ -26307,8 +26307,11 @@ body.has-line-design.grid-compact
 }
 @media(max-width: 749px){
   .image-with-slider__container {
-  padding-top: 28px !important
+  padding-top: 28px !important;
 }
+  .hero-slider__content {
+    padding-bottom: 28px !important
+  }
 }
 @media (min-width: 750px) {
 .brick__slider .flickity-page-dots{
