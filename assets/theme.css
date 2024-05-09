@@ -26374,7 +26374,7 @@ body.has-line-design.grid-compact
   height: 404px;
 }
 .text-slider__container .flickity-page-dots {
-  bottom: -35px;
+  bottom: -35px !important;
 }
 .grid--mobile-slider .grid-item.text-slider__slide-custom {
   padding: 0 !important;
