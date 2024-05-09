@@ -162,27 +162,6 @@
     "section_double_slider_new_ERgtDU": {
       "type": "section-double-slider-new",
       "blocks": {
-        "text_slide_7rbw3L": {
-          "type": "text-slide",
-          "disabled": true,
-          "settings": {
-            "stars_enabled": false,
-            "subheading": "★★★★★",
-            "subheading_font": 14,
-            "title": "Proof",
-            "heading_font": 32,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 14,
-            "text_style": "font-body",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--white",
-            "button_size": "",
-            "button_style": "btn--outline",
-            "show_arrow": false,
-            "image": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png"
-          }
-        },
         "text_slide_Ey9Vkb": {
           "type": "text-slide",
           "settings": {
@@ -194,7 +173,7 @@
             "text": "<p>\"Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.\"<\/p>",
             "text_size": 16,
             "text_style": "font-body",
-            "button_text": "",
+            "button_text": "View 1000+ Reviews",
             "button_url": "",
             "button_type": "btn--white",
             "button_size": "",
@@ -204,12 +183,10 @@
         }
       },
       "block_order": [
-        "text_slide_7rbw3L",
         "text_slide_Ey9Vkb"
       ],
       "custom_css": [
         ".flickity-viewport {height: calc(100vh \/ 3) !important;}",
-        ".brick__block__text {padding-bottom: 40px; padding-top: 40px;}",
         "p.hero__subheading {order: 2;}",
         "h2.hero__title {order: 1;}",
         ".hero__rte {order: 3;}",
