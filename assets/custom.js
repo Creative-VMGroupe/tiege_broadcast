@@ -202,26 +202,15 @@ function removeItemfromCart(lineItem) {
   });
 }
 
-async function productData(handle) {
-  const request = await fetch(`https://${Shopify.shop}/products/${handle}?view=json`);
-  const response = await request.json();
-  return response;
-}
+console.log(cartSettings.products);
 
 document.addEventListener('theme:product:add', function(e) {
   let addedItem = e.detail.response;
-
-  localStorage.clear();
-
-  var currentCart = {};
-  productData(addedItem.handle).then((data) => {
-    localStorage.setItem('lastAddedItem', data);
-  });
-
+  
   fetch(window.theme.routes.cart_url + '.json')
   .then(response => response.json())
   .then(data => {
-    console.log('getLastAddedItem',localStorage.getItem('lastAddedItem'));
+    
     // Free Item Addition
     if (theme.cartSettings.giftItem.enabled) {
       let giftExists = data.items.filter((item) => item.product_id == theme.cartSettings.giftItem.productId);
