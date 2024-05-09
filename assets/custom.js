@@ -209,6 +209,7 @@ async function productData(handle) {
   const response = await request.json();
   return response;
 }
+
 document.addEventListener('theme:product:add', function(e) {
   let addedItem = e.detail.response;
 
