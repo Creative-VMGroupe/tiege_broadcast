@@ -211,7 +211,8 @@
           alert: "{{ settings.upgrade_alert }}"
         },
         products : {
-          {% for product in all_products %}
+          {{ collections }}
+          {% for product in collections %}
             {% capture jsonData %}
               {
                 {% if product.metafields.custom.is_routine != blank %}
@@ -255,7 +256,7 @@
                 collections: {{ product.collections | json }}
               }
               {% endcapture %}
-                {{ product.id }}: {{- jsonData -}}
+              {{ product.id }}: {{- jsonData -}}
           {% endfor %}
         }
       }
