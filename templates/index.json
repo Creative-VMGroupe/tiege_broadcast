@@ -97,93 +97,6 @@
         "padding_bottom": 0
       }
     },
-    "section_text_with_products_h3WNiQ": {
-      "type": "section-text-with-products",
-      "blocks": {
-        "image_bEkTc6": {
-          "type": "image",
-          "settings": {
-            "image_position": 2,
-            "image": "shopify:\/\/shop_images\/Products.png",
-            "aspect_ratio": 1,
-            "mobile_aspect_ratio": 1,
-            "width": 100,
-            "mobile_width": 60,
-            "link": ""
-          }
-        },
-        "image_FMpDrj": {
-          "type": "image",
-          "settings": {
-            "image_position": 9,
-            "image": "shopify:\/\/shop_images\/Drop.png",
-            "aspect_ratio": 1,
-            "mobile_aspect_ratio": 1,
-            "width": 80,
-            "mobile_width": 60,
-            "link": ""
-          }
-        },
-        "image_a6EH8H": {
-          "type": "image",
-          "settings": {
-            "image_position": 13,
-            "image": "shopify:\/\/shop_images\/Valve.png",
-            "aspect_ratio": 1,
-            "mobile_aspect_ratio": 1,
-            "width": 80,
-            "mobile_width": 60,
-            "link": ""
-          }
-        },
-        "image_MUG6ft": {
-          "type": "image",
-          "settings": {
-            "image_position": 25,
-            "image": "shopify:\/\/shop_images\/Gear.png",
-            "aspect_ratio": 1,
-            "mobile_aspect_ratio": 1,
-            "width": 80,
-            "mobile_width": 60,
-            "link": ""
-          }
-        },
-        "image_hW4qqK": {
-          "type": "image",
-          "settings": {
-            "image_position": 30,
-            "image": "shopify:\/\/shop_images\/Muscle.png",
-            "aspect_ratio": 1,
-            "mobile_aspect_ratio": 1,
-            "width": 80,
-            "mobile_width": 60,
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_bEkTc6",
-        "image_FMpDrj",
-        "image_a6EH8H",
-        "image_MUG6ft",
-        "image_hW4qqK"
-      ],
-      "disabled": true,
-      "settings": {
-        "subheading": "",
-        "subheading_size": 5,
-        "heading": "Tiege Hanley is made with revolutionary, all-natural peptide technology. Peptides are highly effective, multi-functional, and very stable and safe. It is proven to be the best way to improve the function and appearance of your skin--inside and out.",
-        "heading_size": 7,
-        "mobile_heading_size": 5,
-        "text_align_desktop": "text-left",
-        "text_align_mobile": "text-left--mobile",
-        "width": "wrapper--full-padded",
-        "bg_color": "#ffffff",
-        "color": "",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
     "section_rich_text_xYMXGY": {
       "type": "section-rich-text",
       "blocks": {
@@ -199,7 +112,7 @@
           "type": "heading",
           "settings": {
             "title": "Tiege Hanley is made with revolutionary, all-natural peptide technology.",
-            "text_size": 7,
+            "text_font": 40,
             "padding_bottom": 16
           }
         },
@@ -207,7 +120,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Peptides are highly effective, multi-functional, and very stable and safe. It is proven to be the best way to improve the function and appearance of your skin--inside and out.<\/p>",
-            "text_size": 3,
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 16
           }
@@ -218,7 +131,6 @@
         "heading_kCi8Xw",
         "text_bQLDGm"
       ],
-      "disabled": true,
       "custom_css": [
         ".hero__content:has(.hero__media) {padding-bottom: 0;}"
       ],
@@ -271,7 +183,7 @@
             "title": "\"Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.\"",
             "heading_font": 24,
             "text": "<p>- Name of Reviewer<\/p>",
-            "text_size": 2,
+            "text_size": 14,
             "text_style": "font-body",
             "button_text": "Learn more",
             "button_url": "shopify:\/\/pages\/membership-benefit",
@@ -291,7 +203,7 @@
             "title": "Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.",
             "heading_font": 24,
             "text": "<p>- Name of Reviewer<\/p>",
-            "text_size": 2,
+            "text_size": 14,
             "text_style": "font-body",
             "button_text": "Learn more",
             "button_url": "shopify:\/\/pages\/membership-benefit",
@@ -301,31 +213,11 @@
             "show_arrow": false,
             "image": "shopify:\/\/shop_images\/IMG_5261_VSCO.png"
           }
-        },
-        "text_slide_f7FiYT": {
-          "type": "text-slide",
-          "settings": {
-            "subheading": "★★★★★",
-            "subheading_font": 16,
-            "sub_letter_spacing": 5,
-            "title": "Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.",
-            "heading_font": 24,
-            "text": "<p>- Name of Reviewer<\/p>",
-            "text_size": 2,
-            "text_style": "font-body",
-            "button_text": "Learn more",
-            "button_url": "shopify:\/\/pages\/membership-benefit",
-            "button_type": "btn--white",
-            "button_size": "",
-            "button_style": "btn--outline",
-            "show_arrow": false
-          }
         }
       },
       "block_order": [
         "text_slide_MWCM8L",
-        "text_slide_gDLxQn",
-        "text_slide_f7FiYT"
+        "text_slide_gDLxQn"
       ],
       "custom_css": [
 
@@ -413,7 +305,7 @@
             "title": "Designed for Men",
             "heading_font": 14,
             "text": "",
-            "text_size": 3
+            "text_size": 15
           }
         },
         "icon_xrpAkU": {
@@ -426,7 +318,7 @@
             "title": "Never Tested on Animals",
             "heading_font": 14,
             "text": "",
-            "text_size": 3
+            "text_size": 15
           }
         },
         "icon_RPqK9t": {
@@ -439,7 +331,7 @@
             "title": "TSA Compliant",
             "heading_font": 14,
             "text": "",
-            "text_size": 3
+            "text_size": 15
           }
         },
         "icon_UrxwKk": {
@@ -452,7 +344,7 @@
             "title": "Made in USA",
             "heading_font": 14,
             "text": "",
-            "text_size": 3
+            "text_size": 15
           }
         },
         "icon_hp678W": {
@@ -465,7 +357,7 @@
             "title": "Fragrance-Free",
             "heading_font": 14,
             "text": "",
-            "text_size": 3
+            "text_size": 15
           }
         },
         "icon_Bwk7Y3": {
@@ -478,7 +370,7 @@
             "title": "Chemist-Formulated",
             "heading_font": 14,
             "text": "",
-            "text_size": 3
+            "text_size": 15
           }
         }
       },
@@ -510,114 +402,6 @@
         "layout_mobile": "slider"
       }
     },
-    "section_text_row_YFhUxM": {
-      "type": "section-text-row",
-      "blocks": {
-        "icon_GQqWWM": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-shield",
-            "icon_size": 80,
-            "icon_color": "#545454",
-            "image": "shopify:\/\/shop_images\/noun-strong-4023355.png",
-            "title": "Designed for Men",
-            "heading_size": 3,
-            "text": "",
-            "text_size": 3
-          }
-        },
-        "icon_xrpAkU": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-trophy",
-            "icon_size": 80,
-            "icon_color": "#545454",
-            "image": "shopify:\/\/shop_images\/noun-paw-1054352.png",
-            "title": "Never Tested on Animals",
-            "heading_size": 3,
-            "text": "",
-            "text_size": 3
-          }
-        },
-        "icon_RPqK9t": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-chat",
-            "icon_size": 80,
-            "icon_color": "#545454",
-            "image": "shopify:\/\/shop_images\/noun-plane-2869631.png",
-            "title": "TSA Compliant",
-            "heading_size": 3,
-            "text": "",
-            "text_size": 3
-          }
-        },
-        "icon_UrxwKk": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-award",
-            "icon_size": 80,
-            "icon_color": "#545454",
-            "image": "shopify:\/\/shop_images\/noun-usa-map-4303861.png",
-            "title": "Made in USA",
-            "heading_size": 3,
-            "text": "",
-            "text_size": 3
-          }
-        },
-        "icon_hp678W": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-award",
-            "icon_size": 80,
-            "icon_color": "#545454",
-            "image": "shopify:\/\/shop_images\/noun-fragrance-free-4744189.png",
-            "title": "Fragrance-Free",
-            "heading_size": 3,
-            "text": "",
-            "text_size": 3
-          }
-        },
-        "icon_Bwk7Y3": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-award",
-            "icon_size": 80,
-            "icon_color": "#545454",
-            "image": "shopify:\/\/shop_images\/noun-chemist-erlenmeyer-2843246.png",
-            "title": "Chemist-Formulated",
-            "heading_size": 3,
-            "text": "",
-            "text_size": 3
-          }
-        }
-      },
-      "block_order": [
-        "icon_GQqWWM",
-        "icon_xrpAkU",
-        "icon_RPqK9t",
-        "icon_UrxwKk",
-        "icon_hp678W",
-        "icon_Bwk7Y3"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "Our Difference",
-        "heading_size": 7,
-        "layout": "grid",
-        "grid": 6,
-        "align_heading": "text-center",
-        "align_text": "text-center",
-        "icon_alignment": "icon--top",
-        "align_columns": "flex-align-top",
-        "width": "wrapper--full-padded",
-        "bg_color": "#f7f9fa",
-        "color": "",
-        "padding_top": 80,
-        "padding_bottom": 80,
-        "layout_mobile": "slider"
-      }
-    },
     "section_hero_iEX3nG": {
       "type": "section-hero",
       "blocks": {
@@ -632,7 +416,7 @@
           "type": "text",
           "settings": {
             "description": "Want great skin? We got you, and we got cutting-edge formulas.",
-            "text_font": 16,
+            "text_font": 14,
             "text_style": "font-body"
           }
         },
@@ -716,7 +500,7 @@
         "title": "Aaron Marino",
         "heading_font": 40,
         "description": "Talks facts about taking care of your skin.",
-        "text_font": 16,
+        "text_font": 14,
         "flex_align": "align--bottom-left",
         "flex_align_mobile": "align--bottom-left-mobile",
         "bg_color": "rgba(0,0,0,0)",
@@ -771,7 +555,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Our high-quality skin care systems work to maximize results and eliminate guesswork for men of all skin types.<\/p>",
-            "text_font": 16,
+            "text_font": 14,
             "text_style": "font-body",
             "padding_bottom": 16
           }
@@ -821,11 +605,11 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png",
             "subheading": "Level 1",
-            "subheading_size": 1,
+            "subheading_font": 14,
             "title": "Essential",
-            "heading_size": 6,
+            "heading_font": 40,
             "text": "<p>Smooth, hydrate and energize<\/p>",
-            "text_size": 3,
+            "text_font": 16,
             "text_style": "font-body",
             "button_text": "Shop Level 1 Skincare",
             "button_url": "shopify:\/\/products\/level-1-essential-routine-1",
@@ -840,11 +624,11 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO3.png",
             "subheading": "Level 2",
-            "subheading_size": 1,
+            "subheading_font": 14,
             "title": "Advanced",
-            "heading_size": 6,
+            "heading_font": 40,
             "text": "<p>Fight off crow’s feet and dark circles<\/p>",
-            "text_size": 3,
+            "text_font": 16,
             "text_style": "font-body",
             "button_text": "Shop Level 2 Skincare",
             "button_url": "shopify:\/\/products\/level-2-advanced-routine",
@@ -859,11 +643,11 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/IMG_5261_VSCO.png",
             "subheading": "Level 3",
-            "subheading_size": 1,
+            "subheading_font": 14,
             "title": "Anti-Aging",
-            "heading_size": 6,
+            "heading_font": 40,
             "text": "<p>Fight crow's feet, dark circles and reduce fine lines<\/p>",
-            "text_size": 3,
+            "text_font": 16,
             "text_style": "font-body",
             "button_text": "Shop Level 3 Skincare",
             "button_url": "shopify:\/\/products\/the-collection-snowboard-liquid",
@@ -881,9 +665,9 @@
       ],
       "settings": {
         "title": "A Quick Skincare Guide",
-        "heading_size": 7,
+        "heading_font": 40,
         "text": "<p>3 levels built to address your key skin concerns: Hydration, Crow's Feet, Dark Circles, & Anti-Aging.<\/p>",
-        "text_size": 3,
+        "text_font": 16,
         "text_alignment": "text-center",
         "show_images": true,
         "bg_color": "#000000",
@@ -904,11 +688,11 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/L1_Acne.png",
             "subheading": "Level 1",
-            "subheading_size": 1,
+            "subheading_font": 14,
             "title": "Acne Routine",
-            "heading_size": 6,
+            "heading_font": 40,
             "text": "<p>Reduce redness and swelling<\/p>",
-            "text_size": 3,
+            "text_font": 16,
             "text_style": "font-body",
             "button_text": "Shop Level 1 Acne",
             "button_url": "shopify:\/\/products\/level-1-acne-routine-1",
@@ -923,11 +707,11 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/342037289_571107381668427_1108690022829729651_n.jpg",
             "subheading": "Level 2",
-            "subheading_size": 1,
+            "subheading_font": 14,
             "title": "Advanced Acne Routine",
-            "heading_size": 6,
+            "heading_font": 40,
             "text": "<p>Extra daily moisturizing to battle severe acne<\/p>",
-            "text_size": 3,
+            "text_font": 16,
             "text_style": "font-body",
             "button_text": "Shop Level 2 ACNE",
             "button_url": "shopify:\/\/products\/level-2-advanced-acne-routine-1",
@@ -944,9 +728,9 @@
       ],
       "settings": {
         "title": "A Quick Acne Guide",
-        "heading_size": 8,
+        "heading_font": 40,
         "text": "<p>2 levels built to address your acne concerns.<\/p>",
-        "text_size": 4,
+        "text_font": 16,
         "text_alignment": "text-center",
         "show_images": true,
         "bg_color": "#f7f7f7",
@@ -966,7 +750,7 @@
           "type": "heading",
           "settings": {
             "title": "The Complete Guide",
-            "text_size": 7,
+            "text_font": 40,
             "padding_bottom": 16
           }
         },
@@ -974,7 +758,7 @@
           "type": "text",
           "settings": {
             "text": "<p>It's not complicated, but we understand you may want to do a bit more digging and see the full picture.<\/p>",
-            "text_size": 3,
+            "text_font": 14,
             "text_style": "font-body",
             "padding_bottom": 16
           }
@@ -1021,7 +805,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Our high-quality skin care systems work to maximize results and eliminate guesswork for men of all skin types.<\/p>",
-            "text_font": 16,
+            "text_font": 14,
             "text_style": "font-body",
             "padding_bottom": 16
           }
@@ -1089,42 +873,10 @@
             "margin_bottom": 0,
             "html_area": ""
           }
-        },
-        "vibe_instagram_feed_grid_LqpgpK": {
-          "type": "shopify:\/\/apps\/vibe-instagram-feed\/blocks\/grid\/a89f8a1d-e2e4-49c3-8d2c-363211f74779",
-          "disabled": true,
-          "settings": {
-            "instagram_feed_id": "661b4d2f0c3d90f6a2c43c42",
-            "post_click_action": "popup",
-            "items_per_loading": 4,
-            "items_per_row_lg": "4",
-            "items_per_row_xs": "1",
-            "item_spacing_lg": 0,
-            "item_spacing_xs": 0,
-            "loading_mode": false,
-            "item_cta": "SEE MORE",
-            "item_product_cta": "SHOP THIS LOOK",
-            "item_ratio": "1\/1",
-            "blocktitle": "@tiegehanley",
-            "heading_lg": 36,
-            "heading_xs": 24,
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod.",
-            "description_lg": 24,
-            "description_xs": 16,
-            "text_alignment": "center",
-            "spacing_text_vs_posts_lg": 60,
-            "spacing_text_vs_posts_xs": 30,
-            "top_padding_lg": 60,
-            "bottom_padding_lg": 0,
-            "top_padding_xs": 60,
-            "bottom_padding_xs": 0,
-            "custom_css": ""
-          }
         }
       },
       "block_order": [
-        "instafeed_app_block_VRCANX",
-        "vibe_instagram_feed_grid_LqpgpK"
+        "instafeed_app_block_VRCANX"
       ],
       "custom_css": [
 
@@ -1132,96 +884,17 @@
       "settings": {
         "include_margins": false
       }
-    },
-    "section_double_slider_JR3Nd9": {
-      "type": "section-double-slider",
-      "blocks": {
-        "text_slide_wnAzUj": {
-          "type": "text-slide",
-          "settings": {
-            "subheading": "Introducing",
-            "subheading_size": 3,
-            "title": "Image with text slider",
-            "heading_size": 8,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
-            "text_style": "font-body",
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        },
-        "text_slide_FW3MAd": {
-          "type": "text-slide",
-          "settings": {
-            "subheading": "Introducing",
-            "subheading_size": 3,
-            "title": "Image with text slider",
-            "heading_size": 8,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
-            "text_style": "font-body",
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        },
-        "text_slide_mmgFre": {
-          "type": "text-slide",
-          "settings": {
-            "subheading": "Introducing",
-            "subheading_size": 3,
-            "title": "Image with text slider",
-            "heading_size": 8,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
-            "text_style": "font-body",
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "text_slide_wnAzUj",
-        "text_slide_FW3MAd",
-        "text_slide_mmgFre"
-      ],
-      "disabled": true,
-      "settings": {
-        "layout": "",
-        "height": "screen-height-three-quarters",
-        "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full",
-        "image_width": "one-half",
-        "text_alignment": "text-left",
-        "bg_color": "",
-        "color": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
     }
   },
   "order": [
     "section_video_V7NQ8N",
     "section_double_static_vm_YWUYXa",
-    "section_text_with_products_h3WNiQ",
     "section_rich_text_xYMXGY",
     "section_collection_new_JPPdmt",
     "section_double_slider_new_tQFDaG",
     "section_collection_new_MWikbY",
     "section_video_W9NxLi",
     "vm_section_text_row_LxAydb",
-    "section_text_row_YFhUxM",
     "section_hero_iEX3nG",
     "section_before_after_hzKE7H",
     "section_video_NGgczi",
@@ -1231,7 +904,6 @@
     "section_timeline_YTB9mM",
     "section_rich_text_mYKMrn",
     "section_double_yp4ajU",
-    "17128713724606d78b",
-    "section_double_slider_JR3Nd9"
+    "17128713724606d78b"
   ]
 }
