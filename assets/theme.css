@@ -26343,6 +26343,9 @@ body.has-line-design.grid-compact
   }
 }
 /*Text Slider*/
+.text-slider__container {
+  height: 404px;
+}
 .grid--mobile-slider .grid-item.text-slider__slide-custom {
   padding: 0 !important;
   width: 100% !important;
