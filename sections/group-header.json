@@ -106,6 +106,7 @@
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
+            "heading_size": 32,
             "title": "Acne Care",
             "link_text": "2 sets to choose from",
             "link": "shopify:\/\/collections\/level-1-acne-care",
