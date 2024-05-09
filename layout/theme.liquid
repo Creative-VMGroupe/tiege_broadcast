@@ -213,7 +213,7 @@
       }
     };
 
-      {{ settings.gift_item_collection.products | | map: 'id' }}
+      {{ settings.gift_item_collection.products | | map: 'id' | join: ',' }}
 
     let windowInnerHeight = window.innerHeight;
     document.documentElement.style.setProperty('--full-height', `${windowInnerHeight}px`);
