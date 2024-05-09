@@ -222,8 +222,7 @@ document.addEventListener('theme:product:add', function(e) {
   fetch(window.theme.routes.cart_url + '.json')
   .then(response => response.json())
   .then(data => {
-    console.log('Info');
-    console.log('getLastAddedItem',localStorage.getItem(lastAddedItem));
+    console.log('getLastAddedItem',localStorage.getItem('lastAddedItem'));
     // Free Item Addition
     if (theme.cartSettings.giftItem.enabled) {
       let giftExists = data.items.filter((item) => item.product_id == theme.cartSettings.giftItem.productId);
