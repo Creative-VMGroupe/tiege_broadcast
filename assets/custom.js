@@ -244,9 +244,16 @@ document.addEventListener('theme:product:add', function(e) {
     }
 
     // Single Routine Checks
-    let getItems = data.items.map((item) => item.product_id);
-    console.log(getItems);
     if (theme.cartSettings.singleRoutine.enabled && isCurrentAddedItemRoutine) {
+      let routineItem = null;
+      data.items.forEach((element) => {
+        if (allProducts[element.product_id].isRoutine && element.product_id != addedItem.product_id) {
+          routineItem = element;
+        }
+      });
+      if (routineItem != null) {
+        changeItemQty(routineItem.key, '0');
+      }
     }
   });
 });
