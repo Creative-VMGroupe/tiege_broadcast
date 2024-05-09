@@ -179,9 +179,9 @@ function addItemtoCart(variantId) {
   });
 }
 
-function removeItemfromCart(lineItem) {
+function changeItemQty(lineItem, qty) {
   var formData = new FormData();
-  formData.append(`updates[${lineItem}]`, 0);
+  formData.append(`updates[${lineItem}]`, qty);
   fetch(window.Shopify.routes.root + 'cart/update.js', {
     method: 'POST',
     headers: {
@@ -208,8 +208,6 @@ document.addEventListener('theme:product:add', function(e) {
   const allProducts = theme.cartSettings.products;
   let isCurrentAddedItemRoutine = allProducts[addedItem.product_id].isRoutine;
 
-  console.log(allProducts, addedItem.product_id, isCurrentAddedItemRoutine);
-  
   fetch(window.theme.routes.cart_url + '.json')
   .then(response => response.json())
   .then(data => {
@@ -218,7 +216,11 @@ document.addEventListener('theme:product:add', function(e) {
     if (theme.cartSettings.giftItem.enabled) {
       let giftExists = data.items.filter((item) => item.product_id == theme.cartSettings.giftItem.productId);
       let giftQty = giftExists[0]['quantity'];
-      console.log(giftExists, giftQty);
+
+      if (giftQty > 1) {
+        changeItemQty(giftExists[0].key, '1');
+      }
+      
       if (theme.cartSettings.giftItem.method == "cart") {
         let minCartValue = parseInt(theme.cartSettings.giftItem.cartValue * 100);
         if (data.total_price > minCartValue) {
@@ -227,7 +229,7 @@ document.addEventListener('theme:product:add', function(e) {
           }
         } else {
           if (giftExists.length) {
-            removeItemfromCart(giftExists[0].key);
+            changeItemQty(giftExists[0].key, '0');
           }
         }
       } else {
