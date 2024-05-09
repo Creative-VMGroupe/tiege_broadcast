@@ -26322,6 +26322,9 @@ body.has-line-design.grid-compact
     width: 50%;
     right: 0;
 } 
+  .flickity--reversed-custom .flickity-page-dots {
+    left: 0 !important;
+  }
 }
 /*Media with Text - Tiege*/
 .hero__content:has(.hero__media) {
