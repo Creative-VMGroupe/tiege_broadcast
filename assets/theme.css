@@ -26309,6 +26309,9 @@ body.has-line-design.grid-compact
   .image-with-slider__container {
   padding-bottom: 28px !important
 }
+  .image-with-slider__container .flickity-page-dots {
+    bottom: 9px !important;
+  }
   .hero-slider__content {
     padding-top: 28px !important;
   }
