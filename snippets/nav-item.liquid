@@ -1,4 +1,5 @@
 {%- liquid
+   
   assign highlight_item = highlight_item | downcase | strip_html | escape
   assign link_title_lowercase = link.title | downcase | strip_html | escape
   assign parent = false
@@ -113,8 +114,9 @@
               <div class="menu__blocks" style="--images-space: {{ images_space }};">
                 {%- liquid
                   for block in section.blocks
+                assign font_size_class = block.settings.heading_size | prepend: 'heading-size-'
                     if block.settings.position == index
-                      render 'header-block', block: block, image_count: image_count, only_images: only_images, link_columns: link.links.size
+                      render 'header-block', block: block, image_count: image_count, only_images: only_images, link_columns: link.links.size, font_size_class: font_size_class
                     endif
                   endfor
                 -%}

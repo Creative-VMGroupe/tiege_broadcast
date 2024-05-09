@@ -74,7 +74,7 @@ Required params:
       <div class="hero__content__wrapper align--bottom-left">
         <div class="hero__content hero__content--transparent backdrop--radial">
           {%- if title != blank -%}
-            <h2 class="hero__title h4">
+            <h2 class="hero__title h4 {{ font_size_class }}">
               {{ title | escape }}
             </h2>
           {%- endif -%}
@@ -118,7 +118,7 @@ Required params:
           <div class="hero__content__wrapper align--bottom-left">
             <div class="hero__content hero__content--transparent backdrop--radial">
               {%- if title != blank -%}
-                <h2 class="hero__title h4">
+                <h2 class="hero__title h4 {{ font_size_class }}">
                   {{ title | escape }}
                 </h2>
               {%- endif -%}
