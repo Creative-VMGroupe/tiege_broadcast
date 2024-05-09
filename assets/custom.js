@@ -231,17 +231,24 @@ document.addEventListener('theme:product:add', function(e) {
         }
       } else {
         let eligibleProducts = theme.cartSettings.giftItem.collection.split(",").map( Number );
-        console.log(eligibleProducts, addedItem.product_id, eligibleProducts.includes(theme.cartSettings.giftItem.productId));
-        if (eligibleProducts.includes(theme.cartSettings.giftItem.productId) && !giftExists.length) {
-          // Add gift Item
+        if (eligibleProducts.includes(theme.cartSettings.giftItem.productId)) {
+          if (!giftExists.length) {
+            addItemtoCart(theme.cartSettings.giftItem.variantId);
+          }
+        } else {
+          if (giftExists.length) {
+            changeItemQty(giftExists[0].key, '0');
+          }
         }
       }
     }
 
-    
+    if (theme.cartSettings.singleRoutine.enabled && isCurrentAddedItemRoutine) {
+            
+    }
   });
 });
 
 document.addEventListener('theme:cart:change', function(e) {
-  console.log(e);
+  // Check Conditions on Load as well
 });
