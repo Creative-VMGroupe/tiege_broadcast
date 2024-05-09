@@ -548,7 +548,7 @@
           "type": "heading",
           "settings": {
             "title": "Routine Quiz",
-            "heading_size": 24,
+            "heading_size": 40,
             "padding_bottom": 16
           }
         },
