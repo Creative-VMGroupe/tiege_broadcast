@@ -280,7 +280,7 @@
                     {%- if block.settings.subheading != blank -%}
                       {%- assign font_size_class = block.settings.subheading_size | prepend: 'subheading-size-' -%}
 
-                      <p class="hero__subheading {{ font_size_class }}">
+                      <p class="test-{{ block.settings.subheading_size }}hero__subheading {{ font_size_class }}">
                         {{ block.settings.subheading }}
                       </p>
                     {%- endif -%}
