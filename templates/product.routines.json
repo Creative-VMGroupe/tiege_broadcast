@@ -209,7 +209,11 @@
       ],
       "custom_css": [
         ".flickity-viewport {height: calc(100vh \/ 3) !important;}",
-        ".brick__block__text {padding-bottom: 40px; padding-top: 40px;}"
+        ".brick__block__text {padding-bottom: 40px; padding-top: 40px;}",
+        "p.hero__subheading {order: 2;}",
+        "h2.hero__title {order: 1;}",
+        ".hero__rte {order: 3;}",
+        ".hero__button {order: 4;}"
       ],
       "settings": {
         "layout": "is-reversed",
