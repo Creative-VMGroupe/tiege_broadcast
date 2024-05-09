@@ -25626,7 +25626,7 @@ background-size: 0% 1px;
   .product-recomend_heading-custom {
     padding: 0 !important;
   }
-.related__wrapper .product-recomend_heading-custom {
+.related__wrapper .product-recomend_heading-custom .prod-rec_text-custom{
   font-size: 20px !important;
 }
   .product-recomend_tab {
