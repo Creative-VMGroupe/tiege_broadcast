@@ -25552,9 +25552,12 @@ body.has-header-sticky .timeline {
   padding-top: 8px;
 }
 .product__page .product__form__outer .radio__legend{
-      padding: 10px 0 10px 40px;
+    padding: 10px 0 10px 40px;
     position: absolute;
     max-width: 388px;
+    display: flex;
+    align-items: center;
+    height: 50px;
 }
 .product__page .product__form__outer .radio__legend .radio__legend__value {
   display:none;
