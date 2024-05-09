@@ -201,7 +201,7 @@ function changeItemQty(lineItem, qty) {
   });
 }
 
-console.log(theme.cartSettings.giftItem.collection);
+console.log(theme.cartSettings.giftItem.collection.split(","));
 
 document.addEventListener('theme:product:add', function(e) {
   let addedItem = e.detail.response;
