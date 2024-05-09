@@ -26311,6 +26311,11 @@ body.has-line-design.grid-compact
 .sub-letter-spacing-20 {
   letter-spacing: 20px !important;
 }
+@media(max-width: 749px){
+  .image-with-slider__container {
+  padding-top: 28px !important
+}
+}
 /*Media with Text - Tiege*/
 .hero__content:has(.hero__media) {
   padding-bottom: 50px;
