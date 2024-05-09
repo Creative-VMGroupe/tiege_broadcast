@@ -256,7 +256,7 @@
                 collections: "{{ product.collections | map: 'id' | join: ',' }}"
               }
               {% endcapture %}
-              {{ product.id }}: {{- jsonData -}}
+              {{ product.id }}: {{- jsonData -}},
           {% endfor %}
         }
       }
