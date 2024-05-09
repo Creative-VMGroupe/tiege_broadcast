@@ -31,7 +31,7 @@
         "overlay_color": "#000000",
         "show_overlay_text": false,
         "title": "The Proof",
-        "heading_font": 32,
+        "heading_font": 40,
         "description": "Tell your brand's story through images.",
         "text_font": 16,
         "flex_align": "align--bottom-left",
@@ -223,7 +223,7 @@
           "type": "heading",
           "settings": {
             "title": "Uncomplicated Results",
-            "text_font": 32,
+            "text_font": 40,
             "padding_bottom": 0
           }
         }
@@ -428,7 +428,7 @@
           "type": "heading",
           "settings": {
             "title": "See the Difference",
-            "text_font": 32,
+            "text_font": 40,
             "padding_bottom": 0
           }
         }
