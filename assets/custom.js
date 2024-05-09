@@ -189,6 +189,7 @@ function removeItemfromCart(lineItem) {
       'Content-Type': 'application/json'
     },
     body: formData
+  })
   .then(response => response.json())
   .then(data => {
     // Update the cart logic here
