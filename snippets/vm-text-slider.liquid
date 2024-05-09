@@ -6,8 +6,7 @@
 {%- endcomment -%}
 
 {%- liquid
-  assign desktop_height = section.settings.height
-  assign mobile_height = section.settings.mobile_height
+
   assign width = section.settings.width
   assign enable_slider = false
   assign enable_text_slider = false
@@ -128,7 +127,7 @@
           -%}
 
           <div
-            class="brick__section{% if section.settings.layout == 'is-reversed' %} brick__section--reversed{% endif %}{% if section.settings.reverse_blocks %} brick__section--reversed-mobile{% endif %} {{ width }} {{ desktop_height }} {{ mobile_height }}"
+            class="text-slider__container brick__section{% if section.settings.layout == 'is-reversed' %} brick__section--reversed{% endif %}{% if section.settings.reverse_blocks %} brick__section--reversed-mobile{% endif %} {{ width }}"
             data-slide
             {{ block.shopify_attributes }}>
 
@@ -197,7 +196,7 @@
         {%- endfor -%}
       </div>
     {%- else -%}
-      <div class="brick__section{% if section.settings.layout == 'is-reversed' %} brick__section--reversed{% endif %}{% if section.settings.reverse_blocks %} brick__section--reversed-mobile{% endif %}{% if accordion_blocks.size > 0 %} brick__section--accordion{% endif %} {{ width }} {{ desktop_height }} {{ mobile_height }}">
+      <div class="text-slider__container brick__section{% if section.settings.layout == 'is-reversed' %} brick__section--reversed{% endif %}{% if section.settings.reverse_blocks %} brick__section--reversed-mobile{% endif %}{% if accordion_blocks.size > 0 %} brick__section--accordion{% endif %} {{ width }} ">
 
 
         <div
