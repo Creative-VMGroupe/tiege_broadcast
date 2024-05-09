@@ -167,7 +167,7 @@ function addItemtoCart(variantId) {
   })
   .then(response => response.json())
   .then(data => {
-    // Update the cart logic here
+    // Update the cart refresh logic here
     var eventClose = new Event('theme:cart-drawer:close', { bubbles: true, cancelable: false });
     var eventOpen = new Event('theme:cart-drawer:open', { bubbles: true, cancelable: false });
     document.dispatchEvent(eventClose);
@@ -191,7 +191,7 @@ function removeItemfromCart(lineItem) {
   })
   .then(response => response.json())
   .then(data => {
-    // Update the cart logic here
+    // Update the cart refresh logic here
     var eventClose = new Event('theme:cart-drawer:close', { bubbles: true, cancelable: false });
     var eventOpen = new Event('theme:cart-drawer:open', { bubbles: true, cancelable: false });
     document.dispatchEvent(eventClose);
