@@ -25977,6 +25977,7 @@ div.rc_popup {
 /*instafeed*/
 #insta-feed h2 {
   /* margin: 40px 0 !important; */
+  margin-top: 0 !important;
   margin-bottom: calc(80px * .6) !important;
   font-size: 40px !important;
 }
