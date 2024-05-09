@@ -212,7 +212,9 @@ async function productData(handle) {
 document.addEventListener('theme:product:add', function(e) {
   let addedItem = e.detail.response;
 
-  productData(addedItem.handle).then((data) => { console.log(data); });
+  productData(addedItem.handle).then((data) => { var productOneData = data; });
+
+  console.log(productOneData);
   
   // Free Item Addition
   if (theme.cartSettings.giftItem.enabled) {
