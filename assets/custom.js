@@ -212,7 +212,11 @@ async function productData(handle) {
 }
 document.addEventListener('theme:product:add', function(e) {
   let addedItem = e.detail.response;
-  
+
+  console.log(addedItem);
+
+
+  // productData(handle)
   
   // Free Item Addition
   if (theme.cartSettings.giftItem.enabled) {
