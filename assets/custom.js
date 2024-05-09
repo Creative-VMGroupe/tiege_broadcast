@@ -218,11 +218,11 @@ document.addEventListener('theme:product:add', function(e) {
       if (theme.cartSettings.giftItem.method == "cart") {
         let minCartValue = parseInt(theme.cartSettings.giftItem.cartValue * 100);
         if (data.total_price > minCartValue) {
-          if (!giftExists) {
+          if (!giftExists.length) {
             addItemtoCart(theme.cartSettings.giftItem.variantId);
           }
         } else {
-          if (giftExists) {
+          if (giftExists.length) {
             addItemtoCart(theme.cartSettings.giftItem.variantId);
           }
         }
