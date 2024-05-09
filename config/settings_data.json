@@ -58,10 +58,10 @@
     "overlay_text": false,
     "product_grid_aspect_ratio": 1,
     "sale_tags_enable": true,
-    "sale_bg_color": "#00ad2d",
+    "sale_bg_color": "#42b029",
     "sale_text_color": "#f0f0f0",
     "badge_bg_color": "#ffffff",
-    "badge_text_color": "#00ad2d",
+    "badge_text_color": "#42b029",
     "quickview_enable": true,
     "show_siblings": true,
     "show_cutline": true,
@@ -91,6 +91,14 @@
     "submenu_link_hover_color": "#AB8C52",
     "footer_link_hover": "#212121",
     "sale_background_color": "#be563f",
+    "sections": {
+      "gift-card": {
+        "type": "gift-card",
+        "settings": {
+          "logo_max_limit": 300
+        }
+      }
+    },
     "content_for_index": [
 
     ],
