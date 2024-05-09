@@ -206,14 +206,11 @@ function removeItemfromCart(lineItem) {
 
 async function productData(handle) {
   const request = await fetch(`https://${Shopify.shop}/products/${handle}?view=json`);
-  console.log(request);
   const response = await request.json();
   return response;
 }
 document.addEventListener('theme:product:add', function(e) {
   let addedItem = e.detail.response;
-
-  console.log(addedItem);
 
   productData(addedItem.handle).then((data) => { console.log(data); });
   
