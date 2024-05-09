@@ -285,7 +285,7 @@
                     {%- render 'product-buttons' product: product, current_variant: current_variant, unique: unique, block: block, block_style: block_style, product_form_id: product_form_id, preorder: preorder -%}
 
                   {%- when 'tab_richtext' -%}
-                    {%- render 'product-description'  product: product, block: block, block_style: block_style -%}
+                    {%- render 'product-description-metafield'  product: product, block: block, block_style: block_style -%}
 
                   {%- when 'inventory_countdown' -%}
                     {% comment %} Product inventory {% endcomment %}
