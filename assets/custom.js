@@ -215,8 +215,7 @@ document.addEventListener('theme:product:add', function(e) {
 
   console.log(addedItem);
 
-
-  // productData(handle)
+  // productData(addedItem.handle).then();
   
   // Free Item Addition
   if (theme.cartSettings.giftItem.enabled) {
