@@ -126,8 +126,8 @@
         "show_date": true,
         "show_button": true,
         "show_comments": false,
-        "padding_top": 60,
-        "padding_bottom": 0
+        "padding_top": 80,
+        "padding_bottom": 48
       }
     },
     "17119888055fc2a3da": {
