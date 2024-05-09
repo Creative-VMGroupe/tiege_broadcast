@@ -201,8 +201,6 @@ function changeItemQty(lineItem, qty) {
   });
 }
 
-console.log(theme.cartSettings.giftItem.collection.split(","));
-
 document.addEventListener('theme:product:add', function(e) {
   let addedItem = e.detail.response;
 
@@ -234,7 +232,11 @@ document.addEventListener('theme:product:add', function(e) {
           }
         }
       } else {
-        
+        let eligibleProducts = theme.cartSettings.giftItem.collection.split(",");
+        console.log(eligibleProducts.includes(theme.cartSettings.giftItem.productId));
+        if (eligibleProducts.includes(theme.cartSettings.giftItem.productId) && !giftExists.length) {
+          // Add gift Item
+        }
       }
     }
 
