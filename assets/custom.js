@@ -202,10 +202,11 @@ function removeItemfromCart(lineItem) {
   });
 }
 
-console.log(theme.cartSettings.products);
-
 document.addEventListener('theme:product:add', function(e) {
   let addedItem = e.detail.response;
+
+  let isCurrentAddedItemRoutine = '';
+  const allProducts = theme.cartSettings.products;
   
   fetch(window.theme.routes.cart_url + '.json')
   .then(response => response.json())
@@ -214,6 +215,8 @@ document.addEventListener('theme:product:add', function(e) {
     // Free Item Addition
     if (theme.cartSettings.giftItem.enabled) {
       let giftExists = data.items.filter((item) => item.product_id == theme.cartSettings.giftItem.productId);
+      console.log(giftExists);
+      let giftQty = giftExists[0];
       if (theme.cartSettings.giftItem.method == "cart") {
         let minCartValue = parseInt(theme.cartSettings.giftItem.cartValue * 100);
         if (data.total_price > minCartValue) {
