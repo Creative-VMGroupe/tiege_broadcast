@@ -271,6 +271,7 @@ document.addEventListener('theme:product:add', function(e) {
         let otherItemIds = otherItems.map((item) => item.variant_id);
         let variantsOfRoutine = allProducts[routineItem.product_id]['routineVariants'].map((item) => item.id);
         let haveCommonItems = otherItemIds.some(item => variantsOfRoutine.includes(item));
+        // Remove Common Element
         console.log(otherItems, otherItemIds, variantsOfRoutine, haveCommonItems);
       }
       
