@@ -82,9 +82,9 @@
         "featured_image_iwGEEb"
       ],
       "custom_css": [
-        ".range__line span {background: #00ad2d; border-color: #00ad2d;}",
-        ".range__dot span {background-color: #00ad2d; border-color: #00ad2d;}",
-        ".range__line {border-color: #00ad2d;}"
+        ".range__line span {background: #42B029; border-color: #42B029;}",
+        ".range__dot span {background-color: #42B029; border-color: #42B029;}",
+        ".range__line {border-color: #42B029;}"
       ],
       "settings": {
         "enable_sort": true,
