@@ -26307,7 +26307,7 @@ body.has-line-design.grid-compact
 .sub-letter-spacing-20 {
   letter-spacing: 20px !important;
 }
-.stars__subheading-custom {
+.hero__content .stars__subheading-custom {
   font-size: 24px !important;
   letter-spacing: 10px !important;
 }
