@@ -214,7 +214,7 @@ document.addEventListener('theme:product:add', function(e) {
     .then(response => response.json())
     .then(data => {
       let giftExists = data.items.filter((item) => item.product_id == theme.cartSettings.giftItem.productId);
-      console.log(giftExists);
+      console.log(giftExists, giftExists[0].key);
       if (theme.cartSettings.giftItem.method == "cart") {
         let minCartValue = parseInt(theme.cartSettings.giftItem.cartValue * 100);
         if (data.total_price > minCartValue) {
@@ -223,7 +223,7 @@ document.addEventListener('theme:product:add', function(e) {
           }
         } else {
           if (giftExists.length) {
-            addItemtoCart(theme.cartSettings.giftItem.variantId);
+            removeItemfromCart(giftExists[0].key);
           }
         }
       } else {
