@@ -166,9 +166,9 @@
           "type": "text-slide",
           "disabled": true,
           "settings": {
+            "stars_enabled": false,
             "subheading": "★★★★★",
             "subheading_font": 14,
-            "sub_letter_spacing": 5,
             "title": "Proof",
             "heading_font": 32,
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
@@ -186,9 +186,9 @@
         "text_slide_Ey9Vkb": {
           "type": "text-slide",
           "settings": {
+            "stars_enabled": true,
             "subheading": "★★★★★",
             "subheading_font": 16,
-            "sub_letter_spacing": 0,
             "title": "Proof",
             "heading_font": 40,
             "text": "<p>\"Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.\"<\/p>",
@@ -233,9 +233,9 @@
         "text_slide_fLBXEE": {
           "type": "text-slide",
           "settings": {
+            "stars_enabled": false,
             "subheading": "",
             "subheading_font": 16,
-            "sub_letter_spacing": 0,
             "title": "Willow Bark Extract",
             "heading_font": 40,
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
@@ -253,9 +253,9 @@
         "text_slide_i3an9N": {
           "type": "text-slide",
           "settings": {
+            "stars_enabled": false,
             "subheading": "",
             "subheading_font": 16,
-            "sub_letter_spacing": 0,
             "title": "Ingredient #2",
             "heading_font": 40,
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
