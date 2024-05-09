@@ -86,7 +86,7 @@
           "settings": {
             "position": "1",
             "image": "shopify:\/\/shop_images\/Skin_Level1-1x1_b459dbfa-e83b-4805-a2a3-c9480df2a8d8.jpg",
-            "aspect_ratio": 1,
+            "aspect_ratio": 0.7,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
@@ -102,7 +102,7 @@
           "settings": {
             "position": "1",
             "video": "shopify:\/\/files\/videos\/f7db5c375de94bceb432a68695da9d5d.mov",
-            "aspect_ratio": 1,
+            "aspect_ratio": 0.7,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
