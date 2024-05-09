@@ -153,10 +153,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function addItemtoCart(variantId) {
   let formData = {
-   'items': [{
-    'id': variantId,
-    'quantity': 1
-    }]
+   'items': [
+     {
+      'id': variantId,
+      'quantity': 1
+    }
+   ]
   };
   fetch(window.Shopify.routes.root + 'cart/add.js', {
     method: 'POST',
