@@ -25813,9 +25813,9 @@ div.rc_popup {
   display: none;
 }
 @media (min-width: 750px) {
-  .blog__title-custom {
+  /* .blog__title-custom {
     min-height: 52px;
-  }
+  } */
 }
 /*Filter*/
 .range__line span {
