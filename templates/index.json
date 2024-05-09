@@ -555,7 +555,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Our high-quality skin care systems work to maximize results and eliminate guesswork for men of all skin types.<\/p>",
-            "text_font": 14,
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 16
           }
