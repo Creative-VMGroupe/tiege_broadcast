@@ -202,7 +202,7 @@ function removeItemfromCart(lineItem) {
   });
 }
 
-console.log(cartSettings.products);
+console.log(theme.cartSettings.products);
 
 document.addEventListener('theme:product:add', function(e) {
   let addedItem = e.detail.response;
