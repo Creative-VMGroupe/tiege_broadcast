@@ -212,10 +212,12 @@ document.addEventListener('theme:product:add', function(e) {
     // Free Item Addition
     if (theme.cartSettings.giftItem.enabled) {
       let giftExists = data.items.filter((item) => item.product_id == theme.cartSettings.giftItem.productId);
-      let giftQty = giftExists[0]['quantity'];
-
-      if (giftQty > 1) {
-        changeItemQty(giftExists[0].key, '1');
+      if (giftExists.length) {
+        let giftQty = giftExists[0]['quantity'];
+  
+        if (giftQty > 1) {
+          changeItemQty(giftExists[0].key, '1');
+        }
       }
       
       if (theme.cartSettings.giftItem.method == "cart") {
