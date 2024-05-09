@@ -243,8 +243,9 @@ document.addEventListener('theme:product:add', function(e) {
       }
     }
 
+    // Single Routine Checks
+    console.log(data.items);
     if (theme.cartSettings.singleRoutine.enabled && isCurrentAddedItemRoutine) {
-            
     }
   });
 });
