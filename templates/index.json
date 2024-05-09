@@ -92,7 +92,7 @@
         "text_alignment": "text-center",
         "reverse_blocks": false,
         "bg_color": "#000000",
-        "color": "#42B029",
+        "color": "#42b029",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -178,6 +178,7 @@
         "text_slide_MWCM8L": {
           "type": "text-slide",
           "settings": {
+            "stars_enabled": false,
             "subheading": "★★★★★",
             "subheading_font": 16,
             "title": "\"Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.\"",
@@ -197,6 +198,7 @@
         "text_slide_gDLxQn": {
           "type": "text-slide",
           "settings": {
+            "stars_enabled": false,
             "subheading": "★★★★★",
             "subheading_font": 16,
             "title": "Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.",
@@ -231,7 +233,7 @@
         "text_alignment": "text-center",
         "bg_color": "#000000",
         "color": "#ffffff",
-        "sub_color": "#42B029",
+        "sub_color": "#42b029",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -671,7 +673,7 @@
         "show_images": true,
         "bg_color": "#000000",
         "color": "#f7f9fa",
-        "dot_background": "#42B029",
+        "dot_background": "#42b029",
         "width": "wrapper--full",
         "mobile_height": "screen-height-one-third--mobile",
         "padding_lr": 40,
@@ -734,7 +736,7 @@
         "show_images": true,
         "bg_color": "#f7f7f7",
         "color": "",
-        "dot_background": "#42B029",
+        "dot_background": "#42b029",
         "width": "wrapper--full",
         "mobile_height": "screen-height-one-third--mobile",
         "padding_lr": 50,
