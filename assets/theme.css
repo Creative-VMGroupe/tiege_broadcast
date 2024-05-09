@@ -25812,6 +25812,12 @@ div.rc_popup {
 .article__excerpt {
   display: none;
 }
+.article__meta {
+  margin-bottom: 8px;
+}
+.article__link {
+  margin-top: 0;
+}
 @media (min-width: 750px) {
   /* .blog__title-custom {
     min-height: 52px;
