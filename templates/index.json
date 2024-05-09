@@ -131,6 +131,7 @@
         "heading_kCi8Xw",
         "text_bQLDGm"
       ],
+      "disabled": true,
       "custom_css": [
         ".hero__content:has(.hero__media) {padding-bottom: 0;}"
       ],

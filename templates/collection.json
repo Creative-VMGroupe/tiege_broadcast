@@ -157,7 +157,7 @@
           "type": "heading",
           "settings": {
             "title": "Routine Quiz",
-            "heading_font": 40,
+            "heading_size": 40,
             "padding_bottom": 16
           }
         },
@@ -165,7 +165,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_font": 16,
+            "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
           }
