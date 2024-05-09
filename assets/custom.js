@@ -233,7 +233,7 @@ document.addEventListener('theme:product:add', function(e) {
         }
       } else {
         let eligibleProducts = theme.cartSettings.giftItem.collection.split(",");
-        console.log(eligibleProducts.includes(theme.cartSettings.giftItem.productId));
+        console.log(eligibleProducts.includes(addedItem.product_id));
         if (eligibleProducts.includes(theme.cartSettings.giftItem.productId) && !giftExists.length) {
           // Add gift Item
         }
