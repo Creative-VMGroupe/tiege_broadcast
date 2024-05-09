@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-//  https://tiege-hanley-store.myshopify.com/products/{{PRODUCT_HANDLE}}?view=json
+//  https://tiege-hanley-store.myshopify.com/
 
 function addItemtoCart(variantId) {
   let formData = {
@@ -204,17 +204,22 @@ function removeItemfromCart(lineItem) {
   });
 }
 
+async function productData(handle) {
+  const request = await fetch(`https://${Shopify.shop}/products/${handle}?view=json`);
+  console.log(request);
+  const response = await request.json();
+  return response;
+}
 document.addEventListener('theme:product:add', function(e) {
   let addedItem = e.detail.response;
-  console.log(addedItem.handle);
-
+  
+  
   // Free Item Addition
   if (theme.cartSettings.giftItem.enabled) {
     fetch(window.theme.routes.cart_url + '.json')
     .then(response => response.json())
     .then(data => {
       let giftExists = data.items.filter((item) => item.product_id == theme.cartSettings.giftItem.productId);
-      console.log(giftExists, giftExists[0].key);
       if (theme.cartSettings.giftItem.method == "cart") {
         let minCartValue = parseInt(theme.cartSettings.giftItem.cartValue * 100);
         if (data.total_price > minCartValue) {
