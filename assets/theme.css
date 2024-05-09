@@ -26273,7 +26273,8 @@ body.has-line-design.grid-compact
 }
 /*Buttons*/
 .btn__text{
-text-transform: uppercase;  
+  text-transform: uppercase;  
+  letter-spacing: var(--BTN-LETTER-SPACING);
 }
 /*Image with Slider - Tiege*/
 @media (min-width: 750px) {
