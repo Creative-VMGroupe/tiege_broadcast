@@ -183,7 +183,7 @@ function addItemtoCart(variantId) {
 
 function changeItemQty(lineItem, qty) {
   var formData = new FormData();
-  formData.append(`updates['${lineItem}']`, qty);
+  formData.append(`updates[${lineItem}]`, qty);
   fetch(window.Shopify.routes.root + 'cart/update.js', {
     method: 'POST',
     body: formData
