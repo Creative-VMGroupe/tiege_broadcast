@@ -20,6 +20,7 @@
   assign bg_color_transparent = bg_color | color_modify: 'alpha', 0
   assign text_color = section.settings.color
   assign sub_color = section.settings.sub_color
+  
 
   if text_slide_blocks.size > 1
     assign enable_text_slider = true
@@ -172,6 +173,7 @@
             assign title = block.settings.title
             assign text = block.settings.text
             assign button_text = block.settings.button_text
+            assign star_styling = block.settings.stars_enabled
           -%}
 
           <div
@@ -195,7 +197,7 @@
                   {%- if subheading != blank -%}
                     {%- assign font_size_class = block.settings.subheading_font | prepend: 'subheading-size-' -%}
                     {%- assign sub_letter_spacing = block.settings.sub_letter_spacing | prepend: 'sub-letter-spacing-' -%}
-                    <p class="hero__subheading {{ font_size_class }} {{ sub_letter_spacing }}">
+                    <p class="hero__subheading {{ font_size_class }} {{ sub_letter_spacing }} {%- if star_styling -%} stars__subheading-custom {%- endif -%}">
                       {{ subheading }}
                     </p>
                   {%- endif -%}
