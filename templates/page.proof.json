@@ -258,7 +258,7 @@
           "type": "heading",
           "settings": {
             "title": "95%",
-            "text_size": 24,
+            "text_size": 40,
             "padding_bottom": 16
           }
         },
@@ -307,7 +307,7 @@
           "type": "heading",
           "settings": {
             "title": "96%",
-            "text_size": 24,
+            "text_size": 40,
             "padding_bottom": 16
           }
         },
