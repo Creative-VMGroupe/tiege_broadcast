@@ -244,7 +244,8 @@ document.addEventListener('theme:product:add', function(e) {
     }
 
     // Single Routine Checks
-    console.log(data.items);
+    let getItems = data.items.map((item) => item.product_id);
+    console.log(getItems);
     if (theme.cartSettings.singleRoutine.enabled && isCurrentAddedItemRoutine) {
     }
   });
