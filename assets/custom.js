@@ -213,7 +213,7 @@ document.addEventListener('theme:product:add', function(e) {
     fetch(window.theme.routes.cart_url + '.json')
     .then(response => response.json())
     .then(data => {
-      let giftExists = data.items.filter((item) => item.product_id == theme.cartSettings.giftItem.productId).length;
+      let giftExists = data.items.filter((item) => item.product_id == theme.cartSettings.giftItem.productId);
       console.log(giftExists);
       if (theme.cartSettings.giftItem.method == "cart") {
         let minCartValue = parseInt(theme.cartSettings.giftItem.cartValue * 100);
