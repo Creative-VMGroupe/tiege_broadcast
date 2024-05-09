@@ -205,8 +205,10 @@ function removeItemfromCart(lineItem) {
 document.addEventListener('theme:product:add', function(e) {
   let addedItem = e.detail.response;
 
-  let isCurrentAddedItemRoutine = '';
   const allProducts = theme.cartSettings.products;
+  let isCurrentAddedItemRoutine = allProducts[addedItem.id];
+
+  console.log(isCurrentAddedItemRoutine);
   
   fetch(window.theme.routes.cart_url + '.json')
   .then(response => response.json())
