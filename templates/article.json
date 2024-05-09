@@ -291,8 +291,7 @@
       "custom_css": [
         ".article__meta {margin-bottom: 8px;}",
         ".article__excerpt {display: none;}",
-        ".article__link {margin-top: 0;}",
-        "h2 {text-align: start;}"
+        ".article__link {margin-top: 0;}"
       ],
       "settings": {
         "blog_name": "news",
