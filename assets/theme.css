@@ -26619,6 +26619,12 @@ flex: 1;
   --padding-top: calc(var(--PT) * .6);
   --padding-bottom: calc(var(--PB) * .6);
 }
+.accordion-vm-section .oke-w-writeReview {
+  background: none;
+}
+.accordion-vm-section .oke-w-writeReview:hover {
+  background: #42B029;
+}
 @media(min-width: 750px){
   .accordion-vm-section {
       --padding-top: 80px;
