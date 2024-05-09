@@ -253,7 +253,7 @@
                   routineVariants : [],
                 {% endif %}
                 tags : {{ product.tags | json }},
-                collections: {{ product.collections | json }}
+                collections: {{ product.collections | map: 'id' | join: ',' }}
               }
               {% endcapture %}
               {{ product.id }}: {{- jsonData -}}
