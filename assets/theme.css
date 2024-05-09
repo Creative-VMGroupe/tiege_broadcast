@@ -12582,6 +12582,7 @@ main-search .input-holder {
 .radio__fieldset__label {
   font-size: calc(var(--font-3) * var(--FONT-ADJUST-BODY));
   font-weight: var(--FONT-WEIGHT-BODY-BOLD);
+  letter-spacing: var(--BTN-LETTER-SPACING);
 }
 
 .form__wrapper--classic .radio__legend__label--text {
@@ -25544,9 +25545,6 @@ body.has-header-sticky .timeline {
 /* .product__content .product__block.tabs-wrapper {
   padding-bottom: 80px;
 } */
-.radio__legend__label {
-  letter-spacing: var(--BTN-LETTER-SPACING);
-}
 .product__page product-modal.product__block  {
   margin-bottom: 8px !important;
 }
