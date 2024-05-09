@@ -151,6 +151,58 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //  https://tiege-hanley-store.myshopify.com/products/{{PRODUCT_HANDLE}}?view=json
 
+function addItemtoCart(variantId) {
+  let formData = {
+   'items': [{
+    'id': variantId,
+    'quantity': 1
+    }]
+  };
+  fetch(window.Shopify.routes.root + 'cart/add.js', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(formData)
+  })
+  .then(response => response.json())
+  .then(data => {
+    // Update the cart logic here
+    var eventClose = new Event('theme:cart-drawer:close', { bubbles: true, cancelable: false });
+    var cartUpdate = new Event('theme:cart:add', { bubbles: true, cancelable: false });
+    var eventOpen = new Event('theme:cart-drawer:open', { bubbles: true, cancelable: false });
+    document.dispatchEvent(eventClose);
+    document.dispatchEvent(cartUpdate);
+    document.dispatchEvent(eventOpen);
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+  });
+}
+
+function removeItemfromCart(lineItem) {
+  var formData = new FormData();
+  formData.append(`updates[${lineItem}]`, 0);
+  fetch(window.Shopify.routes.root + 'cart/update.js', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: formData
+  .then(response => response.json())
+  .then(data => {
+    // Update the cart logic here
+    var eventClose = new Event('theme:cart-drawer:close', { bubbles: true, cancelable: false });
+    var cartUpdate = new Event('theme:cart:add', { bubbles: true, cancelable: false });
+    var eventOpen = new Event('theme:cart-drawer:open', { bubbles: true, cancelable: false });
+    document.dispatchEvent(eventClose);
+    document.dispatchEvent(cartUpdate);
+    document.dispatchEvent(eventOpen);
+  }).catch((error) => {
+    console.error('Error:', error);
+  });
+}
+
 document.addEventListener('theme:product:add', function(e) {
   let addedItem = e.detail.response;
   console.log(addedItem.handle);
@@ -161,40 +213,16 @@ document.addEventListener('theme:product:add', function(e) {
     .then(response => response.json())
     .then(data => {
       let giftExists = data.items.filter((item) => item.product_id == theme.cartSettings.giftItem.productId).length;
+      console.log(giftExists);
       if (theme.cartSettings.giftItem.method == "cart") {
         let minCartValue = parseInt(theme.cartSettings.giftItem.cartValue * 100);
         if (data.total_price > minCartValue) {
           if (!giftExists) {
-            let formData = {
-             'items': [{
-              'id': theme.cartSettings.giftItem.variantId,
-              'quantity': 1
-              }]
-            };
-            fetch(window.Shopify.routes.root + 'cart/add.js', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json'
-              },
-              body: JSON.stringify(formData)
-            })
-            .then(response => response.json())
-            .then(data => {
-              console.log('Event Triggered');
-              var eventClose = new Event('theme:cart-drawer:close', { bubbles: true, cancelable: false });
-              var cartUpdate = new Event('theme:cart:add', { bubbles: true, cancelable: false });
-              var eventOpen = new Event('theme:cart-drawer:open', { bubbles: true, cancelable: false });
-              document.dispatchEvent(eventClose);
-              document.dispatchEvent(cartUpdate);
-              document.dispatchEvent(eventOpen);
-            })
-            .catch((error) => {
-              console.error('Error:', error);
-            });
+            addItemtoCart(theme.cartSettings.giftItem.variantId);
           }
         } else {
           if (giftExists) {
-            // Remove Gift Item
+            addItemtoCart(theme.cartSettings.giftItem.variantId);
           }
         }
       } else {
