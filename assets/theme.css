@@ -25812,6 +25812,17 @@ div.rc_popup {
   }
 }
 /*Filter*/
+.range__line span {
+  background: #00ad2d;
+  border-color: #00ad2d;
+}
+.range__dot span {
+  background-color: #00ad2d;
+  border-color: #00ad2d;
+}
+.range__line {
+  border-color: #00ad2d;
+}
 .filter__heading-custom {
   font-size: 40px !important;
   letter-spacing: var(--ltr-spacing-tiege) !important;
