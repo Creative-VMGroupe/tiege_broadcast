@@ -169,7 +169,6 @@ function addItemtoCart(variantId) {
   .then(data => {
     // Update the cart logic here
     var eventClose = new Event('theme:cart-drawer:close', { bubbles: true, cancelable: false });
-    var cartUpdate = new Event('theme:cart:change', { bubbles: true, cancelable: false });
     var eventOpen = new Event('theme:cart-drawer:open', { bubbles: true, cancelable: false });
     document.dispatchEvent(eventClose);
     document.dispatchEvent(cartUpdate);
@@ -194,7 +193,6 @@ function removeItemfromCart(lineItem) {
   .then(data => {
     // Update the cart logic here
     var eventClose = new Event('theme:cart-drawer:close', { bubbles: true, cancelable: false });
-    var cartUpdate = new Event('theme:cart:change', { bubbles: true, cancelable: false });
     var eventOpen = new Event('theme:cart-drawer:open', { bubbles: true, cancelable: false });
     document.dispatchEvent(eventClose);
     document.dispatchEvent(cartUpdate);
