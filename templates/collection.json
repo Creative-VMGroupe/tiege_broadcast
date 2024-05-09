@@ -5,10 +5,10 @@
       "settings": {
         "show_title": true,
         "show_description": true,
-        "flex_align": "align--middle-center",
+        "flex_align": "align--bottom-left",
         "bg_color": "",
         "color": "#000000",
-        "show_image": false,
+        "show_image": true,
         "banner_layout": "overlay",
         "height": "screen-height-one-third",
         "mobile_height": "two-fifty-height-hero--mobile",
@@ -106,14 +106,14 @@
           "type": "heading",
           "settings": {
             "title": "Find My Routine",
-            "heading_size": 6
+            "heading_font": 40
           }
         },
         "text_Mrehmh": {
           "type": "text",
           "settings": {
             "description": "A quick guide you to your routine.",
-            "text_size": 3,
+            "text_font": 16,
             "text_style": "font-body"
           }
         },
@@ -157,7 +157,7 @@
           "type": "heading",
           "settings": {
             "title": "Routine Quiz",
-            "text_size": 10,
+            "heading_font": 40,
             "padding_bottom": 16
           }
         },
@@ -165,7 +165,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 3,
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 16
           }
