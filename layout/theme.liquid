@@ -209,6 +209,54 @@
         upgradability : {
           enabled: {{ settings.enable_upgrade_check }},
           alert: "{{ settings.upgrade_alert }}"
+        },
+        products : {
+          {% for product in all_products %}
+            {% capture jsonData %}
+              {
+                {% if product.metafields.custom.is_routine != blank %}
+                isRoutine: {{ product.metafields.custom.is_routine.value }},
+                {% else %}
+                isRoutine: false,
+                {% endif %}
+                {% if product.metafields.custom.next_level_routine != blank %}
+                  nextRoutine : {
+                    id : {{ product.metafields.custom.next_level_routine.value.id }},
+                    handle : "{{ product.metafields.custom.next_level_routine.value.handle }}"
+                  },
+                {% else %}
+                  nextRoutine: false,
+                {% endif %}
+                {% if product.metafields.custom.next_routine_line_item != blank %}
+                  nextRoutineLineItem: {
+                    id: {{ product.metafields.custom.next_routine_line_item.value.id }},
+                    details: {{ product.metafields.custom.next_routine_line_item.value | json }}
+                  },
+                {% else %}
+                  nextRoutineLineItem: false,
+                {% endif %}
+                {% if product.metafields.custom.products_included_in_routine.value != blank %}
+                  routineVariants: [
+                    {% for variant in product.metafields.custom.products_included_in_routine.value %}
+                      {
+                        id: {{ variant.id }},
+                        detail: {{ variant | json }}
+                      {% if forloop.last %}
+                        }
+                      {% else %}
+                        },
+                      {% endif %}
+                    {% endfor %}
+                  ],
+                {% else %}
+                  routineVariants : [],
+                {% endif %}
+                tags : {{ product.tags | json }},
+                collections: {{ product.collections | json }}
+              }
+              {% endcapture %}
+                {{ product.id }}: {{- jsonData -}}
+          {% endfor %}
         }
       }
     };
