@@ -1157,7 +1157,7 @@
         "type": "collection",
         "id": "gift_item_collection",
         "label": "Collection",
-        "info": "If any line item in the cart is part of the above defined collection, the gift item will be added automatically."
+        "info": "The collection must be available on Online Store. If any line item in the cart is part of the above defined collection, the gift item will be added automatically."
       },
       {
         "type": "header",
