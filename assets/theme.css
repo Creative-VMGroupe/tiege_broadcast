@@ -307,9 +307,7 @@ body:not(.is-focused) .flickity-button:focus {
   max-height: 100%;
   border-radius: var(--RADIUS);
 }
-.cxcx {
-  padding: 0
-}
+
 .flickity-prev-next-button {
   overflow: hidden;
 }
