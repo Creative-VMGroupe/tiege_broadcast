@@ -224,7 +224,7 @@ document.addEventListener('theme:product:add', function(e) {
   .then(response => response.json())
   .then(data => {
     if (theme.cartSettings.giftItem.enabled) {
-      console.log(localStorage.getItem(lastAddedItem));
+      console.log('getLastAddedItem',localStorage.getItem(lastAddedItem));
       let giftExists = data.items.filter((item) => item.product_id == theme.cartSettings.giftItem.productId);
       if (theme.cartSettings.giftItem.method == "cart") {
         let minCartValue = parseInt(theme.cartSettings.giftItem.cartValue * 100);
