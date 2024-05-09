@@ -347,7 +347,7 @@
         "text_slide_XyzJy4": {
           "type": "text-slide",
           "settings": {
-            "stars_enabled": false,
+            "stars_enabled": true,
             "subheading": "★★★★★",
             "subheading_size": 3,
             "sub_letter_spacing": 5,
