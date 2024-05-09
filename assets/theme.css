@@ -26289,13 +26289,7 @@ body.has-line-design.grid-compact
   letter-spacing: var(--BTN-LETTER-SPACING);
 }
 /*Image with Slider - Tiege*/
-@media (min-width: 750px) {
-.brick__slider .flickity-page-dots{
-    padding: var(--outer);
-    width: 50%;
-    right: 0;
-} 
-}
+
 .sub-letter-spacing-0 {
   letter-spacing: 0 !important;
 }
@@ -26315,6 +26309,13 @@ body.has-line-design.grid-compact
   .image-with-slider__container {
   padding-top: 28px !important
 }
+}
+@media (min-width: 750px) {
+.brick__slider .flickity-page-dots{
+    padding: var(--outer);
+    width: 50%;
+    right: 0;
+} 
 }
 /*Media with Text - Tiege*/
 .hero__content:has(.hero__media) {
