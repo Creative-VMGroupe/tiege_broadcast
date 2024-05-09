@@ -222,9 +222,9 @@ document.addEventListener('theme:product:add', function(e) {
   fetch(window.theme.routes.cart_url + '.json')
   .then(response => response.json())
   .then(data => {
+    console.log('getLastAddedItem',localStorage.getItem(lastAddedItem));
     // Free Item Addition
     if (theme.cartSettings.giftItem.enabled) {
-      console.log('getLastAddedItem',localStorage.getItem(lastAddedItem));
       let giftExists = data.items.filter((item) => item.product_id == theme.cartSettings.giftItem.productId);
       if (theme.cartSettings.giftItem.method == "cart") {
         let minCartValue = parseInt(theme.cartSettings.giftItem.cartValue * 100);
