@@ -206,10 +206,9 @@ document.addEventListener('theme:product:add', function(e) {
   let addedItem = e.detail.response;
 
   const allProducts = theme.cartSettings.products;
-  console.log(allProducts, addedItem.product_id);
-  let isCurrentAddedItemRoutine = allProducts[addedItem.id];
+  let isCurrentAddedItemRoutine = allProducts[addedItem.product_id];
 
-  console.log(isCurrentAddedItemRoutine);
+  console.log(allProducts, addedItem.product_id, isCurrentAddedItemRoutine);
   
   fetch(window.theme.routes.cart_url + '.json')
   .then(response => response.json())
