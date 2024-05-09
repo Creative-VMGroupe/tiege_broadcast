@@ -217,8 +217,8 @@ document.addEventListener('theme:product:add', function(e) {
     // Free Item Addition
     if (theme.cartSettings.giftItem.enabled) {
       let giftExists = data.items.filter((item) => item.product_id == theme.cartSettings.giftItem.productId);
-      console.log(giftExists);
-      let giftQty = giftExists[0];
+      let giftQty = giftExists[0]['quantity'];
+      console.log(giftExists, giftQty);
       if (theme.cartSettings.giftItem.method == "cart") {
         let minCartValue = parseInt(theme.cartSettings.giftItem.cartValue * 100);
         if (data.total_price > minCartValue) {
