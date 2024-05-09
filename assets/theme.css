@@ -373,7 +373,7 @@ body:not(.is-focused) .flickity-button:focus {
   padding: 0;
   margin: 0;
   border: 1px solid var(--text);
-  border-color: #00ad2d;
+  border-color: var(--BTN-SECONDARY-BG-COLOR);
   border-radius: 50%;
   font-size: 0;
   line-height: 0;
@@ -410,8 +410,8 @@ body:not(.is-focused) .flickity-button:focus {
 
 [data-dots="line"] .flickity-page-dot.is-selected {
   opacity: 1;
-  background: #00ad2d;
-  border-color: #00ad2d;
+  background: var(--BTN-SECONDARY-BG-COLOR);
+  border-color:var(--BTN-SECONDARY-BG-COLOR);
 }
 
 [data-dots="hidden"] .flickity-page-dot {
@@ -20344,7 +20344,7 @@ body.is-focused .subcollection__item:focus-within .image-overlay-bottom {
 .pagination-custom__page--active {
   position: relative;
   padding: 2px;
-  border-bottom: 1px solid #00ad2d;
+  border-bottom: 1px solid var(--BTN-SECONDARY-BG-COLOR);
   /* box-shadow: 0 0 0 1px currentColor; */
 }
 
@@ -25338,7 +25338,7 @@ body.has-header-sticky .timeline {
 }
 
 .icon_sub-custom {
-  color: #00ad2d;
+  color: var(--BTN-SECONDARY-BG-COLOR);
   margin: 10px 0;
 }
 .member-icon_container {
@@ -25666,7 +25666,7 @@ background-size: 0% 1px;
 .rc-radio--active input{
     appearance: none;
     padding: 8px;
-    background-color: #00ad2d !important;
+    background-color: var(--BTN-SECONDARY-BG-COLOR) !important;
     border-radius: 50%;
 }
 .product__page .rc-radio {
@@ -25831,15 +25831,15 @@ div.rc_popup {
 }
 /*Filter*/
 .range__line span {
-  background: #00ad2d;
-  border-color: #00ad2d;
+  background: var(--BTN-SECONDARY-BG-COLOR);
+  border-color: var(--BTN-SECONDARY-BG-COLOR);
 }
 .range__dot span {
-  background-color: #00ad2d;
-  border-color: #00ad2d;
+  background-color: var(--BTN-SECONDARY-BG-COLOR);
+  border-color: var(--BTN-SECONDARY-BG-COLOR);
 }
 .range__line {
-  border-color: #00ad2d;
+  border-color: var(--BTN-SECONDARY-BG-COLOR);
 }
 .filter__heading-custom {
   font-size: 40px !important;
@@ -25921,7 +25921,7 @@ div.rc_popup {
 }
 
 .product__block .rc_widget__option--active input{
-  background-color: #00ad2d!important;
+  background-color: var(--BTN-SECONDARY-BG-COLOR) !important;
 }
 .product-quick-add__content .select__fieldset .select-popout svg {
   position: static;
