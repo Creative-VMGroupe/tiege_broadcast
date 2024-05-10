@@ -381,7 +381,7 @@
         "grid": 3,
         "compact": true,
         "width": "wrapper--full-padded",
-        "height": "screen-height-one-half",
+        "height": "screen-height-two-thirds",
         "mobile_height": "screen-height-one-half--mobile",
         "heading": "Media",
         "heading_position": "text-center",
