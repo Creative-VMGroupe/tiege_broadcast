@@ -9,7 +9,7 @@
 
 // Get the timeline element
 var timeline = document.querySelector('.timeline__inner');
-
+console.log(timeline)
 // Function to enable dragging behavior
 function enableDragging() {
     // Variables to keep track of mouse position
