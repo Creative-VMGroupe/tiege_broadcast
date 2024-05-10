@@ -9,30 +9,34 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   if (window.innerWidth > 750) {
-    const timelineInner = document.getElementById('timelineInner');
-    let isDragging = false;
-    let initialX = 0;
-    let scrollLeft = 0;
+    
+let mouseDown = false;
+let startX, scrollLeft;
+const slider = document.getElementById('timelineInner');
 
-    timelineInner.addEventListener('mousedown', (e) => {
-      isDragging = true;
-      initialX = e.clientX - timelineInner.offsetLeft;
-      scrollLeft = timelineInner.scrollLeft;
-      timelineInner.classList.add('dragging');
-    });
+const startDragging = (e) => {
+  mouseDown = true;
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+}
 
-    timelineInner.addEventListener('mouseup', () => {
-      isDragging = false;
-      timelineInner.classList.remove('dragging');
-    });
+const stopDragging = (e) => {
+  mouseDown = false;
+}
 
-    timelineInner.addEventListener('mousemove', (e) => {
-      if (!isDragging) return;
-      e.preventDefault();
-      const newX = e.clientX - timelineInner.offsetLeft;
-      const deltaX = newX - initialX;
-      timelineInner.scrollLeft = scrollLeft - deltaX;
-    });
+const move = (e) => {
+  e.preventDefault();
+  if(!mouseDown) { return; }
+  const x = e.pageX - slider.offsetLeft;
+  const scroll = x - startX;
+  slider.scrollLeft = scrollLeft - scroll;
+}
+
+// Add the event listeners
+slider.addEventListener('mousemove', move, false);
+slider.addEventListener('mousedown', startDragging, false);
+slider.addEventListener('mouseup', stopDragging, false);
+
   }
 });
 
