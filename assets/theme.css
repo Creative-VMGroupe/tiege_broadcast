@@ -26603,10 +26603,7 @@ flex: 1;
   transition-delay: 0s !important;
   animation-duration: 0s !important;
 }
-/*Video Block - VM*/
-.hero-block__video-custom {
-  position: static !important;
-}
+
 /*Rich Text*/
 @media (max-width: 749px) {
 .section-padding.rich-text_image_padding {
@@ -26643,4 +26640,8 @@ flex: 1;
     padding-top: 0px;
     padding-bottom: 0px;
   }
+}
+/*Video Block - VM*/
+.hero-block__video-custom {
+  position: static !important;
 }
