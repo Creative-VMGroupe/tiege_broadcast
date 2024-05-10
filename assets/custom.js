@@ -9,37 +9,40 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   if (window.innerWidth > 750) {
-    
-let mouseDown = false;
-let startX, scrollLeft;
-const slider = document.getElementById('timelineInner');
-console.log('Excecuted')
-const startDragging = (e) => {
-  mouseDown = true;
-  console.log(slider);
-  startX = e.pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;
-}
+    // Select all elements with the class 'timeline__inner'
+    const sliders = document.querySelectorAll('.timeline__inner');
 
-const stopDragging = (e) => {
-  mouseDown = false;
-}
+    // Iterate over each 'timeline__inner' element
+    sliders.forEach(slider => {
+      let mouseDown = false;
+      let startX, scrollLeft;
 
-const move = (e) => {
-  e.preventDefault();
-  if(!mouseDown) { return; }
-  const x = e.pageX - slider.offsetLeft;
-  const scroll = x - startX;
-  slider.scrollLeft = scrollLeft - scroll;
-}
+      const startDragging = (e) => {
+        mouseDown = true;
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+      };
 
-// Add the event listeners
-slider.addEventListener('mousemove', move, false);
-slider.addEventListener('mousedown', startDragging, false);
-slider.addEventListener('mouseup', stopDragging, false);
+      const stopDragging = () => {
+        mouseDown = false;
+      };
 
+      const move = (e) => {
+        e.preventDefault();
+        if (!mouseDown) { return; }
+        const x = e.pageX - slider.offsetLeft;
+        const scroll = x - startX;
+        slider.scrollLeft = scrollLeft - scroll;
+      };
+
+      // Add event listeners for mouse interactions to each 'timeline__inner' element
+      slider.addEventListener('mousemove', move);
+      slider.addEventListener('mousedown', startDragging);
+      slider.addEventListener('mouseup', stopDragging);
+    });
   }
 });
+
 
 
 
