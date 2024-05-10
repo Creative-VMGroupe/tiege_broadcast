@@ -361,12 +361,13 @@
             "border_color": ""
           }
         },
-        "highlight_jmYJhA": {
+        "highlight_r8JhKC": {
           "type": "highlight",
           "settings": {
-            "heading": "New Arrivals",
+            "heading": "Sales",
             "url": "",
-            "video": "shopify:\/\/files\/videos\/tolstoy_43f7743e-5867-4922-aa81-d03899ca32a6.webm",
+            "video": "shopify:\/\/files\/videos\/7f6cc39eb6db4772b8379a2af9108d16.mp4",
+            "image": "shopify:\/\/shop_images\/IMG_5261_VSCO_dadb3224-ffb7-49c5-a6b4-ff2ce31e2a09.jpg",
             "color": "",
             "bg_color": "#f0f0f0",
             "border_color": ""
@@ -376,7 +377,7 @@
       "block_order": [
         "highlight_UEK9cp",
         "highlight_cRyCyg",
-        "highlight_jmYJhA"
+        "highlight_r8JhKC"
       ],
       "settings": {
         "style": "rectangle",
