@@ -28,6 +28,7 @@ function enableDragging() {
     timeline.addEventListener('mousemove', function(e) {
         if (isDragging) {
             var deltaX = e.clientX - startPositionX;
+          console.log(deltaX)
             timeline.scrollLeft = scrollStartPosition - deltaX;
         }
     });
