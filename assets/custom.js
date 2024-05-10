@@ -16,6 +16,7 @@ const slider = document.getElementById('timelineInner');
 
 const startDragging = (e) => {
   mouseDown = true;
+  console.log(slider);
   startX = e.pageX - slider.offsetLeft;
   scrollLeft = slider.scrollLeft;
 }
