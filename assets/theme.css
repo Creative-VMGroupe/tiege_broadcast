@@ -10691,7 +10691,10 @@ countdown-timer {
 .show-message .countdown__message {
   display: block;
 }
-
+/*Video Block - VM*/
+.hero-block__video-custom {
+  position: static !important;
+}
 .timer {
   display: flex;
   flex-direction: column;
