@@ -216,7 +216,7 @@
           "settings": {
             "subheading": "Introducing",
             "subheading_size": 3,
-            "title": "Image with text slider",
+            "title": "Image with text Slider 2",
             "heading_size": 8,
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
             "text_size": 4,
@@ -261,7 +261,7 @@
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png",
         "image_2": "shopify:\/\/shop_images\/ecom_flat_01_wash_01_47d52b33-98c0-45b1-a335-0bb47bcfa9c7.jpg",
-        "image_width": "one-half",
+        "image_width": "three-quarters",
         "text_alignment": "text-left",
         "bg_color": "",
         "color": "",
