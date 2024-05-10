@@ -9,6 +9,7 @@
   assign text = section.settings.text
   assign animation_anchor = '#IndexTimeline--' | append: section.id
   assign animation_order = 0
+  assign desktop_height = section.settings.height
 -%}
 
 <section id="IndexTimeline--{{ section.id }}"
@@ -81,7 +82,7 @@
                     <div class="timeline__image-inner">
                       {%- liquid
                         assign mobile_height = section.settings.mobile_height
-                        assign image_modifier = 'timeline__image-figure ' | append: mobile_height
+                        assign image_modifier = 'timeline__image-figure ' | append: mobile_height | append: desktop_height
                         assign image_cover = true
                         if mobile_height == 'image-height--mobile'
                           assign image_cover = false
@@ -283,6 +284,24 @@
     {
       "type": "header",
       "content": "Mobile"
+    },
+        {
+      "type": "select",
+      "id": "height",
+      "label": "Height",
+      "default": "screen-height-three-quarters",
+      "options": [
+        { "value": "image-height", "label": "Image height" },
+        { "value": "screen-height-full", "label": "Full screen height"},
+        { "value": "screen-height-three-quarters", "label": "3/4 of screen"},
+        { "value": "screen-height-two-thirds", "label": "2/3 of screen"},
+        { "value": "screen-height-one-half", "label": "1/2 of screen"},
+        { "value": "screen-height-one-third", "label": "1/3 of screen"},
+        { "value": "seven-fifty-height-hero", "label": "750px" },
+        { "value": "sixty-fifty-height-hero", "label": "650px" },
+        { "value": "five-fifty-height-hero ", "label": "550px" },
+        { "value": "four-fifty-height-hero", "label": "450px" }
+      ]
     },
     {
       "type": "select",
