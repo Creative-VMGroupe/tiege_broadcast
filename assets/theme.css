@@ -24844,6 +24844,11 @@ body.has-header-sticky .timeline {
 .timeline__row:not(:only-child) {
   width: calc(100% - var(--part-width));
 }
+@media only screen and (min-width: 750px) {
+ .timeline__row:not(:only-child) {
+  width: calc(50% - var(--part-width));
+} 
+}
 /* @media only screen and (min-width: 750px) {
   .timeline__row {
     position: static;
