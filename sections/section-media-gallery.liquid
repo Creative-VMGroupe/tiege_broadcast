@@ -170,7 +170,7 @@
                     {%- endcapture -%}
                     {% if video != blank %} 
                           {%- render 'video' -%}
-                      {% elsif image == true %} 
+                      {% elsif image != blank %} 
                           {%- render 'image' image: image, sizes: sizes, cover: true -%}
                       {% endif %}
                   {%- endif -%}
