@@ -5,7 +5,6 @@
     assign desktop_height = ''
   endif
   assign mobile_height = mobile_height | default: section.settings.mobile_height
-  assign video = block.settings.video
   assign video_popup = section.settings.video_popup | default: section.settings.video_popup_social
   assign image_desktop = section.settings.image | default: video.preview_image
   assign image_mobile = section.settings.mobile_image
