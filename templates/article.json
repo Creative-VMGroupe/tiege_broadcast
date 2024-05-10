@@ -340,8 +340,9 @@
         "highlight_UEK9cp": {
           "type": "highlight",
           "settings": {
-            "heading": "Socks",
+            "heading": "",
             "url": "",
+            "image": "shopify:\/\/shop_images\/ujhwalrajput_1708502532_3307481420620264931_2187891039.jpg",
             "color": "",
             "bg_color": "#f0f0f0",
             "border_color": ""
@@ -378,6 +379,8 @@
         "grid": 3,
         "compact": true,
         "width": "wrapper--full-padded",
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
         "heading": "Media",
         "heading_position": "text-center",
         "heading_size": 40,
