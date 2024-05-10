@@ -343,7 +343,7 @@
             "heading": "Socks",
             "url": "",
             "color": "",
-            "bg_color": "#F0F0F0",
+            "bg_color": "#f0f0f0",
             "border_color": ""
           }
         },
@@ -353,7 +353,7 @@
             "heading": "Sales",
             "url": "",
             "color": "",
-            "bg_color": "#F0F0F0",
+            "bg_color": "#f0f0f0",
             "border_color": ""
           }
         },
@@ -363,7 +363,7 @@
             "heading": "New Arrivals",
             "url": "",
             "color": "",
-            "bg_color": "#F0F0F0",
+            "bg_color": "#f0f0f0",
             "border_color": ""
           }
         }
@@ -376,6 +376,7 @@
       "settings": {
         "style": "rectangle",
         "grid": 3,
+        "compact": true,
         "width": "wrapper--full-padded",
         "heading": "Media",
         "heading_position": "text-center",
