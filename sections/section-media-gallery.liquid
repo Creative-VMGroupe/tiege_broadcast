@@ -13,6 +13,9 @@
   assign columns_small = 2
   assign columns_mobile = section.settings.layout_mobile | plus: 0
 
+  assign desktop_height = section.settings.height
+  assign mobile_height = section.settings.mobile_height
+  
   capture items_classes
     echo 'highlights__items'
     if section.settings.layout_mobile == 'slider'
@@ -159,7 +162,7 @@
             {%- endif -%}
 
               {%- if image or blocks_style != 'button' -%}
-                <div class="highlights__item__background">
+                <div class="highlights__item__background {{ desktop_height }} {{ mobile_height }}">
                   {%- if image -%}
                     {%- capture sizes -%}
                       (min-width: 990px) calc((100vw - 100px) / {{ columns_desktop }}), (min-width: 750px) calc((100vw - 60px) / {{ columns_medium }}), calc(100vw - 32px)
@@ -236,6 +239,42 @@
           {"value": "wrapper--narrow", "label": "Narrow"}
         ]
       },
+      {
+      "type": "select",
+      "id": "height",
+      "label": "Desktop height",
+      "default": "screen-height-one-half",
+      "options": [
+        { "value": "image-height", "label": "Image height" },
+        { "value": "screen-height-full", "label": "Full screen height"},
+        { "value": "screen-height-three-quarters", "label": "3/4 of screen"},
+        { "value": "screen-height-two-thirds", "label": "2/3 of screen"},
+        { "value": "screen-height-one-half", "label": "1/2 of screen"},
+        { "value": "screen-height-one-third", "label": "1/3 of screen"},
+        { "value": "seven-fifty-height-hero", "label": "750px" },
+        { "value": "sixty-fifty-height-hero", "label": "650px" },
+        { "value": "five-fifty-height-hero", "label": "550px" },
+        { "value": "four-fifty-height-hero", "label": "450px" }
+      ]
+    },
+      {
+      "type": "select",
+      "id": "mobile_height",
+      "label": "Mobile height",
+      "default": "screen-height-one-half--mobile",
+      "options": [
+        { "value": "image-height--mobile", "label": "Image height" },
+        { "value": "screen-height-full--mobile", "label": "Full screen height"},
+        { "value": "screen-height-three-quarters--mobile", "label": "3/4 of screen"},
+        { "value": "screen-height-two-thirds--mobile", "label": "2/3 of screen"},
+        { "value": "screen-height-one-half--mobile", "label": "1/2 of screen"},
+        { "value": "screen-height-one-third--mobile", "label": "1/3 of screen"},
+        { "value": "seven-fifty-height-hero--mobile", "label": "750px" },
+        { "value": "sixty-fifty-height-hero--mobile", "label": "650px" },
+        { "value": "five-fifty-height-hero--mobile", "label": "550px" },
+        { "value": "four-fifty-height-hero--mobile", "label": "450px" }
+      ]
+    },
       {
         "type": "header",
         "content": "Text"
