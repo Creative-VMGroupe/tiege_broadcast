@@ -13774,7 +13774,7 @@
         const outerSpace = 16; // wrapper padding using --outer CSS variable
         let mobilePercent = 0;
 
-        if (!isDesktopView && target) {
+        if (target) {
           const targetScrollLeft = target.scrollLeft - outerSpace;
           const targetWidth = target.offsetWidth;
           mobilePercent = (targetScrollLeft / (this.rowsWidth - targetWidth)) * 100;
