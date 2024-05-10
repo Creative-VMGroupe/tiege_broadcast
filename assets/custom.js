@@ -7,48 +7,34 @@
  * the custom.js script import line near the bottom of the file.
  */
 
-// Get the timeline element
-var timeline = document.querySelector('.timeline__inner');
-console.log(timeline)
-// Function to enable dragging behavior
-function enableDragging() {
-    // Variables to keep track of mouse position
-    var isDragging = false;
-    var startPositionX;
-    var scrollStartPosition;
+document.addEventListener('DOMContentLoaded', () => {
+  if (window.innerWidth > 750) {
+    const timelineInner = document.getElementById('timelineInner');
+    let isDragging = false;
+    let initialX = 0;
+    let scrollLeft = 0;
 
-    // Event listener for mouse down
-    timeline.addEventListener('mousedown', function(e) {
-        isDragging = true;
-        startPositionX = e.clientX;
-        scrollStartPosition = timeline.scrollLeft;
+    timelineInner.addEventListener('mousedown', (e) => {
+      isDragging = true;
+      initialX = e.clientX - timelineInner.offsetLeft;
+      scrollLeft = timelineInner.scrollLeft;
+      timelineInner.classList.add('dragging');
     });
 
-    // Event listener for mouse move
-    timeline.addEventListener('mousemove', function(e) {
-        if (isDragging) {
-            var deltaX = e.clientX - startPositionX;
-          console.log(deltaX)
-            timeline.scrollLeft = scrollStartPosition - deltaX;
-        }
+    timelineInner.addEventListener('mouseup', () => {
+      isDragging = false;
+      timelineInner.classList.remove('dragging');
     });
 
-    // Event listener for mouse up
-    timeline.addEventListener('mouseup', function() {
-        isDragging = false;
+    timelineInner.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      e.preventDefault();
+      const newX = e.clientX - timelineInner.offsetLeft;
+      const deltaX = newX - initialX;
+      timelineInner.scrollLeft = scrollLeft - deltaX;
     });
-
-    // Event listener for mouse leave
-    timeline.addEventListener('mouseleave', function() {
-        isDragging = false;
-    });
-}
-
-// Check if the screen width is 750px or higher and not on mobile or tablet
-if (!isMobileOrTablet() && window.innerWidth >= 750) {
-    // Enable dragging behavior
-    enableDragging();
-}
+  }
+});
 
 
 
