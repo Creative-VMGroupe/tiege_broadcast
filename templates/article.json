@@ -333,6 +333,60 @@
       "settings": {
         "include_margins": false
       }
+    },
+    "section_media_gallery_KH9Pep": {
+      "type": "section-media-gallery",
+      "blocks": {
+        "highlight_UEK9cp": {
+          "type": "highlight",
+          "settings": {
+            "heading": "Socks",
+            "url": "",
+            "color": "",
+            "bg_color": "#F0F0F0",
+            "border_color": ""
+          }
+        },
+        "highlight_cRyCyg": {
+          "type": "highlight",
+          "settings": {
+            "heading": "Sales",
+            "url": "",
+            "color": "",
+            "bg_color": "#F0F0F0",
+            "border_color": ""
+          }
+        },
+        "highlight_jmYJhA": {
+          "type": "highlight",
+          "settings": {
+            "heading": "New Arrivals",
+            "url": "",
+            "color": "",
+            "bg_color": "#F0F0F0",
+            "border_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "highlight_UEK9cp",
+        "highlight_cRyCyg",
+        "highlight_jmYJhA"
+      ],
+      "settings": {
+        "style": "rectangle",
+        "grid": 3,
+        "width": "wrapper--full-padded",
+        "heading": "Media",
+        "heading_position": "text-center",
+        "heading_size": 40,
+        "text_size": 16,
+        "color": "",
+        "bg_color": "",
+        "layout_mobile": "slider",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
     }
   },
   "order": [
@@ -343,6 +397,7 @@
     "section_reviews_6RY6Fc",
     "section_columns_zYbRC3",
     "section_blog_43mLzn",
-    "1712723703b76a9181"
+    "1712723703b76a9181",
+    "section_media_gallery_KH9Pep"
   ]
 }
