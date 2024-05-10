@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 let mouseDown = false;
 let startX, scrollLeft;
 const slider = document.getElementById('timelineInner');
-
+console.log('Excecuted')
 const startDragging = (e) => {
   mouseDown = true;
   console.log(slider);
@@ -59,7 +59,7 @@ $(window).scroll(function (event) {
         // Check if the user is at the top of the document
         if (document.documentElement.scrollTop === 0) {
           // Remove the js__header__stuck class from the header
-          console.log('Running')
+          
           $(".header__wrapper").removeClass("js__header__stuck");
         }
       }
@@ -100,9 +100,7 @@ $(window).scroll(function (event) {
         .removeClass("js__header__stuck");
     } else {
       if (st + $(window).height() < $(document).height()) {
-        // console.log(st)
-        // console.log(st + $(window).height() )
-        // console.log($(document).height())
+    
         
         $(".header__wrapper")
           .addClass("js__header__stuck")
@@ -182,7 +180,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Toggle the class for the clicked element
             this.classList.toggle("link-tab__active__underline");
 
-            console.log('Works');
+           
         });
     }
 });
