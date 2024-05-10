@@ -26640,3 +26640,7 @@ flex: 1;
     padding-bottom: 0px;
   }
 }
+/*Video Block - VM*/
+.hero-block__video-custom {
+  position: static !important;
+}
