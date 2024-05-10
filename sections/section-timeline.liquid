@@ -82,7 +82,7 @@
                     <div class="timeline__image-inner">
                       {%- liquid
                         assign mobile_height = section.settings.mobile_height
-                        assign image_modifier = 'timeline__image-figure ' | append: mobile_height | append: desktop_height
+                        assign image_modifier = 'timeline__image-figure ' | append: mobile_height | append: ' ' | append: desktop_height
                         assign image_cover = true
                         if mobile_height == 'image-height--mobile'
                           assign image_cover = false
