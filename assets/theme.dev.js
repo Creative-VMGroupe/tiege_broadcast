@@ -2794,6 +2794,7 @@
         this.cartAddEvent = this.cartAddEvent.bind(this);
         this.updateProgress = this.updateProgress.bind(this);
         this.onCartDrawerClose = this.onCartDrawerClose.bind(this);
+        this.onCartDrawerReload = this.onCartDrawerReload.bind(this);
 
         // Set global event listeners for "Add to cart" and Announcement bar wheel progress
         document.addEventListener('theme:cart:add', this.cartAddEvent);
