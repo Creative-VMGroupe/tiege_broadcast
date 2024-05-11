@@ -2801,6 +2801,8 @@
         document.addEventListener('theme:cart-drawer:close', this.onCartDrawerClose);
         document.addEventListener('theme:announcement:init', this.updateProgress);
 
+        document.addEventListener('theme:cart-drawer:reload', this.onCartDrawerReload);
+        
         // Upsell products
         this.skipUpsellProductsArray = [];
         this.skipUpsellProductEvent();
@@ -2860,6 +2862,33 @@
         if (document.documentElement.hasAttribute(attributes$y.scrollLocked)) {
           document.dispatchEvent(new CustomEvent('theme:scroll:unlock', {bubbles: true}));
         }
+      }
+
+      onCartDrawerReload() {
+        this.onCartDrawerClose();
+        fetch(theme.routes.cart_url)
+          .then((response) => {
+            return response.text();
+          })
+          .then((state) => {
+            const parsedState = JSON.parse(state);
+
+            if (parsedState.errors) {
+              this.cartUpdateFailed = true;
+              this.updateErrorText(itemTitle);
+              this.toggleErrorMessage();
+              this.resetLineItem(currentItem);
+              this.enableCartButtons();
+
+              return;
+            }
+
+            this.getCart();
+          })
+          .catch((error) => {
+            console.log(error);
+            this.enableCartButtons();
+          });
       }
 
       onCartDrawerClose() {
