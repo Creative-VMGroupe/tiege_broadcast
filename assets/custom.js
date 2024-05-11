@@ -238,9 +238,7 @@ function changeItemQty(lineItem, qty) {
   });
 }
 
-document.addEventListener('theme:product:add', function(e) {
-  let addedItem = e.detail.response;
-
+async function addedCartFunction(addedItem) {
   const allProducts = theme.cartSettings.products;
   let isCurrentAddedItemRoutine = allProducts[addedItem.product_id].isRoutine;
 
@@ -341,6 +339,11 @@ document.addEventListener('theme:product:add', function(e) {
     var eventReload = new Event('theme:cart-drawer:reload', { bubbles: true, cancelable: false });
     document.dispatchEvent(eventReload);
   });
+}
+
+document.addEventListener('theme:product:add', function(e) {
+  let addedItem = e.detail.response;
+  addedCartFunction(addedItem);
 });
 
 document.addEventListener('theme:cart:change', function(e) {
