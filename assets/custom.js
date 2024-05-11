@@ -335,8 +335,7 @@ async function addedCartFunction(addedItem, data) {
       if (upgradeSystem != false && otherItemIds.includes(upgradeItem)) {
         let itemRemove = data.items.filter((item) => item.variant_id == upgradeItem)[0].key;
         console.log(data.items, itemRemove, routineItem);
-        await changeItemQtyMultiple(itemRemove, 0);
-        await changeItemQty(routineItem.key, 0);
+        await removeMultiple(itemRemove, routineItem.key);
         await addItemtoCart(upgradeSystem);
       }
     }
