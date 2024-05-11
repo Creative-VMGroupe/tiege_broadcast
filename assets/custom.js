@@ -250,6 +250,8 @@ async function removeMultiple(lineItemOne, lineItemTwo) {
 }
 
 async function addedCartFunction(addedItem, data) {
+  let alertStatus = 'One',
+      alertMessage = 'Two';
   const allProducts = theme.cartSettings.products;
   let isCurrentAddedItemRoutine = allProducts[addedItem.product_id].isRoutine;
   // Free Item Addition
@@ -345,7 +347,7 @@ async function addedCartFunction(addedItem, data) {
   document.dispatchEvent(eventReload);
 
   if (alertStatus != null && alertMessage != null) {
-    const eventAlert = new CustomEvent("theme:cart-drawer:alert", { status: alertStatus, message: alertMessage  });
+    const eventAlert = new CustomEvent("theme:cart-drawer:alert", { detail: { status: () => alertStatus, message: () => alertMessage });
     document.dispatchEvent(eventAlert);
   }
 }
