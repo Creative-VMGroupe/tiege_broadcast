@@ -5,7 +5,7 @@
 
 {%- endcomment -%}
 <script type="text/javascript">
-  console.log({{ product.metafields }});
+  console.log({{ product.metafields | json }});
   console.log('Test');
 </script>
 {%- liquid
