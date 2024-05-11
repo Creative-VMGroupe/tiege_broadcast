@@ -319,7 +319,20 @@ document.addEventListener('theme:product:add', function(e) {
         // Remove Common Element
         console.log(otherItems, otherItemIds, variantsOfRoutine, haveCommonItems);
       }
-      
+    }
+
+    if (theme.cartSettings.upgradability.enabled) {
+      let routineItem = null;
+      data.items.forEach((element) => {
+        if (allProducts[element.product_id].isRoutine) {
+          routineItem = element;
+        }
+      });
+      if (routineItem != null) {
+        console.log(routineItem);
+        let upgradeItem = '';
+        let upgradeSystem = '';
+      }
     }
   });
 });
