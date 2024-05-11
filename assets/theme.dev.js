@@ -2875,9 +2875,7 @@
 
             if (parsedState.errors) {
               this.cartUpdateFailed = true;
-              this.updateErrorText(itemTitle);
               this.toggleErrorMessage();
-              this.resetLineItem(currentItem);
               this.enableCartButtons();
 
               return;
