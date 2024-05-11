@@ -232,6 +232,7 @@
         },
         "text_slide_hKbJJ9": {
           "type": "text-slide",
+          "disabled": true,
           "settings": {
             "subheading": "Introducing",
             "subheading_size": 3,
