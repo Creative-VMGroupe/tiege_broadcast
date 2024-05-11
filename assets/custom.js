@@ -238,107 +238,101 @@ function changeItemQty(lineItem, qty) {
   });
 }
 
-async function addedCartFunction(addedItem) {
+async function addedCartFunction(addedItem, data) {
   const allProducts = theme.cartSettings.products;
   let isCurrentAddedItemRoutine = allProducts[addedItem.product_id].isRoutine;
+  // Free Item Addition
+  if (theme.cartSettings.giftItem.enabled) {
+    let giftExists = data.items.filter((item) => item.product_id == theme.cartSettings.giftItem.productId);
+    if (giftExists.length) {
+      let giftQty = giftExists[0]['quantity'];
 
-  fetch(window.theme.routes.cart_url + '.json')
-  .then(response => response.json())
-  .then(data => {
-    
-    // Free Item Addition
-    if (theme.cartSettings.giftItem.enabled) {
-      let giftExists = data.items.filter((item) => item.product_id == theme.cartSettings.giftItem.productId);
-      if (giftExists.length) {
-        let giftQty = giftExists[0]['quantity'];
-  
-        if (giftQty > 1) {
-          await changeItemQty(giftExists[0].key, '1');
-        }
+      if (giftQty > 1) {
+        await changeItemQty(giftExists[0].key, '1');
       }
-      
-      if (theme.cartSettings.giftItem.method == "cart") {
-        let minCartValue = parseInt(theme.cartSettings.giftItem.cartValue * 100);
-        if (data.total_price > minCartValue) {
-          if (!giftExists.length) {
-            await addItemtoCart(theme.cartSettings.giftItem.variantId);
-          }
-        } else {
-          if (giftExists.length) {
-            await changeItemQty(giftExists[0].key, '0');
-          }
+    }
+    
+    if (theme.cartSettings.giftItem.method == "cart") {
+      let minCartValue = parseInt(theme.cartSettings.giftItem.cartValue * 100);
+      if (data.total_price > minCartValue) {
+        if (!giftExists.length) {
+          await addItemtoCart(theme.cartSettings.giftItem.variantId);
         }
       } else {
-        let eligibleProducts = theme.cartSettings.giftItem.collection.split(",").map( Number );
-        if (eligibleProducts.includes(addedItem.product_id)) {
-          if (!giftExists.length) {
-            await addItemtoCart(theme.cartSettings.giftItem.variantId);
-          }
-        } else {
-          if (giftExists.length) {
-            await changeItemQty(giftExists[0].key, '0');
-          }
+        if (giftExists.length) {
+          await changeItemQty(giftExists[0].key, '0');
+        }
+      }
+    } else {
+      let eligibleProducts = theme.cartSettings.giftItem.collection.split(",").map( Number );
+      if (eligibleProducts.includes(addedItem.product_id)) {
+        if (!giftExists.length) {
+          await addItemtoCart(theme.cartSettings.giftItem.variantId);
+        }
+      } else {
+        if (giftExists.length) {
+          await changeItemQty(giftExists[0].key, '0');
         }
       }
     }
+  }
 
-    // Single Routine Checks
-    if (theme.cartSettings.singleRoutine.enabled && isCurrentAddedItemRoutine) {
-      let routineItem = null;
-      data.items.forEach((element) => {
-        if (allProducts[element.product_id].isRoutine && element.product_id != addedItem.product_id) {
-          routineItem = element;
-        }
-      });
-      if (routineItem != null) {
-        await changeItemQty(routineItem.key, '0');
+  // Single Routine Checks
+  if (theme.cartSettings.singleRoutine.enabled && isCurrentAddedItemRoutine) {
+    let routineItem = null;
+    data.items.forEach((element) => {
+      if (allProducts[element.product_id].isRoutine && element.product_id != addedItem.product_id) {
+        routineItem = element;
+      }
+    });
+    if (routineItem != null) {
+      await changeItemQty(routineItem.key, '0');
+    }
+  }
+
+  // Duplication Check
+  if (theme.cartSettings.duplication.enabled) {
+    let routineItem = null;
+    data.items.forEach((element) => {
+      if (allProducts[element.product_id].isRoutine) {
+        routineItem = element;
+      }
+    });
+    if (routineItem != null) {
+      let otherItems = data.items.filter((item) => item.product_id != routineItem.product_id);
+      let otherItemIds = otherItems.map((item) => item.variant_id);
+      let variantsOfRoutine = allProducts[routineItem.product_id]['routineVariants'].map((item) => item.id);
+      let haveCommonItems = otherItemIds.some(item => variantsOfRoutine.includes(item));
+      // Remove Common Element
+      console.log(otherItems, otherItemIds, variantsOfRoutine, haveCommonItems);
+    }
+  }
+
+  // Upgradability Check
+  if (theme.cartSettings.upgradability.enabled) {
+    let routineItem = null;
+    data.items.forEach((element) => {
+      if (allProducts[element.product_id].isRoutine) {
+        routineItem = element;
+      }
+    });
+    if (routineItem != null) {
+      let otherItems = data.items.filter((item) => item.product_id != routineItem.product_id);
+      let otherItemIds = otherItems.map((item) => item.variant_id);
+      let upgradeItem = allProducts[routineItem.product_id].nextRoutineLineItem != false ? allProducts[routineItem.product_id].nextRoutineLineItem.id : false;
+      let upgradeSystem = allProducts[routineItem.product_id].nextRoutine != false ? allProducts[routineItem.product_id].nextRoutine.variantId : false ;
+      if (upgradeSystem != false && otherItemIds.includes(upgradeItem)) {
+        let itemRemove = data.items.filter((item) => item.variant_id == upgradeItem)[0].key;
+        console.log(itemRemove);
+        await changeItemQty(itemRemove, 0);
+        await changeItemQty(routineItem.key, 0);
+        await addItemtoCart(upgradeSystem);
       }
     }
+  }
 
-    // Duplication Check
-    if (theme.cartSettings.duplication.enabled) {
-      let routineItem = null;
-      data.items.forEach((element) => {
-        if (allProducts[element.product_id].isRoutine) {
-          routineItem = element;
-        }
-      });
-      if (routineItem != null) {
-        let otherItems = data.items.filter((item) => item.product_id != routineItem.product_id);
-        let otherItemIds = otherItems.map((item) => item.variant_id);
-        let variantsOfRoutine = allProducts[routineItem.product_id]['routineVariants'].map((item) => item.id);
-        let haveCommonItems = otherItemIds.some(item => variantsOfRoutine.includes(item));
-        // Remove Common Element
-        console.log(otherItems, otherItemIds, variantsOfRoutine, haveCommonItems);
-      }
-    }
-
-    // Upgradability Check
-    if (theme.cartSettings.upgradability.enabled) {
-      let routineItem = null;
-      data.items.forEach((element) => {
-        if (allProducts[element.product_id].isRoutine) {
-          routineItem = element;
-        }
-      });
-      if (routineItem != null) {
-        let otherItems = data.items.filter((item) => item.product_id != routineItem.product_id);
-        let otherItemIds = otherItems.map((item) => item.variant_id);
-        let upgradeItem = allProducts[routineItem.product_id].nextRoutineLineItem != false ? allProducts[routineItem.product_id].nextRoutineLineItem.id : false;
-        let upgradeSystem = allProducts[routineItem.product_id].nextRoutine != false ? allProducts[routineItem.product_id].nextRoutine.variantId : false ;
-        if (upgradeSystem != false && otherItemIds.includes(upgradeItem)) {
-          let itemRemove = data.items.filter((item) => item.variant_id == upgradeItem)[0].key;
-          console.log(itemRemove);
-          await changeItemQty(itemRemove, 0);
-          await changeItemQty(routineItem.key, 0);
-          await addItemtoCart(upgradeSystem);
-        }
-      }
-    }
-
-    var eventReload = new Event('theme:cart-drawer:reload', { bubbles: true, cancelable: false });
-    document.dispatchEvent(eventReload);
-  });
+  var eventReload = new Event('theme:cart-drawer:reload', { bubbles: true, cancelable: false });
+  document.dispatchEvent(eventReload);
 }
 
 async function updatedCartFunction() {
@@ -347,7 +341,11 @@ async function updatedCartFunction() {
 
 document.addEventListener('theme:product:add', function(e) {
   let addedItem = e.detail.response;
-  await addedCartFunction(addedItem);
+  fetch(window.theme.routes.cart_url + '.json')
+    .then(response => response.json())
+    .then(data => {
+      addedCartFunction(addedItem, data);
+    });
 });
 
 document.addEventListener('theme:cart:change', function(e) {
