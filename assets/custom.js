@@ -214,10 +214,7 @@ function addItemtoCart(variantId) {
     body: JSON.stringify(formData)
   })
   .then(response => response.json())
-  .then(data => {
-    var eventReload = new Event('theme:cart-drawer:reload', { bubbles: true, cancelable: false });
-    document.dispatchEvent(eventReload);
-  })
+  .then(data => {})
   .catch((error) => {
     console.error('Error:', error);
   });
@@ -231,9 +228,8 @@ function changeItemQty(lineItem, qty) {
     body: formData
   })
   .then(response => response.json())
-  .then(data => {
-    console.log(data);
-  }).catch((error) => {
+  .then(data => {})
+  .catch((error) => {
     console.error('Error:', error);
   });
 }
@@ -323,7 +319,7 @@ async function addedCartFunction(addedItem, data) {
       let upgradeSystem = allProducts[routineItem.product_id].nextRoutine != false ? allProducts[routineItem.product_id].nextRoutine.variantId : false ;
       if (upgradeSystem != false && otherItemIds.includes(upgradeItem)) {
         let itemRemove = data.items.filter((item) => item.variant_id == upgradeItem)[0].key;
-        console.log(itemRemove);
+        console.log(itemRemove, routineItem);
         await changeItemQty(itemRemove, 0);
         await changeItemQty(routineItem.key, 0);
         await addItemtoCart(upgradeSystem);
