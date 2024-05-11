@@ -3675,22 +3675,20 @@
       }
 
       onCartDrawerReload() {
-        
+        console.log('Cart Reload Triggered');
         fetch(theme.routes.cart_url)
           .then((response) => {
             return response.text();
           })
           .then((state) => {
             const parsedState = JSON.parse(state);
-
             if (parsedState.errors) {
               this.cartUpdateFailed = true;
               this.toggleErrorMessage();
               this.enableCartButtons();
-
               return;
             }
-
+            console.log('Cart ReBuild Triggered');
             this.getCart();
           })
           .catch((error) => {
@@ -3698,7 +3696,6 @@
             this.enableCartButtons();
           });
       }
-      
     }
 
     if (!customElements.get('cart-items')) {
