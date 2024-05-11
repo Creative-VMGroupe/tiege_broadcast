@@ -2795,6 +2795,7 @@
         this.updateProgress = this.updateProgress.bind(this);
         this.onCartDrawerClose = this.onCartDrawerClose.bind(this);
         this.onCartDrawerReload = this.onCartDrawerReload.bind(this);
+        this.onCartDrawerAlert = this.onCartDrawerAlert.bind(this);
 
         // Set global event listeners for "Add to cart" and Announcement bar wheel progress
         document.addEventListener('theme:cart:add', this.cartAddEvent);
@@ -2803,6 +2804,7 @@
         document.addEventListener('theme:announcement:init', this.updateProgress);
 
         document.addEventListener('theme:cart-drawer:reload', this.onCartDrawerReload);
+        document.addEventListener('theme:cart-drawer:alert', this.onCartDrawerAlert);
         
         // Upsell products
         this.skipUpsellProductsArray = [];
@@ -3677,6 +3679,10 @@
 
       onCartDrawerReload() {
         this.getCart();
+      }
+
+      onCartDrawerAlert(status, message) {
+        // Show status and message on Cart
       }
     }
 
