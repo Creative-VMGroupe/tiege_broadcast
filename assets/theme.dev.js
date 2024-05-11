@@ -3675,7 +3675,7 @@
       }
 
       onCartDrawerReload() {
-        this.onCartDrawerClose();
+        
         fetch(theme.routes.cart_url)
           .then((response) => {
             return response.text();
