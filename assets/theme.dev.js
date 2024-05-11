@@ -3681,8 +3681,10 @@
         this.getCart();
       }
 
-      onCartDrawerAlert(status, message) {
+      onCartDrawerAlert(e) {
+        console.log(e);
         // Show status and message on Cart
+        
       }
     }
 
