@@ -55,10 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-
-
-
-
 // Variable to store the last scroll position
 var lastScrollTop = 0;
 
@@ -83,7 +79,6 @@ $(window).scroll(function (event) {
   // Update the last scroll position
   lastScrollTop = currentScrollTop;
 });
-
 
 (function () {
   // Hide Header on on scroll down
@@ -260,7 +255,7 @@ document.addEventListener('theme:product:add', function(e) {
         let giftQty = giftExists[0]['quantity'];
   
         if (giftQty > 1) {
-          changeItemQty(giftExists[0].key, '1');
+          await changeItemQty(giftExists[0].key, '1');
         }
       }
       
@@ -268,22 +263,22 @@ document.addEventListener('theme:product:add', function(e) {
         let minCartValue = parseInt(theme.cartSettings.giftItem.cartValue * 100);
         if (data.total_price > minCartValue) {
           if (!giftExists.length) {
-            addItemtoCart(theme.cartSettings.giftItem.variantId);
+            await addItemtoCart(theme.cartSettings.giftItem.variantId);
           }
         } else {
           if (giftExists.length) {
-            changeItemQty(giftExists[0].key, '0');
+            await changeItemQty(giftExists[0].key, '0');
           }
         }
       } else {
         let eligibleProducts = theme.cartSettings.giftItem.collection.split(",").map( Number );
         if (eligibleProducts.includes(addedItem.product_id)) {
           if (!giftExists.length) {
-            addItemtoCart(theme.cartSettings.giftItem.variantId);
+            await addItemtoCart(theme.cartSettings.giftItem.variantId);
           }
         } else {
           if (giftExists.length) {
-            changeItemQty(giftExists[0].key, '0');
+            await changeItemQty(giftExists[0].key, '0');
           }
         }
       }
@@ -298,7 +293,7 @@ document.addEventListener('theme:product:add', function(e) {
         }
       });
       if (routineItem != null) {
-        changeItemQty(routineItem.key, '0');
+        await changeItemQty(routineItem.key, '0');
       }
     }
 
@@ -336,9 +331,9 @@ document.addEventListener('theme:product:add', function(e) {
         if (upgradeSystem != false && otherItemIds.includes(upgradeItem)) {
           let itemRemove = data.items.filter((item) => item.variant_id == upgradeItem)[0].key;
           console.log(itemRemove);
-          changeItemQty(itemRemove, 0);
-          changeItemQty(routineItem.key, 0);
-          addItemtoCart(upgradeSystem);
+          await changeItemQty(itemRemove, 0);
+          await changeItemQty(routineItem.key, 0);
+          await addItemtoCart(upgradeSystem);
         }
       }
     }
