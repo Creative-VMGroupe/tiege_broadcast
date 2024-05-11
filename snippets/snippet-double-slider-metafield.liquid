@@ -193,12 +193,8 @@
 
                   {%- if title != blank -%}
                     {%- assign font_size_class = block.settings.heading_size | prepend: 'heading-size-' -%}
-                    <h2 class="hero__title {{ font_size_class }}">
-                      {% comment %}
-Delete this and replace with:  {{ title }}
-{% endcomment %}
-                      {{ product.metafields.custom.ingredients }}
-                     
+                    <h2 class="hero__title {{ font_size_class }}">                  
+                     {{ title }}
                     </h2>
                   {%- endif -%}
 
