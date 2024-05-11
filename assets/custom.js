@@ -343,6 +343,11 @@ async function addedCartFunction(addedItem, data) {
 
   var eventReload = new Event('theme:cart-drawer:reload', { bubbles: true, cancelable: false });
   document.dispatchEvent(eventReload);
+
+  if (alertStatus != null && alertMessage != null) {
+    const eventAlert = new CustomEvent("theme:cart-drawer:alert", { status: alertStatus, message: alertMessage  });
+    document.dispatchEvent(eventAlert);
+  }
 }
 
 async function updatedCartFunction() {
