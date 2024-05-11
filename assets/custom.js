@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //  https://tiege-hanley-store.myshopify.com/
 
-function addItemtoCart(variantId) {
+async function addItemtoCart(variantId) {
   let formData = {
    'items': [
      {
@@ -206,7 +206,7 @@ function addItemtoCart(variantId) {
     }
    ]
   };
-  fetch(window.Shopify.routes.root + 'cart/add.js', {
+  await fetch(window.Shopify.routes.root + 'cart/add.js', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -220,10 +220,10 @@ function addItemtoCart(variantId) {
   });
 }
 
-function changeItemQty(lineItem, qty) {
+async function changeItemQty(lineItem, qty) {
   var formData = new FormData();
   formData.append(`updates[${lineItem}]`, qty);
-  fetch(window.Shopify.routes.root + 'cart/update.js', {
+  await fetch(window.Shopify.routes.root + 'cart/update.js', {
     method: 'POST',
     body: formData
   })
@@ -234,11 +234,11 @@ function changeItemQty(lineItem, qty) {
   });
 }
 
-function removeMultiple(lineItemOne, lineItemTwo) {
+async function removeMultiple(lineItemOne, lineItemTwo) {
   var formData = new FormData();
   formData.append(`updates[${lineItemOne}]`, 0);
   formData.append(`updates[${lineItemTwo}]`, 0);
-  fetch(window.Shopify.routes.root + 'cart/update.js', {
+  await fetch(window.Shopify.routes.root + 'cart/update.js', {
     method: 'POST',
     body: formData
   })
