@@ -959,7 +959,7 @@ var themeVendor = (function (t) {
               e && (this.cellAlign = 1 - this.cellAlign);
           }),
             (p.setGallerySize = function () {
-                           console.log(this)
+                           // console.log(this)
               
               if (!this.options.setGallerySize) return;
               let t =
