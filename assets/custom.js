@@ -220,11 +220,8 @@ function addItemtoCart(variantId) {
   })
   .then(response => response.json())
   .then(data => {
-    // Update the cart refresh logic here
-    // var eventClose = new Event('theme:cart-drawer:close', { bubbles: true, cancelable: false });
-    // var eventOpen = new Event('theme:cart-drawer:open', { bubbles: true, cancelable: false });
-    // document.dispatchEvent(eventClose);
-    // document.dispatchEvent(eventOpen);
+    var eventReload = new Event('theme:cart-drawer:reload', { bubbles: true, cancelable: false });
+    document.dispatchEvent(eventReload);
   })
   .catch((error) => {
     console.error('Error:', error);
@@ -240,11 +237,8 @@ function changeItemQty(lineItem, qty) {
   })
   .then(response => response.json())
   .then(data => {
-    // Update the cart refresh logic here
-    // var eventClose = new Event('theme:cart-drawer:close', { bubbles: true, cancelable: false });
-    // var eventOpen = new Event('theme:cart-drawer:open', { bubbles: true, cancelable: false });
-    // document.dispatchEvent(eventClose);
-    // document.dispatchEvent(eventOpen);
+    var eventReload = new Event('theme:cart-drawer:reload', { bubbles: true, cancelable: false });
+    document.dispatchEvent(eventReload);
   }).catch((error) => {
     console.error('Error:', error);
   });
@@ -252,9 +246,6 @@ function changeItemQty(lineItem, qty) {
 
 document.addEventListener('theme:product:add', function(e) {
   let addedItem = e.detail.response;
-
-  var eventReload = new Event('theme:cart-drawer:reload', { bubbles: true, cancelable: false });
-  document.dispatchEvent(eventReload);
 
   const allProducts = theme.cartSettings.products;
   let isCurrentAddedItemRoutine = allProducts[addedItem.product_id].isRoutine;
