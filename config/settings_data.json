@@ -72,7 +72,7 @@
     "color_swatches": true,
     "enable_gift": true,
     "gift_item": "single-product-name-5",
-    "gift_item_method": "collection",
+    "gift_item_method": "cart",
     "gift_item_collection": "face",
     "checkout_logo_position": "left",
     "checkout_logo_size": "medium",
