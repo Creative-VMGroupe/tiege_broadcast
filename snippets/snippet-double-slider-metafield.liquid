@@ -5,7 +5,7 @@
 
 {%- endcomment -%}
 <script type="text/javascript">
-  console.log({{ product.metafields.custom.ingredients }});
+  console.log({{ product.metafields.custom.ingredients | json }});
 </script>
 {%- liquid
   assign desktop_height = section.settings.height
