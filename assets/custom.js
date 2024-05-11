@@ -347,7 +347,7 @@ async function updatedCartFunction() {
 
 document.addEventListener('theme:product:add', function(e) {
   let addedItem = e.detail.response;
-  addedCartFunction(addedItem);
+  await addedCartFunction(addedItem);
 });
 
 document.addEventListener('theme:cart:change', function(e) {
