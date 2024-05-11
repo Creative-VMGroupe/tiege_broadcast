@@ -237,8 +237,7 @@ function changeItemQty(lineItem, qty) {
   })
   .then(response => response.json())
   .then(data => {
-    var eventReload = new Event('theme:cart-drawer:reload', { bubbles: true, cancelable: false });
-    document.dispatchEvent(eventReload);
+    console.log(data);
   }).catch((error) => {
     console.error('Error:', error);
   });
@@ -321,6 +320,7 @@ document.addEventListener('theme:product:add', function(e) {
       }
     }
 
+    // Upgradability Check
     if (theme.cartSettings.upgradability.enabled) {
       let routineItem = null;
       data.items.forEach((element) => {
@@ -329,11 +329,22 @@ document.addEventListener('theme:product:add', function(e) {
         }
       });
       if (routineItem != null) {
-        console.log(routineItem.product_id);
+        let otherItems = data.items.filter((item) => item.product_id != routineItem.product_id);
+        let otherItemIds = otherItems.map((item) => item.variant_id);
         let upgradeItem = allProducts[routineItem.product_id].nextRoutineLineItem != false ? allProducts[routineItem.product_id].nextRoutineLineItem.id : false;
-        let upgradeSystem = allProducts[routineItem.product_id].nextRoutine != false ? allProducts[routineItem.product_id].nextRoutine.id : false ;;
+        let upgradeSystem = allProducts[routineItem.product_id].nextRoutine != false ? allProducts[routineItem.product_id].nextRoutine.variantId : false ;
+        if (upgradeSystem != false && otherItemIds.includes(upgradeItem)) {
+          let itemRemove = data.items.filter((item) => item.variant_id == upgradeItem)[0].key;
+          console.log(itemRemove);
+          changeItemQty(itemRemove, 0);
+          changeItemQty(routineItem.key, 0);
+          addItemtoCart(upgradeSystem);
+        }
       }
     }
+
+    var eventReload = new Event('theme:cart-drawer:reload', { bubbles: true, cancelable: false });
+    document.dispatchEvent(eventReload);
   });
 });
 
