@@ -2864,31 +2864,6 @@
         }
       }
 
-      onCartDrawerReload() {
-        this.onCartDrawerClose();
-        fetch(theme.routes.cart_url)
-          .then((response) => {
-            return response.text();
-          })
-          .then((state) => {
-            const parsedState = JSON.parse(state);
-
-            if (parsedState.errors) {
-              this.cartUpdateFailed = true;
-              this.toggleErrorMessage();
-              this.enableCartButtons();
-
-              return;
-            }
-
-            this.getCart();
-          })
-          .catch((error) => {
-            console.log(error);
-            this.enableCartButtons();
-          });
-      }
-
       onCartDrawerClose() {
         this.resetAnimatedItems();
 
@@ -3698,6 +3673,32 @@
           });
         });
       }
+
+      onCartDrawerReload() {
+        this.onCartDrawerClose();
+        fetch(theme.routes.cart_url)
+          .then((response) => {
+            return response.text();
+          })
+          .then((state) => {
+            const parsedState = JSON.parse(state);
+
+            if (parsedState.errors) {
+              this.cartUpdateFailed = true;
+              this.toggleErrorMessage();
+              this.enableCartButtons();
+
+              return;
+            }
+
+            this.getCart();
+          })
+          .catch((error) => {
+            console.log(error);
+            this.enableCartButtons();
+          });
+      }
+      
     }
 
     if (!customElements.get('cart-items')) {
