@@ -234,6 +234,21 @@ function changeItemQty(lineItem, qty) {
   });
 }
 
+function removeMultiple(lineItemOne, lineItemTwo) {
+  var formData = new FormData();
+  formData.append(`updates[${lineItemOne}]`, 0);
+  formData.append(`updates[${lineItemTwo}]`, 0);
+  fetch(window.Shopify.routes.root + 'cart/update.js', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => response.json())
+  .then(data => {})
+  .catch((error) => {
+    console.error('Error:', error);
+  });
+}
+
 async function addedCartFunction(addedItem, data) {
   const allProducts = theme.cartSettings.products;
   let isCurrentAddedItemRoutine = allProducts[addedItem.product_id].isRoutine;
@@ -320,7 +335,7 @@ async function addedCartFunction(addedItem, data) {
       if (upgradeSystem != false && otherItemIds.includes(upgradeItem)) {
         let itemRemove = data.items.filter((item) => item.variant_id == upgradeItem)[0].key;
         console.log(data.items, itemRemove, routineItem);
-        await changeItemQty(itemRemove, 0);
+        await changeItemQtyMultiple(itemRemove, 0);
         await changeItemQty(routineItem.key, 0);
         await addItemtoCart(upgradeSystem);
       }
