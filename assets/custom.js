@@ -329,9 +329,9 @@ document.addEventListener('theme:product:add', function(e) {
         }
       });
       if (routineItem != null) {
-        console.log(routineItem);
-        let upgradeItem = '';
-        let upgradeSystem = '';
+        console.log(routineItem.product_id);
+        let upgradeItem = allProducts[routineItem.product_id].nextRoutineLineItem != false ? allProducts[routineItem.product_id].nextRoutineLineItem.id : false;
+        let upgradeSystem = allProducts[routineItem.product_id].nextRoutine != false ? allProducts[routineItem.product_id].nextRoutine.id : false ;;
       }
     }
   });
