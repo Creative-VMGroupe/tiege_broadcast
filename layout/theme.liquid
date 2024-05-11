@@ -223,7 +223,7 @@
                 {% if product.metafields.custom.next_level_routine != blank %}
                   nextRoutine : {
                     id : {{ product.metafields.custom.next_level_routine.value.id }},
-                    variantId : {{ product.metafields.custom.next_level_routine.value.selected_or_first_available_variant.id }}
+                    variantId : {{ product.metafields.custom.next_level_routine.value.selected_or_first_available_variant.id }},
                     handle : "{{ product.metafields.custom.next_level_routine.value.handle }}"
                   },
                 {% else %}
