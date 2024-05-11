@@ -341,6 +341,10 @@ async function addedCartFunction(addedItem) {
   });
 }
 
+async function updatedCartFunction() {
+  // Update Cart function
+}
+
 document.addEventListener('theme:product:add', function(e) {
   let addedItem = e.detail.response;
   addedCartFunction(addedItem);
