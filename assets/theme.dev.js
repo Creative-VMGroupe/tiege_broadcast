@@ -3685,7 +3685,6 @@
             if (parsedState.errors) {
               this.cartUpdateFailed = true;
               this.toggleErrorMessage();
-              this.enableCartButtons();
               return;
             }
             console.log('Cart ReBuild Triggered');
