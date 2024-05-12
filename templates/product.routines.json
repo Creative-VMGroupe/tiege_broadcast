@@ -159,56 +159,6 @@
         "padding_bottom": 0
       }
     },
-    "section_double_slider_new_ERgtDU": {
-      "type": "section-double-slider-new",
-      "blocks": {
-        "text_slide_Ey9Vkb": {
-          "type": "text-slide",
-          "settings": {
-            "stars_enabled": true,
-            "subheading": "★★★★★",
-            "subheading_font": 16,
-            "title": "Proof",
-            "heading_font": 40,
-            "text": "<p>{{ product.metafields.custom.proof_testimonial | metafield_tag }}<\/p>",
-            "text_size": 16,
-            "text_style": "font-body",
-            "button_text": "View 1000+ Reviews",
-            "button_url": "",
-            "button_type": "btn--white",
-            "button_size": "",
-            "button_style": "btn--outline",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "text_slide_Ey9Vkb"
-      ],
-      "disabled": true,
-      "custom_css": [
-        ".flickity-viewport {height: calc(100vh \/ 3) !important;}",
-        "p.hero__subheading {order: 2;}",
-        "h2.hero__title {order: 1;}",
-        ".hero__rte {order: 3;}",
-        ".hero__button {order: 4;}"
-      ],
-      "settings": {
-        "layout": "is-reversed",
-        "height": "screen-height-two-thirds",
-        "mobile_height": "screen-height-one-third--mobile",
-        "width": "wrapper--full",
-        "image_1": "{{ product.metafields.custom.proof_image_1.value }}",
-        "image_2": "{{ product.metafields.custom.proof_image_2.value }}",
-        "image_width": "three-quarters",
-        "text_alignment": "text-center",
-        "bg_color": "#000000",
-        "color": "#ffffff",
-        "sub_color": "#42b029",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "section_double_slider_metafield_ECkgjm": {
       "type": "section-double-slider-metafield",
       "blocks": {
@@ -248,94 +198,6 @@
         "bg_color": "#000000",
         "color": "#ffffff",
         "sub_color": "#42b029",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_double_slider_new_M974Kz": {
-      "type": "section-double-slider-new",
-      "blocks": {
-        "text_slide_fLBXEE": {
-          "type": "text-slide",
-          "settings": {
-            "stars_enabled": false,
-            "subheading": "",
-            "subheading_font": 16,
-            "title": "{{ product.metafields.custom.ingredient_1_title.value }}",
-            "heading_font": 40,
-            "text": "<p>{{ product.metafields.custom.ingredient_1_information | metafield_tag }}<\/p>",
-            "text_size": 16,
-            "text_style": "font-body",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image": "{{ product.metafields.custom.ingredient_1_image.value }}"
-          }
-        },
-        "text_slide_i3an9N": {
-          "type": "text-slide",
-          "settings": {
-            "stars_enabled": false,
-            "subheading": "",
-            "subheading_font": 16,
-            "title": "{{ product.metafields.custom.ingredient_2_title.value }}",
-            "heading_font": 40,
-            "text": "<p>{{ product.metafields.custom.ingredient_2_information | metafield_tag }}<\/p>",
-            "text_size": 16,
-            "text_style": "font-body",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image": "{{ product.metafields.custom.ingredient_2_image.value }}"
-          }
-        },
-        "text_slide_XRVxqf": {
-          "type": "text-slide",
-          "settings": {
-            "stars_enabled": false,
-            "subheading": "",
-            "subheading_font": 16,
-            "title": "{{ product.metafields.custom.ingredient_3_title.value }}",
-            "heading_font": 40,
-            "text": "<p>{{ product.metafields.custom.ingredient_3_information | metafield_tag }}<\/p>",
-            "text_size": 16,
-            "text_style": "font-body",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image": "{{ product.metafields.custom.ingredient_3_image.value }}"
-          }
-        }
-      },
-      "block_order": [
-        "text_slide_fLBXEE",
-        "text_slide_i3an9N",
-        "text_slide_XRVxqf"
-      ],
-      "disabled": true,
-      "custom_css": [
-
-      ],
-      "settings": {
-        "layout": "is-reversed",
-        "height": "screen-height-two-thirds",
-        "mobile_height": "screen-height-one-third--mobile",
-        "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/uZr3qZvfRNuNZb2xaQjw.png",
-        "image_width": "one-half",
-        "text_alignment": "text-center",
-        "bg_color": "#f7f7f7",
-        "color": "",
-        "sub_color": "",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -565,71 +427,6 @@
         "layout_mobile": "slider"
       }
     },
-    "section_accordion_new_DpxfiN": {
-      "type": "section-accordion-new",
-      "blocks": {
-        "image_gHryiA": {
-          "type": "image",
-          "settings": {
-            "title": "Step 1: Wash",
-            "text": "<p>Use Tiege Hanley's WASH facial cleanser. Wet your face, squeeze out the size of a nickel (yes, the coin) into your palm, rub it all over your wet face for about 10 seconds.<\/p>",
-            "image": "shopify:\/\/shop_images\/HARRYS_FW_PROD_0279_1.jpg",
-            "aspect_ratio": 0.6
-          }
-        },
-        "image_BE4xiM": {
-          "type": "image",
-          "settings": {
-            "title": "Step 2: Scrub",
-            "text": "<p>Use Tiege Hanley’s AM moisturizer. Squeeze out the size of a pea into your palm and spend about 10 seconds massaging it all over your face.<\/p>",
-            "image": "shopify:\/\/shop_images\/AdobeStock_481479872.jpg",
-            "aspect_ratio": 0.6
-          }
-        },
-        "image_meFLzL": {
-          "type": "image",
-          "settings": {
-            "title": "Step 3: AM Moisturizer",
-            "text": "<p>Use Tiege Hanley’s AM moisturizer. Squeeze out the size of a pea into your palm and spend about 10 seconds massaging it all over your face.<\/p>",
-            "image": "shopify:\/\/shop_images\/AdobeStock_481479870.jpg",
-            "aspect_ratio": 0.6
-          }
-        },
-        "image_6KDKny": {
-          "type": "image",
-          "settings": {
-            "title": "Step 4: PM",
-            "text": "<p>After washing and drying your face, dispense a bit of PM into your hand. Work the moisturizer all over your face for about 10 seconds. When it’s all rubbed in, go to bed<\/p>",
-            "image": "shopify:\/\/shop_images\/AdobeStock_481479860.jpg",
-            "aspect_ratio": 0.6
-          }
-        }
-      },
-      "block_order": [
-        "image_gHryiA",
-        "image_BE4xiM",
-        "image_meFLzL",
-        "image_6KDKny"
-      ],
-      "disabled": true,
-      "settings": {
-        "default_open": true,
-        "title": "How To",
-        "heading_size": 40,
-        "subheading_size": 24,
-        "text_size": 16,
-        "show_icon": false,
-        "icon_name": "icon-award",
-        "icon_size": 20,
-        "icon_color": "#545454",
-        "bg_color": "#f7f7f7",
-        "color": "#000000",
-        "border_color": "",
-        "width": "wrapper--full--custom",
-        "padding_top": 80,
-        "padding_bottom": 0
-      }
-    },
     "section_accordion_metafields_piFfQf": {
       "type": "section-accordion-metafields",
       "blocks": {
@@ -776,6 +573,265 @@
         "items_detail": "Wash,Scrub,AM,PM,Eyes,Serum"
       }
     },
+    "section_accordion_metafields_wF8DDP": {
+      "type": "section-accordion-metafields",
+      "blocks": {
+        "text_McChJL": {
+          "type": "text",
+          "settings": {
+            "title": "{{ product.metafields.custom.faq_1_question.value }}",
+            "text": "<p>{{ product.metafields.custom.faq_1_answer | metafield_tag }}<\/p>"
+          }
+        },
+        "text_nT8Mnc": {
+          "type": "text",
+          "settings": {
+            "title": "{{ product.metafields.custom.faq_2_question.value }}",
+            "text": "<p>{{ product.metafields.custom.faq_2_answer | metafield_tag }}<\/p>"
+          }
+        },
+        "text_F4JPbY": {
+          "type": "text",
+          "settings": {
+            "title": "{{ product.metafields.custom.faq_3_question.value }}",
+            "text": "<p>{{ product.metafields.custom.faq_3_answer | metafield_tag }}<\/p>"
+          }
+        },
+        "text_NEBjPb": {
+          "type": "text",
+          "settings": {
+            "title": "{{ product.metafields.custom.faq_4_question.value }}",
+            "text": "<p>{{ product.metafields.custom.faq_4_answer | metafield_tag }}<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_McChJL",
+        "text_nT8Mnc",
+        "text_F4JPbY",
+        "text_NEBjPb"
+      ],
+      "settings": {
+        "default_open": false,
+        "title": "FAQ",
+        "heading_size": 40,
+        "subheading_size": 24,
+        "text_size": 16,
+        "show_icon": false,
+        "icon_name": "icon-award",
+        "icon_size": 20,
+        "icon_color": "#545454",
+        "bg_color": "#f7f7f7",
+        "color": "",
+        "border_color": "",
+        "width": "wrapper--full--custom",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_double_slider_new_ERgtDU": {
+      "type": "section-double-slider-new",
+      "blocks": {
+        "text_slide_Ey9Vkb": {
+          "type": "text-slide",
+          "settings": {
+            "stars_enabled": true,
+            "subheading": "★★★★★",
+            "subheading_font": 16,
+            "title": "Proof",
+            "heading_font": 40,
+            "text": "<p>{{ product.metafields.custom.proof_testimonial | metafield_tag }}<\/p>",
+            "text_size": 16,
+            "text_style": "font-body",
+            "button_text": "View 1000+ Reviews",
+            "button_url": "",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "text_slide_Ey9Vkb"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".flickity-viewport {height: calc(100vh \/ 3) !important;}",
+        "p.hero__subheading {order: 2;}",
+        "h2.hero__title {order: 1;}",
+        ".hero__rte {order: 3;}",
+        ".hero__button {order: 4;}"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-two-thirds",
+        "mobile_height": "screen-height-one-third--mobile",
+        "width": "wrapper--full",
+        "image_1": "{{ product.metafields.custom.proof_image_1.value }}",
+        "image_2": "{{ product.metafields.custom.proof_image_2.value }}",
+        "image_width": "three-quarters",
+        "text_alignment": "text-center",
+        "bg_color": "#000000",
+        "color": "#ffffff",
+        "sub_color": "#42b029",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_double_slider_new_M974Kz": {
+      "type": "section-double-slider-new",
+      "blocks": {
+        "text_slide_fLBXEE": {
+          "type": "text-slide",
+          "settings": {
+            "stars_enabled": false,
+            "subheading": "",
+            "subheading_font": 16,
+            "title": "{{ product.metafields.custom.ingredient_1_title.value }}",
+            "heading_font": 40,
+            "text": "<p>{{ product.metafields.custom.ingredient_1_information | metafield_tag }}<\/p>",
+            "text_size": 16,
+            "text_style": "font-body",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image": "{{ product.metafields.custom.ingredient_1_image.value }}"
+          }
+        },
+        "text_slide_i3an9N": {
+          "type": "text-slide",
+          "settings": {
+            "stars_enabled": false,
+            "subheading": "",
+            "subheading_font": 16,
+            "title": "{{ product.metafields.custom.ingredient_2_title.value }}",
+            "heading_font": 40,
+            "text": "<p>{{ product.metafields.custom.ingredient_2_information | metafield_tag }}<\/p>",
+            "text_size": 16,
+            "text_style": "font-body",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image": "{{ product.metafields.custom.ingredient_2_image.value }}"
+          }
+        },
+        "text_slide_XRVxqf": {
+          "type": "text-slide",
+          "settings": {
+            "stars_enabled": false,
+            "subheading": "",
+            "subheading_font": 16,
+            "title": "{{ product.metafields.custom.ingredient_3_title.value }}",
+            "heading_font": 40,
+            "text": "<p>{{ product.metafields.custom.ingredient_3_information | metafield_tag }}<\/p>",
+            "text_size": 16,
+            "text_style": "font-body",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image": "{{ product.metafields.custom.ingredient_3_image.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "text_slide_fLBXEE",
+        "text_slide_i3an9N",
+        "text_slide_XRVxqf"
+      ],
+      "disabled": true,
+      "custom_css": [
+
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-two-thirds",
+        "mobile_height": "screen-height-one-third--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/uZr3qZvfRNuNZb2xaQjw.png",
+        "image_width": "one-half",
+        "text_alignment": "text-center",
+        "bg_color": "#f7f7f7",
+        "color": "",
+        "sub_color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_accordion_new_DpxfiN": {
+      "type": "section-accordion-new",
+      "blocks": {
+        "image_gHryiA": {
+          "type": "image",
+          "settings": {
+            "title": "Step 1: Wash",
+            "text": "<p>Use Tiege Hanley's WASH facial cleanser. Wet your face, squeeze out the size of a nickel (yes, the coin) into your palm, rub it all over your wet face for about 10 seconds.<\/p>",
+            "image": "shopify:\/\/shop_images\/HARRYS_FW_PROD_0279_1.jpg",
+            "aspect_ratio": 0.6
+          }
+        },
+        "image_BE4xiM": {
+          "type": "image",
+          "settings": {
+            "title": "Step 2: Scrub",
+            "text": "<p>Use Tiege Hanley’s AM moisturizer. Squeeze out the size of a pea into your palm and spend about 10 seconds massaging it all over your face.<\/p>",
+            "image": "shopify:\/\/shop_images\/AdobeStock_481479872.jpg",
+            "aspect_ratio": 0.6
+          }
+        },
+        "image_meFLzL": {
+          "type": "image",
+          "settings": {
+            "title": "Step 3: AM Moisturizer",
+            "text": "<p>Use Tiege Hanley’s AM moisturizer. Squeeze out the size of a pea into your palm and spend about 10 seconds massaging it all over your face.<\/p>",
+            "image": "shopify:\/\/shop_images\/AdobeStock_481479870.jpg",
+            "aspect_ratio": 0.6
+          }
+        },
+        "image_6KDKny": {
+          "type": "image",
+          "settings": {
+            "title": "Step 4: PM",
+            "text": "<p>After washing and drying your face, dispense a bit of PM into your hand. Work the moisturizer all over your face for about 10 seconds. When it’s all rubbed in, go to bed<\/p>",
+            "image": "shopify:\/\/shop_images\/AdobeStock_481479860.jpg",
+            "aspect_ratio": 0.6
+          }
+        }
+      },
+      "block_order": [
+        "image_gHryiA",
+        "image_BE4xiM",
+        "image_meFLzL",
+        "image_6KDKny"
+      ],
+      "disabled": true,
+      "settings": {
+        "default_open": true,
+        "title": "How To",
+        "heading_size": 40,
+        "subheading_size": 24,
+        "text_size": 16,
+        "show_icon": false,
+        "icon_name": "icon-award",
+        "icon_size": 20,
+        "icon_color": "#545454",
+        "bg_color": "#f7f7f7",
+        "color": "#000000",
+        "border_color": "",
+        "width": "wrapper--full--custom",
+        "padding_top": 80,
+        "padding_bottom": 0
+      }
+    },
     "section_accordion_new_4E9V9R": {
       "type": "section-accordion-new",
       "blocks": {
@@ -815,62 +871,6 @@
         "text_Mz8RKb"
       ],
       "disabled": true,
-      "settings": {
-        "default_open": false,
-        "title": "FAQ",
-        "heading_size": 40,
-        "subheading_size": 24,
-        "text_size": 16,
-        "show_icon": false,
-        "icon_name": "icon-award",
-        "icon_size": 20,
-        "icon_color": "#545454",
-        "bg_color": "#f7f7f7",
-        "color": "",
-        "border_color": "",
-        "width": "wrapper--full--custom",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_accordion_metafields_wF8DDP": {
-      "type": "section-accordion-metafields",
-      "blocks": {
-        "text_McChJL": {
-          "type": "text",
-          "settings": {
-            "title": "{{ product.metafields.custom.faq_1_question.value }}",
-            "text": "<p>{{ product.metafields.custom.faq_1_answer | metafield_tag }}<\/p>"
-          }
-        },
-        "text_nT8Mnc": {
-          "type": "text",
-          "settings": {
-            "title": "{{ product.metafields.custom.faq_2_question.value }}",
-            "text": "<p>{{ product.metafields.custom.faq_2_answer | metafield_tag }}<\/p>"
-          }
-        },
-        "text_F4JPbY": {
-          "type": "text",
-          "settings": {
-            "title": "{{ product.metafields.custom.faq_3_question.value }}",
-            "text": "<p>{{ product.metafields.custom.faq_3_answer | metafield_tag }}<\/p>"
-          }
-        },
-        "text_NEBjPb": {
-          "type": "text",
-          "settings": {
-            "title": "{{ product.metafields.custom.faq_4_question.value }}",
-            "text": "<p>{{ product.metafields.custom.faq_4_answer | metafield_tag }}<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_McChJL",
-        "text_nT8Mnc",
-        "text_F4JPbY",
-        "text_NEBjPb"
-      ],
       "settings": {
         "default_open": false,
         "title": "FAQ",
@@ -981,16 +981,16 @@
   },
   "order": [
     "main",
-    "section_double_slider_new_ERgtDU",
     "section_double_slider_metafield_ECkgjm",
-    "section_double_slider_new_M974Kz",
     "section_double_slider_metafield_EFabGL",
     "section_columns_ycKyp7",
-    "section_accordion_new_DpxfiN",
     "section_accordion_metafields_piFfQf",
     "compare_systems_PgJw6T",
-    "section_accordion_new_4E9V9R",
     "section_accordion_metafields_wF8DDP",
+    "section_double_slider_new_ERgtDU",
+    "section_double_slider_new_M974Kz",
+    "section_accordion_new_DpxfiN",
+    "section_accordion_new_4E9V9R",
     "app_accordion_Qtcf8J",
     "related",
     "171061224373a1e0d4"
