@@ -662,9 +662,9 @@
         "image_Cpqz6F": {
           "type": "image",
           "settings": {
-            "title": "Step 3: AM Moisturizer",
-            "text": "<p>Use Tiege Hanley’s AM moisturizer. Squeeze out the size of a pea into your palm and spend about 10 seconds massaging it all over your face.<\/p>",
-            "image": "shopify:\/\/shop_images\/AdobeStock_481479870.jpg",
+            "title": "{{ product.metafields.custom.how_to_step_4_title.value }}",
+            "text": "<p>{{ product.metafields.custom.how_to_step_4_description | metafield_tag }}<\/p>",
+            "image": "{{ product.metafields.custom.how_to_step_4_image.value }}",
             "aspect_ratio": 0.6
           }
         }
