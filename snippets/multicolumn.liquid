@@ -232,6 +232,7 @@
 
             {%- case block.type -%}
               {%- when 'image' -%}
+              {% if title != blank %}
                 <div class="grid-item"
                   {{ block_style }}
                   {% if enable_slider %}
@@ -308,7 +309,7 @@
                     </div>
                   </div>
                 </div>
-
+              {%- endif -%}
               {%- when 'icon' -%}
                 {%- capture icon_style -%}
                   --icon-size: {{ icon_size }}px;
