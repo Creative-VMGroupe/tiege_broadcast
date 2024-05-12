@@ -364,7 +364,7 @@
             "image_shape": "normal",
             "title": "{{ product.metafields.custom.included_in_product_1_title.value }}",
             "heading_size": 5,
-            "text": "<p>{{ product.metafields.custom.included_in_product_2_description.value }}<\/p>",
+            "text": "<p>{{ product.metafields.custom.included_in_product_1_description.value }}<\/p>",
             "text_size": 3,
             "button_text": "",
             "button_url": "",
