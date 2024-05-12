@@ -4,6 +4,7 @@
 
 
 {%- endcomment -%}
+
 {%- liquid
   assign desktop_height = section.settings.height
   assign mobile_height = section.settings.mobile_height
@@ -18,6 +19,8 @@
   assign bg_color = section.settings.bg_color
   assign bg_color_transparent = bg_color | color_modify: 'alpha', 0
   assign text_color = section.settings.color
+  assign sub_color = section.settings.sub_color
+  
 
   if text_slide_blocks.size > 1
     assign enable_text_slider = true
@@ -48,7 +51,15 @@
       echo '--text-light: ' | append: text_light | append: ';'
       echo '--text-dark: ' | append: text_dark | append: ';'
     endunless
+
+    unless text_color == 'rgba(0,0,0,0)' or text_color == blank
+      echo '--sub-color: ' | append: sub_color | append: ';'
+    endunless
   endcapture
+
+
+  
+
 
   assign image_1 = section.settings.image_1
   assign image_2 = section.settings.image_2
@@ -144,15 +155,16 @@
 <section id="BrickSection--{{ section.id }}"
   data-section-id="{{ section.id }}"
   data-section-type="double"
-  class="index-image-text section-padding {{ section.settings.text_alignment }}"
+  class="index-image-text section-padding {{ section.settings.text_alignment }} image-with-slider__container"
   style="{{ style }}">
   {%- if section.blocks.size > 0 -%}
     {%- if enable_slider -%}
+      {% comment %}Removed "autoPlay": 4000, from data-options{% endcomment %} 
       <div
-        class="brick__slider"
+        class="brick__slider {% if section.settings.layout == 'is-reversed' %} flickity--reversed-custom{% endif %}"
         data-slider
         data-dots="{{ settings.dots_style }}"
-        data-options='{"pageDots": true, "prevNextButtons": true, "autoPlay": 4000, "pauseAutoPlayOnHover": false}'
+        data-options='{"pageDots": true, "prevNextButtons": true, "pauseAutoPlayOnHover": false}'
       >
         {%- for block in section.blocks -%}
           {%- liquid
@@ -161,6 +173,7 @@
             assign title = block.settings.title
             assign text = block.settings.text
             assign button_text = block.settings.button_text
+            
           -%}
 
           <div
@@ -180,18 +193,20 @@
 
             <div class="brick__block brick__block--text"{% if style != blank %} style="{{ style }}"{% endif %}>
               <div class="brick__block__text">
-                <div class="hero__content hero__content--compact">
+                <div class="hero__content hero__content--compact hero-slider__content" >
                   {%- if subheading != blank -%}
-                    {%- assign font_size_class = block.settings.subheading_size | prepend: 'subheading-size-' -%}
-                    <p class="hero__subheading {{ font_size_class }}">
+                    {%- assign font_size_class = block.settings.subheading_font | prepend: 'subheading-size-' -%}
+                    {%- assign sub_letter_spacing = block.settings.sub_letter_spacing | prepend: 'sub-letter-spacing-' -%}
+                    {%- assign star_styling = block.settings.stars_enabled -%}
+                    <p class="hero__subheading {{ font_size_class }} {{ sub_letter_spacing }} {%- if star_styling -%}stars__subheading-custom {%- endif -%}">
                       {{ subheading }}
                     </p>
                   {%- endif -%}
 
                   {%- if title != blank -%}
-                    {%- assign font_size_class = block.settings.heading_size | prepend: 'heading-size-' -%}
-                    <h2 class="hero__title {{ font_size_class }}">                  
-                     {{ title }}
+                    {%- assign font_size_class = block.settings.heading_font | prepend: 'heading-size-' -%}
+                    <h2 class="hero__title {{ font_size_class }}">
+                      {{ title }}
                     </h2>
                   {%- endif -%}
 
@@ -233,7 +248,7 @@
             data-slider
             data-slider-fullwidth
             data-dots="{{ settings.dots_style }}"
-            data-options='{"watchCSS": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 4000, "pauseAutoPlayOnHover": false}'
+            data-options='{"watchCSS": true, "pageDots": false, "prevNextButtons": false, "pauseAutoPlayOnHover": false}'
           {% endif %}>
 
           {{ section_images }}
@@ -244,8 +259,8 @@
             style="{{ style }}"
           {% endif %}
           {{ block.shopify_attributes }}>
-          <div class="brick__block__text plr-custom">
-            <div class="hero__content hero__content--compact{% if enable_text_slider %} grid--mobile-slider{% else %} hero__content--no-padding{% endif %}"
+          <div class="brick__block__text">
+            <div class="hero__content hero__content--compact{% if enable_text_slider %} grid--mobile-slider{% else %} hero__content--no-padding{% endif %} slider__text-custom hero-slider__content"
               {% if enable_text_slider %}
                 data-slider="BrickSlider--{{ section.id }}"
                 data-slider-desktop
@@ -266,7 +281,7 @@
 
                 {%- if enable_text_slider -%}
                   <div
-                    class="hero__slide grid-item"
+                    class="hero__slide grid-item slider__slide-custom" 
                     data-slide="{{ block.id }}"
                     data-slide-index="{{ forloop.index0 }}"
                     {{ block.shopify_attributes }}
@@ -277,16 +292,16 @@
 
                   {%- when 'text-slide' -%}
                     {%- if block.settings.subheading != blank -%}
-                      {%- assign font_size_class = block.settings.subheading_size | prepend: 'subheading-size-' -%}
-
-                      <p class="hero__subheading {{ font_size_class }}">
+                      {%- assign font_size_class = block.settings.subheading_font | prepend: 'subheading-size-' -%}
+                      {%-     assign star_styling = block.settings.stars_enabled -%}
+                      <p class="hero__subheading {{ font_size_class }} {%- if star_styling -%} stars__subheading-custom {%- endif -%}">
                         {{ block.settings.subheading }}
                       </p>
                     {%- endif -%}
 
                     {%- if block.settings.title != blank -%}
-                      {%- assign font_size_class = block.settings.heading_size | prepend: 'heading-size-' -%}
- 
+                      {%- assign font_size_class = block.settings.heading_font | prepend: 'heading-size-' -%}
+
                       <h2 class="hero__title {{ font_size_class }}">
                         {{ block.settings.title }}
                       </h2>
@@ -295,8 +310,8 @@
                     {%- if block.settings.text != blank -%}
                       {%- assign font_size_class = block.settings.text_size | prepend: 'body-size-' -%}
 
-                      <div class="hero__rte {{ font_size_class }} {{ block.settings.text_style }}">
-                        {{ product.metafields.custom.proof_testimonial }}
+                      <div class="test hero__rte {{ font_size_class }} {{ block.settings.text_style }}">
+                        {{ block.settings.text }}
                       </div>
                     {%- endif -%}
 
@@ -322,9 +337,8 @@
                   {%- when 'heading' -%}
                     {%- if block.settings.title != blank -%}
                       {%- assign animation_order = animation_order | plus: 1 -%}
-                      {%- assign font_size_class = block.settings.heading_size | prepend: 'heading-size-' -%}
-                      
-                      <h2 class=" hero__title {{ font_size_class }} block-padding"
+                      {%- assign font_size_class = block.settings.text_size | prepend: 'heading-size-' -%}
+                      <h2 class="hero__title {{ font_size_class }} block-padding"
                         data-aos="hero"
                         data-aos-anchor="{{ animation_anchor }}"
                         data-aos-order="{{ animation_order }}"
@@ -339,7 +353,9 @@
                     {%- if block.settings.subheading != blank -%}
                       {%- assign animation_order = animation_order | plus: 1 -%}
                       {%- assign font_size_class = block.settings.text_size | prepend: 'subheading-size-' -%}
-                      <p class="hero__subheading {{ font_size_class }} block-padding"
+                      {%- assign sub_letter_spacing = block.settings.sub_letter_spacing | prepend: 'sub-letter-spacing-' -%}
+                      {%- assign star_styling = block.settings.stars_enabled -%}
+                      <p class="hero__subheading {{ font_size_class }} block-padding {{ sub_letter_spacing }} {%- if star_styling -%}stars__subheading-custom {%- endif -%}"
                         data-aos="hero"
                         data-aos-anchor="{{ animation_anchor }}"
                         data-aos-order="{{ animation_order }}"
@@ -354,6 +370,7 @@
                     {%- if block.settings.text != blank -%}
                       {%- assign animation_order = animation_order | plus: 1 -%}
                       {%- assign font_size_class = block.settings.text_size | prepend: 'body-size-' -%}
+                      
                       <div class="hero__rte {{ font_size_class }} {{ block.settings.text_style }} block-padding"
                         data-aos="hero"
                         data-aos-anchor="{{ animation_anchor }}"
