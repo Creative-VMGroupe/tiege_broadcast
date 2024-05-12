@@ -50,8 +50,8 @@
     endunless
   endcapture
 
-  assign image_1 = product.metafields.custom.proof_image_1
-  assign image_2 = product.metafields.custom.proof_image_2
+  assign image_1 = section.settings.image_1
+  assign image_2 = section.settings.image_2
   assign image_width = section.settings.image_width
   capture sizes
     if image_1 and image_2
