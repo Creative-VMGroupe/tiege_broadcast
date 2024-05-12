@@ -185,6 +185,7 @@
       "block_order": [
         "text_slide_Ey9Vkb"
       ],
+      "disabled": true,
       "custom_css": [
         ".flickity-viewport {height: calc(100vh \/ 3) !important;}",
         "p.hero__subheading {order: 2;}",
