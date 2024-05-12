@@ -600,6 +600,62 @@
         "include_margins": false
       }
     },
+    "section_accordion_metafields_ymJWCB": {
+      "type": "section-accordion-metafields",
+      "blocks": {
+        "text_JhDXx8": {
+          "type": "text",
+          "settings": {
+            "title": "{{ product.metafields.custom.faq_1_question.value }}",
+            "text": "<p>{{ product.metafields.custom.faq_1_answer | metafield_tag }}<\/p>"
+          }
+        },
+        "text_6NXxKE": {
+          "type": "text",
+          "settings": {
+            "title": "{{ product.metafields.custom.faq_2_question.value }}",
+            "text": "<p>{{ product.metafields.custom.faq_2_answer | metafield_tag }}<\/p>"
+          }
+        },
+        "text_CHJdRz": {
+          "type": "text",
+          "settings": {
+            "title": "{{ product.metafields.custom.faq_3_question.value }}",
+            "text": "<p>{{ product.metafields.custom.faq_3_answer | metafield_tag }}<\/p>"
+          }
+        },
+        "text_W9fXak": {
+          "type": "text",
+          "settings": {
+            "title": "{{ product.metafields.custom.faq_4_question.value }}",
+            "text": "<p>{{ product.metafields.custom.faq_4_answer | metafield_tag }}<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_JhDXx8",
+        "text_6NXxKE",
+        "text_CHJdRz",
+        "text_W9fXak"
+      ],
+      "settings": {
+        "default_open": false,
+        "title": "FAQ",
+        "heading_size": 40,
+        "subheading_size": 24,
+        "text_size": 16,
+        "show_icon": false,
+        "icon_name": "icon-award",
+        "icon_size": 20,
+        "icon_color": "#545454",
+        "bg_color": "#f7f7f7",
+        "color": "",
+        "border_color": "",
+        "width": "wrapper--full--custom",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_accordion_new_RAhUrC": {
       "type": "section-accordion-new",
       "blocks": {
@@ -638,6 +694,7 @@
         "text_9zdYVc",
         "text_ihckiU"
       ],
+      "disabled": true,
       "settings": {
         "default_open": false,
         "title": "FAQs",
@@ -756,6 +813,7 @@
     "section_accordion_new_hde9c4",
     "171319612680298cf4",
     "1713193502d18b128b",
+    "section_accordion_metafields_ymJWCB",
     "section_accordion_new_RAhUrC",
     "app_accordion_8mPAjc",
     "related",
