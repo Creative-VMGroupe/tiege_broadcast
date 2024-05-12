@@ -217,9 +217,9 @@
             "stars_enabled": false,
             "subheading": "",
             "subheading_font": 16,
-            "title": "Willow Bark Extract",
+            "title": "{{ product.metafields.custom.ingredient_1_title.value }}",
             "heading_font": 40,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text": "<p>{{ product.metafields.custom.ingredient_1_information | metafield_tag }}<\/p>",
             "text_size": 16,
             "text_style": "font-body",
             "button_text": "",
@@ -228,7 +228,7 @@
             "button_size": "",
             "button_style": "btn--solid",
             "show_arrow": false,
-            "image": "shopify:\/\/shop_images\/willow-v1608581883683.png"
+            "image": "{{ product.metafields.custom.ingredient_1_image.value }}"
           }
         },
         "text_slide_i3an9N": {
