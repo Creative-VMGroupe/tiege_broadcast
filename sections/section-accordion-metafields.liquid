@@ -141,7 +141,7 @@
                         </div>
                       {%- when 'image' -%}
                       {%- if block.settings.title != blank -%}
-                        <div class="faq-list__item" {{ block.shopify_attributes }}>
+                        <div class="faq-list__item faq-list__item-custom" {{ block.shopify_attributes }}>
                           <div class="faq-list__item-image">
                             {%- assign aspect_ratio = 1 | divided_by: block.settings.aspect_ratio -%}
                             {%- render 'image', image: block.settings.image, aspect_ratio: aspect_ratio -%}
