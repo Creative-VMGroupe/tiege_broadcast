@@ -629,6 +629,62 @@
         "padding_bottom": 0
       }
     },
+    "section_accordion_metafields_piFfQf": {
+      "type": "section-accordion-metafields",
+      "blocks": {
+        "text_9Ad98D": {
+          "type": "text",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+          }
+        },
+        "text_Kazkih": {
+          "type": "text",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+          }
+        },
+        "text_c3tn7p": {
+          "type": "text",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+          }
+        },
+        "text_4W7eLC": {
+          "type": "text",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_9Ad98D",
+        "text_Kazkih",
+        "text_c3tn7p",
+        "text_4W7eLC"
+      ],
+      "settings": {
+        "default_open": false,
+        "title": "FAQ",
+        "heading_size": 40,
+        "subheading_size": 24,
+        "text_size": 16,
+        "show_icon": false,
+        "icon_name": "icon-award",
+        "icon_size": 20,
+        "icon_color": "#545454",
+        "bg_color": "",
+        "color": "",
+        "border_color": "",
+        "width": "wrapper--full--custom",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "compare_systems_PgJw6T": {
       "type": "compare-systems",
       "blocks": {
@@ -844,6 +900,7 @@
     "section_double_slider_metafield_EFabGL",
     "section_columns_ycKyp7",
     "section_accordion_new_DpxfiN",
+    "section_accordion_metafields_piFfQf",
     "compare_systems_PgJw6T",
     "section_accordion_new_4E9V9R",
     "app_accordion_Qtcf8J",
