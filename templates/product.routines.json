@@ -611,6 +611,7 @@
         "image_meFLzL",
         "image_6KDKny"
       ],
+      "disabled": true,
       "settings": {
         "default_open": true,
         "title": "How To",
@@ -742,6 +743,7 @@
         },
         "item_Be9ifm": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "title": "Level 4",
             "image": "shopify:\/\/shop_images\/Acne_RoutineL1_Tiege_Hanley_Acne_Hero.jpg",
