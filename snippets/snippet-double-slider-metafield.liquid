@@ -110,9 +110,7 @@
     endif
   endcapture
 -%}
-<script>
-  console.log(product.metafields.custom.proof_image_1 | json)
-</script>
+
 {%- capture section_images -%}
   {%- if image_1 != blank -%}
     <div class="brick__block__image wide-image"
