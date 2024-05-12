@@ -603,23 +603,15 @@
             "image": "shopify:\/\/shop_images\/AdobeStock_481479860.jpg",
             "aspect_ratio": 0.6
           }
-        },
-        "image_C7LWHR": {
-          "type": "image",
-          "settings": {
-            "title": "Image heading",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>",
-            "aspect_ratio": 0.6
-          }
         }
       },
       "block_order": [
         "image_gHryiA",
         "image_BE4xiM",
         "image_meFLzL",
-        "image_6KDKny",
-        "image_C7LWHR"
+        "image_6KDKny"
       ],
+      "disabled": true,
       "settings": {
         "default_open": true,
         "title": "How To",
