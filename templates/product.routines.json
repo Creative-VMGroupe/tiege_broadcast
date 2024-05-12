@@ -295,6 +295,87 @@
         "padding_bottom": 0
       }
     },
+    "section_double_slider_metafield_EFabGL": {
+      "type": "section-double-slider-metafield",
+      "blocks": {
+        "text_slide_iH6kMD": {
+          "type": "text-slide",
+          "settings": {
+            "stars_enabled": false,
+            "subheading": "",
+            "subheading_font": 16,
+            "title": "{{ product.metafields.custom.ingredient_1_title.value }}",
+            "heading_font": 40,
+            "text": "<p>{{ product.metafields.custom.ingredient_1_information | metafield_tag }}<\/p>",
+            "text_size": 16,
+            "text_style": "font-body",
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image": "{{ product.metafields.custom.ingredient_1_image.value }}"
+          }
+        },
+        "text_slide_AqyEPP": {
+          "type": "text-slide",
+          "settings": {
+            "stars_enabled": false,
+            "subheading": "Tiege Subheading",
+            "subheading_font": 16,
+            "title": "Image with text slider",
+            "heading_font": 40,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 16,
+            "text_style": "font-body",
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "text_slide_x7gBCh": {
+          "type": "text-slide",
+          "settings": {
+            "stars_enabled": false,
+            "subheading": "Tiege Subheading",
+            "subheading_font": 16,
+            "title": "Image with text slider",
+            "heading_font": 40,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 16,
+            "text_style": "font-body",
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "text_slide_iH6kMD",
+        "text_slide_AqyEPP",
+        "text_slide_x7gBCh"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-two-thirds",
+        "mobile_height": "screen-height-one-third--mobile",
+        "width": "wrapper--full",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "bg_color": "",
+        "color": "",
+        "sub_color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_columns_ycKyp7": {
       "type": "section-columns",
       "blocks": {
@@ -712,6 +793,7 @@
     "main",
     "section_double_slider_new_ERgtDU",
     "section_double_slider_new_M974Kz",
+    "section_double_slider_metafield_EFabGL",
     "section_columns_ycKyp7",
     "section_accordion_new_DpxfiN",
     "compare_systems_PgJw6T",
