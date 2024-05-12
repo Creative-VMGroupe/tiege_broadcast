@@ -632,44 +632,52 @@
     "section_accordion_metafields_piFfQf": {
       "type": "section-accordion-metafields",
       "blocks": {
-        "text_9Ad98D": {
-          "type": "text",
+        "image_x4L47H": {
+          "type": "image",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "title": "Step 1: Wash",
+            "text": "<p>Use Tiege Hanley's WASH facial cleanser. Wet your face, squeeze out the size of a nickel (yes, the coin) into your palm, rub it all over your wet face for about 10 seconds.<\/p>",
+            "image": "shopify:\/\/shop_images\/HARRYS_FW_PROD_0279_1.jpg",
+            "aspect_ratio": 0.6
           }
         },
-        "text_Kazkih": {
-          "type": "text",
+        "image_wCArJc": {
+          "type": "image",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "title": "Step 2: Scrub",
+            "text": "<p>Use Tiege Hanley’s AM moisturizer. Squeeze out the size of a pea into your palm and spend about 10 seconds massaging it all over your face.<\/p>",
+            "image": "shopify:\/\/shop_images\/AdobeStock_481479872.jpg",
+            "aspect_ratio": 0.6
           }
         },
-        "text_c3tn7p": {
-          "type": "text",
+        "image_GUeE4Y": {
+          "type": "image",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "title": "Step 3: AM Moisturizer",
+            "text": "<p>Use Tiege Hanley’s AM moisturizer. Squeeze out the size of a pea into your palm and spend about 10 seconds massaging it all over your face.<\/p>",
+            "image": "shopify:\/\/shop_images\/AdobeStock_481479870.jpg",
+            "aspect_ratio": 0.6
           }
         },
-        "text_4W7eLC": {
-          "type": "text",
+        "image_Cpqz6F": {
+          "type": "image",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "title": "Step 3: AM Moisturizer",
+            "text": "<p>Use Tiege Hanley’s AM moisturizer. Squeeze out the size of a pea into your palm and spend about 10 seconds massaging it all over your face.<\/p>",
+            "image": "shopify:\/\/shop_images\/AdobeStock_481479870.jpg",
+            "aspect_ratio": 0.6
           }
         }
       },
       "block_order": [
-        "text_9Ad98D",
-        "text_Kazkih",
-        "text_c3tn7p",
-        "text_4W7eLC"
+        "image_x4L47H",
+        "image_wCArJc",
+        "image_GUeE4Y",
+        "image_Cpqz6F"
       ],
       "settings": {
-        "default_open": false,
-        "title": "FAQ",
+        "default_open": true,
+        "title": "How To",
         "heading_size": 40,
         "subheading_size": 24,
         "text_size": 16,
@@ -677,11 +685,11 @@
         "icon_name": "icon-award",
         "icon_size": 20,
         "icon_color": "#545454",
-        "bg_color": "",
-        "color": "",
+        "bg_color": "#f7f7f7",
+        "color": "#000000",
         "border_color": "",
         "width": "wrapper--full--custom",
-        "padding_top": 0,
+        "padding_top": 80,
         "padding_bottom": 0
       }
     },
