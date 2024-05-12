@@ -186,6 +186,48 @@
         "padding_bottom": 0
       }
     },
+    "section_double_slider_metafield_ihM6Ch": {
+      "type": "section-double-slider-metafield",
+      "blocks": {
+        "text_slide_mwfUVt": {
+          "type": "text-slide",
+          "settings": {
+            "stars_enabled": true,
+            "subheading": "★★★★★",
+            "subheading_font": 16,
+            "title": "Proof",
+            "heading_font": 40,
+            "text": "<p>{{ product.metafields.custom.proof_testimonial | metafield_tag }}<\/p>",
+            "text_size": 16,
+            "text_style": "font-body",
+            "button_text": "View 1000+ Reviews",
+            "button_url": "shopify:\/\/pages\/the-proof",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "text_slide_mwfUVt"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-two-thirds",
+        "mobile_height": "screen-height-one-third--mobile",
+        "width": "wrapper--full",
+        "image_1": "{{ product.metafields.custom.proof_image_1.value }}",
+        "image_2": "{{ product.metafields.custom.proof_image_2.value }}",
+        "image_width": "three-quarters",
+        "text_alignment": "text-center",
+        "bg_color": "#000000",
+        "color": "#ffffff",
+        "sub_color": "#42b029",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_double_slider_new_Gd6kgG": {
       "type": "section-double-slider-new",
       "blocks": {
@@ -534,6 +576,7 @@
   },
   "order": [
     "main",
+    "section_double_slider_metafield_ihM6Ch",
     "section_double_slider_new_Gd6kgG",
     "section_double_slider_new_3LK9XP",
     "section_accordion_new_hde9c4",
