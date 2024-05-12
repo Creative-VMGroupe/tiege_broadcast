@@ -373,13 +373,53 @@
             "button_style": "btn--solid",
             "show_arrow": false
           }
+        },
+        "image_iHTiwD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PM-1.png",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "PM",
+            "heading_size": 5,
+            "text": "<p>Night-time moisturizer.<\/p>",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_y3tiDJ": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom.included_in_product_1_image.value }}",
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "normal",
+            "title": "{{ product.metafields.custom.included_in_product_1_title.value }}",
+            "heading_size": 5,
+            "text": "<p>{{ product.metafields.custom.included_in_product_2_description.value }}<\/p>",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
         }
       },
       "block_order": [
         "image_UXnDCi",
         "image_PAE3RF",
         "image_499cHD",
-        "image_HVJjGk"
+        "image_HVJjGk",
+        "image_iHTiwD",
+        "image_y3tiDJ"
       ],
       "settings": {
         "title": "Included in this System",
