@@ -124,7 +124,7 @@
 
 {%- capture section_images -%}
   {%- if image_1 != blank -%}
-    <div class="brick__block__image wide-image"
+    <div class="brick__block__image wide-image {{ mobile_height }}__flickity-custom"
       {% unless enable_slider %}
         data-slide="1"
         data-slide-index="1"
@@ -135,7 +135,7 @@
   {%- endif -%}
 
   {%- if image_2 != blank -%}
-    <div class="brick__block__image wide-image"
+    <div class="brick__block__image wide-image {{ mobile_height }}__flickity-custom"
       {% unless enable_slider %}
         data-slide="2"
         data-slide-index="2"
