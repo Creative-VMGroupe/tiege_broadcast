@@ -411,6 +411,7 @@
         "text_slide_QWrw4g",
         "text_slide_brLbph"
       ],
+      "disabled": true,
       "custom_css": [
 
       ],
@@ -425,6 +426,62 @@
         "bg_color": "#eaeaea",
         "color": "",
         "sub_color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_accordion_metafields_x7F7NN": {
+      "type": "section-accordion-metafields",
+      "blocks": {
+        "text_PiNwGd": {
+          "type": "text",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+          }
+        },
+        "text_wNB3G6": {
+          "type": "text",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+          }
+        },
+        "text_rqFKEn": {
+          "type": "text",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+          }
+        },
+        "text_4KXNWa": {
+          "type": "text",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_PiNwGd",
+        "text_wNB3G6",
+        "text_rqFKEn",
+        "text_4KXNWa"
+      ],
+      "settings": {
+        "default_open": true,
+        "title": "How To",
+        "heading_size": 40,
+        "subheading_size": 24,
+        "text_size": 16,
+        "show_icon": false,
+        "icon_name": "icon-award",
+        "icon_size": 20,
+        "icon_color": "#545454",
+        "bg_color": "#d6d6d6",
+        "color": "",
+        "border_color": "",
+        "width": "wrapper--full--custom",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -666,6 +723,7 @@
     "section_double_slider_new_Gd6kgG",
     "section_double_slider_metafield_LQ9wXf",
     "section_double_slider_new_3LK9XP",
+    "section_accordion_metafields_x7F7NN",
     "section_accordion_new_hde9c4",
     "171319612680298cf4",
     "1713193502d18b128b",
