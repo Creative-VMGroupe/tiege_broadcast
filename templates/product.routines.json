@@ -208,66 +208,6 @@
         "padding_bottom": 0
       }
     },
-    "section_double_slider_metafield_KBaMdH": {
-      "type": "section-double-slider-metafield",
-      "blocks": {
-        "text_slide_nR4neM": {
-          "type": "text-slide",
-          "settings": {
-            "subheading": "Introducing",
-            "subheading_size": 3,
-            "title": "Image with text Slider 2",
-            "heading_size": 8,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
-            "text_style": "font-body",
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image": "shopify:\/\/shop_images\/f5990ee229069b8e0866632a24db1342.jpg"
-          }
-        },
-        "text_slide_hKbJJ9": {
-          "type": "text-slide",
-          "disabled": true,
-          "settings": {
-            "subheading": "Introducing",
-            "subheading_size": 3,
-            "title": "Image with text slider",
-            "heading_size": 8,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 4,
-            "text_style": "font-body",
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image": "shopify:\/\/shop_images\/f5990ee229069b8e0866632a24db1342.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "text_slide_nR4neM",
-        "text_slide_hKbJJ9"
-      ],
-      "settings": {
-        "layout": "",
-        "height": "screen-height-three-quarters",
-        "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full",
-        "image_width": "three-quarters",
-        "text_alignment": "text-left",
-        "bg_color": "",
-        "color": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "section_double_slider_new_M974Kz": {
       "type": "section-double-slider-new",
       "blocks": {
@@ -310,11 +250,31 @@
             "show_arrow": false,
             "image": "shopify:\/\/shop_images\/rosemary-v1608581888105.png"
           }
+        },
+        "text_slide_XRVxqf": {
+          "type": "text-slide",
+          "settings": {
+            "stars_enabled": false,
+            "subheading": "Tiege Subheading",
+            "subheading_font": 16,
+            "title": "Image with text slider",
+            "heading_font": 40,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 16,
+            "text_style": "font-body",
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
         }
       },
       "block_order": [
         "text_slide_fLBXEE",
-        "text_slide_i3an9N"
+        "text_slide_i3an9N",
+        "text_slide_XRVxqf"
       ],
       "custom_css": [
 
@@ -710,7 +670,6 @@
   "order": [
     "main",
     "section_double_slider_new_ERgtDU",
-    "section_double_slider_metafield_KBaMdH",
     "section_double_slider_new_M974Kz",
     "section_columns_ycKyp7",
     "section_accordion_new_DpxfiN",
