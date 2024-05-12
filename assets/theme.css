@@ -26681,7 +26681,7 @@ flex: 1;
     margin: 0 auto;
 }  
 }
-/*Accorion - VM*/
+/*Accordion - VM*/
 .accordion-vm-section {
   --padding-top: calc(var(--PT) * .6);
   --padding-bottom: calc(var(--PB) * .6);
@@ -26701,6 +26701,12 @@ flex: 1;
     padding-top: 0px;
     padding-bottom: 0px;
   }
+}
+/*Accordion Metafields*/
+.faq-list--3 .faq-list__item.faq-list__item-custom,
+.faq-list--6 .faq-list__item.faq-list__item-custom,
+.faq-list--9 .faq-list__item.faq-list__item-custom {
+  flex-basis: 49.37%;
 }
 /*Video Block - VM*/
 .hero-block__video-custom {
