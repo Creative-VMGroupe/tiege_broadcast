@@ -277,6 +277,7 @@
         "text_slide_i3an9N",
         "text_slide_XRVxqf"
       ],
+      "disabled": true,
       "custom_css": [
 
       ],
@@ -309,7 +310,7 @@
             "text": "<p>{{ product.metafields.custom.ingredient_1_information | metafield_tag }}<\/p>",
             "text_size": 16,
             "text_style": "font-body",
-            "button_text": "Learn more",
+            "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
             "button_size": "",
@@ -371,7 +372,7 @@
         "width": "wrapper--full",
         "image_width": "one-half",
         "text_alignment": "text-left",
-        "bg_color": "",
+        "bg_color": "#f7f7f7",
         "color": "",
         "sub_color": "",
         "padding_top": 0,
