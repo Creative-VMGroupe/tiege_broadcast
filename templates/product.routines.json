@@ -396,7 +396,7 @@
         "image_pdjkwH": {
           "type": "image",
           "settings": {
-            "image": "{{ product.metafields.custom.ingredient_3_image.value }}",
+            "image": "{{ product.metafields.custom.included_in_product_3_image.value }}",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
