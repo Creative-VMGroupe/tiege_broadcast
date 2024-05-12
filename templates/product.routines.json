@@ -237,9 +237,9 @@
             "stars_enabled": false,
             "subheading": "",
             "subheading_font": 16,
-            "title": "Ingredient #2",
+            "title": "{{ product.metafields.custom.ingredient_2_title.value }}",
             "heading_font": 40,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text": "<p>{{ product.metafields.custom.ingredient_2_information | metafield_tag }}<\/p>",
             "text_size": 16,
             "text_style": "font-body",
             "button_text": "",
@@ -248,7 +248,7 @@
             "button_size": "",
             "button_style": "btn--solid",
             "show_arrow": false,
-            "image": "shopify:\/\/shop_images\/rosemary-v1608581888105.png"
+            "image": "{{ product.metafields.custom.ingredient_3_image.value }}"
           }
         },
         "text_slide_XRVxqf": {
