@@ -676,6 +676,15 @@
             "image": "{{ product.metafields.custom.how_to_step_5_image.value }}",
             "aspect_ratio": 0.6
           }
+        },
+        "image_yJrC8W": {
+          "type": "image",
+          "settings": {
+            "title": "{{ product.metafields.custom.how_to_step_6_heading.value }}",
+            "text": "<p>{{ product.metafields.custom.how_to_step_6_description | metafield_tag }}<\/p>",
+            "image": "{{ product.metafields.custom.how_to_step_6_image.value }}",
+            "aspect_ratio": 0.6
+          }
         }
       },
       "block_order": [
@@ -683,7 +692,8 @@
         "image_wCArJc",
         "image_GUeE4Y",
         "image_Cpqz6F",
-        "image_Akd7qh"
+        "image_Akd7qh",
+        "image_yJrC8W"
       ],
       "settings": {
         "default_open": true,
