@@ -1,10 +1,10 @@
-<!-- /sections/section-double-slider-metafield.liquid -->
+<!-- /sections/section-double-slider.liquid -->
 
 {%- render 'snippet-double-slider-metafield' -%}
 
 {% schema %}
 {
-  "name": "Media Metafield slider",
+  "name": "Image with slider Meta",
   "settings": [
     {
       "type": "select",
@@ -124,6 +124,11 @@
       "label": "Text"
     },
     {
+      "type": "color",
+      "id": "sub_color",
+      "label": "Sub Heading"
+    },
+    {
       "type": "header",
       "content": "Section padding"
     },
@@ -154,20 +159,27 @@
       "name": "Text slide",
       "settings": [
         {
+          "type": "checkbox",
+          "id": "stars_enabled",
+          "label": "Enable Star Styling",
+          "default": false
+        },
+        {
           "type": "text",
           "id": "subheading",
           "label": "Subheading",
-          "default": "Introducing"
+          "default": "Tiege Subheading"
         },
         {
           "type": "range",
-          "id": "subheading_size",
+          "id": "subheading_font",
           "label": "Size",
-          "min": 1,
-          "max": 15,
-          "step": 1,
-          "default": 3
+          "min": 12,
+          "max": 16,
+          "step": 2,
+          "default": 16
         },
+
         {
           "type": "text",
           "id": "title",
@@ -176,12 +188,12 @@
         },
         {
           "type": "range",
-          "id": "heading_size",
+          "id": "heading_font",
           "label": "Size",
-          "min": 1,
-          "max": 15,
-          "step": 1,
-          "default": 8
+          "min": 24,
+          "max": 40,
+          "step": 8,
+          "default": 40
         },
         {
           "type": "richtext",
@@ -193,10 +205,10 @@
           "type": "range",
           "id": "text_size",
           "label": "Size",
-          "min": 1,
-          "max": 15,
-          "step": 1,
-          "default": 4
+          "min": 12,
+          "max": 16,
+          "step": 2,
+          "default": 16
         },
         {
           "type": "select",
@@ -278,7 +290,7 @@
   ],
   "presets": [
     {
-      "name": "Media Metafield slider",
+      "name": "Image with slider Meta",
       "category": "Image",
       "blocks": [
         {
