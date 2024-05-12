@@ -814,6 +814,7 @@
         "text_Jkhjxh",
         "text_Mz8RKb"
       ],
+      "disabled": true,
       "settings": {
         "default_open": false,
         "title": "FAQ",
@@ -880,7 +881,7 @@
         "icon_name": "icon-award",
         "icon_size": 20,
         "icon_color": "#545454",
-        "bg_color": "",
+        "bg_color": "#f7f7f7",
         "color": "",
         "border_color": "",
         "width": "wrapper--full--custom",
