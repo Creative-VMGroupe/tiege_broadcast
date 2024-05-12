@@ -140,6 +140,7 @@
                           {{ text_content }}
                         </div>
                       {%- when 'image' -%}
+                      {%- if block.settings.title != blank -%}
                         <div class="faq-list__item" {{ block.shopify_attributes }}>
                           <div class="faq-list__item-image">
                             {%- assign aspect_ratio = 1 | divided_by: block.settings.aspect_ratio -%}
@@ -147,6 +148,7 @@
                           </div>
                           {{ text_content }}
                         </div>
+                        {%- endif -%}
                       {%- when 'code' -%}
                         <div class="faq-list__item" {{ block.shopify_attributes }}>
                           {{ block.settings.code }}
@@ -193,6 +195,7 @@
                             {%- endif -%}
                           {%- endform -%}
                         </div>
+                      
                         {%- when 'FeaturedCollection' -%} 
                           {% comment %} {% section featured_collection %} {% endcomment %}
                         {%- else -%}
