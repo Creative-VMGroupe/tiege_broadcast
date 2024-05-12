@@ -26675,7 +26675,7 @@ flex: 1;
 /*Flickity*/
 @media (max-width: 749px) {
 .flickity-page-dots {
-      left: 0;
+    left: 0;
     max-width: 256px;
     right: 0;
     margin: 0 auto;
