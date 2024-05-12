@@ -504,6 +504,7 @@
         },
         "image_iHTiwD": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "{{ product.metafields.custom.included_in_product_2_image.value }}",
             "image_aspect_ratio": 1,
@@ -523,6 +524,7 @@
         },
         "image_pdjkwH": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "{{ product.metafields.custom.included_in_product_3_image.value }}",
             "image_aspect_ratio": 1,
