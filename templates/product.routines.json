@@ -248,7 +248,7 @@
             "button_size": "",
             "button_style": "btn--solid",
             "show_arrow": false,
-            "image": "{{ product.metafields.custom.ingredient_3_image.value }}"
+            "image": "{{ product.metafields.custom.ingredient_2_image.value }}"
           }
         },
         "text_slide_XRVxqf": {
