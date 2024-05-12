@@ -327,9 +327,9 @@
             "stars_enabled": false,
             "subheading": "",
             "subheading_font": 16,
-            "title": "{{ product.metafields.custom.ingredient_1_title.value }}",
+            "title": "{{ product.metafields.custom.ingredient_3_title.value }}",
             "heading_font": 40,
-            "text": "<p>{{ product.metafields.custom.ingredient_1_information | metafield_tag }}<\/p>",
+            "text": "<p>{{ product.metafields.custom.ingredient_3_information | metafield_tag }}<\/p>",
             "text_size": 16,
             "text_style": "font-body",
             "button_text": "",
@@ -338,7 +338,7 @@
             "button_size": "",
             "button_style": "btn--outline",
             "show_arrow": false,
-            "image": "{{ product.metafields.custom.ingredient_1_image.value }}"
+            "image": "{{ product.metafields.custom.ingredient_3_image.value }}"
           }
         }
       },
