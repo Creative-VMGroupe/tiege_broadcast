@@ -433,40 +433,68 @@
     "section_accordion_metafields_x7F7NN": {
       "type": "section-accordion-metafields",
       "blocks": {
-        "text_PiNwGd": {
-          "type": "text",
+        "image_jWQtXa": {
+          "type": "image",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "title": "Step 1: Wash",
+            "text": "<p>Use Tiege Hanley's WASH facial cleanser. Wet your face, squeeze out the size of a nickel (yes, the coin) into your palm, rub it all over your wet face for about 10 seconds.<\/p>",
+            "image": "shopify:\/\/shop_images\/HARRYS_FW_PROD_0279_1.jpg",
+            "aspect_ratio": 0.6
           }
         },
-        "text_wNB3G6": {
-          "type": "text",
+        "image_FBtfF6": {
+          "type": "image",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "title": "Step 2: Scrub",
+            "text": "<p>Use Tiege Hanley’s AM moisturizer. Squeeze out the size of a pea into your palm and spend about 10 seconds massaging it all over your face.<\/p>",
+            "image": "shopify:\/\/shop_images\/AdobeStock_481479872.jpg",
+            "aspect_ratio": 0.6
           }
         },
-        "text_rqFKEn": {
-          "type": "text",
+        "image_zTBdQ7": {
+          "type": "image",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "title": "Step 3: AM Moisturizer",
+            "text": "<p>Use Tiege Hanley’s AM moisturizer. Squeeze out the size of a pea into your palm and spend about 10 seconds massaging it all over your face.<\/p>",
+            "image": "shopify:\/\/shop_images\/AdobeStock_481479870.jpg",
+            "aspect_ratio": 0.6
           }
         },
-        "text_4KXNWa": {
-          "type": "text",
+        "image_6VLmKy": {
+          "type": "image",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "title": "{{ product.metafields.custom.how_to_step_4_title.value }}",
+            "text": "<p>{{ product.metafields.custom.how_to_step_4_description | metafield_tag }}<\/p>",
+            "image": "{{ product.metafields.custom.how_to_step_4_image.value }}",
+            "aspect_ratio": 0.6
+          }
+        },
+        "image_DY8JQV": {
+          "type": "image",
+          "settings": {
+            "title": "{{ product.metafields.custom.how_to_step_5_heading.value }}",
+            "text": "<p>{{ product.metafields.custom.how_to_step_5_description | metafield_tag }}<\/p>",
+            "image": "{{ product.metafields.custom.how_to_step_5_image.value }}",
+            "aspect_ratio": 0.6
+          }
+        },
+        "image_jV4djq": {
+          "type": "image",
+          "settings": {
+            "title": "{{ product.metafields.custom.how_to_step_6_heading.value }}",
+            "text": "<p>{{ product.metafields.custom.how_to_step_6_description | metafield_tag }}<\/p>",
+            "image": "{{ product.metafields.custom.how_to_step_6_image.value }}",
+            "aspect_ratio": 0.6
           }
         }
       },
       "block_order": [
-        "text_PiNwGd",
-        "text_wNB3G6",
-        "text_rqFKEn",
-        "text_4KXNWa"
+        "image_jWQtXa",
+        "image_FBtfF6",
+        "image_zTBdQ7",
+        "image_6VLmKy",
+        "image_DY8JQV",
+        "image_jV4djq"
       ],
       "settings": {
         "default_open": true,
