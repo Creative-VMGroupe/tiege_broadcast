@@ -228,56 +228,6 @@
         "padding_bottom": 0
       }
     },
-    "section_double_slider_new_Gd6kgG": {
-      "type": "section-double-slider-new",
-      "blocks": {
-        "text_slide_F6A3Rj": {
-          "type": "text-slide",
-          "settings": {
-            "stars_enabled": true,
-            "subheading": "★★★★★",
-            "subheading_font": 16,
-            "title": "Proof",
-            "heading_font": 40,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p><p>- Name of Reviewer<\/p>",
-            "text_size": 16,
-            "text_style": "font-body",
-            "button_text": "View 1000+ Reviews",
-            "button_url": "",
-            "button_type": "btn--white",
-            "button_size": "",
-            "button_style": "btn--text",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "text_slide_F6A3Rj"
-      ],
-      "disabled": true,
-      "custom_css": [
-        ".flickity-viewport {height: calc(100vh \/ 3) !important;}",
-        "p.hero__subheading {order: 2;}",
-        "h2.hero__title {order: 1;}",
-        ".hero__rte {order: 3;}",
-        ".hero__button {order: 4;}"
-      ],
-      "settings": {
-        "layout": "is-reversed",
-        "height": "screen-height-one-half",
-        "mobile_height": "screen-height-one-third--mobile",
-        "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png",
-        "image_2": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO3.png",
-        "image_width": "three-quarters",
-        "text_alignment": "text-center",
-        "bg_color": "#000000",
-        "color": "#ffffff",
-        "sub_color": "#42b029",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "section_double_slider_metafield_LQ9wXf": {
       "type": "section-double-slider-metafield",
       "blocks": {
@@ -359,73 +309,6 @@
         "bg_color": "#f7f7f7",
         "color": "#000000",
         "sub_color": "#000000",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_double_slider_new_3LK9XP": {
-      "type": "section-double-slider-new",
-      "blocks": {
-        "text_slide_QWrw4g": {
-          "type": "text-slide",
-          "settings": {
-            "stars_enabled": false,
-            "subheading": "",
-            "subheading_font": 16,
-            "title": "Willow Bark Extract",
-            "heading_font": 40,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 16,
-            "text_style": "font-body",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image": "shopify:\/\/shop_images\/willow-v1608581883683.png"
-          }
-        },
-        "text_slide_brLbph": {
-          "type": "text-slide",
-          "settings": {
-            "stars_enabled": false,
-            "subheading": "",
-            "subheading_font": 16,
-            "title": "Image with text slider",
-            "heading_font": 40,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_size": 16,
-            "text_style": "font-body",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image": "shopify:\/\/shop_images\/rosemary-v1608581888105.png"
-          }
-        }
-      },
-      "block_order": [
-        "text_slide_QWrw4g",
-        "text_slide_brLbph"
-      ],
-      "disabled": true,
-      "custom_css": [
-
-      ],
-      "settings": {
-        "layout": "is-reversed",
-        "height": "screen-height-one-half",
-        "mobile_height": "screen-height-one-third--mobile",
-        "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/uZr3qZvfRNuNZb2xaQjw.png",
-        "image_width": "one-half",
-        "text_alignment": "text-center",
-        "bg_color": "#eaeaea",
-        "color": "",
-        "sub_color": "",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -514,6 +397,179 @@
         "padding_bottom": 0
       }
     },
+    "section_accordion_metafields_ymJWCB": {
+      "type": "section-accordion-metafields",
+      "blocks": {
+        "text_JhDXx8": {
+          "type": "text",
+          "settings": {
+            "title": "{{ product.metafields.custom.faq_1_question.value }}",
+            "text": "<p>{{ product.metafields.custom.faq_1_answer | metafield_tag }}<\/p>"
+          }
+        },
+        "text_6NXxKE": {
+          "type": "text",
+          "settings": {
+            "title": "{{ product.metafields.custom.faq_2_question.value }}",
+            "text": "<p>{{ product.metafields.custom.faq_2_answer | metafield_tag }}<\/p>"
+          }
+        },
+        "text_CHJdRz": {
+          "type": "text",
+          "settings": {
+            "title": "{{ product.metafields.custom.faq_3_question.value }}",
+            "text": "<p>{{ product.metafields.custom.faq_3_answer | metafield_tag }}<\/p>"
+          }
+        },
+        "text_W9fXak": {
+          "type": "text",
+          "settings": {
+            "title": "{{ product.metafields.custom.faq_4_question.value }}",
+            "text": "<p>{{ product.metafields.custom.faq_4_answer | metafield_tag }}<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_JhDXx8",
+        "text_6NXxKE",
+        "text_CHJdRz",
+        "text_W9fXak"
+      ],
+      "settings": {
+        "default_open": false,
+        "title": "FAQ",
+        "heading_size": 40,
+        "subheading_size": 24,
+        "text_size": 16,
+        "show_icon": false,
+        "icon_name": "icon-award",
+        "icon_size": 20,
+        "icon_color": "#545454",
+        "bg_color": "#f7f7f7",
+        "color": "",
+        "border_color": "",
+        "width": "wrapper--full--custom",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_double_slider_new_Gd6kgG": {
+      "type": "section-double-slider-new",
+      "blocks": {
+        "text_slide_F6A3Rj": {
+          "type": "text-slide",
+          "settings": {
+            "stars_enabled": true,
+            "subheading": "★★★★★",
+            "subheading_font": 16,
+            "title": "Proof",
+            "heading_font": 40,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p><p>- Name of Reviewer<\/p>",
+            "text_size": 16,
+            "text_style": "font-body",
+            "button_text": "View 1000+ Reviews",
+            "button_url": "",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "text_slide_F6A3Rj"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".flickity-viewport {height: calc(100vh \/ 3) !important;}",
+        "p.hero__subheading {order: 2;}",
+        "h2.hero__title {order: 1;}",
+        ".hero__rte {order: 3;}",
+        ".hero__button {order: 4;}"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-third--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png",
+        "image_2": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO3.png",
+        "image_width": "three-quarters",
+        "text_alignment": "text-center",
+        "bg_color": "#000000",
+        "color": "#ffffff",
+        "sub_color": "#42b029",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_double_slider_new_3LK9XP": {
+      "type": "section-double-slider-new",
+      "blocks": {
+        "text_slide_QWrw4g": {
+          "type": "text-slide",
+          "settings": {
+            "stars_enabled": false,
+            "subheading": "",
+            "subheading_font": 16,
+            "title": "Willow Bark Extract",
+            "heading_font": 40,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 16,
+            "text_style": "font-body",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image": "shopify:\/\/shop_images\/willow-v1608581883683.png"
+          }
+        },
+        "text_slide_brLbph": {
+          "type": "text-slide",
+          "settings": {
+            "stars_enabled": false,
+            "subheading": "",
+            "subheading_font": 16,
+            "title": "Image with text slider",
+            "heading_font": 40,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 16,
+            "text_style": "font-body",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image": "shopify:\/\/shop_images\/rosemary-v1608581888105.png"
+          }
+        }
+      },
+      "block_order": [
+        "text_slide_QWrw4g",
+        "text_slide_brLbph"
+      ],
+      "disabled": true,
+      "custom_css": [
+
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-third--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/uZr3qZvfRNuNZb2xaQjw.png",
+        "image_width": "one-half",
+        "text_alignment": "text-center",
+        "bg_color": "#eaeaea",
+        "color": "",
+        "sub_color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_accordion_new_hde9c4": {
       "type": "section-accordion-new",
       "blocks": {
@@ -572,83 +628,6 @@
         "icon_size": 20,
         "icon_color": "#545454",
         "bg_color": "#d6d6d6",
-        "color": "",
-        "border_color": "",
-        "width": "wrapper--full--custom",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "171319612680298cf4": {
-      "type": "apps",
-      "disabled": true,
-      "settings": {
-        "include_margins": false
-      }
-    },
-    "1713193502d18b128b": {
-      "type": "apps",
-      "disabled": true,
-      "custom_css": [
-        ".comparable-selected-products .comparable-container {overflow: hidden;}",
-        ".comparable-selected-products .product-price-wrap {display: none;}",
-        ".comparable-selected-products .product-table-cell-container-wrap {padding: 0;}",
-        ".comparable-selected-products .add-to-cart-wrap {display: none;}",
-        ".product-table__header-row .product-table__cell {padding: 0;}"
-      ],
-      "settings": {
-        "include_margins": false
-      }
-    },
-    "section_accordion_metafields_ymJWCB": {
-      "type": "section-accordion-metafields",
-      "blocks": {
-        "text_JhDXx8": {
-          "type": "text",
-          "settings": {
-            "title": "{{ product.metafields.custom.faq_1_question.value }}",
-            "text": "<p>{{ product.metafields.custom.faq_1_answer | metafield_tag }}<\/p>"
-          }
-        },
-        "text_6NXxKE": {
-          "type": "text",
-          "settings": {
-            "title": "{{ product.metafields.custom.faq_2_question.value }}",
-            "text": "<p>{{ product.metafields.custom.faq_2_answer | metafield_tag }}<\/p>"
-          }
-        },
-        "text_CHJdRz": {
-          "type": "text",
-          "settings": {
-            "title": "{{ product.metafields.custom.faq_3_question.value }}",
-            "text": "<p>{{ product.metafields.custom.faq_3_answer | metafield_tag }}<\/p>"
-          }
-        },
-        "text_W9fXak": {
-          "type": "text",
-          "settings": {
-            "title": "{{ product.metafields.custom.faq_4_question.value }}",
-            "text": "<p>{{ product.metafields.custom.faq_4_answer | metafield_tag }}<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_JhDXx8",
-        "text_6NXxKE",
-        "text_CHJdRz",
-        "text_W9fXak"
-      ],
-      "settings": {
-        "default_open": false,
-        "title": "FAQ",
-        "heading_size": 40,
-        "subheading_size": 24,
-        "text_size": 16,
-        "show_icon": false,
-        "icon_name": "icon-award",
-        "icon_size": 20,
-        "icon_color": "#545454",
-        "bg_color": "#f7f7f7",
         "color": "",
         "border_color": "",
         "width": "wrapper--full--custom",
@@ -806,14 +785,12 @@
   "order": [
     "main",
     "section_double_slider_metafield_ihM6Ch",
-    "section_double_slider_new_Gd6kgG",
     "section_double_slider_metafield_LQ9wXf",
-    "section_double_slider_new_3LK9XP",
     "section_accordion_metafields_x7F7NN",
-    "section_accordion_new_hde9c4",
-    "171319612680298cf4",
-    "1713193502d18b128b",
     "section_accordion_metafields_ymJWCB",
+    "section_double_slider_new_Gd6kgG",
+    "section_double_slider_new_3LK9XP",
+    "section_accordion_new_hde9c4",
     "section_accordion_new_RAhUrC",
     "app_accordion_8mPAjc",
     "related",
