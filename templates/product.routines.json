@@ -262,7 +262,7 @@
             "text": "<p>{{ product.metafields.custom.ingredient_3_information | metafield_tag }}<\/p>",
             "text_size": 16,
             "text_style": "font-body",
-            "button_text": "Learn more",
+            "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
             "button_size": "",
