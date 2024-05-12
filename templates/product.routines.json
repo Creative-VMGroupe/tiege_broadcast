@@ -671,7 +671,6 @@
         },
         "image_Akd7qh": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "title": "{{ product.metafields.custom.how_to_step_5_heading.value }}",
             "text": "<p>{{ product.metafields.custom.how_to_step_5_description | metafield_tag }}<\/p>",
@@ -681,7 +680,6 @@
         },
         "image_yJrC8W": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "title": "{{ product.metafields.custom.how_to_step_6_heading.value }}",
             "text": "<p>{{ product.metafields.custom.how_to_step_6_description | metafield_tag }}<\/p>",
