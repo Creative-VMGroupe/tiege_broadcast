@@ -853,15 +853,15 @@
         "text_F4JPbY": {
           "type": "text",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "title": "{{ product.metafields.custom.faq_3_question.value }}",
+            "text": "<p>{{ product.metafields.custom.faq_3_answer | metafield_tag }}<\/p>"
           }
         },
         "text_NEBjPb": {
           "type": "text",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "title": "{{ product.metafields.custom.faq_4_question.value }}",
+            "text": "<p>{{ product.metafields.custom.faq_4_answer | metafield_tag }}<\/p>"
           }
         }
       },
