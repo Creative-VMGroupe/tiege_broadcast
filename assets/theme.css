@@ -26007,63 +26007,63 @@ div.rc_popup {
 /*Global*/
 @media only screen and (max-width: 749px) {
   .screen-height-full--mobile__flickity-custom .flickity-viewport {
-    min-height: var(--full-screen);
+    min-height: var(--full-screen) !important;
   }
 
   .screen-height-three-quarters--mobile__flickity-custom .flickity-viewport {
-    min-height: var(--three-quarters);
+    min-height: var(--three-quarters) !important;
   }
 
   .screen-height-two-thirds--mobile__flickity-custom .flickity-viewport {
-    min-height: var(--two-thirds);
+    min-height: var(--two-thirds) !important;
   }
 
   .screen-height-one-half--mobile__flickity-custom .flickity-viewport {
-    min-height: var(--one-half);
+    min-height: var(--one-half) !important;
   }
 
   .screen-height-one-third--mobile__flickity-custom .flickity-viewport{
-    min-height: var(--one-third);
+    min-height: var(--one-third) !important;
   }
 
   .seven-fifty-height-hero--mobile__flickity-custom .flickity-viewport {
-    min-height: 750px;
+    min-height: 750px !important;
   }
 
   .sixty-fifty-height-hero--mobile__flickity-custom .flickity-viewport {
-    min-height: 650px;
+    min-height: 650px !important;
   }
 
   .five-fifty-height-hero--mobile__flickity-custom .flickity-viewport {
-    min-height: 550px;
+    min-height: 550px !important;
   }
 
   .four-fifty-height-hero--mobile__flickity-custom .flickity-viewport {
-    min-height: 450px;
+    min-height: 450px !important;
   }
 
   .four-hundred-height-hero--mobile__flickity-custom .flickity-viewport {
-    min-height: 400px;
+    min-height: 400px !important;
   }
 
   .three-fifty-height-hero--mobile__flickity-custom .flickity-viewport {
-    min-height: 350px;
+    min-height: 350px !important;
   }
 
   .three-hundred-height-hero--mobile__flickity-custom .flickity-viewport {
-    min-height: 300px;
+    min-height: 300px !important;
   }
 
   .two-fifty-height-hero--mobile__flickity-custom .flickity-viewport {
-    min-height: 250px;
+    min-height: 250px !important;
   }
 
   .two-hundred-height-hero--mobile__flickity-custom .flickity-viewport {
-    min-height: 200px;
+    min-height: 200px !important;
   }
 
   .one-fifty-height-hero--mobile__flickity-custom .flickity-viewport {
-    min-height: 150px;
+    min-height: 150px !important;
   }
 }
 p, a, span, h2.column__heading {
