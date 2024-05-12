@@ -342,19 +342,20 @@
           "type": "text-slide",
           "settings": {
             "stars_enabled": false,
-            "subheading": "Tiege Subheading",
+            "subheading": "",
             "subheading_font": 16,
-            "title": "Image with text slider",
+            "title": "{{ product.metafields.custom.ingredient_3_title.value }}",
             "heading_font": 40,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text": "<p>{{ product.metafields.custom.ingredient_3_information | metafield_tag }}<\/p>",
             "text_size": 16,
             "text_style": "font-body",
-            "button_text": "Learn more",
+            "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
-            "show_arrow": false
+            "show_arrow": false,
+            "image": "{{ product.metafields.custom.ingredient_3_image.value }}"
           }
         }
       },
