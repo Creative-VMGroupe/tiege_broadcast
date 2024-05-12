@@ -208,6 +208,49 @@
         "padding_bottom": 0
       }
     },
+    "section_double_slider_metafield_ECkgjm": {
+      "type": "section-double-slider-metafield",
+      "blocks": {
+        "text_slide_aBkjUM": {
+          "type": "text-slide",
+          "settings": {
+            "stars_enabled": true,
+            "subheading": "★★★★★",
+            "subheading_font": 16,
+            "title": "Proof",
+            "heading_font": 40,
+            "text": "<p>{{ product.metafields.custom.proof_testimonial | metafield_tag }}<\/p>",
+            "text_size": 16,
+            "text_style": "font-body",
+            "button_text": "View 1000+ Reviews",
+            "button_url": "shopify:\/\/pages\/the-proof",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false,
+            "image": "{{ product.metafields.custom.ingredient_1_image.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "text_slide_aBkjUM"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-two-thirds",
+        "mobile_height": "screen-height-one-third--mobile",
+        "width": "wrapper--full",
+        "image_1": "{{ product.metafields.custom.proof_image_1.value }}",
+        "image_2": "{{ product.metafields.custom.proof_image_2.value }}",
+        "image_width": "three-quarters",
+        "text_alignment": "text-center",
+        "bg_color": "#000000",
+        "color": "#ffffff",
+        "sub_color": "#42b029",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_double_slider_new_M974Kz": {
       "type": "section-double-slider-new",
       "blocks": {
@@ -371,7 +414,7 @@
         "mobile_height": "screen-height-one-third--mobile",
         "width": "wrapper--full",
         "image_width": "one-half",
-        "text_alignment": "text-left",
+        "text_alignment": "text-center",
         "bg_color": "#f7f7f7",
         "color": "",
         "sub_color": "",
@@ -795,6 +838,7 @@
   "order": [
     "main",
     "section_double_slider_new_ERgtDU",
+    "section_double_slider_metafield_ECkgjm",
     "section_double_slider_new_M974Kz",
     "section_double_slider_metafield_EFabGL",
     "section_columns_ycKyp7",
