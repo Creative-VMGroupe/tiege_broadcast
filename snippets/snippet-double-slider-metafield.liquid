@@ -8,7 +8,9 @@
 {%- liquid
   assign desktop_height = section.settings.height
   assign mobile_height = section.settings.mobile_height
-  assign mobile_height_fix = section.settings.mobile_height | concat: '__flickity-custom'
+  capture mobile_height_fix
+      echo section.settings.mobile_height | append: '__flickity-custom'
+  endcapture
   assign width = section.settings.width
   assign enable_slider = false
   assign enable_text_slider = false
