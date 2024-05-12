@@ -254,6 +254,7 @@
       "block_order": [
         "text_slide_F6A3Rj"
       ],
+      "disabled": true,
       "custom_css": [
         ".flickity-viewport {height: calc(100vh \/ 3) !important;}",
         "p.hero__subheading {order: 2;}",
@@ -273,6 +274,49 @@
         "bg_color": "#000000",
         "color": "#ffffff",
         "sub_color": "#42b029",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_double_slider_metafield_LQ9wXf": {
+      "type": "section-double-slider-metafield",
+      "blocks": {
+        "text_slide_qehWNC": {
+          "type": "text-slide",
+          "settings": {
+            "stars_enabled": false,
+            "subheading": "",
+            "subheading_font": 16,
+            "title": "{{ product.metafields.custom.ingredient_1_title.value }}",
+            "heading_font": 40,
+            "text": "<p>{{ product.metafields.custom.ingredient_1_information | metafield_tag }}<\/p>",
+            "text_size": 16,
+            "text_style": "font-body",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false,
+            "image": "{{ product.metafields.custom.ingredient_1_image.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "text_slide_qehWNC"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-two-thirds",
+        "mobile_height": "screen-height-one-third--mobile",
+        "width": "wrapper--full",
+        "image_1": "{{ product.metafields.custom.proof_image_1.value }}",
+        "image_2": "{{ product.metafields.custom.proof_image_2.value }}",
+        "image_width": "one-half",
+        "text_alignment": "text-center",
+        "bg_color": "#f7f7f7",
+        "color": "#000000",
+        "sub_color": "#000000",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -578,6 +622,7 @@
     "main",
     "section_double_slider_metafield_ihM6Ch",
     "section_double_slider_new_Gd6kgG",
+    "section_double_slider_metafield_LQ9wXf",
     "section_double_slider_new_3LK9XP",
     "section_accordion_new_hde9c4",
     "171319612680298cf4",
