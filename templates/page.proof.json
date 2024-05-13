@@ -54,7 +54,7 @@
           "settings": {
             "stars_enabled": true,
             "subheading": "★★★★★",
-            "subheading_size": 14,
+            "subheading_size": 12,
             "sub_letter_spacing": 5,
             "title": "",
             "heading_size": 32,
