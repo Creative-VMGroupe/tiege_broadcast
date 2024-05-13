@@ -97,8 +97,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
             timelineInner.addEventListener('scroll', () => {
       if (timelineInner.scrollLeft === (timelineInner.scrollWidth - timelineInner.clientWidth)) {
-        // Scroll has reached the end, apply width: 45% to timeline__indicator__line
-        indicatorLine.style.width = '45%';
+        // Scroll has reached the end, apply width: 40% to timeline__indicator__line
+        indicatorLine.style.width = '40%';
       } else {
         // Scroll has not reached the end, reset width to default or any other value
         indicatorLine.style.width = ''; // Resets width to default
