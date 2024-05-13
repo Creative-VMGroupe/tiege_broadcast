@@ -56,14 +56,78 @@
         "color": "#212121"
       }
     },
+    "section_double_static_vm_yJne3F": {
+      "type": "section-double-static-vm",
+      "blocks": {
+        "subheading_PyYnNF": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Introducing",
+            "text_size": 14,
+            "padding_bottom": 16
+          }
+        },
+        "heading_aDKJXy": {
+          "type": "heading",
+          "settings": {
+            "title": "Combatting Environmental Factors",
+            "text_size": 40,
+            "padding_bottom": 16
+          }
+        },
+        "text_enGyGd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Every single day our skin is overwhelmed by airborne chemicals, particles and light, which speed up the aging process.<\/p><p>Our incredibly resilient bodies can take a beating — until they can’t. Diet and exercise help but it is equally essential to exercise the skin by unclogging pores, nourishing, and firming skin to create a soft, flexible protective barrier.<\/p><p>As a guy trying to look his best in this competitive world, I want advantages that can make a significant difference to my skin’s health. This isn't merely about looking good. Maintaining healthy skin, particularly on your face, is crucial for overall skin health.<\/p>",
+            "text_size": 16,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_NUyCWR": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_PyYnNF",
+        "heading_aDKJXy",
+        "text_enGyGd",
+        "buttons_NUyCWR"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/AdobeStock_481479860.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "reverse_blocks": false,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_rich_text_TXLJKC": {
       "type": "section-rich-text",
       "blocks": {
         "heading_DjekAc": {
           "type": "heading",
           "settings": {
-            "title": "Lorem Ipsum Dolor Sit Amet",
-            "text_font": 40,
+            "title": "The Fundamentals of Skin Health",
+            "text_font": 32,
             "padding_bottom": 30
           }
         },
@@ -79,7 +143,7 @@
         "text_jjTk74": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar diam ac risus lobortis, eget scelerisque sem bibendum. Nullam ornare massa a est mattis, ac molestie mi dictum. Sed non eros a nibh feugiat sodales. Vestibulum ut augue in odio tincidunt rhoncus sed eget leo. Quisque vehicula neque ut erat fermentum, sit amet mattis libero feugiat. Integer varius magna at dui ultrices, id dignissim libero ultricies. Fusce convallis euismod dolor, a consectetur risus consequat nec. In non elit nec lorem volutpat aliquam eget at enim. Sed fermentum nisl sed tincidunt tristique.<\/p>",
+            "text": "<p>Your skin is your body's first line of defense, safeguarding against dirt, harmful bacteria, damaging UV radiation, and more. It's a temperature regulator too, alerting you to extreme heat and cold. Maintaining healthy skin not only enhances your appearance but also signals a healthy body.<\/p><p>Men's skin is usually thicker and tougher than women's. However, the skin on your face is relatively delicate. Utilizing products laden with harsh chemicals can disrupt the natural balance required for a clean, clear, and healthy complexion. Hence, a quality skin care routine is essential to preserve the health and appearance of your skin. This includes maintaining a consistent skin tone, a uniform texture, a fresh appearance, and a comfortable feeling.<\/p>",
             "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 0
@@ -94,7 +158,7 @@
       "settings": {
         "width": "wrapper--narrow",
         "align_text": "text-center",
-        "bg_color": "",
+        "bg_color": "#f7f7f7",
         "color": "",
         "padding_top": 80,
         "padding_bottom": 80
@@ -407,6 +471,7 @@
   "order": [
     "main",
     "section_hero_KpG8aH",
+    "section_double_static_vm_yJne3F",
     "section_rich_text_TXLJKC",
     "section_video_qzUgcT",
     "section_rich_text_xhkXAn",
