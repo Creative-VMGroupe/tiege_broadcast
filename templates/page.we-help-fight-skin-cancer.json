@@ -42,7 +42,7 @@
           "type": "subheading",
           "settings": {
             "subheading": "MAKE AN IMPACT",
-            "text_size": 3,
+            "text_font": 16,
             "padding_bottom": 16
           }
         },
@@ -50,7 +50,7 @@
           "type": "heading",
           "settings": {
             "title": "Help Us Fight The #1 Cancer Impacting Men Around The World",
-            "text_size": 7,
+            "text_font": 40,
             "padding_bottom": 16
           }
         }
@@ -75,7 +75,7 @@
           "type": "text",
           "settings": {
             "text": "<p>We are proud members of the Skin Cancer Foundation<\/p>",
-            "text_size": 5,
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 0
           }
@@ -103,7 +103,7 @@
           "type": "heading",
           "settings": {
             "title": "Something Worth Fighting For",
-            "text_size": 7,
+            "heading_size": 40,
             "padding_bottom": 16
           }
         },
@@ -111,7 +111,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Our co-founder’s father passed away from melanoma at age 54. So, making products that protect guys from the sun’s harmful rays and donating to The Skin Cancer Foundation has been core to Tiege Hanley since day one.<\/p><p>Our first donation to The Skin Cancer Foundation came within a few months in business and every year after. As we grew so has our donating, and to date we’ve donated over $39,000.<\/p>",
-            "text_size": 3,
+            "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
           }
@@ -144,7 +144,7 @@
           "type": "heading",
           "settings": {
             "title": "With Your Support We Can Make An Impact",
-            "text_size": 7,
+            "text_font": 40,
             "padding_bottom": 50
           }
         }
@@ -171,9 +171,9 @@
           "type": "2Columns",
           "settings": {
             "title1": "42,610,590",
-            "heading_size": 6,
+            "heading_font": 32,
             "text1": "<p>Days protecting guys from the sun's harmful UV rays<\/p>",
-            "text_size": 3,
+            "text_font": 16,
             "text_style": "font-body",
             "title2": "$57,948",
             "text2": "<p>Dollars donated and counting<\/p>",
@@ -203,7 +203,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Age-adjusted Melanoma Incidence Rates,<\/p>",
-            "text_size": 4,
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 0
           }
@@ -212,7 +212,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Actual And Projected, By Sex, 1975-2020<\/p>",
-            "text_size": 4,
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 30
           }
@@ -250,7 +250,7 @@
           "type": "heading",
           "settings": {
             "title": "Skin Cancer is the #1 most common cancer in the world",
-            "text_size": 7,
+            "text_font": 40,
             "padding_bottom": 16
           }
         },
@@ -258,7 +258,7 @@
           "type": "text",
           "settings": {
             "text": "<p>About 57% of people who are diagnosed with one basal cell carcinoma (BCC) are men. Sixty-two percent of people diagnosed with two to five BCCs are men. Among those with six or more BCCs, a whopping 80 percent are male.<\/p><p>It gets worse. Men account for more than half of all new cases of the most invasive melanoma and have almost twice as many deaths.<\/p><p>According to Julie K. Karen, MD, “Men may not be deliberately tanning as much, but if they go fishing or go out for a run, they tend not to lather up with sunscreen. In general, they're a little lazier than women are about taking proactive measures to protect themselves from sun damage.” Dr. Karen specializes in the diagnosis and treatment of skin cancer at Complete Skin MD in NYC and is a clinical assistant professor in the Ronald O. Perelman Department of Dermatology at NYU Langone Medical Center. [<a href=\"https:\/\/www.tiege.com\/pages\/impact#impact-citation\">1<\/a>]<\/p>",
-            "text_size": 3,
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 16
           }
@@ -349,7 +349,7 @@
           "type": "heading",
           "settings": {
             "title": "Get Involved",
-            "text_size": 7,
+            "heading_size": 40,
             "padding_bottom": 16
           }
         },
@@ -357,7 +357,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Shop Systems and Donate. Already a Tiege Guy? To donate, please log-in to your account and add a donation on to your next shipment. New to Tiege Hanley? Click the button below to learn about our skin care systems and how you can add a donation to your system with Tiege Hanley membership.<\/p>",
-            "text_size": 3,
+            "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
           }
@@ -403,7 +403,7 @@
           "type": "heading",
           "settings": {
             "title": "#changingskincareformen",
-            "text_size": 7,
+            "text_font": 40,
             "padding_bottom": 30
           }
         },
@@ -419,7 +419,7 @@
           "type": "text",
           "settings": {
             "text": "<p>[1] <a href=\"https:\/\/blog.skincancer.org\/2018\/05\/30\/men-on-the-hook\/\" title=\"Men on the Hook\">\"Men on the Hook.\"<\/a> - The Skin Cancer Foundation Annual Journal - 2018<\/p><p>[2] Graph: Data after vertical dotted line are projected rates. Surveillance, Epidemiology, and End Results (SEER) Program, National Cancer Institute (http:\/\/www.seer.cancer.gov). SEER 9 Incidence Database (1973–2010). November 2011 submission. Nordpred software used to create age-period-cohort regression models to calculate projections.<\/p>",
-            "text_size": 3,
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 0
           }
