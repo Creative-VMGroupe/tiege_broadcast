@@ -23657,7 +23657,7 @@ dialog.is-loading .loader {
 }
 @media only screen and (min-width: 750px) {
   .product-quick-add__form .select-popout__toggle[aria-expanded="true"] {
-    border-radius: 0 0 300px 300px;
+    border-radius: 0 0 var(--RADIUS-SELECT) var(--RADIUS-SELECT);
   }
 }
 @media only screen and (max-width: 749px) {
