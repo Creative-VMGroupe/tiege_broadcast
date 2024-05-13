@@ -42,15 +42,15 @@
 //       slider.addEventListener('mousedown', startDragging);
 //       slider.addEventListener('mouseup', stopDragging);
       
-//       // Add scroll event listener to check if scroll reaches the end
-//       slider.addEventListener('scroll', () => {
-//         if (slider.scrollLeft === (slider.scrollWidth - slider.clientWidth)) {
-//           // Scroll has reached the end, apply width: 370% to timeline__indicator__line
-//           indicatorLine.style.width = '45%';
-//         } else {
-//           // Scroll has not reached the end, reset width to default or any other value
-//           indicatorLine.style.width = ''; // Resets width to default
-//         }
+      // // Add scroll event listener to check if scroll reaches the end
+      // slider.addEventListener('scroll', () => {
+      //   if (slider.scrollLeft === (slider.scrollWidth - slider.clientWidth)) {
+      //     // Scroll has reached the end, apply width: 370% to timeline__indicator__line
+      //     indicatorLine.style.width = '45%';
+      //   } else {
+      //     // Scroll has not reached the end, reset width to default or any other value
+      //     indicatorLine.style.width = ''; // Resets width to default
+      //   }
 //       });
 //     });
 //   }
