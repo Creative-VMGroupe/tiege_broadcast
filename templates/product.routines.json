@@ -184,6 +184,7 @@
         },
         "text_slide_gqyf6D": {
           "type": "text-slide",
+          "disabled": true,
           "settings": {
             "stars_enabled": true,
             "subheading": "★★★★★",
