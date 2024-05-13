@@ -123,51 +123,6 @@
         "padding_bottom": 0
       }
     },
-    "section_rich_text_GDUWCk": {
-      "type": "section-rich-text",
-      "blocks": {
-        "text_6E9q6Q": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_font": 16,
-            "text_style": "font-body",
-            "padding_bottom": 16
-          }
-        },
-        "heading_Um4CpX": {
-          "type": "heading",
-          "settings": {
-            "title": "Lorem Ipsum",
-            "text_font": 40,
-            "padding_bottom": 16
-          }
-        },
-        "text_GtbyyM": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_font": 16,
-            "text_style": "font-body",
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "text_6E9q6Q",
-        "heading_Um4CpX",
-        "text_GtbyyM"
-      ],
-      "disabled": true,
-      "settings": {
-        "width": "wrapper--narrow",
-        "align_text": "text-left",
-        "bg_color": "#f7f9fa",
-        "color": "",
-        "padding_top": 50,
-        "padding_bottom": 100
-      }
-    },
     "section_reviews_6RY6Fc": {
       "type": "section-reviews",
       "blocks": {
@@ -200,92 +155,6 @@
         "padding_bottom": 50
       }
     },
-    "section_columns_zYbRC3": {
-      "type": "section-columns",
-      "blocks": {
-        "image_twD9TQ": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Wash---Lifestyle-Image_df4e86dd-4683-4163-9c4a-2b0b554d2e07.png",
-            "image_aspect_ratio": 0.8,
-            "mobile_image_aspect_ratio": 1,
-            "image_shape": "normal",
-            "title": "Lorem Ipsum",
-            "heading_size": 6,
-            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "text_size": 3,
-            "button_text": "Read Now",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--text",
-            "show_arrow": false
-          }
-        },
-        "image_nPmFRR": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Wash---Lifestyle-Image_df4e86dd-4683-4163-9c4a-2b0b554d2e07.png",
-            "image_aspect_ratio": 0.8,
-            "mobile_image_aspect_ratio": 1,
-            "image_shape": "normal",
-            "title": "Lorem Ipsum",
-            "heading_size": 6,
-            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "text_size": 3,
-            "button_text": "Read Now",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--text",
-            "show_arrow": false
-          }
-        },
-        "image_HQhBri": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Wash---Lifestyle-Image_df4e86dd-4683-4163-9c4a-2b0b554d2e07.png",
-            "image_aspect_ratio": 0.8,
-            "mobile_image_aspect_ratio": 1,
-            "image_shape": "normal",
-            "title": "Lorem Ipsum",
-            "heading_size": 6,
-            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "text_size": 3,
-            "button_text": "Read Now",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--text",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "image_twD9TQ",
-        "image_nPmFRR",
-        "image_HQhBri"
-      ],
-      "disabled": true,
-      "custom_css": [
-
-      ],
-      "settings": {
-        "title": "Related Articles",
-        "heading_size": 7,
-        "layout": "grid",
-        "grid": 3,
-        "align_heading": "text-left",
-        "align_text": "text-left",
-        "align_columns": "flex-align-top",
-        "width": "wrapper--full-padded",
-        "bg_color": "#f0f0f0",
-        "color": "",
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "layout_mobile": "slider"
-      }
-    },
     "section_blog_43mLzn": {
       "type": "section-blog",
       "custom_css": [
@@ -294,12 +163,12 @@
       "settings": {
         "blog_name": "news",
         "title": "Related Articles",
-        "heading_size": 7,
+        "heading_size": 40,
         "width": "wrapper--full-padded",
         "grid": 3,
         "rows": 1,
         "aspect_ratio": 0.7,
-        "title_size": 4,
+        "title_size": 24,
         "show_tags": false,
         "show_author": true,
         "show_date": true,
@@ -401,9 +270,7 @@
     "main",
     "section_product_7ePe7T",
     "section_highlights_tqjrWA",
-    "section_rich_text_GDUWCk",
     "section_reviews_6RY6Fc",
-    "section_columns_zYbRC3",
     "section_blog_43mLzn",
     "1712723703b76a9181",
     "section_media_gallery_KH9Pep"
