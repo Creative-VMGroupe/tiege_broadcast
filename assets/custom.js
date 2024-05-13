@@ -87,8 +87,11 @@ document.addEventListener('DOMContentLoaded', function() {
         // Ensure the scroll position stays within the bounds of the scrollable area
         scrollTo = Math.max(0, Math.min(maxScrollableWidth, scrollTo));
 
-        // Scroll the container to the desired position
-        timelineInner.scrollLeft = scrollTo;
+        // Scroll the container to the desired position with smooth scrolling
+        timelineInner.scrollTo({
+          left: scrollTo,
+          behavior: 'smooth'
+        });
       });
     });
 
