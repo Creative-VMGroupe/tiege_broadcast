@@ -26677,7 +26677,8 @@ flex: 1;
 }
 /*Flickity*/
 .brick__section.is-selected {
-  transition: opacity .8s ease,visibility .8s;
+    opacity: 1!important;
+    visibility: visible;
 }
 @media (max-width: 749px) {
 .flickity-page-dots {
