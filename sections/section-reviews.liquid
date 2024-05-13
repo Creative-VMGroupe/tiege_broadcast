@@ -142,7 +142,7 @@
                     <blockquote>
                       {%- if show_quotation_marks -%}
                         <span class="review__quote review__quote--open{% if section.settings.padding_top > 9 %} review__quote--open-negative{% endif %}">
-                          <span class="review__quote-inner" style="{{ quotes_styles }}">&ldquo;</span>
+                          <span class="review__quote-inner heading-size-{{ text_size }}" style="{{ quotes_styles }}">&ldquo;</span>
                         </span>
                       {%- endif -%}
 
@@ -150,7 +150,7 @@
 
                       {%- if show_quotation_marks -%}
                         <span class="review__quote review__quote--close{% if section.settings.padding_bottom > 9 %} review__quote--close-negative{% endif %}">
-                          <span class="review__quote-inner" style="{{ quotes_styles }}">&rdquo;</span>
+                          <span class="review__quote-inner heading-size-{{ text_size }}" style="{{ quotes_styles }}">&rdquo;</span>
                         </span>
                       {%- endif -%}
                     </blockquote>
