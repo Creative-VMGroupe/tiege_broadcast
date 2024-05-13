@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const scrollTo = clickedRowOffset - (viewportWidth / 2) + (row.offsetWidth / 2);
 
         // Scroll the body (or any desired container) to the desired position
-        window.scrollTo({
+        timelineInner.scrollTo({
           left: scrollTo,
           behavior: 'smooth' // Optional smooth scrolling
         });
