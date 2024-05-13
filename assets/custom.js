@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let scrollTo;
         if (index === timelineRows.length - 1 && window.innerWidth > 1300) {
           // If the clicked row is the last one and the screen width is larger than 1300px, scroll to the end
-          scrollTo = totalWidth - timelineInner.offsetWidth;
+          scrollTo = timelineInner.scrollWidth;
         } else {
           // Otherwise, calculate the scroll position to center the clicked row
           const clickedRowOffset = row.offsetLeft; // Left offset of the clicked row relative to the container
