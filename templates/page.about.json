@@ -42,7 +42,7 @@
           "type": "subheading",
           "settings": {
             "subheading": "The Tiege Story",
-            "text_size": 3,
+            "text_size": 14,
             "padding_bottom": 16
           }
         },
@@ -58,7 +58,7 @@
           "type": "text",
           "settings": {
             "text": "<p>The Tiege Hanley story is simple and uncomplicated, just like our products. Founded by four “regular guys,” we created a product system and brand that makes skin care meaningful, accessible, affordable and clinically relevant—for regular guys.<br\/><br\/>The brain child of Kelley Thornton, Tiege Hanley, named after one of Kelley’s prominent ancestors, was inspired by a department store skin care aisle stroll. As Kelley perused, he was struck by three simple truths:<br\/><br\/>1. Guys really don’t know much about skin care<br\/>2. Men’s skin care products are complicated and confusing<br\/>3. Man, are those products expensive!<\/p>",
-            "text_size": 3,
+            "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
           }
@@ -88,6 +88,7 @@
         "height": "screen-height-three-quarters",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/Layer_1.png",
         "image_width": "one-half",
         "text_alignment": "text-left",
         "reverse_blocks": false,
