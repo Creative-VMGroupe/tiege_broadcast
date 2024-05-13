@@ -49,7 +49,7 @@
         "heading_z3MbHR": {
           "type": "heading",
           "settings": {
-            "title": "Created for Guys",
+            "title": "Created for Men",
             "text_size": 40,
             "padding_bottom": 16
           }
@@ -133,34 +133,6 @@
         "padding_bottom": 80
       }
     },
-    "section_video_mgWJmA": {
-      "type": "section-video",
-      "settings": {
-        "video": "shopify:\/\/files\/videos\/tolstoy_43f7743e-5867-4922-aa81-d03899ca32a6.webm",
-        "show_video_popup": false,
-        "video_popup_social": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "desktop_height": "screen-height-one-half",
-        "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full",
-        "overlay_opacity": 0,
-        "overlay_color": "#000000",
-        "show_overlay_text": false,
-        "title": "",
-        "heading_font": 40,
-        "description": "",
-        "text_font": 16,
-        "flex_align": "align--middle-center",
-        "flex_align_mobile": "align--middle-center-mobile",
-        "bg_color": "",
-        "color": "#ffffff",
-        "link_text": "",
-        "link": "",
-        "button_type": "btn--primary",
-        "button_size": "",
-        "button_style": "btn--solid",
-        "show_arrow": false
-      }
-    },
     "section_double_static_vm_nxxrWT": {
       "type": "section-double-static-vm",
       "blocks": {
@@ -177,7 +149,7 @@
           "type": "heading",
           "settings": {
             "title": "Sensible. Simple. Affordable.",
-            "text_size": 32,
+            "text_size": 40,
             "padding_bottom": 16
           }
         },
@@ -215,6 +187,7 @@
         "height": "screen-height-full",
         "mobile_height": "screen-height-full--mobile",
         "width": "wrapper--full",
+        "video_main": "shopify:\/\/files\/videos\/tolstoy_43f7743e-5867-4922-aa81-d03899ca32a6.webm",
         "image_width": "one-half",
         "text_alignment": "text-left",
         "reverse_blocks": false,
@@ -240,7 +213,7 @@
           "type": "heading",
           "settings": {
             "title": "Helping Regular Guys",
-            "text_size": 32,
+            "text_size": 40,
             "padding_bottom": 16
           }
         },
@@ -374,7 +347,6 @@
     "section_hero_AKxdtT",
     "section_double_static_vm_j6Grh3",
     "section_rich_text_HGVCbw",
-    "section_video_mgWJmA",
     "section_double_static_vm_nxxrWT",
     "section_double_static_vm_R4Cg9i",
     "section_reviews_McPTbp",
