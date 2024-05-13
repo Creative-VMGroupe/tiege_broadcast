@@ -25,14 +25,14 @@
           "type": "heading",
           "settings": {
             "title": "Sustainability",
-            "heading_size": 7
+            "heading_font": 40
           }
         },
         "text_3UMYgJ": {
           "type": "text",
           "settings": {
             "description": "Tell your brand's story through images.",
-            "text_size": 3,
+            "text_font": 16,
             "text_style": "font-body"
           }
         }
@@ -47,8 +47,8 @@
         "image_1": "shopify:\/\/shop_images\/tiege_sustanability_del.jpg",
         "link": "",
         "mobile_height": "screen-height-three-quarters--mobile",
-        "flex_align_desktop": "align--middle-center-desktop",
-        "flex_align_mobile": "align--middle-center-mobile",
+        "flex_align_desktop": "align--bottom-left-desktop",
+        "flex_align_mobile": "align--bottom-left-mobile",
         "overlay_opacity": 0,
         "overlay_color": "#000000",
         "show_overlay_text": false,
@@ -63,7 +63,7 @@
           "type": "heading",
           "settings": {
             "title": "Tiege for Tomorrow",
-            "text_size": 7,
+            "text_font": 40,
             "padding_bottom": 16
           }
         },
@@ -71,7 +71,7 @@
           "type": "subheading",
           "settings": {
             "subheading": "Environmental Stewardship",
-            "text_size": 4,
+            "text_font": 16,
             "padding_bottom": 16
           }
         },
@@ -79,7 +79,7 @@
           "type": "text",
           "settings": {
             "text": "<p>We care about the environment because it is our responsibility to make a difference. It’s hard to be environmentally friendly. Most people do not realize how big of a commitment it is, or what it costs a business, however, they know it’s the right thing to do. Tiege Hanley is prioritizing environmental stewardship and we hope you will join us.<\/p>",
-            "text_size": 3,
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 0
           }
@@ -123,7 +123,7 @@
           "type": "heading",
           "settings": {
             "title": "Our Commitment",
-            "text_size": 7,
+            "text_size": 40,
             "padding_bottom": 16
           }
         },
@@ -163,7 +163,7 @@
           "type": "heading",
           "settings": {
             "title": "What Have We Done So Far",
-            "text_size": 7,
+            "text_size": 40,
             "padding_bottom": 16
           }
         },
@@ -203,7 +203,7 @@
           "type": "heading",
           "settings": {
             "title": "What Is Closed-Loop Recycling?",
-            "text_size": 7,
+            "text_font": 40,
             "padding_bottom": 16
           }
         },
@@ -212,7 +212,7 @@
           "disabled": true,
           "settings": {
             "subheading": "What Is Closed-Loop Recycling?",
-            "text_size": 7,
+            "text_font": 16,
             "padding_bottom": 16
           }
         },
@@ -220,7 +220,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Put simply, we don’t want to add waste to the environment and we want to become waste\/plastic neutral. What we can do is recycle environmental waste in our supply chain, which means Tiege Hanley isn’t contributing to increased environmental waste. This strategy can drill down into waste as a byproduct of shipping, such as finding ways we can contribute to reducing carbon.<\/p><p>We have initiated a company policy to use a minimum of 35% post-consumer recycled (PCR) material in all our new product packaging. Our goal over the next two years is to increase the amount of PCR in all of our plastic and paper packaging materials.<\/p>",
-            "text_size": 3,
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 0
           }
@@ -264,7 +264,7 @@
           "type": "heading",
           "settings": {
             "title": "Did you know?",
-            "text_size": 7,
+            "text_font": 40,
             "padding_bottom": 16
           }
         },
@@ -272,7 +272,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Black plastic is one of the most difficult plastics to recycle. Most municipal recycling centers lack the equipment to accurately sort black materials. We became aware of this issue in 2020 and began converting to a non-carbon black in our new product plastic that is more easily sorted. Unfortunately, despite the energy and money it takes Tiege Hanley to make this change, many recycling centers may still lack the appropriate sorting capabilities.<\/p>",
-            "text_size": 3,
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 30
           }
@@ -281,7 +281,7 @@
           "type": "heading",
           "settings": {
             "title": "What Does It Cost?",
-            "text_size": 7,
+            "text_font": 40,
             "padding_bottom": 16
           }
         },
@@ -289,7 +289,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Adding PCR to our packaging and switching to non-carbon black has cost Tiege Hanley a lot of money. On average PCR packaging cost 15% more than virgin plastic. We are trying to absorb as much of this cost as possible. We are making every effort to avoid price increases or formulating them with cheaper ingredients, which we’ve noticed is a common practice.<\/p><p>JOIN OUR MISSION TO BE BETTER STEWARDS OF THE ENVIRONMENT<\/p><p>If you have questions, suggestions, or want more information, please email <a href=\"mailto:info@Tiege.com\">Info@Tiege.com<\/a>  with the word “Sustainability” in the subject line.<\/p>",
-            "text_size": 3,
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 30
           }
@@ -298,7 +298,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Sincerely,<\/p>",
-            "text_size": 3,
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 30
           }
@@ -315,7 +315,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Kelly Thornton<\/p><p>Founder & CEO<\/p>",
-            "text_size": 3,
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 0
           }
