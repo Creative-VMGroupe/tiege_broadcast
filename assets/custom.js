@@ -69,23 +69,23 @@ document.addEventListener('DOMContentLoaded', function() {
     const indicatorLine = timelineInner.querySelector('.timeline__indicator__line');
 
     const totalWidth = timelineRows.length * timelineRows[0].offsetWidth;
-    // Add click event listener to each timeline__row within the current timeline__inner
-    timelineRows.forEach(function(row) {
+ // Add click event listener to each timeline__row within the current timeline__inner
+    timelineRows.forEach(function(row, index) {
       row.addEventListener('click', function() {
-        
         // Calculate the desired scroll position to center the clicked row
-        const clickedRowOffset = row.offsetLeft; // Left offset of the clicked row relative to the container
-        const containerWidth = timelineInner.offsetWidth; // Width of the container
-        const viewportWidth = window.innerWidth; // Width of the viewport
-
-        // Calculate the maximum scrollable width based on the total width of all elements
-        const maxScrollableWidth = totalWidth - containerWidth;
-
-        // Calculate the desired scroll position to center the clicked row within the visible area
-        let scrollTo = clickedRowOffset - (containerWidth / 2) + (row.offsetWidth / 2);
+        let scrollTo;
+        if (index === timelineRows.length - 1 && window.innerWidth > 1300) {
+          // If the clicked row is the last one and the screen width is larger than 1300px, scroll to the end
+          scrollTo = totalWidth - timelineInner.offsetWidth;
+        } else {
+          // Otherwise, calculate the scroll position to center the clicked row
+          const clickedRowOffset = row.offsetLeft; // Left offset of the clicked row relative to the container
+          const containerWidth = timelineInner.offsetWidth; // Width of the container
+          scrollTo = clickedRowOffset - (containerWidth / 2) + (row.offsetWidth / 2);
+        }
 
         // Ensure the scroll position stays within the bounds of the scrollable area
-        scrollTo = Math.max(0, Math.min(maxScrollableWidth, scrollTo));
+        scrollTo = Math.max(0, scrollTo);
 
         // Scroll the container to the desired position with smooth scrolling
         timelineInner.scrollTo({
