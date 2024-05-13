@@ -75,8 +75,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const clickedRowOffset = row.getBoundingClientRect().left; // Left offset of the clicked row relative to the viewport
         const viewportWidth = window.innerWidth; // Width of the viewport
         const scrollTo = clickedRowOffset - (timelineInner.offsetWidth);
-console.log("Clickedrow offset" +clickedRowOffset)
-        console.log("Row offset" + row.offsetWidth)        
+console.log("Clickedrow offset " +clickedRowOffset)
+        console.log("Timeline Offset " + timelineInner.offsetWidth)        
 console.log(scrollTo)        
         // Scroll the body (or any desired container) to the desired position
         timelineInner.scrollTo({
