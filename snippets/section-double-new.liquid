@@ -174,7 +174,7 @@
     {%- if enable_slider -%}
       {% comment %}Removed "autoPlay": 4000, from data-options{% endcomment %} 
       <div
-        class="brick__slider {% if section.settings.layout == 'is-reversed' %} flickity--reversed-custom{% endif %}"
+        class="brick__slider {% if section.settings.layout == 'is-reversed' %} flickity--reversed-custom{% endif %} {{ slideshow_class }}"
         data-slider
         data-dots="{{ settings.dots_style }}"
         data-options='{"fade": {{ fade_option }}, "pageDots": true, "prevNextButtons": true, "pauseAutoPlayOnHover": false}'
