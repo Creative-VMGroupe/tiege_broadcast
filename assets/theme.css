@@ -25838,6 +25838,16 @@ div.rc_popup {
     min-height: 52px;
   } */
 }
+
+/*Blog Post*/
+time {
+  font-size: 12px !important;
+  line-height: 1.5;
+}
+.article__author {
+  font-size: 12px !important;
+  line-height: 1.5;
+}
 /*Filter*/
 .range__line span {
   background: var(--BTN-SECONDARY-BG-COLOR);
