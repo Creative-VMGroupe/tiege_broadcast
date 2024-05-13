@@ -245,7 +245,7 @@
             "button_size": "",
             "button_style": "btn--solid",
             "show_arrow": false,
-            "image": "{{ product.metafields.custom.ingredient_1_image.value }}"
+            "video": "shopify:\/\/files\/videos\/Snapinsta.app_video_254C6BE9F9A30CC74F6A74D9CD4CC6B9_video_dashinit_df4abeae-94e6-4fc8-b518-877149eb46cc.mp4"
           }
         },
         "text_slide_AqyEPP": {
@@ -589,6 +589,7 @@
         "padding_top": 80,
         "padding_bottom": 80,
         "heading": "Compare Our Systems",
+        "heading_size": 40,
         "caption": "Level Guide",
         "sub_heading": "Unsure which system is right for you ?",
         "description": "<p>Different strokes for different folks and different skin care reginem for different men. Take our 1-minute quiz to figure out which formulated system is for you and your face.<\/p>",
