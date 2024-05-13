@@ -25659,8 +25659,8 @@ background-size: 0% 1px;
   letter-spacing: var(--ltr-spacing-tiege);
 }
 .prod-modal__container-custom {
-  max-width: 1000px;
-  padding: 16px;
+  max-width: none;
+  padding: 0;
 }
 /*Recharge*/
 .product__page .rc-radio.rc-radio--active {
