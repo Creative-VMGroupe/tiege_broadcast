@@ -76,9 +76,10 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
         timelineInners.addEventListener('scroll', () => {
-        if (timelineInners.scrollLeft === (timelineInners.scrollWidth - timelineInners.clientWidth)) {
-          console.log(timelineInners.scrollLeft)
+                    console.log(timelineInners.scrollLeft)
           console.log(timelineInners.clientWidth)
+        if (timelineInners.scrollLeft === (timelineInners.scrollWidth - timelineInners.clientWidth)) {
+
           // Scroll has reached the end, apply width: 370% to timeline__indicator__line
           indicatorLine.style.width = '45%';
         } else {
