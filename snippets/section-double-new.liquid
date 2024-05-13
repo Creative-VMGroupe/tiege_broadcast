@@ -164,7 +164,7 @@
         class="brick__slider {% if section.settings.layout == 'is-reversed' %} flickity--reversed-custom{% endif %}"
         data-slider
         data-dots="{{ settings.dots_style }}"
-        data-options='{fade": true, "pageDots": true, "prevNextButtons": true, "pauseAutoPlayOnHover": false}'
+        data-options='{"pageDots": true, "prevNextButtons": true, "pauseAutoPlayOnHover": false}'
       >
         {%- for block in section.blocks -%}
           {%- liquid
