@@ -73,9 +73,19 @@ document.addEventListener('DOMContentLoaded', function() {
         timelineInner.scrollLeft = row.offsetLeft;
       });
     });
-
-
   });
+
+        timelineInners.addEventListener('scroll', () => {
+        if (timelineInners.scrollLeft === (timelineInners.scrollWidth - timelineInners.clientWidth)) {
+          console.log(timelineInners.scrollLeft)
+          console.log(timelineInners.clientWidth)
+          // Scroll has reached the end, apply width: 370% to timeline__indicator__line
+          indicatorLine.style.width = '45%';
+        } else {
+          // Scroll has not reached the end, reset width to default or any other value
+          indicatorLine.style.width = ''; // Resets width to default
+        }
+      });
 });
 
 
