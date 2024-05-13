@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
  // Calculate the desired scroll position to center the clicked row in the viewport
         const clickedRowOffset = row.getBoundingClientRect().left; // Left offset of the clicked row relative to the viewport
         const viewportWidth = window.innerWidth; // Width of the viewport
-        const scrollTo = clickedRowOffset - (timelineInner.offsetWidth);
+        const scrollTo = clickedRowOffset + (timelineInner.offsetWidth);
 console.log("Clickedrow offset " +clickedRowOffset)
         console.log("Timeline Offset " + timelineInner.offsetWidth)        
 console.log(scrollTo)        
