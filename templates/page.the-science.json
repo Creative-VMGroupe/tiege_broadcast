@@ -244,15 +244,15 @@
         "heading_TQL8Nb": {
           "type": "heading",
           "settings": {
-            "title": "Lorem Ipsum Dolor Sit Amet, Consetetur",
-            "text_font": 32,
+            "title": "A Good Routine Works Together",
+            "text_font": 40,
             "padding_bottom": 16
           }
         },
         "text_PBT7G3": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar diam ac risus lobortis, eget scelerisque sem bibendum. Nullam ornare massa a est mattis, ac molestie mi dictum. Sed non eros a nibh feugiat sodales. Vestibulum ut augue in odio tincidunt rhoncus sed eget leo. Quisque vehicula neque ut erat fermentum, sit amet mattis libero feugiat. Integer varius magna at dui ultrices, id dignissim libero ultricies. Fusce convallis euismod dolor, a consectetur risus consequat nec. In non elit nec lorem volutpat aliquam eget at enim. Sed fermentum nisl sed tincidunt tristique.<\/p>",
+            "text": "<p>Our skin care line at Tiege Hanley is not just a collection of products but a scientifically designed skin care system. Each product works in harmony with the others, amplifying the overall benefits and effectiveness.<\/p><p>The WASH product clears away dirt, grime, and excess oil, prepping the skin for the SCRUB to exfoliate and remove dead skin cells. The SERUM is then effectively absorbed, delivering potent anti-aging benefits thanks to its peptide technology. AM and PM moisturizers hydrate and protect the skin round the clock, with the EYES product catering specifically to the delicate under-eye area.<\/p>",
             "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 30
