@@ -269,7 +269,7 @@
           "settings": {
             "title": "",
             "subheading": "",
-            "review_text": "\"We’ve reinvented men’s skin care and changed the way  men think about their skin.\"",
+            "review_text": "\"We’ve reinvented men’s skin care and changed the way men think about their skin.\"",
             "review_url": ""
           }
         }
@@ -316,7 +316,7 @@
         "text_mfNWU3": {
           "type": "text",
           "settings": {
-            "text": "<p>Four regular guys—inspired by real life experience, passion, insight and the desire to do good for our fellow men—who have reinvented men’s skin care and changed the way regular guys think about their skin.<br\/><br\/>Tiege Hanley's sole mission is to help guys look and feel amazing by providing a simplified skin care system.<br\/><br\/>We are truly \"Uncomplicated Skin Care for Men.\"<br\/><br\/>Aaron, Rob, Kelley & \"The Chemist\"<\/p>",
+            "text": "<p>Four regular guys—inspired by real life experience, passion, insight and the desire to do good for our fellow men—who have reinvented men’s skin care and changed the way regular guys think about their skin.<br\/><br\/>Tiege Hanley's sole mission is to help guys look and feel amazing by providing a simplified skin care system.<br\/><br\/>We are truly <strong>Uncomplicated Skin Care for Men.<\/strong><br\/><br\/>– Aaron, Rob, Kelley & \"The Chemist\"<\/p>",
             "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
