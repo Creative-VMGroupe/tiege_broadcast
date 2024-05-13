@@ -199,7 +199,7 @@
             "button_size": "",
             "button_style": "btn--outline",
             "show_arrow": false,
-            "image": "{{ product.metafields.custom.ingredient_1_image.value }}"
+            "image": "{{ product.metafields.custom.proof_image_2.value }}"
           }
         }
       },
