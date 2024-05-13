@@ -51,7 +51,7 @@
       //     // Scroll has not reached the end, reset width to default or any other value
       //     indicatorLine.style.width = ''; // Resets width to default
       //   }
-//       });
+      // });
 //     });
 //   }
 // });
@@ -73,6 +73,8 @@ document.addEventListener('DOMContentLoaded', function() {
         timelineInner.scrollLeft = row.offsetLeft;
       });
     });
+
+
   });
 });
 
