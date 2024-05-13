@@ -192,7 +192,7 @@
             assign button_text = block.settings.button_text
             
           -%}
-{%- if title != blank and (video != blank or image != blank) -%}
+{%- if title != blank -%}
           <div
             class="brick__section{% if section.settings.layout == 'is-reversed' %} brick__section--reversed{% endif %}{% if section.settings.reverse_blocks %} brick__section--reversed-mobile{% endif %} {{ width }} {{ desktop_height }} {{ mobile_height }} {{ mobile_height_fix }}"
             data-slide
