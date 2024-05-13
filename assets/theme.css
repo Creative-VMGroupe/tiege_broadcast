@@ -25976,6 +25976,7 @@ time, .article__author {
   justify-content: end;
   align-items: center;
   padding: 10px 32px;
+  border-radius: 300px;
 }
 .product-quick-add__form .rc-template__radio-group .rc-radio .rc-radio__label {
   padding-left: 20px;
