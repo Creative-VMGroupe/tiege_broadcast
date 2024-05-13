@@ -25840,11 +25840,7 @@ div.rc_popup {
 }
 
 /*Blog Post*/
-time {
-  font-size: 12px !important;
-  line-height: 1.5;
-}
-.article__author {
+time, .article__author {
   font-size: 12px !important;
   line-height: 1.5;
 }
