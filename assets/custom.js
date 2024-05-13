@@ -74,17 +74,16 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
 
-            timelineInners.addEventListener('scroll', () => {
-                    console.log(timelineInners.scrollLeft)
-          console.log(timelineInners.clientWidth)
-        if (timelineInners.scrollLeft === (timelineInners.scrollWidth - timelineInners.clientWidth)) {
-
-          // Scroll has reached the end, apply width: 370% to timeline__indicator__line
-          indicatorLine.style.width = '45%';
-        } else {
-          // Scroll has not reached the end, reset width to default or any other value
-          indicatorLine.style.width = ''; // Resets width to default
-        }
+            timelineInner.addEventListener('scroll', () => {
+                    console.log(timelineInner.scrollLeft)
+          console.log(timelineInner.clientWidth)
+      if (timelineInner.scrollLeft === (timelineInner.scrollWidth - timelineInner.clientWidth)) {
+        // Scroll has reached the end, apply width: 45% to timeline__indicator__line
+        indicatorLine.style.width = '45%';
+      } else {
+        // Scroll has not reached the end, reset width to default or any other value
+        indicatorLine.style.width = ''; // Resets width to default
+      }
       });
   
   });
