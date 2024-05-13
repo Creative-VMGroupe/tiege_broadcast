@@ -70,11 +70,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add click event listener to each timeline__row within the current timeline__inner
     timelineRows.forEach(function(row) {
       row.addEventListener('click', function() {
-        // Calculate the desired scroll position to center the clicked row
-        const clickedRowOffset = row.offsetLeft;
-        const scrollTo = clickedRowOffset - (containerWidth / 2) + (row.offsetWidth / 2);
-        // Scroll the current timelineInner to the desired position
-        timelineInner.scrollLeft = scrollTo;
+ // Calculate the desired scroll position to center the clicked row in the viewport
+        const clickedRowOffset = row.getBoundingClientRect().left; // Left offset of the clicked row relative to the viewport
+        const viewportWidth = window.innerWidth; // Width of the viewport
+        const scrollTo = clickedRowOffset - (viewportWidth / 2) + (row.offsetWidth / 2);
+
+        // Scroll the body (or any desired container) to the desired position
+        window.scrollTo({
+          left: scrollTo,
+          behavior: 'smooth' // Optional smooth scrolling
+        });
       });
     });
 
