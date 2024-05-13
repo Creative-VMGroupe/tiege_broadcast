@@ -6,55 +6,76 @@
  * to use this file you will need to open layout/theme.liquid and uncomment
  * the custom.js script import line near the bottom of the file.
  */
+//Timeline
+//Timeline Horizontal Scroll on Desktop
+// document.addEventListener('DOMContentLoaded', () => {
+//   if (window.innerWidth > 750) {
+//     // Select all elements with the class 'timeline__inner'
+//     const sliders = document.querySelectorAll('.timeline__inner');
 
-document.addEventListener('DOMContentLoaded', () => {
-  if (window.innerWidth > 750) {
-    // Select all elements with the class 'timeline__inner'
-    const sliders = document.querySelectorAll('.timeline__inner');
-
-    // Iterate over each 'timeline__inner' element
-    sliders.forEach(slider => {
-      let mouseDown = false;
-      let startX, scrollLeft;
-      const indicatorLine = slider.querySelector('.timeline__indicator__line');
+//     // Iterate over each 'timeline__inner' element
+//     sliders.forEach(slider => {
+//       let mouseDown = false;
+//       let startX, scrollLeft;
+//       const indicatorLine = slider.querySelector('.timeline__indicator__line');
       
-      const startDragging = (e) => {
-        mouseDown = true;
-        startX = e.pageX - slider.offsetLeft;
-        scrollLeft = slider.scrollLeft;
-      };
+//       const startDragging = (e) => {
+//         mouseDown = true;
+//         startX = e.pageX - slider.offsetLeft;
+//         scrollLeft = slider.scrollLeft;
+//       };
 
-      const stopDragging = () => {
-        mouseDown = false;
-      };
+//       const stopDragging = () => {
+//         mouseDown = false;
+//       };
 
-      const move = (e) => {
-        e.preventDefault();
-        if (!mouseDown) { return; }
-        const x = e.pageX - slider.offsetLeft;
-        const scroll = x - startX;
-        slider.scrollLeft = scrollLeft - scroll;
-      };
+//       const move = (e) => {
+//         e.preventDefault();
+//         if (!mouseDown) { return; }
+//         const x = e.pageX - slider.offsetLeft;
+//         const scroll = x - startX;
+//         slider.scrollLeft = scrollLeft - scroll;
+//       };
 
-      // Add event listeners for mouse interactions to each 'timeline__inner' element
-      slider.addEventListener('mousemove', move);
-      slider.addEventListener('mousedown', startDragging);
-      slider.addEventListener('mouseup', stopDragging);
+//       // Add event listeners for mouse interactions to each 'timeline__inner' element
+//       slider.addEventListener('mousemove', move);
+//       slider.addEventListener('mousedown', startDragging);
+//       slider.addEventListener('mouseup', stopDragging);
       
-      // Add scroll event listener to check if scroll reaches the end
-      slider.addEventListener('scroll', () => {
-        if (slider.scrollLeft === (slider.scrollWidth - slider.clientWidth)) {
-          // Scroll has reached the end, apply width: 370% to timeline__indicator__line
-          indicatorLine.style.width = '45%';
-        } else {
-          // Scroll has not reached the end, reset width to default or any other value
-          indicatorLine.style.width = ''; // Resets width to default
-        }
-      });
+//       // Add scroll event listener to check if scroll reaches the end
+//       slider.addEventListener('scroll', () => {
+//         if (slider.scrollLeft === (slider.scrollWidth - slider.clientWidth)) {
+//           // Scroll has reached the end, apply width: 370% to timeline__indicator__line
+//           indicatorLine.style.width = '45%';
+//         } else {
+//           // Scroll has not reached the end, reset width to default or any other value
+//           indicatorLine.style.width = ''; // Resets width to default
+//         }
+//       });
+//     });
+//   }
+// });
+
+//Timeline click to scroll to element
+document.addEventListener('DOMContentLoaded', function() {
+  // Select the timelineInner container
+  const timelineInner = document.getElementById('timelineInner');
+  
+  // Select all timeline__row elements
+  const timelineRows = document.querySelectorAll('.timeline__row');
+  
+  // Add click event listener to each timeline__row
+  timelineRows.forEach(function(row) {
+    row.addEventListener('click', function() {
+      console.log('Clicked')
+      // Scroll timelineInner to the clicked row's position
+      timelineInner.scrollLeft = row.offsetLeft;
     });
-  }
+  });
 });
 
+
+//Header
 // Variable to store the last scroll position
 var lastScrollTop = 0;
 
