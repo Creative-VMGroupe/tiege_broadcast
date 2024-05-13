@@ -178,6 +178,7 @@
               {%- endif -%}
 
               <div class="highlights__item__content {{ font_size_class }}">
+                
                 {% comment %}<span>{{ block.settings.heading }}</span> {% endcomment %}
                           {%- liquid
             assign image = block.settings.image
@@ -187,6 +188,7 @@
             assign button_text = block.settings.url
             
           -%}
+                {% if title != blank %}
                 <div class="brick__block brick__block--text"{% if style != blank %} style="{{ style }}"{% endif %}>
               <div class="brick__block__text">
                 <div class="hero__content hero__content--compact hero-slider__content" >
@@ -233,6 +235,7 @@
                 </div>
               </div>
             </div>
+                {% endif %}
               </div>
 
             {%- if link != blank -%}
