@@ -26112,6 +26112,10 @@ h2.column__heading {
   font-size: 16px !important;
   line-height: 1.50 !important;
 }
+.subheading-size-24 {
+  font-size: 24px !important;
+  line-height: 1.25 !important;
+}
 .body-size-12 {
   font-size: 12px !important;
   line-height: 1.50 !important;
