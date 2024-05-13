@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
   timelineInners.forEach(function(timelineInner) {
     // Select all timeline__row elements within the current timeline__inner
     const timelineRows = timelineInner.querySelectorAll('.timeline__row');
-  
+    const indicatorLine = timelineInner.querySelector('.timeline__indicator__line');
     // Add click event listener to each timeline__row within the current timeline__inner
     timelineRows.forEach(function(row) {
       row.addEventListener('click', function() {
@@ -73,9 +73,8 @@ document.addEventListener('DOMContentLoaded', function() {
         timelineInner.scrollLeft = row.offsetLeft;
       });
     });
-  });
 
-        timelineInners.addEventListener('scroll', () => {
+            timelineInners.addEventListener('scroll', () => {
                     console.log(timelineInners.scrollLeft)
           console.log(timelineInners.clientWidth)
         if (timelineInners.scrollLeft === (timelineInners.scrollWidth - timelineInners.clientWidth)) {
@@ -87,6 +86,10 @@ document.addEventListener('DOMContentLoaded', function() {
           indicatorLine.style.width = ''; // Resets width to default
         }
       });
+  
+  });
+
+
 });
 
 
