@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
     timelineRows.forEach(function(row) {
       row.addEventListener('click', function() {
         // Scroll the current timelineInner to the clicked row's position
-        timelineInner.scrollLeft = row.offsetLeft;
+        timelineInner.scrollLeft = row.offsetLeft + 20;
       });
     });
 
