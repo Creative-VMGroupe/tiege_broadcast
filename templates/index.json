@@ -658,12 +658,52 @@
             "button_style": "btn--text",
             "show_arrow": false
           }
+        },
+        "timeline_zYWDX7": {
+          "type": "timeline",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO3.png",
+            "subheading": "Level 2",
+            "subheading_font": 14,
+            "title": "Advanced",
+            "heading_font": 24,
+            "text": "<p>Fight off crow’s feet and dark circles<\/p>",
+            "text_font": 16,
+            "text_style": "font-body",
+            "button_text": "Shop Level 2 Skincare",
+            "button_url": "shopify:\/\/products\/level-2-advanced-routine",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": false
+          }
+        },
+        "timeline_B6QMHY": {
+          "type": "timeline",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_5261_VSCO.png",
+            "subheading": "Level 3",
+            "subheading_font": 14,
+            "title": "Anti-Aging",
+            "heading_font": 24,
+            "text": "<p>Fight crow's feet, dark circles and reduce fine lines<\/p>",
+            "text_font": 16,
+            "text_style": "font-body",
+            "button_text": "Shop Level 3 Skincare",
+            "button_url": "shopify:\/\/products\/the-collection-snowboard-liquid",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": false
+          }
         }
       },
       "block_order": [
         "timeline_yg3RFa",
         "timeline_DgqeXW",
-        "timeline_88CQrk"
+        "timeline_88CQrk",
+        "timeline_zYWDX7",
+        "timeline_B6QMHY"
       ],
       "settings": {
         "title": "A Quick Skincare Guide",
