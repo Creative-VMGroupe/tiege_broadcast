@@ -251,6 +251,7 @@
         "height": "screen-height-three-quarters",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/Snapinsta.app_337156675_1554687731680146_2432232004487884860_n_1080.jpg",
         "image_width": "one-half",
         "text_alignment": "text-left",
         "reverse_blocks": false,
@@ -292,29 +293,68 @@
         "padding_bottom": 80
       }
     },
-    "section_rich_text_abVwUy": {
-      "type": "section-rich-text",
+    "section_double_static_vm_yFVkwc": {
+      "type": "section-double-static-vm",
       "blocks": {
-        "text_NVa77p": {
+        "subheading_y7hjmC": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Introducing",
+            "text_size": 16,
+            "padding_bottom": 16
+          }
+        },
+        "heading_JYhAxm": {
+          "type": "heading",
+          "settings": {
+            "title": "Uncomplicated Skin Care for Men",
+            "text_size": 40,
+            "padding_bottom": 16
+          }
+        },
+        "text_mfNWU3": {
           "type": "text",
           "settings": {
             "text": "<p>Four regular guys—inspired by real life experience, passion, insight and the desire to do good for our fellow men—who have reinvented men’s skin care and changed the way regular guys think about their skin.<br\/><br\/>Tiege Hanley's sole mission is to help guys look and feel amazing by providing a simplified skin care system.<br\/><br\/>We are truly \"Uncomplicated Skin Care for Men.\"<br\/><br\/>Aaron, Rob, Kelley & \"The Chemist\"<\/p>",
-            "text_font": 16,
+            "text_size": 16,
             "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_MmDWYy": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
             "padding_bottom": 16
           }
         }
       },
       "block_order": [
-        "text_NVa77p"
+        "subheading_y7hjmC",
+        "heading_JYhAxm",
+        "text_mfNWU3",
+        "buttons_MmDWYy"
       ],
       "settings": {
-        "width": "wrapper--narrow",
-        "align_text": "text-center",
+        "layout": "is-reversed",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/L3_TiegeHanley_Anti-Aging_Routine_Hero.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "reverse_blocks": false,
         "bg_color": "",
         "color": "",
-        "padding_top": 80,
-        "padding_bottom": 60
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "1713206343e4178672": {
@@ -350,7 +390,7 @@
     "section_double_static_vm_nxxrWT",
     "section_double_static_vm_R4Cg9i",
     "section_reviews_McPTbp",
-    "section_rich_text_abVwUy",
+    "section_double_static_vm_yFVkwc",
     "1713206343e4178672"
   ]
 }
