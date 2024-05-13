@@ -67,14 +67,13 @@ document.addEventListener('DOMContentLoaded', function() {
   // Add click event listener to each timeline__row
   timelineRows.forEach(function(row) {
     row.addEventListener('click', function() {
-      const indicatorLine = slider.querySelector('.timeline__indicator__line');
       console.log('Clicked')
       // Scroll timelineInner to the clicked row's position
       timelineInner.scrollLeft = row.offsetLeft;
-      
     });
   });
 });
+
 
 
 //Header
