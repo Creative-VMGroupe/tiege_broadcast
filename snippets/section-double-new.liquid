@@ -29,7 +29,7 @@
     assign enable_text_slider = true
 
     for block in section.blocks
-      if block.settings.image
+      if block.settings.image or block.settings.video 
         assign enable_slider = true
         assign enable_text_slider = false
 
@@ -182,6 +182,7 @@
         {%- for block in section.blocks -%}
           {%- liquid
             assign image = block.settings.image
+            assign video = block.settings.video
             assign subheading = block.settings.subheading
             assign title = block.settings.title
             assign text = block.settings.text
@@ -194,11 +195,13 @@
             data-slide
             {{ block.shopify_attributes }}
           >
-            <div class="brick__block brick__block--images{{ figure_width_class }}">
+            <div class="brick__block brick__block--images{{ figure_width_class }} {%- if video != blank -%}media-slider__block-custom{%- endif -%}">
               {%- if image -%}
                 <div class="brick__block__image wide-image">
                   {%- render 'image-hero' image: image, sizes: sizes, desktop_height: desktop_height, mobile_height: mobile_height -%}
                 </div>
+              {%- elsif video -%}
+                {%- render 'video-block-vm' video: video, desktop_height: desktop_height, mobile_height: mobile_height -%}
               {%- else -%}
                 {{ section_images }}
               {%- endif -%}
