@@ -131,7 +131,7 @@
           "settings": {
             "title": "",
             "subheading": "",
-            "review_text": "Use this text to showcase a review from one of your customers. A great review is honest and speaks to the concerns of your customers.",
+            "review_text": "\"Use this text to showcase a review from one of your customers. A great review is honest and speaks to the concerns of your customers.\"",
             "review_url": ""
           }
         }
@@ -145,9 +145,9 @@
       "settings": {
         "show_featured_image": false,
         "image_aspect_ratio": 1.3,
-        "show_quotation_marks": true,
+        "show_quotation_marks": false,
         "text_align": "text-center",
-        "text_size": 24,
+        "text_size": 32,
         "bg_color": "#f0f0f0",
         "color": "",
         "card_bg_color": "",
