@@ -58,32 +58,25 @@
 
 //Timeline click to scroll to element
 document.addEventListener('DOMContentLoaded', function() {
-  // Select the timelineInner container
-  const timelineInner = document.querySelectorAll('.timeline__inner'); 
-  // Select all timeline__row elements
-  const timelineRows = document.querySelectorAll('.timeline__row');
+  // Select all elements with the class 'timeline__inner'
+  const timelineInners = document.querySelectorAll('.timeline__inner');
   
-  // Add click event listener to each timeline__row
-  timelineRows.forEach(function(row) {
-    row.addEventListener('click', function() {
-      const indicatorLine = row.querySelector('.timeline__indicator__line');
-      console.log('Clicked')
-      // Scroll timelineInner to the clicked row's position
-      timelineInner.scrollLeft = row.offsetLeft;
-
-        if (row.scrollLeft === (row.scrollWidth - row.clientWidth)) {
-                console.log('Applied')
-          // Scroll has reached the end, apply width: 370% to timeline__indicator__line
-          indicatorLine.style.width = '45%';
-        } else {
-                console.log('Not applied')
-          // Scroll has not reached the end, reset width to default or any other value
-          indicatorLine.style.width = ''; // Resets width to default
-        }
-        
+  // Iterate over each 'timeline__inner' element
+  timelineInners.forEach(function(timelineInner) {
+    // Select all timeline__row elements within the current timeline__inner
+    const timelineRows = timelineInner.querySelectorAll('.timeline__row');
+  
+    // Add click event listener to each timeline__row within the current timeline__inner
+    timelineRows.forEach(function(row) {
+      row.addEventListener('click', function() {
+        // Scroll the current timelineInner to the clicked row's position
+        timelineInner.scrollLeft = row.offsetLeft;
+      });
     });
   });
 });
+
+
 
 
 
