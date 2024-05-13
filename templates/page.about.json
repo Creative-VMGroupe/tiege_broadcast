@@ -357,6 +357,40 @@
         "padding_bottom": 0
       }
     },
+    "section_rich_text_ipmbQd": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_PYPt4H": {
+          "type": "heading",
+          "settings": {
+            "title": "Seen in the Wild",
+            "text_font": 40,
+            "padding_bottom": 16
+          }
+        },
+        "text_xJk9kG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>@tiegehanley<\/p>",
+            "text_font": 16,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_PYPt4H",
+        "text_xJk9kG"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-center",
+        "bg_color": "#f7f7f7",
+        "color": "",
+        "padding_top": 100,
+        "padding_bottom": 0
+      }
+    },
     "1713206343e4178672": {
       "type": "apps",
       "blocks": {
@@ -374,8 +408,8 @@
         "instafeed_app_block_C7HVwY"
       ],
       "custom_css": [
-        "#insta-feed {background-color: #f7f7f7; padding-top: 60px;}",
-        "#insta-feed h2 {margin-top: 0 !important;}"
+        "#insta-feed {background-color: #f7f7f7;}",
+        "#insta-feed {padding-top: 20px !important;}"
       ],
       "settings": {
         "include_margins": false
@@ -391,6 +425,7 @@
     "section_double_static_vm_R4Cg9i",
     "section_reviews_McPTbp",
     "section_double_static_vm_yFVkwc",
+    "section_rich_text_ipmbQd",
     "1713206343e4178672"
   ]
 }
