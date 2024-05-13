@@ -706,9 +706,9 @@
         "timeline_B6QMHY"
       ],
       "settings": {
-        "title": "Skincare Level Guide",
+        "title": "Skincare Routines",
         "heading_font": 40,
-        "text": "<p>3 levels built to address your key skin concerns: Hydration, Crow's Feet, Dark Circles, & Anti-Aging.<\/p>",
+        "text": "<p>Formulated to address your specific skin concerns.<\/p>",
         "text_font": 16,
         "text_alignment": "text-center",
         "show_images": true,
@@ -770,9 +770,9 @@
         "timeline_tcaQKN"
       ],
       "settings": {
-        "title": "Acne Level Guide",
+        "title": "Acne Routines",
         "heading_font": 40,
-        "text": "<p>2 levels built to address your acne concerns.<\/p>",
+        "text": "<p>Fight breakouts with an uncomplicated, effective routine.<\/p>",
         "text_font": 16,
         "text_alignment": "text-center",
         "show_images": true,
