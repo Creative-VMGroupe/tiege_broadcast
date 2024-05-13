@@ -70,12 +70,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add click event listener to each timeline__row within the current timeline__inner
     timelineRows.forEach(function(row) {
       row.addEventListener('click', function() {
-        console.log('Testing')
+        
  // Calculate the desired scroll position to center the clicked row in the viewport
         const clickedRowOffset = row.getBoundingClientRect().left; // Left offset of the clicked row relative to the viewport
         const viewportWidth = window.innerWidth; // Width of the viewport
         const scrollTo = clickedRowOffset - (viewportWidth / 2) + (row.offsetWidth);
-
+console.log("Clickedrow offset" +clickedRowOffset)
+        console.log("Row offset" + row.offsetWidth)        
+console.log(scrollTo)        
         // Scroll the body (or any desired container) to the desired position
         timelineInner.scrollTo({
           left: scrollTo,
