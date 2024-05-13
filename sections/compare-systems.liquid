@@ -37,7 +37,7 @@
       <div class="comparision-text">
         <div class="comparision-heading">
           <p class="caption-text">{{ section.settings.caption }}</p>
-          <h2 class="heading-text heading-size-7">{{ section.settings.heading }}</h2>
+          <h2 class="heading-text heading-size-{{ section.settings.heading_size }}">{{ section.settings.heading }}</h2>
         </div>
         <div class="comparision-details hidden-lt-md">
           <div class="comparision-details-text">
@@ -664,6 +664,15 @@ section.comparision-system .comparision-details {
       "id": "heading",
       "label": "Heading",
       "default": "Compare Our Systems"
+    },
+    {
+          "type": "range",
+          "id": "heading_size",
+          "label": "Size",
+          "min": 24,
+          "max": 40,
+          "step": 8,
+          "default": 40
     },
     {
       "type": "text",
