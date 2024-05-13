@@ -67,6 +67,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const timelineRows = timelineInner.querySelectorAll('.timeline__row');
     const containerWidth = timelineInner.clientWidth;
     const indicatorLine = timelineInner.querySelector('.timeline__indicator__line');
+
+    const totalWidth = timelineRows.length * timelineRows[0].offsetWidth;
     // Add click event listener to each timeline__row within the current timeline__inner
     timelineRows.forEach(function(row) {
       row.addEventListener('click', function() {
