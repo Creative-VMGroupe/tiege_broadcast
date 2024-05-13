@@ -793,7 +793,7 @@
         "heading_AxHGwY": {
           "type": "heading",
           "settings": {
-            "title": "The Complete Guide",
+            "title": "Routine Level Guide",
             "text_font": 40,
             "padding_bottom": 16
           }
@@ -810,7 +810,7 @@
         "buttons_ezNW6y": {
           "type": "buttons",
           "settings": {
-            "button_text": "View the full guide",
+            "button_text": "View Guide",
             "button_url": "shopify:\/\/pages\/level-guide",
             "button_type": "btn--secondary",
             "button_size": "btn--large",
@@ -840,7 +840,7 @@
         "heading_7GyTji": {
           "type": "heading",
           "settings": {
-            "title": "Every Guy Deserves Amazing Skin",
+            "title": "The Tiege App",
             "heading_size": 40,
             "padding_bottom": 16
           }
@@ -848,7 +848,7 @@
         "text_CKiGjj": {
           "type": "text",
           "settings": {
-            "text": "<p>Our high-quality skin care systems work to maximize results and eliminate guesswork for men of all skin types.<\/p>",
+            "text": "<p>Simplify your Tiege experience, manage member autoship, and shop in the wild.<\/p>",
             "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
@@ -904,13 +904,47 @@
         "padding_bottom": 0
       }
     },
+    "section_rich_text_Hid74F": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_p9LGGb": {
+          "type": "heading",
+          "settings": {
+            "title": "Caught in the Wild",
+            "text_font": 40,
+            "padding_bottom": 16
+          }
+        },
+        "text_HcLrAj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>@tiegehanley<\/p>",
+            "text_font": 16,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_p9LGGb",
+        "text_HcLrAj"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-center",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 100,
+        "padding_bottom": 0
+      }
+    },
     "17128713724606d78b": {
       "type": "apps",
       "blocks": {
         "instafeed_app_block_VRCANX": {
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "title": "@tiegehanley",
+            "title": "",
             "title_color": "",
             "alignment": "center",
             "margin_top": 0,
@@ -923,7 +957,7 @@
         "instafeed_app_block_VRCANX"
       ],
       "custom_css": [
-
+        "#insta-feed {padding-top: 20px !important;}"
       ],
       "settings": {
         "include_margins": false
@@ -948,6 +982,7 @@
     "section_timeline_YTB9mM",
     "section_rich_text_mYKMrn",
     "section_double_yp4ajU",
+    "section_rich_text_Hid74F",
     "17128713724606d78b"
   ]
 }
