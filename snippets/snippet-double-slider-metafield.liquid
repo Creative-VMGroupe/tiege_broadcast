@@ -22,8 +22,22 @@
   assign bg_color_transparent = bg_color | color_modify: 'alpha', 0
   assign text_color = section.settings.color
   assign sub_color = section.settings.sub_color
-  
 
+  assign fade_option = true	
+  assign slideshow_class = 'slideshow__slider'
+
+  case section.settings.transition
+    when 'slide'
+      assign fade_option = false
+      assign slideshow_class = slideshow_class | append: ' slideshow__slider--slide'
+    when 'fade'
+      assign slideshow_class = slideshow_class | append: ' slideshow__slider--fade'
+    when 'zoom-out'
+      assign slideshow_class = slideshow_class | append: ' slideshow__slider--zoom-out'
+    when 'wipe'
+      assign slideshow_class = slideshow_class | append: ' slideshow__slider--wipe'
+  endcase
+  
   if text_slide_blocks.size > 1
     assign enable_text_slider = true
 
@@ -163,10 +177,10 @@
     {%- if enable_slider -%}
       {% comment %}Removed "autoPlay": 4000, from data-options{% endcomment %} 
       <div
-        class="brick__slider {% if section.settings.layout == 'is-reversed' %} flickity--reversed-custom{% endif %}"
+        class="brick__slider {% if section.settings.layout == 'is-reversed' %} flickity--reversed-custom{% endif %} {{ slideshow_class }}"
         data-slider
         data-dots="{{ settings.dots_style }}"
-        data-options='{"pageDots": true, "prevNextButtons": true, "pauseAutoPlayOnHover": false}'
+        data-options='{"fade": {{ fade_option }},"pageDots": true, "prevNextButtons": true, "pauseAutoPlayOnHover": false}'
       >
         {%- for block in section.blocks -%}
           {%- liquid
