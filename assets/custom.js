@@ -59,8 +59,7 @@
 //Timeline click to scroll to element
 document.addEventListener('DOMContentLoaded', function() {
   // Select the timelineInner container
-  const timelineInner = document.getElementById('timelineInner');
-  
+  const timelineInner = document.querySelectorAll('.timeline__inner'); 
   // Select all timeline__row elements
   const timelineRows = document.querySelectorAll('.timeline__row');
   
@@ -71,9 +70,6 @@ document.addEventListener('DOMContentLoaded', function() {
       // Scroll timelineInner to the clicked row's position
       timelineInner.scrollLeft = row.offsetLeft;
 
-
-      const sliders = document.querySelectorAll('.timeline__inner');
-      sliders.forEach(slider => {
         if (row.scrollLeft === (row.scrollWidth - row.clientWidth)) {
                 console.log('Applied')
           // Scroll has reached the end, apply width: 370% to timeline__indicator__line
@@ -84,8 +80,6 @@ document.addEventListener('DOMContentLoaded', function() {
           indicatorLine.style.width = ''; // Resets width to default
         }
         
-      })
-
     });
   });
 });
