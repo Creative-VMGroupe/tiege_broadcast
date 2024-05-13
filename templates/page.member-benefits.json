@@ -101,9 +101,9 @@
             "icon_color": "#545454",
             "image": "shopify:\/\/shop_images\/Group_1825.svg",
             "title": "SAVE 20%",
-            "heading_size": 4,
+            "heading_size": 16,
             "text": "<p>Members always save 20% on every purchase with Autoship<\/p>",
-            "text_size": 3
+            "text_size": 16
           }
         },
         "icon_YDKq7G": {
@@ -114,9 +114,9 @@
             "icon_color": "#545454",
             "image": "shopify:\/\/shop_images\/Group_1823.svg",
             "title": "GREAT GIFTS",
-            "heading_size": 4,
+            "heading_size": 16,
             "text": "<p>You are guaranteed 7 gifts in your first year<\/p>",
-            "text_size": 3
+            "text_size": 16
           }
         },
         "icon_MtcjBE": {
@@ -127,9 +127,9 @@
             "icon_color": "#545454",
             "image": "shopify:\/\/shop_images\/Group_1824.svg",
             "title": "EXCLUSIVE OFFERS",
-            "heading_size": 4,
+            "heading_size": 16,
             "text": "<p>Early access to products, gear, SWAG, and bundles<\/p>",
-            "text_size": 3
+            "text_size": 16
           }
         }
       },
@@ -146,7 +146,7 @@
       ],
       "settings": {
         "title": "Your Member Benefits Explained",
-        "heading_size": 7,
+        "heading_size": 40,
         "layout": "grid",
         "grid": 3,
         "align_heading": "text-center",
