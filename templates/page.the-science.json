@@ -362,7 +362,7 @@
         "heading_Rk4JUz": {
           "type": "heading",
           "settings": {
-            "title": "Lorem Ipsum Dolor Sit Amet, Consetetur",
+            "title": "Prevention is Key",
             "text_font": 32,
             "padding_bottom": 16
           }
@@ -370,7 +370,7 @@
         "text_mDCVF7": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar diam ac risus lobortis, eget scelerisque sem bibendum. Nullam ornare massa a est mattis, ac molestie mi dictum. Sed non eros a nibh feugiat sodales. Vestibulum ut augue in odio tincidunt rhoncus sed eget leo. Quisque vehicula neque ut erat fermentum, sit amet mattis libero feugiat. Integer varius magna at dui ultrices, id dignissim libero ultricies. Fusce convallis euismod dolor, a consectetur risus consequat nec. In non elit nec lorem volutpat aliquam eget at enim. Sed fermentum nisl sed tincidunt tristique.<\/p>",
+            "text": "<p><strong>83% <\/strong>of men 65 and older agree that men need to look after their skin, while only <strong>59% <\/strong>of young men aged 18-24 agree. Looks like skin health is something men recognize later in life, which is unfortunate.<\/p><p>Once we hit 25 our collagen levels can start to slowly deplete. It sucks, we know. But this doesn’t mean starting at 45 is too late. Many of our customers are over 50.<\/p><p>The sooner your start taking care of your skin, the better.<\/p>",
             "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 30
