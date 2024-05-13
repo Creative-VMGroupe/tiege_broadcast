@@ -22921,7 +22921,7 @@ body.is-focused .pswp-zoom-gallery .pswp__caption .pswp__caption-close:focus {
   padding: var(--form-top) calc(var(--form-left) * 2) var(--form-top)
     var(--form-left);
   border: 1px solid var(--primary);
-  border-radius: var(--RADIUS-SELECT);
+  border-radius: 300px;
   line-height: var(--line-height-normal);
   text-align: inherit;
   white-space: nowrap;
