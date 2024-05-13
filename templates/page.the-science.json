@@ -241,6 +241,14 @@
     "section_rich_text_HTLWQR": {
       "type": "section-rich-text",
       "blocks": {
+        "subheading_tnkMFR": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "",
+            "text_font": 16,
+            "padding_bottom": 16
+          }
+        },
         "heading_TQL8Nb": {
           "type": "heading",
           "settings": {
@@ -270,6 +278,7 @@
         }
       },
       "block_order": [
+        "subheading_tnkMFR",
         "heading_TQL8Nb",
         "text_PBT7G3",
         "text_XkLRAw"
@@ -283,32 +292,68 @@
         "padding_bottom": 80
       }
     },
-    "section_video_8zLTBy": {
-      "type": "section-video",
+    "section_double_static_vm_TbaLXG": {
+      "type": "section-double-static-vm",
+      "blocks": {
+        "subheading_BNGA7T": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Introducing",
+            "text_size": 16,
+            "padding_bottom": 16
+          }
+        },
+        "heading_3NXX6E": {
+          "type": "heading",
+          "settings": {
+            "title": "The Power of Peptides",
+            "text_size": 40,
+            "padding_bottom": 16
+          }
+        },
+        "text_CMkagN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At the heart of our skin care line is the innovative peptide technology. Peptides are small protein fragments that have been shown to stimulate collagen production and reduce the appearance of wrinkles. This technology has been extensively studied and found to have numerous benefits for skin health and appearance. For instance, a <a href=\"https:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/PMC6981886\/\">2019 study<\/a> found that peptides can stimulate skin growth and repair, improve skin barrier function, and even have antimicrobial properties.<\/p><p>Tiege Hanley has harnessed the power of these peptides in its formulations, providing you with products that work at a cellular level to improve your skin's appearance and health. We invite you to experience the difference that a scientifically designed, peptide-based skin care regimen can make.<\/p>",
+            "text_size": 16,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_WFXHXN": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_BNGA7T",
+        "heading_3NXX6E",
+        "text_CMkagN",
+        "buttons_WFXHXN"
+      ],
       "settings": {
-        "video": "shopify:\/\/files\/videos\/f7db5c375de94bceb432a68695da9d5d.mov",
-        "show_video_popup": true,
-        "video_popup_social": "https:\/\/www.youtube.com\/watch?v=nOjrW8jRB78",
-        "desktop_height": "screen-height-two-thirds",
+        "layout": "",
+        "height": "screen-height-three-quarters",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
-        "overlay_opacity": 0,
-        "overlay_color": "#000000",
-        "show_overlay_text": false,
-        "title": "Lorem Ipsum",
-        "heading_font": 40,
-        "description": "Lorem ipsum dolor sit amet, consetetur",
-        "text_font": 16,
-        "flex_align": "align--bottom-left",
-        "flex_align_mobile": "align--bottom-left-mobile",
-        "bg_color": "",
-        "color": "#ffffff",
-        "link_text": "Watch",
-        "link": "https:\/\/www.youtube.com\/watch?v=nOjrW8jRB78",
-        "button_type": "btn--white",
-        "button_size": "",
-        "button_style": "btn--outline",
-        "show_arrow": false
+        "video_main": "shopify:\/\/files\/videos\/f7db5c375de94bceb432a68695da9d5d.mov",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "reverse_blocks": false,
+        "bg_color": "#f7f7f7",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "section_rich_text_z7jagt": {
@@ -432,7 +477,7 @@
     "section_video_qzUgcT",
     "section_double_static_vm_9hVQ9m",
     "section_rich_text_HTLWQR",
-    "section_video_8zLTBy",
+    "section_double_static_vm_TbaLXG",
     "section_rich_text_z7jagt",
     "section_rich_text_K7Njz3",
     "1713200593b3060898"
