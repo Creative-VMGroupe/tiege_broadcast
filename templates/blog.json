@@ -15,7 +15,7 @@
             "description": "Tell your brand's story through images.",
             "text_size": 4,
             "flex_align_desktop": "align--bottom-left-desktop",
-            "flex_align_mobile": "align--middle-center-mobile",
+            "flex_align_mobile": "align--bottom-left-mobile",
             "bg_color": "",
             "color": "#ffffff",
             "first_button_text": "Read Now",
@@ -70,7 +70,7 @@
       "settings": {
         "height": "screen-height-three-quarters",
         "mobile_height": "screen-height-three-quarters--mobile",
-        "text_box_below": true,
+        "text_box_below": false,
         "mobile_bg_color": "",
         "mobile_color": "#000000",
         "width": "wrapper--full",
@@ -147,7 +147,7 @@
         "instafeed_app_block_W3DwK6"
       ],
       "custom_css": [
-        "#insta-feed {background-color: #f7f7f7; }"
+        "#insta-feed {background-color: #f7f7f7;}"
       ],
       "settings": {
         "include_margins": false
