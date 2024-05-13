@@ -127,7 +127,7 @@
           "type": "heading",
           "settings": {
             "title": "The Fundamentals of Skin Health",
-            "text_font": 32,
+            "text_font": 40,
             "padding_bottom": 30
           }
         },
@@ -195,57 +195,13 @@
         "show_arrow": false
       }
     },
-    "section_rich_text_xhkXAn": {
-      "type": "section-rich-text",
-      "blocks": {
-        "subheading_k48prd": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "subheading": "Lorem Ipsum Dolor Sit Amet",
-            "text_font": 16,
-            "padding_bottom": 16
-          }
-        },
-        "heading_Ei76zV": {
-          "type": "heading",
-          "settings": {
-            "title": "Lorem Ipsum Dolor Sit Amet",
-            "text_font": 32,
-            "padding_bottom": 16
-          }
-        },
-        "text_yHxP4N": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar diam ac risus lobortis, eget scelerisque sem bibendum. Nullam ornare massa a est mattis, ac molestie mi dictum. Sed non eros a nibh feugiat sodales. Vestibulum ut augue in odio tincidunt rhoncus sed eget leo. Quisque vehicula neque ut erat fermentum, sit amet mattis libero feugiat. Integer varius magna at dui ultrices, id dignissim libero ultricies. Fusce convallis euismod dolor, a consectetur risus consequat nec. In non elit nec lorem volutpat aliquam eget at enim. Sed fermentum nisl sed tincidunt tristique.<\/p>",
-            "text_font": 16,
-            "text_style": "font-body",
-            "padding_bottom": 30
-          }
-        }
-      },
-      "block_order": [
-        "subheading_k48prd",
-        "heading_Ei76zV",
-        "text_yHxP4N"
-      ],
-      "settings": {
-        "width": "wrapper--narrow",
-        "align_text": "text-center",
-        "bg_color": "",
-        "color": "",
-        "padding_top": 80,
-        "padding_bottom": 80
-      }
-    },
     "section_double_static_vm_9hVQ9m": {
       "type": "section-double-static-vm",
       "blocks": {
         "heading_mw8CfL": {
           "type": "heading",
           "settings": {
-            "title": "Lorem Ipsum",
+            "title": "The Power of Tiege",
             "text_size": 40,
             "padding_bottom": 16
           }
@@ -253,7 +209,7 @@
         "text_RiTpBb": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar diam ac risus lobortis, eget scelerisque sem bibendum. Nullam ornare massa a est mattis, ac molestie mi dictum. Sed non eros a nibh feugiat sodales. Vestibulum ut augue in odio tincidunt rhoncus sed eget leo. Quisque vehicula neque ut erat fermentum, sit amet mattis libero feugiat. <\/p>",
+            "text": "<p>Understanding the unique skin care needs of men, Tiege Hanley offers a range of specially formulated, high-quality products to suit these requirements. Our products are engineered to cater to the distinct attributes of masculine skin, for which generic women's products are often ill-suited.<\/p><p>At the core of our products is our cutting-edge peptide technology. This proprietary skin care formula revolutionizes how skin care works, improving the function and appearance of your skin from within. Additionally, our AM moisturizer with SPF 20 comes highly recommended by The Skin Cancer Foundation.<\/p>",
             "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
@@ -474,7 +430,6 @@
     "section_double_static_vm_yJne3F",
     "section_rich_text_TXLJKC",
     "section_video_qzUgcT",
-    "section_rich_text_xhkXAn",
     "section_double_static_vm_9hVQ9m",
     "section_rich_text_HTLWQR",
     "section_video_8zLTBy",
