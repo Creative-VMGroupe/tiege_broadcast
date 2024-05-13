@@ -47,7 +47,7 @@
             {%- if block.type == 'heading' and title != blank -%}
               {%- assign animation_order = animation_order | plus: 1 -%}
 
-              <h3 class="accordion__heading h4"
+              <h3 class="accordion__heading h4 heading-size-{{ block.settings.heading_size }}"
                 data-aos="hero"
                 data-aos-anchor="{{ animation_anchor }}"
                 data-aos-order="{{ animation_order }}"
@@ -198,7 +198,16 @@
             "id": "title",
             "label": "Heading",
             "default": "FAQ"
-          }
+          },
+                  {
+          "type": "range",
+          "id": "heading_size",
+          "label": "Size",
+          "min": 24,
+          "max": 40,
+          "step": 8,
+          "default": 40
+        }
         ]
       },
       {
