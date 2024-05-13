@@ -169,7 +169,27 @@
             "subheading": "★★★★★",
             "subheading_font": 16,
             "title": "Proof",
-            "heading_font": 40,
+            "heading_font": 32,
+            "text": "<p>{{ product.metafields.custom.proof_testimonial | metafield_tag }}<\/p>",
+            "text_size": 16,
+            "text_style": "font-body",
+            "button_text": "View 1000+ Reviews",
+            "button_url": "shopify:\/\/pages\/the-proof",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false,
+            "image": "{{ product.metafields.custom.proof_image_1.value }}"
+          }
+        },
+        "text_slide_gqyf6D": {
+          "type": "text-slide",
+          "settings": {
+            "stars_enabled": true,
+            "subheading": "★★★★★",
+            "subheading_font": 16,
+            "title": "Proof",
+            "heading_font": 32,
             "text": "<p>{{ product.metafields.custom.proof_testimonial | metafield_tag }}<\/p>",
             "text_size": 16,
             "text_style": "font-body",
@@ -184,13 +204,15 @@
         }
       },
       "block_order": [
-        "text_slide_aBkjUM"
+        "text_slide_aBkjUM",
+        "text_slide_gqyf6D"
       ],
       "settings": {
         "layout": "is-reversed",
         "height": "screen-height-two-thirds",
         "mobile_height": "screen-height-one-third--mobile",
         "width": "wrapper--full",
+        "transition": "fade",
         "image_1": "{{ product.metafields.custom.proof_image_1.value }}",
         "image_2": "{{ product.metafields.custom.proof_image_2.value }}",
         "image_width": "three-quarters",
@@ -276,6 +298,7 @@
         "height": "screen-height-two-thirds",
         "mobile_height": "screen-height-one-third--mobile",
         "width": "wrapper--full",
+        "transition": "fade",
         "image_width": "one-half",
         "text_alignment": "text-center",
         "bg_color": "#f7f7f7",
@@ -667,6 +690,7 @@
         "layout": "is-reversed",
         "height": "screen-height-two-thirds",
         "mobile_height": "screen-height-one-third--mobile",
+        "transition": "slide",
         "width": "wrapper--full",
         "image_1": "{{ product.metafields.custom.proof_image_1.value }}",
         "image_2": "{{ product.metafields.custom.proof_image_2.value }}",
@@ -756,6 +780,7 @@
         "layout": "is-reversed",
         "height": "screen-height-two-thirds",
         "mobile_height": "screen-height-one-third--mobile",
+        "transition": "slide",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/uZr3qZvfRNuNZb2xaQjw.png",
         "image_width": "one-half",
