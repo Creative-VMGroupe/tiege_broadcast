@@ -26363,8 +26363,10 @@ body.has-line-design.grid-compact
   text-transform: uppercase;  
   letter-spacing: var(--BTN-LETTER-SPACING);
 }
-/*Image with Slider - Tiege*/
-
+/*Image with Slider - Tiege and Metafield*/
+.media-slider__block-custom .video__player {
+  position: static
+}
 .sub-letter-spacing-0 {
   letter-spacing: 0 !important;
 }
