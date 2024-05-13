@@ -67,7 +67,7 @@
                   {% endif %}
                   {{ block.shopify_attributes }}
                 >
-                  <summary class="accordion__title h6" data-collapsible-trigger>
+                  <summary class="accordion__title h6 heading-size-{{ block.settings.heading_size }}" data-collapsible-trigger>
                     {%- if block.settings.show_icon -%}
                       {%- liquid
                         assign icon_size = block.settings.icon_size
@@ -220,6 +220,15 @@
             "label": "Open by default",
             "default": false
           },
+                            {
+          "type": "range",
+          "id": "heading_size",
+          "label": "Size",
+          "min": 24,
+          "max": 40,
+          "step": 8,
+          "default": 40
+        },
           {
             "type": "text",
             "id": "title",
