@@ -37,10 +37,10 @@
 //         slider.scrollLeft = scrollLeft - scroll;
 //       };
 
-//       // Add event listeners for mouse interactions to each 'timeline__inner' element
-//       slider.addEventListener('mousemove', move);
-//       slider.addEventListener('mousedown', startDragging);
-//       slider.addEventListener('mouseup', stopDragging);
+      // // Add event listeners for mouse interactions to each 'timeline__inner' element
+      // slider.addEventListener('mousemove', move);
+      // slider.addEventListener('mousedown', startDragging);
+      // slider.addEventListener('mouseup', stopDragging);
       
       // // Add scroll event listener to check if scroll reaches the end
       // slider.addEventListener('scroll', () => {
