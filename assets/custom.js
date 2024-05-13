@@ -87,8 +87,6 @@ console.log(scrollTo)
     });
 
             timelineInner.addEventListener('scroll', () => {
-                    console.log(timelineInner.scrollLeft)
-          console.log(timelineInner.clientWidth)
       if (timelineInner.scrollLeft === (timelineInner.scrollWidth - timelineInner.clientWidth)) {
         // Scroll has reached the end, apply width: 45% to timeline__indicator__line
         indicatorLine.style.width = '45%';
