@@ -24,22 +24,14 @@
         "heading_3jKzDV": {
           "type": "heading",
           "settings": {
-            "title": "Image banner",
+            "title": "The Science of Uncomplicated",
             "heading_font": 40
           }
         },
         "text_cEfcE6": {
           "type": "text",
           "settings": {
-            "description": "Tell your brand's story through images.",
-            "text_font": 16,
-            "text_style": "font-body"
-          }
-        },
-        "text_VWbtCH": {
-          "type": "text",
-          "settings": {
-            "description": "Tell your brand's story through images.",
+            "description": "This article only covers scientific fact and avoids all personal opinions. Read it and never see your skin the same.",
             "text_font": 16,
             "text_style": "font-body"
           }
@@ -47,8 +39,7 @@
       },
       "block_order": [
         "heading_3jKzDV",
-        "text_cEfcE6",
-        "text_VWbtCH"
+        "text_cEfcE6"
       ],
       "settings": {
         "height": "screen-height-one-half",
