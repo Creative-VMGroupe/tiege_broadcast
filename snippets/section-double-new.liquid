@@ -13,6 +13,9 @@
   assign enable_text_slider = false
   assign text_slide_blocks = section.blocks | where: "type", "text-slide"
 
+  assign fade_option = true
+  assign slideshow_class = 'slideshow__slider'
+
   assign animation_anchor = '#BrickSection--' | append: section.id
   assign animation_order = 0
   assign accordion_blocks = section.blocks | where: "type", "accordion"
@@ -57,7 +60,17 @@
     endunless
   endcapture
 
-
+  case section.settings.transition
+    when 'slide'
+      assign fade_option = false
+      assign slideshow_class = slideshow_class | append: ' slideshow__slider--slide'
+    when 'fade'
+      assign slideshow_class = slideshow_class | append: ' slideshow__slider--fade'
+    when 'zoom-out'
+      assign slideshow_class = slideshow_class | append: ' slideshow__slider--zoom-out'
+    when 'wipe'
+      assign slideshow_class = slideshow_class | append: ' slideshow__slider--wipe'
+  endcase
   
 
 
@@ -164,7 +177,7 @@
         class="brick__slider {% if section.settings.layout == 'is-reversed' %} flickity--reversed-custom{% endif %}"
         data-slider
         data-dots="{{ settings.dots_style }}"
-        data-options='{"pageDots": true, "prevNextButtons": true, "pauseAutoPlayOnHover": false}'
+        data-options='{"fade": {{ fade_option }}, "pageDots": true, "prevNextButtons": true, "pauseAutoPlayOnHover": false}'
       >
         {%- for block in section.blocks -%}
           {%- liquid
