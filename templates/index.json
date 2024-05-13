@@ -417,7 +417,7 @@
         "text_RJVT4V": {
           "type": "text",
           "settings": {
-            "description": "Want great skin? We got you, and we got cutting-edge formulas.",
+            "description": "Want great skin? Our cutting-edge formulas are the key to an uncomplicated routine for amazing skin.",
             "text_font": 16,
             "text_style": "font-body"
           }
@@ -462,10 +462,10 @@
       "settings": {
         "layout": "",
         "text_align_center": false,
-        "heading": "Real People, Real Results",
+        "heading": "Real People. Real Results.",
         "heading_font": 40,
         "heading_letter_spacing": 0,
-        "description": "<p>We are obsessed with providing all men simple, effective, and accessible skin care to help them maximize their confidence.<\/p>",
+        "description": "<p>We are obsessed with providing all men with simple, effective and accessible skincare to help them maximize their confidence.<\/p>",
         "text_font": 16,
         "reg_text": false,
         "btn_size": 4,
@@ -499,15 +499,15 @@
         "overlay_opacity": 35,
         "overlay_color": "#000000",
         "show_overlay_text": true,
-        "title": "Aaron Marino",
+        "title": "A Simple Routine",
         "heading_font": 40,
-        "description": "Talks facts about taking care of your skin.",
+        "description": "Aaron Marino covers the simple process behind effective skincare.",
         "text_font": 16,
         "flex_align": "align--bottom-left",
         "flex_align_mobile": "align--bottom-left-mobile",
         "bg_color": "rgba(0,0,0,0)",
         "color": "#ffffff",
-        "link_text": "Watch How-To's",
+        "link_text": "Watch How-To",
         "link": "",
         "button_type": "btn--white",
         "button_size": "btn--large",
@@ -548,7 +548,7 @@
         "heading_7d9jEX": {
           "type": "heading",
           "settings": {
-            "title": "Routine Quiz",
+            "title": "Find Your Routine",
             "heading_size": 40,
             "padding_bottom": 16
           }
@@ -556,7 +556,7 @@
         "text_aFT9TL": {
           "type": "text",
           "settings": {
-            "text": "<p>Our high-quality skin care systems work to maximize results and eliminate guesswork for men of all skin types.<\/p>",
+            "text": "<p>Eliminate the guesswork with our quiz. Take the quiz for your personalized recommendation from our skincare experts.<\/p>",
             "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
