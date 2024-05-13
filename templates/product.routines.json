@@ -245,7 +245,7 @@
             "button_size": "",
             "button_style": "btn--solid",
             "show_arrow": false,
-            "video": "shopify:\/\/files\/videos\/Snapinsta.app_video_254C6BE9F9A30CC74F6A74D9CD4CC6B9_video_dashinit_df4abeae-94e6-4fc8-b518-877149eb46cc.mp4"
+            "image": "{{ product.metafields.custom.ingredient_1_image.value }}"
           }
         },
         "text_slide_AqyEPP": {
