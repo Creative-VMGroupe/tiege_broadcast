@@ -71,20 +71,22 @@ document.addEventListener('DOMContentLoaded', function() {
     timelineRows.forEach(function(row) {
       row.addEventListener('click', function() {
         
- // Calculate the desired scroll position to center the clicked row in the viewport
-        const clickedRowOffset = row.getBoundingClientRect().left; // Left offset of the clicked row relative to the viewport
+        // Calculate the desired scroll position to center the clicked row
+        const clickedRowOffset = row.offsetLeft; // Left offset of the clicked row relative to the container
+        const containerWidth = timelineInner.offsetWidth; // Width of the container
         const viewportWidth = window.innerWidth; // Width of the viewport
-        const rowWidth = row.offsetWidth; // Width of the clicked row
-        const scrollTo = clickedRowOffset - (viewportWidth / 2) + (rowWidth / 2) - (viewportWidth / 2); // Adjusting for center alignment
-        
-        console.log("Clickedrow offset " +clickedRowOffset)
-        console.log("Timeline Offset " + timelineInner.offsetWidth)        
-        console.log(scrollTo)        
-        // Scroll the body (or any desired container) to the desired position
-        timelineInner.scrollTo({
-          left: scrollTo,
-          behavior: 'smooth' // Optional smooth scrolling
-        });
+
+        // Calculate the maximum scrollable width based on the total width of all elements
+        const maxScrollableWidth = totalWidth - containerWidth;
+
+        // Calculate the desired scroll position to center the clicked row within the visible area
+        let scrollTo = clickedRowOffset - (containerWidth / 2) + (row.offsetWidth / 2);
+
+        // Ensure the scroll position stays within the bounds of the scrollable area
+        scrollTo = Math.max(0, Math.min(maxScrollableWidth, scrollTo));
+
+        // Scroll the container to the desired position
+        timelineInner.scrollLeft = scrollTo;
       });
     });
 
