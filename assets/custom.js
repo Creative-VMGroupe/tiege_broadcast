@@ -65,12 +65,16 @@ document.addEventListener('DOMContentLoaded', function() {
   timelineInners.forEach(function(timelineInner) {
     // Select all timeline__row elements within the current timeline__inner
     const timelineRows = timelineInner.querySelectorAll('.timeline__row');
+    const containerWidth = timelineInner.clientWidth;
     const indicatorLine = timelineInner.querySelector('.timeline__indicator__line');
     // Add click event listener to each timeline__row within the current timeline__inner
     timelineRows.forEach(function(row) {
       row.addEventListener('click', function() {
-        // Scroll the current timelineInner to the clicked row's position
-        timelineInner.scrollLeft = row.offsetLeft - 20;
+        // Calculate the desired scroll position to center the clicked row
+        const clickedRowOffset = row.offsetLeft;
+        const scrollTo = clickedRowOffset - (containerWidth / 2) + (row.offsetWidth / 2);
+        // Scroll the current timelineInner to the desired position
+        timelineInner.scrollLeft = scrollTo;
       });
     });
 
