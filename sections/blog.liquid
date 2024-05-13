@@ -21,7 +21,7 @@
   data-section-type="blog">
   <div class="wrapper--full-padded">
     {%- if section.settings.show_title or section.settings.show_rss -%}
-      <h1 class="blog__title h3">
+      <h1 class="blog__title h3 heading-size-40">
         {%- if section.settings.show_title -%}
           {{ blog.title }}
         {%- endif -%}
@@ -323,10 +323,10 @@
         "type":  "range",
         "id": "title_size",
         "label": "Title size",
-        "min": 1,
-        "max": 15,
-        "step": 1,
-        "default": 4
+          "min": 12,
+          "max": 16,
+          "step": 2,
+          "default": 16
       },
       {
         "type": "checkbox",
