@@ -26367,6 +26367,9 @@ body.has-line-design.grid-compact
 .media-slider__block-custom .video__player {
   position: static
 }
+.media-slider__block-custom .video-background {
+  width: 100%;
+}
 .sub-letter-spacing-0 {
   letter-spacing: 0 !important;
 }
