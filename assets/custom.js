@@ -67,9 +67,18 @@ document.addEventListener('DOMContentLoaded', function() {
   // Add click event listener to each timeline__row
   timelineRows.forEach(function(row) {
     row.addEventListener('click', function() {
-      console.log('Clicked')
+      const indicatorLine = slider.querySelector('.timeline__indicator__line');
+      
       // Scroll timelineInner to the clicked row's position
       timelineInner.scrollLeft = row.offsetLeft;
+      if (slider.scrollLeft === (slider.scrollWidth - slider.clientWidth)) {
+           // Scroll has reached the end, apply width: 370% to timeline__indicator__line
+           indicatorLine.style.width = '45%';
+        console.log('Clicked')
+         } else {
+         // Scroll has not reached the end, reset width to default or any other value
+          indicatorLine.style.width = ''; // Resets width to default
+        }
     });
   });
 });
