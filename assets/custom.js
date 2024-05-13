@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
  // Calculate the desired scroll position to center the clicked row in the viewport
         const clickedRowOffset = row.getBoundingClientRect().left; // Left offset of the clicked row relative to the viewport
         const viewportWidth = window.innerWidth; // Width of the viewport
-        const scrollTo = clickedRowOffset - (viewportWidth / 2) + (row.offsetWidth / 2);
+        const scrollTo = clickedRowOffset - (viewportWidth / 2) + (row.offsetWidth);
 
         // Scroll the body (or any desired container) to the desired position
         timelineInner.scrollTo({
