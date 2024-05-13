@@ -204,7 +204,7 @@
             "button_url": "shopify:\/\/pages\/the-proof",
             "button_type": "btn--white",
             "button_size": "",
-            "button_style": "btn--outline",
+            "button_style": "btn--text",
             "show_arrow": false
           }
         }
@@ -217,6 +217,7 @@
         "height": "screen-height-two-thirds",
         "mobile_height": "screen-height-one-third--mobile",
         "width": "wrapper--full",
+        "transition": "slide",
         "image_1": "{{ product.metafields.custom.proof_image_1.value }}",
         "image_2": "{{ product.metafields.custom.proof_image_2.value }}",
         "image_width": "three-quarters",
@@ -302,6 +303,7 @@
         "height": "screen-height-two-thirds",
         "mobile_height": "screen-height-one-third--mobile",
         "width": "wrapper--full",
+        "transition": "slide",
         "image_1": "{{ product.metafields.custom.proof_image_1.value }}",
         "image_2": "{{ product.metafields.custom.proof_image_2.value }}",
         "image_width": "one-half",
@@ -491,6 +493,7 @@
         "layout": "is-reversed",
         "height": "screen-height-one-half",
         "mobile_height": "screen-height-one-third--mobile",
+        "transition": "slide",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png",
         "image_2": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO3.png",
@@ -559,6 +562,7 @@
         "layout": "is-reversed",
         "height": "screen-height-one-half",
         "mobile_height": "screen-height-one-third--mobile",
+        "transition": "slide",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/uZr3qZvfRNuNZb2xaQjw.png",
         "image_width": "one-half",
