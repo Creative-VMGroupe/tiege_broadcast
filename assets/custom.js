@@ -70,7 +70,11 @@ document.addEventListener('DOMContentLoaded', function() {
       console.log('Clicked')
       // Scroll timelineInner to the clicked row's position
       timelineInner.scrollLeft = row.offsetLeft;
-              if (row.scrollLeft === (row.scrollWidth - row.clientWidth)) {
+
+
+      const sliders = document.querySelectorAll('.timeline__inner');
+      sliders.forEach(slider => {
+        if (row.scrollLeft === (row.scrollWidth - row.clientWidth)) {
                 console.log('Applied')
           // Scroll has reached the end, apply width: 370% to timeline__indicator__line
           indicatorLine.style.width = '45%';
@@ -79,6 +83,9 @@ document.addEventListener('DOMContentLoaded', function() {
           // Scroll has not reached the end, reset width to default or any other value
           indicatorLine.style.width = ''; // Resets width to default
         }
+        
+      })
+
     });
   });
 });
