@@ -26676,6 +26676,9 @@ flex: 1;
 } 
 }
 /*Flickity*/
+.brick__section.is-selected {
+  animation: slideToggle 0.5s ease-in-out forwards;
+}
 @media (max-width: 749px) {
 .flickity-page-dots {
     left: 0;
