@@ -58,57 +58,58 @@
 
 //Timeline click to scroll to element
 document.addEventListener('DOMContentLoaded', function() {
-  // Select all elements with the class 'timeline__inner'
-  const timelineInners = document.querySelectorAll('.timeline__inner');
+  if (window.innerWidth >= 750) {
+    // Select all elements with the class 'timeline__inner'
+    const timelineInners = document.querySelectorAll('.timeline__inner');
+
+    // Iterate over each 'timeline__inner' element
+    timelineInners.forEach(function(timelineInner) {
+      // Select all timeline__row elements within the current timeline__inner
+      const timelineRows = timelineInner.querySelectorAll('.timeline__row');
+      const containerWidth = timelineInner.clientWidth;
+      const indicatorLine = timelineInner.querySelector('.timeline__indicator__line');
+
+      const totalWidth = timelineRows.length * timelineRows[0].offsetWidth;
   
-  // Iterate over each 'timeline__inner' element
-  timelineInners.forEach(function(timelineInner) {
-    // Select all timeline__row elements within the current timeline__inner
-    const timelineRows = timelineInner.querySelectorAll('.timeline__row');
-    const containerWidth = timelineInner.clientWidth;
-    const indicatorLine = timelineInner.querySelector('.timeline__indicator__line');
+      // Add click event listener to each timeline__row within the current timeline__inner
+      timelineRows.forEach(function(row, index) {
+        row.addEventListener('click', function() {
+          // Calculate the desired scroll position to center the clicked row
+          let scrollTo;
+          if (index === timelineRows.length - 1 && window.innerWidth > 1300) {
+            // If the clicked row is the last one and the screen width is larger than 1300px, scroll to the end
+            scrollTo = timelineInner.scrollWidth;
+          } else {
+            // Otherwise, calculate the scroll position to center the clicked row
+            const clickedRowOffset = row.offsetLeft; // Left offset of the clicked row relative to the container
+            const containerWidth = timelineInner.offsetWidth; // Width of the container
+            scrollTo = clickedRowOffset - (containerWidth / 2) + (row.offsetWidth / 2);
+          }
 
-    const totalWidth = timelineRows.length * timelineRows[0].offsetWidth;
- // Add click event listener to each timeline__row within the current timeline__inner
-    timelineRows.forEach(function(row, index) {
-      row.addEventListener('click', function() {
-        // Calculate the desired scroll position to center the clicked row
-        let scrollTo;
-        if (index === timelineRows.length - 1 && window.innerWidth > 1300) {
-          // If the clicked row is the last one and the screen width is larger than 1300px, scroll to the end
-          scrollTo = timelineInner.scrollWidth;
-        } else {
-          // Otherwise, calculate the scroll position to center the clicked row
-          const clickedRowOffset = row.offsetLeft; // Left offset of the clicked row relative to the container
-          const containerWidth = timelineInner.offsetWidth; // Width of the container
-          scrollTo = clickedRowOffset - (containerWidth / 2) + (row.offsetWidth / 2);
-        }
+          // Ensure the scroll position stays within the bounds of the scrollable area
+          scrollTo = Math.max(0, scrollTo);
 
-        // Ensure the scroll position stays within the bounds of the scrollable area
-        scrollTo = Math.max(0, scrollTo);
-
-        // Scroll the container to the desired position with smooth scrolling
-        timelineInner.scrollTo({
-          left: scrollTo,
-          behavior: 'smooth'
+          // Scroll the container to the desired position with smooth scrolling
+          timelineInner.scrollTo({
+            left: scrollTo,
+            behavior: 'smooth'
+          });
         });
       });
-    });
 
-            timelineInner.addEventListener('scroll', () => {
-      if (timelineInner.scrollLeft === (timelineInner.scrollWidth - timelineInner.clientWidth)) {
-        // Scroll has reached the end, apply width: 45% to timeline__indicator__line
-        indicatorLine.style.width = '45%';
-      } else {
-        // Scroll has not reached the end, reset width to default or any other value
-        indicatorLine.style.width = ''; // Resets width to default
-      }
+      timelineInner.addEventListener('scroll', () => {
+        if (timelineInner.scrollLeft === (timelineInner.scrollWidth - timelineInner.clientWidth)) {
+          // Scroll has reached the end, apply width: 45% to timeline__indicator__line
+          indicatorLine.style.width = '45%';
+        } else {
+          // Scroll has not reached the end, reset width to default or any other value
+          indicatorLine.style.width = ''; // Resets width to default
+        }
       });
-  
-  });
-
-
+    });
+  }
 });
+
 
 
 
