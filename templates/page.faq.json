@@ -42,7 +42,7 @@
           "type": "heading",
           "settings": {
             "title": "Frequently Asked Questions",
-            "text_size": 7,
+            "text_font": 40,
             "padding_bottom": 0
           }
         }
@@ -141,8 +141,8 @@
         "mobile_height": "screen-height-one-half--mobile",
         "heading": "",
         "heading_position": "text-center",
-        "heading_size": 5,
-        "text_size": 3,
+        "heading_size": 24,
+        "text_size": 16,
         "color": "",
         "bg_color": "#ffffff",
         "layout_mobile": "2",
