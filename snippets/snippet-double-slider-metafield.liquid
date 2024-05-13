@@ -9,12 +9,12 @@
   assign desktop_height = section.settings.height
   assign mobile_height = section.settings.mobile_height
   assign mobile_height_fix = section.settings.mobile_height | append: '__flickity-custom'
-  
   assign width = section.settings.width
-  assign enable_slider = false
-  assign enable_text_slider = false
   assign text_slide_blocks = section.blocks | where: "type", "text-slide"
 
+  assign enable_slider = false
+  assign enable_text_slider = false
+  
   assign animation_anchor = '#BrickSection--' | append: section.id
   assign animation_order = 0
   assign accordion_blocks = section.blocks | where: "type", "accordion"
