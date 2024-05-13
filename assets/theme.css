@@ -26676,9 +26676,12 @@ flex: 1;
 } 
 }
 /*Flickity*/
-.brick__section.is-selected {
+.brick__section.flickity-cell.is-selected {
     opacity: 1!important;
     visibility: visible;
+}
+.brick__section.flickity-cell {
+  
 }
 @media (max-width: 749px) {
 .flickity-page-dots {
