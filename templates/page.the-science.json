@@ -20,6 +20,36 @@
     },
     "section_hero_KpG8aH": {
       "type": "section-hero",
+      "blocks": {
+        "heading_3jKzDV": {
+          "type": "heading",
+          "settings": {
+            "title": "Image banner",
+            "heading_font": 40
+          }
+        },
+        "text_cEfcE6": {
+          "type": "text",
+          "settings": {
+            "description": "Tell your brand's story through images.",
+            "text_font": 16,
+            "text_style": "font-body"
+          }
+        },
+        "text_VWbtCH": {
+          "type": "text",
+          "settings": {
+            "description": "Tell your brand's story through images.",
+            "text_font": 16,
+            "text_style": "font-body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3jKzDV",
+        "text_cEfcE6",
+        "text_VWbtCH"
+      ],
       "settings": {
         "height": "screen-height-one-half",
         "width": "wrapper--full",
@@ -32,7 +62,7 @@
         "overlay_color": "#000000",
         "show_overlay_text": false,
         "bg_color": "",
-        "color": "#ffffff"
+        "color": "#212121"
       }
     },
     "section_rich_text_TXLJKC": {
@@ -169,7 +199,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar diam ac risus lobortis, eget scelerisque sem bibendum. Nullam ornare massa a est mattis, ac molestie mi dictum. Sed non eros a nibh feugiat sodales. Vestibulum ut augue in odio tincidunt rhoncus sed eget leo. Quisque vehicula neque ut erat fermentum, sit amet mattis libero feugiat. <\/p>",
-            "text_size": 3,
+            "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
           }
