@@ -146,7 +146,7 @@
                         </span>
                       {%- endif -%}
 
-                      <p class="heading-size-6">{{ review | truncatewords: 200 }}</p>
+                      <p class="heading-size-{{ text_size }}">{{ review | truncatewords: 200 }}</p>
 
                       {%- if show_quotation_marks -%}
                         <span class="review__quote review__quote--close{% if section.settings.padding_bottom > 9 %} review__quote--close-negative{% endif %}">
