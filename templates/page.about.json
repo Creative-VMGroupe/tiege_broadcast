@@ -35,6 +35,68 @@
         "color": "#ffffff"
       }
     },
+    "section_double_static_vm_j6Grh3": {
+      "type": "section-double-static-vm",
+      "blocks": {
+        "subheading_JmpmaB": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "The Tiege Story",
+            "text_size": 3,
+            "padding_bottom": 16
+          }
+        },
+        "heading_z3MbHR": {
+          "type": "heading",
+          "settings": {
+            "title": "Created for Guys",
+            "text_size": 40,
+            "padding_bottom": 16
+          }
+        },
+        "text_6niWcg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Tiege Hanley story is simple and uncomplicated, just like our products. Founded by four “regular guys,” we created a product system and brand that makes skin care meaningful, accessible, affordable and clinically relevant—for regular guys.<br\/><br\/>The brain child of Kelley Thornton, Tiege Hanley, named after one of Kelley’s prominent ancestors, was inspired by a department store skin care aisle stroll. As Kelley perused, he was struck by three simple truths:<br\/><br\/>1. Guys really don’t know much about skin care<br\/>2. Men’s skin care products are complicated and confusing<br\/>3. Man, are those products expensive!<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_xFmDGw": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_JmpmaB",
+        "heading_z3MbHR",
+        "text_6niWcg",
+        "buttons_xFmDGw"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "reverse_blocks": false,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_rich_text_HGVCbw": {
       "type": "section-rich-text",
       "blocks": {
@@ -60,6 +122,7 @@
         "heading_6EqWEd",
         "text_MAbKKh"
       ],
+      "disabled": true,
       "settings": {
         "width": "wrapper--narrow",
         "align_text": "text-center",
@@ -207,6 +270,7 @@
   "order": [
     "main",
     "section_hero_AKxdtT",
+    "section_double_static_vm_j6Grh3",
     "section_rich_text_HGVCbw",
     "section_video_mgWJmA",
     "section_rich_text_KVkbW8",
