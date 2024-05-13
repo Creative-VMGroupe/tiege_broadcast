@@ -706,7 +706,7 @@
         "timeline_B6QMHY"
       ],
       "settings": {
-        "title": "A Quick Skincare Guide",
+        "title": "Skincare Level Guide",
         "heading_font": 40,
         "text": "<p>3 levels built to address your key skin concerns: Hydration, Crow's Feet, Dark Circles, & Anti-Aging.<\/p>",
         "text_font": 16,
@@ -734,7 +734,7 @@
             "subheading_font": 14,
             "title": "Acne Routine",
             "heading_font": 24,
-            "text": "<p>Reduce redness and swelling<\/p>",
+            "text": "<p>Reduce breakouts, redness and swelling.<\/p>",
             "text_font": 16,
             "text_style": "font-body",
             "button_text": "Shop Level 1 Acne",
@@ -753,7 +753,7 @@
             "subheading_font": 14,
             "title": "Advanced Acne Routine",
             "heading_font": 24,
-            "text": "<p>Extra daily moisturizing to battle severe acne<\/p>",
+            "text": "<p>Battle severe acne with extra hydration.<\/p>",
             "text_font": 16,
             "text_style": "font-body",
             "button_text": "Shop Level 2 ACNE",
@@ -770,7 +770,7 @@
         "timeline_tcaQKN"
       ],
       "settings": {
-        "title": "A Quick Acne Guide",
+        "title": "Acne Level Guide",
         "heading_font": 40,
         "text": "<p>2 levels built to address your acne concerns.<\/p>",
         "text_font": 16,
