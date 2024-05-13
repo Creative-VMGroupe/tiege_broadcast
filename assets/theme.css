@@ -18494,8 +18494,12 @@ body.has-header-transparent
 }
 .article__content p {
   font-size: 16px;
-  line-height: inherit;
+  line-height: 1.5;
   margin: 0 0 24px;
+}
+.article__content h1 {
+  font-size: 40px;
+  line-height: 1.25;
 }
 .article__content blockquote {
   font-style: var(--FONT-STYLE-BODY-ITALIC);
