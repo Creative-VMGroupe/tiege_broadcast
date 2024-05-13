@@ -42,7 +42,7 @@
           "type": "heading",
           "settings": {
             "title": "Lorem Ipsum Dolor Sit Amet",
-            "text_size": 7,
+            "text_font": 40,
             "padding_bottom": 30
           }
         },
@@ -51,7 +51,7 @@
           "disabled": true,
           "settings": {
             "subheading": "Environmental Stewardship",
-            "text_size": 4,
+            "text_font": 16,
             "padding_bottom": 16
           }
         },
@@ -59,7 +59,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar diam ac risus lobortis, eget scelerisque sem bibendum. Nullam ornare massa a est mattis, ac molestie mi dictum. Sed non eros a nibh feugiat sodales. Vestibulum ut augue in odio tincidunt rhoncus sed eget leo. Quisque vehicula neque ut erat fermentum, sit amet mattis libero feugiat. Integer varius magna at dui ultrices, id dignissim libero ultricies. Fusce convallis euismod dolor, a consectetur risus consequat nec. In non elit nec lorem volutpat aliquam eget at enim. Sed fermentum nisl sed tincidunt tristique.<\/p>",
-            "text_size": 3,
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 0
           }
@@ -95,9 +95,9 @@
         "overlay_color": "#000000",
         "show_overlay_text": false,
         "title": "",
-        "heading_size": 7,
+        "heading_font": 40,
         "description": "",
-        "text_size": 3,
+        "text_font": 16,
         "flex_align": "align--middle-center",
         "flex_align_mobile": "align--middle-center-mobile",
         "bg_color": "",
@@ -115,9 +115,18 @@
       "blocks": {
         "subheading_k48prd": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "subheading": "Lorem Ipsum Dolor Sit Amet",
-            "text_size": 5,
+            "text_font": 16,
+            "padding_bottom": 16
+          }
+        },
+        "heading_Ei76zV": {
+          "type": "heading",
+          "settings": {
+            "title": "Lorem Ipsum Dolor Sit Amet",
+            "text_font": 32,
             "padding_bottom": 16
           }
         },
@@ -125,26 +134,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar diam ac risus lobortis, eget scelerisque sem bibendum. Nullam ornare massa a est mattis, ac molestie mi dictum. Sed non eros a nibh feugiat sodales. Vestibulum ut augue in odio tincidunt rhoncus sed eget leo. Quisque vehicula neque ut erat fermentum, sit amet mattis libero feugiat. Integer varius magna at dui ultrices, id dignissim libero ultricies. Fusce convallis euismod dolor, a consectetur risus consequat nec. In non elit nec lorem volutpat aliquam eget at enim. Sed fermentum nisl sed tincidunt tristique.<\/p>",
-            "text_size": 3,
-            "text_style": "font-body",
-            "padding_bottom": 30
-          }
-        },
-        "subheading_4CJJgN": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "subheading": "The Science Powering Tiege Hanley Skin Care",
-            "text_size": 5,
-            "padding_bottom": 16
-          }
-        },
-        "text_wtzErX": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Understanding the unique skin care needs of men, Tiege Hanley offers a range of specially formulated, high-quality products to suit these requirements. Our products are engineered to cater to the distinct attributes of masculine skin, for which generic women's products are often ill-suited.<\/p><p>At the core of our products is our cutting-edge peptide technology. This proprietary skin care formula revolutionizes how skin care works, improving the function and appearance of your skin from within. Additionally, our AM moisturizer with SPF 20 comes highly recommended by The Skin Cancer Foundation.<\/p>",
-            "text_size": 3,
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 30
           }
@@ -152,9 +142,8 @@
       },
       "block_order": [
         "subheading_k48prd",
-        "text_yHxP4N",
-        "subheading_4CJJgN",
-        "text_wtzErX"
+        "heading_Ei76zV",
+        "text_yHxP4N"
       ],
       "settings": {
         "width": "wrapper--narrow",
@@ -172,7 +161,7 @@
           "type": "heading",
           "settings": {
             "title": "Lorem Ipsum",
-            "text_size": 7,
+            "text_size": 40,
             "padding_bottom": 16
           }
         },
@@ -211,11 +200,11 @@
     "section_rich_text_HTLWQR": {
       "type": "section-rich-text",
       "blocks": {
-        "subheading_TnXyDM": {
-          "type": "subheading",
+        "heading_TQL8Nb": {
+          "type": "heading",
           "settings": {
-            "subheading": "Lorem Ipsum Dolor Sit Amet, Consetetur",
-            "text_size": 5,
+            "title": "Lorem Ipsum Dolor Sit Amet, Consetetur",
+            "text_font": 32,
             "padding_bottom": 16
           }
         },
@@ -223,18 +212,9 @@
           "type": "text",
           "settings": {
             "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar diam ac risus lobortis, eget scelerisque sem bibendum. Nullam ornare massa a est mattis, ac molestie mi dictum. Sed non eros a nibh feugiat sodales. Vestibulum ut augue in odio tincidunt rhoncus sed eget leo. Quisque vehicula neque ut erat fermentum, sit amet mattis libero feugiat. Integer varius magna at dui ultrices, id dignissim libero ultricies. Fusce convallis euismod dolor, a consectetur risus consequat nec. In non elit nec lorem volutpat aliquam eget at enim. Sed fermentum nisl sed tincidunt tristique.<\/p>",
-            "text_size": 3,
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 30
-          }
-        },
-        "subheading_CYqyHB": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "subheading": "The Power of Peptide Technology",
-            "text_size": 5,
-            "padding_bottom": 16
           }
         },
         "text_XkLRAw": {
@@ -242,16 +222,15 @@
           "disabled": true,
           "settings": {
             "text": "<p>At the heart of our skin care line is the innovative peptide technology. Peptides are small protein fragments that have been shown to stimulate collagen production and reduce the appearance of wrinkles. This technology has been extensively studied and found to have numerous benefits for skin health and appearance. For instance, a <a href=\"https:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/PMC6981886\/\">2019 study<\/a> found that peptides can stimulate skin growth and repair, improve skin barrier function, and even have antimicrobial properties.<\/p><p>Tiege Hanley has harnessed the power of these peptides in its formulations, providing you with products that work at a cellular level to improve your skin's appearance and health. We invite you to experience the difference that a scientifically designed, peptide-based skin care regimen can make.<\/p><p>Let’s address the elephant in the room– there are many far too many beauty products out there. It’s really hard to know which to pick.<\/p><p>We sent Aaron on a mission to compare retail products to those found in the Tiege Hanley Systems. Here’s what he found:<\/p><p>Khiels and Neutrogena are amazing unisex brands but they have unfortunately high costs. Lower in the article we’ll show exactly <strong>why<\/strong> their costs are higher, and <strong>how<\/strong> we’ve been able to 📈 quality while 📉 costs.<\/p><p>Tiege was founded by <strong>three men<\/strong> who understood that men’s skin produces more sebum and tends to be oiler. Men are different, their products should be too.<\/p>",
-            "text_size": 3,
+            "text_font": 14,
             "text_style": "font-body",
             "padding_bottom": 0
           }
         }
       },
       "block_order": [
-        "subheading_TnXyDM",
+        "heading_TQL8Nb",
         "text_PBT7G3",
-        "subheading_CYqyHB",
         "text_XkLRAw"
       ],
       "settings": {
@@ -276,9 +255,9 @@
         "overlay_color": "#000000",
         "show_overlay_text": false,
         "title": "Lorem Ipsum",
-        "heading_size": 7,
+        "heading_font": 40,
         "description": "Lorem ipsum dolor sit amet, consetetur",
-        "text_size": 3,
+        "text_font": 16,
         "flex_align": "align--bottom-left",
         "flex_align_mobile": "align--bottom-left-mobile",
         "bg_color": "",
@@ -291,43 +270,14 @@
         "show_arrow": false
       }
     },
-    "section_video_gtEi3V": {
-      "type": "section-video",
-      "disabled": true,
-      "settings": {
-        "show_video_popup": true,
-        "video_popup_social": "https:\/\/www.youtube.com\/watch?v=nOjrW8jRB78",
-        "image": "shopify:\/\/shop_images\/tiege_vid_prev_img_del.webp",
-        "desktop_height": "screen-height-one-half",
-        "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full",
-        "overlay_opacity": 0,
-        "overlay_color": "#000000",
-        "show_overlay_text": false,
-        "title": "",
-        "heading_size": 7,
-        "description": "",
-        "text_size": 3,
-        "flex_align": "align--middle-center",
-        "flex_align_mobile": "align--middle-center-mobile",
-        "bg_color": "",
-        "color": "#ffffff",
-        "link_text": "",
-        "link": "",
-        "button_type": "btn--primary",
-        "button_size": "",
-        "button_style": "btn--solid",
-        "show_arrow": false
-      }
-    },
     "section_rich_text_z7jagt": {
       "type": "section-rich-text",
       "blocks": {
-        "subheading_iCNmeX": {
-          "type": "subheading",
+        "heading_Rk4JUz": {
+          "type": "heading",
           "settings": {
-            "subheading": "Lorem Ipsum Dolor Sit Amet, Consetetur",
-            "text_size": 5,
+            "title": "Lorem Ipsum Dolor Sit Amet, Consetetur",
+            "text_font": 32,
             "padding_bottom": 16
           }
         },
@@ -335,78 +285,15 @@
           "type": "text",
           "settings": {
             "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar diam ac risus lobortis, eget scelerisque sem bibendum. Nullam ornare massa a est mattis, ac molestie mi dictum. Sed non eros a nibh feugiat sodales. Vestibulum ut augue in odio tincidunt rhoncus sed eget leo. Quisque vehicula neque ut erat fermentum, sit amet mattis libero feugiat. Integer varius magna at dui ultrices, id dignissim libero ultricies. Fusce convallis euismod dolor, a consectetur risus consequat nec. In non elit nec lorem volutpat aliquam eget at enim. Sed fermentum nisl sed tincidunt tristique.<\/p>",
-            "text_size": 3,
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 30
-          }
-        },
-        "subheading_mGH8bK": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "subheading": "Why Cure When Prevention Is on the Table?",
-            "text_size": 5,
-            "padding_bottom": 16
-          }
-        },
-        "text_Rz6Ead": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Men are selective about health care– caring about some aspects while ignoring others.<\/p><p>For example, we’ve been conditioned to pay attention to dental hygiene, brushing and flossing daily. We visit the dentist regularly and listen to what the doc says.<\/p><p>Contrast this with another type of visit. In an ideal world, you’re seeing a dermatologist once a year. The worst thing a Derm can tell you is you’re not using sunscreen and you’ve developed pre-cancerous spots or something along those lines. But they should also reveal if our skin is dry, oily or acne prone, which they don’t.<\/p><p>What makes it normal to take care of teeth but not your skin?<\/p>",
-            "text_size": 3,
-            "text_style": "font-body",
-            "padding_bottom": 30
-          }
-        },
-        "subheading_DiQkFJ": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "subheading": "Tiege Didn’t Just Get It Right on the First Try",
-            "text_size": 5,
-            "padding_bottom": 16
-          }
-        },
-        "text_iMBCLH": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>We started by trying to shortlist the best men's skin care products (that already existed) and selling them in bundles. It quickly became clear these products were <strong>too expensive<\/strong> or <strong>were not formulated for men<\/strong>.<\/p><p>So we pivoted to the expensive route of custom formulations.<\/p><p>Through <strong>a lot of trial and error<\/strong>– that nearly killed us– we eventually found the perfect regimen.<\/p><p>I’m sharing this so you can see that having a product that <strong>actually delivers<\/strong> is so much more valuable than fancy packaging.<\/p><p>If you buy our system, and don’t see solid results, send it back. No ifs, ands, or buts.<\/p>",
-            "text_size": 3,
-            "text_style": "font-body",
-            "padding_bottom": 30
-          }
-        },
-        "subheading_4xAXVh": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "subheading": "Sweating the Small Stuff",
-            "text_size": 5,
-            "padding_bottom": 16
-          }
-        },
-        "text_jbJy4J": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Compared to competitors, the concentration of Acetyl Hexapeptide-8 and Retinyl Palmitate in our EYES and SERUM products is much higher.<\/p><p>Repeated muscle contractions increase the <strong>depth<\/strong> of facial wrinkles. Acetyl Hexapeptide-8 & Pentapeptide-18 work by <strong>intercepting<\/strong> these muscle contraction signals sent by the brain. This is much less invasive than Botox injections.<\/p><p>Our ACNE product has Salicylic Acid at 1.6%. Some say we should go to 2% which a lot of competitors have. But what they don’t know is that our product is a leave-on cream, not a rinse-off product like a cleanser or toner. We tested Salicylic Acid at 2% and I wanted to scratch the skin off my face at the end of the day!<\/p><p>This Skin Care Routine for Men kit is fragrance-free to avoid skin irritation. The scents in it are from carefully selected natural extracts.<\/p>",
-            "text_size": 3,
-            "text_style": "font-body",
-            "padding_bottom": 0
           }
         }
       },
       "block_order": [
-        "subheading_iCNmeX",
-        "text_mDCVF7",
-        "subheading_mGH8bK",
-        "text_Rz6Ead",
-        "subheading_DiQkFJ",
-        "text_iMBCLH",
-        "subheading_4xAXVh",
-        "text_jbJy4J"
+        "heading_Rk4JUz",
+        "text_mDCVF7"
       ],
       "settings": {
         "width": "wrapper--narrow",
@@ -417,24 +304,6 @@
         "padding_bottom": 80
       }
     },
-    "section_hero_nJEjWG": {
-      "type": "section-hero",
-      "disabled": true,
-      "settings": {
-        "height": "screen-height-one-half",
-        "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/L3_TiegeHanley_Anti-Aging_Routine_Hero.jpg",
-        "link": "",
-        "mobile_height": "screen-height-one-half--mobile",
-        "flex_align_desktop": "align--middle-center-desktop",
-        "flex_align_mobile": "align--middle-center-mobile",
-        "overlay_opacity": 0,
-        "overlay_color": "#000000",
-        "show_overlay_text": false,
-        "bg_color": "",
-        "color": "#ffffff"
-      }
-    },
     "section_rich_text_K7Njz3": {
       "type": "section-rich-text",
       "blocks": {
@@ -442,7 +311,7 @@
           "type": "subheading",
           "settings": {
             "subheading": "“Are You Made in 🇺🇸?”",
-            "text_size": 5,
+            "text_font": 16,
             "padding_bottom": 16
           }
         },
@@ -450,7 +319,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Yes—manufactured and formulated in the USA.<\/p>",
-            "text_size": 3,
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 30
           }
@@ -459,7 +328,7 @@
           "type": "subheading",
           "settings": {
             "subheading": "If Your Products Are So Premium, Why Don’t They Cost More?",
-            "text_size": 5,
+            "text_font": 16,
             "padding_bottom": 16
           }
         },
@@ -467,7 +336,7 @@
           "type": "text",
           "settings": {
             "text": "<p>The big boys spend years, and millions building retail partnerships. As a result, their operating costs are huge. They can’t just get up and exit longstanding retail partnerships.<\/p><p>We understand the difficult situation they’re in.<\/p><p>Because we were born on the Internet we were fortunate we didn’t have to rely on a middleman to reach our end buyer.<\/p><p>This meant we could deliver high quality products at lower costs.<\/p><p>We also don't have super high-paid executives, expensive real-estate, or stockholders. All this allows us to eliminate the CRAZY markups and margins.<\/p><p>The big brands charge whatever they want because they assume men don’t know any better—most of us are new to this. Our pricing is incredibly reasonable because our fine-tuned system provides the <strong>exact amount of product you need on a daily basis<\/strong>. You won’t be overpaying or underusing anything.<\/p><p>Also, because we are a subscription business our relationships aren’t transactional– we have skin in the game.<\/p><p>There’s far too much pressure to buy now, act now. Don’t feel rushed. We aren’t going anywhere. And when you’re ready we look forward to giving you the best skin of your life.<\/p><p>At Tiege Hanley, we believe that skin care for men should be straightforward, affordable, and effective. That’s why we’ve devoted our efforts to designing, formulating, and testing our products to work seamlessly together within specific skin care systems. We’ve built each system around a 30-day regimen, providing guys with a simple, efficient approach to skin health that they can use confidently every day.<\/p>",
-            "text_size": 3,
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 0
           }
@@ -523,9 +392,7 @@
     "section_double_static_vm_9hVQ9m",
     "section_rich_text_HTLWQR",
     "section_video_8zLTBy",
-    "section_video_gtEi3V",
     "section_rich_text_z7jagt",
-    "section_hero_nJEjWG",
     "section_rich_text_K7Njz3",
     "1713200593b3060898"
   ]
