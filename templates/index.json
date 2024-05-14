@@ -53,7 +53,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Our high-quality skin care systems work to maximize results and eliminate guesswork for men of all skin types.<\/p>",
-            "text_size": 3,
+            "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
           }
@@ -226,7 +226,7 @@
       "settings": {
         "layout": "",
         "height": "screen-height-two-thirds",
-        "mobile_height": "screen-height-one-third--mobile",
+        "mobile_height": "screen-height-one-half--mobile",
         "transition": "fade",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/Snapinsta.app_337156675_1554687731680146_2432232004487884860_n_1080.jpg",
