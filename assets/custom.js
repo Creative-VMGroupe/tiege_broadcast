@@ -397,26 +397,26 @@ async function addedCartFunction(addedItem, data) {
   }
 
   // Upgradability Check
-  if (theme.cartSettings.upgradability.enabled) {
-    let routineItem = null;
-    data.items.forEach((element) => {
-      if (allProducts[element.product_id].isRoutine) {
-        routineItem = element;
-      }
-    });
-    if (routineItem != null) {
-      let otherItems = data.items.filter((item) => item.product_id != routineItem.product_id);
-      let otherItemIds = otherItems.map((item) => item.variant_id);
-      let upgradeItem = allProducts[routineItem.product_id].nextRoutineLineItem != false ? allProducts[routineItem.product_id].nextRoutineLineItem.id : false;
-      let upgradeSystem = allProducts[routineItem.product_id].nextRoutine != false ? allProducts[routineItem.product_id].nextRoutine.variantId : false ;
-      if (upgradeSystem != false && otherItemIds.includes(upgradeItem)) {
-        reloadCart = true;
-        let itemRemove = data.items.filter((item) => item.variant_id == upgradeItem)[0].key;
-        await removeMultiple(itemRemove, routineItem.key);
-        await addItemtoCart(upgradeSystem);
-      }
-    }
-  }
+  // if (theme.cartSettings.upgradability.enabled) {
+  //   let routineItem = null;
+  //   data.items.forEach((element) => {
+  //     if (allProducts[element.product_id].isRoutine) {
+  //       routineItem = element;
+  //     }
+  //   });
+  //   if (routineItem != null) {
+  //     let otherItems = data.items.filter((item) => item.product_id != routineItem.product_id);
+  //     let otherItemIds = otherItems.map((item) => item.variant_id);
+  //     let upgradeItem = allProducts[routineItem.product_id].nextRoutineLineItem != false ? allProducts[routineItem.product_id].nextRoutineLineItem.id : false;
+  //     let upgradeSystem = allProducts[routineItem.product_id].nextRoutine != false ? allProducts[routineItem.product_id].nextRoutine.variantId : false ;
+  //     if (upgradeSystem != false && otherItemIds.includes(upgradeItem)) {
+  //       reloadCart = true;
+  //       let itemRemove = data.items.filter((item) => item.variant_id == upgradeItem)[0].key;
+  //       await removeMultiple(itemRemove, routineItem.key);
+  //       await addItemtoCart(upgradeSystem);
+  //     }
+  //   }
+  // }
 
   if (reloadCart) {
     var eventReload = new Event('theme:cart-drawer:reload', { bubbles: true, cancelable: false });
