@@ -311,7 +311,8 @@ async function removeMultiple(lineItemOne, lineItemTwo) {
 
 async function addedCartFunction(addedItem, data) {
   let alertStatus = 'One',
-      alertMessage = 'Two';
+      alertMessage = 'Two',
+      reloadCart = false;
   const allProducts = theme.cartSettings.products;
   let isCurrentAddedItemRoutine = allProducts[addedItem.product_id].isRoutine;
   // Free Item Addition
@@ -322,6 +323,7 @@ async function addedCartFunction(addedItem, data) {
 
       if (giftQty > 1) {
         await changeItemQty(giftExists[0].key, '1');
+        reloadCart = true;
       }
     }
     
@@ -330,10 +332,12 @@ async function addedCartFunction(addedItem, data) {
       if (data.total_price > minCartValue) {
         if (!giftExists.length) {
           await addItemtoCart(theme.cartSettings.giftItem.variantId);
+          reloadCart = true;
         }
       } else {
         if (giftExists.length) {
           await changeItemQty(giftExists[0].key, '0');
+          reloadCart = true;
         }
       }
     } else {
@@ -341,10 +345,12 @@ async function addedCartFunction(addedItem, data) {
       if (eligibleProducts.includes(addedItem.product_id)) {
         if (!giftExists.length) {
           await addItemtoCart(theme.cartSettings.giftItem.variantId);
+          reloadCart = true;
         }
       } else {
         if (giftExists.length) {
           await changeItemQty(giftExists[0].key, '0');
+          reloadCart = true;
         }
       }
     }
@@ -360,6 +366,7 @@ async function addedCartFunction(addedItem, data) {
     });
     if (routineItem != null) {
       await changeItemQty(routineItem.key, '0');
+      reloadCart = true;
     }
   }
 
@@ -380,9 +387,11 @@ async function addedCartFunction(addedItem, data) {
       console.log(commonItemsKeys)
       // Remove Common Element
       if (haveCommonItems.length > 1) {
-        haveCommonItems
+        console.log(haveCommonItems);
+        reloadCart = true;
       } else if (haveCommonItems.length > 0)
-        
+
+        reloadCart = true;
       }
     }
   }
@@ -402,15 +411,17 @@ async function addedCartFunction(addedItem, data) {
       let upgradeSystem = allProducts[routineItem.product_id].nextRoutine != false ? allProducts[routineItem.product_id].nextRoutine.variantId : false ;
       if (upgradeSystem != false && otherItemIds.includes(upgradeItem)) {
         let itemRemove = data.items.filter((item) => item.variant_id == upgradeItem)[0].key;
-        console.log(data.items, itemRemove, routineItem);
         await removeMultiple(itemRemove, routineItem.key);
         await addItemtoCart(upgradeSystem);
+        reloadCart = true;
       }
     }
   }
 
-  var eventReload = new Event('theme:cart-drawer:reload', { bubbles: true, cancelable: false });
-  document.dispatchEvent(eventReload);
+  if (reloadCart) {
+    var eventReload = new Event('theme:cart-drawer:reload', { bubbles: true, cancelable: false });
+    document.dispatchEvent(eventReload);
+  }
 
   if (alertStatus != null && alertMessage != null) {
     const eventAlert = new CustomEvent("theme:cart-drawer:alert", { detail: { status: alertStatus, message: alertMessage } });
