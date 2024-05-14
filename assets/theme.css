@@ -26443,6 +26443,9 @@ body.has-line-design.grid-compact
   }
 }
 /*Media with Text - Tiege*/
+.hero__content__media__alignment-custom:has(.hero__media) {
+  height: 100%;
+}
 .hero__content:has(.hero__media) {
   padding-bottom: 50px;
   height: 100%;
