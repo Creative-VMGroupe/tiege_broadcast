@@ -199,7 +199,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Saw amazing results for their skin.<\/p>",
-            "text_size": 12,
+            "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
           }
@@ -248,7 +248,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Saw amazing results for their skin.<\/p>",
-            "text_size": 12,
+            "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
           }
