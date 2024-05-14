@@ -60,9 +60,9 @@
         "featured_image_mwiTPz"
       ],
       "custom_css": [
-        ".range__line span {background: #42B029; border-color: #42B029;}",
-        ".range__dot span {background-color: #42B029; border-color: #42B029;}",
-        ".range__line {border-color: #42B029;}"
+        ".range__line span {background: #42b029; border-color: #42b029;}",
+        ".range__dot span {background-color: #42b029; border-color: #42b029;}",
+        ".range__line {border-color: #42b029;}"
       ],
       "settings": {
         "enable_sort": true,
@@ -182,13 +182,47 @@
         "padding_bottom": 0
       }
     },
+    "section_rich_text_zNMp8Q": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_qqktWJ": {
+          "type": "heading",
+          "settings": {
+            "title": "Seen in the Wild",
+            "text_font": 40,
+            "padding_bottom": 16
+          }
+        },
+        "text_HAfFLd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>@tiegehanley<\/p>",
+            "text_font": 16,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_qqktWJ",
+        "text_HAfFLd"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-center",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 100,
+        "padding_bottom": 0
+      }
+    },
     "1711936247aa7b4eaf": {
       "type": "apps",
       "blocks": {
         "instafeed_app_block_7LYWQL": {
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "title": "@tiegehanley",
+            "title": "",
             "title_color": "",
             "alignment": "center",
             "html_area": ""
@@ -197,6 +231,9 @@
       },
       "block_order": [
         "instafeed_app_block_7LYWQL"
+      ],
+      "custom_css": [
+        "#insta-feed {padding-top: 20px !important;}"
       ],
       "settings": {
         "include_margins": false
@@ -209,6 +246,7 @@
     "main",
     "section_hero_xP4xGE",
     "section_double_Wz33Wb",
+    "section_rich_text_zNMp8Q",
     "1711936247aa7b4eaf"
   ]
 }
