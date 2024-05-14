@@ -92,7 +92,7 @@
         "image_width": "one-half",
         "text_alignment": "text-left",
         "reverse_blocks": false,
-        "bg_color": "",
+        "bg_color": "#f7f7f7",
         "color": "",
         "padding_top": 0,
         "padding_bottom": 0
