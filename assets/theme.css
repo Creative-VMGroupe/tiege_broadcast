@@ -7678,7 +7678,8 @@ html:not(.no-js) body:not(.is-loaded) .header__desktop {
 }
 
 .js__header__stuck .theme__header {
-   background: #ffffff;
+  
+   background: black;
 }
 
 .theme__header::after {
