@@ -10,7 +10,7 @@
     "sale_color": "#212121",
     "high_contrast": false,
     "header_bg": "#ffffff",
-    "header_link": "#ffffff",
+    "header_link": "#000000",
     "menu_bg_color": "#ffffff",
     "menu_link_color": "#212121",
     "submenu_bg_color": "#000000",

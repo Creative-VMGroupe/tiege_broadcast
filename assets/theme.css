@@ -7678,8 +7678,7 @@ html:not(.no-js) body:not(.is-loaded) .header__desktop {
 }
 
 .js__header__stuck .theme__header {
-  
-   background: black;
+   background: white;
 }
 
 .theme__header::after {
@@ -7716,7 +7715,7 @@ html:not(.no-js) body:not(.is-loaded) .header__desktop {
 .logo__img--transparent {
   position: absolute;
   top: 0;
-  opacity: 1;
+  opacity: 0;
 }
 
 body:has(.main-content > .shopify-section.section-overlay-header:first-of-type)
