@@ -71,12 +71,13 @@
           {% if request.design_mode %}data-block-scroll{% endif %}
         >
           {%- assign blocks_counter = 0 -%}
+          
           {%- for block in section.blocks -%}
             {%- if block.settings.subheading != blank or block.settings.title != blank or block.settings.text != blank or block.settings.button_text != blank -%}
               {%- assign blocks_counter = blocks_counter | plus: 1 -%}
               {%- assign animation_order = animation_order | plus: 1 -%}
 
-              <div class="timeline__row{% if blocks_counter == 1 %} is-selected{% endif %}" data-timeline-row>
+              <div class="timeline__row{% if blocks_counter == 1 %} is-selected{% endif %} {% if section.blocks.size == 2 %} timeline__row-split {% endif %}" data-timeline-row>
                 {%- if show_images -%}
                   <div class="timeline__image">
                     <div class="timeline__image-inner">
