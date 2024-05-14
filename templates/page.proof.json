@@ -49,6 +49,28 @@
     "vm_text_slider_wFfQLi": {
       "type": "vm-text-slider",
       "blocks": {
+        "text_slide_qaWtgd": {
+          "type": "text-slide",
+          "settings": {
+            "stars_enabled": true,
+            "subheading": "★★★★★",
+            "subheading_size": 12,
+            "sub_letter_spacing": 5,
+            "title": "",
+            "heading_size": 24,
+            "text": "<p>\"Products are specially formulated for men. My dermatologist noted that my facial skin is in excellent condition and to continue to use whatever it is I use.\"<\/p>",
+            "text_size": 24,
+            "text_style": "font-body",
+            "reg_text": true,
+            "button_text": "- Lee Y.",
+            "btn_size": 2,
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false
+          }
+        },
         "text_slide_yJn8Aw": {
           "type": "text-slide",
           "settings": {
@@ -63,28 +85,6 @@
             "text_style": "font-body",
             "reg_text": true,
             "button_text": "- Kristoff R.",
-            "btn_size": 2,
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--text",
-            "show_arrow": false
-          }
-        },
-        "text_slide_qaWtgd": {
-          "type": "text-slide",
-          "settings": {
-            "stars_enabled": true,
-            "subheading": "★★★★★",
-            "subheading_size": 12,
-            "sub_letter_spacing": 5,
-            "title": "",
-            "heading_size": 24,
-            "text": "<p>\"Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.\"<\/p>",
-            "text_size": 24,
-            "text_style": "font-body",
-            "reg_text": true,
-            "button_text": "-Name of Reviewer",
             "btn_size": 2,
             "button_url": "",
             "button_type": "btn--primary",
@@ -117,8 +117,8 @@
         }
       },
       "block_order": [
-        "text_slide_yJn8Aw",
         "text_slide_qaWtgd",
+        "text_slide_yJn8Aw",
         "text_slide_Fr4gep"
       ],
       "custom_css": [
