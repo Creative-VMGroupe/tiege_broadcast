@@ -25,14 +25,14 @@
           "type": "heading",
           "settings": {
             "title": "Image banner",
-            "heading_size": 7
+            "heading_font": 40
           }
         },
         "text_3UMYgJ": {
           "type": "text",
           "settings": {
             "description": "Tell your brand's story through images.",
-            "text_size": 3,
+            "text_font": 16,
             "text_style": "font-body"
           }
         }

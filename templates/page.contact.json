@@ -25,6 +25,7 @@
           "type": "heading",
           "settings": {
             "title": "Contact Us",
+            "text_font": 40,
             "padding_bottom": 30
           }
         },
@@ -32,6 +33,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Tiege Hanley, Inc.<\/p><p>2023 W. Carroll Ave<\/p><p>(312) 279-2780<\/p><p>Business Hours: 9am - 5pm CST<\/p>",
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 30
           }
@@ -40,6 +42,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Need immediate answers? Explore <a href=\"\/pages\/faqs\" title=\"FAQs\">FAQs<\/a><\/p>",
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 30
           }
@@ -48,6 +51,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Have a Press, Influencer, Business Partnership, Charity, Event or other inquiry? Click Here.<\/p>",
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 0
           }
@@ -75,6 +79,7 @@
           "type": "heading",
           "settings": {
             "title": "Our Customer Experience Team Is Here For You!",
+            "text_font": 40,
             "padding_bottom": 30
           }
         },
@@ -82,6 +87,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Tiege Hanley tries to cut out all the BS associated with men’s skin care and that extends to our customer service. If you have an issue, we got you!<\/p>",
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 30
           }
@@ -90,6 +96,7 @@
           "type": "text",
           "settings": {
             "text": "<ul><li> <strong>Need help with your account?<\/strong> We’ll help you fix it!<\/li><li> <strong>Trouble with your delivery?<\/strong> No hassle reships!<\/li><li> <strong>Weren’t ready for your next box?<\/strong> Worry free returns!<\/li><\/ul>",
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 16
           }
@@ -98,6 +105,7 @@
           "type": "text",
           "settings": {
             "text": "<p>If you reach us during business hours you can expect a response within an hour! All inquiries will be responded to within 24 hours, guaranteed.<\/p>",
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 0
           }
@@ -180,7 +188,7 @@
       "custom_css": [
         "h2 {text-align: left; margin-bottom: 30px;}",
         ".visually-hidden {position: static !important;}",
-        "button {background-color: #42B029; border-color: #42B029;}",
+        "button {background-color: #42b029; border-color: #42b029;}",
         ".field {border: 1px solid; padding-left: 20px;}"
       ],
       "settings": {

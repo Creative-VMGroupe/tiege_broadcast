@@ -25,7 +25,7 @@
           "type": "heading",
           "settings": {
             "title": "Tiege Hanley Is Seeking \"A\" Players.",
-            "text_size": 7,
+            "text_font": 40,
             "padding_bottom": 16
           }
         }
@@ -61,7 +61,7 @@
           "type": "heading",
           "settings": {
             "title": "Open Positions",
-            "text_size": 7,
+            "text_font": 40,
             "padding_bottom": 16
           }
         }
@@ -139,13 +139,15 @@
         "heading_AAPYi7": {
           "type": "heading",
           "settings": {
-            "title": "Benefits"
+            "title": "Benefits",
+            "heading_size": 40
           }
         },
         "question_nijFyT": {
           "type": "question",
           "settings": {
             "default_open": true,
+            "heading_size": 24,
             "title": "Career Growth Opportunities",
             "content": "<p>We embrace creativity and uncomplicated processes to accelerate your career progression. Our need for speed, coupled with our penchant for hiring and developing the best, allows us to foster an environment where you can reach your full potential swiftly.<\/p>",
             "show_icon": false,
@@ -158,6 +160,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "Competitive Compensation",
             "content": "<p>We believe in acting like owners, which translates into competitive rewards for the hard work you put in. As a valued member of our team, we ensure that your financial needs are met and that your efforts are adequately compensated.<\/p>",
             "show_icon": false,
@@ -170,6 +173,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "Unlimited PTO & Hybrid Office",
             "content": "<p>Acting like an owner also means knowing when to recharge. With our unlimited PTO, you can balance your work commitments and personal needs, keeping you motivated and at your best.<\/p>",
             "show_icon": false,
@@ -182,6 +186,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "Passionate Team",
             "content": "<p>Our 'Further Together' principle epitomizes our team spirit. As a part of the Tiege Hanley family, you'll work with passionate, dedicated professionals who put the team’s success ahead of individual wins.<\/p>",
             "show_icon": false,
@@ -217,13 +222,15 @@
         "heading_NMWj7K": {
           "type": "heading",
           "settings": {
-            "title": "Culture & Core Values"
+            "title": "Culture & Core Values",
+            "heading_size": 40
           }
         },
         "question_yxk7bc": {
           "type": "question",
           "settings": {
             "default_open": true,
+            "heading_size": 24,
             "title": "Our Mission",
             "content": "<p>Tiege Hanley provides simple men's skin care routines that ensure consistent, visible results, boosting confidence & personal success. Our mission is to offer uncomplicated skin care, empowering men to look, feel, and be their best.<br\/><\/p>",
             "show_icon": false,
@@ -236,6 +243,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "Be Creative",
             "content": "<p>We challenge the status quo and embrace originality, using creativity as a catalyst for innovative problem-solving and unique strategies, all aimed at delivering results and setting us apart in our industry.<\/p>",
             "show_icon": false,
@@ -248,6 +256,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "(Keep it) UNCOMPLICATED.",
             "content": "<p>Uncomplicated became our motto for making skin care for men easy.  But UNCOMPLICATED became much more; it permeates our business, guides our processes, the ideas we come up with, and the products we develop.  We expect innovation from our teams but want to find ways to simplify. With every decision ask yourself, “Is this Uncomplicated?”<\/p>",
             "show_icon": false,
@@ -260,6 +269,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "Tiege Guys First",
             "content": "<p>Making our customers look and feel amazing is at the forefront of what we do.   Make it easy for guys to engage and buy while working to earn and keep their trust.   We do what’s right for our team members while obsessing over our guys.<\/p>",
             "show_icon": false,
@@ -272,6 +282,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "Have a BackBone",
             "content": "<p>We have conviction and are passionate about our business goals but are obligated to respectively receive and challenge ideas when we disagree.   We do not compromise for social cohesion, but once a decision is determined, we commit wholly, to supporting our Further Together Value.<\/p>",
             "show_icon": false,
@@ -284,6 +295,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "Further Together",
             "content": "<p>When we win, we win together.   We all listen attentively, speak candidly, and treat others respectfully.  Leaders are vocally self-critical, even when doing so is awkward or embarrassing.  We put the team’s success ahead of individual wins.<\/p>",
             "show_icon": false,
@@ -296,6 +308,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "Hire And Develop The Best",
             "content": "<p>Our success is predicated on the quality of our team.  Leaders raise the performance bar with every hire and promotion.  They recognize exceptional talent, take their role in coaching seriously and willingly move them to higher levels. In a lean, fast-paced business, we encourage individuals to take the initiative to deliver results and solve problems independently.<\/p>",
             "show_icon": false,
@@ -308,6 +321,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "Need For Speed",
             "content": "<p>We have things to accomplish; time is not our friend.   However, it is our competitive advantage.  We are a disrupter brand that values calculated risk-taking.<\/p>",
             "show_icon": false,
@@ -320,6 +334,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "Act Like An Owner",
             "content": "<p>We act like owners who deploy the financial and human capital of the company like it is their own while acting on behalf of the entire company and beyond ourselves.   Owners use data when making decisions and never say, “That’s not my job.\" <\/p>",
             "show_icon": false,
@@ -332,6 +347,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "Connected To Data",
             "content": "<p>We stay connected to data and audit frequently.  Leaders pair data with context and our Tiege Guys First and Act Like an Owner mindset to answer the “why” of every decision we make.   We are skeptical when metrics and anecdotes differ. <\/p>",
             "show_icon": false,
@@ -374,7 +390,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Tiege Hanley's rocket ship growth trajectory, fueled by a diverse team hailing from top universities, entrepreneurial backgrounds, and companies, is united by a singular, impactful mission: to revolutionize men's skin care.<\/p>",
-            "text_size": 5,
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 16
           }
@@ -383,7 +399,7 @@
           "type": "subheading",
           "settings": {
             "subheading": "- Thomas Robinson, Sr. Director of Growth",
-            "text_size": 3,
+            "text_font": 16,
             "padding_bottom": 16
           }
         }
@@ -408,7 +424,7 @@
           "type": "heading",
           "settings": {
             "title": "Join Our Team",
-            "text_size": 7,
+            "text_font": 40,
             "padding_bottom": 16
           }
         },
@@ -416,7 +432,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Are you envisioning yourself as a part of this team? If so, we are eager to hear from you! Click the button below to explore the available positions and proceed with your application.<\/p>",
-            "text_size": 5,
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 16
           }

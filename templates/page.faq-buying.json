@@ -25,7 +25,7 @@
           "type": "heading",
           "settings": {
             "title": "Purchasing Tiege",
-            "text_size": 7,
+            "text_font": 40,
             "padding_bottom": 0
           }
         }
@@ -49,6 +49,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "Do you sell the products individually?",
             "content": "<p>We have individual product purchase right on the website!<\/p><p><a href=\"https:\/\/www.tiege.com\/collections\/all\" target=\"_blank\">https:\/\/www.tiege.com\/collections\/all<\/a><\/p><p>Regular and large sizes are available, and you can add up to three for an individual item (ex. WASH x 3).<\/p><p>Subscribe and save, click \"LEARN MORE\" next to each product to choose auto restock or buy one time. You'll see ingredients, benefits, and how to use any product there too. Handy screenshot below!<\/p><p>Heads up:  all orders under $20 will have a $5 shipping fee added in the USA and Canada. Other international shipping prices will be included on all orders.​<\/p><p>Any questions, let us know!​<\/p>",
             "show_icon": false,
@@ -61,6 +62,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "Can I order multiple boxes at once to save on shipping costs?",
             "content": "<p>On the website, we limit purchases to one system at a time because we don't want guys to set up multiple boxes on subscription.<\/p><p>We also have the Tiege app. Unlike the website, there is no subscription option. You can choose more than one box on the Tiege app!<\/p><p>On the Tiege App, all products are one time purchase. If you don't want a subscription, the app will ensure you don't get one.<\/p><p>On the app, you can log in with your Tiege account email and password to see your order history. Once you log in, any orders placed with the app will be part of the same customer account.<\/p><p>Scan the QR code to launch the App Store or Google Play, where you can download our free app!<\/p>",
             "show_icon": false,
@@ -73,6 +75,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "I received an error message when making my payment.",
             "content": "<p>A few things to try here:<\/p><ol><li>Make sure the billing address for the order matches the address that your bank\/credit card provider has on file, including the name on the card. The name needs to match exactly. We recommend contacting your bank\/credit card provider to verify the billing address, specifically if you've recently moved. Once you enter the correct billing address, your payment should work.<br\/><br\/><\/li><li>Consider contacting your bank\/credit card provider for further assistance. Certain credit\/debit cards have different permissions regarding subscription based transactions, so your bank\/credit card provider may be blocking your transaction.  If you are outside the US, your card may have been declined by our credit card processor's fraud protections, and your bank\/credit card provider should be able to clarify any potential fraud blocks.<br\/><br\/><\/li><li>Try using a different payment method for the transaction.  We accept debit and credit cards, as well as PayPal, Google Pay, Shop Pay, and Apple Pay (mobile only).<br\/><br\/><\/li><li>Try using a device or Internet browser. We have had customers with this same issue create a successful transaction when attempting from a different device\/browser. Turn off any VPN or proxy server, as they might make it appear you are far from your billing address. <br\/><br\/><\/li><li>If the above suggestions do not solve your issue, please send us a screenshot of the error message you received, and we will do our best to help you out.<\/li><\/ol>",
             "show_icon": false,
@@ -85,6 +88,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "Can I use a pre-paid credit card?",
             "content": "<p>We accept all major debit and credit cards, Google Pay, Shop Pay, PayPal, and Apple Pay (mobile only) as methods of payment.<\/p><p>Pre-paid cards are often not for use online or with international purchases. Check with your pre-paid card issuer for allowed transactions. <\/p><p>We advise against using a pre-paid card or virtual card because many of those cannot be refunded. Refunds cannot be issued to new payment methods, they must be issued to the card used for the transaction.<\/p><p>Make your purchase with a debit \/ credit card or one of the payment services listed above.<\/p>",
             "show_icon": false,
