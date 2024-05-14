@@ -497,7 +497,7 @@ async function updatedCartFunction(data) {
   }
 
   // Single Routine Checks
-  if (theme.cartSettings.singleRoutine.enabled && isCurrentAddedItemRoutine) {
+  if (theme.cartSettings.singleRoutine.enabled) {
     let routineItems = data.items.filter((item) => allProducts[item.product_id].isRoutine);
     if (routineItem.length > 1) {
       routineItems.shift();
