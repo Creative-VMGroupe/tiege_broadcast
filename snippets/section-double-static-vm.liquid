@@ -280,7 +280,7 @@
           {% endif %}
           {{ block.shopify_attributes }}>
           <div class="brick__block__text">
-            <div class="hero__content hero__content--compact{% if enable_text_slider %} grid--mobile-slider{% else %} hero__content--no-padding{% endif %}{% if block.type == "image" %} hero__content__media__alignment-custom{% endif %}"
+            <div class="hero__content hero__content--compact{% if enable_text_slider %} grid--mobile-slider{% else %} hero__content--no-padding{% endif %} hero__content__media__alignment-custom"
               {% if enable_text_slider %}
                 data-slider="BrickSlider--{{ section.id }}"
                 data-slider-desktop
