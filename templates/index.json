@@ -859,7 +859,7 @@
           "type": "buttons",
           "settings": {
             "button_text": "Download for iPhone",
-            "button_url": "shopify:\/\/pages\/find-my-routine",
+            "button_url": "https:\/\/apps.apple.com\/us\/app\/tiege-hanley\/id6450770927",
             "button_type": "btn--secondary",
             "button_size": "btn--large",
             "button_style": "btn--outline",
@@ -871,7 +871,7 @@
           "type": "buttons",
           "settings": {
             "button_text": "Download for Android",
-            "button_url": "shopify:\/\/pages\/find-my-routine",
+            "button_url": "https:\/\/play.google.com\/store\/apps\/details?id=co.tapcart.app.id_xap9fQjbFO&hl=en&gl=US",
             "button_type": "btn--secondary",
             "button_size": "btn--large",
             "button_style": "btn--outline",
