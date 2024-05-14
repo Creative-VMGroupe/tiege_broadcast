@@ -57,73 +57,6 @@
         "padding_bottom": 0
       }
     },
-    "section_highlights_tqjrWA": {
-      "type": "section-highlights",
-      "blocks": {
-        "highlight_NRKmqD": {
-          "type": "highlight",
-          "settings": {
-            "heading": "",
-            "subheading": "",
-            "url": "",
-            "image": "shopify:\/\/shop_images\/rosemary-v1608581888105.png",
-            "color": "",
-            "bg_color": "#f0f0f0",
-            "border_color": ""
-          }
-        },
-        "highlight_J8f8Ug": {
-          "type": "highlight",
-          "settings": {
-            "heading": "",
-            "subheading": "",
-            "url": "",
-            "image": "shopify:\/\/shop_images\/willow-v1608581883683.png",
-            "color": "",
-            "bg_color": "#f0f0f0",
-            "border_color": ""
-          }
-        },
-        "highlight_iUyMhm": {
-          "type": "highlight",
-          "settings": {
-            "heading": "",
-            "subheading": "",
-            "url": "",
-            "image": "shopify:\/\/shop_images\/eucalyptus-v1608581874819.png",
-            "color": "",
-            "bg_color": "#f0f0f0",
-            "border_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "highlight_NRKmqD",
-        "highlight_J8f8Ug",
-        "highlight_iUyMhm"
-      ],
-      "disabled": true,
-      "custom_css": [
-
-      ],
-      "settings": {
-        "style": "rectangle",
-        "grid": 3,
-        "compact": true,
-        "width": "wrapper--full-padded",
-        "height": "screen-height-one-half",
-        "mobile_height": "screen-height-one-half--mobile",
-        "heading": "",
-        "heading_position": "text-center",
-        "heading_size": 7,
-        "text_size": 3,
-        "color": "",
-        "bg_color": "",
-        "layout_mobile": "slider",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "section_media_gallery_KH9Pep": {
       "type": "section-media-gallery",
       "blocks": {
@@ -165,7 +98,7 @@
             "subheading": "Tiege Subheading",
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
             "url": "",
-            "image": "shopify:\/\/shop_images\/ecom_flat_01_scrub_01_943e4d86-48a3-47ce-8acb-ead022eefd45.jpg",
+            "video": "shopify:\/\/files\/videos\/Snapinsta.app_video_7845D8AEE61F1258178576DBAD3FF3AB_video_dashinit.mp4",
             "color": "",
             "bg_color": "#f0f0f0",
             "border_color": ""
@@ -279,7 +212,6 @@
   "order": [
     "main",
     "section_product_7ePe7T",
-    "section_highlights_tqjrWA",
     "section_media_gallery_KH9Pep",
     "section_reviews_6RY6Fc",
     "section_blog_43mLzn",
