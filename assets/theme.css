@@ -26767,3 +26767,6 @@ flex: 1;
 .timeline__row-split {
 width: 50% !important;
 }
+.timeline__indicator__line:before {
+  width: 98%;
+}
