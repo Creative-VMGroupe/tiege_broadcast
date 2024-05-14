@@ -384,13 +384,14 @@ async function addedCartFunction(addedItem, data) {
       let variantsOfRoutine = allProducts[routineItem.product_id]['routineVariants'].map((item) => item.id);
       let haveCommonItems = otherItemIds.filter(item => variantsOfRoutine.includes(item));
       let commonItemsKeys = data.items.filter(item => haveCommonItems.includes(item.product_id));
-      console.log(commonItemsKeys)
+      console.log(commonItemsKeys, haveCommonItems);
       // Remove Common Element
       if (haveCommonItems.length > 1) {
         reloadCart = true;
-        console.log(haveCommonItems);
+        // Remove Multiple
       } else if (haveCommonItems.length > 0) {
         reloadCart = true;
+        // Remove single
       }
     }
   }
