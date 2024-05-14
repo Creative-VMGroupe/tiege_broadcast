@@ -152,73 +152,6 @@
         "include_margins": false
       }
     },
-    "section_highlights_EmCUMF": {
-      "type": "section-highlights",
-      "blocks": {
-        "highlight_YUwCew": {
-          "type": "highlight",
-          "settings": {
-            "heading": "",
-            "subheading": "",
-            "url": "",
-            "image": "shopify:\/\/shop_images\/IMG_5261_VSCO_dadb3224-ffb7-49c5-a6b4-ff2ce31e2a09.jpg",
-            "color": "",
-            "bg_color": "#f0f0f0",
-            "border_color": ""
-          }
-        },
-        "highlight_mfxYAB": {
-          "type": "highlight",
-          "settings": {
-            "heading": "",
-            "subheading": "",
-            "url": "",
-            "image": "shopify:\/\/shop_images\/HARRYS_FW_PORT_0529.jpg",
-            "color": "",
-            "bg_color": "#f0f0f0",
-            "border_color": ""
-          }
-        },
-        "highlight_Yq3Vyf": {
-          "type": "highlight",
-          "settings": {
-            "heading": "",
-            "subheading": "",
-            "url": "",
-            "image": "shopify:\/\/shop_images\/TH_GRWM_Screenshot_2024-03-22_at_11.03.12_PM.png",
-            "color": "",
-            "bg_color": "#f0f0f0",
-            "border_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "highlight_YUwCew",
-        "highlight_mfxYAB",
-        "highlight_Yq3Vyf"
-      ],
-      "disabled": true,
-      "custom_css": [
-
-      ],
-      "settings": {
-        "style": "square",
-        "grid": 3,
-        "compact": true,
-        "width": "wrapper--full-padded",
-        "height": "screen-height-one-half",
-        "mobile_height": "screen-height-one-half--mobile",
-        "heading": "",
-        "heading_position": "text-center",
-        "heading_size": 7,
-        "text_size": 3,
-        "color": "",
-        "bg_color": "",
-        "layout_mobile": "slider",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "section_rich_text_KjwWhd": {
       "type": "section-rich-text",
       "blocks": {
@@ -250,7 +183,7 @@
           "type": "subheading",
           "settings": {
             "subheading": "Wash",
-            "text_size": 5,
+            "text_size": 12,
             "padding_bottom": 16
           }
         },
@@ -266,7 +199,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Saw amazing results for their skin.<\/p>",
-            "text_size": 3,
+            "text_size": 12,
             "text_style": "font-body",
             "padding_bottom": 16
           }
@@ -299,7 +232,7 @@
           "type": "subheading",
           "settings": {
             "subheading": "AM",
-            "text_size": 5,
+            "text_size": 12,
             "padding_bottom": 16
           }
         },
@@ -315,7 +248,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Saw amazing results for their skin.<\/p>",
-            "text_size": 3,
+            "text_size": 12,
             "text_style": "font-body",
             "padding_bottom": 16
           }
@@ -459,6 +392,7 @@
       "settings": {
         "layout": "",
         "text_align_center": true,
+        "stars_enabled": false,
         "heading": "★★★★★",
         "heading_font": 24,
         "heading_letter_spacing": 10,
@@ -493,6 +427,7 @@
       "settings": {
         "layout": "is-reversed",
         "text_align_center": true,
+        "stars_enabled": false,
         "heading": "★★★★★",
         "heading_font": 24,
         "heading_letter_spacing": 10,
@@ -544,7 +479,6 @@
     "section_video_FYBKW8",
     "vm_text_slider_wFfQLi",
     "171444854930410d14",
-    "section_highlights_EmCUMF",
     "section_rich_text_KjwWhd",
     "section_double_static_vm_4aHUtL",
     "section_double_static_vm_8DxTF4",
