@@ -88,7 +88,7 @@
         "height": "screen-height-three-quarters",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/Layer_1.png",
+        "video_main": "shopify:\/\/files\/videos\/tolstoy_43f7743e-5867-4922-aa81-d03899ca32a6_preview.mp4",
         "image_width": "one-half",
         "text_alignment": "text-left",
         "reverse_blocks": false,
@@ -133,68 +133,55 @@
         "padding_bottom": 80
       }
     },
-    "section_double_static_vm_nxxrWT": {
-      "type": "section-double-static-vm",
+    "section_hero_LyX34B": {
+      "type": "section-hero",
       "blocks": {
-        "subheading_GUPp6H": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "subheading": "Introducing",
-            "text_size": 14,
-            "padding_bottom": 16
-          }
-        },
-        "heading_mGxahg": {
+        "heading_yrLNrT": {
           "type": "heading",
           "settings": {
             "title": "Sensible. Simple. Affordable.",
-            "text_size": 40,
-            "padding_bottom": 16
+            "heading_font": 40
           }
         },
-        "text_7tJGxX": {
+        "text_bWTDmK": {
           "type": "text",
           "settings": {
-            "text": "<p>Drawing on his marketing and brand management experience, Kelley got to work, enlisting his UConn college roommate turned software industry guru, Rob Hoxie, to help mastermind a skin care solution for men that hits all three points—it has to be sensible, simple and affordable.<\/p>",
-            "text_size": 16,
-            "text_style": "font-body",
-            "padding_bottom": 16
+            "description": "Drawing on his marketing and brand management experience, Kelley got to work, enlisting his UConn college roommate turned software industry guru, Rob Hoxie, to help mastermind a skin care solution for men that hits all three points—it has to be sensible, simple and affordable.",
+            "text_font": 16,
+            "text_style": "font-body"
           }
         },
-        "buttons_QLXBdL": {
-          "type": "buttons",
+        "button_k87b3L": {
+          "type": "button",
           "disabled": true,
           "settings": {
-            "button_text": "Learn more",
-            "button_url": "",
+            "link_text": "View products",
+            "link": "",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
-            "show_arrow": false,
-            "padding_bottom": 16
+            "show_arrow": false
           }
         }
       },
       "block_order": [
-        "subheading_GUPp6H",
-        "heading_mGxahg",
-        "text_7tJGxX",
-        "buttons_QLXBdL"
+        "heading_yrLNrT",
+        "text_bWTDmK",
+        "button_k87b3L"
       ],
       "settings": {
-        "layout": "is-reversed",
-        "height": "screen-height-one-half",
-        "mobile_height": "screen-height-one-half--mobile",
+        "height": "screen-height-three-quarters",
         "width": "wrapper--full",
-        "video_main": "shopify:\/\/files\/videos\/tolstoy_43f7743e-5867-4922-aa81-d03899ca32a6.webm",
-        "image_width": "one-half",
-        "text_alignment": "text-left",
-        "reverse_blocks": false,
-        "bg_color": "#f7f7f7",
-        "color": "",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "image_1": "shopify:\/\/shop_images\/Layer_1.png",
+        "link": "",
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "overlay_opacity": 0,
+        "overlay_color": "#000",
+        "show_overlay_text": false,
+        "bg_color": "",
+        "color": "#000000"
       }
     },
     "section_double_static_vm_R4Cg9i": {
@@ -421,7 +408,7 @@
     "section_hero_AKxdtT",
     "section_double_static_vm_j6Grh3",
     "section_rich_text_HGVCbw",
-    "section_double_static_vm_nxxrWT",
+    "section_hero_LyX34B",
     "section_double_static_vm_R4Cg9i",
     "section_reviews_McPTbp",
     "section_double_static_vm_yFVkwc",
