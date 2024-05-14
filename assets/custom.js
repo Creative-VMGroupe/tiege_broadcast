@@ -389,9 +389,8 @@ async function addedCartFunction(addedItem, data) {
       if (haveCommonItems.length > 1) {
         reloadCart = true;
         console.log(haveCommonItems);
-      } else if (haveCommonItems.length > 0)
+      } else if (haveCommonItems.length > 0) {
         reloadCart = true;
-
       }
     }
   }
