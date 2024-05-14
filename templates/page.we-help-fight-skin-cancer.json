@@ -366,7 +366,7 @@
           "type": "buttons",
           "settings": {
             "button_text": "Join Today",
-            "button_url": "shopify:\/\/pages\/membership-benefit",
+            "button_url": "shopify:\/\/collections\/all-routines-1",
             "button_type": "btn--secondary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -419,7 +419,7 @@
           "type": "text",
           "settings": {
             "text": "<p>[1] <a href=\"https:\/\/blog.skincancer.org\/2018\/05\/30\/men-on-the-hook\/\" title=\"Men on the Hook\">\"Men on the Hook.\"<\/a> - The Skin Cancer Foundation Annual Journal - 2018<\/p><p>[2] Graph: Data after vertical dotted line are projected rates. Surveillance, Epidemiology, and End Results (SEER) Program, National Cancer Institute (http:\/\/www.seer.cancer.gov). SEER 9 Incidence Database (1973–2010). November 2011 submission. Nordpred software used to create age-period-cohort regression models to calculate projections.<\/p>",
-            "text_font": 16,
+            "text_font": 12,
             "text_style": "font-body",
             "padding_bottom": 0
           }
