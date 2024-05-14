@@ -66,6 +66,7 @@
             "heading": "",
             "stars_enabled": false,
             "subheading": "",
+            "subheading_size": 14,
             "text": "",
             "url": "",
             "video": "shopify:\/\/files\/videos\/Snapinsta.app_video_119540050_717266737144557_663577271213053763_n.mp4",
@@ -81,6 +82,7 @@
             "heading": "",
             "stars_enabled": false,
             "subheading": "",
+            "subheading_size": 14,
             "text": "",
             "url": "",
             "video": "shopify:\/\/files\/videos\/Snapinsta.app_video_254C6BE9F9A30CC74F6A74D9CD4CC6B9_video_dashinit_df4abeae-94e6-4fc8-b518-877149eb46cc.mp4",
@@ -93,13 +95,15 @@
         "highlight_r8JhKC": {
           "type": "highlight",
           "settings": {
-            "heading": "★★★★★",
+            "heading": "Heading",
             "stars_enabled": true,
-            "subheading": "Heading",
+            "subheading": "★★★★★",
+            "subheading_size": 14,
             "text": "<p>Heading<\/p>",
             "url": "",
+            "image": "shopify:\/\/shop_images\/ecom_flat_01_wash_01_47d52b33-98c0-45b1-a335-0bb47bcfa9c7.jpg",
             "color": "",
-            "bg_color": "#f7f7f7",
+            "bg_color": "rgba(0,0,0,0)",
             "border_color": ""
           }
         }
