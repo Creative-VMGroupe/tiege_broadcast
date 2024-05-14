@@ -194,7 +194,7 @@
               <div class="brick__block__text">
                 <div class="hero__content hero__content--compact hero-slider__content" >
                   {%- if subheading != blank -%}
-                    {%- assign font_size_class = block.settings.subheading_font | prepend: 'subheading-size-' -%}
+                    {%- assign font_size_class = block.settings.subheading_size | prepend: 'subheading-size-' -%}
                     {%- assign star_styling = block.settings.stars_enabled -%}
                     <p class="hero__subheading {{ font_size_class }}  {%- if star_styling -%}stars__subheading-custom {%- endif -%}">
                       {{ subheading }}
@@ -202,7 +202,7 @@
                   {%- endif -%}
 
                   {%- if title != blank -%}
-                    {%- assign font_size_class = block.settings.heading_font | prepend: 'heading-size-' -%}
+                    {%- assign font_size_class = block.settings.heading_size | prepend: 'heading-size-' -%}
                     <h2 class="hero__title {{ font_size_class }}">
                       {{ title }}
                     </h2>
