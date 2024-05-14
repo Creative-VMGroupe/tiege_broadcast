@@ -160,6 +160,15 @@ body.template-product:has(
   .logo__img--color {
   opacity: 1;
 }
+
+body.template-article:has(
+    .main-content > .shopify-section.section-overlay-header:first-of-type
+  )
+  [data-header-transparent]:not(.meganav--visible):not(.js__header__stuck)
+  .header__logo--has-transparent
+  .logo__img--transparent {
+  opacity: 0;
+}
 @-webkit-keyframes fadeInDown {
   from {
     opacity: 0;
