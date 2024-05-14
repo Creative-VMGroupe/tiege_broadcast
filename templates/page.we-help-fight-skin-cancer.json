@@ -243,38 +243,69 @@
         "padding_bottom": 80
       }
     },
-    "section_rich_text_XBBbBb": {
-      "type": "section-rich-text",
+    "section_double_Xj3hp3": {
+      "type": "section-double",
       "blocks": {
-        "heading_LQFtpw": {
-          "type": "heading",
+        "subheading_3ghhVa": {
+          "type": "subheading",
+          "disabled": true,
           "settings": {
-            "title": "Skin Cancer is the #1 most common cancer in the world",
-            "text_font": 40,
+            "subheading": "Introducing",
+            "text_size": 16,
             "padding_bottom": 16
           }
         },
-        "text_LBN8kV": {
+        "heading_7CgHqM": {
+          "type": "heading",
+          "settings": {
+            "title": "Skin Cancer is the #1 most common cancer in the world",
+            "heading_size": 40,
+            "padding_bottom": 16
+          }
+        },
+        "text_C8UpAq": {
           "type": "text",
           "settings": {
             "text": "<p>About 57% of people who are diagnosed with one basal cell carcinoma (BCC) are men. Sixty-two percent of people diagnosed with two to five BCCs are men. Among those with six or more BCCs, a whopping 80 percent are male.<\/p><p>It gets worse. Men account for more than half of all new cases of the most invasive melanoma and have almost twice as many deaths.<\/p><p>According to Julie K. Karen, MD, “Men may not be deliberately tanning as much, but if they go fishing or go out for a run, they tend not to lather up with sunscreen. In general, they're a little lazier than women are about taking proactive measures to protect themselves from sun damage.” Dr. Karen specializes in the diagnosis and treatment of skin cancer at Complete Skin MD in NYC and is a clinical assistant professor in the Ronald O. Perelman Department of Dermatology at NYU Langone Medical Center. [<a href=\"https:\/\/www.tiege.com\/pages\/impact#impact-citation\">1<\/a>]<\/p>",
-            "text_font": 16,
+            "text_size": 16,
             "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_pM6Q9p": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
             "padding_bottom": 16
           }
         }
       },
       "block_order": [
-        "heading_LQFtpw",
-        "text_LBN8kV"
+        "subheading_3ghhVa",
+        "heading_7CgHqM",
+        "text_C8UpAq",
+        "buttons_pM6Q9p"
       ],
       "settings": {
-        "width": "wrapper--narrow",
-        "align_text": "text-center",
+        "layout": "",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/impact-bike.webp",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "padding_lr": 50,
+        "reverse_blocks": false,
         "bg_color": "",
         "color": "",
         "padding_top": 0,
-        "padding_bottom": 80
+        "padding_bottom": 0
       }
     },
     "section_text_row_4qA4id": {
@@ -509,7 +540,7 @@
     "section_rich_text_ryAmny",
     "section_rich_text_W7bbeY",
     "section_rich_text_8WGREr",
-    "section_rich_text_XBBbBb",
+    "section_double_Xj3hp3",
     "section_text_row_4qA4id",
     "section_double_yhTVDr",
     "section_rich_text_YWBiRt",
