@@ -313,6 +313,14 @@
             "padding_bottom": 16
           }
         },
+        "image_jz38wD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tiege_icon_del.png",
+            "image_width": 20,
+            "padding_bottom": 16
+          }
+        },
         "heading_3NXX6E": {
           "type": "heading",
           "settings": {
@@ -346,6 +354,7 @@
       },
       "block_order": [
         "subheading_BNGA7T",
+        "image_jz38wD",
         "heading_3NXX6E",
         "text_CMkagN",
         "buttons_WFXHXN"
