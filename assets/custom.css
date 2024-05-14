@@ -169,6 +169,14 @@ body.template-article:has(
   .logo__img--transparent {
   opacity: 0;
 }
+body.template-article:has(
+    .main-content > .shopify-section.section-overlay-header:first-of-type
+  )
+  [data-header-transparent]:not(.meganav--visible):not(.js__header__stuck)
+  .header__logo--has-transparent
+  .logo__img--color {
+  opacity: 1;
+}
 @-webkit-keyframes fadeInDown {
   from {
     opacity: 0;
