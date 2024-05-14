@@ -385,7 +385,6 @@ async function addedCartFunction(addedItem, data) {
       let variantsOfRoutine = allProducts[routineItem.product_id]['routineVariants'].map((item) => item.id);
       let haveCommonItems = otherItemIds.filter(item => variantsOfRoutine.includes(item));
       let commonItemsKeys = data.items.filter(item => haveCommonItems.includes(item.variant_id)).map((item) => item.key);
-      // Remove Common Element
       if (commonItemsKeys.length > 0) {
         reloadCart = true;
         await removeMultiple(commonItemsKeys);
