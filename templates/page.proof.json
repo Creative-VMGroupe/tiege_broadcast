@@ -475,6 +475,19 @@
       "settings": {
         "include_margins": false
       }
+    },
+    "section_recent_products_XP7eKq": {
+      "type": "section-recent-products",
+      "settings": {
+        "product_recently_heading": "Recently viewed",
+        "heading_size": 8,
+        "product_recently_limit": 6,
+        "product_recently_minimum": 4,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 30,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -489,6 +502,7 @@
     "section_rich_text_mAEfrd",
     "section_before_after_q3KGGj",
     "section_before_after_yD7FLe",
-    "1713424042503d4ba1"
+    "1713424042503d4ba1",
+    "section_recent_products_XP7eKq"
   ]
 }
