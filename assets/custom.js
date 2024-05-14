@@ -311,8 +311,8 @@ async function removeMultiple(lineItems) {
 }
 
 async function addedCartFunction(addedItem, data) {
-  let alertStatus = 'One',
-      alertMessage = 'Two',
+  let alertStatus = '',
+      alertMessage = '',
       reloadCart = false;
   const allProducts = theme.cartSettings.products;
   let isCurrentAddedItemRoutine = allProducts[addedItem.product_id].isRoutine;
@@ -333,11 +333,15 @@ async function addedCartFunction(addedItem, data) {
       if (data.total_price > minCartValue) {
         if (!giftExists.length) {
           reloadCart = true;
+          alertStatus = 'success';
+          alertMessage = window.theme.cartSettings.giftItem.success_alert;
           await addItemtoCart(theme.cartSettings.giftItem.variantId);
         }
       } else {
         if (giftExists.length) {
           reloadCart = true;
+          alertStatus = 'error';
+          alertMessage = window.theme.cartSettings.giftItem.error_alert;
           await changeItemQty(giftExists[0].key, '0');
         }
       }
@@ -346,11 +350,15 @@ async function addedCartFunction(addedItem, data) {
       if (eligibleProducts.includes(addedItem.product_id)) {
         if (!giftExists.length) {
           reloadCart = true;
+          alertStatus = 'success';
+          alertMessage = window.theme.cartSettings.giftItem.success_alert;
           await addItemtoCart(theme.cartSettings.giftItem.variantId);
         }
       } else {
         if (giftExists.length) {
           reloadCart = true;
+          alertStatus = 'error';
+          alertMessage = window.theme.cartSettings.giftItem.error_alert;
           await changeItemQty(giftExists[0].key, '0');
         }
       }
@@ -367,6 +375,8 @@ async function addedCartFunction(addedItem, data) {
     });
     if (routineItem != null) {
       reloadCart = true;
+      alertStatus = 'error';
+      alertMessage = window.theme.cartSettings.singleRoutine.alert;
       await changeItemQty(routineItem.key, '0');
     }
   }
@@ -387,6 +397,8 @@ async function addedCartFunction(addedItem, data) {
       let commonItemsKeys = data.items.filter(item => haveCommonItems.includes(item.variant_id)).map((item) => item.key);
       if (commonItemsKeys.length > 0) {
         reloadCart = true;
+        alertStatus = 'error';
+        alertMessage = window.theme.cartSettings.duplication.alert;
         await removeMultiple(commonItemsKeys);
       }
     }
@@ -407,6 +419,8 @@ async function addedCartFunction(addedItem, data) {
       let upgradeSystem = allProducts[routineItem.product_id].nextRoutine != false ? allProducts[routineItem.product_id].nextRoutine.variantId : false ;
       if (upgradeSystem != false && otherItemIds.includes(upgradeItem)) {
         reloadCart = true;
+        alertStatus = 'error';
+        alertMessage = window.theme.cartSettings.upgradability.alert;
         let itemRemove = data.items.filter((item) => item.variant_id == upgradeItem)[0].key;
         await removeMultiple([itemRemove, routineItem.key]);
         await addItemtoCart(upgradeSystem);
@@ -425,8 +439,131 @@ async function addedCartFunction(addedItem, data) {
   }
 }
 
-async function updatedCartFunction() {
-  // Update Cart function
+async function updatedCartFunction(data) {
+  let alertStatus = '',
+      alertMessage = '',
+      reloadCart = false;
+  
+  const allProducts = theme.cartSettings.products;
+  
+  // Free Item Addition
+  if (theme.cartSettings.giftItem.enabled) {
+    let giftExists = data.items.filter((item) => item.product_id == theme.cartSettings.giftItem.productId);
+    if (giftExists.length) {
+      let giftQty = giftExists[0]['quantity'];
+
+      if (giftQty > 1) {
+        reloadCart = true;
+        await changeItemQty(giftExists[0].key, '1');
+      }
+    }
+    
+    if (theme.cartSettings.giftItem.method == "cart") {
+      let minCartValue = parseInt(theme.cartSettings.giftItem.cartValue * 100);
+      if (data.total_price > minCartValue) {
+        if (!giftExists.length) {
+          reloadCart = true;
+          alertStatus = 'success';
+          alertMessage = window.theme.cartSettings.giftItem.success_alert;
+          await addItemtoCart(theme.cartSettings.giftItem.variantId);
+        }
+      } else {
+        if (giftExists.length) {
+          reloadCart = true;
+          alertStatus = 'error';
+          alertMessage = window.theme.cartSettings.giftItem.error_alert;
+          await changeItemQty(giftExists[0].key, '0');
+        }
+      }
+    } else {
+      let eligibleProducts = theme.cartSettings.giftItem.collection.split(",").map( Number );
+      let eligibleItemsinCart = data.items.filter(item => eligibleProducts.includes(item.product_id));
+      if (eligibleItemsinCart.length) {
+        if (!giftExists.length) {
+          reloadCart = true;
+          alertStatus = 'success';
+          alertMessage = window.theme.cartSettings.giftItem.success_alert;
+          await addItemtoCart(theme.cartSettings.giftItem.variantId);
+        }
+      } else {
+        if (giftExists.length) {
+          reloadCart = true;
+          alertStatus = 'error';
+          alertMessage = window.theme.cartSettings.giftItem.error_alert;
+          await changeItemQty(giftExists[0].key, '0');
+        }
+      }
+    }
+  }
+
+  // Single Routine Checks
+  if (theme.cartSettings.singleRoutine.enabled && isCurrentAddedItemRoutine) {
+    let routineItems = data.items.filter((item) => allProducts[item.product_id].isRoutine);
+    if (routineItem.length > 1) {
+      routineItems.shift();
+      reloadCart = true;
+      alertStatus = 'error';
+      alertMessage = window.theme.cartSettings.singleRoutine.alert;
+      await removeMultiple(routineItems);
+    }
+  }
+
+  // Duplication Check
+  if (theme.cartSettings.duplication.enabled) {
+    let routineItem = null;
+    data.items.forEach((element) => {
+      if (allProducts[element.product_id].isRoutine) {
+        routineItem = element;
+      }
+    });
+    if (routineItem != null) {
+      let otherItems = data.items.filter((item) => item.product_id != routineItem.product_id);
+      let otherItemIds = otherItems.map((item) => item.variant_id);
+      let variantsOfRoutine = allProducts[routineItem.product_id]['routineVariants'].map((item) => item.id);
+      let haveCommonItems = otherItemIds.filter(item => variantsOfRoutine.includes(item));
+      let commonItemsKeys = data.items.filter(item => haveCommonItems.includes(item.variant_id)).map((item) => item.key);
+      if (commonItemsKeys.length > 0) {
+        reloadCart = true;
+        alertStatus = 'error';
+        alertMessage = window.theme.cartSettings.duplication.alert;
+        await removeMultiple(commonItemsKeys);
+      }
+    }
+  }
+
+  // Upgradability Check
+  if (theme.cartSettings.upgradability.enabled) {
+    let routineItem = null;
+    data.items.forEach((element) => {
+      if (allProducts[element.product_id].isRoutine) {
+        routineItem = element;
+      }
+    });
+    if (routineItem != null) {
+      let otherItems = data.items.filter((item) => item.product_id != routineItem.product_id);
+      let otherItemIds = otherItems.map((item) => item.variant_id);
+      let upgradeItem = allProducts[routineItem.product_id].nextRoutineLineItem != false ? allProducts[routineItem.product_id].nextRoutineLineItem.id : false;
+      let upgradeSystem = allProducts[routineItem.product_id].nextRoutine != false ? allProducts[routineItem.product_id].nextRoutine.variantId : false ;
+      if (upgradeSystem != false && otherItemIds.includes(upgradeItem)) {
+        reloadCart = true;
+        alertStatus = 'error';
+        alertMessage = window.theme.cartSettings.upgradability.alert;
+        let itemRemove = data.items.filter((item) => item.variant_id == upgradeItem)[0].key;
+        await removeMultiple([itemRemove, routineItem.key]);
+        await addItemtoCart(upgradeSystem);
+      }
+    }
+  }
+
+  if (reloadCart) {
+    var eventReload = new Event('theme:cart-drawer:reload', { bubbles: true, cancelable: false });
+    document.dispatchEvent(eventReload);
+  }
+
+  if (alertStatus != null && alertMessage != null) {
+    const eventAlert = new CustomEvent("theme:cart-drawer:alert", { detail: { status: alertStatus, message: alertMessage } });
+    document.dispatchEvent(eventAlert);
+  }
 }
 
 document.addEventListener('theme:product:add', function(e) {
@@ -439,5 +576,9 @@ document.addEventListener('theme:product:add', function(e) {
 });
 
 document.addEventListener('theme:cart:change', function(e) {
-  // Check Conditions on Load as well
+  fetch(window.theme.routes.cart_url + '.json')
+    .then(response => response.json())
+    .then(data => {
+      updatedCartFunction(data);
+    });
 });
