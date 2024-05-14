@@ -465,7 +465,7 @@
         "heading": "Real People. Real Results.",
         "heading_font": 40,
         "heading_letter_spacing": 0,
-        "description": "<p>We are obsessed with providing all men with simple, effective and accessible skincare to help them maximize their confidence.<\/p>",
+        "description": "<p>We are obsessed with providing all men with simple, effective and accessible skin care to help them maximize their confidence.<\/p>",
         "text_font": 16,
         "reg_text": false,
         "btn_size": 4,
@@ -501,7 +501,7 @@
         "show_overlay_text": true,
         "title": "A Simple Routine",
         "heading_font": 40,
-        "description": "Aaron Marino covers the simple process behind effective skincare.",
+        "description": "Aaron Marino covers the simple process behind effective skin care.",
         "text_font": 16,
         "flex_align": "align--bottom-left",
         "flex_align_mobile": "align--bottom-left-mobile",
@@ -556,7 +556,7 @@
         "text_aFT9TL": {
           "type": "text",
           "settings": {
-            "text": "<p>Eliminate the guesswork from achieving amazing skin with your personalized recommendation from our skincare experts.<\/p>",
+            "text": "<p>Eliminate the guesswork from achieving amazing skin with your personalized recommendation from our skin care experts.<\/p>",
             "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
