@@ -93,8 +93,8 @@
         "highlight_r8JhKC": {
           "type": "highlight",
           "settings": {
-            "heading": "Heading",
-            "stars_enabled": false,
+            "heading": "★★★★★",
+            "stars_enabled": true,
             "subheading": "Heading",
             "text": "<p>Heading<\/p>",
             "url": "",
