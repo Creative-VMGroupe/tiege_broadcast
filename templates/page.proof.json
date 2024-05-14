@@ -102,11 +102,11 @@
             "sub_letter_spacing": 5,
             "title": "",
             "heading_size": 24,
-            "text": "<p>\"What an incredible skin care system. This is the first time I have used a skin care system that I enjoy being consistent with and actually look forward to my 30 day order. Great value and very high quality for the cost.\"<\/p>",
+            "text": "<p>\"Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.\"<\/p>",
             "text_size": 24,
             "text_style": "font-body",
             "reg_text": true,
-            "button_text": "- Darryle B.",
+            "button_text": "-Name of Reviewer",
             "btn_size": 2,
             "button_url": "",
             "button_type": "btn--primary",
@@ -308,11 +308,11 @@
             "sub_letter_spacing": 5,
             "title": "",
             "heading_size": 24,
-            "text": "<p>\"Something I look forward to doing every morning and evening. Has worked fantastic so far. Would highly recommend.\"<\/p>",
+            "text": "<p>\"Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.\"<\/p>",
             "text_size": 24,
             "text_style": "font-body",
             "reg_text": true,
-            "button_text": "- James R.",
+            "button_text": "-Name of Reviewer",
             "btn_size": 2,
             "button_url": "",
             "button_type": "btn--primary",
@@ -330,11 +330,11 @@
             "sub_letter_spacing": 5,
             "title": "",
             "heading_size": 24,
-            "text": "<p>\"Great for newbies to the skincare system. Everything you need to learn about skincare and easy step-by-step instructions.\"<\/p>",
+            "text": "<p>\"Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.\"<\/p>",
             "text_size": 24,
             "text_style": "font-body",
             "reg_text": true,
-            "button_text": "- Jeff H.",
+            "button_text": "-Name of Reviewer",
             "btn_size": 2,
             "button_url": "",
             "button_type": "btn--primary",
@@ -441,8 +441,8 @@
         "button_size": "",
         "button_style": "btn--solid",
         "show_arrow": false,
-        "image_1": "shopify:\/\/shop_images\/96B_Harun-Asceric_before.png",
-        "image_2": "shopify:\/\/shop_images\/96B_Harun-Asceric_after.png",
+        "image_1": "shopify:\/\/shop_images\/before.jpg",
+        "image_2": "shopify:\/\/shop_images\/after.jpg",
         "aspect_ratio": 1,
         "width": "wrapper--full",
         "bg_color": "#f7f7f7",
@@ -453,47 +453,13 @@
         "padding_bottom": 0
       }
     },
-    "section_rich_text_WWfFAF": {
-      "type": "section-rich-text",
-      "blocks": {
-        "heading_DCQQAd": {
-          "type": "heading",
-          "settings": {
-            "title": "Seen in the Wild",
-            "text_font": 40,
-            "padding_bottom": 16
-          }
-        },
-        "text_BG4DK6": {
-          "type": "text",
-          "settings": {
-            "text": "<p>@tiegehanley<\/p>",
-            "text_font": 16,
-            "text_style": "font-body",
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "heading_DCQQAd",
-        "text_BG4DK6"
-      ],
-      "settings": {
-        "width": "wrapper",
-        "align_text": "text-center",
-        "bg_color": "",
-        "color": "",
-        "padding_top": 100,
-        "padding_bottom": 0
-      }
-    },
     "1713424042503d4ba1": {
       "type": "apps",
       "blocks": {
         "instafeed_app_block_d8JxFr": {
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "title": "",
+            "title": "@tiegehanley",
             "title_color": "",
             "alignment": "center",
             "html_area": ""
@@ -523,7 +489,6 @@
     "section_rich_text_mAEfrd",
     "section_before_after_q3KGGj",
     "section_before_after_yD7FLe",
-    "section_rich_text_WWfFAF",
     "1713424042503d4ba1"
   ]
 }
