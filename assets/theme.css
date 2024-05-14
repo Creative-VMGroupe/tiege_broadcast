@@ -7716,7 +7716,7 @@ html:not(.no-js) body:not(.is-loaded) .header__desktop {
 .logo__img--transparent {
   position: absolute;
   top: 0;
-  opacity: 0;
+  opacity: 1;
 }
 
 body:has(.main-content > .shopify-section.section-overlay-header:first-of-type)
