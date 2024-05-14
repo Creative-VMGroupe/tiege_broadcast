@@ -25,7 +25,7 @@
           "type": "heading",
           "settings": {
             "title": "Shipping",
-            "text_size": 7,
+            "text_font": 40,
             "padding_bottom": 0
           }
         }
@@ -49,6 +49,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "How long until my order delivers? (Asia, Africa, Central & South America)",
             "content": "<p>You will get a tracking email within 1 business day of ordering. Check the tracking link for the current status of your shipment, as well as estimated delivery. Delivery typically takes 3 weeks.<\/p><p>When the package leaves the USA, the next tracking update will be when your package reaches customs. Customs clearance takes about a week. Once the package clears customs, your local post office should deliver the package to you within a week.<\/p><p>Check your tracking information for updates and estimated delivery times. Depending on your country, your local post office may send SMS updates about delivery. <\/p><p>Shipping delays are typically caused by two issues.<\/p><p>1) If taxes are not collected at checkout, there is a chance your box could be held by customs. You may be required to complete a customs form or pay customs taxes to receive delivery. <\/p><p>2) Address Issues - To ensure the fastest possible delivery, use the ABC alphabet for all addresses. Ensure your address is complete and formatted for delivery by your local post office. Include your phone number to ensure your post office can text to make delivery arrangements.<\/p>",
             "show_icon": false,
@@ -61,6 +62,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "How long until my order is delivered? (Europe)",
             "content": "<p>You will get a tracking email within 1 business day of ordering. Check the tracking link for the current status of your shipment, as well as estimated delivery.<\/p><p>Once the package has left our facility in Chicago, it typically takes 5–10 days for delivery, sometimes faster depending on your location. Asendia picks up your box from our warehouse. The parcel arrives in Europe and is delivered by DPD.<\/p><p>For further insights, check out the <a href=\"https:\/\/www.dpd.com\/dpd-be\/en\/receiving\/mydpd-app\/\" target=\"_blank\">DPD Predict<\/a> App. You can track your package with the app, and make delivery arrangements.<\/p>",
             "show_icon": false,
@@ -73,6 +75,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "How long until my order is delivered? (USA)",
             "content": "<p>We ship all orders first thing in the morning, Monday–Friday, except holidays.<\/p><p>Domestic packages typically arrive within 3-5 business days. <\/p><p>DHL picks up your box from Tiege HQ and brings it to the post office for your local zip code.<\/p><p>From there, the post office delivers the box to you along with your regular mail.<\/p>",
             "show_icon": false,
@@ -85,6 +88,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "Does Tiege Hanley ship internationally?",
             "content": "<p>Yes, Tiege Hanley ships to many international countries!  Delivery times vary by country. <\/p><p>There is a weight-based shipping fee determined by the costs of shipping to your country. You will see the cost to ship your order in checkout. <\/p><p>You will get a tracking email within 1 business day of ordering. Check the tracking link for the current status of your shipment, as well as estimated delivery. Asendia picks up international shipments from our facility Monday - Friday, except holidays:  New Year's Day, Memorial Day, Independence Day, Labor Day, Thanksgiving Day, and Christmas Day.<\/p><p>When ordering, ensure that your shipping address is correct, and write your address with the 26-letter ABC alphabet, and avoid accented letters. Undeliverable addresses cause delays and require pick up at a delivery office in your home city.<\/p><p>For some countries, Value Added Tax (VAT) will be assessed when your order is processed. That means your shipment qualifies for electronic customs clearance during transit. You should not have to pay additional customs duties or fees when the parcel arrives in your country.<\/p><p>If you are not asked to pay taxes, your box goes to a customs office. Please be aware your shipment could be held for customs fee collection. Payment would need to be completed in order to receive your package from your local post office or customs office.<\/p><p>You can choose your preferred currency from the dropdown menu by the shopping cart.<\/p>",
             "show_icon": false,
@@ -97,6 +101,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "Do you ship to my country?",
             "content": "<p>While we ship to most countries around the world, we unfortunately do not support shipping to every country.<\/p><p>The following is a list of countries that we are unable to ship to:<\/p><ul><li>Algeria<\/li><li>Angola<\/li><li>Argentina<\/li><li>Bahrain<\/li><li>Bangladesh<\/li><li>Belarus<\/li><li>Bolivia<\/li><li>Burundi<\/li><li>Central African Republic<\/li><li>Chad<\/li><li>Chile<\/li><li>Congo<\/li><li>Congo - The Democratic Republic<\/li><li>Cuba<\/li><li>Côte d'Ivoire<\/li><li>Ecuador<\/li><li>El Salvador<\/li><li>French Polynesia<\/li><li>French Southern Territories<\/li><li>Guatemala<\/li><li>Heard Island And McDonald Islands<\/li><li>Honduras<\/li><li>Iran, Islamic Republic Of<\/li><li>Iraq<\/li><li>Kiribati<\/li><li>Kosovo<\/li><li>Korea - Democratic People's Republic Of<\/li><li>Kuwait<\/li><li>Lebanon<\/li><li>Liberia<\/li><li>Libyan Arab Jamahiriya<\/li><li>Morocco<\/li><li>Nauru<\/li><li>New Caledonia<\/li><li>Nicaragua<\/li><li>Niue<\/li><li>Norfolk Island<\/li><li>Papua New Guinea<\/li><li>Paraguay<\/li><li>Pitcairn<\/li><li>Russia<\/li><li>Rwanda<\/li><li>Samoa<\/li><li>Solomon Islands<\/li><li>Somalia<\/li><li>South Africa<\/li><li>South Georgia And The South Sandwich Islands<\/li><li>South Sudan<\/li><li>Sudan<\/li><li>Syria<\/li><li>Tanzania<\/li><li>Timor Leste<\/li><li>Tokelau<\/li><li>Tonga<\/li><li>Tuvalu<\/li><li>Ukraine<\/li><li>Vanuatu<\/li><li>Venezuela<\/li><li>Wallis And Futuna<\/li><li>Yemen<\/li><li>Zimbabwe<\/li><\/ul>",
             "show_icon": false,
@@ -109,6 +114,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "Shipping to my country is too expensive!",
             "content": "<p>Since we use weight based shipping, certain locations may see very high shipping prices.  In order to keep your shipping costs down, we would recommend that you use a reshipping service.<\/p><p>Here are a couple of links to the different options currently available: <\/p><p><a href=\"https:\/\/www.shopandship.com\/\">www.shopandship.com<\/a><\/p><p><a href=\"https:\/\/www.fishisfast.com\/en\">www.fishisfast.com<\/a><\/p><p><a href=\"http:\/\/www.borderlinx.com\/\">www.borderlinx.com.<\/a><\/p><p>Once you create your account with the reshipping service, you can order from <a href=\"http:\/\/www.tiege.com\/\">Tiege.com<\/a> and ship to their facility.  You will only be charged one shipping fee, which will be assessed by the reshipper.<\/p><p>You’ll receive a tracking number from us. That will allow you to follow your order to the reshipping company's facility. Once they receive the package from us at Tiege Hanley, the shipping information they provide will be your resource for tracking the status of your package.<\/p><p>Once you have the information provided by the reshipper, you would fill in your shipping address at <a href=\"http:\/\/www.tiege.com\/\">Tiege.com<\/a> along with your reshipper account number (place on Line 2 of the address).  For example:<\/p><p><strong>John Smith         <\/strong>&lt;----- Your Name<\/p><p><strong>350 5th Ave         <\/strong>&lt;----- Reshipper Street Address<\/p><p><strong>#TB144133<\/strong>           &lt;----- Reshipping Account Number<\/p><p><strong>New York, NY 10118   <\/strong>&lt;----- Reshipper City, State, Zip Code<\/p><p>You are able to provide a separate billing address.<\/p>",
             "show_icon": false,
@@ -121,6 +127,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "You don't ship to my country. Can I still order Tiege Hanley?",
             "content": "<p>Unfortunately, we do not ship Tiege Hanley directly to every country.  If we do not ship to your country and you would still like to order Tiege Hanley, you can use a reshipping service.<\/p><p>Here are a couple of links to the different options currently available: <\/p><p><a href=\"https:\/\/www.shopandship.com\/\">www.shopandship.com<\/a><\/p><p><a href=\"https:\/\/www.fishisfast.com\/en\">www.fishisfast.com<\/a><\/p><p><a href=\"http:\/\/www.borderlinx.com\/\">www.borderlinx.com.<\/a><\/p><p>Once you create your account with the reshipping service, you can order from <a href=\"http:\/\/www.tiege.com\/\">Tiege.com<\/a> and ship to their facility.  You will only be charged one shipping fee, which will be assessed by the reshipper.<\/p><p>You’ll receive a tracking number from us. That will allow you to follow your order to the reshipping company's facility. Once they receive the package from us at Tiege Hanley, the shipping information they provide will be your resource for tracking the status of your package.<\/p><p>Once you have the information provided by the reshipper, you would fill in your shipping address at <a href=\"http:\/\/www.tiege.com\/\">Tiege.com<\/a> along with your reshipper account number (place on Line 2 of the address).  For example:<\/p><p><strong>John Smith         <\/strong>&lt;----- Your Name<\/p><p><strong>350 5th Ave         <\/strong>&lt;----- Reshipper Street Address<\/p><p><strong>#TB144133<\/strong>           &lt;----- Reshipping Account Number<\/p><p><strong>New York, NY 10118   <\/strong>&lt;----- Reshipper City, State, Zip Code<\/p><p>You are able to provide a separate billing address at check out.<\/p>",
             "show_icon": false,
@@ -133,6 +140,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "How long until my order is delivered? (Canada)",
             "content": "<p>Your order ships within 1 business day.<\/p><p>Once the package has left our facility in Chicago, it typically takes 5 - 7 days for delivery.  Asendia picks up your box from our warehouse. The parcel arrives in Canada and is delivered by a local courier or Canada Post. <\/p>",
             "show_icon": false,
@@ -145,6 +153,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "How long until my order is delivered? (Australia \/ New Zealand)",
             "content": "<p>It typically takes 10–15 days for delivery to Australia and New Zealand. <\/p><p>You will get a tracking email within 1 business day of ordering. Check the tracking link for the current status of your shipment, as well as estimated delivery.<\/p><p>Asendia picks up international shipments from our Chicago facility Monday - Friday, except major holidays. Your shipment will be delivered locally by Australia Post or local courier. Check your tracking for local delivery information.<\/p>",
             "show_icon": false,
@@ -157,6 +166,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "If it takes 2-4 weeks for my international order to arrive, will I have to wait another 2-4 weeks for my renewal?",
             "content": "<p>Your subscription is set up to bill and ship on approximately the same date each month, which will prevent you from running out of products.  <\/p><p>For example, if you ordered a box on January 1 and the package arrives on January 15, you would be using the products over 30 days from January 15 – February 15.  Your subscription, however, would renew on February 1 and will arrive by February 15, right on time to replenish your supply!<\/p>",
             "show_icon": false,
@@ -169,6 +179,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "Do you offer express international shipping?",
             "content": "<p>We are set up for FedEx\/UPS express shipments for Canada, EU \/ UK and Australia. That option would be 2-5 day delivery with the price available in checkout. Express pricing is weight based. <\/p><p>We do not offer express shipping to the rest of the world, but there are a number of reshipping services that can help with this. If you'd like to receive your package faster than our standard shipping time of 3 weeks, here are some links to the different options currently available:<\/p><ul><li><a href=\"http:\/\/www.borderlinx.com\/\" target=\"_blank\">Borderlinx<\/a><\/li><li><a href=\"http:\/\/www.fishisfast.com\/\" target=\"_blank\">Fishisfast<\/a><\/li><li><a href=\"http:\/\/www.shopandship.com\/\" target=\"_blank\">Shop and Ship<\/a><\/li><\/ul><p>If you'd like to go this route, go ahead and create your account with the reshipping service. After you've created your account, let us know, and we'll provide you with instructions on how to order.<\/p>",
             "show_icon": false,
@@ -181,6 +192,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "Will I be charged customs fees for my order?",
             "content": "<p>It is always possible that there will be an import tax or extra fees assessed in customs.  This is not covered in your international shipping fee from Tiege Hanley.<\/p><p>If you are assessed a customs fee, you should see a notice from your local post office providing instructions on how to collect your package.<\/p>",
             "show_icon": false,
@@ -193,6 +205,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "What are the sizes and weights of your boxes?",
             "content": "<p>Here are the specs for all of our boxes:<\/p>",
             "show_icon": false,

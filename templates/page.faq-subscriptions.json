@@ -25,7 +25,7 @@
           "type": "heading",
           "settings": {
             "title": "Subscription Management",
-            "text_size": 7,
+            "text_font": 40,
             "padding_bottom": 0
           }
         }
@@ -49,6 +49,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "How do I log out of my account?",
             "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
             "show_icon": false,
@@ -61,6 +62,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "How do I Manage my Subscription?",
             "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
             "show_icon": false,
@@ -73,6 +75,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "What are the benefits of being a Tiege Hanley member?",
             "content": "<h6><strong>FULL MEMBERSHIP DETAILS AT THIS LINK<\/strong><\/h6><p><a href=\"https:\/\/www.tiege.com\/pages\/membership\">https:\/\/www.tiege.com\/pages\/membership<\/a> <\/p><h6>AS A TIEGE HANLEY MEMBER, YOU ALWAYS ENJOY:<\/h6><ul><li>Control over your routine customize your subscription<\/li><li>Add products when you want<\/li><li>Exclusive access to new products<\/li><li>Saving 20% or more off retail price on all products<\/li><li>Worry-free membership — shipping reminders, easy cancellation, no-hassle refunds<\/li><\/ul>",
             "show_icon": false,
@@ -85,6 +88,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "Can I cancel my subscription at any time?",
             "content": "<p>You can use our products with no long-term commitment!<\/p><p>The subscription service is set up to automatically bill and ship you new products every 30 days.  You can adjust your <a href=\"https:\/\/support.tiege.com\/hc\/en-us\/articles\/360015881832-How-do-I-change-my-renewal-date-\">renewal date<\/a> and <a href=\"https:\/\/support.tiege.com\/hc\/en-us\/articles\/360015882412-How-do-I-change-my-renewal-frequency-\">shipment frequency<\/a> (for example every 45 days instead of 30 days) at any time through your account dashboard on our website.<\/p><p>You can also <a href=\"https:\/\/support.tiege.com\/hc\/en-us\/articles\/360016099571-How-do-I-cancel-my-subscription-\">cancel<\/a> at any time.<\/p>",
             "show_icon": false,
@@ -97,6 +101,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "How do I skip my next order?",
             "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
             "show_icon": false,
@@ -109,6 +114,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "How do I change my renewal frequency?",
             "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
             "show_icon": false,
@@ -121,6 +127,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "How do I change my renewal date?",
             "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
             "show_icon": false,
@@ -133,6 +140,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "How do I change my subscription Level?",
             "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
             "show_icon": false,
@@ -145,6 +153,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "How do I change my Shipping Address?",
             "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
             "show_icon": false,
@@ -157,6 +166,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "How do I update my billing information?",
             "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>",
             "show_icon": false,
@@ -169,6 +179,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "How do I write a review of my products?",
             "content": "<p>You can head to the following link to leave a review for us:<\/p><p><a href=\"https:\/\/reviews2.verified-reviews.com\/leaveareview.php?idwebsite=a11a382e-07fb-1904-511d-06134532d5ca\" target=\"_blank\">Click Here to Submit your Review<\/a>!<\/p>",
             "show_icon": false,
@@ -181,6 +192,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "Can I gift Tiege Hanley?",
             "content": "<p>We do have a gift option!<a href=\"https:\/\/www.tiege.com\/collections\/gift-sets\">Click here<\/a>to learn more.<\/p>",
             "show_icon": false,
@@ -193,6 +205,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "Can I return my box?",
             "content": "<p>Yes! If you have not opened your box, we can refund your order in full.<\/p><p> Contact our team at <a href=\"mailto:info@tiege.com!\">info@tiege.com<\/a>, and we will send you a return label to print out.<\/p><p>The return will be free of charge if the box is not opened. When we receive your return, we will refund your payment. Give us a heads up when your box is on the way back.<\/p>",
             "show_icon": false,
@@ -205,6 +218,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
+            "heading_size": 24,
             "title": "I received error code AVS when purchasing.",
             "content": "<p>No problem, we can help!<\/p><p>Your card was likely declined because the billing address entered at checkout for this credit card did not match the registered address for the card. We recommend contacting your bank or credit card provider to verify the billing address they have on file.  Once you enter the correct billing address at checkout, your payment should work.<\/p>",
             "show_icon": false,
