@@ -26763,3 +26763,7 @@ flex: 1;
 .hero-block__video-custom {
   position: static !important;
 }
+/*Timeline*/
+.timeline__row-split {
+width: 50% !important;
+}
