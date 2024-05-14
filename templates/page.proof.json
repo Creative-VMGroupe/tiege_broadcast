@@ -392,7 +392,7 @@
       "settings": {
         "layout": "",
         "text_align_center": true,
-        "stars_enabled": false,
+        "stars_enabled": true,
         "heading": "★★★★★",
         "heading_font": 24,
         "heading_letter_spacing": 10,
@@ -427,7 +427,7 @@
       "settings": {
         "layout": "is-reversed",
         "text_align_center": true,
-        "stars_enabled": false,
+        "stars_enabled": true,
         "heading": "★★★★★",
         "heading_font": 24,
         "heading_letter_spacing": 10,
