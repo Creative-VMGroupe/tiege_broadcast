@@ -153,8 +153,7 @@
         "review_4CbDBf"
       ],
       "custom_css": [
-        ".reviews__grid {margin: 0 auto; justify-content: center;}",
-        ".hero__subheading {color: #42b029}"
+        ".reviews__grid {margin: 0 auto; justify-content: center;}"
       ],
       "settings": {
         "show_featured_image": false,
