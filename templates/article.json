@@ -107,9 +107,8 @@
             "text": "<p>\"Use this text to showcase a review from one of your customers. A great review is honest and speaks to the concerns of your customers.\"<\/p>",
             "text_size": 16,
             "url": "",
-            "image": "shopify:\/\/shop_images\/ecom_flat_01_wash_01_47d52b33-98c0-45b1-a335-0bb47bcfa9c7.jpg",
-            "color": "",
-            "bg_color": "rgba(0,0,0,0)",
+            "color": "#000000",
+            "bg_color": "#f7f7f7",
             "border_color": ""
           }
         }
