@@ -288,9 +288,9 @@
             "icon_color": "#545454",
             "image": "shopify:\/\/shop_images\/sun-protection.png",
             "title": "Sun Protection",
-            "heading_size": 12,
+            "heading_size": 14,
             "text": "<p>Guys must use a facial moisturizer with SPF each morning to protect from the sun’s harmful UV rays. Every Tiege Hanley system provides a guy with 30 days of sun protection. No matter where you go or what you do that day—start it with an AM moisturizer with a minimum 20 SPF.<\/p>",
-            "text_size": 12
+            "text_size": 16
           }
         },
         "icon_NAz9yq": {
@@ -303,7 +303,7 @@
             "title": "Dollars Donated",
             "heading_size": 14,
             "text": "<p>As a Corporate Council member, we support the Foundation’s work of empowering people to take a proactive approach to daily sun protection and the early detection and treatment of skin cancer.<\/p>",
-            "text_size": 12
+            "text_size": 16
           }
         },
         "icon_iPTQVX": {
@@ -314,9 +314,9 @@
             "icon_color": "#545454",
             "image": "shopify:\/\/shop_images\/get-protected.png",
             "title": "Get Protected",
-            "heading_size": 12,
+            "heading_size": 14,
             "text": "<p>Join our cause. Together we give—together we change skin care for men. Help us spread the word through awareness, education and support of the Foundation’s life saving programs. Let’s help more men in the fight to prevent skin cancer!<\/p>",
-            "text_size": 12
+            "text_size": 16
           }
         }
       },
