@@ -62,7 +62,7 @@
       "settings": {
         "width": "wrapper--narrow",
         "align_text": "text-center",
-        "bg_color": "",
+        "bg_color": "#f7f7f7",
         "color": "",
         "padding_top": 80,
         "padding_bottom": 0
@@ -90,7 +90,7 @@
       "settings": {
         "width": "wrapper--narrow",
         "align_text": "text-center",
-        "bg_color": "",
+        "bg_color": "#f7f7f7",
         "color": "",
         "padding_top": 0,
         "padding_bottom": 80
@@ -131,7 +131,7 @@
         "text_alignment": "text-center",
         "padding_lr": 50,
         "reverse_blocks": false,
-        "bg_color": "#f7f7f7",
+        "bg_color": "#ffffff",
         "color": "",
         "padding_top": 0,
         "padding_bottom": 0
@@ -158,7 +158,7 @@
       "settings": {
         "width": "wrapper--narrow",
         "align_text": "text-center",
-        "bg_color": "",
+        "bg_color": "#f7f7f7",
         "color": "",
         "padding_top": 80,
         "padding_bottom": 30
@@ -190,7 +190,7 @@
       "settings": {
         "width": "wrapper--narrow",
         "align_text": "text-center",
-        "bg_color": "",
+        "bg_color": "#f7f7f7",
         "color": "",
         "padding_top": 0,
         "padding_bottom": 30
@@ -237,7 +237,7 @@
       "settings": {
         "width": "wrapper--narrow",
         "align_text": "text-center",
-        "bg_color": "",
+        "bg_color": "#f7f7f7",
         "color": "",
         "padding_top": 0,
         "padding_bottom": 80
@@ -297,7 +297,7 @@
         "height": "screen-height-three-quarters",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/impact-bike.webp",
+        "image_1": "shopify:\/\/shop_images\/AdobeStock_68795433.jpg",
         "image_width": "one-half",
         "text_alignment": "text-left",
         "padding_lr": 50,

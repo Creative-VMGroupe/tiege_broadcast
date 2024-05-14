@@ -25,6 +25,7 @@
           "type": "heading",
           "settings": {
             "title": "Sign Up For SMS!",
+            "text_font": 40,
             "padding_bottom": 30
           }
         },
@@ -32,6 +33,7 @@
           "type": "subheading",
           "settings": {
             "subheading": "Sign Up For Our VIP SMS List",
+            "text_font": 16,
             "padding_bottom": 16
           }
         },
@@ -39,6 +41,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Get early access to new products, exclusive offers, and more!<\/p>",
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 0
           }
@@ -100,7 +103,7 @@
         "[data-aos-order=\"5\"] {grid-column-start: 3 !important; grid-column-end: 5;}",
         "[data-aos-order=\"6\"] {display: none;}",
         ".visually-hidden {position: static !important;}",
-        "button {background-color: #42B029 ; border-color: #42B029 ;}",
+        "button {background-color: #42b029; border-color: #42b029;}",
         ".field {border: 1px solid; padding-left: 20px;}"
       ],
       "settings": {
@@ -120,6 +123,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Optional: By entering your number and clicking Sign Up!, you agree to receive marketing and promotional messages and\/or non-marketing updates and information from Tiege Hanley at the number provided. Consent is not a condition of purchase. Message and data rates mat apply. Message frequency varies. Reply HELP for help or STOP to cancel. View our Privacy Policy & Terms.<\/p>",
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 16
           }

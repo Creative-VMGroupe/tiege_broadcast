@@ -42,7 +42,7 @@
           "type": "heading",
           "settings": {
             "title": "Money Back Guarantee",
-            "text_size": 7,
+            "text_font": 40,
             "padding_bottom": 30
           }
         },
@@ -50,7 +50,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Meet the Tiege Hanley <strong>Handsome Guarantee<\/strong>. We offer a<strong>100% money back guarantee<\/strong>on all purchases from tiege.com.<\/p>",
-            "text_size": 3,
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 30
           }
@@ -59,7 +59,7 @@
           "type": "text",
           "settings": {
             "text": "<p>If for any reason the products do not work out for you, please contact us at <a href=\"mailto:info@tiege.com\" title=\"info@tiege.com\">info@tiege.com<\/a><br\/>or call <a href=\"tel:312-279-2780\" title=\"312-279-2780\">312-279-2780<\/a>. We'll be able to assist you with a refund for your purchase.*<\/p><p>*Up to 3 boxes are covered by our <strong>Handsome Guarantee<\/strong>.<\/p>",
-            "text_size": 3,
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 30
           }
@@ -68,7 +68,7 @@
           "type": "subheading",
           "settings": {
             "subheading": "Are You A Tiege Guy?",
-            "text_size": 5,
+            "text_font": 16,
             "padding_bottom": 16
           }
         },
