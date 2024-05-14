@@ -8,7 +8,7 @@
   assign bg_color = section.settings.bg_color
   assign blocks_style = section.settings.style
 
-  assign columns_desktop = section.settings.grid | plus: 0
+  assign columns_desktop = section.blocks.size | plus: 0
   assign columns_medium = 3
   assign columns_small = 2
   assign columns_mobile = section.settings.layout_mobile | plus: 0
