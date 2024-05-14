@@ -184,12 +184,12 @@
                           {%- liquid
             assign image = block.settings.image
             assign subheading = block.settings.subheading
-            assign title = block.settings.title
+            assign title = block.settings.heading
             assign text = block.settings.text
             assign button_text = block.settings.url
             
           -%}
-              
+                {% if title != blank %}
                 <div class="brick__block brick__block--text"{% if style != blank %} style="{{ style }}"{% endif %}>
               <div class="brick__block__text">
                 <div class="hero__content hero__content--compact hero-slider__content" >
@@ -236,7 +236,7 @@
                 </div>
               </div>
             </div>
-                
+                {% endif %}
               </div>
 
             {%- if link != blank -%}

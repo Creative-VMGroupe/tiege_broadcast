@@ -95,12 +95,11 @@
           "settings": {
             "heading": "Heading",
             "stars_enabled": false,
-            "subheading": "Tiege Subheading",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "subheading": "Heading",
+            "text": "<p>Heading<\/p>",
             "url": "",
-            "video": "shopify:\/\/files\/videos\/Snapinsta.app_video_7845D8AEE61F1258178576DBAD3FF3AB_video_dashinit.mp4",
             "color": "",
-            "bg_color": "#f0f0f0",
+            "bg_color": "#f7f7f7",
             "border_color": ""
           }
         }
