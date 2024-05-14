@@ -527,7 +527,7 @@
         "icon_name": "icon-award",
         "icon_size": 20,
         "icon_color": "#545454",
-        "bg_color": "#f7f7f7",
+        "bg_color": "#d6d6d6",
         "color": "#000000",
         "border_color": "",
         "width": "wrapper--full--custom",
