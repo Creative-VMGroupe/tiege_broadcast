@@ -375,7 +375,7 @@ async function addedCartFunction(addedItem, data) {
       let otherItems = data.items.filter((item) => item.product_id != routineItem.product_id);
       let otherItemIds = otherItems.map((item) => item.variant_id);
       let variantsOfRoutine = allProducts[routineItem.product_id]['routineVariants'].map((item) => item.id);
-      let haveCommonItems = otherItemIds.some(item => variantsOfRoutine.includes(item));
+      let haveCommonItems = otherItemIds.filter(item => variantsOfRoutine.includes(item));
       // Remove Common Element
       console.log(otherItems, otherItemIds, variantsOfRoutine, haveCommonItems);
     }
