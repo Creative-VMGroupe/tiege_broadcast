@@ -207,6 +207,14 @@
     "section_double_static_vm_9hVQ9m": {
       "type": "section-double-static-vm",
       "blocks": {
+        "image_hwwziw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Tiege_Logo_5d4d69c5-75b2-4158-a3a3-1a8604461820.png",
+            "image_width": 20,
+            "padding_bottom": 16
+          }
+        },
         "heading_mw8CfL": {
           "type": "heading",
           "settings": {
@@ -226,6 +234,7 @@
         }
       },
       "block_order": [
+        "image_hwwziw",
         "heading_mw8CfL",
         "text_RiTpBb"
       ],
