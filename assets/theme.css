@@ -26778,6 +26778,25 @@ width: 50% !important;
   width: 98%;
 }
 /*Slider Customization*/
+.flickity-viewport-custom {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.is-initialized .flickity-viewport-custom  {
+  transition: height 0.3s;
+}
+
+.flickity-viewport-custom  {
+  touch-action: pan-y;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport-custom  {
+  cursor: move;
+  cursor: grab;
+}
+
 .slider_item_container-custom {
   
 }
