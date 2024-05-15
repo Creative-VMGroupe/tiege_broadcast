@@ -26824,10 +26824,10 @@ width: 50% !important;
 }
 @media(max-width: 749px) {
 .flickity-page-dots-custom {
-  left: '0';
-  maxWidth: '256px';
-  right: '0';
-  margin: '0 auto';
+  left: 0;
+  maxWidth: 256px;
+  right: 0;
+  margin: 0 auto;
   bottom: 40px;
   }
 }
