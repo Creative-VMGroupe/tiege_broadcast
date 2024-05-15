@@ -20,11 +20,13 @@
   
   capture items_classes
     echo 'highlights__items'
+    comment
     if section.settings.layout_mobile == 'slider'
       echo ' highlights__items--mobile-slider '
     else
       echo ' highlights__items--mobile-grid'
     endif
+    endcomment
   endcapture
 -%}
 
