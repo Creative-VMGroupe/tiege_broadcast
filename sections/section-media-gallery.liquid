@@ -70,12 +70,10 @@
     {%- if section.blocks.size > 0 -%}
       <div
         class="{{ items_classes }}"
-        {% comment %}
         data-slider="Slider--{{ section.id }}"
         data-slider-mobile
         data-dots="line"
         data-options='{"watchCSS": true, "pageDots": true, "prevNextButtons": true, "pauseAutoPlayOnHover": false}'
-        {% endcomment %}
       >
         {%- for block in section.blocks -%}
           {%- liquid
@@ -167,7 +165,7 @@
 
           <div
             {{ item_attributes }}
-            {% comment %}data-slide{% endcomment %}
+            data-slide
           >         
             {%- if link != blank -%}
               <a href="{{ link }}" class="{{ item_inner_classes }}">
