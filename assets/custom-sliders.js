@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+  console.log('Runs')
   // Check if any .flickity__container-custom element exists
   const slideContainers = document.querySelectorAll(".flickity__container-custom");
   if (slideContainers.length > 0) {
