@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Create a new Intersection Observer
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry) => {
-        console.log('Runs')
+        console.log(entry)
         if (entry.intersectionRatio >= 0.95) {
           // If at least 95% of the slide is in the viewport, add the 'is-visible' class
           entry.target.classList.add("is-visible");
