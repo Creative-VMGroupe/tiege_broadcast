@@ -26797,6 +26797,14 @@ width: 50% !important;
     line-height: 1;
     display: flex;
 }
+.slider-page-dot {
+    width: 60px;
+    height: 5px;
+    border-radius: initial;
+    opacity: .9;
+    background: #b3b3b3;
+    border-color: #b3b3b3;
+}
 @media(max-width: 749px) {
 .slider-page-dots-custom {
   left: '0';
