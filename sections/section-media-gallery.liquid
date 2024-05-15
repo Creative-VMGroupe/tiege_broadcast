@@ -70,10 +70,12 @@
     {%- if section.blocks.size > 0 -%}
       <div
         class="{{ items_classes }}"
+        {% comment %} Remove This to disable the flickity {% endcomment %}
         data-slider="Slider--{{ section.id }}"
         data-slider-mobile
         data-dots="line"
         data-options='{"watchCSS": true, "pageDots": true, "prevNextButtons": true, "pauseAutoPlayOnHover": false}'
+        {% comment %} Remove This to disable the flickity {% endcomment %}
       >
         {%- for block in section.blocks -%}
           {%- liquid
@@ -165,7 +167,9 @@
 
           <div
             {{ item_attributes }}
+            {% comment %} Remove This to disable the flickity {% endcomment %}
             data-slide
+            {% comment %} Remove This to disable the flickity {% endcomment %}
           >         
             {%- if link != blank -%}
               <a href="{{ link }}" class="{{ item_inner_classes }}">
