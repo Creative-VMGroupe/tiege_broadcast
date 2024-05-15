@@ -26778,7 +26778,7 @@ width: 50% !important;
   width: 98%;
 }
 /*Slider Customization*/
-.flickity-viewport-custom {
+/* .flickity-viewport-custom {
   overflow: hidden;
   position: relative;
   height: 100%;
@@ -26795,7 +26795,7 @@ width: 50% !important;
 .flickity-enabled.is-draggable .flickity-viewport-custom  {
   cursor: move;
   cursor: grab;
-}
+} */
 
 .slider_item_container-custom {
   
