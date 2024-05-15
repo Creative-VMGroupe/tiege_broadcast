@@ -5551,6 +5551,8 @@
 
     register('double', slider);
 
+    register('highlights', slider);
+
     const scrollTo = (elementTop) => {
       /* Sticky header check */
       let {stickyHeaderHeight} = readHeights();
