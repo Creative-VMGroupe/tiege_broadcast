@@ -160,14 +160,12 @@
           <div {{ item_attributes }}>
 
             
-{%- if totalSlides >= 2 -%}
-  <div class='slider__container-custom'>
+{%- if totalSlides >= 2 -%} 
     <div class='flickity-page-dots'>
   {%- for slide in (1..totalSlides) -%}
       <button class='flickity-page-dot'></button>
   {%- endfor -%}
     </div>
-  </div>
 {%- endif -%}
 
             
