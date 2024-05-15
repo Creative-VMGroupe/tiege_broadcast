@@ -122,10 +122,10 @@ if (slideContainers.length > 0) {
       console.log(entry)
       if (entry.intersectionRatio >= 0.95) {
         // If at least 95% of the slide is in the viewport, add the 'is-visible' class
-        entry.target.classList.add("is-visible");
+        entry.target.classList.add("slide-is-visible");
       } else {
         // If the slide is not in the viewport, remove the 'is-visible' class
-        entry.target.classList.remove("is-visible");
+        entry.target.classList.remove("slide-is-visible");
       }
     });
   }, {
