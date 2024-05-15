@@ -147,7 +147,9 @@
               echo 'class="highlights__item highlights__item--' | append: blocks_style
 
               echo '"'
-              echo aos | append: ' ' | append: style | append: ' ' | append: block.shopify_attributes
+               comment
+                echo aos | append: ' ' | append: style | append: ' ' | append: block.shopify_attributes
+               endcomment
             endcapture
 
             capture item_inner_classes
