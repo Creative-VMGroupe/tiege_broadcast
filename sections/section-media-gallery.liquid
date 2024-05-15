@@ -21,7 +21,7 @@
   capture items_classes
     echo 'highlights__items'
     if section.settings.layout_mobile == 'slider'
-      echo ' highlights__items--mobile-slider '
+      echo ' highlights__items--mobile-slider flickity__container-custom'
     else
       echo ' highlights__items--mobile-grid'
     endif
@@ -68,15 +68,7 @@
     {%- endif -%}
 
     {%- if section.blocks.size > 0 -%}
-      <div
-        class="{{ items_classes }}"
-        {% comment %} Remove This to disable the flickity {% endcomment %}
-        data-slider="Slider--{{ section.id }}"
-        data-slider-mobile
-        data-dots="line"
-        data-options='{"watchCSS": true, "pageDots": true, "prevNextButtons": true, "pauseAutoPlayOnHover": false}'
-        {% comment %} Remove This to disable the flickity {% endcomment %}
-      >
+      <div class="{{ items_classes }}">
         {%- for block in section.blocks -%}
           {%- liquid
             assign image = block.settings.image
@@ -146,7 +138,7 @@
             endcapture
 
             capture item_attributes
-              echo 'class="highlights__item highlights__item--' | append: blocks_style
+              echo 'class="flickity_item_container-custom highlights__item highlights__item--' | append: blocks_style
 
               echo '"'
               echo aos | append: ' ' | append: style | append: ' ' | append: block.shopify_attributes
@@ -165,13 +157,7 @@
             endcapture
           -%}
 
-          <div
-            {{ item_attributes }}
-            {% comment %} search -- "register('highlights', slider);" -- in theme.dev.js {% endcomment %}
-            {% comment %} Remove This to disable the flickity {% endcomment %}
-            data-slide
-            {% comment %} Remove This to disable the flickity {% endcomment %}
-          >         
+          <div {{ item_attributes }}>         
             {%- if link != blank -%}
               <a href="{{ link }}" class="{{ item_inner_classes }}">
             {%- else -%}
@@ -262,6 +248,15 @@
           </div>
         {%- endfor -%}
       </div>
+      {%- if totalSlides >= 2 -%}
+  
+    <div class='flickity-page-dots flickity-page-dots-custom'>
+  {%- for slide in (1..totalSlides) -%}
+      <button class='flickity-page-dot'></button>
+  {%- endfor -%}
+  
+    </div>
+{%- endif -%}
     {%- endif -%}
   </div>
 </div>
