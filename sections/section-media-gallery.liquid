@@ -21,7 +21,7 @@
   capture items_classes
     echo 'highlights__items'
     if section.settings.layout_mobile == 'slider'
-      echo ' highlights__items--mobile-slider'
+      echo ' highlights__items--mobile-slider slider__container-custom'
     else
       echo ' highlights__items--mobile-grid'
     endif
@@ -161,13 +161,13 @@
 
             
 {%- if totalSlides >= 2 -%}
-  <div class='slider__container-custom'>
+  
     <div class='flickity-page-dots'>
   {%- for slide in (1..totalSlides) -%}
       <button class='flickity-page-dot'></button>
   {%- endfor -%}
+  
     </div>
-  </div>
 {%- endif -%}
 
             
