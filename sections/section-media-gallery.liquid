@@ -15,11 +15,13 @@
 
   assign desktop_height = section.settings.height
   assign mobile_height = section.settings.mobile_height
+
+  assign totalSlides = section.blocks.size
   
   capture items_classes
     echo 'highlights__items'
     if section.settings.layout_mobile == 'slider'
-      echo ' highlights__items--mobile-slider'
+      echo ' highlights__items--mobile-slider flickity__container-custom'
     else
       echo ' highlights__items--mobile-grid'
     endif
@@ -136,7 +138,7 @@
             endcapture
 
             capture item_attributes
-              echo 'class="highlights__item highlights__item--' | append: blocks_style
+              echo 'class="flickity_item_container-custom highlights__item highlights__item--' | append: blocks_style
 
               echo '"'
               echo aos | append: ' ' | append: style | append: ' ' | append: block.shopify_attributes
@@ -155,7 +157,7 @@
             endcapture
           -%}
 
-          <div {{ item_attributes }}>
+          <div {{ item_attributes }}>         
             {%- if link != blank -%}
               <a href="{{ link }}" class="{{ item_inner_classes }}">
             {%- else -%}
@@ -165,7 +167,7 @@
               {%- if image or blocks_style != 'button' -%}
                 <div class="highlights__item__background {{ desktop_height }} {{ mobile_height }}">
                   {%- if image -%}
-                    <span>hi</span>
+                    
                     {%- capture sizes -%}
                       (min-width: 990px) calc((100vw - 100px) / {{ columns_desktop }}), (min-width: 750px) calc((100vw - 60px) / {{ columns_medium }}), calc(100vw - 32px)
                     {%- endcapture -%}            
@@ -246,6 +248,15 @@
           </div>
         {%- endfor -%}
       </div>
+      {%- if totalSlides >= 2 -%}
+  
+    <div class='flickity-page-dots flickity-page-dots-custom'>
+  {%- for slide in (1..totalSlides) -%}
+      <button class='flickity-page-dot'></button>
+  {%- endfor -%}
+  
+    </div>
+{%- endif -%}
     {%- endif -%}
   </div>
 </div>
