@@ -68,7 +68,7 @@
     {%- endif -%}
 
     {%- if section.blocks.size > 0 -%}
-      <div class="{{ items_classes }}">
+      <div class="{{ items_classes }}" data-dots="line">
         {%- for block in section.blocks -%}
           {%- liquid
             assign image = block.settings.image
