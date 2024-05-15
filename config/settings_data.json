@@ -71,7 +71,7 @@
     "show_gift_card_recipient": true,
     "color_swatches": true,
     "enable_gift": true,
-    "gift_item": "single-product-name-5",
+    "gift_item": "gift-card",
     "gift_item_method": "cart",
     "gift_item_collection": "face",
     "checkout_logo_position": "left",
