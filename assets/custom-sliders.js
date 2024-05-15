@@ -1,5 +1,5 @@
+document.addEventListener('DOMContentLoaded', function() {
 const slideContainers = document.querySelectorAll(".flickity__container-custom");
-
 
 if(slideContainers.length > 0) {
   console.log("Containers present")
@@ -23,3 +23,4 @@ slideContainers.forEach((slide) => {
   observer.observe(slide);
 });
 }
+  });
