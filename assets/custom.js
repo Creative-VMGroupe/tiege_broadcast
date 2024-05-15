@@ -133,8 +133,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Observe each slide container
     slideContainers.forEach((slide) => {
-      slide.querySelectorAll('.flickity_item_container-custom')
-      observer.observe(slide);
+      const slideItems = slide.querySelectorAll('.flickity_item_container-custom')
+      slideItems.forEach(() =>{
+       observer.observe(slide); 
+        }
+      )
     });
   }
 
