@@ -56,8 +56,11 @@
 //   }
 // });
 
-//Timeline click to scroll to element
+
 document.addEventListener('DOMContentLoaded', function() {
+//Timeline click to scroll to element
+
+  
   // Select all elements with the class 'timeline__inner'
   const timelineInners = document.querySelectorAll('.timeline__inner');
   
@@ -107,6 +110,40 @@ document.addEventListener('DOMContentLoaded', function() {
   
   });
 
+
+//Sliders Custom
+// Check if any .flickity__container-custom element exists
+const slideContainers = document.querySelectorAll(".flickity__container-custom");
+if (slideContainers.length > 0) {
+  
+  // Create a new Intersection Observer
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      console.log(entry)
+      if (entry.intersectionRatio >= 0.95) {
+        // If at least 95% of the slide is in the viewport, add the 'is-visible' class
+        entry.target.classList.add("is-visible");
+      } else {
+        // If the slide is not in the viewport, remove the 'is-visible' class
+        entry.target.classList.remove("is-visible");
+      }
+    });
+  }, {
+    threshold: [0.95] // Specify the threshold for triggering the callback
+  });
+
+  // Observe each slide container
+  slideContainers.forEach((slide) => {
+    console.log('works')
+    // Select all .flickity_item_container-custom elements within the current slide container
+    const slideItems = slide.querySelectorAll('.flickity_item_container-custom');
+    
+    // Observe each slide item
+    slideItems.forEach((item) => {
+      observer.observe(item);
+    });
+  });
+}
 
 });
 
