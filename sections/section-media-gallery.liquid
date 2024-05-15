@@ -158,6 +158,15 @@
           -%}
 
           <div {{ item_attributes }}>
+
+            
+{%- if totalSlides >= 2 -%}
+  {%- for slide in (1..totalSlides) -%}
+    <div class='slider_box'></div>
+  {%- endfor -%}
+{%- endif -%}
+
+            
             {%- if link != blank -%}
               <a href="{{ link }}" class="{{ item_inner_classes }}">
             {%- else -%}
