@@ -45,6 +45,7 @@
     },
     "section_product_7ePe7T": {
       "type": "section-product",
+      "disabled": true,
       "settings": {
         "layout": "",
         "product": "level-1-acne-routine-1",
