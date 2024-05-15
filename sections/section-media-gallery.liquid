@@ -162,9 +162,11 @@
             
 {%- if totalSlides >= 2 -%}
   <div class='slider__container-custom'>
+    <div class='slider-page-dots-custom'>
   {%- for slide in (1..totalSlides) -%}
-    <div class='slider__dots-custom'></div>
+      <button class='flickity-page-dot'></button>
   {%- endfor -%}
+    </div>
   </div>
 {%- endif -%}
 
