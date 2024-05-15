@@ -21,7 +21,7 @@
   capture items_classes
     echo 'highlights__items'
     if section.settings.layout_mobile == 'slider'
-      echo ' highlights__items--mobile-slider slider__container-custom'
+      echo ' highlights__items--mobile-slider flickity__container-custom'
     else
       echo ' highlights__items--mobile-grid'
     endif
@@ -138,7 +138,7 @@
             endcapture
 
             capture item_attributes
-              echo 'class="slider_item_container-custom highlights__item highlights__item--' | append: blocks_style
+              echo 'class="flickity_item_container-custom highlights__item highlights__item--' | append: blocks_style
 
               echo '"'
               echo aos | append: ' ' | append: style | append: ' ' | append: block.shopify_attributes
