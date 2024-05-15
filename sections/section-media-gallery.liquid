@@ -20,13 +20,11 @@
   
   capture items_classes
     echo 'highlights__items'
-    comment
     if section.settings.layout_mobile == 'slider'
       echo ' highlights__items--mobile-slider '
     else
       echo ' highlights__items--mobile-grid'
     endif
-    endcomment
   endcapture
 -%}
 
@@ -70,13 +68,7 @@
     {%- endif -%}
 
     {%- if section.blocks.size > 0 -%}
-      <div
-        class="{{ items_classes }}"
-        data-slider="Slider--{{ section.id }}"
-        data-slider-mobile
-        data-dots="line"
-        data-options='{"watchCSS": true, "pageDots": true, "prevNextButtons": true, "pauseAutoPlayOnHover": false}'
-      >
+      <div class="{{ items_classes }}">
         {%- for block in section.blocks -%}
           {%- liquid
             assign image = block.settings.image
@@ -149,9 +141,7 @@
               echo 'class="highlights__item highlights__item--' | append: blocks_style
 
               echo '"'
-               comment
-                echo aos | append: ' ' | append: style | append: ' ' | append: block.shopify_attributes
-               endcomment
+              echo aos | append: ' ' | append: style | append: ' ' | append: block.shopify_attributes
             endcapture
 
             capture item_inner_classes
@@ -167,10 +157,7 @@
             endcapture
           -%}
 
-          <div
-            {{ item_attributes }}
-            data-slide
-          >         
+          <div {{ item_attributes }}>         
             {%- if link != blank -%}
               <a href="{{ link }}" class="{{ item_inner_classes }}">
             {%- else -%}
