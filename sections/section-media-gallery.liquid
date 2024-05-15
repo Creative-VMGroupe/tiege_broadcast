@@ -161,9 +161,11 @@
 
             
 {%- if totalSlides >= 2 -%}
+  <div class='slider__container-custom'>
   {%- for slide in (1..totalSlides) -%}
-    <div class='slider_box'></div>
+    <div class='slider__dots-custom'></div>
   {%- endfor -%}
+  </div>
 {%- endif -%}
 
             
