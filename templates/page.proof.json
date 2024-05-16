@@ -387,7 +387,7 @@
     "section_before_after_q3KGGj": {
       "type": "section-before-after",
       "custom_css": [
-        ".compare__body {background-color: #f7f7f7;}"
+
       ],
       "settings": {
         "layout": "",
@@ -421,8 +421,7 @@
     "section_before_after_yD7FLe": {
       "type": "section-before-after",
       "custom_css": [
-        ".compare__body {background-color: #f7f7f7;}",
-        ".compare__content {background-color: #f7f7f7 !important;}"
+
       ],
       "settings": {
         "layout": "is-reversed",
