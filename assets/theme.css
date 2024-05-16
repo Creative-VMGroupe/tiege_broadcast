@@ -26834,6 +26834,8 @@ width: 50% !important;
   }
 }
 /*Before and After*/
+@media only screen and (max-width: 749px) {
 .wrapper--full .compare__buttons.before-after-button-custom {
   padding: 0;
+}  
 }
