@@ -26778,30 +26778,21 @@ width: 50% !important;
   width: 98%;
 }
 /*Slider Customization*/
-/* .flickity-viewport-custom {
-  overflow: hidden;
-  position: relative;
-  height: 100%;
+[data-slide-position="1"] [data-dot-position="1"],
+[data-slide-position="2"] [data-dot-position="2"],
+[data-slide-position="3"] [data-dot-position="3"],
+[data-slide-position="4"] [data-dot-position="4"],
+[data-slide-position="5"] [data-dot-position="5"],
+[data-slide-position="6"] [data-dot-position="6"],
+[data-slide-position="7"] [data-dot-position="7"],
+[data-slide-position="8"] [data-dot-position="8"],
+[data-slide-position="9"] [data-dot-position="9"],
+[data-slide-position="10"] [data-dot-position="10"] {
+    opacity: 1;
+    background: var(--BTN-SECONDARY-BG-COLOR);
+    border-color: var(--BTN-SECONDARY-BG-COLOR);
 }
 
-.is-initialized .flickity-viewport-custom  {
-  transition: height 0.3s;
-}
-
-.flickity-viewport-custom  {
-  touch-action: pan-y;
-}
-
-.flickity-enabled.is-draggable .flickity-viewport-custom  {
-  cursor: move;
-  cursor: grab;
-} */
-
-.flickity_item_container-custom {
-  
-}
-.flickity__container-custom{
-}
 
 .flickity-page-dots-custom {
     position: absolute;
