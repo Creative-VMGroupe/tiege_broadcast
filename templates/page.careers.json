@@ -464,13 +464,47 @@
         "padding_bottom": 80
       }
     },
+    "section_rich_text_cefH3N": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_6XCtiE": {
+          "type": "heading",
+          "settings": {
+            "title": "Seen in the Wild",
+            "text_font": 40,
+            "padding_bottom": 16
+          }
+        },
+        "text_ECyYFV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>@tiegehanley<\/p>",
+            "text_font": 16,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_6XCtiE",
+        "text_ECyYFV"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-center",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
     "1713433291682d433b": {
       "type": "apps",
       "blocks": {
         "instafeed_app_block_cbp6bd": {
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "title": "@tiegehanley",
+            "title": "",
             "title_color": "",
             "alignment": "center",
             "html_area": ""
@@ -481,8 +515,7 @@
         "instafeed_app_block_cbp6bd"
       ],
       "custom_css": [
-        "#insta-feed {background-color: #f7f7f7; padding-top: 60px;}",
-        "#insta-feed h2 {margin-top: 0 !important;}"
+
       ],
       "settings": {
         "include_margins": false
@@ -500,6 +533,7 @@
     "section_accordion_group_RtmWNU",
     "section_rich_text_PhrTbk",
     "section_rich_text_HHkfDr",
+    "section_rich_text_cefH3N",
     "1713433291682d433b"
   ]
 }
