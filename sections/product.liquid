@@ -133,7 +133,7 @@
       <div class="flickity-enabled-custom product__page">
 
         <product-images
-          class="flickity__container-custom {{ product_images_classlist }}"
+          class="{{ product_images_classlist }}"
           data-active-media="{{ section.id }}-{{ featured_media.id }}"
           {% if enable_thumbs %}data-fader-desktop{% endif %}
           {% if enable_thumbs_mobile %}data-fader-mobile{% endif %}
@@ -141,7 +141,7 @@
           {%-  assign totalSlides = product.media.size -%}
           {%- if product.media.size > 0 -%}
             {%- capture product_slides_attributes -%}
-              class="product__slides product-single__photos"
+              class="flickity__container-custom product__slides product-single__photos"
               style="--featured-media-aspect-ratio: {{ featured_media_aspect_ratio | round: 2 }};"
               data-product-media-list
             {%- endcapture -%}
