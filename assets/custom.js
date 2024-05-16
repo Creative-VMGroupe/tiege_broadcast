@@ -116,6 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
 const flickityEnabledContainers = document.querySelectorAll(".flickity-enabled-custom");
 if (flickityEnabledContainers.length > 0) {
   flickityEnabledContainers.forEach((container) => {
+    console.log(container)
     // Find the .flickity__container-custom element within the current container
     const slideContainer = container.querySelector(".flickity__container-custom");
     if (!slideContainer) return; // Skip if the slide container is not found
