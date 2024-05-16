@@ -112,8 +112,7 @@
         "instafeed_app_block_cbp6bd"
       ],
       "custom_css": [
-        "#insta-feed {background-color: #f7f7f7; padding-top: 0px !important;}",
-        "#insta-feed h2 {margin-top: 0 !important;}"
+
       ],
       "settings": {
         "include_margins": false
