@@ -59,19 +59,19 @@
     "section_rich_text_TXLJKC": {
       "type": "section-rich-text",
       "blocks": {
-        "heading_DjekAc": {
-          "type": "heading",
-          "settings": {
-            "title": "Make a Difference",
-            "text_font": 40,
-            "padding_bottom": 16
-          }
-        },
         "subheading_FWDe88": {
           "type": "subheading",
           "settings": {
             "subheading": "Tiege's Environmental Stewardship",
             "text_font": 14,
+            "padding_bottom": 16
+          }
+        },
+        "heading_DjekAc": {
+          "type": "heading",
+          "settings": {
+            "title": "Make a Difference",
+            "text_font": 40,
             "padding_bottom": 16
           }
         },
@@ -86,8 +86,8 @@
         }
       },
       "block_order": [
-        "heading_DjekAc",
         "subheading_FWDe88",
+        "heading_DjekAc",
         "text_jjTk74"
       ],
       "settings": {
