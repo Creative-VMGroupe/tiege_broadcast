@@ -134,12 +134,12 @@ if (slideContainers.length > 0) {
 
   // Observe each slide container
   slideContainers.forEach((slide) => {
-    console.log('works')
+    
     // Select all .flickity_item_container-custom elements within the current slide container
     const slideItems = slide.querySelectorAll('.flickity_item_container-custom');
-    
     // Observe each slide item
     slideItems.forEach((item) => {
+    console.log(item')
       observer.observe(item);
     });
   });
