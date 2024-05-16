@@ -26833,3 +26833,7 @@ width: 50% !important;
   bottom: 40px;
   }
 }
+/*Before and After*/
+.wrapper--full .compare__buttons.before-after-button-custom {
+  padding: 0;
+}
