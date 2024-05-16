@@ -141,6 +141,7 @@
               echo 'class="flickity_item_container-custom highlights__item highlights__item--' | append: blocks_style
 
               echo '"'
+             echo ' data-slide-position="' | append: forloop.index | append: '"'
               echo aos | append: ' ' | append: style | append: ' ' | append: block.shopify_attributes
             endcapture
 
