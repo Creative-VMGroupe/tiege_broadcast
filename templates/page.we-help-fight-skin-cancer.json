@@ -143,7 +143,7 @@
         "heading_Qze6m9": {
           "type": "heading",
           "settings": {
-            "title": "With Your Support We Can Make An Impact",
+            "title": "With Your Support We Can Make an Impact",
             "text_font": 40,
             "padding_bottom": 50
           }
@@ -258,7 +258,7 @@
         "heading_7CgHqM": {
           "type": "heading",
           "settings": {
-            "title": "Skin Cancer is the #1 most common cancer in the world",
+            "title": "Skin Cancer is the #1 Most Common Cancer in the World",
             "heading_size": 40,
             "padding_bottom": 16
           }
@@ -355,6 +355,9 @@
         "icon_H9xU8E",
         "icon_NAz9yq",
         "icon_iPTQVX"
+      ],
+      "custom_css": [
+
       ],
       "settings": {
         "title": "How You Can Make An Impact",
