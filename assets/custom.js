@@ -116,7 +116,6 @@ document.addEventListener('DOMContentLoaded', function() {
 const flickityEnabledContainers = document.querySelectorAll(".flickity-enabled-custom");
 if (flickityEnabledContainers.length > 0) {
   flickityEnabledContainers.forEach((container) => {
-    console.log(container)
     // Find the .flickity__container-custom element within the current container
     const slideContainer = container.querySelector(".flickity__container-custom");
     if (!slideContainer) return; // Skip if the slide container is not found
@@ -127,7 +126,6 @@ if (flickityEnabledContainers.length > 0) {
     // Create a new Intersection Observer
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry) => {
-      console.log(entry)
         if (entry.isIntersecting === true) {
           // If the entire slide is in the viewport, add the 'slide-is-visible' class
           entry.target.classList.add("slide-is-visible");
@@ -164,11 +162,30 @@ if (flickityEnabledContainers.length > 0) {
     // Observe each slide item within the slide container
     const slideItems = slideContainer.querySelectorAll('.flickity_item_container-custom');
     slideItems.forEach((item) => {
-    console.log(item)
       observer.observe(item);
+    });
+
+    // Add event listener to each button within this container
+    const buttons = dotContainer.querySelectorAll('.flickity-page-dot');
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const slidePosition = button.getAttribute("data-dot-position");
+        if (slidePosition) {
+          const slide = slideContainer.querySelector(`.flickity_item_container-custom[data-slide-position="${slidePosition}"]`);
+          if (slide) {
+            // Scroll to the corresponding slide within this container
+            const newPosition = slide.offsetLeft;
+            slideContainer.scroll({
+              left: newPosition,
+              behavior: 'smooth' // Smooth scrolling effect
+            });
+          }
+        }
+      });
     });
   });
 }
+
 
 
 
