@@ -7831,7 +7831,7 @@ body.has-first-section-overlay-header
 }
 
 /* ================ Large / Small Display Logic ================ */
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 649px) {
   .header__mobile {
     display: grid;
   }
@@ -7845,7 +7845,7 @@ body.has-first-section-overlay-header
     pointer-events: none;
   }
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 650px) {
   .header__desktop {
     position: static;
   }
