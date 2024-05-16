@@ -838,7 +838,7 @@
                           {%- if complementary_products_title != blank -%}
                             <div class="complementary-product__header">
                               <span id='single_title' style="font-weight: bold;"  class="complementary-products__title">You May Also Like</span>
-                              <span id='routine_title' style="font-weight: bold;"  class="complementary-products__title">Want to level up?</span>
+                              <span id='routine_title' style="font-weight: bold;"  class="complementary-products__title">{{ block.settings.comp-heading }}</span>
                               <a id='levelGuideBtn' class="levelTest radio__legend__link text-link" style='color: gray;' data-popup-open>Level Guide</a>
                             </div>
                           {%- endif -%}
