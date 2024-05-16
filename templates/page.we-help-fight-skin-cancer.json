@@ -433,19 +433,19 @@
     "section_rich_text_YWBiRt": {
       "type": "section-rich-text",
       "blocks": {
-        "heading_e8Mxbf": {
-          "type": "heading",
-          "settings": {
-            "title": "#changingskincareformen",
-            "text_font": 32,
-            "padding_bottom": 30
-          }
-        },
         "image_Bnzx8M": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/The_Skin_Cancer_Foundation_Logo.png",
             "image_width": 20,
+            "padding_bottom": 30
+          }
+        },
+        "heading_e8Mxbf": {
+          "type": "heading",
+          "settings": {
+            "title": "#changingskincareformen",
+            "text_font": 32,
             "padding_bottom": 30
           }
         },
@@ -460,8 +460,8 @@
         }
       },
       "block_order": [
-        "heading_e8Mxbf",
         "image_Bnzx8M",
+        "heading_e8Mxbf",
         "text_wtJwrY"
       ],
       "custom_css": [
