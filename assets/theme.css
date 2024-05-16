@@ -26782,7 +26782,9 @@ width: 50% !important;
   
 }
 .flickity-enabled-custom {}
-
+.flickity-dot-styling {
+  background-color: green;
+}
 
 .flickity-page-dots-custom {
     position: absolute;
