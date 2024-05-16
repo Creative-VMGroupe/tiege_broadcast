@@ -26788,7 +26788,7 @@ width: 50% !important;
   /* CSS styles here */
   height: 20px;
   opacity: 1;
-  background: var(--BTN-SECONDARY-BG-COLOR);
+  background: red;
   border-color: var(--BTN-SECONDARY-BG-COLOR);
 }
 
