@@ -26778,9 +26778,12 @@ width: 50% !important;
   width: 98%;
 }
 /*Slider Customization*/
-[data-slide-position="1"] [data-dot-position="1"],
-[data-slide-position="2"] [data-dot-position="2"],
-[data-slide-position="3"] [data-dot-position="3"],
+.slide-is-visible {
+  color: red;
+}
+.slide-is-visible [data-dot-position="1"],
+.slide-is-visible [data-dot-position="2"],
+.slide-is-visible [data-dot-position="3"],
 [data-slide-position="4"] [data-dot-position="4"],
 [data-slide-position="5"] [data-dot-position="5"],
 [data-slide-position="6"] [data-dot-position="6"],
