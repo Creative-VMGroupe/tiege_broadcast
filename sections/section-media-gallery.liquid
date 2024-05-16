@@ -86,7 +86,7 @@
             assign bg_color = block.settings.slide_bg_color
             assign text_color = block.settings.color
             assign border_color = block.settings.border_color
-
+            assign sub_color = block.settings.sub_color
             assign bg_color_brightness = bg_color | color_brightness
             if bg_color_brightness <= 65
               assign bg_color_brighter = bg_color | color_lighten: 10
@@ -167,7 +167,12 @@
               endif
             endcapture
           -%}
-
+          {%-  style -%}
+            .hero__subheading {
+            color: {{ sub_color }}
+              
+            }
+            {%- endstyle -%}
           <div {{ item_attributes }}>         
             {%- if link != blank -%}
               <a href="{{ link }}" class="{{ item_inner_classes }}">
@@ -541,6 +546,11 @@
             "type": "color",
             "id": "color",
             "label": "Text"
+          },
+                    {
+            "type": "color",
+            "id": "sub_color",
+            "label": "Subheading Color"
           },
           {
             "type": "color",
