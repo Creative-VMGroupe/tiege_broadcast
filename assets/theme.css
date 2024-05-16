@@ -26779,18 +26779,18 @@ width: 50% !important;
 }
 /*Slider Customization*/
 .slide-is-visible {
-  color: red;
+  
 }
-.slide-is-visible [data-dot-position="1"],
-.slide-is-visible [data-dot-position="2"],
-.slide-is-visible [data-dot-position="3"],
-[data-slide-position="4"] [data-dot-position="4"],
-[data-slide-position="5"] [data-dot-position="5"],
-[data-slide-position="6"] [data-dot-position="6"],
-[data-slide-position="7"] [data-dot-position="7"],
-[data-slide-position="8"] [data-dot-position="8"],
-[data-slide-position="9"] [data-dot-position="9"],
-[data-slide-position="10"] [data-dot-position="10"] {
+[data-slide-position="1"].slide-is-visible + * [data-dot-position="1"],
+[data-slide-position="2"].slide-is-visible + * [data-dot-position="2"],
+[data-slide-position="3"].slide-is-visible + * [data-dot-position="3"],
+[data-slide-position="4"].slide-is-visible + * [data-dot-position="4"],
+[data-slide-position="5"].slide-is-visible + * [data-dot-position="5"],
+[data-slide-position="6"].slide-is-visible + * [data-dot-position="6"],
+[data-slide-position="7"].slide-is-visible + * [data-dot-position="7"],
+[data-slide-position="8"].slide-is-visible + * [data-dot-position="8"],
+[data-slide-position="9"].slide-is-visible + * [data-dot-position="9"],
+[data-slide-position="10"].slide-is-visible + * [data-dot-position="10"]  {
     opacity: 1;
     background: var(--BTN-SECONDARY-BG-COLOR);
     border-color: var(--BTN-SECONDARY-BG-COLOR);
