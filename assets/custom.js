@@ -157,7 +157,7 @@ if (flickityEnabledContainers.length > 0) {
         }
       });
     }, {
-      threshold: [.5] // Trigger the callback when the entire slide is visible
+      threshold: [.5] // Trigger the callback
     });
 
     // Observe each slide item within the slide container
