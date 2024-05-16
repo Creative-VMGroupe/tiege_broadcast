@@ -138,7 +138,7 @@
           {% if enable_thumbs %}data-fader-desktop{% endif %}
           {% if enable_thumbs_mobile %}data-fader-mobile{% endif %}
         >
-
+          {%-  assign totalSlides = product.media.size -%}
           {%- if product.media.size > 0 -%}
             {%- capture product_slides_attributes -%}
               class="product__slides product-single__photos"
@@ -158,8 +158,29 @@
 
             {%- if section.settings.enable_zoom -%}
               </zoom-images>
+
+{%- if totalSlides >= 2 -%}
+  
+    <div class='flickity-page-dots flickity-page-dots-custom'>
+  {%- for slide in (1..totalSlides) -%}
+      <button class='flickity-page-dot' data-dot-position="{{ slide }}"></button>
+  {%- endfor -%}
+    </div>
+{%- endif -%}
+              
             {%- else -%}
               </div>
+
+{%- if totalSlides >= 2 -%}
+  
+    <div class='flickity-page-dots flickity-page-dots-custom'>
+  {%- for slide in (1..totalSlides) -%}
+      <button class='flickity-page-dot' data-dot-position="{{ slide }}"></button>
+  {%- endfor -%}
+  
+    </div>
+{%- endif -%}
+              
             {%- endif -%}
 
             {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
