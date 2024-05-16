@@ -46,17 +46,8 @@
     --columns-small: {{ columns_small }};
     --columns-mobile: {{ columns_mobile }};
   }
-  #highlights--{{ unique }}  brick__block__text-custom {
-    {% if bg_color != blank and bg_color != 'rgba(0,0,0,0)' %}
-      --bg: {{ bg_color }} !important;
-      {% else %}
-      --bg: transparent;
-    {% endif %}
-  }
+
 {%- endstyle -%}
-<script>
-  console.log("Background color:", "{{ bg_color }}");
-</script>
 
 <div
   class="highlights section-padding"
@@ -172,6 +163,13 @@
             color: {{ sub_color }}
               
             }
+              #highlights--{{ unique }}  brick__block__text-custom {
+    {% if bg_color != blank and bg_color != 'rgba(0,0,0,0)' %}
+      --bg: {{ bg_color }} !important;
+      {% else %}
+      --bg: transparent;
+    {% endif %}
+  }
             {%- endstyle -%}
           <div {{ item_attributes }}>         
             {%- if link != blank -%}
