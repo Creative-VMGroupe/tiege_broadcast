@@ -26856,3 +26856,8 @@ width: 50% !important;
   padding: 0;
 }  
 }
+/*Collection List*/
+.collection-block__wrapper .index-products {
+  padding-left: var(--outer)!important;
+padding-right: var(--outer)!important;
+}
