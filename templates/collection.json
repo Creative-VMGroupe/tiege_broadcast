@@ -154,7 +154,7 @@
         "heading_eGeDat": {
           "type": "heading",
           "settings": {
-            "title": "Routine Quiz",
+            "title": "Find Your Routine",
             "heading_size": 40,
             "padding_bottom": 16
           }
@@ -162,7 +162,7 @@
         "text_pncrA8": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text": "<p>Eliminate the guesswork from achieving amazing skin with your personalized recommendation from our skin care experts.<\/p>",
             "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
