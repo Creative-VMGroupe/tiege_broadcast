@@ -177,7 +177,7 @@
           "type": "text-slide",
           "settings": {
             "stars_enabled": true,
-            "subheading": "★★★★★",
+            "subheading": "&nbsp;★★★★★",
             "subheading_font": 16,
             "title": "\"I am 41, and people tell me I look 33. Works great.\"",
             "heading_font": 24,
@@ -961,55 +961,6 @@
       "settings": {
         "include_margins": false
       }
-    },
-    "section_hero_pHmzYh": {
-      "type": "section-hero",
-      "blocks": {
-        "heading_gEhyq6": {
-          "type": "heading",
-          "settings": {
-            "title": "Image banner",
-            "heading_font": 40
-          }
-        },
-        "text_ADhxrK": {
-          "type": "text",
-          "settings": {
-            "description": "Tell your brand's story through images.",
-            "text_font": 16,
-            "text_style": "font-body"
-          }
-        },
-        "button_WVWLXi": {
-          "type": "button",
-          "settings": {
-            "link_text": "View products",
-            "link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_gEhyq6",
-        "text_ADhxrK",
-        "button_WVWLXi"
-      ],
-      "settings": {
-        "height": "screen-height-three-quarters",
-        "width": "wrapper--full",
-        "link": "",
-        "mobile_height": "screen-height-three-quarters--mobile",
-        "flex_align_desktop": "align--middle-center-desktop",
-        "flex_align_mobile": "align--middle-center-mobile",
-        "overlay_opacity": 0,
-        "overlay_color": "#000",
-        "show_overlay_text": false,
-        "bg_color": "",
-        "color": "#FFFFFF"
-      }
     }
   },
   "order": [
@@ -1031,7 +982,6 @@
     "section_rich_text_mYKMrn",
     "section_double_yp4ajU",
     "section_rich_text_Hid74F",
-    "17128713724606d78b",
-    "section_hero_pHmzYh"
+    "17128713724606d78b"
   ]
 }
