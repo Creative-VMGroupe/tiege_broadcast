@@ -26781,17 +26781,7 @@ width: 50% !important;
 .slide-is-visible {
   
 }
-.flickity_item_container-custom[data-slide-position="1"].slide-is-visible ~ .flickity-page-dots-custom [data-dot-position="1"],
-.flickity__container-custom > [data-slide-position="2"].slide-is-visible ~ .flickity-page-dots-custom [data-dot-position="2"],
-.flickity__container-custom > [data-slide-position="3"].slide-is-visible ~ .flickity-page-dots-custom [data-dot-position="3"]
-{
-  /* CSS styles here */
-  height: 20px;
-  opacity: 1;
-  background: red;
-  border-color: var(--BTN-SECONDARY-BG-COLOR);
-}
-
+.flickity-enabled-custom {}
 
 
 .flickity-page-dots-custom {
