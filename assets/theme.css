@@ -26801,6 +26801,9 @@ width: 50% !important;
 .slide-is-visible {
   
 }
+.pdp-slider-custom .flickity__container-custom {
+  position: relative;
+}
 .text-slider-custom .flickity-page-dots-custom.flickity-page-dots {
   bottom: 40px !important;
 }
