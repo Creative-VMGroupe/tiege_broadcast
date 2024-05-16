@@ -46,6 +46,13 @@
     --columns-small: {{ columns_small }};
     --columns-mobile: {{ columns_mobile }};
   }
+  #highlights--{{ unique }}  brick__block__text-custom {
+    {% if bg_color != blank and bg_color != 'rgba(0,0,0,0)' %}
+      --bg: {{ bg_color }};
+      {% else %}
+      --bg: transparent;
+    {% endif %}
+  }
 {%- endstyle -%}
 
 <div
