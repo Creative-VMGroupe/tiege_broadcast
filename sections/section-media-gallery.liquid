@@ -74,7 +74,7 @@
           {%- liquid
             assign image = block.settings.image
             assign video = block.settings.video
-            
+            assign bg_color = block.settings.slide_bg_color
             assign text_color = block.settings.color
             assign border_color = block.settings.border_color
             assign sub_color = block.settings.sub_color
@@ -165,7 +165,7 @@
             }
               #highlights--{{ unique }}  .brick__block__text-custom, #highlights--{{ unique }} .brick__block{
     {% if bg_color != blank and bg_color != 'rgba(0,0,0,0)' %}
-      --bg: {{ bg_color }} !important;
+      background-color: {{ bg_color }} !important;
       {% else %}
       --bg: transparent;
     {% endif %}
