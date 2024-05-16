@@ -126,6 +126,7 @@ if (flickityEnabledContainers.length > 0) {
     // Create a new Intersection Observer
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry) => {
+        console.log(entry)
         if (entry.isIntersecting > .8) {
           // If the entire slide is in the viewport, add the 'slide-is-visible' class
           entry.target.classList.add("slide-is-visible");
