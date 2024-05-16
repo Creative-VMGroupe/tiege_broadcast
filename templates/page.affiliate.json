@@ -72,6 +72,40 @@
         "padding_bottom": 0
       }
     },
+    "section_rich_text_3TGbC9": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_pxKkhP": {
+          "type": "heading",
+          "settings": {
+            "title": "Seen in the Wild",
+            "text_font": 40,
+            "padding_bottom": 16
+          }
+        },
+        "text_zt73tk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>@tiegehanley<\/p>",
+            "text_font": 16,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_pxKkhP",
+        "text_zt73tk"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-center",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
     "1715846453e8f696ec": {
       "type": "apps",
       "blocks": {
@@ -97,6 +131,7 @@
     "main",
     "section_hero_KpG8aH",
     "section_custom_code_cExwmp",
+    "section_rich_text_3TGbC9",
     "1715846453e8f696ec"
   ]
 }
