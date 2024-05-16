@@ -157,7 +157,7 @@ if (flickityEnabledContainers.length > 0) {
         }
       });
     }, {
-      threshold: [0.01] // Specify the threshold for triggering the callback
+      threshold: [1] // Specify the threshold for triggering the callback
     });
 
     // Observe each slide item within the slide container
