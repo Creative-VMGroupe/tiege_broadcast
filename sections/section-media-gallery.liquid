@@ -48,7 +48,7 @@
   }
   #highlights--{{ unique }}  brick__block__text-custom {
     {% if bg_color != blank and bg_color != 'rgba(0,0,0,0)' %}
-      --bg: {{ bg_color }};
+      --bg: {{ bg_color }} !important;
       {% else %}
       --bg: transparent;
     {% endif %}
