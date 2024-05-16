@@ -26857,6 +26857,13 @@ width: 50% !important;
 }  
 }
 /*Collection List*/
+.collection-block__wrapper .product-item {
+  background: transparent;
+}
+.collection-block__wrapper .product-information {
+  background: transparent;
+}
+
 .collection-block__wrapper .index-products {
   padding-left: var(--outer)!important;
 padding-right: var(--outer)!important;
