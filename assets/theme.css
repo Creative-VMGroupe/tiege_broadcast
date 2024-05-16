@@ -26583,6 +26583,13 @@ body.has-line-design.grid-compact
   object-fit: cover;
 }
 /*Mobile*/
+.drawer__menu {
+  scrollbar-width: none;
+}
+/* Ensure smooth scrolling behavior */
+.drawer__menu::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
 .header__dropdown .hero__content p {
   margin:0;
 }
