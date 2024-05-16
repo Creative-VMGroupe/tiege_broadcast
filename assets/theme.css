@@ -14403,6 +14403,8 @@ script,
 .recent__container {
   color: var(--text);
   background-color: var(--bg);
+  padding-right: var(--outer);
+  padding-left: var(--outer);
 }
 
 .recent__content a {
