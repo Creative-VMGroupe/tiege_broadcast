@@ -341,13 +341,47 @@
         "padding_bottom": 60
       }
     },
+    "section_rich_text_arMdib": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_WtaebE": {
+          "type": "heading",
+          "settings": {
+            "title": "Seen in the Wild",
+            "text_font": 40,
+            "padding_bottom": 16
+          }
+        },
+        "text_JzYYHP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>@tiegehanley<\/p>",
+            "text_font": 16,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_WtaebE",
+        "text_JzYYHP"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-center",
+        "bg_color": "#f7f7f7",
+        "color": "",
+        "padding_top": 100,
+        "padding_bottom": 80
+      }
+    },
     "1713432863191d0546": {
       "type": "apps",
       "blocks": {
         "instafeed_app_block_q33AYf": {
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "title": "@tiegehanley",
+            "title": "",
             "title_color": "",
             "alignment": "center",
             "html_area": ""
@@ -358,8 +392,7 @@
         "instafeed_app_block_q33AYf"
       ],
       "custom_css": [
-        "#insta-feed {background-color: #f7f7f7; padding-top: 60px;}",
-        "#insta-feed h2 {margin-top: 0 !important;}"
+
       ],
       "settings": {
         "include_margins": false
@@ -370,6 +403,7 @@
     "main",
     "section_rich_text_XMUxA8",
     "faq-third",
+    "section_rich_text_arMdib",
     "1713432863191d0546"
   ]
 }
