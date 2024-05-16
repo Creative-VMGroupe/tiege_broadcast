@@ -47,10 +47,11 @@
 -%}
 
 <div
-  class="product__slide{% unless featured_media == media %} media--hidden{% else %} media--active{% endunless %}"
+  class="flickity_item_container-custom product__slide{% unless featured_media == media %} media--hidden{% else %} media--active{% endunless %}"
   data-image-id="{{ media.id }}"
   data-media-id="{{ sectionkey }}-{{ media.id }}"
   data-type="{{ media.media_type }}"
+  data-slide-position="{{ loop_index  }}"
   {% if media.media_type == 'video' or media.media_type == 'external_video' %}
     data-video
     data-video-id="{{ media.id }}"
