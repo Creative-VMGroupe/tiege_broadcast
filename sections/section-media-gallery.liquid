@@ -252,7 +252,7 @@
   
     <div class='flickity-page-dots flickity-page-dots-custom'>
   {%- for slide in (1..totalSlides) -%}
-      <button class='flickity-page-dot'></button>
+      <button class='flickity-page-dot' data-slide-position="{{ slide }}"></button>
   {%- endfor -%}
   
     </div>
