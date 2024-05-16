@@ -131,6 +131,7 @@ if (flickityEnabledContainers.length > 0) {
           entry.target.classList.add("slide-is-visible");
           // Get the data-slide-position attribute value
           const slidePosition = entry.target.getAttribute("data-slide-position");
+          console.log(slidePosition)
           if (slidePosition) {
             // Find the button with the matching data-dot-position attribute
             const button = dotContainer.querySelector(`.flickity-page-dot[data-dot-position="${slidePosition}"]`);
