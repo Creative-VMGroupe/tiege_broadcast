@@ -112,38 +112,60 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 //Sliders Custom
-// Check if any .flickity__container-custom element exists
-const slideContainers = document.querySelectorAll(".flickity__container-custom");
-if (slideContainers.length > 0) {
-  
-  // Create a new Intersection Observer
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-      console.log(entry)
-      if (entry.intersectionRatio >= 0.95) {
-        // If at least 95% of the slide is in the viewport, add the 'is-visible' class
-        entry.target.classList.add("slide-is-visible");
-      } else {
-        // If the slide is not in the viewport, remove the 'is-visible' class
-        entry.target.classList.remove("slide-is-visible");
-      }
-    });
-  }, {
-    threshold: [0.95] // Specify the threshold for triggering the callback
-  });
+// Check if any .flickity-enabled-custom element exists
+const flickityEnabledContainers = document.querySelectorAll(".flickity-enabled-custom");
+if (flickityEnabledContainers.length > 0) {
+  flickityEnabledContainers.forEach((container) => {
+    // Find the .flickity__container-custom element within the current container
+    const slideContainer = container.querySelector(".flickity__container-custom");
+    if (!slideContainer) return; // Skip if the slide container is not found
+    // Find the .flickity-page-dots-custom element within the current container
+    const dotContainer = container.querySelector(".flickity-page-dots-custom");
+    if (!dotContainer) return; // Skip if the dot container is not found
 
-  // Observe each slide container
-  slideContainers.forEach((slide) => {
-    
-    // Select all .flickity_item_container-custom elements within the current slide container
-    const slideItems = slide.querySelectorAll('.flickity_item_container-custom');
-    // Observe each slide item
+    // Create a new Intersection Observer
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.intersectionRatio >= 0.95) {
+          // If at least 95% of the slide is in the viewport, add the 'slide-is-visible' class
+          entry.target.classList.add("slide-is-visible");
+          // Get the data-slide-position attribute value
+          const slidePosition = entry.target.getAttribute("data-slide-position");
+          if (slidePosition) {
+            // Find the button with the matching data-dot-position attribute
+            const button = dotContainer.querySelector(`.flickity-page-dot[data-dot-position="${slidePosition}"]`);
+            if (button) {
+              // Add the 'flickity-dot-styling' class to the button
+              button.classList.add("flickity-dot-styling");
+            }
+          }
+        } else {
+          // If the slide is not in the viewport, remove the 'slide-is-visible' class
+          entry.target.classList.remove("slide-is-visible");
+          // Get the data-slide-position attribute value
+          const slidePosition = entry.target.getAttribute("data-slide-position");
+          if (slidePosition) {
+            // Find the button with the matching data-dot-position attribute
+            const button = dotContainer.querySelector(`.flickity-page-dot[data-dot-position="${slidePosition}"]`);
+            if (button) {
+              // Remove the 'flickity-dot-styling' class from the button
+              button.classList.remove("flickity-dot-styling");
+            }
+          }
+        }
+      });
+    }, {
+      threshold: [0.95] // Specify the threshold for triggering the callback
+    });
+
+    // Observe each slide item within the slide container
+    const slideItems = slideContainer.querySelectorAll('.flickity_item_container-custom');
     slideItems.forEach((item) => {
-   
       observer.observe(item);
     });
   });
 }
+
 
 });
 
