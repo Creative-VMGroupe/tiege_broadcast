@@ -264,7 +264,7 @@
           "type": "heading",
           "settings": {
             "title": "What Does It Cost?",
-            "text_font": 40,
+            "text_font": 24,
             "padding_bottom": 16
           }
         },
