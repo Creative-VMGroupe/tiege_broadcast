@@ -504,7 +504,7 @@
         "bg_color": "#f7f7f7",
         "color": "",
         "padding_top": 100,
-        "padding_bottom": 0
+        "padding_bottom": 20
       }
     },
     "1713201777b2f26263": {
@@ -524,7 +524,7 @@
         "instafeed_app_block_DX8XhW"
       ],
       "custom_css": [
-        "#insta-feed {padding-top: 20px !important; background: #f7f7f7;}"
+
       ],
       "settings": {
         "include_margins": false
