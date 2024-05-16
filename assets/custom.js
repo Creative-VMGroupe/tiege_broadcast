@@ -123,7 +123,7 @@ if (flickityEnabledContainers.length > 0) {
     // Find the .flickity-page-dots-custom element within the current container
     const dotContainer = container.querySelector(".flickity-page-dots-custom");
     if (!dotContainer) return; // Skip if the dot container is not found
-
+  console.log(dotContainer)
     // Create a new Intersection Observer
     const observer = new IntersectionObserver((entries, observer) => {
       console.log(entry)
