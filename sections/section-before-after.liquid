@@ -40,7 +40,7 @@
   .section__title {
     color: var(--sub-color)
   }
-  #SectionBeforeAfter--{{ section.id }} .section-before-after {
+  #SectionBeforeAfter--{{ section.id }}.section-before-after {
         {%- unless bg_color == 'rgba(0,0,0,0)' or bg_color == blank -%}
       --bg: {{ bg_color }};
     {%- endunless -%}
