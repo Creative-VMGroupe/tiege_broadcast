@@ -44,7 +44,7 @@
       "settings": {
         "height": "screen-height-one-half",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/tiege_sustanability_del.jpg",
+        "image_1": "shopify:\/\/shop_images\/AdobeStock_431439937.jpg",
         "link": "",
         "mobile_height": "screen-height-three-quarters--mobile",
         "flex_align_desktop": "align--bottom-left-desktop",
@@ -93,27 +93,10 @@
       "settings": {
         "width": "wrapper--narrow",
         "align_text": "text-center",
-        "bg_color": "",
+        "bg_color": "#f7f7f7",
         "color": "",
         "padding_top": 80,
         "padding_bottom": 80
-      }
-    },
-    "section_hero_TbDK6d": {
-      "type": "section-hero",
-      "settings": {
-        "height": "screen-height-one-half",
-        "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/rivage-aI4RJ--Mw4I-unsplash.jpg",
-        "link": "",
-        "mobile_height": "screen-height-one-half--mobile",
-        "flex_align_desktop": "align--middle-center-desktop",
-        "flex_align_mobile": "align--middle-center-mobile",
-        "overlay_opacity": 0,
-        "overlay_color": "#000000",
-        "show_overlay_text": false,
-        "bg_color": "",
-        "color": "#ffffff"
       }
     },
     "section_double_static_vm_QMXVUx": {
@@ -146,7 +129,7 @@
         "height": "screen-height-one-half",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/AdobeStock_431439937.jpg",
+        "image_1": "shopify:\/\/shop_images\/rivage-aI4RJ--Mw4I-unsplash.jpg",
         "image_width": "one-half",
         "text_alignment": "text-center",
         "reverse_blocks": false,
@@ -186,7 +169,7 @@
         "height": "screen-height-one-half",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/black_square_del.webp",
+        "image_1": "shopify:\/\/shop_images\/plant.jpg",
         "image_width": "one-half",
         "text_alignment": "text-center",
         "reverse_blocks": false,
@@ -404,7 +387,6 @@
     "main",
     "section_hero_KpG8aH",
     "section_rich_text_TXLJKC",
-    "section_hero_TbDK6d",
     "section_double_static_vm_QMXVUx",
     "section_double_static_vm_acAqbX",
     "section_rich_text_7KXRxY",
