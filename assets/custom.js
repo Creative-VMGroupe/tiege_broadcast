@@ -174,10 +174,11 @@ if (flickityEnabledContainers.length > 0) {
         const slidePosition = button.getAttribute("data-dot-position");
         if (slidePosition) {
           const slide = slideContainer.querySelector(`.flickity_item_container-custom[data-slide-position="${slidePosition}"]`);
-          console.log(slide)
+          
           if (slide) {
             // Scroll to the corresponding slide within this container
             const newPosition = slide.offsetLeft;
+            console.log(newPosition)
             slideContainer.scroll({
               left: newPosition,
               behavior: 'smooth' // Smooth scrolling effect
