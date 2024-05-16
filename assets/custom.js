@@ -111,7 +111,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
-//Sliders Custom
 // Check if any .flickity-enabled-custom element exists
 const flickityEnabledContainers = document.querySelectorAll(".flickity-enabled-custom");
 if (flickityEnabledContainers.length > 0) {
@@ -127,21 +126,35 @@ if (flickityEnabledContainers.length > 0) {
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry) => {
         if (entry.intersectionRatio === 1) {
-          // If the entry is fully in the viewport, add the 'flickity-dot-styling' class to the corresponding button
-          const button = dotContainer.querySelector(`[data-dot-position="${entry.target.dataset.slidePosition}"]`);
-          if (button) {
-            button.classList.add("flickity-dot-styling");
+          // If the entire slide is in the viewport, add the 'slide-is-visible' class
+          entry.target.classList.add("slide-is-visible");
+          // Get the data-slide-position attribute value
+          const slidePosition = entry.target.getAttribute("data-slide-position");
+          if (slidePosition) {
+            // Find the button with the matching data-dot-position attribute
+            const button = dotContainer.querySelector(`.flickity-page-dot[data-dot-position="${slidePosition}"]`);
+            if (button) {
+              // Add the 'flickity-dot-styling' class to the button
+              button.classList.add("flickity-dot-styling");
+            }
           }
         } else {
-          // If the entry is not fully in the viewport, remove the 'flickity-dot-styling' class from the corresponding button
-          const button = dotContainer.querySelector(`[data-dot-position="${entry.target.dataset.slidePosition}"]`);
-          if (button) {
-            button.classList.remove("flickity-dot-styling");
+          // If the slide is not fully in the viewport, remove the 'slide-is-visible' class
+          entry.target.classList.remove("slide-is-visible");
+          // Get the data-slide-position attribute value
+          const slidePosition = entry.target.getAttribute("data-slide-position");
+          if (slidePosition) {
+            // Find the button with the matching data-dot-position attribute
+            const button = dotContainer.querySelector(`.flickity-page-dot[data-dot-position="${slidePosition}"]`);
+            if (button) {
+              // Remove the 'flickity-dot-styling' class from the button
+              button.classList.remove("flickity-dot-styling");
+            }
           }
         }
       });
     }, {
-      threshold: [1] // Specify the threshold for triggering the callback
+      threshold: [1] // Trigger the callback when the entire slide is visible
     });
 
     // Observe each slide item within the slide container
