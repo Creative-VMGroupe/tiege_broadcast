@@ -26684,6 +26684,10 @@ flex: 1;
   }
 }
 /*Image with Text*/
+.hero__button-group-custom div.hero__button .btn{
+    width: 270px;
+  padding: var(--btn-top) 22px;
+}
 .brick__block__text.plr-custom .hero__button-group {
   /* flex-flow: row; */
   flex-flow: column;
