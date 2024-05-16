@@ -112,7 +112,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 //Sliders Custom
-  if (window.matchMedia("(max-width: 749px)").matches) {
 // Check if any .flickity-enabled-custom element exists
 const flickityEnabledContainers = document.querySelectorAll(".flickity-enabled-custom");
 if (flickityEnabledContainers.length > 0) {
@@ -186,7 +185,6 @@ if (flickityEnabledContainers.length > 0) {
       });
     });
   });
- }
 }
 
 
