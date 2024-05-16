@@ -26782,7 +26782,7 @@ width: 50% !important;
   
 }
 .flickity-enabled-custom {}
-.flickity-page-dot .flickity-dot-styling {
+.flickity-page-dot.flickity-dot-styling {
     opacity: 1;
     background: var(--BTN-SECONDARY-BG-COLOR);
     border-color: var(--BTN-SECONDARY-BG-COLOR);
