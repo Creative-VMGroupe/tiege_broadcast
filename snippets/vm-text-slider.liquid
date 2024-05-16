@@ -309,16 +309,18 @@
                 </collapsible-elements>
                 
               {%- endif -%}
+              
+
+              
+            </div>
                     {%- if totalSlides >= 2 -%}
-  
     <div class='flickity-page-dots flickity-page-dots-custom'>
   {%- for slide in (1..totalSlides) -%}
       <button class='flickity-page-dot' data-dot-position="{{ slide }}"></button>
   {%- endfor -%}
-  
     </div>
 {%- endif -%}
-            </div>
+            
           </div>
         </div>
       </div>
