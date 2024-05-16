@@ -131,6 +131,7 @@ if (flickityEnabledContainers.length > 0) {
         if (entry.isIntersectingtio === true) {
           // If the entire slide is in the viewport, add the 'slide-is-visible' class
           entry.target.classList.add("slide-is-visible");
+          console.log(entry)
           // Get the data-slide-position attribute value
           const slidePosition = entry.target.getAttribute("data-slide-position");
           if (slidePosition) {
