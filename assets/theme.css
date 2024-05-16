@@ -26004,9 +26004,7 @@ time, .article__author {
   margin-bottom: calc(80px * .6) !important;
   font-size: 40px !important;
 }
-#insta-feed {
- padding-top: calc(80px * .6) !important; 
-}
+
 @media(min-width: 750px) {
  #insta-feed h2 {
   /* margin: 40px 0 !important; */
