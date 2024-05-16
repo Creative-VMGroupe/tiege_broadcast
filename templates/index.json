@@ -78,9 +78,7 @@
         "buttons_YGTL3b"
       ],
       "custom_css": [
-        ".hero__content {height: 100%;}",
-        ".hero__button {margin-bottom: 0;}",
-        ".hero__content {justify-content: center;}"
+
       ],
       "settings": {
         "layout": "",
