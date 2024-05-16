@@ -153,7 +153,7 @@
             {%- endif -%}
 
               {%- for media in product.media -%}
-                {%- render 'media', media: media, featured_media: featured_media, enable_video_looping: enable_video_looping, sectionkey: unique, image_width: image_width, cover: true, media_aspect_ratio: 1 -%}
+                {%- render 'media', media: media, featured_media: featured_media, enable_video_looping: enable_video_looping, sectionkey: unique, image_width: image_width, cover: true, media_aspect_ratio: 1, loop_index: forloop.index -%}
               {%- endfor -%}
 
             {%- if section.settings.enable_zoom -%}
