@@ -26786,8 +26786,7 @@ width: 50% !important;
   width: 98%;
 }
 /*Slider Customization*/
-.text-slider-custom .
-.flickity-page-dots-custom {
+.text-slider-custom .flickity-page-dots-custom {
   display: none;
 }
 @media(max-width: 749px) {
