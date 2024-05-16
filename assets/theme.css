@@ -26861,3 +26861,7 @@ width: 50% !important;
   padding-left: var(--outer)!important;
 padding-right: var(--outer)!important;
 }
+
+.collection-block__wrapper .index-products .grid {
+grid-column-gap: var(--gap);
+}
