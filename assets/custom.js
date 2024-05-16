@@ -139,7 +139,7 @@ if (slideContainers.length > 0) {
     const slideItems = slide.querySelectorAll('.flickity_item_container-custom');
     // Observe each slide item
     slideItems.forEach((item) => {
-    console.log(item')
+    console.log(item);
       observer.observe(item);
     });
   });
