@@ -167,6 +167,23 @@ if (flickityEnabledContainers.length > 0) {
     console.log(item)
       observer.observe(item);
     });
+
+    // Add event listener to each button
+const buttons = dotContainer.querySelectorAll('.flickity-page-dot');
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const slidePosition = button.getAttribute("data-dot-position");
+    if (slidePosition) {
+      const slide = slideContainer.querySelector(`.flickity_item_container-custom[data-slide-position="${slidePosition}"]`);
+      if (slide) {
+        // Trigger slide transition to the selected slide
+        // Example: Call your slide transition function here
+        console.log(`Slide to position ${slidePosition}`);
+      }
+    }
+  });
+});
+
   });
 }
 
