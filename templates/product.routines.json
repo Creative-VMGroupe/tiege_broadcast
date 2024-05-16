@@ -113,6 +113,8 @@
           "type": "complementary-products",
           "settings": {
             "level-guide_link": "#open-modal",
+            "comp-heading": "Want to level up?",
+            "single-comp-heading": "You May Also Like A lot",
             "complementary_limit": 3,
             "bg_color": "",
             "padding_bottom": 16,
