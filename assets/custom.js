@@ -127,7 +127,7 @@ if (flickityEnabledContainers.length > 0) {
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry) => {
         console.log(entry)
-        if (entry.intersectionRatio >= .1) {
+        if (entry.intersectionRatio >= .5) {
           // If the entire slide is in the viewport, add the 'slide-is-visible' class
           entry.target.classList.add("slide-is-visible");
           
@@ -157,7 +157,7 @@ if (flickityEnabledContainers.length > 0) {
         }
       });
     }, {
-      threshold: [.1] // Trigger the callback
+      threshold: [.5] // Trigger the callback
     });
 
     // Observe each slide item within the slide container
