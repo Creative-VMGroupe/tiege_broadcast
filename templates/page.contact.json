@@ -229,7 +229,7 @@
       "settings": {
         "width": "wrapper",
         "align_text": "text-center",
-        "bg_color": "",
+        "bg_color": "#f7f7f7",
         "color": "",
         "padding_top": 100,
         "padding_bottom": 80
