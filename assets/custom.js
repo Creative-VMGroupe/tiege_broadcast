@@ -135,6 +135,7 @@ if (flickityEnabledContainers.length > 0) {
           if (slidePosition) {
             // Find the button with the matching data-dot-position attribute
             const button = dotContainer.querySelector(`.flickity-page-dot[data-dot-position="${slidePosition}"]`);
+            console.log(button)
             if (button) {
               // Add the 'flickity-dot-styling' class to the button
               button.classList.add("flickity-dot-styling");
