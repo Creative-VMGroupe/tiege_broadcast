@@ -39,7 +39,7 @@
           "settings": {
             "aspect_ratio": 0.5,
             "featured_image": "shopify:\/\/shop_images\/Snapinsta.app_337156675_1554687731680146_2432232004487884860_n_1080.jpg",
-            "position": 3,
+            "position": 5,
             "featured_heading": "Level Guide",
             "heading_size": 40,
             "featured_text": "",
@@ -73,7 +73,7 @@
             "show_arrow": false,
             "featured_color_text": "#ffffff",
             "featured_color_overlay": "#222222",
-            "featured_overlay_opacity": 10
+            "featured_overlay_opacity": 30
           }
         }
       },
