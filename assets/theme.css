@@ -26786,6 +26786,7 @@ width: 50% !important;
   width: 98%;
 }
 /*Slider Customization*/
+.text-slider-custom .
 .flickity-page-dots-custom {
   display: none;
 }
@@ -26793,7 +26794,9 @@ width: 50% !important;
 .slide-is-visible {
   
 }
-.flickity-enabled-custom {}
+.text-slider-custom .flickity-page-dots-custom.flickity-page-dots {
+  bottom: 40px !important;
+}
 .flickity-page-dot.flickity-dot-styling {
     opacity: 1;
     background: var(--BTN-SECONDARY-BG-COLOR);
