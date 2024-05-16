@@ -31,7 +31,7 @@
         "text_3UMYgJ": {
           "type": "text",
           "settings": {
-            "description": "Tell your brand's story through images.",
+            "description": "Tiege for Tomorrow",
             "text_font": 16,
             "text_style": "font-body"
           }
@@ -62,7 +62,7 @@
         "heading_DjekAc": {
           "type": "heading",
           "settings": {
-            "title": "Tiege for Tomorrow",
+            "title": "Make a Difference",
             "text_font": 40,
             "padding_bottom": 16
           }
@@ -70,7 +70,7 @@
         "subheading_FWDe88": {
           "type": "subheading",
           "settings": {
-            "subheading": "Environmental Stewardship",
+            "subheading": "Tiege's Environmental Stewardship",
             "text_font": 16,
             "padding_bottom": 16
           }
@@ -146,7 +146,7 @@
         "height": "screen-height-one-half",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/black_square_del.webp",
+        "image_1": "shopify:\/\/shop_images\/AdobeStock_431439937.jpg",
         "image_width": "one-half",
         "text_alignment": "text-center",
         "reverse_blocks": false,
