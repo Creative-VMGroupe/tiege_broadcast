@@ -25365,6 +25365,9 @@ body.has-header-sticky .timeline {
 }
 
 @media screen and (max-width: 749px) {
+  .product-modal__container-custom {
+    padding: calc(var(--inner) * 1.5) 0;
+  }
   .prod-modal__container-custom {
     padding: 0;
   }
