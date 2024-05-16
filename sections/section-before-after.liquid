@@ -13,7 +13,9 @@
     assign button_style = button_style | append: ' btn--text-no-underline'
   endif
 -%}
-
+<script>
+  console.log({{ bg_color }})
+</script>
 {%- style -%}
   #SectionBeforeAfter--{{ section.id }} {
     --PT: {{ section.settings.padding_top }}px;
