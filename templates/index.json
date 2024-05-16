@@ -457,7 +457,7 @@
     "section_before_after_hzKE7H": {
       "type": "section-before-after",
       "custom_css": [
-        ".wrapper--full .compare__buttons {padding: 0;}"
+
       ],
       "settings": {
         "layout": "",
