@@ -170,6 +170,7 @@ if (flickityEnabledContainers.length > 0) {
     const buttons = dotContainer.querySelectorAll('.flickity-page-dot');
     buttons.forEach((button) => {
       button.addEventListener("click", () => {
+        console.log(button)
         const slidePosition = button.getAttribute("data-dot-position");
         if (slidePosition) {
           const slide = slideContainer.querySelector(`.flickity_item_container-custom[data-slide-position="${slidePosition}"]`);
