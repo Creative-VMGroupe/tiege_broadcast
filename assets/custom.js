@@ -111,6 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
+//Sliders Custom
 // Check if any .flickity-enabled-custom element exists
 const flickityEnabledContainers = document.querySelectorAll(".flickity-enabled-custom");
 if (flickityEnabledContainers.length > 0) {
@@ -125,21 +126,23 @@ if (flickityEnabledContainers.length > 0) {
     // Create a new Intersection Observer
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry) => {
-        if (entry.intersectionRatio === 1) {
-          // If the entire slide is in the viewport, add the 'slide-is-visible' class
+        if (entry.intersectionRatio >= 0.95) {
+          // If at least 95% of the slide is in the viewport, add the 'slide-is-visible' class
           entry.target.classList.add("slide-is-visible");
           // Get the data-slide-position attribute value
           const slidePosition = entry.target.getAttribute("data-slide-position");
+          console.log(slidePosition)
           if (slidePosition) {
             // Find the button with the matching data-dot-position attribute
             const button = dotContainer.querySelector(`.flickity-page-dot[data-dot-position="${slidePosition}"]`);
+            console.log(button)
             if (button) {
               // Add the 'flickity-dot-styling' class to the button
               button.classList.add("flickity-dot-styling");
             }
           }
         } else {
-          // If the slide is not fully in the viewport, remove the 'slide-is-visible' class
+          // If the slide is not in the viewport, remove the 'slide-is-visible' class
           entry.target.classList.remove("slide-is-visible");
           // Get the data-slide-position attribute value
           const slidePosition = entry.target.getAttribute("data-slide-position");
@@ -154,7 +157,7 @@ if (flickityEnabledContainers.length > 0) {
         }
       });
     }, {
-      threshold: [1] // Trigger the callback when the entire slide is visible
+      threshold: [0.95] // Specify the threshold for triggering the callback
     });
 
     // Observe each slide item within the slide container
@@ -164,7 +167,6 @@ if (flickityEnabledContainers.length > 0) {
     });
   });
 }
-
 
 
 });
