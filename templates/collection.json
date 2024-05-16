@@ -171,7 +171,7 @@
         "buttons_eEDTNk": {
           "type": "buttons",
           "settings": {
-            "button_text": "Get Started",
+            "button_text": "Take the Quiz",
             "button_url": "shopify:\/\/pages\/find-my-routine",
             "button_type": "btn--secondary",
             "button_size": "",
