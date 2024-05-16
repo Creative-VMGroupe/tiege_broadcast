@@ -319,7 +319,7 @@
       "settings": {
         "width": "wrapper--narrow",
         "align_text": "text-center",
-        "bg_color": "",
+        "bg_color": "#f7f7f7",
         "color": "",
         "padding_top": 80,
         "padding_bottom": 80
@@ -353,7 +353,7 @@
       "settings": {
         "width": "wrapper",
         "align_text": "text-center",
-        "bg_color": "#f7f7f7",
+        "bg_color": "#ffffff",
         "color": "",
         "padding_top": 100,
         "padding_bottom": 20
