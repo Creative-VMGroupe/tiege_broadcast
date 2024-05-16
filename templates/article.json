@@ -130,7 +130,7 @@
         "heading_position": "text-center",
         "heading_size": 40,
         "text_size": 16,
-        "color": "",
+        "color": "#42b029",
         "bg_color": "#c85c42",
         "layout_mobile": "slider",
         "padding_top": 0,
