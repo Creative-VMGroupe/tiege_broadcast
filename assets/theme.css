@@ -26865,3 +26865,6 @@ padding-right: var(--outer)!important;
 .collection-block__wrapper .index-products .grid {
 grid-column-gap: var(--gap);
 }
+.collection-block__wrapper .collection-block__products {
+  grid-column-gap: var(--gap);
+}
