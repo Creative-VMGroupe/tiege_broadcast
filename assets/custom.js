@@ -126,7 +126,7 @@ if (flickityEnabledContainers.length > 0) {
     // Create a new Intersection Observer
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry) => {
-        console.log(entry)
+        
         if (entry.intersectionRatio >= .5) {
           // If the entire slide is in the viewport, add the 'slide-is-visible' class
           entry.target.classList.add("slide-is-visible");
@@ -174,7 +174,7 @@ if (flickityEnabledContainers.length > 0) {
         const slidePosition = button.getAttribute("data-dot-position");
         if (slidePosition) {
           const slide = slideContainer.querySelector(`.flickity_item_container-custom[data-slide-position="${slidePosition}"]`);
-          
+          console.log(slide)
           if (slide) {
             // Scroll to the corresponding slide within this container
             const newPosition = slide.offsetLeft;
