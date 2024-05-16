@@ -26488,7 +26488,7 @@ body.has-line-design.grid-compact
 .highlights__item-inner {
   background-color: var(--bg);
 }
-.brick__block__text-custom,.brick__block__text-custom .hero__content, {
+.brick__block__text-custom,.brick__block__text-custom .hero__content {
   background-color: var(--bg) !important;
 }
 .text-slider__container {
