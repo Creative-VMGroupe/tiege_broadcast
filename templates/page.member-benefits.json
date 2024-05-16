@@ -100,8 +100,8 @@
             "icon_size": 50,
             "icon_color": "#545454",
             "image": "shopify:\/\/shop_images\/Group_1825.svg",
-            "title": "SAVE 20%",
-            "heading_size": 16,
+            "title": "Save 20%",
+            "heading_size": 14,
             "text": "<p>Members always save 20% on every purchase with Autoship<\/p>",
             "text_size": 16
           }
@@ -113,8 +113,8 @@
             "icon_size": 50,
             "icon_color": "#545454",
             "image": "shopify:\/\/shop_images\/Group_1823.svg",
-            "title": "GREAT GIFTS",
-            "heading_size": 16,
+            "title": "Great Gifts",
+            "heading_size": 14,
             "text": "<p>You are guaranteed 7 gifts in your first year<\/p>",
             "text_size": 16
           }
@@ -126,8 +126,8 @@
             "icon_size": 50,
             "icon_color": "#545454",
             "image": "shopify:\/\/shop_images\/Group_1824.svg",
-            "title": "EXCLUSIVE OFFERS",
-            "heading_size": 16,
+            "title": "Exclusive Gifts",
+            "heading_size": 14,
             "text": "<p>Early access to products, gear, SWAG, and bundles<\/p>",
             "text_size": 16
           }
