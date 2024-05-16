@@ -128,7 +128,7 @@ if (flickityEnabledContainers.length > 0) {
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry) => {
       console.log(entry)
-        if (entry.isIntersecting === true) {
+        if (entry.isIntersectingt === true) {
           // If the entire slide is in the viewport, add the 'slide-is-visible' class
           entry.target.classList.add("slide-is-visible");
           console.log(entry)
@@ -167,23 +167,6 @@ if (flickityEnabledContainers.length > 0) {
     console.log(item)
       observer.observe(item);
     });
-
-    // Add event listener to each button
-const buttons = dotContainer.querySelectorAll('.flickity-page-dot');
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const slidePosition = button.getAttribute("data-dot-position");
-    if (slidePosition) {
-      const slide = slideContainer.querySelector(`.flickity_item_container-custom[data-slide-position="${slidePosition}"]`);
-      if (slide) {
-        // Trigger slide transition to the selected slide
-        // Example: Call your slide transition function here
-        console.log(`Slide to position ${slidePosition}`);
-      }
-    }
-  });
-});
-
   });
 }
 
