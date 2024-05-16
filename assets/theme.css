@@ -26781,8 +26781,8 @@ width: 50% !important;
 .slide-is-visible {
   
 }
-.flickity__container-custom > [data-slide-position="1"].slide-is-visible ~ * [data-dot-position="1"],
-.flickity__container-custom > [data-slide-position="2"].slide-is-visible ~ * [data-dot-position="2"],
+.flickity__container-custom > [data-slide-position="1"].slide-is-visible ~ .flickity-page-dots-custom [data-dot-position="1"],
+.flickity__container-custom > [data-slide-position="2"].slide-is-visible ~ .flickity-page-dots-custom [data-dot-position="2"],
 .flickity__container-custom > [data-slide-position="3"].slide-is-visible ~ * [data-dot-position="3"],
 .flickity__container-custom > [data-slide-position="4"].slide-is-visible ~ * [data-dot-position="4"],
 .flickity__container-custom > [data-slide-position="5"].slide-is-visible ~ * [data-dot-position="5"],
