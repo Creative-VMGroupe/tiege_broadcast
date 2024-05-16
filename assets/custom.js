@@ -178,7 +178,7 @@ if (flickityEnabledContainers.length > 0) {
           if (slide) {
             // Scroll to the corresponding slide within this container
             const newPosition = slide.offsetLeft;
-
+console.log(newPosition)
             slideContainer.scroll({
               left: newPosition,
               behavior: 'smooth' // Smooth scrolling effect
