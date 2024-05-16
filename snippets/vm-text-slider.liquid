@@ -20,6 +20,8 @@
   assign text_color = section.settings.color
   assign sub_color = section.settings.sub_color
 
+  assign totalSlides = section.blocks.size
+  
   if text_slide_blocks.size > 1
     assign enable_text_slider = true
 
