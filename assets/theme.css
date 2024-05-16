@@ -26870,10 +26870,10 @@ padding-right: var(--outer)!important;
 }
 
 .collection-block__wrapper .index-products .grid {
-grid-column-gap: var(--gap);
+grid-column-gap: 30px 10px;
 }
 .collection-block__wrapper .collection-block__products {
-  grid-column-gap: var(--gap);
+  grid-column-gap: 30px 10px;
     padding-left: var(--outer)!important;
 padding-right: var(--outer)!important;
 }
