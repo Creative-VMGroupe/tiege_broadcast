@@ -26454,11 +26454,11 @@ body.has-line-design.grid-compact
 .index-image-text .wide-image {
   height: 100%;
 }
-@media(min-width: 1800px) {
+/* @media(min-width: 1800px) {
  .hero__content:has(.hero__media) {
   padding-bottom: 65px;
 } 
-}
+} */
 /*Highlights*/
 .highlights-compact__container-vm {
   padding: 0;
