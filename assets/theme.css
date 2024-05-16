@@ -26442,10 +26442,11 @@ body.has-line-design.grid-compact
   height: 100%;
   justify-content: center;
 }
+/* Used for the video on HP which had padding on top so it looked unbalanced 
 .hero__content:has(.hero__media) {
   padding-bottom: 50px;
   height: 100%;
-}
+} */
 
 .index-image-text .frame {
   height: 100%;
