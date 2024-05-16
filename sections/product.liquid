@@ -130,10 +130,10 @@
 
   <div class="product__wrapper {{ product_wrapper_modifier }} product__wrapper-custom" data-product>
     <div class="product__wrapper__inner">
-      <div class="product__page">
+      <div class="flickity-enabled-custom product__page">
 
         <product-images
-          class="{{ product_images_classlist }}"
+          class="flickity__container-custom {{ product_images_classlist }}"
           data-active-media="{{ section.id }}-{{ featured_media.id }}"
           {% if enable_thumbs %}data-fader-desktop{% endif %}
           {% if enable_thumbs_mobile %}data-fader-mobile{% endif %}
