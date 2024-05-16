@@ -26878,5 +26878,10 @@ grid-column-gap: 30px 10px;
   padding-right: var(--outer)!important;
 }
 @media(max-width: 749px) {
-  
+ .collection-block__wrapper .index-products .grid {
+grid-column-gap: var(--gap);
+}
+.collection-block__wrapper .collection-block__products {
+  grid-column-gap: var(--gap);
+} 
 }
