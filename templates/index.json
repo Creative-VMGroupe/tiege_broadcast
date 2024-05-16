@@ -78,7 +78,7 @@
         "buttons_YGTL3b"
       ],
       "custom_css": [
-
+        ".hero__content:has(.hero__media) {padding-bottom: 50px; height: 100%;}"
       ],
       "settings": {
         "layout": "",
