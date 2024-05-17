@@ -7,14 +7,14 @@
         "show_description": true,
         "flex_align": "align--bottom-left",
         "bg_color": "",
-        "color": "#ffffff",
+        "color": "#000000",
         "show_image": true,
         "banner_layout": "overlay",
         "height": "screen-height-one-third",
         "mobile_height": "two-fifty-height-hero--mobile",
-        "overlay_opacity": 0,
-        "overlay_color": "#000000",
-        "show_overlay_text": false,
+        "overlay_opacity": 55,
+        "overlay_color": "#ffffff",
+        "show_overlay_text": true,
         "padding_top": 0,
         "padding_bottom": 0
       }
