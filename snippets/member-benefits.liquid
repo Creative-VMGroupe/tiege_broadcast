@@ -34,6 +34,10 @@ assign icon_sizes = icon_width | append: 'px'
 assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
 %}
 
+{%- capture icon_style -%}
+     --icon-size: {{ icon_size }}px;
+{%- endcapture -%}
+
 <p class="heading-size-{{ block.pop-heading_size }} member-benefits__text">{{ block.pop-heading }}</p>
 {% comment %}
     Renders Icons: Each Div checks if img is present and renders
@@ -46,12 +50,7 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
 
     <div class="member-icon_container icon__animated{% if image != blank %} icon__animated--image{% endif %}">
 
-    {% liquid
 
-    %}
-        {%- capture icon_style -%}
-           --icon-size: {{ icon_size }}px;
-        {%- endcapture -%}
     {%- if image_1 != blank -%}
                 <div class="grid-item"
                   {{ block_style }}
@@ -93,12 +92,32 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
 <div class="grid-membership_box">
 <div class="member-icon_container icon__animated{% if image != blank %} icon__animated--image{% endif %}">
 
-    {% liquid
-    if image_2 != blank
-
-    render 'image' image: image_2, width: icon_width_retina, sizes: icon_sizes, widths: icon_widths, loading: loading, icons: true
-    endif
-    %}
+    
+    {% if image_2 != blank %}
+                <div class="grid-item"
+                  {{ block_style }}
+                  {{ block.shopify_attributes }}
+                >
+                  <div class="column__inner"
+                    data-aos="hero"
+                    data-aos-anchor="{{ animation_anchor }}"
+                    data-aos-order="{{ animation_order }}">
+                    <div class="column__icon {{ block.settings.icon_alignment | default: section.settings.icon_alignment }}" style="{{ icon_style }}">
+                      <div class="icon__animated{% if image_2 != blank %} icon__animated--image{% endif %}">
+                        {%- liquid
+                          if image_1
+                            render 'image' image: image_2, width: icon_width_retina, sizes: icon_sizes, widths: icon_widths, loading: loading
+                          else
+                            render 'animated-icon', filename: block.settings.icon_name
+                          endif
+                        -%}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+    {% endif %}
+    
     </div>
 {% comment %}
     Subheading
@@ -115,12 +134,30 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
 {% endcomment %}
 <div class="grid-membership_box">
 <div class="member-icon_container icon__animated{% if image != blank %} icon__animated--image{% endif %}">
-    {% liquid
-    if image_3 != blank
-
-    render 'image' image: image_3, width: icon_width_retina, sizes: icon_sizes, widths: icon_widths, loading: loading, icons: true
-    endif
-    %}
+    {% if image_3 != blank %}
+                <div class="grid-item"
+                  {{ block_style }}
+                  {{ block.shopify_attributes }}
+                >
+                  <div class="column__inner"
+                    data-aos="hero"
+                    data-aos-anchor="{{ animation_anchor }}"
+                    data-aos-order="{{ animation_order }}">
+                    <div class="column__icon {{ block.settings.icon_alignment | default: section.settings.icon_alignment }}" style="{{ icon_style }}">
+                      <div class="icon__animated{% if image_3 != blank %} icon__animated--image{% endif %}">
+                        {%- liquid
+                          if image_1
+                            render 'image' image: image_3, width: icon_width_retina, sizes: icon_sizes, widths: icon_widths, loading: loading
+                          else
+                            render 'animated-icon', filename: block.settings.icon_name
+                          endif
+                        -%}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+    {% endif %}
     </div>
     {% comment %}
     Subheading

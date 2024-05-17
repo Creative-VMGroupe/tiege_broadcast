@@ -55,7 +55,8 @@
             "text": "<p>Additonal information about the product.<\/p>",
             "page": "",
             "icon_name": "icon-trophy",
-            "icon_size": 20,
+            "icon_size": 40,
+            "icon_alignment": "icon--top",
             "icon_color": "#545454",
             "padding_bottom": 16
           }
