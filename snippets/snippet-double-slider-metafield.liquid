@@ -141,8 +141,10 @@
 
 {%- capture section_images -%}
                 {%- if video -%}
+                <div class="brick__block brick__block--images{{ figure_width_class }} {%- if video != blank -%}media-slider__block-custom{%- endif -%}">
                   {%- render 'video-block-vm' video: video, desktop_height: desktop_height, mobile_height: mobile_height -%}
-              {%- elsif mage_1 != blank -%}
+                 </div>
+              {%- elsif image_1 != blank -%}
     <div class="brick__block__image wide-image test1"
       {% unless enable_slider %}
         data-slide="1"
