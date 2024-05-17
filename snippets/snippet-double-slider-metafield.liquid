@@ -147,9 +147,8 @@
         data-slide-index="1"
       {% endunless %}
       >
-      <div class="brick__block brick__block--images{{ figure_width_class }} {%- if video != blank -%}media-slider__block-custom{%- endif -%}">
       {%- render 'video-block-vm' video: video, desktop_height: desktop_height, mobile_height: mobile_height -%}
-      </div>
+      
     </div>
 
               {%- elsif image_1 != blank -%}
