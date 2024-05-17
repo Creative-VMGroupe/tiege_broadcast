@@ -182,7 +182,8 @@
             "button_size": "",
             "button_style": "btn--text",
             "show_arrow": false,
-            "image": "{{ product.metafields.custom.proof_image_1.value }}"
+            "image": "{{ product.metafields.custom.proof_image_1.value }}",
+            "video": "{{ product.metafields.custom.proof_image_1.value }}"
           }
         },
         "text_slide_gqyf6D": {
