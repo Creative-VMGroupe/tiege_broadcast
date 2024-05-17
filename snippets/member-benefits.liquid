@@ -50,15 +50,9 @@ assign icon_size = block.settings.icon_size
     {% liquid
 
     %}
-                            {%- capture icon_style -%}
-                  --icon-size: {{ icon_size }}px;
-
-                  {%- if title != blank -%}
-                    --icon-line-height: calc(1.2 * var(--font-{{ block.settings.heading_size }}) * var(--FONT-ADJUST-HEADING));
-                  {%- elsif text != blank-%}
-                    --icon-line-height: calc(1.5 * var(--font-{{ block.settings.text_size }}) * var(--FONT-ADJUST-BODY));
-                  {%- endif -%}
-                {%- endcapture -%}
+        {%- capture icon_style -%}
+           --icon-size: {{ icon_size }}px;
+        {%- endcapture -%}
     {%- if image_1 != blank -%}
                 <div class="grid-item"
                   {{ block_style }}
