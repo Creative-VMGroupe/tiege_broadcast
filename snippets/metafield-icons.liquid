@@ -15,6 +15,7 @@
   {% if product.metafields.custom.icon_benefits_1 != blank %}
     <img src="{{ product.metafields.custom.icon_benefits_1 | file_url }}" alt="Just text" height="25px" width="25px">
   {% else %}
+    <p>Test</p>
     {%- render 'image' placeholder: 'image' -%}
 
   {% endif %}
