@@ -3,26 +3,27 @@
         {% if product.metafields.custom.icon_benefits_1 != blank %}
  
 <div class="metafield-icons_container">
+{% if product.metafields.custom.icon_benefits_1 != blank %}
 <div class="metafield-icon_container">
-  {% if product.metafields.custom.icon_benefits_1 != blank %}
     <img src="{{ product.metafields.custom.icon_benefits_1 | file_url }}" alt="Just text" height="25px" width="25px">
-  {% else %}
-    {%- render 'image' placeholder: 'image' -%}
-  {% endif %}
+
     <p class="metafield-icons_text">{{ product.metafields.custom.icon_benefit_1_description }}</p>
 </div>
+{% endif %}
+  
 {% if product.metafields.custom.icon_benefits_2 != blank %}
 <div class="metafield-icon_container">
     <img src="{{ product.metafields.custom.icon_benefit_2 | file_url }}" alt="Just text" height="25px" width="25px">
     <p class="metafield-icons_text">{{ product.metafields.custom.icon_benefit_2_description }}</p>
 </div>
 {% endif %}
-  {% if product.metafields.custom.icon_benefits_3 != blank %}
+  
+{% if product.metafields.custom.icon_benefits_3 != blank %}
    <div class="metafield-icon_container">
        <img src="{{ product.metafields.custom.icon_benefit_3 | file_url }}" alt="Just text" height="25px" width="25px">
        <p class="metafield-icons_text">{{ product.metafields.custom.icon_benefit_3_description }}</p>
 </div>
-  {% endif %}
+{% endif %}
 
 </div>    
  {% endif %}
