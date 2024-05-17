@@ -894,7 +894,7 @@
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png",
         "image_width": "one-half",
-        "text_alignment": "text-left",
+        "text_alignment": "text-center",
         "padding_lr": 50,
         "reverse_blocks": false,
         "bg_color": "#f7f7f7",
