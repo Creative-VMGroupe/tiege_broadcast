@@ -140,7 +140,7 @@
 <script>console.log(image_1)</script>
 {%- capture section_images -%}
   {%- if image_1 != blank -%}
-    <div class="brick__block__image wide-image"
+    <div class="brick__block__image wide-image test1"
       {% unless enable_slider %}
         data-slide="1"
         data-slide-index="1"
@@ -202,7 +202,7 @@
               {%- if video -%}
                   {%- render 'video-block-vm' video: video, desktop_height: desktop_height, mobile_height: mobile_height -%}
               {%- elsif image -%}
-                <div class="brick__block__image wide-image">
+                <div class="brick__block__image wide-image test">
                   {%- render 'image-hero' image: image, sizes: sizes, desktop_height: desktop_height, mobile_height: mobile_height -%}
                 </div> 
               {%- else -%}
