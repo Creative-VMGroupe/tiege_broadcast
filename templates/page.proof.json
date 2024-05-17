@@ -213,7 +213,7 @@
       "settings": {
         "layout": "is-reversed",
         "height": "screen-height-one-half",
-        "mobile_height": "screen-height-one-half--mobile",
+        "mobile_height": "screen-height-one-third--mobile",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/ujhwalrajput_1708502532_3307481420620264931_2187891039.jpg",
         "image_width": "one-half",
@@ -262,7 +262,7 @@
       "settings": {
         "layout": "",
         "height": "screen-height-one-half",
-        "mobile_height": "screen-height-one-half--mobile",
+        "mobile_height": "screen-height-one-third--mobile",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/skin-care-system-system-level-2-pos-3_VSCO.png",
         "image_width": "one-half",
@@ -353,8 +353,8 @@
         "text_width": "wrapper--narrow",
         "width": "wrapper--full",
         "text_alignment": "text-center",
-        "bg_color": "#000000",
-        "color": "#ffffff",
+        "bg_color": "#f5f5f5",
+        "color": "#000000",
         "sub_color": "#42b029",
         "padding_top": 0,
         "padding_bottom": 0
@@ -378,7 +378,7 @@
       "settings": {
         "width": "wrapper--narrow",
         "align_text": "text-center",
-        "bg_color": "#f7f7f7",
+        "bg_color": "#ffffff",
         "color": "#000000",
         "padding_top": 80,
         "padding_bottom": 30
