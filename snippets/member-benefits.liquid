@@ -27,8 +27,8 @@ assign link_text = block.member-link_text
 
 assign button_style = block.button_style
 
-assign icon_size = block.settings.icon_size
-assign icon_width = 20
+assign icon_size = block.icon_size
+assign icon_width = icon_size
 assign icon_width_retina = icon_width | times: 2
 assign icon_sizes = icon_width | append: 'px'
 assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
