@@ -141,18 +141,18 @@
 -%}
 
 {%- capture section_images -%}
-                {%- if video_1 -%}
+       {%- if video_1 -%}
       <div class="brick__block__image wide-image"
       {% unless enable_slider %}
         data-slide="1"
         data-slide-index="1"
       {% endunless %}
       >
-      {%- render 'video-block-vm' video: video, desktop_height: desktop_height, mobile_height: mobile_height -%}
+      {%- render 'video-block-vm' video: video_1, desktop_height: desktop_height, mobile_height: mobile_height -%}
       
     </div>
 
-              {%- elsif image_1 != blank -%}
+      {%- elsif image_1 != blank -%}
     <div class="brick__block__image wide-image"
       {% unless enable_slider %}
         data-slide="1"
@@ -163,8 +163,17 @@
     </div>
   {%- endif -%}
 
-  {%- if image_2 != blank -%}
+  {%- if video_2 -%}
     <div class="brick__block__image wide-image"
+      {% unless enable_slider %}
+        data-slide="2"
+        data-slide-index="2"
+      {% endunless %}
+    >
+      {%- render 'video-block-vm' video: video_1, desktop_height: desktop_height, mobile_height: mobile_height -%}
+    </div>
+    {%- elsif image_2 != blank -%}
+      <div class="brick__block__image wide-image"
       {% unless enable_slider %}
         data-slide="2"
         data-slide-index="2"
@@ -172,7 +181,7 @@
     >
       {%- render 'image-hero' image: image_2, sizes: sizes, desktop_height: desktop_height, mobile_height: mobile_height -%}
     </div>
-  {%- endif -%}
+    {%- endif -%}
 
   {%- if image_1 == blank and image_2 == blank -%}
     <div class="brick__block__image wide-image">
