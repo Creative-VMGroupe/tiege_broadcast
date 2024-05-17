@@ -79,7 +79,8 @@
 
   assign image_1 = section.settings.image_1
   assign image_2 = section.settings.image_2
-  assign video = section.settings.video
+  assign video_1 = section.settings.video_1
+  assign video_2 = section.settings.video_2
   assign image_width = section.settings.image_width
   capture sizes
     if image_1 and image_2
@@ -140,7 +141,7 @@
 -%}
 
 {%- capture section_images -%}
-                {%- if video -%}
+                {%- if video_1 -%}
       <div class="brick__block__image wide-image"
       {% unless enable_slider %}
         data-slide="1"
