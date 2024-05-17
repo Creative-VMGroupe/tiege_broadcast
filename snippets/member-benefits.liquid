@@ -74,7 +74,7 @@ assign icon_size = block.settings.icon_size
                     <div class="column__icon {{ block.settings.icon_alignment | default: section.settings.icon_alignment }}" style="{{ icon_style }}">
                       <div class="icon__animated{% if image != blank %} icon__animated--image{% endif %}">
                         {%- liquid
-                          if image
+                          if image_1
                             assign icon_width = icon_size
                             assign icon_width_retina = icon_width | times: 2
                             assign icon_sizes = icon_width | append: 'px'
