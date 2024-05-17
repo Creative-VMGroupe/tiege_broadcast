@@ -442,7 +442,7 @@
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/Peptides_AdobeStock_403007779_transparent.png",
         "link": "",
-        "mobile_height": "screen-height-one-third--mobile",
+        "mobile_height": "screen-height-one-half--mobile",
         "flex_align_desktop": "align--middle-center-desktop",
         "flex_align_mobile": "align--middle-center-mobile",
         "overlay_opacity": 0,

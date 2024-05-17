@@ -30,7 +30,7 @@
             "title": "Membership Benefits",
             "supply": "30 day supply",
             "pop-heading": "Your Member Benefits Explained",
-            "pop-heading_size": 32,
+            "pop-heading_size": 40,
             "icon-sub_size": 24,
             "image_1": "shopify:\/\/shop_images\/Group_1825.svg",
             "icon-1_sub": "Save 20%",
@@ -56,6 +56,7 @@
             "page": "",
             "icon_name": "icon-trophy",
             "icon_size": 20,
+            "icon_alignment": "icon--top",
             "icon_color": "#545454",
             "padding_bottom": 16
           }
