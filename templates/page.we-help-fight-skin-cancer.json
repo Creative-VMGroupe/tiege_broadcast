@@ -23,9 +23,9 @@
       "settings": {
         "height": "screen-height-one-half",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/tiege_skin_del.webp",
+        "image_1": "shopify:\/\/shop_images\/Screenshot_2024-05-17_at_4.22.37_PM.png",
         "link": "",
-        "mobile_height": "screen-height-three-quarters--mobile",
+        "mobile_height": "screen-height-one-third--mobile",
         "flex_align_desktop": "align--middle-center-desktop",
         "flex_align_mobile": "align--middle-center-mobile",
         "overlay_opacity": 0,
