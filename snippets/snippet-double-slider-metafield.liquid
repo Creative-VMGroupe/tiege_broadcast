@@ -199,13 +199,12 @@
             {{ block.shopify_attributes }}
           >
             <div class="brick__block brick__block--images{{ figure_width_class }} {%- if video != blank -%}media-slider__block-custom{%- endif -%}">
-              {%- if image -%}
+              {%- if video -%}
+                  {%- render 'video-block-vm' video: video, desktop_height: desktop_height, mobile_height: mobile_height -%}
+              {%- elsif image -%}
                 <div class="brick__block__image wide-image">
                   {%- render 'image-hero' image: image, sizes: sizes, desktop_height: desktop_height, mobile_height: mobile_height -%}
-                </div>
-              {%- elsif video -%}
-                {%- render 'video-block-vm' video: video, desktop_height: desktop_height, mobile_height: mobile_height -%}
-                
+                </div> 
               {%- else -%}
                 {{ section_images }}
               {%- endif -%}
