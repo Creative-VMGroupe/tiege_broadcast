@@ -7,7 +7,7 @@
         "show_description": true,
         "flex_align": "align--bottom-left",
         "bg_color": "",
-        "color": "#ffffff",
+        "color": "#000000",
         "show_image": true,
         "banner_layout": "overlay",
         "height": "screen-height-one-third",
