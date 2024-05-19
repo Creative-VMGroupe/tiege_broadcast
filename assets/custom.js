@@ -128,7 +128,7 @@ if (flickityEnabledContainers.length > 0) {
     // Create a new Intersection Observer
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry, forIndex) => {
-        if (entry.intersectionRatio >= 0.5) {
+        if (entry.intersectionRatio >= 1) {
           // If the entire slide is in the viewport, add the 'slide-is-visible' class
           entry.target.classList.add("slide-is-visible");
           // Get the data-slide-position attribute value
