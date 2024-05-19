@@ -205,8 +205,9 @@ if (flickityEnabledContainers.length > 0) {
 
 //delete
  
-    const container = document.querySelector('.flickity__container-custom');   
-    new Slider(container); 
+var flkty = new Flickity( '.flickity__container-custom', {
+  // options
+});
 
 
 
