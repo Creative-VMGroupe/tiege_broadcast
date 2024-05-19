@@ -78,12 +78,12 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
         {% comment %}
         Subheading
     {% endcomment %}
-    <p class="icon_sub-custom heading-size-{{ block.icon-sub_size }}">{{ img-1_sub }}</p>
+    <p class="icon_sub-custom heading-size-{{ block.icon-sub_size }}">{{ img-1_sub }}</p> 
 
     {% comment %}
         Text
     {% endcomment %}
-    <p class="default-font-custom">{{ img-1_text }}</p>
+    <p class="default-font-custom body-size-{{ block.icon-desc_size }}">{{ img-1_text }}</p>
     </div>
 
 {% comment %}
@@ -127,7 +127,7 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
     {% comment %}
         Text
     {% endcomment %}
-    <p class="default-font-custom">{{ img-2_text }}</p>
+    <p class="default-font-custom body-size-{{ block.icon-desc_size }}">{{ img-2_text }}</p>
 </div>
 {% comment %}
     Icon 3
@@ -167,7 +167,7 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
     {% comment %}
         Text
     {% endcomment %}
-    <p class="default-font-custom">{{ img-3_text }}</p>
+    <p class="default-font-custom body-size-{{ block.icon-desc_size }}">{{ img-3_text }}</p>
 </div>
 </div>
 {% comment %}
@@ -219,7 +219,7 @@ assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
 <div class="member-footer_wrapper">
     <div class="member-footer_text body-size-16 ">How do I get this?<span style="color: #00ad2d"> TIEGE STREAKS!</span> Maintain your benefits by ordering a minimum of $20 every 90 days. Feel free to skip or reschedule--just don't cancel, or your streak restarts</div>
     <div style="margin-top: 12px;" class="member-footer_text">
-        <a class="btn {{ button_style }} {{ block.button_type }} body-size-14 " href="{{ member_link | default: '#!' }}"><span style="font-size: 15px">
+        <a class="btn {{ button_style }} {{ block.button_type }} body-size-{{ block.icon-desc_size }} " href="{{ member_link | default: '#!' }}"><span style="font-size: 15px">
             {{ link_text }}
         </span></a>
     </div>
