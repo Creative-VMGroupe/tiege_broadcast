@@ -26610,6 +26610,9 @@ body.has-line-design.grid-compact
   object-fit: cover;
 }
 /*Mobile*/
+.sliderow__title-custom {
+  font-weight: bold;
+}
 .drawer__menu {
   scrollbar-width: none;
 }
