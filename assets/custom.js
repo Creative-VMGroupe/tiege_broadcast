@@ -126,8 +126,8 @@ if (flickityEnabledContainers.length > 0) {
     // Create a new Intersection Observer
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry) => {
-        
         if (entry.intersectionRatio >= .99) {
+        entry.target.classList.remove("slide-is-visible");
           console.log(entry)
           // If the entire slide is in the viewport, add the 'slide-is-visible' class
           entry.target.classList.add("slide-is-visible");
