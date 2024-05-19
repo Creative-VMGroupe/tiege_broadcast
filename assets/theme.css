@@ -10134,6 +10134,7 @@ body.has-header-transparent
 .hero__products,
 .hero__media {
   margin: 0 0 var(--block-padding-bottom, var(--line));
+    margin: 0 0 20px, var(--line));
 }
 
 .hero__subheading {
