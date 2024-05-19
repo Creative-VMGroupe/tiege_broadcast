@@ -37,7 +37,7 @@
   assign preload = preload | default: nil
   assign cover = cover | default: false
   assign fill = false
-
+  assign aspect_1 = aspect_1
  
   
 
@@ -89,7 +89,11 @@
 
 
     echo 'style="'
+    if aspect_1 = true 
+      echo '--aspect-ratio: ' | append: 1 | append: ';'
+    else
     echo '--aspect-ratio: ' | append: aspect_ratio | append: ';'
+      endif
     echo '"'
    
  
