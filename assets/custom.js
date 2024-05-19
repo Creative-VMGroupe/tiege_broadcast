@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
-//Sliders Custom
+// Sliders Custom
 // Check if any .flickity-enabled-custom element exists
 const flickityEnabledContainers = document.querySelectorAll(".flickity-enabled-custom");
 if (flickityEnabledContainers.length > 0) {
@@ -122,12 +122,13 @@ if (flickityEnabledContainers.length > 0) {
     // Find the .flickity-page-dots-custom element within the current container
     const dotContainer = container.querySelector(".flickity-page-dots-custom");
     if (!dotContainer) return; // Skip if the dot container is not found
-  
+
+    let lastStyledButton = null; // Variable to store the previously styled button
+
     // Create a new Intersection Observer
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry, forIndex) => {
-        if (entry.intersectionRatio >= .05) {
-        
+        if (entry.intersectionRatio >= 0.05) {
           // If the entire slide is in the viewport, add the 'slide-is-visible' class
           entry.target.classList.add("slide-is-visible");
           // Get the data-slide-position attribute value
@@ -136,9 +137,14 @@ if (flickityEnabledContainers.length > 0) {
             // Find the button with the matching data-dot-position attribute
             const button = dotContainer.querySelector(`.flickity-page-dot[data-dot-position="${slidePosition}"]`);
             if (button) {
-          console.log(forIndex)
-              // Add the 'flickity-dot-styling' class to the button
+              // Remove the 'flickity-dot-styling' class from the previously styled button
+              if (lastStyledButton) {
+                lastStyledButton.classList.remove("flickity-dot-styling");
+              }
+              // Add the 'flickity-dot-styling' class to the current button
               button.classList.add("flickity-dot-styling");
+              // Update the lastStyledButton to the current button
+              lastStyledButton = button;
             }
           }
         } else {
@@ -152,6 +158,10 @@ if (flickityEnabledContainers.length > 0) {
             if (button) {
               // Remove the 'flickity-dot-styling' class from the button
               button.classList.remove("flickity-dot-styling");
+              // If this button is the lastStyledButton, reset the lastStyledButton to null
+              if (button === lastStyledButton) {
+                lastStyledButton = null;
+              }
             }
           }
         }
@@ -170,15 +180,15 @@ if (flickityEnabledContainers.length > 0) {
     const buttons = dotContainer.querySelectorAll('.flickity-page-dot');
     buttons.forEach((button) => {
       button.addEventListener("click", () => {
-        console.log(button)
+        console.log(button);
         const slidePosition = button.getAttribute("data-dot-position");
         if (slidePosition) {
           const slide = slideContainer.querySelector(`.flickity_item_container-custom[data-slide-position="${slidePosition}"]`);
-          console.log(slide)
+          console.log(slide);
           if (slide) {
             // Scroll to the corresponding slide within this container
             const newPosition = slide.offsetLeft;
-console.log(newPosition)
+            console.log(newPosition);
             slideContainer.scroll({
               left: newPosition,
               behavior: 'smooth' // Smooth scrolling effect
@@ -189,6 +199,7 @@ console.log(newPosition)
     });
   });
 }
+
 
 
 
