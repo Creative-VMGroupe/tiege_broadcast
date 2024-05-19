@@ -128,7 +128,7 @@ if (flickityEnabledContainers.length > 0) {
       entries.forEach((entry) => {
         
           console.log(entry)
-        if (entry.intersectionRatio >= .9) {
+        if (entry.intersectionRatio >= 1) {
           // If the entire slide is in the viewport, add the 'slide-is-visible' class
           entry.target.classList.add("slide-is-visible");
           // Get the data-slide-position attribute value
@@ -157,7 +157,7 @@ if (flickityEnabledContainers.length > 0) {
         }
       });
     }, {
-      threshold: [.01] // Trigger the callback
+      threshold: [1] // Trigger the callback
     });
 
     // Observe each slide item within the slide container
