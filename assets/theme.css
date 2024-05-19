@@ -26582,7 +26582,7 @@ body.has-line-design.grid-compact
     object-fit: cover;
 }
 /*Mobile Menu*/
-@media (max-width: 479px) {
+@media (max-width: 649px) {
 .mobile__menu__dropdown.sliderule__panel.is-visible button.sliderow {
   padding-left: 16px;
 }
@@ -26617,6 +26617,7 @@ body.has-line-design.grid-compact
   color: white;
 }
 .mobile__menu__dropdown.sliderule__panel .sliderow__title:last-child {
+  color: gray;
   font-style: italic;
 }
 .drawer__menu {
