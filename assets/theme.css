@@ -26592,7 +26592,7 @@ body.has-line-design.grid-compact
 } 
 
 .mobile__menu__dropdown .sliderule__wrapper a {
-  color: white;
+  color: white !important;
 }
 
   
