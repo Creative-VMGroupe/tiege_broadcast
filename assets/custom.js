@@ -169,7 +169,7 @@ if (flickityEnabledContainers.length > 0) {
         }
       });
     }, {
-      threshold: [.9] // Trigger the callback
+      threshold: [.85] // Trigger the callback
     });
 
     // Observe each slide item within the slide container
