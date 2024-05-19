@@ -26582,7 +26582,12 @@ body.has-line-design.grid-compact
     object-fit: cover;
 }
 /*Mobile Menu*/
-@media (max-width: 649px) {
+@media (max-width: 649px) 
+.drawer__main-menu > .sliderule__wrapper .sliderow__title {
+  color: red;
+}
+
+
 .mobile__menu__dropdown.sliderule__panel.is-visible button.sliderow {
   padding-left: 16px;
 }
