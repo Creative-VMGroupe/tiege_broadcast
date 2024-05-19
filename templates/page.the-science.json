@@ -188,6 +188,14 @@
     "section_double_static_vm_9hVQ9m": {
       "type": "section-double-static-vm",
       "blocks": {
+        "image_aj7JaU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/skin-health2.png",
+            "image_width": 20,
+            "padding_bottom": 16
+          }
+        },
         "heading_mw8CfL": {
           "type": "heading",
           "settings": {
@@ -207,6 +215,7 @@
         }
       },
       "block_order": [
+        "image_aj7JaU",
         "heading_mw8CfL",
         "text_RiTpBb"
       ],
