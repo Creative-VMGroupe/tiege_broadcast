@@ -139,8 +139,10 @@ if (flickityEnabledContainers.length > 0) {
             if (button) {
               // Remove the 'flickity-dot-styling' class from the previously styled button
               if (lastStyledButton) {
+                console.log(lastStyledButton)
                 lastStyledButton.classList.remove("flickity-dot-styling");
               }
+              console.log(button)
               // Add the 'flickity-dot-styling' class to the current button
               button.classList.add("flickity-dot-styling");
               // Update the lastStyledButton to the current button
