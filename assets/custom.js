@@ -111,87 +111,84 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
-// Sliders Custom
+//Sliders Custom
+// Check if any .flickity-enabled-custom element exists
 const flickityEnabledContainers = document.querySelectorAll(".flickity-enabled-custom");
-
 if (flickityEnabledContainers.length > 0) {
   flickityEnabledContainers.forEach((container) => {
+    // Find the .flickity__container-custom element within the current container
     const slideContainer = container.querySelector(".flickity__container-custom");
-    if (!slideContainer) return;
-
+    if (!slideContainer) return; // Skip if the slide container is not found
+    // Find the .flickity-page-dots-custom element within the current container
     const dotContainer = container.querySelector(".flickity-page-dots-custom");
-    if (!dotContainer) return;
-
-    let lastScrollLeft = 0;
-
-    const observerOptions = {
-      threshold: [0.5]
-    };
-
+    if (!dotContainer) return; // Skip if the dot container is not found
+  
+    // Create a new Intersection Observer
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry) => {
-        const slidePosition = entry.target.getAttribute("data-slide-position");
-        if (!slidePosition) return;
-
-        if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+        
+        if (entry.intersectionRatio >= .5) {
+          // If the entire slide is in the viewport, add the 'slide-is-visible' class
           entry.target.classList.add("slide-is-visible");
-          const button = dotContainer.querySelector(`.flickity-page-dot[data-dot-position="${slidePosition}"]`);
-          if (button) {
-            button.classList.add("flickity-dot-styling");
+          console.log(entry)
+          // Get the data-slide-position attribute value
+          const slidePosition = entry.target.getAttribute("data-slide-position");
+          if (slidePosition) {
+            // Find the button with the matching data-dot-position attribute
+            const button = dotContainer.querySelector(`.flickity-page-dot[data-dot-position="${slidePosition}"]`);
+            if (button) {
+              // Add the 'flickity-dot-styling' class to the button
+              button.classList.add("flickity-dot-styling");
+            }
           }
         } else {
+          // If the slide is not fully in the viewport, remove the 'slide-is-visible' class
           entry.target.classList.remove("slide-is-visible");
-          const button = dotContainer.querySelector(`.flickity-page-dot[data-dot-position="${slidePosition}"]`);
-          if (button) {
-            button.classList.remove("flickity-dot-styling");
+          // Get the data-slide-position attribute value
+          const slidePosition = entry.target.getAttribute("data-slide-position");
+          if (slidePosition) {
+            // Find the button with the matching data-dot-position attribute
+            const button = dotContainer.querySelector(`.flickity-page-dot[data-dot-position="${slidePosition}"]`);
+            if (button) {
+              // Remove the 'flickity-dot-styling' class from the button
+              button.classList.remove("flickity-dot-styling");
+            }
           }
         }
       });
-    }, observerOptions);
+    }, {
+      threshold: [.5] // Trigger the callback
+    });
 
+    // Observe each slide item within the slide container
     const slideItems = slideContainer.querySelectorAll('.flickity_item_container-custom');
     slideItems.forEach((item) => {
       observer.observe(item);
     });
 
+    // Add event listener to each button within this container
     const buttons = dotContainer.querySelectorAll('.flickity-page-dot');
     buttons.forEach((button) => {
       button.addEventListener("click", () => {
+        console.log(button)
         const slidePosition = button.getAttribute("data-dot-position");
         if (slidePosition) {
           const slide = slideContainer.querySelector(`.flickity_item_container-custom[data-slide-position="${slidePosition}"]`);
+          console.log(slide)
           if (slide) {
+            // Scroll to the corresponding slide within this container
             const newPosition = slide.offsetLeft;
+console.log(newPosition)
             slideContainer.scroll({
               left: newPosition,
-              behavior: 'smooth'
+              behavior: 'smooth' // Smooth scrolling effect
             });
           }
         }
       });
     });
-
-    // Detect horizontal scroll events
-    slideContainer.addEventListener('scroll', () => {
-      const currentScrollLeft = slideContainer.scrollLeft;
-      if (currentScrollLeft !== lastScrollLeft) {
-        lastScrollLeft = currentScrollLeft;
-        observer.takeRecords().forEach(entry => observer.unobserve(entry.target));
-        slideItems.forEach(item => observer.observe(item));
-      }
-    });
-
-    // Detect document scroll events
-    document.addEventListener('scroll', () => {
-      const currentScrollLeft = slideContainer.scrollLeft;
-      if (currentScrollLeft === lastScrollLeft) {
-        // Vertical scroll detected, do nothing
-        return;
-      }
-    }, { passive: true });
   });
 }
-
 
 
 
