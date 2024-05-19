@@ -26595,7 +26595,7 @@ body.has-line-design.grid-compact
   color: white !important;
 }
 .sliderule__wrapper:first-child .sliderule__wrapper:nth-child(-n + 3) .sliderow__title:last-child {
-  color: gray;
+  color: red !important;
 }
   
 .mobile__menu__dropdown.sliderule__panel.is-visible button.sliderow {
