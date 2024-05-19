@@ -26616,6 +26616,9 @@ body.has-line-design.grid-compact
 .mobile__menu__dropdown.sliderule__panel .sliderow__title {
   color: white;
 }
+.mobile__menu__dropdown.sliderule__panel .sliderow__title:last-child {
+  font-style: italic;
+}
 .drawer__menu {
   scrollbar-width: none;
 }
