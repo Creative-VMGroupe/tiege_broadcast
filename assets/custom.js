@@ -128,7 +128,6 @@ if (flickityEnabledContainers.length > 0) {
       entries.forEach((entry, forIndex) => {
         if (entry.intersectionRatio >= .05) {
         
-          console.log("entry")
           // If the entire slide is in the viewport, add the 'slide-is-visible' class
           entry.target.classList.add("slide-is-visible");
           // Get the data-slide-position attribute value
@@ -137,6 +136,7 @@ if (flickityEnabledContainers.length > 0) {
             // Find the button with the matching data-dot-position attribute
             const button = dotContainer.querySelector(`.flickity-page-dot[data-dot-position="${slidePosition}"]`);
             if (button) {
+          console.log(button)
               // Add the 'flickity-dot-styling' class to the button
               button.classList.add("flickity-dot-styling");
             }
