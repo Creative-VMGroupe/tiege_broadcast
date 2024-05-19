@@ -26590,6 +26590,12 @@ body.has-line-design.grid-compact
 .mobile__menu__dropdown .sliderule__wrapper button .sliderow__title {
   font-weight: bold;
 } 
+
+.mobile__menu__dropdown .sliderule__wrapper a {
+  color: white;
+}
+
+  
 .mobile__menu__dropdown.sliderule__panel.is-visible button.sliderow {
   padding-left: 16px;
 }
