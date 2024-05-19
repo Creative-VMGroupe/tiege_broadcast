@@ -26590,7 +26590,7 @@ body.has-line-design.grid-compact
   padding-left: 32px;
 }
 .mobile__menu__dropdown.sliderule__panel.is-visible .mobile__menu__dropdown.sliderule__panel.is-visible .sliderow__title{
-  color: gray;
+  color: white;
 }
   
 .mobile__menu__dropdown .hero__content p {
@@ -26610,13 +26610,11 @@ body.has-line-design.grid-compact
   object-fit: cover;
 }
 /*Mobile*/
-.sliderow__title-custom {
-  font-weight: bold;
-}
+
 .mobile__menu__dropdown.sliderule__panel .sliderow__title {
   color: white;
 }
-.mobile__menu__dropdown.sliderule__panel .sliderow__title:last-child {
+.mobile__menu__dropdown.sliderule__panel.is-visible .mobile__menu__dropdown.sliderule__panel.is-visible .sliderow__title:last-child {
   color: gray;
   font-style: italic;
 }
