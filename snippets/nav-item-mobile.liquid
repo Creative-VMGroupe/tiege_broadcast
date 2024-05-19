@@ -46,7 +46,7 @@
       data-animation-delay="{{ animation_delay | plus: animation_delay_additional }}"
       data-animation-duration="{{ animation_duration }}"
       data-sliderule-open="sliderule-{{ key }}">
-      <span class="sliderow__title{% if secondary_menu %} sliderow__title--secondary{% endif %}{% if highlight_item == link_title_lowercase %} sliderow__title--highlight{% endif %}">
+      <span class="sliderow__title-custom sliderow__title{% if secondary_menu %} sliderow__title--secondary{% endif %}{% if highlight_item == link_title_lowercase %} sliderow__title--highlight{% endif %}">
         {{ link.title | strip_html | escape }}
         <span class="sliderule__chevron--right">
           {%- render 'icon-chevron-down' -%}
