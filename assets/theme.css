@@ -26585,9 +26585,11 @@ body.has-line-design.grid-compact
 @media (max-width: 649px) {
 
 .drawer__main-menu > .sliderule__wrapper .sliderow__title {
-  color: red;
+  color: white;
 }
-  
+.mobile__menu__dropdown .sliderule__wrapper button .sliderow__title {
+  font-weight: bold;
+} 
 .mobile__menu__dropdown.sliderule__panel.is-visible button.sliderow {
   padding-left: 16px;
 }
