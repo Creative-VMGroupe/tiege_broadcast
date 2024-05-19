@@ -135,6 +135,14 @@
     "section_rich_text_TXLJKC": {
       "type": "section-rich-text",
       "blocks": {
+        "image_wf9xHC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/skin-health2.png",
+            "image_width": 15,
+            "padding_bottom": 16
+          }
+        },
         "heading_DjekAc": {
           "type": "heading",
           "settings": {
@@ -163,6 +171,7 @@
         }
       },
       "block_order": [
+        "image_wf9xHC",
         "heading_DjekAc",
         "subheading_FWDe88",
         "text_jjTk74"
