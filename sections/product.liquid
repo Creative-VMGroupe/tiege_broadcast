@@ -844,7 +844,7 @@
         <button type="button" class="product-modal__close" data-popup-close autofocus aria-label="{{ 'general.accessibility.close' | t }}">
           {%- render 'icon-cancel' -%}
         </button>
-{% render 'member-benefits' with block.settings as block %}
+{% render 'member-benefits' with block.settings as block, icon_style: icon_style %}
         {% comment %} {{ popup_content }} {% endcomment %}
       </div>
     </div>
