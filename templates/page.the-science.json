@@ -368,6 +368,14 @@
     "section_rich_text_z7jagt": {
       "type": "section-rich-text",
       "blocks": {
+        "image_WAR7Da": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shield.png",
+            "image_width": 10,
+            "padding_bottom": 16
+          }
+        },
         "heading_Rk4JUz": {
           "type": "heading",
           "settings": {
@@ -387,6 +395,7 @@
         }
       },
       "block_order": [
+        "image_WAR7Da",
         "heading_Rk4JUz",
         "text_mDCVF7"
       ],
