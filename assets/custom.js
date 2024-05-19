@@ -203,7 +203,11 @@ if (flickityEnabledContainers.length > 0) {
 }
 
 
-
+//delete
+  document.addEventListener('DOMContentLoaded', (event) => { 
+    const container = document.querySelector('.flickity__container-custom');   
+    new Slider(container); 
+  });
 
 
 });
