@@ -203,11 +203,6 @@ if (flickityEnabledContainers.length > 0) {
 }
 
 
-//delete
- 
-var flkty = new Flickity( '.flickity__container-custom', {
-  // options
-});
 
 
 
