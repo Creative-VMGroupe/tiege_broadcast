@@ -9317,7 +9317,7 @@ header-search-popdown > details {
   align-items: center;
 }
 
-@media (hover: hover) {
+@media (min-width: 750px) and (hover: hover) {
   .sliderow:hover .sliderule__chevron--right .icon {
     transform: translateX(5px);
   }
