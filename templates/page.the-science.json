@@ -44,16 +44,16 @@
       "settings": {
         "height": "screen-height-one-half",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/Drop.png",
+        "image_1": "shopify:\/\/shop_images\/AdobeStock_306147806-edit.jpg",
         "link": "",
         "mobile_height": "screen-height-one-half--mobile",
         "flex_align_desktop": "align--bottom-left-desktop",
         "flex_align_mobile": "align--bottom-left-mobile",
-        "overlay_opacity": 0,
+        "overlay_opacity": 20,
         "overlay_color": "#000000",
         "show_overlay_text": false,
         "bg_color": "",
-        "color": "#212121"
+        "color": "#ffffff"
       }
     },
     "section_double_static_vm_yJne3F": {
