@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
-//Sliders Custom
+// Sliders Custom
 // Check if any .flickity-enabled-custom element exists
 const flickityEnabledContainers = document.querySelectorAll(".flickity-enabled-custom");
 if (flickityEnabledContainers.length > 0) {
@@ -122,13 +122,14 @@ if (flickityEnabledContainers.length > 0) {
     // Find the .flickity-page-dots-custom element within the current container
     const dotContainer = container.querySelector(".flickity-page-dots-custom");
     if (!dotContainer) return; // Skip if the dot container is not found
-  
+
+    let lastScrollLeft = 0;
+    let isScrolling;
+
     // Create a new Intersection Observer
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry) => {
-        
-          console.log(entry)
-        if (entry.intersectionRatio >= .99) {
+        if (entry.intersectionRatio >= 0.99) {
           // If the entire slide is in the viewport, add the 'slide-is-visible' class
           entry.target.classList.add("slide-is-visible");
           // Get the data-slide-position attribute value
@@ -157,7 +158,7 @@ if (flickityEnabledContainers.length > 0) {
         }
       });
     }, {
-      threshold: [.99] // Trigger the callback
+      threshold: [0.99] // Trigger the callback
     });
 
     // Observe each slide item within the slide container
@@ -170,15 +171,12 @@ if (flickityEnabledContainers.length > 0) {
     const buttons = dotContainer.querySelectorAll('.flickity-page-dot');
     buttons.forEach((button) => {
       button.addEventListener("click", () => {
-        console.log(button)
         const slidePosition = button.getAttribute("data-dot-position");
         if (slidePosition) {
           const slide = slideContainer.querySelector(`.flickity_item_container-custom[data-slide-position="${slidePosition}"]`);
-          console.log(slide)
           if (slide) {
             // Scroll to the corresponding slide within this container
             const newPosition = slide.offsetLeft;
-console.log(newPosition)
             slideContainer.scroll({
               left: newPosition,
               behavior: 'smooth' // Smooth scrolling effect
@@ -187,8 +185,32 @@ console.log(newPosition)
         }
       });
     });
+
+    // Detect horizontal scroll events
+    slideContainer.addEventListener('scroll', () => {
+      const currentScrollLeft = slideContainer.scrollLeft;
+      if (currentScrollLeft !== lastScrollLeft) {
+        lastScrollLeft = currentScrollLeft;
+        window.clearTimeout(isScrolling);
+        isScrolling = setTimeout(() => {
+          // Handle horizontal scroll
+          observer.takeRecords().forEach(entry => observer.unobserve(entry.target));
+          slideItems.forEach(item => observer.observe(item));
+        }, 100); // Adjust the debounce delay as needed
+      }
+    });
+
+    // Detect document vertical scroll events
+    document.addEventListener('scroll', () => {
+      const currentScrollLeft = slideContainer.scrollLeft;
+      if (currentScrollLeft === lastScrollLeft) {
+        // Vertical scroll detected, do nothing
+        return;
+      }
+    }, { passive: true });
   });
 }
+
 
 
 
