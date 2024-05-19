@@ -26129,6 +26129,9 @@ h2.column__heading {
   font-size: var(--heading-2) !important;
   line-height: 1.25 !important;
 } 
+  .icon_sub-custom.heading-size-32 {
+    font-size: var(--heading-3) !important;
+  }
 }
 .subheading-size-12 {
   font-size: 12px !important;
