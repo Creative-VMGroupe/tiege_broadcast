@@ -26515,6 +26515,9 @@ body.has-line-design.grid-compact
   }
 }
 /*Media with Text - Tiege*/
+.brick__block__text {
+  padding: 40px;
+}
 .hero__content__media__alignment-custom:has(.hero__media) {
   justify-content: center;
 }
