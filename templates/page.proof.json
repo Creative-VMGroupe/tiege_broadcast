@@ -53,7 +53,7 @@
           "type": "text-slide",
           "settings": {
             "stars_enabled": true,
-            "subheading": "★★★★★",
+            "subheading": "&nbsp;★★★★★",
             "subheading_size": 12,
             "sub_letter_spacing": 5,
             "title": "",
@@ -75,7 +75,7 @@
           "type": "text-slide",
           "settings": {
             "stars_enabled": true,
-            "subheading": "★★★★★",
+            "subheading": "&nbsp;★★★★★",
             "subheading_size": 12,
             "sub_letter_spacing": 5,
             "title": "",
@@ -97,7 +97,7 @@
           "type": "text-slide",
           "settings": {
             "stars_enabled": true,
-            "subheading": "★★★★★",
+            "subheading": "&nbsp;★★★★★",
             "subheading_size": 12,
             "sub_letter_spacing": 5,
             "title": "",
@@ -282,7 +282,7 @@
           "type": "text-slide",
           "settings": {
             "stars_enabled": true,
-            "subheading": "★★★★★",
+            "subheading": "&nbsp;★★★★★",
             "subheading_size": 12,
             "sub_letter_spacing": 5,
             "title": "",
@@ -304,7 +304,7 @@
           "type": "text-slide",
           "settings": {
             "stars_enabled": true,
-            "subheading": "★★★★★",
+            "subheading": "&nbsp;★★★★★",
             "subheading_size": 12,
             "sub_letter_spacing": 5,
             "title": "",
@@ -326,7 +326,7 @@
           "type": "text-slide",
           "settings": {
             "stars_enabled": true,
-            "subheading": "★★★★★",
+            "subheading": "&nbsp;★★★★★",
             "subheading_size": 12,
             "sub_letter_spacing": 5,
             "title": "",
@@ -394,7 +394,7 @@
         "layout": "",
         "text_align_center": true,
         "stars_enabled": true,
-        "heading": "★★★★★",
+        "heading": "&nbsp;★★★★★",
         "heading_font": 24,
         "heading_letter_spacing": 10,
         "description": "<p>\"This is exactly as it describes. Uncomplicated.\"<\/p>",
@@ -428,7 +428,7 @@
         "layout": "is-reversed",
         "text_align_center": true,
         "stars_enabled": true,
-        "heading": "★★★★★",
+        "heading": "&nbsp;★★★★★",
         "heading_font": 24,
         "heading_letter_spacing": 10,
         "description": "<p>\"After just one week of being consistent, I’ve seen a difference. My wife and other people have commented on my skin as well. My wife said I look like I’m aging backwards.\"<\/p>",
