@@ -3201,8 +3201,7 @@ dialog[closing] {
  */
 .grid {
   display: grid;
-  /* gap: var(--gap); */
-  gap: 30px 10px;
+  gap: var(--gap);
   grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
 }
 body.has-line-design.grid-compact .grid {
@@ -26021,7 +26020,11 @@ time, .article__author {
 }
 }
 /*Global*/
-/*Grid Headings*/
+
+/*Grids*/
+.grid {
+  gap: 20px 10px;
+}
 .grid__heading-holder {
   margin: 0 0 20px;
 }
