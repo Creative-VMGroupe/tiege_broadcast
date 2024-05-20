@@ -26312,6 +26312,9 @@ table tbody:nth-child(8) {
   .product-upsell__image-custom form {
   height: 0;
 }
+  .grid-item-custom form .btn__outer {
+    bottom: 53px;
+  }
 }
 .grid-custom {
   --columns: var(--COLUMNS-MOBILE);
