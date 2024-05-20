@@ -129,15 +129,15 @@
         "layout": "",
         "height": "screen-height-one-half",
         "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full",
+        "width": "wrapper--full-padded",
         "image_1": "shopify:\/\/shop_images\/rivage-aI4RJ--Mw4I-unsplash.jpg",
         "image_width": "one-half",
         "text_alignment": "text-left",
         "reverse_blocks": false,
         "bg_color": "",
         "color": "",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
     "section_double_static_vm_acAqbX": {
@@ -170,15 +170,15 @@
         "layout": "is-reversed",
         "height": "screen-height-one-half",
         "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full",
+        "width": "wrapper--full-padded",
         "image_1": "shopify:\/\/shop_images\/plant.jpg",
         "image_width": "one-half",
         "text_alignment": "text-left",
         "reverse_blocks": false,
         "bg_color": "#f7f7f7",
         "color": "",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
     "section_rich_text_7KXRxY": {
