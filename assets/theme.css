@@ -26308,14 +26308,7 @@ table tbody:nth-child(8) {
 .product-upsell__image-custom {
   position: relative;
 }
-@media(max-width: 749px) {
-  .product-upsell__image-custom form {
-  height: 0;
-}
-  .grid-item-custom form .btn__outer {
-    bottom: 53px;
-  }
-}
+
 .grid-custom {
   --columns: var(--COLUMNS-MOBILE);
 }
@@ -26389,6 +26382,14 @@ body.grid-classic.has-line-design .grid--mobile-slider-custom {
   right: auto;
   bottom: 10px;
 }  
+}
+@media(max-width: 749px) {
+  .product-upsell__image-custom form {
+  height: 0;
+}
+  .grid-item-custom form .btn__outer {
+    bottom: 53px;
+  }
 }
 .grid-item-custom form .btn__outer {
   left: 10px;
