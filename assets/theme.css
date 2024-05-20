@@ -14601,7 +14601,7 @@ dialog[closing] .product-modal__outer {
 .product-modal__close {
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 12px;
   z-index: 20;
   transition: transform 0.3s;
 }
