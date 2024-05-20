@@ -26372,6 +26372,13 @@ body.grid-classic.has-line-design .grid--mobile-slider-custom {
   right: auto;
   bottom: 120px;
 }
+@media(max-width: 749px){
+.grid-item-custom form .btn__outer {
+  left: 10px;
+  right: auto;
+  bottom: 90px;
+}  
+}
 .grid-item-custom form .btn__outer {
   left: 10px;
   right: auto;
