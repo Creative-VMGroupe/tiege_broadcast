@@ -25568,6 +25568,9 @@ body.has-header-sticky .timeline {
 /* .product__content .product__block.tabs-wrapper {
   padding-bottom: 80px;
 } */
+.product__page .product__content {
+  max-width: calc(100vw - 40px);
+}
 .product__page product-modal.product__block  {
   margin-bottom: 8px !important;
 }
