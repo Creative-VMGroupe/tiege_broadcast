@@ -25924,6 +25924,12 @@ time, .article__author {
   border-color: black !important;
 }
 /*QUICK VIEW*/
+.drawer .drawer--cart .is-open .product-upsell form {
+  height: 0;
+} 
+.drawer .drawer--cart .is-open .product-upsell form .btn__outer {
+  bottom: 43px;
+}
 @media (max-width: 749px) {
   .product-quick-add__content {
     max-width: none !important;
