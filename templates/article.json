@@ -75,7 +75,8 @@
             "video": "shopify:\/\/files\/videos\/Snapinsta.app_video_119540050_717266737144557_663577271213053763_n.mp4",
             "image": "shopify:\/\/shop_images\/ujhwalrajput_1708502532_3307481420620264931_2187891039.jpg",
             "color": "",
-            "slide_bg_color": "#F0F0F0",
+            "sub_color": "",
+            "slide_bg_color": "#f0f0f0",
             "border_color": ""
           }
         },
@@ -93,7 +94,8 @@
             "video": "shopify:\/\/files\/videos\/Snapinsta.app_video_254C6BE9F9A30CC74F6A74D9CD4CC6B9_video_dashinit_df4abeae-94e6-4fc8-b518-877149eb46cc.mp4",
             "image": "shopify:\/\/shop_images\/IMG_5261_VSCO_dadb3224-ffb7-49c5-a6b4-ff2ce31e2a09.jpg",
             "color": "",
-            "slide_bg_color": "#F0F0F0",
+            "sub_color": "",
+            "slide_bg_color": "#f0f0f0",
             "border_color": ""
           }
         },
@@ -109,6 +111,7 @@
             "text_size": 16,
             "url": "",
             "color": "#000000",
+            "sub_color": "",
             "slide_bg_color": "#f7f7f7",
             "border_color": ""
           }
@@ -154,7 +157,7 @@
         "review_4CbDBf"
       ],
       "custom_css": [
-        ".reviews__grid {margin: 0 auto; justify-content: center;}"
+
       ],
       "settings": {
         "show_featured_image": false,
