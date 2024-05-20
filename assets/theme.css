@@ -26376,13 +26376,13 @@ body.grid-classic.has-line-design .grid--mobile-slider-custom {
 .grid-item-custom form .btn__outer {
   left: 10px;
   right: auto;
-  bottom: 90px;
+  bottom: 10px;
 }  
 }
 .grid-item-custom form .btn__outer {
   left: 10px;
   right: auto;
-  bottom: 145px;
+  bottom: 10px;
 }
 /* .grid-item-custom .btn__outer:hover .btn__text, 
 .grid-item-custom .btn__outer:hover .btn__loader, 
