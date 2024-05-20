@@ -42,7 +42,7 @@
             "position": 5,
             "featured_heading": "Level Guide",
             "heading_size": 32,
-            "featured_text": "",
+            "featured_text": "<p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.<\/p>",
             "featured_button_text": "Compare Routines",
             "featured_button_link": "shopify:\/\/pages\/level-guide",
             "text_under_img": "Unsure which is right for you? Compare and learn more about each routine.",
@@ -143,6 +143,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Eliminate the guesswork from achieving amazing skin with your personalized recommendation from our skin care experts.<\/p>",
+            "quote_enabled": false,
             "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
