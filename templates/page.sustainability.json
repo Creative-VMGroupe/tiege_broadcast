@@ -78,7 +78,7 @@
         "text_jjTk74": {
           "type": "text",
           "settings": {
-            "text": "<p>We care about the environment because it is our responsibility to make a difference. It’s hard to be environmentally friendly. Most people do not realize how big of a commitment it is, or what it costs a business, however, they know it’s the right thing to do. Tiege Hanley is prioritizing environmental stewardship and we hope you will join us.<\/p>",
+            "text": "<p>We care about the environment because it is our responsibility to make a difference. It’s hard to be environmentally friendly. Most people do not realize how big of a commitment it is, or what it costs a business, however, they know it’s the right thing to do. Tiege Hanley is prioritizing environmental stewardship and we hope you will join&nbsp;us.<\/p>",
             "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 0
@@ -114,6 +114,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Tiege Hanley feels that it can make the biggest impact by committing to a closed-loop recycling program. Doing so will limit the amount of new waste we contribute to the environment.<\/p><p>Put simply, we want to limit the waste we add to the environment, and we want to become waste\/plastic neutral. Ultimately, we want to recycle environmental waste in our supply chain, which means Tiege Hanley is not contributing to increased environmental waste. This strategy can drill down into waste as a byproduct of shipping, such as finding ways we can contribute to reducing carbon or receiving used packaging from our customers that can be recycled.<\/p>",
+            "quote_enabled": false,
             "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
@@ -154,6 +155,7 @@
           "type": "text",
           "settings": {
             "text": "<p>We have initiated a company policy to use a minimum of 35% post-consumer recycled (PCR) material in all our new product packaging. Our goal is to increase the amount of PCR in all our plastic and paper packaging materials. The result of this work significantly reduces the amount of virgin plastic going into environmental waste. Since the beginning of this program, we have addressed packaging on several items, and we hope to switch all our packaging to PCR over the next few years.<\/p>",
+            "quote_enabled": false,
             "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
