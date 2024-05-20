@@ -204,6 +204,7 @@
                 <div class="hero__content hero__content--compact">
                   {%- if subheading != blank -%}
                     {%- assign font_size_class = block.settings.subheading_size | prepend: 'subheading-size-' -%}
+                    
                     <p class="hero__subheading {{ font_size_class }}">
                       {{ subheading }}
                     </p>
@@ -218,7 +219,8 @@
 
                   {%- if text != blank -%}
                     {%- assign font_size_class = block.settings.text_size | prepend: 'body-size-' -%}
-                    <div class="hero__rte {{ font_size_class }} {{ block.settings.text_style }}">
+                    {% assign is_quote = block.settings.quote_enabled %}
+                    <div class="hero__rte {{ font_size_class }} {{ block.settings.text_style }} {% if is_quote %} quote_enabled{% endif %}">
                       {{ text }}
                     </div>
                   {%- endif -%}
