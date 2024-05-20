@@ -25365,7 +25365,7 @@ body.has-header-sticky .timeline {
   flex-direction: column;
 }
 .member-benefits__text {
-    margin-top: 20px;
+    margin-top: 0;
     margin-bottom: 20px;
 }
 @media screen and (max-width: 749px) {
