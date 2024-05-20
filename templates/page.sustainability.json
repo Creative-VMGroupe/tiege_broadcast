@@ -92,7 +92,7 @@
       ],
       "settings": {
         "width": "wrapper--narrow",
-        "align_text": "text-center",
+        "align_text": "text-left",
         "bg_color": "#ffffff",
         "color": "",
         "padding_top": 80,
