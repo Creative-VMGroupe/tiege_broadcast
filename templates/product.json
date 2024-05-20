@@ -128,6 +128,7 @@
         },
         "divider_1": {
           "type": "divider",
+          "disabled": true,
           "settings": {
             "show_line": true,
             "padding_bottom": 16
