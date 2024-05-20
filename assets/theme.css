@@ -26020,7 +26020,10 @@ time, .article__author {
 }
 }
 /*Global*/
-
+/*Icons*/
+.text-center .icon__animated {
+  margin: 0 auto;
+}
 /*Grids*/
 .grid {
   gap: 20px 10px;
