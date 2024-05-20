@@ -62,7 +62,7 @@
         "heading_MPWr8G": {
           "type": "heading",
           "settings": {
-            "title": "At Tiege Hanley",
+            "title": "A Rewarding Routine",
             "text_font": 40,
             "padding_bottom": 16
           }
@@ -143,7 +143,7 @@
         ".wrapper--full-padded {max-width: 840px;}"
       ],
       "settings": {
-        "title": "Your Member Benefits Explained",
+        "title": "Your Member Benefits",
         "heading_size": 40,
         "layout": "grid",
         "grid": 3,
