@@ -26308,6 +26308,11 @@ table tbody:nth-child(8) {
 .product-upsell__image-custom {
   position: relative;
 }
+@media(max-width: 749px) {
+  .product-upsell__image-custom form {
+  height: 0;
+}
+}
 .grid-custom {
   --columns: var(--COLUMNS-MOBILE);
 }
