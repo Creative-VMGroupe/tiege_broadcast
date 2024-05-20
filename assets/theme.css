@@ -23429,6 +23429,7 @@ predictive-search[open="true"] .predictive-search {
     width: 100%;
   }
   .btn__outer:hover .btn__text {
+    padding-left: 10px;
     padding-right: 10px;
     opacity: 1;
   }
