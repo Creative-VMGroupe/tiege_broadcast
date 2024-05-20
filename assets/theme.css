@@ -26027,6 +26027,9 @@ time, .article__author {
   margin: 0 auto;
 }
 /*Grids*/
+  .grid--slider .grid-item {
+    margin-right: 0;
+  }
 .grid {
   gap: 20px 10px;
 }
