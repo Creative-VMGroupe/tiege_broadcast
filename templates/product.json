@@ -62,20 +62,6 @@
             "padding_bottom": 16
           }
         },
-        "inventory_countdown_UfpQXK": {
-          "type": "inventory_countdown",
-          "disabled": true,
-          "settings": {
-            "show_notice": "always",
-            "max_inventory": 10,
-            "hide_inventory_counter": true,
-            "icon_size": 20,
-            "in_stock_color": "#56ad6a",
-            "low_stock_color": "#f79554",
-            "out_of_stock_color": "#721c24",
-            "padding_bottom": 16
-          }
-        },
         "variants": {
           "type": "variants",
           "settings": {
@@ -126,16 +112,9 @@
             "padding_bottom": 0
           }
         },
-        "divider_1": {
-          "type": "divider",
-          "disabled": true,
-          "settings": {
-            "show_line": true,
-            "padding_bottom": 16
-          }
-        },
         "complementary_products_C7V6rg": {
           "type": "complementary-products",
+          "disabled": true,
           "settings": {
             "level-guide_link": "",
             "comp-heading": "Want to level up?",
@@ -156,13 +135,11 @@
         "okendo_star_rating_DPzCnp",
         "recharge_subscriptions_subscription_widget_8WKxnT",
         "popup_iLQPxV",
-        "inventory_countdown_UfpQXK",
         "variants",
         "buttons",
         "text_e6RAMT",
         "metafield_icons_aLrgM3",
         "tab_richtext_nDcaW6",
-        "divider_1",
         "complementary_products_C7V6rg"
       ],
       "custom_css": [
