@@ -26305,6 +26305,9 @@ table tbody:nth-child(8) {
 }
 
 /*Custom Move - COmplementary Items Slider*/
+.product-upsell__image-custom {
+  position: relative;
+}
 .grid-custom {
   --columns: var(--COLUMNS-MOBILE);
 }
