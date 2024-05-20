@@ -26516,7 +26516,6 @@ body.has-line-design.grid-compact
 }
 /*Media with Text - Tiege*/
 .hero__content__media__alignment-custom:has(.hero__media) {
-  height: 100%;
   justify-content: center;
 }
 /* Used for the video on HP which had padding on top so it looked unbalanced 
