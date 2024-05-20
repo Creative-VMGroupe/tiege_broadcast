@@ -220,7 +220,7 @@
                   {%- if text != blank -%}
                     {%- assign font_size_class = block.settings.text_size | prepend: 'body-size-' -%}
                     {% assign is_quote = block.settings.quote_enabled %}
-                    <div class="hero__rte {{ font_size_class }} {{ block.settings.text_style }} {% if is_quote %} quote__body-custom{% endif %}">
+                    <div class="{% if is_quote %}quote__body-custom {% endif %} hero__rte {{ font_size_class }} {{ block.settings.text_style }}">
                       {{ text }}
                     </div>
                   {%- endif -%}
