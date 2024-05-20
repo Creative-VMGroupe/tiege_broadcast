@@ -26383,14 +26383,7 @@ body.grid-classic.has-line-design .grid--mobile-slider-custom {
   bottom: 10px;
 }  
 }
-@media(max-width: 749px) {
-  .product-upsell__image-custom form {
-  height: 0;
-}
-  .grid-item-custom form .btn__outer {
-    bottom: 53px;
-  }
-}
+
 .grid-item-custom form .btn__outer {
   left: 10px;
   right: auto;
@@ -26401,6 +26394,14 @@ body.grid-classic.has-line-design .grid--mobile-slider-custom {
 .grid-item-custom .btn__outer:hover .btn__added{
   display: none;
 } */
+@media(max-width: 749px) {
+  .product-upsell__image-custom form {
+  height: 0;
+}
+  .grid-item-custom form .btn__outer {
+    bottom: 53px;
+  }
+}
 .grid-item-custom .btn__outer .btn__plus {
   left: 4px;
 }
