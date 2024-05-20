@@ -25574,7 +25574,7 @@ body.has-header-sticky .timeline {
 .product__page .product__form__outer .radio__legend{
     padding: 10px 0 10px 40px;
     position: absolute;
-    max-width: 388px;
+    max-width: 288px;
     display: flex;
     align-items: center;
     height: 50px;
