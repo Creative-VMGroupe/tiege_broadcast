@@ -114,7 +114,6 @@
         },
         "complementary_products_C7V6rg": {
           "type": "complementary-products",
-          "disabled": true,
           "settings": {
             "level-guide_link": "",
             "comp-heading": "Want to level up?",
