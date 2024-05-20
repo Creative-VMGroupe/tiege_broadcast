@@ -26896,7 +26896,7 @@ width: 50% !important;
 }
 @media(max-width: 749px){
   .timeline__indicator__line:before {
-    width: 80%;
+    width: 90%;
   }
 }
 
