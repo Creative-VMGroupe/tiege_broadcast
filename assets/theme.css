@@ -26483,6 +26483,7 @@ body.has-line-design.grid-compact
   font-size: 14px !important;
   letter-spacing: 10px !important;
 }
+.quote__body-custom {}
 @media(max-width: 749px){
   .image-with-slider__container {
   padding-bottom: 28px !important
