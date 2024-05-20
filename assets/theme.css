@@ -25402,7 +25402,7 @@ body.has-header-sticky .timeline {
 }
 @media screen and (min-width: 750px) {
   .product-modal__container-custom {
-    padding: 20px;
+    padding: 60px;
   }
 
   .member-tiers_container {
