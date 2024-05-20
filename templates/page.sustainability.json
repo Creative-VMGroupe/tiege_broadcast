@@ -273,10 +273,19 @@
         "text_eep6bi": {
           "type": "text",
           "settings": {
-            "text": "<p>Adding PCR to our packaging and switching to non-carbon black has cost Tiege Hanley a lot of money. On average PCR packaging cost 15% more than virgin plastic. We are trying to absorb as much of this cost as possible. We are making every effort to avoid price increases or formulating them with cheaper ingredients, which we’ve noticed is a common practice.<\/p><p>JOIN OUR MISSION TO BE BETTER STEWARDS OF THE ENVIRONMENT<\/p><p>If you have questions, suggestions, or want more information, please email <a href=\"mailto:info@Tiege.com\">Info@Tiege.com<\/a>  with the word “Sustainability” in the subject line.<\/p>",
+            "text": "<p>Adding PCR to our packaging and switching to non-carbon black has cost Tiege Hanley a lot of money. On average PCR packaging cost 15% more than virgin plastic. We are trying to absorb as much of this cost as possible. We are making every effort to avoid price increases or formulating them with cheaper ingredients, which we’ve noticed is a common practice.<\/p>",
             "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 30
+          }
+        },
+        "text_WhCDnF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>JOIN OUR MISSION TO BE BETTER STEWARDS OF THE ENVIRONMENT<\/p><p>If you have questions, suggestions, or want more information, please email <a href=\"mailto:info@Tiege.com\">Info@Tiege.com<\/a>  with the word “Sustainability” in the subject line.<\/p>",
+            "text_font": 16,
+            "text_style": "font-body",
+            "padding_bottom": 16
           }
         },
         "text_6CipJA": {
@@ -311,6 +320,7 @@
         "text_YcbzVh",
         "heading_8weWyN",
         "text_eep6bi",
+        "text_WhCDnF",
         "text_6CipJA",
         "image_kDw4qU",
         "text_kaq8KH"
