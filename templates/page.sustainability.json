@@ -184,20 +184,20 @@
     "section_rich_text_7KXRxY": {
       "type": "section-rich-text",
       "blocks": {
-        "heading_9MYCNH": {
-          "type": "heading",
-          "settings": {
-            "title": "What Is Closed-Loop Recycling?",
-            "text_font": 40,
-            "padding_bottom": 16
-          }
-        },
         "subheading_DPi9aG": {
           "type": "subheading",
           "disabled": true,
           "settings": {
             "subheading": "What Is Closed-Loop Recycling?",
             "text_font": 16,
+            "padding_bottom": 16
+          }
+        },
+        "heading_9MYCNH": {
+          "type": "heading",
+          "settings": {
+            "title": "What Is Closed-Loop Recycling?",
+            "text_font": 40,
             "padding_bottom": 16
           }
         },
@@ -212,8 +212,8 @@
         }
       },
       "block_order": [
-        "heading_9MYCNH",
         "subheading_DPi9aG",
+        "heading_9MYCNH",
         "text_aACJjy"
       ],
       "settings": {
@@ -227,6 +227,27 @@
     },
     "section_hero_TJfLYW": {
       "type": "section-hero",
+      "blocks": {
+        "heading_GVYeU3": {
+          "type": "heading",
+          "settings": {
+            "title": "What Is Closed-Loop Recycling?",
+            "heading_font": 40
+          }
+        },
+        "text_AXzbVg": {
+          "type": "text",
+          "settings": {
+            "description": "Put simply, we don’t want to add waste to the environment and we want to become waste\/plastic neutral. What we can do is recycle environmental waste in our supply chain, which means Tiege Hanley isn’t contributing to increased environmental waste. This strategy can drill down into waste as a byproduct of shipping, such as finding ways we can contribute to reducing carbon.We have initiated a company policy to use a minimum of 35% post-consumer recycled (PCR) material in all our new product packaging. Our goal over the next two years is to increase the amount of PCR in all of our plastic and paper packaging materials.",
+            "text_font": 16,
+            "text_style": "font-body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GVYeU3",
+        "text_AXzbVg"
+      ],
       "settings": {
         "height": "screen-height-one-half",
         "width": "wrapper--full",
