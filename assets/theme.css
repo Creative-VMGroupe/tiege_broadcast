@@ -26394,7 +26394,7 @@ body.grid-classic.has-line-design .grid--mobile-slider-custom {
 .grid-item-custom .btn__outer:hover .btn__added{
   display: none;
 } */
-@media(max-width: 749px) {
+@media(max-width: 479px) {
   .product-upsell__image-custom form {
   height: 0;
 }
