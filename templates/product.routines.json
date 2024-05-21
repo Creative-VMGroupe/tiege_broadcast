@@ -1046,6 +1046,23 @@
       "settings": {
         "include_margins": false
       }
+    },
+    "1716308520e9d8c828": {
+      "type": "apps",
+      "blocks": {
+        "okendo_media_carousel_AtWR6L": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/media-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "okendo_media_carousel_AtWR6L"
+      ],
+      "settings": {
+        "include_margins": false
+      }
     }
   },
   "order": [
@@ -1063,6 +1080,7 @@
     "app_accordion_Qtcf8J",
     "related",
     "section_rich_text_qUUdWh",
-    "171061224373a1e0d4"
+    "171061224373a1e0d4",
+    "1716308520e9d8c828"
   ]
 }
