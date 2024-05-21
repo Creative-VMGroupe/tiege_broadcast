@@ -26655,6 +26655,7 @@ body.has-line-design.grid-compact
 
 .sliderule__wrapper:first-child .sliderule__wrapper:nth-child(-n + 3) .mobile__menu__dropdown .sliderule__wrapper:last-child a {
   color: gray !important;
+  font-style: italic;
 }
   
 .mobile__menu__dropdown.sliderule__panel.is-visible button.sliderow {
