@@ -268,8 +268,13 @@
                   {%- if featured_collection != blank -%}
                     {%- if featured_collection.products_count > 0 -%}
                       {%- for product in featured_collection.products limit: block_product_limit -%}
+{% if product.tags contains 'hidden' %}
+{%- else -%}
+			
+
                         {%- assign animation_index = forloop.index0 | modulo: 4 -%}
                         {%- render 'product-grid-item', product: product, animation_delay: animation_index, index: forloop.index, block_index: block_index -%}
+{%- endif -%}
                       {%- endfor -%}
                     {%- else -%}
                       <div class="no-results">
