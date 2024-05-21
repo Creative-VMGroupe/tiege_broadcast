@@ -103,27 +103,18 @@
         "padding_bottom": 200
       }
     },
-    "section_double_hWk3EJ": {
-      "type": "section-double",
+    "custom_section_double_static_B8QHcf": {
+      "type": "custom-section-double-static",
       "blocks": {
-        "subheading_bFtapz": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "subheading": "Introducing",
-            "text_size": 16,
-            "padding_bottom": 16
-          }
-        },
-        "heading_R8xkiR": {
+        "heading_zyMd8b": {
           "type": "heading",
           "settings": {
             "title": "You Can Change the World",
-            "heading_size": 40,
+            "text_size": 40,
             "padding_bottom": 16
           }
         },
-        "text_YPAbwM": {
+        "text_9XgLHr": {
           "type": "text",
           "settings": {
             "text": "<p>By purchasing Tiege products, you can be a part of closing the loop. Join today.<\/p>",
@@ -133,7 +124,7 @@
             "padding_bottom": 16
           }
         },
-        "buttons_Mxp3JR": {
+        "buttons_NNdMeV": {
           "type": "buttons",
           "settings": {
             "button_text": "Make a Difference",
@@ -147,21 +138,24 @@
         }
       },
       "block_order": [
-        "subheading_bFtapz",
-        "heading_R8xkiR",
-        "text_YPAbwM",
-        "buttons_Mxp3JR"
+        "heading_zyMd8b",
+        "text_9XgLHr",
+        "buttons_NNdMeV"
       ],
       "settings": {
         "layout": "",
-        "height": "screen-height-three-quarters",
+        "height": "screen-height-one-half",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
+        "padding": 16,
+        "padding_mobile": 16,
+        "video": "shopify:\/\/files\/videos\/yourskinmatters-trimmed.mp4",
         "image_width": "one-half",
-        "text_alignment": "text-left",
-        "padding_lr": 50,
+        "hover_effect": false,
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
         "reverse_blocks": false,
-        "bg_color": "",
+        "bg_color": "#e8e8e8",
         "color": "",
         "padding_top": 0,
         "padding_bottom": 0
@@ -449,7 +443,7 @@
     "main",
     "section_hero_KpG8aH",
     "section_rich_text_TXLJKC",
-    "section_double_hWk3EJ",
+    "custom_section_double_static_B8QHcf",
     "section_rich_text_3NDRYN",
     "section_rich_text_7KXRxY",
     "section_rich_text_njQNkK",
