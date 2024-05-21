@@ -174,7 +174,7 @@
       "custom_css": [
         "[class*=\"images-\"].grandparent.kids-4 .header__grandparent__links {grid-template-columns: repeat(3, minmax(0, 1fr));}",
         ".grandparent .menu__blocks {flex: 2;}",
-        ".dropdown__family a:first-child .navtext {font-weight: bold;}",
+        ".dropdown__family a:first-child .navtext {font-weight: 600;}",
         ".menu__item:first-child .dropdown__family:nth-child(-n + 3) a:last-child .navtext {font-style: italic; color: gray;}",
         ".menu__item:first-child .dropdown__family:first-child {padding-bottom: 0;}",
         ".menu__item:first-child .dropdown__family:last-child {padding-top: 0; margin-top: -130px;}"
