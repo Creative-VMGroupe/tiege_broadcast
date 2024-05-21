@@ -27047,10 +27047,9 @@ grid-column-gap: var(--gap);
     max-width: 800px;
     margin: 0 auto;
   }
-
+}
 @media(min-width: 1200px){
   .article-page-custom {
     max-width: 900px;
     margin: 0 auto;
   }
-}
