@@ -158,6 +158,9 @@
             {%- else -%}
               {%- liquid
                 for item in search.results
+if item.object_type == 'product' and item.tags contains 'hidden'
+continue
+endif
                   if item.object_type == 'product'
                     render 'product-grid-item', product: item, index: forloop.index
                   else
