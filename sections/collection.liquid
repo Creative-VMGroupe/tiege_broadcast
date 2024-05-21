@@ -51,6 +51,12 @@
       --hairline: {{ border_color }};
     {% endunless %}
   }
+  {% if collection.metafields.custom.header_color != blank %}
+    {{ collection.metafields.custom.header_color }}
+  {% endif %}
+  body:has(.main-content>.shopify-section.section-overlay-header:first-of-type) [data-header-transparent]:not(.meganav--visible):not(.js__header__stuck) .header__logo--has-transparent .logo__img--transparent {
+    
+  }
 {%- endstyle -%}
 
 {%- capture collection_sidebar_class -%}
