@@ -179,6 +179,7 @@
             "title": "Proof",
             "heading_font": 40,
             "text": "<p>{{ product.metafields.custom.proof_testimonial | metafield_tag }}<\/p>",
+            "quote_enabled": false,
             "text_size": 16,
             "text_style": "font-body",
             "button_text": "View 1000+ Reviews",
@@ -222,6 +223,7 @@
             "title": "{{ product.metafields.custom.ingredient_1_title.value }}",
             "heading_font": 40,
             "text": "<p>{{ product.metafields.custom.ingredient_1_information | metafield_tag }}<\/p>",
+            "quote_enabled": false,
             "text_size": 16,
             "text_style": "font-body",
             "button_text": "",
@@ -242,6 +244,7 @@
             "title": "{{ product.metafields.custom.ingredient_2_title.value }}",
             "heading_font": 40,
             "text": "<p>{{ product.metafields.custom.ingredient_2_information | metafield_tag }}<\/p>",
+            "quote_enabled": false,
             "text_size": 16,
             "text_style": "font-body",
             "button_text": "",
@@ -262,6 +265,7 @@
             "title": "{{ product.metafields.custom.ingredient_3_title.value }}",
             "heading_font": 40,
             "text": "<p>{{ product.metafields.custom.ingredient_3_information | metafield_tag }}<\/p>",
+            "quote_enabled": false,
             "text_size": 16,
             "text_style": "font-body",
             "button_text": "",
@@ -448,6 +452,7 @@
             "title": "Proof",
             "heading_font": 40,
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p><p>- Name of Reviewer<\/p>",
+            "quote_enabled": false,
             "text_size": 16,
             "text_style": "font-body",
             "button_text": "View 1000+ Reviews",
@@ -499,6 +504,7 @@
             "title": "Willow Bark Extract",
             "heading_font": 40,
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "quote_enabled": false,
             "text_size": 16,
             "text_style": "font-body",
             "button_text": "",
@@ -519,6 +525,7 @@
             "title": "Image with text slider",
             "heading_font": 40,
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "quote_enabled": false,
             "text_size": 16,
             "text_style": "font-body",
             "button_text": "",
@@ -793,6 +800,7 @@
       "block_order": [
         "instafeed_app_block_Vncyxe"
       ],
+      "disabled": true,
       "custom_css": [
 
       ],
