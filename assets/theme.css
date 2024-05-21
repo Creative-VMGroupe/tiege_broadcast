@@ -27003,3 +27003,7 @@ grid-column-gap: var(--gap);
 .multicolumn-custom .column__content {
   padding: 0 20px 0 0;
 }
+/*Compare Systems - Tiege*/
+.comparison-btn-custom {
+  margin-top: 20px;
+}
