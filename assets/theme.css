@@ -7677,7 +7677,7 @@ html:not(.no-js) body:not(.is-loaded) .header__desktop {
 }
 
 .js__header__stuck .theme__header {
-   background: var(--COLOR-HEADER-BG);
+   background: white;
 }
 
 .theme__header::after {
@@ -26645,7 +26645,7 @@ body.has-line-design.grid-compact
   color: white;
 }
 .mobile__menu__dropdown .sliderule__wrapper button .sliderow__title {
-  font-weight: 700;
+  font-weight: 500;
 } 
 
 .mobile__menu__dropdown .sliderule__wrapper a {
