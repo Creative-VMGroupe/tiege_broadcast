@@ -176,11 +176,15 @@
         "heading_9MYCNH",
         "text_aACJjy"
       ],
+      "custom_css": [
+        ".rich-text__img {opacity: 0.75;}"
+      ],
       "settings": {
+        "image_1": "shopify:\/\/shop_images\/AdobeStock_326040122.jpg",
         "width": "wrapper--narrow",
         "align_text": "text-left",
-        "bg_color": "",
-        "color": "",
+        "bg_color": "#000000",
+        "color": "#ffffff",
         "padding_top": 200,
         "padding_bottom": 200
       }
