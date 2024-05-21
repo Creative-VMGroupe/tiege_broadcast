@@ -7612,7 +7612,7 @@ html:not(.no-js) body:not(.is-loaded) .header__desktop {
 }
 
 .navtext {
-  font-size: calc(var(--font-2) * var(--FONT-ADJUST-NAV));
+  font-size: 14px;
   display: block;
 }
 
