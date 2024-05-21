@@ -461,7 +461,8 @@ endcapture
               -%}
 
               {%- for product in collection.products -%}
-                
+                 {% if product.tags contains 'hidden' %}
+                   {%- else -%}
                 {%- liquid
                   for featured_image in featured_images_array
                     if featured_image == ''
@@ -491,6 +492,7 @@ endcapture
                     render 'product-grid-item', product: product, index: forloop.index, sizes: image_sizes
                   endif
                 -%}
+                   {%- endif -%}
               {%- endfor -%}
 
             {%- else -%}
