@@ -27026,26 +27026,31 @@ grid-column-gap: var(--gap);
 }
 @media(min-width: 320px){
   .article-page-custom {
-    max-width: 400px
+    max-width: 400px;
+    margin: 0 auto;
   }
 }
 @media(min-width: 480px){
   .article-page-custom {
-    max-width: 400px
+    max-width: 400px;
+    margin: 0 auto;
   }
 }
 @media(min-width: 768px){
   .article-page-custom {
-    max-width: 600px
+    max-width: 600px;
+    margin: 0 auto;
   }
 }
 @media(min-width: 992px){
   .article-page-custom {
-    max-width: 700px
+    max-width: 700px;
+    margin: 0 auto;
   }
 
 @media(min-width: 1200px){
   .article-page-custom {
-    max-width: 900px
+    max-width: 900px;
+    margin: 0 auto;
   }
 }
