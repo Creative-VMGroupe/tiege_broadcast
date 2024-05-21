@@ -26996,3 +26996,7 @@ grid-column-gap: var(--gap);
   justify-content: center;
 } 
 }
+/*Text Columns with Images/Icons*/
+.multicolumn .column__content {
+  padding: 0 20px 0 0;
+}
