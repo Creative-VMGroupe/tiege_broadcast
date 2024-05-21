@@ -179,47 +179,6 @@
         "padding_bottom": 200
       }
     },
-    "section_double_static_vm_acAqbX": {
-      "type": "section-double-static-vm",
-      "blocks": {
-        "heading_iKAHx4": {
-          "type": "heading",
-          "settings": {
-            "title": "What Have We Done So Far",
-            "text_size": 40,
-            "padding_bottom": 16
-          }
-        },
-        "text_CdbzVE": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We have initiated a company policy to use a minimum of 35% post-consumer recycled (PCR) material in all our new product packaging. Our goal is to increase the amount of PCR in all our plastic and paper packaging materials. The result of this work significantly reduces the amount of virgin plastic going into environmental waste. Since the beginning of this program, we have addressed packaging on several items, and we hope to switch all our packaging to PCR over the next few years.<\/p>",
-            "quote_enabled": false,
-            "text_size": 16,
-            "text_style": "font-body",
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "heading_iKAHx4",
-        "text_CdbzVE"
-      ],
-      "settings": {
-        "layout": "is-reversed",
-        "height": "screen-height-one-half",
-        "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full-padded",
-        "image_1": "shopify:\/\/shop_images\/plant.jpg",
-        "image_width": "one-half",
-        "text_alignment": "text-left",
-        "reverse_blocks": false,
-        "bg_color": "#f9f9f9",
-        "color": "",
-        "padding_top": 80,
-        "padding_bottom": 80
-      }
-    },
     "section_rich_text_7KXRxY": {
       "type": "section-rich-text",
       "blocks": {
@@ -440,7 +399,6 @@
     "section_rich_text_TXLJKC",
     "section_rich_text_3NDRYN",
     "section_rich_text_njQNkK",
-    "section_double_static_vm_acAqbX",
     "section_rich_text_7KXRxY",
     "section_hero_TJfLYW",
     "section_rich_text_V4nJig",
