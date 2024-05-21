@@ -316,7 +316,7 @@
       "settings": {
         "width": "wrapper--narrow",
         "align_text": "text-left",
-        "bg_color": "#f7f7f7",
+        "bg_color": "#efefef",
         "color": "",
         "padding_top": 80,
         "padding_bottom": 80
