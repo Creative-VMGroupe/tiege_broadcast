@@ -177,7 +177,7 @@
         "text_aACJjy"
       ],
       "custom_css": [
-        ".rich-text__img {opacity: 0.75;}"
+        ".rich-text__img {opacity: 0.6;}"
       ],
       "settings": {
         "image_1": "shopify:\/\/shop_images\/AdobeStock_326040122.jpg",
@@ -311,7 +311,7 @@
         "text_kaq8KH"
       ],
       "custom_css": [
-        ".rich-text__img {opacity: 0.75;}"
+        ".rich-text__img {opacity: 0.6;}"
       ],
       "settings": {
         "image_1": "shopify:\/\/shop_images\/AdobeStock_326040122.jpg",
