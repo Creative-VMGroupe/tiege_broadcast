@@ -10,8 +10,12 @@
           id="product-recommendations">
           {%- liquid
             for product in recommendations.products
+if product.tags contains 'hidden'
+else
+			
               assign animation_delay = forloop.index0 | times: 1
               render 'product-grid-item', product: product, animation_delay: animation_delay, animation_anchor: '#product-recommendations', index: forloop.index
+endif
             endfor
           -%}
         </div>
