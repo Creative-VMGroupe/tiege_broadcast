@@ -124,6 +124,8 @@
             <div class="predictive-search__products__list grid-outer" role="listbox" aria-labelledby="predictive-search-products" data-search-results>
               <div class="grid">
                 {%- for product in predictive_search.resources.products -%}
+{% if product.tags contains 'hidden' %}
+{%- else -%}
                   {%- render 'search-product-item',
                     product: product,
                     animation_delay: animation_delay,
@@ -133,6 +135,7 @@
                     tabindex: false,
                     index: forloop.index -%}
                   {%- assign animation_delay = animation_delay | plus: 150 -%}
+{%- endif -%}
                 {%- endfor -%}
               </div>
             </div>
