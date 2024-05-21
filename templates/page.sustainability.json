@@ -42,18 +42,56 @@
         "text_3UMYgJ"
       ],
       "settings": {
-        "height": "screen-height-one-half",
+        "height": "screen-height-full",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/AdobeStock_431439937.jpg",
         "link": "",
-        "mobile_height": "screen-height-three-quarters--mobile",
-        "flex_align_desktop": "align--bottom-left-desktop",
-        "flex_align_mobile": "align--bottom-left-mobile",
-        "overlay_opacity": 30,
+        "mobile_height": "screen-height-full--mobile",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "overlay_opacity": 45,
         "overlay_color": "#000000",
         "show_overlay_text": false,
         "bg_color": "",
         "color": "#ffffff"
+      }
+    },
+    "section_hero_nB9pJx": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_q3xk7m": {
+          "type": "heading",
+          "settings": {
+            "title": "Make a Difference",
+            "heading_font": 40
+          }
+        },
+        "text_MrHGM6": {
+          "type": "text",
+          "settings": {
+            "description": "We care about the environment because it is our responsibility to make a difference. It’s hard to be environmentally friendly. Most people do not realize how big of a commitment it is, or what it costs a business, however, they know it’s the right thing to do. Tiege Hanley is prioritizing environmental stewardship and we hope you will join us.",
+            "text_font": 16,
+            "text_style": "font-body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_q3xk7m",
+        "text_MrHGM6"
+      ],
+      "settings": {
+        "height": "screen-height-three-quarters",
+        "width": "wrapper--full",
+        "link": "",
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "mobile_image": "shopify:\/\/shop_images\/AdobeStock_296235877.jpg",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "overlay_opacity": 0,
+        "overlay_color": "#000",
+        "show_overlay_text": false,
+        "bg_color": "",
+        "color": "#FFFFFF"
       }
     },
     "section_rich_text_TXLJKC": {
@@ -78,7 +116,7 @@
         "text_jjTk74": {
           "type": "text",
           "settings": {
-            "text": "<p>We care about the environment because it is our responsibility to make a difference. It’s hard to be environmentally friendly. Most people do not realize how big of a commitment it is, or what it costs a business, however, they know it’s the right thing to do. Tiege Hanley is prioritizing environmental stewardship and we hope you will join&nbsp;us.<\/p>",
+            "text": "<p>We care about the environment because it is our responsibility to make a difference. It’s hard to be environmentally friendly. Most people do not realize how big of a commitment it is, or what it costs a business, however, they know it’s the right thing to do. Tiege Hanley is prioritizing environmental stewardship and we hope you will join us.<\/p>",
             "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 0
@@ -91,12 +129,13 @@
         "text_jjTk74"
       ],
       "settings": {
+        "image_1": "shopify:\/\/shop_images\/AdobeStock_296235877.jpg",
         "width": "wrapper--narrow",
         "align_text": "text-left",
-        "bg_color": "#ffffff",
-        "color": "",
-        "padding_top": 80,
-        "padding_bottom": 80
+        "bg_color": "#000000",
+        "color": "#ffffff",
+        "padding_top": 200,
+        "padding_bottom": 200
       }
     },
     "section_double_static_vm_QMXVUx": {
@@ -398,6 +437,7 @@
   "order": [
     "main",
     "section_hero_KpG8aH",
+    "section_hero_nB9pJx",
     "section_rich_text_TXLJKC",
     "section_double_static_vm_QMXVUx",
     "section_double_static_vm_acAqbX",
