@@ -103,6 +103,70 @@
         "padding_bottom": 200
       }
     },
+    "section_double_hWk3EJ": {
+      "type": "section-double",
+      "blocks": {
+        "subheading_bFtapz": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Introducing",
+            "text_size": 16,
+            "padding_bottom": 16
+          }
+        },
+        "heading_R8xkiR": {
+          "type": "heading",
+          "settings": {
+            "title": "You Can Change the World",
+            "heading_size": 40,
+            "padding_bottom": 16
+          }
+        },
+        "text_YPAbwM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>By purchasing Tiege products, you can be a part of closing the loop. Join today.<\/p>",
+            "quote_enabled": false,
+            "text_size": 16,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_Mxp3JR": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Make a Difference",
+            "button_url": "shopify:\/\/collections\/all-routines-1",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_bFtapz",
+        "heading_R8xkiR",
+        "text_YPAbwM",
+        "buttons_Mxp3JR"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "padding_lr": 50,
+        "reverse_blocks": false,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_rich_text_3NDRYN": {
       "type": "section-rich-text",
       "blocks": {
@@ -385,6 +449,7 @@
     "main",
     "section_hero_KpG8aH",
     "section_rich_text_TXLJKC",
+    "section_double_hWk3EJ",
     "section_rich_text_3NDRYN",
     "section_rich_text_7KXRxY",
     "section_rich_text_njQNkK",
