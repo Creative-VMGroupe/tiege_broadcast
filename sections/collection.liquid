@@ -461,7 +461,7 @@ endcapture
               -%}
 
               {%- for product in collection.products -%}
-                <script>console.log({{ product.tags }})</script>
+                
                 {%- liquid
                   for featured_image in featured_images_array
                     if featured_image == ''
