@@ -119,9 +119,13 @@
                   {%- if block_collection != blank -%}
                     {%- if block_collection.products_count > 0 -%}
                       {%- for product in block_collection.products limit: 5 -%}
+
+{% if product.tags contains 'hidden' %}
+{%- else -%}
                         <div class="look__slide look__slide--{{ block.id }}-{{ forloop.index0 }}" data-slide="{{ block.id }}-{{ forloop.index0 }}" data-slide-index="{{ forloop.index0 }}" {{ block.shopify_attributes }}>
                           {%- render 'product-grid-item', product: product, index: forloop.index -%}
                         </div>
+{%- endif -%}
                       {%- endfor -%}
                     {%- else -%}
                       <div class="no-results">
