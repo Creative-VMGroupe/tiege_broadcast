@@ -267,7 +267,7 @@
         "text_WhCDnF": {
           "type": "text",
           "settings": {
-            "text": "<p>JOIN OUR MISSION TO BE BETTER STEWARDS OF THE ENVIRONMENT<\/p><p>If you have questions, suggestions, or want more information, please email <a href=\"mailto:info@Tiege.com\">Info@Tiege.com<\/a>  with the word “Sustainability” in the subject line.<\/p>",
+            "text": "<p><strong>Join our mission to be better stewards of the environment.<\/strong><\/p><p>If you have questions, suggestions, or want more information, please email <a href=\"mailto:info@Tiege.com\">Info@Tiege.com<\/a>  with the word “Sustainability” in the subject line.<\/p>",
             "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 16
@@ -285,7 +285,7 @@
         "image_kDw4qU": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/tiege_sig_del.png",
+            "image": "shopify:\/\/shop_images\/tiege_sig_del-white.png",
             "image_width": 20,
             "padding_bottom": 16
           }
@@ -311,13 +311,14 @@
         "text_kaq8KH"
       ],
       "custom_css": [
-        ".hero__content:has(.hero__media) {padding-bottom: 0;}"
+        ".rich-text__img {opacity: 0.75;}"
       ],
       "settings": {
+        "image_1": "shopify:\/\/shop_images\/AdobeStock_326040122.jpg",
         "width": "wrapper--narrow",
         "align_text": "text-left",
-        "bg_color": "#efefef",
-        "color": "",
+        "bg_color": "#000000",
+        "color": "#ffffff",
         "padding_top": 80,
         "padding_bottom": 80
       }
