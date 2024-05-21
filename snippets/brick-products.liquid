@@ -38,7 +38,10 @@
     {%- liquid
       if block.settings.product_list.count > 0
         for product in block.settings.product_list
+if product.tags contains 'hidden'
+else	
           render 'product-grid-item', product: product
+endif
         endfor
       else
         for i in (1..4)
