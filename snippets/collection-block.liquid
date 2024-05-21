@@ -31,6 +31,9 @@
 
 {%- if collection.products_count > 0 -%}
   {% for product in collection.products limit: limit %}
+    {% if product.tags contains 'hidden' %}
+{%- else -%}
+			
     {%- if forloop.last -%}
       {%- assign products_list_index = forloop.index -%}
     {%- endif -%}
@@ -46,6 +49,7 @@
       {{ products_list_html }}
       {% render 'product-grid-item', product: product, animation_delay: forloop.index0, collection: collection, index: forloop.index %}
     {%- endcapture -%}
+{%- endif -%}
   {% endfor %}
 {%- elsif section.settings.display_type == 'selected' and block.settings.collection == blank -%}
   {% for i in (1..limit) %}
