@@ -117,7 +117,7 @@
         "text_Wb9PBG": {
           "type": "text",
           "settings": {
-            "text": "<p>Tiege Hanley feels that it can make the biggest impact by committing to a closed-loop recycling program. Doing so will limit the amount of new waste we contribute to the environment.<\/p><p><strong>What is closed-loop recycling?<br\/><\/strong>Put simply, we want to limit the waste we add to the environment, and we want to become waste\/plastic neutral. Ultimately, we want to recycle environmental waste in our supply chain, which means Tiege Hanley is not contributing to increased environmental waste.<\/p><p>This strategy can drill down into waste as a byproduct of shipping, such as finding ways we can contribute to reducing carbon or receiving used packaging from our customers that can be recycled.<\/p>",
+            "text": "<p>Tiege Hanley feels that it can make the biggest impact by committing to a closed-loop recycling program. Doing so will limit the amount of new waste we contribute to the environment.<\/p>",
             "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 16
@@ -133,44 +133,6 @@
       ],
       "settings": {
         "image_1": "shopify:\/\/shop_images\/AdobeStock_296235877.jpg",
-        "width": "wrapper--narrow",
-        "align_text": "text-left",
-        "bg_color": "#000000",
-        "color": "#ffffff",
-        "padding_top": 200,
-        "padding_bottom": 200
-      }
-    },
-    "section_rich_text_njQNkK": {
-      "type": "section-rich-text",
-      "blocks": {
-        "heading_WGR98P": {
-          "type": "heading",
-          "settings": {
-            "title": "What We've Done So Far",
-            "text_font": 40,
-            "padding_bottom": 16
-          }
-        },
-        "text_HFqtjN": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We have initiated a company policy to use a minimum of 35% post-consumer recycled (PCR) material in all our new product packaging. Our goal is to increase the amount of PCR in all our plastic and paper packaging materials.<\/p><p>The result of this work significantly reduces the amount of virgin plastic going into environmental waste. Since the beginning of this program, we have addressed packaging on several items, and we hope to switch all our packaging to PCR over the next few years.<\/p>",
-            "text_font": 16,
-            "text_style": "font-body",
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "heading_WGR98P",
-        "text_HFqtjN"
-      ],
-      "custom_css": [
-        ".rich-text__img {opacity: 0.4;}"
-      ],
-      "settings": {
-        "image_1": "shopify:\/\/shop_images\/plant.jpg",
         "width": "wrapper--narrow",
         "align_text": "text-left",
         "bg_color": "#000000",
@@ -223,21 +185,42 @@
         "padding_bottom": 200
       }
     },
-    "section_hero_TJfLYW": {
-      "type": "section-hero",
+    "section_rich_text_njQNkK": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_WGR98P": {
+          "type": "heading",
+          "settings": {
+            "title": "What We've Done So Far",
+            "text_font": 40,
+            "padding_bottom": 16
+          }
+        },
+        "text_HFqtjN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We have initiated a company policy to use a minimum of 35% post-consumer recycled (PCR) material in all our new product packaging. Our goal is to increase the amount of PCR in all our plastic and paper packaging materials.<\/p><p>The result of this work significantly reduces the amount of virgin plastic going into environmental waste. Since the beginning of this program, we have addressed packaging on several items, and we hope to switch all our packaging to PCR over the next few years.<\/p>",
+            "text_font": 16,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_WGR98P",
+        "text_HFqtjN"
+      ],
+      "custom_css": [
+        ".rich-text__img {opacity: 0.4;}"
+      ],
       "settings": {
-        "height": "screen-height-one-half",
-        "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/AdobeStock_296235877.jpg",
-        "link": "",
-        "mobile_height": "screen-height-one-half--mobile",
-        "flex_align_desktop": "align--middle-center-desktop",
-        "flex_align_mobile": "align--middle-center-mobile",
-        "overlay_opacity": 0,
-        "overlay_color": "#000000",
-        "show_overlay_text": false,
-        "bg_color": "",
-        "color": "#ffffff"
+        "image_1": "shopify:\/\/shop_images\/plant.jpg",
+        "width": "wrapper--narrow",
+        "align_text": "text-left",
+        "bg_color": "#000000",
+        "color": "#ffffff",
+        "padding_top": 200,
+        "padding_bottom": 200
       }
     },
     "section_rich_text_V4nJig": {
@@ -398,9 +381,8 @@
     "section_hero_KpG8aH",
     "section_rich_text_TXLJKC",
     "section_rich_text_3NDRYN",
-    "section_rich_text_njQNkK",
     "section_rich_text_7KXRxY",
-    "section_hero_TJfLYW",
+    "section_rich_text_njQNkK",
     "section_rich_text_V4nJig",
     "section_rich_text_aaQgdL",
     "1713200593b3060898"
