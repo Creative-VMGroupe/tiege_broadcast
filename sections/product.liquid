@@ -868,7 +868,10 @@
                               data-dots="line"
                               data-options='{"pageDots": true, "prevNextButtons": true, "autoPlay": 4000, "pauseAutoPlayOnHover": false}'>
                                 {%- for product in recommendations.products limit: block.settings.complementary_limit-%}
+{% if product.tags contains 'hidden' %}
+{%- else -%}                                  
                                   {%- render 'upsell-product', upsell_product: product -%}
+{%- endif -%}
                                 {%- endfor -%}
                               </div>
                             </div>
