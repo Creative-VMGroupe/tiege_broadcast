@@ -318,10 +318,10 @@
         "heading_size": 40,
         "layout": "grid",
         "grid": 3,
-        "align_heading": "text-left",
-        "align_text": "text-left",
+        "align_heading": "text-center",
+        "align_text": "text-center",
         "icon_alignment": "icon--top",
-        "align_columns": "flex-align-top",
+        "align_columns": "flex-align-center",
         "width": "wrapper--full-padded",
         "bg_color": "#f7f7f7",
         "color": "",
@@ -333,10 +333,18 @@
     "section_double_FPTYcM": {
       "type": "section-double",
       "blocks": {
+        "image_DUC9t8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sun-protection.png",
+            "image_width": 20,
+            "padding_bottom": 16
+          }
+        },
         "heading_QRBKbP": {
           "type": "heading",
           "settings": {
-            "title": "Get Protected",
+            "title": "Sun Prevention",
             "heading_size": 40,
             "padding_bottom": 16
           }
@@ -344,7 +352,7 @@
         "text_gzVm6z": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text": "<p>Guys must use a facial moisturizer with SPF each morning to protect from the sun’s harmful UV rays. Every Tiege Hanley system provides a guy with 30 days of sun protection. No matter where you go or what you do that day—start it with an AM moisturizer with a minimum 20 SPF.<\/p>",
             "quote_enabled": false,
             "text_size": 16,
             "text_style": "font-body",
@@ -354,7 +362,7 @@
         "buttons_a4nzkp": {
           "type": "buttons",
           "settings": {
-            "button_text": "Learn more",
+            "button_text": "Get Protected",
             "button_url": "",
             "button_type": "btn--primary",
             "button_size": "",
@@ -365,6 +373,7 @@
         }
       },
       "block_order": [
+        "image_DUC9t8",
         "heading_QRBKbP",
         "text_gzVm6z",
         "buttons_a4nzkp"
