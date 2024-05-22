@@ -115,6 +115,24 @@
             "padding_bottom": 50
           }
         },
+        "heading_EwQ3Gx": {
+          "type": "heading",
+          "settings": {
+            "title": "42 Million+",
+            "text_font": 40,
+            "big_text": true,
+            "padding_bottom": 16
+          }
+        },
+        "text_hnimLM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Days helping protect guys from sun damage<\/p>",
+            "text_font": 16,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
         "2_columns_3W9W8x": {
           "type": "2Columns",
           "settings": {
@@ -141,6 +159,8 @@
       "block_order": [
         "subheading_9pqUmL",
         "heading_Qze6m9",
+        "heading_EwQ3Gx",
+        "text_hnimLM",
         "2_columns_3W9W8x",
         "text_EBnWnW"
       ],
@@ -150,7 +170,7 @@
       "settings": {
         "image_1": "shopify:\/\/shop_images\/AdobeStock_326040122.jpg",
         "width": "wrapper--narrow",
-        "align_text": "text-center",
+        "align_text": "text-left",
         "bg_color": "#000000",
         "color": "#ffffff",
         "padding_top": 200,
@@ -351,6 +371,54 @@
         "padding_bottom": 0
       }
     },
+    "section_rich_text_RTPWit": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_fdB9ir": {
+          "type": "heading",
+          "settings": {
+            "title": "Rich text",
+            "text_font": 40,
+            "big_text": false,
+            "padding_bottom": 16
+          }
+        },
+        "text_WDCeTB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_font": 16,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_PpqrDV": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_fdB9ir",
+        "text_WDCeTB",
+        "buttons_PpqrDV"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
     "section_double_yhTVDr": {
       "type": "section-double",
       "blocks": {
@@ -531,6 +599,7 @@
     "section_rich_text_8WGREr",
     "section_rich_text_zRAhxB",
     "section_double_FPTYcM",
+    "section_rich_text_RTPWit",
     "section_double_yhTVDr",
     "section_rich_text_YWBiRt",
     "section_rich_text_XXdqUY",
