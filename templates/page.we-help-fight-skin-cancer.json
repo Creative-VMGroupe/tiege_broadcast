@@ -286,7 +286,7 @@
           "settings": {
             "title": "How Can You Make an Impact?",
             "text_font": 40,
-            "big_text": false,
+            "big_text": true,
             "padding_bottom": 40
           }
         }
@@ -297,10 +297,10 @@
       "settings": {
         "width": "wrapper--narrow",
         "align_text": "text-center",
-        "bg_color": "#f7f7f7",
+        "bg_color": "#ffffff",
         "color": "",
         "padding_top": 100,
-        "padding_bottom": 0
+        "padding_bottom": 100
       }
     },
     "section_double_FPTYcM": {
