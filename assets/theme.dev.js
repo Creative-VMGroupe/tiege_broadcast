@@ -2960,7 +2960,7 @@
             console.log('Item Clicked', newAddProduct, button);
             this.updateCart(
               {
-                id: button.dataset.key,
+                id: newAddProduct.key,
                 quantity: 0,
               },
               item
