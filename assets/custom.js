@@ -475,7 +475,8 @@ async function addedCartFunction(addedItem, data) {
       reloadCart = true;
       alertStatus = 'error';
       alertMessage = window.theme.cartSettings.singleRoutine.alert;
-      await changeItemQty(routineItem.key, '0');
+      showMessageDuplicateRoutine(routineItem.key);
+      // await changeItemQty(routineItem.key, '0');
     }
   }
 
