@@ -180,14 +180,6 @@
     "section_double_static_vm_4aHUtL": {
       "type": "section-double-static-vm",
       "blocks": {
-        "subheading_aXMTRh": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Wash",
-            "text_size": 12,
-            "padding_bottom": 16
-          }
-        },
         "heading_zT6tqJ": {
           "type": "heading",
           "settings": {
@@ -205,12 +197,22 @@
             "text_style": "font-body",
             "padding_bottom": 16
           }
+        },
+        "product_JCMM6K": {
+          "type": "product",
+          "settings": {
+            "product_list": [
+              "single-product-name-2"
+            ],
+            "show_product_card": true,
+            "padding_bottom": 16
+          }
         }
       },
       "block_order": [
-        "subheading_aXMTRh",
         "heading_zT6tqJ",
-        "text_cnCbrb"
+        "text_cnCbrb",
+        "product_JCMM6K"
       ],
       "settings": {
         "layout": "is-reversed",
