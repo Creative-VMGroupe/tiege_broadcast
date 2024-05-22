@@ -68,17 +68,17 @@
       </div>
     </div>
 
-    <div class="cart__success drawer__success"
+    <div class="cart__errors drawer__errors"
       data-cart-success
       data-animation="{{ animation_name }}"
       data-animation-duration="{{ animation_duration }}"
       data-animation-delay="{{ animation_delay }}">
-      <div class="cart__success__inner">
-        <h5 class="cart__success__heading">{{ 'cart.general.limit_message' | t }}</h5>
+      <div class="cart__errors__inner">
+        <h5 class="cart__errors__heading">{{ 'cart.general.limit_message' | t }}</h5>
 
-        <p class="cart__success__content" data-error-message></p>
+        <p class="cart__errors__content" data-error-message></p>
 
-        <button class="cart__success__close" type="button" data-cart-error-close aria-label="{{ 'general.accessibility.close' | t }} {{ 'cart.general.title' | t }}">
+        <button class="cart__errors__close" type="button" data-cart-error-close aria-label="{{ 'general.accessibility.close' | t }} {{ 'cart.general.title' | t }}">
           {%- render 'icon-cancel' -%}
         </button>
       </div>
