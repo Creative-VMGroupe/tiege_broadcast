@@ -262,72 +262,29 @@
         "padding_bottom": 100
       }
     },
-    "section_text_row_4qA4id": {
-      "type": "section-text-row",
+    "section_rich_text_zRAhxB": {
+      "type": "section-rich-text",
       "blocks": {
-        "icon_H9xU8E": {
-          "type": "icon",
+        "heading_wmhGQC": {
+          "type": "heading",
           "settings": {
-            "icon_name": "icon-shield",
-            "icon_size": 50,
-            "icon_color": "#000000",
-            "image": "shopify:\/\/shop_images\/sun-protection.png",
-            "title": "Sun Protection",
-            "heading_size": 14,
-            "text": "<p><br\/>Guys must use a facial moisturizer with SPF each morning to protect from the sun’s harmful UV rays. Every Tiege Hanley system provides a guy with 30 days of sun protection. No matter where you go or what you do that day—start it with an AM moisturizer with a minimum 20 SPF.<\/p>",
-            "text_size": 16
-          }
-        },
-        "icon_NAz9yq": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-trophy",
-            "icon_size": 50,
-            "icon_color": "#000000",
-            "image": "shopify:\/\/shop_images\/Asset-1_4x_94d8ee25-9862-4bcd-8cef-c2ff5636fb17.png",
-            "title": "Dollars Donated",
-            "heading_size": 14,
-            "text": "<p><br\/>As a Corporate Council member, we support the Foundation’s work of empowering people to take a proactive approach to daily sun protection and the early detection and treatment of skin cancer.<\/p>",
-            "text_size": 16
-          }
-        },
-        "icon_iPTQVX": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-chat",
-            "icon_size": 50,
-            "icon_color": "#000000",
-            "image": "shopify:\/\/shop_images\/get-protected.png",
-            "title": "Get Protected",
-            "heading_size": 12,
-            "text": "<p><br\/>Join our cause. Together we give—together we change skin care for men. Help us spread the word through awareness, education and support of the Foundation’s life saving programs. Let’s help more men in the fight to prevent skin cancer!<\/p>",
-            "text_size": 16
+            "title": "How You Can Make an Impact",
+            "text_font": 40,
+            "big_text": false,
+            "padding_bottom": 20
           }
         }
       },
       "block_order": [
-        "icon_H9xU8E",
-        "icon_NAz9yq",
-        "icon_iPTQVX"
-      ],
-      "custom_css": [
-
+        "heading_wmhGQC"
       ],
       "settings": {
-        "title": "How You Can Make an Impact",
-        "heading_size": 40,
-        "layout": "grid",
-        "grid": 3,
-        "align_heading": "text-center",
+        "width": "wrapper--narrow",
         "align_text": "text-center",
-        "icon_alignment": "icon--top",
-        "align_columns": "flex-align-center",
-        "width": "wrapper--full-padded",
         "bg_color": "#f7f7f7",
         "color": "",
-        "padding_top": 80,
-        "padding_bottom": 80,
-        "layout_mobile": "1"
+        "padding_top": 100,
+        "padding_bottom": 0
       }
     },
     "section_double_FPTYcM": {
@@ -344,7 +301,7 @@
         "heading_QRBKbP": {
           "type": "heading",
           "settings": {
-            "title": "Sun Prevention",
+            "title": "Use Protection",
             "heading_size": 40,
             "padding_bottom": 16
           }
@@ -572,7 +529,7 @@
     "section_rich_text_ryAmny",
     "section_rich_text_qXNtK8",
     "section_rich_text_8WGREr",
-    "section_text_row_4qA4id",
+    "section_rich_text_zRAhxB",
     "section_double_FPTYcM",
     "section_double_yhTVDr",
     "section_rich_text_YWBiRt",
