@@ -20,12 +20,33 @@
     },
     "section_hero_AKxdtT": {
       "type": "section-hero",
+      "blocks": {
+        "heading_NzqdVV": {
+          "type": "heading",
+          "settings": {
+            "title": "Our Story",
+            "heading_font": 40
+          }
+        },
+        "text_NYmWmP": {
+          "type": "text",
+          "settings": {
+            "description": "The Tiege Difference",
+            "text_font": 16,
+            "text_style": "font-body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NzqdVV",
+        "text_NYmWmP"
+      ],
       "settings": {
-        "height": "screen-height-one-half",
+        "height": "screen-height-three-quarters",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/founders.jpg",
         "link": "",
-        "mobile_height": "screen-height-one-half--mobile",
+        "mobile_height": "screen-height-three-quarters--mobile",
         "flex_align_desktop": "align--middle-center-desktop",
         "flex_align_mobile": "align--middle-center-mobile",
         "overlay_opacity": 0,
@@ -58,6 +79,7 @@
           "type": "text",
           "settings": {
             "text": "<p>The Tiege Hanley story is simple and uncomplicated, just like our products. Founded by four “regular guys,” we created a product system and brand that makes skin care meaningful, accessible, affordable and clinically relevant—for regular guys.<br\/><br\/>The brain child of Kelley Thornton, Tiege Hanley, named after one of Kelley’s prominent ancestors, was inspired by a department store skin care aisle stroll. As Kelley perused, he was struck by three simple truths:<br\/><br\/>1. Guys really don’t know much about skin care<br\/>2. Men’s skin care products are complicated and confusing<br\/>3. Man, are those products expensive!<\/p>",
+            "quote_enabled": false,
             "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
@@ -208,6 +230,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Kelley and Rob wanted to help regular guys look and feel amazing by creating a skin care system that was easy to understand and to use. But what good is an idea without an audience? Enter Aaron Marino—men's lifestyle expert, grooming guru, YouTube sensation and serial entrepreneur. Aaron’s male-centric passion for health and lifestyle, personal brand and cult-like following made him Tiege Hanley’s ideal partner number three.<br\/><br\/>Now that the team had a powerful way to reach men, they were only missing the final ingredient—the products themselves. Daunting undertaking? Nah! They did what any regular guys would do—took their idea to the golf course, where they teed up with the man who would become Tiege Hanley’s master skin care formulator. Known only as The Chemist (who prefers to remain incognito) and with more than 35 years of experience formulating products for some of the top skin care brands, he agreed to join the team as fourth partner and is the creator of what the team calls their “Ferrari formulas.”<\/p>",
+            "quote_enabled": false,
             "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
@@ -304,6 +327,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Four regular guys—inspired by real life experience, passion, insight and the desire to do good for our fellow men—who have reinvented men’s skin care and changed the way regular guys think about their skin.<br\/><br\/>Tiege Hanley's sole mission is to help guys look and feel amazing by providing a simplified skin care system.<br\/><br\/>We are truly <strong>Uncomplicated Skin Care for Men.<\/strong><br\/><br\/>– Aaron, Rob, Kelley & \"The Chemist\"<\/p>",
+            "quote_enabled": false,
             "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
