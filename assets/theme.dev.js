@@ -3283,7 +3283,6 @@
       }
 
       addItemSwitch(item) {
-        console.log(item);
         let formData = {
            'items': [
              {
@@ -3309,6 +3308,8 @@
 
             if (this.cart) {
               this.getCart();
+              this.updateSuccessText('Your item is updated to subscription item');
+              this.toggleSuccessMessage();
             } else {
               // Redirect to cart page if "Add to cart" is successful
               window.location = theme.routes.cart_url;
