@@ -2740,6 +2740,7 @@
       upsellWidget: '[data-upsell-widget]',
       termsErrorMessage: '[data-terms-error-message]',
       collapsibleBody: '[data-collapsible-body]',
+      switchSubscrption: '[data-switch-to-subscription]'
     };
 
     const attributes$y = {
