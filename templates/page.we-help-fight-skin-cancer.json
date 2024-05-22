@@ -88,7 +88,7 @@
       "settings": {
         "image_1": "shopify:\/\/shop_images\/tiege_skin2_del.webp",
         "width": "wrapper--narrow",
-        "align_text": "text-center",
+        "align_text": "text-left",
         "bg_color": "#000000",
         "color": "#ffffff",
         "padding_top": 200,
@@ -143,8 +143,43 @@
         "align_text": "text-center",
         "bg_color": "#000000",
         "color": "#ffffff",
-        "padding_top": 80,
-        "padding_bottom": 30
+        "padding_top": 200,
+        "padding_bottom": 200
+      }
+    },
+    "section_rich_text_qXNtK8": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_Fwhppq": {
+          "type": "heading",
+          "settings": {
+            "title": "Rich text",
+            "text_font": 40,
+            "big_text": false,
+            "padding_bottom": 16
+          }
+        },
+        "text_UPfa94": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_font": 16,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_Fwhppq",
+        "text_UPfa94"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-left",
+        "bg_color": "#000000",
+        "color": "#ffffff",
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "section_rich_text_8WGREr": {
@@ -153,7 +188,7 @@
         "subheading_UW99Qp": {
           "type": "subheading",
           "settings": {
-            "subheading": "The Data Doesn't Lie",
+            "subheading": "Prevention Has Never Been More Important",
             "text_font": 16,
             "padding_bottom": 16
           }
@@ -161,7 +196,7 @@
         "heading_yt7JFk": {
           "type": "heading",
           "settings": {
-            "title": "Prevention Has Never Been More Important",
+            "title": "The Data Doesn't Lie",
             "text_font": 40,
             "big_text": false,
             "padding_bottom": 40
@@ -513,6 +548,7 @@
     "section_hero_KpG8aH",
     "section_rich_text_egX3gc",
     "section_rich_text_ryAmny",
+    "section_rich_text_qXNtK8",
     "section_rich_text_8WGREr",
     "section_double_Xj3hp3",
     "section_text_row_4qA4id",
