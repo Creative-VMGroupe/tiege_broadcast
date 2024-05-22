@@ -107,7 +107,9 @@
                 <span>{{ line_item.selling_plan_allocation.selling_plan.name }}</span>
               </p>
             {% else %}
-              <span class="subscription-switch" data-variant-id="{{ line_item.variant_id }}" data-selling-plan="{{ line_item.variant.selling_plan_allocations }}">Switch to Subscription</span>
+              <p class="cart__item__selling-plan">
+                <span class="subscription-switch" data-variant-id="{{ line_item.variant_id }}" data-selling-plan="{{ line_item.variant.selling_plan_allocations | json }}">Switch to Subscription</span>
+              </p>
             {%- endif -%}
 
             {%- if properties_html != '' -%}
