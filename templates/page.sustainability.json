@@ -72,6 +72,7 @@
           "settings": {
             "title": "Make a Difference",
             "text_font": 40,
+            "big_text": false,
             "padding_bottom": 16
           }
         },
@@ -169,6 +170,7 @@
           "settings": {
             "title": "Our Commitment",
             "text_font": 40,
+            "big_text": false,
             "padding_bottom": 16
           }
         },
@@ -216,6 +218,7 @@
           "settings": {
             "title": "What Is Closed-Loop Recycling?",
             "text_font": 40,
+            "big_text": false,
             "padding_bottom": 16
           }
         },
@@ -255,6 +258,7 @@
           "settings": {
             "title": "What We've Done So Far",
             "text_font": 40,
+            "big_text": false,
             "padding_bottom": 16
           }
         },
@@ -293,6 +297,7 @@
           "settings": {
             "title": "Did you know?",
             "text_font": 40,
+            "big_text": false,
             "padding_bottom": 16
           }
         },
@@ -310,6 +315,7 @@
           "settings": {
             "title": "What Does It Cost?",
             "text_font": 24,
+            "big_text": false,
             "padding_bottom": 16
           }
         },
@@ -369,7 +375,7 @@
         "text_kaq8KH"
       ],
       "custom_css": [
-        ".rich-text__img {opacity: 0.6;}"
+        ".rich-text__img {opacity: 0.75;}"
       ],
       "settings": {
         "image_1": "shopify:\/\/shop_images\/AdobeStock_326040122.jpg",
@@ -389,6 +395,7 @@
           "settings": {
             "title": "Seen in the Wild",
             "text_font": 40,
+            "big_text": false,
             "padding_bottom": 16
           }
         },
