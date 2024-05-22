@@ -436,7 +436,8 @@ async function removeMultiplewithReload(lineItems) {
   })
   .then(response => response.json())
   .then(data => {
-    
+    var eventReload = new Event('theme:cart-drawer:reload', { bubbles: true, cancelable: false });
+    document.dispatchEvent(eventReload);
   })
   .catch((error) => {
     console.error('Error:', error);
