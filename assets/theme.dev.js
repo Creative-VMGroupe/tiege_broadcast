@@ -3606,6 +3606,7 @@
         this.freeShippingMessageHandle(this.subtotal);
         this.cartRemoveEvents();
         this.cartUpdateEvents();
+        this.cartSwitchEvents();
         this.toggleErrorMessage();
         this.enableCartButtons();
         this.updateProgress();
