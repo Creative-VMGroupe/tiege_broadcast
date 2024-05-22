@@ -238,7 +238,7 @@
         "image_width": "one-half",
         "text_alignment": "text-left",
         "reverse_blocks": false,
-        "bg_color": "#f7f7f7",
+        "bg_color": "#e8e8e8",
         "color": "",
         "padding_top": 0,
         "padding_bottom": 0
@@ -289,14 +289,17 @@
         "text_PBT7G3",
         "text_XkLRAw"
       ],
+      "custom_css": [
+        ".rich-text__img {opacity: 0.6;}"
+      ],
       "settings": {
         "image_1": "shopify:\/\/shop_images\/Drop.png",
         "width": "wrapper--narrow",
         "align_text": "text-center",
         "bg_color": "",
         "color": "",
-        "padding_top": 80,
-        "padding_bottom": 80
+        "padding_top": 200,
+        "padding_bottom": 200
       }
     },
     "section_double_static_vm_TbaLXG": {
@@ -367,7 +370,7 @@
         "image_width": "one-half",
         "text_alignment": "text-left",
         "reverse_blocks": false,
-        "bg_color": "#f7f7f7",
+        "bg_color": "#e8e8e8",
         "color": "",
         "padding_top": 0,
         "padding_bottom": 0
@@ -378,6 +381,7 @@
       "blocks": {
         "image_WAR7Da": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/shield.png",
             "image_width": 10,
@@ -410,8 +414,8 @@
       "settings": {
         "width": "wrapper--narrow",
         "align_text": "text-center",
-        "bg_color": "",
-        "color": "",
+        "bg_color": "#000000",
+        "color": "#ffffff",
         "padding_top": 80,
         "padding_bottom": 80
       }
