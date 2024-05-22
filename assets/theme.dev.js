@@ -2951,7 +2951,7 @@
 
         cartItemSwitch.forEach((button) => {
           const item = button.closest(selectors$U.item);
-          console.log(item);
+          let newAddProduct = item.dataset;
           button.addEventListener('click', (event) => {
             event.preventDefault();
 
@@ -2959,13 +2959,14 @@
 
             this.updateCart(
               {
-                id: button.dataset.id,
+                id: button.dataset.key,
                 quantity: 0,
               },
               item
             );
 
             // Add product to cart
+            
           });
         });
 
