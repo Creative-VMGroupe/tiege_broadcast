@@ -2967,6 +2967,27 @@
             );
 
             // Add product to cart
+            let formData = {
+             'items': [
+               {
+                'id': newAddProduct.variantId,
+                'quantity': newAddProduct.quantity,
+                'selling_plan' : newAddProduct.sellingPlan
+              }
+             ]
+            };
+            await fetch(window.Shopify.routes.root + 'cart/add.js', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(formData)
+            })
+            .then(response => response.json())
+            .then(data => {})
+            .catch((error) => {
+              console.error('Error:', error);
+            });
             
           });
         });
