@@ -114,11 +114,25 @@
             "big_text": false,
             "padding_bottom": 50
           }
+        },
+        "2_columns_3W9W8x": {
+          "type": "2Columns",
+          "settings": {
+            "title1": "Rich text",
+            "heading_font": 40,
+            "text1": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_font": 16,
+            "text_style": "font-body",
+            "title2": "Rich text",
+            "text2": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "padding_bottom": 16
+          }
         }
       },
       "block_order": [
         "subheading_9pqUmL",
-        "heading_Qze6m9"
+        "heading_Qze6m9",
+        "2_columns_3W9W8x"
       ],
       "custom_css": [
         ".rich-text__img {opacity: 0.75;}"
