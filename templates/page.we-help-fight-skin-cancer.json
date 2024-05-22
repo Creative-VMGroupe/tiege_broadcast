@@ -260,7 +260,7 @@
           "settings": {
             "icon_name": "icon-shield",
             "icon_size": 50,
-            "icon_color": "#545454",
+            "icon_color": "#000000",
             "image": "shopify:\/\/shop_images\/sun-protection.png",
             "title": "Sun Protection",
             "heading_size": 14,
@@ -273,7 +273,7 @@
           "settings": {
             "icon_name": "icon-trophy",
             "icon_size": 50,
-            "icon_color": "#545454",
+            "icon_color": "#000000",
             "image": "shopify:\/\/shop_images\/Asset-1_4x_94d8ee25-9862-4bcd-8cef-c2ff5636fb17.png",
             "title": "Dollars Donated",
             "heading_size": 14,
@@ -286,10 +286,10 @@
           "settings": {
             "icon_name": "icon-chat",
             "icon_size": 50,
-            "icon_color": "#545454",
+            "icon_color": "#000000",
             "image": "shopify:\/\/shop_images\/get-protected.png",
             "title": "Get Protected",
-            "heading_size": 14,
+            "heading_size": 12,
             "text": "<p><br\/>Join our cause. Together we give—together we change skin care for men. Help us spread the word through awareness, education and support of the Foundation’s life saving programs. Let’s help more men in the fight to prevent skin cancer!<\/p>",
             "text_size": 16
           }
@@ -308,8 +308,8 @@
         "heading_size": 40,
         "layout": "grid",
         "grid": 3,
-        "align_heading": "text-center",
-        "align_text": "text-center",
+        "align_heading": "text-left",
+        "align_text": "text-left",
         "icon_alignment": "icon--top",
         "align_columns": "flex-align-top",
         "width": "wrapper--full-padded",
@@ -416,7 +416,7 @@
       "settings": {
         "width": "wrapper--narrow",
         "align_text": "text-center",
-        "bg_color": "",
+        "bg_color": "#f0f0f0",
         "color": "",
         "padding_top": 80,
         "padding_bottom": 80
