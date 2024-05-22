@@ -411,13 +411,17 @@
         "heading_Rk4JUz",
         "text_mDCVF7"
       ],
+      "custom_css": [
+        ".rich-text__img {opacity: 0.4;}"
+      ],
       "settings": {
+        "image_1": "shopify:\/\/shop_images\/Screenshot_2024-05-22_at_1.51.51_PM.png",
         "width": "wrapper--narrow",
         "align_text": "text-center",
         "bg_color": "#000000",
         "color": "#ffffff",
-        "padding_top": 80,
-        "padding_bottom": 80
+        "padding_top": 200,
+        "padding_bottom": 200
       }
     },
     "section_rich_text_K7Njz3": {
