@@ -76,9 +76,9 @@
       <div class="cart__errors__inner">
         <h5 class="cart__errors__heading">{{ 'cart.general.limit_message' | t }}</h5>
 
-        <p class="cart__errors__content" data-error-message></p>
+        <p class="cart__errors__content" data-success-message></p>
 
-        <button class="cart__errors__close" type="button" data-cart-error-close aria-label="{{ 'general.accessibility.close' | t }} {{ 'cart.general.title' | t }}">
+        <button class="cart__errors__close" type="button" data-cart-success-close aria-label="{{ 'general.accessibility.close' | t }} {{ 'cart.general.title' | t }}">
           {%- render 'icon-cancel' -%}
         </button>
       </div>
