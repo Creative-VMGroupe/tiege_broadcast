@@ -360,7 +360,7 @@
                       {%- assign animation_order = animation_order | plus: 1 -%}
                       {%- assign font_size_class = block.settings.text_size | prepend: 'heading-size-' -%}
                       {% assign big_text = block.settings.big_text %}
-                      <h2 class="hero__title {{ font_size_class }} block-padding {%- if big_text -%}oversized-text-custom{%- endif -%}"
+                      <h2 class="hero__title {{ font_size_class }} block-padding {% if big_text %} oversized-text-custom{% endif %}"
                         data-aos="hero"
                         data-aos-anchor="{{ animation_anchor }}"
                         data-aos-order="{{ animation_order }}"
