@@ -8,17 +8,17 @@
   assign is_cart_drawer = true
   assign cart_item_count = cart.item_count
   assign cart_title_default = 'cart.general.title' | t
-  assign show_empty_cart_menu = settings.show_empty_cart_menu | default: nil
+  assign show_empty_cart_menu = settings.show_empty_cart_menu | default: null
   assign empty_cart_menu = settings.empty_cart_menu
-  assign empty_cart_products = settings.empty_cart_products | default: nil
+  assign empty_cart_products = settings.empty_cart_products | default: null
   assign show_wheel = false
   assign show_progress_bar = true
   assign has_cart_title = false
   assign has_checkout_buttons = false
 
-  assign title_block = section.blocks | where: "type", "title"
-  assign product_block = section.blocks | where: "type", "products"
-  assign checkout_buttons_block = section.blocks | where: "type", "checkout-buttons"
+  assign title_block = section.blocks | where: 'type', 'title'
+  assign product_block = section.blocks | where: 'type', 'products'
+  assign checkout_buttons_block = section.blocks | where: 'type', 'checkout-buttons'
 
   for block in section.blocks
     case block.type
@@ -31,7 +31,6 @@
 
       when 'checkout-buttons'
         assign has_checkout_buttons = true
-
     endcase
   endfor
 -%}
@@ -223,14 +222,19 @@
     data-section-id="{{ section.id }}"
     data-section-type="cart-drawer"
   >
-    <cart-drawer class="drawer drawer--cart{% if cart_item_count == 0 %} is-empty{% endif %}" id="cart-drawer" tabindex="0">
+    <cart-drawer
+      class="drawer drawer--cart{% if cart_item_count == 0 %} is-empty{% endif %}"
+      id="cart-drawer"
+      tabindex="0"
+    >
       <collapsible-elements class="drawer__inner" single="true" data-cart-drawer-inner data-scroll-lock-scrollable>
-
         <div class="drawer__body" data-cart-drawer-body data-scroll-lock-scrollable>
-
           {%- unless has_cart_title -%}
             {%- assign title_block_index = title_block_index | default: 1 -%}
-            {%- assign animation_delay = title_block_index | times: animation_delay_increment | plus: animation_delay_initial -%}
+            {%- assign animation_delay = title_block_index
+              | times: animation_delay_increment
+              | plus: animation_delay_initial
+            -%}
 
             <div
               class="cart-block cart-block--top drawer__head"
@@ -279,6 +283,8 @@
                 {{ block.shopify_attributes }}
               >
                 {%- case block.type -%}
+                  {%- when 'cart-alert' -%}
+                    <div class="cart-alert"></div>
                   {%- when 'title' -%}
                     {{ cart_title }}
 
@@ -308,100 +314,99 @@
 
                   {%- when 'free-shipping' -%}
                     {% comment %} Free shipping {% endcomment %}
-
-{%- liquid
-  assign free_shipping_text = block.settings.message | default: section.settings.message
-  assign show_message = false
-
-  if free_shipping_text != blank
-    assign show_message = true
-  endif
-
-  assign free_shipping_limit = settings.free_shipping_limit
-  assign free_shipping_gradient = block.settings.free_shipping_gradient | default: section.settings.free_shipping_gradient
--%}
-
-{% if free_shipping_gradient != blank %}
-  {% style %}
-    :root {
-      --FREE-SHIPPING-GRADIENT: {{ free_shipping_gradient }};
-    }
-  {% endstyle %}
-{% endif %}
-
-{%- if show_message -%}
-  {%- liquid
-    assign limit = free_shipping_limit | plus: 0
-    assign limit_currency = limit | times: 100
-    assign subtotal_without_currency = cart.total_price | plus: 0 | divided_by: 100
-    assign percent = limit | minus: subtotal_without_currency | times: 100 | divided_by: limit
-    assign percent = 100 | minus: percent
-
-    if settings.currency_code_enable
-      assign limit_currency = limit_currency | minus: cart.total_price | money_with_currency
-    else
-      assign limit_currency = limit_currency | minus: cart.total_price | money_without_trailing_zeros
-    endif
-
-    capture left_to_spend
-      echo '<span data-left-to-spend>' | append: limit_currency | append: '</span>'
-    endcapture
-
-    assign free_shipping_message = free_shipping_text | replace: '||amount||', left_to_spend
-    assign qualified_shipping_message = 'cart.general.qualified_shipping_message' | t
-
-    capture free_shipping_classes
-      if is_cart_drawer
-        echo 'drawer__message '
-      endif
-
-      if template.name == 'cart'
-        echo 'cart__message '
-      endif
-
-      echo 'free-shipping'
-
-      if subtotal_without_currency >= limit and qualified_shipping_message != blank
-        echo ' is-success'
-      endif
-    endcapture
-  -%}
-
-  <div class="{{ free_shipping_classes }}"
-    data-free-shipping="{% if qualified_shipping_message != blank %}true{% else %}false{% endif %}"
-    data-free-shipping-limit="{{ limit }}"
-  >
-    {%- if show_wheel -%}
-      <div class="free-shipping__graph" data-progress-graph style="--stroke-dashoffset: 87.96459430051421;">
-        <svg height="18" width="18" viewBox="0 0 18 18">
-          <circle r="7" cx="9" cy="9" />
-          <circle class="free-shipping__graph-progress" stroke-dasharray="87.96459430051421 87.96459430051421" r="7" cx="9" cy="9" />
-        </svg>
-      </div>
-    {%- endif -%}
-
-    {%- if qualified_shipping_message != blank -%}
-      <span class="free-shipping__success-message">{{ qualified_shipping_message }}</span>
-    {%- endif -%}
-
-    <span class="free-shipping__default-message">
-      {{ free_shipping_message }}
-    </span>
-
-    {%- if show_progress_bar -%}
-      <progress class="free-shipping__progress-bar" data-progress-bar value="{{ percent }}" max="100"></progress>
-    {%- endif -%}
-
-    <div class="confetti">
-      <span class="confetti__dot confetti__dot--1"></span>
-      <span class="confetti__dot confetti__dot--2"></span>
-      <span class="confetti__dot confetti__dot--3"></span>
-      <span class="confetti__dot confetti__dot--4"></span>
-      <span class="confetti__dot confetti__dot--5"></span>
-      <span class="confetti__dot confetti__dot--6"></span>
-    </div>
-  </div>
-{%- endif -%}
+                    {%- liquid
+                      assign free_shipping_text = block.settings.message | default: section.settings.message
+                      assign show_message = false
+                    
+                      if free_shipping_text != blank
+                        assign show_message = true
+                      endif
+                    
+                      assign free_shipping_limit = settings.free_shipping_limit
+                      assign free_shipping_gradient = block.settings.free_shipping_gradient | default: section.settings.free_shipping_gradient
+                    -%}
+                    
+                    {% if free_shipping_gradient != blank %}
+                      {% style %}
+                        :root {
+                          --FREE-SHIPPING-GRADIENT: {{ free_shipping_gradient }};
+                        }
+                      {% endstyle %}
+                    {% endif %}
+                    
+                    {%- if show_message -%}
+                      {%- liquid
+                        assign limit = free_shipping_limit | plus: 0
+                        assign limit_currency = limit | times: 100
+                        assign subtotal_without_currency = cart.total_price | plus: 0 | divided_by: 100
+                        assign percent = limit | minus: subtotal_without_currency | times: 100 | divided_by: limit
+                        assign percent = 100 | minus: percent
+                    
+                        if settings.currency_code_enable
+                          assign limit_currency = limit_currency | minus: cart.total_price | money_with_currency
+                        else
+                          assign limit_currency = limit_currency | minus: cart.total_price | money_without_trailing_zeros
+                        endif
+                    
+                        capture left_to_spend
+                          echo '<span data-left-to-spend>' | append: limit_currency | append: '</span>'
+                        endcapture
+                    
+                        assign free_shipping_message = free_shipping_text | replace: '||amount||', left_to_spend
+                        assign qualified_shipping_message = 'cart.general.qualified_shipping_message' | t
+                    
+                        capture free_shipping_classes
+                          if is_cart_drawer
+                            echo 'drawer__message '
+                          endif
+                    
+                          if template.name == 'cart'
+                            echo 'cart__message '
+                          endif
+                    
+                          echo 'free-shipping'
+                    
+                          if subtotal_without_currency >= limit and qualified_shipping_message != blank
+                            echo ' is-success'
+                          endif
+                        endcapture
+                      -%}
+                    
+                      <div class="{{ free_shipping_classes }}"
+                        data-free-shipping="{% if qualified_shipping_message != blank %}true{% else %}false{% endif %}"
+                        data-free-shipping-limit="{{ limit }}"
+                      >
+                        {%- if show_wheel -%}
+                          <div class="free-shipping__graph" data-progress-graph style="--stroke-dashoffset: 87.96459430051421;">
+                            <svg height="18" width="18" viewBox="0 0 18 18">
+                              <circle r="7" cx="9" cy="9" />
+                              <circle class="free-shipping__graph-progress" stroke-dasharray="87.96459430051421 87.96459430051421" r="7" cx="9" cy="9" />
+                            </svg>
+                          </div>
+                        {%- endif -%}
+                    
+                        {%- if qualified_shipping_message != blank -%}
+                          <span class="free-shipping__success-message">{{ qualified_shipping_message }}</span>
+                        {%- endif -%}
+                    
+                        <span class="free-shipping__default-message">
+                          {{ free_shipping_message }}
+                        </span>
+                    
+                        {%- if show_progress_bar -%}
+                          <progress class="free-shipping__progress-bar" data-progress-bar value="{{ percent }}" max="100"></progress>
+                        {%- endif -%}
+                    
+                        <div class="confetti">
+                          <span class="confetti__dot confetti__dot--1"></span>
+                          <span class="confetti__dot confetti__dot--2"></span>
+                          <span class="confetti__dot confetti__dot--3"></span>
+                          <span class="confetti__dot confetti__dot--4"></span>
+                          <span class="confetti__dot confetti__dot--5"></span>
+                          <span class="confetti__dot confetti__dot--6"></span>
+                        </div>
+                      </div>
+                    {%- endif -%}
 
 
                   {%- when 'order-note' -%}
@@ -440,7 +445,8 @@
           {%- endif -%}
 
           {%- if product_block.size == 0 -%}
-            <div class="cart-block"
+            <div
+              class="cart-block"
               data-animation="{{ animation_name }}"
               data-animation-duration="{{ animation_duration }}"
               data-animation-delay="{{ animation_delay }}"
@@ -451,7 +457,11 @@
         </div>
 
         {%- if has_checkout_buttons == false or pinned_blocks != blank -%}
-          <div class="drawer__foot" data-checkout-buttons style="--base-animation-delay: {{ block_index_static | times: animation_delay_increment }}ms;">
+          <div
+            class="drawer__foot"
+            data-checkout-buttons
+            style="--base-animation-delay: {{ block_index_static | times: animation_delay_increment }}ms;"
+          >
             {%- if pinned_blocks != blank -%}
               {{ pinned_blocks }}
             {%- endif -%}
@@ -468,9 +478,19 @@
           </div>
         {%- endif -%}
 
-        <div class="drawer__empty" data-cart-empty data-scroll-lock-scrollable style="--base-animation-delay: {{ animation_delay_initial }}ms">
+        <div
+          class="drawer__empty"
+          data-cart-empty
+          data-scroll-lock-scrollable
+          style="--base-animation-delay: {{ animation_delay_initial }}ms"
+        >
           <div class="drawer__empty__inner">
-            <p class="drawer__empty__message" data-animation="{{ animation_name }}" data-animation-duration="{{ animation_duration }}" data-animation-delay="{{ animation_delay_initial }}">
+            <p
+              class="drawer__empty__message"
+              data-animation="{{ animation_name }}"
+              data-animation-duration="{{ animation_duration }}"
+              data-animation-delay="{{ animation_delay_initial }}"
+            >
               {{- 'cart.general.empty' | t -}}
             </p>
             {%- assign animation_delay = animation_delay_initial | plus: animation_delay_increment -%}
@@ -505,7 +525,8 @@
             {%- endif -%}
 
             {%- if empty_cart_products -%}
-              <div class="drawer__empty__product"
+              <div
+                class="drawer__empty__product"
                 data-animation="{{ animation_name }}"
                 data-animation-duration="{{ animation_duration }}"
                 data-animation-delay="{{ animation_delay }}"
@@ -529,174 +550,174 @@
 {%- endif -%}
 
 {% schema %}
-  {
-    "name": "Cart drawer",
-    "blocks": [
-      {
-        "type": "title",
-        "name": "Title",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "text",
-            "id": "title",
-            "label": "Text",
-            "default": "Cart"
-          }
-        ]
-      },
-      {
-        "type": "cart-message",
-        "name": "Cart message",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "richtext",
-            "id": "cart_custom_message_text",
-            "label": "Text",
-            "default": "<p>Use coupon code <strong>WELCOME10</strong> for 10% off your first order.</p>"
-          },
-          {
-            "type": "color",
-            "id": "cart_custom_message_color",
-            "label": "Text color"
-          },
-          {
-            "type": "checkbox",
-            "id": "pin_to_bottom",
-            "label": "Pin to bottom",
-            "default": false
-          }
-        ]
-      },
-      {
-        "type": "free-shipping",
-        "name": "Free shipping message",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "paragraph",
-            "content": "Set a minimum amount for free shipping in [Theme settings](/admin/themes/current/editor?context=theme)"
-          },
-          {
-            "type": "textarea",
-            "id": "message",
-            "label": "Message",
-            "info": "Use ||amount|| to display progress towards free shipping.",
-            "default": "You are ||amount|| away from free shipping."
-          },
-          {
-            "type": "color_background",
-            "id": "free_shipping_gradient",
-            "label": "Custom progress bar gradient"
-          },
-          {
-            "type": "checkbox",
-            "id": "pin_to_bottom",
-            "label": "Pin to bottom",
-            "default": false
-          }
-        ]
-      },
-      {
-        "type": "products",
-        "name": "Products",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "checkbox",
-            "id": "pin_to_bottom",
-            "label": "Pin to bottom",
-            "default": false
-          }
-        ]
-      },
-      {
-        "type": "upsell-products",
-        "name": "Upsell products",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "checkbox",
-            "id": "upsell_auto_open",
-            "label": "Show upsell products automatically when cart drawer is opened",
-            "default": true
-          },
-          {
-            "type": "checkbox",
-            "id": "pin_to_bottom",
-            "label": "Pin to bottom",
-            "default": false
-          }
-        ]
-      },
-      {
-        "type": "order-note",
-        "name": "Order note",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "checkbox",
-            "id": "pin_to_bottom",
-            "label": "Pin to bottom",
-            "default": false
-          }
-        ]
-      },
-      {
-        "type": "gift-note",
-        "name": "Gift note",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "checkbox",
-            "id": "pin_to_bottom",
-            "label": "Pin to bottom",
-            "default": false
-          }
-        ]
-      },
-      {
-        "type": "shipping-estimate",
-        "name": "Shipping estimate",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "checkbox",
-            "id": "pin_to_bottom",
-            "label": "Pin to bottom",
-            "default": false
-          }
-        ]
-      },
-      {
-        "type": "checkout-buttons",
-        "name": "Checkout buttons",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "checkbox",
-            "id": "enable_additional_buttons",
-            "label": "Enable additional checkout buttons",
-            "default": false
-          },
-          {
-            "type": "checkbox",
-            "id": "show_view_cart_button",
-            "label": "Show 'View cart' button",
-            "default": false
-          },
-          {
-            "type": "checkbox",
-            "id": "pin_to_bottom",
-            "label": "Pin to bottom",
-            "default": true
-          }
-        ]
-      }
-    ],
-    "enabled_on": {
-      "groups": ["aside"]
+{
+  "name": "Cart drawer",
+  "blocks": [
+    {
+      "type": "title",
+      "name": "Title",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Text",
+          "default": "Cart"
+        }
+      ]
+    },
+    {
+      "type": "cart-message",
+      "name": "Cart message",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "cart_custom_message_text",
+          "label": "Text",
+          "default": "<p>Use coupon code <strong>WELCOME10</strong> for 10% off your first order.</p>"
+        },
+        {
+          "type": "color",
+          "id": "cart_custom_message_color",
+          "label": "Text color"
+        },
+        {
+          "type": "checkbox",
+          "id": "pin_to_bottom",
+          "label": "Pin to bottom",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "free-shipping",
+      "name": "Free shipping message",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Set a minimum amount for free shipping in [Theme settings](/admin/themes/current/editor?context=theme)"
+        },
+        {
+          "type": "textarea",
+          "id": "message",
+          "label": "Message",
+          "info": "Use ||amount|| to display progress towards free shipping.",
+          "default": "You are ||amount|| away from free shipping."
+        },
+        {
+          "type": "color_background",
+          "id": "free_shipping_gradient",
+          "label": "Custom progress bar gradient"
+        },
+        {
+          "type": "checkbox",
+          "id": "pin_to_bottom",
+          "label": "Pin to bottom",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "products",
+      "name": "Products",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "pin_to_bottom",
+          "label": "Pin to bottom",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "upsell-products",
+      "name": "Upsell products",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "upsell_auto_open",
+          "label": "Show upsell products automatically when cart drawer is opened",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "pin_to_bottom",
+          "label": "Pin to bottom",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "order-note",
+      "name": "Order note",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "pin_to_bottom",
+          "label": "Pin to bottom",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "gift-note",
+      "name": "Gift note",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "pin_to_bottom",
+          "label": "Pin to bottom",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "shipping-estimate",
+      "name": "Shipping estimate",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "pin_to_bottom",
+          "label": "Pin to bottom",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "checkout-buttons",
+      "name": "Checkout buttons",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "enable_additional_buttons",
+          "label": "Enable additional checkout buttons",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "show_view_cart_button",
+          "label": "Show 'View cart' button",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "pin_to_bottom",
+          "label": "Pin to bottom",
+          "default": true
+        }
+      ]
     }
+  ],
+  "enabled_on": {
+    "groups": ["aside"]
   }
+}
 {% endschema %}
