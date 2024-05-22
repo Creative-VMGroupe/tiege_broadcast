@@ -27054,3 +27054,7 @@ grid-column-gap: var(--gap);
     margin: 0 auto;
   }
 }
+/*Quiz*/
+body#find-my-routine .header-sections {
+  height: 0;
+}
