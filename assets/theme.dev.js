@@ -3843,7 +3843,6 @@
       }
 
       onCartDrawerAlert(e) {
-        console.log(e);
         if (e.detail.status == 'error') {
           this.updateErrorText(e.detail.message);
           this.toggleErrorMessage();
