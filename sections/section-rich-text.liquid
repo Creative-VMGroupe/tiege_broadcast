@@ -76,7 +76,8 @@
               {%- if block.settings.title != blank -%}
                 {%- assign animation_order = animation_order | plus: 1 -%}
                 {%- assign font_size_class = block.settings.text_font | prepend: 'heading-size-' -%}
-                <h2 class="hero__title {{ font_size_class }} block-padding"
+                {% assign big_text = block.settings.big_text %}
+                <h2 class="hero__title {{ font_size_class }} block-padding {% if big_text %} oversized-text-custom{% endif %}"
                   data-aos="hero"
                   data-aos-anchor="{{ animation_anchor }}"
                   data-aos-order="{{ animation_order }}"
@@ -393,6 +394,12 @@
           "max": 40,
           "step": 8,
           "default": 40
+        },
+        {
+            "type": "checkbox",
+            "id": "big_text",
+            "label": "Enable Oversized Text",
+            "default": false
         },
         {
           "type": "header",
