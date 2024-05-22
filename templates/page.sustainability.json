@@ -377,8 +377,8 @@
         "align_text": "text-left",
         "bg_color": "#000000",
         "color": "#ffffff",
-        "padding_top": 80,
-        "padding_bottom": 80
+        "padding_top": 200,
+        "padding_bottom": 200
       }
     },
     "section_rich_text_aaQgdL": {
