@@ -26479,8 +26479,12 @@ body.has-line-design.grid-compact
 }
 /*Buttons*/
 .btn__text{
-  text-transform: capitalize; 
-  letter-spacing: 0;
+  text-transform: uppercase;  
+  letter-spacing: var(--BTN-LETTER-SPACING);
+}
+.btn.btn--text {
+    text-transform: capitalize !important;  
+  letter-spacing: 0 !important;
 }
 /*Image with Slider - Tiege and Metafield*/
 .media-slider__block-custom .video__player {
