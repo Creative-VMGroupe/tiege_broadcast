@@ -279,7 +279,7 @@
         "heading_pcmrrr": {
           "type": "heading",
           "settings": {
-            "title": "\"We’ve reinvented men’s skin care and changed the way men think about their skin.\"",
+            "title": "\"We’ve reinvented men’s skin care and changed the way men think about their&nbsp;skin.\"",
             "text_font": 32,
             "padding_bottom": 16
           }
@@ -289,47 +289,16 @@
         "heading_pcmrrr"
       ],
       "custom_css": [
-        ".rich-text__img {opacity: 0.6;}"
+        ".rich-text__img {opacity: 0.75;}"
       ],
       "settings": {
+        "image_1": "shopify:\/\/shop_images\/AdobeStock_326040122.jpg",
         "width": "wrapper--narrow",
         "align_text": "text-center",
         "bg_color": "#000000",
         "color": "#ffffff",
-        "padding_top": 100,
-        "padding_bottom": 100
-      }
-    },
-    "section_reviews_McPTbp": {
-      "type": "section-reviews",
-      "blocks": {
-        "review_QxDdcL": {
-          "type": "review",
-          "settings": {
-            "title": "",
-            "subheading": "",
-            "review_text": "\"We’ve reinvented men’s skin care and changed the way men think about their skin.\"",
-            "review_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "review_QxDdcL"
-      ],
-      "custom_css": [
-        ".reviews__grid-item {margin: 0 auto;}"
-      ],
-      "settings": {
-        "show_featured_image": false,
-        "image_aspect_ratio": 1.3,
-        "show_quotation_marks": false,
-        "text_align": "text-center",
-        "text_size": 32,
-        "bg_color": "#000000",
-        "color": "#ffffff",
-        "card_bg_color": "",
-        "padding_top": 80,
-        "padding_bottom": 80
+        "padding_top": 200,
+        "padding_bottom": 200
       }
     },
     "section_double_static_vm_yFVkwc": {
@@ -464,7 +433,6 @@
     "section_hero_LyX34B",
     "section_double_static_vm_R4Cg9i",
     "section_rich_text_NPiAGX",
-    "section_reviews_McPTbp",
     "section_double_static_vm_yFVkwc",
     "section_rich_text_ipmbQd",
     "1713206343e4178672"
