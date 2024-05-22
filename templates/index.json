@@ -89,7 +89,7 @@
         "width": "wrapper--full",
         "video_main": "shopify:\/\/files\/videos\/grownalchemist_1684270065_3104203787330120109_711509597.mp4",
         "image_width": "one-half",
-        "text_alignment": "text-center",
+        "text_alignment": "text-left",
         "reverse_blocks": false,
         "bg_color": "#000000",
         "color": "#42b029",
@@ -406,16 +406,58 @@
         "layout_mobile": "slider"
       }
     },
-    "section_hero_iEX3nG": {
-      "type": "section-hero",
+    "section_rich_text_W6YjUJ": {
+      "type": "section-rich-text",
       "blocks": {
-        "heading_t8Tb6H": {
+        "heading_338Arf": {
           "type": "heading",
           "settings": {
             "title": "The Science",
-            "heading_font": 40
+            "text_font": 40,
+            "big_text": false,
+            "padding_bottom": 16
           }
         },
+        "text_4nHHC9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Want great skin? Our cutting-edge formulas are the key to an uncomplicated routine for amazing skin.<\/p>",
+            "text_font": 16,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_9GgUdn": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "shopify:\/\/pages\/the-science",
+            "button_type": "btn--secondary",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_338Arf",
+        "text_4nHHC9",
+        "buttons_9GgUdn"
+      ],
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/Drop.png",
+        "width": "wrapper--narrow",
+        "align_text": "text-left",
+        "bg_color": "#ffffff",
+        "color": "#000000",
+        "padding_top": 200,
+        "padding_bottom": 200
+      }
+    },
+    "section_hero_iEX3nG": {
+      "type": "section-hero",
+      "blocks": {
         "text_RJVT4V": {
           "type": "text",
           "settings": {
@@ -437,7 +479,6 @@
         }
       },
       "block_order": [
-        "heading_t8Tb6H",
         "text_RJVT4V",
         "button_imf4CU"
       ],
@@ -949,7 +990,7 @@
         "okendo_media_carousel_TqCJX7": {
           "type": "shopify:\/\/apps\/okendo\/blocks\/media-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
-            "product": "level-1-essential-routine-1"
+            "product": ""
           }
         }
       },
@@ -970,6 +1011,7 @@
     "section_collection_new_MWikbY",
     "section_video_W9NxLi",
     "vm_section_text_row_LxAydb",
+    "section_rich_text_W6YjUJ",
     "section_hero_iEX3nG",
     "section_before_after_hzKE7H",
     "section_video_NGgczi",
