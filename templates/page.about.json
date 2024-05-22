@@ -276,14 +276,6 @@
     "section_rich_text_NPiAGX": {
       "type": "section-rich-text",
       "blocks": {
-        "subheading_qePBjW": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Introducing",
-            "text_font": 16,
-            "padding_bottom": 16
-          }
-        },
         "heading_pcmrrr": {
           "type": "heading",
           "settings": {
@@ -291,43 +283,19 @@
             "text_font": 32,
             "padding_bottom": 16
           }
-        },
-        "text_zaCBkK": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "text_font": 16,
-            "text_style": "font-body",
-            "padding_bottom": 16
-          }
-        },
-        "buttons_dhzQ33": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "padding_bottom": 16
-          }
         }
       },
       "block_order": [
-        "subheading_qePBjW",
-        "heading_pcmrrr",
-        "text_zaCBkK",
-        "buttons_dhzQ33"
+        "heading_pcmrrr"
       ],
       "custom_css": [
-
+        ".rich-text__img {opacity: 0.6;}"
       ],
       "settings": {
-        "width": "wrapper",
-        "align_text": "text-left",
-        "bg_color": "",
-        "color": "",
+        "width": "wrapper--narrow",
+        "align_text": "text-center",
+        "bg_color": "#000000",
+        "color": "#ffffff",
         "padding_top": 100,
         "padding_bottom": 100
       }
@@ -357,8 +325,8 @@
         "show_quotation_marks": false,
         "text_align": "text-center",
         "text_size": 32,
-        "bg_color": "#f7f7f7",
-        "color": "",
+        "bg_color": "#000000",
+        "color": "#ffffff",
         "card_bg_color": "",
         "padding_top": 80,
         "padding_bottom": 80
