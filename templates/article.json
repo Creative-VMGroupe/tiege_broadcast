@@ -101,7 +101,7 @@
             "heading": "Heading",
             "heading_size": 40,
             "stars_enabled": true,
-            "subheading": "&nbsp;★★★★★",
+            "subheading": " ★★★★★",
             "subheading_size": 14,
             "text": "<p>\"Use this text to showcase a review from one of your customers. A great review is honest and speaks to the concerns of your customers.\"<\/p>",
             "text_size": 16,
@@ -200,6 +200,7 @@
           "settings": {
             "title": "Seen in the Wild",
             "text_font": 40,
+            "big_text": false,
             "padding_bottom": 16
           }
         },
