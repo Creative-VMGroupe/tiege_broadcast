@@ -2945,6 +2945,38 @@
         }
       }
 
+      cartSwitchEvents () {
+        const cartItemSwitch = document.querySelectorAll(selectors$U.switchSubscrption);
+
+        cartItemSwitch.forEach((button) => {
+          const item = button.closest(selectors$U.item);
+          console.log(item);
+          button.addEventListener('click', (event) => {
+            event.preventDefault();
+
+            if (button.classList.contains(classes$F.disabled)) return;
+
+            this.updateCart(
+              {
+                id: button.dataset.id,
+                quantity: 0,
+              },
+              item
+            );
+
+            // Add product to cart
+          });
+        });
+
+        if (this.cartCloseErrorMessage) {
+          this.cartCloseErrorMessage.addEventListener('click', (event) => {
+            event.preventDefault();
+
+            this.cartErrorHolder.classList.remove(classes$F.expanded);
+          });
+        }
+      }
+
       /**
        * Cart event add product to cart
        *
