@@ -120,7 +120,6 @@
       ],
       "settings": {
         "style": "rectangle",
-        "grid": 3,
         "compact": true,
         "width": "wrapper--full-padded",
         "height": "screen-height-two-thirds",
@@ -271,7 +270,6 @@
         "okendo_media_grid_ymrURE",
         "okendo_media_carousel_6n3BNP"
       ],
-      "disabled": true,
       "settings": {
         "include_margins": false
       }
