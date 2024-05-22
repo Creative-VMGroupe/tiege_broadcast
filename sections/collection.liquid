@@ -79,21 +79,21 @@
       .header__wrapper .logo__img--transparent {
         opacity: 0;
       }
-      .header__wrapper:not(.js__header__stuck):not(.meganav--visible) .logo__img--color {
-        opacity: 0;
-      }
       .header__wrapper:not(.js__header__stuck):not(.meganav--visible) .logo__img--transparent {
         opacity: 1;
       }
+      .header__wrapper:not(.js__header__stuck):not(.meganav--visible) .logo__img--color {
+        opacity: 0;
+      }
       
-      .header__wrapper:not(.js__header__stuck) .navlink--toplevel {
+      .header__wrapper:not(.js__header__stuck):not(.meganav--visible) .navlink--toplevel {
         --link-hover: #ffffff;
       }
-      .header__wrapper:not(.js__header__stuck) .navlink--toplevel .navtext,
-      .header__wrapper:not(.js__header__stuck) .header__mobile__hamburger,
-      .header__wrapper:not(.js__header__stuck) .header__logo__link,
-      .header__wrapper:not(.js__header__stuck) .navlink--search, 
-      .header__wrapper:not(.js__header__stuck) .navlink--cart--circle .header__cart__status
+      .header__wrapper:not(.js__header__stuck):not(.meganav--visible) .navlink--toplevel .navtext,
+      .header__wrapper:not(.js__header__stuck):not(.meganav--visible) .header__mobile__hamburger,
+      .header__wrapper:not(.js__header__stuck):not(.meganav--visible) .header__logo__link,
+      .header__wrapper:not(.js__header__stuck):not(.meganav--visible) .navlink--search, 
+      .header__wrapper:not(.js__header__stuck):not(.meganav--visible) .navlink--cart--circle .header__cart__status
       {
         color: #ffffff;
       }
