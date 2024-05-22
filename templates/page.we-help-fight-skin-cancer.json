@@ -364,7 +364,7 @@
           "settings": {
             "button_text": "Get Protected",
             "button_url": "",
-            "button_type": "btn--primary",
+            "button_type": "btn--secondary",
             "button_size": "",
             "button_style": "btn--solid",
             "show_arrow": false,
@@ -379,79 +379,17 @@
         "buttons_a4nzkp"
       ],
       "settings": {
-        "layout": "is-reversed",
-        "height": "screen-height-three-quarters",
-        "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full",
-        "image_width": "one-half",
-        "text_alignment": "text-left",
-        "padding_lr": 50,
-        "reverse_blocks": false,
-        "bg_color": "",
-        "color": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_double_W8ai8g": {
-      "type": "section-double",
-      "blocks": {
-        "subheading_QTVdiX": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Introducing",
-            "text_size": 16,
-            "padding_bottom": 16
-          }
-        },
-        "heading_ehRYX9": {
-          "type": "heading",
-          "settings": {
-            "title": "Image with text",
-            "heading_size": 40,
-            "padding_bottom": 16
-          }
-        },
-        "text_nxXgkw": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "quote_enabled": false,
-            "text_size": 16,
-            "text_style": "font-body",
-            "padding_bottom": 16
-          }
-        },
-        "buttons_BNGzkD": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "subheading_QTVdiX",
-        "heading_ehRYX9",
-        "text_nxXgkw",
-        "buttons_BNGzkD"
-      ],
-      "settings": {
         "layout": "",
         "height": "screen-height-three-quarters",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
+        "image_2": "shopify:\/\/shop_images\/acne-system-system-level-1-pos-4.jpg",
         "image_width": "one-half",
         "text_alignment": "text-left",
         "padding_lr": 50,
         "reverse_blocks": false,
-        "bg_color": "",
-        "color": "",
+        "bg_color": "#000000",
+        "color": "#ffffff",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -636,7 +574,6 @@
     "section_rich_text_8WGREr",
     "section_text_row_4qA4id",
     "section_double_FPTYcM",
-    "section_double_W8ai8g",
     "section_double_yhTVDr",
     "section_rich_text_YWBiRt",
     "section_rich_text_XXdqUY",
