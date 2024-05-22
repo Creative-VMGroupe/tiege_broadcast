@@ -354,6 +354,10 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 //  https://tiege-hanley-store.myshopify.com/
+function showMessageDuplicateRoutine(lineItem) {
+  let cartItems = document.querySelector('.drawer__items');
+  cartItems.before();
+}
 
 async function addItemtoCart(variantId) {
   let formData = {
