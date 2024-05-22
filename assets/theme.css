@@ -25611,9 +25611,9 @@ body.has-header-sticky .timeline {
 }
 .product__block .product-accordion .toggle-ellipsis__actions button span{
   /* display: none; */
-  text-transform: capitalize !important;
-  letter-spacing: 0 !important;
-      --link: currentcolor;
+    text-transform: capitalize !important;
+    letter-spacing: 0 !important;
+    --link: currentcolor;
     --link-hover: currentcolor;
     display: inline;
     text-decoration: none;
@@ -26221,15 +26221,21 @@ h2.column__heading {
   font-size: 40px !important;
   line-height: 1.25 !important;
 }
-@media only screen and (max-width: 749px) {
-  .grid--mobile-slider {
-    scroll-padding: 0;
-  }
-}
 .oversized-text-custom {
   font-size: 100px !important;
   line-height: 1.25 !important;
 }
+@media only screen and (max-width: 749px) {
+  .grid--mobile-slider {
+    scroll-padding: 0;
+  }
+  .oversized-text-custom {
+  font-size: 60px !important;
+  line-height: 1.25 !important;
+}
+}
+
+
 /*Comparison Table*/
 .comparison-table_container {
   position: relative;

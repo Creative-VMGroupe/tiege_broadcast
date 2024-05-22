@@ -20,230 +20,192 @@
     },
     "section_hero_KpG8aH": {
       "type": "section-hero",
-      "blocks": {
-        "heading_ffjpfd": {
-          "type": "heading",
-          "settings": {
-            "title": "We Fight Skin Cancer",
-            "heading_font": 40
-          }
-        },
-        "text_QBNwLD": {
-          "type": "text",
-          "settings": {
-            "description": "Tiege Hanley is a proud member of the Skin Cancer Foundation.",
-            "text_font": 16,
-            "text_style": "font-body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_ffjpfd",
-        "text_QBNwLD"
-      ],
       "settings": {
-        "height": "screen-height-three-quarters",
+        "height": "screen-height-one-half",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/AdobeStock_56831942.png",
+        "image_1": "shopify:\/\/shop_images\/Screenshot_2024-05-17_at_4.22.37_PM.png",
         "link": "",
-        "mobile_height": "screen-height-three-quarters--mobile",
+        "mobile_height": "screen-height-one-third--mobile",
         "flex_align_desktop": "align--middle-center-desktop",
         "flex_align_mobile": "align--middle-center-mobile",
-        "overlay_opacity": 40,
+        "overlay_opacity": 0,
         "overlay_color": "#000000",
         "show_overlay_text": false,
         "bg_color": "",
         "color": "#ffffff"
       }
     },
-    "section_rich_text_egX3gc": {
+    "section_rich_text_aieYzU": {
       "type": "section-rich-text",
       "blocks": {
-        "heading_UeRrEe": {
+        "subheading_gdc8w6": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Make an Impact",
+            "text_font": 14,
+            "padding_bottom": 16
+          }
+        },
+        "heading_EJyThd": {
           "type": "heading",
           "settings": {
-            "title": "Tiege Hanley & Cancer Prevention",
+            "title": "Help Us Fight The #1 Cancer Impacting Men Around The World",
             "text_font": 40,
             "big_text": false,
             "padding_bottom": 16
           }
-        },
-        "text_P94p8X": {
+        }
+      },
+      "block_order": [
+        "subheading_gdc8w6",
+        "heading_EJyThd"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-center",
+        "bg_color": "#f7f7f7",
+        "color": "",
+        "padding_top": 80,
+        "padding_bottom": 0
+      }
+    },
+    "section_rich_text_QVtJ7U": {
+      "type": "section-rich-text",
+      "blocks": {
+        "text_F3yF6m": {
           "type": "text",
           "settings": {
-            "text": "<p>Our co-founder’s father passed away from melanoma at age 54. So, making products that protect guys from the sun’s harmful rays and donating to The Skin Cancer Foundation has been core to Tiege Hanley since day one.<\/p><p>Our first donation to The Skin Cancer Foundation came within a few months in business and every year after. As we grew so has our donating, and to date we’ve donated over $57,000.<\/p>",
+            "text": "<p>We are proud members of the Skin Cancer Foundation<\/p>",
             "text_font": 16,
+            "text_style": "font-body",
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "text_F3yF6m"
+      ],
+      "custom_css": [
+        ".hero__content {max-width: 350px;}"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-center",
+        "bg_color": "#f7f7f7",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 80
+      }
+    },
+    "section_double_M3cHpz": {
+      "type": "section-double",
+      "blocks": {
+        "heading_Mewf4m": {
+          "type": "heading",
+          "settings": {
+            "title": "Something Worth Fighting For",
+            "heading_size": 40,
+            "padding_bottom": 16
+          }
+        },
+        "text_GJBUjY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our co-founder’s father passed away from melanoma at age 54. So, making products that protect guys from the sun’s harmful rays and donating to The Skin Cancer Foundation has been core to Tiege Hanley since day one.<\/p><p>Our first donation to The Skin Cancer Foundation came within a few months in business and every year after. As we grew so has our donating, and to date we’ve donated over $39,000.<\/p>",
+            "quote_enabled": false,
+            "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
           }
         }
       },
       "block_order": [
-        "heading_UeRrEe",
-        "text_P94p8X"
-      ],
-      "custom_css": [
-        ".rich-text__img {opacity: 0.6;}"
+        "heading_Mewf4m",
+        "text_GJBUjY"
       ],
       "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/tiege_skin2_del.webp",
-        "width": "wrapper--narrow",
-        "align_text": "text-left",
-        "bg_color": "#000000",
-        "color": "#ffffff",
-        "padding_top": 200,
-        "padding_bottom": 200
+        "image_width": "one-half",
+        "text_alignment": "text-center",
+        "padding_lr": 50,
+        "reverse_blocks": false,
+        "bg_color": "#ffffff",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "section_rich_text_ryAmny": {
       "type": "section-rich-text",
       "blocks": {
-        "subheading_9pqUmL": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "With Your Help",
-            "text_font": 16,
-            "padding_bottom": 16
-          }
-        },
         "heading_Qze6m9": {
           "type": "heading",
           "settings": {
-            "title": "We've Made a Lot of Progress...",
+            "title": "With Your Support We Can Make an Impact",
             "text_font": 40,
             "big_text": false,
             "padding_bottom": 50
           }
-        },
-        "heading_EwQ3Gx": {
-          "type": "heading",
-          "settings": {
-            "title": "42 Million+",
-            "text_font": 40,
-            "big_text": true,
-            "padding_bottom": 0
-          }
-        },
-        "text_hnimLM": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Days helping protect guys from sun damage<\/p>",
-            "text_font": 16,
-            "text_style": "font-body",
-            "padding_bottom": 50
-          }
-        },
-        "heading_Aa8qE3": {
-          "type": "heading",
-          "settings": {
-            "title": "$57,948",
-            "text_font": 40,
-            "big_text": true,
-            "padding_bottom": 16
-          }
-        },
-        "text_EBnWnW": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Dollars donated and counting<\/p>",
-            "text_font": 16,
-            "text_style": "font-body",
-            "padding_bottom": 16
-          }
         }
       },
       "block_order": [
-        "subheading_9pqUmL",
-        "heading_Qze6m9",
-        "heading_EwQ3Gx",
-        "text_hnimLM",
-        "heading_Aa8qE3",
-        "text_EBnWnW"
+        "heading_Qze6m9"
       ],
       "custom_css": [
         ".rich-text__img {opacity: 0.75;}"
       ],
       "settings": {
-        "image_1": "shopify:\/\/shop_images\/AdobeStock_326040122.jpg",
         "width": "wrapper--narrow",
-        "align_text": "text-left",
-        "bg_color": "#000000",
-        "color": "#ffffff",
-        "padding_top": 200,
-        "padding_bottom": 200
+        "align_text": "text-center",
+        "bg_color": "#f7f7f7",
+        "color": "",
+        "padding_top": 80,
+        "padding_bottom": 30
       }
     },
-    "section_rich_text_qXNtK8": {
+    "section_rich_text_W7bbeY": {
       "type": "section-rich-text",
       "blocks": {
-        "heading_Fwhppq": {
-          "type": "heading",
+        "2_columns_N4pL7z": {
+          "type": "2Columns",
           "settings": {
-            "title": "Skin Cancer is the #1 Most Common Cancer in the World",
-            "text_font": 40,
-            "big_text": false,
-            "padding_bottom": 16
-          }
-        },
-        "text_UPfa94": {
-          "type": "text",
-          "settings": {
-            "text": "<p>About 57% of people who are diagnosed with one basal cell carcinoma (BCC) are men. Sixty-two percent of people diagnosed with two to five BCCs are men. Among those with six or more BCCs, a whopping 80 percent are male.<\/p><p>It gets worse. Men account for more than half of all new cases of the most invasive melanoma and have almost twice as many deaths.<\/p><p>According to Julie K. Karen, MD, “Men may not be deliberately tanning as much, but if they go fishing or go out for a run, they tend not to lather up with sunscreen. In general, they're a little lazier than women are about taking proactive measures to protect themselves from sun damage.” Dr. Karen specializes in the diagnosis and treatment of skin cancer at Complete Skin MD in NYC and is a clinical assistant professor in the Ronald O. Perelman Department of Dermatology at NYU Langone Medical Center. [<a href=\"https:\/\/www.tiege.com\/pages\/impact#impact-citation\">1<\/a>]<\/p>",
+            "title1": "42,610,590",
+            "heading_font": 32,
+            "text1": "<p>Days protecting guys from the sun's harmful UV rays<\/p>",
             "text_font": 16,
             "text_style": "font-body",
+            "title2": "$57,948",
+            "text2": "<p>Dollars donated and counting<\/p>",
             "padding_bottom": 16
           }
         }
       },
       "block_order": [
-        "heading_Fwhppq",
-        "text_UPfa94"
+        "2_columns_N4pL7z"
       ],
       "custom_css": [
-        ".rich-text__img {opacity: 0.6;}"
+
       ],
       "settings": {
-        "image_1": "shopify:\/\/shop_images\/AdobeStock_68795433.jpg",
         "width": "wrapper--narrow",
-        "align_text": "text-left",
-        "bg_color": "#000000",
-        "color": "#ffffff",
-        "padding_top": 200,
-        "padding_bottom": 200
+        "align_text": "text-center",
+        "bg_color": "#f7f7f7",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 30
       }
     },
     "section_rich_text_8WGREr": {
       "type": "section-rich-text",
       "blocks": {
-        "subheading_UW99Qp": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "The Data Doesn't Lie",
-            "text_font": 16,
-            "padding_bottom": 16
-          }
-        },
-        "heading_yt7JFk": {
-          "type": "heading",
-          "settings": {
-            "title": "Prevention is More Important than Ever Before",
-            "text_font": 40,
-            "big_text": false,
-            "padding_bottom": 40
-          }
-        },
-        "image_CrzRBe": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Group_1920_mobile.svg",
-            "image_width": 100,
-            "padding_bottom": 20
-          }
-        },
         "text_9rUGRr": {
           "type": "text",
           "settings": {
-            "text": "<p>Age-adjusted Melanoma Incidence Rates<\/p>",
+            "text": "<p>Age-adjusted Melanoma Incidence Rates,<\/p>",
             "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 0
@@ -253,89 +215,196 @@
           "type": "text",
           "settings": {
             "text": "<p>Actual And Projected, By Sex, 1975-2020<\/p>",
-            "text_font": 14,
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 30
+          }
+        },
+        "image_CrzRBe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_1920_mobile.svg",
+            "image_width": 100,
+            "padding_bottom": 0
           }
         }
       },
       "block_order": [
-        "subheading_UW99Qp",
-        "heading_yt7JFk",
-        "image_CrzRBe",
         "text_9rUGRr",
-        "text_9TTK3g"
+        "text_9TTK3g",
+        "image_CrzRBe"
       ],
       "custom_css": [
 
       ],
       "settings": {
         "width": "wrapper--narrow",
-        "align_text": "text-left",
-        "bg_color": "#f7f7f7",
-        "color": "",
-        "padding_top": 100,
-        "padding_bottom": 100
-      }
-    },
-    "section_rich_text_zRAhxB": {
-      "type": "section-rich-text",
-      "blocks": {
-        "heading_wmhGQC": {
-          "type": "heading",
-          "settings": {
-            "title": "How Can You Make an Impact?",
-            "text_font": 40,
-            "big_text": false,
-            "padding_bottom": 40
-          }
-        }
-      },
-      "block_order": [
-        "heading_wmhGQC"
-      ],
-      "settings": {
-        "width": "wrapper--narrow",
         "align_text": "text-center",
         "bg_color": "#f7f7f7",
         "color": "",
-        "padding_top": 100,
-        "padding_bottom": 0
+        "padding_top": 0,
+        "padding_bottom": 80
       }
     },
-    "section_double_FPTYcM": {
+    "section_double_Xj3hp3": {
       "type": "section-double",
       "blocks": {
-        "image_DUC9t8": {
-          "type": "image",
+        "subheading_3ghhVa": {
+          "type": "subheading",
+          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/sun-protection.png",
-            "image_width": 20,
+            "subheading": "Introducing",
+            "text_size": 16,
             "padding_bottom": 16
           }
         },
-        "heading_QRBKbP": {
+        "heading_7CgHqM": {
           "type": "heading",
           "settings": {
-            "title": "Use Protection",
+            "title": "Skin Cancer is the #1 Most Common Cancer in the World",
             "heading_size": 40,
             "padding_bottom": 16
           }
         },
-        "text_gzVm6z": {
+        "text_C8UpAq": {
           "type": "text",
           "settings": {
-            "text": "<p>Guys must use a facial moisturizer with SPF each morning to protect from the sun’s harmful UV rays. Every Tiege Hanley system provides a guy with 30 days of sun protection. No matter where you go or what you do that day—start it with an AM moisturizer with a minimum 20 SPF.<\/p>",
+            "text": "<p>About 57% of people who are diagnosed with one basal cell carcinoma (BCC) are men. Sixty-two percent of people diagnosed with two to five BCCs are men. Among those with six or more BCCs, a whopping 80 percent are male.<\/p><p>It gets worse. Men account for more than half of all new cases of the most invasive melanoma and have almost twice as many deaths.<\/p><p>According to Julie K. Karen, MD, “Men may not be deliberately tanning as much, but if they go fishing or go out for a run, they tend not to lather up with sunscreen. In general, they're a little lazier than women are about taking proactive measures to protect themselves from sun damage.” Dr. Karen specializes in the diagnosis and treatment of skin cancer at Complete Skin MD in NYC and is a clinical assistant professor in the Ronald O. Perelman Department of Dermatology at NYU Langone Medical Center. [<a href=\"https:\/\/www.tiege.com\/pages\/impact#impact-citation\">1<\/a>]<\/p>",
             "quote_enabled": false,
             "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
           }
         },
-        "buttons_a4nzkp": {
+        "buttons_pM6Q9p": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_3ghhVa",
+        "heading_7CgHqM",
+        "text_C8UpAq",
+        "buttons_pM6Q9p"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/AdobeStock_68795433.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "padding_lr": 50,
+        "reverse_blocks": false,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_text_row_4qA4id": {
+      "type": "section-text-row",
+      "blocks": {
+        "icon_H9xU8E": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-shield",
+            "icon_size": 50,
+            "icon_color": "#545454",
+            "image": "shopify:\/\/shop_images\/sun-protection.png",
+            "title": "Sun Protection",
+            "heading_size": 14,
+            "text": "<p><br\/>Guys must use a facial moisturizer with SPF each morning to protect from the sun’s harmful UV rays. Every Tiege Hanley system provides a guy with 30 days of sun protection. No matter where you go or what you do that day—start it with an AM moisturizer with a minimum 20 SPF.<\/p>",
+            "text_size": 16
+          }
+        },
+        "icon_NAz9yq": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-trophy",
+            "icon_size": 50,
+            "icon_color": "#545454",
+            "image": "shopify:\/\/shop_images\/Asset-1_4x_94d8ee25-9862-4bcd-8cef-c2ff5636fb17.png",
+            "title": "Dollars Donated",
+            "heading_size": 14,
+            "text": "<p><br\/>As a Corporate Council member, we support the Foundation’s work of empowering people to take a proactive approach to daily sun protection and the early detection and treatment of skin cancer.<\/p>",
+            "text_size": 16
+          }
+        },
+        "icon_iPTQVX": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-chat",
+            "icon_size": 50,
+            "icon_color": "#545454",
+            "image": "shopify:\/\/shop_images\/get-protected.png",
+            "title": "Get Protected",
+            "heading_size": 14,
+            "text": "<p><br\/>Join our cause. Together we give—together we change skin care for men. Help us spread the word through awareness, education and support of the Foundation’s life saving programs. Let’s help more men in the fight to prevent skin cancer!<\/p>",
+            "text_size": 16
+          }
+        }
+      },
+      "block_order": [
+        "icon_H9xU8E",
+        "icon_NAz9yq",
+        "icon_iPTQVX"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "title": "How You Can Make an Impact",
+        "heading_size": 40,
+        "layout": "grid",
+        "grid": 3,
+        "align_heading": "text-center",
+        "align_text": "text-center",
+        "icon_alignment": "icon--top",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "bg_color": "#f7f7f7",
+        "color": "",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "layout_mobile": "1"
+      }
+    },
+    "section_double_yhTVDr": {
+      "type": "section-double",
+      "blocks": {
+        "heading_77aYTw": {
+          "type": "heading",
+          "settings": {
+            "title": "Get Involved",
+            "heading_size": 40,
+            "padding_bottom": 16
+          }
+        },
+        "text_3biEU4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Shop Systems and Donate. Already a Tiege Guy? To donate, please log-in to your account and add a donation on to your next shipment. New to Tiege Hanley? Click the button below to learn about our skin care systems and how you can add a donation to your system with Tiege Hanley membership.<\/p>",
+            "quote_enabled": false,
+            "text_size": 16,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_NKzXmM": {
           "type": "buttons",
           "settings": {
-            "button_text": "Get Protected",
+            "button_text": "Join Today",
             "button_url": "shopify:\/\/collections\/all-routines-1",
             "button_type": "btn--secondary",
             "button_size": "",
@@ -346,77 +415,24 @@
         }
       },
       "block_order": [
-        "image_DUC9t8",
-        "heading_QRBKbP",
-        "text_gzVm6z",
-        "buttons_a4nzkp"
+        "heading_77aYTw",
+        "text_3biEU4",
+        "buttons_NKzXmM"
       ],
       "settings": {
-        "layout": "",
-        "height": "screen-height-three-quarters",
+        "layout": "is-reversed",
+        "height": "screen-height-one-half",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
-        "image_2": "shopify:\/\/shop_images\/acne-system-system-level-1-pos-4.jpg",
+        "image_1": "shopify:\/\/shop_images\/HARRYS_FW_PROD_0279_1.jpg",
         "image_width": "one-half",
-        "text_alignment": "text-left",
+        "text_alignment": "text-center",
         "padding_lr": 50,
         "reverse_blocks": false,
         "bg_color": "#000000",
         "color": "#ffffff",
         "padding_top": 0,
         "padding_bottom": 0
-      }
-    },
-    "section_rich_text_RTPWit": {
-      "type": "section-rich-text",
-      "blocks": {
-        "heading_fdB9ir": {
-          "type": "heading",
-          "settings": {
-            "title": "Join the Cause",
-            "text_font": 40,
-            "big_text": false,
-            "padding_bottom": 16
-          }
-        },
-        "text_WDCeTB": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Shop Systems and Donate. Already a Tiege Guy? To donate, please log-in to your account and add a donation on to your next shipment. New to Tiege Hanley? Click the button below to learn about our skin care systems and how you can add a donation to your system with Tiege Hanley membership.<\/p>",
-            "text_font": 16,
-            "text_style": "font-body",
-            "padding_bottom": 16
-          }
-        },
-        "buttons_PpqrDV": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--white",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "heading_fdB9ir",
-        "text_WDCeTB",
-        "buttons_PpqrDV"
-      ],
-      "custom_css": [
-        ".rich-text__img {opacity: 0.75;}"
-      ],
-      "settings": {
-        "image_1": "shopify:\/\/shop_images\/AdobeStock_326040122.jpg",
-        "width": "wrapper--narrow",
-        "align_text": "text-left",
-        "bg_color": "#000000",
-        "color": "#ffffff",
-        "padding_top": 200,
-        "padding_bottom": 200
       }
     },
     "section_rich_text_YWBiRt": {
@@ -439,15 +455,6 @@
             "padding_bottom": 30
           }
         },
-        "text_CmFrWi": {
-          "type": "text",
-          "settings": {
-            "text": "<p>As a Corporate Council member, we support the Foundation’s work of empowering people to take a proactive approach to daily sun protection and the early detection and treatment of skin cancer.<\/p>",
-            "text_font": 16,
-            "text_style": "font-body",
-            "padding_bottom": 50
-          }
-        },
         "text_wtJwrY": {
           "type": "text",
           "settings": {
@@ -461,7 +468,6 @@
       "block_order": [
         "image_Bnzx8M",
         "heading_e8Mxbf",
-        "text_CmFrWi",
         "text_wtJwrY"
       ],
       "custom_css": [
@@ -470,7 +476,7 @@
       "settings": {
         "width": "wrapper--narrow",
         "align_text": "text-center",
-        "bg_color": "#f0f0f0",
+        "bg_color": "",
         "color": "",
         "padding_top": 80,
         "padding_bottom": 80
@@ -538,13 +544,15 @@
   "order": [
     "main",
     "section_hero_KpG8aH",
-    "section_rich_text_egX3gc",
+    "section_rich_text_aieYzU",
+    "section_rich_text_QVtJ7U",
+    "section_double_M3cHpz",
     "section_rich_text_ryAmny",
-    "section_rich_text_qXNtK8",
+    "section_rich_text_W7bbeY",
     "section_rich_text_8WGREr",
-    "section_rich_text_zRAhxB",
-    "section_double_FPTYcM",
-    "section_rich_text_RTPWit",
+    "section_double_Xj3hp3",
+    "section_text_row_4qA4id",
+    "section_double_yhTVDr",
     "section_rich_text_YWBiRt",
     "section_rich_text_XXdqUY",
     "1713201777b2f26263"
