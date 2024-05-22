@@ -421,9 +421,9 @@ async function showMessageDuplicateRoutine(lineItem) {
   let closeButton = cartItems.querySelector('[data-remove-alert]');
   replaceButton.addEventListener("click", (e) => {
     console.log(e.currentTarget);
-    await changeItemQty(replaceButton.dataset.removeProduct, '0');
-    var eventReload = new Event('theme:cart-drawer:reload', { bubbles: true, cancelable: false });
-    document.dispatchEvent(eventReload);
+    // await changeItemQty(replaceButton.dataset.removeProduct, '0');
+    // var eventReload = new Event('theme:cart-drawer:reload', { bubbles: true, cancelable: false });
+    // document.dispatchEvent(eventReload);
   });
   closeButton.addEventListener("click", (e) => {
     cartItems.innerHTML = '';
