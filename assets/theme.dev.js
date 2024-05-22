@@ -3269,7 +3269,7 @@
              {
               'id': item.variantId,
               'quantity': item.quantity,
-              'selling_plan' : item.selling_plan
+              'selling_plan' : item.sellingPlan
             }
            ]
         };
