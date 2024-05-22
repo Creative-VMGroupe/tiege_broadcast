@@ -17375,7 +17375,7 @@ input.cart__acceptance__input {
   border: 1px solid var(--COLOR-SUCCESS-BORDER);
   background-color: var(--COLOR-SUCCESS-BG);
   color: var(--COLOR-SUCCESS);
-  border-radius: var(--RADIUS-SELECT);
+  border-radius: 0;
   margin: 15px auto;
 }
 
@@ -27067,9 +27067,4 @@ grid-column-gap: var(--gap);
 /*Quiz*/
 body#find-my-routine .header-sections {
   height: 0;
-}
-@media(max-width: 480px) {
-.rh-widget.rh-inline.rh-quiz-gWH2pX {
-  height: 1301px !important;
-} 
 }
