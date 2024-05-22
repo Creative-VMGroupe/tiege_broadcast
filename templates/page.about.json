@@ -111,7 +111,7 @@
         "height": "screen-height-three-quarters",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/Screenshot_2024-05-22_at_1.52.31_PM.png",
+        "image_1": "shopify:\/\/shop_images\/Snapinsta.app_337156675_1554687731680146_2432232004487884860_n_1080.jpg",
         "image_width": "one-half",
         "text_alignment": "text-left",
         "reverse_blocks": false,
@@ -181,64 +181,17 @@
         "heading_gffHnB",
         "text_jyH9PW"
       ],
+      "custom_css": [
+        ".rich-text__img {opacity: 0.5;}"
+      ],
       "settings": {
+        "image_1": "shopify:\/\/shop_images\/Screenshot_2024-05-22_at_1.52.31_PM.png",
         "width": "wrapper--narrow",
         "align_text": "text-left",
         "bg_color": "#000000",
         "color": "#ffffff",
         "padding_top": 200,
         "padding_bottom": 200
-      }
-    },
-    "section_hero_LyX34B": {
-      "type": "section-hero",
-      "blocks": {
-        "heading_yrLNrT": {
-          "type": "heading",
-          "settings": {
-            "title": "Sensible. Simple. Affordable.",
-            "heading_font": 40
-          }
-        },
-        "text_bWTDmK": {
-          "type": "text",
-          "settings": {
-            "description": "Drawing on his marketing and brand management experience, Kelley got to work, enlisting his UConn college roommate turned software industry guru, Rob Hoxie, to help mastermind a skin care solution for men that hits all three points—it has to be sensible, simple and affordable.",
-            "text_font": 16,
-            "text_style": "font-body"
-          }
-        },
-        "button_k87b3L": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "link_text": "View products",
-            "link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_yrLNrT",
-        "text_bWTDmK",
-        "button_k87b3L"
-      ],
-      "settings": {
-        "height": "screen-height-three-quarters",
-        "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/Layer_1.png",
-        "link": "",
-        "mobile_height": "screen-height-three-quarters--mobile",
-        "flex_align_desktop": "align--middle-left-desktop",
-        "flex_align_mobile": "align--middle-left-mobile",
-        "overlay_opacity": 30,
-        "overlay_color": "#ffffff",
-        "show_overlay_text": false,
-        "bg_color": "",
-        "color": "#000000"
       }
     },
     "section_rich_text_KCkmTg": {
@@ -266,79 +219,17 @@
         "heading_fzLbf7",
         "text_y6DNAW"
       ],
-      "settings": {
-        "width": "wrapper--narrow",
-        "align_text": "text-left",
-        "bg_color": "",
-        "color": "",
-        "padding_top": 100,
-        "padding_bottom": 100
-      }
-    },
-    "section_double_static_vm_R4Cg9i": {
-      "type": "section-double-static-vm",
-      "blocks": {
-        "subheading_66gtyC": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "subheading": "Introducing",
-            "text_size": 16,
-            "padding_bottom": 16
-          }
-        },
-        "heading_BdQqRh": {
-          "type": "heading",
-          "settings": {
-            "title": "Helping Regular Guys",
-            "text_size": 40,
-            "big_text": false,
-            "padding_bottom": 16
-          }
-        },
-        "text_pkGGtK": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Kelley and Rob wanted to help regular guys look and feel amazing by creating a skin care system that was easy to understand and to use. But what good is an idea without an audience? Enter Aaron Marino—men's lifestyle expert, grooming guru, YouTube sensation and serial entrepreneur. Aaron’s male-centric passion for health and lifestyle, personal brand and cult-like following made him Tiege Hanley’s ideal partner number three.<br\/><br\/>Now that the team had a powerful way to reach men, they were only missing the final ingredient—the products themselves. Daunting undertaking? Nah! They did what any regular guys would do—took their idea to the golf course, where they teed up with the man who would become Tiege Hanley’s master skin care formulator. Known only as The Chemist (who prefers to remain incognito) and with more than 35 years of experience formulating products for some of the top skin care brands, he agreed to join the team as fourth partner and is the creator of what the team calls their “Ferrari formulas.”<\/p>",
-            "quote_enabled": false,
-            "text_size": 16,
-            "text_style": "font-body",
-            "padding_bottom": 16
-          }
-        },
-        "buttons_inAhHp": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "subheading_66gtyC",
-        "heading_BdQqRh",
-        "text_pkGGtK",
-        "buttons_inAhHp"
+      "custom_css": [
+        ".rich-text__img {opacity: 0.75;}"
       ],
       "settings": {
-        "layout": "",
-        "height": "screen-height-three-quarters",
-        "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/Snapinsta.app_337156675_1554687731680146_2432232004487884860_n_1080.jpg",
-        "image_width": "one-half",
-        "text_alignment": "text-left",
-        "reverse_blocks": false,
-        "bg_color": "",
-        "color": "",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "image_1": "shopify:\/\/shop_images\/AdobeStock_326040122.jpg",
+        "width": "wrapper--narrow",
+        "align_text": "text-left",
+        "bg_color": "#000000",
+        "color": "#ffffff",
+        "padding_top": 200,
+        "padding_bottom": 200
       }
     },
     "section_rich_text_NPiAGX": {
@@ -357,10 +248,10 @@
         "heading_pcmrrr"
       ],
       "custom_css": [
-        ".rich-text__img {opacity: 0.75;}"
+        ".rich-text__img {opacity: 0.6;}"
       ],
       "settings": {
-        "image_1": "shopify:\/\/shop_images\/AdobeStock_326040122.jpg",
+        "image_1": "shopify:\/\/shop_images\/AdobeStock_191973841.png",
         "width": "wrapper--narrow",
         "align_text": "text-center",
         "bg_color": "#000000",
@@ -499,9 +390,7 @@
     "section_double_static_vm_j6Grh3",
     "section_rich_text_HGVCbw",
     "section_rich_text_XzLBVi",
-    "section_hero_LyX34B",
     "section_rich_text_KCkmTg",
-    "section_double_static_vm_R4Cg9i",
     "section_rich_text_NPiAGX",
     "section_double_static_vm_yFVkwc",
     "section_rich_text_ipmbQd",
