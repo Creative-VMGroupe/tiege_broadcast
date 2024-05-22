@@ -2957,37 +2957,14 @@
 
             if (button.classList.contains(classes$F.disabled)) return;
 
-            console.log('Item Clicked', newAddProduct, button);
-            this.updateCart(
+            this.updateCartSwitch(
               {
                 id: newAddProduct.item,
                 quantity: 0,
               },
-              item
+              item,
+              newAddProduct
             );
-
-            // Add product to cart
-            let formData = {
-             'items': [
-               {
-                'id': newAddProduct.variantId,
-                'quantity': newAddProduct.quantity,
-                'selling_plan' : newAddProduct.sellingPlan
-              }
-             ]
-            };
-            fetch(window.Shopify.routes.root + 'cart/add.js', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json'
-              },
-              body: JSON.stringify(formData)
-            })
-            .then(response => response.json())
-            .then(data => {})
-            .catch((error) => {
-              console.error('Error:', error);
-            });
           });
         });
 
@@ -3229,6 +3206,95 @@
           })
           .catch((error) => {
             console.log(error);
+            this.enableCartButtons();
+          });
+      }
+
+      updateCartSwitch(updateData = {}, currentItem = null, newItemData = {}) {
+        this.cart.classList.add(classes$F.loading);
+
+        let updatedQuantity = updateData.quantity;
+        if (currentItem !== null) {
+          if (updatedQuantity) {
+            currentItem.classList.add(classes$F.loading);
+          } else {
+            currentItem.classList.add(classes$F.removed);
+          }
+        }
+        this.disableCartButtons();
+
+        const newItem = this.cart.querySelector(`[${attributes$y.item}="${updateData.id}"]`) || currentItem;
+        const lineIndex = newItem?.hasAttribute(attributes$y.itemIndex) ? parseInt(newItem.getAttribute(attributes$y.itemIndex)) : 0;
+        const itemTitle = newItem?.hasAttribute(attributes$y.itemTitle) ? newItem.getAttribute(attributes$y.itemTitle) : null;
+
+        if (lineIndex === 0) return;
+
+        const data = {
+          line: lineIndex,
+          quantity: updatedQuantity,
+        };
+
+        fetch(theme.routes.cart_change_url, {
+          method: 'post',
+          headers: {'Content-Type': 'application/json', Accept: 'application/json'},
+          body: JSON.stringify(data),
+        })
+          .then((response) => {
+            return response.text();
+          })
+          .then((state) => {
+            const parsedState = JSON.parse(state);
+
+            if (parsedState.errors) {
+              this.cartUpdateFailed = true;
+              this.updateErrorText(itemTitle);
+              this.toggleErrorMessage();
+              this.resetLineItem(currentItem);
+              this.enableCartButtons();
+
+              return;
+            }
+            this.addItemSwitch(newItemData);
+          })
+          .catch((error) => {
+            console.log(error);
+            this.enableCartButtons();
+          });
+      }
+
+      addItemSwitch(item) => {
+        let formData = {
+           'items': [
+             {
+              'id': item.variantId,
+              'quantity': item.quantity,
+              'selling_plan' : item.selling_plan
+            }
+           ]
+        };
+        fetch(theme.routes.cart_add_url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(formData)
+        })
+          .then((response) => response.json())
+          .then((response) => {
+            if (response.status) {
+              this.addToCartError(response, button);
+              return;
+            }
+
+            if (this.cart) {
+              this.getCart();
+            } else {
+              // Redirect to cart page if "Add to cart" is successful
+              window.location = theme.routes.cart_url;
+            }
+          })
+          .catch((error) => {
+            this.addToCartError(error, button);
             this.enableCartButtons();
           });
       }
