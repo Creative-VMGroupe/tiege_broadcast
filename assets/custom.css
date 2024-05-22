@@ -292,3 +292,6 @@ body.template-article:has(
     display: none;
   }
 }
+.subscription-switch {
+  cursor: pointer;
+}
