@@ -76,7 +76,7 @@
     "enable_gift": true,
     "gift_item": "gift-card",
     "gift_item_method": "collection",
-    "gift_item_cart_value": 100,
+    "gift_item_cart_value": 25,
     "gift_item_collection": "face",
     "gift_item_success": "A free gift from Tiege has been added to your cart.",
     "gift_item_error": "Your cart is no longer eligible for a free gift.",
