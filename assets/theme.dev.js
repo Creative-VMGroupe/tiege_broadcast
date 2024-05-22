@@ -2960,7 +2960,7 @@
             console.log('Item Clicked', newAddProduct, button);
             this.updateCart(
               {
-                id: newAddProduct.key,
+                id: newAddProduct.item,
                 quantity: 0,
               },
               item
