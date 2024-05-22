@@ -114,7 +114,7 @@
 -%}
 {% if prod_text_color %}
 {%- style -%}
-  #BrickSection--{{ section.id }} a.product-link {
+  #BrickSection--{{ section.settings.section.id }} a.product-link {
     color: {{ prod_text_color }};
   }
   #BrickSection--{{ section.id }} .product-price {
