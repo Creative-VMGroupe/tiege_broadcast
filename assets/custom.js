@@ -491,8 +491,8 @@ async function addedCartFunction(addedItem, data) {
       reloadCart = true;
       alertStatus = 'error';
       alertMessage = window.theme.cartSettings.singleRoutine.alert;
-      // showMessageDuplicateRoutine(routineItem.key);
-      await changeItemQty(routineItem.key, '0');
+      showMessageDuplicateRoutine(routineItem.key);
+      // await changeItemQty(routineItem.key, '0');
     }
   }
 
@@ -690,10 +690,10 @@ document.addEventListener('theme:product:add', function(e) {
     });
 });
 
-document.addEventListener('theme:cart:change', function(e) {
-  fetch(window.theme.routes.cart_url + '.json')
-    .then(response => response.json())
-    .then(data => {
-      updatedCartFunction(data);
-    });
-});
+// document.addEventListener('theme:cart:change', function(e) {
+//   fetch(window.theme.routes.cart_url + '.json')
+//     .then(response => response.json())
+//     .then(data => {
+//       updatedCartFunction(data);
+//     });
+// });
