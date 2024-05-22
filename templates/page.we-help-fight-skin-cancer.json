@@ -118,13 +118,13 @@
         "2_columns_3W9W8x": {
           "type": "2Columns",
           "settings": {
-            "title1": "Rich text",
-            "heading_font": 40,
-            "text1": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "title1": "42,610,590",
+            "heading_font": 32,
+            "text1": "<p>Days helping protect guys from sun damage<\/p>",
             "text_font": 16,
             "text_style": "font-body",
-            "title2": "Rich text",
-            "text2": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "title2": "$57,948",
+            "text2": "<p>Dollars donated and counting<\/p>",
             "padding_bottom": 16
           }
         }
