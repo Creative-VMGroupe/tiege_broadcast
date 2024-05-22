@@ -356,7 +356,6 @@ document.addEventListener('DOMContentLoaded', function() {
 //  https://tiege-hanley-store.myshopify.com/
 function showMessageDuplicateRoutine(lineItem) {
   let cartItems = document.querySelector('.cart-alert');
-  console.log(cartItems);
   cartItems.innerHTML = `<div class="alert-confirm">
     <p class="cart__item__title">You already have a routine in your bag. Replace this routine?</p>
     <div class="buttons-holder">
@@ -364,10 +363,12 @@ function showMessageDuplicateRoutine(lineItem) {
       <button type="button" data-remove-alert class="btn btn--primary btn--outline">Keep Both</button>
     </div>
   </div>`;
-
   let replaceButton = cartItems.querySelector('[data-replace-alert]');
   let closeButton = cartItems.querySelector('[data-remove-alert]');
-  console.log(replaceButton,closeButton);
+  replaceButton.addEventListener("click", function(el) {
+    console.log(el);
+  });
+  console.log(,closeButton);
 }
 
 async function addItemtoCart(variantId) {
