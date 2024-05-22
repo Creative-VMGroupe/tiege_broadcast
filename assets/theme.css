@@ -26886,6 +26886,10 @@ flex: 1;
   }
 }
 /*Accordion Metafields*/
+/* Can delete 
+  .faq-list__item-custom:nth-child(odd):last-child {
+    background-color: yellow;
+} */
 @media(min-width: 750px){
 .faq-list--3 .faq-list__item.faq-list__item-custom,
 .faq-list--6 .faq-list__item.faq-list__item-custom,
