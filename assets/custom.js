@@ -493,9 +493,9 @@ async function addedCartFunction(addedItem, data) {
       }
     });
     if (routineItem != null) {
-      reloadCart = true;
-      alertStatus = 'error';
-      alertMessage = window.theme.cartSettings.singleRoutine.alert;
+      reloadCart = false;
+      alertStatus = '';
+      alertMessage = '';
       await showMessageDuplicateRoutine(routineItem.key);
       // await changeItemQty(routineItem.key, '0');
     }
