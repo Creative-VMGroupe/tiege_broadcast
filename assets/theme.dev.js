@@ -2707,10 +2707,12 @@
       buttonSkipUpsellProduct: '[data-skip-upsell-product]',
       cartBarAdd: '[data-add-to-cart-bar]',
       cartCloseError: '[data-cart-error-close]',
+      cartCloseSuccess: '[data-cart-success-close]',
       cartDrawer: 'cart-drawer',
       cartDrawerClose: '[data-cart-drawer-close]',
       cartEmpty: '[data-cart-empty]',
       cartErrors: '[data-cart-errors]',
+      cartSuccess: '[data-cart-success]',
       cartItemRemove: '[data-item-remove]',
       cartPage: '[data-cart-page]',
       cartForm: '[data-cart-form]',
@@ -2780,7 +2782,9 @@
         this.cartTotal = document.querySelector(selectors$U.cartTotal);
         this.freeShipping = document.querySelectorAll(selectors$U.freeShipping);
         this.cartErrorHolder = document.querySelector(selectors$U.cartErrors);
+        this.cartSuccessHolder = document.querySelector(selectors$U.cartSuccess);
         this.cartCloseErrorMessage = document.querySelector(selectors$U.cartCloseError);
+        this.cartCloseSuccessMessage = document.querySelector(selectors$U.cartCloseSuccess);
         this.headerWrapper = document.querySelector(selectors$U.headerWrapper);
         this.navDrawer = document.querySelector(selectors$U.navDrawer);
         this.upsellProductsHolder = document.querySelector(selectors$U.upsellProductsHolder);
