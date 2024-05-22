@@ -177,11 +177,15 @@
         "subheading_FWDe88",
         "text_jjTk74"
       ],
+      "custom_css": [
+        ".rich-text__img {opacity: 0.6;}"
+      ],
       "settings": {
+        "image_1": "shopify:\/\/shop_images\/Screenshot_2024-05-22_at_1.52.15_PM.png",
         "width": "wrapper--narrow",
         "align_text": "text-center",
-        "bg_color": "#ffffff",
-        "color": "",
+        "bg_color": "#000000",
+        "color": "#ffffff",
         "padding_top": 80,
         "padding_bottom": 80
       }
