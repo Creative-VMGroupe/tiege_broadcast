@@ -212,7 +212,8 @@
 
                   {%- if title != blank -%}
                     {%- assign font_size_class = block.settings.heading_size | prepend: 'heading-size-' -%}
-                    <h2 class="hero__title {{ font_size_class }}">
+                    {% assign big_text = block.settings.big_text %}
+                    <h2 class="hero__title {{ font_size_class }} {%- if big_text -%}oversized-text-custom{%- endif -%}">
                       {{ title }}
                     </h2>
                   {%- endif -%}
