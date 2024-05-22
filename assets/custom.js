@@ -486,7 +486,7 @@ async function addedCartFunction(addedItem, data) {
       }
     });
     if (routineItem != null) {
-      reloadCart = true;
+      reloadCart = false;
       alertStatus = 'error';
       alertMessage = window.theme.cartSettings.singleRoutine.alert;
       showMessageDuplicateRoutine(routineItem.key);
