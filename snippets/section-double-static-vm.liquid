@@ -601,6 +601,7 @@
                       endif
                       assign style_products = columns_style | replace: item_placeholder, product_list_columns
                       assign block_style = block_style | append: style_products
+                       assign text_color = block.settings.prod_text_color
                     -%}
 
                     <div class="hero__products grid block-padding"
@@ -617,7 +618,7 @@
 if product.tags contains 'hidden'
 else
 			
-                            render 'product-grid-item', product: product, sizes: product_sizes_images, show_product_card: block.settings.show_product_card
+                            render 'product-grid-item', product: product, sizes: product_sizes_images, show_product_card: block.settings.show_product_card, text_color: text_color
 endif
                           endfor
                         else

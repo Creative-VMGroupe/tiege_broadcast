@@ -373,7 +373,7 @@
         "heading_fdB9ir": {
           "type": "heading",
           "settings": {
-            "title": "Rich text",
+            "title": "Join the Cause",
             "text_font": 40,
             "big_text": false,
             "padding_bottom": 16
@@ -382,7 +382,7 @@
         "text_WDCeTB": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text": "<p>Shop Systems and Donate. Already a Tiege Guy? To donate, please log-in to your account and add a donation on to your next shipment. New to Tiege Hanley? Click the button below to learn about our skin care systems and how you can add a donation to your system with Tiege Hanley membership.<\/p>",
             "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 16
@@ -393,7 +393,7 @@
           "settings": {
             "button_text": "Learn more",
             "button_url": "",
-            "button_type": "btn--primary",
+            "button_type": "btn--white",
             "button_size": "",
             "button_style": "btn--solid",
             "show_arrow": false,
@@ -406,68 +406,17 @@
         "text_WDCeTB",
         "buttons_PpqrDV"
       ],
-      "settings": {
-        "width": "wrapper--narrow",
-        "align_text": "text-left",
-        "bg_color": "",
-        "color": "",
-        "padding_top": 100,
-        "padding_bottom": 100
-      }
-    },
-    "section_double_yhTVDr": {
-      "type": "section-double",
-      "blocks": {
-        "heading_77aYTw": {
-          "type": "heading",
-          "settings": {
-            "title": "Join the Cause",
-            "heading_size": 40,
-            "padding_bottom": 16
-          }
-        },
-        "text_3biEU4": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Shop Systems and Donate. Already a Tiege Guy? To donate, please log-in to your account and add a donation on to your next shipment. New to Tiege Hanley? Click the button below to learn about our skin care systems and how you can add a donation to your system with Tiege Hanley membership.<\/p>",
-            "quote_enabled": false,
-            "text_size": 16,
-            "text_style": "font-body",
-            "padding_bottom": 16
-          }
-        },
-        "buttons_NKzXmM": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "Join Today",
-            "button_url": "shopify:\/\/collections\/all-routines-1",
-            "button_type": "btn--secondary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "heading_77aYTw",
-        "text_3biEU4",
-        "buttons_NKzXmM"
+      "custom_css": [
+        ".rich-text__img {opacity: 0.75;}"
       ],
       "settings": {
-        "layout": "is-reversed",
-        "height": "screen-height-one-half",
-        "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/HARRYS_FW_PROD_0279_1.jpg",
-        "image_width": "one-half",
-        "text_alignment": "text-left",
-        "padding_lr": 50,
-        "reverse_blocks": false,
+        "image_1": "shopify:\/\/shop_images\/AdobeStock_326040122.jpg",
+        "width": "wrapper--narrow",
+        "align_text": "text-left",
         "bg_color": "#000000",
         "color": "#ffffff",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 200,
+        "padding_bottom": 200
       }
     },
     "section_rich_text_YWBiRt": {
@@ -596,7 +545,6 @@
     "section_rich_text_zRAhxB",
     "section_double_FPTYcM",
     "section_rich_text_RTPWit",
-    "section_double_yhTVDr",
     "section_rich_text_YWBiRt",
     "section_rich_text_XXdqUY",
     "1713201777b2f26263"
