@@ -121,7 +121,7 @@
             "title": "42 Million+",
             "text_font": 40,
             "big_text": true,
-            "padding_bottom": 16
+            "padding_bottom": 0
           }
         },
         "text_hnimLM": {
@@ -130,26 +130,22 @@
             "text": "<p>Days helping protect guys from sun damage<\/p>",
             "text_font": 16,
             "text_style": "font-body",
-            "padding_bottom": 16
+            "padding_bottom": 50
           }
         },
-        "2_columns_3W9W8x": {
-          "type": "2Columns",
+        "heading_Aa8qE3": {
+          "type": "heading",
           "settings": {
-            "title1": "42,610,590",
-            "heading_font": 32,
-            "text1": "<p>Days helping protect guys from sun damage<\/p>",
-            "text_font": 16,
-            "text_style": "font-body",
-            "title2": "$57,948",
-            "text2": "<p>Dollars donated and counting<\/p>",
+            "title": "$57,948",
+            "text_font": 40,
+            "big_text": true,
             "padding_bottom": 16
           }
         },
         "text_EBnWnW": {
           "type": "text",
           "settings": {
-            "text": "",
+            "text": "<p>Dollars donated and counting<\/p>",
             "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 16
@@ -161,7 +157,7 @@
         "heading_Qze6m9",
         "heading_EwQ3Gx",
         "text_hnimLM",
-        "2_columns_3W9W8x",
+        "heading_Aa8qE3",
         "text_EBnWnW"
       ],
       "custom_css": [
