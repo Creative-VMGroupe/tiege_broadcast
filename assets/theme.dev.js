@@ -2722,6 +2722,7 @@
       cartTotal: '[data-cart-total]',
       checkoutButotns: '[data-checkout-buttons]',
       errorMessage: '[data-error-message]',
+      successMessage: '[data-success-message]',
       formCloseError: '[data-close-error]',
       formErrorsContainer: '[data-cart-errors-container]',
       formWrapper: '[data-form-wrapper]',
@@ -3408,7 +3409,7 @@
       }
 
       updateSuccessText(itemTitle) {
-        this.cartSuccessHolder.querySelector(selectors$U.errorMessage).innerText = itemTitle;
+        this.cartSuccessHolder.querySelector(selectors$U.successMessage).innerText = itemTitle;
       }
 
       /**
