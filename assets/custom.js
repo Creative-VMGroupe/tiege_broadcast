@@ -354,27 +354,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 //  https://tiege-hanley-store.myshopify.com/
-async function showMessageDuplicateRoutine(lineItem) {
-  let cartItems = document.querySelector('.cart-alert');
-  cartItems.innerHTML = `<div class="alert-confirm">
-    <p class="cart__item__title">You already have a routine in your bag. Replace this routine?</p>
-    <div class="buttons-holder">
-      <button type="button" data-replace-alert data-remove-product=${lineItem} class="btn btn--primary btn--solid">Replace</button>
-      <button type="button" data-remove-alert class="btn btn--primary btn--outline">Keep Both</button>
-    </div>
-  </div>`;
-  let replaceButton = cartItems.querySelector('[data-replace-alert]');
-  let closeButton = cartItems.querySelector('[data-remove-alert]');
-  replaceButton.addEventListener("click", (e) => {
-    console.log(e.currentTarget);
-    await changeItemQty(replaceButton.dataset.removeProduct, '0');
-    var eventReload = new Event('theme:cart-drawer:reload', { bubbles: true, cancelable: false });
-    document.dispatchEvent(eventReload);
-  });
-  closeButton.addEventListener("click", (e) => {
-    cartItems.innerHTML = '';
-  });
-}
 
 async function addItemtoCart(variantId) {
   let formData = {
@@ -426,6 +405,28 @@ async function removeMultiple(lineItems) {
   .then(data => {})
   .catch((error) => {
     console.error('Error:', error);
+  });
+}
+
+async function showMessageDuplicateRoutine(lineItem) {
+  let cartItems = document.querySelector('.cart-alert');
+  cartItems.innerHTML = `<div class="alert-confirm">
+    <p class="cart__item__title">You already have a routine in your bag. Replace this routine?</p>
+    <div class="buttons-holder">
+      <button type="button" data-replace-alert data-remove-product=${lineItem} class="btn btn--primary btn--solid">Replace</button>
+      <button type="button" data-remove-alert class="btn btn--primary btn--outline">Keep Both</button>
+    </div>
+  </div>`;
+  let replaceButton = cartItems.querySelector('[data-replace-alert]');
+  let closeButton = cartItems.querySelector('[data-remove-alert]');
+  replaceButton.addEventListener("click", (e) => {
+    console.log(e.currentTarget);
+    await changeItemQty(replaceButton.dataset.removeProduct, '0');
+    var eventReload = new Event('theme:cart-drawer:reload', { bubbles: true, cancelable: false });
+    document.dispatchEvent(eventReload);
+  });
+  closeButton.addEventListener("click", (e) => {
+    cartItems.innerHTML = '';
   });
 }
 
