@@ -243,8 +243,8 @@
         "text_9rUGRr": {
           "type": "text",
           "settings": {
-            "text": "<p>Age-adjusted Melanoma Incidence Rates,<\/p>",
-            "text_font": 14,
+            "text": "<p>Age-adjusted Melanoma Incidence Rates<\/p>",
+            "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 0
           }
