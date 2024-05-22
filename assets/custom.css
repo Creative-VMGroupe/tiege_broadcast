@@ -304,5 +304,8 @@ body.template-article:has(
   gap: 1rem;
 }
 .buttons-holder .btn {
-  width: auto;
+  flex: 1;
+  min-width: unset;
+  min-height: unset;
+  padding: 0.5rem;
 }
