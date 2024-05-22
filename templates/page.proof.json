@@ -187,7 +187,7 @@
             "title": "95%",
             "text_size": 40,
             "big_text": true,
-            "padding_bottom": 16
+            "padding_bottom": 0
           }
         },
         "text_cnCbrb": {
@@ -241,7 +241,7 @@
             "title": "96%",
             "text_size": 40,
             "big_text": true,
-            "padding_bottom": 16
+            "padding_bottom": 0
           }
         },
         "text_TykUCJ": {
@@ -257,7 +257,7 @@
         "product_NEXrgP": {
           "type": "product",
           "settings": {
-            "prod_text_color": "",
+            "prod_text_color": "#ffffff",
             "product_list": [
               "moisturizer-with-spf-for-men"
             ],
