@@ -356,6 +356,7 @@ document.addEventListener('DOMContentLoaded', function() {
 //  https://tiege-hanley-store.myshopify.com/
 function showMessageDuplicateRoutine(lineItem) {
   let cartItems = document.querySelector('.cart-alert');
+  console.log(cartItems);
   cartItems.innerHTML = `<div class="alert-confirm">
     <p class="cart__item__title">You already have a routine in your bag. Replace this routine?</p>
     <div class="buttons-holder">
