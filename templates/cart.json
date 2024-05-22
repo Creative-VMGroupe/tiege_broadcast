@@ -10,11 +10,6 @@
             "free_shipping_gradient": ""
           }
         },
-        "cart_alert_tVLkJq": {
-          "type": "cart-alert",
-          "settings": {
-          }
-        },
         "order-note": {
           "type": "order-note",
           "disabled": true,
@@ -48,7 +43,6 @@
       },
       "block_order": [
         "free-shipping",
-        "cart_alert_tVLkJq",
         "order-note",
         "gift-note",
         "cart-message",
