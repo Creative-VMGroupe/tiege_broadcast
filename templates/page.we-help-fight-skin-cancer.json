@@ -127,12 +127,22 @@
             "text2": "<p>Dollars donated and counting<\/p>",
             "padding_bottom": 16
           }
+        },
+        "text_EBnWnW": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_font": 16,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
         }
       },
       "block_order": [
         "subheading_9pqUmL",
         "heading_Qze6m9",
-        "2_columns_3W9W8x"
+        "2_columns_3W9W8x",
+        "text_EBnWnW"
       ],
       "custom_css": [
         ".rich-text__img {opacity: 0.75;}"
@@ -320,6 +330,123 @@
         "layout_mobile": "1"
       }
     },
+    "section_double_FPTYcM": {
+      "type": "section-double",
+      "blocks": {
+        "heading_QRBKbP": {
+          "type": "heading",
+          "settings": {
+            "title": "Get Protected",
+            "heading_size": 40,
+            "padding_bottom": 16
+          }
+        },
+        "text_gzVm6z": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "quote_enabled": false,
+            "text_size": 16,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_a4nzkp": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_QRBKbP",
+        "text_gzVm6z",
+        "buttons_a4nzkp"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "padding_lr": 50,
+        "reverse_blocks": false,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_double_W8ai8g": {
+      "type": "section-double",
+      "blocks": {
+        "subheading_QTVdiX": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Introducing",
+            "text_size": 16,
+            "padding_bottom": 16
+          }
+        },
+        "heading_ehRYX9": {
+          "type": "heading",
+          "settings": {
+            "title": "Image with text",
+            "heading_size": 40,
+            "padding_bottom": 16
+          }
+        },
+        "text_nxXgkw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "quote_enabled": false,
+            "text_size": 16,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_BNGzkD": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_QTVdiX",
+        "heading_ehRYX9",
+        "text_nxXgkw",
+        "buttons_BNGzkD"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "padding_lr": 50,
+        "reverse_blocks": false,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_double_yhTVDr": {
       "type": "section-double",
       "blocks": {
@@ -366,7 +493,7 @@
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/HARRYS_FW_PROD_0279_1.jpg",
         "image_width": "one-half",
-        "text_alignment": "text-center",
+        "text_alignment": "text-left",
         "padding_lr": 50,
         "reverse_blocks": false,
         "bg_color": "#000000",
@@ -395,6 +522,15 @@
             "padding_bottom": 30
           }
         },
+        "text_CmFrWi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As a Corporate Council member, we support the Foundation’s work of empowering people to take a proactive approach to daily sun protection and the early detection and treatment of skin cancer.<\/p>",
+            "text_font": 16,
+            "text_style": "font-body",
+            "padding_bottom": 50
+          }
+        },
         "text_wtJwrY": {
           "type": "text",
           "settings": {
@@ -408,6 +544,7 @@
       "block_order": [
         "image_Bnzx8M",
         "heading_e8Mxbf",
+        "text_CmFrWi",
         "text_wtJwrY"
       ],
       "custom_css": [
@@ -489,6 +626,8 @@
     "section_rich_text_qXNtK8",
     "section_rich_text_8WGREr",
     "section_text_row_4qA4id",
+    "section_double_FPTYcM",
+    "section_double_W8ai8g",
     "section_double_yhTVDr",
     "section_rich_text_YWBiRt",
     "section_rich_text_XXdqUY",
