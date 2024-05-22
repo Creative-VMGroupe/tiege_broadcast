@@ -425,10 +425,48 @@ async function removeMultiple(lineItems) {
   });
 }
 
+async function removeMultiplewithReload(lineItems) {
+  var formData = new FormData();
+  lineItems.forEach((el) => {
+    formData.append(`updates[${el}]`, 0);
+  });
+  await fetch(window.Shopify.routes.root + 'cart/update.js', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => response.json())
+  .then(data => {
+    
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+  });
+}
+
 async function showMessageDuplicateRoutine(lineItem) {
   let cartItems = document.querySelector('.cart-alert');
   cartItems.innerHTML = `<div class="alert-confirm">
     <p class="cart__item__title">You already have a routine in your bag. Replace this routine?</p>
+    <div class="buttons-holder">
+      <button type="button" data-replace-alert data-remove-product=${lineItem} class="btn btn--primary btn--solid">Replace</button>
+      <button type="button" data-remove-alert class="btn btn--primary btn--outline">Keep Both</button>
+    </div>
+  </div>`;
+  let replaceButton = cartItems.querySelector('[data-replace-alert]');
+  let closeButton = cartItems.querySelector('[data-remove-alert]');
+  replaceButton.addEventListener("click", (e) => {
+    changeItemQtywithReload(replaceButton.dataset.removeProduct, '0');
+    cartItems.innerHTML = '';
+  });
+  closeButton.addEventListener("click", (e) => {
+    cartItems.innerHTML = '';
+  });
+}
+
+async function showMessageDuplicateProducts(lineItems) {
+  let cartItems = document.querySelector('.cart-alert');
+  cartItems.innerHTML = `<div class="alert-confirm">
+    <p class="cart__item__title"></p>
     <div class="buttons-holder">
       <button type="button" data-replace-alert data-remove-product=${lineItem} class="btn btn--primary btn--solid">Replace</button>
       <button type="button" data-remove-alert class="btn btn--primary btn--outline">Keep Both</button>
@@ -532,10 +570,11 @@ async function addedCartFunction(addedItem, data) {
       let haveCommonItems = otherItemIds.filter(item => variantsOfRoutine.includes(item));
       let commonItemsKeys = data.items.filter(item => haveCommonItems.includes(item.variant_id)).map((item) => item.key);
       if (commonItemsKeys.length > 0) {
-        reloadCart = true;
-        alertStatus = 'error';
-        alertMessage = window.theme.cartSettings.duplication.alert;
-        await removeMultiple(commonItemsKeys);
+        reloadCart = false;
+        alertStatus = '';
+        alertMessage = '';
+        // await removeMultiple(commonItemsKeys);
+        await showMessageDuplicateProducts(commonItemsKeys);
       }
     }
   }
@@ -633,39 +672,39 @@ async function updatedCartFunction(data) {
   }
 
   // Single Routine Checks
-  if (theme.cartSettings.singleRoutine.enabled) {
-    let routineItems = data.items.filter((item) => allProducts[item.product_id].isRoutine);
-    if (routineItems.length > 1) {
-      routineItems.shift();
-      reloadCart = true;
-      alertStatus = 'error';
-      alertMessage = window.theme.cartSettings.singleRoutine.alert;
-      await removeMultiple(routineItems);
-    }
-  }
+  // if (theme.cartSettings.singleRoutine.enabled) {
+  //   let routineItems = data.items.filter((item) => allProducts[item.product_id].isRoutine);
+  //   if (routineItems.length > 1) {
+  //     routineItems.shift();
+  //     reloadCart = true;
+  //     alertStatus = 'error';
+  //     alertMessage = window.theme.cartSettings.singleRoutine.alert;
+  //     await removeMultiple(routineItems);
+  //   }
+  // }
 
   // Duplication Check
-  if (theme.cartSettings.duplication.enabled) {
-    let routineItem = null;
-    data.items.forEach((element) => {
-      if (allProducts[element.product_id].isRoutine) {
-        routineItem = element;
-      }
-    });
-    if (routineItem != null) {
-      let otherItems = data.items.filter((item) => item.product_id != routineItem.product_id);
-      let otherItemIds = otherItems.map((item) => item.variant_id);
-      let variantsOfRoutine = allProducts[routineItem.product_id]['routineVariants'].map((item) => item.id);
-      let haveCommonItems = otherItemIds.filter(item => variantsOfRoutine.includes(item));
-      let commonItemsKeys = data.items.filter(item => haveCommonItems.includes(item.variant_id)).map((item) => item.key);
-      if (commonItemsKeys.length > 0) {
-        reloadCart = true;
-        alertStatus = 'error';
-        alertMessage = window.theme.cartSettings.duplication.alert;
-        await removeMultiple(commonItemsKeys);
-      }
-    }
-  }
+  // if (theme.cartSettings.duplication.enabled) {
+  //   let routineItem = null;
+  //   data.items.forEach((element) => {
+  //     if (allProducts[element.product_id].isRoutine) {
+  //       routineItem = element;
+  //     }
+  //   });
+  //   if (routineItem != null) {
+  //     let otherItems = data.items.filter((item) => item.product_id != routineItem.product_id);
+  //     let otherItemIds = otherItems.map((item) => item.variant_id);
+  //     let variantsOfRoutine = allProducts[routineItem.product_id]['routineVariants'].map((item) => item.id);
+  //     let haveCommonItems = otherItemIds.filter(item => variantsOfRoutine.includes(item));
+  //     let commonItemsKeys = data.items.filter(item => haveCommonItems.includes(item.variant_id)).map((item) => item.key);
+  //     if (commonItemsKeys.length > 0) {
+  //       reloadCart = true;
+  //       alertStatus = 'error';
+  //       alertMessage = window.theme.cartSettings.duplication.alert;
+  //       await removeMultiple(commonItemsKeys);
+  //     }
+  //   }
+  // }
 
   // Upgradability Check
   if (theme.cartSettings.upgradability.enabled) {
@@ -682,7 +721,7 @@ async function updatedCartFunction(data) {
       let upgradeSystem = allProducts[routineItem.product_id].nextRoutine != false ? allProducts[routineItem.product_id].nextRoutine.variantId : false ;
       if (upgradeSystem != false && otherItemIds.includes(upgradeItem)) {
         reloadCart = true;
-        alertStatus = 'error';
+        alertStatus = 'success';
         alertMessage = window.theme.cartSettings.upgradability.alert;
         let itemRemove = data.items.filter((item) => item.variant_id == upgradeItem)[0].key;
         await removeMultiple([itemRemove, routineItem.key]);
@@ -711,10 +750,10 @@ document.addEventListener('theme:product:add', function(e) {
     });
 });
 
-// document.addEventListener('theme:cart:change', function(e) {
-//   fetch(window.theme.routes.cart_url + '.json')
-//     .then(response => response.json())
-//     .then(data => {
-//       updatedCartFunction(data);
-//     });
-// });
+document.addEventListener('theme:cart:change', function(e) {
+  fetch(window.theme.routes.cart_url + '.json')
+    .then(response => response.json())
+    .then(data => {
+      updatedCartFunction(data);
+    });
+});
