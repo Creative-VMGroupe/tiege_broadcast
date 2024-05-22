@@ -53,6 +53,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Our high-quality skin care systems work to maximize results and eliminate guesswork for men of all skin types.<\/p>",
+            "quote_enabled": false,
             "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
@@ -182,6 +183,7 @@
             "title": "\"I am 41, and people tell me I look 33. Works great.\"",
             "heading_font": 24,
             "text": "<p>- Rick A.<\/p>",
+            "quote_enabled": false,
             "text_size": 12,
             "text_style": "font-body",
             "button_text": "Read more",
@@ -202,6 +204,7 @@
             "title": "\"I noticed improvement on my face in 2 days! I will stick to this product.\"",
             "heading_font": 24,
             "text": "<p>- Daniel A.<\/p>",
+            "quote_enabled": false,
             "text_size": 12,
             "text_style": "font-body",
             "button_text": "Read more",
@@ -232,7 +235,7 @@
         "text_alignment": "text-center",
         "bg_color": "#000000",
         "color": "#ffffff",
-        "sub_color": "#42b029",
+        "sub_color": "#fefb54",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -556,6 +559,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Eliminate the guesswork from achieving amazing skin with your personalized recommendation from our skin care experts.<\/p>",
+            "quote_enabled": false,
             "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
@@ -848,6 +852,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Simplify your Tiege experience, manage member autoship, and shop in the wild.<\/p>",
+            "quote_enabled": false,
             "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
