@@ -2951,12 +2951,13 @@
 
         cartItemSwitch.forEach((button) => {
           const item = button.closest(selectors$U.item);
-          let newAddProduct = item.dataset;
+          let newAddProduct = button.dataset;
           button.addEventListener('click', (event) => {
             event.preventDefault();
 
             if (button.classList.contains(classes$F.disabled)) return;
 
+            console.log('Item Clicked', newAddProduct, button);
             this.updateCart(
               {
                 id: button.dataset.key,
