@@ -445,6 +445,9 @@
         "text_4nHHC9",
         "buttons_9GgUdn"
       ],
+      "custom_css": [
+        ".rich-text__img {opacity: 0.75;}"
+      ],
       "settings": {
         "image_1": "shopify:\/\/shop_images\/Drop.png",
         "width": "wrapper--narrow",
