@@ -26124,6 +26124,10 @@ time, .article__author {
     min-height: 150px !important;
   }
 }
+/*Text*/
+.oversized-text-custom {
+  font-size: 100px !important;
+}
 p, a, span, h2.column__heading {
   line-height: var(--BODY-LINE-HEIGHT);
 }
