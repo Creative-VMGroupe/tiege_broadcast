@@ -284,7 +284,7 @@
         "heading_wmhGQC": {
           "type": "heading",
           "settings": {
-            "title": "How Can You Make an Impact?",
+            "title": "How Can You Make an&nbsp;Impact?",
             "text_font": 40,
             "big_text": true,
             "padding_bottom": 40
@@ -299,8 +299,8 @@
         "align_text": "text-center",
         "bg_color": "#ffffff",
         "color": "",
-        "padding_top": 100,
-        "padding_bottom": 100
+        "padding_top": 200,
+        "padding_bottom": 200
       }
     },
     "section_double_FPTYcM": {
