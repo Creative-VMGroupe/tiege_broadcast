@@ -2848,6 +2848,7 @@
         this.cartEvents();
         this.cartRemoveEvents();
         this.cartUpdateEvents();
+        this.cartSwitchEvents();
 
         document.addEventListener('theme:product:add', this.productAddCallback);
         document.addEventListener('theme:product:add-error', this.productAddCallback);
