@@ -113,14 +113,14 @@
   endif
 -%}
 {% if prod_text_color %}
-<style>
+{%- style -%}
   #BrickSection--{{ section.id }} a.product-link {
     color: {{ prod_text_color }};
   }
   #BrickSection--{{ section.id }} .product-price {
     color: {{ prod_text_color }};
   }
-</style>
+{%- endstyle -%}
 {% endif %}
 {%- if settings.color_swatches -%}
   {%- assign has_colors = false -%}
