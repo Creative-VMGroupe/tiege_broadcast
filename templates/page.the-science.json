@@ -81,6 +81,7 @@
           "settings": {
             "title": "Combatting Environmental Factors",
             "text_size": 40,
+            "big_text": false,
             "padding_bottom": 16
           }
         },
@@ -207,6 +208,7 @@
           "settings": {
             "title": "The Tiege Difference",
             "text_size": 40,
+            "big_text": false,
             "padding_bottom": 16
           }
         },
@@ -290,14 +292,14 @@
         "text_XkLRAw"
       ],
       "custom_css": [
-        ".rich-text__img {opacity: 0.6;}"
+        ".rich-text__img {opacity: 0.75;}"
       ],
       "settings": {
-        "image_1": "shopify:\/\/shop_images\/Drop.png",
+        "image_1": "shopify:\/\/shop_images\/AdobeStock_326040122.jpg",
         "width": "wrapper--narrow",
         "align_text": "text-center",
-        "bg_color": "",
-        "color": "",
+        "bg_color": "#000000",
+        "color": "#ffffff",
         "padding_top": 200,
         "padding_bottom": 200
       }
@@ -327,6 +329,7 @@
           "settings": {
             "title": "The Power of Peptides",
             "text_size": 40,
+            "big_text": false,
             "padding_bottom": 16
           }
         },
