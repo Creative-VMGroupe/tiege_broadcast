@@ -35,6 +35,11 @@
             "pin_to_bottom": false
           }
         },
+        "cart_alert_hbXJiL": {
+          "type": "cart-alert",
+          "settings": {
+          }
+        },
         "products": {
           "type": "products",
           "settings": {
@@ -74,6 +79,7 @@
         "cart-message",
         "title",
         "free-shipping",
+        "cart_alert_hbXJiL",
         "products",
         "upsell-products",
         "order-note",
