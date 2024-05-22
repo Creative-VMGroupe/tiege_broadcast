@@ -3263,6 +3263,7 @@
       }
 
       addItemSwitch(item) {
+        console.log(item);
         let formData = {
            'items': [
              {
