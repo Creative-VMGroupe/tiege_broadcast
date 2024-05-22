@@ -17369,6 +17369,16 @@ input.cart__acceptance__input {
   transform: rotate(90deg);
 }
 
+[data-cart-success] .cart__errors__inner {
+  position: relative;
+  padding: calc(var(--inner) / 2) var(--inner);
+  border: 1px solid var(--COLOR-SUCCESS-BORDER);
+  background-color: var(--COLOR-SUCCESS-BG);
+  color: var(--COLOR-SUCCESS);
+  border-radius: var(--RADIUS-SELECT);
+  margin: 15px auto;
+}
+
 .cart__errors__inner {
   position: relative;
   padding: calc(var(--inner) / 2) var(--inner);
