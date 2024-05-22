@@ -420,10 +420,10 @@ async function showMessageDuplicateRoutine(lineItem) {
   let replaceButton = cartItems.querySelector('[data-replace-alert]');
   let closeButton = cartItems.querySelector('[data-remove-alert]');
   replaceButton.addEventListener("click", (e) => {
-    changeItemQty(replaceButton.dataset.removeProduct, '0').then(
+    changeItemQty(replaceButton.dataset.removeProduct, '0').then({
       var eventReload = new Event('theme:cart-drawer:reload', { bubbles: true, cancelable: false });
       document.dispatchEvent(eventReload);
-    );
+    });
   });
   closeButton.addEventListener("click", (e) => {
     cartItems.innerHTML = '';
