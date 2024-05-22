@@ -354,7 +354,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 //  https://tiege-hanley-store.myshopify.com/
-function showMessageDuplicateRoutine(lineItem) {
+async function showMessageDuplicateRoutine(lineItem) {
   let cartItems = document.querySelector('.cart-alert');
   cartItems.innerHTML = `<div class="alert-confirm">
     <p class="cart__item__title">You already have a routine in your bag. Replace this routine?</p>
@@ -365,10 +365,15 @@ function showMessageDuplicateRoutine(lineItem) {
   </div>`;
   let replaceButton = cartItems.querySelector('[data-replace-alert]');
   let closeButton = cartItems.querySelector('[data-remove-alert]');
-  replaceButton..addEventListener("click", (e) => {
+  replaceButton.addEventListener("click", (e) => {
     console.log(e.currentTarget);
+    // await changeItemQty(replaceButton.dataset.removeProduct, '0');
+    var eventReload = new Event('theme:cart-drawer:reload', { bubbles: true, cancelable: false });
+    document.dispatchEvent(eventReload);
   });
-  console.log(el,closeButton);
+  closeButton.addEventListener("click", (e) => {
+    cartItems.innerHTML = '';
+  });
 }
 
 async function addItemtoCart(variantId) {
