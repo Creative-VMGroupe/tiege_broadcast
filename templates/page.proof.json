@@ -53,7 +53,7 @@
           "type": "text-slide",
           "settings": {
             "stars_enabled": true,
-            "subheading": "&nbsp;★★★★★",
+            "subheading": " ★★★★★",
             "subheading_size": 12,
             "sub_letter_spacing": 5,
             "title": "",
@@ -259,7 +259,7 @@
           "settings": {
             "prod_text_color": "",
             "product_list": [
-              "mens-morning-facial-moisturizer-spf-20-863"
+              "moisturizer-with-spf-for-men"
             ],
             "show_product_card": true,
             "padding_bottom": 16
