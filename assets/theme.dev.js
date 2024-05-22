@@ -3843,7 +3843,13 @@
 
       onCartDrawerAlert(e) {
         console.log(e);
-        // Show status and message on Cart
+        if (e.detail.status == 'error') {
+          this.updateErrorText(e.detail.message);
+          this.toggleErrorMessage();
+        } else if (e.detail.status == 'success') {
+          this.updateSuccessText(e.detail.message);
+          this.toggleSuccessMessage();
+        }
         
       }
     }
