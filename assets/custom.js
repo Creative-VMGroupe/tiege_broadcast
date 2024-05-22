@@ -466,16 +466,16 @@ async function showMessageDuplicateRoutine(lineItem) {
 async function showMessageDuplicateProducts(lineItems) {
   let cartItems = document.querySelector('.cart-alert');
   cartItems.innerHTML = `<div class="alert-confirm">
-    <p class="cart__item__title"></p>
+    <p class="cart__item__title">The routine includes products in your cart. Remove these products ?</p>
     <div class="buttons-holder">
-      <button type="button" data-replace-alert data-remove-product=${lineItem} class="btn btn--primary btn--solid">Replace</button>
-      <button type="button" data-remove-alert class="btn btn--primary btn--outline">Keep Both</button>
+      <button type="button" data-replace-alert data-remove-products class="btn btn--primary btn--solid">Remove</button>
+      <button type="button" data-remove-alert class="btn btn--primary btn--outline">Keep Them</button>
     </div>
   </div>`;
   let replaceButton = cartItems.querySelector('[data-replace-alert]');
   let closeButton = cartItems.querySelector('[data-remove-alert]');
   replaceButton.addEventListener("click", (e) => {
-    changeItemQtywithReload(replaceButton.dataset.removeProduct, '0');
+    removeMultiplewithReload(lineItems);
     cartItems.innerHTML = '';
   });
   closeButton.addEventListener("click", (e) => {
