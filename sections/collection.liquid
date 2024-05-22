@@ -52,27 +52,7 @@
     {% endunless %}
   }
   {% if collection.metafields.custom.header_color != blank %}
-    {% if collection.metafields.custom.header_color == 'Black Header' %}
-      .header__wrapper:not(.js__header__stuck) .logo__img--color,
-      .header__wrapper.meganav--visible .logo__img--color {
-        opacity: 1 !important;
-      }
-      .header__wrapper:not(.js__header__stuck) .logo__img--transparent,
-      .header__wrapper.meganav--visible .logo__img--transparent {
-        opacity: 0 !important;
-      }
-      .header__wrapper:not(.js__header__stuck) .navlink--toplevel {
-        --link-hover: #000000;
-      }
-      .header__wrapper:not(.js__header__stuck) .navlink--toplevel .navtext,
-      .header__wrapper:not(.js__header__stuck) .header__mobile__hamburger,
-      .header__wrapper:not(.js__header__stuck) .header__logo__link,
-      .header__wrapper:not(.js__header__stuck) .navlink--search, 
-      .header__wrapper:not(.js__header__stuck) .navlink--cart--circle .header__cart__status
-      {
-        color: #000000;
-      }
-    {% else %}
+    {% if collection.metafields.custom.header_color == 'White Header' %}
       .header__wrapper .logo__img--color {
         opacity: 1;
       }
@@ -96,6 +76,26 @@
       .header__wrapper:not(.js__header__stuck):not(.meganav--visible) .navlink--cart--circle .header__cart__status
       {
         color: #ffffff;
+      }
+    {% else %}
+      .header__wrapper:not(.js__header__stuck) .logo__img--color,
+      .header__wrapper.meganav--visible .logo__img--color {
+        opacity: 1 !important;
+      }
+      .header__wrapper:not(.js__header__stuck) .logo__img--transparent,
+      .header__wrapper.meganav--visible .logo__img--transparent {
+        opacity: 0 !important;
+      }
+      .header__wrapper:not(.js__header__stuck) .navlink--toplevel {
+        --link-hover: #000000;
+      }
+      .header__wrapper:not(.js__header__stuck) .navlink--toplevel .navtext,
+      .header__wrapper:not(.js__header__stuck) .header__mobile__hamburger,
+      .header__wrapper:not(.js__header__stuck) .header__logo__link,
+      .header__wrapper:not(.js__header__stuck) .navlink--search, 
+      .header__wrapper:not(.js__header__stuck) .navlink--cart--circle .header__cart__status
+      {
+        color: #000000;
       }
     {% endif %}
   {% endif %}
