@@ -106,6 +106,8 @@
               <p class="cart__item__selling-plan">
                 <span>{{ line_item.selling_plan_allocation.selling_plan.name }}</span>
               </p>
+            {% else %}
+              Switch to Subscription
             {%- endif -%}
 
             {%- if properties_html != '' -%}
