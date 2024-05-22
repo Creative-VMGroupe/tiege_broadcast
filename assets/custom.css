@@ -51,7 +51,7 @@
   margin-bottom: 12px !important;
 }
 .level-guide-member-single-tier_text {
-  text-align: left;
+  text-align: center;
 }
 .level-guide-member-tiers-wrapper-custom {
   padding-left: var(--outer);
@@ -294,4 +294,7 @@ body.template-article:has(
 }
 .subscription-switch {
   cursor: pointer;
+}
+.alert-confirm {
+  padding: 1rem;
 }
