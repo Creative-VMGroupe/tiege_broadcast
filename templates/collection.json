@@ -12,9 +12,9 @@
         "banner_layout": "overlay",
         "height": "screen-height-one-third",
         "mobile_height": "two-fifty-height-hero--mobile",
-        "overlay_opacity": 55,
+        "overlay_opacity": 30,
         "overlay_color": "#000000",
-        "show_overlay_text": true,
+        "show_overlay_text": false,
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -163,6 +163,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Eliminate the guesswork from achieving amazing skin with your personalized recommendation from our skin care experts.<\/p>",
+            "quote_enabled": false,
             "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
