@@ -2976,7 +2976,7 @@
               }
              ]
             };
-            await fetch(window.Shopify.routes.root + 'cart/add.js', {
+            fetch(window.Shopify.routes.root + 'cart/add.js', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json'
@@ -2988,7 +2988,6 @@
             .catch((error) => {
               console.error('Error:', error);
             });
-            
           });
         });
 
