@@ -72,6 +72,7 @@
           "settings": {
             "title": "Created for Men",
             "text_size": 40,
+            "big_text": false,
             "padding_bottom": 16
           }
         },
@@ -223,6 +224,7 @@
           "settings": {
             "title": "Helping Regular Guys",
             "text_size": 40,
+            "big_text": false,
             "padding_bottom": 16
           }
         },
@@ -269,6 +271,65 @@
         "color": "",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "section_rich_text_NPiAGX": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_qePBjW": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Introducing",
+            "text_font": 16,
+            "padding_bottom": 16
+          }
+        },
+        "heading_pcmrrr": {
+          "type": "heading",
+          "settings": {
+            "title": "\"We’ve reinvented men’s skin care and changed the way men think about their skin.\"",
+            "text_font": 32,
+            "padding_bottom": 16
+          }
+        },
+        "text_zaCBkK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_font": 16,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_dhzQ33": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_qePBjW",
+        "heading_pcmrrr",
+        "text_zaCBkK",
+        "buttons_dhzQ33"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "section_reviews_McPTbp": {
@@ -320,6 +381,7 @@
           "settings": {
             "title": "Uncomplicated Skin Care for Men",
             "text_size": 40,
+            "big_text": false,
             "padding_bottom": 16
           }
         },
@@ -433,6 +495,7 @@
     "section_rich_text_HGVCbw",
     "section_hero_LyX34B",
     "section_double_static_vm_R4Cg9i",
+    "section_rich_text_NPiAGX",
     "section_reviews_McPTbp",
     "section_double_static_vm_yFVkwc",
     "section_rich_text_ipmbQd",
