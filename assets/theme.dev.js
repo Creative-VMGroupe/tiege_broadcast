@@ -2882,6 +2882,7 @@
 
         this.cartEmpty.classList.remove(classes$F.updated);
         this.cartErrorHolder.classList.remove(classes$F.expanded);
+        this.cartSuccessHolder.classList.remove(classes$F.expanded);
         this.cart.querySelectorAll(selectors$U.animation).forEach((item) => {
           const removeHidingClass = () => {
             item.classList.remove(classes$F.hiding);
@@ -2948,6 +2949,13 @@
             this.cartErrorHolder.classList.remove(classes$F.expanded);
           });
         }
+        if (this.cartCloseSuccessMessage) {
+          this.cartCloseSuccessMessage.addEventListener('click', (event) => {
+            event.preventDefault();
+
+            this.cartSuccessHolder.classList.remove(classes$F.expanded);
+          });
+        }
       }
 
       cartSwitchEvents () {
@@ -2977,6 +2985,13 @@
             event.preventDefault();
 
             this.cartErrorHolder.classList.remove(classes$F.expanded);
+          });
+        }
+        if (this.cartCloseSuccessMessage) {
+          this.cartCloseSuccessMessage.addEventListener('click', (event) => {
+            event.preventDefault();
+
+            this.cartSuccessHolder.classList.remove(classes$F.expanded);
           });
         }
       }
@@ -3390,6 +3405,22 @@
 
         // Reset cart error events flag
         this.cartUpdateFailed = false;
+      }
+
+      updateSuccessText(itemTitle) {
+        this.cartSuccessHolder.querySelector(selectors$U.errorMessage).innerText = itemTitle;
+      }
+
+      /**
+       * Toggle error message
+       *
+       * @return  {Void}
+       */
+
+      toggleSuccessMessage() {
+        if (!this.cartSuccessHolder) return;
+
+        this.cartSuccessHolder.classList.toggle(classes$F.expanded);
       }
 
       /**
