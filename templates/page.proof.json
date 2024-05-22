@@ -161,6 +161,7 @@
           "settings": {
             "title": "Uncomplicated Results",
             "text_font": 40,
+            "big_text": false,
             "padding_bottom": 0
           }
         }
@@ -185,6 +186,7 @@
           "settings": {
             "title": "95%",
             "text_size": 40,
+            "big_text": true,
             "padding_bottom": 16
           }
         },
@@ -201,6 +203,7 @@
         "product_JCMM6K": {
           "type": "product",
           "settings": {
+            "prod_text_color": "",
             "product_list": [
               "single-product-name-2"
             ],
@@ -237,6 +240,7 @@
           "settings": {
             "title": "96%",
             "text_size": 40,
+            "big_text": true,
             "padding_bottom": 16
           }
         },
@@ -253,6 +257,7 @@
         "product_NEXrgP": {
           "type": "product",
           "settings": {
+            "prod_text_color": "",
             "product_list": [
               "mens-morning-facial-moisturizer-spf-20-863"
             ],
@@ -375,6 +380,7 @@
           "settings": {
             "title": "See the Difference",
             "text_font": 40,
+            "big_text": false,
             "padding_bottom": 0
           }
         }
@@ -467,6 +473,7 @@
           "settings": {
             "title": "Seen in the Wild",
             "text_font": 40,
+            "big_text": false,
             "padding_bottom": 16
           }
         },
