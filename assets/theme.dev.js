@@ -3421,7 +3421,7 @@
 
       addToCartError(data, button) {
         if (this.cartDrawer) {
-          this.closeCartDrawer();
+          // this.closeCartDrawer();
         }
 
         if (button !== null) {
