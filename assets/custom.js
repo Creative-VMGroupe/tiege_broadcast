@@ -359,7 +359,7 @@ function showMessageDuplicateRoutine(lineItem) {
   cartItems.innerHTML = `<div class="alert-confirm">
     <p class="cart__item__title">You already have a routine in your bag. Replace this routine?</p>
     <div class="buttons-holder">
-      <button type="button" class="btn btn--primary btn--solid">Replace</button>
+      <button type="button" data-remove-product=${lineItem} class="btn btn--primary btn--solid">Replace</button>
       <button type="button" class="btn btn--primary btn--outline">Keep Both</button>
     </div>
   </div>`;
