@@ -392,6 +392,23 @@ async function changeItemQty(lineItem, qty) {
   });
 }
 
+async function changeItemQtywithReload(lineItem, qty) {
+  var formData = new FormData();
+  formData.append(`updates[${lineItem}]`, qty);
+  await fetch(window.Shopify.routes.root + 'cart/update.js', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => response.json())
+  .then(data => {
+    var eventReload = new Event('theme:cart-drawer:reload', { bubbles: true, cancelable: false });
+    document.dispatchEvent(eventReload);
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+  });
+}
+
 async function removeMultiple(lineItems) {
   var formData = new FormData();
   lineItems.forEach((el) => {
@@ -420,9 +437,7 @@ async function showMessageDuplicateRoutine(lineItem) {
   let replaceButton = cartItems.querySelector('[data-replace-alert]');
   let closeButton = cartItems.querySelector('[data-remove-alert]');
   replaceButton.addEventListener("click", (e) => {
-    changeItemQty(replaceButton.dataset.removeProduct, '0');
-    var eventReload = new Event('theme:cart-drawer:reload', { bubbles: true, cancelable: false });
-    document.dispatchEvent(eventReload);
+    changeItemQtywithReload(replaceButton.dataset.removeProduct, '0');
   });
   closeButton.addEventListener("click", (e) => {
     cartItems.innerHTML = '';
