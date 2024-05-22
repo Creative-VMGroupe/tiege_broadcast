@@ -27068,6 +27068,8 @@ grid-column-gap: var(--gap);
 body#find-my-routine .header-sections {
   height: 0;
 }
+@media(max-width: 480px) {
 .rh-widget.rh-inline.rh-quiz-gWH2pX {
   height: 1301px !important;
+} 
 }
