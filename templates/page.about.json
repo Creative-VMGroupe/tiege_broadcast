@@ -182,12 +182,12 @@
         "text_jyH9PW"
       ],
       "settings": {
-        "width": "wrapper",
+        "width": "wrapper--narrow",
         "align_text": "text-left",
-        "bg_color": "",
-        "color": "",
-        "padding_top": 100,
-        "padding_bottom": 100
+        "bg_color": "#000000",
+        "color": "#ffffff",
+        "padding_top": 200,
+        "padding_bottom": 200
       }
     },
     "section_hero_LyX34B": {
