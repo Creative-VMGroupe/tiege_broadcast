@@ -147,25 +147,59 @@
         "padding_bottom": 30
       }
     },
-    "section_rich_text_W7bbeY": {
+    "section_rich_text_8WGREr": {
       "type": "section-rich-text",
       "blocks": {
-        "2_columns_N4pL7z": {
-          "type": "2Columns",
+        "subheading_UW99Qp": {
+          "type": "subheading",
           "settings": {
-            "title1": "42,610,590",
-            "heading_font": 32,
-            "text1": "<p>Days protecting guys from the sun's harmful UV rays<\/p>",
+            "subheading": "The Data Doesn't Lie",
             "text_font": 16,
-            "text_style": "font-body",
-            "title2": "$57,948",
-            "text2": "<p>Dollars donated and counting<\/p>",
             "padding_bottom": 16
+          }
+        },
+        "heading_yt7JFk": {
+          "type": "heading",
+          "settings": {
+            "title": "Prevention Has Never Been More Important",
+            "text_font": 40,
+            "big_text": false,
+            "padding_bottom": 40
+          }
+        },
+        "image_CrzRBe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_1920_mobile.svg",
+            "image_width": 100,
+            "padding_bottom": 20
+          }
+        },
+        "text_9rUGRr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Age-adjusted Melanoma Incidence Rates,<\/p>",
+            "text_font": 14,
+            "text_style": "font-body",
+            "padding_bottom": 0
+          }
+        },
+        "text_9TTK3g": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Actual And Projected, By Sex, 1975-2020<\/p>",
+            "text_font": 14,
+            "text_style": "font-body",
+            "padding_bottom": 30
           }
         }
       },
       "block_order": [
-        "2_columns_N4pL7z"
+        "subheading_UW99Qp",
+        "heading_yt7JFk",
+        "image_CrzRBe",
+        "text_9rUGRr",
+        "text_9TTK3g"
       ],
       "custom_css": [
 
@@ -175,55 +209,8 @@
         "align_text": "text-center",
         "bg_color": "#f7f7f7",
         "color": "",
-        "padding_top": 0,
-        "padding_bottom": 30
-      }
-    },
-    "section_rich_text_8WGREr": {
-      "type": "section-rich-text",
-      "blocks": {
-        "text_9rUGRr": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Age-adjusted Melanoma Incidence Rates,<\/p>",
-            "text_font": 16,
-            "text_style": "font-body",
-            "padding_bottom": 0
-          }
-        },
-        "text_9TTK3g": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Actual And Projected, By Sex, 1975-2020<\/p>",
-            "text_font": 16,
-            "text_style": "font-body",
-            "padding_bottom": 30
-          }
-        },
-        "image_CrzRBe": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Group_1920_mobile.svg",
-            "image_width": 100,
-            "padding_bottom": 0
-          }
-        }
-      },
-      "block_order": [
-        "text_9rUGRr",
-        "text_9TTK3g",
-        "image_CrzRBe"
-      ],
-      "custom_css": [
-        ".hero__content:has(.hero__media) {padding-bottom: 0;}"
-      ],
-      "settings": {
-        "width": "wrapper--narrow",
-        "align_text": "text-center",
-        "bg_color": "#f7f7f7",
-        "color": "",
-        "padding_top": 0,
-        "padding_bottom": 80
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "section_double_Xj3hp3": {
@@ -526,7 +513,6 @@
     "section_hero_KpG8aH",
     "section_rich_text_egX3gc",
     "section_rich_text_ryAmny",
-    "section_rich_text_W7bbeY",
     "section_rich_text_8WGREr",
     "section_double_Xj3hp3",
     "section_text_row_4qA4id",
