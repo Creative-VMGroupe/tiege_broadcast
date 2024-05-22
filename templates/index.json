@@ -113,6 +113,7 @@
           "settings": {
             "title": "Tiege Hanley is made with revolutionary, all-natural peptide technology.",
             "text_font": 40,
+            "big_text": false,
             "padding_bottom": 16
           }
         },
@@ -451,7 +452,7 @@
       "settings": {
         "image_1": "shopify:\/\/shop_images\/Drop.png",
         "width": "wrapper--narrow",
-        "align_text": "text-left",
+        "align_text": "text-center",
         "bg_color": "#ffffff",
         "color": "#000000",
         "padding_top": 200,
@@ -801,6 +802,7 @@
           "settings": {
             "title": "Routine Level Guide",
             "text_font": 40,
+            "big_text": false,
             "padding_bottom": 16
           }
         },
@@ -833,7 +835,7 @@
       ],
       "settings": {
         "width": "wrapper--narrow",
-        "align_text": "text-left",
+        "align_text": "text-center",
         "bg_color": "#000000",
         "color": "#ffffff",
         "padding_top": 80,
@@ -919,6 +921,7 @@
           "settings": {
             "title": "Stay Uncomplicated",
             "text_font": 40,
+            "big_text": false,
             "padding_bottom": 16
           }
         },
