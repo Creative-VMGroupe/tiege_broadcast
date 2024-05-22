@@ -365,8 +365,8 @@ function showMessageDuplicateRoutine(lineItem) {
   </div>`;
   let replaceButton = cartItems.querySelector('[data-replace-alert]');
   let closeButton = cartItems.querySelector('[data-remove-alert]');
-  replaceButton.addEventListener("click", function(el) {
-    console.log(el);
+  replaceButton..addEventListener("click", (e) => {
+    console.log(e.currentTarget);
   });
   console.log(el,closeButton);
 }
