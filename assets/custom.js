@@ -517,7 +517,7 @@ async function addedCartFunction(addedItem, data) {
       let upgradeSystem = allProducts[routineItem.product_id].nextRoutine != false ? allProducts[routineItem.product_id].nextRoutine.variantId : false ;
       if (upgradeSystem != false && otherItemIds.includes(upgradeItem)) {
         reloadCart = true;
-        alertStatus = 'error';
+        alertStatus = 'success';
         alertMessage = window.theme.cartSettings.upgradability.alert;
         let itemRemove = data.items.filter((item) => item.variant_id == upgradeItem)[0].key;
         await removeMultiple([itemRemove, routineItem.key]);
