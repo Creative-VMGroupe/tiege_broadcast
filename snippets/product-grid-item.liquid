@@ -112,7 +112,16 @@
     assign loading = 'lazy'
   endif
 -%}
-
+{% if prod_text_color %}
+<style>
+  #BrickSection--{{ section.id }} a.product-link {
+    color: {{ prod_text_color }};
+  }
+  #BrickSection--{{ section.id }} .product-price {
+    color: {{ prod_text_color }};
+  }
+</style>
+{% endif %}
 {%- if settings.color_swatches -%}
   {%- assign has_colors = false -%}
 
