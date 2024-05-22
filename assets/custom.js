@@ -688,10 +688,10 @@ document.addEventListener('theme:product:add', function(e) {
     });
 });
 
-document.addEventListener('theme:cart:change', function(e) {
-  fetch(window.theme.routes.cart_url + '.json')
-    .then(response => response.json())
-    .then(data => {
-      updatedCartFunction(data);
-    });
-});
+// document.addEventListener('theme:cart:change', function(e) {
+//   fetch(window.theme.routes.cart_url + '.json')
+//     .then(response => response.json())
+//     .then(data => {
+//       updatedCartFunction(data);
+//     });
+// });
