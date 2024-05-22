@@ -20,80 +20,40 @@
     },
     "section_hero_KpG8aH": {
       "type": "section-hero",
+      "blocks": {
+        "heading_ffjpfd": {
+          "type": "heading",
+          "settings": {
+            "title": "We Fight Skin Cancer",
+            "heading_font": 40
+          }
+        },
+        "text_QBNwLD": {
+          "type": "text",
+          "settings": {
+            "description": "Tiege Hanley is a proud member of the Skin Cancer Foundation.",
+            "text_font": 16,
+            "text_style": "font-body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ffjpfd",
+        "text_QBNwLD"
+      ],
       "settings": {
-        "height": "screen-height-one-half",
+        "height": "screen-height-three-quarters",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/Screenshot_2024-05-17_at_4.22.37_PM.png",
+        "image_1": "shopify:\/\/shop_images\/AdobeStock_56831942.png",
         "link": "",
-        "mobile_height": "screen-height-one-third--mobile",
+        "mobile_height": "screen-height-three-quarters--mobile",
         "flex_align_desktop": "align--middle-center-desktop",
         "flex_align_mobile": "align--middle-center-mobile",
-        "overlay_opacity": 0,
+        "overlay_opacity": 40,
         "overlay_color": "#000000",
         "show_overlay_text": false,
         "bg_color": "",
         "color": "#ffffff"
-      }
-    },
-    "section_rich_text_aieYzU": {
-      "type": "section-rich-text",
-      "blocks": {
-        "subheading_gdc8w6": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Make an Impact",
-            "text_font": 14,
-            "padding_bottom": 16
-          }
-        },
-        "heading_EJyThd": {
-          "type": "heading",
-          "settings": {
-            "title": "Help Us Fight The #1 Cancer Impacting Men Around The World",
-            "text_font": 40,
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "subheading_gdc8w6",
-        "heading_EJyThd"
-      ],
-      "settings": {
-        "width": "wrapper--narrow",
-        "align_text": "text-center",
-        "bg_color": "#f7f7f7",
-        "color": "",
-        "padding_top": 80,
-        "padding_bottom": 0
-      }
-    },
-    "section_rich_text_QVtJ7U": {
-      "type": "section-rich-text",
-      "blocks": {
-        "text_F3yF6m": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We are proud members of the Skin Cancer Foundation<\/p>",
-            "text_font": 16,
-            "text_style": "font-body",
-            "padding_bottom": 0
-          }
-        }
-      },
-      "block_order": [
-        "text_F3yF6m"
-      ],
-      "custom_css": [
-        ".hero__content {max-width: 350px;}"
-      ],
-      "settings": {
-        "width": "wrapper--narrow",
-        "align_text": "text-center",
-        "bg_color": "#f7f7f7",
-        "color": "",
-        "padding_top": 0,
-        "padding_bottom": 80
       }
     },
     "section_double_M3cHpz": {
@@ -102,7 +62,7 @@
         "heading_Mewf4m": {
           "type": "heading",
           "settings": {
-            "title": "Something Worth Fighting For",
+            "title": "Make an Impact",
             "heading_size": 40,
             "padding_bottom": 16
           }
@@ -111,6 +71,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Our co-founder’s father passed away from melanoma at age 54. So, making products that protect guys from the sun’s harmful rays and donating to The Skin Cancer Foundation has been core to Tiege Hanley since day one.<\/p><p>Our first donation to The Skin Cancer Foundation came within a few months in business and every year after. As we grew so has our donating, and to date we’ve donated over $39,000.<\/p>",
+            "quote_enabled": false,
             "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
@@ -145,6 +106,7 @@
           "settings": {
             "title": "With Your Support We Can Make an Impact",
             "text_font": 40,
+            "big_text": false,
             "padding_bottom": 50
           }
         }
@@ -267,6 +229,7 @@
           "type": "text",
           "settings": {
             "text": "<p>About 57% of people who are diagnosed with one basal cell carcinoma (BCC) are men. Sixty-two percent of people diagnosed with two to five BCCs are men. Among those with six or more BCCs, a whopping 80 percent are male.<\/p><p>It gets worse. Men account for more than half of all new cases of the most invasive melanoma and have almost twice as many deaths.<\/p><p>According to Julie K. Karen, MD, “Men may not be deliberately tanning as much, but if they go fishing or go out for a run, they tend not to lather up with sunscreen. In general, they're a little lazier than women are about taking proactive measures to protect themselves from sun damage.” Dr. Karen specializes in the diagnosis and treatment of skin cancer at Complete Skin MD in NYC and is a clinical assistant professor in the Ronald O. Perelman Department of Dermatology at NYU Langone Medical Center. [<a href=\"https:\/\/www.tiege.com\/pages\/impact#impact-citation\">1<\/a>]<\/p>",
+            "quote_enabled": false,
             "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
@@ -391,6 +354,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Shop Systems and Donate. Already a Tiege Guy? To donate, please log-in to your account and add a donation on to your next shipment. New to Tiege Hanley? Click the button below to learn about our skin care systems and how you can add a donation to your system with Tiege Hanley membership.<\/p>",
+            "quote_enabled": false,
             "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
@@ -446,6 +410,7 @@
           "settings": {
             "title": "#changingskincareformen",
             "text_font": 32,
+            "big_text": false,
             "padding_bottom": 30
           }
         },
@@ -484,6 +449,7 @@
           "settings": {
             "title": "Seen in the Wild",
             "text_font": 40,
+            "big_text": false,
             "padding_bottom": 16
           }
         },
@@ -537,8 +503,6 @@
   "order": [
     "main",
     "section_hero_KpG8aH",
-    "section_rich_text_aieYzU",
-    "section_rich_text_QVtJ7U",
     "section_double_M3cHpz",
     "section_rich_text_ryAmny",
     "section_rich_text_W7bbeY",
