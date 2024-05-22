@@ -27086,3 +27086,7 @@ body#find-my-routine .header-sections {
   height: 1301px !important;
 } 
 }
+/*Image with Title - CLP*/
+.collection-image-with-title-custom .hero__content{
+  max-width: 600px
+}
