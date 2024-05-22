@@ -455,48 +455,6 @@
         "padding_bottom": 200
       }
     },
-    "section_hero_iEX3nG": {
-      "type": "section-hero",
-      "blocks": {
-        "text_RJVT4V": {
-          "type": "text",
-          "settings": {
-            "description": "Want great skin? Our cutting-edge formulas are the key to an uncomplicated routine for amazing skin.",
-            "text_font": 16,
-            "text_style": "font-body"
-          }
-        },
-        "button_imf4CU": {
-          "type": "button",
-          "settings": {
-            "link_text": "Learn More",
-            "link": "shopify:\/\/pages\/the-science",
-            "button_type": "btn--secondary",
-            "button_size": "btn--large",
-            "button_style": "btn--outline",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "text_RJVT4V",
-        "button_imf4CU"
-      ],
-      "settings": {
-        "height": "screen-height-two-thirds",
-        "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/Peptides_AdobeStock_403007779_transparent.png",
-        "link": "",
-        "mobile_height": "screen-height-one-half--mobile",
-        "flex_align_desktop": "align--middle-center-desktop",
-        "flex_align_mobile": "align--middle-center-mobile",
-        "overlay_opacity": 0,
-        "overlay_color": "#000000",
-        "show_overlay_text": false,
-        "bg_color": "",
-        "color": "#212121"
-      }
-    },
     "section_before_after_hzKE7H": {
       "type": "section-before-after",
       "custom_css": [
@@ -1012,7 +970,6 @@
     "section_video_W9NxLi",
     "vm_section_text_row_LxAydb",
     "section_rich_text_W6YjUJ",
-    "section_hero_iEX3nG",
     "section_before_after_hzKE7H",
     "section_video_NGgczi",
     "section_collection_new_yBCCiG",
