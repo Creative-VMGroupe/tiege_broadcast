@@ -156,6 +156,40 @@
         "padding_bottom": 80
       }
     },
+    "section_rich_text_XzLBVi": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_gffHnB": {
+          "type": "heading",
+          "settings": {
+            "title": "Sensible. Simple. Affordable.",
+            "text_font": 40,
+            "padding_bottom": 16
+          }
+        },
+        "text_jyH9PW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Drawing on his marketing and brand management experience, Kelley got to work, enlisting his UConn college roommate turned software industry guru, Rob Hoxie, to help mastermind a skin care solution for men that hits all three points—it has to be sensible, simple and affordable.<\/p>",
+            "text_font": 16,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_gffHnB",
+        "text_jyH9PW"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
     "section_hero_LyX34B": {
       "type": "section-hero",
       "blocks": {
@@ -198,13 +232,47 @@
         "image_1": "shopify:\/\/shop_images\/Layer_1.png",
         "link": "",
         "mobile_height": "screen-height-three-quarters--mobile",
-        "flex_align_desktop": "align--middle-center-desktop",
-        "flex_align_mobile": "align--middle-center-mobile",
+        "flex_align_desktop": "align--middle-left-desktop",
+        "flex_align_mobile": "align--middle-left-mobile",
         "overlay_opacity": 30,
         "overlay_color": "#ffffff",
         "show_overlay_text": false,
         "bg_color": "",
         "color": "#000000"
+      }
+    },
+    "section_rich_text_KCkmTg": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_fzLbf7": {
+          "type": "heading",
+          "settings": {
+            "title": "Helping Regular Guys",
+            "text_font": 40,
+            "padding_bottom": 16
+          }
+        },
+        "text_y6DNAW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Kelley and Rob wanted to help regular guys look and feel amazing by creating a skin care system that was easy to understand and to use. But what good is an idea without an audience? Enter Aaron Marino—men's lifestyle expert, grooming guru, YouTube sensation and serial entrepreneur. Aaron’s male-centric passion for health and lifestyle, personal brand and cult-like following made him Tiege Hanley’s ideal partner number three.<br\/><br\/>Now that the team had a powerful way to reach men, they were only missing the final ingredient—the products themselves. Daunting undertaking? Nah! They did what any regular guys would do—took their idea to the golf course, where they teed up with the man who would become Tiege Hanley’s master skin care formulator. Known only as The Chemist (who prefers to remain incognito) and with more than 35 years of experience formulating products for some of the top skin care brands, he agreed to join the team as fourth partner and is the creator of what the team calls their “Ferrari formulas.”<\/p>",
+            "text_font": 16,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_fzLbf7",
+        "text_y6DNAW"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "section_double_static_vm_R4Cg9i": {
@@ -357,7 +425,7 @@
         "height": "screen-height-three-quarters",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/L3_TiegeHanley_Anti-Aging_Routine_Hero.jpg",
+        "image_1": "shopify:\/\/shop_images\/ACNE0.85ozLifestyle2.jpg",
         "image_width": "one-half",
         "text_alignment": "text-left",
         "reverse_blocks": false,
@@ -430,7 +498,9 @@
     "section_hero_AKxdtT",
     "section_double_static_vm_j6Grh3",
     "section_rich_text_HGVCbw",
+    "section_rich_text_XzLBVi",
     "section_hero_LyX34B",
+    "section_rich_text_KCkmTg",
     "section_double_static_vm_R4Cg9i",
     "section_rich_text_NPiAGX",
     "section_double_static_vm_yFVkwc",
