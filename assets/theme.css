@@ -26224,6 +26224,7 @@ h2.column__heading {
 }
 .oversized-text-custom {
   font-size: 100px !important;
+  line-height: 1.25 !important;
 }
 /*Comparison Table*/
 .comparison-table_container {
