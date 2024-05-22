@@ -98,10 +98,18 @@
     "section_rich_text_ryAmny": {
       "type": "section-rich-text",
       "blocks": {
+        "subheading_9pqUmL": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "With Your Help",
+            "text_font": 16,
+            "padding_bottom": 16
+          }
+        },
         "heading_Qze6m9": {
           "type": "heading",
           "settings": {
-            "title": "What You've Helped Us Do So Far",
+            "title": "We've Made a Lot of Progress",
             "text_font": 40,
             "big_text": false,
             "padding_bottom": 50
@@ -109,16 +117,18 @@
         }
       },
       "block_order": [
+        "subheading_9pqUmL",
         "heading_Qze6m9"
       ],
       "custom_css": [
-        ".hero__title {margin-bottom: 0;}"
+        ".rich-text__img {opacity: 0.75;}"
       ],
       "settings": {
+        "image_1": "shopify:\/\/shop_images\/AdobeStock_326040122.jpg",
         "width": "wrapper--narrow",
         "align_text": "text-center",
-        "bg_color": "#f7f7f7",
-        "color": "",
+        "bg_color": "#000000",
+        "color": "#ffffff",
         "padding_top": 80,
         "padding_bottom": 30
       }
