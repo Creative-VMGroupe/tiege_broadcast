@@ -3262,7 +3262,7 @@
           });
       }
 
-      addItemSwitch(item) => {
+      addItemSwitch(item) {
         let formData = {
            'items': [
              {
