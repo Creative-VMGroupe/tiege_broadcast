@@ -658,7 +658,7 @@ async function updatedCartFunction(data) {
     document.dispatchEvent(eventReload);
   }
 
-  if (alertStatus != null && alertMessage != null) {
+  if (alertStatus != '' && alertMessage != '') {
     const eventAlert = new CustomEvent("theme:cart-drawer:alert", { detail: { status: alertStatus, message: alertMessage } });
     document.dispatchEvent(eventAlert);
   }
