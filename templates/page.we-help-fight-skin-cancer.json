@@ -363,7 +363,7 @@
           "type": "buttons",
           "settings": {
             "button_text": "Get Protected",
-            "button_url": "",
+            "button_url": "shopify:\/\/collections\/all-routines-1",
             "button_type": "btn--secondary",
             "button_size": "",
             "button_style": "btn--solid",
