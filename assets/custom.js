@@ -438,6 +438,7 @@ async function showMessageDuplicateRoutine(lineItem) {
   let closeButton = cartItems.querySelector('[data-remove-alert]');
   replaceButton.addEventListener("click", (e) => {
     changeItemQtywithReload(replaceButton.dataset.removeProduct, '0');
+    cartItems.innerHTML = '';
   });
   closeButton.addEventListener("click", (e) => {
     cartItems.innerHTML = '';
