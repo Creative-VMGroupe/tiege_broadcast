@@ -368,7 +368,7 @@ function showMessageDuplicateRoutine(lineItem) {
   replaceButton.addEventListener("click", function(el) {
     console.log(el);
   });
-  console.log(,closeButton);
+  console.log(el,closeButton);
 }
 
 async function addItemtoCart(variantId) {
