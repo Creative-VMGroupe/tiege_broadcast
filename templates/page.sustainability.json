@@ -46,7 +46,7 @@
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/AdobeStock_431439937.jpg",
         "link": "",
-        "mobile_height": "screen-height-full--mobile",
+        "mobile_height": "screen-height-three-quarters--mobile",
         "flex_align_desktop": "align--middle-center-desktop",
         "flex_align_mobile": "align--middle-center-mobile",
         "overlay_opacity": 45,
