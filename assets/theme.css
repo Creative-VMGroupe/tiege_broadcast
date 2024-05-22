@@ -26125,9 +26125,6 @@ time, .article__author {
   }
 }
 /*Text*/
-.oversized-text-custom {
-  font-size: 100px !important;
-}
 p, a, span, h2.column__heading {
   line-height: var(--BODY-LINE-HEIGHT);
 }
@@ -26225,7 +26222,9 @@ h2.column__heading {
     scroll-padding: 0;
   }
 }
-
+.oversized-text-custom {
+  font-size: 100px !important;
+}
 /*Comparison Table*/
 .comparison-table_container {
   position: relative;
