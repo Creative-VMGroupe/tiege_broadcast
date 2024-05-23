@@ -27111,6 +27111,6 @@ body#find-my-routine .header-sections {
 /*Cart Logic*/
 .subscription-switch {
   font-style: normal;
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
 }
