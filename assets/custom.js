@@ -720,6 +720,7 @@ async function updatedCartFunction(data) {
   if (theme.cartSettings.upgradability.enabled) {
     let routineItem = null;
     data.items.forEach((element) => {
+      console.log(allProducts[element.product_id]);
       if (allProducts[element.product_id].isRoutine) {
         routineItem = element;
       }
