@@ -65,7 +65,7 @@
             "title": "Skincare Routines",
             "text_font": 40,
             "big_text": false,
-            "padding_bottom": 16
+            "padding_bottom": 0
           }
         }
       },
@@ -603,7 +603,7 @@
             "title": "Acne Routine",
             "text_font": 40,
             "big_text": false,
-            "padding_bottom": 16
+            "padding_bottom": 0
           }
         }
       },
