@@ -601,7 +601,7 @@
                       endif
                       assign style_products = columns_style | replace: item_placeholder, product_list_columns
                       assign block_style = block_style | append: style_products
-                       assign text_color = block.settings.prod_text_color
+                       assign prod_text_color = block.settings.prod_text_color
                     -%}
 
                     <div class="hero__products grid block-padding"
