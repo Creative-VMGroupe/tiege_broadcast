@@ -302,7 +302,7 @@ body.template-article:has(
 .buttons-holder {
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 20px;
 }
 .buttons-holder .btn {
   flex: 1;
