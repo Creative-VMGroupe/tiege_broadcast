@@ -404,6 +404,63 @@
         "layout_mobile": "slider"
       }
     },
+    "custom_section_double_static_cWjzME": {
+      "type": "custom-section-double-static",
+      "blocks": {
+        "heading_3KUQiQ": {
+          "type": "heading",
+          "settings": {
+            "title": "Level 3: Anti-aging Routine",
+            "text_size": 40,
+            "padding_bottom": 16
+          }
+        },
+        "text_TD6VAr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Add our SERUM to reduce fine lines and achieve maximum handsome.<\/p>",
+            "quote_enabled": false,
+            "text_size": 16,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_MyDbc7": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Shop Now",
+            "button_url": "shopify:\/\/products\/the-collection-snowboard-liquid",
+            "button_type": "btn--secondary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_3KUQiQ",
+        "text_TD6VAr",
+        "buttons_MyDbc7"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "padding": 16,
+        "padding_mobile": 16,
+        "image_width": "one-half",
+        "hover_effect": false,
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "reverse_blocks": false,
+        "bg_color": "#f7f7f7",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_double_EFMiLM": {
       "type": "section-double",
       "blocks": {
@@ -1047,6 +1104,7 @@
     "section_columns_TFbgVV",
     "section_double_k3aGgY",
     "section_columns_B7wVFM",
+    "custom_section_double_static_cWjzME",
     "section_double_EFMiLM",
     "section_columns_FYFpyV",
     "section_rich_text_7JJpjm",
