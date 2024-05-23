@@ -452,7 +452,7 @@
   style="--swatch-size: var(--swatch-size-filters);"
   data-grid-item>
   <div class="product-item__image{% if double_img %} double__image{% endif %}" data-product-image>
-    {% if prod_text_color == true %}
+    
 {%- assign prod_text_color = prod_text_color | default: '#000' -%}
 
 {% style %}
@@ -460,10 +460,9 @@
     color: {{ prod_text_color }};
   }
 {% endstyle %}
-  {% endif %}
+ 
     <a
       class="product-link"
-      data-section-id="{{ prod_text_color }}"
       href="{{ product_url }}"
       aria-label="{{ product.title | strip_html | escape }}"
       data-product-link="{{ product_url }}">
@@ -567,8 +566,8 @@
 {%- assign prod_text_color = prod_text_color | default: '#000' -%}
 
 {% style %}
-  .text-color-custom {
-    color: {{ prod_text_color }} !important;
+ #BrickSection--{{ section_id }} a.product-link {
+    color: {{ prod_text_color }};
   }
 {% endstyle %}
 
