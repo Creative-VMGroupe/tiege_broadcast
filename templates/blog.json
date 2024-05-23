@@ -156,6 +156,7 @@
         "heading_B7DJ9Y",
         "text_gcbrtN"
       ],
+      "disabled": true,
       "settings": {
         "width": "wrapper",
         "align_text": "text-center",
@@ -178,6 +179,7 @@
       "block_order": [
         "okendo_media_carousel_XxDkXT"
       ],
+      "disabled": true,
       "custom_css": [
 
       ],
