@@ -303,33 +303,6 @@
     "section_accordion_metafields_x7F7NN": {
       "type": "section-accordion-metafields",
       "blocks": {
-        "image_jWQtXa": {
-          "type": "image",
-          "settings": {
-            "title": "Step 1: Wash",
-            "text": "<p>Use Tiege Hanley's WASH facial cleanser. Wet your face, squeeze out the size of a nickel (yes, the coin) into your palm, rub it all over your wet face for about 10 seconds.<\/p>",
-            "image": "shopify:\/\/shop_images\/HARRYS_FW_PROD_0279_1.jpg",
-            "aspect_ratio": 0.6
-          }
-        },
-        "image_FBtfF6": {
-          "type": "image",
-          "settings": {
-            "title": "Step 2: Scrub",
-            "text": "<p>Use Tiege Hanley’s AM moisturizer. Squeeze out the size of a pea into your palm and spend about 10 seconds massaging it all over your face.<\/p>",
-            "image": "shopify:\/\/shop_images\/AdobeStock_481479872.jpg",
-            "aspect_ratio": 0.6
-          }
-        },
-        "image_zTBdQ7": {
-          "type": "image",
-          "settings": {
-            "title": "Step 3: AM Moisturizer",
-            "text": "<p>Use Tiege Hanley’s AM moisturizer. Squeeze out the size of a pea into your palm and spend about 10 seconds massaging it all over your face.<\/p>",
-            "image": "shopify:\/\/shop_images\/AdobeStock_481479870.jpg",
-            "aspect_ratio": 0.6
-          }
-        },
         "image_6VLmKy": {
           "type": "image",
           "settings": {
@@ -359,9 +332,6 @@
         }
       },
       "block_order": [
-        "image_jWQtXa",
-        "image_FBtfF6",
-        "image_zTBdQ7",
         "image_6VLmKy",
         "image_DY8JQV",
         "image_jV4djq"
