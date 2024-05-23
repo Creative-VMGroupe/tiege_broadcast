@@ -130,7 +130,7 @@
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/tiegehanley_1712672185_3342459009293298857_1788494448.jpg",
         "image_width": "one-half",
-        "text_alignment": "text-center",
+        "text_alignment": "text-left",
         "padding_lr": 50,
         "reverse_blocks": false,
         "bg_color": "#f7f7f7",
@@ -281,7 +281,7 @@
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/Screenshot_2024-05-22_at_1.53.05_PM.png",
         "image_width": "one-half",
-        "text_alignment": "text-center",
+        "text_alignment": "text-left",
         "padding_lr": 50,
         "reverse_blocks": false,
         "bg_color": "#f7f7f7",
@@ -665,7 +665,7 @@
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/acne-system-system-level-1-pos-3_f3ee1b5a-c5f6-481d-b3cb-ea3917e7560e.jpg",
         "image_width": "one-half",
-        "text_alignment": "text-center",
+        "text_alignment": "text-left",
         "padding_lr": 50,
         "reverse_blocks": false,
         "bg_color": "#f7f7f7",
@@ -811,72 +811,18 @@
       ],
       "settings": {
         "layout": "",
-        "height": "screen-height-three-quarters",
+        "height": "screen-height-one-half",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
         "padding": 16,
         "padding_mobile": 16,
+        "video": "shopify:\/\/files\/videos\/acne2.mov",
         "image_width": "one-half",
         "hover_effect": false,
         "text_alignment": "left",
         "text_alignment_mobile": "left",
         "reverse_blocks": false,
-        "bg_color": "",
-        "color": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_double_JTYC7p": {
-      "type": "section-double",
-      "blocks": {
-        "heading_4AEpxg": {
-          "type": "heading",
-          "settings": {
-            "title": "Level 2: Advanced Acne Routine",
-            "heading_size": 40,
-            "padding_bottom": 16
-          }
-        },
-        "text_WpLz77": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Receive an extra bottle of Daily Moisturizing Acne Cream to help battle severe acne.<\/p>",
-            "quote_enabled": false,
-            "text_size": 16,
-            "text_style": "font-body",
-            "padding_bottom": 16
-          }
-        },
-        "buttons_4wy7i8": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "Shop Now",
-            "button_url": "shopify:\/\/products\/level-2-advanced-acne-routine-1",
-            "button_type": "btn--secondary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "heading_4AEpxg",
-        "text_WpLz77",
-        "buttons_4wy7i8"
-      ],
-      "settings": {
-        "layout": "",
-        "height": "screen-height-one-half",
-        "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/Acne_Routine_L2_Tiege_Hanley_Hero.jpg",
-        "image_width": "one-half",
-        "text_alignment": "text-center",
-        "padding_lr": 50,
-        "reverse_blocks": false,
-        "bg_color": "#e8e8e8",
+        "bg_color": "#f7f7f7",
         "color": "",
         "padding_top": 0,
         "padding_bottom": 0
@@ -1024,7 +970,7 @@
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/Mask_Group_3.png",
         "image_width": "one-half",
-        "text_alignment": "text-center",
+        "text_alignment": "text-left",
         "padding_lr": 50,
         "reverse_blocks": false,
         "bg_color": "#f7f7f7",
@@ -1113,7 +1059,6 @@
     "section_double_EYmFV8",
     "section_columns_xe8AXT",
     "custom_section_double_static_zWgaTY",
-    "section_double_JTYC7p",
     "section_columns_iJ9nWA",
     "section_double_GQW4FL",
     "section_rich_text_RxrPmi",
