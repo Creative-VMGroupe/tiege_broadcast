@@ -262,8 +262,8 @@
       "settings": {
         "width": "wrapper--narrow",
         "align_text": "text-center",
-        "bg_color": "#d6d6d6",
-        "color": "#000000",
+        "bg_color": "#969696",
+        "color": "#ffffff",
         "padding_top": 80,
         "padding_bottom": 80
       }
