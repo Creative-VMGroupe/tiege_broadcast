@@ -464,13 +464,22 @@ async function showMessageDuplicateRoutine(lineItem) {
   });
 }
 
-async function showMessageDuplicateProducts(lineItems) {
+async function showMessageDuplicateProducts(lineItems, isRoutine) {
   let cartItems = document.querySelector('.cart-alert');
+  if (isRoutine) {
+    let message = 'Recently added routine includes product(s) in your cart. Remove these product(s) ?';
+    let buttonOne = 'Remove';
+    let buttonTwo = 'Keep them';
+  } else {
+    let message = 'You already have a routine with recently added product in your bag. Keep it in the bag anyway ?';
+    let buttonOne = 'Remove';
+    let buttonTwo = 'Keep them';
+  }
   cartItems.innerHTML = `<div class="alert-confirm">
-    <p class="cart__item__title">The routine includes products in your cart. Remove these products ?</p>
+    <p class="cart__item__title"></p>
     <div class="buttons-holder">
       <button type="button" data-replace-alert data-remove-products class="btn btn--primary btn--solid">Remove</button>
-      <button type="button" data-remove-alert class="btn btn--primary btn--outline">Keep Them</button>
+      <button type="button" data-remove-alert class="btn btn--primary btn--outline">Keep It</button>
     </div>
   </div>`;
   let replaceButton = cartItems.querySelector('[data-replace-alert]');
@@ -575,7 +584,7 @@ async function addedCartFunction(addedItem, data) {
         alertStatus = '';
         alertMessage = '';
         // await removeMultiple(commonItemsKeys);
-        await showMessageDuplicateProducts(commonItemsKeys);
+        await showMessageDuplicateProducts(commonItemsKeys, isCurrentAddedItemRoutine);
       }
     }
   }
