@@ -455,11 +455,11 @@
     {% if prod_text_color == true %}
 {%- assign prod_text_color = prod_text_color | default: '#000' -%}
 
-<style>
+{% style %}
   #BrickSection--{{ section_id }} .product-link {
     color: {{ prod_text_color }};
   }
-</style>
+{% endstyle %}
   {% endif %}
     <a
       class="product-link"
@@ -566,15 +566,15 @@
       {% if prod_text_color == true %}
 {%- assign prod_text_color = prod_text_color | default: '#000' -%}
 
-<style>
+{% style %}
   #BrickSection--{{ section_id }} .product-link {
     color: {{ prod_text_color }};
   }
-</style>
+{% endstyle %}
   {% endif %}
       <a
         class="product-link"
-        data-section-id="{{ prod_text_color }}"
+        style='color: {{ prod_text_color }}'
         href="{{ product_url }}"
         data-product-link="{{ product_url }}">
         <p class="product-item__title">{{ product.title | strip_html | escape }}</p>
