@@ -27137,3 +27137,7 @@ padding: 0 20px;
 .cart__item__alert-custom {
   margin-bottom: 20px;
 }
+.[data-cart-success] .cart__errors__inner {
+      margin-top: 20px;
+    margin-bottom: 0;
+}
