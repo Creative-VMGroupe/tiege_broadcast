@@ -504,7 +504,7 @@
         "width": "wrapper--full",
         "overlay_opacity": 35,
         "overlay_color": "#000000",
-        "show_overlay_text": true,
+        "show_overlay_text": false,
         "title": "A Simple Routine",
         "heading_font": 40,
         "description": "Aaron Marino covers the simple process behind effective skin care.",
