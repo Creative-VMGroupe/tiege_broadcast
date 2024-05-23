@@ -476,10 +476,10 @@ async function showMessageDuplicateProducts(lineItems, isRoutine) {
     let buttonTwo = 'Keep them';
   }
   cartItems.innerHTML = `<div class="alert-confirm">
-    <p class="cart__item__title"></p>
+    <p class="cart__item__title">${message}</p>
     <div class="buttons-holder">
-      <button type="button" data-replace-alert data-remove-products class="btn btn--primary btn--solid">Remove</button>
-      <button type="button" data-remove-alert class="btn btn--primary btn--outline">Keep It</button>
+      <button type="button" data-replace-alert data-remove-products class="btn btn--primary btn--solid">${buttonOne}</button>
+      <button type="button" data-remove-alert class="btn btn--primary btn--outline">${buttonTwo}</button>
     </div>
   </div>`;
   let replaceButton = cartItems.querySelector('[data-replace-alert]');
