@@ -27134,3 +27134,6 @@ padding: 0 20px;
     padding: var(--btn-top) var(--btn-left);
     border-radius: 300px;
 }
+.cart__item__alert-custom {
+  margin-bottom: 20px;
+}
