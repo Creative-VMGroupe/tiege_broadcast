@@ -27118,3 +27118,7 @@ body#find-my-routine .header-sections {
   margin: 0 !important;
   padding: 0 !important;
 }
+.cart__errors.drawer__errors.is-expanded {
+padding: 0 20px;
+  
+}
