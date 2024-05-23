@@ -25334,6 +25334,7 @@ body.has-header-sticky .timeline {
 }
 .member-tier_text {
   flex: 1;
+  padding: 0 0 0 40px;
 }
 .member-tier_secondary_text {
   padding-left: 20px;
@@ -25348,6 +25349,9 @@ body.has-header-sticky .timeline {
   .accordion-new__body {
     max-width: none;
   }
+  .member-tier_text {
+  padding: 0 0 0 20px;
+}
 }
 .quick-add__text {
   font-size: calc(1rem * var(--FONT-ADJUST-BODY));
