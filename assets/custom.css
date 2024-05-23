@@ -52,6 +52,7 @@
 }
 .level-guide-member-single-tier_text {
   text-align: left;
+  padding: 0 20px 0 0;
 }
 .level-guide-member-tiers-wrapper-custom {
   padding-left: var(--outer);
