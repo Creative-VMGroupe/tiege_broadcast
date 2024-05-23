@@ -16,8 +16,8 @@
   assign accordion_blocks = section.blocks | where: "type", "accordion"
   assign bg_color = section.settings.bg_color
   assign bg_color_transparent = bg_color | color_modify: 'alpha', 0
-  assign prod_text_color = block.settings.prod_text_color
-  
+  assign text_color = section.settings.color
+
   if text_slide_blocks.size > 1
     assign enable_text_slider = true
 
@@ -47,7 +47,6 @@
       echo '--text-light: ' | append: text_light | append: ';'
       echo '--text-dark: ' | append: text_dark | append: ';'
     endunless
-
   endcapture
 
   assign image_1 = section.settings.image_1
@@ -602,7 +601,7 @@
                       endif
                       assign style_products = columns_style | replace: item_placeholder, product_list_columns
                       assign block_style = block_style | append: style_products
-                       
+                       assign text_color = block.settings.prod_text_color
                     -%}
 
                     <div class="hero__products grid block-padding"
@@ -619,7 +618,7 @@
 if product.tags contains 'hidden'
 else
 			
-                            render 'product-grid-item', product: product, sizes: product_sizes_images, show_product_card: block.settings.show_product_card, text_color: text_color, section_id: section.id
+                            render 'product-grid-item', product: product, sizes: product_sizes_images, show_product_card: block.settings.show_product_card, text_color: text_color
 endif
                           endfor
                         else
