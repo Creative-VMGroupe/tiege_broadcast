@@ -48,10 +48,6 @@
       echo '--text-dark: ' | append: text_dark | append: ';'
     endunless
 
-    unless prod_text_color == 'rgba(0,0,0,0)' or prod_text_color == blank
-      echo '--text-light: ' | append: prod_text_color | append: '!important;'
-      echo '--text-dark: ' | append: prod_text_color | append: '!important;'
-    endunless
   endcapture
 
   assign image_1 = section.settings.image_1
