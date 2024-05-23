@@ -27108,3 +27108,7 @@ body#find-my-routine .header-sections {
 .collection-image-with-title-custom .hero__content{
   max-width: 1000px;
 }
+/*Cart Logic*/
+.subscription-switch {
+  color: red;
+}
