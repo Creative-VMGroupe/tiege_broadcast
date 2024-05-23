@@ -618,12 +618,12 @@
 if product.tags contains 'hidden'
 else
 			
-                            render 'product-grid-item', product: product, sizes: product_sizes_images, show_product_card: block.settings.show_product_card, text_color: text_color
+                            render 'product-grid-item', product: product, sizes: product_sizes_images, show_product_card: block.settings.show_product_card, prod_text_color: prod_text_color
 endif
                           endfor
                         else
                           for i in (1..2)
-                            render 'onboarding-product-grid-item', index: forloop.index, animation_delay: forloop.index0, placeholder_root: 'product-', show_product_card: block.settings.show_product_card
+                            render 'onboarding-product-grid-item', index: forloop.index, animation_delay: forloop.index0, placeholder_root: 'product-', show_product_card: block.settings.show_product_card, prod_text_color: prod_text_color
                           endfor
                         endif
                       -%}
