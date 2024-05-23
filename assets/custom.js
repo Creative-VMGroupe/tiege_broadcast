@@ -467,13 +467,13 @@ async function showMessageDuplicateRoutine(lineItem) {
 async function showMessageDuplicateProducts(lineItems, isRoutine) {
   let cartItems = document.querySelector('.cart-alert');
   if (isRoutine) {
-    var message = 'Recently added routine includes product(s) in your cart. Remove these product(s) ?';
+    var message = 'This routine includes products in your cart. Replace these products?';
     var buttonOne = 'Remove';
     var buttonTwo = 'Keep them';
   } else {
-    var message = 'You already have a routine with recently added product in your bag. Keep it in the bag anyway ?';
-    var buttonOne = 'Remove';
-    var buttonTwo = 'Keep them';
+    var message = 'You already have a routine with this product in your bag. Keep anyway?';
+    var buttonOne = 'Keep';
+    var buttonTwo = 'Cancel';
   }
   cartItems.innerHTML = `<div class="alert-confirm">
     <p class="cart__item__title">${message}</p>
