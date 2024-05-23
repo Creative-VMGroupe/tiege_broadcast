@@ -117,10 +117,8 @@
 
 {%- assign prod_text_color = prod_text_color | default: '#000' -%}
 
-{%- assign section_id_selector = section_id | prepend: '#' -%}
-
 <style>
-   .product-link {
+  #BrickSection--{{ section_id }} .product-link {
     color: {{ prod_text_color }};
   }
 </style>
