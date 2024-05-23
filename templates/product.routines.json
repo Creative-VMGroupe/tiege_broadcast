@@ -1032,7 +1032,6 @@
       "blocks": {
         "okendo_media_carousel_AtWR6L": {
           "type": "shopify:\/\/apps\/okendo\/blocks\/media-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
-          "disabled": true,
           "settings": {
             "product": "{{product}}"
           }
