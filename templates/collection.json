@@ -10,7 +10,7 @@
         "color": "#ffffff",
         "show_image": true,
         "banner_layout": "overlay",
-        "height": "screen-height-one-third",
+        "height": "two-fifty-height-hero",
         "mobile_height": "two-fifty-height-hero--mobile",
         "overlay_opacity": 0,
         "overlay_color": "#000000",
