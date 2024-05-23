@@ -108,7 +108,7 @@
               </p>
             {% else %}
               {% if line_item.variant.selling_plan_allocations.size > 0 %}
-                <p class="cart__item__selling-plan">
+                <p class="btn btn--text cart__item__selling-plan ">
                   <span class="subscription-switch" data-switch-to-subscription data-quantity="{{ line_item.quantity }}" data-item="{{ line_item.key }}" data-variant-id="{{ line_item.variant_id }}" data-selling-plan="{{ line_item.variant.selling_plan_allocations.first.selling_plan.id }}">Switch to Subscription</span>
                 </p>
               {% endif %}
