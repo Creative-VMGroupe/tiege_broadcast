@@ -276,7 +276,7 @@
       ],
       "settings": {
         "layout": "",
-        "height": "screen-height-three-quarters",
+        "height": "screen-height-two-thirds",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/L2_TiegeHanley_Advanced_Routine_Hero.jpg",
@@ -445,7 +445,7 @@
       ],
       "settings": {
         "layout": "is-reversed",
-        "height": "screen-height-three-quarters",
+        "height": "screen-height-two-thirds",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/L3_TiegeHanley_Anti-Aging_Routine_Hero.jpg",
@@ -657,7 +657,7 @@
       ],
       "settings": {
         "layout": "is-reversed",
-        "height": "screen-height-three-quarters",
+        "height": "screen-height-two-thirds",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/Acne_RoutineL1_Tiege_Hanley_Acne_Hero.jpg",
@@ -808,7 +808,7 @@
       ],
       "settings": {
         "layout": "",
-        "height": "screen-height-three-quarters",
+        "height": "screen-height-two-thirds",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/Acne_Routine_L2_Tiege_Hanley_Hero.jpg",
