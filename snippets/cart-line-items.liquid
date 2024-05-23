@@ -50,7 +50,7 @@
             </a>
           </h4>
 
-          <div class="cart__item__meta">
+          <div style='margin-bottom: 8px;' class="cart__item__meta">
             {%- assign properties_html = '' -%}
             {%- assign property_size = line_item.properties | size -%}
 
@@ -108,7 +108,7 @@
               </p>
             {% else %}
               {% if line_item.variant.selling_plan_allocations.size > 0 %}
-                <p class="btn btn--text cart__item__selling-plan ">
+                <p style='margin: 0' class="btn btn--text cart__item__selling-plan ">
                   <span class="subscription-switch" data-switch-to-subscription data-quantity="{{ line_item.quantity }}" data-item="{{ line_item.key }}" data-variant-id="{{ line_item.variant_id }}" data-selling-plan="{{ line_item.variant.selling_plan_allocations.first.selling_plan.id }}">Switch to Subscription</span>
                 </p>
               {% endif %}
