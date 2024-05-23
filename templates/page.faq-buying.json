@@ -26,6 +26,7 @@
           "settings": {
             "title": "Purchasing Tiege",
             "text_font": 40,
+            "big_text": false,
             "padding_bottom": 0
           }
         }
@@ -122,6 +123,7 @@
           "settings": {
             "title": "Seen in the Wild",
             "text_font": 40,
+            "big_text": false,
             "padding_bottom": 16
           }
         },
@@ -151,18 +153,23 @@
     "17134330625f3d4b1c": {
       "type": "apps",
       "blocks": {
-        "instafeed_app_block_pAJW8j": {
-          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+        "okendo_media_carousel_e3zJrb": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/media-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
-            "title": "",
-            "title_color": "",
-            "alignment": "center",
-            "html_area": ""
+            "product": "level-1-essential-routine-1"
+          }
+        },
+        "okendo_media_grid_GFV7Yq": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/media-grid\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "disabled": true,
+          "settings": {
+            "product": "level-1-essential-routine-1"
           }
         }
       },
       "block_order": [
-        "instafeed_app_block_pAJW8j"
+        "okendo_media_carousel_e3zJrb",
+        "okendo_media_grid_GFV7Yq"
       ],
       "custom_css": [
 
