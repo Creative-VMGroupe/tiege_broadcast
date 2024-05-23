@@ -179,6 +179,7 @@
           {%- endif -%}
         </p>
 
+        {% if line_item.variant_id !== settings.gift_item.first_available_variant.id %}
         <quantity-counter class="cart__quantity-counter">
           <div class="cart__quantity">
             <button
@@ -222,6 +223,7 @@
               {%- render 'icon-trash' -%}
           </a>
         </quantity-counter>
+        {% endif %}
       </div>
 
       {%- if line_item.original_price > line_item.final_price -%}
