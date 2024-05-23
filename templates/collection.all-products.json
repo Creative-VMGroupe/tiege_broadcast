@@ -12,7 +12,7 @@
         "banner_layout": "overlay",
         "height": "screen-height-one-third",
         "mobile_height": "two-fifty-height-hero--mobile",
-        "overlay_opacity": 20,
+        "overlay_opacity": 0,
         "overlay_color": "#000000",
         "show_overlay_text": false,
         "padding_top": 0,
