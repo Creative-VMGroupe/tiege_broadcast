@@ -64,6 +64,7 @@
           "settings": {
             "title": "Skincare Routines",
             "text_font": 40,
+            "big_text": false,
             "padding_bottom": 16
           }
         }
@@ -98,6 +99,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Smooth, hydrate and protect your skin by starting with our core 4 products.<\/p>",
+            "quote_enabled": false,
             "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
@@ -148,9 +150,7 @@
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "Wash",
-            "heading_size": 16,
             "text": "<p>WASH is the foundation of the Tiege Hanley Skin Care System. WASH provides a clean canvas for all other Tiege Hanley products to play together in perfect harmony. Just WASH twice a day, every day.<\/p>",
-            "text_size": 12,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -167,9 +167,7 @@
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "Scrub",
-            "heading_size": 16,
             "text": "<p>SCRUB is the bacteria-buster of the bunch. It helps you to not only keep the surface of your skin clean, but scrub away any harmful bacteria that might cause future damage. Twice a week, work the SCRUB into your damp face for about 10 seconds, rinse off and pat dry.<\/p>",
-            "text_size": 12,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -186,9 +184,7 @@
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "AM",
-            "heading_size": 16,
             "text": "<p>AM is your morning-time moisturizer. (Yeah. Guys have to moisturize too) After WASHing in the morning, work the AM moisturizer onto your face for about 10 seconds.<\/p>",
-            "text_size": 12,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -205,9 +201,7 @@
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "PM",
-            "heading_size": 16,
             "text": "<p>PM is your nightly moisturizer. You know the drill. After WASHing, work the PM moisturizer onto your face for about 10 seconds.<\/p>",
-            "text_size": 12,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -226,6 +220,8 @@
       "settings": {
         "title": "Included in this System",
         "heading_size": 40,
+        "item_heading_size": 24,
+        "text_size": 14,
         "layout": "grid",
         "grid": 4,
         "align_heading": "text-left",
@@ -254,6 +250,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Level up your system with our EYES to fight off crow’s feet and dark circles.<\/p>",
+            "quote_enabled": false,
             "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
@@ -304,9 +301,7 @@
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "Wash",
-            "heading_size": 16,
             "text": "<p>WASH is the foundation of the Tiege Hanley Skin Care System. WASH provides a clean canvas for all other Tiege Hanley products to play together in perfect harmony. Just WASH twice a day, every day.<\/p>",
-            "text_size": 12,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -323,9 +318,7 @@
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "Scrub",
-            "heading_size": 16,
             "text": "<p>SCRUB is the bacteria-buster of the bunch. It helps you to not only keep the surface of your skin clean, but scrub away any harmful bacteria that might cause future damage. Twice a week, work the SCRUB into your damp face for about 10 seconds, rinse off and pat dry.<\/p>",
-            "text_size": 12,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -342,9 +335,7 @@
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "AM",
-            "heading_size": 16,
             "text": "<p>AM is your morning-time moisturizer. (Yeah. Guys have to moisturize too) After WASHing in the morning, work the AM moisturizer onto your face for about 10 seconds.<\/p>",
-            "text_size": 12,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -361,9 +352,7 @@
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "PM",
-            "heading_size": 16,
             "text": "<p>PM is your nightly moisturizer. You know the drill. After WASHing, work the PM moisturizer onto your face for about 10 seconds.<\/p>",
-            "text_size": 12,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -380,9 +369,7 @@
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "Eyes",
-            "heading_size": 16,
             "text": "<p>EYES helps keep the skin around your peepers looking healthy. EYES combines Caffeine and Acetyl Hexapeptitde-8 to increase circulation and ease the muscle contractions that cause bags and puffiness. Use eyes twice a day.<\/p>",
-            "text_size": 12,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -402,6 +389,8 @@
       "settings": {
         "title": "Included in this System",
         "heading_size": 40,
+        "item_heading_size": 24,
+        "text_size": 14,
         "layout": "slider",
         "grid": 4,
         "align_heading": "text-left",
@@ -430,6 +419,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Add our SERUM to reduce fine lines and achieve maximum handsome.<\/p>",
+            "quote_enabled": false,
             "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
@@ -480,9 +470,7 @@
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "Wash",
-            "heading_size": 16,
             "text": "<p>WASH is the foundation of the Tiege Hanley Skin Care System. WASH provides a clean canvas for all other Tiege Hanley products to play together in perfect harmony. Just WASH twice a day, every day.<\/p>",
-            "text_size": 12,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -499,9 +487,7 @@
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "Scrub",
-            "heading_size": 16,
             "text": "<p>SCRUB is the bacteria-buster of the bunch. It helps you to not only keep the surface of your skin clean, but scrub away any harmful bacteria that might cause future damage. Twice a week, work the SCRUB into your damp face for about 10 seconds, rinse off and pat dry.<\/p>",
-            "text_size": 12,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -518,9 +504,7 @@
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "AM",
-            "heading_size": 16,
             "text": "<p>AM is your morning-time moisturizer. (Yeah. Guys have to moisturize too) After WASHing in the morning, work the AM moisturizer onto your face for about 10 seconds.<\/p>",
-            "text_size": 12,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -537,9 +521,7 @@
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "PM",
-            "heading_size": 16,
             "text": "<p>PM is your nightly moisturizer. You know the drill. After WASHing, work the PM moisturizer onto your face for about 10 seconds.<\/p>",
-            "text_size": 12,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -556,9 +538,7 @@
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "Eyes",
-            "heading_size": 16,
             "text": "<p>EYES helps keep the skin around your peepers looking healthy. EYES combines Caffeine and Acetyl Hexapeptitde-8 to increase circulation and ease the muscle contractions that cause bags and puffiness. Use eyes twice a day.<\/p>",
-            "text_size": 12,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -575,9 +555,7 @@
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "SUPER SERUM",
-            "heading_size": 16,
             "text": "<p>SUPER SERUM slows down the appearance of aging. SUPER SERUM helps smooth your skin, make your wrinkles less prominent, giving you a healthier, more youthful complexion. It's named SUPER SERUM for a reason. You’ll basically become Captain America. Use twice a day.<\/p>",
-            "text_size": 12,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -598,6 +576,8 @@
       "settings": {
         "title": "Included in this System",
         "heading_size": 40,
+        "item_heading_size": 24,
+        "text_size": 14,
         "layout": "slider",
         "grid": 6,
         "align_heading": "text-left",
@@ -619,6 +599,7 @@
           "settings": {
             "title": "Acne Routine",
             "text_font": 40,
+            "big_text": false,
             "padding_bottom": 16
           }
         }
@@ -650,6 +631,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Reduce redness and swelling caused by mild to moderate acne while working to prevent future breakouts.<\/p>",
+            "quote_enabled": false,
             "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
@@ -700,9 +682,7 @@
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "Wash",
-            "heading_size": 16,
             "text": "<p>WASH is the foundation of the Tiege Hanley Skin Care System. WASH provides a clean canvas for all other Tiege Hanley products to play together in perfect harmony. Just WASH twice a day, every day.<\/p>",
-            "text_size": 12,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -719,9 +699,7 @@
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "Scrub",
-            "heading_size": 16,
             "text": "<p>SCRUB is the bacteria-buster of the bunch. It helps you to not only keep the surface of your skin clean, but scrub away any harmful bacteria that might cause future damage. Twice a week, work the SCRUB into your damp face for about 10 seconds, rinse off and pat dry.<\/p>",
-            "text_size": 12,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -738,9 +716,7 @@
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "AM",
-            "heading_size": 16,
             "text": "<p>AM is your morning-time moisturizer. (Yeah. Guys have to moisturize too) After WASHing in the morning, work the AM moisturizer onto your face for about 10 seconds.<\/p>",
-            "text_size": 12,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -757,9 +733,7 @@
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "Acne",
-            "heading_size": 16,
             "text": "<p>What makes ACNE different is its formulation as a moisturizer as opposed to a face wash. By applying ACNE before you go to bed, the active ingredient, Salicylic Acid, is able to work its magic for 6-8 hours at a time. Incredibly helpful for mild to moderate acne.<\/p>",
-            "text_size": 12,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -778,6 +752,8 @@
       "settings": {
         "title": "Included in this System",
         "heading_size": 40,
+        "item_heading_size": 24,
+        "text_size": 14,
         "layout": "grid",
         "grid": 4,
         "align_heading": "text-left",
@@ -806,6 +782,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Receive an extra bottle of Daily Moisturizing Acne Cream to help battle severe acne.<\/p>",
+            "quote_enabled": false,
             "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
@@ -856,9 +833,7 @@
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "Wash",
-            "heading_size": 16,
             "text": "<p>WASH is the foundation of the Tiege Hanley Skin Care System. WASH provides a clean canvas for all other Tiege Hanley products to play together in perfect harmony. Just WASH twice a day, every day.<\/p>",
-            "text_size": 12,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -875,9 +850,7 @@
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "Scrub",
-            "heading_size": 16,
             "text": "<p>SCRUB is the bacteria-buster of the bunch. It helps you to not only keep the surface of your skin clean, but scrub away any harmful bacteria that might cause future damage. Twice a week, work the SCRUB into your damp face for about 10 seconds, rinse off and pat dry.<\/p>",
-            "text_size": 12,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -894,9 +867,7 @@
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "AM",
-            "heading_size": 16,
             "text": "<p>AM is your morning-time moisturizer. (Yeah. Guys have to moisturize too) After WASHing in the morning, work the AM moisturizer onto your face for about 10 seconds.<\/p>",
-            "text_size": 12,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -913,9 +884,7 @@
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "Acne × 2",
-            "heading_size": 16,
             "text": "<p>What makes ACNE different is its formulation as a moisturizer as opposed to a face wash. By applying ACNE before you go to bed, the active ingredient, Salicylic Acid, is able to work its magic for 6-8 hours at a time. Incredibly helpful for mild to moderate acne.<\/p>",
-            "text_size": 12,
             "button_text": "",
             "button_url": "",
             "button_type": "btn--primary",
@@ -934,6 +903,8 @@
       "settings": {
         "title": "Included in this System",
         "heading_size": 40,
+        "item_heading_size": 24,
+        "text_size": 14,
         "layout": "grid",
         "grid": 4,
         "align_heading": "text-left",
@@ -962,6 +933,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Eliminate the guesswork from achieving amazing skin with your personalized recommendation from our skin care experts.<\/p>",
+            "quote_enabled": false,
             "text_size": 16,
             "text_style": "font-body",
             "padding_bottom": 16
@@ -1007,8 +979,9 @@
         "heading_byxght": {
           "type": "heading",
           "settings": {
-            "title": "Seen in the Wild",
+            "title": "Stay Uncomplicated",
             "text_font": 40,
+            "big_text": false,
             "padding_bottom": 16
           }
         },
@@ -1038,20 +1011,23 @@
     "1711936304219d12eb": {
       "type": "apps",
       "blocks": {
-        "instafeed_app_block_zccqB8": {
-          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+        "okendo_media_carousel_aGYYJY": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/media-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
-            "title": "",
-            "title_color": "",
-            "alignment": "center",
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "html_area": ""
+            "product": "level-1-essential-routine-1"
+          }
+        },
+        "okendo_media_grid_37n4BW": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/media-grid\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "disabled": true,
+          "settings": {
+            "product": "level-1-essential-routine-1"
           }
         }
       },
       "block_order": [
-        "instafeed_app_block_zccqB8"
+        "okendo_media_carousel_aGYYJY",
+        "okendo_media_grid_37n4BW"
       ],
       "custom_css": [
 
