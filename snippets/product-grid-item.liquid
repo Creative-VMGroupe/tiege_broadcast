@@ -567,13 +567,13 @@
 {%- assign prod_text_color = prod_text_color | default: '#000' -%}
 
 {% style %}
-  #BrickSection--{{ section_id }} a.product-link {
+  .text-color-custom {
     color: {{ prod_text_color }} !important;
   }
 {% endstyle %}
   {% endif %}
       <a
-        class="product-link"
+        class="product-link text-color-custom"
         style='color: {{ prod_text_color }}'
         href="{{ product_url }}"
         data-product-link="{{ product_url }}">
