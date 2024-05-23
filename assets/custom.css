@@ -297,7 +297,7 @@ body.template-article:has(
   cursor: pointer;
 }
 .alert-confirm {
-  padding: 1rem;
+ padding: 0 20px;
 }
 .buttons-holder {
   display: flex;
