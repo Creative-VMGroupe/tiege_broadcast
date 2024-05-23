@@ -27130,3 +27130,7 @@ padding: 0 20px;
 .cart__errors__content {
   font-size: 14px;
 }
+.cart__errors__inner {
+    padding: var(--btn-top) var(--btn-left);
+    border-radius: 300px;
+}
