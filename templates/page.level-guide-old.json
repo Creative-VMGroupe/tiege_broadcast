@@ -770,6 +770,63 @@
         "layout_mobile": "slider"
       }
     },
+    "custom_section_double_static_zWgaTY": {
+      "type": "custom-section-double-static",
+      "blocks": {
+        "heading_zc3Pra": {
+          "type": "heading",
+          "settings": {
+            "title": "Level 2: Advanced Acne Routine",
+            "text_size": 40,
+            "padding_bottom": 16
+          }
+        },
+        "text_ciyTnc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Receive an extra bottle of Daily Moisturizing Acne Cream to help battle severe acne.<\/p>",
+            "quote_enabled": false,
+            "text_size": 16,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_88PgWA": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Shop Now",
+            "button_url": "shopify:\/\/products\/level-2-advanced-acne-routine-1",
+            "button_type": "btn--secondary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_zc3Pra",
+        "text_ciyTnc",
+        "buttons_88PgWA"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "padding": 16,
+        "padding_mobile": 16,
+        "image_width": "one-half",
+        "hover_effect": false,
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "reverse_blocks": false,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_double_JTYC7p": {
       "type": "section-double",
       "blocks": {
@@ -1055,6 +1112,7 @@
     "section_rich_text_7JJpjm",
     "section_double_EYmFV8",
     "section_columns_xe8AXT",
+    "custom_section_double_static_zWgaTY",
     "section_double_JTYC7p",
     "section_columns_iJ9nWA",
     "section_double_GQW4FL",
