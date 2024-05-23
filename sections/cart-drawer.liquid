@@ -73,8 +73,9 @@
       data-animation-duration="{{ animation_duration }}"
       data-animation-delay="{{ animation_delay }}">
       <div class="cart__errors__inner">
-        <h5 class="cart__errors__heading">Congratulations! Your updated cart is ready !</h5>
-
+        {% comment %}
+        <h5 class="cart__errors__heading">Congratulations! Your updated cart is ready !</h5>     
+        {% endcomment %}
         <p class="cart__errors__content" data-success-message></p>
 
         <button class="cart__errors__close" type="button" data-cart-success-close aria-label="{{ 'general.accessibility.close' | t }} {{ 'cart.general.title' | t }}">
