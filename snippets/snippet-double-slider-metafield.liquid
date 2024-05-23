@@ -141,7 +141,7 @@
 -%}
 
 {%- capture section_images -%}
-       {%- if video_1 != nil -%}
+       {%- if video_1 != blank -%}
       <div class="brick__block__image wide-image"
       {% unless enable_slider %}
         data-slide="1"
@@ -163,7 +163,7 @@
     </div>
   {%- endif -%}
 
-  {%- if video_2 -%}
+  {%- if video_2 != blank -%}
     <div class="brick__block__image wide-image"
       {% unless enable_slider %}
         data-slide="2"
