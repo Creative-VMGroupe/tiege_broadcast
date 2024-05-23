@@ -179,7 +179,7 @@
           {%- endif -%}
         </p>
 
-        {% if line_item.variant_id !== settings.gift_item.first_available_variant.id %}
+        {% if line_item.variant_id != settings.gift_item.first_available_variant.id %}
         <quantity-counter class="cart__quantity-counter">
           <div class="cart__quantity">
             <button
