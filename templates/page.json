@@ -65,6 +65,7 @@
           "settings": {
             "title": "Sign Up For SMS",
             "text_font": 40,
+            "big_text": false,
             "padding_bottom": 30
           }
         },
@@ -145,68 +146,12 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
-    },
-    "section_rich_text_Lz6QVC": {
-      "type": "section-rich-text",
-      "blocks": {
-        "heading_48WGWP": {
-          "type": "heading",
-          "settings": {
-            "title": "Seen in the Wild",
-            "text_font": 40,
-            "padding_bottom": 16
-          }
-        },
-        "text_NiJcyV": {
-          "type": "text",
-          "settings": {
-            "text": "<p>@tiegehanley<\/p>",
-            "text_font": 16,
-            "text_style": "font-body",
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "heading_48WGWP",
-        "text_NiJcyV"
-      ],
-      "settings": {
-        "width": "wrapper",
-        "align_text": "text-center",
-        "bg_color": "",
-        "color": "",
-        "padding_top": 80,
-        "padding_bottom": 100
-      }
-    },
-    "1713433291682d433b": {
-      "type": "apps",
-      "blocks": {
-        "instafeed_app_block_cbp6bd": {
-          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
-          "settings": {
-            "title": "",
-            "title_color": "",
-            "alignment": "center",
-            "html_area": ""
-          }
-        }
-      },
-      "block_order": [
-        "instafeed_app_block_cbp6bd"
-      ],
-      "settings": {
-        "include_margins": false
-      }
     }
   },
   "order": [
     "main",
     "section_hero_KpG8aH",
     "section_rich_text_jNheMR",
-    "contact_form_JMNxML",
-    "section_rich_text_Lz6QVC",
-    "1713433291682d433b"
+    "contact_form_JMNxML"
   ]
 }
