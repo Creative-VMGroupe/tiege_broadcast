@@ -1000,6 +1000,7 @@
           "settings": {
             "title": "Seen in the Wild",
             "text_font": 40,
+            "big_text": false,
             "padding_bottom": 16
           }
         },
@@ -1055,10 +1056,18 @@
           "settings": {
             "product": "{{product}}"
           }
+        },
+        "okendo_media_grid_czxbDn": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/media-grid\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "disabled": true,
+          "settings": {
+            "product": "{{product}}"
+          }
         }
       },
       "block_order": [
-        "okendo_media_carousel_AtWR6L"
+        "okendo_media_carousel_AtWR6L",
+        "okendo_media_grid_czxbDn"
       ],
       "settings": {
         "include_margins": false
