@@ -594,6 +594,34 @@
         "layout_mobile": "slider"
       }
     },
+    "section_video_e3UbVX": {
+      "type": "section-video",
+      "settings": {
+        "video": "shopify:\/\/files\/videos\/liquid-white2.mov",
+        "show_video_popup": false,
+        "video_popup_social": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "desktop_height": "screen-height-one-third",
+        "mobile_height": "screen-height-one-third--mobile",
+        "width": "wrapper--full",
+        "overlay_opacity": 40,
+        "overlay_color": "#ffffff",
+        "show_overlay_text": false,
+        "title": "Video",
+        "heading_font": 40,
+        "description": "Tell your brand's story through images.",
+        "text_font": 16,
+        "flex_align": "align--middle-center",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "bg_color": "",
+        "color": "#000000",
+        "link_text": "",
+        "link": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false
+      }
+    },
     "section_rich_text_7JJpjm": {
       "type": "section-rich-text",
       "blocks": {
@@ -1055,6 +1083,7 @@
     "section_columns_B7wVFM",
     "custom_section_double_static_cWjzME",
     "section_columns_FYFpyV",
+    "section_video_e3UbVX",
     "section_rich_text_7JJpjm",
     "section_double_EYmFV8",
     "section_columns_xe8AXT",
