@@ -618,7 +618,7 @@
 if product.tags contains 'hidden'
 else
 			
-                            render 'product-grid-item', product: product, sizes: product_sizes_images, show_product_card: block.settings.show_product_card, text_color: text_color
+                            render 'product-grid-item', product: product, sizes: product_sizes_images, show_product_card: block.settings.show_product_card, text_color: text_color, section_id: section.id
 endif
                           endfor
                         else
