@@ -75,7 +75,7 @@
     "color_swatches": true,
     "enable_gift": true,
     "gift_item": "blemish-and-blackhead-remover-for-men",
-    "gift_item_method": "collection",
+    "gift_item_method": "cart",
     "gift_item_cart_value": 100,
     "gift_item_collection": "march-madness",
     "gift_item_success": "A free gift from Tiege has been added to your cart.",
