@@ -567,8 +567,8 @@
 {%- assign prod_text_color = prod_text_color | default: '#000' -%}
 
 {% style %}
-  #BrickSection--{{ section_id }} .product-link {
-    color: {{ prod_text_color }};
+  #BrickSection--{{ section_id }} a.product-link {
+    color: {{ prod_text_color }} !important;
   }
 {% endstyle %}
   {% endif %}
