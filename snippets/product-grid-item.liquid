@@ -113,7 +113,7 @@
   endif
 
 -%}
-<script>console.log("true")</script>
+<script>console.log({{ section_id }})</script>
 {% if prod_text_color == true %}
 {%- assign prod_text_color = prod_text_color | default: '#000' -%}
 
