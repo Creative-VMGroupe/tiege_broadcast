@@ -25925,6 +25925,9 @@ time, .article__author {
   }
 }
 /*Cart Drawer*/
+.cart__item__title {
+  font-size: 16px;
+}
 .free-shipping {
   border: none;
 }
@@ -27120,5 +27123,10 @@ body#find-my-routine .header-sections {
 }
 .cart__errors.drawer__errors.is-expanded {
 padding: 0 20px;
+}
+.cart__errors__heading {
   
+}
+.cart__errors__content {
+
 }
