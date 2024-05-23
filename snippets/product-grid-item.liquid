@@ -563,7 +563,7 @@
 
   <div class="product-information" data-product-information>
     <div class="prod-item__info-custom product-item__info">
-      {% if prod_text_color == true %}
+      
 {%- assign prod_text_color = prod_text_color | default: '#000' -%}
 
 {% style %}
@@ -571,7 +571,7 @@
     color: {{ prod_text_color }} !important;
   }
 {% endstyle %}
-  {% endif %}
+
       <a
         class="product-link text-color-custom"
         style='color: {{ prod_text_color }}'
