@@ -476,7 +476,7 @@ async function showMessageDuplicateProducts(lineItems, isRoutine) {
     var buttonTwo = 'Cancel';
   }
   cartItems.innerHTML = `<div class="alert-confirm">
-    <p class="cart__item__title">${message}</p>
+    <p class="cart__item__title cart__item__alert-custom">${message}</p>
     <div class="buttons-holder">
       <button type="button" data-replace-alert data-remove-products class="btn btn--primary btn--solid">${buttonOne}</button>
       <button type="button" data-remove-alert class="btn btn--primary btn--outline">${buttonTwo}</button>
