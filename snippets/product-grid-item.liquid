@@ -569,11 +569,13 @@
  #BrickSection--{{ section_id }} a.product-link {
     color: {{ prod_text_color }};
   }
+  #BrickSection--{{ section_id }} .product-information .price {
+    color: {{ prod_text_color }};
+  }
 {% endstyle %}
 
       <a
         class="product-link text-color-custom"
-        style='color: {{ prod_text_color }}'
         href="{{ product_url }}"
         data-product-link="{{ product_url }}">
         <p class="product-item__title">{{ product.title | strip_html | escape }}</p>
