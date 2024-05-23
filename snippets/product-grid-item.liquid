@@ -111,17 +111,20 @@
   if block_index > 1
     assign loading = 'lazy'
   endif
+
 -%}
-{% if prod_text_color %}
-{%- style -%}
-  #BrickSection--{{ section.settings.section.id }} a.product-link {
+{% if prod_text_color == true %}
+
+{%- assign prod_text_color = prod_text_color | default: '#000' -%}
+
+{%- assign section_id_selector = section_id | prepend: '#' -%}
+
+<style>
+  #BrickSection--{{ section_id_selector }} .product-link {
     color: {{ prod_text_color }};
   }
-  #BrickSection--{{ section.id }} .product-price {
-    color: {{ prod_text_color }};
-  }
-{%- endstyle -%}
-{% endif %}
+</style>
+  {% endif %}
 {%- if settings.color_swatches -%}
   {%- assign has_colors = false -%}
 
