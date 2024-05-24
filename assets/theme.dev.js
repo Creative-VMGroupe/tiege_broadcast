@@ -2881,6 +2881,8 @@
           this.cart.classList.remove(classes$F.updated);
         }
 
+        this.cartDrawer.querySelector('.cart-alert').innerHTML = '';
+
         this.cartEmpty.classList.remove(classes$F.updated);
         this.cartErrorHolder.classList.remove(classes$F.expanded);
         this.cartSuccessHolder.classList.remove(classes$F.expanded);
