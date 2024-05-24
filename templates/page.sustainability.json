@@ -104,18 +104,19 @@
         "padding_bottom": 200
       }
     },
-    "custom_section_double_static_B8QHcf": {
-      "type": "custom-section-double-static",
+    "section_double_static_vm_XcwVDY": {
+      "type": "section-double-static-vm",
       "blocks": {
-        "heading_zyMd8b": {
+        "heading_r4pfWJ": {
           "type": "heading",
           "settings": {
             "title": "You Can Change the World",
             "text_size": 40,
+            "big_text": false,
             "padding_bottom": 16
           }
         },
-        "text_9XgLHr": {
+        "text_aQigcD": {
           "type": "text",
           "settings": {
             "text": "<p>By purchasing Tiege products, you can be a part of closing the loop. Join today.<\/p>",
@@ -125,7 +126,7 @@
             "padding_bottom": 16
           }
         },
-        "buttons_NNdMeV": {
+        "buttons_Jwder9": {
           "type": "buttons",
           "settings": {
             "button_text": "Make a Difference",
@@ -139,22 +140,18 @@
         }
       },
       "block_order": [
-        "heading_zyMd8b",
-        "text_9XgLHr",
-        "buttons_NNdMeV"
+        "heading_r4pfWJ",
+        "text_aQigcD",
+        "buttons_Jwder9"
       ],
       "settings": {
         "layout": "",
         "height": "screen-height-one-half",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
-        "padding": 16,
-        "padding_mobile": 16,
-        "video": "shopify:\/\/files\/videos\/skinmatters-square2.mov",
+        "video_main": "shopify:\/\/files\/videos\/skinmatters-square2.mov",
         "image_width": "one-half",
-        "hover_effect": false,
-        "text_alignment": "left",
-        "text_alignment_mobile": "left",
+        "text_alignment": "text-left",
         "reverse_blocks": false,
         "bg_color": "#e8e8e8",
         "color": "",
@@ -455,7 +452,7 @@
     "main",
     "section_hero_KpG8aH",
     "section_rich_text_TXLJKC",
-    "custom_section_double_static_B8QHcf",
+    "section_double_static_vm_XcwVDY",
     "section_rich_text_3NDRYN",
     "section_rich_text_7KXRxY",
     "section_rich_text_njQNkK",
