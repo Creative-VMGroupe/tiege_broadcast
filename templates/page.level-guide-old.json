@@ -857,6 +857,9 @@
         "text_ciyTnc",
         "buttons_88PgWA"
       ],
+      "custom_css": [
+        ".video-background {--aspect-ratio: 0.4;}"
+      ],
       "settings": {
         "layout": "",
         "height": "screen-height-one-half",
