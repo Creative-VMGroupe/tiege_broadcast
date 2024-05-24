@@ -25492,6 +25492,7 @@ body.has-header-sticky .timeline {
 }
 .metafield-icons_container {
   display: flex;
+  justify-content: space-evenly;
   padding: 16px;
   gap: 5px;
 }
@@ -25500,7 +25501,7 @@ body.has-header-sticky .timeline {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  flex: 1;
+  /* flex: 1; */
 }
 .metafield-icons_text {
   max-width: 80px;
