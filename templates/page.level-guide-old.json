@@ -219,7 +219,7 @@
       ],
       "settings": {
         "title": "Included in this System",
-        "heading_size": 32,
+        "heading_size": 24,
         "item_heading_size": 24,
         "text_size": 14,
         "layout": "grid",
@@ -238,10 +238,18 @@
     "section_double_k3aGgY": {
       "type": "section-double",
       "blocks": {
+        "subheading_CET7xz": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "LEVEL 2",
+            "text_size": 14,
+            "padding_bottom": 16
+          }
+        },
         "heading_9cY3GQ": {
           "type": "heading",
           "settings": {
-            "title": "Level 2: Advanced Routine",
+            "title": "Advanced Routine",
             "heading_size": 40,
             "padding_bottom": 16
           }
@@ -270,6 +278,7 @@
         }
       },
       "block_order": [
+        "subheading_CET7xz",
         "heading_9cY3GQ",
         "text_d3VXVD",
         "buttons_Y7EyTf"
@@ -388,7 +397,7 @@
       ],
       "settings": {
         "title": "Included in this System",
-        "heading_size": 32,
+        "heading_size": 24,
         "item_heading_size": 24,
         "text_size": 14,
         "layout": "slider",
