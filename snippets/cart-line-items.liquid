@@ -205,10 +205,11 @@
               value="{{ quantity }}"
               title="{{ 'cart.general.quantity_field_label' | t }} - {{ line_item.product.title | strip_html }}"
               pattern="[0-9]*"
-              max="3"
+              {% if quantity == 3 %}readonly{% endif %}
             >
 
             <button
+              {% if quantity == 3 %}disabled{% endif %}
               class="cart__quantity-plus"
               type="button"
               name="increase"
