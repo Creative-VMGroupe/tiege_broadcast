@@ -300,21 +300,21 @@
     "section_rich_text_eXtdgX": {
       "type": "section-rich-text",
       "blocks": {
+        "subheading_q8c6UB": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "AFTER 12 MONTHS",
+            "text_font": 14,
+            "padding_bottom": 0
+          }
+        },
         "heading_YhdtjM": {
           "type": "heading",
           "settings": {
             "title": "Emerald VIP",
             "text_font": 32,
             "big_text": false,
-            "padding_bottom": 0
-          }
-        },
-        "subheading_q8c6UB": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "After 12 Months",
-            "text_font": 16,
-            "padding_bottom": 16
+            "padding_bottom": 10
           }
         },
         "text_XQqFiB": {
@@ -328,8 +328,8 @@
         }
       },
       "block_order": [
-        "heading_YhdtjM",
         "subheading_q8c6UB",
+        "heading_YhdtjM",
         "text_XQqFiB"
       ],
       "custom_css": [
