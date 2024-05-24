@@ -87,10 +87,18 @@
     "section_double_cjpW8U": {
       "type": "section-double",
       "blocks": {
+        "subheading_P9tjBG": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "LEVEL 1",
+            "text_size": 14,
+            "padding_bottom": 16
+          }
+        },
         "heading_wijXKk": {
           "type": "heading",
           "settings": {
-            "title": "Level 1: Essential Routine",
+            "title": "Essential Routine",
             "heading_size": 40,
             "padding_bottom": 16
           }
@@ -110,7 +118,7 @@
           "settings": {
             "button_text": "Shop Now",
             "button_url": "shopify:\/\/products\/level-1-essential-routine-1",
-            "button_type": "btn--secondary",
+            "button_type": "btn--white",
             "button_size": "",
             "button_style": "btn--solid",
             "show_arrow": false,
@@ -119,6 +127,7 @@
         }
       },
       "block_order": [
+        "subheading_P9tjBG",
         "heading_wijXKk",
         "text_zbeqbn",
         "buttons_UFHAD6"
@@ -133,8 +142,8 @@
         "text_alignment": "text-left",
         "padding_lr": 50,
         "reverse_blocks": false,
-        "bg_color": "#ececec",
-        "color": "#000000",
+        "bg_color": "#959595",
+        "color": "#ffffff",
         "padding_top": 0,
         "padding_bottom": 0
       }
