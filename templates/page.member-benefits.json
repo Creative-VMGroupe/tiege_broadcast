@@ -164,6 +164,63 @@
         "layout_mobile": "3"
       }
     },
+    "section_rich_text_eXtdgX": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_q8c6UB": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Introducing",
+            "text_font": 16,
+            "padding_bottom": 16
+          }
+        },
+        "heading_YhdtjM": {
+          "type": "heading",
+          "settings": {
+            "title": "Rich text",
+            "text_font": 40,
+            "big_text": false,
+            "padding_bottom": 16
+          }
+        },
+        "text_XQqFiB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_font": 16,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_TywMFE": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_q8c6UB",
+        "heading_YhdtjM",
+        "text_XQqFiB",
+        "buttons_TywMFE"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
     "section_rich_text_VhKhTk": {
       "type": "section-rich-text",
       "blocks": {
@@ -340,6 +397,7 @@
     "section_hero_BgWUpK",
     "section_rich_text_LYxXpE",
     "section_text_row_xtwzaC",
+    "section_rich_text_eXtdgX",
     "section_rich_text_VhKhTk",
     "section_rich_text_UYAyeY",
     "section_rich_text_dnXWfF",
