@@ -95,50 +95,6 @@
         "padding_bottom": 200
       }
     },
-    "section_rich_text_tBUEr6": {
-      "type": "section-rich-text",
-      "blocks": {
-        "heading_eNGhkz": {
-          "type": "heading",
-          "settings": {
-            "title": "Member",
-            "text_font": 32,
-            "big_text": false,
-            "padding_bottom": 0
-          }
-        },
-        "subheading_eGgBR4": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "1 – 6 Months",
-            "text_font": 16,
-            "padding_bottom": 16
-          }
-        },
-        "text_TgTTyB": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Receive 3 Routine-Building Gifts<\/p>",
-            "text_font": 16,
-            "text_style": "font-body",
-            "padding_bottom": 0
-          }
-        }
-      },
-      "block_order": [
-        "heading_eNGhkz",
-        "subheading_eGgBR4",
-        "text_TgTTyB"
-      ],
-      "settings": {
-        "width": "wrapper--narrow",
-        "align_text": "text-left",
-        "bg_color": "#e8e8e8",
-        "color": "#000000",
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
     "section_text_row_xtwzaC": {
       "type": "section-text-row",
       "blocks": {
@@ -241,6 +197,50 @@
         "color": "#000000",
         "padding_top": 100,
         "padding_bottom": 100
+      }
+    },
+    "section_rich_text_tBUEr6": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_eNGhkz": {
+          "type": "heading",
+          "settings": {
+            "title": "Member",
+            "text_font": 32,
+            "big_text": false,
+            "padding_bottom": 0
+          }
+        },
+        "subheading_eGgBR4": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "1 – 6 Months",
+            "text_font": 16,
+            "padding_bottom": 16
+          }
+        },
+        "text_TgTTyB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Receive 3 Routine-Building Gifts<\/p>",
+            "text_font": 16,
+            "text_style": "font-body",
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "heading_eNGhkz",
+        "subheading_eGgBR4",
+        "text_TgTTyB"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-left",
+        "bg_color": "#e8e8e8",
+        "color": "#000000",
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "section_rich_text_aLXx3w": {
@@ -510,9 +510,9 @@
     "main",
     "section_hero_BgWUpK",
     "section_rich_text_LYxXpE",
-    "section_rich_text_tBUEr6",
     "section_text_row_xtwzaC",
     "section_rich_text_VhKhTk",
+    "section_rich_text_tBUEr6",
     "section_rich_text_aLXx3w",
     "section_rich_text_eXtdgX",
     "section_rich_text_mTMNw8",
