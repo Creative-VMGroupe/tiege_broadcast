@@ -280,7 +280,7 @@
                       {%- endif -%}
                     </div>
 
-                    <div class="column__content {% if section.settings.align_text == "text-center" %}p-0{% endif %}">
+                    <div class="column__content">
                       {%- if title != blank -%}
                         {%- assign font_size_class = section.settings.item_heading_size | prepend: 'heading-size-' -%}
                         <h2 class="column__heading {{ font_size_class }}">
@@ -349,7 +349,7 @@
                       </div>
 
                       {%- if title != blank or text != blank -%}
-                        <div class="column__content">
+                        <div class="column__content {% if section.settings.align_text == "text-center" %}p-0{% endif %}">
                           {%- if title != blank -%}
                             {%- assign font_size_class = section.settings.item_heading_size | prepend: 'heading-size-' -%}
 
