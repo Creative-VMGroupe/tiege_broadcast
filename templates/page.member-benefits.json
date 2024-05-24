@@ -164,10 +164,10 @@
         "layout_mobile": "3"
       }
     },
-    "section_rich_text_eXtdgX": {
+    "section_rich_text_tBUEr6": {
       "type": "section-rich-text",
       "blocks": {
-        "heading_YhdtjM": {
+        "heading_eNGhkz": {
           "type": "heading",
           "settings": {
             "title": "Member",
@@ -176,7 +176,7 @@
             "padding_bottom": 0
           }
         },
-        "subheading_q8c6UB": {
+        "subheading_eGgBR4": {
           "type": "subheading",
           "settings": {
             "subheading": "1 – 6 Months",
@@ -184,10 +184,100 @@
             "padding_bottom": 16
           }
         },
-        "text_XQqFiB": {
+        "text_TgTTyB": {
           "type": "text",
           "settings": {
             "text": "<p>Receive 3 Routine-Building Gifts<\/p>",
+            "text_font": 16,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_eNGhkz",
+        "subheading_eGgBR4",
+        "text_TgTTyB"
+      ],
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/AdobeStock_326040122.jpg",
+        "width": "wrapper--narrow",
+        "align_text": "text-left",
+        "bg_color": "#000000",
+        "color": "#ffffff",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "section_rich_text_aLXx3w": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_DfGEiP": {
+          "type": "heading",
+          "settings": {
+            "title": "Member",
+            "text_font": 32,
+            "big_text": false,
+            "padding_bottom": 0
+          }
+        },
+        "subheading_L9pmP6": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "1 – 6 Months",
+            "text_font": 16,
+            "padding_bottom": 16
+          }
+        },
+        "text_dkiPTC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Receive 3 Routine-Building Gifts<\/p>",
+            "text_font": 16,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_DfGEiP",
+        "subheading_L9pmP6",
+        "text_dkiPTC"
+      ],
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/AdobeStock_326040122.jpg",
+        "width": "wrapper--narrow",
+        "align_text": "text-left",
+        "bg_color": "#000000",
+        "color": "#ffffff",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "section_rich_text_eXtdgX": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_YhdtjM": {
+          "type": "heading",
+          "settings": {
+            "title": "Emerald VIP",
+            "text_font": 32,
+            "big_text": false,
+            "padding_bottom": 0
+          }
+        },
+        "subheading_q8c6UB": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "After 12 Months",
+            "text_font": 16,
+            "padding_bottom": 16
+          }
+        },
+        "text_XQqFiB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Receive 10% Off Every Order, and 2 Premium Gifts Per Year<\/p>",
             "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 16
@@ -208,8 +298,8 @@
         "align_text": "text-left",
         "bg_color": "#000000",
         "color": "#ffffff",
-        "padding_top": 40,
-        "padding_bottom": 40
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "section_rich_text_VhKhTk": {
@@ -388,6 +478,8 @@
     "section_hero_BgWUpK",
     "section_rich_text_LYxXpE",
     "section_text_row_xtwzaC",
+    "section_rich_text_tBUEr6",
+    "section_rich_text_aLXx3w",
     "section_rich_text_eXtdgX",
     "section_rich_text_VhKhTk",
     "section_rich_text_UYAyeY",
