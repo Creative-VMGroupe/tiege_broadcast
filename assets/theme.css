@@ -26066,6 +26066,9 @@ time, .article__author {
 }
 }
 /*Global*/
+.p-0 {
+  padding: 0 !important;
+}
 /*Icons*/
 .text-center .icon__animated {
   margin: 0 auto;
