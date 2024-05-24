@@ -450,7 +450,7 @@
         "text_HtTH4b": {
           "type": "text",
           "settings": {
-            "text": "<p>Tiege Streaks! Maintain your benefits by ordering a minimum of $20 every 90 days. Feel free to skip or reschedule—just don't cancel, or your streak will restart.<\/p>",
+            "text": "<p>Tiege Streaks! Maintain your benefits by ordering a minimum of $20 every 90 days. Feel free to skip or reschedule — just don't cancel, or your streak will restart.<\/p>",
             "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 16
@@ -459,9 +459,9 @@
         "buttons_MxCLyT": {
           "type": "buttons",
           "settings": {
-            "button_text": "SHOP SKIN CARE SYSTEMS",
+            "button_text": "SHOP NOW",
             "button_url": "shopify:\/\/collections\/all-routines-1",
-            "button_type": "btn--secondary",
+            "button_type": "btn--white",
             "button_size": "",
             "button_style": "btn--solid",
             "show_arrow": false,
