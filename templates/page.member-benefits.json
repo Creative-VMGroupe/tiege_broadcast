@@ -190,11 +190,15 @@
         "heading_mHmQhD",
         "text_JAnBM6"
       ],
+      "custom_css": [
+        ".rich-text__img {opacity: 0.4;}"
+      ],
       "settings": {
+        "image_1": "shopify:\/\/shop_images\/holding-bottle.png",
         "width": "wrapper--narrow",
         "align_text": "text-left",
-        "bg_color": "#ffffff",
-        "color": "#000000",
+        "bg_color": "#000000",
+        "color": "#ffffff",
         "padding_top": 100,
         "padding_bottom": 100
       }
