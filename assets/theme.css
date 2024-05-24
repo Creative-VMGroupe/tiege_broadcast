@@ -25956,6 +25956,9 @@ time, .article__author {
   border-color: black !important;
 }
 /*QUICK VIEW*/
+.product-quick-add__form-custom .product__title__wrapper .product__title.heading-size-40 {
+  font-size: var(--heading-2)!important;
+}
 .recipient-checkbox span {
   letter-spacing: 0;
 }
