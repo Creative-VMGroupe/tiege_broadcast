@@ -26071,7 +26071,7 @@ time, .article__author {
 }
 /*Icons*/
 .text-center .icon__animated {
-  margin: 0 auto;
+  margin: 0 auto var(--inner);
 }
 /*Grids*/
   .grid--slider .grid-item {
