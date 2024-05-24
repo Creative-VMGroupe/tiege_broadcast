@@ -167,20 +167,20 @@
     "section_rich_text_eXtdgX": {
       "type": "section-rich-text",
       "blocks": {
-        "subheading_q8c6UB": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Introducing",
-            "text_font": 16,
-            "padding_bottom": 16
-          }
-        },
         "heading_YhdtjM": {
           "type": "heading",
           "settings": {
-            "title": "Rich text",
-            "text_font": 40,
+            "title": "Member",
+            "text_font": 32,
             "big_text": false,
+            "padding_bottom": 0
+          }
+        },
+        "subheading_q8c6UB": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "2-6 Months",
+            "text_font": 16,
             "padding_bottom": 16
           }
         },
@@ -195,8 +195,8 @@
         }
       },
       "block_order": [
-        "subheading_q8c6UB",
         "heading_YhdtjM",
+        "subheading_q8c6UB",
         "text_XQqFiB"
       ],
       "custom_css": [
