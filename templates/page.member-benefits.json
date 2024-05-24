@@ -381,7 +381,7 @@
         "heading_xrjCV7": {
           "type": "heading",
           "settings": {
-            "title": "Membership Tiers",
+            "title": "(OLD) Membership Tiers",
             "text_font": 40,
             "big_text": false,
             "padding_bottom": 16
@@ -417,7 +417,6 @@
         "text_3rkfFH",
         "memberboxes_qBBnGm"
       ],
-      "disabled": true,
       "settings": {
         "width": "wrapper--narrow",
         "align_text": "text-center",
