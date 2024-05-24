@@ -192,31 +192,22 @@
             "text_style": "font-body",
             "padding_bottom": 16
           }
-        },
-        "buttons_TywMFE": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "padding_bottom": 16
-          }
         }
       },
       "block_order": [
         "subheading_q8c6UB",
         "heading_YhdtjM",
-        "text_XQqFiB",
-        "buttons_TywMFE"
+        "text_XQqFiB"
+      ],
+      "custom_css": [
+        ".rich-text__img {opacity: 0.75;}"
       ],
       "settings": {
+        "image_1": "shopify:\/\/shop_images\/AdobeStock_326040122.jpg",
         "width": "wrapper--narrow",
         "align_text": "text-left",
-        "bg_color": "",
-        "color": "",
+        "bg_color": "#000000",
+        "color": "#ffffff",
         "padding_top": 100,
         "padding_bottom": 100
       }
