@@ -27119,7 +27119,8 @@ body#find-my-routine .header-sections {
 .rh-widget.rh-inline.rh-quiz-gWH2pX {
   /* height: 1301px !important; */
   max-height: 100vh;
-  
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 } 
 }
 .rh-widget.rh-inline.rh-quiz-gWH2pX::-webkit-scrollbar {
