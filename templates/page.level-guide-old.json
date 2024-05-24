@@ -471,7 +471,7 @@
         "buttons_MyDbc7"
       ],
       "custom_css": [
-        ".video-background {--aspect-ratio: 0.4;}"
+
       ],
       "settings": {
         "layout": "is-reversed",
@@ -861,7 +861,7 @@
         "buttons_88PgWA"
       ],
       "custom_css": [
-        ".video-background {--aspect-ratio: 0.4;}"
+
       ],
       "settings": {
         "layout": "",
