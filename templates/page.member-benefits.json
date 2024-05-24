@@ -95,6 +95,50 @@
         "padding_bottom": 200
       }
     },
+    "section_rich_text_tBUEr6": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_eNGhkz": {
+          "type": "heading",
+          "settings": {
+            "title": "Member",
+            "text_font": 32,
+            "big_text": false,
+            "padding_bottom": 0
+          }
+        },
+        "subheading_eGgBR4": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "1 – 6 Months",
+            "text_font": 16,
+            "padding_bottom": 16
+          }
+        },
+        "text_TgTTyB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Receive 3 Routine-Building Gifts<\/p>",
+            "text_font": 16,
+            "text_style": "font-body",
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "heading_eNGhkz",
+        "subheading_eGgBR4",
+        "text_TgTTyB"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-left",
+        "bg_color": "#e8e8e8",
+        "color": "#000000",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
     "section_text_row_xtwzaC": {
       "type": "section-text-row",
       "blocks": {
@@ -164,30 +208,22 @@
         "layout_mobile": "3"
       }
     },
-    "section_rich_text_tBUEr6": {
+    "section_rich_text_VhKhTk": {
       "type": "section-rich-text",
       "blocks": {
-        "heading_eNGhkz": {
+        "heading_mHmQhD": {
           "type": "heading",
           "settings": {
-            "title": "Member",
-            "text_font": 32,
+            "title": "Membership Tiers",
+            "text_font": 40,
             "big_text": false,
-            "padding_bottom": 0
-          }
-        },
-        "subheading_eGgBR4": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "1 – 6 Months",
-            "text_font": 16,
             "padding_bottom": 16
           }
         },
-        "text_TgTTyB": {
+        "text_JAnBM6": {
           "type": "text",
           "settings": {
-            "text": "<p>Receive 3 Routine-Building Gifts<\/p>",
+            "text": "<p>We want to guide you on a successful skin care journey by helping you develop a routine. Our Membership program is designed to assist you through your first 12 orders, turning you into a skin care expert!<\/p>",
             "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 0
@@ -195,17 +231,16 @@
         }
       },
       "block_order": [
-        "heading_eNGhkz",
-        "subheading_eGgBR4",
-        "text_TgTTyB"
+        "heading_mHmQhD",
+        "text_JAnBM6"
       ],
       "settings": {
         "width": "wrapper--narrow",
-        "align_text": "text-left",
-        "bg_color": "#e8e8e8",
+        "align_text": "text-center",
+        "bg_color": "#ffffff",
         "color": "#000000",
-        "padding_top": 40,
-        "padding_bottom": 40
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "section_rich_text_aLXx3w": {
@@ -300,10 +335,10 @@
         "padding_bottom": 40
       }
     },
-    "section_rich_text_VhKhTk": {
+    "section_rich_text_mTMNw8": {
       "type": "section-rich-text",
       "blocks": {
-        "heading_mHmQhD": {
+        "heading_xrjCV7": {
           "type": "heading",
           "settings": {
             "title": "Membership Tiers",
@@ -312,7 +347,7 @@
             "padding_bottom": 16
           }
         },
-        "text_JAnBM6": {
+        "text_3rkfFH": {
           "type": "text",
           "settings": {
             "text": "<p>We want to guide you on a successful skin care journey by helping you develop a routine. Our Membership program is designed to assist you through your first 12 orders, turning you into a skin care expert!<\/p>",
@@ -321,7 +356,7 @@
             "padding_bottom": 32
           }
         },
-        "memberboxes_JW3UUT": {
+        "memberboxes_qBBnGm": {
           "type": "memberboxes",
           "settings": {
             "pop-heading_font": 32,
@@ -338,9 +373,9 @@
         }
       },
       "block_order": [
-        "heading_mHmQhD",
-        "text_JAnBM6",
-        "memberboxes_JW3UUT"
+        "heading_xrjCV7",
+        "text_3rkfFH",
+        "memberboxes_qBBnGm"
       ],
       "settings": {
         "width": "wrapper--narrow",
@@ -475,11 +510,12 @@
     "main",
     "section_hero_BgWUpK",
     "section_rich_text_LYxXpE",
-    "section_text_row_xtwzaC",
     "section_rich_text_tBUEr6",
+    "section_text_row_xtwzaC",
+    "section_rich_text_VhKhTk",
     "section_rich_text_aLXx3w",
     "section_rich_text_eXtdgX",
-    "section_rich_text_VhKhTk",
+    "section_rich_text_mTMNw8",
     "section_rich_text_UYAyeY",
     "section_rich_text_dnXWfF",
     "17127584173cce1520"
