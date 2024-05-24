@@ -200,13 +200,12 @@
         "text_TgTTyB"
       ],
       "settings": {
-        "image_1": "shopify:\/\/shop_images\/AdobeStock_326040122.jpg",
         "width": "wrapper--narrow",
         "align_text": "text-left",
-        "bg_color": "#000000",
-        "color": "#ffffff",
-        "padding_top": 40,
-        "padding_bottom": 40
+        "bg_color": "#e8e8e8",
+        "color": "#000000",
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "section_rich_text_aLXx3w": {
@@ -215,7 +214,7 @@
         "heading_DfGEiP": {
           "type": "heading",
           "settings": {
-            "title": "Member",
+            "title": "VIP Member",
             "text_font": 32,
             "big_text": false,
             "padding_bottom": 0
@@ -224,7 +223,7 @@
         "subheading_L9pmP6": {
           "type": "subheading",
           "settings": {
-            "subheading": "1 – 6 Months",
+            "subheading": "7 – 12 Months",
             "text_font": 16,
             "padding_bottom": 16
           }
@@ -232,7 +231,7 @@
         "text_dkiPTC": {
           "type": "text",
           "settings": {
-            "text": "<p>Receive 3 Routine-Building Gifts<\/p>",
+            "text": "<p>Receive 3 VIP Gifts, and 1 Premium Gift<\/p>",
             "text_font": 16,
             "text_style": "font-body",
             "padding_bottom": 16
@@ -245,13 +244,12 @@
         "text_dkiPTC"
       ],
       "settings": {
-        "image_1": "shopify:\/\/shop_images\/AdobeStock_326040122.jpg",
         "width": "wrapper--narrow",
         "align_text": "text-left",
         "bg_color": "#000000",
         "color": "#ffffff",
-        "padding_top": 40,
-        "padding_bottom": 40
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "section_rich_text_eXtdgX": {
