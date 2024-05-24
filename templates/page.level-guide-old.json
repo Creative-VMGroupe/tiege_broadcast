@@ -422,6 +422,69 @@
         "layout_mobile": "slider"
       }
     },
+    "section_double_static_vm_RHir7j": {
+      "type": "section-double-static-vm",
+      "blocks": {
+        "subheading_ggPVgD": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "LEVEL 3",
+            "text_size": 14,
+            "padding_bottom": 16
+          }
+        },
+        "heading_4tFaWL": {
+          "type": "heading",
+          "settings": {
+            "title": "Anti-aging Routine",
+            "text_size": 40,
+            "big_text": false,
+            "padding_bottom": 16
+          }
+        },
+        "text_8etXXN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Add our SERUM to reduce fine lines and achieve maximum handsome.<\/p>",
+            "quote_enabled": false,
+            "text_size": 16,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_VKLxnB": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Shop Now",
+            "button_url": "shopify:\/\/products\/the-collection-snowboard-liquid",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_ggPVgD",
+        "heading_4tFaWL",
+        "text_8etXXN",
+        "buttons_VKLxnB"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "reverse_blocks": false,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "custom_section_double_static_cWjzME": {
       "type": "custom-section-double-static",
       "blocks": {
@@ -1101,6 +1164,7 @@
     "section_columns_TFbgVV",
     "section_double_k3aGgY",
     "section_columns_B7wVFM",
+    "section_double_static_vm_RHir7j",
     "custom_section_double_static_cWjzME",
     "section_columns_FYFpyV",
     "section_video_nkhB3G",
