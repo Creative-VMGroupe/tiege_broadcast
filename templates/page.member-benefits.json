@@ -202,21 +202,21 @@
     "section_rich_text_tBUEr6": {
       "type": "section-rich-text",
       "blocks": {
+        "subheading_eGgBR4": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "1 – 6 MONTHS",
+            "text_font": 14,
+            "padding_bottom": 0
+          }
+        },
         "heading_eNGhkz": {
           "type": "heading",
           "settings": {
             "title": "Member",
             "text_font": 32,
             "big_text": false,
-            "padding_bottom": 0
-          }
-        },
-        "subheading_eGgBR4": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "1 – 6 Months",
-            "text_font": 16,
-            "padding_bottom": 16
+            "padding_bottom": 10
           }
         },
         "text_TgTTyB": {
@@ -225,14 +225,24 @@
             "text": "<p>Receive 3 Routine-Building Gifts<\/p>",
             "text_font": 16,
             "text_style": "font-body",
-            "padding_bottom": 0
+            "padding_bottom": 30
+          }
+        },
+        "text_ELjGca": {
+          "type": "text",
+          "settings": {
+            "text": "<p>All Tiege Hanley customers are Members upon their first subscription purchase. We want our members to get in the habit of completing their Tiege Hanley routine both morning and night, so we are going to provide you with some routine enforcing gifts on your 2nd, 4th, and 6th orders to keep you motivated!<\/p>",
+            "text_font": 12,
+            "text_style": "font-body",
+            "padding_bottom": 16
           }
         }
       },
       "block_order": [
-        "heading_eNGhkz",
         "subheading_eGgBR4",
-        "text_TgTTyB"
+        "heading_eNGhkz",
+        "text_TgTTyB",
+        "text_ELjGca"
       ],
       "settings": {
         "width": "wrapper--narrow",
@@ -246,21 +256,21 @@
     "section_rich_text_aLXx3w": {
       "type": "section-rich-text",
       "blocks": {
+        "subheading_L9pmP6": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "7 – 12 MONTHS",
+            "text_font": 14,
+            "padding_bottom": 0
+          }
+        },
         "heading_DfGEiP": {
           "type": "heading",
           "settings": {
             "title": "VIP Member",
             "text_font": 32,
             "big_text": false,
-            "padding_bottom": 0
-          }
-        },
-        "subheading_L9pmP6": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "7 – 12 Months",
-            "text_font": 16,
-            "padding_bottom": 16
+            "padding_bottom": 10
           }
         },
         "text_dkiPTC": {
@@ -274,8 +284,8 @@
         }
       },
       "block_order": [
-        "heading_DfGEiP",
         "subheading_L9pmP6",
+        "heading_DfGEiP",
         "text_dkiPTC"
       ],
       "settings": {
