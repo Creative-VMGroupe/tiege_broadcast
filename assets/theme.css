@@ -27165,3 +27165,10 @@ padding: 0 20px;
     max-width: 700px;
   }
 }
+/*Media Gallery*/
+@media(max-width: 749px) {
+.highlights__items--mobile-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}  
+}
