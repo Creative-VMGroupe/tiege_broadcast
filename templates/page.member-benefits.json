@@ -260,6 +260,91 @@
         "padding_bottom": 200
       }
     },
+    "section_media_gallery_UBVVEG": {
+      "type": "section-media-gallery",
+      "blocks": {
+        "highlight_YnNdaD": {
+          "type": "highlight",
+          "settings": {
+            "heading": "Member",
+            "heading_size": 40,
+            "stars_enabled": false,
+            "subheading": "1 – 6 MONTHS",
+            "subheading_size": 14,
+            "subheading_2": "Receive 3 Routine-Building Gifts",
+            "subheading_2_size": 16,
+            "text": "<p>All Tiege Hanley customers are Members upon their first subscription purchase. We want our members to get in the habit of completing their Tiege Hanley routine both morning and night, so we are going to provide you with some routine enforcing gifts on your 2nd, 4th, and 6th orders to keep you motivated!<\/p>",
+            "text_size": 14,
+            "url": "",
+            "color": "",
+            "sub_color": "",
+            "slide_bg_color": "#F0F0F0",
+            "border_color": ""
+          }
+        },
+        "highlight_paqqFz": {
+          "type": "highlight",
+          "settings": {
+            "heading": "VIP Member",
+            "heading_size": 40,
+            "stars_enabled": false,
+            "subheading": "7 – 12 MONTHS",
+            "subheading_size": 14,
+            "subheading_2": "Receive 3 VIP Gifts, and 1 Premium Gift",
+            "subheading_2_size": 16,
+            "text": "<p>By this point in your journey, you’ve committed to a routine that has started to show amazing results…that deserves a celebration! You’ll be upgraded to a VIP Member, and we’ll roll out the red carpet for you with three VIP gifts in your 8th, 10th, and 12th orders. To make it even better, all VIP Members also receive a premium gift as part of Tiege’s birthday celebration in July.<\/p>",
+            "text_size": 14,
+            "url": "",
+            "color": "",
+            "sub_color": "",
+            "slide_bg_color": "#F0F0F0",
+            "border_color": ""
+          }
+        },
+        "highlight_aXCEVJ": {
+          "type": "highlight",
+          "settings": {
+            "heading": "Emerald VIP",
+            "heading_size": 40,
+            "stars_enabled": false,
+            "subheading": "AFTER 12 MONTHS",
+            "subheading_size": 14,
+            "subheading_2": "Receive 10% Off Every Order, and 2 Premium Gifts Per Year",
+            "subheading_2_size": 16,
+            "text": "<p>After 12 orders with us, you’ve earned the title of EMERALD VIP, our elite customer status. This gives you an additional 10% off all Tiege Hanley orders for life, along with 2 premium EMERALD VIP gifts every year.<\/p>",
+            "text_size": 14,
+            "url": "",
+            "image": "shopify:\/\/shop_images\/AdobeStock_326040122.jpg",
+            "color": "",
+            "sub_color": "",
+            "slide_bg_color": "rgba(0,0,0,0)",
+            "border_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "highlight_YnNdaD",
+        "highlight_paqqFz",
+        "highlight_aXCEVJ"
+      ],
+      "settings": {
+        "style": "rectangle",
+        "compact": true,
+        "width": "wrapper--full-padded",
+        "height": "screen-height-two-thirds",
+        "mobile_height": "screen-height-one-half--mobile",
+        "align_heading": "text-left",
+        "heading": "",
+        "heading_position": "text-center",
+        "heading_size": 40,
+        "text_size": 14,
+        "color": "",
+        "bg_color": "",
+        "layout_mobile": "1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_rich_text_aLXx3w": {
       "type": "section-rich-text",
       "blocks": {
@@ -553,6 +638,7 @@
     "section_text_row_xtwzaC",
     "section_rich_text_VhKhTk",
     "section_rich_text_tBUEr6",
+    "section_media_gallery_UBVVEG",
     "section_rich_text_aLXx3w",
     "section_rich_text_eXtdgX",
     "section_rich_text_mTMNw8",
