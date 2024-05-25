@@ -262,7 +262,7 @@
           </div>
         {%- endfor -%}
       </div>
-      {%- if totalSlides >= 2 -%}
+      {%- if totalSlides >= 2 and section.settings.layout_mobile == 'slider'-%}
   
     <div class='flickity-page-dots flickity-page-dots-custom'>
   {%- for slide in (1..totalSlides) -%}
@@ -417,15 +417,11 @@
             "label": "1 media per row"
           },
           {
-            "value": "2",
-            "label": "2 media per row"
-          },
-          {
             "value": "slider",
             "label": "Slider"
           }
         ],
-        "default": "2"
+        "default": "1"
       },
       {
         "type": "header",
