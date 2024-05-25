@@ -65,6 +65,8 @@
             "stars_enabled": false,
             "subheading": "",
             "subheading_size": 14,
+            "subheading_2": "Tiege Subheading",
+            "subheading_2_size": 14,
             "text": "",
             "text_size": 16,
             "url": "",
@@ -84,6 +86,8 @@
             "stars_enabled": false,
             "subheading": "",
             "subheading_size": 14,
+            "subheading_2": "Tiege Subheading",
+            "subheading_2_size": 14,
             "text": "",
             "text_size": 16,
             "url": "",
@@ -103,6 +107,8 @@
             "stars_enabled": true,
             "subheading": " ★★★★★",
             "subheading_size": 14,
+            "subheading_2": "Tiege Subheading",
+            "subheading_2_size": 14,
             "text": "<p>\"Use this text to showcase a review from one of your customers. A great review is honest and speaks to the concerns of your customers.\"<\/p>",
             "text_size": 16,
             "url": "",
@@ -118,7 +124,6 @@
         "highlight_cRyCyg",
         "highlight_r8JhKC"
       ],
-      "disabled": true,
       "settings": {
         "style": "rectangle",
         "compact": true,
@@ -133,84 +138,6 @@
         "color": "rgba(0,0,0,0)",
         "bg_color": "rgba(0,0,0,0)",
         "layout_mobile": "slider",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_media_gallery_HAnLWT": {
-      "type": "section-media-gallery",
-      "blocks": {
-        "highlight_NAQTAg": {
-          "type": "highlight",
-          "settings": {
-            "heading": "Member",
-            "heading_size": 40,
-            "stars_enabled": false,
-            "subheading": "1 - 6 MONTHS",
-            "subheading_size": 12,
-            "text": "<p>\"Use this text to showcase a review from one of your customers. A great review is honest and speaks to the concerns of your customers.\"<\/p>",
-            "text_size": 16,
-            "url": "",
-            "color": "#000000",
-            "sub_color": "#42b029",
-            "slide_bg_color": "#f7f7f7",
-            "border_color": ""
-          }
-        },
-        "highlight_U3z6yk": {
-          "type": "highlight",
-          "settings": {
-            "heading": "Heading",
-            "heading_size": 40,
-            "stars_enabled": true,
-            "subheading": " ★★★★★",
-            "subheading_size": 14,
-            "text": "<p>\"Use this text to showcase a review from one of your customers. A great review is honest and speaks to the concerns of your customers.\"<\/p>",
-            "text_size": 16,
-            "url": "",
-            "color": "#000000",
-            "sub_color": "#42b029",
-            "slide_bg_color": "#f7f7f7",
-            "border_color": ""
-          }
-        },
-        "highlight_6RyyEz": {
-          "type": "highlight",
-          "settings": {
-            "heading": "Heading",
-            "heading_size": 40,
-            "stars_enabled": true,
-            "subheading": " ★★★★★",
-            "subheading_size": 14,
-            "text": "<p>\"Use this text to showcase a review from one of your customers. A great review is honest and speaks to the concerns of your customers.\"<\/p>",
-            "text_size": 16,
-            "url": "",
-            "color": "#000000",
-            "sub_color": "#42b029",
-            "slide_bg_color": "#f7f7f7",
-            "border_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "highlight_NAQTAg",
-        "highlight_U3z6yk",
-        "highlight_6RyyEz"
-      ],
-      "settings": {
-        "style": "rectangle",
-        "compact": true,
-        "width": "wrapper--full-padded",
-        "height": "screen-height-two-thirds",
-        "mobile_height": "screen-height-one-third--mobile",
-        "align_heading": "text-left",
-        "heading": "",
-        "heading_position": "text-center",
-        "heading_size": 40,
-        "text_size": 16,
-        "color": "rgba(0,0,0,0)",
-        "bg_color": "rgba(0,0,0,0)",
-        "layout_mobile": "1",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -339,7 +266,6 @@
     "main",
     "section_product_7ePe7T",
     "section_media_gallery_KH9Pep",
-    "section_media_gallery_HAnLWT",
     "section_reviews_6RY6Fc",
     "section_blog_43mLzn",
     "section_rich_text_8TqiNB",
