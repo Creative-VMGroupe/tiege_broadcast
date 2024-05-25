@@ -164,7 +164,7 @@
             .hero__subheading {
             color: {{ sub_color }}          
             }
-            #highlights--{{ unique }}  .brick__block__text-custom[data-block="{{ forloop.index }}"], #highlights--{{ unique }} .brick__block{
+            #highlights--{{ unique }}  .brick__block__text-custom[data-block="{{ forloop.index }}"], #highlights--{{ unique }} .brick__block:has([data-block="{{ forloop.index }}"]){
               {% if bg_color != blank and bg_color != 'rgba(0,0,0,0)' %}
             background-color: {{ bg_color }} !important;
               {% else %}
