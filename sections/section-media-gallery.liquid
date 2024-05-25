@@ -159,21 +159,20 @@
             endcapture
           -%}
 
-          {% comment %} 
+ 
           {%-  style -%}
             .hero__subheading {
-            color: {{ sub_color }}
-              
+            color: {{ sub_color }}          
             }
-              #highlights--{{ unique }}  .brick__block__text-custom, #highlights--{{ unique }} .brick__block{
-    {% if bg_color != blank and bg_color != 'rgba(0,0,0,0)' %}
-      background-color: {{ bg_color }} !important;
-      {% else %}
-      --bg: transparent;
-    {% endif %}
-  }
+            #highlights--{{ unique }}  .brick__block__text-custom, #highlights--{{ unique }} .brick__block{
+              {% if bg_color != blank and bg_color != 'rgba(0,0,0,0)' %}
+            background-color: {{ bg_color }} !important;
+              {% else %}
+            --bg: transparent;
+              {% endif %}
+            }
             {%- endstyle -%}
-        {% endcomment %}
+ 
           <div {{ item_attributes }}>         
             {%- if link != blank -%}
               <a href="{{ link }}" class="{{ item_inner_classes }}">
@@ -587,8 +586,8 @@
           {
             "type": "color",
             "id": "slide_bg_color",
-            "label": "Background",
-            "default": "#F0F0F0"
+            "label": "Background"
+           
           },
           {
             "type": "color",
