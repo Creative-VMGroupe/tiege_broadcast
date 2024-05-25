@@ -158,6 +158,8 @@
               endif
             endcapture
           -%}
+
+          {% comment %} 
           {%-  style -%}
             .hero__subheading {
             color: {{ sub_color }}
@@ -171,6 +173,7 @@
     {% endif %}
   }
             {%- endstyle -%}
+        {% endcomment %}
           <div {{ item_attributes }}>         
             {%- if link != blank -%}
               <a href="{{ link }}" class="{{ item_inner_classes }}">
