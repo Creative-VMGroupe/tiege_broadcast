@@ -278,7 +278,7 @@
             "url": "",
             "color": "",
             "sub_color": "",
-            "slide_bg_color": "#F0F0F0",
+            "slide_bg_color": "#f0f0f0",
             "border_color": ""
           }
         },
@@ -295,9 +295,9 @@
             "text": "<p>By this point in your journey, you’ve committed to a routine that has started to show amazing results…that deserves a celebration! You’ll be upgraded to a VIP Member, and we’ll roll out the red carpet for you with three VIP gifts in your 8th, 10th, and 12th orders. To make it even better, all VIP Members also receive a premium gift as part of Tiege’s birthday celebration in July.<\/p>",
             "text_size": 14,
             "url": "",
-            "color": "",
+            "color": "#ffffff",
             "sub_color": "",
-            "slide_bg_color": "#F0F0F0",
+            "slide_bg_color": "#000000",
             "border_color": ""
           }
         },
