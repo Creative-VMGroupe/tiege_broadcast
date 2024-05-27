@@ -3020,6 +3020,7 @@
           return;
         }
         event.preventDefault();
+        console.log('Item Added to Cart');
         this.addToCart(formData, button);
       }
 
