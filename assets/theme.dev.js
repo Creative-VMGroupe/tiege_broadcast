@@ -12552,8 +12552,18 @@
         this.videoPlayObserver = new IntersectionObserver((entries) => {
           entries.forEach((entry) => {
             const isVisible = entry.isIntersecting;
+            const playPromise = this.video.play();
             if (isVisible && typeof this.video.play === 'function') {
-              this.video.play();
+                if (playPromise !== undefined) {
+    playPromise.then(_ => {
+      // Automatic playback started!
+      // Show playing UI.
+    })
+    .catch(error => {
+      // Auto-play was prevented
+      // Show paused UI.
+    });
+  }
             }
             if (!isVisible && typeof this.video.pause === 'function') {
               this.video.pause();
