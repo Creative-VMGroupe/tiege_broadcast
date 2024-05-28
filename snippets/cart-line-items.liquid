@@ -205,11 +205,11 @@
               value="{{ quantity }}"
               title="{{ 'cart.general.quantity_field_label' | t }} - {{ line_item.product.title | strip_html }}"
               pattern="[0-9]*"
-              {% if quantity == 3 %}readonly{% endif %}
+              {% if quantity == line_item.product.metafields.custom.max_qty_per_order %}readonly{% endif %}
             >
 
             <button
-              {% if quantity == 3 %}disabled{% endif %}
+              {% if quantity == line_item.product.metafields.custom.max_qty_per_order %}disabled{% endif %}
               class="cart__quantity-plus"
               type="button"
               name="increase"
