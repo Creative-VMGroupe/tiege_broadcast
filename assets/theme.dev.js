@@ -3079,7 +3079,7 @@
             }
 
             if (isRoutine && window.theme.cartSettings.singleRoutine.enabled && window.theme.cartSettings.singleRoutine.show_alert && totalRoutines === max_allowed_routines) {
-              this.addToCartError({message: 'Error', description: `Single routine per order is allowed.`}, button);
+              this.addToCartError({message: 'Error', description: `Max number of allowed routine(s) per order are already allowed to the bag.`}, button);
               return;
             }
             
