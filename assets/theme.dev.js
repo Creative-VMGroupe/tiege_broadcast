@@ -3021,7 +3021,7 @@
           return;
         }
         event.preventDefault();
-        fetch(theme.routes.cart_url)
+        fetch(theme.routes.cart_url + '.js')
           .then(this.cartErrorsHandler)
           .then((response) => response.json())
           .then((response) => {
