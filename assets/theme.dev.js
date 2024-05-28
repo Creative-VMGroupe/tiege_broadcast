@@ -3050,6 +3050,7 @@
               closeButton.addEventListener("click", (e) => {
                 cartItems.innerHTML = '';
               });
+              this.cartDrawer.dispatchEvent(new CustomEvent('theme:cart-drawer:show'));
               return;  
             }
             
