@@ -1670,7 +1670,7 @@
     });
   }
             } else {
-               console.log('Not hovered')
+               console.log(mediaNative)
               mediaNative.pause();
             }
           }
