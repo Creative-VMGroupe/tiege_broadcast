@@ -502,7 +502,7 @@ async function addedCartFunction(addedItem, data) {
   // Free Item Addition
   if (theme.cartSettings.giftItem.enabled) {
     let giftExists = data.items.filter((item) => item.product_id == theme.cartSettings.giftItem.productId);
-    if (giftExists.length) {
+    if (giftExists.length > 0) {
       let giftQty = giftExists[0]['quantity'];
 
       if (giftQty > 1) {
@@ -514,14 +514,14 @@ async function addedCartFunction(addedItem, data) {
     if (theme.cartSettings.giftItem.method == "cart") {
       let minCartValue = parseInt(theme.cartSettings.giftItem.cartValue * 100);
       if (data.total_price > minCartValue) {
-        if (!giftExists.length) {
+        if (giftExists.length === 0) {
           reloadCart = true;
           alertStatus = 'success';
           alertMessage = window.theme.cartSettings.giftItem.success_alert;
           await addItemtoCart(theme.cartSettings.giftItem.variantId);
         }
       } else {
-        if (giftExists.length) {
+        if (giftExists.length > 0) {
           reloadCart = true;
           alertStatus = 'error';
           alertMessage = window.theme.cartSettings.giftItem.error_alert;
@@ -531,14 +531,14 @@ async function addedCartFunction(addedItem, data) {
     } else {
       let eligibleProducts = theme.cartSettings.giftItem.collection.split(",").map( Number );
       if (eligibleProducts.includes(addedItem.product_id)) {
-        if (!giftExists.length) {
+        if (giftExists.length === 0) {
           reloadCart = true;
           alertStatus = 'success';
           alertMessage = window.theme.cartSettings.giftItem.success_alert;
           await addItemtoCart(theme.cartSettings.giftItem.variantId);
         }
       } else {
-        if (giftExists.length) {
+        if (giftExists.length > 0) {
           reloadCart = true;
           alertStatus = 'error';
           alertMessage = window.theme.cartSettings.giftItem.error_alert;
