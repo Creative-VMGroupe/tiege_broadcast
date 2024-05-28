@@ -558,8 +558,11 @@ async function addedCartFunction(addedItem, data) {
       reloadCart = false;
       alertStatus = '';
       alertMessage = '';
-      await showMessageDuplicateRoutine(routineItem.key);
-      // await changeItemQty(routineItem.key, '0');
+      if (window.theme.cartSettings.singleRoutine.show_alert) {
+        await showMessageDuplicateRoutine(routineItem.key);
+      } else {
+        await changeItemQty(routineItem.key, '0');
+      }
     }
   }
 
