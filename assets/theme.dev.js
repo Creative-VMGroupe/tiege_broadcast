@@ -3030,6 +3030,7 @@
             var allProducts = window.theme.cartSettings.products;
             let isRoutine = allProducts[formDataObj['product-id']].isRoutine;
             let routineItems = response.items.filter((item) => allProducts[item.product_id].isRoutine);
+            let totalRoutines = routineItems.each
             let itemExists = response.items.filter((item) => (item.variant_id == formDataObj.id));
             console.log(formDataObj, routineItems, itemExists, isRoutine);
             
@@ -3037,6 +3038,7 @@
               this.addToCartError({data: 'Error', description: 'You can only add a maximum of 3 of the same product to bag.'}, button);
               return;
             }
+
             
             if (isRoutine && itemExists.length > 0) {
               let cartItems = document.querySelector('.cart-alert');
