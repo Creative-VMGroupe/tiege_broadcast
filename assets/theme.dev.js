@@ -3021,6 +3021,18 @@
           return;
         }
         event.preventDefault();
+        fetch(theme.routes.cart_url)
+          .then(this.cartErrorsHandler)
+          .then((response) => response.json())
+          .then((response) => {
+            console.log(response);
+            // const element = document.createElement('div');
+            // element.innerHTML = response;
+
+            // const cleanResponse = element.querySelector(selectors$U.apiContent);
+            // this.build(cleanResponse);
+          })
+          .catch((error) => console.log(error));
         console.log('Item Added to Cart');
         this.addToCart(formData, button);
       }
