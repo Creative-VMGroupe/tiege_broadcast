@@ -337,6 +337,7 @@
         "text_TgTTyB",
         "text_ELjGca"
       ],
+      "disabled": true,
       "custom_css": [
         ".rich-text__img {opacity: 0.8;}"
       ],
@@ -394,6 +395,7 @@
         "text_dkiPTC",
         "text_reVR96"
       ],
+      "disabled": true,
       "custom_css": [
         ".rich-text__img {opacity: 0.8;}"
       ],
@@ -451,6 +453,7 @@
         "text_XQqFiB",
         "text_LmbTfp"
       ],
+      "disabled": true,
       "custom_css": [
         ".rich-text__img {opacity: 0.75;}"
       ],
@@ -506,6 +509,7 @@
         "text_3rkfFH",
         "memberboxes_qBBnGm"
       ],
+      "disabled": true,
       "settings": {
         "width": "wrapper--narrow",
         "align_text": "text-center",
