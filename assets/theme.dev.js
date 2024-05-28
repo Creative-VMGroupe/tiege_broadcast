@@ -3054,7 +3054,7 @@
             let singleRoutineOnly = window.theme.cartSettings.singleRoutine.enabled;
             let showSinlgeRoutineAlert = window.theme.cartSettings.singleRoutine.show_alert;
 
-            if (isRoutine && singleRoutineOnly && showSinlgeRoutineAlert && itemExists) {
+            if (isRoutine && singleRoutineOnly && showSinlgeRoutineAlert && itemExists.length > 0) {
               let cartItems = document.querySelector('.cart-alert');
               cartItems.innerHTML = `<div class="alert-confirm">
                 <p class="cart__item__title cart__item__alert-custom">You already have this routine in your bag. Increase the quantity ?</p>
