@@ -558,9 +558,6 @@ async function addedCartFunction(addedItem, data) {
       }
     });
     if (routineItem != null) {
-      reloadCart = false;
-      alertStatus = '';
-      alertMessage = '';
       if (window.theme.cartSettings.singleRoutine.show_alert) {
         // await changeItemQty(routineItem.key, '0');
         await showMessageDuplicateRoutine(routineItem.key);
@@ -584,9 +581,6 @@ async function addedCartFunction(addedItem, data) {
       let haveCommonItems = otherItemIds.filter(item => variantsOfRoutine.includes(item));
       let commonItemsKeys = data.items.filter(item => haveCommonItems.includes(item.variant_id)).map((item) => item.key);
       if (commonItemsKeys.length > 0) {
-        reloadCart = false;
-        alertStatus = '';
-        alertMessage = '';
         // await removeMultiple(commonItemsKeys);
         await showMessageDuplicateProducts(commonItemsKeys, isCurrentAddedItemRoutine);
         return;
