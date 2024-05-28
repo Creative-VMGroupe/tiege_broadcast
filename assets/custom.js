@@ -585,6 +585,7 @@ async function addedCartFunction(addedItem, data) {
         alertMessage = '';
         // await removeMultiple(commonItemsKeys);
         await showMessageDuplicateProducts(commonItemsKeys, isCurrentAddedItemRoutine);
+        return;
       }
     }
   }
@@ -631,7 +632,6 @@ async function updatedCartFunction(data) {
   
   const allProducts = theme.cartSettings.products;
   
-  // Free Item Addition
   if (theme.cartSettings.giftItem.enabled) {
     let giftExists = data.items.filter((item) => item.product_id == theme.cartSettings.giftItem.productId);
     if (giftExists.length) {
@@ -677,30 +677,6 @@ async function updatedCartFunction(data) {
           alertMessage = window.theme.cartSettings.giftItem.error_alert;
           await changeItemQty(giftExists[0].key, '0');
         }
-      }
-    }
-  }
-
-  // Upgradability Check
-  if (theme.cartSettings.upgradability.enabled) {
-    let routineItem = null;
-    data.items.forEach((element) => {
-      if (allProducts[element.product_id].isRoutine) {
-        routineItem = element;
-      }
-    });
-    if (routineItem != null) {
-      let otherItems = data.items.filter((item) => item.product_id != routineItem.product_id);
-      let otherItemIds = otherItems.map((item) => item.variant_id);
-      let upgradeItem = allProducts[routineItem.product_id].nextRoutineLineItem != false ? allProducts[routineItem.product_id].nextRoutineLineItem.id : false;
-      let upgradeSystem = allProducts[routineItem.product_id].nextRoutine != false ? allProducts[routineItem.product_id].nextRoutine.variantId : false ;
-      if (upgradeSystem != false && otherItemIds.includes(upgradeItem)) {
-        reloadCart = true;
-        alertStatus = 'success';
-        alertMessage = window.theme.cartSettings.upgradability.alert;
-        let itemRemove = data.items.filter((item) => item.variant_id == upgradeItem)[0].key;
-        await removeMultiple([itemRemove, routineItem.key]);
-        await addItemtoCart(upgradeSystem);
       }
     }
   }
