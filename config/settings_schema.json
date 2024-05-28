@@ -1216,7 +1216,7 @@
       },
       {
         "type": "number",
-        "id": "max_number_per_cart",
+        "id": "max_routines_per_cart",
         "label": "Maximum # of Routines allowed per order",
         "default": 3
       }
