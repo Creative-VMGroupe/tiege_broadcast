@@ -3028,18 +3028,35 @@
           .then((response) => response.json())
           .then((response) => {
             var allProducts = window.theme.cartSettings.products;
+            let isRoutine = allProducts[formDataObj['product-id']].isRoutine;
             let routineItems = response.items.filter((item) => allProducts[item.product_id].isRoutine);
             let itemExists = response.items.filter((item) => (item.variant_id == formDataObj.id));
-            console.log(formDataObj, routineItems, itemExists);
-            // const element = document.createElement('div');
-            // element.innerHTML = response;
-
-            // const cleanResponse = element.querySelector(selectors$U.apiContent);
-            // this.build(cleanResponse);
+            console.log(formDataObj, routineItems, itemExists, isRoutine);
+            if (isRoutine && itemExists.length > 0) {
+              let cartItems = document.querySelector('.cart-alert');
+              cartItems.innerHTML = `<div class="alert-confirm">
+                <p class="cart__item__title cart__item__alert-custom">You already have this routine in your bag. Increase the quantity ?</p>
+                <div class="buttons-holder">
+                  <button type="button" data-continue-alert class="btn btn--primary btn--solid">Yes Please !</button>
+                  <button type="button" data-remove-alert class="btn btn--primary btn--outline">Cancel</button>
+                </div>
+              </div>`;
+              let replaceButton = cartItems.querySelector('[data-continue-alert]');
+              let closeButton = cartItems.querySelector('[data-remove-alert]');
+              replaceButton.addEventListener("click", (e) => {
+                this.addToCart(formData, button);
+                cartItems.innerHTML = '';
+              });
+              closeButton.addEventListener("click", (e) => {
+                cartItems.innerHTML = '';
+              });
+              // Going to increase the number of routine items
+              return;  
+            }
+            
+            this.addToCart(formData, button);
           })
           .catch((error) => console.log(error));
-        console.log('Item Added to Cart');
-        this.addToCart(formData, button);
       }
 
       /**
