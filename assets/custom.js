@@ -538,7 +538,8 @@ async function addedCartFunction(addedItem, data) {
           await addItemtoCart(theme.cartSettings.giftItem.variantId);
         }
       } else {
-        if (giftExists.length > 0) {
+        let eligibleItemsinCart = data.items.filter(item => eligibleProducts.includes(item.product_id));
+        if (eligibleItemsinCart.length === 0 && giftExists.length > 0) {
           reloadCart = true;
           alertStatus = 'error';
           alertMessage = window.theme.cartSettings.giftItem.error_alert;
@@ -637,10 +638,8 @@ async function updatedCartFunction(data) {
   
   if (theme.cartSettings.giftItem.enabled) {
     let giftExists = data.items.filter((item) => item.product_id == theme.cartSettings.giftItem.productId);
-    if (giftExists.length) {
+    if (giftExists.length > 0) {
       let giftQty = giftExists[0]['quantity'];
-
-      console.log(giftQty);
 
       if (giftQty > 1) {
         reloadCart = true;
@@ -651,14 +650,14 @@ async function updatedCartFunction(data) {
     if (theme.cartSettings.giftItem.method == "cart") {
       let minCartValue = parseInt(theme.cartSettings.giftItem.cartValue * 100);
       if (data.total_price > minCartValue) {
-        if (!giftExists.length) {
+        if (giftExists.length === 0) {
           reloadCart = true;
           alertStatus = 'success';
           alertMessage = window.theme.cartSettings.giftItem.success_alert;
           await addItemtoCart(theme.cartSettings.giftItem.variantId);
         }
       } else {
-        if (giftExists.length) {
+        if (giftExists.length > 0) {
           reloadCart = true;
           alertStatus = 'error';
           alertMessage = window.theme.cartSettings.giftItem.error_alert;
@@ -668,15 +667,15 @@ async function updatedCartFunction(data) {
     } else {
       let eligibleProducts = theme.cartSettings.giftItem.collection.split(",").map( Number );
       let eligibleItemsinCart = data.items.filter(item => eligibleProducts.includes(item.product_id));
-      if (eligibleItemsinCart.length) {
-        if (!giftExists.length) {
+      if (eligibleItemsinCart.length > 0) {
+        if (giftExists.length === 0) {
           reloadCart = true;
           alertStatus = 'success';
           alertMessage = window.theme.cartSettings.giftItem.success_alert;
           await addItemtoCart(theme.cartSettings.giftItem.variantId);
         }
       } else {
-        if (giftExists.length) {
+        if (giftExists.length > 0) {
           reloadCart = true;
           alertStatus = 'error';
           alertMessage = window.theme.cartSettings.giftItem.error_alert;
