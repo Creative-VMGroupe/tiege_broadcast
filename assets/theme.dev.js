@@ -3421,7 +3421,7 @@
        */
       enableCartButtons() {
         const inputs = this.cart.querySelectorAll('input');
-        const buttons = this.cart.querySelectorAll(`button, ${selectors$U.cartItemRemove}`);
+        const buttons = this.cart.querySelectorAll(`button:not[data-disabled], ${selectors$U.cartItemRemove}`);
 
         if (inputs.length) {
           inputs.forEach((item) => {
