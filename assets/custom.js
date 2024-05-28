@@ -560,8 +560,9 @@ async function addedCartFunction(addedItem, data) {
       alertStatus = '';
       alertMessage = '';
       if (window.theme.cartSettings.singleRoutine.show_alert) {
-        await showMessageDuplicateRoutine(routineItem.key);
         // await changeItemQty(routineItem.key, '0');
+        await showMessageDuplicateRoutine(routineItem.key);
+        return;
       }
     }
   }
