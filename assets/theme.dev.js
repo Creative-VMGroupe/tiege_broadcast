@@ -3059,7 +3059,7 @@
               cartItems.innerHTML = `<div class="alert-confirm">
                 <p class="cart__item__title cart__item__alert-custom">You already have this routine in your bag. Increase the quantity ?</p>
                 <div class="buttons-holder">
-                  <button type="button" data-continue-alert class="btn btn--primary btn--solid">Yes Please !</button>
+                  <button type="button" data-continue-alert class="btn btn--primary btn--solid">Confirm</button>
                   <button type="button" data-remove-alert class="btn btn--primary btn--outline">Cancel</button>
                 </div>
               </div>`;
