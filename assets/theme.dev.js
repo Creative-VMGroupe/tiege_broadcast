@@ -3029,7 +3029,7 @@
           .then((response) => {
             var allProducts = window.theme.cartSettings.products;
             let routineItems = response.items.filter((item) => allProducts[item.product_id].isRoutine);
-            let itemExists = response.items.filter((item) => item.variant_id == formData['id']);
+            let itemExists = response.items.filter((item) => (item.variant_id == formDataObj.id));
             console.log(formDataObj, routineItems, itemExists);
             // const element = document.createElement('div');
             // element.innerHTML = response;
