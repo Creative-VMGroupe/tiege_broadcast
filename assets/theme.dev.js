@@ -3276,8 +3276,8 @@
           .then(this.cartErrorsHandler)
           .then((response) => response.json())
           .then((response) => {
-            let currentItem = response.items.filter((item) => item.key == updateData.id);
-            let formDataObj = currentItem[0]
+            let currentItemInfo = response.items.filter((item) => item.key == updateData.id);
+            let formDataObj = currentItemInfo[0]
 
             var allProducts = window.theme.cartSettings.products;
             let isRoutine = allProducts[formDataObj.product_id].isRoutine;
