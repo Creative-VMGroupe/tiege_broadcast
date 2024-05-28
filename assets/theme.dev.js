@@ -3055,7 +3055,7 @@
             // }
 
             if (itemExists.length > 0 && itemExists[0].quantity === 3) {
-              this.addToCartError('You can only add a maximum of 3 of the same product to bag.', button);
+              this.addToCartError({data: 'Error', description: 'You can only add a maximum of 3 of the same product to bag.'}, button);
               return;
             }
             
