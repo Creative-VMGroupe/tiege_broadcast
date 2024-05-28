@@ -3050,7 +3050,6 @@
               closeButton.addEventListener("click", (e) => {
                 cartItems.innerHTML = '';
               });
-              // Going to increase the number of routine items
               return;  
             }
             
