@@ -1229,7 +1229,7 @@
         "id": "enable_duplicate_check",
         "label": "Enable Duplicate line item check",
         "default": true,
-        "info": "Alert customer if line item added to the cart exists in routine"
+        "info": "Alert customer if line item added to the bag exists in routine"
       },
       {
         "type": "text",
@@ -1242,7 +1242,7 @@
         "type": "text",
         "id": "duplication_alert_product",
         "label": "Alert Message - Product Added",
-        "info": "Alert to be displayed when product is added which exists in routine",
+        "info": "Alert to be displayed when product is added that exists in routine",
         "default": "You already have a routine in your bag that contains this product. Remove product ?"
       },
       {
@@ -1254,7 +1254,7 @@
         "id": "enable_upgrade_check",
         "label": "Enable Upgradability Check",
         "default": true,
-        "info": "Alert customer if line item(s) and routine added to the cart are upgradable"
+        "info": "Upgrade customer if line item(s) and routine added to the cart are upgradable"
       },
       {
         "type": "text",
