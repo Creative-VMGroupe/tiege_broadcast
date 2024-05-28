@@ -3039,6 +3039,7 @@
               totalRoutines = totalRoutines + element.quantity;
             });
             let itemExists = response.items.filter((item) => (item.variant_id == formDataObj.id));
+            
             let productExists = response.items.filter((item) => (item.product_id == formDataObj['product-id']));
             let allVariantsCount = 0;
             productExists.forEach((element) => {
@@ -3049,8 +3050,8 @@
               this.addToCartError({message: 'Error', description: `This product is limited to ${max_allowed_qty} per order.`}, button);
               return;
             }
-            
-            if (isRoutine && itemExists.length > 0) {
+
+            if (isRoutine && window.theme.cartSettings.singleRoutine.enabled && window.theme.cartSettings.singleRoutine.show_alert) {
               let cartItems = document.querySelector('.cart-alert');
               cartItems.innerHTML = `<div class="alert-confirm">
                 <p class="cart__item__title cart__item__alert-custom">You already have this routine in your bag. Increase the quantity ?</p>
@@ -3069,9 +3070,18 @@
                 cartItems.innerHTML = '';
               });
               this.cartDrawer.dispatchEvent(new CustomEvent('theme:cart-drawer:show'));
-              return;  
+              return;
             }
 
+            if (isRoutine && window.theme.cartSettings.singleRoutine.enabled && !window.theme.cartSettings.singleRoutine.show_alert && totalRoutines > 0) {
+              this.addToCartError({message: 'Error', description: `Single routine per order is allowed.`}, button);
+              return;
+            }
+
+            if (isRoutine && window.theme.cartSettings.singleRoutine.enabled && window.theme.cartSettings.singleRoutine.show_alert && totalRoutines === max_allowed_routines) {
+              this.addToCartError({message: 'Error', description: `Single routine per order is allowed.`}, button);
+              return;
+            }
             
             this.addToCart(formData, button);
           })
