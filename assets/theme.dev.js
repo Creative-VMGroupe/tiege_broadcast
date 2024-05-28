@@ -3032,27 +3032,27 @@
             let routineItems = response.items.filter((item) => allProducts[item.product_id].isRoutine);
             let itemExists = response.items.filter((item) => (item.variant_id == formDataObj.id));
             console.log(formDataObj, routineItems, itemExists, isRoutine);
-            if (isRoutine && itemExists.length > 0) {
-              let cartItems = document.querySelector('.cart-alert');
-              cartItems.innerHTML = `<div class="alert-confirm">
-                <p class="cart__item__title cart__item__alert-custom">You already have this routine in your bag. Increase the quantity ?</p>
-                <div class="buttons-holder">
-                  <button type="button" data-continue-alert class="btn btn--primary btn--solid">Yes Please !</button>
-                  <button type="button" data-remove-alert class="btn btn--primary btn--outline">Cancel</button>
-                </div>
-              </div>`;
-              let replaceButton = cartItems.querySelector('[data-continue-alert]');
-              let closeButton = cartItems.querySelector('[data-remove-alert]');
-              replaceButton.addEventListener("click", (e) => {
-                this.addToCart(formData, button);
-                cartItems.innerHTML = '';
-              });
-              closeButton.addEventListener("click", (e) => {
-                cartItems.innerHTML = '';
-              });
-              this.cartDrawer.dispatchEvent(new CustomEvent('theme:cart-drawer:show'));
-              return;  
-            }
+            // if (isRoutine && itemExists.length > 0) {
+            //   let cartItems = document.querySelector('.cart-alert');
+            //   cartItems.innerHTML = `<div class="alert-confirm">
+            //     <p class="cart__item__title cart__item__alert-custom">You already have this routine in your bag. Increase the quantity ?</p>
+            //     <div class="buttons-holder">
+            //       <button type="button" data-continue-alert class="btn btn--primary btn--solid">Yes Please !</button>
+            //       <button type="button" data-remove-alert class="btn btn--primary btn--outline">Cancel</button>
+            //     </div>
+            //   </div>`;
+            //   let replaceButton = cartItems.querySelector('[data-continue-alert]');
+            //   let closeButton = cartItems.querySelector('[data-remove-alert]');
+            //   replaceButton.addEventListener("click", (e) => {
+            //     this.addToCart(formData, button);
+            //     cartItems.innerHTML = '';
+            //   });
+            //   closeButton.addEventListener("click", (e) => {
+            //     cartItems.innerHTML = '';
+            //   });
+            //   this.cartDrawer.dispatchEvent(new CustomEvent('theme:cart-drawer:show'));
+            //   return;  
+            // }
 
             if (itemExists.length > 0 && itemExists[0].quantity === 3) {
               this.addToCartError('You can only add a maximum of 3 of the same product to bag.', button);
