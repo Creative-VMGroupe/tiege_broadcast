@@ -3082,7 +3082,7 @@
             }
 
             if (isRoutine && singleRoutineOnly && !showSinlgeRoutineAlert && totalRoutinesinCart > 0) {
-              this.addToCartError({message: 'Error', description: `Single routine per order is allowed.`}, button);
+              this.addToCartError({message: 'Error', description: `Only Single routine per order is allowed.`}, button);
               return;
             }
 
