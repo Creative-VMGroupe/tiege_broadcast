@@ -3026,7 +3026,7 @@
           .then((response) => response.json())
           .then((response) => {
             var allProducts = window.theme.cartSettings.products;
-            let routineItems = response.items.filter((item) => return allProducts[item.product_id].isRoutine);
+            let routineItems = response.items.filter((item) => allProducts[item.product_id].isRoutine);
             console.log(formData, routineItems);
             // const element = document.createElement('div');
             // element.innerHTML = response;
