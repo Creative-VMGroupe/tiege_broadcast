@@ -3051,7 +3051,7 @@
               return;
             }
 
-            if (isRoutine && window.theme.cartSettings.singleRoutine.enabled && window.theme.cartSettings.singleRoutine.show_alert) {
+            if (isRoutine && window.theme.cartSettings.singleRoutine.enabled && window.theme.cartSettings.singleRoutine.show_alert && itemExists) {
               let cartItems = document.querySelector('.cart-alert');
               cartItems.innerHTML = `<div class="alert-confirm">
                 <p class="cart__item__title cart__item__alert-custom">You already have this routine in your bag. Increase the quantity ?</p>
