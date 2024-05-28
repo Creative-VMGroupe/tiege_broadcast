@@ -1,13 +1,13 @@
-<!-- /snippets/animated-icon.liquid -->
+<!-- /snippets/animated-icon.liquidd -->
 
 {% comment %}
-    Renders an icon because render can't accept strings as variables
+  Renders an icon because render can't accept strings as variables
 
-    Accepts:
-    - filename: {String} name of icon
+  Accepts:
+  - filename: {String} name of icon
 
-    Usage:
-    {% render 'animated-icon', filename: block.settings.icon_name %}
+  Usage:
+  {% render 'animated-icon', filename: block.settings.icon_name %}
 {% endcomment %}
 
 {%- case filename -%}
