@@ -1656,8 +1656,21 @@
             });
           } else if (mediaNative) {
             if (this.hovered) {
+              
+              var playPromise = mediaNative.play();
+
+  if (playPromise !== undefined) {
+    playPromise.then(_ => {
               console.log('Test')
-              mediaNative.play();
+      // Automatic playback started!
+      // Show playing UI.
+    })
+    .catch(error => {
+      console.log('Test')
+      // Auto-play was prevented
+      // Show paused UI.
+    });
+  }
             } else {
               mediaNative.pause();
             }
