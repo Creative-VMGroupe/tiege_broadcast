@@ -3032,6 +3032,12 @@
             let routineItems = response.items.filter((item) => allProducts[item.product_id].isRoutine);
             let itemExists = response.items.filter((item) => (item.variant_id == formDataObj.id));
             console.log(formDataObj, routineItems, itemExists, isRoutine);
+            
+            if (itemExists.length > 0 && itemExists[0].quantity === 3) {
+              this.addToCartError({data: 'Error', description: 'You can only add a maximum of 3 of the same product to bag.'}, button);
+              return;
+            }
+            
             // if (isRoutine && itemExists.length > 0) {
             //   let cartItems = document.querySelector('.cart-alert');
             //   cartItems.innerHTML = `<div class="alert-confirm">
@@ -3054,10 +3060,6 @@
             //   return;  
             // }
 
-            if (itemExists.length > 0 && itemExists[0].quantity === 3) {
-              this.addToCartError({data: 'Error', description: 'You can only add a maximum of 3 of the same product to bag.'}, button);
-              return;
-            }
             
             this.addToCart(formData, button);
           })
