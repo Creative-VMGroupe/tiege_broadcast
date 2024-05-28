@@ -1194,6 +1194,13 @@
         "default": true
       },
       {
+        "type": "checkbox",
+        "id": "show_alert_single_routine",
+        "label": "Show alert only ?",
+        "default": true,
+        "info": "If checked, customer will be presented with a alert message"
+      },
+      {
         "type": "text",
         "id": "single_routine_tag",
         "label": "Routine Tag",
@@ -1205,7 +1212,7 @@
         "id": "single_routine_alert",
         "label": "Alert Message",
         "info": "Specify message to be displayed upon replacing the routine in the cart",
-        "default": "Only one routine is allowed per purchase. Your cart has been updated with your selection."
+        "default": "You already have a routine in your bag. Replace the routine ?"
       }
     ]
   },
@@ -1225,10 +1232,17 @@
       },
       {
         "type": "text",
-        "id": "duplication_alert",
-        "label": "Alert Message",
-        "info": "Specify message to be displayed if duplication found in the cart",
-        "default": "Product(s) previously in your cart are already included in this system, so they have been removed automatically."
+        "id": "duplication_alert_routine",
+        "label": "Alert Message - Routine",
+        "info": "Alert to be displayed when",
+        "default": "You already have a routine in your bag that contains this product. Remove product?"
+      },
+      {
+        "type": "text",
+        "id": "duplication_alert_product",
+        "label": "Alert Message - Product",
+        "info": "Alert to be displayed when routine is added routine found in the cart",
+        "default": "This routine includes products in your bag. Remove product(s)?"
       },
       {
         "type": "header",
@@ -1246,7 +1260,7 @@
         "id": "upgrade_alert",
         "label": "Alert Message",
         "info": "Specify message to be displayed if route upgraded",
-        "default": "Product(s) previously in your cart are already upgradable to a cheaper system, so they have been upgraded automatically."
+        "default": "We've upgraded your system to include the products you selected for a discounted price."
       }
     ]
   }
