@@ -1660,15 +1660,13 @@
               var playPromise = mediaNative.play();
 
   if (playPromise !== undefined) {
-    playPromise.then(_ => {
-              console.log('Test')
-      // Automatic playback started!
-      // Show playing UI.
+    playPromise.then( () => {
+              console.log('Testing')
+
     })
     .catch(error => {
       console.log('Error')
-      // Auto-play was prevented
-      // Show paused UI.
+
     });
   }
             } else {
