@@ -212,6 +212,7 @@
               class="cart__quantity-plus"
               type="button"
               name="increase"
+              data-max-allowed="{{ line_item.product.metafields.custom.max_qty_per_order }}"
               title="{{ 'cart.general.increase_quantity_label' | t }} - {{ line_item.product.title | strip_html }}">
               {%- render 'icon-plus' -%}
             </button>
