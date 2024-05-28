@@ -3299,6 +3299,9 @@
             if (productExists.length > 0 && allVariantsCount === max_allowed_qty) {
               this.updateErrorText(`This product is limited to ${max_allowed_qty} per order.`);
               this.toggleErrorMessage();
+              this.cartUpdateFailed = true;
+              this.resetLineItem(currentItem);
+              this.enableCartButtons();
               return;
             }
 
@@ -3308,16 +3311,25 @@
             if (isRoutine && singleRoutineOnly && showSinlgeRoutineAlert && totalRoutinesinCart === max_allowed_routines) {
               this.updateErrorText(`Maximum number of allowed routine(s) per order are already added to the bag.`);
               this.toggleErrorMessage();
+              this.cartUpdateFailed = true;
+              this.resetLineItem(currentItem);
+              this.enableCartButtons();
               return;
             }
 
             if (updatedQuantity > max_allowed_qty) {
               this.updateErrorText(`This product is limited to ${max_allowed_qty} per order.`);
               this.toggleErrorMessage();
+              this.cartUpdateFailed = true;
+              this.resetLineItem(currentItem);
+              this.enableCartButtons();
               return;
             }
 
             if (isRoutine && singleRoutineOnly && !showSinlgeRoutineAlert && totalRoutinesinCart > 0) {
+              this.cartUpdateFailed = true;
+              this.resetLineItem(currentItem);
+              this.enableCartButtons();
               return;
             }
             
