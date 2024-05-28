@@ -3086,8 +3086,6 @@
               return;
             }
 
-            console.log('ATC allowed');
-            
             this.addToCart(formData, button);
           })
           .catch((error) => console.log(error));
