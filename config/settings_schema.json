@@ -1128,7 +1128,7 @@
         "type": "product",
         "id": "gift_item",
         "label": "Free Gift Item",
-        "info": "The first available varint of this product will be added to the cart upon eligibility"
+        "info": "The first available varint of this product will be added to the bag upon eligibility"
       },
       {
         "type": "radio",
@@ -1136,7 +1136,7 @@
         "label": "Condition to add Free Gift",
         "options": [
           {
-            "label": "Minimum Cart Value",
+            "label": "Minimum Bag Value",
             "value": "cart"
           },
           {
@@ -1149,15 +1149,15 @@
       {
         "type": "number",
         "id": "gift_item_cart_value",
-        "label": "Minimum Cart Value",
-        "info": "Only applicable if Minimum Cart Value is selected for Condition to add Free Gift",
+        "label": "Minimum Bag Value",
+        "info": "Only applicable if Minimum Bag Value is selected for Condition to add Free Gift",
         "default": 100
       },
       {
         "type": "collection",
         "id": "gift_item_collection",
         "label": "Collection",
-        "info": "The collection must be available on Online Store. If any line item in the cart is part of the above defined collection, the gift item will be added automatically."
+        "info": "The collection must be available on Online Store. If any line item in the Bag is part of the above defined collection, the gift item will be added automatically."
       },
       {
         "type": "header",
@@ -1167,26 +1167,21 @@
         "type": "text",
         "id": "gift_item_success",
         "label": "Success message",
-        "info": "Specify message to be displayed when gift item is added to the cart",
-        "default": "Your cart is eligible for the free gift."
+        "info": "Specify message to be displayed when gift item is added to the Bag",
+        "default": "Your bag is eligible for the free gift."
       },
       {
         "type": "text",
         "id": "gift_item_error",
         "label": "Error message",
-        "info": "Specify message to be displayed when gift item is removed from the cart",
-        "default": "Your cart is not eligible for the free gift."
+        "info": "Specify message to be displayed when gift item is removed from the bag",
+        "default": "Your bag is not eligible for the free gift."
       }
     ]
   },
   {
     "name": "Single Routine Configuration",
     "settings": [
-      {
-        "type": "header",
-        "content": "Single Routine in One Order Settings",
-        "info": "Only one routine is allowed to add at a time in the cart and proceed to checkout"
-      },
       {
         "type": "checkbox",
         "id": "enable_single_routine",
@@ -1196,7 +1191,7 @@
       {
         "type": "checkbox",
         "id": "show_alert_single_routine",
-        "label": "Show alert only ?",
+        "label": "Show alert ?",
         "default": true,
         "info": "If checked, customer will be presented with a alert message"
       },
@@ -1211,13 +1206,13 @@
         "type": "text",
         "id": "single_routine_alert",
         "label": "Alert Message",
-        "info": "Specify message to be displayed upon replacing the routine in the cart",
+        "info": "Specify message to be displayed upon replacing the routine in the bag",
         "default": "You already have a routine in your bag. Replace the routine ?"
       },
       {
         "type": "number",
         "id": "max_routines_per_cart",
-        "label": "Maximum # of Routines allowed per order",
+        "label": "Maximum # of routines allowed per order",
         "default": 3
       }
     ]
@@ -1239,16 +1234,16 @@
       {
         "type": "text",
         "id": "duplication_alert_routine",
-        "label": "Alert Message - Routine",
-        "info": "Alert to be displayed when",
-        "default": "You already have a routine in your bag that contains this product. Remove product?"
+        "label": "Alert Message - Routine Added",
+        "info": "Alert to be displayed when routine is added with existing product(s) in the cart",
+        "default": "This routine includes products in your bag. Remove product(s)?"
       },
       {
         "type": "text",
         "id": "duplication_alert_product",
-        "label": "Alert Message - Product",
-        "info": "Alert to be displayed when routine is added routine found in the cart",
-        "default": "This routine includes products in your bag. Remove product(s)?"
+        "label": "Alert Message - Product Added",
+        "info": "Alert to be displayed when product is added which exists in routine",
+        "default": "You already have a routine in your bag that contains this product. Remove product ?"
       },
       {
         "type": "header",
