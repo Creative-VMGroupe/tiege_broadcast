@@ -3260,6 +3260,18 @@
         }
         this.disableCartButtons();
 
+
+        const newItem = this.cart.querySelector(`[${attributes$y.item}="${updateData.id}"]`) || currentItem;
+        const lineIndex = newItem?.hasAttribute(attributes$y.itemIndex) ? parseInt(newItem.getAttribute(attributes$y.itemIndex)) : 0;
+        const itemTitle = newItem?.hasAttribute(attributes$y.itemTitle) ? newItem.getAttribute(attributes$y.itemTitle) : null;
+
+        if (lineIndex === 0) return;
+
+        const data = {
+          line: lineIndex,
+          quantity: updatedQuantity,
+        };
+
         fetch(theme.routes.cart_url + '.js')
           .then(this.cartErrorsHandler)
           .then((response) => response.json())
@@ -3326,17 +3338,6 @@
             // this.addToCart(formData, button);
           })
           .catch((error) => console.log(error));
-
-        const newItem = this.cart.querySelector(`[${attributes$y.item}="${updateData.id}"]`) || currentItem;
-        const lineIndex = newItem?.hasAttribute(attributes$y.itemIndex) ? parseInt(newItem.getAttribute(attributes$y.itemIndex)) : 0;
-        const itemTitle = newItem?.hasAttribute(attributes$y.itemTitle) ? newItem.getAttribute(attributes$y.itemTitle) : null;
-
-        if (lineIndex === 0) return;
-
-        const data = {
-          line: lineIndex,
-          quantity: updatedQuantity,
-        };
 
         fetch(theme.routes.cart_change_url, {
           method: 'post',
