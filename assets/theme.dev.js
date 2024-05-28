@@ -3277,95 +3277,82 @@
           .then((response) => response.json())
           .then((response) => {
             let currentItem = response.items.filter((item) => item.key == updateData.id);
-            console.log(currentItem);
-            // var allProducts = window.theme.cartSettings.products;
-            // let isRoutine = allProducts[formDataObj['product-id']].isRoutine;
-            // let routineItemsinCart = response.items.filter((item) => allProducts[item.product_id].isRoutine);
-            // let totalRoutinesinCart = 0;
-            // routineItemsinCart.forEach((element) => { 
-            //   totalRoutinesinCart = totalRoutinesinCart + element.quantity;
-            // });
-            // let max_allowed_routines = window.theme.cartSettings.singleRoutine.max_routines_per_cart;
+            if (currentItem.length == 0) {
+              continue;
+            }
+            let formDataObj = currentItem[0]
+
+            var allProducts = window.theme.cartSettings.products;
+            let isRoutine = allProducts[formDataObj.product_id].isRoutine;
+            let routineItemsinCart = response.items.filter((item) => allProducts[item.product_id].isRoutine);
+            let totalRoutinesinCart = 0;
+            routineItemsinCart.forEach((element) => { 
+              totalRoutinesinCart = totalRoutinesinCart + element.quantity;
+            });
+            let max_allowed_routines = window.theme.cartSettings.singleRoutine.max_routines_per_cart;
             
-            // let itemExists = response.items.filter((item) => (item.variant_id == formDataObj.id));
-            // let max_allowed_qty = allProducts[formDataObj['product-id']].max_qty_per_order;
-            // let productExists = response.items.filter((item) => (item.product_id == formDataObj['product-id']));
-            // let allVariantsCount = 0;
-            // productExists.forEach((element) => {
-            //   allVariantsCount = allVariantsCount + element.quantity;
-            // });
+            let max_allowed_qty = allProducts[formDataObj.product_id].max_qty_per_order;
+            
+            let productExists = response.items.filter((item) => (item.product_id == formDataObj.product_id));
+            let allVariantsCount = 0;
+            productExists.forEach((element) => {
+              allVariantsCount = allVariantsCount + element.quantity;
+            });
 
-            // if (productExists.length > 0 && allVariantsCount === max_allowed_qty) {
-            //   this.addToCartError({message: 'Error', description: `This product is limited to ${max_allowed_qty} per order.`}, button);
-            //   return;
-            // }
-
-            // let singleRoutineOnly = window.theme.cartSettings.singleRoutine.enabled;
-            // let showSinlgeRoutineAlert = window.theme.cartSettings.singleRoutine.show_alert;
-
-            // if (isRoutine && singleRoutineOnly && showSinlgeRoutineAlert && itemExists.length > 0) {
-            //   let cartItems = document.querySelector('.cart-alert');
-            //   cartItems.innerHTML = `<div class="alert-confirm">
-            //     <p class="cart__item__title cart__item__alert-custom">You already have this routine in your bag. Increase the quantity ?</p>
-            //     <div class="buttons-holder">
-            //       <button type="button" data-continue-alert class="btn btn--primary btn--solid">Confirm</button>
-            //       <button type="button" data-remove-alert class="btn btn--primary btn--outline">Cancel</button>
-            //     </div>
-            //   </div>`;
-            //   let replaceButton = cartItems.querySelector('[data-continue-alert]');
-            //   let closeButton = cartItems.querySelector('[data-remove-alert]');
-            //   replaceButton.addEventListener("click", (e) => {
-            //     this.addToCart(formData, button);
-            //     cartItems.innerHTML = '';
-            //   });
-            //   closeButton.addEventListener("click", (e) => {
-            //     cartItems.innerHTML = '';
-            //   });
-            //   this.cartDrawer.dispatchEvent(new CustomEvent('theme:cart-drawer:show'));
-            //   return;
-            // }
-
-            // if (isRoutine && singleRoutineOnly && showSinlgeRoutineAlert && totalRoutinesinCart === max_allowed_routines) {
-            //   this.addToCartError({message: 'Error', description: `Maximum number of allowed routine(s) per order are already added to the bag.`}, button);
-            //   return;
-            // }
-
-            // if (isRoutine && singleRoutineOnly && !showSinlgeRoutineAlert && totalRoutinesinCart > 0) {
-            //   this.addToCartError({message: 'Error', description: `Only Single routine per order is allowed.`}, button);
-            //   return;
-            // }
-
-            // this.addToCart(formData, button);
-          })
-          .catch((error) => console.log(error));
-
-        fetch(theme.routes.cart_change_url, {
-          method: 'post',
-          headers: {'Content-Type': 'application/json', Accept: 'application/json'},
-          body: JSON.stringify(data),
-        })
-          .then((response) => {
-            return response.text();
-          })
-          .then((state) => {
-            const parsedState = JSON.parse(state);
-
-            if (parsedState.errors) {
-              this.cartUpdateFailed = true;
-              this.updateErrorText(itemTitle);
+            if (productExists.length > 0 && allVariantsCount === max_allowed_qty) {
+              this.updateErrorText(`This product is limited to ${max_allowed_qty} per order.`);
               this.toggleErrorMessage();
-              this.resetLineItem(currentItem);
-              this.enableCartButtons();
-
               return;
             }
 
-            this.getCart();
+            let singleRoutineOnly = window.theme.cartSettings.singleRoutine.enabled;
+            let showSinlgeRoutineAlert = window.theme.cartSettings.singleRoutine.show_alert;
+
+            if (isRoutine && singleRoutineOnly && showSinlgeRoutineAlert && totalRoutinesinCart === max_allowed_routines) {
+              this.updateErrorText(`Maximum number of allowed routine(s) per order are already added to the bag.`);
+              this.toggleErrorMessage();
+              return;
+            }
+
+            if (updatedQuantity > max_allowed_qty) {
+              this.updateErrorText(`This product is limited to ${max_allowed_qty} per order.`);
+              this.toggleErrorMessage();
+              return;
+            }
+
+            if (isRoutine && singleRoutineOnly && !showSinlgeRoutineAlert && totalRoutinesinCart > 0) {
+              return;
+            }
+            
+            fetch(theme.routes.cart_change_url, {
+              method: 'post',
+              headers: {'Content-Type': 'application/json', Accept: 'application/json'},
+              body: JSON.stringify(data),
+            })
+              .then((response) => {
+                return response.text();
+              })
+              .then((state) => {
+                const parsedState = JSON.parse(state);
+    
+                if (parsedState.errors) {
+                  this.cartUpdateFailed = true;
+                  this.updateErrorText(itemTitle);
+                  this.toggleErrorMessage();
+                  this.resetLineItem(currentItem);
+                  this.enableCartButtons();
+    
+                  return;
+                }
+    
+                this.getCart();
+              })
+              .catch((error) => {
+                console.log(error);
+                this.enableCartButtons();
+              });
           })
-          .catch((error) => {
-            console.log(error);
-            this.enableCartButtons();
-          });
+          .catch((error) => console.log(error));
       }
 
       updateCartSwitch(updateData = {}, currentItem = null, newItemData = {}) {
