@@ -3040,13 +3040,15 @@
             });
             let itemExists = response.items.filter((item) => (item.variant_id == formDataObj.id));
             let productExists = response.items.filter((item) => (item.product_id == formDataObj['product-id']));
-            console.log(formDataObj, routineItems, itemExists, isRoutine);
-            
-            if (itemExists.length > 0 && itemExists[0].quantity === 3) {
-              this.addToCartError({data: 'Error', description: 'You can only add a maximum of 3 of the same product to bag.'}, button);
+            let allVariantsCount = 0;
+            productExists.forEach((element) => {
+              allVariantsCount = allVariantsCount + element.quantity;
+            });
+
+            if (productExists.length && allVariantsCount === max_allowed_qty) {
+              this.addToCartError({message: 'Error', description: `This product is limited to ${max_allowed_qty} per order.`}, button);
               return;
             }
-
             
             if (isRoutine && itemExists.length > 0) {
               let cartItems = document.querySelector('.cart-alert');
