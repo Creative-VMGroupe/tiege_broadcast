@@ -3022,16 +3022,24 @@
         }
         const formDataObj = {};
         formData.forEach((value, key) => (formDataObj[key] = value));
+        
         event.preventDefault();
+        
         fetch(theme.routes.cart_url + '.js')
           .then(this.cartErrorsHandler)
           .then((response) => response.json())
           .then((response) => {
             var allProducts = window.theme.cartSettings.products;
             let isRoutine = allProducts[formDataObj['product-id']].isRoutine;
+            let max_allowed_routines = window.theme.cartSettings.singleRoutine.max_routines_per_cart;
+            let max_allowed_qty = allProducts[formDataObj['product-id']].max_qty_per_order;
             let routineItems = response.items.filter((item) => allProducts[item.product_id].isRoutine);
-            let totalRoutines = routineItems.each
+            let totalRoutines = 0;
+            routineItems.forEach((element) => { 
+              totalRoutines = totalRoutines + element.quantity;
+            });
             let itemExists = response.items.filter((item) => (item.variant_id == formDataObj.id));
+            let productExists = response.items.filter((item) => (item.product_id == formDataObj['product-id']));
             console.log(formDataObj, routineItems, itemExists, isRoutine);
             
             if (itemExists.length > 0 && itemExists[0].quantity === 3) {
