@@ -199,8 +199,8 @@
         "align_text": "text-left",
         "bg_color": "#000000",
         "color": "#ffffff",
-        "padding_top": 100,
-        "padding_bottom": 100
+        "padding_top": 200,
+        "padding_bottom": 200
       }
     },
     "section_media_gallery_UBVVEG": {
