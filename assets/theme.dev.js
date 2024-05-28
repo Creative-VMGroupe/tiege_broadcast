@@ -3277,9 +3277,6 @@
           .then((response) => response.json())
           .then((response) => {
             let currentItem = response.items.filter((item) => item.key == updateData.id);
-            if (currentItem.length == 0) {
-              continue;
-            }
             let formDataObj = currentItem[0]
 
             var allProducts = window.theme.cartSettings.products;
