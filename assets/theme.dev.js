@@ -3085,6 +3085,8 @@
               this.addToCartError({message: 'Error', description: `Single routine per order is allowed.`}, button);
               return;
             }
+
+            console.log('ATC allowed');
             
             this.addToCart(formData, button);
           })
