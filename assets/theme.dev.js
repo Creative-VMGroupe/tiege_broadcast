@@ -3031,22 +3031,22 @@
           .then((response) => {
             var allProducts = window.theme.cartSettings.products;
             let isRoutine = allProducts[formDataObj['product-id']].isRoutine;
-            let max_allowed_routines = window.theme.cartSettings.singleRoutine.max_routines_per_cart;
-            let max_allowed_qty = allProducts[formDataObj['product-id']].max_qty_per_order;
-            let routineItems = response.items.filter((item) => allProducts[item.product_id].isRoutine);
-            let totalRoutines = 0;
-            routineItems.forEach((element) => { 
-              totalRoutines = totalRoutines + element.quantity;
+            let routineItemsinCart = response.items.filter((item) => allProducts[item.product_id].isRoutine);
+            let totalRoutinesinCart = 0;
+            routineItemsinCart.forEach((element) => { 
+              totalRoutinesinCart = totalRoutinesinCart + element.quantity;
             });
-            let itemExists = response.items.filter((item) => (item.variant_id == formDataObj.id));
+            let max_allowed_routines = window.theme.cartSettings.singleRoutine.max_routines_per_cart;
             
+            let itemExists = response.items.filter((item) => (item.variant_id == formDataObj.id));
+            let max_allowed_qty = allProducts[formDataObj['product-id']].max_qty_per_order;
             let productExists = response.items.filter((item) => (item.product_id == formDataObj['product-id']));
             let allVariantsCount = 0;
             productExists.forEach((element) => {
               allVariantsCount = allVariantsCount + element.quantity;
             });
 
-            if (productExists.length && allVariantsCount === max_allowed_qty) {
+            if (productExists.length > 0 && allVariantsCount === max_allowed_qty) {
               this.addToCartError({message: 'Error', description: `This product is limited to ${max_allowed_qty} per order.`}, button);
               return;
             }
@@ -3073,12 +3073,12 @@
               return;
             }
 
-            if (isRoutine && window.theme.cartSettings.singleRoutine.enabled && !window.theme.cartSettings.singleRoutine.show_alert && totalRoutines > 0) {
+            if (isRoutine && window.theme.cartSettings.singleRoutine.enabled && !window.theme.cartSettings.singleRoutine.show_alert && totalRoutinesinCart > 0) {
               this.addToCartError({message: 'Error', description: `Single routine per order is allowed.`}, button);
               return;
             }
 
-            if (isRoutine && window.theme.cartSettings.singleRoutine.enabled && window.theme.cartSettings.singleRoutine.show_alert && totalRoutines === max_allowed_routines) {
+            if (isRoutine && window.theme.cartSettings.singleRoutine.enabled && window.theme.cartSettings.singleRoutine.show_alert && totalRoutinesinCart === max_allowed_routines) {
               this.addToCartError({message: 'Error', description: `Max number of allowed routine(s) per order are already allowed to the bag.`}, button);
               return;
             }
