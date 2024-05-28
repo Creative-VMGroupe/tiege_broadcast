@@ -1666,7 +1666,7 @@
       // Show playing UI.
     })
     .catch(error => {
-      console.log('Test')
+      console.log('Error')
       // Auto-play was prevented
       // Show paused UI.
     });
