@@ -258,7 +258,7 @@
             "text_size": 14,
             "url": "",
             "image": "shopify:\/\/shop_images\/AdobeStock_326040122.jpg",
-            "color": "#000000",
+            "color": "#ffffff",
             "sub_color": "",
             "slide_bg_color": "rgba(0,0,0,0)",
             "border_color": ""
@@ -269,6 +269,10 @@
         "highlight_YnNdaD",
         "highlight_paqqFz",
         "highlight_aXCEVJ"
+      ],
+      "custom_css": [
+        ".image-wrapper {background-color: #000000;}",
+        ".image-wrapper img {opacity: 0.75;}"
       ],
       "settings": {
         "style": "rectangle",
