@@ -14,33 +14,16 @@
     {%- endif -%}
   </div>
 {%- else -%}
-  {%- if block.settings.style == 'inline' -%}
+  {%- if block.type == 'description' -%}
     <div class="product__block product__description rte block-padding" {{ block.shopify_attributes }} {{ block_style }}>
       {%- if product.description != blank -%}
         <div class="product__description__content rte">
-          {% comment %} Inline product description {% endcomment %}
-{%- assign product_description_content = product.description | strip -%}
-
-{%- if block.settings.show_read_more -%}
-  <toggle-ellipsis data-height="175">
-    <div class="toggle-ellipsis__content" data-content>
-      {{ product_description_content }}
-    </div>
-
-    <div class="toggle-ellipsis__actions" data-actions>
-      <button type="button" class="caps--link" data-button>
-        <span>{{ 'products.general.read_more' | t }}</span>
-      </button>
-    </div>
-  </toggle-ellipsis>
-{%- else -%}
-  {{ product_description_content }}
-{%- endif -%}
+          {%- render 'toggle-ellipsis', content: product.description, show_read_more: block.settings.show_read_more -%}
         </div>
       {%- endif -%}
     </div>
   {%- else -%}
-    <div class="product__block tabs-wrapper block-padding" {{ block.shopify_attributes }} {{ block_style }}>
+    <div class="product__block{% if block.type == 'tab_richtext' %} product__block--tabs{% elsif block.type == 'accordion' %} product__block--accordion{% if block.settings.padding_bottom == 0 %} product__block--accordion-clear{% endif %}{% endif %} tabs-wrapper block-padding" {{ block_style }}>
       {%- render 'product-tabs', product: product, block: block -%}
     </div>
   {%- endif -%}

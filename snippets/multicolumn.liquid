@@ -118,7 +118,7 @@
 {%- endstyle -%}
 
 <div id="{{ unique }}"
-  class="multicolumn-custom section-columns section-padding"
+  class="section-columns section-padding"
   data-section-id="{{ section.id }}"
   data-section-type="columns">
   <div class="{{ section.settings.width }}">
@@ -232,7 +232,6 @@
 
             {%- case block.type -%}
               {%- when 'image' -%}
-              {% if title != blank %}
                 <div class="grid-item"
                   {{ block_style }}
                   {% if enable_slider %}
@@ -282,14 +281,14 @@
 
                     <div class="column__content">
                       {%- if title != blank -%}
-                        {%- assign font_size_class = section.settings.item_heading_size | prepend: 'heading-size-' -%}
+                        {%- assign font_size_class = block.settings.heading_size | prepend: 'heading-size-' -%}
                         <h2 class="column__heading {{ font_size_class }}">
                           {{- title -}}
                         </h2>
                       {%- endif -%}
 
                       {%- if text != blank -%}
-                        {%- assign font_size_class = section.settings.text_size | prepend: 'body-size-' -%}
+                        {%- assign font_size_class = block.settings.text_size | prepend: 'body-size-' -%}
                         <div class="column__text rte {{ text_style }} {{ font_size_class }}">
                           {{- text -}}
                         </div>
@@ -309,15 +308,15 @@
                     </div>
                   </div>
                 </div>
-              {%- endif -%}
+
               {%- when 'icon' -%}
                 {%- capture icon_style -%}
                   --icon-size: {{ icon_size }}px;
 
                   {%- if title != blank -%}
-                    --icon-line-height: calc(1.2 * var(--font-{{ section.settings.item_heading_size }}) * var(--FONT-ADJUST-HEADING));
+                    --icon-line-height: calc(1.2 * var(--font-{{ block.settings.heading_size }}) * var(--FONT-ADJUST-HEADING));
                   {%- elsif text != blank-%}
-                    --icon-line-height: calc(1.5 * var(--font-{{ section.settings.text_size }}) * var(--FONT-ADJUST-BODY));
+                    --icon-line-height: calc(1.5 * var(--font-{{ block.settings.text_size }}) * var(--FONT-ADJUST-BODY));
                   {%- endif -%}
                 {%- endcapture -%}
 
@@ -349,9 +348,9 @@
                       </div>
 
                       {%- if title != blank or text != blank -%}
-                        <div class="column__content {% if section.settings.align_text == "text-center" %}p-0{% endif %}">
+                        <div class="column__content">
                           {%- if title != blank -%}
-                            {%- assign font_size_class = section.settings.item_heading_size | prepend: 'heading-size-' -%}
+                            {%- assign font_size_class = block.settings.heading_size | prepend: 'heading-size-' -%}
 
                             <h2 class="column__heading {{ font_size_class }}">
                               {{ title }}
@@ -359,7 +358,7 @@
                           {%- endif -%}
 
                           {%- if text != blank -%}
-                            {%- assign font_size_class = section.settings.text_size | prepend: 'body-size-' -%}
+                            {%- assign font_size_class = block.settings.text_size | prepend: 'body-size-' -%}
 
                             <div class="column__text rte {{ text_style }} {{ font_size_class }}">
                               {{ text }}
@@ -385,7 +384,7 @@
                     data-aos-order="{{ animation_order }}">
                     <div class="column__content">
                       {%- if title != blank -%}
-                        {%- assign font_size_class = section.settings.item_heading_size | prepend: 'heading-size-' -%}
+                        {%- assign font_size_class = block.settings.heading_size | prepend: 'heading-size-' -%}
 
                         <h2 class="column__heading {{ font_size_class }}">
                           {{ title }}
@@ -393,7 +392,7 @@
                       {%- endif -%}
 
                       {%- if text != blank -%}
-                        {%- assign font_size_class = section.settings.text_size | prepend: 'body-size-' -%}
+                        {%- assign font_size_class = block.settings.text_size | prepend: 'body-size-' -%}
 
                         <div class="column__text rte {{ text_style }} {{ font_size_class }}">
                           {{ text }}
@@ -416,7 +415,7 @@
                 </div>
 
                 {%- when 'menu' -%}
-                  {%- assign font_size_class = section.settings.text_size | prepend: 'heading-size-' -%}
+                  {%- assign font_size_class = block.settings.text_size | prepend: 'heading-size-' -%}
                   {%- assign menu_linklist = block.settings.menu | default: 'main-menu' -%}
 
                   <div class="grid-item" {{ block_style }} {{ block.shopify_attributes }}>

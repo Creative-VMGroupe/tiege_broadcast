@@ -145,30 +145,30 @@
       "label": "Heading",
       "default": "Video"
     },
-        {
-          "type": "range",
-          "id": "heading_font",
-          "label": "Size",
-          "min": 24,
-          "max": 40,
-          "step": 8,
-          "default": 40
-        },
+    {
+      "type":  "range",
+      "id":    "heading_size",
+      "label": "Heading size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default":8
+    },
     {
       "type": "textarea",
       "id": "description",
       "label": "Text",
       "default": "Tell your brand's story through images."
     },
-        {
-          "type":  "range",
-          "id":    "text_font",
-          "label": "Size",
-          "min": 12,
-          "max": 16,
-          "step": 2,
-          "default": 16
-        },
+    {
+      "type":  "range",
+      "id":    "text_size",
+      "label": "Text size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default":3
+    },
     {
       "type": "select",
       "id": "flex_align",
@@ -187,23 +187,6 @@
       ]
     },
     {
-          "type": "select",
-          "id": "flex_align_mobile",
-          "label": "Mobile alignment",
-          "default": "align--middle-center-mobile",
-          "options": [
-            { "value": "align--top-left-mobile", "label": "Top left"},
-            { "value": "align--top-center-mobile", "label": "Top center"},
-            { "value": "align--top-right-mobile", "label": "Top right"},
-            { "value": "align--middle-left-mobile", "label": "Middle left"},
-            { "value": "align--middle-center-mobile", "label": "Absolute center"},
-            { "value": "align--middle-right-mobile", "label": "Middle right"},
-            { "value": "align--bottom-left-mobile", "label": "Bottom left"},
-            { "value": "align--bottom-center-mobile", "label": "Bottom center"},
-            { "value": "align--bottom-right-mobile", "label": "Bottom right"}
-          ]
-        },
-    {
       "type": "header",
       "content": "Colors"
     },
@@ -218,9 +201,9 @@
       "label": "Text",
       "default": "#FFFFFF"
     },
-     {
+    {
       "type": "header",
-      "content": "Button (Font size can be changed in Theme Setting)"
+      "content": "Button"
     },
     {
       "type": "text",

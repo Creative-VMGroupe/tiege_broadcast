@@ -11,13 +11,10 @@
 
   Usage:
   {% render 'media', media: media, featured_media: featured_media, enable_video_looping: enable_video_looping, sectionkey: section.id  %}
-  
-  assign media_aspect_ratio = media.aspect_ratio
-  
 {% endcomment %}
 {%- liquid
   assign image_size = '1024x1024'
-   
+  assign media_aspect_ratio = media.aspect_ratio
   unless media_aspect_ratio
     assign media_aspect_ratio = 1
   endunless
@@ -47,12 +44,10 @@
 -%}
 
 <div
-  class=" flickity_item_container-custom product__slide{% unless featured_media == media %} media--hidden{% else %} media--active{% endunless %}"
+  class="product__slide{% unless featured_media == media %} media--hidden{% else %} media--active{% endunless %}"
   data-image-id="{{ media.id }}"
   data-media-id="{{ sectionkey }}-{{ media.id }}"
   data-type="{{ media.media_type }}"
-  data-slide-index="{{ loop_index }}"
-  data-slide-position="{{ loop_index  }}"
   {% if media.media_type == 'video' or media.media_type == 'external_video' %}
     data-video
     data-video-id="{{ media.id }}"

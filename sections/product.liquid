@@ -76,7 +76,7 @@
   endcapture
 
   assign preorder = false
-  if current_variant.available and product.metafields.theme.preorder.type == 'boolean' and product.metafields.theme.preorder.value == true
+  if product.metafields.theme.preorder.type == 'boolean' and product.metafields.theme.preorder.value == true
     assign preorder = true
   endif
 
@@ -86,7 +86,7 @@
   endunless
 
   assign product_tags = product.tags | join: ','
-  if current_variant.available and product_tags contains '_preorder'
+  if product_tags contains '_preorder'
     assign preorder = true
   endif
 
@@ -103,7 +103,6 @@
 -%}
 
 {%- style -%}
-
   {%- if show_cart_bar -%}
     :root { --cart-bar-height: 80px; }
   {%- endif -%}
@@ -114,7 +113,6 @@
 
     --swatch-size: var(--swatch-size-product);
   }
-
 {%- endstyle -%}
 
 <div id="Product--{{ unique }}"
@@ -125,12 +123,13 @@
   data-enable-history-state="true"
   data-overlay-header
   data-sticky-enabled="{{ section.settings.product_sticky_enable }}"
+  data-variant-image-scroll="{{ section.settings.variant_image_scroll }}"
   {% if show_cart_bar %}data-cart-bar-enabled{% endif %}
 >
 
-  <div class="product__wrapper {{ product_wrapper_modifier }} product__wrapper-custom pdp-slider-custom" data-product>
+  <div class="product__wrapper {{ product_wrapper_modifier }}" data-product>
     <div class="product__wrapper__inner">
-      <div class="flickity-enabled-custom product__page">
+      <div class="product__page">
 
         <product-images
           class="{{ product_images_classlist }}"
@@ -138,10 +137,10 @@
           {% if enable_thumbs %}data-fader-desktop{% endif %}
           {% if enable_thumbs_mobile %}data-fader-mobile{% endif %}
         >
-          {%-  assign totalSlides = product.media.size -%}
+
           {%- if product.media.size > 0 -%}
             {%- capture product_slides_attributes -%}
-              class="flickity__container-custom product__slides product-single__photos"
+              class="product__slides product-single__photos"
               style="--featured-media-aspect-ratio: {{ featured_media_aspect_ratio | round: 2 }};"
               data-product-media-list
             {%- endcapture -%}
@@ -153,34 +152,13 @@
             {%- endif -%}
 
               {%- for media in product.media -%}
-                {%- render 'media', media: media, featured_media: featured_media, enable_video_looping: enable_video_looping, sectionkey: unique, image_width: image_width, cover: true, media_aspect_ratio: 1, loop_index: forloop.index -%}
+                {%- render 'media', media: media, featured_media: featured_media, enable_video_looping: enable_video_looping, sectionkey: unique, image_width: image_width, cover: true -%}
               {%- endfor -%}
 
             {%- if section.settings.enable_zoom -%}
               </zoom-images>
-
-{%- if totalSlides >= 2 -%}
-  
-    <div class='flickity-page-dots flickity-page-dots-custom'>
-  {%- for slide in (1..totalSlides) -%}
-      <button class='flickity-page-dot' data-dot-position="{{ slide }}"></button>
-  {%- endfor -%}
-    </div>
-{%- endif -%}
-              
             {%- else -%}
               </div>
-
-{%- if totalSlides >= 2 -%}
-  
-    <div class='flickity-page-dots flickity-page-dots-custom'>
-  {%- for slide in (1..totalSlides) -%}
-      <button class='flickity-page-dot' data-dot-position="{{ slide }}"></button>
-  {%- endfor -%}
-  
-    </div>
-{%- endif -%}
-              
             {%- endif -%}
 
             {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
@@ -246,7 +224,7 @@
         </product-images>
 
         <div class="product__content">
-          <div class="form__wrapper{% unless show_buy_buttons %} form__wrapper--no-buttons{% endunless %}{% unless current_variant.available %} variant--soldout{% endunless %}{% if settings.form_style == 'classic' %} form__wrapper--classic{% else %} form__wrapper--modern{% endif %}" data-form-wrapper>
+          <div class="form__wrapper{% unless show_buy_buttons %} form__wrapper--no-buttons{% endunless %}{% unless current_variant.available %} variant--soldout{% endunless %}{% if settings.form_style == 'classic' %} form__wrapper--classic{% else %} form__wrapper--modern{% endif %}{% if settings.show_newsletter %} show-product-notification{% endif %}" data-form-wrapper>
             <div class="form__width">
               {% comment %} The input with name="id" submits to cart {% endcomment %}
               <input type="hidden" name="id" value="{{ current_variant.id }}" form="{{ product_form_id }}">
@@ -282,6 +260,20 @@
                     if icon_size
                      echo '--icon-size:' | append: icon_size | append: 'px;'
                     endif
+
+                    if block.type == 'countdown'
+                      assign bg_color = block.settings.bg_color
+                      assign text_color = block.settings.color
+
+                      unless bg_color == 'rgba(0,0,0,0)' or bg_color == blank
+                        echo '--bg: ' | append: bg_color | append: ';'
+                        echo '--countdown-padding: ' | append: 'var(--inner);'
+                      endunless
+
+                      unless text_color == 'rgba(0,0,0,0)' or text_color == blank
+                        echo '--text: ' | append: text_color | append: ';'
+                      endunless
+                    endif
                   endcapture
 
                   if block_style != blank
@@ -305,8 +297,14 @@
                   {%- when 'buttons' -%}
                     {%- render 'product-buttons' product: product, current_variant: current_variant, unique: unique, block: block, block_style: block_style, product_form_id: product_form_id, preorder: preorder -%}
 
+                  {%- when 'description' -%}
+                    {%- render 'product-description'  product: product, block: block, block_style: block_style -%}
+
                   {%- when 'tab_richtext' -%}
-                    {%- render 'product-description-metafield'  product: product, block: block, block_style: block_style -%}
+                    {%- render 'product-description'  product: product, block: block, block_style: block_style -%}
+
+                  {%- when 'accordion' -%}
+                    {%- render 'product-description'  product: product, block: block, block_style: block_style -%}
 
                   {%- when 'inventory_countdown' -%}
                     {% comment %} Product inventory {% endcomment %}
@@ -475,26 +473,31 @@
 
                   {%- when 'upsell' -%}
                     {%- assign upsell_product = product.metafields.theme.upsell.value | default: block.settings.upsell_product -%}
-                    {%- assign upsell_product_List = product.metafields.theme.upsell_list.value | default: block.settings.upsell_product_list -%}
+                    {%- assign upsell_product_list = product.metafields.theme.upsell_list.value | default: block.settings.upsell_product_list -%}
 
-                    {%- if upsell_product != blank or upsell_product_List != blank or request.design_mode -%}
+                    {%- if upsell_product != blank or upsell_product_list != blank or request.design_mode -%}
                       <div class="product__block product__upsell block-padding" {{ block.shopify_attributes }} {{ block_style }}>
                         {%- assign upsell_title = 'products.general.upsell_title' | t -%}
 
-                        <p class="product-upsell__holder__title">{{ upsell_title }}</p>
+                        {%- capture upsell_products -%}
+                          {%- if upsell_product == blank and upsell_product_list == blank -%}
+                            {%- render 'upsell-product' -%}
+                          {%- else -%}
+                            {%- if upsell_product != blank -%}
+                              {%- render 'upsell-product', upsell_product: upsell_product, show_avaialable_upsell_only: block.settings.show_avaialable_upsell_only -%}
+                            {%- endif -%}
 
-                        {%- if upsell_product == blank and upsell_product_List == blank -%}
-                          {%- render 'upsell-product' -%}
-                        {%- else -%}
-                          {%- if upsell_product != blank -%}
-                            {%- render 'upsell-product', upsell_product: upsell_product -%}
+                            {%- if upsell_product_list != blank -%}
+                              {%- for upsell_product in upsell_product_list -%}
+                                {%- render 'upsell-product', upsell_product: upsell_product, show_avaialable_upsell_only: block.settings.show_avaialable_upsell_only -%}
+                              {%- endfor -%}
+                            {%- endif -%}
                           {%- endif -%}
+                        {%- endcapture -%}
 
-                          {%- if upsell_product_List != blank -%}
-                            {%- for upsell_product in upsell_product_List -%}
-                              {%- render 'upsell-product', upsell_product: upsell_product -%}
-                            {%- endfor -%}
-                          {%- endif -%}
+                        {%- if upsell_products != blank -%}
+                          <p class="product-upsell__holder__title">{{ upsell_title }}</p>
+                          {{ upsell_products }}
                         {%- endif -%}
                       </div>
                     {%- endif -%}
@@ -529,72 +532,7 @@
 {%- endif -%}
 
                   {%- when 'icon' -%}
-                    {% comment %} Icon block for Product {% endcomment %}
-{%- liquid
-  assign prev_index = forloop.index0 | minus: 1
-  assign next_index = forloop.index0 | plus: 1
-  assign prev_block = section.blocks[prev_index]
-  assign next_block = section.blocks[next_index]
-  assign image = block.settings.image
-  assign icon_color = block.settings.icon_color
-  assign width = block.settings.width
-
-  capture block_style
-    echo 'style="'
-    if icon_color != blank and icon_color != 'rgba(0,0,0,0)'
-      echo '--text: ' | append: icon_color | append: ';'
-    endif
-    echo '--block-padding-bottom: ' | append: block.settings.padding_bottom | append: 'px;'
-    echo '"'
-  endcapture
--%}
-
-{%- if forloop.index0 == 0 or prev_block.type != 'icon' -%}
-  <div class="product__icon__row">
-{%- endif -%}
-
-<div class="product__block product__icon__container product__icon__container--{{ width }} block-padding"
-  {{ block.shopify_attributes }}
-  {{ block_style }}
->
-  {%- liquid
-    assign icon_size = block.settings.icon_size
-    assign icon_color = block.settings.icon_color
-    capture icon_style
-      echo 'style="'
-      echo '--icon-size: ' | append: icon_size | append: 'px;'
-      if icon_color != blank and icon_color != 'rgba(0,0,0,0)'
-        echo ' --text: ' | append: icon_color | append: ';'
-      endif
-      echo '"'
-    endcapture
-  -%}
-  <div class="product__icon" data-aos="img-in" {{ icon_style }}>
-    {%- liquid
-      if image
-        assign icon_width = icon_size
-        assign icon_width_retina = icon_width | times: 2
-        assign icon_sizes = icon_width | append: 'px'
-        assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
-
-        render 'image' image: image, width: icon_width_retina, sizes: icon_sizes, widths: icon_widths, show_backfill: false
-      else
-        render 'animated-icon', filename: block.settings.icon_name
-      endif
-    -%}
-  </div>
-
-  {%- if block.settings.title != blank -%}
-    {%- assign font_size_class = block.settings.text_size | prepend: 'body-size-' -%}
-    <div class="product__icon__text {{ font_size_class }}" data-aos="fade" data-aos-duration="500">
-      <p>{{ block.settings.title }}</p>
-    </div>
-  {%- endif -%}
-</div>
-
-{%- if forloop.index == section.blocks.size or next_block.type != 'icon' -%}
-</div>
-{%- endif -%}
+                    {%- render 'icon' block: block, index: forloop.index0, is_product: true -%}
 
                   {%- when 'sharing' -%}
                     <div class="product__block block-padding" {{ block.shopify_attributes }} {{ block_style }}>
@@ -682,7 +620,6 @@
 
         <popout-select class="select-popout">
           <button type="button"
-          
             class="select-popout__toggle"
             aria-expanded="false"
             aria-controls="{{ unique }}-select-{{ option.name | handle }}"
@@ -763,9 +700,9 @@
                       {{ block.shopify_attributes }}>
 
                       <div class="product__feature__content">
-                        <div class="product__icon__container product__feature__heading">
+                        <div class="block__icon__container product__feature__heading">
                           {%- assign icon_size = block.settings.icon_size -%}
-                          <div class="product__icon" style="--icon-size: {{ icon_size }}px;">
+                          <div class="block__icon" style="--icon-size: {{ icon_size }}px;">
                             {%- liquid
                               if image
                                 assign icon_width = icon_size
@@ -781,7 +718,7 @@
 
                           {%- if title != blank -%}
                             {%- assign font_size_class = block.settings.text_size | prepend: 'body-size-' -%}
-                            <div class="product__icon__text {{ font_size_class }}">
+                            <div class="block__icon__text {{ font_size_class }}">
                               <p>{{ title }}</p>
                             </div>
                           {%- endif -%}
@@ -804,7 +741,6 @@
                   {%- when 'popup' -%}
                     {%- liquid
   assign link_text = block.settings.title
-  assign supply = block.settings.supply
   assign popup_content = block.settings.page.content | default: block.settings.text
   assign image = block.settings.image
   assign icon_size = block.settings.icon_size
@@ -827,11 +763,25 @@
 -%}
 
 <product-modal class="product__block block-padding" {{ block_style }}>
-  <div style="justify-content: space-between" class="product__icon__container product__icon__container--full">
+  <div class="block__icon__container block__icon__container--full">
+    <div class="block__icon" data-aos="img-in" {{ icon_style }}>
+      {%- liquid
+        if image
+          assign icon_width = icon_size
+          assign icon_width_retina = icon_width | times: 2
+          assign icon_sizes = icon_width | append: 'px'
+          assign icon_widths = icon_width | append: ', ' | append: icon_width_retina
+
+          render 'image' image: image, width: icon_width_retina, sizes: icon_sizes, widths: icon_widths, show_backfill: false
+        else
+          render 'animated-icon', filename: block.settings.icon_name
+        endif
+      -%}
+    </div>
+
     <a class="radio__legend__link text-link" href="{{ block.settings.page.url }}" data-popup-open {{ block.shopify_attributes }}>
       {{ link_text | escape }}
     </a>
-    <span style="padding: 0 0 5px">{{supply}}</span>
   </div>
 
   <dialog class="product-modal" aria-hidden="true" inert data-scroll-lock-required>
@@ -839,13 +789,13 @@
       <button class="visually-hidden no-js" aria-label="{{ 'general.accessibility.close' | t }}"></button>
     </form>
 
-    <div style='max-width: 1000px' class="product-modal__outer prod-modal__container-custom">
-      <div class="product-modal__content small product-modal__container-custom" data-scroll-lock-scrollable>
+    <div class="product-modal__outer">
+      <div class="product-modal__content small" data-scroll-lock-scrollable>
         <button type="button" class="product-modal__close" data-popup-close autofocus aria-label="{{ 'general.accessibility.close' | t }}">
           {%- render 'icon-cancel' -%}
         </button>
-{% render 'member-benefits' with block.settings as block, icon_style: icon_style %}
-        {% comment %} {{ popup_content }} {% endcomment %}
+
+        {{ popup_content }}
       </div>
     </div>
   </dialog>
@@ -853,28 +803,17 @@
 
                   {%- when 'complementary-products' -%}
                     <div class="product__block product__complementary block-padding" {{ block.shopify_attributes }} {{ block_style }}>
-                      <complementary-products class="complementary-products" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=10&intent=complementary" >
+                      <complementary-products class="complementary-products"
+                        data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=10&intent=complementary" >
                         {%- if recommendations.performed and recommendations.products_count > 0 -%}
                           {%- assign complementary_products_title = 'products.general.complementary_products_title' | t -%}
                           {%- if complementary_products_title != blank -%}
-                            <div class="complementary-product__header">
-                              <span id='single_title' style="font-weight: bold;"  class="complementary-products__title">{{ block.settings.single-comp-heading }}</span>
-                              <span id='routine_title' style="font-weight: bold;"  class="complementary-products__title">{{ block.settings.comp-heading }}</span>
-                              <a id='levelGuideBtn' class="levelTest radio__legend__link text-link" style='color: gray;' data-popup-open>Level Guide</a>
-                            </div>
+                            <p class="complementary-products__title">{{ complementary_products_title }}</p>
                           {%- endif -%}
-                            <div class="grid-outer">
-                              <div class="grid-custom grid--mobile-slider-custom flickity-enabled" data-slider
-                              data-dots="line"
-                              data-options='{"pageDots": true, "prevNextButtons": true, "autoPlay": 4000, "pauseAutoPlayOnHover": false}'>
-                                {%- for product in recommendations.products limit: block.settings.complementary_limit-%}
-{% if product.tags contains 'hidden' %}
-{%- else -%}                                  
-                                  {%- render 'upsell-product', upsell_product: product -%}
-{%- endif -%}
-                                {%- endfor -%}
-                              </div>
-                            </div>
+
+                          {%- for product in recommendations.products limit: block.settings.complementary_limit-%}
+                            {%- render 'upsell-product', upsell_product: product -%}
+                          {%- endfor -%}
                         {%- endif -%}
                       </complementary-products>
                     </div>
@@ -897,10 +836,72 @@
                       {%- endif -%}
                     </div>
 
-               
-               {% when 'metafield-icons' %}
-{% render 'metafield-icons' with block.settings as block%}
-                  {%- endcase -%}
+                  {%- when 'countdown' -%}
+                    {%- assign layout = block.settings.text_align -%}
+                    {%- assign font_size_class = block.settings.heading_size | prepend: 'heading-size-' -%}
+
+                    <div class="product__block countdown-block block-padding flex-column {{ layout }}"
+                      {{ block_style }}
+                      data-countdown-block
+                      {{ block.shopify_attributes }}>
+                      <div class="countdown-block__text {{ font_size_class }}">
+                        {%- if block.settings.text != blank -%}
+                          {{ block.settings.text }}
+                        {%- endif -%}
+                      </div>
+
+                      <div class="countdown-block__timer">
+                        {%- render 'countdown-timer',
+                          text_size_desktop: block.settings.text_size,
+                          text_size_mobile: block.settings.text_size,
+                          end_date: block.settings.end_date,
+                          end_time: block.settings.end_time,
+                          period: block.settings.period,
+                          end_message: block.settings.end_message,
+                          hide_on_complete: block.settings.hide_on_complete,
+                        -%}
+                      </div>
+                    </div>
+
+                    {%- when 'sku' -%}
+                      <div class="product__block product__sku block-padding"
+                        {{ block_style }}
+                        data-variant-sku
+                        {{ block.shopify_attributes }}>
+
+                        {{ 'products.product.sku' | t }}: {{ current_variant.sku }}
+                      </div>
+
+                  {%- when 'fit-guide' -%}
+                    <div class="product__block product__guide guide block-padding" {{ block.shopify_attributes }} {{ block_style }}>
+                      {%- if block.settings.heading != blank -%}
+                        <p class="guide__heading strong">{{ block.settings.heading }}</p>
+                      {%- endif -%}
+
+                      <div class="guide__line">
+                        {%- assign selected_segment = block.settings.selected_segment | plus: 0 -%}
+                        {%- for idx in (1..5) -%}
+                          <span{% if forloop.index == selected_segment %} class="is-active"{% endif %}>{{ forloop.index }}</span>
+                        {%- endfor -%}
+                      </div>
+
+                      {%- if block.settings.left_label != blank or block.settings.middle_label != blank or block.settings.right_label != blank -%}
+                        <div class="guide__content{% unless block.settings.left_label != blank %} guide__content--skip-left{% endunless %}{% unless block.settings.right_label != blank %} guide__content--skip-right{% endunless %}">
+                          {%- if block.settings.left_label != blank -%}
+                            <small class="guide__left">{{ block.settings.left_label }}</small>
+                          {%- endif -%}
+
+                          {%- if block.settings.middle_label != blank -%}
+                            <small class="guide__middle">{{ block.settings.middle_label }}</small>
+                          {%- endif -%}
+
+                          {%- if block.settings.right_label != blank -%}
+                            <small class="guide__right">{{ block.settings.right_label }}</small>
+                          {%- endif -%}
+                        </div>
+                      {%- endif -%}
+                    </div>
+                {%- endcase -%}
               {%- endfor -%}
             </div>
           </div>
@@ -916,6 +917,18 @@
     <script type="application/json" id="ModelJSON-{{ unique }}">
       {{ product.media | where: 'media_type', 'model' | json }}
     </script>
+
+    {%- liquid
+      assign metafields_data = '['
+      for variant in product.variants
+        assign metafield_value = variant.metafields.theme.final_sale.value | replace: '"', "''"
+        assign metafields_data = metafields_data | append: '{"variant_id":"' | append: variant.id | append: '" , "metafield_value":"' | append: metafield_value | append: '"},'
+      endfor
+      assign metafields_data = metafields_data | append: ']'
+      assign metafields_data = metafields_data | replace: ",]", "]"
+    -%}
+
+    <span data-variant-final-sale-metafield style="display:none;">{{ metafields_data }}</span>
   {% endunless %}
 
 
@@ -935,8 +948,7 @@
 
   <script type="application/ld+json">
   {
-    "@context": "http://schema.org/", 
- {{ product.metafields.alireviews.seo_rating_review_key_script }}
+    "@context": "http://schema.org/",
     "@type": "Product",
     "name": {{ product.title | json }},
     "url": {{ request.origin | append: product.url | json }},
@@ -1006,7 +1018,7 @@
 {%- endif -%}
 
 <div id="cart-bar" class="cart-bar">
-  <div class="cart-bar__form__wrapper form__wrapper{% if button_add and current_variant.available != true %} variant--soldout{% endif %}" data-form-wrapper>
+  <div class="cart-bar__form__wrapper form__wrapper{% if button_add and current_variant.available != true %} variant--soldout{% endif %}{% if settings.show_newsletter %} show-product-notification{% endif %}" data-form-wrapper>
     <div class="cart-bar__info">
       <h4 class="cart-bar__product__title">{{ product.title | strip_html }}</h4>
 
@@ -1029,10 +1041,10 @@
         {% endif %}
       </div>
     </div>
-    
+
     <div class="cart-bar__form">
       <div class="cart-bar__submit product__submit product__submit--spb">
-        <button type="button" 
+        <button type="button"
           class="btn btn--primary btn--outline product__submit__add{% unless button_add %} product__submit__add--default{% endunless %}"
           {% if button_add %} data-add-to-cart-bar{% else %} data-cart-bar-scroll{% endif %}
           {% if button_add and current_variant.available != true %} disabled="disabled"{% endif %}>
@@ -1090,6 +1102,13 @@
         "type": "checkbox",
         "id": "product_sticky_enable",
         "label": "Enable sticky form",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "variant_image_scroll",
+        "label": "Enable product image variant scroll",
+        "info": "Clicking a variant scrolls user to assigned image",
         "default": true
       },
       {
@@ -1220,18 +1239,13 @@
             ]
           },
           {
-          "label": "Collection",
-          "id": "collection",
-          "type": "collection"
-          },
-          {
             "type": "range",
             "id": "text_size",
             "label": "Text size",
-             "min": 12,
-          "max": 16,
-          "step": 2,
-          "default": 16
+            "min": 1,
+            "max": 15,
+            "step": 1,
+            "default": 6
           },
           {
             "type": "header",
@@ -1403,7 +1417,7 @@
         ]
       },
       {
-        "type": "tab_richtext",
+        "type": "description",
         "name": "Description",
         "limit": 1,
         "settings": [
@@ -1414,15 +1428,37 @@
             "default": true
           },
           {
-            "type": "select",
-            "id": "style",
-            "label": "Tab style",
-            "default": "tabs",
-            "options": [
-              { "value": "inline", "label": "Disable tabs" },
-              { "value": "tabs", "label": "Tabs" },
-              { "value": "accordions", "label": "Accordions" }
-            ]
+            "type": "header",
+            "content": "Block spacing"
+          },
+          {
+            "type": "range",
+            "id": "padding_bottom",
+            "min": 0,
+            "max": 50,
+            "step": 2,
+            "unit": "px",
+            "label": "Padding bottom",
+            "default": 0
+          }
+        ]
+      },
+      {
+        "type": "tab_richtext",
+        "name": "Tabs",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "show_description",
+            "label": "Show description",
+            "default": true
+          },
+          {
+            "type": "checkbox",
+            "id": "show_read_more",
+            "label": "Show read more button",
+            "default": false
           },
           {
             "type": "text",
@@ -1495,6 +1531,56 @@
         ]
       },
       {
+        "type": "accordion",
+        "name": "Accordion",
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "show_description",
+            "label": "Show description",
+            "default": false
+          },
+          {
+            "type": "checkbox",
+            "id": "show_read_more",
+            "label": "Show read more button",
+            "default": true
+          },
+          {
+            "type": "checkbox",
+            "id": "default_open",
+            "label": "Open by default",
+            "default": false
+          },
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Accordion"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>This content type will accept <strong>rich text</strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.</p>"
+          },
+          {
+            "type": "header",
+            "content": "Block spacing"
+          },
+          {
+            "type": "range",
+            "id": "padding_bottom",
+            "min": 0,
+            "max": 50,
+            "step": 2,
+            "unit": "px",
+            "label": "Padding bottom",
+            "default": 0
+          }
+        ]
+      },
+      {
         "type": "upsell",
         "name": "Upsell",
         "limit": 1,
@@ -1510,6 +1596,12 @@
             "label": "Product list",
             "limit": 3,
             "info": "Choose up to 3 upsell products"
+          },
+          {
+            "type": "checkbox",
+            "id": "show_avaialable_upsell_only",
+            "label": "Show only items in stock",
+            "default": false
           },
           {
             "type": "header",
@@ -1743,15 +1835,10 @@
         ]
       },
       {
-        "type": "metafield-icons",
-        "name": "Metafield Icons",
-        "settings": []
-      },
-      {
         "type": "icon",
         "name": "Icon",
         "settings": [
-        {
+          {
             "type": "select",
             "id": "icon_name",
             "label": "Icon",
@@ -1827,10 +1914,10 @@
             "type": "range",
             "id": "text_size",
             "label": "Text size",
-          "min": 12,
-          "max": 16,
-          "step": 2,
-          "default": 16
+            "min": 1,
+            "max": 15,
+            "step": 1,
+            "default": 3
           },
           {
             "type": "header",
@@ -2048,10 +2135,10 @@
             "type": "range",
             "id": "text_size",
             "label": "Text size",
-          "min": 12,
-          "max": 16,
-          "step": 2,
-          "default": 16
+            "min": 1,
+            "max": 15,
+            "step": 1,
+            "default": 3
           },
           {
             "type": "richtext",
@@ -2091,33 +2178,15 @@
           }
         ]
       },
-      
       {
         "type": "complementary-products",
         "name": "Complementary products",
         "limit": 1,
         "settings": [
-          {   
-            "type": "url",
-            "id": "level-guide_link",
-            "label": "Level Guide link"
-          },
           {
             "type": "paragraph",
             "content": "To select complementary products, add the Search & Discovery app. [Learn more](https://help.shopify.com/manual/online-store/search-and-discovery/product-recommendations)"
           },
-                {
-        "type": "text",
-        "id": "comp-heading",
-        "label": "Systems Complementary Product Heading",
-        "default": "Want to level up?"
-      },
-                          {
-        "type": "text",
-        "id": "single-comp-heading",
-        "label": "Single Items Complementary Product Heading",
-        "default": "You May Also Like"
-      },
           {
             "type": "range",
             "id": "complementary_limit",
@@ -2149,65 +2218,6 @@
             "unit": "px",
             "label": "Padding bottom",
             "default": 16
-          },
-          {
-            "type": "header",
-            "content": "Level Guide"
-          },
-          {
-            "type": "image_picker",
-            "id": "image_1",
-            "label": "Image 1"
-          },
-          {
-            "type": "text",
-            "id": "title_1",
-            "label": "Column 1",
-            "default": "Level 1"
-          },
-          {
-            "type": "image_picker",
-            "id": "image_2",
-            "label": "Image 2"
-          },
-          {
-            "type": "text",
-            "id": "title_2",
-            "label": "Column 2",
-            "default": "Level 2"
-          },
-          {
-            "type": "image_picker",
-            "id": "image_3",
-            "label": "Image 3"
-          },
-          {
-            "type": "text",
-            "id": "title_3",
-            "label": "Column 3",
-            "default": "Level 3"
-          },
-          {
-            "type": "image_picker",
-            "id": "image_4",
-            "label": "Image 4"
-          },
-          {
-            "type": "text",
-            "id": "title_4",
-            "label": "Column 4",
-            "default": "Acne Level 1"
-          },
-          {
-            "type": "image_picker",
-            "id": "image_5",
-            "label": "Image 5"
-          },
-          {
-            "type": "text",
-            "id": "title_5",
-            "label": "Column 5",
-            "default": "Acne Level 2"
           }
         ]
       },
@@ -2222,177 +2232,9 @@
             "default": "Popup text"
           },
           {
-            "type": "text",
-            "id": "supply",
-            "label": "Supply",
-            "default": "30 day supply"
-          },
-          {
-          "type": "text",
-          "id": "pop-heading",
-          "label": "Main Heading",
-          "default": "Your Member Benefits Explained"
-            },
-          
-      {
-            "type": "range",
-            "id": "pop-heading_size",
-            "label": "Heading size",
-           "min": 24,
-          "max": 40,
-          "step": 8,
-          "default": 32
-          },
-          {
-            "type": "range",
-            "id": "icon-sub_size",
-            "label": "Icon Subheading size",
-          "min": 12,
-          "max": 16,
-          "step": 2,
-          "default": 14
-          },
-                    {
-            "type": "range",
-            "id": "icon-desc_size",
-            "label": "Icon Description size",
-          "min": 12,
-          "max": 16,
-          "step": 2,
-          "default": 14
-          },
-          {
-            "type": "image_picker",
-            "id": "image_1",
-            "label": "Icon 1"
-          },
-          {
-        "type": "text",
-        "id": "icon-1_sub",
-        "label": "Icon 1 Subheading",
-        "default": "Save 20%"
-      },
-      {
-        "type": "text",
-        "id": "icon-1_text",
-        "label": "Icon 1 Text",
-        "default": "Get 20% with Autoship"
-      },
-          {
-            "type": "image_picker",
-            "id": "image_2",
-            "label": "Icon 2"
-          },
-          {
-        "type": "text",
-        "id": "icon-2_sub",
-        "label": "Icon 2 Subheading",
-        "default": "Great Gifts"
-      },
-          {
-        "type": "text",
-        "id": "icon-2_text",
-        "label": "Icon 2 Text",
-        "default": "7 Gifts in your first year"
-      },
-          {
-            "type": "image_picker",
-            "id": "image_3",
-            "label": "Icon 3"
-          },
-          {
-        "type": "text",
-        "id": "icon-3_sub",
-        "label": "Icon 3 Subheading",
-        "default": "Exclusive Offers"
-      },
-          {
-        "type": "text",
-        "id": "icon-3_text",
-        "label": "Icon 3 Text",
-        "default": "Products, gear, SWAG, and bundles"
-      },
-      {
-        "type": "text",
-        "id": "pop-heading-2",
-        "label": "Secondary Heading",
-        "default": "Membership Tiers "
-      },
-      {
-        "type": "text",
-        "id": "box-1_text",
-        "label": "Tier 1 Heading",
-        "default": "Member"
-      },
-      {
-        "type": "text",
-        "id": "box-1_gifts",
-        "label": "Tier 1 Gifts",
-        "default": "3 Routine-building Gifts"
-      },
-      {
-        "type": "text",
-        "id": "box-2_text",
-        "label": "Tier 2 Heading",
-        "default": "VIP Member"
-      },
-      {
-        "type": "text",
-        "id": "box-2_gifts",
-        "label": "Tier 2 Gifts",
-        "default": "3 VIP Gifts, 1 Premium Gift"
-      },
-      {
-        "type": "text",
-        "id": "box-3_text",
-        "label": "Tier 3 Heading",
-        "default": "Emerald VIP"
-      },
-      {
-        "type": "text",
-        "id": "box-3_gifts",
-        "label": "Tier 3 Gifts",
-        "default": "10% off every order, 2 Premium Gifts per year"
-      },
-      {
-        "type": "text",
-        "id": "member-link_text",
-        "label": "Link Text",
-        "default": "More Details"
-      },
-      {   
-            "type": "url",
-            "id": "member_link",
-            "label": "Button link"
-          },
-
-          {
-        "type": "select",
-        "id": "button_type",
-        "label": "Color",
-        "default": "btn--primary",
-        "options": [
-          {"value": "btn--primary", "label": "Primary"},
-          {"value": "btn--secondary", "label": "Secondary"},
-          {"value": "btn--white", "label": "White"},
-          {"value": "btn--black", "label": "Black"}
-        ]
-      },
-      {
-      "type": "select",
-      "id": "button_style",
-      "label": "Style",
-      "default": "btn--text",
-      "options": [
-        { "label": "Solid", "value": "btn--solid" },
-        { "label": "Outline", "value": "btn--outline" },
-        { "label": "Text", "value": "btn--text" }
-      ]
-      },
-    {
             "type": "richtext",
             "id": "text",
-            "label": "Footer Text",
+            "label": "Text",
             "default": "<p>Additonal information about the product.</p>"
           },
           {
@@ -2460,16 +2302,6 @@
             "step": 5,
             "default": 20
           },
-                {
-        "type": "select",
-        "id": "icon_alignment",
-        "label": "Icon placement",
-        "default": "icon--top",
-        "options": [
-          { "value": "icon--top", "label": "Top" },
-          { "value": "icon--left", "label": "Left" }
-        ]
-      },
           {
             "type": "color",
             "id": "icon_color",
@@ -2522,6 +2354,189 @@
             "unit": "px",
             "label": "Padding bottom",
             "default": 8
+          }
+        ]
+      },
+      {
+        "type": "sku",
+        "name": "SKU",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "header",
+            "content": "Block spacing"
+          },
+          {
+            "type": "range",
+            "id": "padding_bottom",
+            "min": 0,
+            "max": 50,
+            "step": 2,
+            "unit": "px",
+            "label": "Padding bottom",
+            "default": 16
+          }
+        ]
+      },
+      {
+        "type": "fit-guide",
+        "name": "Fit guide",
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Fit"
+          },
+          {
+            "type": "text",
+            "id": "selected_segment",
+            "label": "Active segment",
+            "default": "4",
+            "info": "Enter a number from 1 - 5 to show active fit. Use a metafield for a custom fit per product."
+          },
+          {
+            "type": "text",
+            "id": "left_label",
+            "label": "Left label",
+            "default": "Small"
+          },
+          {
+            "type": "text",
+            "id": "middle_label",
+            "label": "Middle label",
+            "default": "True to size"
+          },
+          {
+            "type": "text",
+            "id": "right_label",
+            "label": "Right label",
+            "default": "Large"
+          },
+          {
+            "type": "header",
+            "content": "Block spacing"
+          },
+          {
+            "type": "range",
+            "id": "padding_bottom",
+            "min": 0,
+            "max": 50,
+            "step": 2,
+            "unit": "px",
+            "label": "Padding bottom",
+            "default": 8
+          }
+        ]
+      },
+      {
+        "type": "countdown",
+        "name": "Countdown timer",
+        "settings": [
+          {
+            "type": "text",
+            "id": "end_date",
+            "label": "End date",
+            "placeholder": "2023-12-31 23:59",
+            "default": "2024-12-31",
+            "info": "Use format \"YYYY-MM-DD\". Expiration date is based on the [store primary timezone](/admin/settings/general)."
+          },
+          {
+            "type": "text",
+            "id": "end_time",
+            "label": "End time",
+            "default": "11:59",
+            "placeholder": "11:59",
+            "info": "Use 12-hour time convention in format \"HH:MM\""
+          },
+          {
+            "type": "radio",
+            "id": "period",
+            "label": "AM/PM",
+            "options": [
+              { "value": "am", "label": "AM" },
+              { "value": "pm", "label": "PM" }
+            ],
+            "default": "am"
+          },
+          {
+            "type": "richtext",
+            "id": "end_message",
+            "label": "End of timer message",
+            "default": "<p>Offer has expired</p>"
+          },
+          {
+            "type": "checkbox",
+            "id": "hide_on_complete",
+            "label": "Hide block after end of timer",
+            "default": true
+          },
+          {
+            "type": "range",
+            "id": "text_size",
+            "label": "Digits size",
+            "min": 1,
+            "max": 15,
+            "step": 1,
+            "default": 6
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Limited time offer</p>"
+          },
+          {
+            "type": "range",
+            "id": "heading_size",
+            "label": "Heading size",
+            "min": 1,
+            "max": 15,
+            "step": 1,
+            "default": 2
+          },
+          {
+            "type": "header",
+            "content": "Colors"
+          },
+          {
+            "type": "color",
+            "id": "bg_color",
+            "label": "Background",
+            "default": "#F7F9FA"
+          },
+          {
+            "type": "color",
+            "id": "color",
+            "label": "Text"
+          },
+          {
+            "type": "header",
+            "content": "Layout"
+          },
+          {
+            "type": "select",
+            "id": "text_align",
+            "label": "Text alignment",
+            "default": "text-center",
+            "options": [
+              { "value": "text-left","label": "Left" },
+              { "value": "text-center","label": "Centered" }
+            ]
+          },
+          {
+            "type": "header",
+            "content": "Block spacing"
+          },
+          {
+            "type": "range",
+            "id": "padding_bottom",
+            "min": 0,
+            "max": 50,
+            "step": 2,
+            "unit": "px",
+            "label": "Padding bottom",
+            "default": 16
           }
         ]
       }

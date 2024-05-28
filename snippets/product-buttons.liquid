@@ -3,8 +3,13 @@
   assign gift_card_recipient_feature_active = false
   assign show_quantity = show_quantity | default: block.settings.show_quantity | default: false
   assign is_quickview = quickview | default: false
+  assign show_newsletter = settings.show_newsletter
 
-  assign button_text = 'products.product.checkout' | t
+  if quickview
+    assign show_newsletter = false
+  endif
+
+  assign button_text = 'products.product.add_to_cart' | t
   if preorder
     assign button_text =  'products.product.pre_order' | t
   endif
@@ -104,7 +109,7 @@
   <product-form>
     {%- form 'product', product, id: product_form_id, class: 'product-form', data-product-form: '' -%}
       {%- if gift_card_recipient_feature_active -%}
-        {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
+        {%- render 'gift-card-recipient-form', product: product, form: form -%}
       {%- endif -%}
 
       <div class="product__submit{% if buybutton_setting %} product__submit--spb{% endif %}"
@@ -122,13 +127,11 @@
             <button
               type="submit"
               name="add"
-              style="padding-top: 8px; padding-bottom: 8px;"
-              class="btn btn--secondary {{ btn_atc_class }} btn-cart_container"
+              id="AddToCart--{{ section.id }}"
+              class="btn btn--primary {{ btn_atc_class }}"
               data-add-to-cart
               {% unless current_variant.available %}disabled="disabled"{% endunless %}>
-              <span 
-              class="btn__text btn-cart_text-custom" data-add-to-cart-text>{{ 'products.product.checkout' | t }}</span>
-              <span class="btn-cart_text-custom">{{ product.price | money }}</span>
+              <span class="btn__text" data-add-to-cart-text>{{ button_text }}</span>
               <span class="btn__added">&nbsp;</span>
 
               <span class="btn__loader">
@@ -138,6 +141,33 @@
                 </svg>
               </span>
             </button>
+
+            {%- if show_newsletter -%}
+              {%- assign newsletter_text = 'general.newsletter_form.newsletter_product_availability' | t -%}
+              {%- assign button_text = 'products.product.sold_out' | t | append: ' - ' | append: newsletter_text -%}
+
+              <product-modal class="product-soldout-notification">
+                <button type="button" class="btn btn--primary {{ btn_atc_class }}" data-popup-open>
+                  <span class="btn__text">{{ button_text }}</span>
+                </button>
+
+                <dialog class="product-modal" aria-hidden="true" inert data-scroll-lock-required>
+                  <form method="dialog">
+                    <button class="visually-hidden no-js" aria-label="{{ 'general.accessibility.close' | t }}"></button>
+                  </form>
+
+                  <div class="drawer__inner product-modal__notification">
+                    <div class="product-modal__content small" data-scroll-lock-scrollable>
+                      <button type="button" class="product-modal__close" data-popup-close autofocus aria-label="{{ 'general.accessibility.close' | t }}">
+                        {%- render 'icon-cancel' -%}
+                      </button>
+
+                      {%- render 'notification-form' product_title: product.title, current_variant: current_variant -%}
+                    </div>
+                  </div>
+                </dialog>
+              </product-modal>
+            {%- endif -%}
           </div>
           {%- if buybutton_setting -%}
             <div class="product__submit__item">

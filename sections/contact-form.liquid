@@ -4,6 +4,7 @@
   assign bg_color = section.settings.bg_color
   assign text_color = section.settings.color
   assign types = ''
+  assign has_required_field = false
   assign animation_anchor = '#ContactForm--' | append: section.id
   assign animation_order = 1
 
@@ -60,9 +61,17 @@
         {%- liquid
           assign types = types | append: block.type
           assign animation_order = animation_order | plus: 1
+          assign title = block.settings.title
+          assign placeholder = title
+
           assign required = ''
           if block.settings.required
               assign required = 'required'
+              assign placeholder = title | append: '*'
+
+              unless has_required_field
+                assign has_required_field = true
+              endunless
           endif
         -%}
 
@@ -74,8 +83,8 @@
               data-aos-order="{{ animation_order }}"
               {{ block.shopify_attributes }}
             >
-              <label for="Form-{{ section.id }}-{{ forloop.index0 }}" class="visually-hidden">{{ block.settings.title }}</label>
-              <input type="email" class="contactFormEmail field" id="Form-{{ section.id }}-{{ forloop.index0 }}" name="contact[email]" placeholder="{{ block.settings.title }}" autocorrect="off" autocapitalize="off" {{ required }}>
+              <label for="Form-{{ section.id }}-{{ forloop.index0 }}" class="visually-hidden">{{ title }}</label>
+              <input type="email" class="contactFormEmail field" id="Form-{{ section.id }}-{{ forloop.index0 }}" name="contact[email]" placeholder="{{ placeholder }}" autocorrect="off" autocapitalize="off" {{ required }}>
             </div>
 
           {%- when 'body' -%}
@@ -85,8 +94,8 @@
               data-aos-order="{{ animation_order }}"
               {{ block.shopify_attributes }}
             >
-              <label for="Form-{{ section.id }}-{{ forloop.index0 }}" class="visually-hidden">{{ block.settings.title }}</label>
-              <textarea rows="10" id="Form-{{ section.id }}-{{ forloop.index0 }}" class="contactFormMessage field" name="contact[body]" placeholder="{{ block.settings.title }}" {{ required }}></textarea>
+              <label for="Form-{{ section.id }}-{{ forloop.index0 }}" class="visually-hidden">{{ title }}</label>
+              <textarea rows="10" id="Form-{{ section.id }}-{{ forloop.index0 }}" class="contactFormMessage field" name="contact[body]" placeholder="{{ placeholder }}" {{ required }}></textarea>
             </div>
 
           {%- when 'text' -%}
@@ -96,8 +105,8 @@
               data-aos-order="{{ animation_order }}"
               {{ block.shopify_attributes }}
             >
-              <label for="Form-{{ section.id }}-{{ forloop.index0 }}" class="visually-hidden">{{ block.settings.title }}</label>
-              <input type="text" class="contactFormText field" id="Form-{{ section.id }}-{{ forloop.index0 }}" name="contact[{{ block.settings.title | handleize | default: 'text' }}]" placeholder="{{ block.settings.title }}" autocapitalize="words" value="" {{ required }}>
+              <label for="Form-{{ section.id }}-{{ forloop.index0 }}" class="visually-hidden">{{ title }}</label>
+              <input type="text" class="contactFormText field" id="Form-{{ section.id }}-{{ forloop.index0 }}" name="contact[{{ title | handleize | default: 'text' }}]" placeholder="{{ placeholder }}" autocapitalize="words" value="" {{ required }}>
             </div>
 
           {%- when 'textarea' -%}
@@ -107,8 +116,8 @@
               data-aos-order="{{ animation_order }}"
              {{ block.shopify_attributes }}
             >
-              <label for="Form-{{ section.id }}-{{ forloop.index0 }}" class="visually-hidden">{{ block.settings.title }}</label>
-              <textarea rows="10" id="Form-{{ section.id }}-{{ forloop.index0 }}" class="contactFormMessage field" name="contact[{{ block.settings.title | handleize | default: 'textarea' }}]" placeholder="{{ block.settings.title }}" {{ required }}></textarea>
+              <label for="Form-{{ section.id }}-{{ forloop.index0 }}" class="visually-hidden">{{ title }}</label>
+              <textarea rows="10" id="Form-{{ section.id }}-{{ forloop.index0 }}" class="contactFormMessage field" name="contact[{{ title | handleize | default: 'textarea' }}]" placeholder="{{ placeholder }}" {{ required }}></textarea>
             </div>
 
           {%- when 'telephone' -%}
@@ -118,8 +127,8 @@
               data-aos-order="{{ animation_order }}"
               {{ block.shopify_attributes }}
             >
-              <label for="Form-{{ section.id }}-{{ forloop.index0 }}" class="visually-hidden">{{ block.settings.title }}</label>
-              <input type="tel" id="Form-{{ section.id }}-{{ forloop.index0 }}" class="contactFormPhone field" name="contact[telephone]" placeholder="{{ block.settings.title }}" value="" {{ required }}>
+              <label for="Form-{{ section.id }}-{{ forloop.index0 }}" class="visually-hidden">{{ title }}</label>
+              <input type="tel" id="Form-{{ section.id }}-{{ forloop.index0 }}" class="contactFormPhone field" name="contact[telephone]" placeholder="{{ placeholder }}" value="" {{ required }}>
             </div>
 
           {%- when 'formHeading' -%}
@@ -129,7 +138,7 @@
               data-aos-order="{{ animation_order }}"
              {{ block.shopify_attributes }}
             >
-              <p class="strong">{{ block.settings.title }}</p>
+              <p class="strong">{{ title }}</p>
             </div>
 
           {%- when 'spacer' -%}
@@ -153,9 +162,13 @@
               data-aos-order="{{ animation_order }}"
               {{ block.shopify_attributes }}
             >
-              <input type="checkbox" id="Form-{{ section.id }}-{{ forloop.index0 }}" class="contactFormCheckbox" name="contact[{{ block.settings.title | handleize | default: 'checkbox' }}]" value="{{ block.settings.title }}" {{ required }}>
+              <input type="checkbox" id="Form-{{ section.id }}-{{ forloop.index0 }}" class="contactFormCheckbox" name="contact[{{ title | handleize | default: 'checkbox' }}]" value="{{ title }}" {{ required }}>
               <label for="Form-{{ section.id }}-{{ forloop.index0 }}">
-                {{ block.settings.title }}
+                {%- if required != blank -%}
+                  {%- assign title = title | append: '*' -%}
+                {%- endif -%}
+
+                {{ title }}
               </label>
             </div>
 
@@ -166,42 +179,45 @@
               data-aos-order="{{ animation_order }}"
              {{ block.shopify_attributes }}
             >
-              {%- if block.settings.title != blank -%}
-                <legend class="custom-form__label">{{ block.settings.title }}</legend>
+              {%- if title != blank -%}
+                {%- if required != blank -%}
+                  {%- assign title = title | append: '*' -%}
+                {%- endif -%}
+                <legend class="custom-form__label">{{ title }}</legend>
               {%- endif -%}
               {%- if block.settings.label-one != blank -%}
                 <div>
-                  <input type="radio" id="Form-{{ section.id }}-{{ forloop.index0 }}-1" class="contactFormRadio" name="contact[{{ block.settings.title | handleize | default: 'radio' }}]" value="{{ block.settings.label-one }}" {{ required }}>
+                  <input type="radio" id="Form-{{ section.id }}-{{ forloop.index0 }}-1" class="contactFormRadio" name="contact[{{ title | handleize | default: 'radio' }}]" value="{{ block.settings.label-one }}" {{ required }}>
                   <label for="Form-{{ section.id }}-{{ forloop.index0 }}-1">{{ block.settings.label-one }}</label>
                 </div>
               {%- endif -%}
               {%- if block.settings.label-two != blank -%}
                 <div>
-                  <input type="radio" id="Form-{{ section.id }}-{{ forloop.index0 }}-2" class="contactFormRadio" name="contact[{{ block.settings.title | handleize | default: 'radio' }}]" value="{{ block.settings.label-two }}" {{ required }}>
+                  <input type="radio" id="Form-{{ section.id }}-{{ forloop.index0 }}-2" class="contactFormRadio" name="contact[{{ title | handleize | default: 'radio' }}]" value="{{ block.settings.label-two }}" {{ required }}>
                   <label for="Form-{{ section.id }}-{{ forloop.index0 }}-2">{{ block.settings.label-two }}</label>
                 </div>
               {%- endif -%}
               {%- if block.settings.label-three != blank -%}
                 <div>
-                  <input type="radio" id="Form-{{ section.id }}-{{ forloop.index0 }}-3" class="contactFormRadio" name="contact[{{ block.settings.title | handleize | default: 'radio' }}]" value="{{ block.settings.label-three }}" {{ required }}>
+                  <input type="radio" id="Form-{{ section.id }}-{{ forloop.index0 }}-3" class="contactFormRadio" name="contact[{{ title | handleize | default: 'radio' }}]" value="{{ block.settings.label-three }}" {{ required }}>
                   <label for="Form-{{ section.id }}-{{ forloop.index0 }}-3">{{ block.settings.label-three }}</label>
                 </div>
               {%- endif -%}
               {%- if block.settings.label-four != blank -%}
                 <div>
-                  <input type="radio" id="Form-{{ section.id }}-{{ forloop.index0 }}-4" class="contactFormRadio" name="contact[{{ block.settings.title | handleize | default: 'radio' }}]" value="{{ block.settings.label-four }}" {{ required }}>
+                  <input type="radio" id="Form-{{ section.id }}-{{ forloop.index0 }}-4" class="contactFormRadio" name="contact[{{ title | handleize | default: 'radio' }}]" value="{{ block.settings.label-four }}" {{ required }}>
                   <label for="Form-{{ section.id }}-{{ forloop.index0 }}-4">{{ block.settings.label-four }}</label>
                 </div>
               {%- endif -%}
               {%- if block.settings.label-five != blank -%}
                 <div>
-                  <input type="radio" id="Form-{{ section.id }}-{{ forloop.index0 }}-5" class="contactFormRadio" name="contact[{{ block.settings.title | handleize | default: 'radio' }}]" value="{{ block.settings.label-five }}" {{ required }}>
+                  <input type="radio" id="Form-{{ section.id }}-{{ forloop.index0 }}-5" class="contactFormRadio" name="contact[{{ title | handleize | default: 'radio' }}]" value="{{ block.settings.label-five }}" {{ required }}>
                   <label for="Form-{{ section.id }}-{{ forloop.index0 }}-5">{{ block.settings.label-five }}</label>
                 </div>
               {%- endif -%}
               {%- if block.settings.label-six != blank -%}
                 <div>
-                  <input type="radio" id="Form-{{ section.id }}-{{ forloop.index0 }}-6" class="contactFormRadio" name="contact[{{ block.settings.title | handleize | default: 'radio' }}]" value="{{ block.settings.label-six }}" {{ required }}>
+                  <input type="radio" id="Form-{{ section.id }}-{{ forloop.index0 }}-6" class="contactFormRadio" name="contact[{{ title | handleize | default: 'radio' }}]" value="{{ block.settings.label-six }}" {{ required }}>
                   <label for="Form-{{ section.id }}-{{ forloop.index0 }}-6">{{ block.settings.label-six }}</label>
                 </div>
               {%- endif -%}
@@ -214,10 +230,16 @@
               data-aos-order="{{ animation_order }}"
              {{ block.shopify_attributes }}
             >
-              {%- if block.settings.title != blank -%}
-                <label for="Form-{{ section.id }}-{{ forloop.index0 }}" class="custom-form__label label--block">{{ block.settings.title }}</label>
+              {%- if title != blank -%}
+                {%- if required != blank -%}
+                  {%- assign title = title | append: '*' -%}
+                {%- endif -%}
+                <label for="Form-{{ section.id }}-{{ forloop.index0 }}" class="custom-form__label label--block">{{ title }}</label>
               {%- endif -%}
-              <select id="Form-{{ section.id }}-{{ forloop.index0 }}" class="contactFormSelect field" name="contact[{{ block.settings.title | handleize | default: 'select' }}]">
+              <select id="Form-{{ section.id }}-{{ forloop.index0 }}" class="contactFormSelect field" name="contact[{{ title | handleize | default: 'select' }}]" {{ required }}>
+                {%- if required != blank -%}
+                  <option value="">{{ 'contact.form.select_default' | t }}</option>
+                {%- endif -%}
                 {%- if block.settings.label-one != blank -%}
                   <option value="{{ block.settings.label-one }}">{{ block.settings.label-one }}</option>
                 {%- endif -%}
@@ -243,27 +265,36 @@
       {%- endfor -%}
 
       {%- unless types contains "email" -%}
-        {%- assign animation_order = animation_order | plus: 1 -%}
+        {%- liquid
+          assign email = 'contact.form.email' | t
+          assign has_required_field = true
+          assign animation_order = animation_order | plus: 1
+        -%}
 
         <div class="custom-form__block"
           data-aos="hero"
           data-aos-anchor="{{ animation_anchor }}"
           data-aos-order="{{ animation_order }}"
         >
-          <label for="contactFormEmail" class="visually-hidden">{{ 'contact.form.email' | t }}</label>
-          <input type="email" id="contactFormEmail" class="contactFormEmail field" name="contact[email]" placeholder="{{ 'contact.form.email' | t }}" autocorrect="off" autocapitalize="off" required>
+          <label for="contactFormEmail" class="visually-hidden">{{ email }}</label>
+          <input type="email" id="contactFormEmail" class="contactFormEmail field" name="contact[email]" placeholder="{{ email | append: '*' }}" autocorrect="off" autocapitalize="off" required>
         </div>
       {%- endunless -%}
 
       {%- unless types contains "body" -%}
-        {%- assign animation_order = animation_order | plus: 1 -%}
+        {%- liquid
+          assign message = 'contact.form.message' | t
+          assign has_required_field = true
+          assign animation_order = animation_order | plus: 1
+        -%}
+
         <div class="custom-form__block"
           data-aos="hero"
           data-aos-anchor="{{ animation_anchor }}"
           data-aos-order="{{ animation_order }}"
         >
-          <label for="ContactFormMessage" class="visually-hidden">{{ 'contact.form.message' | t }}</label>
-          <textarea rows="10" id="ContactFormMessage" class="contactFormMessage field" name="contact[body]" placeholder="{{ 'contact.form.message' | t }}"></textarea>
+          <label for="ContactFormMessage" class="visually-hidden">{{ message }}</label>
+          <textarea rows="10" id="ContactFormMessage" class="contactFormMessage field" name="contact[body]" placeholder="{{ message | append: '*' }}"></textarea>
         </div>
       {%- endunless -%}
 
@@ -277,6 +308,17 @@
           {{ 'contact.form.send' | t }}
         </button>
       </div>
+
+      {%- if has_required_field -%}
+        {%- assign animation_order = animation_order | plus: 1 -%}
+
+        <div class="custom-form__required-text"
+          data-aos="hero"
+          data-aos-anchor="{{ animation_anchor }}"
+          data-aos-order="{{ animation_order }}">
+          {{ 'contact.form.required_field_text' | t }}
+        </div>
+      {%- endif -%}
 
       {%- if section.settings.terms -%}
         {%- assign animation_order = animation_order | plus: 1 -%}
@@ -512,6 +554,12 @@
             "label": "Heading",
             "default": "Select an option",
             "info": "Example: Choose a delivery location"
+          },
+          {
+            "type": "checkbox",
+            "id": "required",
+            "label": "Required",
+            "default": false
           },
           {
             "type": "header",

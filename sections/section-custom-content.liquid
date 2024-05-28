@@ -119,13 +119,9 @@
                   {%- if block_collection != blank -%}
                     {%- if block_collection.products_count > 0 -%}
                       {%- for product in block_collection.products limit: 5 -%}
-
-{% if product.tags contains 'hidden' %}
-{%- else -%}
                         <div class="look__slide look__slide--{{ block.id }}-{{ forloop.index0 }}" data-slide="{{ block.id }}-{{ forloop.index0 }}" data-slide-index="{{ forloop.index0 }}" {{ block.shopify_attributes }}>
                           {%- render 'product-grid-item', product: product, index: forloop.index -%}
                         </div>
-{%- endif -%}
                       {%- endfor -%}
                     {%- else -%}
                       <div class="no-results">
@@ -313,10 +309,10 @@
           "type":  "range",
           "id":    "heading_size",
           "label": "Heading size",
-          "min": 24,
-          "max": 40,
-          "step": 8,
-          "default": 40
+          "min": 1,
+          "max": 15,
+          "step": 1,
+          "default":7
         },
         {
           "type": "textarea",
@@ -327,10 +323,10 @@
           "type":  "range",
           "id":    "text_size",
           "label": "Text size",
-          "min": 12,
-          "max": 16,
-          "step": 2,
-          "default": 16
+          "min": 1,
+          "max": 15,
+          "step": 1,
+          "default":3
         },
         {
           "type": "select",
@@ -435,10 +431,10 @@
           "type":  "range",
           "id":    "subheading_size",
           "label": "Subheading size",
-          "min": 12,
-          "max": 16,
-          "step": 2,
-          "default": 16
+          "min": 1,
+          "max": 15,
+          "step": 1,
+          "default":3
         },
         {
           "type": "text",
@@ -450,10 +446,10 @@
           "type":  "range",
           "id":    "heading_size",
           "label": "Heading size",
-          "min": 24,
-          "max": 40,
-          "step": 8,
-          "default": 40
+          "min": 1,
+          "max": 15,
+          "step": 1,
+          "default": 8
         },
         {
           "type": "richtext",
@@ -465,10 +461,10 @@
           "type":  "range",
           "id":    "text_size",
           "label": "Text size",
-          "min": 12,
-          "max": 16,
-          "step": 2,
-          "default": 16
+          "min": 1,
+          "max": 15,
+          "step": 1,
+          "default": 4
         },
         {
           "type": "header",
@@ -583,10 +579,10 @@
           "type":  "range",
           "id":    "subheading_size",
           "label": "Subheading size",
-          "min": 12,
-          "max": 16,
-          "step": 2,
-          "default": 16
+          "min": 1,
+          "max": 15,
+          "step": 1,
+          "default":3
         },
         {
           "type": "text",
@@ -598,10 +594,10 @@
           "type":  "range",
           "id":    "heading_size",
           "label": "Heading size",
-          "min": 24,
-          "max": 40,
-          "step": 8,
-          "default": 40
+          "min": 1,
+          "max": 15,
+          "step": 1,
+          "default":7
         },
         {
           "type": "richtext",
@@ -613,10 +609,10 @@
           "type":  "range",
           "id":    "text_size",
           "label": "Text size",
-          "min": 12,
-          "max": 16,
-          "step": 2,
-          "default": 16
+          "min": 1,
+          "max": 15,
+          "step": 1,
+          "default":3
         },
         {
           "type":  "range",
@@ -767,10 +763,10 @@
           "type":  "range",
           "id":    "text_size",
           "label": "Text size",
-          "min": 24,
-          "max": 40,
-          "step": 8,
-          "default": 40
+          "min": 1,
+          "max": 15,
+          "step": 1,
+          "default": 7
         },
         {
           "type": "image_picker",
@@ -944,10 +940,10 @@
           "type":  "range",
           "id":    "heading_size",
           "label": "Heading size",
-          "min": 24,
-          "max": 40,
-          "step": 8,
-          "default": 40
+          "min": 1,
+          "max": 15,
+          "step": 1,
+          "default":7
         },
         {
           "type": "textarea",
@@ -959,10 +955,10 @@
           "type":  "range",
           "id":    "text_size",
           "label": "Text size",
-           "min": 12,
-          "max": 16,
-          "step": 2,
-          "default": 16
+          "min": 1,
+          "max": 15,
+          "step": 1,
+          "default":3
         },
         {
           "type": "select",

@@ -4,7 +4,7 @@
 
 {% schema %}
 {
-  "name": "Image with text block",
+  "name": "Image with text",
   "class": "section-overlay-header",
   "settings": [
     {
@@ -111,16 +111,6 @@
       ]
     },
     {
-        "type": "range",
-        "id": "padding_lr",
-        "min": 0,
-        "max": 125,
-        "step": 5,
-        "unit": "px",
-        "label": "Padding Left/Right",
-        "default": 50
-      },
-    {
       "type": "header",
       "content": "Mobile"
     },
@@ -182,12 +172,12 @@
         },
         {
           "type": "range",
-          "id": "heading_size",
+          "id": "text_size",
           "label": "Size",
-          "min": 24,
-          "max": 40,
-          "step": 8,
-          "default": 40
+          "min": 1,
+          "max": 15,
+          "step": 1,
+          "default": 8
         },
         {
           "type": "header",
@@ -216,13 +206,13 @@
           "default": "Introducing"
         },
         {
-          "type":  "range",
-          "id":    "text_size",
-          "label": "Size",
-          "min": 12,
-          "max": 16,
-          "step": 2,
-          "default": 16
+          "type": "range",
+          "id": "text_size",
+          "label": "Text size",
+          "min": 1,
+          "max": 15,
+          "step": 1,
+          "default": 3
         },
         {
           "type": "header",
@@ -251,19 +241,13 @@
           "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
         },
         {
-          "type": "checkbox",
-          "id": "quote_enabled",
-          "label": "Enable Quote Styling",
-          "default": false
-        },
-        {
-          "type":  "range",
-          "id":    "text_size",
+          "type": "range",
+          "id": "text_size",
           "label": "Size",
-          "min": 12,
-          "max": 16,
-          "step": 2,
-          "default": 16
+          "min": 1,
+          "max": 15,
+          "step": 1,
+          "default": 4
         },
         {
           "type": "select",
@@ -295,10 +279,6 @@
       "type": "buttons",
       "name": "Button",
       "settings": [
-     {
-      "type": "header",
-      "content": "Button (Font size can be changed in Theme Setting)"
-    },
         {
           "type": "text",
           "id": "button_text",
@@ -707,6 +687,32 @@
           "id": "show_arrow",
           "label": "Show arrow",
           "default": false
+        },
+        {
+          "type": "header",
+          "content": "Block spacing"
+        },
+        {
+          "type": "range",
+          "id": "padding_bottom",
+          "min": 0,
+          "max": 50,
+          "step": 2,
+          "unit": "px",
+          "label": "Padding bottom",
+          "default": 16
+        }
+      ]
+    },
+    {
+      "type": "code",
+      "name": "Custom code",
+      "settings": [
+        {
+          "type": "liquid",
+          "id": "code",
+          "label": "Custom code",
+          "default": "<p>Once you write some custom code, it will render right here.</p>"
         },
         {
           "type": "header",

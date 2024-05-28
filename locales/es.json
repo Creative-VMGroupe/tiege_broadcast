@@ -9,6 +9,10 @@
       "subtotal_note": "Antes de los impuestos y gastos de envío.",
       "customer_note": "Agregue un comentario acerca de su pedido.",
       "cart_notes_label": "Agregar comentarios a su pedido",
+      "products_with_count": {
+        "one": "Producto",
+        "other": "Productos"
+      },
       "pair_products": "Par con",
       "estimate_shipping_label": "Fecha de entrega estimada",
       "gift_notes_label": "¿Es esto un regalo?",
@@ -16,7 +20,7 @@
       "update": "Actualización del carrito.",
       "checkout": "Checkout",
       "accept_terms": "Debes aceptar nuestros términos y condiciones.",
-      "accepted_terms": "¿Términos\/condiciones aceptados?",
+      "accepted_terms": "¿Términos/condiciones aceptados?",
       "view_cart": "Ver carrito",
       "empty": "Su carrito está vacio.",
       "savings": "Su ahorro",
@@ -31,7 +35,7 @@
       "add_message": "Agregó un producto: ",
       "total_message": {
         "one": "y tienes {{ count }} producto en el carrito",
-        "other": "y tiene {{ count }} productos en el carrito"
+        "other":  "y tiene {{ count }} productos en el carrito"
       },
       "qualified_shipping_message": "¡Felicidades! Su pedido está calificado para el envío libre"
     },
@@ -87,6 +91,8 @@
       "phone": "Número de teléfono",
       "subject": "Asunto",
       "send": "Enviar",
+      "select_default": "Seleccione una opción",
+      "required_field_text": "Los campos marcados con un asterisco (*) son obligatorios.",
       "post_success": "Gracias por contactarnos. Nos pondremos en contacto con usted lo antes posible."
     }
   },
@@ -275,22 +281,25 @@
       "regular_price": "Precio regular",
       "sold_out": "Agotado",
       "sale_type": "Tipo de venta",
+      "new": "Nueva",
       "pre_order": "Hacer un pedido",
-      "on_sale": "Oferta",
+      "on_sale": "A la venta",
+      "final_sale": "Venta final",
       "unavailable": "No disponible",
       "compare_at": "Compare con ",
       "unit_price_label": "Precio por unidad",
       "subscription": "Suscripción",
       "save": "Ahorrar",
       "off": "de descuento",
+      "sku": "SKU",
       "one_time_purchase": "Compra única",
       "quantity": "Cantidad",
       "add_to_cart": "Agregar al carrito",
-      "checkout": "Checkout",
       "added": "Agregado a su carrito:",
       "vendor": "Vendedor",
       "type": "Tipo",
       "tags": "Etiquetas",
+      "variant_option_image": "Tamaño",
       "ask_title": "Pregunte sobre este producto:",
       "zoom": "Zoom",
       "configure": "Configurar",
@@ -308,8 +317,8 @@
         "view_store_info": "Ver información de la tienda",
         "check_other_stores": "Verificar disponibilidad en otras tiendas",
         "pick_up_available": "Retiro disponible",
-        "pick_up_available_at_html": "Retiro disponible en <strong>{{ location_name }}<\/strong>",
-        "pick_up_unavailable_at_html": "Retiro no disponible actualmente en <strong>{{ location_name }}<\/strong>",
+        "pick_up_available_at_html": "Retiro disponible en <strong>{{ location_name }}</strong>",
+        "pick_up_unavailable_at_html": "Retiro no disponible actualmente en <strong>{{ location_name }}</strong>",
         "unavailable": "No se pudo cargar la disponibilidad de retiro",
         "refresh": "Actualizar"
       }
@@ -407,8 +416,14 @@
       "submit": "Enviar",
       "placeholder": "Dirección de correo electrónico",
       "thank_you": "¡Gracias por registrarse!",
-      "thank_you_with_code_html": "Gracias por registrarte! ¡Puede usar este código <span> Descuento 10% <\/span> para el próximo pedido!",
-      "error_message": "¡Este cliente ya está suscrito!"
+      "thank_you_with_code_html": "Gracias por registrarte! ¡Puede usar este código <span> Descuento 10% </span> para el próximo pedido!",
+      "error_message": "¡Este cliente ya está suscrito!",
+      "product_notification_for": "Notificación de producto para",
+      "newsletter_product_availability": "Avísame cuando esté disponible",
+      "notify": "Notificarme",
+      "email": "Tu email",
+      "email_label": "Ingrese su correo electrónico y le informaremos cuando el artículo seleccionado esté disponible.",
+      "notification_success": "Tu email ha sido recibido."
     },
     "search": {
       "articles": "Artículos",

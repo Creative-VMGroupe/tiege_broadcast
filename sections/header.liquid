@@ -164,7 +164,7 @@
 
     {% comment %} --icon-add-cart variable is used on PGI and Product upsell block {% endcomment %}
     {%- if cart_icon_family == 'bag' -%}
-      --icon-add-cart: var(--ICON-ADD-CART);
+      --icon-add-cart: var(--ICON-ADD-BAG);
     {%- else -%}
       --icon-add-cart: var(--ICON-ADD-CART);
     {%- endif -%}
@@ -191,11 +191,6 @@
     .main-content > .shopify-section:first-of-type .backdrop--linear:before { display: none; }
   {%- endunless -%}
 {%- endstyle -%}
-<style>
-  .sliderow__links {
-    padding-top: 0rem;
-  }
-</style>
 
 {%- capture toolbar -%}
   {%- comment -%} Header Toolbar block {%- endcomment -%}
@@ -246,6 +241,9 @@
     endif
 
     capture style
+      echo '--PT: ' | append: block.settings.padding_top | append: 'px;'
+      echo '--PB: ' | append: block.settings.padding_bottom | append: 'px;'
+
       if bg_color != 'rgba(0,0,0,0)' and bg_color != blank
         echo '--bg: ' | append: bg_color | append: ';'
       else
@@ -299,7 +297,7 @@
 
 {%- if show_toolbar -%}
   {%- if show_utilities or text != blank -%}
-    <div class="toolbar{% if show_border %} has-border{% endif %}"
+    <div class="toolbar{% if show_border %} has-border{% endif %} section-padding{% if text == blank %} toolbar--no-text{% endif %}"
       {% if style != blank %}
         style="{{ style }}"
       {% endif %}
@@ -396,6 +394,16 @@
   </div>
 {%- endcapture -%}
 
+{%- capture cta -%}
+  {%- if section.settings.button_text != blank -%}
+    <div class="header__desktop__button header__desktop__button--cta">
+      <a class="btn btn--small btn--solid {{ section.settings.button_type }}" href="{{ section.settings.button_link }}">
+        <span>{{ section.settings.button_text | escape }}</span>
+      </a>
+    </div>
+  {%- endif -%}
+{%- endcapture -%}
+
 {%- liquid
   assign languages = false
   assign countries = false
@@ -478,9 +486,11 @@
   {{ logos }}
 
   <div class="header__mobile__right{% if settings.type_nav_caps %} caps{% endif %}">
+    {{ cta }}
+
     {%- if header_popouts -%}
       {%- assign unique = section.id | append: '-header-mobile-top' -%}
-      <div class="header__mobile__button header__mobile__button--desktop">
+      <div class="header__mobile__button desktop">
         {%- render 'localization' unique: unique, show_locale_selector: show_locale_selector, show_country_selector: show_country_selector, show_country_flag: show_country_flag, show_country_name: show_country_name, class: 'header', unique: section.id, short_country_name: true -%}
       </div>
     {%- endif -%}
@@ -517,10 +527,14 @@
 
 {%- capture buttons -%}
   <div class="header__desktop__buttons{% if show_icons == false %} header__desktop__buttons--text{% else %} header__desktop__buttons--icons{% endif %}{% if settings.type_nav_caps %} caps{% endif %}">
-    {%- if show_socials and section.settings.header_style != 'logo_above' -%}
-      <div class="header__desktop__button">
-        {%- render 'social-icons' -%}
-      </div>
+    {%- if section.settings.header_style != 'logo_above' -%}
+      {{ cta }}
+
+      {%- if show_socials  -%}
+        <div class="header__desktop__button">
+          {%- render 'social-icons' -%}
+        </div>
+      {%- endif -%}
     {%- endif -%}
 
     {%- if header_popouts -%}
@@ -727,6 +741,8 @@
             {%- comment -%} 'logo_above' is default case, this covers migrated settings {%- endcomment -%}
             <div class="header__desktop__upper" data-takes-space-wrapper>
               <div data-child-takes-space class="header__desktop__bar__l">
+                {{ cta }}
+
                 {%- if show_socials -%}
                   {%- render 'social-icons' -%}
                 {%- endif -%}
@@ -913,6 +929,36 @@
       "id": "show_social_icons",
       "default": true,
       "label": "Show social icons"
+    },
+    {
+      "type": "header",
+      "content": "Call to action"
+    },
+    {
+      "type": "paragraph",
+      "content": "Applies to desktop only"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Link"
+    },
+    {
+      "type": "select",
+      "id": "button_type",
+      "label": "Color",
+      "default": "btn--primary",
+      "options": [
+        {"value": "btn--primary", "label": "Primary"},
+        {"value": "btn--secondary", "label": "Secondary"},
+        {"value": "btn--white", "label": "White"},
+        {"value": "btn--black", "label": "Black"}
+      ]
     },
     {
       "type": "header",
@@ -1116,15 +1162,6 @@
           "type": "header",
           "content": "Text"
         },
-                {
-          "type": "range",
-          "id": "heading_size",
-          "label": "Size",
-          "min": 24,
-          "max": 40,
-          "step": 8,
-          "default": 40
-        },
         {
           "type": "text",
           "id": "title",
@@ -1254,110 +1291,30 @@
           "id": "color",
           "label": "Text",
           "default": "#333333"
-        }
-      ]
-    },
-    {
-      "name": "Video",
-      "type": "video",
-      "settings": [
-        {
-          "type": "select",
-          "id": "position",
-          "label": "Link position in main menu",
-          "default": "1",
-          "options": [
-            { "value": "1", "label": "Item 1"},
-            { "value": "2", "label": "Item 2"},
-            { "value": "3", "label": "Item 3"},
-            { "value": "4", "label": "Item 4"},
-            { "value": "5", "label": "Item 5"},
-            { "value": "6", "label": "Item 6"},
-            { "value": "7", "label": "Item 7"},
-            { "value": "8", "label": "Item 8"},
-            { "value": "9", "label": "Item 9"},
-            { "value": "10", "label": "Item 10"}
-          ]
-        },
-        {
-          "type": "video",
-          "id": "video",
-          "label": "Video"
-        },
-        {
-          "type": "range",
-          "id": "aspect_ratio",
-          "min": 0.5,
-          "max": 1.5,
-          "step": 0.1,
-          "unit": ":1",
-          "label": "Video scaling ratio",
-          "info": "Wide to tall",
-          "default": 0.5
-        },
-        {
-          "type": "checkbox",
-          "id": "wide_image",
-          "label": "Wide video",
-          "default": true
         },
         {
           "type": "header",
-          "content": "Overlay"
+          "content": "Section padding"
         },
         {
           "type": "range",
-          "id": "overlay_opacity",
-          "label": "Opacity",
-          "info": "Increase contrast for legible text.",
-          "unit": "%",
+          "id": "padding_top",
           "min": 0,
-          "max": 100,
-          "step": 5,
-          "default":0
+          "max": 15,
+          "step": 1,
+          "unit": "px",
+          "label": "Padding top",
+          "default": 0
         },
         {
-          "type": "color",
-          "id": "overlay_color",
-          "label": "Overlay color",
-          "default": "#000"
-        },
-        {
-          "type": "header",
-          "content": "Text"
-        },
-                        {
           "type": "range",
-          "id": "heading_size",
-          "label": "Size",
-          "min": 24,
-          "max": 40,
-          "step": 8,
-          "default": 40
-        },
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Heading"
-        },
-        {
-          "type": "text",
-          "id": "link_text",
-          "label": "Text"
-        },
-        {
-          "type": "url",
-          "id": "link",
-          "label": "Link"
-        },
-        {
-          "type": "header",
-          "content": "Color"
-        },
-        {
-          "type": "color",
-          "id": "text_color",
-          "label": "Text"
+          "id": "padding_bottom",
+          "min": 0,
+          "max": 15,
+          "step": 1,
+          "unit": "px",
+          "label": "Padding bottom",
+          "default": 0
         }
       ]
     }

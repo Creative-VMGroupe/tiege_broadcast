@@ -3,7 +3,7 @@
   assign text_size = text_size | prepend: 'heading-size-'
 -%}
 
-<div class="product__block product__head block-padding product__title-custom"
+<div class="product__block product__head block-padding"
   {{ block_style }}
   {% if animation_name %}
     data-animation="{{ animation_name }}"
@@ -14,15 +14,15 @@
     {%- when 'vendor' -%}
       {%- if product.vendor -%}
         <nav class="breadcrumbs breadcrumbs--no-padding product__breadcrumbs">
-          <a class='breadcrumbs_text' href="{{ product.vendor | url_for_vendor }}">{{ product.vendor }}</a>
+          <a href="{{ product.vendor | url_for_vendor }}">{{ product.vendor }}</a>
         </nav>
       {%- endif -%}
     {%- when 'collection' -%}
       {%- if collection or product.collections.size > 0 -%}
-        {%- assign current_collection = block.settings.collection -%}
+        {%- assign current_collection = collection | default: product.collections[0] -%}
 
         <nav class="breadcrumbs breadcrumbs--no-padding product__breadcrumbs">
-          <a class='breadcrumbs_text' href="{{ current_collection.url }}">{{ current_collection.title }}</a>
+          <a href="{{ current_collection.url }}">{{ current_collection.title }}</a>
         </nav>
       {%- endif -%}
     {%- when 'breadcrumb'  -%}
@@ -30,7 +30,7 @@
   {%- endcase -%}
 
   <div class="product__title__wrapper" {{ block.shopify_attributes }}>
-    <h1 class="product__title heading-size-40">
+    <h1 class="product__title {{ text_size }}">
       {%- unless is_title_linked -%}
         <span data-zoom-caption>{{ product.title | strip_html }}</span>
       {%- else -%}

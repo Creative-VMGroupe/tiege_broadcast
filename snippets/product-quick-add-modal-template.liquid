@@ -10,12 +10,12 @@
 {% endcomment %}
 
 <template data-quick-add-modal-template>
-  <dialog class="product-quick-add" data-product-id="{{ product_id }}" data-section-id="{{ unique }}" inert data-quick-add-modal data-scroll-lock-required>
+  <dialog class="drawer product-quick-add" data-product-id="{{ product_id }}" data-section-id="{{ unique }}" inert data-quick-add-modal data-scroll-lock-required>
     <form method="dialog">
       <button class="visually-hidden no-js" aria-label="{{ 'general.accessibility.close' | t }}"></button>
     </form>
 
-    <div style="max-width: 400px" class="product-quick-add__content" data-product-upsell-container data-scroll-lock-scrollable style="--swatch-size: var(--swatch-size-product)">
+    <div class="drawer__inner product-quick-add__content" data-product-upsell-container data-scroll-lock-scrollable style="--swatch-size: var(--swatch-size-product)">
       <div class="product-quick-add__close-outer">
         <button class="product-quick-add__close drawer__close" aria-label="{{ 'general.accessibility.close' | t }}" data-quick-add-modal-close autofocus>
           {%- render 'icon-cancel' -%}

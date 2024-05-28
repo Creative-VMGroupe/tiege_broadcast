@@ -21,7 +21,7 @@
   data-section-type="blog">
   <div class="wrapper--full-padded">
     {%- if section.settings.show_title or section.settings.show_rss -%}
-      <h1 class="blog__title h3 heading-size-40">
+      <h1 class="blog__title h3">
         {%- if section.settings.show_title -%}
           {{ blog.title }}
         {%- endif -%}
@@ -209,7 +209,7 @@
             data-aos-order="{{ animation_order }}"
             data-aos-duration="{{ animation_duration }}"
           >
-            <h2 class="article__title {{ title_size_class }} blog__title-custom">
+            <h2 class="article__title {{ title_size_class }}">
               <a href="{{ article.url }}" title="{{ article.title | strip_html | escape }}">
                 {{ article.title }}
               </a>
@@ -323,10 +323,10 @@
         "type":  "range",
         "id": "title_size",
         "label": "Title size",
-          "min": 12,
-          "max": 24,
-          "step": 4,
-          "default": 24
+        "min": 1,
+        "max": 15,
+        "step": 1,
+        "default": 4
       },
       {
         "type": "checkbox",

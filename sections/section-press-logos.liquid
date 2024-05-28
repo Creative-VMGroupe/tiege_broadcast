@@ -61,7 +61,7 @@
       assign widths = '100, 120, 140, 160, 180, 200, 240, 280, 320, 360, ' | append: logo_width | append: ', ' | append: width_retina
       assign link = block.settings.link
 
-      if block.settings.description != blank and section.settings.enable_heading_slider
+      if block.settings.heading != blank and section.settings.enable_heading_slider
         assign show_slider_text = true
       endif
     -%}
@@ -110,7 +110,7 @@
   {%- capture contents -%}
     {{ contents }}
 
-    {%- assign text = block.settings.description -%}
+    {%- assign text = block.settings.heading -%}
 
     <div class="logos__slide logos__slide--{{ block.id }}"
       data-slide-index="{{ forloop.index0 }}"
@@ -277,10 +277,10 @@
           "info": "Applies if 'enable heading slider' is enabled"
         },
         {
-          "type": "richtext",
-          "id": "description",
+          "type": "text",
+          "id": "heading",
           "label": "Heading",
-          "default": "<p>Include a brief quote from a brand that loves your products</p>"
+          "default": "Include a brief quote from a brand that loves your products"
         },
         {
           "type":  "range",

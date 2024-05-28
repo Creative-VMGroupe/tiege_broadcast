@@ -22,7 +22,8 @@
   -%}
 
   {%- capture cart_line_item -%}
-    <div class="cart__item-custom cart__item{% if forloop.last %} cart__item--no-border{% endif %}"
+
+    <div class="cart__item{% if forloop.last %} cart__item--no-border{% endif %}"
       data-item="{{ line_item.key }}"
       data-item-index="{{ forloop.index }}"
       data-item-title="{{ line_item.title | strip_html }}"
@@ -35,7 +36,7 @@
         <a href="{{ line_item.url }}" aria-label="{{ line_item.title | escape }}">
           {%- if line_item.image -%}
             <div class="lazy-image is-loading">
-              {{ line_item.image | image_url: width: 180 | image_tag: widths: '90, 180, 270, 360', sizes: '133px', class: 'is-loading', loading: 'lazy', fetchpriority: fetchpriority }}
+              {{ line_item.image | image_url: width: 180 | image_tag: widths: '90, 180, 270, 360', sizes: '90px', class: 'is-loading', loading: 'lazy', fetchpriority: fetchpriority }}
             </div>
           {%- endif -%}
         </a>
@@ -49,7 +50,7 @@
             </a>
           </h4>
 
-          <div style='margin-bottom: 8px;' class="cart__item__meta">
+          <div class="cart__item__meta">
             {%- assign properties_html = '' -%}
             {%- assign property_size = line_item.properties | size -%}
 
@@ -105,12 +106,6 @@
               <p class="cart__item__selling-plan">
                 <span>{{ line_item.selling_plan_allocation.selling_plan.name }}</span>
               </p>
-            {% else %}
-              {% if line_item.variant.selling_plan_allocations.size > 0 %}
-                <p style='margin: 0' class="btn btn--text cart__item__selling-plan ">
-                  <span class="subscription-switch" data-switch-to-subscription data-quantity="{{ line_item.quantity }}" data-item="{{ line_item.key }}" data-variant-id="{{ line_item.variant_id }}" data-selling-plan="{{ line_item.variant.selling_plan_allocations.first.selling_plan.id }}">Switch to Subscription</span>
-                </p>
-              {% endif %}
             {%- endif -%}
 
             {%- if properties_html != '' -%}
@@ -178,7 +173,6 @@
           {%- endif -%}
         </p>
 
-        {% if line_item.variant_id != settings.gift_item.first_available_variant.id %}
         <quantity-counter class="cart__quantity-counter">
           <div class="cart__quantity">
             <button
@@ -196,23 +190,19 @@
             {%- endif -%}
 
             <input
-              class="cart__quantity-custom cart__quantity-field"
+              class="cart__quantity-field"
               type="number"
               id="updates_{{ line_item.key }}"
               name="updates[]"
               data-id="{{ line_item.key }}"
               value="{{ quantity }}"
               title="{{ 'cart.general.quantity_field_label' | t }} - {{ line_item.product.title | strip_html }}"
-              pattern="[0-9]*"
-              {% if quantity == line_item.product.metafields.custom.max_qty_per_order %}readonly{% endif %}
-            >
+              pattern="[0-9]*">
 
             <button
-              {% if quantity == line_item.product.metafields.custom.max_qty_per_order %}disabled data-disabled{% endif %}
               class="cart__quantity-plus"
               type="button"
               name="increase"
-              data-max-allowed="{{ line_item.product.metafields.custom.max_qty_per_order }}"
               title="{{ 'cart.general.increase_quantity_label' | t }} - {{ line_item.product.title | strip_html }}">
               {%- render 'icon-plus' -%}
             </button>
@@ -223,10 +213,9 @@
             data-item-remove
             data-id="{{ line_item.key }}"
             title="{{ 'cart.general.remove' | t }}">
-              {%- render 'icon-trash' -%}
+              {{- 'cart.general.remove' | t -}}
           </a>
         </quantity-counter>
-        {% endif %}
       </div>
 
       {%- if line_item.original_price > line_item.final_price -%}

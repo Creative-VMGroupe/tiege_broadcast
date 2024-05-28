@@ -59,10 +59,7 @@ Required params:
     data-animation-delay="{{ animation_delay }}"
     data-animation-duration="{{ animation_duration }}"
   {% endif %}>
-
-  {%- case block.type -%}
-    {% when 'image' %}
-  <div style="height: 100%;" class="header__dropdown__image palette--contrast--dark"
+  <div class="header__dropdown__image palette--contrast--dark"
     {% unless text_color == 'rgba(0,0,0,0)' or text_color == blank %}style="--text: {{ text_color }};"{% endunless %}
     data-stagger-first>
     {%- if link != blank -%}
@@ -74,7 +71,7 @@ Required params:
       <div class="hero__content__wrapper align--bottom-left">
         <div class="hero__content hero__content--transparent backdrop--radial">
           {%- if title != blank -%}
-            <h2 class="hero__title h4 {{ font_size_class }}">
+            <h2 class="hero__title h4">
               {{ title | escape }}
             </h2>
           {%- endif -%}
@@ -95,78 +92,6 @@ Required params:
 
     <div class="image-overlay" style="--overlay-bg: {{ block.settings.overlay_color }}; --overlay-opacity: {{ block.settings.overlay_opacity | times: 0.01 }};"></div>
 
-   
-  
-    {%- render 'image', image: image, aspect_ratio: aspect_ratio, sizes: sizes, loading: 'lazy', fetchpriority: 'high' headerFullHeight: true-%}
+    {%- render 'image', image: image, aspect_ratio: aspect_ratio, sizes: sizes, loading: 'lazy', fetchpriority: 'high' -%}
   </div>
-      {% when 'video' %}
-        {%- liquid 
-        assign video = block.settings.video 
-        assign video_aspect_ratio = video.aspect_ratio
-  assign aspect_ratio = aspect_ratio | default: video_aspect_ratio | default: 1
-        -%}
-        {%- if video != nil -%}  {%- endif -%}
-          <div style="height: 100%;" class="header__dropdown__image palette--contrast--dark"
-        {% unless text_color == 'rgba(0,0,0,0)' or text_color == blank %}style="--text: {{ text_color }};"{% endunless %}
-        data-stagger-first>
-        {%- if link != blank -%}
-          <a href="{{ link }}" class="link-over-image">
-        {%- else -%}
-          <div class="link-over-image">
-        {%- endif -%}
-    
-          <div class="hero__content__wrapper align--bottom-left">
-            <div class="hero__content hero__content--transparent backdrop--radial">
-              {%- if title != blank -%}
-                <h2 class="hero__title h4 {{ font_size_class }}">
-                  {{ title | escape }}
-                </h2>
-              {%- endif -%}
-    
-              {%- if text != blank -%}
-                <p class="hero__description">
-                  {{ text | escape }}
-                </p>
-              {%- endif -%}
-            </div>
-          </div>
-    
-        {%- if link != blank -%}
-          </a>
-        {%- else -%}
-          </div>
-        {%- endif -%}
-    
-        <div class="image-overlay" style="--overlay-bg: {{ block.settings.overlay_color }}; --overlay-opacity: {{ block.settings.overlay_opacity | times: 0.01 }};"></div>
-{% liquid 
-capture img_class
-if fill
-  echo ' fit-cover'
-endif
-
-if video
-  echo ' is-loading '
-endif
-endcapture 
-
-capture wrapper_attributes
-echo 'style="'
-echo '--aspect-ratio: ' | append: aspect_ratio | append: ';'
-echo '"'
-
-if attributes != blank
-  echo ' ' | append: attributes
-endif
-endcapture
-%}
-
-        <div class="{{img_class}} video-container" {{wrapper_attributes}}>
-          {{ video | video_tag: autoplay: true, image_size: '1085x', loop: true, muted: true, controls: false }}
-
-        </div>
- 
-      </div>
-    
-
-     {% endcase %}
 </div>

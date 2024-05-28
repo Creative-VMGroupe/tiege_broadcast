@@ -16,11 +16,11 @@
     data-product-variant-id="{{ product.selected_or_first_available_variant.id }}"
   >
     <input
-      id="Recipient-Checkbox-{{ section.id }}"
+      id="Recipient-Checkbox-{{ section.id }}-{{ product.id }}"
       type="checkbox"
       name="{{ gift_card_recipient_control_flag }}"
     >
-    <label class="recipient-checkbox radio__fieldset__label" for="Recipient-Checkbox-{{ section.id }}">
+    <label class="recipient-checkbox radio__fieldset__label" for="Recipient-Checkbox-{{ section.id }}-{{ product.id }}">
       <span>{{ 'recipient.form.checkbox' | t }}</span>
     </label>
 

@@ -1,7 +1,7 @@
-{% comment %} 
-    This is where CSS Variables are set with values from your theme settings.
-    These values are created in settings_schema.json and stored in settings_data.json.
-    CSS variables are used to remove liquid code from your CSS file, allowing CSS to load faster. 
+{% comment %}
+  This is where CSS Variables are set with values from your theme settings.
+  These values are created in settings_schema.json and stored in settings_data.json.
+  CSS variables are used to remove liquid code from your CSS file, allowing CSS to load faster.
 {% endcomment %}
 
 {%- liquid
@@ -86,30 +86,34 @@
 -%}
 
 {% style %}
-  :root  {
-    {%- comment -%} Scrollbar width {%- endcomment -%}
-  --scrollbar-width: 0;
-  {%- comment -%} Opacity for hover state on links {%- endcomment -%}
+
+:root {
+
+{%- comment -%} Scrollbar width {%- endcomment -%}
+  --scrollbar-width: 0px;
+
+{%- comment -%} Opacity for hover state on links {%- endcomment -%}
 {% assign hover_opacity = 0.70 %}
+
 {% assign backdrop_bg = 'rgba(0,0,0,0.4)' %}
 {% assign backdrop_opacity = 1 %}
+
 {% comment %}
-  Create an appropriate poster background color based on background color and brightness
+  Create an appropriate poster background color
+  based on background color and brightness
 {% endcomment %}
 {%- assign color_body_bg = settings.bg_color -%}
 {%- assign color_body_bg_brightness = color_body_bg | color_brightness -%}
 {%- if color_body_bg_brightness <= 26 -%}
   {%- assign color_bg_brighter = color_body_bg | color_lighten: 10 -%}
 {%- elsif color_body_bg_brightness <= 65 -%}
-{%- assign color_bg_brighter = color_body_bg | color_lighten: 5 -%}
+  {%- assign color_bg_brighter = color_body_bg | color_lighten: 5 -%}
 {%- else -%}
-{%- assign color_bg_brighter = color_body_bg | color_darken: 5 -%}
+  {%- assign color_bg_brighter = color_body_bg | color_darken: 5 -%}
 {%- endif -%}
 
 --COLOR-VIDEO-BG: {{ color_bg_brighter }};
 --COLOR-BG-BRIGHTER: {{ color_bg_brighter }};
-
-
 
 {%- assign bg_color = settings.bg_color | strip -%}
 {%- if bg_color == 'rgba(0,0,0,0)' or bg_color == blank -%}
@@ -121,18 +125,15 @@
 --COLOR-BG-TRANSPARENT: {{ settings.bg_color | color_modify: 'alpha', 0 }};
 --COLOR-BG-SECONDARY: {{ settings.secondary_bg_color }};
 --COLOR-BG-SECONDARY-LIGHTEN: {{ settings.secondary_bg_color | color_lighten: 15 }};
---COLOR-BG-RGB: {{ settings.bg_color | color_extract: 'red' }}, 
-{{ settings.bg_color | color_extract: 'green' }}, 
-{{ settings.bg_color | color_extract: 'blue' }};
+--COLOR-BG-RGB: {{ settings.bg_color | color_extract: 'red' }}, {{ settings.bg_color | color_extract: 'green' }}, {{ settings.bg_color | color_extract: 'blue' }};
 
 --COLOR-TEXT-DARK: {{ settings.text_color | color_saturate: 10 | color_darken: 15 }};
 --COLOR-TEXT: {{ settings.text_color }};
---COLOR-SUB: {{ setting.sub_color }};
 --COLOR-TEXT-LIGHT: {{ settings.text_color | color_mix: settings.bg_color, 70 }};
 
 
 /* === Opacity shades of grey ===*/
---COLOR-A5: {{ settings.text_color | color_modify: 'alpha', 0.05 }};
+--COLOR-A5:  {{ settings.text_color | color_modify: 'alpha', 0.05 }};
 --COLOR-A10: {{ settings.text_color | color_modify: 'alpha', 0.10 }};
 --COLOR-A15: {{ settings.text_color | color_modify: 'alpha', 0.15 }};
 --COLOR-A20: {{ settings.text_color | color_modify: 'alpha', 0.20 }};
@@ -157,8 +158,6 @@
 --COLOR-BORDER-HAIRLINE: {{ settings.bg_color | color_darken: 3 }};
 --COLOR-BORDER-DARK: {{ settings.site_border_color | color_darken: 20 }};
 
-
-
 {%- assign white = settings.bg_color | color_lighten: 100 -%}
 {%- assign black = settings.bg_color | color_darken: 100 -%}
 {%- assign contrast_limit = 2 -%}
@@ -172,8 +171,6 @@
 --COLOR-PRIMARY-FADE: {{ settings.accent_bright | color_modify: 'alpha', 0.05 }};
 --COLOR-PRIMARY-FADE-HOVER: {{ settings.accent_bright | color_modify: 'alpha', 0.1 }};
 --COLOR-PRIMARY-LIGHT: {{ settings.accent_bright | color_saturate: 20 | color_lighten: 30 }};
-
-
 {%- assign opposite = white -%}
 {%- assign contrast_white = settings.accent_bright | color_contrast: white -%}
 {%- assign contrast_black = settings.accent_bright | color_contrast: black -%}
@@ -183,13 +180,12 @@
 --COLOR-PRIMARY-OPPOSITE: {{ opposite }};
 
 
+
 /* === link Color ===*/
 --COLOR-LINK: {{ settings.link_color }};
 --COLOR-LINK-HOVER: {{ settings.link_color | color_modify: 'alpha', hover_opacity }};
 --COLOR-LINK-FADE: {{ settings.link_color | color_modify: 'alpha', 0.05 }};
 --COLOR-LINK-FADE-HOVER: {{ settings.link_color | color_modify: 'alpha', 0.1 }};
-
-
 {%- assign opposite = white -%}
 {%- assign contrast_white = settings.link_color | color_contrast: white -%}
 {%- assign contrast_black = settings.link_color | color_contrast: black -%}
@@ -202,15 +198,6 @@
 /* === Product grid sale tags ===*/
 --COLOR-SALE-BG: {{ settings.sale_bg_color }};
 --COLOR-SALE-TEXT: {{ settings.sale_text_color }};
-
-
-{%- assign sale_text_secondary = settings.sale_bg_color -%}
-{%- assign sale_text_secondary_downcase = sale_text_secondary | downcase -%}
-{%- assign bg_color_global_downcase = settings.bg_color | downcase -%}
-{%- if sale_text_secondary_downcase == bg_color_global_downcase -%}
-  {%- assign sale_text_secondary = settings.text_color -%}
-{%- endif -%}
---COLOR-SALE-TEXT-SECONDARY: {{ sale_text_secondary }};
 
 /* === Product grid badges ===*/
 --COLOR-BADGE-BG: {{ settings.badge_bg_color }};
@@ -231,10 +218,6 @@
 --COLOR-ERROR-BG: #F8D7DA;
 --COLOR-ERROR-BORDER: #F5C6CB;
 
---COLOR-SUCCESS: #155724;
---COLOR-SUCCESS-BG: #d4edda;
---COLOR-SUCCESS-BORDER: #155724;
-
 
 {% if settings.btn_border_style == 'rounded' %}
   --RADIUS: 3px;
@@ -243,8 +226,8 @@
   --RADIUS: 300px;
   --RADIUS-SELECT: 22px;
 {% else %}
-  --RADIUS: 0;
-  --RADIUS-SELECT: 0;
+  --RADIUS: 0px;
+  --RADIUS-SELECT: 0px;
 {% endif %}
 
 {%- assign header_bg = settings.header_bg | strip -%}
@@ -268,16 +251,14 @@
 --COLOR-MENU-TRANSPARENT: {{ settings.menu_transparent_color }};
 --COLOR-MENU-TRANSPARENT-HOVER: {{ settings.menu_transparent_color | color_modify: 'alpha', hover_opacity }};
 
-
-
 {%- liquid
-    assign footer_bg = settings.footer_bg
-    assign footer_bg_brightness = footer_bg | color_brightness
-    if footer_bg_brightness > 100
-      assign footer_bg_hairline = settings.footer_bg | color_darken: 3
-    else
-      assign footer_bg_hairline = settings.footer_bg | color_lighten: 3
-    endif
+  assign footer_bg = settings.footer_bg
+  assign footer_bg_brightness = footer_bg | color_brightness
+  if footer_bg_brightness > 100
+    assign footer_bg_hairline = settings.footer_bg | color_darken: 3
+  else
+    assign footer_bg_hairline = settings.footer_bg | color_lighten: 3
+  endif
 -%}
 --COLOR-FOOTER-BG: {{ footer_bg }};
 --COLOR-FOOTER-BG-HAIRLINE: {{ footer_bg_hairline }};
@@ -296,32 +277,32 @@
 --underlay-bg: {{ backdrop_bg }};
 
 /* === Custom Cursor ===*/
---ICON-ZOOM-IN: url("{{ 'icon-zoom-in.svg' | asset_url }}");
---ICON-ZOOM-OUT: url("{{ 'icon-zoom-out.svg' | asset_url }}");
+--ICON-ZOOM-IN: url( "{{ 'icon-zoom-in.svg' | asset_url }}" );
+--ICON-ZOOM-OUT: url( "{{ 'icon-zoom-out.svg' | asset_url }}" );
 
 /* === Custom Icons ===*/
 {% assign icon_style = settings.icon_style %}
 {% if icon_style == '2' %}
   {% comment %} Icon style Bold {% endcomment %}
---ICON-ADD-BAG: url("{{ 'icon-add-bag-bold.svg' | asset_url }}");
---ICON-ADD-CART: url("{{ 'icon-add-cart-tiege.svg' | asset_url }}");
---ICON-ARROW-LEFT: url("{{ 'icon-arrow-left-bold.svg' | asset_url }}");
---ICON-ARROW-RIGHT: url("{{ 'icon-arrow-right-bold.svg' | asset_url }}");
---ICON-SELECT: url("{{ 'icon-select-bold.svg' | asset_url }}");
+  --ICON-ADD-BAG: url( "{{ 'icon-add-bag-bold.svg' | asset_url }}" );
+  --ICON-ADD-CART: url( "{{ 'icon-add-cart-bold.svg' | asset_url }}" );
+  --ICON-ARROW-LEFT: url( "{{ 'icon-arrow-left-bold.svg' | asset_url }}" );
+  --ICON-ARROW-RIGHT: url( "{{ 'icon-arrow-right-bold.svg' | asset_url }}" );
+  --ICON-SELECT: url("{{ 'icon-select-bold.svg' | asset_url }}");
 {% elsif icon_style == '1.5' %}
-{% comment %} Icon style Medium {% endcomment %}
---ICON-ADD-BAG: url("{{ 'icon-add-bag-medium.svg' | asset_url }}");
---ICON-ADD-CART: url("{{ 'icon-add-cart-tiege.svg' | asset_url }}");
---ICON-ARROW-LEFT: url("{{ 'icon-arrow-left-medium.svg' | asset_url }}");
---ICON-ARROW-RIGHT: url("{{ 'icon-arrow-right-medium.svg' | asset_url }}");
---ICON-SELECT: url("{{ 'icon-select-medium.svg' | asset_url }}");
+  {% comment %} Icon style Medium {% endcomment %}
+  --ICON-ADD-BAG: url( "{{ 'icon-add-bag-medium.svg' | asset_url }}" );
+  --ICON-ADD-CART: url( "{{ 'icon-add-cart-medium.svg' | asset_url }}" );
+  --ICON-ARROW-LEFT: url( "{{ 'icon-arrow-left-medium.svg' | asset_url }}" );
+  --ICON-ARROW-RIGHT: url( "{{ 'icon-arrow-right-medium.svg' | asset_url }}" );
+  --ICON-SELECT: url("{{ 'icon-select-medium.svg' | asset_url }}");
 {% else %}
-{% comment %} Icon style Regular {% endcomment %}
---ICON-ADD-BAG: url("{{ 'icon-add-bag.svg' | asset_url }}");
---ICON-ADD-CART: url("{{ 'icon-add-cart-tiege.svg' | asset_url }}");
---ICON-ARROW-LEFT: url("{{ 'icon-arrow-left.svg' | asset_url }}");
---ICON-ARROW-RIGHT: url("{{ 'icon-arrow-right.svg' | asset_url }}");
---ICON-SELECT: url("{{ 'icon-select.svg' | asset_url }}");
+  {% comment %} Icon style Regular {% endcomment %}
+  --ICON-ADD-BAG: url( "{{ 'icon-add-bag.svg' | asset_url }}" );
+  --ICON-ADD-CART: url( "{{ 'icon-add-cart.svg' | asset_url }}" );
+  --ICON-ARROW-LEFT: url( "{{ 'icon-arrow-left.svg' | asset_url }}" );
+  --ICON-ARROW-RIGHT: url( "{{ 'icon-arrow-right.svg' | asset_url }}" );
+  --ICON-SELECT: url("{{ 'icon-select.svg' | asset_url }}");
 {% endif %}
 
 --PRODUCT-GRID-ASPECT-RATIO: {{ settings.product_grid_aspect_ratio | times: 100 }}%;
@@ -330,26 +311,20 @@
 --FONT-WEIGHT-BODY: {{ base_font.weight | default: 400 }};
 --FONT-WEIGHT-BODY-BOLD: {{ base_font_bold.weight | default: 700 }};
 
---FONT-STACK-BODY: {{ base_font.family }}, 
-{{ base_font.fallback_families }};
+--FONT-STACK-BODY: {{ base_font.family }}, {{ base_font.fallback_families }};
 --FONT-STYLE-BODY: {{ base_font.style }};
 --FONT-STYLE-BODY-ITALIC: {{ base_font_italic.style }};
 --FONT-ADJUST-BODY: {{ settings.type_body_size | divided_by: 100.0 }};
 
---LETTER-SPACING-BODY: {{ settings.body_letter_spacing | append: 'px' }};
+--LETTER-SPACING-BODY: {{ settings.body_letter_spacing | divided_by: 1000.0 | append: 'em' }};
 
 --FONT-WEIGHT-HEADING: {{ heading_font.weight | default: 400 }};
 --FONT-WEIGHT-HEADING-BOLD: {{ heading_font_bold.weight | default: 700 }};
 
 --FONT-UPPERCASE-HEADING: {{ heading_font_uppercase }};
---LETTER-SPACING-HEADING: {{ settings.heading_letter_spacing | append: 'px' }};
+--LETTER-SPACING-HEADING: {{ settings.heading_letter_spacing | divided_by: 1000.0 | append: 'em' }};
 
---LINE-HEIGHT: {{ settings.line_height | divided_by: 10.0 }};
---BODY-LINE-HEIGHT: {{ settings.body-line_height | divided_by: 10.0 }};    
-  
-    
---FONT-STACK-HEADING: {{ heading_font.family }}, 
-{{ heading_font.fallback_families }};
+--FONT-STACK-HEADING: {{ heading_font.family }}, {{ heading_font.fallback_families }};
 --FONT-STYLE-HEADING: {{ heading_font.style }};
 --FONT-STYLE-HEADING-ITALIC: {{ heading_font_italic.style }};
 --FONT-ADJUST-HEADING: {{ settings.type_heading_size | divided_by: 100.0 }};
@@ -357,17 +332,15 @@
 --FONT-WEIGHT-SUBHEADING: {{ subheading_font.weight | default: 400 }};
 --FONT-WEIGHT-SUBHEADING-BOLD: {{ subheading_font_bold.weight | default: 700 }};
 
---FONT-STACK-SUBHEADING: {{ subheading_font.family }}, 
-{{ subheading_font.fallback_families }};
+--FONT-STACK-SUBHEADING: {{ subheading_font.family }}, {{ subheading_font.fallback_families }};
 --FONT-STYLE-SUBHEADING: {{ subheading_font.style }};
 --FONT-STYLE-SUBHEADING-ITALIC: {{ subheading_font_italic.style }};
 --FONT-ADJUST-SUBHEADING: {{ settings.type_sub_size | divided_by: 100.0 }};
 
 --FONT-UPPERCASE-SUBHEADING: {{ subheading_font_uppercase }};
---LETTER-SPACING-SUBHEADING: {{ settings.sub_letter_spacing | append: 'px' }};
+--LETTER-SPACING-SUBHEADING: {{ settings.sub_letter_spacing | divided_by: 1000.0 | append: 'em' }};
 
---FONT-STACK-NAV: {{ nav_font.family }}, 
-{{ nav_font.fallback_families }};
+--FONT-STACK-NAV: {{ nav_font.family }}, {{ nav_font.fallback_families }};
 --FONT-STYLE-NAV: {{ nav_font.style }};
 --FONT-STYLE-NAV-ITALIC: {{ nav_font_italic.style }};
 --FONT-ADJUST-NAV: {{ settings.type_nav_size | divided_by: 100.0 }};
@@ -375,7 +348,7 @@
 --FONT-WEIGHT-NAV: {{ nav_font.weight | default: 400 }};
 --FONT-WEIGHT-NAV-BOLD: {{ nav_font_bold.weight | default: 700 }};
 
---LETTER-SPACING-NAV: {{ settings.nav_letter_spacing | append: 'px' }};
+--LETTER-SPACING-NAV: {{ settings.nav_letter_spacing | divided_by: 1000.0 | append: 'em' }};
 
 --FONT-SIZE-BASE: {{ settings.type_body_size | divided_by: 100.0 | append: 'rem' }};
 --FONT-SIZE-BASE-PERCENT: {{ settings.type_body_size | divided_by: 100.0 }};
@@ -398,13 +371,6 @@
   --LAYOUT-GUTTER-MEDIUM: 22px;
   --LAYOUT-OUTER-SMALL: 16px;
   --LAYOUT-GUTTER-SMALL: 16px;
-{%- elsif settings.grid_style == 'tight' -%}
-  --LAYOUT-OUTER: 32px;
-  --LAYOUT-GUTTER: 16px;
-  --LAYOUT-OUTER-MEDIUM: 30px;
-  --LAYOUT-GUTTER-MEDIUM: 22px;
-  --LAYOUT-OUTER-SMALL: 20px;
-  --LAYOUT-GUTTER-SMALL: 16px;
 {%- else -%}
   --LAYOUT-OUTER: 50px;
   --LAYOUT-GUTTER: 32px;
@@ -415,9 +381,8 @@
 {%- endif -%}
 
 {%- comment -%} Custom variables {%- endcomment -%}
---base-animation-delay: 0;
---line-height-normal: 1.375;
-/* Equals to line-height: normal; */
+--base-animation-delay: 0ms;
+--line-height-normal: 1.375; /* Equals to line-height: normal; */
 
 {%- comment -%} Sidebar on Collection and Search {%- endcomment -%}
 {%- if settings.grid_style == 'compact' -%}
@@ -439,12 +404,12 @@
 {%- endif -%}
 
 /* === Button General ===*/
---BTN-FONT-STACK: {{ btn_font.family }}, 
-{{ btn_font.fallback_families }};
+--BTN-FONT-STACK: {{ btn_font.family }}, {{ btn_font.fallback_families }};
 --BTN-FONT-WEIGHT: {{ btn_font.weight | default: 400 }};
 --BTN-FONT-STYLE: {{ btn_font.style }};
 --BTN-FONT-SIZE: {{ settings.btn_size }}px;
---BTN-LETTER-SPACING: {{ settings.btn_letter_spacing | append: 'px' }};
+
+--BTN-LETTER-SPACING: {{ settings.btn_letter_spacing | divided_by: 1000.0 | append: 'em' }};
 --BTN-UPPERCASE: {% if settings.btn_caps %}uppercase{% else %}none{% endif %};
 --BTN-TEXT-ARROW-OFFSET: {% if settings.btn_caps %}-1px{% else %}0px{% endif %};
 
@@ -452,8 +417,6 @@
 --BTN-PRIMARY-BORDER-COLOR: {{ settings.btn_primary_border_color }};
 --BTN-PRIMARY-BG-COLOR: {{ settings.btn_primary_bg_color }};
 --BTN-PRIMARY-TEXT-COLOR: {{ settings.btn_primary_text_color }};
-
-
 {% assign btn_primary_brightness = settings.btn_primary_bg_color | color_brightness %}
 {% if btn_primary_brightness <= 65 %}
   --BTN-PRIMARY-BG-COLOR-BRIGHTER: {{ settings.btn_primary_bg_color | color_lighten: 10 }};
@@ -465,8 +428,6 @@
 --BTN-SECONDARY-BORDER-COLOR: {{ settings.btn_secondary_border_color }};
 --BTN-SECONDARY-BG-COLOR: {{ settings.btn_secondary_bg_color }};
 --BTN-SECONDARY-TEXT-COLOR: {{ settings.btn_secondary_text_color }};
-
-
 {% assign btn_secondary_brightness = settings.btn_secondary_bg_color | color_brightness %}
 {% if btn_secondary_brightness <= 65 %}
   --BTN-SECONDARY-BG-COLOR-BRIGHTER: {{ settings.btn_secondary_bg_color | color_lighten: 10 }};
@@ -485,8 +446,6 @@
 --TEXT-BTN-BORDER-BLACK: #000;
 --TEXT-BTN-BLACK: #fff;
 --TEXT-BTN-BG-BLACK-BRIGHTER: {{ '#000' | color_lighten: 10 }};
---BUTTON-MIN-WIDTH: {{ settings.btn_min_width }}rem;
---BUTTON-MIN-HEIGHT: {{ settings.btn_min_height }}px;
 
 /* === Default Cart Gradient ===*/
 

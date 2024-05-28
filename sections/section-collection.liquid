@@ -142,8 +142,6 @@
 
               {%- liquid
                 for product in featured_collection.products limit: limit_products
-if product.tags contains 'hidden'
-else 
                   assign animation_delay = forloop.index0 | times: 1
                   if layout_desktop == 'grid'
                     assign grid_int = grid_columns | times: 1
@@ -151,7 +149,6 @@ else
                   endif
 
                   render 'product-grid-item', product: product, animation_delay: animation_delay, index: forloop.index
-endif
                 endfor
               -%}
 

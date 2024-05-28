@@ -12,8 +12,6 @@
 *
 */
 
-
-
 (function (scrollLock, themeAddresses, themeCurrency, Rellax, Flickity, FlickityFade, themeImages) {
     'use strict';
 
@@ -394,7 +392,7 @@
       document.body.classList.add('is-loaded');
     }
 
-    const classes$O = {
+    const classes$Q = {
       loading: 'is-loading',
     };
 
@@ -409,12 +407,12 @@
       document.addEventListener(
         'load',
         (e) => {
-          if (e.target.tagName.toLowerCase() == 'img' && e.target.classList.contains(classes$O.loading)) {
-            e.target.classList.remove(classes$O.loading);
-            e.target.parentNode.classList.remove(classes$O.loading);
+          if (e.target.tagName.toLowerCase() == 'img' && e.target.classList.contains(classes$Q.loading)) {
+            e.target.classList.remove(classes$Q.loading);
+            e.target.parentNode.classList.remove(classes$Q.loading);
 
-            if (e.target.parentNode.parentNode.classList.contains(classes$O.loading)) {
-              e.target.parentNode.parentNode.classList.remove(classes$O.loading);
+            if (e.target.parentNode.parentNode.classList.contains(classes$Q.loading)) {
+              e.target.parentNode.parentNode.classList.remove(classes$Q.loading);
             }
           }
         },
@@ -428,11 +426,11 @@
     function removeLoadingClassFromLoadedImages(container) {
       container.querySelectorAll(selectors$13.img).forEach((img) => {
         if (img.complete) {
-          img.classList.remove(classes$O.loading);
-          img.parentNode.classList.remove(classes$O.loading);
+          img.classList.remove(classes$Q.loading);
+          img.parentNode.classList.remove(classes$Q.loading);
 
-          if (img.parentNode.parentNode.classList.contains(classes$O.loading)) {
-            img.parentNode.parentNode.classList.remove(classes$O.loading);
+          if (img.parentNode.parentNode.classList.contains(classes$Q.loading)) {
+            img.parentNode.parentNode.classList.remove(classes$Q.loading);
           }
         }
       });
@@ -729,7 +727,7 @@
       resetButton: 'button[type="reset"]',
     };
 
-    const classes$N = {
+    const classes$P = {
       hidden: 'hidden',
     };
 
@@ -752,11 +750,11 @@
       }
 
       toggleResetButton() {
-        const resetIsHidden = this.resetButton.classList.contains(classes$N.hidden);
+        const resetIsHidden = this.resetButton.classList.contains(classes$P.hidden);
         if (this.input.value.length > 0 && resetIsHidden) {
-          this.resetButton.classList.remove(classes$N.hidden);
+          this.resetButton.classList.remove(classes$P.hidden);
         } else if (this.input.value.length === 0 && !resetIsHidden) {
-          this.resetButton.classList.add(classes$N.hidden);
+          this.resetButton.classList.add(classes$P.hidden);
         }
       }
 
@@ -1047,11 +1045,13 @@
         this.setAttribute('open', true);
         this.input.setAttribute('aria-expanded', true);
         this.isOpen = true;
+        this.predictiveSearchResults.style.setProperty('--full-screen', `${window.visualViewport.height}px`);
       }
 
       close(clearSearchTerm = false) {
         this.closeResults(clearSearchTerm);
         this.isOpen = false;
+        this.predictiveSearchResults.style.removeProperty('--full-screen');
       }
 
       closeResults(clearSearchTerm = false) {
@@ -1096,14 +1096,14 @@
       section: '[data-section-type]',
     };
 
-    const classes$M = {
+    const classes$O = {
       listVisible: 'popout-list--visible',
       visible: 'is-visible',
       active: 'is-active',
       selectPopoutTop: 'select-popout--top',
     };
 
-    const attributes$D = {
+    const attributes$B = {
       ariaExpanded: 'aria-expanded',
       ariaCurrent: 'aria-current',
       dataValue: 'data-value',
@@ -1123,7 +1123,7 @@
         this.popoutInput = this.querySelector(selectors$10.popoutInput);
         this.popoutOptions = this.querySelectorAll(selectors$10.popoutOptions);
         this.productGridItem = this.popoutList.closest(selectors$10.productGridItem);
-        this.fireSubmitEvent = this.hasAttribute(attributes$D.submit);
+        this.fireSubmitEvent = this.hasAttribute(attributes$B.submit);
 
         this.popupToggleFocusoutEvent = (evt) => this.onPopupToggleFocusout(evt);
         this.popupListFocusoutEvent = (evt) => this.onPopupListFocusout(evt);
@@ -1139,20 +1139,20 @@
 
       onPopupToggleClick(evt) {
         const button = evt.currentTarget;
-        const ariaExpanded = button.getAttribute(attributes$D.ariaExpanded) === 'true';
+        const ariaExpanded = button.getAttribute(attributes$B.ariaExpanded) === 'true';
 
         if (this.productGridItem) {
           const productGridItemImage = this.productGridItem.querySelector(selectors$10.productGridImage);
 
           if (productGridItemImage) {
-            productGridItemImage.classList.toggle(classes$M.visible, !ariaExpanded);
+            productGridItemImage.classList.toggle(classes$O.visible, !ariaExpanded);
           }
 
           this.popoutList.style.maxHeight = `${Math.abs(this.popoutToggle.getBoundingClientRect().bottom - this.productGridItem.getBoundingClientRect().bottom)}px`;
         }
 
-        evt.currentTarget.setAttribute(attributes$D.ariaExpanded, !ariaExpanded);
-        this.popoutList.classList.toggle(classes$M.listVisible);
+        evt.currentTarget.setAttribute(attributes$B.ariaExpanded, !ariaExpanded);
+        this.popoutList.classList.toggle(classes$O.listVisible);
         this.popupListMaxWidth();
         this.toggleListPosition();
 
@@ -1169,7 +1169,7 @@
 
       onPopupListFocusout(evt) {
         const childInFocus = evt.currentTarget.contains(evt.relatedTarget);
-        const isVisible = this.popoutList.classList.contains(classes$M.listVisible);
+        const isVisible = this.popoutList.classList.contains(classes$O.listVisible);
 
         if (isVisible && !childInFocus) {
           this._hideList();
@@ -1178,18 +1178,18 @@
 
       toggleListPosition() {
         const button = this.querySelector(selectors$10.popoutToggle);
-        const ariaExpanded = button.getAttribute(attributes$D.ariaExpanded) === 'true';
+        const ariaExpanded = button.getAttribute(attributes$B.ariaExpanded) === 'true';
         const windowHeight = window.innerHeight;
         const bottom = this.popoutList.getBoundingClientRect().bottom;
 
         const removeTopClass = () => {
-          this.classList.remove(classes$M.selectPopoutTop);
+          this.classList.remove(classes$O.selectPopoutTop);
           this.popoutList.removeEventListener('transitionend', removeTopClass);
         };
 
         if (ariaExpanded) {
           if (windowHeight < bottom) {
-            this.classList.add(classes$M.selectPopoutTop);
+            this.classList.add(classes$O.selectPopoutTop);
           }
         } else {
           this.popoutList.addEventListener('transitionend', removeTopClass);
@@ -1208,7 +1208,7 @@
         if (link.attributes.href.value === '#') {
           evt.preventDefault();
 
-          const attrValue = evt.currentTarget.hasAttribute(attributes$D.dataValue) ? evt.currentTarget.getAttribute(attributes$D.dataValue) : '';
+          const attrValue = evt.currentTarget.hasAttribute(attributes$B.dataValue) ? evt.currentTarget.getAttribute(attributes$B.dataValue) : '';
 
           this.popoutInput.value = attrValue;
 
@@ -1220,30 +1220,30 @@
             this._submitForm(attrValue);
           } else {
             const currentTarget = evt.currentTarget.parentElement;
-            const listTargetElement = this.popoutList.querySelector(`.${classes$M.active}`);
-            const targetAttribute = this.popoutList.querySelector(`[${attributes$D.ariaCurrent}]`);
+            const listTargetElement = this.popoutList.querySelector(`.${classes$O.active}`);
+            const targetAttribute = this.popoutList.querySelector(`[${attributes$B.ariaCurrent}]`);
 
             this.popoutInput.dispatchEvent(new Event('change'));
 
             if (listTargetElement) {
-              listTargetElement.classList.remove(classes$M.active);
-              currentTarget.classList.add(classes$M.active);
+              listTargetElement.classList.remove(classes$O.active);
+              currentTarget.classList.add(classes$O.active);
             }
 
             if (this.popoutInput.name == 'quantity' && !currentTarget.nextSibling) {
-              this.classList.add(classes$M.active);
+              this.classList.add(classes$O.active);
             }
 
-            if (targetAttribute && targetAttribute.hasAttribute(`${attributes$D.ariaCurrent}`)) {
-              targetAttribute.removeAttribute(`${attributes$D.ariaCurrent}`);
-              evt.currentTarget.setAttribute(`${attributes$D.ariaCurrent}`, 'true');
+            if (targetAttribute && targetAttribute.hasAttribute(`${attributes$B.ariaCurrent}`)) {
+              targetAttribute.removeAttribute(`${attributes$B.ariaCurrent}`);
+              evt.currentTarget.setAttribute(`${attributes$B.ariaCurrent}`, 'true');
             }
 
             if (attrValue !== '') {
               this.popoutToggleText.innerHTML = attrValue;
 
-              if (this.popoutToggleText.hasAttribute(attributes$D.popoutToggleText) && this.popoutToggleText.getAttribute(attributes$D.popoutToggleText) !== '') {
-                this.popoutToggleText.setAttribute(attributes$D.popoutToggleText, attrValue);
+              if (this.popoutToggleText.hasAttribute(attributes$B.popoutToggleText) && this.popoutToggleText.getAttribute(attributes$B.popoutToggleText) !== '') {
+                this.popoutToggleText.setAttribute(attributes$B.popoutToggleText, attrValue);
               }
             }
             this.onPopupToggleFocusout(evt);
@@ -1262,7 +1262,7 @@
 
       onBodyClick(evt) {
         const isOption = this.contains(evt.target);
-        const isVisible = this.popoutList.classList.contains(classes$M.listVisible);
+        const isVisible = this.popoutList.classList.contains(classes$O.listVisible);
 
         if (isVisible && !isOption) {
           this._hideList();
@@ -1295,8 +1295,8 @@
       }
 
       _hideList() {
-        this.popoutList.classList.remove(classes$M.listVisible);
-        this.popoutToggle.setAttribute(attributes$D.ariaExpanded, false);
+        this.popoutList.classList.remove(classes$O.listVisible);
+        this.popoutToggle.setAttribute(attributes$B.ariaExpanded, false);
         this.toggleListPosition();
         document.body.removeEventListener('click', this.bodyClickEvent);
       }
@@ -1355,7 +1355,7 @@
       aosIndividual: '[data-aos]:not([data-aos-anchor]):not(.aos-animate)',
     };
 
-    const classes$L = {
+    const classes$N = {
       aosAnimate: 'aos-animate',
     };
 
@@ -1395,7 +1395,7 @@
       (entries, observer) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add(classes$L.aosAnimate);
+            entry.target.classList.add(classes$N.aosAnimate);
 
             // Stop observing element after it was animated
             observer.unobserve(entry.target);
@@ -1420,7 +1420,7 @@
 
             if (elementsToAnimate.length) {
               elementsToAnimate.forEach((item) => {
-                item.classList.add(classes$L.aosAnimate);
+                item.classList.add(classes$N.aosAnimate);
               });
             }
 
@@ -1503,71 +1503,7 @@
       });
     }
 
-    /*
-      This component prevents images being loaded until the element is visible in the viewport.
-      It simply pulls out the content from the <template> tag that is nested in <deferred-image> element and allows the browser to download the image inside it.
-
-      Usage:
-        <deferred-image>
-          <template>
-            // Insert image markup here:
-            {%- render 'image'... -%}
-          </template>
-        </deferred-image>
-    */
     const selectors$_ = {
-      img: 'img',
-      template: 'template',
-    };
-
-    const attributes$C = {
-      srcset: 'srcset',
-    };
-
-    class DeferredImage extends HTMLElement {
-      constructor() {
-        super();
-
-        this.isRendered = false;
-      }
-
-      connectedCallback() {
-        if (this.isRendered) return;
-
-        const options = {
-          threshold: [0.01, 0.25, 0.5, 0.75, 1],
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.intersectionRatio > 0) {
-              const templateElement = this.querySelector(selectors$_.template);
-              const templateContent = templateElement?.content.firstElementChild.cloneNode(true);
-              this.appendChild(templateContent);
-              this.reloadSrcset(this);
-
-              observer.disconnect();
-            }
-          });
-        }, options);
-
-        observer.observe(this);
-
-        this.isRendered = true;
-      }
-
-      // Reload srcset for correct image render on Safari - fixes 'object-fit: cover' issues
-      reloadSrcset(container) {
-        if (!container) return;
-        container.querySelectorAll(selectors$_.img).forEach((img) => {
-          const srcset = img.getAttribute(attributes$C.srcset);
-          img.setAttribute(attributes$C.srcset, '');
-          img.setAttribute(attributes$C.srcset, srcset);
-        });
-      }
-    }
-
-    const selectors$Z = {
       deferredMediaButton: '[data-deferred-media-button]',
       media: 'video, model-viewer, iframe',
       youtube: '[data-host="youtube"]',
@@ -1579,7 +1515,7 @@
       productModel: 'product-model',
     };
 
-    const attributes$B = {
+    const attributes$A = {
       loaded: 'loaded',
       autoplay: 'autoplay',
     };
@@ -1587,10 +1523,10 @@
     class DeferredMedia extends HTMLElement {
       constructor() {
         super();
-        const poster = this.querySelector(selectors$Z.deferredMediaButton);
+        const poster = this.querySelector(selectors$_.deferredMediaButton);
         poster?.addEventListener('click', this.loadContent.bind(this));
-        this.section = this.closest(selectors$Z.section);
-        this.productGridItem = this.closest(selectors$Z.productGridItem);
+        this.section = this.closest(selectors$_.section);
+        this.productGridItem = this.closest(selectors$_.productGridItem);
         this.hovered = false;
 
         this.mouseEnterEvent = () => this.mouseEnterActions();
@@ -1622,7 +1558,7 @@
 
         this.videoActions();
 
-        if (!this.getAttribute(attributes$B.loaded)) {
+        if (!this.getAttribute(attributes$A.loaded)) {
           this.loadContent();
         }
       }
@@ -1634,11 +1570,11 @@
       }
 
       videoActions() {
-        if (this.getAttribute(attributes$B.loaded)) {
-          const youtube = this.querySelector(selectors$Z.youtube);
-          const vimeo = this.querySelector(selectors$Z.vimeo);
+        if (this.getAttribute(attributes$A.loaded)) {
+          const youtube = this.querySelector(selectors$_.youtube);
+          const vimeo = this.querySelector(selectors$_.vimeo);
           const mediaExternal = youtube || vimeo;
-          const mediaNative = this.querySelector(selectors$Z.video);
+          const mediaNative = this.querySelector(selectors$_.video);
           if (mediaExternal) {
             let action = this.hovered ? 'playVideo' : 'pauseVideo';
             let string = `{"event":"command","func":"${action}","args":""}`;
@@ -1656,7 +1592,6 @@
             });
           } else if (mediaNative) {
             if (this.hovered) {
-              
               mediaNative.play();
             } else {
               mediaNative.pause();
@@ -1668,15 +1603,15 @@
       loadContent(focus = true) {
         this.pauseAllMedia();
 
-        if (!this.getAttribute(attributes$B.loaded)) {
+        if (!this.getAttribute(attributes$A.loaded)) {
           const content = document.createElement('div');
-          const templateContent = this.querySelector(selectors$Z.template).content.firstElementChild.cloneNode(true);
+          const templateContent = this.querySelector(selectors$_.template).content.firstElementChild.cloneNode(true);
           content.appendChild(templateContent);
-          this.setAttribute(attributes$B.loaded, true);
+          this.setAttribute(attributes$A.loaded, true);
 
-          const mediaElement = this.appendChild(content.querySelector(selectors$Z.media));
+          const mediaElement = this.appendChild(content.querySelector(selectors$_.media));
           if (focus) mediaElement.focus();
-          if (mediaElement.nodeName == 'VIDEO' && mediaElement.getAttribute(attributes$B.autoplay)) {
+          if (mediaElement.nodeName == 'VIDEO' && mediaElement.getAttribute(attributes$A.autoplay)) {
             // Force autoplay on Safari browsers
             mediaElement.play();
           }
@@ -1688,16 +1623,87 @@
       }
 
       pauseAllMedia() {
-        document.querySelectorAll(selectors$Z.youtube).forEach((video) => {
+        document.querySelectorAll(selectors$_.youtube).forEach((video) => {
           video.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
         });
-        document.querySelectorAll(selectors$Z.vimeo).forEach((video) => {
+        document.querySelectorAll(selectors$_.vimeo).forEach((video) => {
           video.contentWindow.postMessage('{"method":"pause"}', '*');
         });
-        document.querySelectorAll(selectors$Z.video).forEach((video) => video.pause());
-        document.querySelectorAll(selectors$Z.productModel).forEach((model) => {
+        document.querySelectorAll(selectors$_.video).forEach((video) => video.pause());
+        document.querySelectorAll(selectors$_.productModel).forEach((model) => {
           if (model.modelViewerUI) model.modelViewerUI.pause();
         });
+      }
+    }
+
+    const selectors$Z = {
+      productModal: 'product-modal',
+      close: '[data-popup-close]',
+      notificationForm: '[data-notification-form]',
+      notificationHeading: '[data-product-notification-heading]',
+    };
+
+    const classes$M = {
+      success: 'has-success',
+      hidden: 'hidden',
+    };
+
+    class ProductNotification extends HTMLElement {
+      constructor() {
+        super();
+
+        this.notificationForm = this.querySelector(selectors$Z.notificationForm);
+        this.preventSubmit = true;
+        this.popup = this.closest('dialog');
+        this.popupClose = this.popup.querySelector(selectors$Z.close);
+      }
+
+      connectedCallback() {
+        this.checkState();
+
+        this.notificationForm.addEventListener('submit', (e) => this.notificationSubmitEvent(e));
+        this.popupClose.addEventListener('click', () => {
+          this.removeStorage();
+        });
+      }
+
+      checkState() {
+        const notificationFormSuccess = window.location.search.indexOf('?contact_posted=true') !== -1;
+
+        if (notificationFormSuccess) {
+          const productNotificationHeading = this.querySelector(selectors$Z.notificationHeading);
+          productNotificationHeading.classList.add(classes$M.hidden);
+
+          this.closest(selectors$Z.productModal).classList.add(classes$M.success);
+          this.popup.removeAttribute('inert');
+
+          if (typeof this.popup.showModal === 'function') {
+            this.popup.showModal();
+          } else {
+            this.popup.setAttribute('open', '');
+          }
+        }
+      }
+
+      notificationSubmitEvent(e) {
+        if (this.preventSubmit) {
+          e.preventDefault();
+
+          this.removeStorage();
+          this.writeStorage();
+          this.preventSubmit = false;
+          this.notificationForm.submit();
+        }
+      }
+
+      writeStorage() {
+        if (window.sessionStorage !== undefined) {
+          window.sessionStorage.setItem('notification_form_id', this.notificationForm.id);
+        }
+      }
+
+      removeStorage() {
+        window.sessionStorage.removeItem('notification_form_id');
       }
     }
 
@@ -1706,7 +1712,7 @@
       Used for sections with horizontal sliders built by native scrolling
     */
 
-    const classes$K = {
+    const classes$L = {
       visible: 'is-visible',
     };
 
@@ -1730,9 +1736,9 @@
         this.observer = new IntersectionObserver((entries) => {
           entries.forEach((entry) => {
             if (entry.intersectionRatio >= 0.99) {
-              entry.target.classList.add(classes$K.visible);
+              entry.target.classList.add(classes$L.visible);
             } else {
-              entry.target.classList.remove(classes$K.visible);
+              entry.target.classList.remove(classes$L.visible);
             }
           });
         }, options);
@@ -1747,7 +1753,7 @@
       }
     }
 
-    const classes$J = {
+    const classes$K = {
       dragging: 'is-dragging',
       enabled: 'is-enabled',
       scrolling: 'is-scrolling',
@@ -1786,7 +1792,7 @@
         this.slider.addEventListener('mousemove', this.handleMouseMove);
         this.slider.addEventListener('wheel', this.handleMouseWheel, {passive: true});
 
-        this.slider.classList.add(classes$J.enabled);
+        this.slider.classList.add(classes$K.enabled);
       }
 
       handleMouseDown(e) {
@@ -1818,7 +1824,7 @@
         const prevScrollLeft = this.slider.scrollLeft;
         const direction = walk > 0 ? 1 : -1;
 
-        this.slider.classList.add(classes$J.dragging, classes$J.scrolling);
+        this.slider.classList.add(classes$K.dragging, classes$K.scrolling);
         this.slider.scrollLeft = this.scrollLeft - walk;
 
         if (this.slider.scrollLeft !== prevScrollLeft) {
@@ -1828,12 +1834,12 @@
 
       handleMouseWheel() {
         this.cancelMomentumTracking();
-        this.slider.classList.remove(classes$J.scrolling);
+        this.slider.classList.remove(classes$K.scrolling);
       }
 
       beginMomentumTracking() {
         this.isScrolling = false;
-        this.slider.classList.remove(classes$J.dragging);
+        this.slider.classList.remove(classes$K.dragging);
         this.cancelMomentumTracking();
         this.scrollToSlide();
       }
@@ -1845,7 +1851,7 @@
       scrollToSlide() {
         if (!this.velX && !this.isScrolling) return;
 
-        const slide = this.slider.querySelector(`${selectors$Y.slide}.${classes$J.visible}`);
+        const slide = this.slider.querySelector(`${selectors$Y.slide}.${classes$K.visible}`);
         if (!slide) return;
 
         const gap = parseInt(window.getComputedStyle(slide).marginRight) || 0;
@@ -1882,7 +1888,7 @@
         if (currentTime < this.duration) {
           this.scrollAnimation = requestAnimationFrame(this.scrollStep);
         } else {
-          this.slider.classList.remove(classes$J.scrolling);
+          this.slider.classList.remove(classes$K.scrolling);
 
           // Reset velocity
           this.velX = 0;
@@ -1897,13 +1903,38 @@
       }
 
       destroy() {
-        this.slider.classList.remove(classes$J.enabled);
+        this.slider.classList.remove(classes$K.enabled);
         this.slider.removeEventListener('mousedown', this.handleMouseDown);
         this.slider.removeEventListener('mouseleave', this.handleMouseLeave);
         this.slider.removeEventListener('mouseup', this.handleMouseUp);
         this.slider.removeEventListener('mousemove', this.handleMouseMove);
         this.slider.removeEventListener('wheel', this.handleMouseWheel);
       }
+    }
+
+    /*
+      Trigger event after all animations complete in a specific section
+    */
+    function waitForAllAnimationsEnd(section) {
+      return new Promise((resolve) => {
+        const animatedElements = section.querySelectorAll('[data-aos]');
+        let animationCount = 0;
+
+        function onAnimationEnd(event) {
+          animationCount++;
+
+          if (animationCount === animatedElements.length) {
+            // All animations have ended
+            resolve();
+          }
+
+          event.target.removeEventListener('animationend', onAnimationEnd);
+        }
+
+        animatedElements.forEach((element) => {
+          element.addEventListener('animationend', onAnimationEnd);
+        });
+      });
     }
 
     const selectors$X = {
@@ -1915,15 +1946,16 @@
       slider: '[data-grid-slider]',
     };
 
-    const attributes$A = {
+    const attributes$z = {
       buttonPrev: 'data-button-prev',
       buttonNext: 'data-button-next',
       alignArrows: 'align-arrows',
     };
 
-    const classes$I = {
+    const classes$J = {
       arrows: 'slider__arrows',
       visible: 'is-visible',
+      scrollSnapDisabled: 'scroll-snap-disabled',
     };
 
     class GridSlider extends HTMLElement {
@@ -1949,8 +1981,13 @@
         this.slider = this.querySelector(selectors$X.slider);
         this.slides = this.querySelectorAll(selectors$X.slide);
         this.buttons = this.querySelectorAll(selectors$X.buttonArrow);
+        this.slider.classList.add(classes$J.scrollSnapDisabled);
         this.toggleSlider();
         document.addEventListener('theme:resize:width', this.toggleSlider);
+
+        waitForAllAnimationsEnd(this).then(() => {
+          this.slider.classList.remove(classes$J.scrollSnapDisabled);
+        });
       }
 
       toggleSlider() {
@@ -1977,19 +2014,19 @@
         // Create arrow buttons if don't exist
         if (!this.buttons.length) {
           const buttonsWrap = document.createElement('div');
-          buttonsWrap.classList.add(classes$I.arrows);
+          buttonsWrap.classList.add(classes$J.arrows);
           buttonsWrap.innerHTML = theme.sliderArrows.prev + theme.sliderArrows.next;
 
           // Append buttons outside the slider element
           this.append(buttonsWrap);
           this.buttons = this.querySelectorAll(selectors$X.buttonArrow);
-          this.buttonPrev = this.querySelector(`[${attributes$A.buttonPrev}]`);
-          this.buttonNext = this.querySelector(`[${attributes$A.buttonNext}]`);
+          this.buttonPrev = this.querySelector(`[${attributes$z.buttonPrev}]`);
+          this.buttonNext = this.querySelector(`[${attributes$z.buttonNext}]`);
         }
 
         this.toggleArrowsObserver();
 
-        if (this.hasAttribute(attributes$A.alignArrows)) {
+        if (this.hasAttribute(attributes$z.alignArrows)) {
           this.positionArrows();
           this.arrowsResizeObserver();
         }
@@ -2002,14 +2039,14 @@
       buttonArrowClickEvent(e) {
         e.preventDefault();
 
-        const firstVisibleSlide = this.slider.querySelector(`${selectors$X.slide}.${classes$I.visible}`);
+        const firstVisibleSlide = this.slider.querySelector(`${selectors$X.slide}.${classes$J.visible}`);
         let slide = null;
 
-        if (e.target.hasAttribute(attributes$A.buttonPrev)) {
+        if (e.target.hasAttribute(attributes$z.buttonPrev)) {
           slide = firstVisibleSlide?.previousElementSibling;
         }
 
-        if (e.target.hasAttribute(attributes$A.buttonNext)) {
+        if (e.target.hasAttribute(attributes$z.buttonNext)) {
           slide = firstVisibleSlide?.nextElementSibling;
         }
 
@@ -2017,7 +2054,7 @@
       }
 
       removeArrows() {
-        this.querySelector(`.${classes$I.arrows}`)?.remove();
+        this.querySelector(`.${classes$J.arrows}`)?.remove();
       }
 
       // Go to prev/next slide on arrow click
@@ -2053,7 +2090,7 @@
             for (const mutation of mutationList) {
               if (mutation.type === 'attributes') {
                 const slide = mutation.target;
-                const isDisabled = Boolean(slide.classList.contains(classes$I.visible));
+                const isDisabled = Boolean(slide.classList.contains(classes$J.visible));
 
                 if (slide == firstSlide) {
                   this.buttonPrev.disabled = isDisabled;
@@ -2110,13 +2147,16 @@
       minutes: '[data-minutes]',
       seconds: '[data-seconds]',
       shopifySection: '.shopify-section',
+      countdownBlock: '[data-countdown-block]',
+      tickerText: '[data-ticker-text]',
     };
 
-    const attributes$z = {
+    const attributes$y = {
       expirationBehavior: 'data-expiration-behavior',
+      clone: 'data-clone',
     };
 
-    const classes$H = {
+    const classes$I = {
       showMessage: 'show-message',
       hideCountdown: 'hidden',
     };
@@ -2130,8 +2170,9 @@
       constructor() {
         super();
 
-        this.shopifySection = this.closest(selectors$W.shopifySection);
-        this.expirationBehavior = this.getAttribute(attributes$z.expirationBehavior);
+        this.section = this.closest(selectors$W.shopifySection);
+        this.countdownParent = this.closest(selectors$W.countdownBlock) || this.section;
+        this.expirationBehavior = this.getAttribute(attributes$y.expirationBehavior);
 
         this.time = this.querySelector(selectors$W.time);
         this.days = this.querySelector(selectors$W.days);
@@ -2162,7 +2203,8 @@
           this.onComplete();
           return;
         }
-
+        // Initial update to avoid showing old time
+        this.update();
         // Update the countdown every second
         this.interval = setInterval(this.update, 1000);
       }
@@ -2217,11 +2259,28 @@
         });
 
         if (this.shouldHideOnComplete) {
-          this.shopifySection?.classList.add(classes$H.hideCountdown);
+          this.countdownParent?.classList.add(classes$I.hideCountdown);
+          this.countdownParent?.dispatchEvent(
+            new CustomEvent('theme:countdown:hide', {
+              detail: {
+                element: this,
+              },
+              bubbles: true,
+            })
+          );
         }
 
         if (this.shouldShowMessage) {
-          this.classList?.add(classes$H.showMessage);
+          this.classList?.add(classes$I.showMessage);
+
+          // Prevent cloned elements to dispatch events multiple times as it causes call stack
+          if (this.closest(selectors$W.tickerText).hasAttribute(attributes$y.clone)) return;
+
+          this.countdownParent?.dispatchEvent(
+            new CustomEvent('theme:countdown:expire', {
+              bubbles: true,
+            })
+          );
         }
       }
 
@@ -2230,7 +2289,7 @@
         const timeNow = new Date().getTime();
         const timeDiff = this.endDate - timeNow;
 
-        if (timeDiff <= 0) {
+        if (timeDiff < 1000) {
           this.stopTimer();
           this.onComplete();
         }
@@ -2305,10 +2364,6 @@
       customElements.define('predictive-search', PredictiveSearch);
     }
 
-    if (!customElements.get('deferred-image')) {
-      customElements.define('deferred-image', DeferredImage);
-    }
-
     if (!customElements.get('deferred-media')) {
       customElements.define('deferred-media', DeferredMedia);
     }
@@ -2319,6 +2374,10 @@
 
     if (!customElements.get('countdown-timer')) {
       customElements.define('countdown-timer', CountdownTimer);
+    }
+
+    if (!customElements.get('product-notification')) {
+      customElements.define('product-notification', ProductNotification);
     }
 
     const showElement = (elem, removeProp = false, prop = 'block') => {
@@ -2337,6 +2396,7 @@
         howManyToStoreInMemory: 10,
         wrapperId: 'recently-viewed-products',
         section: null,
+        target: 'api-product-grid-item',
         onComplete: null,
       };
 
@@ -2435,9 +2495,9 @@
         }
       };
 
-      const moveAlong = (shown, productHandleQueue, wrapper, section) => {
-        if (productHandleQueue.length && shown < config.howManyToShow) {
-          fetch(`${window.theme.routes.root}products/${productHandleQueue[0]}?section_id=api-product-grid-item`)
+      const moveAlong = (shown, productHandleQueue, wrapper, section, target, howManyToShow) => {
+        if (productHandleQueue.length && shown < howManyToShow) {
+          fetch(`${window.theme.routes.root}products/${productHandleQueue[0]}?section_id=${target}`)
             .then((response) => response.text())
             .then((product) => {
               const aosDelay = shown * 100;
@@ -2452,12 +2512,12 @@
 
               productHandleQueue.shift();
               shown++;
-              moveAlong(shown, productHandleQueue, wrapper, section);
+              moveAlong(shown, productHandleQueue, wrapper, section, target, howManyToShow);
             })
             .catch(() => {
               cookie.remove(productHandleQueue[0]);
               productHandleQueue.shift();
-              moveAlong(shown, productHandleQueue, wrapper, section);
+              moveAlong(shown, productHandleQueue, wrapper, section, target, howManyToShow);
             });
         } else {
           finalize(wrapper, section);
@@ -2485,7 +2545,7 @@
           // If we have any to show.
           if (config.howManyToShow && wrapper) {
             // Getting each product with an Ajax call and rendering it on the page.
-            moveAlong(shown, productHandleQueue, wrapper, config.section);
+            moveAlong(shown, productHandleQueue, wrapper, config.section, config.target, howManyToShowItems);
           }
         },
 
@@ -2585,7 +2645,7 @@
     }
     FetchError.prototype = Error.prototype;
 
-    const classes$G = {
+    const classes$H = {
       focus: 'is-focused',
     };
 
@@ -2647,7 +2707,7 @@
 
       focusEvents() {
         document.addEventListener('mousedown', () => {
-          this.body.classList.remove(classes$G.focus);
+          this.body.classList.remove(classes$H.focus);
         });
 
         document.addEventListener('keyup', (event) => {
@@ -2655,7 +2715,7 @@
             return;
           }
 
-          this.body.classList.add(classes$G.focus);
+          this.body.classList.add(classes$H.focus);
         });
       }
     }
@@ -2677,7 +2737,7 @@
       };
     };
 
-    const classes$F = {
+    const classes$G = {
       animated: 'is-animated',
       active: 'is-active',
       added: 'is-added',
@@ -2708,12 +2768,10 @@
       buttonSkipUpsellProduct: '[data-skip-upsell-product]',
       cartBarAdd: '[data-add-to-cart-bar]',
       cartCloseError: '[data-cart-error-close]',
-      cartCloseSuccess: '[data-cart-success-close]',
       cartDrawer: 'cart-drawer',
       cartDrawerClose: '[data-cart-drawer-close]',
       cartEmpty: '[data-cart-empty]',
       cartErrors: '[data-cart-errors]',
-      cartSuccess: '[data-cart-success]',
       cartItemRemove: '[data-item-remove]',
       cartPage: '[data-cart-page]',
       cartForm: '[data-cart-form]',
@@ -2721,9 +2779,8 @@
       cartCheckoutButtonWrapper: '[data-cart-checkout-buttons]',
       cartCheckoutButton: '[data-cart-checkout-button]',
       cartTotal: '[data-cart-total]',
-      checkoutButotns: '[data-checkout-buttons]',
+      checkoutButtons: '[data-checkout-buttons]',
       errorMessage: '[data-error-message]',
-      successMessage: '[data-success-message]',
       formCloseError: '[data-close-error]',
       formErrorsContainer: '[data-cart-errors-container]',
       formWrapper: '[data-form-wrapper]',
@@ -2744,10 +2801,10 @@
       upsellWidget: '[data-upsell-widget]',
       termsErrorMessage: '[data-terms-error-message]',
       collapsibleBody: '[data-collapsible-body]',
-      switchSubscrption: '[data-switch-to-subscription]'
+      recentlyViewedHolderId: 'recently-viewed-products-cart',
     };
 
-    const attributes$y = {
+    const attributes$x = {
       cartTotal: 'data-cart-total',
       disabled: 'disabled',
       freeShipping: 'data-free-shipping',
@@ -2777,16 +2834,14 @@
         this.cartTermsCheckbox = document.querySelector(selectors$U.cartTermsCheckbox);
         this.cartCheckoutButtonWrapper = document.querySelector(selectors$U.cartCheckoutButtonWrapper);
         this.cartCheckoutButton = document.querySelector(selectors$U.cartCheckoutButton);
-        this.checkoutButotns = document.querySelector(selectors$U.checkoutButotns);
+        this.checkoutButtons = document.querySelector(selectors$U.checkoutButtons);
         this.itemsHolder = document.querySelector(selectors$U.itemsHolder);
         this.priceHolder = document.querySelector(selectors$U.priceHolder);
         this.items = document.querySelectorAll(selectors$U.item);
         this.cartTotal = document.querySelector(selectors$U.cartTotal);
         this.freeShipping = document.querySelectorAll(selectors$U.freeShipping);
         this.cartErrorHolder = document.querySelector(selectors$U.cartErrors);
-        this.cartSuccessHolder = document.querySelector(selectors$U.cartSuccess);
         this.cartCloseErrorMessage = document.querySelector(selectors$U.cartCloseError);
-        this.cartCloseSuccessMessage = document.querySelector(selectors$U.cartCloseSuccess);
         this.headerWrapper = document.querySelector(selectors$U.headerWrapper);
         this.navDrawer = document.querySelector(selectors$U.navDrawer);
         this.upsellProductsHolder = document.querySelector(selectors$U.upsellProductsHolder);
@@ -2801,8 +2856,6 @@
         this.cartAddEvent = this.cartAddEvent.bind(this);
         this.updateProgress = this.updateProgress.bind(this);
         this.onCartDrawerClose = this.onCartDrawerClose.bind(this);
-        this.onCartDrawerReload = this.onCartDrawerReload.bind(this);
-        this.onCartDrawerAlert = this.onCartDrawerAlert.bind(this);
 
         // Set global event listeners for "Add to cart" and Announcement bar wheel progress
         document.addEventListener('theme:cart:add', this.cartAddEvent);
@@ -2810,9 +2863,6 @@
         document.addEventListener('theme:cart-drawer:close', this.onCartDrawerClose);
         document.addEventListener('theme:announcement:init', this.updateProgress);
 
-        document.addEventListener('theme:cart-drawer:reload', this.onCartDrawerReload);
-        document.addEventListener('theme:cart-drawer:alert', this.onCartDrawerAlert);
-        
         // Upsell products
         this.skipUpsellProductsArray = [];
         this.skipUpsellProductEvent();
@@ -2821,7 +2871,7 @@
 
         // Free Shipping values
         this.circumference = 28 * Math.PI; // radius - stroke * 4 * PI
-        this.freeShippingLimit = this.freeShipping.length ? Number(this.freeShipping[0].getAttribute(attributes$y.freeShippingLimit)) * 100 * window.Shopify.currency.rate : 0;
+        this.freeShippingLimit = this.freeShipping.length ? Number(this.freeShipping[0].getAttribute(attributes$x.freeShippingLimit)) * 100 * window.Shopify.currency.rate : 0;
 
         this.freeShippingMessageHandle(this.subtotal);
         this.updateProgress();
@@ -2837,6 +2887,9 @@
         if (this.cartPage) {
           this.animateItems();
         }
+
+        // Recently viewed products
+        this.recentlyViewedProducts();
 
         // Checking
         this.hasItemsInCart = this.hasItemsInCart.bind(this);
@@ -2854,7 +2907,6 @@
         this.cartEvents();
         this.cartRemoveEvents();
         this.cartUpdateEvents();
-        this.cartSwitchEvents();
 
         document.addEventListener('theme:product:add', this.productAddCallback);
         document.addEventListener('theme:product:add-error', this.productAddCallback);
@@ -2870,7 +2922,7 @@
 
         document.dispatchEvent(new CustomEvent('theme:cart:unload', {bubbles: true}));
 
-        if (document.documentElement.hasAttribute(attributes$y.scrollLocked)) {
+        if (document.documentElement.hasAttribute(attributes$x.scrollLocked)) {
           document.dispatchEvent(new CustomEvent('theme:scroll:unlock', {bubbles: true}));
         }
       }
@@ -2878,22 +2930,19 @@
       onCartDrawerClose() {
         this.resetAnimatedItems();
 
-        if (this.cartDrawer?.classList.contains(classes$F.open)) {
-          this.cart.classList.remove(classes$F.updated);
+        if (this.cartDrawer?.classList.contains(classes$G.open)) {
+          this.cart.classList.remove(classes$G.updated);
         }
 
-        this.cartDrawer.querySelector('.cart-alert').innerHTML = '';
-
-        this.cartEmpty.classList.remove(classes$F.updated);
-        this.cartErrorHolder.classList.remove(classes$F.expanded);
-        this.cartSuccessHolder.classList.remove(classes$F.expanded);
+        this.cartEmpty.classList.remove(classes$G.updated);
+        this.cartErrorHolder.classList.remove(classes$G.expanded);
         this.cart.querySelectorAll(selectors$U.animation).forEach((item) => {
           const removeHidingClass = () => {
-            item.classList.remove(classes$F.hiding);
+            item.classList.remove(classes$G.hiding);
             item.removeEventListener('animationend', removeHidingClass);
           };
 
-          item.classList.add(classes$F.hiding);
+          item.classList.add(classes$G.hiding);
           item.addEventListener('animationend', removeHidingClass);
         });
       }
@@ -2934,7 +2983,7 @@
           button.addEventListener('click', (event) => {
             event.preventDefault();
 
-            if (button.classList.contains(classes$F.disabled)) return;
+            if (button.classList.contains(classes$G.disabled)) return;
 
             this.updateCart(
               {
@@ -2950,52 +2999,7 @@
           this.cartCloseErrorMessage.addEventListener('click', (event) => {
             event.preventDefault();
 
-            this.cartErrorHolder.classList.remove(classes$F.expanded);
-          });
-        }
-        if (this.cartCloseSuccessMessage) {
-          this.cartCloseSuccessMessage.addEventListener('click', (event) => {
-            event.preventDefault();
-
-            this.cartSuccessHolder.classList.remove(classes$F.expanded);
-          });
-        }
-      }
-
-      cartSwitchEvents () {
-        const cartItemSwitch = document.querySelectorAll(selectors$U.switchSubscrption);
-
-        cartItemSwitch.forEach((button) => {
-          const item = button.closest(selectors$U.item);
-          let newAddProduct = button.dataset;
-          button.addEventListener('click', (event) => {
-            event.preventDefault();
-
-            if (button.classList.contains(classes$F.disabled)) return;
-
-            this.updateCartSwitch(
-              {
-                id: newAddProduct.item,
-                quantity: 0,
-              },
-              item,
-              newAddProduct
-            );
-          });
-        });
-
-        if (this.cartCloseErrorMessage) {
-          this.cartCloseErrorMessage.addEventListener('click', (event) => {
-            event.preventDefault();
-
-            this.cartErrorHolder.classList.remove(classes$F.expanded);
-          });
-        }
-        if (this.cartCloseSuccessMessage) {
-          this.cartCloseSuccessMessage.addEventListener('click', (event) => {
-            event.preventDefault();
-
-            this.cartSuccessHolder.classList.remove(classes$F.expanded);
+            this.cartErrorHolder.classList.remove(classes$G.expanded);
           });
         }
       }
@@ -3009,6 +3013,7 @@
       cartAddEvent(event) {
         let formData = '';
         let button = event.detail.button;
+
         if (button.hasAttribute('disabled')) return;
         const form = button.closest('form');
         // Validate form
@@ -3020,75 +3025,8 @@
         if (form !== null && form.querySelector('[type="file"]')) {
           return;
         }
-        const formDataObj = {};
-        formData.forEach((value, key) => (formDataObj[key] = value));
-        
         event.preventDefault();
-        
-        fetch(theme.routes.cart_url + '.js')
-          .then(this.cartErrorsHandler)
-          .then((response) => response.json())
-          .then((response) => {
-            var allProducts = window.theme.cartSettings.products;
-            let isRoutine = allProducts[formDataObj['product-id']].isRoutine;
-            let routineItemsinCart = response.items.filter((item) => allProducts[item.product_id].isRoutine);
-            let totalRoutinesinCart = 0;
-            routineItemsinCart.forEach((element) => { 
-              totalRoutinesinCart = totalRoutinesinCart + element.quantity;
-            });
-            let max_allowed_routines = window.theme.cartSettings.singleRoutine.max_routines_per_cart;
-            
-            let itemExists = response.items.filter((item) => (item.variant_id == formDataObj.id));
-            let max_allowed_qty = allProducts[formDataObj['product-id']].max_qty_per_order;
-            let productExists = response.items.filter((item) => (item.product_id == formDataObj['product-id']));
-            let allVariantsCount = 0;
-            productExists.forEach((element) => {
-              allVariantsCount = allVariantsCount + element.quantity;
-            });
-
-            if (productExists.length > 0 && allVariantsCount === max_allowed_qty) {
-              this.addToCartError({message: 'Error', description: `This product is limited to ${max_allowed_qty} per order.`}, button);
-              return;
-            }
-
-            let singleRoutineOnly = window.theme.cartSettings.singleRoutine.enabled;
-            let showSinlgeRoutineAlert = window.theme.cartSettings.singleRoutine.show_alert;
-
-            if (isRoutine && singleRoutineOnly && showSinlgeRoutineAlert && itemExists.length > 0) {
-              let cartItems = document.querySelector('.cart-alert');
-              cartItems.innerHTML = `<div class="alert-confirm">
-                <p class="cart__item__title cart__item__alert-custom">You already have this routine in your bag. Increase the quantity ?</p>
-                <div class="buttons-holder">
-                  <button type="button" data-continue-alert class="btn btn--primary btn--solid">Confirm</button>
-                  <button type="button" data-remove-alert class="btn btn--primary btn--outline">Cancel</button>
-                </div>
-              </div>`;
-              let replaceButton = cartItems.querySelector('[data-continue-alert]');
-              let closeButton = cartItems.querySelector('[data-remove-alert]');
-              replaceButton.addEventListener("click", (e) => {
-                this.addToCart(formData, button);
-                cartItems.innerHTML = '';
-              });
-              closeButton.addEventListener("click", (e) => {
-                cartItems.innerHTML = '';
-              });
-              this.cartDrawer.dispatchEvent(new CustomEvent('theme:cart-drawer:show'));
-              return;
-            }
-
-            if (isRoutine && singleRoutineOnly && showSinlgeRoutineAlert && totalRoutinesinCart === max_allowed_routines) {
-              this.addToCartError({message: 'Error', description: `Maximum number of allowed routine(s) per order are already added to the bag.`}, button);
-              return;
-            }
-
-            if (isRoutine && singleRoutineOnly && !showSinlgeRoutineAlert && totalRoutinesinCart > 0) {
-              this.addToCartError({message: 'Error', description: `Only Single routine per order is allowed.`}, button);
-              return;
-            }
-
-            this.addToCart(formData, button);
-          })
-          .catch((error) => console.log(error));
+        this.addToCart(formData, button);
       }
 
       /**
@@ -3120,11 +3058,11 @@
           }
 
           termsError.innerText = theme.strings.cartAcceptanceError;
-          this.cartCheckoutButton.setAttribute(attributes$y.disabled, true);
-          termsError.classList.add(classes$F.expanded);
+          this.cartCheckoutButton.setAttribute(attributes$x.disabled, true);
+          termsError.classList.add(classes$G.expanded);
         } else {
-          termsError.classList.remove(classes$F.expanded);
-          this.cartCheckoutButton.removeAttribute(attributes$y.disabled);
+          termsError.classList.remove(classes$G.expanded);
+          this.cartCheckoutButton.removeAttribute(attributes$x.disabled);
         }
       }
 
@@ -3140,7 +3078,7 @@
           e.preventDefault();
 
           if (errorContainer) {
-            errorContainer.classList.remove(classes$F.visible);
+            errorContainer.classList.remove(classes$G.visible);
           }
         });
       }
@@ -3176,18 +3114,18 @@
 
       addToCart(formData, button) {
         if (this.cart) {
-          this.cart.classList.add(classes$F.loading);
+          this.cart.classList.add(classes$G.loading);
         }
 
         const quickAddHolder = button?.closest(selectors$U.quickAddHolder);
 
         if (button) {
-          button.classList.add(classes$F.loading);
+          button.classList.add(classes$G.loading);
           button.disabled = true;
         }
 
         if (quickAddHolder) {
-          quickAddHolder.classList.add(classes$F.visible);
+          quickAddHolder.classList.add(classes$G.visible);
         }
 
         fetch(theme.routes.cart_add_url, {
@@ -3204,7 +3142,7 @@
               this.addToCartError(response, button);
 
               if (button) {
-                button.classList.remove(classes$F.loading);
+                button.classList.remove(classes$G.loading);
                 button.disabled = false;
               }
 
@@ -3213,8 +3151,8 @@
 
             if (this.cart) {
               if (button) {
-                button.classList.remove(classes$F.loading);
-                button.classList.add(classes$F.added);
+                button.classList.remove(classes$G.loading);
+                button.classList.add(classes$G.added);
 
                 button.dispatchEvent(
                   new CustomEvent('theme:product:add', {
@@ -3248,138 +3186,21 @@
        */
 
       updateCart(updateData = {}, currentItem = null) {
-        this.cart.classList.add(classes$F.loading);
+        this.cart.classList.add(classes$G.loading);
 
         let updatedQuantity = updateData.quantity;
         if (currentItem !== null) {
           if (updatedQuantity) {
-            currentItem.classList.add(classes$F.loading);
+            currentItem.classList.add(classes$G.loading);
           } else {
-            currentItem.classList.add(classes$F.removed);
+            currentItem.classList.add(classes$G.removed);
           }
         }
         this.disableCartButtons();
 
-
-        const newItem = this.cart.querySelector(`[${attributes$y.item}="${updateData.id}"]`) || currentItem;
-        const lineIndex = newItem?.hasAttribute(attributes$y.itemIndex) ? parseInt(newItem.getAttribute(attributes$y.itemIndex)) : 0;
-        const itemTitle = newItem?.hasAttribute(attributes$y.itemTitle) ? newItem.getAttribute(attributes$y.itemTitle) : null;
-
-        if (lineIndex === 0) return;
-
-        const data = {
-          line: lineIndex,
-          quantity: updatedQuantity,
-        };
-
-        fetch(theme.routes.cart_url + '.js')
-          .then(this.cartErrorsHandler)
-          .then((response) => response.json())
-          .then((response) => {
-            let currentItemInfo = response.items.filter((item) => item.key == updateData.id);
-            let formDataObj = currentItemInfo[0]
-
-            var allProducts = window.theme.cartSettings.products;
-            let isRoutine = allProducts[formDataObj.product_id].isRoutine;
-            let routineItemsinCart = response.items.filter((item) => allProducts[item.product_id].isRoutine);
-            let totalRoutinesinCart = 0;
-            routineItemsinCart.forEach((element) => { 
-              totalRoutinesinCart = totalRoutinesinCart + element.quantity;
-            });
-            let max_allowed_routines = window.theme.cartSettings.singleRoutine.max_routines_per_cart;
-            
-            let max_allowed_qty = allProducts[formDataObj.product_id].max_qty_per_order;
-            
-            let productExists = response.items.filter((item) => (item.product_id == formDataObj.product_id));
-            let allVariantsCount = 0;
-            productExists.forEach((element) => {
-              allVariantsCount = allVariantsCount + element.quantity;
-            });
-
-            if (productExists.length > 0 && allVariantsCount === max_allowed_qty) {
-              this.updateErrorText(`This product is limited to ${max_allowed_qty} per order.`);
-              this.toggleErrorMessage();
-              this.cartUpdateFailed = true;
-              this.resetLineItem(currentItem);
-              this.enableCartButtons();
-              return;
-            }
-
-            let singleRoutineOnly = window.theme.cartSettings.singleRoutine.enabled;
-            let showSinlgeRoutineAlert = window.theme.cartSettings.singleRoutine.show_alert;
-
-            if (isRoutine && singleRoutineOnly && showSinlgeRoutineAlert && totalRoutinesinCart === max_allowed_routines) {
-              this.updateErrorText(`Maximum number of allowed routine(s) per order are already added to the bag.`);
-              this.toggleErrorMessage();
-              this.cartUpdateFailed = true;
-              this.resetLineItem(currentItem);
-              this.enableCartButtons();
-              return;
-            }
-
-            if (updatedQuantity > max_allowed_qty) {
-              this.updateErrorText(`This product is limited to ${max_allowed_qty} per order.`);
-              this.toggleErrorMessage();
-              this.cartUpdateFailed = true;
-              this.resetLineItem(currentItem);
-              this.enableCartButtons();
-              return;
-            }
-
-            if (isRoutine && singleRoutineOnly && !showSinlgeRoutineAlert && totalRoutinesinCart > 0) {
-              this.cartUpdateFailed = true;
-              this.resetLineItem(currentItem);
-              this.enableCartButtons();
-              return;
-            }
-            
-            fetch(theme.routes.cart_change_url, {
-              method: 'post',
-              headers: {'Content-Type': 'application/json', Accept: 'application/json'},
-              body: JSON.stringify(data),
-            })
-              .then((response) => {
-                return response.text();
-              })
-              .then((state) => {
-                const parsedState = JSON.parse(state);
-    
-                if (parsedState.errors) {
-                  this.cartUpdateFailed = true;
-                  this.updateErrorText(itemTitle);
-                  this.toggleErrorMessage();
-                  this.resetLineItem(currentItem);
-                  this.enableCartButtons();
-    
-                  return;
-                }
-    
-                this.getCart();
-              })
-              .catch((error) => {
-                console.log(error);
-                this.enableCartButtons();
-              });
-          })
-          .catch((error) => console.log(error));
-      }
-
-      updateCartSwitch(updateData = {}, currentItem = null, newItemData = {}) {
-        this.cart.classList.add(classes$F.loading);
-
-        let updatedQuantity = updateData.quantity;
-        if (currentItem !== null) {
-          if (updatedQuantity) {
-            currentItem.classList.add(classes$F.loading);
-          } else {
-            currentItem.classList.add(classes$F.removed);
-          }
-        }
-        this.disableCartButtons();
-
-        const newItem = this.cart.querySelector(`[${attributes$y.item}="${updateData.id}"]`) || currentItem;
-        const lineIndex = newItem?.hasAttribute(attributes$y.itemIndex) ? parseInt(newItem.getAttribute(attributes$y.itemIndex)) : 0;
-        const itemTitle = newItem?.hasAttribute(attributes$y.itemTitle) ? newItem.getAttribute(attributes$y.itemTitle) : null;
+        const newItem = this.cart.querySelector(`[${attributes$x.item}="${updateData.id}"]`) || currentItem;
+        const lineIndex = newItem?.hasAttribute(attributes$x.itemIndex) ? parseInt(newItem.getAttribute(attributes$x.itemIndex)) : 0;
+        const itemTitle = newItem?.hasAttribute(attributes$x.itemTitle) ? newItem.getAttribute(attributes$x.itemTitle) : null;
 
         if (lineIndex === 0) return;
 
@@ -3408,49 +3229,11 @@
 
               return;
             }
-            this.addItemSwitch(newItemData);
+
+            this.getCart();
           })
           .catch((error) => {
             console.log(error);
-            this.enableCartButtons();
-          });
-      }
-
-      addItemSwitch(item) {
-        let formData = {
-           'items': [
-             {
-              'id': item.variantId,
-              'quantity': item.quantity,
-              'selling_plan' : item.sellingPlan
-            }
-           ]
-        };
-        fetch(window.Shopify.routes.root + 'cart/add.js', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(formData)
-        })
-          .then((response) => response.json())
-          .then((response) => {
-            if (response.status) {
-              this.addToCartError(response, button);
-              return;
-            }
-
-            if (this.cart) {
-              this.getCart();
-              this.updateSuccessText('Your item is updated to subscription item');
-              this.toggleSuccessMessage();
-            } else {
-              // Redirect to cart page if "Add to cart" is successful
-              window.location = theme.routes.cart_url;
-            }
-          })
-          .catch((error) => {
-            this.addToCartError(error, button);
             this.enableCartButtons();
           });
       }
@@ -3464,7 +3247,7 @@
         const qtyInput = item.querySelector(selectors$U.qtyInput);
         const qty = qtyInput.getAttribute('value');
         qtyInput.value = qty;
-        item.classList.remove(classes$F.loading);
+        item.classList.remove(classes$G.loading);
       }
 
       /**
@@ -3478,7 +3261,7 @@
 
         if (inputs.length) {
           inputs.forEach((item) => {
-            item.classList.add(classes$F.disabled);
+            item.classList.add(classes$G.disabled);
             item.blur();
             item.disabled = true;
           });
@@ -3486,7 +3269,7 @@
 
         if (buttons.length) {
           buttons.forEach((item) => {
-            item.setAttribute(attributes$y.disabled, true);
+            item.setAttribute(attributes$x.disabled, true);
           });
         }
       }
@@ -3498,22 +3281,22 @@
        */
       enableCartButtons() {
         const inputs = this.cart.querySelectorAll('input');
-        const buttons = this.cart.querySelectorAll(`button:not([data-disabled]), ${selectors$U.cartItemRemove}`);
+        const buttons = this.cart.querySelectorAll(`button, ${selectors$U.cartItemRemove}`);
 
         if (inputs.length) {
           inputs.forEach((item) => {
-            item.classList.remove(classes$F.disabled);
+            item.classList.remove(classes$G.disabled);
             item.disabled = false;
           });
         }
 
         if (buttons.length) {
           buttons.forEach((item) => {
-            item.removeAttribute(attributes$y.disabled);
+            item.removeAttribute(attributes$x.disabled);
           });
         }
 
-        this.cart.classList.remove(classes$F.loading);
+        this.cart.classList.remove(classes$G.loading);
       }
 
       /**
@@ -3537,26 +3320,10 @@
       toggleErrorMessage() {
         if (!this.cartErrorHolder) return;
 
-        this.cartErrorHolder.classList.toggle(classes$F.expanded, this.cartUpdateFailed);
+        this.cartErrorHolder.classList.toggle(classes$G.expanded, this.cartUpdateFailed);
 
         // Reset cart error events flag
         this.cartUpdateFailed = false;
-      }
-
-      updateSuccessText(itemTitle) {
-        this.cartSuccessHolder.querySelector(selectors$U.successMessage).innerText = itemTitle;
-      }
-
-      /**
-       * Toggle error message
-       *
-       * @return  {Void}
-       */
-
-      toggleSuccessMessage() {
-        if (!this.cartSuccessHolder) return;
-
-        this.cartSuccessHolder.classList.toggle(classes$F.expanded);
       }
 
       /**
@@ -3591,10 +3358,6 @@
        */
 
       addToCartError(data, button) {
-        if (this.cartDrawer) {
-          // this.closeCartDrawer();
-        }
-
         if (button !== null) {
           const outerContainer = button.closest(selectors$U.outerSection) || button.closest(selectors$U.quickAddHolder) || button.closest(selectors$U.quickAddModal);
           let errorContainer = outerContainer?.querySelector(selectors$U.formErrorsContainer);
@@ -3605,8 +3368,14 @@
           }
 
           if (errorContainer) {
-            errorContainer.innerHTML = `<div class="errors">${data.message}: ${data.description}<button type="button" class="errors__close" data-close-error><svg aria-hidden="true" focusable="false" role="presentation" width="24px" height="24px" stroke-width="1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor" class="icon icon-cancel"><path d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>`;
-            errorContainer.classList.add(classes$F.visible);
+            let errorMessage = `${data.message}: ${data.description}`;
+
+            if (data.message == data.description) {
+              errorMessage = data.message;
+            }
+
+            errorContainer.innerHTML = `<div class="errors">${errorMessage}<button type="button" class="errors__close" data-close-error><svg aria-hidden="true" focusable="false" role="presentation" width="24px" height="24px" stroke-width="1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor" class="icon icon-cancel"><path d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>`;
+            errorContainer.classList.add(classes$G.visible);
             this.formErrorsEvents(errorContainer);
           }
 
@@ -3636,7 +3405,7 @@
           );
         }
 
-        this.cart?.classList.remove(classes$F.loading);
+        this.cart?.classList.remove(classes$G.loading);
       }
 
       /**
@@ -3659,24 +3428,24 @@
         }
 
         buttons.forEach((button) => {
-          button.classList.remove(classes$F.loading);
+          button.classList.remove(classes$G.loading);
           if (!hasError) {
-            button.classList.add(classes$F.added);
+            button.classList.add(classes$G.added);
           }
         });
 
         setTimeout(() => {
           buttons.forEach((button) => {
-            button.classList.remove(classes$F.added);
+            button.classList.remove(classes$G.added);
             const isVariantUnavailable =
-              button.closest(selectors$U.formWrapper)?.classList.contains(classes$F.variantSoldOut) || button.closest(selectors$U.formWrapper)?.classList.contains(classes$F.variantUnavailable);
+              button.closest(selectors$U.formWrapper)?.classList.contains(classes$G.variantSoldOut) || button.closest(selectors$U.formWrapper)?.classList.contains(classes$G.variantUnavailable);
 
             if (!isVariantUnavailable) {
               button.disabled = false;
             }
           });
 
-          quickAddHolder?.classList.remove(classes$F.visible);
+          quickAddHolder?.classList.remove(classes$G.visible);
         }, 1000);
       }
 
@@ -3689,7 +3458,7 @@
       toggleClassesOnContainers() {
         const hasItemsInCart = this.hasItemsInCart();
 
-        this.cart.classList.toggle(classes$F.empty, !hasItemsInCart);
+        this.cart.classList.toggle(classes$G.empty, !hasItemsInCart);
 
         if (!hasItemsInCart) {
           setTimeout(() => {
@@ -3738,7 +3507,7 @@
         }
 
         this.newTotalItems = cartItemsData && cartItemsData.querySelectorAll(selectors$U.item).length ? cartItemsData.querySelectorAll(selectors$U.item).length : 0;
-        this.subtotal = cartTotal && cartTotal.hasAttribute(attributes$y.cartTotal) ? parseInt(cartTotal.getAttribute(attributes$y.cartTotal)) : 0;
+        this.subtotal = cartTotal && cartTotal.hasAttribute(attributes$x.cartTotal) ? parseInt(cartTotal.getAttribute(attributes$x.cartTotal)) : 0;
         this.cartCount = this.getCartItemCount();
 
         document.dispatchEvent(
@@ -3753,9 +3522,6 @@
         // Update cart total price
         this.cartTotal.innerHTML = this.subtotal === 0 ? window.theme.strings.free : themeCurrency.formatMoney(this.subtotal, theme.moneyWithCurrencyFormat);
 
-        // Remove cart loading class
-        this.cart.classList.remove(classes$F.loading);
-
         if (this.totalItems !== this.newTotalItems) {
           this.totalItems = this.newTotalItems;
 
@@ -3763,21 +3529,23 @@
         }
 
         // Add class "is-updated" line items holder to reduce cart items animation delay via CSS variables
-        if (this.cartDrawer?.classList.contains(classes$F.open)) {
-          this.cart.classList.add(classes$F.updated);
+        if (this.cartDrawer?.classList.contains(classes$G.open)) {
+          this.cart.classList.add(classes$G.updated);
         }
+
+        // Remove cart loading class
+        this.cart.classList.remove(classes$G.loading);
 
         // Prepare empty cart buttons for animation
         if (!this.hasItemsInCart()) {
           this.cartEmpty.querySelectorAll(selectors$U.animation).forEach((item) => {
-            item.classList.remove(classes$F.animated);
+            item.classList.remove(classes$G.animated);
           });
         }
 
         this.freeShippingMessageHandle(this.subtotal);
         this.cartRemoveEvents();
         this.cartUpdateEvents();
-        this.cartSwitchEvents();
         this.toggleErrorMessage();
         this.enableCartButtons();
         this.updateProgress();
@@ -3822,8 +3590,8 @@
         if (!this.freeShipping.length) return;
 
         this.freeShipping.forEach((message) => {
-          const hasQualifiedShippingMessage = message.hasAttribute(attributes$y.freeShipping) && message.getAttribute(attributes$y.freeShipping) === 'true' && total >= 0;
-          message.classList.toggle(classes$F.success, hasQualifiedShippingMessage && total >= this.freeShippingLimit);
+          const hasQualifiedShippingMessage = message.hasAttribute(attributes$x.freeShipping) && message.getAttribute(attributes$x.freeShipping) === 'true' && total >= 0;
+          message.classList.toggle(classes$G.success, hasQualifiedShippingMessage && total >= this.freeShippingLimit);
         });
       }
 
@@ -3877,7 +3645,7 @@
           skipButtons.forEach((button) => {
             button.addEventListener('click', (event) => {
               event.preventDefault();
-              const productID = button.closest(selectors$U.quickAddHolder).getAttribute(attributes$y.quickAddHolder);
+              const productID = button.closest(selectors$U.quickAddHolder).getAttribute(attributes$x.quickAddHolder);
 
               if (!this.skipUpsellProductsArray.includes(productID)) {
                 this.skipUpsellProductsArray.push(productID);
@@ -3916,7 +3684,7 @@
         if (!this.upsellProductsHolder) return;
 
         // Remove skipped upsell product from Cart
-        const upsellProduct = this.upsellProductsHolder.querySelector(`[${attributes$y.quickAddHolder}="${productID}"]`);
+        const upsellProduct = this.upsellProductsHolder.querySelector(`[${attributes$x.quickAddHolder}="${productID}"]`);
 
         if (upsellProduct) {
           upsellProduct.parentNode.remove();
@@ -3935,10 +3703,10 @@
 
         if (!upsellWidget) return;
 
-        upsellWidget.classList.toggle(classes$F.hidden, !upsellItems.length);
+        upsellWidget.classList.toggle(classes$G.hidden, !upsellItems.length);
 
-        if (upsellItems.length && !upsellWidget.hasAttribute(attributes$y.open) && upsellWidget.hasAttribute(attributes$y.upsellAutoOpen)) {
-          upsellWidget.setAttribute(attributes$y.open, true);
+        if (upsellItems.length && !upsellWidget.hasAttribute(attributes$x.open) && upsellWidget.hasAttribute(attributes$x.upsellAutoOpen)) {
+          upsellWidget.setAttribute(attributes$x.open, true);
           const upsellWidgetBody = upsellWidget.querySelector(selectors$U.collapsibleBody);
 
           if (upsellWidgetBody) {
@@ -3954,8 +3722,8 @@
        */
       resetAnimatedItems() {
         this.cart.querySelectorAll(selectors$U.animation).forEach((item) => {
-          item.classList.remove(classes$F.animated);
-          item.classList.remove(classes$F.hiding);
+          item.classList.remove(classes$G.animated);
+          item.classList.remove(classes$G.hiding);
         });
       }
 
@@ -3964,27 +3732,30 @@
        *
        * @return  {Void}
        */
-      animateItems() {
+      animateItems(e) {
         requestAnimationFrame(() => {
-          this.cart?.querySelectorAll(selectors$U.animation).forEach((item) => {
-            item.classList.add(classes$F.animated);
+          let cart = this.cart;
+
+          if (e && e.detail && e.detail.target) {
+            cart = e.detail.target;
+          }
+
+          cart?.querySelectorAll(selectors$U.animation).forEach((item) => {
+            item.classList.add(classes$G.animated);
           });
         });
       }
 
-      onCartDrawerReload() {
-        this.getCart();
-      }
-
-      onCartDrawerAlert(e) {
-        if (e.detail.status == 'error') {
-          this.updateErrorText(e.detail.message);
-          this.toggleErrorMessage();
-        } else if (e.detail.status == 'success') {
-          this.updateSuccessText(e.detail.message);
-          this.toggleSuccessMessage();
+      recentlyViewedProducts() {
+        const recentlyViewedHolder = this.cart.querySelector(`#${selectors$U.recentlyViewedHolderId}`);
+        if (recentlyViewedHolder) {
+          Shopify.Products.showRecentlyViewed({
+            howManyToShow: 3,
+            wrapperId: selectors$U.recentlyViewedHolderId,
+            section: this,
+            target: 'api-upsell-product',
+          });
         }
-        
       }
     }
 
@@ -3992,7 +3763,7 @@
       customElements.define('cart-items', CartItems);
     }
 
-    const attributes$x = {
+    const attributes$w = {
       count: 'data-cart-count',
       limit: 'data-limit',
     };
@@ -4002,7 +3773,7 @@
         super();
 
         this.cartCount = null;
-        this.limit = this.getAttribute(attributes$x.limit);
+        this.limit = this.getAttribute(attributes$w.limit);
         this.onCartChangeCallback = this.onCartChange.bind(this);
       }
 
@@ -4021,7 +3792,7 @@
 
       update() {
         if (this.cartCount !== null) {
-          this.setAttribute(attributes$x.count, this.cartCount);
+          this.setAttribute(attributes$w.count, this.cartCount);
           let countValue = this.cartCount;
 
           if (this.limit && this.cartCount >= this.limit) {
@@ -4053,18 +3824,22 @@
       });
     }
 
-    const classes$E = {
+    const classes$F = {
       open: 'is-open',
       closing: 'is-closing',
+      duplicate: 'drawer--duplicate',
+      drawerEditorError: 'drawer-editor-error',
     };
 
     const selectors$T = {
+      cartDrawer: 'cart-drawer',
       cartDrawerClose: '[data-cart-drawer-close]',
       cartDrawerSection: '[data-section-type="cart-drawer"]',
       cartDrawerInner: '[data-cart-drawer-inner]',
+      shopifySection: '.shopify-section',
     };
 
-    const attributes$w = {
+    const attributes$v = {
       drawerUnderlay: 'data-drawer-underlay',
     };
 
@@ -4082,11 +3857,34 @@
         this.openCartDrawerOnProductAdded = this.openCartDrawerOnProductAdded.bind(this);
         this.openCartDrawerOnSelect = this.openCartDrawerOnSelect.bind(this);
         this.closeCartDrawerOnDeselect = this.closeCartDrawerOnDeselect.bind(this);
+        this.cartDrawerSection = this.closest(selectors$T.shopifySection);
 
         this.closeCartEvents();
       }
 
       connectedCallback() {
+        const drawerSection = this.closest(selectors$T.shopifySection);
+
+        /* Prevent duplicated cart drawers */
+        if (window.theme.hasCartDrawer) {
+          if (!window.Shopify.designMode) {
+            drawerSection.remove();
+            return;
+          } else {
+            const errorMessage = document.createElement('div');
+            errorMessage.classList.add(classes$F.drawerEditorError);
+            errorMessage.innerText = 'Cart drawer section already exists.';
+
+            if (!this.querySelector(`.${classes$F.drawerEditorError}`)) {
+              this.querySelector(selectors$T.cartDrawerInner).append(errorMessage);
+            }
+
+            this.classList.add(classes$F.duplicate);
+          }
+        }
+
+        window.theme.hasCartDrawer = true;
+
         this.addEventListener('theme:cart-drawer:show', this.openCartDrawer);
         document.addEventListener('theme:cart:toggle', this.toggleCartDrawer);
         document.addEventListener('theme:quick-add:open', this.closeCartDrawer);
@@ -4103,6 +3901,10 @@
         document.removeEventListener('shopify:block:select', this.openCartDrawerOnSelect);
         document.removeEventListener('shopify:section:select', this.openCartDrawerOnSelect);
         document.removeEventListener('shopify:section:deselect', this.closeCartDrawerOnDeselect);
+
+        if (document.querySelectorAll(selectors$T.cartDrawer).length <= 1) {
+          window.theme.hasCartDrawer = false;
+        }
       }
 
       /**
@@ -4122,8 +3924,10 @@
        * @return  {Void}
        */
       openCartDrawerOnSelect(e) {
-        if (e.target.querySelector(selectors$T.cartDrawerSection) || e.target.closest(selectors$T.cartDrawerSection)) {
-          this.openCartDrawer();
+        const cartDrawerSection = e.target.querySelector(selectors$T.shopifySection) || e.target.closest(selectors$T.shopifySection) || e.target;
+
+        if (cartDrawerSection === this.cartDrawerSection) {
+          this.openCartDrawer(true);
         }
       }
 
@@ -4144,15 +3948,24 @@
        * @return  {Void}
        */
 
-      openCartDrawer() {
+      openCartDrawer(forceOpen = false) {
+        if (!forceOpen && this.classList.contains(classes$F.duplicate)) return;
+
         this.cartDrawerIsOpen = true;
         this.onBodyClickEvent = this.onBodyClickEvent || this.onBodyClick.bind(this);
         document.body.addEventListener('click', this.onBodyClickEvent);
 
-        document.dispatchEvent(new CustomEvent('theme:cart-drawer:open', {bubbles: true}));
+        document.dispatchEvent(
+          new CustomEvent('theme:cart-drawer:open', {
+            detail: {
+              target: this,
+            },
+            bubbles: true,
+          })
+        );
         document.dispatchEvent(new CustomEvent('theme:scroll:lock', {bubbles: true}));
 
-        this.classList.add(classes$E.open);
+        this.classList.add(classes$F.open);
 
         // Observe Additional Checkout Buttons
         this.observeAdditionalCheckoutButtons();
@@ -4171,10 +3984,10 @@
        */
 
       closeCartDrawer() {
-        if (!this.classList.contains(classes$E.open)) return;
+        if (!this.classList.contains(classes$F.open)) return;
 
-        this.classList.add(classes$E.closing);
-        this.classList.remove(classes$E.open);
+        this.classList.add(classes$F.closing);
+        this.classList.remove(classes$F.open);
 
         this.cartDrawerIsOpen = false;
 
@@ -4191,7 +4004,7 @@
         document.dispatchEvent(new CustomEvent('theme:scroll:unlock', {bubbles: true}));
 
         waitForAnimationEnd(this.cartDrawerInner).then(() => {
-          this.classList.remove(classes$E.closing);
+          this.classList.remove(classes$F.closing);
         });
       }
 
@@ -4229,7 +4042,7 @@
       }
 
       onBodyClick(e) {
-        if (e.target.hasAttribute(attributes$w.drawerUnderlay)) this.closeCartDrawer();
+        if (e.target.hasAttribute(attributes$v.drawerUnderlay)) this.closeCartDrawer();
       }
 
       observeAdditionalCheckoutButtons() {
@@ -4263,7 +4076,7 @@
       content: '[data-collapsible-content]',
     };
 
-    const attributes$v = {
+    const attributes$u = {
       open: 'open',
       single: 'single',
     };
@@ -4273,7 +4086,7 @@
         super();
 
         this.collapsibles = this.querySelectorAll(selectors$S.collapsible);
-        this.single = this.hasAttribute(attributes$v.single);
+        this.single = this.hasAttribute(attributes$u.single);
       }
 
       connectedCallback() {
@@ -4286,12 +4099,12 @@
           body.addEventListener('transitionend', (event) => {
             if (event.target !== body) return;
 
-            if (collapsible.getAttribute(attributes$v.open) == 'true') {
+            if (collapsible.getAttribute(attributes$u.open) == 'true') {
               this.setBodyHeight(body, 'auto');
             }
 
-            if (collapsible.getAttribute(attributes$v.open) == 'false') {
-              collapsible.removeAttribute(attributes$v.open);
+            if (collapsible.getAttribute(attributes$u.open) == 'false') {
+              collapsible.removeAttribute(attributes$u.open);
               this.setBodyHeight(body, '');
             }
           });
@@ -4340,7 +4153,7 @@
         if (this.single) {
           this.collapsibles.forEach((otherCollapsible) => {
             // if otherCollapsible has attribute open and it's not the one we clicked on, remove the open attribute
-            if (otherCollapsible.hasAttribute(attributes$v.open) && otherCollapsible != collapsible) {
+            if (otherCollapsible.hasAttribute(attributes$u.open) && otherCollapsible != collapsible) {
               requestAnimationFrame(() => {
                 this.close(otherCollapsible);
               });
@@ -4348,7 +4161,7 @@
           });
         }
 
-        if (collapsible.hasAttribute(attributes$v.open)) {
+        if (collapsible.hasAttribute(attributes$u.open)) {
           this.close(collapsible);
         } else {
           this.open(collapsible);
@@ -4376,11 +4189,11 @@
       input: 'input:not([type="hidden"])',
     };
 
-    const attributes$u = {
+    const attributes$t = {
       popdownUnderlay: 'data-popdown-underlay',
     };
 
-    const classes$D = {
+    const classes$E = {
       open: 'is-open',
     };
     class SearchPopdown extends HTMLElement {
@@ -4410,7 +4223,7 @@
       popdownTransitionCallback(event) {
         if (event.target !== this.popdown) return;
 
-        if (!this.classList.contains(classes$D.open)) {
+        if (!this.classList.contains(classes$E.open)) {
           this.popdownContainer.removeAttribute('open');
           this.a11y.removeTrapFocus();
         } else if (event.propertyName === 'transform') {
@@ -4422,7 +4235,7 @@
       }
 
       onBodyClick(event) {
-        if (!this.contains(event.target) || event.target.hasAttribute(attributes$u.popdownUnderlay)) this.close();
+        if (!this.contains(event.target) || event.target.hasAttribute(attributes$t.popdownUnderlay)) this.close();
       }
 
       open() {
@@ -4432,12 +4245,12 @@
         document.dispatchEvent(new CustomEvent('theme:scroll:lock', {bubbles: true}));
 
         requestAnimationFrame(() => {
-          this.classList.add(classes$D.open);
+          this.classList.add(classes$E.open);
         });
       }
 
       close() {
-        this.classList.remove(classes$D.open);
+        this.classList.remove(classes$E.open);
 
         document.body.removeEventListener('click', this.onBodyClickEvent);
         document.dispatchEvent(new CustomEvent('theme:scroll:unlock', {bubbles: true}));
@@ -4507,12 +4320,12 @@
       template: '#shipping-calculator-response-template',
     };
 
-    const attributes$t = {
+    const attributes$s = {
       templateNoShipping: 'data-template-no-shipping',
       default: 'data-default',
     };
 
-    const classes$C = {
+    const classes$D = {
       hidden: 'is-hidden',
       error: 'error',
       center: 'center',
@@ -4554,14 +4367,14 @@
           });
         }
 
-        if (this.selectCountry && this.selectCountry.hasAttribute(attributes$t.default) && this.selectProvince && this.selectProvince.hasAttribute(attributes$t.default)) {
+        if (this.selectCountry && this.selectCountry.hasAttribute(attributes$s.default) && this.selectProvince && this.selectProvince.hasAttribute(attributes$s.default)) {
           this.selectCountry.addEventListener('change', this.onCountryChangeEvent);
         }
 
         if (this.getRatesButton) {
           this.getRatesButton.addEventListener('click', this.onButtonClickEvent);
 
-          if (theme.settings.customerLoggedIn && this.getRatesButton.classList.contains(classes$C.getRatesTrigger)) {
+          if (theme.settings.customerLoggedIn && this.getRatesButton.classList.contains(classes$D.getRatesTrigger)) {
             const zipElem = document.querySelector(selectors$P.addressZip);
             if (zipElem && zipElem.value) {
               this.getRatesButton.dispatchEvent(new Event('click'));
@@ -4571,7 +4384,7 @@
       }
 
       disconnectedCallback() {
-        if (this.selectCountry && this.selectCountry.hasAttribute(attributes$t.default) && this.selectProvince && this.selectProvince.hasAttribute(attributes$t.default)) {
+        if (this.selectCountry && this.selectCountry.hasAttribute(attributes$s.default) && this.selectProvince && this.selectProvince.hasAttribute(attributes$s.default)) {
           this.selectCountry.removeEventListener('change', this.onCountryChangeEvent);
         }
 
@@ -4581,24 +4394,24 @@
       }
 
       onCountryChange() {
-        this.selectCountry.removeAttribute(attributes$t.default);
-        this.selectProvince.removeAttribute(attributes$t.default);
+        this.selectCountry.removeAttribute(attributes$s.default);
+        this.selectProvince.removeAttribute(attributes$s.default);
       }
 
       onButtonClick() {
         this.disableButtons();
         while (this.wrapper.firstChild) this.wrapper.removeChild(this.wrapper.firstChild);
-        this.wrapper.classList.add(classes$C.hidden);
+        this.wrapper.classList.add(classes$D.hidden);
         const shippingAddress = {};
         let elemCountryVal = this.selectCountry.value;
         let elemProvinceVal = this.selectProvince.value;
 
-        const elemCountryData = this.selectCountry.getAttribute(attributes$t.default);
+        const elemCountryData = this.selectCountry.getAttribute(attributes$s.default);
         if (elemCountryVal === '' && elemCountryData && elemCountryData !== '') {
           elemCountryVal = elemCountryData;
         }
 
-        const elemProvinceData = this.selectProvince.getAttribute(attributes$t.default);
+        const elemProvinceData = this.selectProvince.getAttribute(attributes$s.default);
         if (elemProvinceVal === '' && elemProvinceData && elemProvinceData !== '') {
           elemProvinceVal = elemProvinceData;
         }
@@ -4620,7 +4433,7 @@
           this.wrapper.innerHTML = '';
           let ratesList = '';
           let ratesText = '';
-          let successClass = `${classes$C.error} ${classes$C.center}`;
+          let successClass = `${classes$D.error} ${classes$D.center}`;
           let markup = this.template.innerHTML;
           const rateRegex = /[^[\]]+(?=])/g;
 
@@ -4635,13 +4448,13 @@
           }
 
           if (response.success) {
-            successClass = `${classes$C.success} ${classes$C.center}`;
+            successClass = `${classes$D.success} ${classes$D.center}`;
             const createdNewElem = document.createElement('div');
             createdNewElem.innerHTML = this.template.innerHTML;
             const noShippingElem = createdNewElem.querySelector(selectors$P.templateNoShipping);
 
             if (response.rates.length < 1 && noShippingElem) {
-              ratesText = noShippingElem.getAttribute(attributes$t.templateNoShipping);
+              ratesText = noShippingElem.getAttribute(attributes$s.templateNoShipping);
             }
           } else {
             ratesText = response.errorFeedback;
@@ -4654,19 +4467,19 @@
 
           this.wrapper.innerHTML += markup;
 
-          this.wrapper.classList.remove(classes$C.hidden);
+          this.wrapper.classList.remove(classes$D.hidden);
         }
       }
 
       enableButtons() {
         this.getRatesButton.removeAttribute('disabled');
-        this.getRatesButton.classList.remove(classes$C.disabled);
+        this.getRatesButton.classList.remove(classes$D.disabled);
         this.getRatesButton.textContent = theme.strings.shippingCalcSubmitButton;
       }
 
       disableButtons() {
         this.getRatesButton.setAttribute('disabled', 'disabled');
-        this.getRatesButton.classList.add(classes$C.disabled);
+        this.getRatesButton.classList.add(classes$D.disabled);
         this.getRatesButton.textContent = theme.strings.shippingCalcSubmitButtonDisabled;
       }
 
@@ -4770,11 +4583,11 @@
       trigger: '[data-button]',
     };
 
-    const attributes$s = {
+    const attributes$r = {
       height: 'data-height',
     };
 
-    const classes$B = {
+    const classes$C = {
       open: 'is-open',
       enabled: 'is-enabled',
     };
@@ -4783,7 +4596,7 @@
       constructor() {
         super();
 
-        this.initialHeight = this.getAttribute(attributes$s.height);
+        this.initialHeight = this.getAttribute(attributes$r.height);
         this.content = this.querySelector(selectors$O.content);
         this.trigger = this.querySelector(selectors$O.trigger);
         this.actions = this.querySelector(selectors$O.actions);
@@ -4796,7 +4609,7 @@
 
         this.trigger.addEventListener('click', () => {
           this.setHeight(this.content.offsetHeight);
-          this.classList.add(classes$B.open);
+          this.classList.add(classes$C.open);
         });
 
         this.setHeight(this.initialHeight);
@@ -4814,7 +4627,7 @@
       }
 
       toggleActions() {
-        this.classList.toggle(classes$B.enabled, this.content.offsetHeight + this.actions.offsetHeight > this.initialHeight);
+        this.classList.toggle(classes$C.enabled, this.content.offsetHeight + this.actions.offsetHeight > this.initialHeight);
       }
     }
 
@@ -4840,7 +4653,7 @@
       addressProvinceContainer: 'AddressProvinceContainer',
     };
 
-    const classes$A = {
+    const classes$B = {
       hidden: 'hidden',
     };
 
@@ -4862,7 +4675,7 @@
           if (newButtons.length) {
             newButtons.forEach((element) => {
               element.addEventListener('click', function () {
-                newAddressForm.classList.toggle(classes$A.hidden);
+                newAddressForm.classList.toggle(classes$B.hidden);
               });
             });
           }
@@ -4872,7 +4685,7 @@
             editButtons.forEach((element) => {
               element.addEventListener('click', function () {
                 const formId = this.getAttribute(selectors$N.dataFormId);
-                section.querySelector(`${selectors$N.editAddress}_${formId}`).classList.toggle(classes$A.hidden);
+                section.querySelector(`${selectors$N.editAddress}_${formId}`).classList.toggle(classes$B.hidden);
               });
             });
           }
@@ -5408,7 +5221,7 @@
       tooltipStopMouseEnter: 'data-tooltip-stop-mouseenter',
     };
 
-    const classes$z = {
+    const classes$A = {
       tooltipDefault: 'tooltip-default',
       visible: 'is-visible',
       hiding: 'is-hiding',
@@ -5421,7 +5234,7 @@
         this.tooltip = el;
         if (!this.tooltip.hasAttribute(selectors$J.tooltip)) return;
         this.label = this.tooltip.getAttribute(selectors$J.tooltip);
-        this.class = options.class || classes$z.tooltipDefault;
+        this.class = options.class || classes$A.tooltipDefault;
         this.transitionSpeed = options.transitionSpeed || 200;
         this.hideTransitionTimeout = 0;
         this.addPinEvent = () => this.addPin();
@@ -5453,7 +5266,7 @@
           const tooltipTargetArrow = tooltipTarget.querySelector(`.${this.class}__arrow`);
           const tooltipTargetInner = tooltipTarget.querySelector(`.${this.class}__inner`);
           const tooltipTargetText = tooltipTarget.querySelector(`.${this.class}__text`);
-          tooltipTargetText.textContent = this.label;
+          tooltipTargetText.innerHTML = this.label;
 
           const tooltipTargetWidth = tooltipTargetInner.offsetWidth;
           const tooltipRect = this.tooltip.getBoundingClientRect();
@@ -5463,7 +5276,8 @@
           const tooltipTargetPositionTop = tooltipTop + tooltipHeight + window.scrollY;
           let tooltipTargetPositionLeft = tooltipRect.left - tooltipTargetWidth / 2 + tooltipWidth / 2;
           const tooltipLeftWithWidth = tooltipTargetPositionLeft + tooltipTargetWidth;
-          const tooltipTargetWindowDifference = tooltipLeftWithWidth - getWindowWidth();
+          const sideOffset = 24;
+          const tooltipTargetWindowDifference = tooltipLeftWithWidth - getWindowWidth() + sideOffset;
 
           if (tooltipTargetWindowDifference > 0) {
             tooltipTargetPositionLeft -= tooltipTargetWindowDifference;
@@ -5475,9 +5289,10 @@
 
           tooltipTargetArrow.style.left = `${tooltipRect.left + tooltipWidth / 2}px`;
           tooltipTarget.style.setProperty('--tooltip-top', `${tooltipTargetPositionTop}px`);
+
           tooltipTargetInner.style.transform = `translateX(${tooltipTargetPositionLeft}px)`;
-          tooltipTarget.classList.remove(classes$z.hiding);
-          tooltipTarget.classList.add(classes$z.visible);
+          tooltipTarget.classList.remove(classes$A.hiding);
+          tooltipTarget.classList.add(classes$A.visible);
 
           document.addEventListener('theme:scroll', this.removePinEvent);
         }
@@ -5485,22 +5300,22 @@
 
       removePin(event, stopMouseEnter = false, hideTransition = false) {
         const tooltipTarget = document.querySelector(`.${this.class}`);
-        const tooltipVisible = tooltipTarget.classList.contains(classes$z.visible);
+        const tooltipVisible = tooltipTarget.classList.contains(classes$A.visible);
 
         if (tooltipTarget && ((stopMouseEnter && !this.tooltip.hasAttribute(selectors$J.tooltipStopMouseEnter)) || !stopMouseEnter)) {
           if (tooltipVisible && (hideTransition || event.detail.hideTransition)) {
-            tooltipTarget.classList.add(classes$z.hiding);
+            tooltipTarget.classList.add(classes$A.hiding);
 
             if (this.hideTransitionTimeout) {
               clearTimeout(this.hideTransitionTimeout);
             }
 
             this.hideTransitionTimeout = setTimeout(() => {
-              tooltipTarget.classList.remove(classes$z.hiding);
+              tooltipTarget.classList.remove(classes$A.hiding);
             }, this.transitionSpeed);
           }
 
-          tooltipTarget.classList.remove(classes$z.visible);
+          tooltipTarget.classList.remove(classes$A.visible);
 
           document.removeEventListener('theme:scroll', this.removePinEvent);
         }
@@ -5583,14 +5398,14 @@
       sliderThumb: '[data-slider-thumb]',
     };
 
-    const attributes$r = {
+    const attributes$q = {
       arrowPositionMiddle: 'data-arrow-position-middle',
       slideIndex: 'data-slide-index',
       sliderOptions: 'data-options',
       slideTextColor: 'data-slide-text-color',
     };
 
-    const classes$y = {
+    const classes$z = {
       aosAnimate: 'aos-animate',
       desktop: 'desktop',
       focused: 'is-focused',
@@ -5611,7 +5426,6 @@
         this.container = container;
         this.slideshow = slideshow || this.container.querySelector(selectors$I.slider);
 
-
         if (!this.slideshow) return;
 
         this.slideshowSlides = this.slideshow.querySelectorAll(selectors$I.slide);
@@ -5619,10 +5433,10 @@
         if (this.slideshowSlides.length <= 1) return;
 
         this.sliderThumbs = this.container.querySelectorAll(selectors$I.sliderThumb);
-        this.multipleSlides = this.slideshow.hasAttribute(attributes$r.slidesLargeDesktop);
+        this.multipleSlides = this.slideshow.hasAttribute(attributes$q.slidesLargeDesktop);
 
-        if (this.slideshow.hasAttribute(attributes$r.sliderOptions)) {
-          this.customOptions = JSON.parse(decodeURIComponent(this.slideshow.getAttribute(attributes$r.sliderOptions)));
+        if (this.slideshow.hasAttribute(attributes$q.sliderOptions)) {
+          this.customOptions = JSON.parse(decodeURIComponent(this.slideshow.getAttribute(attributes$q.sliderOptions)));
         }
 
         this.flkty = null;
@@ -5631,12 +5445,12 @@
       }
 
       init() {
-        this.slideshow.classList.add(classes$y.isLoading);
+        this.slideshow.classList.add(classes$z.isLoading);
 
         let slideSelector = selectors$I.slide;
         const isDesktopView = isDesktop();
-        const slideMobile = `${selectors$I.slide}:not(.${classes$y.mobile})`;
-        const slideDesktop = `${selectors$I.slide}:not(.${classes$y.desktop})`;
+        const slideMobile = `${selectors$I.slide}:not(.${classes$z.mobile})`;
+        const slideDesktop = `${selectors$I.slide}:not(.${classes$z.desktop})`;
         const hasDeviceSpecificSelectors = this.slideshow.querySelectorAll(slideDesktop).length || this.slideshow.querySelectorAll(slideMobile).length;
 
         if (hasDeviceSpecificSelectors) {
@@ -5648,8 +5462,8 @@
         }
 
         if (this.slideshow.querySelectorAll(slideSelector).length <= 1) {
-          this.slideshow.classList.add(classes$y.singleSlide);
-          this.slideshow.classList.remove(classes$y.isLoading);
+          this.slideshow.classList.add(classes$z.singleSlide);
+          this.slideshow.classList.remove(classes$z.isLoading);
         }
 
         this.sliderOptions = {
@@ -5661,8 +5475,8 @@
           on: {
             ready: () => {
               requestAnimationFrame(() => {
-                this.slideshow.classList.add(classes$y.initialized);
-                this.slideshow.classList.remove(classes$y.isLoading);
+                this.slideshow.classList.add(classes$z.initialized);
+                this.slideshow.classList.remove(classes$z.isLoading);
                 this.slideshow.parentNode.dispatchEvent(
                   new CustomEvent('theme:slider:loaded', {
                     bubbles: true,
@@ -5686,11 +5500,11 @@
               const elementsToAnimate = slide.querySelectorAll(selectors$I.aos);
               if (elementsToAnimate.length) {
                 elementsToAnimate.forEach((el) => {
-                  el.classList.remove(classes$y.aosAnimate);
+                  el.classList.remove(classes$z.aosAnimate);
                   requestAnimationFrame(() => {
                     // setTimeout with `0` delay fixes functionality on Mobile and Firefox
                     setTimeout(() => {
-                      el.classList.add(classes$y.aosAnimate);
+                      el.classList.add(classes$z.aosAnimate);
                     }, 0);
                   });
                 });
@@ -5725,17 +5539,18 @@
         }
 
         if (!this.flkty || !this.flkty.isActive) {
-          this.slideshow.classList.remove(classes$y.isLoading);
+          this.slideshow.classList.remove(classes$z.isLoading);
         }
       }
 
       slideActions(changeEvent = false) {
-        const currentSlide = this.slideshow.querySelector(`.${classes$y.isSelected}`);
-        const currentSlideTextColor = currentSlide.getAttribute(attributes$r.slideTextColor);
+        const currentSlide = this.slideshow.querySelector(`.${classes$z.isSelected}`);
+        if (!currentSlide) return;
+        const currentSlideTextColor = currentSlide.hasAttribute(attributes$q.slideTextColor) ? currentSlide.getAttribute(attributes$q.slideTextColor) : '';
         const currentSlideLink = currentSlide.querySelector(selectors$I.link);
         const buttons = this.slideshow.querySelectorAll(`${selectors$I.slide} a, ${selectors$I.slide} button`);
 
-        if (document.body.classList.contains(classes$y.focused) && currentSlideLink && this.sliderOptions.groupCells && changeEvent) {
+        if (document.body.classList.contains(classes$z.focused) && currentSlideLink && this.sliderOptions.groupCells && changeEvent) {
           currentSlideLink.focus();
         }
 
@@ -5743,7 +5558,7 @@
           buttons.forEach((button) => {
             const slide = button.closest(selectors$I.slide);
             if (slide) {
-              const tabIndex = slide.classList.contains(classes$y.isSelected) ? 0 : -1;
+              const tabIndex = slide.classList.contains(classes$z.isSelected) ? 0 : -1;
               button.setAttribute('tabindex', tabIndex);
             }
           });
@@ -5753,18 +5568,18 @@
           this.slideshow.style.setProperty('--text', currentSlideTextColor);
         }
 
-        if (this.sliderThumbs.length && this.sliderThumbs.length === this.slideshowSlides.length && currentSlide.hasAttribute(attributes$r.slideIndex)) {
-          const slideIndex = parseInt(currentSlide.getAttribute(attributes$r.slideIndex));
-          const currentThumb = this.container.querySelector(`${selectors$I.sliderThumb}.${classes$y.isSelected}`);
+        if (this.sliderThumbs.length && this.sliderThumbs.length === this.slideshowSlides.length && currentSlide.hasAttribute(attributes$q.slideIndex)) {
+          const slideIndex = parseInt(currentSlide.getAttribute(attributes$q.slideIndex));
+          const currentThumb = this.container.querySelector(`${selectors$I.sliderThumb}.${classes$z.isSelected}`);
           if (currentThumb) {
-            currentThumb.classList.remove(classes$y.isSelected);
+            currentThumb.classList.remove(classes$z.isSelected);
           }
-          this.sliderThumbs[slideIndex].classList.add(classes$y.isSelected);
+          this.sliderThumbs[slideIndex].classList.add(classes$z.isSelected);
         }
       }
 
       positionArrows() {
-        if (this.slideshow.hasAttribute(attributes$r.arrowPositionMiddle) && this.sliderOptions.prevNextButtons) {
+        if (this.slideshow.hasAttribute(attributes$q.arrowPositionMiddle) && this.sliderOptions.prevNextButtons) {
           const itemImage = this.slideshow.querySelector(selectors$I.collectionImage) || this.slideshow.querySelector(selectors$I.productItemImage) || this.slideshow.querySelector(selectors$I.columnImage);
 
           // Prevent 'clientHeight' of null error if no image
@@ -5788,16 +5603,16 @@
         const slide = this.slideshow.querySelector(`[${selectors$I.slideValue}="${evt.detail.blockId}"]`);
 
         if (!slide) return;
-        let slideIndex = parseInt(slide.getAttribute(attributes$r.slideIndex));
+        let slideIndex = parseInt(slide.getAttribute(attributes$q.slideIndex));
 
-        if (this.multipleSlides && !this.slideshow.classList.contains(classes$y.sliderInitialized)) {
+        if (this.multipleSlides && !this.slideshow.classList.contains(classes$z.sliderInitialized)) {
           slideIndex = 0;
         }
 
-        this.slideshow.classList.add(classes$y.isSelected);
+        this.slideshow.classList.add(classes$z.isSelected);
 
         // Go to selected slide, pause autoplay
-        if (this.flkty && this.slideshow.classList.contains(classes$y.flickityEnabled)) {
+        if (this.flkty && this.slideshow.classList.contains(classes$z.flickityEnabled)) {
           this.flkty.selectCell(slideIndex);
           this.flkty.stopPlayer();
         }
@@ -5805,7 +5620,7 @@
 
       onBlockDeselect() {
         if (!this.slideshow) return;
-        this.slideshow.classList.remove(classes$y.isSelected);
+        this.slideshow.classList.remove(classes$z.isSelected);
 
         if (this.flkty && this.sliderOptions.hasOwnProperty('autoPlay') && this.sliderOptions.autoPlay) {
           this.flkty.playPlayer();
@@ -5817,7 +5632,6 @@
       onLoad() {
         sections$k[this.id] = [];
         const els = this.container.querySelectorAll(selectors$I.slider);
-        
         els.forEach((el) => {
           sections$k[this.id].push(new Slider(this.container, el));
         });
@@ -5850,8 +5664,6 @@
     register('hero', parallaxHero);
 
     register('double', slider);
-
-    register('highlights', slider);
 
     const scrollTo = (elementTop) => {
       /* Sticky header check */
@@ -5915,13 +5727,13 @@
       newsletterPopup: '[data-newsletter]',
     };
 
-    const classes$x = {
+    const classes$y = {
       success: 'has-success',
       error: 'has-error',
       hidden: 'hidden',
     };
 
-    const attributes$q = {
+    const attributes$p = {
       cookieNameAttribute: 'data-cookie-name',
     };
 
@@ -5933,7 +5745,7 @@
         this.newsletter = newsletter;
         this.popup = this.newsletter.closest(selectors$H.newsletterPopup);
         if (this.popup) {
-          this.cookie = new PopupCookie(this.popup.getAttribute(attributes$q.cookieNameAttribute), 'user_has_closed', null);
+          this.cookie = new PopupCookie(this.popup.getAttribute(attributes$p.cookieNameAttribute), 'user_has_closed', null);
         }
 
         this.stopSubmit = true;
@@ -5995,24 +5807,24 @@
           const submissionFailure = window.location.search.indexOf('accepts_marketing') !== -1;
 
           if (submissionSuccess) {
-            newsletter.classList.remove(classes$x.error);
-            newsletter.classList.add(classes$x.success);
+            newsletter.classList.remove(classes$y.error);
+            newsletter.classList.add(classes$y.success);
 
             if (newsletterHeading) {
-              newsletterHeading.classList.add(classes$x.hidden);
-              newsletter.classList.remove(classes$x.hidden);
+              newsletterHeading.classList.add(classes$y.hidden);
+              newsletter.classList.remove(classes$y.hidden);
             }
 
             if (this.popup) {
               this.cookie.write();
             }
           } else if (submissionFailure) {
-            newsletter.classList.remove(classes$x.success);
-            newsletter.classList.add(classes$x.error);
+            newsletter.classList.remove(classes$y.success);
+            newsletter.classList.add(classes$y.error);
 
             if (newsletterHeading) {
-              newsletterHeading.classList.add(classes$x.hidden);
-              newsletter.classList.remove(classes$x.hidden);
+              newsletterHeading.classList.add(classes$y.hidden);
+              newsletter.classList.remove(classes$y.hidden);
             }
           }
 
@@ -6095,7 +5907,7 @@
       resultsCount: '[data-results-count]',
     };
 
-    const classes$w = {
+    const classes$x = {
       hidden: 'hidden',
       focused: 'is-focused',
       loading: 'is-loading',
@@ -6183,7 +5995,7 @@
 
       sortActions(e, link, submitForm = true) {
         const sortButtonText = this.sort.querySelector(selectors$G.sortButtonText);
-        const sortActive = this.sort.querySelector(`.${classes$w.active}`);
+        const sortActive = this.sort.querySelector(`.${classes$x.active}`);
 
         if (sortButtonText) {
           const linkText = link ? link.textContent.trim() : '';
@@ -6191,13 +6003,13 @@
         }
 
         if (sortActive) {
-          sortActive.classList.remove(classes$w.active);
+          sortActive.classList.remove(classes$x.active);
         }
 
-        this.sort.classList.toggle(classes$w.active, link);
+        this.sort.classList.toggle(classes$x.active, link);
 
         if (link) {
-          link.parentElement.classList.add(classes$w.active);
+          link.parentElement.classList.add(classes$x.active);
 
           if (submitForm) {
             this.submitForm(e);
@@ -6227,11 +6039,11 @@
         e.preventDefault();
         const target = e.target.matches(selectors$G.showMore) ? e.target : e.target.closest(selectors$G.showMore);
 
-        target.parentElement.classList.add(classes$w.hidden);
+        target.parentElement.classList.add(classes$x.hidden);
         target.parentElement.previousElementSibling.querySelectorAll(selectors$G.linkHidden).forEach((link, index) => {
-          link.classList.remove(classes$w.hidden);
+          link.classList.remove(classes$x.hidden);
           const input = link.querySelector(selectors$G.input);
-          if (index === 0 && document.body.classList.contains(classes$w.focused) && input) {
+          if (index === 0 && document.body.classList.contains(classes$x.focused) && input) {
             if (this.collectionSidebarSlideOut || isMobile()) {
               this.a11y.removeTrapFocus();
               this.a11y.trapFocus(this.collectionSidebar, {
@@ -6347,7 +6159,7 @@
         }
 
         if (this.productsContainer) {
-          this.productsContainer.classList.add(classes$w.loading);
+          this.productsContainer.classList.add(classes$x.loading);
           fetch(`${window.location.pathname}${window.location.search}`)
             .then((response) => response.text())
             .then((data) => {
@@ -6373,7 +6185,7 @@
 
                   activeFiltersContainer.forEach((counter) => {
                     counter.textContent = activeFiltersCount;
-                    counter.classList.toggle(classes$w.hidden, activeFiltersCount < 1);
+                    counter.classList.toggle(classes$x.hidden, activeFiltersCount < 1);
                   });
                 }
               }
@@ -6383,7 +6195,7 @@
               }
 
               setTimeout(() => {
-                this.productsContainer.classList.remove(classes$w.loading);
+                this.productsContainer.classList.remove(classes$x.loading);
               }, 500);
             })
             .catch((error) => {
@@ -6445,7 +6257,7 @@
       priceMax: '[data-field-price-max]',
     };
 
-    const classes$v = {
+    const classes$w = {
       initialized: 'is-initialized',
     };
 
@@ -6532,7 +6344,7 @@
         this.touchRight.addEventListener('touchstart', this.onStartEvent, {passive: true});
 
         // initialize
-        this.classList.add(classes$v.initialized);
+        this.classList.add(classes$w.initialized);
       }
 
       reset() {
@@ -6707,7 +6519,7 @@
       animation: '[data-animation]',
     };
 
-    const classes$u = {
+    const classes$v = {
       animated: 'drawer--animated',
       hiding: 'is-hiding',
       expanded: 'expanded',
@@ -6739,7 +6551,7 @@
           // Prevent filters closing animation on page load
           if (this.collectionSidebar) {
             setTimeout(() => {
-              this.collectionSidebar.classList.remove(classes$u.noMobileAnimation);
+              this.collectionSidebar.classList.remove(classes$v.noMobileAnimation);
             }, 1000);
           }
 
@@ -6775,8 +6587,8 @@
 
         if (this.collectionSidebar) {
           this.collectionSidebar.addEventListener('transitionend', () => {
-            if (!this.collectionSidebar.classList.contains(classes$u.expanded)) {
-              this.collectionSidebar.classList.remove(classes$u.animated);
+            if (!this.collectionSidebar.classList.contains(classes$v.expanded)) {
+              this.collectionSidebar.classList.remove(classes$v.animated);
             }
           });
 
@@ -6791,7 +6603,7 @@
         const isScrollLocked = document.documentElement.hasAttribute('data-scroll-locked');
 
         const isMobileView = isMobile();
-        this.collectionSidebar.classList.add(classes$u.animated);
+        this.collectionSidebar.classList.add(classes$v.animated);
 
         if (collectionSidebarSlideOut === null) {
           if (!isMobileView && isScrollLocked) {
@@ -6815,7 +6627,7 @@
         const isScrollLocked = document.documentElement.hasAttribute('data-scroll-locked');
 
         this.groupTagsButton.setAttribute('aria-expanded', 'false');
-        this.collectionSidebar.classList.remove(classes$u.expanded);
+        this.collectionSidebar.classList.remove(classes$v.expanded);
 
         if (collectionSidebarSlideOut) {
           this.a11y.removeTrapFocus();
@@ -6829,7 +6641,7 @@
       toggleSidebarSlider() {
         if (isMobile()) {
           this.hideSidebar();
-        } else if (this.collectionSidebar.classList.contains(classes$u.expanded)) {
+        } else if (this.collectionSidebar.classList.contains(classes$v.expanded)) {
           this.showSidebarCallback();
         }
       }
@@ -6837,7 +6649,7 @@
       collectionSidebarClose(evt) {
         evt.preventDefault();
         this.hideSidebar();
-        if (document.body.classList.contains(classes$u.focused) && this.groupTagsButton) {
+        if (document.body.classList.contains(classes$v.focused) && this.groupTagsButton) {
           this.groupTagsButton.focus();
         }
       }
@@ -6888,12 +6700,12 @@
       clone: 'data-clone',
     };
 
-    const attributes$p = {
+    const attributes$o = {
       autoplay: 'autoplay',
       speed: 'speed',
     };
 
-    const classes$t = {
+    const classes$u = {
       animation: 'ticker--animated',
       unloaded: 'ticker--unloaded',
       comparitor: 'ticker__comparitor',
@@ -6908,20 +6720,23 @@
       constructor() {
         super();
 
-        this.autoplay = this.hasAttribute(attributes$p.autoplay);
+        this.autoplay = this.hasAttribute(attributes$o.autoplay);
         this.scale = this.querySelector(selectors$D.scale);
         this.text = this.querySelector(selectors$D.text);
-        this.speed = this.hasAttribute(attributes$p.speed) ? this.getAttribute(attributes$p.speed) : settings$2.speed;
+        this.speed = this.hasAttribute(attributes$o.speed) ? this.getAttribute(attributes$o.speed) : settings$2.speed;
         this.comparitor = this.text.cloneNode(true);
-        this.comparitor.classList.add(classes$t.comparitor);
+        this.comparitor.classList.add(classes$u.comparitor);
         this.appendChild(this.comparitor);
-        this.scale.classList.remove(classes$t.unloaded);
+        this.scale.classList.remove(classes$u.unloaded);
         this.checkWidthEvent = this.checkWidth.bind(this);
       }
 
       connectedCallback() {
         this.checkWidth();
-        this.addEventListener('theme:ticker:refresh', this.checkWidthEvent);
+        this.addEventListener(
+          'theme:ticker:refresh',
+          debounce(() => this.checkWidthEvent(), 50)
+        );
 
         screen.orientation.addEventListener('change', this.checkWidthEvent);
         document.addEventListener('theme:resize:width', this.checkWidthEvent);
@@ -6932,11 +6747,13 @@
       }
 
       checkWidth() {
+        this.text = this.querySelector(selectors$D.text);
+
         const padding = window.getComputedStyle(this).paddingLeft.replace('px', '') * 2;
         const isOverflowing = this.clientWidth - padding < this.comparitor.clientWidth;
 
         if (isOverflowing || this.autoplay) {
-          this.text.classList.remove(classes$t.animation);
+          this.text.classList.remove(classes$u.animation);
 
           const clones = this.scale.querySelectorAll(`[${selectors$D.clone}]`);
           const limitClones = this.autoplay ? parseInt((window.innerWidth - padding) / this.text.clientWidth) : 2;
@@ -6956,48 +6773,48 @@
 
           const animationTimeFrame = ((this.text.clientWidth / settings$2.space) * Number(this.speed)).toFixed(2);
 
+          this.scale.style.removeProperty('--animation-time');
           this.scale.style.setProperty('--animation-time', `${animationTimeFrame}s`);
 
           this.scale.querySelectorAll(selectors$D.text)?.forEach((text) => {
-            text.classList.add(classes$t.animation);
+            text.classList.add(classes$u.animation);
           });
         } else {
-          this.text.classList.add(classes$t.animation);
-          let clone = this.scale.querySelector(`[${selectors$D.clone}]`);
-          if (clone) {
-            this.scale.removeChild(clone);
-          }
-          this.text.classList.remove(classes$t.animation);
+          this.text.classList.add(classes$u.animation);
+          const clones = this.scale.querySelectorAll(`[${selectors$D.clone}]`);
+
+          clones.forEach((clone) => {
+            clone.parentNode.removeChild(clone);
+          });
+
+          this.text.classList.remove(classes$u.animation);
         }
       }
     }
 
     const selectors$C = {
+      marquee: '.announcement__bar-holder--marquee',
       slide: '[data-slide]',
       slider: '[data-slider]',
+      ticker: 'ticker-bar',
+      tickerSlide: '.announcement__slide',
     };
 
-    const attributes$o = {
-      slide: 'data-slide',
-      style: 'style',
-      targetReferrer: 'data-target-referrer',
+    const classes$t = {
+      hidden: 'hidden',
     };
 
     class AnnouncementBar extends HTMLElement {
       constructor() {
         super();
 
-        this.locationPath = location.href;
-
-        this.slides = this.querySelectorAll(selectors$C.slide);
         this.slider = this.querySelector(selectors$C.slider);
         this.enableSlider = isDesktop();
+        this.slidesCount = this.querySelectorAll(selectors$C.tickerSlide).length;
         this.initSliderEvent = (event) => this.initSlider(event);
       }
 
       connectedCallback() {
-        this.removeAnnouncement();
-
         if (this.slider) {
           this.initSliders();
         }
@@ -7010,24 +6827,32 @@
           this.onBlockDeselect(e);
         });
 
+        this.addEventListener('theme:countdown:hide', (e) => {
+          if (window.Shopify.designMode) return;
+
+          const isMarquee = e.target.closest(selectors$C.marquee);
+
+          if (this.slidesCount === 1) {
+            const tickerBar = this.querySelector(selectors$C.ticker);
+            tickerBar.style.display = 'none';
+          }
+
+          if (isMarquee) {
+            const tickerText = e.target.closest(selectors$C.tickerSlide);
+            this.removeTickerText(tickerText);
+          } else {
+            const slide = e.target.closest(selectors$C.slide);
+            this.removeSlide(slide);
+          }
+        });
+
+        this.addEventListener('theme:countdown:expire', () => {
+          this.querySelectorAll(selectors$C.ticker)?.forEach((ticker) => {
+            ticker.dispatchEvent(new CustomEvent('theme:ticker:refresh'));
+          });
+        });
+
         document.dispatchEvent(new CustomEvent('theme:announcement:init', {bubbles: true}));
-      }
-
-      /**
-       * Delete announcement which has a target referrer attribute and it is not contained in page URL
-       */
-      removeAnnouncement() {
-        for (let index = 0; index < this.slides.length; index++) {
-          const element = this.slides[index];
-
-          if (!element.hasAttribute(attributes$o.targetReferrer)) {
-            continue;
-          }
-
-          if (this.locationPath.indexOf(element.getAttribute(attributes$o.targetReferrer)) === -1 && !window.Shopify.designMode) {
-            element.parentNode.removeChild(element);
-          }
-        }
       }
 
       /**
@@ -7060,6 +6885,20 @@
           this.slider = new Slider(this, this.querySelector(selectors$C.slider));
           this.slider.flkty?.reposition();
         }
+      }
+
+      removeSlide(slide) {
+        this.slider.flkty?.remove(slide);
+
+        if (this.slider.flkty?.cells.length === 0) {
+          this.section.classList.add(classes$t.hidden);
+        }
+      }
+
+      removeTickerText(tickerText) {
+        const ticker = tickerText.closest(selectors$C.ticker);
+        tickerText.remove();
+        ticker.dispatchEvent(new CustomEvent('theme:ticker:refresh'));
       }
 
       onBlockSelect(e) {
@@ -7527,7 +7366,7 @@
       slideruleOpen: 'data-sliderule-open',
       slideruleClose: 'data-sliderule-close',
       sliderulePane: 'data-sliderule-pane',
-      slideruleWrappper: '[data-slideruleA]',
+      slideruleWrappper: '[data-sliderule]',
       drawerContent: '[data-drawer-content]',
       focusable: 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
       dataAnimates: 'data-animates',
@@ -7551,8 +7390,8 @@
       constructor(el) {
         this.sliderule = el;
         this.key = this.sliderule.id;
-        const btnSelector = `.sliderow:not(.is-active)[${selectors$y.slideruleOpen}='${this.key}']`;
-        this.exitSelector = `.sliderow.is-active[${selectors$y.slideruleOpen}='${this.key}']`;
+        const btnSelector = `[${selectors$y.slideruleOpen}='${this.key}']`;
+        this.exitSelector = `[${selectors$y.slideruleClose}='${this.key}']`;
         this.trigger = document.querySelector(btnSelector);
         this.exit = document.querySelectorAll(this.exitSelector);
         this.pane = document.querySelector(`[${selectors$y.sliderulePane}]`);
@@ -7696,7 +7535,7 @@
             const removeHidingClass = () => {
               element.classList.remove(classes$p.isHiding);
               if (parseInt(this.pane.getAttribute(selectors$y.sliderulePane)) !== oldPosition) {
-                element.classList.add('is-active');
+                element.classList.add(classes$p.isHidden);
               }
 
               if (lastElement) {
@@ -8563,7 +8402,7 @@
 
       toggleNextArrow() {
         setTimeout(() => {
-          this.arrowNext.classList.toggle(classes$m.hidden, Math.round(this.scrollbar.scrollLeft + this.scrollbar.getBoundingClientRect().width + 1) >= this.scrollbar.scrollWidth);
+          this.arrowNext?.classList.toggle(classes$m.hidden, Math.round(this.scrollbar.scrollLeft + this.scrollbar.getBoundingClientRect().width + 1) >= this.scrollbar.scrollWidth);
         }, settings$1.delay);
       }
 
@@ -8652,6 +8491,7 @@
         this.productImage = this.productItem.querySelector(selectors$s.productImage);
         this.template = document.querySelector(selectors$s.template).innerHTML;
         this.swatchesJSON = this.getSwatchesJSON();
+        this.swatchesStyle = theme.settings.collectionSwatchStyle;
 
         const label = this.getAttribute(attributes$k.label).trim().toLowerCase();
 
@@ -8671,6 +8511,7 @@
       init() {
         this.innerHTML = '';
         this.count = 0;
+        this.limitedCount = 0;
 
         this.swatches.forEach((swatch) => {
           let variant = null;
@@ -8710,7 +8551,7 @@
             const swatchHandle = this.swatchesJSON[swatch];
             const variantTitle = variant.title.replaceAll('"', "'");
 
-            swatchButton.style = `--animation-delay: ${(100 * this.count) / 1000}s`;
+            swatchButton.style = `--animation-delay: ${(100 * this.count) / 1250}s`;
             swatchButton.classList.add(`${classes$l.swatch}-${swatchHandle}`);
             swatchButton.dataset.tooltip = swatch;
             swatchButton.dataset.swatchVariant = variant.id;
@@ -8723,7 +8564,12 @@
             swatchLink.disabled = !variantAvailable;
             swatchText.innerText = swatch;
 
-            this.innerHTML += swatchTemplate.innerHTML;
+            if (this.swatchesStyle != 'limited') {
+              this.innerHTML += swatchTemplate.innerHTML;
+            } else if (this.count <= 4) {
+              this.innerHTML += swatchTemplate.innerHTML;
+              this.limitedCount++;
+            }
             this.count++;
           }
         });
@@ -8734,46 +8580,49 @@
         this.hideSwatchesTimer = 0;
 
         if (this.swatchCount.hasAttribute(attributes$k.swatchCount)) {
-          this.swatchCount.innerText = `${this.count} ${this.count > 1 ? theme.strings.otherColor : theme.strings.oneColor}`;
+          if (this.swatchesStyle == 'text' || this.swatchesStyle == 'text-slider') {
+            this.swatchCount.innerText = `${this.count} ${this.count > 1 ? theme.strings.otherColor : theme.strings.oneColor}`;
 
-          this.swatchCount.addEventListener('mouseenter', () => {
-            if (this.hideSwatchesTimer) clearTimeout(this.hideSwatchesTimer);
+            if (this.swatchesStyle == 'text') return;
 
-            this.productInfo.classList.add(classes$l.stopEvents);
+            this.swatchCount.addEventListener('mouseenter', () => {
+              if (this.hideSwatchesTimer) clearTimeout(this.hideSwatchesTimer);
+
+              this.productInfo.classList.add(classes$l.stopEvents);
+              this.swatchForm.classList.add(classes$l.visible);
+            });
+
+            // Prevent color swatches blinking on mouse move
+            this.productInfo.addEventListener('mouseleave', () => {
+              this.hideSwatchesTimer = setTimeout(() => {
+                this.productInfo.classList.remove(classes$l.stopEvents);
+                this.swatchForm.classList.remove(classes$l.visible);
+              }, 100);
+            });
+          }
+
+          if (this.swatchesStyle == 'slider' || this.swatchesStyle == 'grid') {
             this.swatchForm.classList.add(classes$l.visible);
-          });
+          }
 
-          // Prevent color swatches blinking on mouse move
-          this.productInfo.addEventListener('mouseleave', () => {
-            this.hideSwatchesTimer = setTimeout(() => {
-              this.productInfo.classList.remove(classes$l.stopEvents);
-              this.swatchForm.classList.remove(classes$l.visible);
-            }, 100);
-          });
+          if (this.swatchesStyle == 'limited') {
+            const swatchesLeft = this.count - this.limitedCount;
+
+            this.swatchForm.classList.add(classes$l.visible);
+
+            if (swatchesLeft > 0) {
+              this.innerHTML += `<div class="swatch-limited">+${swatchesLeft}</div>`;
+            }
+          }
         }
 
-        if (this.hasAttribute(attributes$k.scrollbar)) {
-          new NativeScrollbar(this);
+        if (this.swatchesStyle == 'text-slider' || this.swatchesStyle == 'slider') {
+          if (this.hasAttribute(attributes$k.scrollbar)) {
+            new NativeScrollbar(this);
+          }
         }
 
-        this.showDeferredImage();
         this.bindSwatchButtonEvents();
-      }
-
-      showDeferredImage() {
-        const deferredImages = this.productItem.querySelectorAll(`[${attributes$k.variantTitle}]`);
-
-        if (deferredImages.length) {
-          this.productItem.addEventListener(
-            'mouseenter',
-            () => {
-              deferredImages.forEach((image) => {
-                image.classList.remove(classes$l.hidden);
-              });
-            },
-            {once: true}
-          );
-        }
       }
 
       bindSwatchButtonEvents() {
@@ -8937,15 +8786,17 @@
         }
 
         if (siblingPrice) {
-          this.productPrice.innerHTML = siblingPrice;
+          this.productPrice.innerHTML = `<span class="price">${siblingPrice}</span>`;
         }
 
-        if (siblingCutline) {
-          this.productCutline.innerHTML = siblingCutline;
-          this.productCutline.title = siblingCutline;
-        } else {
-          this.productCutline.innerHTML = '';
-          this.productCutline.title = '';
+        if (this.productCutline) {
+          if (siblingCutline) {
+            this.productCutline.innerHTML = siblingCutline;
+            this.productCutline.title = siblingCutline;
+          } else {
+            this.productCutline.innerHTML = '';
+            this.productCutline.title = '';
+          }
         }
 
         if (siblingImage) {
@@ -9016,14 +8867,21 @@
         this.productInfo = this.closest(selectors$r.productInfo);
         this.productLink = this.closest(selectors$r.link);
         this.hideSwatchesTimer = 0;
+        this.swatchesStyle = theme.settings.collectionSwatchStyle;
 
         this.initScrollbar();
 
-        if (this.siblingCount && this.siblingFieldset && this.productInfo) {
-          this.siblingCount.addEventListener('mouseenter', () => this.showSiblings());
+        if (this.siblingFieldset && this.productInfo) {
+          if (this.swatchesStyle == 'grid' || this.swatchesStyle == 'slider' || this.swatchesStyle == 'limited') {
+            this.siblingFieldset.classList.add(classes$k.visible);
+          }
 
-          // Prevent color swatches blinking on mouse move
-          this.productInfo.addEventListener('mouseleave', () => this.hideSiblings());
+          if (this.siblingCount) {
+            this.siblingCount.addEventListener('mouseenter', () => this.showSiblings());
+
+            // Prevent color swatches blinking on mouse move
+            this.productInfo.addEventListener('mouseleave', () => this.hideSiblings());
+          }
         }
 
         if (this.siblingLinks.length) {
@@ -9042,6 +8900,8 @@
         if (this.productLink) {
           this.productLink.classList.add(classes$k.stopEvents);
         }
+
+        if (this.swatchesStyle == 'text') return;
 
         this.siblingFieldset.classList.add(classes$k.visible);
       }
@@ -10092,6 +9952,8 @@
       }
 
       connectedCallback() {
+        if (Object.keys(this.productMediaItems).length === 1) return;
+
         this.productMediaObserver();
         this.toggleEvents();
         this.listen();
@@ -10483,6 +10345,9 @@
     const selectors$i = {
       product: '[data-product]',
       productForm: '[data-product-form]',
+      productNotification: 'product-notification',
+      variantTitle: '[data-variant-title]',
+      notificationProduct: '[data-notification-product]',
       addToCart: '[data-add-to-cart]',
       addToCartText: '[data-add-to-cart-text]',
       cartDrawer: 'cart-drawer',
@@ -10508,6 +10373,9 @@
       subsChild: 'data-group-toggle',
       subDescription: '[data-plan-description]',
       section: '[data-section-type]',
+      variantSku: '[data-variant-sku]',
+      variantFinalSaleMeta: '[data-variant-final-sale-metafield]',
+      variantOptionImage: '[data-variant-option-image]',
       quickAddModal: '[data-quick-add-modal]',
       priceOffWrap: '[data-price-off]',
       priceOffType: '[data-price-off-type]',
@@ -10536,12 +10404,15 @@
     const attributes$e = {
       remainingMaxAttr: 'data-remaining-max',
       enableHistoryState: 'data-enable-history-state',
+      notificationPopup: 'data-notification-popup',
       faderDesktop: 'data-fader-desktop',
       faderMobile: 'data-fader-mobile',
       optionPosition: 'data-option-position',
       imageId: 'data-image-id',
       mediaId: 'data-media-id',
       quickAddButton: 'data-quick-add-btn',
+      finalSale: 'data-final-sale',
+      variantImageScroll: 'data-variant-image-scroll',
     };
 
     class ProductForm extends HTMLElement {
@@ -10558,10 +10429,13 @@
         this.sectionId = this.container.dataset.sectionId;
         this.product = this.container.querySelector(selectors$i.product);
         this.productForm = this.container.querySelector(selectors$i.productForm);
+        this.productNotification = this.container.querySelector(selectors$i.productNotification);
         this.productImages = this.container.querySelector(selectors$i.productImages);
         this.productMediaList = this.container.querySelector(selectors$i.productMediaList);
         this.installmentForm = this.container.querySelector(selectors$i.installment);
+        this.skuWrapper = this.container.querySelector(selectors$i.variantSku);
         this.sellout = null;
+        this.variantImageScroll = this.container.getAttribute(attributes$e.variantImageScroll) === 'true';
 
         this.priceOffWrap = this.container.querySelector(selectors$i.priceOffWrap);
         this.priceOffAmount = this.container.querySelector(selectors$i.priceOffAmount);
@@ -10603,6 +10477,11 @@
           this.sellout = new SelloutVariants(this.container, this.productJSON);
         } else {
           console.error('Missing product JSON');
+        }
+
+        this.variantOptionImages = this.container.querySelectorAll(selectors$i.variantOptionImage);
+        if (this.variantOptionImages.length > 1) {
+          this.optionImagesWidth();
         }
       }
 
@@ -10657,13 +10536,16 @@
       pushState(formState, init = false) {
         this.productState = this.setProductState(formState);
         this.updateAddToCartState(formState);
+        this.updateNotificationForm(formState);
         this.updateProductPrices(formState);
         this.updateSaleText(formState);
+        this.updateSku(formState);
         this.updateSubscriptionText(formState);
         this.updateRemaining(formState);
         this.updateLegend(formState);
         this.fireHookEvent(formState);
         this.sellout?.update(formState);
+
         if (this.enableHistoryState && !init) {
           this.updateHistoryState(formState);
         }
@@ -10693,35 +10575,32 @@
           });
         }
 
-        if (addToCart.length) {
-          addToCart.forEach((button) => {
-            if (button.hasAttribute(attributes$e.quickAddButton)) return;
+        addToCart?.forEach((button) => {
+          if (button.hasAttribute(attributes$e.quickAddButton)) return;
 
-            if (variant) {
-              if (variant.available) {
-                button.disabled = false;
-              } else {
-                button.disabled = true;
-              }
+          if (variant) {
+            if (variant.available) {
+              button.disabled = false;
             } else {
               button.disabled = true;
             }
-          });
-        }
+          } else {
+            button.disabled = true;
+          }
+        });
 
-        if (addToCartText.length) {
-          addToCartText.forEach((element) => {
-            if (variant) {
-              if (variant.available) {
-                element.innerHTML = addText;
-              } else {
-                element.innerHTML = theme.strings.soldOut;
-              }
-            } else {
-              element.innerHTML = theme.strings.unavailable;
+        addToCartText?.forEach((element) => {
+          let btnText = addText;
+          if (variant) {
+            if (!variant.available) {
+              btnText = theme.strings.soldOut;
             }
-          });
-        }
+          } else {
+            btnText = theme.strings.unavailable;
+          }
+
+          element.textContent = btnText;
+        });
 
         if (formWrapper.length) {
           formWrapper.forEach((element) => {
@@ -10748,6 +10627,17 @@
               element.classList.remove(classes$c.variantSoldOut);
             }
           });
+        }
+      }
+
+      updateNotificationForm(formState) {
+        if (!this.productNotification) return;
+
+        const variantTitle = this.productNotification.querySelector(selectors$i.variantTitle);
+        const notificationProduct = this.productNotification.querySelector(selectors$i.notificationProduct);
+        if (variantTitle != null) {
+          variantTitle.textContent = formState.variant.title;
+          notificationProduct.value = formState.variant.name;
         }
       }
 
@@ -10794,6 +10684,21 @@
           }
         } else if (!variant && this.remainingWrapper) {
           this.remainingWrapper.classList.add(classes$c.remainingUnavailable);
+        }
+      }
+
+      optionImagesWidth() {
+        let width = 0;
+
+        for (const item of this.variantOptionImages) {
+          const itemWidth = item.offsetWidth;
+          if (itemWidth > width) {
+            width = itemWidth;
+          }
+        }
+
+        for (const item of this.variantOptionImages) {
+          item.style.width = width + 'px';
         }
       }
 
@@ -10844,17 +10749,40 @@
         }
       }
 
+      isVariantFinalSale(variant) {
+        const metafieldsData = document.querySelector(selectors$i.variantFinalSaleMeta).textContent;
+        const variantsMetafields = JSON.parse(metafieldsData);
+        let variantIsFinalSale = false;
+
+        variantsMetafields.forEach((variantMetafield) => {
+          if (Number(variantMetafield.variant_id) === variant.id) {
+            variantIsFinalSale = variantMetafield.metafield_value === 'true';
+          }
+        });
+
+        return variantIsFinalSale;
+      }
+
       updateSaleTextStandard(formState) {
+        const variant = formState.variant;
+
         if (this.priceOffType) {
           this.priceOffType.innerHTML = window.theme.strings.sale || 'sale';
         }
 
         if (this.priceOffAmount && this.priceOffWrap) {
-          const variant = formState.variant;
           const discountFloat = (variant.compare_at_price - variant.price) / variant.compare_at_price;
           const discountInt = Math.floor(discountFloat * 100);
           this.priceOffAmount.innerHTML = `${discountInt}%`;
           this.priceOffWrap.classList.remove(classes$c.hidden);
+        }
+
+        if (this.closest(selectors$i.quickAddModal)) return;
+
+        if (this.priceOffWrap.hasAttribute(attributes$e.finalSale) || this.isVariantFinalSale(variant)) {
+          this.priceOffWrap.classList.remove(classes$c.hidden);
+        } else {
+          this.priceOffWrap.classList.add(classes$c.hidden);
         }
       }
 
@@ -10955,6 +10883,12 @@
         }
       }
 
+      updateSku(formState) {
+        if (!this.skuWrapper) return;
+
+        this.skuWrapper.innerHTML = `${theme.strings.sku}: ${formState.variant.sku}`;
+      }
+
       fireHookEvent(formState) {
         const variant = formState.variant;
         this.container.dispatchEvent(
@@ -11050,7 +10984,7 @@
                 })
               );
 
-              if (isDesktopView && !this.productImages.hasAttribute(attributes$e.faderDesktop)) {
+              if (isDesktopView && !this.productImages.hasAttribute(attributes$e.faderDesktop) && this.variantImageScroll) {
                 const selectedImageTop = selectedImage.getBoundingClientRect().top;
 
                 // Scroll to variant image
@@ -11302,21 +11236,34 @@
       popupOpen() {
         if (!this.popup) return;
 
+        this.isAnimating = true;
+
         // Check if browser supports Dialog tags
         if (this.showModal && typeof this.popup.showModal === 'function') {
           this.popup.showModal();
         } else if (!this.showModal && typeof this.popup.show === 'function') {
           this.popup.show();
+        } else {
+          this.popup.setAttribute('open', '');
         }
 
-        this.popup.setAttribute('open', true);
         this.popup.removeAttribute('inert');
-
-        this.popup.dispatchEvent(new CustomEvent('theme:popup:open', {bubbles: false}));
+        this.popup.focus(); // Focus <dialog> tag element to prevent immediate closing on Escape keypress
 
         if (this.enableScrollLock) {
           document.dispatchEvent(new CustomEvent('theme:scroll:lock', {bubbles: true}));
         }
+
+        waitForAnimationEnd(this.popup).then(() => {
+          this.isAnimating = false;
+
+          if (this.enableScrollLock) {
+            this.a11y.trapFocus(this.popup);
+          }
+
+          const focusTarget = this.popup.querySelector('[autofocus]') || this.popup.querySelector(selectors$g.focusable);
+          focusTarget?.focus();
+        });
       }
 
       popupClose() {
@@ -11327,6 +11274,12 @@
         if (!this.popup.hasAttribute(attributes$c.closing)) {
           this.popup.setAttribute(attributes$c.closing, '');
           this.isAnimating = true;
+
+          waitForAnimationEnd(this.popup).then(() => {
+            this.isAnimating = false;
+            this.popupClose();
+          });
+
           return;
         }
 
@@ -11337,8 +11290,14 @@
           this.popup.removeAttribute('open');
         }
 
-        this.popup.removeAttribute(attributes$c.closing);
+        this.popupCloseActions();
+      }
+
+      popupCloseActions() {
+        if (this.popup.hasAttribute('inert')) return;
+
         this.popup.setAttribute('inert', '');
+        this.popup.removeAttribute(attributes$c.closing);
 
         // Unlock scroll if no other popups & modals are open
         if (!hasOpenModals() && this.enableScrollLock) {
@@ -11391,25 +11350,7 @@
           }
         });
 
-        this.popup.addEventListener('theme:popup:close', () => {
-          this.popupClose();
-        });
-
-        // Close dialog after animation completes
-        this.popup.addEventListener('animationend', (event) => {
-          if (event.target !== this.popup) return;
-          this.isAnimating = false;
-
-          if (this.popup.hasAttribute(attributes$c.closing)) {
-            this.popupClose();
-          } else {
-            if (this.enableScrollLock) {
-              this.a11y.trapFocus(this.popup);
-            }
-            const focusTarget = this.popup.querySelector('[autofocus]') || this.popup.querySelector(selectors$g.focusable);
-            focusTarget?.focus();
-          }
-        });
+        this.popup.addEventListener('close', () => this.popupCloseActions());
       }
     }
 
@@ -12012,7 +11953,6 @@
 
     const selectors$b = {
       addToCart: '[data-add-to-cart]',
-      priceWrapper: '[data-price-wrapper]',
       productImage: '[data-product-image]',
       productJson: '[data-product-json]',
       form: '[data-product-form]',
@@ -12265,6 +12205,7 @@
 
     const classes$6 = {
       isHidden: 'is-hidden',
+      gridMobileSlider: 'grid--mobile-slider',
     };
 
     const sections$7 = {};
@@ -12300,6 +12241,12 @@
 
             if (hasProducts) {
               relatedSection.innerHTML = relatedContent.innerHTML;
+              const styleMobile = parseInt(relatedSection.style.getPropertyValue('--COLUMNS-MOBILE'));
+
+              if (styleMobile === 0) {
+                const addedProduct = relatedSection.querySelector(selectors$a.relatedProduct);
+                addedProduct.parentElement.classList.add(classes$6.gridMobileSlider);
+              }
             } else {
               relatedSection.dispatchEvent(
                 new CustomEvent('theme:tab:hide', {
@@ -12325,8 +12272,10 @@
           howManyToShow: howManyToshow,
           wrapperId: `recently-viewed-products-${this.sectionId}`,
           section: this.section,
+          target: 'api-product-grid-item',
           onComplete: (wrapper, section) => {
             const container = section.container;
+            if (!container) return;
             const recentlyViewedHolder = container.querySelector(selectors$a.recentlyViewed);
             const recentlyViewedWrapper = container.querySelector(selectors$a.recentlyViewedWrapper);
             const recentProducts = wrapper.querySelectorAll(selectors$a.productItem);
@@ -12593,7 +12542,11 @@
                 },
               ];
 
-              new LoadPhotoswipe(items);
+              const options = {
+                mainClass: 'pswp--video',
+              };
+
+              new LoadPhotoswipe(items, options);
               window.accessibility.lastElement = button;
             }
           });
@@ -14087,18 +14040,18 @@
         const elementHeight = this.holderHeight / this.rows.length;
         let elementsTop = this.holderTop;
         const windowHeight = window.innerHeight;
-        const windowBottom = window.scrollY + windowHeight;
+        const windowMiddle = window.scrollY + windowHeight * 1.5;
         const outerSpace = 16; // wrapper padding using --outer CSS variable
         let mobilePercent = 0;
 
-        if (target) {
+        if (!isDesktopView && target) {
           const targetScrollLeft = target.scrollLeft - outerSpace;
           const targetWidth = target.offsetWidth;
           mobilePercent = (targetScrollLeft / (this.rowsWidth - targetWidth)) * 100;
           this.holder.style.setProperty('--percent-mobile', `${mobilePercent}%`);
         }
 
-        if (isDesktopView && (windowBottom < this.holderTop || windowBottom > this.holderTop + this.holderHeight + windowHeight)) return;
+        if (isDesktopView && (windowMiddle < this.holderTop || windowMiddle > this.holderTop + this.holderHeight + windowHeight)) return;
 
         this.rows.forEach((row, index) => {
           if (index > 0) {
@@ -14106,10 +14059,10 @@
             let selectedCheck = mobilePercent > percentRowPosition;
 
             if (isDesktopView) {
-              selectedCheck = elementsTop + elementHeight < windowBottom;
+              selectedCheck = elementsTop + elementHeight < windowMiddle;
 
-              if (elementsTop - elementHeight < windowBottom) {
-                row.previousElementSibling?.style.setProperty('--percent-desktop', `${((windowBottom - elementsTop) / elementHeight) * 100}%`);
+              if (elementsTop - elementHeight < windowMiddle) {
+                row.previousElementSibling?.style.setProperty('--percent-desktop', `${((windowMiddle - elementsTop) / elementHeight) * 100}%`);
               }
             }
 
@@ -14196,4 +14149,3 @@
     }
 
 })(themeVendor.ScrollLock, themeVendor.themeAddresses, themeVendor.themeCurrency, themeVendor.Rellax, themeVendor.Flickity, themeVendor.FlickityFade, themeVendor.themeImages);
-

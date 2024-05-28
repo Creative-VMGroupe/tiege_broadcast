@@ -13,10 +13,19 @@
 
 {%- for block in section.blocks -%}
   {%- if block.type == 'related' and product.collections.size > 0 -%}
-    {%- assign has_related_products = true -%}
+    {%- liquid
+      assign has_related_products = true
+      assign layout_mobile = section.settings.layout_mobile
+      assign columns_small = 2
+      assign columns_mobile = layout_mobile | plus: 0
+    -%}
 
     {%- capture related -%}
-      <div data-related-section data-limit="{{ block.settings.limit }}" data-product-id="{{ product.id }}" style="--column-count: {{ block.settings.limit | at_most: 4 }};" {{ block.shopify_attributes }}></div>
+      <div data-related-section
+        data-limit="{{ block.settings.limit }}"
+        data-product-id="{{ product.id }}"
+        style="--column-count: {{ block.settings.limit | at_most: 4 }}; --COLUMNS-SMALL: {{ columns_small }}; --COLUMNS-MOBILE: {{ columns_mobile }};"
+        {{ block.shopify_attributes }}></div>
     {%- endcapture -%}
 
     {%- capture related_title -%}
@@ -61,7 +70,7 @@
   {%- endunless -%}
 {%- endcapture -%}
 
-<div class="related__wrapper js product-recomend_wrapper"
+<div class="related__wrapper js"
   id="RelatedProducts--{{ section.id }}"
   data-section-id="{{ section.id }}"
   data-section-type="related"
@@ -73,21 +82,21 @@
           data-aos="hero"
           data-aos-anchor="{{ animation_anchor }}"
           data-aos-order="1">
-          <div class="grid__heading-holder product-recomend_heading-custom">
+          <div class="grid__heading-holder">
             <div class="grid__heading-actions">
-              <ul class="tabs {{ heading_alignment }} product-recomend_tabs-custom" data-scrollbar data-scrollbar-slider>
+              <ul class="tabs {{ heading_alignment }}" data-scrollbar data-scrollbar-slider>
                 {%- if related -%}
-                  <li class="tab-link tab-link-0 current product-recomend_tab" data-tab="0" tabindex="0">
+                  <li class="tab-link tab-link-0 current" data-tab="0" tabindex="0">
                     {%- if related_title -%}
-                      <span class="prod-rec_text-custom {{ heading_size_class }}">{{ related_title }}</span>
+                      <span>{{ related_title }}</span>
                     {%- endif -%}
                   </li>
                 {%- endif -%}
 
                 {%- if recent -%}
-                  <li class="tab-link tab-link-1 tab-link__recent{% if related == nil %} current{% endif %} product-recomend_tab" data-tab="1" tabindex="0">
+                  <li class="tab-link tab-link-1 tab-link__recent{% if related == nil %} current{% endif %}" data-tab="1" tabindex="0">
                     {%- if recent_title -%}
-                      <span class="prod-rec_text-custom {{ heading_size_class }}">{{ recent_title }}</span>
+                      <span>{{ recent_title }}</span>
                     {%- endif -%}
                   </li>
                 {%- endif -%}
@@ -164,11 +173,31 @@
         "type": "range",
         "id": "heading_size",
         "label": "Heading size",
-          "min": 24,
-          "max": 40,
-          "step": 8,
-          "default": 24,
+        "min": 1,
+        "max": 15,
+        "step": 1,
+        "default": 4,
         "info": "Applies only when tabs are disabled"
+      },
+      {
+        "type": "select",
+        "id": "layout_mobile",
+        "label": "Mobile layout",
+        "options": [
+          {
+            "value": "1",
+            "label": "1 item per row"
+          },
+          {
+            "value": "2",
+            "label": "2 items per row"
+          },
+          {
+            "value": "slider",
+            "label": "Slider"
+          }
+        ],
+        "default": "slider"
       },
       {
         "type": "header",

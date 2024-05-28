@@ -11,45 +11,29 @@
 {% endcomment %}
 
 {%- liquid
+  assign show_description = block.settings.show_description
+  assign show_read_more = block.settings.show_read_more
+  assign product_description_title = 'products.general.description' | t
   assign product_description_content = product.description | strip
-
-  if product == nil
-    assign product_description_content = 'home_page.onboarding.no_description' | t
-  endif
 -%}
 
-{%- if block.settings.style == 'tabs' -%}
-  {%- assign tab_links_html = '' -%}
-  {%- assign tab_contents_html = '' -%}
-  {%- assign count = 0 -%}
+{%- if block.type == 'tab_richtext' -%}
+  {%- liquid
+    assign tab_links_html = ''
+    assign tab_contents_html = ''
+    assign count = 0
+  -%}
 
-  {%- if product_description_content != blank -%}
+  {%- if show_description and product_description_content != blank -%}
     {%- capture tab_links_html -%}
-      <li class="tab-link tab-link-0 current" data-block-id="{{ section.id | append: '-0' }}" data-tab="0" tabindex="0" data-attributes-placeholder>
-        <span>{{ 'products.general.description' | t }}</span>
+      <li class="tab-link tab-link-0 current" data-tab="0" tabindex="0" data-attributes-placeholder>
+        <span>{{ product_description_title }}</span>
       </li>
     {%- endcapture -%}
 
     {%- capture tab_contents_html -%}
       <div class="tab-content tab-content-0 current rte">
-        {% comment %} Inline product description {% endcomment %}
-{%- assign product_description_content = product.description | strip -%}
-
-{%- if block.settings.show_read_more -%}
-  <toggle-ellipsis data-height="175">
-    <div class="toggle-ellipsis__content" data-content>
-      {{ product_description_content }}
-    </div>
-
-    <div class="toggle-ellipsis__actions" data-actions>
-      <button type="button" class="caps--link" data-button>
-        <span>{{ 'products.general.read_more' | t }}</span>
-      </button>
-    </div>
-  </toggle-ellipsis>
-{%- else -%}
-  {{ product_description_content }}
-{%- endif -%}
+        {%- render 'toggle-ellipsis', content: product_description_content, show_read_more: show_read_more -%}
       </div>
     {%- endcapture -%}
 
@@ -57,17 +41,18 @@
   {%- endif -%}
 
   {%- for i in (1..5) -%}
-    {%- assign title = 'title_' | append: forloop.index -%}
-    {%- assign title = block.settings[title] -%}
-
-    {%- assign content = 'raw_content_' | append: forloop.index -%}
-    {%- assign content = block.settings[content] -%}
+    {%- liquid
+      assign title = 'title_' | append: forloop.index
+      assign title = block.settings[title]
+      assign content = 'raw_content_' | append: forloop.index
+      assign content = block.settings[content]
+    -%}
 
     {%- if title != '' and content != '' -%}
       {%- capture tab_links_html -%}
         {{ tab_links_html }}
 
-        <li class="tab-link tab-link-{{ count }}{% if count == 0 %} current{% endif %}" data-tab="{{ count }}" data-block-id="{{ block.id }}" tabindex="0" {{ block.shopify_attributes }}>
+        <li class="tab-link tab-link-{{ count }}{% if count == 0 %} current{% endif %}" data-tab="{{ count }}" tabindex="0">
           <span>{{ title }}</span>
         </li>
       {%- endcapture -%}
@@ -76,7 +61,7 @@
         {{ tab_contents_html }}
 
         <div class="tab-content tab-content-{{ count }}{% if count == 0 %} current{% endif %} rte">
-          {{ content }}
+          {%- render 'toggle-ellipsis', content: content, show_read_more: show_read_more -%}
         </div>
       {%- endcapture -%}
 
@@ -85,7 +70,7 @@
   {%- endfor -%}
 
   {%- if tab_contents_html -%}
-    <div class="product-tabs" data-tabs-holder>
+    <div class="product-tabs" data-tabs-holder {{ block.shopify_attributes }}>
       <div class="tabs__head product-tabs__head">
         <ul class="tabs product-tabs-title" data-scrollbar data-scrollbar-slider>
           {{ tab_links_html }}
@@ -104,84 +89,41 @@
 
       {{ tab_contents_html }}
     </div>
+  {%- elsif request.design_mode -%}
+    <span {{ block.shopify_attributes }}></span>
   {%- endif -%}
-{%- elsif block.settings.style == 'accordions' -%}
-  <collapsible-elements single="true">
-    <div class="product-accordion">
-      {%- assign accordion_blocks_html = '' -%}
-      {%- assign accordion_description_attr = '' -%}
+{%- elsif block.type == 'accordion' -%}
+  {%- liquid
+    assign accordion_heading = block.settings.heading
+    assign accordion_text = block.settings.text
+    assign accordion_open = block.settings.default_open
+    assign accordion_content = accordion_text
 
-      {%- for i in (1..5) -%}
-        {%- liquid
-          assign title = 'title_' | append: forloop.index
-          assign title = block.settings[title]
+    if show_description
+      assign accordion_content = product_description_content | append: accordion_text
+    endif
+  -%}
 
-          assign content = 'raw_content_' | append: forloop.index
-          assign content = block.settings[content]
-
-          assign accordion_open = false
-          if product_description_content == blank and forloop.index == 1
-            assign accordion_open = true
-          endif
-        -%}
-
-        {%- if title != '' and content != '' -%}
-          {%- capture accordion_blocks_html -%}
-            {{ accordion_blocks_html }}
-
-            <details class="accordion" data-collapsible{% if accordion_open %} open="true"{% endif %}>
-              <summary class="accordion__title" data-collapsible-trigger {{ block.shopify_attributes }}>
-                {{ title }}
-
-                {%- render 'icon-plus' -%}
-                {%- render 'icon-minus' -%}
-              </summary>
-
-              <div class="accordion__body rte" data-collapsible-body{% if accordion_open %} style="height: auto;"{% endif %}>
-                <div class="accordion__content" data-collapsible-content>
-                  {{ product.metafields.custom.ingredients }}
-                </div>
-              </div>
-            </details>
-          {%- endcapture -%}
-        {%- endif -%}
-      {%- endfor -%}
-
-      {%- if product_description_content != blank -%}
-        <details class="accordion" data-collapsible open="true">
-          <summary class="accordion__title" data-collapsible-trigger {{ accordion_description_attr }}>
-            {{ 'products.general.description' | t }}
+  {%- if accordion_heading != blank and accordion_content != blank -%}
+    <collapsible-elements single="true">
+      <div class="product-accordion">
+        <details class="accordion" data-collapsible{% if accordion_open %} open="true"{% endif %} {{ block.shopify_attributes }}>
+          <summary class="accordion__title" data-collapsible-trigger>
+            {{ accordion_heading }}
 
             {%- render 'icon-plus' -%}
             {%- render 'icon-minus' -%}
           </summary>
 
-          <div class="accordion__body rte" data-collapsible-body style="height: auto;">
+          <div class="accordion__body rte" data-collapsible-body{% if accordion_open %} style="height: auto;"{% endif %}>
             <div class="accordion__content" data-collapsible-content>
-              {% comment %} Inline product description {% endcomment %}
-{%- assign product_description_content = product.description | strip -%}
-
-{%- if block.settings.show_read_more -%}
-  <toggle-ellipsis data-height="175">
-    <div class="toggle-ellipsis__content" data-content>
-      {{ product_description_content }}
-    </div>
-
-    <div class="toggle-ellipsis__actions" data-actions>
-      <button type="button" class="caps--link" data-button>
-        <span>{{ 'products.general.read_more' | t }}</span>
-      </button>
-    </div>
-  </toggle-ellipsis>
-{%- else -%}
-  {{ product_description_content }}
-{%- endif -%}
+              {%- render 'toggle-ellipsis', content: accordion_content, show_read_more: show_read_more -%}
             </div>
           </div>
         </details>
-      {%- endif -%}
-
-      {{ accordion_blocks_html }}
-    </div>
-  </collapsible-elements>
+      </div>
+    </collapsible-elements>
+  {%- elsif request.design_mode -%}
+    <span {{ block.shopify_attributes }}></span>
+  {%- endif -%}
 {%- endif -%}

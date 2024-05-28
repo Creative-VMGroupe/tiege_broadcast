@@ -1,49 +1,45 @@
 <!doctype html>
 <html class="no-js no-touch supports-no-cookies" lang="{{ request.locale.iso_code }}">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="{{ settings.accent_bright }}">
-    <link rel="canonical" href="{{ canonical_url }}">
-    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
-    <!-- ======================= Broadcast Theme V5.5.0 ========================= -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="{{ settings.accent_bright }}">
+  <link rel="canonical" href="{{ canonical_url }}">
+  <!-- ======================= Broadcast Theme V5.6.1 ========================= -->
 
-    {%- unless settings.type_heading_font.system? and settings.type_base_font.system? -%}
-      <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
-    {%- endunless -%}
-    {{ 'theme.css' | asset_url | preload_tag: as: 'style' }}
-    {{ 'vendor.js' | asset_url | preload_tag: as: 'script' }}
-    {{ 'theme.dev.js' | asset_url | preload_tag: as: 'script' }}
+  {{ 'theme.css' | asset_url | preload_tag: as: 'style' }}
+  {{ 'vendor.js' | asset_url | preload_tag: as: 'script' }}
+  {{ 'theme.js' | asset_url | preload_tag: as: 'script' }}
 
-    {%- if settings.loading_image_1 != blank or settings.loading_image_2 != blank -%}
-      {%- style -%}
-        .loading { position: fixed; top: 0; left: 0; z-index: 99999; width: 100%; height: 100%; background: var(--bg); transition: opacity 0.2s ease-out, visibility 0.2s ease-out; }
-        body.is-loaded .loading { opacity: 0; visibility: hidden; pointer-events: none; }
-        .loading__image__holder { position: absolute; top: 0; left: 0; width: 100%; height: 100%; font-size: 0; display: flex; align-items: center; justify-content: center; }
-        .loading__image__holder:nth-child(2) { opacity: 0; }
-        .loading__image { max-width: {{ settings.loading_image_width }}px; max-height: {{ settings.loading_image_width }}px; object-fit: contain; }
-        .loading--animate .loading__image__holder:nth-child(1) { animation: pulse1 2s infinite ease-in-out; }
-        .loading--animate .loading__image__holder:nth-child(2) { animation: pulse2 2s infinite ease-in-out; }
-        @keyframes pulse1 {
-          0% { opacity: 1; }
-          50% { opacity: 0; }
-          100% { opacity: 1; }
-        }
-        @keyframes pulse2 {
-          0% { opacity: 0; }
-          50% { opacity: 1; }
-          100% { opacity: 0; }
-        }
-      {%- endstyle -%}
-    {%- endif -%}
+  {%- if settings.loading_image_1 != blank or settings.loading_image_2 != blank -%}
+  {%- style -%}
+    .loading { position: fixed; top: 0; left: 0; z-index: 99999; width: 100%; height: 100%; background: var(--bg); transition: opacity 0.2s ease-out, visibility 0.2s ease-out; }
+    body.is-loaded .loading { opacity: 0; visibility: hidden; pointer-events: none; }
+    .loading__image__holder { position: absolute; top: 0; left: 0; width: 100%; height: 100%; font-size: 0; display: flex; align-items: center; justify-content: center; }
+    .loading__image__holder:nth-child(2) { opacity: 0; }
+    .loading__image { max-width: {{ settings.loading_image_width }}px; max-height: {{ settings.loading_image_width }}px; object-fit: contain; }
+    .loading--animate .loading__image__holder:nth-child(1) { animation: pulse1 2s infinite ease-in-out; }
+    .loading--animate .loading__image__holder:nth-child(2) { animation: pulse2 2s infinite ease-in-out; }
+    @keyframes pulse1 {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes pulse2 {
+      0% { opacity: 0; }
+      50% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+  {%- endstyle -%}
+{%- endif -%}
 
-    {% if settings.favicon %}
-      <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
-    {% endif %}
+  {% if settings.favicon %}
+    <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
+  {% endif %}
 
-    <!-- Title and description ================================================ -->
-    {% capture seo_title %}
+  <!-- Title and description ================================================ -->
+  {% capture seo_title %}
     {% assign title_content = page_title %}
     {% if template == 'password' %}
       {% assign title_content = shop.name %}
@@ -59,38 +55,95 @@
       &ndash; {{ shop.name }}
     {% endunless %}
   {% endcapture %}
-    <title>{{ seo_title }}</title>
+  <title>{{ seo_title }}</title>
 
-    {% if page_description %}
-      <meta name="description" content="{{ page_description | escape }}">
-    {% else %}
-      <meta name="description" content="{{ shop.description | escape }}">
+  {% if page_description %}
+    <meta name="description" content="{{ page_description | escape }}">
+  {% else %}
+    <meta name="description" content="{{ shop.description | escape }}">
+  {% endif %}
+
+  {% render 'social-meta' %}
+
+  <!-- CSS ================================================================== -->
+  {% style %}
+    {%- liquid
+      assign heading_font = settings.type_heading_font
+      assign base_font = settings.type_base_font
+
+      assign heading_font_bold = heading_font | font_modify: 'weight', 'bolder'
+      assign base_font_bold = base_font | font_modify: 'weight', 'bolder'
+
+      assign base_font_100 = base_font | font_modify: 'weight', '+100'
+      assign base_font_200 = base_font | font_modify: 'weight', '+200'
+      assign base_font_300 = base_font | font_modify: 'weight', '+300'
+      assign base_font_400 = base_font | font_modify: 'weight', '+400'
+      if base_font_100 and base_font_100.weight > base_font.weight
+        assign base_font_bold = base_font_100
+      elsif base_font_200 and base_font_200.weight > base_font.weight
+        assign base_font_bold = base_font_200
+      elsif base_font_300 and base_font_300.weight > base_font.weight
+        assign base_font_bold = base_font_300
+      elsif base_font_400 and base_font_400.weight > base_font.weight
+        assign base_font_bold = base_font_400
+      endif
+
+      assign heading_font_100 = heading_font | font_modify: 'weight', '+100'
+      assign heading_font_200 = heading_font | font_modify: 'weight', '+200'
+      assign heading_font_300 = heading_font | font_modify: 'weight', '+300'
+      assign heading_font_400 = heading_font | font_modify: 'weight', '+400'
+      if heading_font_100 and heading_font_100.weight > heading_font.weight
+        assign heading_font_bold = heading_font_100
+      elsif heading_font_200 and heading_font_200.weight > heading_font.weight
+        assign heading_font_bold = heading_font_200
+      elsif heading_font_300 and heading_font_300.weight > heading_font.weight
+        assign heading_font_bold = heading_font_300
+      elsif heading_font_400 and heading_font_400.weight > heading_font.weight
+        assign heading_font_bold = heading_font_400
+      endif
+
+      assign btn_font = settings.btn_font
+    -%}
+
+    {{ heading_font | font_face: font_display: 'swap' }}
+    {{ base_font | font_face: font_display: 'swap' }}
+    {{ btn_font | font_face: font_display: 'swap' }}
+
+    {% if heading_font_bold %}
+      {{ heading_font_bold | font_face: font_display: 'swap' }}
     {% endif %}
 
-    {% render 'social-meta' %}
+    {% if base_font_bold %}
+      {{ base_font_bold | font_face: font_display: 'swap' }}
+    {% endif %}
 
-    <!-- CSS ================================================================== -->
+    {% assign base_font_italic = base_font | font_modify: 'style', 'italic' %}
+    {% assign base_font_bold_italic = base_font_bold | font_modify: 'style', 'italic' %}
 
-    {{ 'font-settings.css' | asset_url | stylesheet_tag: preload: true }}
+    {% if base_font_italic %}
+      {{ base_font_italic | font_face: font_display: 'swap' }}
+    {% endif %}
 
-    {% render 'css-variables' %}
+    {% if base_font_bold_italic %}
+      {{ base_font_bold_italic | font_face: font_display: 'swap' }}
+    {% endif %}
+  {% endstyle %}
 
-    {{ 'theme.css' | asset_url | stylesheet_tag: preload: true }}
+  {% render 'css-variables' %}
 
-    {%- if settings.color_swatches or settings.show_siblings -%}
-      {{ 'swatches.css' | asset_url | preload_tag: as: 'style' }}
-      {{ 'swatches.css' | asset_url | stylesheet_tag: preload: true }}
-      {%- render 'swatch-color-list' -%}
-    {%- endif %}
+  {{ 'theme.css' | asset_url | stylesheet_tag: preload: true }}
 
-    {%- if request.design_mode -%}
-      {{ 'design-mode.css' | asset_url | stylesheet_tag }}
-    {%- endif -%}
+  {%- if settings.color_swatches or settings.show_siblings -%}
+    {{ 'swatches.css' | asset_url | preload_tag: as: 'style' }}
+    {{ 'swatches.css' | asset_url | stylesheet_tag: preload: true }}
+    {%- render 'swatch-color-list' -%}
+  {%- endif %}
 
-    {{ 'custom.css' | asset_url | stylesheet_tag: preload: true }}
+  {%- if request.design_mode -%}
+    {{ 'design-mode.css' | asset_url | stylesheet_tag }}
+  {%- endif -%}
 
-
-    <script>
+  <script>
     if (window.navigator.userAgent.indexOf('MSIE ') > 0 || window.navigator.userAgent.indexOf('Trident/') > 0) {
       document.documentElement.className = document.documentElement.className + ' ie';
 
@@ -165,7 +218,8 @@
         otherColor: {{ 'collections.general.colors_with_count.other' | t | json }},
         upsellAddToCart: {{ 'products.general.upsell_add_to_cart' | t | json }},
         free: {{ 'general.money.free' | t | json }},
-        swatchesColor: {{ 'general.swatches.color' | t | json }}
+        swatchesColor: {{ 'general.swatches.color' | t | json }},
+        sku: {{ 'products.product.sku' | t | json }},
       },
       settings: {
         cartType: {{ settings.cart_type | json }},
@@ -173,6 +227,7 @@
         enableQuickAdd: {{ settings.quickview_enable | json }},
         enableAnimations: {{ settings.animations_enable | json }},
         variantOnSale: {{ settings.variant_on_sale | json }},
+        collectionSwatchStyle: {{ settings.collection_swatch_style | json }},
       },
       sliderArrows: {
         prev: '<button type="button" class="slider__button slider__button--prev" data-button-arrow data-button-prev>' + {{ 'general.pagination.prev' | t | json }} + '</button>',
@@ -185,38 +240,7 @@
       info: {
         name: 'broadcast'
       },
-      version: '5.5.0',
-      cartSettings: {
-        giftItem : {
-          enabled: {% if settings.gift_item != blank %}{{ settings.enable_gift }} {% else %}false{% endif %},
-          productId: {{ settings.gift_item.id }},
-          variantId: {{ settings.gift_item.first_available_variant.id }},
-          method: "{{ settings.gift_item_method }}",
-          collection: "{% if settings.gift_item_collection != blank %}{{ settings.gift_item_collection.products | map: 'id' | join: ',' }}{% else %}0{% endif %}",
-          cartValue : {{ settings.gift_item_cart_value }},
-          success_alert : "{{ settings.gift_item_success }}",
-          error_alert : "{{ settings.gift_item_error }}"
-        },
-        singleRoutine : {
-          enabled: {{ settings.enable_single_routine }},
-          show_alert: {{ settings.show_alert_single_routine }},
-          tag: "{{ settings.single_routine_tag }}",
-          alert: "{{ settings.single_routine_alert }}",
-          max_routines_per_cart: {{ settings.max_routines_per_cart }}
-        },
-        duplication : {
-          enabled: {{ settings.enable_duplicate_check }},
-          alert_product: "{{ settings.duplication_alert_product }}",
-          alert_routine: "{{ settings.duplication_alert_routine }}"
-        },
-        upgradability : {
-          enabled: {{ settings.enable_upgrade_check }},
-          alert: "{{ settings.upgrade_alert }}"
-        },
-        products : {
-          {% render 'product-json' %}
-        }
-      }
+      version: '5.6.1'
     };
 
     let windowInnerHeight = window.innerHeight;
@@ -226,94 +250,83 @@
     document.documentElement.style.setProperty('--one-half', `${windowInnerHeight * 0.5}px`);
     document.documentElement.style.setProperty('--one-third', `${windowInnerHeight * 0.33}px`);
     document.documentElement.style.setProperty('--one-fifth', `${windowInnerHeight * 0.2}px`);
-    </script>
+  </script>
 
-    {% if template.directory == 'customers' or template contains 'cart' %}
-      <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script>
-    {% endif %}
+  {% if template.directory == 'customers' or template contains 'cart' %}
+    <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script>
+  {% endif %}
 
-    <!-- Theme Javascript ============================================================== -->
-    <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>
+  <!-- Theme Javascript ============================================================== -->
+  <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
+
+  {%- if request.design_mode -%}
+    <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
+  {%- endif -%}
+
+  {%- comment -%}
+    If you need to do some edits in Theme JS use theme.dev.js file
+
+    *** DO NOT EDIT theme.js file ***
+
+    Then call theme.dev.js file by editing the row above from:
+    <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
+    to
     <script src="{{ 'theme.dev.js' | asset_url }}" defer="defer"></script>
+  {%- endcomment -%}
 
-    {%- if request.design_mode -%}
-      <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
-    {%- endif -%}
+  <!-- Shopify app scripts =========================================================== -->
 
-    {%- comment -%}
-      If you need to do some edits in Theme JS use theme.dev.js file
+  {{ content_for_header }}
 
-      *** DO NOT EDIT theme.js file ***
+</head>
 
-      Then call theme.dev.js file by editing the row above from:
-      <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
-      to
-      <script src="{{ 'theme.dev.js' | asset_url }}" defer="defer"></script>
-    {%- endcomment -%}
+<body id="{{ page_title | handle }}" class="template-{{ template.name | handle }} grid-{{ settings.grid_style }}{% if customer %} customer-logged-in{% endif %}{% if settings.animations_enable %} aos-initialized{% endif %}{% if settings.product_grid_outline %} has-line-design{% endif %}" data-animations="{{ settings.animations_enable }}">
+  {%- render 'loading' -%}
 
-    <!-- Shopify app scripts =========================================================== -->
+  <a class="in-page-link visually-hidden skip-link" data-skip-content href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
 
-    {{ content_for_header }}
-    <style>
-      .grid-item.product-item--featured-image {
-        grid-column: span 2;
-        --PRODUCT-GRID-ASPECT-RATIO: 50%;
-      }
-    </style>
-  </head>
-
-  <body
-    id="{{ page_title | handle }}"
-    class="template-{{ template.name | handle }} grid-{{ settings.grid_style }}{% if customer %} customer-logged-in{% endif %}{% if settings.animations_enable %} aos-initialized{% endif %}{% if settings.product_grid_outline %} has-line-design{% endif %}"
-    data-animations="{{ settings.animations_enable }}"
-  >
-    {%- render 'loading' -%}
-
-    <a class="in-page-link visually-hidden skip-link" data-skip-content href="#MainContent">
-      {{- 'general.accessibility.skip_to_content' | t -}}
-    </a>
-
-    <div class="container" data-site-container>
-      <div class="header-sections">
-        {% sections 'group-header' %}
-      </div>
-
-      {% sections 'group-overlay' %}
-
-      <!-- CONTENT -->
-      <main role="main" id="MainContent" class="main-content">
-        {{ content_for_layout }}
-      </main>
+  <div class="container" data-site-container>
+    <div class="header-sections">
+      {% sections 'group-header' %}
     </div>
 
-    {% sections 'group-pre-footer' %}
+    {% sections 'group-overlay' %}
 
-    <footer class="footer-sections">
-      {% sections 'group-footer' %}
-    </footer>
+    <!-- CONTENT -->
+    <main role="main" id="MainContent" class="main-content">
 
-    {% render 'template-swatch' %}
+      {{ content_for_layout }}
 
-    {% render 'zoom-pswp' %}
+    </main>
+  </div>
 
-    {%- if template.name != 'product' and settings.show_scroll_top_button -%}
-      <button
-        type="button"
-        class="btn btn--scroll-top btn--black btn--solid"
-        aria-label="{{ 'general.accessibility.scroll_to_top' | t }}"
-        data-scroll-top-button
-      >
-        {%- render 'icon-arrow-up' -%}
-      </button>
-    {%- endif -%}
+  {% sections 'group-pre-footer' %}
 
-    {%- comment -%}
-      In order to use your custom javascript file at assets/custom.js
-      just cut this next line and paste it outside this comment:
-    {%- endcomment -%}
-    <!-- Paste marketing code or third party scripts below this comment line ============== -->
-    <script defer src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <footer class="footer-sections">
+    {% sections 'group-footer' %}
+  </footer>
+
+  {% render 'template-swatch' %}
+
+  {% render 'zoom-pswp' %}
+
+
+  {%- if template.name != 'product' and settings.show_scroll_top_button -%}
+    <button type="button" class="btn btn--scroll-top btn--black btn--solid" aria-label="{{ 'general.accessibility.scroll_to_top' | t }}" data-scroll-top-button>
+      {%- render 'icon-arrow-up' -%}
+    </button>
+  {%- endif -%}
+
+  {%- comment -%}
+    In order to use your custom javascript file at assets/custom.js
+    just cut this next line and paste it outside this comment:
     <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
-    <!-- And above this comment line ================================================== -->
-  </body>
+  {%- endcomment -%}
+  <!-- Paste marketing code or third party scripts below this comment line ============== -->
+
+
+
+  <!-- And above this comment line ================================================== -->
+</body>
 </html>

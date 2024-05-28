@@ -9,7 +9,6 @@
   assign featured_media = current_variant.featured_media | default: product.featured_media
 -%}
 
-
 <div data-api-content>
   <product-images
     class="product-quick-add__images product__images product__images--thumbs product__images--mobile-thumbs"
@@ -50,7 +49,7 @@
     </div>
   </product-images>
 
-  <div class="product-quick-add__form product-quick-add__form-custom">
+  <div class="product-quick-add__form">
     <div class="product-quick-add__form__inner" data-form-wrapper>
       {%- liquid
         assign product_form_id = 'product-form-upsell-' | append: section.id | append: '-' | append: product.id
@@ -71,7 +70,7 @@
         assign animation_delay = animation_delay | plus: animation_delay_increment
       -%}
 
-      {%- if settings.show_gift_card_recipient -%}
+      {%- if settings.show_gift_card_recipient and product.gift_card? -%}
         <div class="product__block block-padding"
           {% if animation_name %}
             data-animation="{{ animation_name }}"
@@ -82,7 +81,7 @@
         </div>
       {%- endif -%}
 
-      {%- render 'product-buttons-vm', product: product, unique: unique, product_form_id: product_form_id, animation_name: animation_name, animation_delay: animation_delay, animation_duration: animation_duration, quickview: true -%}
+      {%- render 'product-buttons', product: product, unique: unique, product_form_id: product_form_id, animation_name: animation_name, animation_delay: animation_delay, animation_duration: animation_duration, quickview: true -%}
 
       {% comment %} The input with name="id" submits to cart {% endcomment %}
       <input type="hidden" name="id" value="{{ current_variant.id }}" form="{{ product_form_id }}">

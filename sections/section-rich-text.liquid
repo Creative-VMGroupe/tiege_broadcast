@@ -2,6 +2,11 @@
 {%- liquid
   assign bg_color = section.settings.bg_color
   assign text_color = section.settings.color
+  assign image_desktop = section.settings.image
+  assign image_mobile = section.settings.image_mobile
+  assign overlay_color = section.settings.overlay_color
+  assign overlay_opacity = section.settings.overlay_opacity | times: 0.01
+  assign show_overlay_text = section.settings.show_overlay_text
   assign animation_anchor = '#Rte--' | append: section.id
   assign animation_order = 0
 -%}
@@ -22,23 +27,28 @@
 {%- endstyle -%}
 
 <section id="Rte--{{ section.id }}"
-  class="index-rte section-padding   {% if section.settings.image_1 != blank %} rich-text_image_padding
-  {% endif %}"
+  class="index-rte section-padding"
   data-section-id="{{ section.id }}"
-  data-section-type="rich-text"
-  {% if section.settings.image_1 != blank %} 
-  style='position: relative'
-  {% endif %}
-  >
-  {% if section.settings.image_1 != blank %} 
-  <img src='{{ section.settings.image_1 | image_url }}' class='rich-text__img'/>
-  {% endif %}
-  {%- if section.blocks.size > 0 -%}  
+  data-section-type="rich-text">
+  {%- if image_desktop or image_mobile -%}
+    <div class="hero__bg">
+      <div class="hero__image">
+        {%- render 'image-hero', image_desktop: image_desktop, image_mobile: image_mobile -%}
+      </div>
+
+      {%- unless show_overlay_text or overlay_opacity == 0.0 -%}
+        <div class="image-overlay" style="--overlay-bg: {{ overlay_color }}; --overlay-opacity: {{ overlay_opacity }};"></div>
+      {%- endunless -%}
+    </div>
+  {%- endif -%}
+
+  {%- if section.blocks.size > 0 -%}
     <div class="hero__content__wrapper {{ section.settings.align_text }} {{ section.settings.width }}">
-      <div class="hero__content hero__content--compact" 
-      {% if section.settings.image_1 != blank %} 
-      style='background-color: transparent;'
-      {% endif %}>
+      <div class="hero__content hero__content--compact hero__content--transparent{% if show_overlay_text %} backdrop--radial{% endif %}"
+        {% if show_overlay_text %}
+          style="--overlay-bg: {{ overlay_color }}; --overlay-opacity: {{ overlay_opacity }};"
+        {% endif %}
+      >
         {%- for block in section.blocks -%}
           {%- liquid
             capture block_style
@@ -49,35 +59,11 @@
           -%}
 
           {%- case block.type -%}
-            {% when '2Columns'%}
-            
-            {%- assign title1 = block.settings.title1 -%}
-            {%- assign title2 = block.settings.title2 -%}
-            {%- assign font_size_class = block.settings.heading_font | prepend: 'heading-size-' -%}
-            {%- assign text1 = block.settings.text1 -%}
-            {%- assign text2 = block.settings.text2 -%}
-            {%- assign subheading_size_class = block.settings.text_font | prepend: 'subheading-size-' -%}
-            
-             {%- if block.settings.title1 != blank -%}
-            <div class='two-columns__container'>
-            <div class='two-columns__wrapper wrapper--narrow'>
-            <div class='two-columns__box'>
-            <p class='{{ font_size_class }} two-columns__title'>{{ title1 }}</p>
-            <p class='{{ subheading_size_class }}'>{{ text1 }}</p>
-            </div>
-            <div class='two-columns__box'>
-            <p class='{{ font_size_class }} two-columns__title'>{{ title2 }}</p>
-            <p class='{{ subheading_size_class }}'>{{ text2 }}</p>
-            </div>
-            </div>
-            </div>
-               {%- endif -%}
             {%- when 'heading' -%}
               {%- if block.settings.title != blank -%}
                 {%- assign animation_order = animation_order | plus: 1 -%}
-                {%- assign font_size_class = block.settings.text_font | prepend: 'heading-size-' -%}
-                {% assign big_text = block.settings.big_text %}
-                <h2 class="hero__title {{ font_size_class }} block-padding {% if big_text %} oversized-text-custom{% endif %}"
+                {%- assign font_size_class = block.settings.text_size | prepend: 'heading-size-' -%}
+                <h2 class="hero__title {{ font_size_class }} block-padding"
                   data-aos="hero"
                   data-aos-anchor="{{ animation_anchor }}"
                   data-aos-order="{{ animation_order }}"
@@ -91,7 +77,7 @@
             {%- when 'subheading' -%}
               {%- if block.settings.subheading != blank -%}
                 {%- assign animation_order = animation_order | plus: 1 -%}
-                {%- assign font_size_class = block.settings.text_font | prepend: 'subheading-size-' -%}
+                {%- assign font_size_class = block.settings.text_size | prepend: 'subheading-size-' -%}
                 <p class="hero__subheading {{ font_size_class }} block-padding"
                   data-aos="hero"
                   data-aos-anchor="{{ animation_anchor }}"
@@ -106,7 +92,7 @@
             {%- when 'text' -%}
               {%- if block.settings.text != blank -%}
                 {%- assign animation_order = animation_order | plus: 1 -%}
-                {%- assign font_size_class = block.settings.text_font | prepend: 'body-size-' -%}
+                {%- assign font_size_class = block.settings.text_size | prepend: 'body-size-' -%}
                 <div class="hero__rte {{ font_size_class }} {{ block.settings.text_style }} block-padding"
                   data-aos="hero"
                   data-aos-anchor="{{ animation_anchor }}"
@@ -121,7 +107,7 @@
             {%- when 'columns' -%}
               {%- if block.settings.text != blank -%}
                 {%- assign animation_order = animation_order | plus: 1 -%}
-                {%- assign font_size_class = block.settings.text_font | prepend: 'body-size-' -%}
+                {%- assign font_size_class = block.settings.text_size | prepend: 'body-size-' -%}
                 {%- assign text_columns_class = block.settings.text_columns | prepend: 'columns--' -%}
                 <div class="hero__rte {{ font_size_class }} {{ text_columns_class }} {{ block.settings.text_style }} block-padding"
                   data-aos="hero"
@@ -224,74 +210,10 @@
 
               {%- render 'divider' block: block, attributes: attributes -%}
 
-
-            {%- endcase -%}
+          {%- endcase -%}
         {%- endfor -%}
       </div>
     </div>
-    {%- for block in section.blocks -%}
-    {% case block.type %}
-    {% when 'memberboxes' %}
-    
-      <div class="member-tiers-wrapper-custom level-guide-member-tiers-wrapper-custom">
-        <div class='member-container-custom-desktop'>
-            {% comment %}
-              Block 1
-            {% endcomment %}
-            <div class="member-tiers_container level-guide-member-tiers_container">
-                <div style="background-color: #f0f0f0" class="member-single-tier_container level-guide-member-single-tier_container">
-                    <div class="member-tier_text">
-                        <p class="m-0 member-tier-header_text heading-size-{{ block.settings.pop-heading_font }}">{{ block.settings.box-1_text }}</p>
-                        <p class="m-0 member-tier-header_text member-tier-date_text">Month 1-6</p>
-                    </div>
-                    <div class="member-tier_text member-tier_secondary_text">
-                        <p class='m-0'>{{ block.settings.box-1_gifts }}</p>
-                    </div>
-                </div>
-                <div>
-                  <p class='level-guide-member-single-tier_text'>{{ block.settings.box-1_description }}</p>
-                </div>
-            </div >
-            {% comment %}
-              Block 2
-            {% endcomment %}
-            <div class="member-tiers_container level-guide-member-tiers_container">
-                <div style="background-color: #B3B3B3" class="member-single-tier_container level-guide-member-single-tier_container">
-                    <div class="member-tier_text">
-                        <p  class="m-0 heading-size-{{ block.settings.pop-heading_font }}">{{ block.settings.box-2_text }}</p>
-                        <p class="m-0 member-tier-date_text">Month 7-12</p>
-                    </div>
-                    <div class="member-tier_text member-tier_secondary_text">
-                        <p class="m-0">{{ block.settings.box-2_gifts }}</p>
-                    </div>
-                </div>
-                <div>
-                  <p class='level-guide-member-single-tier_text'>{{ block.settings.box-2_description }}</p>
-                </div>
-            </div>
-            {% comment %}
-              Block 3
-            {% endcomment %}
-            <div class="member-tiers_container level-guide-member-tiers_container">
-                <div style="background-color: #000" class="member-single-tier_container level-guide-member-single-tier_container">
-                    <div style="color: white !important;" class="member-tier_text">
-                        <p class="m-0 heading-size-{{ block.settings.pop-heading_font }}">{{ block.settings.box-3_text }}</p>
-                        <p class="m-0 member-tier-date_text">After 12 Months</p>
-                    </div>
-                    <div style="color: white !important;" class="member-tier_text member-tier_secondary_text">
-                        <p class="m-0">{{ block.settings.box-3_gifts }}</p>
-                    </div>
-                </div>
-                <div class='level-guide-member-single-tier_text'>
-                  <p>{{ block.settings.box-3_description }}</p>
-                </div>
-            </div>
-        </div>
-    
-        
-    </div>
-  {% endcase %}
-{%- endfor -%}
   {%- else -%}
     {%- render 'no-blocks' -%}
   {%- endif -%}
@@ -301,12 +223,6 @@
 {
   "name": "Rich text",
   "settings": [
-    {
-  "type": "image_picker",
-  "id": "image_1",
-  "label": "Image"
-},
-
     {
       "type": "header",
       "content": "Style"
@@ -335,6 +251,44 @@
         {"value": "text-left","label": "Left"},
         {"value": "text-center","label": "Centered"}
       ]
+    },
+    {
+      "type": "header",
+      "content": "Background image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Mobile image",
+      "info": "Optional"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Overlay opacity",
+      "info": "Increase contrast for legible text.",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 0
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay color",
+      "default": "#000"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_overlay_text",
+      "label": "Overlay behind text only",
+      "default": false
     },
     {
       "type": "header",
@@ -388,18 +342,12 @@
         },
         {
           "type": "range",
-          "id": "text_font",
+          "id": "text_size",
           "label": "Text size",
-          "min": 24,
-          "max": 40,
-          "step": 8,
-          "default": 40
-        },
-        {
-            "type": "checkbox",
-            "id": "big_text",
-            "label": "Enable Oversized Text",
-            "default": false
+          "min": 1,
+          "max": 15,
+          "step": 1,
+          "default": 8
         },
         {
           "type": "header",
@@ -429,12 +377,12 @@
         },
         {
           "type": "range",
-          "id": "text_font",
+          "id": "text_size",
           "label": "Text size",
-          "min": 12,
-          "max": 16,
-          "step": 2,
-          "default": 16
+          "min": 1,
+          "max": 15,
+          "step": 1,
+          "default": 3
         },
         {
           "type": "header",
@@ -464,12 +412,12 @@
         },
         {
           "type": "range",
-          "id": "text_font",
+          "id": "text_size",
           "label": "Text size",
-          "min": 12,
-          "max": 16,
-          "step": 2,
-          "default": 16
+          "min": 1,
+          "max": 15,
+          "step": 1,
+          "default": 4
         },
         {
           "type": "select",
@@ -519,12 +467,12 @@
         },
         {
           "type": "range",
-          "id": "text_font",
+          "id": "text_size",
           "label": "Text size",
-          "min": 12,
-          "max": 16,
-          "step": 2,
-          "default": 16
+          "min": 1,
+          "max": 15,
+          "step": 1,
+          "default": 4
         },
         {
           "type": "select",
@@ -679,147 +627,7 @@
           "default": 20
         }
       ]
-    },
-    {
-      "type": "2Columns",
-      "name": "2 Column",
-      "settings": [
-        {
-          "type": "text",
-          "id": "title1",
-          "label": "Heading",
-          "default": "Rich text"
-        },
-        {
-          "type": "range",
-          "id": "heading_font",
-          "label": "Heading size",
-          "min": 24,
-          "max": 40,
-          "step": 8,
-          "default": 40
-        },
-        {
-          "type": "richtext",
-          "id": "text1",
-          "label": "Text",
-          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-        },
-        {
-          "type": "range",
-          "id": "text_font",
-          "label": "Text size",
-          "min": 12,
-          "max": 16,
-          "step": 2,
-          "default": 16
-        },
-        {
-          "type": "select",
-          "id": "text_style",
-          "label": "Text style",
-          "default": "font-body",
-          "options": [
-            {"value": "font-heading", "label": "Heading"},
-            {"value": "font-body", "label": "Body"}
-          ]
-        },
-        {
-          "type": "text",
-          "id": "title2",
-          "label": "Heading",
-          "default": "Rich text"
-        },
-        {
-          "type": "richtext",
-          "id": "text2",
-          "label": "Text",
-          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-        },
-        {
-          "type": "header",
-          "content": "Block spacing"
-        },
-        {
-          "type": "range",
-          "id": "padding_bottom",
-          "min": 0,
-          "max": 50,
-          "step": 2,
-          "unit": "px",
-          "label": "Padding bottom",
-          "default": 16
-        }
-      ]
-    },
-    {"type": "memberboxes",
-  "name": "Member Boxes",
-"settings": [
-      {
-            "type": "range",
-            "id": "pop-heading_font",
-            "label": "Heading size",
-          "min": 24,
-          "max": 40,
-          "step": 8,
-          "default": 40
-          },
-
-      {
-        "type": "text",
-        "id": "box-1_text",
-        "label": "Tier 1 Heading",
-        "default": "Member"
-      },
-      {
-        "type": "text",
-        "id": "box-1_gifts",
-        "label": "Tier 1 Gifts",
-        "default": "3 Routine-building Gifts"
-      },
-      {
-        "type": "textarea",
-        "id": "box-1_description",
-        "label": "Tier 1 Description",
-        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      },
-      {
-        "type": "text",
-        "id": "box-2_text",
-        "label": "Tier 2 Heading",
-        "default": "VIP Member"
-      },
-      {
-        "type": "text",
-        "id": "box-2_gifts",
-        "label": "Tier 2 Gifts",
-        "default": "3 VIP Gifts, 1 Premium Gift"
-      },
-      {
-        "type": "textarea",
-        "id": "box-2_description",
-        "label": "Tier 2 Description",
-        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      },
-      {
-        "type": "text",
-        "id": "box-3_text",
-        "label": "Tier 3 Heading",
-        "default": "Emerald VIP"
-      },
-      {
-        "type": "text",
-        "id": "box-3_gifts",
-        "label": "Tier 3 Gifts",
-        "default": "10% off every order, 2 Premium Gifts per year"
-      },
-      {
-        "type": "textarea",
-        "id": "box-3_description",
-        "label": "Tier 3 Description",
-        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      }
-]}
+    }
   ],
   "presets": [
     {

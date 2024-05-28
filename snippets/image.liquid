@@ -37,9 +37,6 @@
   assign preload = preload | default: nil
   assign cover = cover | default: false
   assign fill = false
-  assign aspect_1 = aspect_1
- 
-  
 
   if aspect_ratio != image.aspect_ratio
     assign fill = true
@@ -86,17 +83,10 @@
   endcapture
 
   capture wrapper_attributes
-
-
     echo 'style="'
-    if aspect_1 == true 
-      echo '--aspect-ratio: ' | append: 1 | append: ';'
-    else
     echo '--aspect-ratio: ' | append: aspect_ratio | append: ';'
-      endif
     echo '"'
-   
- 
+
     if attributes != blank
       echo ' ' | append: attributes
     endif
@@ -115,18 +105,10 @@
   capture srcset
     render 'image-srcset', image: image, widths: widths
   endcapture
-
  -%}
 
-
-<figure class="{{ wrapper_classes }} {% if headerFullHeight %}
-  header-full_height-custom
-{% endif %} 
-{% if icons == true %} 
-icons_height
-{% endif %}"  
-{{ wrapper_attributes }}>
-    {%- if image -%}
+<figure class="{{ wrapper_classes }}" {{ wrapper_attributes }}>
+  {%- if image -%}
     {{ image | image_url: width: width, height: height | image_tag:
       loading: loading,
       srcset: srcset,

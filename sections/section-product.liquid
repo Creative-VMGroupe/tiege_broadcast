@@ -3,7 +3,6 @@
   assign product = all_products[section.settings.product]
   assign unique = section.id
   assign bg_color = section.settings.bg_color
-  assign text_color = section.settings.text_color
   assign limit = section.settings.limit
   assign featured_image = section.settings.image
   assign featured_image_mobile = section.settings.image_mobile
@@ -28,33 +27,12 @@
 -%}
 
 {%- style -%}
-   #Product--{{ section.id }} .product-item__title {
-       {%- unless text_color == 'rgba(0,0,0,0)' or text_color == blank -%}
-      --text: {{ text_color }};
-    {%- endunless -%}
-  color: var(--text)
-   }
-  #Product--{{ section.id }} .sale .new-price {
-           {%- unless text_color == 'rgba(0,0,0,0)' or text_color == blank -%}
-      --text: {{ text_color }};
-    {%- endunless -%}
-  color: var(--text)
-  }
-  #Product--{{ section.id }} .old-price {
-           {%- unless text_color == 'rgba(0,0,0,0)' or text_color == blank -%}
-      --text: {{ text_color }};
-    {%- endunless -%}
-  color: var(--text)
-  }
   #Product--{{ section.id }} {
     --PT: {{ section.settings.padding_top }}px;
     --PB: {{ section.settings.padding_bottom }}px;
 
     {%- unless bg_color == 'rgba(0,0,0,0)' or bg_color == blank -%}
       --bg: {{ bg_color }};
-    {%- endunless -%}
-  {%- unless text_color == 'rgba(0,0,0,0)' or text_color == blank -%}
-      --text: {{ text_color }};
     {%- endunless -%}
   }
 
@@ -81,7 +59,7 @@
     <div class="featured-product__content" data-featured-content>
       <div class="featured-product__card">
         {%- if product != blank -%}
-          {%- render 'product-grid-item', product: product, index: forloop.index, sizes: grid_item_sizes, text_color: text_color -%}
+          {%- render 'product-grid-item', product: product, index: forloop.index, sizes: grid_item_sizes -%}
         {%- else -%}
           {%- render 'onboarding-product-grid-item', index: forloop.index -%}
         {%- endif -%}
@@ -199,12 +177,6 @@
         "type": "color",
         "label": "Background"
       },
-      {
-            "type": "color",
-            "id": "text_color",
-            "label": "Text",
-            "default": "#212121"
-          },
       {
         "type": "header",
         "content": "Section padding"

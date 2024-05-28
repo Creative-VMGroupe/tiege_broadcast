@@ -51,13 +51,14 @@
   #Reviews--{{ section.id }} {
     --PT: {{ section.settings.padding_top }}px;
     --PB: {{ section.settings.padding_bottom }}px;
-    {% unless text_color == 'rgba(0,0,0,0)' or text_color == blank %}
+    {% unless text_color.alpha == 0.0 or text_color == blank %}
       --text: {{ text_color }};
     {% endunless %}
-    {% unless bg_color == 'rgba(0,0,0,0)' or bg_color == blank %}
+    {% unless bg_color.alpha == 0.0 or bg_color == blank %}
       --bg: {{ bg_color }};
     {% endunless %}
-    {% unless card_bg_color == 'rgba(0,0,0,0)' or card_bg_color == blank %}
+    {% unless card_bg_color.alpha == 0.0 or card_bg_color == blank %}
+      {%- assign card_background = true -%}
       --card-bg: {{ card_bg_color }};
     {% endunless %}
 
@@ -67,7 +68,7 @@
 {%- endstyle -%}
 
 <div id="Reviews--{{ section.id }}"
-  class="testimonials-custom {{ section_classes }}"
+  class="{{ section_classes }}"
   data-section-id="{{ section.id }}"
   data-section-type="reviews">
   <div class="wrapper--full-padded">
@@ -87,6 +88,9 @@
               assign review_block_classes = 'review'
               if show_featured_image
                 assign review_block_classes = review_block_classes | append: ' review--has-image'
+              endif
+              if card_background
+                assign review_block_classes = review_block_classes | append: ' review--has-card-bg'
               endif
 
               if forloop.index > 2
@@ -139,18 +143,18 @@
                       endcapture
                     -%}
 
-                    <blockquote>
+                    <blockquote class="{{ font_size_class }}">
                       {%- if show_quotation_marks -%}
                         <span class="review__quote review__quote--open{% if section.settings.padding_top > 9 %} review__quote--open-negative{% endif %}">
-                          <span class="review__quote-inner heading-size-{{ text_size }}" style="{{ quotes_styles }}">&ldquo;</span>
+                          <span class="review__quote-inner" style="{{ quotes_styles }}">&ldquo;</span>
                         </span>
                       {%- endif -%}
 
-                      <p class="heading-size-{{ text_size }}">{{ review | truncatewords: 200 }}</p>
+                      <p>{{ review | truncatewords: 200 }}</p>
 
                       {%- if show_quotation_marks -%}
                         <span class="review__quote review__quote--close{% if section.settings.padding_bottom > 9 %} review__quote--close-negative{% endif %}">
-                          <span class="review__quote-inner heading-size-{{ text_size }}" style="{{ quotes_styles }}">&rdquo;</span>
+                          <span class="review__quote-inner" style="{{ quotes_styles }}">&rdquo;</span>
                         </span>
                       {%- endif -%}
                     </blockquote>
@@ -245,10 +249,10 @@
       "type":  "range",
       "id":    "text_size",
       "label": "Text size",
-          "min": 24,
-          "max": 40,
-          "step": 8,
-          "default": 40
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 4
     },
     {
       "type": "header",

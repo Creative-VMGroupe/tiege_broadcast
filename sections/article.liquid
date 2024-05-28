@@ -45,13 +45,13 @@
 {%- endcapture -%}
 
 <section
-  class="article-page-custom article-single section-padding"
+  class="article-single section-padding"
   data-section-id="{{ section.id }}"
   data-section-type="article"
   style="{{ style }}">
   <div class="article__hero text-center">
     <div class="wrapper">
-      <h2 class="article__title h3 heading-size-40">{{ article.title }}</h2>
+      <h2 class="article__title h3">{{ article.title }}</h2>
 
       {%- if show_date or show_author -%}
         <p class="article__meta">

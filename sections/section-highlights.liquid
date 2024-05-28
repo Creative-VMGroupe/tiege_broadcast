@@ -13,9 +13,6 @@
   assign columns_small = 2
   assign columns_mobile = section.settings.layout_mobile | plus: 0
 
-  assign desktop_height = section.settings.height
-  assign mobile_height = section.settings.mobile_height
-
   capture items_classes
     echo 'highlights__items'
     if section.settings.layout_mobile == 'slider'
@@ -51,7 +48,7 @@
   id="highlights--{{ unique }}"
   data-section-id="{{ unique }}"
   data-section-type="highlights">
-  <div class="{{ section.settings.width }} highlights__container {% if section.settings.compact %} highlights-compact__container-vm {% endif %}">
+  <div class="{{ section.settings.width }} highlights__container">
 
     {%- if heading != blank -%}
       <div class="grid__heading-holder {{ section.settings.heading_position }}">
@@ -66,7 +63,7 @@
     {%- endif -%}
 
     {%- if section.blocks.size > 0 -%}
-      <div class="{{ items_classes }} highlights__items--mobile">
+      <div class="{{ items_classes }}">
         {%- for block in section.blocks -%}
           {%- liquid
             assign image = block.settings.image
@@ -162,7 +159,7 @@
             {%- endif -%}
 
               {%- if image or blocks_style != 'button' -%}
-                <div class="highlights__item__background {{ desktop_height }} {{ mobile_height }}">
+                <div class="highlights__item__background">
                   {%- if image -%}
                     {%- capture sizes -%}
                       (min-width: 990px) calc((100vw - 100px) / {{ columns_desktop }}), (min-width: 750px) calc((100vw - 60px) / {{ columns_medium }}), calc(100vw - 32px)
@@ -174,8 +171,7 @@
               {%- endif -%}
 
               <div class="highlights__item__content {{ font_size_class }}">
-                <span class='{{ heading_size_class }}'>{{ block.settings.heading }}</span>
-                <p>{{ block.settings.subheading }}</p>
+                <span>{{ block.settings.heading }}</span>
               </div>
 
             {%- if link != blank -%}
@@ -224,14 +220,6 @@
         "content": "Style"
       },
       {
-  "type": "checkbox",
-  "id": "compact",
-  "label": "Toggle Compact Grid",
-  "default": false
-},
-      
-
-      {
         "type": "select",
         "id": "width",
         "label": "Width",
@@ -242,42 +230,6 @@
           {"value": "wrapper--narrow", "label": "Narrow"}
         ]
       },
-          {
-      "type": "select",
-      "id": "height",
-      "label": "Desktop height",
-      "default": "screen-height-one-half",
-      "options": [
-        { "value": "image-height", "label": "Image height" },
-        { "value": "screen-height-full", "label": "Full screen height"},
-        { "value": "screen-height-three-quarters", "label": "3/4 of screen"},
-        { "value": "screen-height-two-thirds", "label": "2/3 of screen"},
-        { "value": "screen-height-one-half", "label": "1/2 of screen"},
-        { "value": "screen-height-one-third", "label": "1/3 of screen"},
-        { "value": "seven-fifty-height-hero", "label": "750px" },
-        { "value": "sixty-fifty-height-hero", "label": "650px" },
-        { "value": "five-fifty-height-hero", "label": "550px" },
-        { "value": "four-fifty-height-hero", "label": "450px" }
-      ]
-    },
-      {
-      "type": "select",
-      "id": "mobile_height",
-      "label": "Mobile height",
-      "default": "screen-height-one-half--mobile",
-      "options": [
-        { "value": "image-height--mobile", "label": "Image height" },
-        { "value": "screen-height-full--mobile", "label": "Full screen height"},
-        { "value": "screen-height-three-quarters--mobile", "label": "3/4 of screen"},
-        { "value": "screen-height-two-thirds--mobile", "label": "2/3 of screen"},
-        { "value": "screen-height-one-half--mobile", "label": "1/2 of screen"},
-        { "value": "screen-height-one-third--mobile", "label": "1/3 of screen"},
-        { "value": "seven-fifty-height-hero--mobile", "label": "750px" },
-        { "value": "sixty-fifty-height-hero--mobile", "label": "650px" },
-        { "value": "five-fifty-height-hero--mobile", "label": "550px" },
-        { "value": "four-fifty-height-hero--mobile", "label": "450px" }
-      ]
-    },
       {
         "type": "header",
         "content": "Text"
@@ -302,19 +254,19 @@
         "type": "range",
         "id": "heading_size",
         "label": "Heading size",
-          "min": 24,
-          "max": 40,
-          "step": 8,
-          "default": 40
+        "min": 1,
+        "max": 15,
+        "step": 1,
+        "default": 8
       },
       {
         "type":  "range",
         "id":    "text_size",
         "label": "Text size",
-          "min": 12,
-          "max": 16,
-          "step": 2,
-          "default": 16
+        "min":    1,
+        "max":    15,
+        "step":   1,
+        "default": 3
       },
       {
         "type": "header",
@@ -389,12 +341,6 @@
             "id": "heading",
             "label": "Heading",
             "default": "Highlight"
-          },
-          {
-            "type": "text",
-            "id": "subheading",
-            "label": "Subheading",
-            "default": "Subheading"
           },
           {
             "type": "url",

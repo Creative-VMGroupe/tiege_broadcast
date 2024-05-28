@@ -47,16 +47,24 @@
   {%- if has_content -%}
     <div class="grid__heading-text">
       {%- if title != blank -%}
-        {%- assign animation_order = animation_order | plus: 1 -%}
-        <h2 class="grid__heading heading-size-5"
+        {%- liquid
+          assign font_size_class = section.settings.heading_size | prepend: 'heading-size-'
+          assign animation_order = animation_order | plus: 1
+        -%}
+
+        <h2 class="grid__heading {{ font_size_class }}"
           data-aos="hero"
           data-aos-anchor="{{ animation_anchor }}"
           data-aos-order="{{ animation_order }}">{{ title }}</h2>
       {%- endif -%}
 
       {%- if text != blank -%}
-        {%- assign animation_order = animation_order | plus: 1 -%}
-        <div class="grid__description"
+        {%- liquid
+          assign font_size_class = section.settings.text_size | prepend: 'body-size-'
+          assign animation_order = animation_order | plus: 1
+        -%}
+
+        <div class="grid__description {{ font_size_class }}"
           data-aos="hero"
           data-aos-anchor="{{ animation_anchor }}"
           data-aos-order="{{ animation_order }}">
@@ -268,13 +276,8 @@
                   {%- if featured_collection != blank -%}
                     {%- if featured_collection.products_count > 0 -%}
                       {%- for product in featured_collection.products limit: block_product_limit -%}
-{% if product.tags contains 'hidden' %}
-{%- else -%}
-			
-
                         {%- assign animation_index = forloop.index0 | modulo: 4 -%}
                         {%- render 'product-grid-item', product: product, animation_delay: animation_index, index: forloop.index, block_index: block_index -%}
-{%- endif -%}
                       {%- endfor -%}
                     {%- else -%}
                       <div class="no-results">
@@ -393,9 +396,27 @@
       "type": "text"
     },
     {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 5
+    },
+    {
       "type": "richtext",
       "id": "text",
       "label": "Text"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Text size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 3
     },
     {
       "type": "select",

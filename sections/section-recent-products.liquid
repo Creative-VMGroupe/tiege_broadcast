@@ -20,7 +20,7 @@
     {%- endunless -%}
   }
 {%- endstyle -%}
-{%- assign font_size_class = section.settings.heading_size | prepend: 'heading-size-' -%}
+
 <div id="RecentProducts--{{ section.id }}"
   class="recent__container section-padding js"
   data-section-id="{{ section.id }}"
@@ -33,7 +33,7 @@
             {%- if section.settings.product_recently_heading != blank -%}
               <ul class="tabs text-center" data-scrollbar data-scrollbar-slider>
                 <li class="tab-link tab-link-0 tab-link__recent current" data-tab="0" tabindex="0">
-                  <span style="text-wrap:wrap;" class="{{font_size_class}}">{{ section.settings.product_recently_heading }}</span>
+                  <span>{{ section.settings.product_recently_heading }}</span>
                 </li>
               </ul>
             {%- endif -%}
@@ -69,15 +69,6 @@
       "default": "Recently viewed"
     },
     {
-        "type": "range",
-        "id": "heading_size",
-        "label": "Heading size",
-          "min": 24,
-          "max": 40,
-          "step": 8,
-          "default": 40
-      },
-    {
       "type": "range",
       "id": "product_recently_limit",
       "min": 1,
@@ -95,6 +86,26 @@
       "label": "Display threshold",
       "info": "Hide section until a minimum of products can be shown.",
       "default": 4
+    },
+    {
+      "type": "select",
+      "id": "layout_mobile",
+      "label": "Mobile layout",
+      "options": [
+        {
+          "value": "1",
+          "label": "1 item per row"
+        },
+        {
+          "value": "2",
+          "label": "2 items per row"
+        },
+        {
+          "value": "slider",
+          "label": "Slider"
+        }
+      ],
+      "default": "slider"
     },
     {
       "type": "header",
