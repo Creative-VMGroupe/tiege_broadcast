@@ -1657,20 +1657,8 @@
           } else if (mediaNative) {
             if (this.hovered) {
               
-              var playPromise = mediaNative.play();
-
-  if (playPromise !== undefined) {
-    playPromise.then( () => {
-              console.log('Testing')
-
-    })
-    .catch(error => {
-      console.log('Error')
-
-    });
-  }
+              mediaNative.play();
             } else {
-               console.log(mediaNative)
               mediaNative.pause();
             }
           }
