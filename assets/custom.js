@@ -640,6 +640,8 @@ async function updatedCartFunction(data) {
     if (giftExists.length) {
       let giftQty = giftExists[0]['quantity'];
 
+      console.log(giftQty);
+
       if (giftQty > 1) {
         reloadCart = true;
         await changeItemQty(giftExists[0].key, '1');
