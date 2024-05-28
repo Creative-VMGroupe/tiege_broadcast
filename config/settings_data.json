@@ -80,6 +80,7 @@
     "gift_item_collection": "march-madness",
     "gift_item_success": "A free gift from Tiege has been added to your cart.",
     "gift_item_error": "Your cart is no longer eligible for a free gift.",
+    "single_routine_alert": "You already have a routine in your bag. Replace the routine?",
     "duplication_alert_product": "You already have a routine in your bag that contains this product. Remove product?",
     "upgrade_alert": "We've upgraded your system to include the products you selected for a discounted price.",
     "checkout_logo_position": "left",
