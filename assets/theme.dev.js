@@ -1656,6 +1656,7 @@
             });
           } else if (mediaNative) {
             if (this.hovered) {
+              console.log('Test')
               mediaNative.play();
             } else {
               mediaNative.pause();
