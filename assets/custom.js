@@ -450,11 +450,11 @@ async function showMessageDuplicateRoutine(lineItem) {
     <p class="cart__item__title cart__item__alert-custom">${window.theme.cartSettings.singleRoutine.alert}</p>
     <div class="buttons-holder">
       <button type="button" data-replace-alert data-remove-product=${lineItem} class="btn btn--primary btn--solid">Replace</button>
-      <button type="button" data-remove-alert class="btn btn--primary btn--outline">Keep Both</button>
+      <button type="button" data-dismiss-alert class="btn btn--primary btn--outline">Keep Both</button>
     </div>
   </div>`;
   let replaceButton = cartItems.querySelector('[data-replace-alert]');
-  let closeButton = cartItems.querySelector('[data-remove-alert]');
+  let closeButton = cartItems.querySelector('[data-dismiss-alert]');
   replaceButton.addEventListener("click", (e) => {
     changeItemQtywithReload(replaceButton.dataset.removeProduct, '0');
     cartItems.innerHTML = '';
@@ -466,6 +466,7 @@ async function showMessageDuplicateRoutine(lineItem) {
 
 async function showMessageDuplicateProducts(lineItems, isRoutine) {
   let cartItems = document.querySelector('.cart-alert');
+  cartItems.innerHTML = '';
   if (isRoutine) {
     var message = window.theme.cartSettings.duplication.alert_routine;
   } else {
@@ -476,12 +477,12 @@ async function showMessageDuplicateProducts(lineItems, isRoutine) {
   cartItems.innerHTML = `<div class="alert-confirm">
     <p class="cart__item__title cart__item__alert-custom">${message}</p>
     <div class="buttons-holder">
-      <button type="button" data-replace-alert data-remove-products class="btn btn--primary btn--solid">${buttonOne}</button>
-      <button type="button" data-remove-alert class="btn btn--primary btn--outline">${buttonTwo}</button>
+      <button type="button" data-remove-alert data-remove-products class="btn btn--primary btn--solid">${buttonOne}</button>
+      <button type="button" data-dismiss-alert class="btn btn--primary btn--outline">${buttonTwo}</button>
     </div>
   </div>`;
-  let replaceButton = cartItems.querySelector('[data-replace-alert]');
-  let closeButton = cartItems.querySelector('[data-remove-alert]');
+  let replaceButton = cartItems.querySelector('[data-remove-alert]');
+  let closeButton = cartItems.querySelector('[data-dismiss-alert]');
   replaceButton.addEventListener("click", (e) => {
     removeMultiplewithReload(lineItems);
     cartItems.innerHTML = '';
