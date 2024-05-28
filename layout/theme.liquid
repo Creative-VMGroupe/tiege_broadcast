@@ -199,9 +199,10 @@
         },
         singleRoutine : {
           enabled: {{ settings.enable_single_routine }},
-          enforced: {{ settings.show_alert_single_routine }},
+          show_alert: {{ settings.show_alert_single_routine }},
           tag: "{{ settings.single_routine_tag }}",
           alert: "{{ settings.single_routine_alert }}",
+          max_number_per_cart: {{ settings.max_number_per_cart }}
         },
         duplication : {
           enabled: {{ settings.enable_duplicate_check }},
