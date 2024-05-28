@@ -446,6 +446,7 @@ async function removeMultiplewithReload(lineItems) {
 
 async function showMessageDuplicateRoutine(lineItem) {
   let cartItems = document.querySelector('.cart-alert');
+  cartItems.innerHTML = '';
   cartItems.innerHTML = `<div class="alert-confirm">
     <p class="cart__item__title cart__item__alert-custom">${window.theme.cartSettings.singleRoutine.alert}</p>
     <div class="buttons-holder">
