@@ -27195,7 +27195,7 @@ padding: 0 20px;
     border: 1px solid black;
     background-color: transparent;
     color: #000;
-    border-radius: 300px;
+    border-radius: 300px !important;
 }
 /*Overide Custom*/
 @media only screen and (min-width: 990px) {
