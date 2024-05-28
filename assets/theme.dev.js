@@ -3020,6 +3020,8 @@
         if (form !== null && form.querySelector('[type="file"]')) {
           return;
         }
+        const formDataObj = {};
+        formData.forEach((value, key) => (formDataObj[key] = value));
         event.preventDefault();
         fetch(theme.routes.cart_url + '.js')
           .then(this.cartErrorsHandler)
@@ -3027,7 +3029,7 @@
           .then((response) => {
             var allProducts = window.theme.cartSettings.products;
             let routineItems = response.items.filter((item) => allProducts[item.product_id].isRoutine);
-            console.log(formData, routineItems);
+            console.log(formDataObj, routineItems);
             // const element = document.createElement('div');
             // element.innerHTML = response;
 
