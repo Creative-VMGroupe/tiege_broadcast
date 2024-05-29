@@ -585,6 +585,8 @@ async function addedCartFunction(addedItem, data) {
         let itemRemove = data.items.filter((item) => item.variant_id == upgradeItem)[0].key;
         await removeMultiple([itemRemove, routineItem.key]);
         await addItemtoCart(upgradeSystem);
+        var eventReload = new Event('theme:cart-drawer:reload', { bubbles: true, cancelable: false });
+        document.dispatchEvent(eventReload);
         return;
       }
     }
