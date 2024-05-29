@@ -3299,9 +3299,9 @@ console.log("entered")
             });
 
             if (productExists.length > 0 && allVariantsCount === max_allowed_qty && formDataObj.quantity < parseInt(updatedQuantity)) {
+              this.cartUpdateFailed = true;
               this.updateErrorText(`This product is limited to ${max_allowed_qty} per order.`);
               this.toggleErrorMessage();
-              this.cartUpdateFailed = true;
               this.resetLineItem(currentItem);
               this.enableCartButtons();
               return;
@@ -3309,29 +3309,29 @@ console.log("entered")
             
             let singleRoutineOnly = window.theme.cartSettings.singleRoutine.enabled;
             let showSinlgeRoutineAlert = window.theme.cartSettings.singleRoutine.show_alert;
-            console.log(isRoutine, singleRoutineOnly, showSinlgeRoutineAlert, totalRoutinesinCart === max_allowed_routines, formDataObj.quantity < parseInt(updatedQuantity));
+            
             if (isRoutine && singleRoutineOnly && showSinlgeRoutineAlert && totalRoutinesinCart === max_allowed_routines && formDataObj.quantity < parseInt(updatedQuantity)) {
+              this.cartUpdateFailed = true;
               this.updateErrorText(`Maximum number of allowed routine(s) per order are already added to the bag.`);
               this.toggleErrorMessage();
-              this.cartUpdateFailed = true;
               this.resetLineItem(currentItem);
               this.enableCartButtons();
               return;
             }
 
             if (parseInt(updatedQuantity) > max_allowed_qty) {
+              this.cartUpdateFailed = true;
               this.updateErrorText(`This product is limited to ${max_allowed_qty} per order.`);
               this.toggleErrorMessage();
-              this.cartUpdateFailed = true;
               this.resetLineItem(currentItem);
               this.enableCartButtons();
               return;
             }
 
             if (isRoutine && singleRoutineOnly && !showSinlgeRoutineAlert && totalRoutinesinCart > 0) {
+              this.cartUpdateFailed = true;
               this.updateErrorText(`Only one routine per order is allowed.`);
               this.toggleErrorMessage();
-              this.cartUpdateFailed = true;
               this.resetLineItem(currentItem);
               this.enableCartButtons();
               return;
