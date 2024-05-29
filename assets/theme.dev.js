@@ -3277,6 +3277,8 @@ console.log("entered")
           .then(this.cartErrorsHandler)
           .then((response) => response.json())
           .then((response) => {
+
+            console.log(updatedQuantity);
             let currentItemInfo = response.items.filter((item) => item.key == updateData.id);
             let formDataObj = currentItemInfo[0]
 
