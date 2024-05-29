@@ -1191,7 +1191,7 @@
       {
         "type": "checkbox",
         "id": "show_alert_single_routine",
-        "label": "Show alert ?",
+        "label": "Allow multiple systems",
         "default": true,
         "info": "If checked, customer will be presented with a alert message"
       },
