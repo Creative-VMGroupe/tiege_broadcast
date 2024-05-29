@@ -108,6 +108,14 @@
             "padding_bottom": 16
           }
         },
+        "image_rewHxM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tiege_icon_del.png",
+            "image_width": 20,
+            "padding_bottom": 16
+          }
+        },
         "heading_kCi8Xw": {
           "type": "heading",
           "settings": {
@@ -129,6 +137,7 @@
       },
       "block_order": [
         "image_eeGWDX",
+        "image_rewHxM",
         "heading_kCi8Xw",
         "text_bQLDGm"
       ],
@@ -217,11 +226,33 @@
             "show_arrow": false,
             "image": "shopify:\/\/shop_images\/IMG_5261_VSCO.png"
           }
+        },
+        "text_slide_XxdhMj": {
+          "type": "text-slide",
+          "settings": {
+            "stars_enabled": true,
+            "subheading": "&nbsp;★★★★★",
+            "subheading_font": 16,
+            "title": "\"I noticed improvement on my face in 2 days! I will stick to this product.\"",
+            "heading_font": 24,
+            "text": "<p>- Daniel A.<\/p>",
+            "quote_enabled": false,
+            "text_size": 12,
+            "text_style": "font-body",
+            "button_text": "Read more",
+            "button_url": "shopify:\/\/pages\/the-proof",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false,
+            "image": "shopify:\/\/shop_images\/IMG_5261_VSCO.png"
+          }
         }
       },
       "block_order": [
         "text_slide_MWCM8L",
-        "text_slide_gDLxQn"
+        "text_slide_gDLxQn",
+        "text_slide_XxdhMj"
       ],
       "custom_css": [
 
