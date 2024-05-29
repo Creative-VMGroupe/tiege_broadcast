@@ -65,7 +65,7 @@
     "sale_text_color": "#f0f0f0",
     "badge_bg_color": "#ffffff",
     "badge_text_color": "#42b029",
-    "quickview_enable": false,
+    "quickview_enable": true,
     "show_siblings": true,
     "show_cutline": true,
     "form_style": "classic",
