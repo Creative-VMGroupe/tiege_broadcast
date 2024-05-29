@@ -1666,7 +1666,8 @@
       }
 
       loadContent(focus = true) {
-        this.pauseAllMedia();
+        //Custom
+        // this.pauseAllMedia();
 
         if (!this.getAttribute(attributes$B.loaded)) {
           const content = document.createElement('div');
