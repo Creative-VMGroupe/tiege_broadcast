@@ -3297,6 +3297,8 @@ console.log("entered")
             productExists.forEach((element) => {
               allVariantsCount = allVariantsCount + element.quantity;
             });
+            
+            console.log(parseInt(updatedQuantity), max_allowed_qty, parseInt(updatedQuantity) > max_allowed_qty);
 
             if (productExists.length > 0 && allVariantsCount === max_allowed_qty) {
               this.updateErrorText(`This product is limited to ${max_allowed_qty} per order.`);
@@ -3309,6 +3311,7 @@ console.log("entered")
 
             let singleRoutineOnly = window.theme.cartSettings.singleRoutine.enabled;
             let showSinlgeRoutineAlert = window.theme.cartSettings.singleRoutine.show_alert;
+            
 
             if (isRoutine && singleRoutineOnly && showSinlgeRoutineAlert && totalRoutinesinCart === max_allowed_routines) {
               this.updateErrorText(`Maximum number of allowed routine(s) per order are already added to the bag.`);
@@ -3318,7 +3321,6 @@ console.log("entered")
               this.enableCartButtons();
               return;
             }
-            console.log(parseInt(updatedQuantity), max_allowed_qty, parseInt(updatedQuantity) > max_allowed_qty);
 
             if (parseInt(updatedQuantity) > max_allowed_qty) {
               this.updateErrorText(`This product is limited to ${max_allowed_qty} per order.`);
