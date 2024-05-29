@@ -3307,12 +3307,11 @@ console.log("entered")
               return;
             }
             
-            console.log('First Check Passed');
-
             let singleRoutineOnly = window.theme.cartSettings.singleRoutine.enabled;
             let showSinlgeRoutineAlert = window.theme.cartSettings.singleRoutine.show_alert;
             
-
+            console.log(isRoutine, singleRoutineOnly, showSinlgeRoutineAlert, totalRoutinesinCart === max_allowed_routines);
+            
             if (isRoutine && singleRoutineOnly && showSinlgeRoutineAlert && totalRoutinesinCart === max_allowed_routines) {
               this.updateErrorText(`Maximum number of allowed routine(s) per order are already added to the bag.`);
               this.toggleErrorMessage();
