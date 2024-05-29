@@ -1321,7 +1321,7 @@
         event.preventDefault();
         const previousValue = this.input.value;
         const button = event.target.nodeName == 'BUTTON' ? event.target : event.target.closest('button');
-        console.log(button.dataset);
+        console.log(button.dataset.disabled);
         if (button.name === 'increase') this.input.stepUp();
         if (button.name === 'decrease') this.input.stepDown();
         if (previousValue !== this.input.value) this.input.dispatchEvent(this.changeEvent);
