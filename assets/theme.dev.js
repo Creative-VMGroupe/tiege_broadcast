@@ -3312,7 +3312,7 @@ console.log("entered")
             
             if (isRoutine && singleRoutineOnly && showSinlgeRoutineAlert && totalRoutinesinCart === max_allowed_routines && formDataObj.quantity < parseInt(updatedQuantity)) {
               this.cartUpdateFailed = true;
-              this.updateErrorText(`Maximum number of allowed routine(s) per order are already added to the bag.`);
+              this.updateErrorText(`Routines are limited to ${max_allowed_routines} per order.`);
               this.toggleErrorMessage();
               this.resetLineItem(currentItem);
               this.enableCartButtons();
@@ -3330,7 +3330,7 @@ console.log("entered")
 
             if (isRoutine && singleRoutineOnly && !showSinlgeRoutineAlert && totalRoutinesinCart > 0) {
               this.cartUpdateFailed = true;
-              this.updateErrorText(`Only one routine per order is allowed.`);
+              this.updateErrorText(`Routines are limited to 1 per order.`);
               this.toggleErrorMessage();
               this.resetLineItem(currentItem);
               this.enableCartButtons();
