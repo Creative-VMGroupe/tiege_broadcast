@@ -3298,8 +3298,7 @@ console.log("entered")
               allVariantsCount = allVariantsCount + element.quantity;
             });
 
-            if (productExists.length > 0 && allVariantsCount === max_allowed_qty) {
-              console.log('First Check Failed', formDataObj, parseInt(updatedQuantity), max_allowed_qty, parseInt(updatedQuantity) > max_allowed_qty);
+            if (productExists.length > 0 && allVariantsCount === max_allowed_qty && formDataObj.quantity > parseInt(updatedQuantity)) {
               this.updateErrorText(`This product is limited to ${max_allowed_qty} per order.`);
               this.toggleErrorMessage();
               this.cartUpdateFailed = true;
@@ -3307,6 +3306,8 @@ console.log("entered")
               this.enableCartButtons();
               return;
             }
+            
+            console.log('First Check Passed');
 
             let singleRoutineOnly = window.theme.cartSettings.singleRoutine.enabled;
             let showSinlgeRoutineAlert = window.theme.cartSettings.singleRoutine.show_alert;
