@@ -207,12 +207,10 @@
               {% if quantity == line_item.product.metafields.custom.max_qty_per_order %}readonly{% endif %}
             >
             <style>
-              button[data-disabled] {
-                cursor: not-allowed;
-              }
+              
             </style>
             <button
-              {% if quantity == line_item.product.metafields.custom.max_qty_per_order %}disabled data-disabled{% endif %}
+              {% if quantity == line_item.product.metafields.custom.max_qty_per_order %}data-disabled{% endif %}
               class="cart__quantity-plus"
               type="button"
               name="increase"
