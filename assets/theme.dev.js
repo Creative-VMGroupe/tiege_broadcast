@@ -3329,6 +3329,8 @@ console.log("entered")
             }
 
             if (isRoutine && singleRoutineOnly && !showSinlgeRoutineAlert && totalRoutinesinCart > 0) {
+              this.updateErrorText(`Maximum number of allowed routine(s) per order are already added to the bag.`);
+              this.toggleErrorMessage();
               this.cartUpdateFailed = true;
               this.resetLineItem(currentItem);
               this.enableCartButtons();
