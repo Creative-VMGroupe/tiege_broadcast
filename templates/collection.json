@@ -7,7 +7,7 @@
         "show_description": true,
         "flex_align": "align--bottom-left",
         "bg_color": "",
-        "color": "#ffffff",
+        "color": "{{ collection.metafields.custom.collections_text_color.value }}",
         "show_image": true,
         "banner_layout": "overlay",
         "height": "two-fifty-height-hero",
