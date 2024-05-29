@@ -3298,8 +3298,8 @@ console.log("entered")
               allVariantsCount = allVariantsCount + element.quantity;
             });
 
-            if (productExists.length > 0 && allVariantsCount === max_allowed_qty && formDataObj.quantity > parseInt(updatedQuantity)) {
-              console.log('First Check Failed', formDataObj.quantity, parseInt(updatedQuantity), formDataObj.quantity > parseInt(updatedQuantity));
+            console.log('First Check Failed', formDataObj.quantity, parseInt(updatedQuantity), formDataObj.quantity > parseInt(updatedQuantity));
+            if (productExists.length > 0 && allVariantsCount === max_allowed_qty && formDataObj.quantity < parseInt(updatedQuantity)) {
               this.updateErrorText(`This product is limited to ${max_allowed_qty} per order.`);
               this.toggleErrorMessage();
               this.cartUpdateFailed = true;
