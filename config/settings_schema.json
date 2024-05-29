@@ -1208,12 +1208,6 @@
         "label": "Alert Message",
         "info": "Specify message to be displayed upon replacing the routine in the bag",
         "default": "You already have a routine in your bag. Replace the routine ?"
-      },
-      {
-        "type": "number",
-        "id": "max_routines_per_cart",
-        "label": "Maximum # of routines allowed per order",
-        "default": 3
       }
     ]
   },
