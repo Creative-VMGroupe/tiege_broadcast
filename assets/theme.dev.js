@@ -1622,7 +1622,7 @@
 
         this.videoActions();
 
-        if (!this.getAttribute(attributes$A.loaded)) {
+        if (!this.getAttribute(attributes$B.loaded)) {
           this.loadContent();
         }
       }
