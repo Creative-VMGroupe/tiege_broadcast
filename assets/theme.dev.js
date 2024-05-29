@@ -3318,6 +3318,7 @@ console.log("entered")
               this.enableCartButtons();
               return;
             }
+            console.log(parseInt(updatedQuantity), max_allowed_qty, parseInt(updatedQuantity) > max_allowed_qty);
 
             if (parseInt(updatedQuantity) > max_allowed_qty) {
               this.updateErrorText(`This product is limited to ${max_allowed_qty} per order.`);
