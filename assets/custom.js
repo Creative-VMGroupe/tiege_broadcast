@@ -138,8 +138,7 @@ if (flickityEnabledContainers.length > 0) {
             const button = dotContainer.querySelector(`.flickity-page-dot[data-dot-position="${slidePosition}"]`);
             if (button) {
               // Remove the 'flickity-dot-styling' class from the previously styled button
-              if (lastStyledButton) {
-                console.log(lastStyledButton)
+              if (lastStyledButton) {             
                 lastStyledButton.classList.remove("flickity-dot-styling");
               }
               console.log(button)
