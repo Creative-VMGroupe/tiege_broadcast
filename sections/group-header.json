@@ -172,7 +172,7 @@
         "image_WYFAXy"
       ],
       "custom_css": [
-        ".publicquiz #quiz, .publicquiz .fullsize {overflow-y: hidden !important; overflow: hidden !important; }"
+        ".publicquiz #quiz,.publicquiz .fullsize,#quiz,iframe #quiz,#app > div > #out > div > div > *, iframe {overflow-y: hidden !important; overflow: hidden !important;}"
       ],
       "settings": {
         "header_sticky": false,

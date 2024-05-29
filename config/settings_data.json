@@ -372,7 +372,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".publicquiz #quiz,.publicquiz .fullsize,#quiz,iframe #quiz,#app > div > #out > div > div > * {overflow-y: hidden !important; overflow: hidden !important;}"
+
     ]
   }
 }
