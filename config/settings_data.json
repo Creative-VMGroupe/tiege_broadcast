@@ -372,7 +372,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".fullsize #quiz {overflow-y: hidden !important; overflow: hidden !important;}"
+      ".fullsize > {overflow-y: hidden !important; overflow: hidden !important;}"
     ]
   }
 }
