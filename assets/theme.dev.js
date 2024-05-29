@@ -3048,7 +3048,7 @@ console.log("entered")
             });
 
             if (productExists.length > 0 && allVariantsCount === max_allowed_qty) {
-              this.addToCartError({message: 'Error', description: `This product is limited to ${max_allowed_qty} per order.`}, button);
+              this.addToCartError({message: '', description: `This product is limited to ${max_allowed_qty} per order.`}, button);
               return;
             }
 
@@ -3078,12 +3078,12 @@ console.log("entered")
             }
 
             if (isRoutine && singleRoutineOnly && showSinlgeRoutineAlert && totalRoutinesinCart === max_allowed_routines) {
-              this.addToCartError({message: 'Error', description: `Maximum number of allowed routine(s) per order are already added to the bag.`}, button);
+              this.addToCartError({message: '', description: `Maximum number of allowed routine(s) per order are already added to the bag.`}, button);
               return;
             }
 
             if (isRoutine && singleRoutineOnly && !showSinlgeRoutineAlert && totalRoutinesinCart > 0) {
-              this.addToCartError({message: 'Error', description: `Only Single routine per order is allowed.`}, button);
+              this.addToCartError({message: '', description: `Only Single routine per order is allowed.`}, button);
               return;
             }
 
