@@ -585,6 +585,7 @@ async function addedCartFunction(addedItem, data) {
         let itemRemove = data.items.filter((item) => item.variant_id == upgradeItem)[0].key;
         await removeMultiple([itemRemove, routineItem.key]);
         await addItemtoCart(upgradeSystem);
+        return;
       }
     }
   }
