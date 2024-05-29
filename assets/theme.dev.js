@@ -1619,7 +1619,7 @@
 
       mouseEnterActions() {
         this.hovered = true;
-
+console.log("entered")
         this.videoActions();
 
         if (!this.getAttribute(attributes$B.loaded)) {
@@ -3606,7 +3606,7 @@
           }
 
           if (errorContainer) {
-            errorContainer.innerHTML = `<div class="errors">${data.message}: ${data.description}<button type="button" class="errors__close" data-close-error><svg aria-hidden="true" focusable="false" role="presentation" width="24px" height="24px" stroke-width="1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor" class="icon icon-cancel"><path d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>`;
+            errorContainer.innerHTML = `<div class="errors">${data.description}<button type="button" class="errors__close" data-close-error><svg aria-hidden="true" focusable="false" role="presentation" width="24px" height="24px" stroke-width="1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor" class="icon icon-cancel"><path d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>`;
             errorContainer.classList.add(classes$F.visible);
             this.formErrorsEvents(errorContainer);
           }
