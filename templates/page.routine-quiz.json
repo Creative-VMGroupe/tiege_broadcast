@@ -41,10 +41,22 @@
       "settings": {
         "include_margins": false
       }
+    },
+    "section_custom_code_DqEikq": {
+      "type": "section-custom-code",
+      "settings": {
+        "code": "<style>\n.publicquiz #quiz,\n.publicquiz .fullsize,\n#quiz,\niframe #quiz,\n#app > div > #out > div > div > *, iframe {\n  overflow-y: hidden !important;\n  overflow: hidden !important;\n}\n<\/style>",
+        "width": "wrapper",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "main",
-    "1711290792afc055fe"
+    "1711290792afc055fe",
+    "section_custom_code_DqEikq"
   ]
 }
