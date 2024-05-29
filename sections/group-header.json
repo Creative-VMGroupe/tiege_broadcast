@@ -172,7 +172,7 @@
         "image_WYFAXy"
       ],
       "custom_css": [
-
+        ".fullsize > #quiz, #quiz, .rh-widget {overflow-y: hidden !important; overflow: hidden !important; }"
       ],
       "settings": {
         "header_sticky": false,
