@@ -27147,20 +27147,7 @@ grid-column-gap: var(--gap);
   }
 } */
 /*Quiz*/
-body#find-my-routine .header-sections {
-  height: 0;
-}
-@media(max-width: 480px) {
-.rh-widget.rh-inline.rh-quiz-gWH2pX {
-  /* height: 1301px !important; */
-  max-height: 100vh;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-} 
-}
-.rh-widget.rh-inline.rh-quiz-gWH2pX::-webkit-scrollbar {
-  display: none;
-}
+
 /*Image with Title - CLP*/
 .collection-image-with-title-custom .hero__content{
   max-width: 700px;
