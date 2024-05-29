@@ -26986,7 +26986,7 @@ width: 50% !important;
 
 /*Slider Customization*/
 @media(max-width: 749px) {
-  .double-slider-custom .image-with-slider__container .flickity-page-dots {
+  .double-slider-custom.image-with-slider__container .flickity-page-dots {
     bottom: 31px !important;
   }
 }
