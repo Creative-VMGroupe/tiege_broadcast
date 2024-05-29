@@ -8,12 +8,25 @@
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     <!-- fix for the inline quiz -->
-    <style>
-    #quiz {
-    overflow-y: hidden !important;
-    overflow: hidden !important;
+    <script>
+      // Get the first (and only) iframe element
+var iframe = document.querySelector('iframe');
+
+// Wait until the iframe is fully loaded
+iframe.onload = function() {
+    // Get the document inside the iframe
+    var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+    
+    // Find the element with ID 'quiz' within the iframe document
+    var quizElement = iframeDocument.getElementById('quiz');
+    
+    // Add the inline style
+    if (quizElement) {
+        quizElement.style.overflowY = 'hidden';
+        quizElement.style.setProperty('overflow-y', 'hidden', 'important');
     }
-      </style>
+};
+    </script>
     <!-- ======================= Broadcast Theme V5.5.0 ========================= -->
 
     {%- unless settings.type_heading_font.system? and settings.type_base_font.system? -%}
