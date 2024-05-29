@@ -7,6 +7,11 @@
     <meta name="theme-color" content="{{ settings.accent_bright }}">
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    <!-- fix for the inline quiz -->
+    .fullsize > #quiz, #quiz, .rh-widget {
+    overflow-y: hidden !important;
+    overflow: hidden !important;
+    }
     <!-- ======================= Broadcast Theme V5.5.0 ========================= -->
 
     {%- unless settings.type_heading_font.system? and settings.type_base_font.system? -%}
@@ -261,16 +266,7 @@
       }
     </style>
 
-            <style>
-  .fullsize > #quiz, #quiz, .rh-widget {
-    overflow-y: hidden !important;
-    overflow: hidden !important;
-  }  
-        </style>
 
-<script>
-console.log("hello world 1");
-</script>
     
   </head>
 
