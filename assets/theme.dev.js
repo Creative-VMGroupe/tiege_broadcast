@@ -3297,10 +3297,9 @@ console.log("entered")
             productExists.forEach((element) => {
               allVariantsCount = allVariantsCount + element.quantity;
             });
-            
-            console.log(parseInt(updatedQuantity), max_allowed_qty, parseInt(updatedQuantity) > max_allowed_qty);
 
             if (productExists.length > 0 && allVariantsCount === max_allowed_qty) {
+              console.log('First Check Failed', formDataObj, parseInt(updatedQuantity), max_allowed_qty, parseInt(updatedQuantity) > max_allowed_qty);
               this.updateErrorText(`This product is limited to ${max_allowed_qty} per order.`);
               this.toggleErrorMessage();
               this.cartUpdateFailed = true;
