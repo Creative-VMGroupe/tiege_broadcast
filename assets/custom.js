@@ -565,28 +565,6 @@ async function addedCartFunction(addedItem, data) {
     }
   }
 
-  // Duplication Check
-  if (theme.cartSettings.duplication.enabled) {
-    let routineItem = null;
-    data.items.forEach((element) => {
-      if (allProducts[element.product_id].isRoutine) {
-        routineItem = element;
-      }
-    });
-    if (routineItem != null) {
-      let otherItems = data.items.filter((item) => item.product_id != routineItem.product_id);
-      let otherItemIds = otherItems.map((item) => item.variant_id);
-      let variantsOfRoutine = allProducts[routineItem.product_id]['routineVariants'].map((item) => item.id);
-      let haveCommonItems = otherItemIds.filter(item => variantsOfRoutine.includes(item));
-      let commonItemsKeys = data.items.filter(item => haveCommonItems.includes(item.variant_id)).map((item) => item.key);
-      if (commonItemsKeys.length > 0) {
-        // await removeMultiple(commonItemsKeys);
-        await showMessageDuplicateProducts(commonItemsKeys, isCurrentAddedItemRoutine);
-        return;
-      }
-    }
-  }
-
   // Upgradability Check
   if (theme.cartSettings.upgradability.enabled) {
     let routineItem = null;
@@ -607,6 +585,28 @@ async function addedCartFunction(addedItem, data) {
         let itemRemove = data.items.filter((item) => item.variant_id == upgradeItem)[0].key;
         await removeMultiple([itemRemove, routineItem.key]);
         await addItemtoCart(upgradeSystem);
+      }
+    }
+  }
+
+  // Duplication Check
+  if (theme.cartSettings.duplication.enabled) {
+    let routineItem = null;
+    data.items.forEach((element) => {
+      if (allProducts[element.product_id].isRoutine) {
+        routineItem = element;
+      }
+    });
+    if (routineItem != null) {
+      let otherItems = data.items.filter((item) => item.product_id != routineItem.product_id);
+      let otherItemIds = otherItems.map((item) => item.variant_id);
+      let variantsOfRoutine = allProducts[routineItem.product_id]['routineVariants'].map((item) => item.id);
+      let haveCommonItems = otherItemIds.filter(item => variantsOfRoutine.includes(item));
+      let commonItemsKeys = data.items.filter(item => haveCommonItems.includes(item.variant_id)).map((item) => item.key);
+      if (commonItemsKeys.length > 0) {
+        // await removeMultiple(commonItemsKeys);
+        await showMessageDuplicateProducts(commonItemsKeys, isCurrentAddedItemRoutine);
+        return;
       }
     }
   }
