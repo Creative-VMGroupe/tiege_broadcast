@@ -3077,10 +3077,10 @@ console.log("entered")
               return;
             }
 
-            if (isRoutine && singleRoutineOnly && showSinlgeRoutineAlert && totalRoutinesinCart === max_allowed_routines) {
-              this.addToCartError({message: '', description: `Maximum number of allowed routine(s) per order are already added to the bag.`}, button);
-              return;
-            }
+            // if (isRoutine && singleRoutineOnly && showSinlgeRoutineAlert && totalRoutinesinCart === max_allowed_routines) {
+            //   this.addToCartError({message: '', description: `Maximum number of allowed routine(s) per order are already added to the bag.`}, button);
+            //   return;
+            // }
 
             if (isRoutine && singleRoutineOnly && !showSinlgeRoutineAlert && totalRoutinesinCart > 0) {
               this.addToCartError({message: '', description: `Only Single routine per order is allowed.`}, button);
