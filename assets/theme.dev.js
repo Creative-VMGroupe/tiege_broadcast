@@ -3292,8 +3292,6 @@ console.log("entered")
             
             let max_allowed_qty = allProducts[formDataObj.product_id].max_qty_per_order;
 
-            console.log(updatedQuantity, max_allowed_qty);
-            
             let productExists = response.items.filter((item) => (item.product_id == formDataObj.product_id));
             let allVariantsCount = 0;
             productExists.forEach((element) => {
@@ -3321,7 +3319,7 @@ console.log("entered")
               return;
             }
 
-            if (updatedQuantity > max_allowed_qty) {
+            if (parseInt(updatedQuantity) > max_allowed_qty) {
               this.updateErrorText(`This product is limited to ${max_allowed_qty} per order.`);
               this.toggleErrorMessage();
               this.cartUpdateFailed = true;
