@@ -206,9 +206,13 @@
               pattern="[0-9]*"
               {% if quantity == line_item.product.metafields.custom.max_qty_per_order %}readonly{% endif %}
             >
-
+            <style>
+              button[data-disabled] {
+                cursor: disabled;
+              }
+            </style>
             <button
-              {% if quantity == line_item.product.metafields.custom.max_qty_per_order %}data-disabled{% endif %}
+              {% if quantity == line_item.product.metafields.custom.max_qty_per_order %}disable data-disabled{% endif %}
               class="cart__quantity-plus"
               type="button"
               name="increase"
