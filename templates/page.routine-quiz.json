@@ -21,7 +21,8 @@
     "1711290792afc055fe": {
       "type": "apps",
       "custom_css": [
-        ".shopify-app-block {overflow: hidden;}"
+        ".shopify-app-block {overflow: hidden;}",
+        "#quiz {overflow-y: hidden;}"
       ],
       "settings": {
         "include_margins": false
