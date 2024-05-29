@@ -3078,7 +3078,7 @@ console.log("entered")
             }
 
             // if (isRoutine && singleRoutineOnly && showSinlgeRoutineAlert && totalRoutinesinCart === max_allowed_routines) {
-            //   this.addToCartError({message: '', description: `Maximum number of allowed routine(s) per order are already added to the bag.`}, button);
+            //   this.addToCartError({message: '', description: `Routines are limited to ${max_allowed_routines} per order.`}, button);
             //   return;
             // }
 
