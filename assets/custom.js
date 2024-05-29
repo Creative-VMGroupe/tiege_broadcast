@@ -587,6 +587,8 @@ async function addedCartFunction(addedItem, data) {
         await addItemtoCart(upgradeSystem);
         var eventReload = new Event('theme:cart-drawer:reload', { bubbles: true, cancelable: false });
         document.dispatchEvent(eventReload);
+        const eventAlert = new CustomEvent("theme:cart-drawer:alert", { detail: { status: alertStatus, message: alertMessage } });
+        document.dispatchEvent(eventAlert);
         return;
       }
     }
